@@ -18,7 +18,7 @@ jobs:
         API_TOKEN_GITHUB: ${{ secrets.DENMARK_GAMEDATA_AUTOMATION_TOKEN }}
       with:
         source_file: 'input'
-        destination_branch: 'denmark-changes'
+        destination_branch: 'master'
         destination_repo: 'TeamLumi/LumiPlat_NuzlockeTracker'
         destination_folder: './'
         user_email: '<support+actions@github.com>'
