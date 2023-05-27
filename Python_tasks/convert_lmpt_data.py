@@ -114,7 +114,7 @@ def match_honey_tree_data(match, honey_routes):
         submatch = re.search(array_regex, line)
         if not submatch:
             continue
-        
+
         key = submatch.group(1)
         values = [v.strip() for v in submatch.group(2).split(",")]
         if "AMPHAROS" not in values:
@@ -132,10 +132,10 @@ def HoneyTreeData():
     match = re.search(const_regex, honey_data)
     if match:
         return match_honey_tree_data(match, honey_routes)
-    
+
 def get_honey_tree_mons(routes):
     honey_encounter_data = HoneyTreeData()
-    
+
     for key in honey_encounter_data.keys():
         for mon in honey_encounter_data[key]:
             if mon.capitalize() in routes[key]:
@@ -144,7 +144,6 @@ def get_honey_tree_mons(routes):
                 routes[key].append("Farfetch'd")
             else:
                 routes[key].append(mon.capitalize())
-
 
 def bad_encounter_data(pkmn_name, routeName, route):
     print('BAD ENCOUNTER', pkmn_name, routeName, route)
@@ -233,7 +232,6 @@ def getEncounterData():
         output.write(json.dumps(sorted_encounters))
 
 def pathfinding():
-
     with open(os.path.join(input_file_path, 'EvolveTable.json'), "r", encoding="utf-8") as f:
         graphing = json.load(f)
     graph = graphing["Evolve"]
@@ -250,7 +248,7 @@ def pathfinding():
 
         if pokemon not in evolve[pokemon]["path"]:
             evolve[pokemon]["path"].append(pokemon)
-        
+
         while queue:
             current_mon = queue.pop(0)
             current_form = queue.pop(0)
@@ -315,7 +313,7 @@ def pathfinding():
             for i in range(0, len(graph[extra]["ar"]), 5):
                 evolve[pokemon]["method"].append(graph[extra]["ar"][i])
             evolve[pokemon]["ar"].append(graph[extra]["ar"])
-    
+
     for form in forms:
         for pokemon in evolve.keys():
             if int(pokemon) != int(form[-7:-4]):
@@ -385,3 +383,6 @@ def getPokedexInfo():
     with open(os.path.join(output_file_path, "pokedex_info.json"), "w", encoding="utf-8") as output:
         json.dump(pokedex, output, ensure_ascii=False)
     return pokedex
+
+getPokedexInfo()
+getEncounterData()
