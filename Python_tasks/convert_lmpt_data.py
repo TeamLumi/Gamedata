@@ -7,12 +7,12 @@ from collections import defaultdict
 from pokemonUtils import get_ability_string, get_pokemon_name, get_form_name, get_item_string, get_pokemon_name_dictionary, get_pokemon_info, get_nature_name, GenForms, get_form_pokemon_personal_id, create_diff_forms_dictionary, isSpecialPokemon, get_pokemon_from_trainer_info
 
 # Get the repo file path for cleaner path generating
-repo_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
+repo_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 input_file_path = os.path.join(repo_file_path, 'input')
-resources_filepath = os.path.join(repo_file_path, "src", "tasks", "Resources")
+resources_filepath = os.path.join(repo_file_path, "Python_tasks", "Resources")
 honeywork_cpp_filepath = os.path.join(input_file_path, "honeywork.cpp")
-honeyroutes_filepath = os.path.join(repo_file_path, "src", "tasks", "Resources", "honeyroutes.json")
-output_file_path = os.path.join(repo_file_path, "src", "tasks", "output")
+honeyroutes_filepath = os.path.join(repo_file_path, "Python_tasks", "Resources", "honeyroutes.json")
+output_file_path = os.path.join(repo_file_path, "Python_tasks", "output")
 gym_leader_file_path = os.path.join(resources_filepath, "NewGymLeaders.json")
 POKEMON_NAMES = get_pokemon_name_dictionary()
 bad_encounters = []
@@ -100,7 +100,6 @@ def getTrainerData(gymLeaderList):
                 full_list.append(trainers_list)
     dic['1'] = full_list
     return dic
-
 
 def match_honey_tree_data(match, honey_routes):
     array_regex = r"\[(.*?)\]\s*=\s*\{(.*?)\}"

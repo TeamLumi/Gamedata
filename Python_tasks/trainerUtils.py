@@ -4,7 +4,7 @@ import re
 from operator import itemgetter
 import constants
 
-repo_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
+repo_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 parent_file_path = os.path.abspath(os.path.dirname(__file__))
 input_file_path = os.path.join(repo_file_path, 'input')
 output_file_path =os.path.join(parent_file_path, "output")
@@ -17,11 +17,11 @@ map_info_file_path = os.path.join(input_file_path, 'MapInfo.json')
 area_name_file_path = os.path.join(input_file_path, 'english_dp_fld_areaname.json')
 area_display_file_path = os.path.join(input_file_path, 'english_dp_fld_areaname_display.json')
 trainer_labels_file_path = os.path.join(input_file_path, 'english_dp_trainers_type.json')
-trainer_table_file_path = os.path.join(input_file_path, "TrainerTable.json")
+trainer_table_file_path = os.path.join(input_file_path, 'TrainerTable.json')
 
 areas_file_path = os.path.join(input_file_path, 'areas_copy.csv')
 
-scripts_file_path = os.path.join(repo_file_path, 'scripts')
+scripts_file_path = os.path.join(repo_file_path, 'scriptdata')
 bdsp_location_files_path = os.path.join(repo_file_path, 'placedatas')
 bdsp_location_files = os.listdir(bdsp_location_files_path)
 

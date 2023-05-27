@@ -19,7 +19,7 @@ trainer_table_file_path = os.path.join(input_file_path, "TrainerTable.json")
 
 areas_file_path = os.path.join(input_file_path, 'areas.csv')
 
-scripts_file_path = os.path.join(repo_file_path, 'scripts')
+scripts_file_path = os.path.join(repo_file_path, 'scriptdata')
 bdsp_location_files_path = os.path.join(repo_file_path, 'placedatas')
 bdsp_location_files = os.listdir(bdsp_location_files_path)
 
@@ -515,4 +515,4 @@ def parse_random_teams(file_path, lookup, count, type):
                 break
     return trainers
 
-process_files(os.path.join(repo_file_path, "scripts"), parse_ev_script_file)
+process_files(os.path.join(repo_file_path, "scriptdata"), parse_ev_script_file)

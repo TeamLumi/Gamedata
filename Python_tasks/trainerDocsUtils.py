@@ -8,12 +8,12 @@ from pokemonUtils import get_pokemon_from_trainer_info, get_pokemon_name
 from convert_lmpt_data import getTrainerData
 import constants
 
-repo_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
+repo_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 input_file_path = os.path.join(repo_file_path, 'input')
-output_file_path = os.path.join(repo_file_path, "src", "tasks", "output")
+output_file_path = os.path.join(repo_file_path, "Python_tasks", "output")
 trainer_table_file_path = os.path.join(input_file_path, "TrainerTable.json")
 
-resources_filepath = os.path.join(repo_file_path, "src", "tasks", "Resources")
+resources_filepath = os.path.join(repo_file_path, "Python_tasks", "Resources")
 gym_leader_file_path = os.path.join(resources_filepath, "NewGymLeaders.json")
 
 with open(gym_leader_file_path, mode='r', encoding="utf-8") as f:
@@ -150,7 +150,7 @@ def get_trainer_doc_data():
 
     '''
 
-    trainer_info = process_files(os.path.join(repo_file_path, "scripts"), parse_ev_script_file)
+    trainer_info = process_files(os.path.join(repo_file_path, "scriptdata"), parse_ev_script_file)
     print("Start trainer sorting by level")
     sorted_trainers = sort_trainers_by_level(trainer_info)
     print("Trainers have been sorted")
@@ -160,7 +160,7 @@ def get_trainer_doc_data():
 def get_tracker_trainer_data():
 
     original_teams = getTrainerData(gym_leader_data)
-    trainer_info = process_files(os.path.join(repo_file_path, "scripts"), parse_ev_script_file)
+    trainer_info = process_files(os.path.join(repo_file_path, "scriptdata"), parse_ev_script_file)
 
     print("Start sorting trainers by zone")
     sorted_tracker_trainers = sort_trainers_by_route(trainer_info)

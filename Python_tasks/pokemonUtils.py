@@ -3,24 +3,25 @@ import json
 import unicodedata
 import re 
 
-parent_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
-output_file_path =os.path.join(parent_file_path, "src", "tasks", "output")
-namedata_file_path = os.path.join(parent_file_path, 'input', 'english_ss_monsname.json')
-ability_namedata_file_path = os.path.join(parent_file_path, 'input', 'english_ss_tokusei.json')
-type_namedata_file_path = os.path.join(parent_file_path, 'input', 'english_ss_typename.json')
-forms_namedata_file_path = os.path.join(parent_file_path, 'input', 'english_ss_zkn_form.json')
-nature_namedata_file_path = os.path.join(parent_file_path, 'input', 'english_ss_seikaku.json')
-items_namedata_file_path = os.path.join(parent_file_path, 'input', 'english_ss_itemname.json')
-moves_namedata_file_path = os.path.join(parent_file_path, 'input', 'english_ss_wazaname.json')
-smogon_movedata_file_path = os.path.join(parent_file_path, 'input', 'moves.json')
-learnset_file_path = os.path.join(parent_file_path, 'input', 'WazaOboeTable.json')
-egg_learnset_file_path = os.path.join(parent_file_path, 'input', 'TamagoWazaTable.json')
-personal_data_path = os.path.join(parent_file_path, 'input', 'PersonalTable.json')
-movestable_file_path = os.path.join(parent_file_path, 'input', 'WazaTable.json')
-move_info_file_path = os.path.join(parent_file_path, 'input', 'english_ss_wazainfo.json')
-pkmn_height_file_path = os.path.join(parent_file_path, 'input', 'english_ss_zkn_height.json')
-pkmn_weight_file_path = os.path.join(parent_file_path, 'input', 'english_ss_zkn_weight.json')
-item_table_file_path = os.path.join(parent_file_path, 'input', 'ItemTable.json')
+parent_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
+output_file_path =os.path.join(parent_file_path, "Python_tasks", "output")
+input_file_path = os.path.join(parent_file_path, 'input')
+namedata_file_path = os.path.join(input_file_path, 'english_ss_monsname.json')
+ability_namedata_file_path = os.path.join(input_file_path, 'english_ss_tokusei.json')
+type_namedata_file_path = os.path.join(input_file_path, 'english_ss_typename.json')
+forms_namedata_file_path = os.path.join(input_file_path, 'english_ss_zkn_form.json')
+nature_namedata_file_path = os.path.join(input_file_path, 'english_ss_seikaku.json')
+items_namedata_file_path = os.path.join(input_file_path, 'english_ss_itemname.json')
+moves_namedata_file_path = os.path.join(input_file_path, 'english_ss_wazaname.json')
+smogon_movedata_file_path = os.path.join(input_file_path, 'moves.json')
+learnset_file_path = os.path.join(input_file_path, 'WazaOboeTable.json')
+egg_learnset_file_path = os.path.join(input_file_path, 'TamagoWazaTable.json')
+personal_data_path = os.path.join(input_file_path, 'PersonalTable.json')
+movestable_file_path = os.path.join(input_file_path, 'WazaTable.json')
+move_info_file_path = os.path.join(input_file_path, 'english_ss_wazainfo.json')
+pkmn_height_file_path = os.path.join(input_file_path, 'english_ss_zkn_height.json')
+pkmn_weight_file_path = os.path.join(input_file_path, 'english_ss_zkn_weight.json')
+item_table_file_path = os.path.join(input_file_path, 'ItemTable.json')
 
 move_enum = 0
 name_data = 0
@@ -98,7 +99,7 @@ with open(smogon_movedata_file_path, mode='r', encoding="utf-8") as f:
 with open(learnset_file_path, mode='r', encoding="utf-8") as f:
     learnset_data = json.load(f)
 
-with open(os.path.join(parent_file_path, 'input', 'moves.txt'), encoding="utf-8") as f:
+with open(os.path.join(input_file_path, 'moves.txt'), encoding="utf-8") as f:
     move_enum = [line.strip() for line in f if line.strip()]
 
 def get_lumi_data(raw_data, callback):
