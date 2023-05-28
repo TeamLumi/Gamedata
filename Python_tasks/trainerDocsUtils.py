@@ -12,6 +12,7 @@ repo_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 input_file_path = os.path.join(repo_file_path, 'input')
 output_file_path = os.path.join(repo_file_path, "Python_tasks", "output")
 trainer_table_file_path = os.path.join(input_file_path, "TrainerTable.json")
+trainer_doc_data_file_path = os.path.join(repo_file_path, "trainer_docs, trainer_doc_output.txt")
 
 resources_filepath = os.path.join(repo_file_path, "Python_tasks", "Resources")
 gym_leader_file_path = os.path.join(resources_filepath, "NewGymLeaders.json")
@@ -91,7 +92,7 @@ def write_to_trainer_docs_file(trainer, trainer_name):
     link = trainer['link']
     team = trainer['team']
     level_cap = "Level Cap:"
-    with open(os.path.join(output_file_path, "trainer_info.txt"), "a") as f:
+    with open(trainer_doc_data_file_path, "a") as f:
         f.write(f"{trainerId}\n{trainer_name}\n{level_cap}\n{format_}\n")
         for mon in team:
             f.write(f"\n{get_pokemon_name(mon['id'])}\n{mon['level']}\n{mon['nature']}\n{mon['ability']}\n\n{mon['item']}\n")
