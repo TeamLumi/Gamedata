@@ -106,6 +106,8 @@ def write_to_trainer_docs_file(trainer, trainer_name):
             f.write(f"{link}\n\n")
 
 def write_trainer_docs(sorted_trainers):
+    with open(trainer_doc_data_file_path, "w") as f:
+        f.write("Trainer Documentation\n")
     for trainer in sorted_trainers:
         
         zone_name = trainer['zoneName']
