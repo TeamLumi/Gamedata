@@ -378,8 +378,12 @@ def getPokedexInfo():
         evolve = evolutions[pokemon]["path"]
         if pokemon < 906 or pokemon > 1010:
             dex_info = get_mon_dex_info(pokemon, evolve)
-
         pokedex.append(dex_info)
+
     with open(os.path.join(output_file_path, "pokedex_info.json"), "w", encoding="utf-8") as output:
         json.dump(pokedex, output, ensure_ascii=False)
     return pokedex
+
+if __name__ == "__main__":
+    getPokedexInfo()
+    getEncounterData()

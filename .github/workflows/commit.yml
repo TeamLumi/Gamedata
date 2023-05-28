@@ -13,10 +13,10 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Run Convert Python Script
-      run: python3 Python_tasks/convert_lmpt_data.py getPokedexInfo getEncounterData
+      run: python3 Python_tasks/convert_lmpt_data.py
 
     - name: Run Tracker Data Script
-      run: python3 Python_tasks/trainerDocsUtils.py get_tracker_trainer_data
+      run: python3 Python_tasks/trainerDocsUtils.py
 
     - name: Pushes test file
       uses: TeamLumi/Gamedata@main
@@ -30,15 +30,6 @@ jobs:
         user_email: '<support+actions@github.com>'
         user_name: 'github-actions-bot'
         commit_message: 'Updating gamedata files'
-
-  update-docs:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-
-    - name: Generate Trainer Docs
-      run: python3 Python_tasks/trainerDocsUtils.py get_trainer_doc_data
 
 #  update-calc:
 #    runs-on: ubuntu-latest

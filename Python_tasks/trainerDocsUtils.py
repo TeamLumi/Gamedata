@@ -12,7 +12,7 @@ repo_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 input_file_path = os.path.join(repo_file_path, 'input')
 output_file_path = os.path.join(repo_file_path, "Python_tasks", "output")
 trainer_table_file_path = os.path.join(input_file_path, "TrainerTable.json")
-trainer_doc_data_file_path = os.path.join(repo_file_path, "trainer_docs, trainer_doc_output.txt")
+trainer_doc_data_file_path = os.path.join(repo_file_path, "trainer_docs", "trainer_doc_output.txt")
 
 resources_filepath = os.path.join(repo_file_path, "Python_tasks", "Resources")
 gym_leader_file_path = os.path.join(resources_filepath, "NewGymLeaders.json")
@@ -110,7 +110,7 @@ def write_trainer_docs(sorted_trainers):
         
         zone_name = trainer['zoneName']
         name = f"{trainer['type']} {trainer['name']}"
-        full_trainer_name = get_trainer_name(name, zone_name)[0]
+        full_trainer_name = get_trainer_name(name, zone_name, 0)[0]
 
         write_to_trainer_docs_file(trainer, full_trainer_name)
 
@@ -171,3 +171,7 @@ def get_tracker_trainer_data():
         original_teams["1"].append(route)
     with open(os.path.join(output_file_path, 'Trainer_output.json'), 'w', encoding='utf-8') as f:
         json.dump(original_teams, f)
+
+if __name__ == "__main__":
+    get_trainer_doc_data()
+    get_tracker_trainer_data()
