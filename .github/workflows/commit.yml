@@ -21,7 +21,7 @@ jobs:
         API_TOKEN_GITHUB: ${{ secrets.DENMARK_GAMEDATA_AUTOMATION_TOKEN }}
       with:
         source_file: 'Python_tasks/output'
-        destination_branch: 'Trainer-teams'
+        destination_branch: 'Trainer-Teams'
         destination_repo: 'TeamLumi/LumiPlat_NuzlockeTracker'
         destination_folder: './'
         user_email: '<support+actions@github.com>'
