@@ -170,5 +170,3 @@ def get_tracker_trainer_data():
         original_teams["1"].append(route)
     with open(os.path.join(output_file_path, 'Trainer_output.json'), 'w', encoding='utf-8') as f:
         json.dump(original_teams, f)
-
-get_tracker_trainer_data()

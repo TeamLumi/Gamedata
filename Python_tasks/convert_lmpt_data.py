@@ -383,6 +383,3 @@ def getPokedexInfo():
     with open(os.path.join(output_file_path, "pokedex_info.json"), "w", encoding="utf-8") as output:
         json.dump(pokedex, output, ensure_ascii=False)
     return pokedex
-
-getPokedexInfo()
-getEncounterData()
