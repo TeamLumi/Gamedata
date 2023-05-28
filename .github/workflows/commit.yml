@@ -3,7 +3,7 @@ name: Send updates to dependent repo
 on:
   push:
     branches: 
-      - main
+      - Source-Of-Truth
 
 jobs:
   update-tracker:
@@ -17,29 +17,29 @@ jobs:
       env:
         API_TOKEN_GITHUB: ${{ secrets.DENMARK_GAMEDATA_AUTOMATION_TOKEN }}
       with:
-        source_file: 'input'
-        destination_branch: 'master'
+        source_file: 'Python_tasks/output'
+        destination_branch: 'Trainer-teams'
         destination_repo: 'TeamLumi/LumiPlat_NuzlockeTracker'
         destination_folder: './'
         user_email: '<support+actions@github.com>'
         user_name: 'github-actions-bot'
         commit_message: 'Updating gamedata files'
-        
-  update-calc:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v2
 
-    - name: Pushes test file
-      uses: TeamLumi/Gamedata@main
-      env:
-        API_TOKEN_GITHUB: ${{ secrets.DENMARK_AUTOMATION_TOKEN }}
-      with:
-        source_file: 'input'
-        destination_branch: 'master'
-        destination_repo: 'Denmark14/lumi-calc'
-        destination_folder: './'
-        user_email: '<support+actions@github.com>'
-        user_name: 'github-actions-bot'
-        commit_message: 'Updating gamedata files'
+#  update-calc:
+#    runs-on: ubuntu-latest
+#    steps:
+#    - name: Checkout
+#      uses: actions/checkout@v2
+#
+#    - name: Pushes test file
+#      uses: TeamLumi/Gamedata@main
+#      env:
+#        API_TOKEN_GITHUB: ${{ secrets.DENMARK_AUTOMATION_TOKEN }}
+#      with:
+#        source_file: 'input'
+#        destination_branch: 'master'
+#        destination_repo: 'Denmark14/lumi-calc'
+#        destination_folder: './'
+#        user_email: '<support+actions@github.com>'
+#        user_name: 'github-actions-bot'
+#        commit_message: 'Updating gamedata files'
