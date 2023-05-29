@@ -10,6 +10,7 @@ from pokemonUtils import get_ability_string, get_pokemon_name, get_form_name, ge
 repo_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 input_file_path = os.path.join(repo_file_path, 'input')
 resources_filepath = os.path.join(repo_file_path, "Python_tasks", "Resources")
+debug_file_path = os.path.join(repo_file_path, "Python_tasks", "Debug")
 honeywork_cpp_filepath = os.path.join(input_file_path, "honeywork.cpp")
 honeyroutes_filepath = os.path.join(repo_file_path, "Python_tasks", "Resources", "honeyroutes.json")
 output_file_path = os.path.join(repo_file_path, "Python_tasks", "output")
@@ -226,7 +227,7 @@ def getEncounterData():
     my_keys.sort(key = lambda x: int(x.split('-')[1]))
     sorted_encounters = {i: encounter_list[i] for i in my_keys}
 
-    with open(os.path.join(output_file_path, 'bad_encounters.json'), 'w') as output:
+    with open(os.path.join(debug_file_path, 'bad_encounters.json'), 'w') as output:
         output.write(json.dumps(bad_encounters, default=tuple))
     with open(os.path.join(output_file_path, 'Encounter_output.json'), 'w') as output:
         output.write(json.dumps(sorted_encounters))
@@ -337,7 +338,7 @@ def pathfinding():
             if path_element not in new_path:
                 new_path.append(path_element)
         evolve[pokemon]["path"] = new_path
-    with open(os.path.join(output_file_path, "evolution.json"), "w", encoding = "utf-8") as output:
+    with open(os.path.join(debug_file_path, "evolution.json"), "w", encoding = "utf-8") as output:
         json.dump(evolve, output, ensure_ascii=False)
     return evolve
 

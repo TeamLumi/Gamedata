@@ -36,5 +36,5 @@ def find_missing_trainers(trainers):
     return {'volkners': volkners, 'missingTrainers': missing_trainers}
 
 result = find_missing_trainers(BDSP_Trainers)
-with open(os.path.join(parent_file_path, 'output', 'missingTrainers.json'), 'w') as f:
+with open(os.path.join(parent_file_path, 'Debug', 'missingTrainers.json'), 'w') as f:
     json.dump(result['missingTrainers'], f, indent=2)

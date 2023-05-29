@@ -7,7 +7,7 @@ import constants
 repo_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 parent_file_path = os.path.abspath(os.path.dirname(__file__))
 input_file_path = os.path.join(repo_file_path, 'input')
-output_file_path =os.path.join(parent_file_path, "output")
+debug_file_path =os.path.join(parent_file_path, "Debug")
 resources_file_path = os.path.join(parent_file_path, "Resources")
 name_routes_file_path = os.path.join(resources_file_path, "NameRoutes.json")
 special_trainer_name_file_path = os.path.join(resources_file_path, "SpecialTrainerNames.json")
@@ -585,6 +585,6 @@ def process_files(folder_path, callback):
         ordered_battle = {key: battle[key] for key in constants.DESIRED_ORDER}
         trainer_data.append(ordered_battle)
     sorted_data = sorted(trainer_data, key=itemgetter('zoneId', 'trainerId'))
-    with open(os.path.join(output_file_path, 'trainer_info.json'), 'w', encoding='utf-8') as f:
+    with open(os.path.join(debug_file_path, 'trainer_info.json'), 'w', encoding='utf-8') as f:
         json.dump(sorted_data, f)
     return sorted_data

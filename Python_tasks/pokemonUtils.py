@@ -4,8 +4,8 @@ import unicodedata
 import re 
 
 parent_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-output_file_path =os.path.join(parent_file_path, "Python_tasks", "output")
 input_file_path = os.path.join(parent_file_path, 'input')
+debug_file_path = os.path.join(parent_file_path, "Python_tasks", "Debug")
 namedata_file_path = os.path.join(input_file_path, 'english_ss_monsname.json')
 ability_namedata_file_path = os.path.join(input_file_path, 'english_ss_tokusei.json')
 type_namedata_file_path = os.path.join(input_file_path, 'english_ss_typename.json')
@@ -486,7 +486,7 @@ def create_diff_forms_dictionary(form_dict):
                     tracker_monsno = int(mons_no)
                 
                 diff_forms[current_pokemon_name + (str(idx or 1)) ] = [tracker_monsno, mon, slugify(mon), mons_no, idx or 1]
-    with open(os.path.join(output_file_path, "diff_forms_output.json"), "w", encoding="utf-8") as output:
+    with open(os.path.join(debug_file_path, "diff_forms_output.json"), "w", encoding="utf-8") as output:
         json.dump(diff_forms, output, ensure_ascii=False)
     return diff_forms
 
