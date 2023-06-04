@@ -24,6 +24,11 @@ with open(trainer_table_file_path, mode='r', encoding="utf-8") as f:
     TRAINER_TABLE = json.load(f)
 
 def get_trainer_pokemon(trainerId, output_format):
+    '''
+    Using the get_pokemon_from_trainer_info from pokemonUtils
+    Requires the trainerId and the output_format being either "Scripted" or "Place Data"
+    Those are referenced in Constants.py
+    '''
    
     pokemon_list = []
     trainer = next((t for t in TRAINER_TABLE["TrainerPoke"] if t["ID"] == trainerId), None)
@@ -33,12 +38,16 @@ def get_trainer_pokemon(trainerId, output_format):
 
 def sort_dicts_by_key(dicts_list, sort_key1, sort_key2, sort_key1_order):
     """
-    Sorts a list of dictionaries by two given keys in ascending order.
-    The sorting order of the first key is specified by a separate list.
+    Sorts a list of dictionaries by two given keys in ascending order
+    The sorting order of the first key is specified by ZONE_ORDER in Constants.py
     """
     return sorted(dicts_list, key=lambda x: (sort_key1_order.index(x[sort_key1]), x[sort_key2]))
 
 def get_avg_trainer_level(trainer_team):
+    '''
+    Requires the full trainer's team
+    This function counts the mons, add the levels of those mons together and returns the average
+    '''
     mon_count = len(trainer_team)
     if len(trainer_team) == 0:
         print("Trainer is less than 1")
@@ -50,8 +59,12 @@ def get_avg_trainer_level(trainer_team):
     return trainer_avg
 
 def sort_trainers_by_level(trainer_info):
+    '''
+    Requires the trainer_info from the process_files function or trainer_info.json
+    Adds the trainer's team and average level to trainer_info
+    Calls the sort_dicts_by_key function and sorts the trainers by zoneName then average level
+    '''
     for trainer in trainer_info:
-        zoneName = trainer['zoneName']
         trainerId = trainer['trainerId']
         trainer['team'] = get_trainer_pokemon(trainerId, "Docs")
         trainer['avg_lvl'] = get_avg_trainer_level(trainer['team'])
@@ -59,6 +72,12 @@ def sort_trainers_by_level(trainer_info):
     return sorted_trainers_by_level
 
 def sort_trainers_by_route(trainer_info):
+    '''
+    Requires the trainer_info from the process_files function or trainer_info.json
+    Calls the sort_dicts_by_key function and sorts the trainers by zoneName then trainerId
+    Adds the trainer's team to trainer_info
+    Adds each trainer to an `areaName: trainer_info` dictionary for use later
+    '''
     sorted_trainers_by_key = sort_dicts_by_key(trainer_info, 'zoneName', 'trainerId', constants.ZONE_ORDER)
     sorted_trainers_by_route = {}
     for trainer in sorted_trainers_by_key:
@@ -71,29 +90,39 @@ def sort_trainers_by_route(trainer_info):
             sorted_trainers_by_route[areaName].append(trainer)
     return sorted_trainers_by_route
 
-def get_trainer_name(name, zone_name, TRAINER_INDEX):
-    if re.findall(constants.TEAM_REGEX, name):
-        split_name = name.split()
+def get_trainer_name(trainer_name, zone_name, TRAINER_INDEX=0):
+    '''
+    Requires trainer's name, zone name with optional trainer index
+    Finds if there is team already in the trainer's name and adds zone_name in the middle
+    If there is a TRAINER_INDEX, then it adds that value to the end of the name
+    If there isn't any of those, it returns the trainer name with zone name
+    '''
+    if re.findall(constants.TEAM_REGEX, trainer_name):
+        split_name = trainer_name.split()
         trainer_name = ' '.join(split_name[:-2])
         team_name = ' '.join(split_name[-2:])
         updated_name = f"{trainer_name} ({zone_name}) [{team_name}]"
-        return [name, updated_name]
+        return [trainer_name, updated_name]
     if TRAINER_INDEX > 0:
-        updated_name = f"{name} {TRAINER_INDEX} ({zone_name})"
-        name = f"{name} {TRAINER_INDEX}"
+        updated_name = f"{trainer_name} {TRAINER_INDEX} ({zone_name})"
+        name = f"{trainer_name} {TRAINER_INDEX}"
         return [name, updated_name]
-    updated_name = f"{name} ({zone_name})"
-    return [name, updated_name]
+    updated_name = f"{trainer_name} ({zone_name})"
+    return [trainer_name, updated_name]
 
 def write_to_trainer_docs_file(trainer, trainer_name):
+    '''
+    Requires the trainer info and trainer's full name from get_trainer_name
+    Writes lines to trainer_doc_output.txt for use in Solarance's Trainer Docs c/p file
+    '''
     trainerId = trainer['trainerId']
     rematch = trainer['rematch']
-    format_ = f"Format: {trainer['format']}"
+    battle_format = f"Format: {trainer['format']}"
     link = trainer['link']
     team = trainer['team']
     level_cap = "Level Cap:"
     with open(trainer_doc_data_file_path, "a") as f:
-        f.write(f"{trainerId}\n{trainer_name}\n{level_cap}\n{format_}\n")
+        f.write(f"{trainerId}\n{trainer_name}\n{level_cap}\n{battle_format}\n")
         for mon in team:
             f.write(f"\n{get_pokemon_name(mon['id'])}\n{mon['level']}\n{mon['nature']}\n{mon['ability']}\n\n{mon['item']}\n")
             for index in range(0,4):
@@ -105,25 +134,34 @@ def write_to_trainer_docs_file(trainer, trainer_name):
         else:
             f.write(f"{link}\n\n")
 
-def write_trainer_docs(sorted_trainers):
+def write_trainer_docs(trainer_list):
+    '''
+    Requires the full list of trainers from trainer_info.json or process_files
+    This opens the trainer_doc_output.txt and deletes anything there first.
+    This will then write every trainer to the trainer_doc_output.txt
+    '''
     with open(trainer_doc_data_file_path, "w") as f:
         f.write("Trainer Documentation\n")
-    for trainer in sorted_trainers:
-        
+    for trainer in trainer_list:
+
         zone_name = trainer['zoneName']
         name = f"{trainer['type']} {trainer['name']}"
-        full_trainer_name = get_trainer_name(name, zone_name, 0)[0]
+        full_trainer_name = get_trainer_name(name, zone_name)[0]
 
         write_to_trainer_docs_file(trainer, full_trainer_name)
 
 
-def write_tracker_docs(sorted_tracker_trainers):
+def write_tracker_docs(trainers_list):
+    '''
+    Requires the trainers sorted for the Nuzlocke Tracker
+    This formats all of the trainers for use in the Tracker
+    '''
     all_trainers = []
     
-    for zone in sorted_tracker_trainers.keys():
+    for zone in trainers_list.keys():
         zone_trainers = []
         TRAINER_INDEX = 0
-        for trainer in sorted_tracker_trainers[zone]:
+        for trainer in trainers_list[zone]:
             zone_trainer = {}
             zone_name = f"{trainer['zoneName']} Trainers"
             zone_id = trainer['zoneId']
@@ -148,9 +186,7 @@ def write_tracker_docs(sorted_tracker_trainers):
 
 def get_trainer_doc_data():
     '''
-    Sort the trainers by route and then ID and sort the routes by average trainer level on route
-    Well if you'd like I can establish an order without boss trainers and rematches and then make everything align to that first established order.
-
+    This gets the trainer documentation for Solarnce's Trainer Docs in the Google Sheets
     '''
 
     trainer_info = process_files(os.path.join(repo_file_path, "scriptdata"), parse_ev_script_file)
@@ -161,7 +197,9 @@ def get_trainer_doc_data():
     print("Done")
 
 def get_tracker_trainer_data():
-
+    '''
+    This gets all of the trainer data for the tracker sorted by routes
+    '''
     original_teams = getTrainerData(gym_leader_data)
     trainer_info = process_files(os.path.join(repo_file_path, "scriptdata"), parse_ev_script_file)
 
