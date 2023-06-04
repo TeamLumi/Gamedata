@@ -72,6 +72,9 @@ with open(area_name_file_path, mode='r', encoding="utf-8") as f:
     area_names = json.load(f)
 
 def get_trainer_name(label_name):
+    '''
+    
+    '''
     label_data_array = trainer_names['labelDataArray']
     match = next((e for e in label_data_array if e['labelName'] == label_name), None)
     return match['wordDataArray'][0]['str'] if match else None
@@ -244,8 +247,16 @@ def get_trainer_data(zoneID, trainerID, method):
     for name, route in name_routes.items():
         if areaName in route:
             areaName = name
-    if areaName == constants.GALACTIC_HQ:
-        areaName = constants.GALACTIC_HQ_TRACKER_VAR
+    tracker_vars = {
+        constants.GALACTIC_HQ: constants.GALACTIC_HQ_TRACKER_VAR,
+        constants.LEAGUE: constants.LEAGUE_TRACKER_VAR,
+        constants.RENEGADE: constants.RENEGADE_TRACKER_VAR,
+        constants.DISTORTION: constants.DISTORTION_TRACKER_VAR
+    }
+    if areaName in tracker_vars.keys():
+        areaName = tracker_vars.get(areaName, areaName)
+    if not areaName.startswith("lmpt"):
+        print(areaName)
     trainer = {
         'areaName': areaName,
         'zoneName': zoneName,
@@ -297,7 +308,7 @@ def parse_randomized_teams(file_path, lookup, count, type):
 
 def get_support_trainers_data(file_path, area_name, support_name, zoneID):
     """
-    The purpose of this function is to get the support trainers data for Multi Battles
+    The purpose of this function is to get the support trainers data for Multi Battles and standard battles
     """
     def get_bad_support_IDs(support_name, file_path):
         '''

@@ -5,8 +5,17 @@ E4_AREA_NAME = "C10"
 ROOM_AREA_NAME = "R0101"
 SINGLE_FORMAT = "Single"
 DOUBLE_FORMAT = "Double"
+
+# Tracker Variables
 GALACTIC_HQ = "Galactic HQ"
 GALACTIC_HQ_TRACKER_VAR = "lmpt-33"
+LEAGUE = 'Pokemon League'
+LEAGUE_TRACKER_VAR = 'lmpt-61'
+RENEGADE = "Renegade Park"
+RENEGADE_TRACKER_VAR = "lmpt-45" #This is Route 221 since there are no encounters in Renegade Park
+DISTORTION = "Distortion Room"
+DISTORTION_TRACKER_VAR = 'lmpt-56' #This is for Spear Pillar bc no encounters in Distortion Room
+
 STARTERS = ["piplup", "turtwig", "chimchar"]
 MASTER_TRAINER_TYPES = ["fire", "water", "electric", "grass", "ice", "fighting", "poison", "ground", "flying", "psychic", "bug", "rock", "ghost", "dragon", "dark", "steel", "fairy"]
 CELEBI = "Celebi"
