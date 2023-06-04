@@ -110,10 +110,29 @@ def get_trainer_name(trainer_name, zone_name, TRAINER_INDEX=0):
     updated_name = f"{trainer_name} ({zone_name})"
     return [trainer_name, updated_name]
 
+def get_trainer_doc_moves(moves, index):
+    '''
+    Requires the full list of moves per pokemon and the index of each move
+    '''
+    if index < len(moves):
+        return f"{moves[index]}\n"
+    return f"(No Move)\n"
+
+def write_trainer_docs_team_format(pokemon):
+    '''
+    Requires each pokemon from a trainer's team in write_to_trainer_docs_file function
+    Returns the format for the header, ivs and evs of each pokemon
+    '''
+    pokemon_header = f"\n{get_pokemon_name(mon['id'])}\n{mon['level']}\n{mon['nature']}\n{mon['ability']}\n\n{mon['item']}\n"
+    pokemon_ivs = f"{mon['ivhp']}/{mon['ivatk']}/{mon['ivdef']}/{mon['ivspatk']}/{mon['ivspdef']}/{mon['ivspeed']}\n"
+    pokemon_evs = f"{mon['evhp']}/{mon['evatk']}/{mon['evdef']}/{mon['evspatk']}/{mon['evspdef']}/{mon['evspeed']}\n"
+
+    return pokemon_header, pokemon_ivs, pokemon_evs
+
 def write_to_trainer_docs_file(trainer, trainer_name):
     '''
     Requires the trainer info and trainer's full name from get_trainer_name
-    Writes lines to trainer_doc_output.txt for use in Solarance's Trainer Docs c/p file
+    Writes lines to trainer_doc_output.txt for Solarnce to c/p into the Trainer Docs Google Sheet
     '''
     trainerId = trainer['trainerId']
     rematch = trainer['rematch']
@@ -124,11 +143,14 @@ def write_to_trainer_docs_file(trainer, trainer_name):
     with open(trainer_doc_data_file_path, "a") as f:
         f.write(f"{trainerId}\n{trainer_name}\n{level_cap}\n{battle_format}\n")
         for mon in team:
-            f.write(f"\n{get_pokemon_name(mon['id'])}\n{mon['level']}\n{mon['nature']}\n{mon['ability']}\n\n{mon['item']}\n")
-            for index in range(0,4):
-                f.write(f"{mon['moves'][index] if index < len(mon['moves']) else '(No Move)'}\n")
-            f.write(f"{mon['ivhp']}/{mon['ivatk']}/{mon['ivdef']}/{mon['ivspatk']}/{mon['ivspdef']}/{mon['ivspeed']}\n")
-            f.write(f"{mon['evhp']}/{mon['evatk']}/{mon['evdef']}/{mon['evspatk']}/{mon['evspdef']}/{mon['evspeed']}\n")
+            mon_header, mon_ivs, mon_evs = write_trainer_docs_team_format(mon)
+            moves = mon['moves']
+
+            f.write(mon_header)
+            for index in range(len(moves)):
+                f.write(get_trainer_doc_moves(moves, index))
+            f.write(mon_ivs)
+            f.write(mon_evs)
         if link != '':
             f.write(f"Paired with {link}\n\n")
         else:
