@@ -140,7 +140,6 @@
     "Lanturn",
     "Magikarp",
     "Magnemite",
-    "Minun",
     "Munchlax",
     "Pachirisu",
     "Plusle",
@@ -179,7 +178,6 @@
     "Minun",
     "Pachirisu",
     "Pidgey",
-    "Plusle",
     "Shellder",
     "Shellos",
     "Slowpoke",
@@ -192,10 +190,8 @@
     "Yanma"
   ],
   "lmpt-18": [
-    "Beautifly",
     "Beedrill",
     "Buneary",
-    "Dustox",
     "Misdreavus",
     "Murkrow",
     "Nincada",
@@ -203,7 +199,8 @@
     "Shroomish",
     "Slakoth",
     "Stantler",
-    "Taillow"
+    "Taillow",
+    "Wurmple"
   ],
   "lmpt-20": [
     "Duskull",
@@ -472,11 +469,9 @@
     "Tangela",
     "Toxicroak",
     "Tropius",
-    "Ursaring",
     "Whiscash",
     "Wooper",
-    "Yanma",
-    "Yanmega"
+    "Yanma"
   ],
   "lmpt-39": [
     "Azurill",
@@ -585,7 +580,6 @@
   ],
   "lmpt-44": [
     "Corsola",
-    "Floatzel",
     "Galarian Slowbro",
     "Horsea",
     "Luvdisc",
@@ -779,7 +773,6 @@
     "Pelipper",
     "Purugly",
     "Remoraid",
-    "Shinx",
     "Snorlax",
     "Tangela",
     "Tentacool",
@@ -882,7 +875,6 @@
     "Teddiursa",
     "Toxicroak",
     "Weepinbell",
-    "Weezing",
     "Whiscash",
     "Wooper"
   ],
@@ -1028,6 +1020,7 @@
     "Dugtrio",
     "Gabite",
     "Gyarados",
+    "Hippopotas",
     "Hippowdon",
     "Houndour",
     "Magikarp",
@@ -1099,7 +1092,6 @@
   "lmpt-82": [
     "Banette",
     "Bronzong",
-    "Bronzor",
     "Chimecho",
     "Dusclops",
     "Golbat",

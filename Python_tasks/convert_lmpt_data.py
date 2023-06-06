@@ -3,6 +3,7 @@ import json
 import os
 import csv
 import unicodedata
+import copy
 from collections import defaultdict
 from pokemonUtils import get_ability_string, get_pokemon_name, get_form_name, get_item_string, get_pokemon_name_dictionary, get_pokemon_info, get_nature_name, GenForms, get_form_pokemon_personal_id, create_diff_forms_dictionary, isSpecialPokemon, get_pokemon_from_trainer_info
 
@@ -198,11 +199,43 @@ def update_routes_with_mons(monsno, zoneID, encounters):
     else:
         get_diff_form_mons(monsno, zoneID, encounters)
 
+final_list = {}
+
+def check_mons_list(pokemon_list, zoneID):
+    original_list = []
+    missing_list = []
+    for mon in pokemon_list:
+        if mon[1] == 'ground_mons' or mon[1] == 'day' or mon[1] == 'night':
+            original_list.append(mon[0])
+
+    active_list = copy.deepcopy(original_list)
+    radar_count = 0
+    active_list[9] = active_list[1]
+    active_list[10] = active_list[4]
+    active_list[11] = active_list[5]
+    for mon in pokemon_list:
+        if mon[1] == 'swayGrass' and mon[2] == 3:
+            active_list[1] = mon
+        if mon[1].startswith('gba') and mon[2] != 2 and radar_count < 2:
+            radar_count += 1
+            if radar_count == 1:
+                active_list[4] = mon
+            if radar_count == 2:
+                active_list[5] = mon
+    for mon in original_list:
+        if mon not in active_list:
+            missing_list.append(get_pokemon_name(mon))
+    unique_list = list(set(missing_list))
+    if len(unique_list) > 0 and zoneID not in final_list.keys():
+        final_list[pokemon_list[0][3]] = unique_list
+
 def getEncounterData():
     encounter_data, pokedex = ( full_data["raw_encounters"], full_data['pokedex'] )
 
     encounter_list = defaultdict(list)
     for area in encounter_data['table']:
+        mon_route_list = []
+        zoneID = area['zoneID']
         for key in area.keys():
             if type(area[key]) == int:
                 continue
@@ -210,9 +243,10 @@ def getEncounterData():
                 continue
             for mon in area[key]:
                 monsno = mon['monsNo']
-                zoneID = area['zoneID']
+                mon_route_list.append([monsno, key, area[key].index(mon), zoneID])
                 update_routes_with_mons(monsno, zoneID, encounter_list)
-
+        check_mons_list(mon_route_list, zoneID)
+    print(final_list)
     ##This is for adding the Trophy Garden daily mons
     for mon in encounter_data['urayama']:
         encounter_list['lmpt-39'].append(pokedex[str(mon['monsNo'])])
@@ -228,9 +262,9 @@ def getEncounterData():
     sorted_encounters = {i: encounter_list[i] for i in my_keys}
 
     with open(os.path.join(debug_file_path, 'bad_encounters.json'), 'w') as output:
-        output.write(json.dumps(bad_encounters, default=tuple))
+        output.write(json.dumps(bad_encounters, default=tuple, indent=2))
     with open(os.path.join(output_file_path, 'Encounter_output.json'), 'w') as output:
-        output.write(json.dumps(sorted_encounters))
+        output.write(json.dumps(sorted_encounters, indent=2))
 
 def pathfinding():
     with open(os.path.join(input_file_path, 'EvolveTable.json'), "r", encoding="utf-8") as f:
@@ -339,7 +373,7 @@ def pathfinding():
                 new_path.append(path_element)
         evolve[pokemon]["path"] = new_path
     with open(os.path.join(debug_file_path, "evolution.json"), "w", encoding = "utf-8") as output:
-        json.dump(evolve, output, ensure_ascii=False)
+        json.dump(evolve, output, ensure_ascii=False, indent=2)
     return evolve
 
 def get_mon_dex_info(pokemon, evolve):
@@ -382,7 +416,7 @@ def getPokedexInfo():
         pokedex.append(dex_info)
 
     with open(os.path.join(output_file_path, "pokedex_info.json"), "w", encoding="utf-8") as output:
-        json.dump(pokedex, output, ensure_ascii=False)
+        json.dump(pokedex, output, ensure_ascii=False, indent=2)
     return pokedex
 
 if __name__ == "__main__":
