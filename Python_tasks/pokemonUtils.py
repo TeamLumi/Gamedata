@@ -113,7 +113,7 @@ def get_types(e):
         return [get_type_name(e['type1'])]
     else:
         return [get_type_name(e['type1']), get_type_name(e['type2'])]
-    
+
 def get_type_name(typeId):
     return type_namedata["labelDataArray"][typeId]["wordDataArray"][0]["str"]
 
@@ -121,11 +121,24 @@ def make_ability_object(ha):
     abilitiyString = ability_namedata["labelDataArray"][ha]["wordDataArray"][0]["str"]
     return {0: abilitiyString}
 
+def convert_lumi_formula_mon(lumi_mons_no):
+    pokedex = get_lumi_data(name_data, get_pokemon_name)
+    diff_forms = create_diff_forms_dictionary(get_pokemon_name_dictionary())
+
+    form_no = lumi_mons_no//(2**16)
+    lumi_formula_mon = lumi_mons_no - (form_no * (2**16))
+    pkmn_key = pokedex[str(lumi_formula_mon)] + str(form_no)
+    mons_no = diff_forms[pkmn_key][0]
+    return mons_no
+
 def get_pokemon_name(mons_no = 0):
     try:
         pokemon_name = ""
         if mons_no < len(name_data["labelDataArray"]):
             pokemon_name = name_data["labelDataArray"][mons_no]["wordDataArray"][0]["str"]
+        elif mons_no > 2**16:
+            pokemon_id = convert_lumi_formula_mon(mons_no)
+            pokemon_name = get_form_name(pokemon_id)
         else:
             pokemon_name = get_form_name(mons_no)
 
