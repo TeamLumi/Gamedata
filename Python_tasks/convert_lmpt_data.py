@@ -6,6 +6,8 @@ import unicodedata
 import copy
 from collections import defaultdict
 from pokemonUtils import get_ability_string, get_pokemon_name, get_form_name, get_item_string, get_pokemon_name_dictionary, get_pokemon_info, get_nature_name, GenForms, get_form_pokemon_personal_id, create_diff_forms_dictionary, isSpecialPokemon, get_pokemon_from_trainer_info
+from data_checks import check_bad_encounter, check_mons_list
+from load_files import load_data
 
 # Get the repo file path for cleaner path generating
 repo_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
@@ -16,60 +18,12 @@ honeywork_cpp_filepath = os.path.join(input_file_path, "honeywork.cpp")
 honeyroutes_filepath = os.path.join(repo_file_path, "Python_tasks", "Resources", "honeyroutes.json")
 output_file_path = os.path.join(repo_file_path, "Python_tasks", "output")
 gym_leader_file_path = os.path.join(resources_filepath, "NewGymLeaders.json")
-POKEMON_NAMES = get_pokemon_name_dictionary()
 bad_encounters = []
 final_list = {}
+full_data = load_data()
 
 with open(gym_leader_file_path, mode='r', encoding="utf-8") as f:
     gym_leader_data = json.load(f)
-
-def get_lumi_data(raw_data, callback):
-    data = {}
-    for (idx, _) in enumerate(raw_data["labelDataArray"]):
-        data[str(idx)] = callback(idx)
-    return data
-
-def getTrainerIdsFromDocumentation():
-    doc_filepath = os.path.join(input_file_path, "docs.csv")
-    trainer_IDs = []
-    with open(doc_filepath, "r")as doc_csv:
-        csvreader = csv.reader(doc_csv)
-        for row in csvreader:
-            if row[0].isdigit():
-                trainer_IDs.append(int(row[0]))
-        return trainer_IDs
-
-def load_json_from_file(filepath):
-    with open(filepath, "r", encoding="utf-8") as f:
-        return json.load(f)
-
-def load_data():
-    data = {}
-    files = {
-        "raw_encounters": os.path.join(input_file_path, "FieldEncountTable_d.json"),
-        "raw_trainer_data": os.path.join(input_file_path, "TrainerTable.json"),
-        "raw_abilities": os.path.join(input_file_path, "english_ss_tokusei.json"),
-        "raw_pokedex": os.path.join(input_file_path, "english_ss_monsname.json"),
-        "raw_items": os.path.join(input_file_path, "english_ss_itemname.json"),
-        "routes": os.path.join(resources_filepath, "Routes.json"),
-        "name_routes": os.path.join(resources_filepath, "NameRoutes.json"),
-        "honey_routes": os.path.join(resources_filepath, "honeyroutes.json"),
-        "trainer_names": os.path.join(input_file_path, 'english_dp_trainers_name.json'),
-        "trainer_labels": os.path.join(input_file_path, 'english_dp_trainers_type.json'),
-        "rates": os.path.join(resources_filepath, 'Rates.json')
-    }
-    for name, filepath in files.items():
-        data[name] = load_json_from_file(filepath)
-
-    data["abilities"] = get_lumi_data(data["raw_abilities"], get_ability_string)
-    data["pokedex"] = get_lumi_data(data["raw_pokedex"], get_pokemon_name)
-    data["items"] = get_lumi_data(data["raw_items"], get_item_string)
-    data["diff_forms"] = create_diff_forms_dictionary(POKEMON_NAMES)
-    data["trainer_ids"] = getTrainerIdsFromDocumentation()
-
-    return data
-
-full_data = load_data()
 
 def getTrainerData(gymLeaderList):
     trainer_data, abilityList, pokedex, itemList, diff_forms = (
@@ -148,23 +102,6 @@ def get_honey_tree_mons(routes):
             else:
                 routes[key].append(mon.capitalize())
 
-def bad_encounter_data(pkmn_name, routeName, route):
-    print('BAD ENCOUNTER', pkmn_name, routeName, route)
-    bad_encounters.append({pkmn_name, routeName, route})
-    return
-
-def check_bad_encounter(encounters, tracker_route, pkmn_key, lumi_formula_mon, temp_form_no, zoneID):
-    bad_encounter_list = ["Gigantamax", "Eternamax", "Mega ", "Totem "]
-    pokemonPersonalId = get_form_pokemon_personal_id(lumi_formula_mon, temp_form_no)
-    pokedex, name_routes, diff_forms = ( full_data["pokedex"], full_data['name_routes'], full_data['diff_forms'])
-
-    if pokemonPersonalId is not None and any(substring in get_form_name(pokemonPersonalId) for substring in bad_encounter_list):
-        bad_encounter_data(get_form_name(pokemonPersonalId), name_routes[tracker_route], zoneID)
-    elif pkmn_key not in diff_forms.keys():
-        bad_encounter_data(pokedex[str(lumi_formula_mon)], name_routes[tracker_route], zoneID)
-    else:
-        encounters[str(tracker_route)].append(diff_forms[pkmn_key][1])
-
 def get_diff_form_mons(monsno, zoneID, encounters):
     pokedex, routeNames = ( full_data["pokedex"], full_data["routes"] )
     formNo = monsno//(2**16)
@@ -179,7 +116,10 @@ def get_diff_form_mons(monsno, zoneID, encounters):
         if isSpecialPokemon(get_pokemon_name(int(lumi_formula_mon))):
             temp_form_no = 0
  
-        check_bad_encounter(encounters, tracker_route, pkmn_key, lumi_formula_mon, temp_form_no, zoneID)
+        check = check_bad_encounter(encounters, tracker_route, pkmn_key, lumi_formula_mon, temp_form_no, zoneID)
+        if check != -1:
+            bad_encounters.append(check)
+
 
 def get_standard_mons(monsno, zoneID, encounters):
     pokedex, routeNames = ( full_data["pokedex"], full_data["routes"] )
@@ -195,38 +135,6 @@ def update_routes_with_mons(monsno, zoneID, encounters):
         get_standard_mons(monsno, zoneID, encounters)
     else:
         get_diff_form_mons(monsno, zoneID, encounters)
-
-def check_mons_list(pokemon_list, zoneID):
-    original_list = []
-    missing_list = []
-    for mon in pokemon_list:
-        if mon[1] == 'ground_mons' or mon[1] == 'day' or mon[1] == 'night':
-            original_list.append(mon[0])
-    active_list = copy.deepcopy(original_list)
-    radar_count = 0
-    active_list[9] = active_list[1]
-    active_list[10] = active_list[4]
-    active_list[11] = active_list[5]
-    radar_list = {zoneID: []}
-    for mon in pokemon_list:
-        if mon[1] == 'swayGrass':
-            radar_list[zoneID].append(get_pokemon_name(mon[0]))
-            active_list[1] = mon[0]
-        if mon[1].startswith('gba') and mon[2] != 2 and radar_count < 2:
-            radar_count += 1
-            if radar_count == 1:
-                active_list[4] = mon[0]
-            if radar_count == 2:
-                active_list[5] = mon[0]
-    for mon in original_list:
-        if mon not in active_list:
-            missing_list.append(get_pokemon_name(mon))
-    unique_radar_list = list(set(radar_list[zoneID]))
-    if len(unique_radar_list) > 1:
-        print(radar_list)
-    unique_list = list(set(missing_list))
-    if len(unique_list) > 0 and zoneID not in final_list.keys():
-        final_list[pokemon_list[0][3]] = unique_list
 
 def get_standard_rates(monsNo, zoneID, encounters, method, method_index):
     route_rates = full_data['rates']
@@ -268,8 +176,12 @@ def get_diff_form_rates(monsNo, zoneID, encounters, method, method_index):
         temp_form_no = formNo
         if isSpecialPokemon(get_pokemon_name(int(lumi_formula_mon))):
             temp_form_no = 0
-        check_bad_encounter(encounters, tracker_route, pkmn_key, lumi_formula_mon, temp_form_no, zoneID)
-    
+
+        check = check_bad_encounter(encounters, tracker_route, pkmn_key, lumi_formula_mon, temp_form_no, zoneID)
+        if check != -1:
+            bad_encounters.append(check)
+            continue
+
         diff_forms_key = diff_forms[pkmn_key][1]
 
         if "gba" in new_method:
@@ -321,9 +233,11 @@ def getEncounterData():
             for mon in area[key]:
                 key_index = area[key].index(mon)
                 monsno = mon['monsNo']
-                check_mon_route_list.append([monsno, key, area[key].index(mon), zoneID])
+                check_mon_route_list.append([monsno, key, key_index, zoneID])
                 update_routes_with_mons(monsno, zoneID, encounter_list)
-        check_mons_list(check_mon_route_list, zoneID)
+        check = check_mons_list(check_mon_route_list, zoneID, final_list)
+        if check != -1:
+            final_list[zoneID] = check
 
     ##This is for adding the Trophy Garden daily mons
     for mon in encounter_data['urayama']:
