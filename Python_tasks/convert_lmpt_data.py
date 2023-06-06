@@ -18,6 +18,7 @@ output_file_path = os.path.join(repo_file_path, "Python_tasks", "output")
 gym_leader_file_path = os.path.join(resources_filepath, "NewGymLeaders.json")
 POKEMON_NAMES = get_pokemon_name_dictionary()
 bad_encounters = []
+final_list = {}
 
 with open(gym_leader_file_path, mode='r', encoding="utf-8") as f:
     gym_leader_data = json.load(f)
@@ -54,8 +55,8 @@ def load_data():
         "name_routes": os.path.join(resources_filepath, "NameRoutes.json"),
         "honey_routes": os.path.join(resources_filepath, "honeyroutes.json"),
         "trainer_names": os.path.join(input_file_path, 'english_dp_trainers_name.json'),
-        "trainer_labels": os.path.join(input_file_path, 'english_dp_trainers_type.json')
-
+        "trainer_labels": os.path.join(input_file_path, 'english_dp_trainers_type.json'),
+        "rates": os.path.join(resources_filepath, 'Rates.json')
     }
     for name, filepath in files.items():
         data[name] = load_json_from_file(filepath)
@@ -164,7 +165,6 @@ def check_bad_encounter(encounters, tracker_route, pkmn_key, lumi_formula_mon, t
     else:
         encounters[str(tracker_route)].append(diff_forms[pkmn_key][1])
 
-
 def get_diff_form_mons(monsno, zoneID, encounters):
     pokedex, routeNames = ( full_data["pokedex"], full_data["routes"] )
     formNo = monsno//(2**16)
@@ -178,7 +178,7 @@ def get_diff_form_mons(monsno, zoneID, encounters):
         temp_form_no = formNo
         if isSpecialPokemon(get_pokemon_name(int(lumi_formula_mon))):
             temp_form_no = 0
-
+ 
         check_bad_encounter(encounters, tracker_route, pkmn_key, lumi_formula_mon, temp_form_no, zoneID)
 
 def get_standard_mons(monsno, zoneID, encounters):
@@ -191,15 +191,10 @@ def get_standard_mons(monsno, zoneID, encounters):
         encounters[str(tracker_route)].append(pokedex[str(monsno)])
 
 def update_routes_with_mons(monsno, zoneID, encounters):
-    pokedex, routeNames = ( full_data["pokedex"], full_data["routes"] )
-
     if monsno < 2000:
         get_standard_mons(monsno, zoneID, encounters)
-
     else:
         get_diff_form_mons(monsno, zoneID, encounters)
-
-final_list = {}
 
 def check_mons_list(pokemon_list, zoneID):
     original_list = []
@@ -233,24 +228,103 @@ def check_mons_list(pokemon_list, zoneID):
     if len(unique_list) > 0 and zoneID not in final_list.keys():
         final_list[pokemon_list[0][3]] = unique_list
 
+def get_standard_rates(monsNo, zoneID, encounters, method, method_index):
+    route_rates = full_data['rates']
+    name_routes = full_data['name_routes']
+    pokedex = full_data['pokedex']
+    rates = full_data['rates']
+    new_method = method
+    pokemon_name = pokedex[str(monsNo)]
+    for tracker_route, route in name_routes.items():
+        if str(zoneID) not in route:
+            continue
+
+        if "gba" in new_method:
+            if method_index == 2:
+                new_method = "Surfing Incense"
+            else:
+                new_method = "Incense"
+        if new_method == "Surfing Incense":
+            rate = route_rates["Incense"][method_index]
+        else:
+            rate = route_rates[new_method][method_index]
+        if pokemon_name not in encounters.keys():
+            encounters[pokemon_name] = [[name_routes[tracker_route], new_method, rate, method_index]]
+        else:
+            if [name_routes[tracker_route], new_method, method_index, method_index] not in encounters[pokemon_name]:
+                encounters[pokemon_name].append([name_routes[tracker_route], new_method, rate, method_index])
+
+def get_diff_form_rates(monsNo, zoneID, encounters, method, method_index):
+    route_rates, name_routes, pokedex, diff_forms, rates = ( full_data['rates'], full_data['name_routes'], full_data['pokedex'], full_data['diff_forms'], full_data['rates'] )
+    new_method = method
+    formNo = monsNo//(2**16)
+    lumi_formula_mon = monsNo - (formNo * (2**16))
+    for tracker_route, route in name_routes.items():
+
+        if str(zoneID) not in route:
+            continue
+        pkmn_key = pokedex[str(lumi_formula_mon)] + str(formNo)
+
+        temp_form_no = formNo
+        if isSpecialPokemon(get_pokemon_name(int(lumi_formula_mon))):
+            temp_form_no = 0
+        check_bad_encounter(encounters, tracker_route, pkmn_key, lumi_formula_mon, temp_form_no, zoneID)
+    
+        diff_forms_key = diff_forms[pkmn_key][1]
+
+        if "gba" in new_method:
+            if method_index == 2:
+                new_method = "Surfing Incense"
+            else:
+                new_method = "Incense"
+        if new_method == "Surfing Incense":
+            rate = route_rates["Incense"][method_index]
+        else:
+            rate = route_rates[new_method][method_index]
+
+        if diff_forms_key not in encounters.keys():
+            encounters[diff_forms_key] = [[name_routes[tracker_route], new_method, rate, method_index]]
+        else:
+            if [name_routes[tracker_route], new_method, rate, method_index] not in encounters[diff_forms_key]:
+                encounters[diff_forms_key].append([name_routes[tracker_route], new_method, rate, method_index])
+
+def update_mons_rates(monsNo, zoneID, encounters, method, method_index):
+    if monsNo == 0:
+        return
+    if monsNo < 2000:
+        get_standard_rates(monsNo, zoneID, encounters, method, method_index)
+    else:
+        get_diff_form_rates(monsNo, zoneID, encounters, method, method_index)
+    pass
+
+def get_encounter_rates(route_mons, method, zoneID, encounters):
+    for mon in route_mons:
+        method_index = route_mons.index(mon)
+        monsNo = mon['monsNo']
+        update_mons_rates(monsNo, zoneID, encounters, method, method_index)
+    pass
+
 def getEncounterData():
     encounter_data, pokedex = ( full_data["raw_encounters"], full_data['pokedex'] )
 
     encounter_list = defaultdict(list)
+    rates_list = defaultdict((list))
     for area in encounter_data['table']:
-        mon_route_list = []
+        check_mon_route_list = []
         zoneID = area['zoneID']
         for key in area.keys():
             if type(area[key]) == int:
                 continue
             if type(area[key][0]) != dict:
                 continue
+            get_encounter_rates(area[key], key, zoneID, rates_list)
             for mon in area[key]:
+                key_index = area[key].index(mon)
                 monsno = mon['monsNo']
-                mon_route_list.append([monsno, key, area[key].index(mon), zoneID])
+                check_mon_route_list.append([monsno, key, area[key].index(mon), zoneID])
                 update_routes_with_mons(monsno, zoneID, encounter_list)
-        check_mons_list(mon_route_list, zoneID)
-    print(final_list)
+        check_mons_list(check_mon_route_list, zoneID)
+
     ##This is for adding the Trophy Garden daily mons
     for mon in encounter_data['urayama']:
         encounter_list['lmpt-39'].append(pokedex[str(mon['monsNo'])])
