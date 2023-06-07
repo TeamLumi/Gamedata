@@ -10,7 +10,7 @@ def bad_encounter_data(pkmn_name, routeName, route):
     bad_encounters.append({pkmn_name, routeName, route})
     return bad_encounters
 
-def check_bad_encounter(encounters, tracker_route, pkmn_key, lumi_formula_mon, temp_form_no, zoneID):
+def check_bad_encounter(encounters, tracker_route, pkmn_key, lumi_formula_mon, temp_form_no, zoneID, method=''):
     pokedex, name_routes, diff_forms = ( full_data["pokedex"], full_data['name_routes'], full_data['diff_forms'])
 
     bad_encounters = []
@@ -23,9 +23,11 @@ def check_bad_encounter(encounters, tracker_route, pkmn_key, lumi_formula_mon, t
     elif pkmn_key not in diff_forms.keys():
         bad_encounters.append(bad_encounter_data(pokedex[str(lumi_formula_mon)], name_routes[tracker_route], zoneID))
         return bad_encounters
-    else:
+    elif method == "Tracker":
         encounters[str(tracker_route)].append(diff_forms[pkmn_key][1])
         return -1
+    else:
+        return -2
 
 def check_mons_list(pokemon_list, zoneID, final_list):
     original_list = []
