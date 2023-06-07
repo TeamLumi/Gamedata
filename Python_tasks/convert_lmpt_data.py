@@ -220,6 +220,10 @@ def update_routes_with_mons(monsno, zoneID, encounters):
 def get_route_rate(method, method_index, route_rates):
     if method == "Surfing Incense":
         return route_rates["Incense"][method_index]
+    elif method == "tairyo":
+        return route_rates["tairyo"][0]
+    elif method == "swayGrass":
+        return route_rates["swayGrass"][3]
     return route_rates[method][method_index]
 
 def check_for_incense(method, method_index):
@@ -303,6 +307,8 @@ def get_encounter_rates(route_mons, method, zoneID, encounters):
         method_index = route_mons.index(mon)
         monsNo = mon['monsNo']
         maxlevel, minlevel = mon['maxlv'], mon['minlv']
+        if method == 'tairyo' and method_index == 1:
+            continue
         update_mons_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, method_index)
 
 def get_honey_tree_encounter_rates(rates_list):
