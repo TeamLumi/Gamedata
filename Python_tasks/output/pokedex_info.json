@@ -22723,7 +22723,8 @@
     "type": "BUG",
     "evolve": [
       1173,
-      1175
+      1175,
+      414
     ],
     "generation": 8,
     "abilities": [

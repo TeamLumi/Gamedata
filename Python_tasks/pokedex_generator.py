@@ -49,75 +49,75 @@ def add_forms(evolve, graph):
                     evolve[form_num]["path"] = remove_duplicates(evolution_path)
                     evolve[evolution]["path"] = remove_duplicates(evolution_path)
 
-def second_pathfind(pokemon, evolve, new_queue):
+def process_next_mon(queue, adjacent_nodes):
     forms = GenForms()
+    next_mon = adjacent_nodes[2]
+    next_form = adjacent_nodes[3]
+    form_format = get_form_format(next_mon, next_form)
+
+    if form_format in forms.keys():
+        next_mon = forms[form_format]
+        return next_mon, next_form
+    return next_mon, next_form
+
+def process_current_mon(queue):
+    forms = GenForms()
+
+    current_mon = queue.pop(0)
+    current_form = queue.pop(0)
+    form_format = get_form_format(current_mon, current_form)
+
+    if form_format in forms.keys():
+        current_mon = forms[form_format]
+
+    return current_mon
+
+def update_evolve_paths(evolve, current_mon, current_mon_path):
+    evolve[current_mon]["path"].append(current_mon)
+    evolve[current_mon]["path"] = list(dict.fromkeys(evolve[current_mon]["path"]))
+
+    for i in range(len(current_mon_path)):
+        evolve[current_mon_path[i]]["path"].append(current_mon)
+        evolve[current_mon_path[i]]["path"] = [x for j, x in enumerate(evolve[current_mon_path[i]]["path"]) if x not in evolve[current_mon_path[i]]["path"][:j]]
+
+def second_pathfind(pokemon, evolve, new_queue):
 
     while new_queue:
-        current_mon = new_queue.pop(0)
-        current_form = new_queue.pop(0)
-        form_format = get_form_format(current_mon, current_form)
-
-        if form_format in forms.keys():
-            current_mon = forms[form_format]
-
-        ### This section is for the current pokemon
+        current_mon = process_current_mon(new_queue)
         evolve[current_mon]["path"].append(pokemon)
-        evolve[current_mon]["path"].append(current_mon)
-        evolve[current_mon]["path"] = list(dict.fromkeys(evolve[current_mon]["path"]))
         current_mon_path = evolve[current_mon]["path"]
-
-        ### This section is for the first pokemon in the chain
-        evolve[current_mon_path[0]]["path"].append(current_mon)
-        evolve[current_mon_path[0]]["path"] = [x for i, x in enumerate(evolve[current_mon_path[0]]["path"]) if x not in evolve[current_mon_path[0]]["path"][:i]]
-
-        ### This section is for the second pokemon in the chain
-        if len(current_mon_path) > 1:
-            evolve[current_mon_path[1]]["path"].append(current_mon)
-            evolve[current_mon_path[1]]["path"] = [x for i, x in enumerate(evolve[current_mon_path[1]]["path"]) if x not in evolve[current_mon_path[1]]["path"][:i]]
-
-        if len(current_mon_path) > 2:
-            evolve[current_mon_path[2]]["path"].append(current_mon)
-            evolve[current_mon_path[2]]["path"] = [x for i, x in enumerate(evolve[current_mon_path[2]]["path"]) if x not in evolve[current_mon_path[2]]["path"][:i]]
-
-
+        update_evolve_paths(evolve, current_mon, current_mon_path)
 
 def first_pathfind(pokemon, evolve, graph, queue, new_queue):
-    forms = GenForms()
 
     while queue:
-        current_mon = queue.pop(0)
-        current_form = queue.pop(0)
-        form_format = get_form_format(current_mon, current_form)
-        if form_format in forms.keys():
-            current_mon = forms[form_format]
+        current_mon = process_current_mon(queue)
+        
         adjacent_nodes = graph[current_mon]["ar"]
-        if len(adjacent_nodes) != 0:
-            next_mon = adjacent_nodes[2]
-            next_form = adjacent_nodes[3]
-            form_format = get_form_format(next_mon, next_form)
+        if len(adjacent_nodes) == 0:
+            continue
+        
+        next_mon, next_form = process_next_mon(queue, adjacent_nodes)
 
-            if form_format in forms.keys():
-                next_mon = forms[form_format]
+        evolve[next_mon]["path"] = evolve[current_mon]["path"] + [next_mon]
+        for i in range(2, len(adjacent_nodes), 5):
+            new_queue.append(adjacent_nodes[i])
+            new_queue.append(adjacent_nodes[i + 1])
 
-            evolve[next_mon]["path"] = evolve[current_mon]["path"] + [next_mon]
-            for i in range(2, len(adjacent_nodes), 5):
-                new_queue.append(adjacent_nodes[i])
-                new_queue.append(adjacent_nodes[i + 1])
-                second_pathfind(pokemon, evolve, new_queue)
-
-                ### Dewpider (751) currently evolves into Dewpider and creates an infinite loop
-                ### These can be taken away once that is fixed
-                if current_mon != 751:
-                    new_queue.append(adjacent_nodes[i])
-                    new_queue.append(adjacent_nodes[i + 1])
+            second_pathfind(pokemon, evolve, new_queue)
 
             if current_mon != 751:
-                queue.append(next_mon)
-                queue.append(next_form)
+                new_queue.append(adjacent_nodes[i])
+                new_queue.append(adjacent_nodes[i + 1])
+
+        if current_mon != 751:
+            queue.append(next_mon)
+            queue.append(next_form)
 
         if not queue:
             queue = new_queue
             new_queue = []
+
     for extra in evolve[pokemon]["path"]:
         for i in range(0, len(graph[extra]["ar"]), 5):
             evolve[pokemon]["method"].append(graph[extra]["ar"][i])
@@ -186,9 +186,9 @@ def getPokedexInfo():
     for pokemon in evolutions.keys():
         if pokemon >= 1456:
             continue
-        evolve = evolutions[pokemon]["path"]
+        evolve_path = evolutions[pokemon]["path"]
         if pokemon < 906 or pokemon > 1010:
-            dex_info = get_mon_dex_info(pokemon, evolve)
+            dex_info = get_mon_dex_info(pokemon, evolve_path)
         pokedex.append(dex_info)
 
     with open(os.path.join(output_file_path, "pokedex_info.json"), "w", encoding="utf-8") as output:
