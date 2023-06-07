@@ -4009,7 +4009,23 @@
       1
     ]
   ],
-  "Farfetch'd": [
+  "Farfetch\u2019d": [
+    [
+      "Route 212 North",
+      "swayGrass",
+      "10%",
+      26,
+      26,
+      0
+    ],
+    [
+      "Route 221",
+      "ground_mons",
+      "5%",
+      40,
+      40,
+      6
+    ],
     [
       "Route 205 North",
       "Honey Tree",
@@ -4049,24 +4065,6 @@
       54,
       54,
       null
-    ]
-  ],
-  "Farfetch\u2019d": [
-    [
-      "Route 212 North",
-      "swayGrass",
-      "10%",
-      26,
-      26,
-      0
-    ],
-    [
-      "Route 221",
-      "ground_mons",
-      "5%",
-      40,
-      40,
-      6
     ]
   ],
   "Fearow": [
