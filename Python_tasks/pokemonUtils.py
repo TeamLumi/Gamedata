@@ -3,7 +3,7 @@ import os
 import re
 import unicodedata
 
-from MoveUtils import (get_moves, get_pokemon_learnset, get_tech_machine_learnset, get_egg_moves, get_grass_knot_power)
+from moveUtils import (get_moves, get_pokemon_learnset, get_tech_machine_learnset, get_egg_moves, get_grass_knot_power)
 
 parent_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 input_file_path = os.path.join(parent_file_path, 'input')
@@ -88,9 +88,6 @@ def make_ability_object(ha):
     return {0: abilitiyString}
 
 def convert_lumi_formula_mon(lumi_mons_no):
-    pokedex = get_lumi_data(name_data, get_pokemon_name)
-    diff_forms = create_diff_forms_dictionary(get_pokemon_name_dictionary())
-
     form_no = lumi_mons_no//(2**16)
     lumi_formula_mon = lumi_mons_no - (form_no * (2**16))
     pkmn_key = pokedex[str(lumi_formula_mon)] + str(form_no)
@@ -388,3 +385,7 @@ def get_pokemon_from_trainer_info(trainer, output_format):
         }
         pokemon_list.append(pokemon)
     return pokemon_list
+
+if __name__ != '__main__':
+    pokedex = get_lumi_data(name_data, get_pokemon_name)
+    diff_forms = create_diff_forms_dictionary(get_pokemon_name_dictionary())
