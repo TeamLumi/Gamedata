@@ -4,21 +4,12 @@ import re
 from operator import itemgetter
 
 import constants
+from load_files import load_data
 
 repo_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 parent_file_path = os.path.abspath(os.path.dirname(__file__))
 input_file_path = os.path.join(repo_file_path, 'input')
 debug_file_path =os.path.join(parent_file_path, "Debug")
-resources_file_path = os.path.join(parent_file_path, "Resources")
-name_routes_file_path = os.path.join(resources_file_path, "NameRoutes.json")
-special_trainer_name_file_path = os.path.join(resources_file_path, "SpecialTrainerNames.json")
-
-trainers_file_path = os.path.join(input_file_path, 'english_dp_trainers_name.json')
-map_info_file_path = os.path.join(input_file_path, 'MapInfo.json')
-area_name_file_path = os.path.join(input_file_path, 'english_dp_fld_areaname.json')
-area_display_file_path = os.path.join(input_file_path, 'english_dp_fld_areaname_display.json')
-trainer_labels_file_path = os.path.join(input_file_path, 'english_dp_trainers_type.json')
-trainer_table_file_path = os.path.join(input_file_path, 'TrainerTable.json')
 
 areas_file_path = os.path.join(input_file_path, 'areas_copy.csv')
 
@@ -48,30 +39,6 @@ class SupportTrainerError(Exception):
 with open(areas_file_path, encoding="utf-8") as f:
     areas = [line.strip().split(',') for line in f.readlines()]
 
-with open(trainer_table_file_path, mode='r', encoding="utf-8") as f:
-    TRAINER_TABLE = json.load(f)
-
-with open(special_trainer_name_file_path, mode='r', encoding="utf-8") as f:
-    special_trainer_names = json.load(f)
-
-with open(name_routes_file_path, mode='r', encoding="utf-8") as f:
-    name_routes = json.load(f)
-
-with open(trainer_labels_file_path, mode='r', encoding="utf-8") as f:
-    trainer_labels = json.load(f)
-
-with open(trainers_file_path, mode='r', encoding="utf-8") as f:
-    trainer_names = json.load(f)
-
-with open(map_info_file_path, mode='r', encoding="utf-8") as f:
-    map_info = json.load(f)
-
-with open(area_display_file_path, mode='r', encoding="utf-8") as f:
-    area_display_names = json.load(f)
-
-with open(area_name_file_path, mode='r', encoding="utf-8") as f:
-    area_names = json.load(f)
-
 def get_trainer_name(label_name):
     '''
     
@@ -93,16 +60,19 @@ def get_trainer_label(label_name):
     return match['wordDataArray'][0]['str'] if match else None
     
 def get_area_name(label_name):
+    area_names = full_data['area_names']
     label_data_array = area_names['labelDataArray']
     match = next((e for e in label_data_array if e['labelName'] == label_name), None)
     return match['wordDataArray'][0]['str'] if match else None
 
 def get_area_display_name(label_name):
+    area_display_names = full_data['area_display_names']
     label_data_array = area_display_names['labelDataArray']
     match = next((e for e in label_data_array if e['labelName'] == label_name), None)
     return match['wordDataArray'][0]['str'] if match else None
 
 def get_map_info(label_name):
+    map_info = full_data['map_info']
     zone_data = map_info['ZoneData']
     match = next((e for e in zone_data if e['ZoneID'] == label_name), None)
     return get_area_display_name(match['MSLabel']) if match and len(match['MSLabel']) > 0 else get_area_name(match['PokePlaceName'])
@@ -231,9 +201,12 @@ def get_single_trainer(zoneID, ID, temp_IDs, name):
     return trainer
 
 def get_trainer_data(zoneID, trainerID, method):
+    TRAINER_TABLE = full_data['raw_trainer_data']
     trainer_data = TRAINER_TABLE['TrainerData'][trainerID]
     trainer_type = TRAINER_TABLE['TrainerType'][trainer_data['TypeID']]
     trainer_label = get_trainer_label(trainer_type['LabelTrType'])
+    name_routes = full_data['name_routes']
+
     if not trainer_label:
         print("This trainer doesn't have a label in game:", trainer_type['LabelTrType'], trainerID)        
     trainer_name = get_trainer_name(trainer_data['NameLabel'])
@@ -256,8 +229,8 @@ def get_trainer_data(zoneID, trainerID, method):
     }
     if areaName in tracker_vars.keys():
         areaName = tracker_vars.get(areaName, areaName)
-    if not areaName.startswith("lmpt"):
-        print(areaName)
+    #if not areaName.startswith("lmpt"):
+    #    print(areaName)
     trainer = {
         'areaName': areaName,
         'zoneName': zoneName,
@@ -385,7 +358,7 @@ def get_multi_trainers(trainerID1, trainerID2, zoneID, format):
 
 def get_named_trainer_data(zoneID, trainerID1, trainerID2, args):
     trainers = []
-
+    special_trainer_names = full_data['special_trainer_names']
     if len(trainerID2) > 0:
         temp_trainerID1 = get_trainer_id_from_partial(trainerID1)
         temp_trainerID2 = get_trainer_id_from_partial(trainerID2)
@@ -598,5 +571,10 @@ def process_files(folder_path, callback):
         trainer_data.append(ordered_battle)
     sorted_data = sorted(trainer_data, key=itemgetter('zoneId', 'trainerId'))
     with open(os.path.join(debug_file_path, 'trainer_info.json'), 'w', encoding='utf-8') as f:
-        json.dump(sorted_data, f)
+        json.dump(sorted_data, f, indent=2)
     return sorted_data
+
+if __name__ != "__main__":
+    full_data = load_data()
+    trainer_labels = full_data['trainer_labels']
+    trainer_names = full_data['trainer_names']
