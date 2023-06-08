@@ -118,12 +118,6 @@ def get_ability_string(ability_id):
 def get_nature_name(natureId):
     return nature_namedata["labelDataArray"][natureId]["wordDataArray"][0]["str"]
 
-def is_smogon_compatible(str):
-    for gen in SMOGON_MOVES:
-        if str in gen.keys():
-            return True
-    return False
-
 def get_ability_id_from_ability_name(ability_string):
     if not ability_string:
         return -1
@@ -325,7 +319,6 @@ def get_pokemon_from_trainer_info(trainer, output_format):
         m1, m2, m3, m4 = moves[0], moves[1], moves[2], moves[3]
         moves = get_moves(m1, m2, m3, m4, monsno, level, output_format)
         
-        diff_forms = get_diff_form_dictionary()
         form = trainer[f"P{poke_num}FormNo"]
         pokemonId = diff_forms[pokedex[str(trainer[f"P{poke_num}MonsNo"])] + str(form)][0] if form > 0 and output_format == "Tracker" else monsno
         trainer_item = trainer[f"P{poke_num}Item"]

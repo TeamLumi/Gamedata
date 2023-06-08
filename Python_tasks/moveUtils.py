@@ -165,6 +165,12 @@ def get_moves(m1, m2, m3, m4, monsno, level, output_format):
     
     return moves
 
+def is_smogon_compatible(str):
+    for gen in SMOGON_MOVES:
+        if str in gen.keys():
+            return True
+    return False
+
 def get_move_string(id=0):
     str_ = move_enum[id]
     if not is_smogon_compatible(str_):

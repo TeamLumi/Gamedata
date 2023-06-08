@@ -1,10 +1,12 @@
 import copy
+import time
 
 from load_files import load_data, get_lumi_data
 from pokemonUtils import (get_form_name, get_form_pokemon_personal_id,
                           get_pokemon_name, get_pokemon_name, get_diff_form_dictionary)
 
-full_data = load_data()
+def get_average_time(execution_times):
+    return sum(execution_times) / len(execution_times)
 
 def bad_encounter_data(pkmn_name, routeName, route):
     bad_encounters = []
@@ -13,7 +15,7 @@ def bad_encounter_data(pkmn_name, routeName, route):
     return bad_encounters
 
 def check_bad_encounter(encounters, tracker_route, pkmn_key, lumi_formula_mon, temp_form_no, zoneID, method=''):
-    name_routes, diff_forms = ( full_data['name_routes'], get_diff_form_dictionary())
+    name_routes = full_data['name_routes']
 
     bad_encounters = []
     bad_encounter_list = ["Gigantamax", "Eternamax", "Mega ", "Totem "]
@@ -71,4 +73,5 @@ def check_mons_list(pokemon_list, zoneID, final_list):
     return -1
 
 if __name__ != "__main__":
-    pokedex = get_lumi_data(full_data["raw_pokedex"], get_pokemon_name)
+    full_data = load_data()
+    diff_forms = get_diff_form_dictionary()

@@ -7,7 +7,7 @@ import time
 import unicodedata
 from collections import defaultdict
 
-from data_checks import check_bad_encounter, check_mons_list
+from data_checks import check_bad_encounter, check_mons_list, get_average_time
 from load_files import get_lumi_data, load_data
 from pokedex_generator import getPokedexInfo
 from pokemonUtils import (get_diff_form_dictionary,
@@ -28,8 +28,8 @@ areas_file_path = os.path.join(input_file_path, 'areas_copy.csv')
 bad_encounters = []
 final_list = {}
 areas_list = 0
-first_excecution_time_list = []
-second_exectution_time_list = []
+first_excecution_time_list = [] # These are for adding times for length of executions in loops for debugging
+second_execution_time_list = []
 full_data = load_data()
 
 pokedex = get_lumi_data(full_data["raw_pokedex"], get_pokemon_name)
@@ -200,7 +200,7 @@ def get_diff_form_mons(monsno, zoneID, encounters):
         temp_form_no = formNo
         if isSpecialPokemon(get_pokemon_name(monsno)):
             temp_form_no = 0
- 
+
         check = check_bad_encounter(encounters, tracker_route, pkmn_key, reverse_lumi_formula_mon, temp_form_no, zoneID, 'Tracker')
         if check != -1:
             bad_encounters.append(check)
@@ -261,7 +261,7 @@ def get_standard_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, m
                     encounters[monsName].append(encounter_list_order)
 
 def get_diff_form_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, method_index):
-    route_rates, name_routes, diff_forms, rates = ( full_data['rates'], full_data['routes'], get_diff_form_dictionary(), full_data['rates'] )
+    route_rates, name_routes, rates = ( full_data['rates'], full_data['routes'], full_data['rates'] )
     new_method = method
     formNo = monsNo//(2**16)
     reverse_lumi_formula_mon = monsNo - (formNo * (2**16))
@@ -352,7 +352,6 @@ def get_trophy_garden_encounter_rates(trophy_garden_encounters, rates_list):
 
 def getEncounterData():
     encounter_data = full_data["raw_encounters"]
-    start_time = time.time()
     encounter_list = defaultdict(list)
     rates_list = defaultdict((list))
     for area in encounter_data['table']:
@@ -372,8 +371,6 @@ def getEncounterData():
         check = check_mons_list(check_mon_route_list, zoneID, final_list)
         if check != -1:
             final_list[zoneID] = check
-    end_time = time.time()
-    first_excecution_time_list.append( end_time - start_time )
     ##This is for adding the Trophy Garden daily mons
     for mon in encounter_data['urayama']:
         monsNo = mon['monsNo']
@@ -391,8 +388,6 @@ def getEncounterData():
     my_keys.sort(key = lambda x: int(x.split('-')[1]))
     sorted_encounters = {i: encounter_list[i] for i in my_keys}
     sorted_rates = sort_dict_by_keys(rates_list)
-    end_time1 = time.time()
-    second_exectution_time_list.append(end_time1, start_time)
     with open(os.path.join(debug_file_path, 'encounter_locations.json'), 'w') as output:
         output.write(json.dumps(sorted_rates, indent=2))
     with open(os.path.join(debug_file_path, 'bad_encounters.json'), 'w') as output:
@@ -402,13 +397,13 @@ def getEncounterData():
 
 if __name__ == "__main__":
     start_time = time.time()
-    
+    diff_forms = get_diff_form_dictionary()
     getPokedexInfo()
 
     mid_time = time.time()
     print("Middle Execution time:", mid_time - start_time, "seconds")
     getEncounterData()
-    
+
     end_time = time.time()
     execution_time = end_time - start_time
     print("Execution time:", execution_time, "seconds")
