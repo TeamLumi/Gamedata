@@ -3,6 +3,7 @@ import csv
 import json
 import os
 import re
+import time
 import unicodedata
 from collections import defaultdict
 
@@ -30,6 +31,8 @@ areas_file_path = os.path.join(input_file_path, 'areas_copy.csv')
 bad_encounters = []
 final_list = {}
 areas_list = 0
+first_execution_list = [] # Used for getting average run times for different areas
+second_execution_list = []
 full_data = load_data()
 
 with open(areas_file_path, encoding="utf-8") as f:
@@ -188,7 +191,6 @@ def honey_tree_encounter_data():
     honey_trees = count_mons_in_honey_trees(honey_trees)
 
     return honey_trees
-
 
 def get_diff_form_mons(monsno, zoneID, encounters):
     pokedex, routeNames = ( full_data["pokedex"], full_data["routes"] )
@@ -404,6 +406,25 @@ def getEncounterData():
     with open(os.path.join(output_file_path, 'Encounter_output.json'), 'w') as output:
         output.write(json.dumps(sorted_encounters, indent=2))
 
+def get_avg_time(times):
+    average_time = sum(times) / len(times)
+    sum(times)
+    return average_time
+
 if __name__ == "__main__":
+    start_time = time.time()
+
     getPokedexInfo()
+
+    mid_time = time.time()
+    mid_execution_time = mid_time - start_time
+    print("Mid Execution time:", mid_execution_time, "seconds")
+
     getEncounterData()
+    #avg_standard_runtime = get_avg_time(first_execution_list)
+    #avg_diff_forms_runtime = get_avg_time(second_execution_list)
+    #print("Average runtime per Standard Rate Mon is:", avg_standard_runtime, "seconds")
+    #print("Average runtime per Diff Form Rate Mon is:", avg_diff_forms_runtime, "seconds")
+    end_time = time.time()
+    execution_time = end_time - start_time
+    print("Execution time:", execution_time, "seconds")
