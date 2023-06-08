@@ -158,7 +158,6 @@ def count_mons_in_honey_trees(dict):
                     result_dict[mon] = [[route, percentage, level]]
     return result_dict
 
-
 def honey_tree_encounter_data():
     const_regex = r"const\s+int32_t\s+HONEY_TREES\[\s*NUM_ZONE_ID\s*\]\[\s*10\s*\]\s*=\s*\{\s*([\s\S]*?)\};"
     array_regex = r"\[(.*?)\]\s*=\s*\{(.*?)\}"
@@ -199,10 +198,11 @@ def get_diff_form_mons(monsno, zoneID, encounters):
 
         if str(zoneID) not in route:
             continue
+        diff_key = get_pokemon_name(reverse_lumi_formula_mon) + str(formNo)
         pkmn_key = pokedex[str(reverse_lumi_formula_mon)] + str(formNo)
 
         temp_form_no = formNo
-        if isSpecialPokemon(get_pokemon_name(int(reverse_lumi_formula_mon))):
+        if isSpecialPokemon(get_pokemon_name(monsno)):
             temp_form_no = 0
  
         check = check_bad_encounter(encounters, tracker_route, pkmn_key, reverse_lumi_formula_mon, temp_form_no, zoneID, 'Tracker')
@@ -216,7 +216,7 @@ def get_standard_mons(monsno, zoneID, encounters):
     for tracker_route, route in routeNames.items():
         if str(zoneID) not in route:
             continue
-        encounters[str(tracker_route)].append(pokedex[str(monsno)])
+        encounters[str(tracker_route)].append(get_pokemon_name(monsno))
 
 def update_routes_with_mons(monsno, zoneID, encounters):
     if monsno < 2000:
@@ -246,7 +246,7 @@ def get_standard_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, m
     pokedex = full_data['pokedex']
     rates = full_data['rates']
     new_method = method
-    pokemon_name = pokedex[str(monsNo)]
+    monsName = get_pokemon_name(monsNo)
 
     for tracker_route in name_routes.keys():
         for route in name_routes[tracker_route]:
@@ -259,11 +259,11 @@ def get_standard_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, m
             rate = get_route_rate(new_method, method_index, route_rates)
             encounter_list_order = [zoneName, new_method, rate, minlevel, maxlevel, method_index]
 
-            if pokemon_name not in encounters.keys():
-                encounters[pokemon_name] = [encounter_list_order]
+            if monsName not in encounters.keys():
+                encounters[monsName] = [encounter_list_order]
             else:
-                if encounter_list_order not in encounters[pokemon_name]:
-                    encounters[pokemon_name].append(encounter_list_order)
+                if encounter_list_order not in encounters[monsName]:
+                    encounters[monsName].append(encounter_list_order)
 
 def get_diff_form_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, method_index):
     route_rates, name_routes, pokedex, diff_forms, rates = ( full_data['rates'], full_data['routes'], full_data['pokedex'], full_data['diff_forms'], full_data['rates'] )
@@ -279,13 +279,13 @@ def get_diff_form_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, 
             zoneName = zones[3] if zones[3] != '' else zones[4]
             pkmn_key = pokedex[str(reverse_lumi_formula_mon)] + str(formNo)
             diff_forms_key = diff_forms[pkmn_key][1]
-            print(diff_forms_key)
+            monsName = get_pokemon_name(monsNo)
 
             temp_form_no = formNo
-            if isSpecialPokemon(get_pokemon_name(int(reverse_lumi_formula_mon))):
+            if isSpecialPokemon(get_pokemon_name(monsNo)):
                 temp_form_no = 0
 
-            check = check_bad_encounter(encounters, zoneName, pkmn_key, reverse_lumi_formula_mon, temp_form_no, zoneID)
+            check = check_bad_encounter(encounters, tracker_route, pkmn_key, reverse_lumi_formula_mon, temp_form_no, zoneID)
             if check == -1:
                 bad_encounters.append(check)
                 continue
@@ -295,11 +295,11 @@ def get_diff_form_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, 
             encounter_list_order = [zoneName, new_method, rate, minlevel, maxlevel, method_index]
 
 
-            if diff_forms_key not in encounters.keys():
-                encounters[diff_forms_key] = [encounter_list_order]
+            if monsName not in encounters.keys():
+                encounters[monsName] = [encounter_list_order]
             else:
-                if encounter_list_order not in encounters[diff_forms_key]:
-                    encounters[diff_forms_key].append(encounter_list_order)
+                if encounter_list_order not in encounters[monsName]:
+                    encounters[monsName].append(encounter_list_order)
 
 def update_mons_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, method_index):
     if monsNo == 0:
@@ -324,19 +324,19 @@ def get_honey_tree_encounter_rates(rates_list):
     for mon in honey_encounter_data.keys():
         for data in honey_encounter_data[mon]:
             route = data[0]
-            monName = "Farfetch’d" if mon == "Farfetchd" else mon
-            monsNo = get_pokemon_mons_no_from_name(monName)
+            monsName = "Farfetch\u2019d" if mon == "Farfetchd" else mon
+            monsNo = get_pokemon_mons_no_from_name(monsName)
             method = "Honey Tree"
             rate = data[1]
             minlevel = data[2]
             maxlevel = data[2]
             index = None
             if monsNo == -1:
-                print(monName)
-            if monName not in rates_list:
-                rates_list[monName] = [[route, method, rate, minlevel, maxlevel, index]]
+                print(monsName)
+            if monsName not in rates_list:
+                rates_list[monsName] = [[route, method, rate, minlevel, maxlevel, index]]
             else:
-                rates_list[monName].append([route, method, rate, minlevel, maxlevel, index])
+                rates_list[monsName].append([route, method, rate, minlevel, maxlevel, index])
 
 def get_trophy_garden_encounter_rates(trophy_garden_encounters, rates_list):
     pokedex = full_data['pokedex']
@@ -349,11 +349,12 @@ def get_trophy_garden_encounter_rates(trophy_garden_encounters, rates_list):
         maxlevel = 25
         index = None
         monsNo = mon['monsNo']
+        monsName = get_pokemon_name(monsNo)
 
-        if pokedex[str(monsNo)] not in rates_list.keys():
-            rates_list[pokedex[str(monsNo)]] = [zoneName, method, rate, minlevel, maxlevel, index]
+        if monsName not in rates_list.keys():
+            rates_list[monsName] = [zoneName, method, rate, minlevel, maxlevel, index]
         else:
-            rates_list[pokedex[str(monsNo)]].append([zoneName, method, rate, minlevel, maxlevel, index])
+            rates_list[monsName].append([zoneName, method, rate, minlevel, maxlevel, index])
 
 def getEncounterData():
     encounter_data, pokedex = ( full_data["raw_encounters"], full_data['pokedex'] )
@@ -371,16 +372,17 @@ def getEncounterData():
             get_encounter_rates(area[key], key, zoneID, rates_list)
             for mon in area[key]:
                 key_index = area[key].index(mon)
-                monsno = mon['monsNo']
-                check_mon_route_list.append([monsno, key, key_index, zoneID])
-                update_routes_with_mons(monsno, zoneID, encounter_list)
+                monsNo = mon['monsNo']
+                check_mon_route_list.append([monsNo, key, key_index, zoneID])
+                update_routes_with_mons(monsNo, zoneID, encounter_list)
         check = check_mons_list(check_mon_route_list, zoneID, final_list)
         if check != -1:
             final_list[zoneID] = check
 
     ##This is for adding the Trophy Garden daily mons
     for mon in encounter_data['urayama']:
-        encounter_list['lmpt-39'].append(pokedex[str(mon['monsNo'])])
+        monsNo = mon['monsNo']
+        encounter_list['lmpt-39'].append(get_pokemon_name(monsNo))
     get_trophy_garden_encounter_rates(encounter_data['urayama'], rates_list)
 
     ##This is for adding all of the Honey Tree encounters to the list

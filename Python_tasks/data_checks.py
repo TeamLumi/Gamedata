@@ -23,7 +23,7 @@ def check_bad_encounter(encounters, tracker_route, pkmn_key, lumi_formula_mon, t
         bad_encounters.append(bad_encounter_data(get_pokemon_name(pokemonPersonalId), name_routes[tracker_route], zoneID))
         return bad_encounters
     elif pkmn_key not in diff_forms.keys():
-        bad_encounters.append(bad_encounter_data(pokedex[str(lumi_formula_mon)], name_routes[tracker_route], zoneID))
+        bad_encounters.append(bad_encounter_data(get_pokemon_name(lumi_formula_mon), name_routes[tracker_route], zoneID))
         return bad_encounters
     elif method == "Tracker":
         encounters[str(tracker_route)].append(diff_forms[pkmn_key][1])
