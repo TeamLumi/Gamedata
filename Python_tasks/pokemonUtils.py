@@ -528,13 +528,16 @@ def get_pokemon_info(personalId=0):
         'weight': get_weight(personalId),
         'height': get_height(personalId),
         'grassKnotPower': get_grass_knot_power(get_weight(personalId)),
-        'type': get_type_name(p['type1'])
+        'type': get_type_name(p['type1']),
     }
                 
     if p['type2'] != p['type1']:
         info_dict['dualtype'] = get_type_name(p['type2'])
     else:
         info_dict['dualtype'] = 0
+    info_dict['held_item1'] = get_item_string(p['item1'])
+    info_dict['held_item2'] = get_item_string(p['item2'])
+    info_dict['held_item3'] = get_item_string(p['item3'])
     return info_dict
 
 def GenForms():
