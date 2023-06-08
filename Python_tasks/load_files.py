@@ -4,9 +4,6 @@ import os
 import re
 
 from json_cache import JsonCache
-from pokemonUtils import (create_diff_forms_dictionary, get_ability_string,
-                          get_item_string, get_pokemon_name,
-                          get_pokemon_name_dictionary)
 
 repo_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 input_file_path = os.path.join(repo_file_path, 'input')
@@ -16,36 +13,11 @@ output_file_path = os.path.join(repo_file_path, "Python_tasks", "output")
 # Create an instance of JsonCache
 json_cache = JsonCache()
 
-POKEMON_NAMES = get_pokemon_name_dictionary()
-
-def getTrainerIdsFromDocumentation():
-    doc_filepath = os.path.join(input_file_path, "docs.csv")
-    trainer_IDs = []
-    with open(doc_filepath, "r") as doc_csv:
-        csvreader = csv.reader(doc_csv)
-        for row in csvreader:
-            if row[0].isdigit():
-                trainer_IDs.append(int(row[0]))
-    return trainer_IDs
-
 def get_lumi_data(raw_data, callback):
     data = {}
     for (idx, _) in enumerate(raw_data["labelDataArray"]):
         data[str(idx)] = callback(idx)
     return data
-
-def load_json_from_file(filepath):
-    # Check if JSON data is already cached
-    if filepath in json_cache.cache:
-        return json_cache.cache[filepath]
-    
-    # Load the JSON file
-    with open(filepath, "r", encoding="utf-8") as f:
-        json_data = json.load(f)
-
-    # Cache the loaded JSON
-    json_cache.cache[filepath] = json_data
-    return json_data
 
 def load_data():
     data = {}
@@ -60,15 +32,16 @@ def load_data():
         "honey_routes": os.path.join(resources_filepath, "honeyroutes.json"),
         "trainer_names": os.path.join(input_file_path, 'english_dp_trainers_name.json'),
         "trainer_labels": os.path.join(input_file_path, 'english_dp_trainers_type.json'),
-        "rates": os.path.join(resources_filepath, 'Rates.json')
+        "rates": os.path.join(resources_filepath, 'Rates.json'),
+        "item_table": os.path.join(input_file_path, 'ItemTable.json'),
+        "pkmn_height_data": os.path.join(input_file_path, 'english_ss_zkn_height.json'),
+        "pkmn_weight_data": os.path.join(input_file_path, 'english_ss_zkn_weight.json'),
+        "ability_namedata": os.path.join(input_file_path, 'english_ss_tokusei.json'),
+        "type_namedata": os.path.join(input_file_path, 'english_ss_typename.json'),
+        "form_namedata": os.path.join(input_file_path, 'english_ss_zkn_form.json'),
+        'nature_namedata': os.path.join(input_file_path, 'english_ss_seikaku.json')
     }
     for name, filepath in files.items():
         data[name] = json_cache.get_json(filepath)  # Access the cached JSON data using json_cache
-
-    data["abilities"] = get_lumi_data(data["raw_abilities"], get_ability_string)
-    data["pokedex"] = get_lumi_data(data["raw_pokedex"], get_pokemon_name)
-    data["items"] = get_lumi_data(data["raw_items"], get_item_string)
-    data["diff_forms"] = create_diff_forms_dictionary(POKEMON_NAMES)
-    data["trainer_ids"] = getTrainerIdsFromDocumentation()
 
     return data

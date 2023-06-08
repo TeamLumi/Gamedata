@@ -2,7 +2,7 @@ import json
 import os
 
 from load_files import load_data
-from pokemonUtils import GenForms, get_pokemon_info, get_pokemon_name
+from pokemonUtils import GenForms, get_pokemon_info, get_pokemon_name, get_diff_form_dictionary
 
 full_data = load_data()
 
@@ -154,7 +154,7 @@ def evolution_pathfinding():
     return evolve
 
 def get_mon_dex_info(pokemon, evolve):
-    diff_forms = full_data['diff_forms']
+    diff_forms = get_diff_form_dictionary()
     poke_info = get_pokemon_info(pokemon)
     poke_name = get_pokemon_name(pokemon)
     dex_info = {
