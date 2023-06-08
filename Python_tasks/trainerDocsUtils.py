@@ -214,7 +214,6 @@ def get_trainer_doc_data():
     '''
     This gets the trainer documentation for Solarnce's Trainer Docs in the Google Sheets
     '''
-
     trainer_info = process_files(os.path.join(repo_file_path, "scriptdata"), parse_ev_script_file)
     print("Start trainer sorting by level")
     sorted_trainers = sort_trainers_by_level(trainer_info)
@@ -226,7 +225,6 @@ def get_tracker_trainer_data():
     '''
     This gets all of the trainer data for the tracker sorted by routes
     '''
-    start_time = time.time()
     original_teams = getTrainerData(gym_leader_data)
     trainer_info = process_files(os.path.join(repo_file_path, "scriptdata"), parse_ev_script_file)
 
@@ -236,11 +234,12 @@ def get_tracker_trainer_data():
     new_trainers = write_tracker_docs(sorted_tracker_trainers)
     for route in new_trainers:
         original_teams["1"].append(route)
-    end_time = time.time()
-    print("This is how long it took to run this file:", end_time - start_time, "seconds")
     with open(os.path.join(output_file_path, 'Trainer_output.json'), 'w', encoding='utf-8') as f:
         json.dump(original_teams, f, indent=2)
 
 if __name__ == "__main__":
+    start_time = time.time()
     get_trainer_doc_data()
     get_tracker_trainer_data()
+    end_time = time.time()
+    print("This is how long it took to run this file:", end_time - start_time, "seconds")

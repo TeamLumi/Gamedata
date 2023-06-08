@@ -2,9 +2,11 @@ import json
 import os
 import re
 from operator import itemgetter
+import time
 
 import constants
 from load_files import load_data
+from data_checks import get_average_time
 
 repo_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 parent_file_path = os.path.abspath(os.path.dirname(__file__))
@@ -20,6 +22,9 @@ bdsp_location_files = os.listdir(bdsp_location_files_path)
 trainer_labels = 0
 trainer_names = 0
 areas = 0
+
+first_excecution_time_list = []
+second_execution_time_list = []
 
 class UnsupportedTrainer(Exception):
     pass
@@ -502,17 +507,26 @@ def parse_trainer_btl_set(substring):
     else:
         return substring
 
+def create_zone_id_map():
+    zone_dict = {}
+    for place in areas:
+        zone_index = int(areas.index(place) - 1)
+        zone_name = areas[zone_index][-1]
+        zone_id = areas[zone_index][0]
+        zone_dict[zone_name] = zone_id
+    return zone_dict
+ 
+def get_zoneID(zone_name):
+    if zone_name in zone_dict.keys():
+        return int(zone_dict[zone_name])
+    else:
+        return None
+
 def parse_ev_script_file(file_path):
     """
     The purpose of this function is to parse a text file and find every instance of the substring _TRAINER_BTL_SET or _TRAINER_MULTI_BTL_SET.
     """
-
-    def get_zoneID(areaName):
-        for places in areas:
-            if areaName in places:
-                zoneID = int(areas.index(places) - 1)
-                return zoneID
-
+    
     trainers = []
 
     with open(file_path, 'r', encoding="utf-8") as f:
@@ -523,7 +537,7 @@ def parse_ev_script_file(file_path):
                 zoneID = get_zoneID(areaName)
                 if areaName == constants.EVE_AREA_NAME:
                     zoneID = 446
-                
+
                 if constants.TRAINER_BATTLE in substring or constants.MULTI_TRAINER_BATTLE in substring:
                     args = parse_trainer_btl_set(substring.strip())
                 else:
@@ -576,5 +590,6 @@ def process_files(folder_path, callback):
 
 if __name__ != "__main__":
     full_data = load_data()
+    zone_dict = create_zone_id_map()
     trainer_labels = full_data['trainer_labels']
     trainer_names = full_data['trainer_names']
