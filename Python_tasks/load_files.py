@@ -1,9 +1,11 @@
-import re
+import csv
 import json
 import os
-import csv
-from pokemonUtils import get_ability_string, get_pokemon_name, get_item_string, create_diff_forms_dictionary, get_pokemon_name_dictionary
+import re
 
+from pokemonUtils import (create_diff_forms_dictionary, get_ability_string,
+                          get_item_string, get_pokemon_name,
+                          get_pokemon_name_dictionary)
 
 repo_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 input_file_path = os.path.join(repo_file_path, 'input')

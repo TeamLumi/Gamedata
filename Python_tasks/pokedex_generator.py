@@ -1,7 +1,8 @@
 import json
 import os
-from pokemonUtils import GenForms, get_pokemon_info, get_pokemon_name
+
 from load_files import load_data
+from pokemonUtils import GenForms, get_pokemon_info, get_pokemon_name
 
 full_data = load_data()
 

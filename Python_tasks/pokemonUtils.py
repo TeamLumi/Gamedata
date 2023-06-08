@@ -1,7 +1,7 @@
-import os
 import json
+import os
+import re
 import unicodedata
-import re 
 
 parent_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 input_file_path = os.path.join(parent_file_path, 'input')

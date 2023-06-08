@@ -1,6 +1,8 @@
 import copy
-from pokemonUtils import get_form_pokemon_personal_id, get_form_name, get_pokemon_name
+
 from load_files import load_data
+from pokemonUtils import (get_form_name, get_form_pokemon_personal_id,
+                          get_pokemon_name)
 
 full_data = load_data()
 

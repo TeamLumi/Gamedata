@@ -1,14 +1,21 @@
-import re
+import copy
+import csv
 import json
 import os
-import csv
+import re
 import unicodedata
-import copy
 from collections import defaultdict
-from pokemonUtils import get_ability_string, get_pokemon_name, get_form_name, get_item_string, get_pokemon_name_dictionary, get_pokemon_info, get_nature_name, GenForms, get_form_pokemon_personal_id, create_diff_forms_dictionary, isSpecialPokemon, get_pokemon_from_trainer_info, get_pokemon_mons_no_from_name
+
 from data_checks import check_bad_encounter, check_mons_list
 from load_files import load_data
 from pokedex_generator import getPokedexInfo
+from pokemonUtils import (GenForms, create_diff_forms_dictionary,
+                          get_ability_string, get_form_name,
+                          get_form_pokemon_personal_id, get_item_string,
+                          get_nature_name, get_pokemon_from_trainer_info,
+                          get_pokemon_info, get_pokemon_mons_no_from_name,
+                          get_pokemon_name, get_pokemon_name_dictionary,
+                          isSpecialPokemon)
 
 # Get the repo file path for cleaner path generating
 repo_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))

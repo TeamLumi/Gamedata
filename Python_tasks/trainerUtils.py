@@ -1,7 +1,8 @@
-import os
 import json
+import os
 import re
 from operator import itemgetter
+
 import constants
 
 repo_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
