@@ -1,12 +1,15 @@
-import os
-import re
 import json
 import math
+import os
+import re
+import time
 
-from trainerUtils import process_files, parse_ev_script_file
-from pokemonUtils import get_pokemon_from_trainer_info, get_pokemon_name
-from convert_lmpt_data import getTrainerData
 import constants
+from convert_lmpt_data import getTrainerData
+from data_checks import get_average_time
+from load_files import load_data
+from pokemonUtils import get_pokemon_from_trainer_info, get_pokemon_name
+from trainerUtils import parse_ev_script_file, process_files
 
 repo_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 input_file_path = os.path.join(repo_file_path, 'input')
@@ -16,6 +19,9 @@ trainer_doc_data_file_path = os.path.join(repo_file_path, "trainer_docs", "train
 
 resources_filepath = os.path.join(repo_file_path, "Python_tasks", "Resources")
 gym_leader_file_path = os.path.join(resources_filepath, "NewGymLeaders.json")
+
+first_excecution_time_list = []
+second_execution_time_list = []
 
 with open(gym_leader_file_path, mode='r', encoding="utf-8") as f:
     gym_leader_data = json.load(f)
@@ -29,7 +35,6 @@ def get_trainer_pokemon(trainerId, output_format):
     Requires the trainerId and the output_format being either "Scripted" or "Place Data"
     Those are referenced in Constants.py
     '''
-   
     pokemon_list = []
     trainer = next((t for t in TRAINER_TABLE["TrainerPoke"] if t["ID"] == trainerId), None)
     pokemon_list = get_pokemon_from_trainer_info(trainer, output_format)
@@ -99,9 +104,9 @@ def get_trainer_name(trainer_name, zone_name, TRAINER_INDEX=0):
     '''
     if re.findall(constants.TEAM_REGEX, trainer_name):
         split_name = trainer_name.split()
-        trainer_name = ' '.join(split_name[:-2])
+        altered_trainer_name = ' '.join(split_name[:-2])
         team_name = ' '.join(split_name[-2:])
-        updated_name = f"{trainer_name} ({zone_name}) [{team_name}]"
+        updated_name = f"{altered_trainer_name} ({zone_name}) [{team_name}]"
         return [trainer_name, updated_name]
     if TRAINER_INDEX > 0:
         updated_name = f"{trainer_name} {TRAINER_INDEX} ({zone_name})"
@@ -123,9 +128,9 @@ def write_trainer_docs_team_format(pokemon):
     Requires each pokemon from a trainer's team in write_to_trainer_docs_file function
     Returns the format for the header, ivs and evs of each pokemon
     '''
-    pokemon_header = f"\n{get_pokemon_name(mon['id'])}\n{mon['level']}\n{mon['nature']}\n{mon['ability']}\n\n{mon['item']}\n"
-    pokemon_ivs = f"{mon['ivhp']}/{mon['ivatk']}/{mon['ivdef']}/{mon['ivspatk']}/{mon['ivspdef']}/{mon['ivspeed']}\n"
-    pokemon_evs = f"{mon['evhp']}/{mon['evatk']}/{mon['evdef']}/{mon['evspatk']}/{mon['evspdef']}/{mon['evspeed']}\n"
+    pokemon_header = f"\n{get_pokemon_name(pokemon['id'])}\n{pokemon['level']}\n{pokemon['nature']}\n{pokemon['ability']}\n\n{pokemon['item']}\n"
+    pokemon_ivs = f"{pokemon['ivhp']}/{pokemon['ivatk']}/{pokemon['ivdef']}/{pokemon['ivspatk']}/{pokemon['ivspdef']}/{pokemon['ivspeed']}\n"
+    pokemon_evs = f"{pokemon['evhp']}/{pokemon['evatk']}/{pokemon['evdef']}/{pokemon['evspatk']}/{pokemon['evspdef']}/{pokemon['evspeed']}\n"
 
     return pokemon_header, pokemon_ivs, pokemon_evs
 
@@ -147,7 +152,7 @@ def write_to_trainer_docs_file(trainer, trainer_name):
             moves = mon['moves']
 
             f.write(mon_header)
-            for index in range(len(moves)):
+            for index in range(0, 4):
                 f.write(get_trainer_doc_moves(moves, index))
             f.write(mon_ivs)
             f.write(mon_evs)
@@ -171,7 +176,6 @@ def write_trainer_docs(trainer_list):
         full_trainer_name = get_trainer_name(name, zone_name)[0]
 
         write_to_trainer_docs_file(trainer, full_trainer_name)
-
 
 def write_tracker_docs(trainers_list):
     '''
@@ -222,6 +226,7 @@ def get_tracker_trainer_data():
     '''
     This gets all of the trainer data for the tracker sorted by routes
     '''
+    start_time = time.time()
     original_teams = getTrainerData(gym_leader_data)
     trainer_info = process_files(os.path.join(repo_file_path, "scriptdata"), parse_ev_script_file)
 
@@ -231,8 +236,10 @@ def get_tracker_trainer_data():
     new_trainers = write_tracker_docs(sorted_tracker_trainers)
     for route in new_trainers:
         original_teams["1"].append(route)
+    end_time = time.time()
+    print("This is how long it took to run this file:", end_time - start_time, "seconds")
     with open(os.path.join(output_file_path, 'Trainer_output.json'), 'w', encoding='utf-8') as f:
-        json.dump(original_teams, f)
+        json.dump(original_teams, f, indent=2)
 
 if __name__ == "__main__":
     get_trainer_doc_data()
