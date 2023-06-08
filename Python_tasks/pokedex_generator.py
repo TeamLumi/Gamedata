@@ -1,5 +1,6 @@
 import json
 import os
+import time
 
 from load_files import load_data
 from pokemonUtils import GenForms, get_pokemon_info, get_pokemon_name
@@ -10,6 +11,8 @@ repo_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 input_file_path = os.path.join(repo_file_path, 'input')
 debug_file_path = os.path.join(repo_file_path, "Python_tasks", "Debug")
 output_file_path = os.path.join(repo_file_path, "Python_tasks", "output")
+first_execution_list = []
+second_execution_list = []
 
 def get_form_format(monsNo, formNo):
     mon_zeros = 3 - len(str(monsNo))
@@ -23,32 +26,32 @@ def remove_duplicates(path_dictionary):
             new_path.append(path_element)
     return new_path
 
-def remove_duplicate_forms(evolve):
-    for pokemon in evolve.keys():
-        evolve[pokemon]["path"] = remove_duplicates(evolve[pokemon]["path"])
+def remove_duplicate_forms(evolution_paths):
+    for pokemon in evolution_paths.keys():
+        evolution_paths[pokemon]["path"] = remove_duplicates(evolution_paths[pokemon]["path"])
 
-def add_forms(evolve, graph):
+def add_forms(evolution_paths, graph):
     forms = GenForms()
     for form in forms:
         form_num = forms[form]
         pokemon_id = int(form[-7:-4])
         evolve_array = graph[form_num]["ar"]
-        for pokemon in evolve.keys():
+        for pokemon in evolution_paths.keys():
             if int(pokemon) != pokemon_id:
                 continue
-            initial_evolution_path = evolve[pokemon]["path"]
-            form_evo_path = evolve[form_num]["path"]
+            initial_evolution_path = evolution_paths[pokemon]["path"]
+            form_evo_path = evolution_paths[form_num]["path"]
             first_form_evo = form_evo_path[0]
 
             for evolution in initial_evolution_path:
                 if len(evolve_array) != 0:
                     continue
-                if evolution in evolve[first_form_evo]["path"]:
-                    evolve[evolution]["path"].append(form_num)
-                if len(evolve[form_num]["path"]) < 2:
-                    evolution_path = evolve[evolution]["path"] + form_evo_path
-                    evolve[form_num]["path"] = remove_duplicates(evolution_path)
-                    evolve[evolution]["path"] = remove_duplicates(evolution_path)
+                if evolution in evolution_paths[first_form_evo]["path"]:
+                    evolution_paths[evolution]["path"].append(form_num)
+                if len(evolution_paths[form_num]["path"]) < 2:
+                    evolution_path = evolution_paths[evolution]["path"] + form_evo_path
+                    evolution_paths[form_num]["path"] = remove_duplicates(evolution_path)
+                    evolution_paths[evolution]["path"] = remove_duplicates(evolution_path)
 
 def process_next_mon(queue, adjacent_nodes):
     forms = GenForms()
@@ -73,23 +76,23 @@ def process_current_mon(queue):
 
     return current_mon
 
-def update_evolve_paths(evolve, current_mon, current_mon_path):
-    evolve[current_mon]["path"].append(current_mon)
-    evolve[current_mon]["path"] = list(dict.fromkeys(evolve[current_mon]["path"]))
+def update_evolve_paths(evolution_paths, current_mon, current_mon_path):
+    evolution_paths[current_mon]["path"].append(current_mon)
+    evolution_paths[current_mon]["path"] = list(dict.fromkeys(evolution_paths[current_mon]["path"]))
 
     for i in range(len(current_mon_path)):
-        evolve[current_mon_path[i]]["path"].append(current_mon)
-        evolve[current_mon_path[i]]["path"] = [x for j, x in enumerate(evolve[current_mon_path[i]]["path"]) if x not in evolve[current_mon_path[i]]["path"][:j]]
+        evolution_paths[current_mon_path[i]]["path"].append(current_mon)
+        evolution_paths[current_mon_path[i]]["path"] = [x for j, x in enumerate(evolution_paths[current_mon_path[i]]["path"]) if x not in evolution_paths[current_mon_path[i]]["path"][:j]]
 
-def second_pathfind(pokemon, evolve, new_queue):
+def second_pathfind(pokemon, evolution_paths, new_queue):
 
     while new_queue:
         current_mon = process_current_mon(new_queue)
-        evolve[current_mon]["path"].append(pokemon)
-        current_mon_path = evolve[current_mon]["path"]
-        update_evolve_paths(evolve, current_mon, current_mon_path)
+        evolution_paths[current_mon]["path"].append(pokemon)
+        current_mon_path = evolution_paths[current_mon]["path"]
+        update_evolve_paths(evolution_paths, current_mon, current_mon_path)
 
-def first_pathfind(pokemon, evolve, graph, queue, new_queue):
+def first_pathfind(pokemon, evolution_paths, graph, queue, new_queue):
 
     while queue:
         current_mon = process_current_mon(queue)
@@ -100,12 +103,12 @@ def first_pathfind(pokemon, evolve, graph, queue, new_queue):
         
         next_mon, next_form = process_next_mon(queue, adjacent_nodes)
 
-        evolve[next_mon]["path"] = evolve[current_mon]["path"] + [next_mon]
+        evolution_paths[next_mon]["path"] = evolution_paths[current_mon]["path"] + [next_mon]
         for i in range(2, len(adjacent_nodes), 5):
             new_queue.append(adjacent_nodes[i])
             new_queue.append(adjacent_nodes[i + 1])
 
-            second_pathfind(pokemon, evolve, new_queue)
+            second_pathfind(pokemon, evolution_paths, new_queue)
 
             if current_mon != 751:
                 new_queue.append(adjacent_nodes[i])
@@ -119,41 +122,44 @@ def first_pathfind(pokemon, evolve, graph, queue, new_queue):
             queue = new_queue
             new_queue = []
 
-    for extra in evolve[pokemon]["path"]:
+    for extra in evolution_paths[pokemon]["path"]:
         for i in range(0, len(graph[extra]["ar"]), 5):
-            evolve[pokemon]["method"].append(graph[extra]["ar"][i])
-        evolve[pokemon]["ar"].append(graph[extra]["ar"])
+            evolution_paths[pokemon]["method"].append(graph[extra]["ar"][i])
+        evolution_paths[pokemon]["ar"].append(graph[extra]["ar"])
 
-def start_pathfinding(evolve, graph):
+def start_pathfinding(evolution_paths, graph):
 
-    for pokemon in evolve.keys():
+    for pokemon in evolution_paths.keys():
+        start_time = time.time()
         queue = []
         queue.append(pokemon)
         queue.append(0)
         new_queue = []
 
-        if pokemon not in evolve[pokemon]["path"]:
-            evolve[pokemon]["path"].append(pokemon)
-        first_pathfind(pokemon, evolve, graph, queue, new_queue)
+        if pokemon not in evolution_paths[pokemon]["path"]:
+            evolution_paths[pokemon]["path"].append(pokemon)
+        first_pathfind(pokemon, evolution_paths, graph, queue, new_queue)
+        end_time = time.time()
+        second_execution_list.append(end_time - start_time)
 
 def evolution_pathfinding():
     with open(os.path.join(input_file_path, 'EvolveTable.json'), "r", encoding="utf-8") as f:
         graphing = json.load(f)
     graph = graphing["Evolve"]
     forms = GenForms()
-    evolve = {}
+    evolution_paths = {}
     for node in graph:
-        evolve[node["id"]] = {"path": [], "method": [], "ar": []}
+        evolution_paths[node["id"]] = {"path": [], "method": [], "ar": []}
 
-    start_pathfinding(evolve, graph)
-    add_forms(evolve, graph)
-    remove_duplicate_forms(evolve)
+    start_pathfinding(evolution_paths, graph)
+    add_forms(evolution_paths, graph)
+    remove_duplicate_forms(evolution_paths)
 
     with open(os.path.join(debug_file_path, "evolution.json"), "w", encoding = "utf-8") as output:
-        json.dump(evolve, output, ensure_ascii=False, indent=2)
-    return evolve
+        json.dump(evolution_paths, output, ensure_ascii=False, indent=2)
+    return evolution_paths
 
-def get_mon_dex_info(pokemon, evolve):
+def get_mon_dex_info(pokemon, evolution_paths):
     diff_forms = full_data['diff_forms']
     poke_info = get_pokemon_info(pokemon)
     poke_name = get_pokemon_name(pokemon)
@@ -164,7 +170,7 @@ def get_mon_dex_info(pokemon, evolve):
         }
     if "dualtype" in poke_info.keys() and poke_info["dualtype"] != 0:
         dex_info["dualtype"] = poke_info["dualtype"].upper()
-    dex_info["evolve"] = evolve
+    dex_info["evolve"] = evolution_paths
     dex_info["generation"] = 8
     dex_info["abilities"] = [poke_info['ability1'], poke_info['ability2'], poke_info['abilityH']]
     dex_info["dexNum"] = pokemon
@@ -182,19 +188,33 @@ def get_mon_dex_info(pokemon, evolve):
 
 def getPokedexInfo():
     pokedex = []
+    start_time = time.time()
     evolutions = evolution_pathfinding()
+    end_time = time.time()
+    print("Pathfinding took:", end_time - start_time, "seconds")
 
     for pokemon in evolutions.keys():
+        start_time = time.time()
         if pokemon >= 1456:
             continue
-        evolve_path = evolutions[pokemon]["path"]
+        evolution_path = evolutions[pokemon]["path"]
         if pokemon < 906 or pokemon > 1010:
-            dex_info = get_mon_dex_info(pokemon, evolve_path)
+            dex_info = get_mon_dex_info(pokemon, evolution_path)
         pokedex.append(dex_info)
+        end_time = time.time()
+        first_execution_list.append(end_time - start_time)
 
     with open(os.path.join(output_file_path, "pokedex_info.json"), "w", encoding="utf-8") as output:
         json.dump(pokedex, output, ensure_ascii=False, indent=2)
     return pokedex
 
+def get_avg_time(times):
+    return sum(times) / len(times)
+
 if __name__ == "__main__":
     getPokedexInfo()
+    average_evolution_time = get_avg_time(second_execution_list)
+    print("Amount of iterations for pathfinding:",len(second_execution_list))
+    second_execution_list.sort()
+    print("These are the top 20 times for the pathfinding:", [format(t, '.6f') for t in second_execution_list[-20:]])
+    print("Each Pokemon took about:", average_evolution_time, "seconds")
