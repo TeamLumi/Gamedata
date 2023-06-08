@@ -3,6 +3,7 @@ import json
 import os
 import re
 
+from json_cache import JsonCache
 from pokemonUtils import (create_diff_forms_dictionary, get_ability_string,
                           get_item_string, get_pokemon_name,
                           get_pokemon_name_dictionary)
@@ -11,17 +12,21 @@ repo_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 input_file_path = os.path.join(repo_file_path, 'input')
 resources_filepath = os.path.join(repo_file_path, "Python_tasks", "Resources")
 output_file_path = os.path.join(repo_file_path, "Python_tasks", "output")
+
+# Create an instance of JsonCache
+json_cache = JsonCache()
+
 POKEMON_NAMES = get_pokemon_name_dictionary()
 
 def getTrainerIdsFromDocumentation():
     doc_filepath = os.path.join(input_file_path, "docs.csv")
     trainer_IDs = []
-    with open(doc_filepath, "r")as doc_csv:
+    with open(doc_filepath, "r") as doc_csv:
         csvreader = csv.reader(doc_csv)
         for row in csvreader:
             if row[0].isdigit():
                 trainer_IDs.append(int(row[0]))
-        return trainer_IDs
+    return trainer_IDs
 
 def get_lumi_data(raw_data, callback):
     data = {}
@@ -30,8 +35,17 @@ def get_lumi_data(raw_data, callback):
     return data
 
 def load_json_from_file(filepath):
+    # Check if JSON data is already cached
+    if filepath in json_cache.cache:
+        return json_cache.cache[filepath]
+    
+    # Load the JSON file
     with open(filepath, "r", encoding="utf-8") as f:
-        return json.load(f)
+        json_data = json.load(f)
+
+    # Cache the loaded JSON
+    json_cache.cache[filepath] = json_data
+    return json_data
 
 def load_data():
     data = {}
@@ -49,7 +63,7 @@ def load_data():
         "rates": os.path.join(resources_filepath, 'Rates.json')
     }
     for name, filepath in files.items():
-        data[name] = load_json_from_file(filepath)
+        data[name] = json_cache.get_json(filepath)  # Access the cached JSON data using json_cache
 
     data["abilities"] = get_lumi_data(data["raw_abilities"], get_ability_string)
     data["pokedex"] = get_lumi_data(data["raw_pokedex"], get_pokemon_name)

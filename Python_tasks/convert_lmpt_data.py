@@ -3,6 +3,7 @@ import csv
 import json
 import os
 import re
+import time
 import unicodedata
 from collections import defaultdict
 
@@ -30,6 +31,12 @@ areas_file_path = os.path.join(input_file_path, 'areas_copy.csv')
 bad_encounters = []
 final_list = {}
 areas_list = 0
+def get_all_cached_data():
+    all_cached_data = {}
+    for filename, data in json_cache.cache.items():
+        all_cached_data[filename] = data
+    return all_cached_data
+
 full_data = load_data()
 
 with open(areas_file_path, encoding="utf-8") as f:
@@ -405,5 +412,11 @@ def getEncounterData():
         output.write(json.dumps(sorted_encounters, indent=2))
 
 if __name__ == "__main__":
+    start_time = time.time()
+    
     getPokedexInfo()
     getEncounterData()
+    
+    end_time = time.time()
+    execution_time = end_time - start_time
+    print("Execution time:", execution_time, "seconds")
