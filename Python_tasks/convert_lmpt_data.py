@@ -31,9 +31,6 @@ areas_list = 0
 first_excecution_time_list = [] # These are for adding times for length of executions in loops for debugging
 second_execution_time_list = []
 
-full_data = load_data()
-gym_leader_data = full_data['gym_leaders']
-pokedex = get_lumi_data(full_data["raw_pokedex"], get_pokemon_name)
 
 with open(areas_file_path, encoding="utf-8") as f:
     areas_list = [line.strip().split(',') for line in f.readlines()]
@@ -386,6 +383,10 @@ def getEncounterData():
 
 if __name__ == "__main__":
     start_time = time.time()
+    full_data = load_data()
+    gym_leader_data = full_data['gym_leaders']
+    pokedex = get_lumi_data(full_data["raw_pokedex"], get_pokemon_name)
+    
     diff_forms = get_diff_form_dictionary()
     getPokedexInfo()
 
