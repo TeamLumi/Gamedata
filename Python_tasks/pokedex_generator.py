@@ -2,10 +2,9 @@ import json
 import os
 import time
 
+from data_checks import get_average_time
 from load_files import load_data
-from pokemonUtils import GenForms, get_pokemon_info, get_pokemon_name
-
-full_data = load_data()
+from pokemonUtils import GenForms, get_pokemon_info, get_pokemon_name, get_diff_form_dictionary
 
 repo_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 input_file_path = os.path.join(repo_file_path, 'input')
@@ -13,6 +12,9 @@ debug_file_path = os.path.join(repo_file_path, "Python_tasks", "Debug")
 output_file_path = os.path.join(repo_file_path, "Python_tasks", "output")
 first_execution_list = []
 second_execution_list = []
+
+first_excecution_time_list = []
+second_execution_time_list = []
 
 def get_form_format(monsNo, formNo):
     mon_zeros = 3 - len(str(monsNo))
@@ -159,8 +161,7 @@ def evolution_pathfinding():
         json.dump(evolution_paths, output, ensure_ascii=False, indent=2)
     return evolution_paths
 
-def get_mon_dex_info(pokemon, evolution_paths):
-    diff_forms = full_data['diff_forms']
+def dex_info(pokemon, evolve):
     poke_info = get_pokemon_info(pokemon)
     poke_name = get_pokemon_name(pokemon)
     dex_info = {
@@ -212,9 +213,11 @@ def get_avg_time(times):
     return sum(times) / len(times)
 
 if __name__ == "__main__":
+
+    diff_forms = get_diff_form_dictionary()
+    full_data = load_data()
     getPokedexInfo()
-    average_evolution_time = get_avg_time(second_execution_list)
-    print("Amount of iterations for pathfinding:",len(second_execution_list))
-    second_execution_list.sort()
-    print("These are the top 20 times for the pathfinding:", [format(t, '.6f') for t in second_execution_list[-20:]])
-    print("Each Pokemon took about:", average_evolution_time, "seconds")
+
+if __name__ != "__main__":
+    diff_forms = get_diff_form_dictionary()
+    full_data = load_data()

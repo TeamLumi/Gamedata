@@ -1,27 +1,22 @@
-import os
-import re
 import json
 import math
+import os
+import re
+import time
 
-from trainerUtils import process_files, parse_ev_script_file
-from pokemonUtils import get_pokemon_from_trainer_info, get_pokemon_name
-from convert_lmpt_data import getTrainerData
 import constants
+from convert_lmpt_data import getTrainerData
+from data_checks import get_average_time
+from load_files import load_data
+from pokemonUtils import get_pokemon_from_trainer_info, get_pokemon_name
+from trainerUtils import parse_ev_script_file, process_files
 
 repo_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-input_file_path = os.path.join(repo_file_path, 'input')
 output_file_path = os.path.join(repo_file_path, "Python_tasks", "output")
-trainer_table_file_path = os.path.join(input_file_path, "TrainerTable.json")
 trainer_doc_data_file_path = os.path.join(repo_file_path, "trainer_docs", "trainer_doc_output.txt")
 
-resources_filepath = os.path.join(repo_file_path, "Python_tasks", "Resources")
-gym_leader_file_path = os.path.join(resources_filepath, "NewGymLeaders.json")
-
-with open(gym_leader_file_path, mode='r', encoding="utf-8") as f:
-    gym_leader_data = json.load(f)
-
-with open(trainer_table_file_path, mode='r', encoding="utf-8") as f:
-    TRAINER_TABLE = json.load(f)
+first_excecution_time_list = []
+second_execution_time_list = []
 
 def get_trainer_pokemon(trainerId, output_format):
     '''
@@ -29,7 +24,8 @@ def get_trainer_pokemon(trainerId, output_format):
     Requires the trainerId and the output_format being either "Scripted" or "Place Data"
     Those are referenced in Constants.py
     '''
-   
+    TRAINER_TABLE = full_data['raw_trainer_data']
+
     pokemon_list = []
     trainer = next((t for t in TRAINER_TABLE["TrainerPoke"] if t["ID"] == trainerId), None)
     pokemon_list = get_pokemon_from_trainer_info(trainer, output_format)
@@ -50,7 +46,7 @@ def get_avg_trainer_level(trainer_team):
     '''
     mon_count = len(trainer_team)
     if len(trainer_team) == 0:
-        print("Trainer is less than 1")
+        print("Trainer does not have a team")
         return 0
     total_levels = 0
     for mon in trainer_team:
@@ -66,7 +62,7 @@ def sort_trainers_by_level(trainer_info):
     '''
     for trainer in trainer_info:
         trainerId = trainer['trainerId']
-        trainer['team'] = get_trainer_pokemon(trainerId, "Docs")
+        trainer['team'] = get_trainer_pokemon(trainerId, constants.DOCS_METHOD)
         trainer['avg_lvl'] = get_avg_trainer_level(trainer['team'])
     sorted_trainers_by_level = sort_dicts_by_key(trainer_info, 'zoneName', 'avg_lvl', constants.ZONE_ORDER)
     return sorted_trainers_by_level
@@ -83,7 +79,7 @@ def sort_trainers_by_route(trainer_info):
     for trainer in sorted_trainers_by_key:
         areaName = trainer['areaName']
         trainerId = trainer['trainerId']
-        trainer['team'] = get_trainer_pokemon(trainerId, "Tracker")
+        trainer['team'] = get_trainer_pokemon(trainerId, constants.TRACKER_METHOD)
         if areaName not in sorted_trainers_by_route.keys():
             sorted_trainers_by_route[areaName] = [trainer]
         else:
@@ -99,9 +95,9 @@ def get_trainer_name(trainer_name, zone_name, TRAINER_INDEX=0):
     '''
     if re.findall(constants.TEAM_REGEX, trainer_name):
         split_name = trainer_name.split()
-        trainer_name = ' '.join(split_name[:-2])
+        altered_trainer_name = ' '.join(split_name[:-2])
         team_name = ' '.join(split_name[-2:])
-        updated_name = f"{trainer_name} ({zone_name}) [{team_name}]"
+        updated_name = f"{altered_trainer_name} ({zone_name}) [{team_name}]"
         return [trainer_name, updated_name]
     if TRAINER_INDEX > 0:
         updated_name = f"{trainer_name} {TRAINER_INDEX} ({zone_name})"
@@ -123,9 +119,9 @@ def write_trainer_docs_team_format(pokemon):
     Requires each pokemon from a trainer's team in write_to_trainer_docs_file function
     Returns the format for the header, ivs and evs of each pokemon
     '''
-    pokemon_header = f"\n{get_pokemon_name(mon['id'])}\n{mon['level']}\n{mon['nature']}\n{mon['ability']}\n\n{mon['item']}\n"
-    pokemon_ivs = f"{mon['ivhp']}/{mon['ivatk']}/{mon['ivdef']}/{mon['ivspatk']}/{mon['ivspdef']}/{mon['ivspeed']}\n"
-    pokemon_evs = f"{mon['evhp']}/{mon['evatk']}/{mon['evdef']}/{mon['evspatk']}/{mon['evspdef']}/{mon['evspeed']}\n"
+    pokemon_header = f"\n{get_pokemon_name(pokemon['id'])}\n{pokemon['level']}\n{pokemon['nature']}\n{pokemon['ability']}\n\n{pokemon['item']}\n"
+    pokemon_ivs = f"{pokemon['ivhp']}/{pokemon['ivatk']}/{pokemon['ivdef']}/{pokemon['ivspatk']}/{pokemon['ivspdef']}/{pokemon['ivspeed']}\n"
+    pokemon_evs = f"{pokemon['evhp']}/{pokemon['evatk']}/{pokemon['evdef']}/{pokemon['evspatk']}/{pokemon['evspdef']}/{pokemon['evspeed']}\n"
 
     return pokemon_header, pokemon_ivs, pokemon_evs
 
@@ -147,7 +143,7 @@ def write_to_trainer_docs_file(trainer, trainer_name):
             moves = mon['moves']
 
             f.write(mon_header)
-            for index in range(len(moves)):
+            for index in range(0, 4):
                 f.write(get_trainer_doc_moves(moves, index))
             f.write(mon_ivs)
             f.write(mon_evs)
@@ -172,7 +168,6 @@ def write_trainer_docs(trainer_list):
 
         write_to_trainer_docs_file(trainer, full_trainer_name)
 
-
 def write_tracker_docs(trainers_list):
     '''
     Requires the trainers sorted for the Nuzlocke Tracker
@@ -188,7 +183,7 @@ def write_tracker_docs(trainers_list):
             zone_name = f"{trainer['zoneName']} Trainers"
             zone_id = trainer['zoneId']
             name = f"{trainer['type']} {trainer['name']}"
-            if "Grunt" in name or "Lucas" in name or "Dawn" in name:
+            if any(substring in name for substring in REPEAT_TRAINERS_LIST):
                 TRAINER_INDEX +=1
             full_trainer_name = get_trainer_name(name, zone_name, TRAINER_INDEX)
             trainer_name = full_trainer_name[0]
@@ -210,7 +205,6 @@ def get_trainer_doc_data():
     '''
     This gets the trainer documentation for Solarnce's Trainer Docs in the Google Sheets
     '''
-
     trainer_info = process_files(os.path.join(repo_file_path, "scriptdata"), parse_ev_script_file)
     print("Start trainer sorting by level")
     sorted_trainers = sort_trainers_by_level(trainer_info)
@@ -222,6 +216,8 @@ def get_tracker_trainer_data():
     '''
     This gets all of the trainer data for the tracker sorted by routes
     '''
+    gym_leader_data = full_data['gym_leaders']
+
     original_teams = getTrainerData(gym_leader_data)
     trainer_info = process_files(os.path.join(repo_file_path, "scriptdata"), parse_ev_script_file)
 
@@ -232,8 +228,12 @@ def get_tracker_trainer_data():
     for route in new_trainers:
         original_teams["1"].append(route)
     with open(os.path.join(output_file_path, 'Trainer_output.json'), 'w', encoding='utf-8') as f:
-        json.dump(original_teams, f)
+        json.dump(original_teams, f, indent=2)
 
 if __name__ == "__main__":
+    start_time = time.time()
+    full_data = load_data()
     get_trainer_doc_data()
     get_tracker_trainer_data()
+    end_time = time.time()
+    print("This is how long it took to run this file:", end_time - start_time, "seconds")

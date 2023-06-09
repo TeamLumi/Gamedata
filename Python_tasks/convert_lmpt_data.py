@@ -7,39 +7,34 @@ import time
 import unicodedata
 from collections import defaultdict
 
-from data_checks import check_bad_encounter, check_mons_list
-from load_files import load_data
+import constants
+from data_checks import check_bad_encounter, check_mons_list, get_average_time
+from load_files import get_lumi_data, load_data
 from pokedex_generator import getPokedexInfo
-from pokemonUtils import (GenForms, create_diff_forms_dictionary,
-                          get_ability_string, get_form_name,
-                          get_form_pokemon_personal_id, get_item_string,
-                          get_nature_name, get_pokemon_from_trainer_info,
-                          get_pokemon_info, get_pokemon_mons_no_from_name,
-                          get_pokemon_name, get_pokemon_name_dictionary,
+from pokemonUtils import (get_diff_form_dictionary,
+                          get_pokemon_from_trainer_info,
+                          get_pokemon_mons_no_from_name, get_pokemon_name,
                           isSpecialPokemon)
 
 # Get the repo file path for cleaner path generating
 repo_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 input_file_path = os.path.join(repo_file_path, 'input')
-resources_filepath = os.path.join(repo_file_path, "Python_tasks", "Resources")
 debug_file_path = os.path.join(repo_file_path, "Python_tasks", "Debug")
-honeywork_cpp_filepath = os.path.join(input_file_path, "honeywork.cpp")
-honeyroutes_filepath = os.path.join(repo_file_path, "Python_tasks", "Resources", "honeyroutes.json")
 output_file_path = os.path.join(repo_file_path, "Python_tasks", "output")
-gym_leader_file_path = os.path.join(resources_filepath, "NewGymLeaders.json")
+
+honeywork_cpp_filepath = os.path.join(input_file_path, "honeywork.cpp")
 areas_file_path = os.path.join(input_file_path, 'areas_copy.csv')
+
 bad_encounters = []
 final_list = {}
 areas_list = 0
-first_execution_list = [] # Used for getting average run times for different areas
-second_execution_list = []
-full_data = load_data()
+
+first_excecution_time_list = [] # These are for adding times for length of executions in loops for debugging
+second_execution_time_list = []
+
 
 with open(areas_file_path, encoding="utf-8") as f:
     areas_list = [line.strip().split(',') for line in f.readlines()]
-
-with open(gym_leader_file_path, mode='r', encoding="utf-8") as f:
-    gym_leader_data = json.load(f)
 
 def get_zoneID(areaName):
     for places in areas_list:
@@ -62,14 +57,7 @@ def sort_dict_by_keys(d):
     return sorted_dict
 
 def getTrainerData(gymLeaderList):
-    trainer_data, abilityList, pokedex, itemList, diff_forms = (
-        full_data["raw_trainer_data"],
-        full_data["abilities"],
-        full_data["pokedex"],
-        full_data["items"],
-        full_data["diff_forms"]
-    )
-    gender = {"0": "MALE", "1": "FEMALE", "2": "NEUTRAL"}
+    trainer_data = full_data["raw_trainer_data"]
 
     dic = {}
     full_list = []
@@ -80,14 +68,13 @@ def getTrainerData(gymLeaderList):
                 for trainer_id in trainer_ids:
                     fights = {}
                     trainer = next((t for t in trainer_data["TrainerPoke"] if t["ID"] == trainer_id), None)
-                    output_format = "Tracker"
                     if trainer:
-                        pokemon_list = get_pokemon_from_trainer_info(trainer, output_format)
+                        pokemon_list = get_pokemon_from_trainer_info(trainer, constants.TRACKER_METHOD)
                         fights["content"] = pokemon_list
                         fights["game"] = f"{gym_leader} Team {str(trainer_ids.index(trainer_id) + 1)}"
                         fights["name"] = gym_leader.split("(")[0].strip()
                         fights["type"] = battle_type
-                        fights["route"] = f'{gym_leader.split("(")[1].strip(")")} Gym Leader' if len(gym_leader.split("(")) > 1 else "Elite Four Trainers"
+                        fights["route"] = f'{gym_leader.split("(")[1].strip(")")} Gym Leader' if len(gym_leader.split("(")) > 1 else constants.E4_METHOD
                         fights["zoneId"] = None
                     trainers_list.append(fights)
                 full_list.append(trainers_list)
@@ -95,7 +82,6 @@ def getTrainerData(gymLeaderList):
     return dic
 
 def match_honey_tree_data(match, honey_routes):
-    array_regex = r"\[(.*?)\]\s*=\s*\{(.*?)\}"
     values_str = match.group(1)
     honey_trees = {}
 
@@ -104,25 +90,23 @@ def match_honey_tree_data(match, honey_routes):
         if not line:
             continue
 
-        submatch = re.search(array_regex, line)
+        submatch = re.search(constants.HONEY_TREE_MATCH_REGEX, line)
         if not submatch:
             continue
 
         key = submatch.group(1)
         values = [v.strip() for v in submatch.group(2).split(",")]
-        if "AMPHAROS" not in values:
+        if constants.AMPHAROS_PLACE_HOLDER not in values:
             honey_trees[honey_routes[key][0]] = values
     return honey_trees
 
 def HoneyTreeData():
-    const_regex = r"const\s+int32_t\s+HONEY_TREES\[\s*NUM_ZONE_ID\s*\]\[\s*10\s*\]\s*=\s*\{\s*([\s\S]*?)\};"
-
-    with open(honeywork_cpp_filepath, "r") as file, open(honeyroutes_filepath, "r") as honey:
+    with open(honeywork_cpp_filepath, "r") as file:
         honey_data = file.read()
-        honey_routes = json.load(honey)
 
+    honey_routes = full_data['honey_routes']
     # Extract honey trees data
-    match = re.search(const_regex, honey_data)
+    match = re.search(constants.HONEY_TREE_CONST_REGEX, honey_data)
     if match:
         return match_honey_tree_data(match, honey_routes)
 
@@ -133,8 +117,8 @@ def get_honey_tree_mons(routes):
         for mon in honey_encounter_data[key]:
             if mon.capitalize() in routes[key]:
                 continue
-            if mon == "FARFETCHD":
-                routes[key].append("Farfetch'd")
+            if mon == constants.WRONG_FARFETCHD:
+                routes[key].append(constants.RIGHT_FARFETCHD)
             else:
                 routes[key].append(mon.capitalize())
 
@@ -162,15 +146,12 @@ def count_mons_in_honey_trees(dict):
     return result_dict
 
 def honey_tree_encounter_data():
-    const_regex = r"const\s+int32_t\s+HONEY_TREES\[\s*NUM_ZONE_ID\s*\]\[\s*10\s*\]\s*=\s*\{\s*([\s\S]*?)\};"
-    array_regex = r"\[(.*?)\]\s*=\s*\{(.*?)\}"
 
-    with open(honeywork_cpp_filepath, "r") as file, open(honeyroutes_filepath, "r") as honey:
+    with open(honeywork_cpp_filepath, "r") as file:
         data = file.read()
-        honey_routes = json.load(honey)
-
+    honey_routes = full_data['honey_routes']
     # Extract honey trees data
-    match = re.search(const_regex, data)
+    match = re.search(constants.HONEY_TREE_CONST_REGEX, data)
     if match:
         values_str = match.group(1)
         honey_trees = {}
@@ -178,14 +159,14 @@ def honey_tree_encounter_data():
             line = line.strip()
             if not line:
                 continue
-            submatch = re.search(array_regex, line)
+            submatch = re.search(constants.HONEY_TREE_MATCH_REGEX, line)
             if submatch:
                 key = submatch.group(1)
                 zoneID = get_zoneID(key)
                 if zoneID:
                     zoneName = get_zone_name(zoneID)
                 values = [v.strip() for v in submatch.group(2).split(",")]
-                if "AMPHAROS" not in values:
+                if constants.AMPHAROS_PLACE_HOLDER not in values:
                     honey_trees[zoneName] = [values, honey_routes[key][1]]
 
     honey_trees = count_mons_in_honey_trees(honey_trees)
@@ -193,7 +174,7 @@ def honey_tree_encounter_data():
     return honey_trees
 
 def get_diff_form_mons(monsno, zoneID, encounters):
-    pokedex, routeNames = ( full_data["pokedex"], full_data["routes"] )
+    routeNames = full_data["routes"]
     formNo = monsno//(2**16)
     reverse_lumi_formula_mon = monsno - (formNo * (2**16))
     for tracker_route, route in routeNames.items():
@@ -206,13 +187,13 @@ def get_diff_form_mons(monsno, zoneID, encounters):
         temp_form_no = formNo
         if isSpecialPokemon(get_pokemon_name(monsno)):
             temp_form_no = 0
- 
-        check = check_bad_encounter(encounters, tracker_route, pkmn_key, reverse_lumi_formula_mon, temp_form_no, zoneID, 'Tracker')
+
+        check = check_bad_encounter(encounters, tracker_route, pkmn_key, reverse_lumi_formula_mon, temp_form_no, zoneID, constants.TRACKER_METHOD)
         if check != -1:
             bad_encounters.append(check)
 
 def get_standard_mons(monsno, zoneID, encounters):
-    pokedex, routeNames = ( full_data["pokedex"], full_data["routes"] )
+    routeNames = full_data["routes"] 
     if monsno == 0:
         return
     for tracker_route, route in routeNames.items():
@@ -227,25 +208,24 @@ def update_routes_with_mons(monsno, zoneID, encounters):
         get_diff_form_mons(monsno, zoneID, encounters)
 
 def get_route_rate(method, method_index, route_rates):
-    if method == "Surfing Incense":
-        return route_rates["Incense"][method_index]
-    elif method == "tairyo":
-        return route_rates["tairyo"][0]
-    elif method == "swayGrass":
-        return route_rates["swayGrass"][3]
+    if method == constants.SURFING_INCENSE:
+        return route_rates[constants.INCENSE][method_index]
+    elif method == constants.SWARM:
+        return route_rates[constants.SWARM][0]
+    elif method == constants.RADAR:
+        return route_rates[constants.RADAR][3]
     return route_rates[method][method_index]
 
 def check_for_incense(method, method_index):
     if "gba" in method:
         if method_index == 2:
-            return "Surfing Incense"
-        return "Incense"
+            return constants.SURFING_INCENSE
+        return constants.INCENSE
     return method
 
 def get_standard_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, method_index):
     route_rates = full_data['rates']
     name_routes = full_data['routes']
-    pokedex = full_data['pokedex']
     rates = full_data['rates']
     new_method = method
     monsName = get_pokemon_name(monsNo)
@@ -268,7 +248,7 @@ def get_standard_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, m
                     encounters[monsName].append(encounter_list_order)
 
 def get_diff_form_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, method_index):
-    route_rates, name_routes, pokedex, diff_forms, rates = ( full_data['rates'], full_data['routes'], full_data['pokedex'], full_data['diff_forms'], full_data['rates'] )
+    route_rates, name_routes, rates = ( full_data['rates'], full_data['routes'], full_data['rates'] )
     new_method = method
     formNo = monsNo//(2**16)
     reverse_lumi_formula_mon = monsNo - (formNo * (2**16))
@@ -316,7 +296,7 @@ def get_encounter_rates(route_mons, method, zoneID, encounters):
         method_index = route_mons.index(mon)
         monsNo = mon['monsNo']
         maxlevel, minlevel = mon['maxlv'], mon['minlv']
-        if method == 'tairyo' and method_index == 1:
+        if method == constants.SWARM and method_index == 1:
             continue
         update_mons_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, method_index)
 
@@ -326,9 +306,9 @@ def get_honey_tree_encounter_rates(rates_list):
     for mon in honey_encounter_data.keys():
         for data in honey_encounter_data[mon]:
             route = data[0]
-            monsName = "Farfetch\u2019d" if mon == "Farfetchd" else mon
+            monsName = constants.RIGHT_FARFETCHD if mon == constants.WRONG_FARFETCHD.capitalize() else mon
             monsNo = get_pokemon_mons_no_from_name(monsName)
-            method = "Honey Tree"
+            method = constants.HONEY_TREE
             rate = data[1]
             minlevel = data[2]
             maxlevel = data[2]
@@ -341,14 +321,13 @@ def get_honey_tree_encounter_rates(rates_list):
                 rates_list[monsName].append([route, method, rate, minlevel, maxlevel, index])
 
 def get_trophy_garden_encounter_rates(trophy_garden_encounters, rates_list):
-    pokedex = full_data['pokedex']
     for mon in trophy_garden_encounters:
         zones = areas_list[297 + 1]
         zoneName = zones[3] if zones[3] != '' else zones[4]
-        method = "Daily Trophy Garden"
-        rate = "5%"
-        minlevel = 24
-        maxlevel = 25
+        method = constants.TROPHY_GARDEN
+        rate = constants.TROPHY_GARDEN_RATE
+        minlevel = constants.TROPHY_GARDEN_LEVEL
+        maxlevel = constants.TROPHY_GARDEN_LEVEL
         index = None
         monsNo = mon['monsNo']
         monsName = get_pokemon_name(monsNo)
@@ -359,8 +338,7 @@ def get_trophy_garden_encounter_rates(trophy_garden_encounters, rates_list):
             rates_list[monsName].append([zoneName, method, rate, minlevel, maxlevel, index])
 
 def getEncounterData():
-    encounter_data, pokedex = ( full_data["raw_encounters"], full_data['pokedex'] )
-
+    encounter_data = full_data["raw_encounters"]
     encounter_list = defaultdict(list)
     rates_list = defaultdict((list))
     for area in encounter_data['table']:
@@ -380,12 +358,11 @@ def getEncounterData():
         check = check_mons_list(check_mon_route_list, zoneID, final_list)
         if check != -1:
             final_list[zoneID] = check
-
     ##This is for adding the Trophy Garden daily mons
-    for mon in encounter_data['urayama']:
+    for mon in encounter_data[constants.TROPHY_GARDEN_NAME]:
         monsNo = mon['monsNo']
-        encounter_list['lmpt-39'].append(get_pokemon_name(monsNo))
-    get_trophy_garden_encounter_rates(encounter_data['urayama'], rates_list)
+        encounter_list[constants.TROPHY_GARDEN_TRACKER_VAR].append(get_pokemon_name(monsNo))
+    get_trophy_garden_encounter_rates(encounter_data[constants.TROPHY_GARDEN_NAME], rates_list)
 
     ##This is for adding all of the Honey Tree encounters to the list
     get_honey_tree_mons(encounter_list)
@@ -398,7 +375,6 @@ def getEncounterData():
     my_keys.sort(key = lambda x: int(x.split('-')[1]))
     sorted_encounters = {i: encounter_list[i] for i in my_keys}
     sorted_rates = sort_dict_by_keys(rates_list)
-
     with open(os.path.join(debug_file_path, 'encounter_locations.json'), 'w') as output:
         output.write(json.dumps(sorted_rates, indent=2))
     with open(os.path.join(debug_file_path, 'bad_encounters.json'), 'w') as output:
@@ -413,18 +389,17 @@ def get_avg_time(times):
 
 if __name__ == "__main__":
     start_time = time.time()
-
+    full_data = load_data()
+    gym_leader_data = full_data['gym_leaders']
+    pokedex = get_lumi_data(full_data["raw_pokedex"], get_pokemon_name)
+    
+    diff_forms = get_diff_form_dictionary()
     getPokedexInfo()
 
     mid_time = time.time()
-    mid_execution_time = mid_time - start_time
-    print("Mid Execution time:", mid_execution_time, "seconds")
-
+    print("Middle Execution time:", mid_time - start_time, "seconds")
     getEncounterData()
-    #avg_standard_runtime = get_avg_time(first_execution_list)
-    #avg_diff_forms_runtime = get_avg_time(second_execution_list)
-    #print("Average runtime per Standard Rate Mon is:", avg_standard_runtime, "seconds")
-    #print("Average runtime per Diff Form Rate Mon is:", avg_diff_forms_runtime, "seconds")
+
     end_time = time.time()
     execution_time = end_time - start_time
     print("Execution time:", execution_time, "seconds")
