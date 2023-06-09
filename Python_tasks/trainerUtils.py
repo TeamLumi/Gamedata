@@ -1,23 +1,17 @@
-import os
 import json
+import os
 import re
 from operator import itemgetter
+import time
+
 import constants
+from load_files import load_data
+from data_checks import get_average_time
 
 repo_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 parent_file_path = os.path.abspath(os.path.dirname(__file__))
 input_file_path = os.path.join(repo_file_path, 'input')
 debug_file_path =os.path.join(parent_file_path, "Debug")
-resources_file_path = os.path.join(parent_file_path, "Resources")
-name_routes_file_path = os.path.join(resources_file_path, "NameRoutes.json")
-special_trainer_name_file_path = os.path.join(resources_file_path, "SpecialTrainerNames.json")
-
-trainers_file_path = os.path.join(input_file_path, 'english_dp_trainers_name.json')
-map_info_file_path = os.path.join(input_file_path, 'MapInfo.json')
-area_name_file_path = os.path.join(input_file_path, 'english_dp_fld_areaname.json')
-area_display_file_path = os.path.join(input_file_path, 'english_dp_fld_areaname_display.json')
-trainer_labels_file_path = os.path.join(input_file_path, 'english_dp_trainers_type.json')
-trainer_table_file_path = os.path.join(input_file_path, 'TrainerTable.json')
 
 areas_file_path = os.path.join(input_file_path, 'areas_copy.csv')
 
@@ -28,6 +22,9 @@ bdsp_location_files = os.listdir(bdsp_location_files_path)
 trainer_labels = 0
 trainer_names = 0
 areas = 0
+
+first_excecution_time_list = []
+second_execution_time_list = []
 
 class UnsupportedTrainer(Exception):
     pass
@@ -46,30 +43,6 @@ class SupportTrainerError(Exception):
 
 with open(areas_file_path, encoding="utf-8") as f:
     areas = [line.strip().split(',') for line in f.readlines()]
-
-with open(trainer_table_file_path, mode='r', encoding="utf-8") as f:
-    TRAINER_TABLE = json.load(f)
-
-with open(special_trainer_name_file_path, mode='r', encoding="utf-8") as f:
-    special_trainer_names = json.load(f)
-
-with open(name_routes_file_path, mode='r', encoding="utf-8") as f:
-    name_routes = json.load(f)
-
-with open(trainer_labels_file_path, mode='r', encoding="utf-8") as f:
-    trainer_labels = json.load(f)
-
-with open(trainers_file_path, mode='r', encoding="utf-8") as f:
-    trainer_names = json.load(f)
-
-with open(map_info_file_path, mode='r', encoding="utf-8") as f:
-    map_info = json.load(f)
-
-with open(area_display_file_path, mode='r', encoding="utf-8") as f:
-    area_display_names = json.load(f)
-
-with open(area_name_file_path, mode='r', encoding="utf-8") as f:
-    area_names = json.load(f)
 
 def get_trainer_name(label_name):
     '''
@@ -92,16 +65,19 @@ def get_trainer_label(label_name):
     return match['wordDataArray'][0]['str'] if match else None
     
 def get_area_name(label_name):
+    area_names = full_data['area_names']
     label_data_array = area_names['labelDataArray']
     match = next((e for e in label_data_array if e['labelName'] == label_name), None)
     return match['wordDataArray'][0]['str'] if match else None
 
 def get_area_display_name(label_name):
+    area_display_names = full_data['area_display_names']
     label_data_array = area_display_names['labelDataArray']
     match = next((e for e in label_data_array if e['labelName'] == label_name), None)
     return match['wordDataArray'][0]['str'] if match else None
 
 def get_map_info(label_name):
+    map_info = full_data['map_info']
     zone_data = map_info['ZoneData']
     match = next((e for e in zone_data if e['ZoneID'] == label_name), None)
     return get_area_display_name(match['MSLabel']) if match and len(match['MSLabel']) > 0 else get_area_name(match['PokePlaceName'])
@@ -128,8 +104,8 @@ def generate_trainer_name(raw_trainer_name, pokemon1_level):
     i2 = raw_trainer_name.find(']')
 
     bad_section = raw_trainer_name[i1:i2+1]
-    is_boss_trainer = ('City' in bad_section or 'League' in bad_section)
-    if not is_boss_trainer or 'Master' in raw_trainer_name:
+    is_boss_trainer = (constants.CITY_TRAINER in bad_section or constants.LEAGUE_TRAINER in bad_section)
+    if not is_boss_trainer or constants.MASTER_TRAINER in raw_trainer_name:
         return raw_trainer_name
 
     trainer_substring = raw_trainer_name[:i1-1] + raw_trainer_name[i2+1:]
@@ -230,9 +206,12 @@ def get_single_trainer(zoneID, ID, temp_IDs, name):
     return trainer
 
 def get_trainer_data(zoneID, trainerID, method):
+    TRAINER_TABLE = full_data['raw_trainer_data']
     trainer_data = TRAINER_TABLE['TrainerData'][trainerID]
     trainer_type = TRAINER_TABLE['TrainerType'][trainer_data['TypeID']]
     trainer_label = get_trainer_label(trainer_type['LabelTrType'])
+    name_routes = full_data['name_routes']
+
     if not trainer_label:
         print("This trainer doesn't have a label in game:", trainer_type['LabelTrType'], trainerID)        
     trainer_name = get_trainer_name(trainer_data['NameLabel'])
@@ -255,8 +234,8 @@ def get_trainer_data(zoneID, trainerID, method):
     }
     if areaName in tracker_vars.keys():
         areaName = tracker_vars.get(areaName, areaName)
-    if not areaName.startswith("lmpt"):
-        print(areaName)
+    #if not areaName.startswith("lmpt"):
+    #    print(areaName)
     trainer = {
         'areaName': areaName,
         'zoneName': zoneName,
@@ -384,7 +363,7 @@ def get_multi_trainers(trainerID1, trainerID2, zoneID, format):
 
 def get_named_trainer_data(zoneID, trainerID1, trainerID2, args):
     trainers = []
-
+    special_trainer_names = full_data['special_trainer_names']
     if len(trainerID2) > 0:
         temp_trainerID1 = get_trainer_id_from_partial(trainerID1)
         temp_trainerID2 = get_trainer_id_from_partial(trainerID2)
@@ -528,17 +507,26 @@ def parse_trainer_btl_set(substring):
     else:
         return substring
 
+def create_zone_id_map():
+    zone_dict = {}
+    for place in areas:
+        zone_index = int(areas.index(place) - 1)
+        zone_name = areas[zone_index][-1]
+        zone_id = areas[zone_index][0]
+        zone_dict[zone_name] = zone_id
+    return zone_dict
+ 
+def get_zoneID(zone_name):
+    if zone_name in zone_dict.keys():
+        return int(zone_dict[zone_name])
+    else:
+        return None
+
 def parse_ev_script_file(file_path):
     """
     The purpose of this function is to parse a text file and find every instance of the substring _TRAINER_BTL_SET or _TRAINER_MULTI_BTL_SET.
     """
-
-    def get_zoneID(areaName):
-        for places in areas:
-            if areaName in places:
-                zoneID = int(areas.index(places) - 1)
-                return zoneID
-
+    
     trainers = []
 
     with open(file_path, 'r', encoding="utf-8") as f:
@@ -549,7 +537,7 @@ def parse_ev_script_file(file_path):
                 zoneID = get_zoneID(areaName)
                 if areaName == constants.EVE_AREA_NAME:
                     zoneID = 446
-                
+
                 if constants.TRAINER_BATTLE in substring or constants.MULTI_TRAINER_BATTLE in substring:
                     args = parse_trainer_btl_set(substring.strip())
                 else:
@@ -597,5 +585,11 @@ def process_files(folder_path, callback):
         trainer_data.append(ordered_battle)
     sorted_data = sorted(trainer_data, key=itemgetter('zoneId', 'trainerId'))
     with open(os.path.join(debug_file_path, 'trainer_info.json'), 'w', encoding='utf-8') as f:
-        json.dump(sorted_data, f)
+        json.dump(sorted_data, f, indent=2)
     return sorted_data
+
+if __name__ != "__main__":
+    full_data = load_data()
+    zone_dict = create_zone_id_map()
+    trainer_labels = full_data['trainer_labels']
+    trainer_names = full_data['trainer_names']

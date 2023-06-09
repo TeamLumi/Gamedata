@@ -1,14 +1,18 @@
 import json
 import os
-from pokemonUtils import GenForms, get_pokemon_info, get_pokemon_name
-from load_files import load_data
+import time
 
-full_data = load_data()
+from data_checks import get_average_time
+from load_files import load_data
+from pokemonUtils import GenForms, get_pokemon_info, get_pokemon_name, get_diff_form_dictionary
 
 repo_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 input_file_path = os.path.join(repo_file_path, 'input')
 debug_file_path = os.path.join(repo_file_path, "Python_tasks", "Debug")
 output_file_path = os.path.join(repo_file_path, "Python_tasks", "output")
+
+first_excecution_time_list = []
+second_execution_time_list = []
 
 def get_form_format(monsNo, formNo):
     mon_zeros = 3 - len(str(monsNo))
@@ -153,7 +157,6 @@ def evolution_pathfinding():
     return evolve
 
 def get_mon_dex_info(pokemon, evolve):
-    diff_forms = full_data['diff_forms']
     poke_info = get_pokemon_info(pokemon)
     poke_name = get_pokemon_name(pokemon)
     dex_info = {
@@ -196,4 +199,10 @@ def getPokedexInfo():
     return pokedex
 
 if __name__ == "__main__":
+    diff_forms = get_diff_form_dictionary()
+    full_data = load_data()
     getPokedexInfo()
+
+if __name__ != "__main__":
+    diff_forms = get_diff_form_dictionary()
+    full_data = load_data()
