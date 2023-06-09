@@ -15,31 +15,59 @@ RENEGADE = "Renegade Park"
 RENEGADE_TRACKER_VAR = "lmpt-45" #This is Route 221 since there are no encounters in Renegade Park
 DISTORTION = "Distortion Room"
 DISTORTION_TRACKER_VAR = 'lmpt-56' #This is for Spear Pillar bc no encounters in Distortion Room
+TROPHY_GARDEN_NAME = 'urayama'
+TROPHY_GARDEN_TRACKER_VAR = 'lmpt-39'
 
 STARTERS = ["piplup", "turtwig", "chimchar"]
 MASTER_TRAINER_TYPES = ["fire", "water", "electric", "grass", "ice", "fighting", "poison", "ground", "flying", "psychic", "bug", "rock", "ghost", "dragon", "dark", "steel", "fairy"]
 CELEBI = "Celebi"
+AMPHAROS_PLACE_HOLDER = "AMPHAROS"
+WRONG_FARFETCHD = "FARFETCHD"
+RIGHT_FARFETCHD = "Farfetch\u2019d"
+
 PLACE_DATA_METHOD = "Place Data"
 SCRIPTED_METHOD = "Scripted"
+TRACKER_METHOD = "Tracker"
+E4_METHOD = "Elite Four Trainers"
+
 MULTI_FORMAT = "Multi"
 EVIL_TYPE = "Evil"
+
+GENDER = {"0": "MALE", "1": "FEMALE", "2": "NEUTRAL"}
 MALE = "male"
 FEMALE = "female"
+
 MASTER_TRAINER = "Master"
 BAD_SUPPORT_LOOKUP1 = "ev_r207_func_17" ### These bad lookups are for Lucas and Dawn on Route 207
 BAD_SUPPORT_LOOKUP2 = "ev_r207_func_20"
 SUPPORT_LINK = "Support"
+
+#Lookup values for ev_script
 LDVAL_LOOKUP = "LDVAL"
 MASTER_TRAINER_LOOKUP = "_LDVAL(@SCWK_PARAM1"
 CELEBI_LOOKUP = "_LDVAL(@CON_TEMP05"
 EVIL_LOOKUP = "LDVAL(@SCWK_TEMP"
+
 REMATCH_SUBSTRING = "rematch"
 DESIRED_ORDER = [ 'areaName', 'zoneName', 'zoneId', 'trainerId', 'rematch', 'name', 'type', 'method', 'format', 'link' ]
 BARRY = "barry"
+
 TEAM_REGEX = "Team \d+"
 LDVAL_PATTERN = r"_LDVAL\(@(.*),\s?([1-9][0-9]*)\)"
 TRAINER_PATTERN = r"_TRAINER_BTL_SET\s*\(\s*('?[^']+'?|@\w+|\d+)\s*,\s*('?[^']+'?|@\w+|\d+)\s*\)"
 MULTI_TRAINER_PATTERN = r"_TRAINER_MULTI_BTL_SET\s*\(\s*((?:'[^']*'|@\w+|\d+)\s*(?:,\s*(?:'[^']*'|@\w+|\d+)\s*)*)\)"
+HONEY_TREE_MATCH_REGEX = r"\[(.*?)\]\s*=\s*\{(.*?)\}"
+HONEY_TREE_CONST_REGEX = r"const\s+int32_t\s+HONEY_TREES\[\s*NUM_ZONE_ID\s*\]\[\s*10\s*\]\s*=\s*\{\s*([\s\S]*?)\};"
+HONEY_TREE = "Honey Tree"
+TROPHY_GARDEN = "Daily Trophy Garden"
+TROPHY_GARDEN_RATE = "5%"
+TROPHY_GARDEN_LEVEL = 26
+
+SURFING_INCENSE = "Surfing Incense"
+INCENSE = "Incense"
+SWARM = "tairyo"
+RADAR = "swayGrass"
+
 EVE_AREA_NAME = "SODATEYA"
 MORIMOTO = "MORIMOTO_01"
 ZONE_ORDER = [

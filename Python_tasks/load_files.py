@@ -43,7 +43,9 @@ def load_data():
         "special_trainer_names": os.path.join(resources_file_path, "SpecialTrainerNames.json"),
         "map_info": os.path.join(input_file_path, 'MapInfo.json'),
         "area_display_names": os.path.join(input_file_path, 'english_dp_fld_areaname_display.json'),
-        "area_names": os.path.join(input_file_path, 'english_dp_fld_areaname.json')
+        "area_names": os.path.join(input_file_path, 'english_dp_fld_areaname.json'),
+        "gym_leaders": os.path.join(resources_filepath, "NewGymLeaders.json"),
+        "honey_routes": os.path.join(resources_file_path, "honeyroutes.json")
     }
     for name, filepath in files.items():
         data[name] = json_cache.get_json(filepath)  # Access the cached JSON data using json_cache
