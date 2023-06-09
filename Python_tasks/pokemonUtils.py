@@ -321,7 +321,7 @@ def get_pokemon_from_trainer_info(trainer, output_format):
         if level <= 0:
             break
         ability = get_ability_string(trainer[f"P{poke_num}Tokusei"])
-        gender = constants.GENDER[str(trainer[f"P{poke_num}Sex"])] if trainer[f"P{poke_num}Sex"] != 3 else 'FEMALE'
+        gender = constants.GENDER[str(trainer[f"P{poke_num}Sex"])] if trainer[f"P{poke_num}Sex"] != 3 else constants.GENDER["1"] #Female
         monsno = trainer[f"P{poke_num}MonsNo"]
 
         moves = [trainer[f"P{poke_num}Waza{j+1}"] for j in range(4)]
@@ -329,7 +329,7 @@ def get_pokemon_from_trainer_info(trainer, output_format):
         moves = get_moves(m1, m2, m3, m4, monsno, level, output_format)
         
         form = trainer[f"P{poke_num}FormNo"]
-        pokemonId = diff_forms[pokedex[str(trainer[f"P{poke_num}MonsNo"])] + str(form)][0] if form > 0 and output_format == "Tracker" else monsno
+        pokemonId = diff_forms[pokedex[str(trainer[f"P{poke_num}MonsNo"])] + str(form)][0] if form > 0 and output_format == constants.TRACKER_METHOD else monsno
         trainer_item = trainer[f"P{poke_num}Item"]
         item = get_item_string(trainer_item) if trainer_item != 0 else None
         pokemon = {
