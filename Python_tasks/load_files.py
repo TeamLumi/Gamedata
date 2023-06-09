@@ -44,7 +44,7 @@ def load_data():
         "map_info": os.path.join(input_file_path, 'MapInfo.json'),
         "area_display_names": os.path.join(input_file_path, 'english_dp_fld_areaname_display.json'),
         "area_names": os.path.join(input_file_path, 'english_dp_fld_areaname.json'),
-        "gym_leaders": os.path.join(resources_filepath, "NewGymLeaders.json"),
+        "gym_leaders": os.path.join(resources_file_path, "NewGymLeaders.json"),
         "honey_routes": os.path.join(resources_file_path, "honeyroutes.json")
     }
     for name, filepath in files.items():

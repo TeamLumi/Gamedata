@@ -329,7 +329,7 @@ def get_trophy_garden_encounter_rates(trophy_garden_encounters, rates_list):
         method = constants.TROPHY_GARDEN
         rate = constants.TROPHY_GARDEN_RATE
         minlevel = constants.TROPHY_GARDEN_LEVEL
-        maxlevel = constants.TROPHY_GARDEN__LEVEL
+        maxlevel = constants.TROPHY_GARDEN_LEVEL
         index = None
         monsNo = mon['monsNo']
         monsName = get_pokemon_name(monsNo)
