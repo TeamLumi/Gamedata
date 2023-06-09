@@ -161,9 +161,10 @@ def evolution_pathfinding():
         json.dump(evolution_paths, output, ensure_ascii=False, indent=2)
     return evolution_paths
 
-def dex_info(pokemon, evolve):
+def get_mon_dex_info(pokemon, evolution_paths):
     poke_info = get_pokemon_info(pokemon)
     poke_name = get_pokemon_name(pokemon)
+
     dex_info = {
         "value": pokemon,
         "text": poke_name,
@@ -216,7 +217,6 @@ if __name__ == "__main__":
 
     diff_forms = get_diff_form_dictionary()
     full_data = load_data()
-    getPokedexInfo()
 
 if __name__ != "__main__":
     diff_forms = get_diff_form_dictionary()

@@ -358,7 +358,7 @@ def get_pokemon_from_trainer_info(trainer, output_format):
 
 if __name__ != '__main__':
     full_data = load_data()
+    name_data = full_data['raw_pokedex']
     pokedex = get_lumi_data(name_data, get_pokemon_name)
     diff_forms = get_diff_form_dictionary()
-    name_data = full_data['raw_pokedex']
 
