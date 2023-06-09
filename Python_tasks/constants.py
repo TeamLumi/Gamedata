@@ -18,6 +18,7 @@ DISTORTION_TRACKER_VAR = 'lmpt-56' #This is for Spear Pillar bc no encounters in
 TROPHY_GARDEN_NAME = 'urayama'
 TROPHY_GARDEN_TRACKER_VAR = 'lmpt-39'
 
+BAD_ENCOUNTER_LIST = ["Gigantamax", "Eternamax", "Mega ", "Totem "]
 STARTERS = ["piplup", "turtwig", "chimchar"]
 MASTER_TRAINER_TYPES = ["fire", "water", "electric", "grass", "ice", "fighting", "poison", "ground", "flying", "psychic", "bug", "rock", "ghost", "dragon", "dark", "steel", "fairy"]
 CELEBI = "Celebi"
@@ -29,6 +30,7 @@ PLACE_DATA_METHOD = "Place Data"
 SCRIPTED_METHOD = "Scripted"
 TRACKER_METHOD = "Tracker"
 E4_METHOD = "Elite Four Trainers"
+DOCS_METHOD = "Docs"
 
 MULTI_FORMAT = "Multi"
 EVIL_TYPE = "Evil"
@@ -41,6 +43,8 @@ MASTER_TRAINER = "Master"
 BAD_SUPPORT_LOOKUP1 = "ev_r207_func_17" ### These bad lookups are for Lucas and Dawn on Route 207
 BAD_SUPPORT_LOOKUP2 = "ev_r207_func_20"
 SUPPORT_LINK = "Support"
+CITY_TRAINER = 'City'
+LEAGUE_TRAINER = "League"
 
 #Lookup values for ev_script
 LDVAL_LOOKUP = "LDVAL"
@@ -51,6 +55,7 @@ EVIL_LOOKUP = "LDVAL(@SCWK_TEMP"
 REMATCH_SUBSTRING = "rematch"
 DESIRED_ORDER = [ 'areaName', 'zoneName', 'zoneId', 'trainerId', 'rematch', 'name', 'type', 'method', 'format', 'link' ]
 BARRY = "barry"
+REPEAT_TRAINERS_LIST = ["Grunt", "Lucas", "Dawn"]
 
 TEAM_REGEX = "Team \d+"
 LDVAL_PATTERN = r"_LDVAL\(@(.*),\s?([1-9][0-9]*)\)"
@@ -67,6 +72,11 @@ SURFING_INCENSE = "Surfing Incense"
 INCENSE = "Incense"
 SWARM = "tairyo"
 RADAR = "swayGrass"
+REGULAR_ENC = "ground_mons"
+DAY_ENC = "day"
+NIGHT_ENC = "night"
+REGULAR_ENC_LIST = [REGULAR_ENC, DAY_ENC, NIGHT_ENC]
+INCENSE_LIST = ["gbaRuby", "gbaSapp", "gbaEme", "gbaFire", "gbaLeaf"]
 
 EVE_AREA_NAME = "SODATEYA"
 MORIMOTO = "MORIMOTO_01"

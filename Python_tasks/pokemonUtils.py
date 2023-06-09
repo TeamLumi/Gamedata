@@ -3,6 +3,7 @@ import os
 import re
 import unicodedata
 
+import constants
 from load_files import load_data
 from moveUtils import (get_moves, get_pokemon_learnset, get_tech_machine_learnset, get_egg_moves, get_grass_knot_power)
 
@@ -16,7 +17,6 @@ FORM_MAP = {}
 GENDER = {"0": "MALE", "1": "FEMALE", "2": "NEUTRAL"}
 
 # Load all the JSON Data
-full_data = load_data()
 
 with open(personal_data_path, mode='r', encoding="utf-8") as f:
     personal_data = json.load(f)
@@ -24,16 +24,6 @@ with open(personal_data_path, mode='r', encoding="utf-8") as f:
         if curr['monsno'] not in FORM_MAP:
             FORM_MAP[curr['monsno']] = []
         FORM_MAP[curr['monsno']].append(curr['id'])
-
-ItemTable = full_data['item_table']
-pkmn_height_data = full_data['pkmn_height_data']
-pkmn_weight_data = full_data['pkmn_weight_data']
-ability_namedata = full_data['ability_namedata']
-type_namedata = full_data['type_namedata']
-form_namedata = full_data['form_namedata']
-nature_namedata = full_data['nature_namedata']
-item_namedata = full_data['raw_items']
-name_data = full_data['raw_pokedex']
 
 def get_lumi_data(raw_data, callback):
     data = {}
@@ -48,11 +38,14 @@ def get_types(e):
         return [get_type_name(e['type1']), get_type_name(e['type2'])]
 
 def get_type_name(typeId):
+    type_namedata = full_data['type_namedata']
     return type_namedata["labelDataArray"][typeId]["wordDataArray"][0]["str"]
 
 def make_ability_object(ha):
-    abilitiyString = ability_namedata["labelDataArray"][ha]["wordDataArray"][0]["str"]
-    return {0: abilitiyString}
+    ability_namedata = full_data['ability_namedata']
+
+    abilityString = ability_namedata["labelDataArray"][ha]["wordDataArray"][0]["str"]
+    return {0: abilityString}
 
 def convert_lumi_formula_mon(lumi_mons_no):
     form_no = lumi_mons_no//(2**16)
@@ -80,6 +73,8 @@ def get_pokemon_name(mons_no = 0):
         print(mons_no, e)
 
 def get_form_name(id):
+    form_namedata = full_data['form_namedata']
+
     if id == 1242:
         return 'Ash-Greninja'
     elif id == 1285:
@@ -104,18 +99,24 @@ def get_form_name(id):
         return name
     
 def get_item_string(item_id):
+    item_namedata = full_data['raw_items']
+
     item_data = item_namedata["labelDataArray"][item_id]["wordDataArray"]
     if(len(item_data) == 0):
         return 'None'
     return item_data[0]["str"]
 
 def get_ability_string(ability_id):
+    ability_namedata = full_data['ability_namedata']
+
     ability_string = ability_namedata["labelDataArray"][ability_id]["wordDataArray"][0]["str"]
     if not ability_string:
         print(f"Missing ability string for ID {ability_id}")
     return ability_string
 
 def get_nature_name(natureId):
+    nature_namedata = full_data['nature_namedata']
+
     return nature_namedata["labelDataArray"][natureId]["wordDataArray"][0]["str"]
 
 def get_ability_id_from_ability_name(ability_string):
@@ -131,12 +132,15 @@ def get_pokemon_mons_no_from_name(pokemon_name):
     return mons_no
 
 def get_nature_id(nature_string):
+    nature_namedata = full_data['nature_namedata']
     if not nature_string:
         return -1
     nature_id = next((i for i, e in enumerate(nature_namedata['labelDataArray']) if e['wordDataArray'][0]['str'] == nature_string), -1)
     return nature_id
 
 def get_item_id_from_item_name(item_name):
+    item_namedata = full_data['raw_items']
+
     if not item_name:
         return -1
     for i, item in enumerate(item_namedata['labelDataArray']):
@@ -173,6 +177,8 @@ def get_weight(monsno=0):
     """
     Returns the weight per the metric system
     """
+    pkmn_weight_data = full_data['pkmn_weight_data']
+
     monsno = int(monsno)
     if monsno != 0:
         weightString = pkmn_weight_data['labelDataArray'][monsno]['wordDataArray'][0]['str'] if (pkmn_weight_data['labelDataArray'][monsno]['wordDataArray'][0] is not None) else '0'
@@ -190,6 +196,8 @@ def get_height(monsno=0):
     """
     Returns the Pokemon's height per the metric sytem.
     """
+    pkmn_height_data = full_data['pkmn_height_data']
+
     monsno = int(monsno)
     if monsno != 0:
         height_string = pkmn_height_data['labelDataArray'][monsno]['wordDataArray'][0]['str'] or '0'
@@ -298,6 +306,7 @@ def get_pokemon_info(personalId=0):
     return info_dict
 
 def GenForms():
+    form_namedata = full_data['form_namedata']
     forms_list = form_namedata["labelDataArray"]
     forms = {}
     for all_forms in forms_list:
@@ -312,7 +321,7 @@ def get_pokemon_from_trainer_info(trainer, output_format):
         if level <= 0:
             break
         ability = get_ability_string(trainer[f"P{poke_num}Tokusei"])
-        gender = GENDER[str(trainer[f"P{poke_num}Sex"])] if trainer[f"P{poke_num}Sex"] != 3 else 'FEMALE'
+        gender = constants.GENDER[str(trainer[f"P{poke_num}Sex"])] if trainer[f"P{poke_num}Sex"] != 3 else 'FEMALE'
         monsno = trainer[f"P{poke_num}MonsNo"]
 
         moves = [trainer[f"P{poke_num}Waza{j+1}"] for j in range(4)]
@@ -348,5 +357,8 @@ def get_pokemon_from_trainer_info(trainer, output_format):
     return pokemon_list
 
 if __name__ != '__main__':
+    full_data = load_data()
     pokedex = get_lumi_data(name_data, get_pokemon_name)
     diff_forms = get_diff_form_dictionary()
+    name_data = full_data['raw_pokedex']
+

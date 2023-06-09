@@ -104,8 +104,8 @@ def generate_trainer_name(raw_trainer_name, pokemon1_level):
     i2 = raw_trainer_name.find(']')
 
     bad_section = raw_trainer_name[i1:i2+1]
-    is_boss_trainer = ('City' in bad_section or 'League' in bad_section)
-    if not is_boss_trainer or 'Master' in raw_trainer_name:
+    is_boss_trainer = (constants.CITY_TRAINER in bad_section or constants.LEAGUE_TRAINER in bad_section)
+    if not is_boss_trainer or constants.MASTER_TRAINER in raw_trainer_name:
         return raw_trainer_name
 
     trainer_substring = raw_trainer_name[:i1-1] + raw_trainer_name[i2+1:]

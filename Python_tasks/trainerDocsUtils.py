@@ -12,22 +12,11 @@ from pokemonUtils import get_pokemon_from_trainer_info, get_pokemon_name
 from trainerUtils import parse_ev_script_file, process_files
 
 repo_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-input_file_path = os.path.join(repo_file_path, 'input')
 output_file_path = os.path.join(repo_file_path, "Python_tasks", "output")
-trainer_table_file_path = os.path.join(input_file_path, "TrainerTable.json")
 trainer_doc_data_file_path = os.path.join(repo_file_path, "trainer_docs", "trainer_doc_output.txt")
-
-resources_filepath = os.path.join(repo_file_path, "Python_tasks", "Resources")
-gym_leader_file_path = os.path.join(resources_filepath, "NewGymLeaders.json")
 
 first_excecution_time_list = []
 second_execution_time_list = []
-
-with open(gym_leader_file_path, mode='r', encoding="utf-8") as f:
-    gym_leader_data = json.load(f)
-
-with open(trainer_table_file_path, mode='r', encoding="utf-8") as f:
-    TRAINER_TABLE = json.load(f)
 
 def get_trainer_pokemon(trainerId, output_format):
     '''
@@ -35,6 +24,8 @@ def get_trainer_pokemon(trainerId, output_format):
     Requires the trainerId and the output_format being either "Scripted" or "Place Data"
     Those are referenced in Constants.py
     '''
+    TRAINER_TABLE = full_data['raw_trainer_data']
+
     pokemon_list = []
     trainer = next((t for t in TRAINER_TABLE["TrainerPoke"] if t["ID"] == trainerId), None)
     pokemon_list = get_pokemon_from_trainer_info(trainer, output_format)
@@ -55,7 +46,7 @@ def get_avg_trainer_level(trainer_team):
     '''
     mon_count = len(trainer_team)
     if len(trainer_team) == 0:
-        print("Trainer is less than 1")
+        print("Trainer does not have a team")
         return 0
     total_levels = 0
     for mon in trainer_team:
@@ -71,7 +62,7 @@ def sort_trainers_by_level(trainer_info):
     '''
     for trainer in trainer_info:
         trainerId = trainer['trainerId']
-        trainer['team'] = get_trainer_pokemon(trainerId, "Docs")
+        trainer['team'] = get_trainer_pokemon(trainerId, constants.DOCS_METHOD)
         trainer['avg_lvl'] = get_avg_trainer_level(trainer['team'])
     sorted_trainers_by_level = sort_dicts_by_key(trainer_info, 'zoneName', 'avg_lvl', constants.ZONE_ORDER)
     return sorted_trainers_by_level
@@ -88,7 +79,7 @@ def sort_trainers_by_route(trainer_info):
     for trainer in sorted_trainers_by_key:
         areaName = trainer['areaName']
         trainerId = trainer['trainerId']
-        trainer['team'] = get_trainer_pokemon(trainerId, "Tracker")
+        trainer['team'] = get_trainer_pokemon(trainerId, constants.TRACKER_METHOD)
         if areaName not in sorted_trainers_by_route.keys():
             sorted_trainers_by_route[areaName] = [trainer]
         else:
@@ -192,7 +183,7 @@ def write_tracker_docs(trainers_list):
             zone_name = f"{trainer['zoneName']} Trainers"
             zone_id = trainer['zoneId']
             name = f"{trainer['type']} {trainer['name']}"
-            if "Grunt" in name or "Lucas" in name or "Dawn" in name:
+            if any(substring in name for substring in REPEAT_TRAINERS_LIST):
                 TRAINER_INDEX +=1
             full_trainer_name = get_trainer_name(name, zone_name, TRAINER_INDEX)
             trainer_name = full_trainer_name[0]
@@ -225,6 +216,8 @@ def get_tracker_trainer_data():
     '''
     This gets all of the trainer data for the tracker sorted by routes
     '''
+    gym_leader_data = full_data['gym_leaders']
+
     original_teams = getTrainerData(gym_leader_data)
     trainer_info = process_files(os.path.join(repo_file_path, "scriptdata"), parse_ev_script_file)
 
@@ -239,6 +232,7 @@ def get_tracker_trainer_data():
 
 if __name__ == "__main__":
     start_time = time.time()
+    full_data = load_data()
     get_trainer_doc_data()
     get_tracker_trainer_data()
     end_time = time.time()
