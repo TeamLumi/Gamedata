@@ -308,7 +308,7 @@ def get_standard_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, m
         zoneName = zones[3] if zones[3] != '' else zones[4]
         new_method = check_for_incense(new_method, method_index)
         rate = get_route_rate(new_method, method_index, route_rates)
-        encounter_list_order = [zoneName, new_method, rate, minlevel, maxlevel, method_index]
+        encounter_list_order = [zoneName, new_method, rate, minlevel, maxlevel, method_index, zoneID]
 
         if monsName not in encounters:
             encounters[monsName] = [encounter_list_order]
@@ -334,7 +334,7 @@ def get_diff_form_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, 
         zoneName = zones[3] if zones[3] != '' else zones[4]
         new_method = check_for_incense(new_method, method_index)
         rate = get_route_rate(new_method, method_index, route_rates)
-        encounter_list_order = [zoneName, new_method, rate, minlevel, maxlevel, method_index]
+        encounter_list_order = [zoneName, new_method, rate, minlevel, maxlevel, method_index, zoneID]
 
         tracker_route = get_tracker_route(zoneID)
 
@@ -379,7 +379,7 @@ def get_honey_tree_encounter_rates(rates_list):
             minlevel = data[2]
             maxlevel = data[2]
             index = None
-            encounter_list_order = [route, method, rate, minlevel, maxlevel, index]
+            encounter_list_order = [route, method, rate, minlevel, maxlevel, index, None]
             if monsNo == -1:
                 print(monsName)
             if monsName not in rates_list:
@@ -399,7 +399,7 @@ def get_trophy_garden_encounter_rates(trophy_garden_encounters, rates_list):
         index = None
         monsNo = mon['monsNo']
         monsName = get_pokemon_name(monsNo)
-        encounter_list_order = [zoneName, method, rate, minlevel, maxlevel, index]
+        encounter_list_order = [zoneName, method, rate, minlevel, maxlevel, index, 297]
 
         if monsName not in rates_list:
             rates_list[monsName] = [encounter_list_order]
