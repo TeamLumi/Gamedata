@@ -183,7 +183,7 @@ def write_tracker_docs(trainers_list):
             zone_name = f"{trainer['zoneName']} Trainers"
             zone_id = trainer['zoneId']
             name = f"{trainer['type']} {trainer['name']}"
-            if any(substring in name for substring in REPEAT_TRAINERS_LIST):
+            if any(substring in name for substring in constants.REPEAT_TRAINERS_LIST):
                 TRAINER_INDEX +=1
             full_trainer_name = get_trainer_name(name, zone_name, TRAINER_INDEX)
             trainer_name = full_trainer_name[0]

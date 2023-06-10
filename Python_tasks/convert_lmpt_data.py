@@ -89,7 +89,6 @@ def getTrainerData(gymLeaderList):
     This is a placeholder for the first 13 trainers for the tracker.
     Those being the gym leaders and the E4.
     '''
-    trainer_data = full_data["raw_trainer_data"]
 
     dic = {}
     full_list = []
@@ -457,10 +456,14 @@ def get_avg_time(times):
     sum(times)
     return average_time
 
+if __name__ != "__main__":
+    full_data = load_data()
+    trainer_data = full_data["raw_trainer_data"]
+
 if __name__ == "__main__":
     start_time = time.time()
     full_data = load_data()
-    gym_leader_data = full_data['gym_leaders']
+    
     pokedex = get_lumi_data(full_data["raw_pokedex"], get_pokemon_name)
     zone_dict = create_zone_id_map()
     route_rates = full_data['rates']
