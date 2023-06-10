@@ -237,7 +237,6 @@ def create_diff_forms_dictionary(form_dict):
     Add the slugged current value as the third value in the array
     """
     diff_forms = {}
-    forms = GenForms()
     for mons_no in form_dict.keys():
         mons_array = form_dict[mons_no]
         current_pokemon_name = get_pokemon_name(int(mons_no))
@@ -295,7 +294,7 @@ def get_pokemon_info(personalId=0):
         'grassKnotPower': get_grass_knot_power(get_weight(personalId)),
         'type': get_type_name(p['type1']),
     }
-                
+
     if p['type2'] != p['type1']:
         info_dict['dualtype'] = get_type_name(p['type2'])
     else:
@@ -327,7 +326,7 @@ def get_pokemon_from_trainer_info(trainer, output_format):
         moves = [trainer[f"P{poke_num}Waza{j+1}"] for j in range(4)]
         m1, m2, m3, m4 = moves[0], moves[1], moves[2], moves[3]
         moves = get_moves(m1, m2, m3, m4, monsno, level, output_format)
-        
+
         form = trainer[f"P{poke_num}FormNo"]
         pokemonId = diff_forms[pokedex[str(trainer[f"P{poke_num}MonsNo"])] + str(form)][0] if form > 0 and output_format == constants.TRACKER_METHOD else monsno
         trainer_item = trainer[f"P{poke_num}Item"]
@@ -358,6 +357,7 @@ def get_pokemon_from_trainer_info(trainer, output_format):
 
 if __name__ != '__main__':
     full_data = load_data()
+    forms = GenForms()
     name_data = full_data['raw_pokedex']
     pokedex = get_lumi_data(name_data, get_pokemon_name)
     diff_forms = get_diff_form_dictionary()

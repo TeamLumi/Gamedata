@@ -6,6 +6,14 @@ ROOM_AREA_NAME = "R0101"
 SINGLE_FORMAT = "Single"
 DOUBLE_FORMAT = "Double"
 
+# Needed to hard code Wurmple's and Goomy's target evos
+WURMPLE = 265
+SILCOON = 266
+CASCOON = 268
+GOOMY = 704
+SLIGGOO = 705
+HISUI_SLIGGOO = 1287
+
 # Tracker Variables
 GALACTIC_HQ = "Galactic HQ"
 GALACTIC_HQ_TRACKER_VAR = "lmpt-33"

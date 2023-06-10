@@ -1529,7 +1529,10 @@
       79,
       80,
       199,
-      1065
+      1064,
+      1065,
+      1066,
+      1106
     ],
     "generation": 8,
     "abilities": [
@@ -1548,7 +1551,9 @@
     "evolve": [
       79,
       80,
-      1065
+      1064,
+      1065,
+      1066
     ],
     "generation": 8,
     "abilities": [
@@ -2025,8 +2030,8 @@
     "text": "Hitmonlee",
     "type": "FIGHTING",
     "evolve": [
-      106,
-      236
+      236,
+      106
     ],
     "generation": 8,
     "abilities": [
@@ -2516,7 +2521,8 @@
       196,
       197,
       1090,
-      1091
+      1091,
+      1092
     ],
     "generation": 8,
     "abilities": [
@@ -2534,9 +2540,9 @@
     "evolve": [
       133,
       134,
-      1092,
       1090,
-      1091
+      1091,
+      1092
     ],
     "generation": 8,
     "abilities": [
@@ -2554,9 +2560,9 @@
     "evolve": [
       133,
       135,
-      1092,
       1090,
-      1091
+      1091,
+      1092
     ],
     "generation": 8,
     "abilities": [
@@ -2574,9 +2580,9 @@
     "evolve": [
       133,
       136,
-      1092,
       1090,
-      1091
+      1091,
+      1092
     ],
     "generation": 8,
     "abilities": [
@@ -2957,8 +2963,8 @@
     "type": "FIRE",
     "evolve": [
       155,
-      157,
       156,
+      157,
       1102
     ],
     "generation": 8,
@@ -3434,8 +3440,8 @@
     "type": "GRASS",
     "evolve": [
       43,
-      182,
-      44
+      44,
+      182
     ],
     "generation": 8,
     "abilities": [
@@ -3507,8 +3513,8 @@
     "type": "WATER",
     "evolve": [
       60,
-      186,
-      61
+      61,
+      186
     ],
     "generation": 8,
     "abilities": [
@@ -3688,9 +3694,9 @@
     "evolve": [
       133,
       196,
-      1092,
       1090,
-      1091
+      1091,
+      1092
     ],
     "generation": 8,
     "abilities": [
@@ -3708,9 +3714,9 @@
     "evolve": [
       133,
       197,
-      1092,
       1090,
-      1091
+      1091,
+      1092
     ],
     "generation": 8,
     "abilities": [
@@ -3746,7 +3752,9 @@
     "dualtype": "PSYCHIC",
     "evolve": [
       79,
-      199
+      199,
+      1064,
+      1106
     ],
     "generation": 8,
     "abilities": [
@@ -7643,9 +7651,9 @@
     "dualtype": "FLYING",
     "evolve": [
       412,
-      414,
       1172,
-      1173
+      1173,
+      414
     ],
     "generation": 8,
     "abilities": [
@@ -8652,10 +8660,11 @@
     "text": "Leafeon",
     "type": "GRASS",
     "evolve": [
-      1092,
+      133,
       470,
       1090,
-      1091
+      1091,
+      1092
     ],
     "generation": 8,
     "abilities": [
@@ -8673,9 +8682,9 @@
     "evolve": [
       133,
       471,
-      1092,
       1090,
-      1091
+      1091,
+      1092
     ],
     "generation": 8,
     "abilities": [
@@ -8748,8 +8757,8 @@
     "dualtype": "FIGHTING",
     "evolve": [
       280,
-      475,
       281,
+      475,
       1183
     ],
     "generation": 8,
@@ -12853,9 +12862,9 @@
     "evolve": [
       133,
       700,
-      1092,
       1090,
-      1091
+      1091,
+      1092
     ],
     "generation": 8,
     "abilities": [
@@ -13784,7 +13793,9 @@
     "type": "WATER",
     "dualtype": "BUG",
     "evolve": [
-      751
+      751,
+      752,
+      1314
     ],
     "generation": 8,
     "abilities": [
@@ -13801,6 +13812,7 @@
     "type": "WATER",
     "dualtype": "BUG",
     "evolve": [
+      751,
       752,
       1314
     ],
@@ -14562,8 +14574,8 @@
     "dualtype": "GHOST",
     "evolve": [
       789,
-      792,
-      790
+      790,
+      792
     ],
     "generation": 8,
     "abilities": [
@@ -19603,8 +19615,8 @@
     "dualtype": "PSYCHIC",
     "evolve": [
       25,
-      1044,
       172,
+      1044,
       1027,
       1028,
       1029,
@@ -19980,7 +19992,11 @@
     "text": "Galarian Slowpoke",
     "type": "PSYCHIC",
     "evolve": [
+      79,
+      80,
+      199,
       1064,
+      1065,
       1066,
       1106
     ],
@@ -20002,7 +20018,9 @@
       79,
       80,
       199,
-      1065
+      1064,
+      1065,
+      1066
     ],
     "generation": 8,
     "abilities": [
@@ -20019,7 +20037,11 @@
     "type": "POISON",
     "dualtype": "PSYCHIC",
     "evolve": [
+      79,
+      80,
+      199,
       1064,
+      1065,
       1066
     ],
     "generation": 8,
@@ -20480,7 +20502,8 @@
       196,
       197,
       1090,
-      1091
+      1091,
+      1092
     ],
     "generation": 8,
     "abilities": [
@@ -20506,7 +20529,8 @@
       196,
       197,
       1090,
-      1091
+      1091,
+      1092
     ],
     "generation": 8,
     "abilities": [
@@ -20522,7 +20546,7 @@
     "text": "Bandana Partner Eevee",
     "type": "NORMAL",
     "evolve": [
-      1092,
+      133,
       470,
       471,
       135,
@@ -20530,7 +20554,10 @@
       136,
       700,
       196,
-      197
+      197,
+      1090,
+      1091,
+      1092
     ],
     "generation": 8,
     "abilities": [
@@ -20812,7 +20839,12 @@
     "type": "POISON",
     "dualtype": "PSYCHIC",
     "evolve": [
+      79,
+      80,
+      199,
       1064,
+      1065,
+      1066,
       1106
     ],
     "generation": 8,
@@ -26038,6 +26070,7 @@
     "type": "WATER",
     "dualtype": "BUG",
     "evolve": [
+      751,
       752,
       1314
     ],
