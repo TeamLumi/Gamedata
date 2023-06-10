@@ -86,8 +86,6 @@ def filter_evolutions(evolution_paths, current_mon_path, mon_index):
 
     evolution_paths[current_mon_path[mon_index]]["path"] = filtered_path
 
-    pass
-
 def update_evolve_paths(evolution_paths, current_mon, current_mon_path):
     evolution_paths[current_mon]["path"].append(current_mon)
     evolution_paths[current_mon]["path"] = list(dict.fromkeys(evolution_paths[current_mon]["path"]))
@@ -117,16 +115,13 @@ def get_second_pathfind_targets(evolution_paths, previous_mon, current_mon, grap
             # This checks if the difference between the average of the pokemonIDs and the current_mon is greater than 3
             # This is for pokemon that have branching paths for evolutions like Cubone or Exeggcute
             # The reason this needs to exist is because the evo array lists alt forms of the evolution pokemon first
-            print("This is taking the average", previous_mon, current_mon)
             evolution_paths[previous_mon]["targets"].append(current_mon)
         elif len(first_mon_path) > 3:
             # This checks if the first mon's evo path is greater than 3
             # This is a usecase for mons like Eevee
-            print("This is actually working", previous_mon, current_mon)
             evolution_paths[previous_mon]["targets"].append(current_mon)
         elif len(first_mon_array) > 5:
             # This is just for Burmy, the bastard that has different forms but they only evolve into the final evo
-            print(current_mon_path, previous_mon, current_mon)
             evolution_paths[previous_mon]["targets"].append(current_mon)
 
 def second_pathfind(pokemon, evolution_paths, new_queue, graph):
