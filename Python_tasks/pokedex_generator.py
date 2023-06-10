@@ -14,9 +14,6 @@ output_file_path = os.path.join(repo_file_path, "Python_tasks", "output")
 first_execution_list = []
 second_execution_list = []
 
-first_excecution_time_list = []
-second_execution_time_list = []
-
 def get_form_format(monsNo, formNo):
     mon_zeros = 3 - len(str(monsNo))
     form_zeros = 3 - len(str(formNo))
