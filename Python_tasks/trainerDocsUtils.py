@@ -27,7 +27,11 @@ def get_trainer_pokemon(trainerId, output_format):
     TRAINER_TABLE = full_data['raw_trainer_data']
 
     pokemon_list = []
-    trainer = next((t for t in TRAINER_TABLE["TrainerPoke"] if t["ID"] == trainerId), None)
+    trainer = None
+    for t in TRAINER_TABLE["TrainerPoke"]:
+        if t["ID"] == trainerId:
+            trainer = t
+            break
     pokemon_list = get_pokemon_from_trainer_info(trainer, output_format)
 
     return pokemon_list
