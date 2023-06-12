@@ -15,11 +15,19 @@ first_execution_list = []
 second_execution_list = []
 
 def get_form_format(monsNo, formNo):
+    '''
+    Returns the format of a mon based on the zkn_form file
+    Requires the monsNo and formNo
+    '''
     mon_zeros = 3 - len(str(monsNo))
     form_zeros = 3 - len(str(formNo))
     return f"ZKN_FORM_{mon_zeros*'0'}{monsNo}_{form_zeros*'0'}{formNo}"
 
 def remove_duplicates(path_dictionary):
+    '''
+    Removes any duplicate pokemon entry that exists.
+    Uses the full path dictionary with all mons
+    '''
     new_path = []
     for path_element in path_dictionary:
         if path_element not in new_path:
@@ -27,6 +35,8 @@ def remove_duplicates(path_dictionary):
     return new_path
 
 def remove_duplicate_forms(evolution_paths):
+    '''
+    Removes any duplicate forms after'''
     for pokemon in evolution_paths.keys():
         evolution_paths[pokemon]["path"] = remove_duplicates(evolution_paths[pokemon]["path"])
 
@@ -74,15 +84,6 @@ def process_current_mon(queue):
 
     return current_mon, current_form
 
-def filter_evolutions(evolution_paths, current_mon_path, mon_index):
-    filtered_path = []
-
-    for mon, index in enumerate(evolution_paths[current_mon_path[mon_index]]["path"]):
-        if index not in evolution_paths[current_mon_path[mon_index]]["path"][:mon]:
-            filtered_path.append(mon)
-
-    evolution_paths[current_mon_path[mon_index]]["path"] = filtered_path
-
 def update_evolve_paths(evolution_paths, current_mon, current_mon_path):
     evolution_paths[current_mon]["path"].append(current_mon)
     evolution_paths[current_mon]["path"] = list(dict.fromkeys(evolution_paths[current_mon]["path"]))
@@ -97,6 +98,8 @@ def update_evolve_paths(evolution_paths, current_mon, current_mon_path):
 def get_second_pathfind_targets(evolution_paths, previous_mon, current_mon, graph):
     '''
     This is for getting the target evolution paths for evolutions
+    The way this works is by checking two things
+    Either the first_mon_path if there is more than 3 pokemon (This will happen for mons)
     '''
     targets = evolution_paths[previous_mon]["targets"]
     current_mon_path = evolution_paths[current_mon]["path"]
@@ -106,19 +109,15 @@ def get_second_pathfind_targets(evolution_paths, previous_mon, current_mon, grap
     if current_mon not in targets:
         if previous_mon == constants.WURMPLE or previous_mon == constants.GOOMY:
             evolution_paths[constants.WURMPLE]["targets"] = [constants.SILCOON, constants.CASCOON]
+            '''
+            Uncomment this for when Goomy is actually able to evolve into Hisuian Sliggo
             evolution_paths[constants.GOOMY]["targets"] = [constants.SLIGGOO, constants.HISUI_SLIGGOO]
-
-        if sum(first_mon_path) / len(first_mon_path) - current_mon > 3:
-            # This checks if the difference between the average of the pokemonIDs and the current_mon is greater than 3
-            # This is for pokemon that have branching paths for evolutions like Cubone or Exeggcute
-            # The reason this needs to exist is because the evo array lists alt forms of the evolution pokemon first
-            evolution_paths[previous_mon]["targets"].append(current_mon)
+            '''
         elif len(first_mon_path) > 3:
-            # This checks if the first mon's evo path is greater than 3
-            # This is a usecase for mons like Eevee
+            # This is for when a pokemon has a branching path at it's second form and not it's first form
             evolution_paths[previous_mon]["targets"].append(current_mon)
         elif len(first_mon_array) > 5:
-            # This is just for Burmy, the bastard that has different forms but they only evolve into the final evo
+            # This is for mons that have multiple evolutions in their first evo array like Burmy or Snorunt.
             evolution_paths[previous_mon]["targets"].append(current_mon)
 
 def second_pathfind(pokemon, evolution_paths, new_queue, graph):
@@ -167,7 +166,6 @@ def first_pathfind(pokemon, evolution_paths, graph, queue, new_queue):
 def start_pathfinding(evolution_paths, graph):
 
     for pokemon in evolution_paths.keys():
-        start_time = time.time()
         queue = []
         queue.append(pokemon)
         queue.append(0)
@@ -176,8 +174,6 @@ def start_pathfinding(evolution_paths, graph):
         if pokemon not in evo_path:
             evolution_paths[pokemon]["path"].append(pokemon)
         first_pathfind(pokemon, evolution_paths, graph, queue, new_queue)
-        end_time = time.time()
-        second_execution_list.append(end_time - start_time)
 
 def evolution_pathfinding():
     with open(os.path.join(input_file_path, 'EvolveTable.json'), "r", encoding="utf-8") as f:
@@ -225,28 +221,19 @@ def get_mon_dex_info(pokemon, evolution_paths):
 
 def getPokedexInfo():
     pokedex = []
-    start_time = time.time()
     evolutions = evolution_pathfinding()
-    end_time = time.time()
-    print("Pathfinding took:", end_time - start_time, "seconds")
 
     for pokemon in evolutions.keys():
-        start_time = time.time()
         if pokemon >= 1456:
             continue
         evolution_path = evolutions[pokemon]["path"]
         if pokemon < 906 or pokemon > 1010:
             dex_info = get_mon_dex_info(pokemon, evolution_path)
         pokedex.append(dex_info)
-        end_time = time.time()
-        first_execution_list.append(end_time - start_time)
 
     with open(os.path.join(output_file_path, "pokedex_info.json"), "w", encoding="utf-8") as output:
         json.dump(pokedex, output, ensure_ascii=False, indent=2)
     return pokedex
-
-def get_avg_time(times):
-    return sum(times) / len(times)
 
 if __name__ == "__main__":
 
