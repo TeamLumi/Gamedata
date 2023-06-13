@@ -567,6 +567,8 @@ def process_files(folder_path, callback):
     trainers_set = set()
     for filename in os.listdir(folder_path):
         file_path = os.path.join(folder_path, filename)
+        if constants.PEARL_SPEAR_PILLAR in filename:
+            continue
         try:
             trainers = callback(file_path)
         except (FileNotFoundError, IsADirectoryError):

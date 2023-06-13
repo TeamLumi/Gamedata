@@ -206,7 +206,7 @@ def write_tracker_docs(trainers_list):
                     if BARRY_INDEX < 3:
                         STARTER_INDEX = constants.STARTERS[BARRY_INDEX].capitalize()
                     else:
-                        STARTER_INDEX = BARRY_INDEX
+                        STARTER_INDEX = "End Game"
                     BARRY_INDEX += 1
                     full_trainer_name = get_trainer_name(name, zone_name, STARTER_INDEX)
             else:
