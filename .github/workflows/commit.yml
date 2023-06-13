@@ -23,7 +23,7 @@ jobs:
       env:
         API_TOKEN_GITHUB: ${{ secrets.DENMARK_GAMEDATA_AUTOMATION_TOKEN }}
       with:
-        source_file: 'Python_tasks/output'
+        source_file: 'Python_tasks/output/*'
         destination_branch: 'Trainer-Teams'
         destination_repo: 'TeamLumi/LumiPlat_NuzlockeTracker'
         destination_folder: './src/constants/generated_files'
