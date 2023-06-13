@@ -88,11 +88,13 @@ def update_evolve_paths(evolution_paths, current_mon, current_mon_path):
     evolution_paths[current_mon]["path"].append(current_mon)
     evolution_paths[current_mon]["path"] = list(dict.fromkeys(evolution_paths[current_mon]["path"]))
 
-    for i in range(len(current_mon_path)):
-        evolution_paths[current_mon_path[i]]["path"].append(current_mon)
-        evolution_paths[current_mon_path[i]]["path"] = [
-            x for j, x in enumerate(evolution_paths[current_mon_path[i]]["path"])
-            if x not in set(evolution_paths[current_mon_path[i]]["path"][j + 1:])
+    for index in range(len(current_mon_path)):
+        evo_mon = evolution_paths[current_mon_path[index]]
+
+        evolution_paths[current_mon_path[index]]["path"].append(current_mon)
+        evolution_paths[current_mon_path[index]]["path"] = [
+            pokemon for evo_index, pokemon in enumerate(evo_mon["path"])
+            if pokemon not in set(evo_mon["path"][evo_index + 1:])
         ]
 
 def get_second_pathfind_targets(evolution_paths, previous_mon, current_mon, graph):

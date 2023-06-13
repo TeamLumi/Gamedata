@@ -3,7 +3,7 @@ name: Send updates to dependent repo
 on:
   push:
     branches: 
-      - main
+      - Source-Of-Truth
 
 jobs:
   update-tracker:

@@ -309,7 +309,8 @@ def GenForms():
     forms_list = form_namedata["labelDataArray"]
     forms = {}
     for all_forms in forms_list:
-        if all_forms["arrayIndex"] != 0 and int(all_forms["labelName"][-3:]) > 000:
+        formNo = int(all_forms["labelName"].split("_")[-1])
+        if all_forms["arrayIndex"] != 0 and formNo > 000:
             forms[all_forms["labelName"]] = all_forms["arrayIndex"]
     return forms
 
