@@ -247,3 +247,4 @@ if __name__ == "__main__":
 if __name__ != "__main__":
     diff_forms = get_diff_form_dictionary()
     full_data = load_data()
+    forms = GenForms()
