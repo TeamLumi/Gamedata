@@ -63,7 +63,7 @@ EVIL_LOOKUP = "LDVAL(@SCWK_TEMP"
 REMATCH_SUBSTRING = "rematch"
 DESIRED_ORDER = [ 'areaName', 'zoneName', 'zoneId', 'trainerId', 'rematch', 'name', 'type', 'method', 'format', 'link' ]
 BARRY = "barry"
-REPEAT_TRAINERS_LIST = ["Grunt", "Lucas", "Dawn"]
+REPEAT_TRAINERS_LIST = ["Grunt", "Lucas", "Dawn", "Cedric"]
 
 TEAM_REGEX = "Team \d+"
 LDVAL_PATTERN = r"_LDVAL\(@(.*),\s?([1-9][0-9]*)\)"

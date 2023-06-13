@@ -178,18 +178,33 @@ def write_tracker_docs(trainers_list):
     This formats all of the trainers for use in the Tracker
     '''
     all_trainers = []
-    
+
     for zone in trainers_list.keys():
         zone_trainers = []
-        TRAINER_INDEX = 0
+        GRUNT_INDEX = 0
+        LUCAS_INDEX = 0
+        DAWN_INDEX = 0
+        BARRY_INDEX = 0
         for trainer in trainers_list[zone]:
             zone_trainer = {}
             zone_name = f"{trainer['zoneName']} Trainers"
             zone_id = trainer['zoneId']
             name = f"{trainer['type']} {trainer['name']}"
-            if any(substring in name for substring in constants.REPEAT_TRAINERS_LIST):
-                TRAINER_INDEX +=1
-            full_trainer_name = get_trainer_name(name, zone_name, TRAINER_INDEX)
+            if any(substring in name for substring in constants.REPEAT_TRAINERS_LIST) and not re.findall(constants.TEAM_REGEX, name):
+                if constants.REPEAT_TRAINERS_LIST[0] in name:
+                    GRUNT_INDEX += 1
+                    full_trainer_name = get_trainer_name(name, zone_name, GRUNT_INDEX)
+                elif constants.REPEAT_TRAINERS_LIST[1] in name:
+                    LUCAS_INDEX += 1
+                    full_trainer_name = get_trainer_name(name, zone_name, LUCAS_INDEX)
+                elif constants.REPEAT_TRAINERS_LIST[2] in name:
+                    DAWN_INDEX += 1
+                    full_trainer_name = get_trainer_name(name, zone_name, DAWN_INDEX)
+                elif constants.REPEAT_TRAINERS_LIST[3] in name:
+                    BARRY_INDEX += 1
+                    full_trainer_name = get_trainer_name(name, zone_name, BARRY_INDEX)
+            else:
+                full_trainer_name = get_trainer_name(name, zone_name)
             trainer_name = full_trainer_name[0]
             team_name = full_trainer_name[1]
             trainer_team = trainer['team']
