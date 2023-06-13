@@ -103,7 +103,7 @@ def get_trainer_name(trainer_name, zone_name, TRAINER_INDEX=0):
         team_name = ' '.join(split_name[-2:])
         updated_name = f"{altered_trainer_name} ({zone_name}) [{team_name}]"
         return [trainer_name, updated_name]
-    if TRAINER_INDEX > 0:
+    if TRAINER_INDEX != 0:
         updated_name = f"{trainer_name} {TRAINER_INDEX} ({zone_name})"
         name = f"{trainer_name} {TRAINER_INDEX}"
         return [name, updated_name]
@@ -195,14 +195,20 @@ def write_tracker_docs(trainers_list):
                     GRUNT_INDEX += 1
                     full_trainer_name = get_trainer_name(name, zone_name, GRUNT_INDEX)
                 elif constants.REPEAT_TRAINERS_LIST[1] in name:
+                    STARTER_INDEX = constants.STARTERS[LUCAS_INDEX].capitalize()
                     LUCAS_INDEX += 1
-                    full_trainer_name = get_trainer_name(name, zone_name, LUCAS_INDEX)
+                    full_trainer_name = get_trainer_name(name, zone_name, STARTER_INDEX)
                 elif constants.REPEAT_TRAINERS_LIST[2] in name:
+                    STARTER_INDEX = constants.STARTERS[DAWN_INDEX].capitalize()
                     DAWN_INDEX += 1
-                    full_trainer_name = get_trainer_name(name, zone_name, DAWN_INDEX)
+                    full_trainer_name = get_trainer_name(name, zone_name, STARTER_INDEX)
                 elif constants.REPEAT_TRAINERS_LIST[3] in name:
+                    if BARRY_INDEX < 3:
+                        STARTER_INDEX = constants.STARTERS[BARRY_INDEX].capitalize()
+                    else:
+                        STARTER_INDEX = BARRY_INDEX
                     BARRY_INDEX += 1
-                    full_trainer_name = get_trainer_name(name, zone_name, BARRY_INDEX)
+                    full_trainer_name = get_trainer_name(name, zone_name, STARTER_INDEX)
             else:
                 full_trainer_name = get_trainer_name(name, zone_name)
             trainer_name = full_trainer_name[0]
