@@ -214,13 +214,15 @@ def write_tracker_docs(trainers_list):
             trainer_name = full_trainer_name[0]
             team_name = full_trainer_name[1]
             trainer_team = trainer['team']
+            trainer_type = trainer['format']
             zone_trainer = {
                 "content": trainer_team,
                 "game": team_name,
                 "name": trainer_name,
                 "type": "Trainer",
                 "route": zone_name,
-                "zoneId": zone_id
+                "zoneId": zone_id,
+                "trainerType": trainer_type
             }
             zone_trainers.append(zone_trainer)
         all_trainers.append(zone_trainers)

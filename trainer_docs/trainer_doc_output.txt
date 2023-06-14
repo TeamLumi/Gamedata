@@ -2,7 +2,7 @@ Trainer Documentation
 663
 Pokémon Trainer Cedric
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Turtwig
 5
@@ -21,7 +21,7 @@ Withdraw
 664
 Pokémon Trainer Cedric
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Chimchar
 5
@@ -40,7 +40,7 @@ Leer
 665
 Pokémon Trainer Cedric
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Piplup
 5
@@ -59,7 +59,7 @@ Growl
 1
 Youngster Tristan
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Hoothoot
 7
@@ -91,7 +91,7 @@ Quick Attack
 2
 Youngster Logan
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Growlithe
 7
@@ -136,7 +136,7 @@ Covet
 3
 Lass Natalie
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Sentret
 7
@@ -168,7 +168,7 @@ Defense Curl
 684
 Pokémon Trainer Lucas
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Piplup
 9
@@ -187,7 +187,7 @@ Bubble
 685
 Pokémon Trainer Lucas
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Turtwig
 9
@@ -206,7 +206,7 @@ Razor Leaf
 686
 Pokémon Trainer Lucas
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Chimchar
 9
@@ -225,7 +225,7 @@ Taunt
 690
 Pokémon Trainer Dawn
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Piplup
 9
@@ -244,7 +244,7 @@ Bubble
 691
 Pokémon Trainer Dawn
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Turtwig
 9
@@ -263,7 +263,7 @@ Razor Leaf
 692
 Pokémon Trainer Dawn
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Chimchar
 9
@@ -282,7 +282,7 @@ Taunt
 506
 Reporter Kayla
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Bulbasaur
 5
@@ -327,7 +327,7 @@ Water Gun
 264
 School Kid Harrison
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Abra
 8
@@ -359,7 +359,7 @@ Water Gun
 267
 School Kid Christine
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Ralts
 8
@@ -391,7 +391,7 @@ Rapid Spin
 280
 Interviewers Roxy
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Ralts
 10
@@ -410,7 +410,7 @@ Disarming Voice
 280
 Interviewers Roxy
 Level Cap:
-Format: Double
+Format: Double Battle
 
 Ralts
 10
@@ -429,7 +429,7 @@ Paired with 281
 281
 Interviewers Oli
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Magnemite
 10
@@ -448,7 +448,7 @@ Spark
 281
 Interviewers Oli
 Level Cap:
-Format: Double
+Format: Double Battle
 
 Magnemite
 10
@@ -467,7 +467,7 @@ Paired with 280
 282
 Cameraman Tevin
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Mime Jr.
 10
@@ -499,7 +499,7 @@ Foresight
 282
 Cameraman Tevin
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Mime Jr.
 10
@@ -531,7 +531,7 @@ Foresight
 283
 Reporter Kinsey
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Drifloon
 10
@@ -563,7 +563,7 @@ Spark
 283
 Reporter Kinsey
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Drifloon
 10
@@ -595,7 +595,7 @@ Spark
 284
 Idol Grace
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Igglybuff
 10
@@ -627,7 +627,7 @@ Sing
 284
 Idol Grace
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Igglybuff
 10
@@ -659,7 +659,7 @@ Sing
 332
 Guitarist Arturo
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Kricketot
 10
@@ -691,7 +691,7 @@ Thunder Shock
 332
 Guitarist Arturo
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Kricketot
 10
@@ -723,7 +723,7 @@ Thunder Shock
 349
 Clown Lee
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Aipom
 10
@@ -755,7 +755,7 @@ Teleport
 349
 Clown Lee
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Aipom
 10
@@ -787,7 +787,7 @@ Teleport
 350
 Poké Kid Ariel
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Pichu
 10
@@ -832,7 +832,7 @@ Sweet Kiss
 350
 Poké Kid Ariel
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Pichu
 10
@@ -877,7 +877,7 @@ Sweet Kiss
 317
 Team Galactic Grunt
 Level Cap:
-Format: Multi
+Format: Multi Battle Enemy
 
 Stunky
 13
@@ -909,7 +909,7 @@ Paired with 318
 318
 Team Galactic Grunt
 Level Cap:
-Format: Multi
+Format: Multi Battle Enemy
 
 Glameow
 13
@@ -941,7 +941,7 @@ Paired with 317
 487
 Pokémon Trainer Lucas
 Level Cap:
-Format: Multi
+Format: Multi Battle Partner
 
 Snubbull
 13
@@ -973,7 +973,7 @@ Paired with Support
 488
 Pokémon Trainer Lucas
 Level Cap:
-Format: Multi
+Format: Multi Battle Partner
 
 Snubbull
 13
@@ -1005,7 +1005,7 @@ Paired with Support
 489
 Pokémon Trainer Lucas
 Level Cap:
-Format: Multi
+Format: Multi Battle Partner
 
 Snubbull
 13
@@ -1037,7 +1037,7 @@ Paired with Support
 490
 Pokémon Trainer Dawn
 Level Cap:
-Format: Multi
+Format: Multi Battle Partner
 
 Clefairy
 13
@@ -1069,7 +1069,7 @@ Paired with Support
 491
 Pokémon Trainer Dawn
 Level Cap:
-Format: Multi
+Format: Multi Battle Partner
 
 Clefairy
 13
@@ -1101,7 +1101,7 @@ Paired with Support
 492
 Pokémon Trainer Dawn
 Level Cap:
-Format: Multi
+Format: Multi Battle Partner
 
 Clefairy
 13
@@ -1133,7 +1133,7 @@ Paired with Support
 6
 Lass Samantha
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Oddish
 8
@@ -1178,7 +1178,7 @@ Wrap
 7
 Lass Sarah
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Shinx
 8
@@ -1223,7 +1223,7 @@ Quick Attack
 4
 Youngster Michael
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Kricketot
 9
@@ -1268,7 +1268,7 @@ Bite
 247
 Lass Kaitlin
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Spearow
 9
@@ -1313,7 +1313,7 @@ Charm
 246
 Lass Madeline
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Psyduck
 10
@@ -1345,7 +1345,7 @@ Mega Drain
 270
 Youngster Dallas
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Shinx
 10
@@ -1377,7 +1377,7 @@ Bulldoze
 271
 Youngster Sebastian
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Makuhita
 10
@@ -1409,7 +1409,7 @@ Foresight
 5
 Youngster Tyler
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Magikarp
 11
@@ -1428,7 +1428,7 @@ Flail
 745
 Pokémon Trainer Cedric Turtwig Team 1
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Makuhita
 10
@@ -1473,7 +1473,7 @@ Hidden Power
 746
 Pokémon Trainer Cedric Turtwig Team 2
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Nidoran-M
 10
@@ -1518,7 +1518,7 @@ Hidden Power
 747
 Pokémon Trainer Cedric Turtwig Team 3
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Azurill
 10
@@ -1563,7 +1563,7 @@ Hidden Power
 748
 Pokémon Trainer Cedric Turtwig Team 4
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Cubone
 10
@@ -1608,7 +1608,7 @@ Hidden Power
 749
 Pokémon Trainer Cedric Chimchar Team 1
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Pidgey
 10
@@ -1653,7 +1653,7 @@ Hidden Power
 750
 Pokémon Trainer Cedric Chimchar Team 2
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Poochyena
 10
@@ -1698,7 +1698,7 @@ Hidden Power
 751
 Pokémon Trainer Cedric Chimchar Team 3
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Wynaut
 10
@@ -1743,7 +1743,7 @@ Hidden Power
 752
 Pokémon Trainer Cedric Chimchar Team 4
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Sandshrew
 10
@@ -1788,7 +1788,7 @@ Hidden Power
 753
 Pokémon Trainer Cedric Piplup Team 1
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Growlithe
 10
@@ -1833,7 +1833,7 @@ Curse
 754
 Pokémon Trainer Cedric Piplup Team 2
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Geodude
 10
@@ -1878,7 +1878,7 @@ Curse
 755
 Pokémon Trainer Cedric Piplup Team 3
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Nidoran-F
 10
@@ -1923,7 +1923,7 @@ Curse
 756
 Pokémon Trainer Cedric Piplup Team 4
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Abra
 10
@@ -1968,7 +1968,7 @@ Curse
 189
 Camper Curtis
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Seedot
 10
@@ -2000,7 +2000,7 @@ Bulldoze
 253
 Picnicker Diana
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Whismur
 10
@@ -2032,7 +2032,7 @@ Slam
 172
 Veteran Grant
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Lucario
 45
@@ -2077,7 +2077,7 @@ Agility
 511
 Reporter Helen
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Treecko
 10
@@ -2122,7 +2122,7 @@ Mud-Slap
 1081
 Gym Leader Volkner
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Jolteon
 61
@@ -2206,7 +2206,7 @@ Earthquake
 148
 Worker Colin
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Geodude
 12
@@ -2251,7 +2251,7 @@ Foresight
 149
 Worker Mason
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Aron
 12
@@ -2296,7 +2296,7 @@ Force Palm
 173
 Youngster Jonathon
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Rhyhorn
 13
@@ -2341,7 +2341,7 @@ Rollout
 174
 Youngster Darius
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Aron
 13
@@ -2386,7 +2386,7 @@ Confuse Ray
 823
 Gym Leader Roark Team 1
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Geodude
 15
@@ -2470,7 +2470,7 @@ Rock Tomb
 824
 Gym Leader Roark Team 2
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Shuckle
 15
@@ -2554,7 +2554,7 @@ Rock Tomb
 825
 Gym Leader Roark Team 3
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Shieldon
 15
@@ -2638,7 +2638,7 @@ Rock Tomb
 826
 Gym Leader Roark Team 4
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Cranidos
 16
@@ -2722,7 +2722,7 @@ Tackle
 9
 Aroma Lady Teighler
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Cherubi
 13
@@ -2767,7 +2767,7 @@ Bullet Seed
 8
 Bug Catcher Brandon
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Wurmple
 14
@@ -2799,7 +2799,7 @@ Absorb
 10
 Twins Liv
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Plusle
 15
@@ -2818,7 +2818,7 @@ Skill Swap
 11
 Twins Liz
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Minun
 15
@@ -2837,7 +2837,7 @@ Charge Beam
 509
 Reporter Jenny
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Chikorita
 15
@@ -2882,7 +2882,7 @@ Scary Face
 221
 Team Galactic Grunt
 Level Cap:
-Format: Double
+Format: Double Battle
 
 Zubat
 15
@@ -2914,7 +2914,7 @@ Paired with 222
 222
 Team Galactic Grunt
 Level Cap:
-Format: Double
+Format: Double Battle
 
 Croagunk
 15
@@ -2946,7 +2946,7 @@ Paired with 221
 669
 Team Galactic Grunt
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Poochyena
 14
@@ -2991,7 +2991,7 @@ Smog
 224
 Team Galactic Grunt
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Kakuna
 14
@@ -3036,7 +3036,7 @@ Iron Defense
 223
 Team Galactic Grunt
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Grimer
 15
@@ -3068,7 +3068,7 @@ Pain Split
 875
 Commander Mars
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Zubat
 18
@@ -3126,7 +3126,7 @@ Aerial Ace
 12
 Camper Jacob
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Ponyta
 15
@@ -3171,7 +3171,7 @@ Quick Attack
 14
 Hiker Daniel
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Diglett
 15
@@ -3216,7 +3216,7 @@ Flame Wheel
 287
 Camper Zackary
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Aipom
 15
@@ -3261,7 +3261,7 @@ Wing Attack
 15
 Hiker Nicholas
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Shellos
 16
@@ -3293,7 +3293,7 @@ Rock Tomb
 16
 Battle Girl Kelsey
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Machop
 16
@@ -3338,7 +3338,7 @@ Force Palm
 17
 Aroma Lady Elizabeth
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Chikorita
 16
@@ -3370,7 +3370,7 @@ Sleep Powder
 345
 Picnicker Karina
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Piplup
 16
@@ -3402,7 +3402,7 @@ Flame Wheel
 13
 Picnicker Siena
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Pachirisu
 17
@@ -3421,7 +3421,7 @@ Charge Beam
 150
 Bug Catcher Jack
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Surskit
 16
@@ -3466,7 +3466,7 @@ Poison Powder
 153
 Lass Briana
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Buneary
 17
@@ -3498,7 +3498,7 @@ Bounce
 154
 Psychic Elijah
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Spoink
 17
@@ -3543,7 +3543,7 @@ Psybeam
 155
 Psychic Lindsey
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Slowpoke
 17
@@ -3588,7 +3588,7 @@ Air Cutter
 151
 Bug Catcher Phillip
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Combee
 17
@@ -3620,7 +3620,7 @@ Pin Missile
 152
 Bug Catcher Donald
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Nincada
 17
@@ -3652,7 +3652,7 @@ Silver Wind
 301
 Psychic Kody
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Mime Jr.
 18
@@ -3684,7 +3684,7 @@ Protect
 304
 Psychic Rachael
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Chingling
 18
@@ -3716,7 +3716,7 @@ Take Down
 737
 Pokémon Trainer Cheryl
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Drifloon
 19
@@ -3774,7 +3774,7 @@ Thunderbolt
 727
 Bird Keeper Falkner
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Pidgeot
 45
@@ -3793,7 +3793,7 @@ Roost
 728
 Bug Catcher Bugsy
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Scizor
 45
@@ -3812,7 +3812,7 @@ Aerial Ace
 729
 Idol Whitney
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Miltank
 45
@@ -3831,7 +3831,7 @@ Milk Drink
 730
 Ninja Boy Morty
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Gengar
 45
@@ -3850,7 +3850,7 @@ Dream Eater
 731
 Black Belt Chuck
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Poliwrath
 45
@@ -3869,7 +3869,7 @@ Hypnosis
 732
 Lass Jasmine
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Steelix
 45
@@ -3888,7 +3888,7 @@ Sandstorm
 733
 Veteran Pryce
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Mamoswine
 45
@@ -3907,7 +3907,7 @@ Rock Slide
 734
 Ace Trainer Claire
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Kingdra
 45
@@ -3926,7 +3926,7 @@ Hyper Beam
 998
 Ace Trainer Gene
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Swellow
 77
@@ -4010,7 +4010,7 @@ Ice Beam
 1003
 Ace Trainer Shade
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Houndoom
 77
@@ -4094,7 +4094,7 @@ Avalanche
 1007
 Ace Trainer Slythe
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Tentacruel
 77
@@ -4178,7 +4178,7 @@ Poison Fang
 1010
 Ace Trainer Wyver
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Charizard
 77
@@ -4262,7 +4262,7 @@ Wish
 1014
 Ace Trainer Luna
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Mr. Mime
 77
@@ -4346,7 +4346,7 @@ Rock Slide
 1018
 Ace Trainer Heather
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Xatu
 77
@@ -4430,7 +4430,7 @@ U-turn
 980
 Ace Trainer Fire Master Trainer Tristan
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Magcargo
 95
@@ -4449,7 +4449,7 @@ Shell Smash
 981
 Beauty Water Master Trainer Tristan
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Ludicolo
 95
@@ -4468,7 +4468,7 @@ Hydro Pump
 982
 Guitarist Electric Master Trainer Tristan
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Electivire
 95
@@ -4487,7 +4487,7 @@ Earthquake
 983
 Lass Grass Master Trainer Tristan
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Tropius
 95
@@ -4506,7 +4506,7 @@ Sunny Day
 984
 Ace Trainer Ice Master Trainer Tristan
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Weavile
 95
@@ -4525,7 +4525,7 @@ Night Slash
 985
 Black Belt Fighting Master Trainer Tristan
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Gallade
 95
@@ -4544,7 +4544,7 @@ Zen Headbutt
 986
 Ninja Boy Poison Master Trainer Tristan
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Nidoking
 95
@@ -4563,7 +4563,7 @@ Earthquake
 987
 Ruin Maniac Ground Master Trainer Tristan
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Quagsire
 95
@@ -4582,7 +4582,7 @@ Ice Beam
 988
 Bird Keeper Flying Master Trainer Tristan
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Dragonite
 95
@@ -4601,7 +4601,7 @@ Thunder Wave
 989
 Psychic Psychic Master Trainer Tristan
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Metagross
 95
@@ -4620,7 +4620,7 @@ Thunder Punch
 990
 Bug Catcher Bug Master Trainer Tristan
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Yanmega
 95
@@ -4639,7 +4639,7 @@ Bug Buzz
 991
 Hiker Rock Master Trainer Tristan
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Rhyperior
 95
@@ -4658,7 +4658,7 @@ Hammer Arm
 992
 Clown Ghost Master Trainer Tristan
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Gengar
 95
@@ -4677,7 +4677,7 @@ Hypnosis
 993
 Dragon Tamer Dragon Master Trainer Tristan
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Garchomp
 95
@@ -4696,7 +4696,7 @@ Earthquake
 994
 Ace Trainer Dark Master Trainer Tristan
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Tyranitar
 95
@@ -4715,7 +4715,7 @@ Low Kick
 995
 Worker Steel Master Trainer Tristan
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Lucario
 95
@@ -4734,7 +4734,7 @@ Earthquake
 996
 School Kid Fairy Master Trainer Tristan
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Clefable
 95
@@ -4753,7 +4753,7 @@ Soft-Boiled
 18
 Fisher Andrew
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Magikarp
 18
@@ -4798,7 +4798,7 @@ Bounce
 19
 Fisher Joseph
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Goldeen
 18
@@ -4843,7 +4843,7 @@ Double Hit
 20
 Fisher Zachary
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Krabby
 19
@@ -4875,7 +4875,7 @@ Silver Wind
 65
 Ninja Boy Zach
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Zubat
 19
@@ -4920,7 +4920,7 @@ Mean Look
 250
 Hiker Louis
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Geodude
 19
@@ -4965,7 +4965,7 @@ Iron Defense
 64
 Bird Keeper Alexandra
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Natu
 20
@@ -5010,7 +5010,7 @@ Aerial Ace
 67
 Ninja Boy Nick
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Ninjask
 20
@@ -5029,7 +5029,7 @@ Screech
 333
 Ruin Maniac Harry
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Aerodactyl
 21
@@ -5048,7 +5048,7 @@ Ancient Power
 66
 Black Belt Sean
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Heracross
 22
@@ -5067,7 +5067,7 @@ Brick Break
 68
 Bird Keeper Katherine
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Noctowl
 22
@@ -5086,7 +5086,7 @@ Psycho Shift
 97
 Black Belt Gregory
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Primeape
 34
@@ -5118,7 +5118,7 @@ Detect
 106
 Skier Edward
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Snover
 20
@@ -5163,7 +5163,7 @@ Endure
 102
 Ace Trainer Garrett
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Mr. Mime
 22
@@ -5208,7 +5208,7 @@ Night Slash
 104
 Ace Trainer Maria
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Quagsire
 22
@@ -5253,7 +5253,7 @@ Feint Attack
 101
 Ace Trainer Blake
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Porygon
 23
@@ -5285,7 +5285,7 @@ Slash
 103
 Ace Trainer Laura
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Togetic
 23
@@ -5317,7 +5317,7 @@ Reversal
 105
 Skier Bradley
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Piloswine
 54
@@ -5349,7 +5349,7 @@ Sheer Cold
 107
 Skier Kaitlyn
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Lapras
 55
@@ -5368,7 +5368,7 @@ Sheer Cold
 108
 Skier Andrea
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Abomasnow
 55
@@ -5387,7 +5387,7 @@ Sheer Cold
 182
 Black Belt Philip
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Hariyama
 55
@@ -5419,7 +5419,7 @@ Close Combat
 21
 Cyclist Axel
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Pichu
 19
@@ -5464,7 +5464,7 @@ Spark
 26
 Cyclist Nicole
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Taillow
 19
@@ -5509,7 +5509,7 @@ Air Cutter
 27
 Cyclist Kayla
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Voltorb
 19
@@ -5554,7 +5554,7 @@ Charge Beam
 22
 Cyclist James
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Ponyta
 20
@@ -5586,7 +5586,7 @@ Charge Beam
 23
 Cyclist John
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Farfetch’d
 21
@@ -5605,7 +5605,7 @@ Air Cutter
 24
 Cyclist Ryan
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Luxio
 21
@@ -5624,7 +5624,7 @@ Double Kick
 25
 Cyclist Megan
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Pidgeotto
 21
@@ -5643,7 +5643,7 @@ Feather Dance
 28
 Cyclist Rachel
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Jolteon
 21
@@ -5662,7 +5662,7 @@ Double Kick
 340
 Hiker Theodore
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Torkoal
 26
@@ -5681,7 +5681,7 @@ Lava Plume
 248
 Lass Caroline
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Lotad
 22
@@ -5739,7 +5739,7 @@ Seed Bomb
 183
 Aroma Lady Jenna
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Weepinbell
 23
@@ -5784,7 +5784,7 @@ Moonlight
 184
 Aroma Lady Angela
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Roselia
 23
@@ -5829,7 +5829,7 @@ Worry Seed
 269
 Beauty Lindsay
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Leafeon
 25
@@ -5874,7 +5874,7 @@ Quick Attack
 827
 Gym Leader Gardenia Team 1
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Voltorb
 25
@@ -5958,7 +5958,7 @@ Sleep Powder
 828
 Gym Leader Gardenia Team 2
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Ivysaur
 25
@@ -6042,7 +6042,7 @@ Sleep Powder
 829
 Gym Leader Gardenia Team 3
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Lileep
 25
@@ -6126,7 +6126,7 @@ Sleep Powder
 830
 Gym Leader Gardenia Team 4
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Roserade
 26
@@ -6210,7 +6210,7 @@ Synthesis
 315
 Team Galactic Grunt
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Koffing
 23
@@ -6255,7 +6255,7 @@ Toxic Spikes
 324
 Team Galactic Grunt
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Ekans
 23
@@ -6300,7 +6300,7 @@ Toxic Spikes
 325
 Team Galactic Grunt
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Cleffa
 23
@@ -6319,7 +6319,7 @@ Draining Kiss
 326
 Team Galactic Grunt
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Houndour
 23
@@ -6364,7 +6364,7 @@ Air Cutter
 948
 Team Galactic Grunt
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Ledian
 24
@@ -6396,7 +6396,7 @@ Night Slash
 316
 Team Galactic Grunt
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Croagunk
 24
@@ -6428,7 +6428,7 @@ Leech Life
 657
 Scientist Travon
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Drowzee
 24
@@ -6473,7 +6473,7 @@ Night Shade
 876
 Commander Jupiter
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Golbat
 26
@@ -6531,7 +6531,7 @@ Defog
 30
 Camper Anthony
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Magby
 24
@@ -6576,7 +6576,7 @@ Slash
 31
 Picnicker Lauren
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Smoochum
 24
@@ -6621,7 +6621,7 @@ Slam
 29
 Youngster Austin
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Lombre
 25
@@ -6653,7 +6653,7 @@ U-turn
 32
 Hiker Kevyn
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Dunsparce
 25
@@ -6685,7 +6685,7 @@ Roost
 33
 Hiker Justin
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Graveler
 25
@@ -6717,7 +6717,7 @@ Night Slash
 34
 Battle Girl Helen
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Tyrogue
 26
@@ -6762,7 +6762,7 @@ Belly Drum
 739
 Pokémon Trainer Dawn
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Piloswine
 29
@@ -6820,7 +6820,7 @@ Bulldoze
 740
 Pokémon Trainer Dawn
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Piloswine
 29
@@ -6878,7 +6878,7 @@ Grass Knot
 741
 Pokémon Trainer Dawn
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Piloswine
 29
@@ -6936,7 +6936,7 @@ Brick Break
 742
 Pokémon Trainer Lucas
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Piloswine
 29
@@ -6994,7 +6994,7 @@ Bulldoze
 743
 Pokémon Trainer Lucas
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Piloswine
 29
@@ -7052,7 +7052,7 @@ Grass Knot
 744
 Pokémon Trainer Lucas
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Piloswine
 29
@@ -7110,7 +7110,7 @@ Brick Break
 293
 Collector Terry
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Gible
 24
@@ -7155,7 +7155,7 @@ Dig
 339
 Lass Cassidy
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Skitty
 24
@@ -7200,7 +7200,7 @@ Wish
 289
 Camper Diego
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Aipom
 25
@@ -7232,7 +7232,7 @@ Toxic Spikes
 290
 Camper Parker
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Volbeat
 25
@@ -7264,7 +7264,7 @@ Slash
 334
 Ruin Maniac Gerald
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Cubone
 25
@@ -7296,7 +7296,7 @@ Discharge
 344
 Hiker Lorenzo
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Rhyhorn
 25
@@ -7328,7 +7328,7 @@ Rollout
 347
 Picnicker Tori
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Psyduck
 25
@@ -7360,7 +7360,7 @@ Toxic Spikes
 348
 Picnicker Ana
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Illumise
 25
@@ -7392,7 +7392,7 @@ Flame Wheel
 372
 Youngster Wayne
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Loudred
 25
@@ -7424,7 +7424,7 @@ Super Fang
 343
 Hiker Reginald
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Dugtrio
 26
@@ -7443,7 +7443,7 @@ Tri Attack
 738
 Pokémon Trainer Mira
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Togetic
 27
@@ -7501,7 +7501,7 @@ Recover
 37
 Hiker Jonathan
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Hippopotas
 26
@@ -7546,7 +7546,7 @@ Iron Defense
 41
 Artist William
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Smeargle
 26
@@ -7591,7 +7591,7 @@ Sketch
 40
 Aroma Lady Hannah
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Roselia
 27
@@ -7623,7 +7623,7 @@ Worry Seed
 35
 Hiker Robert
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Marowak
 28
@@ -7642,7 +7642,7 @@ Swords Dance
 38
 Black Belt Kyle
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Machoke
 29
@@ -7661,7 +7661,7 @@ Strength
 39
 Fisher Cody
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Whiscash
 44
@@ -7693,7 +7693,7 @@ Hydro Pump
 262
 School Kid Chance
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Duskull
 26
@@ -7738,7 +7738,7 @@ Payback
 265
 School Kid Mackenzie
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Shuppet
 26
@@ -7783,7 +7783,7 @@ Curse
 190
 Camper Drew
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Gastly
 27
@@ -7828,7 +7828,7 @@ Confuse Ray
 272
 Youngster Donny
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Gastly
 27
@@ -7873,7 +7873,7 @@ Shadow Ball
 254
 Picnicker Cheyenne
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Drifloon
 28
@@ -7905,7 +7905,7 @@ Confuse Ray
 249
 Lass Molly
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Misdreavus
 29
@@ -7924,7 +7924,7 @@ Mean Look
 204
 Ace Trainer Allen
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Haunter
 29
@@ -7969,7 +7969,7 @@ Fake Out
 208
 Ace Trainer Catherine
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Haunter
 29
@@ -8014,7 +8014,7 @@ Double Team
 831
 Gym Leader Fantina Team 1
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Sableye
 32
@@ -8098,7 +8098,7 @@ Dazzling Gleam
 832
 Gym Leader Fantina Team 2
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Dusclops
 32
@@ -8182,7 +8182,7 @@ Dazzling Gleam
 833
 Gym Leader Fantina Team 3
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Sableye
 32
@@ -8266,7 +8266,7 @@ Dazzling Gleam
 834
 Gym Leader Fantina Team 4
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Mismagius
 33
@@ -8350,7 +8350,7 @@ Strength Sap
 943
 Elite Four Aaron
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Ariados
 31
@@ -8434,7 +8434,7 @@ Knock Off
 757
 Pokémon Trainer Cedric Turtwig Team 1
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Omastar
 32
@@ -8518,7 +8518,7 @@ Fake Out
 758
 Pokémon Trainer Cedric Turtwig Team 2
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Rhyhorn
 32
@@ -8602,7 +8602,7 @@ Fake Out
 759
 Pokémon Trainer Cedric Turtwig Team 3
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Ursaring
 32
@@ -8686,7 +8686,7 @@ Fake Out
 760
 Pokémon Trainer Cedric Turtwig Team 4
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Metang
 32
@@ -8770,7 +8770,7 @@ Fake Out
 761
 Pokémon Trainer Cedric Chimchar Team 1
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Armaldo
 32
@@ -8854,7 +8854,7 @@ Rest
 762
 Pokémon Trainer Cedric Chimchar Team 2
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Prinplup
 33
@@ -8938,7 +8938,7 @@ Calm Mind
 763
 Pokémon Trainer Cedric Chimchar Team 3
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Forretress
 32
@@ -9022,7 +9022,7 @@ Rest
 764
 Pokémon Trainer Cedric Chimchar Team 4
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Smeargle
 32
@@ -9106,7 +9106,7 @@ Rest
 765
 Pokémon Trainer Cedric Piplup Team 1
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Bastiodon
 32
@@ -9190,7 +9190,7 @@ Bulldoze
 766
 Pokémon Trainer Cedric Piplup Team 2
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Arcanine
 32
@@ -9274,7 +9274,7 @@ Bulldoze
 767
 Pokémon Trainer Cedric Piplup Team 3
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Nidoqueen
 32
@@ -9358,7 +9358,7 @@ Bulldoze
 768
 Pokémon Trainer Cedric Piplup Team 4
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Xatu
 32
@@ -9442,7 +9442,7 @@ Bulldoze
 961
 Team Galactic Grunt
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Mightyena
 28
@@ -9474,7 +9474,7 @@ Stockpile
 962
 Team Galactic Grunt
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Glameow
 28
@@ -9519,7 +9519,7 @@ Bug Buzz
 967
 Team Galactic Grunt
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Croagunk
 28
@@ -9564,7 +9564,7 @@ Bug Buzz
 969
 Team Galactic Grunt
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Stunky
 28
@@ -9609,7 +9609,7 @@ Stockpile
 964
 Team Galactic Grunt
 Level Cap:
-Format: Double
+Format: Double Battle
 
 Lunatone
 29
@@ -9641,7 +9641,7 @@ Paired with 965
 965
 Team Galactic Grunt
 Level Cap:
-Format: Double
+Format: Double Battle
 
 Solrock
 29
@@ -9673,7 +9673,7 @@ Paired with 964
 966
 Team Galactic Grunt
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Beedrill
 29
@@ -9705,7 +9705,7 @@ Swift
 69
 Rich Boy Jason
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Prinplup
 30
@@ -9737,7 +9737,7 @@ Play Rough
 70
 Lady Melissa
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Cherrim
 30
@@ -9769,7 +9769,7 @@ Air Slash
 963
 Team Galactic Grunt
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Kricketune
 30
@@ -9788,7 +9788,7 @@ X-Scissor
 968
 Team Galactic Grunt
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Murkrow
 30
@@ -9807,7 +9807,7 @@ Sucker Punch
 977
 Team Galactic Grunt
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Nincada
 30
@@ -9826,7 +9826,7 @@ Dig
 978
 Team Galactic Grunt
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Ninjask
 30
@@ -9845,7 +9845,7 @@ Aerial Ace
 979
 Team Galactic Grunt
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Shedinja
 30
@@ -9864,7 +9864,7 @@ X-Scissor
 71
 Gentleman Jeremy
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Chatot
 31
@@ -9883,7 +9883,7 @@ Chatter
 72
 Madame Reina
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Delcatty
 31
@@ -9902,7 +9902,7 @@ Copycat
 73
 Police Officer Bobby
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Noctowl
 31
@@ -9921,7 +9921,7 @@ Reflect
 74
 Police Officer Alex
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Machamp
 31
@@ -9940,7 +9940,7 @@ Payback
 75
 Police Officer Dylan
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Arcanine
 31
@@ -9959,7 +9959,7 @@ Fire Fang
 83
 Police Officer Caleb
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Granbull
 31
@@ -9978,7 +9978,7 @@ Crunch
 769
 Pokémon Trainer Cedric
 Level Cap:
-Format: Multi
+Format: Multi Battle Partner
 
 Ursaring
 32
@@ -10062,7 +10062,7 @@ Paired with Support
 770
 Pokémon Trainer Cedric
 Level Cap:
-Format: Multi
+Format: Multi Battle Partner
 
 Smeargle
 32
@@ -10146,7 +10146,7 @@ Paired with Support
 771
 Pokémon Trainer Cedric
 Level Cap:
-Format: Multi
+Format: Multi Battle Partner
 
 Bastiodon
 32
@@ -10230,7 +10230,7 @@ Paired with Support
 878
 Gentleman Mr. Backlot
 Level Cap:
-Format: Multi
+Format: Multi Battle Enemy
 
 Wigglytuff
 33
@@ -10275,7 +10275,7 @@ Paired with 877
 877
 Commander Saturn
 Level Cap:
-Format: Multi
+Format: Multi Battle Enemy
 
 Bronzong
 33
@@ -10320,7 +10320,7 @@ Paired with 878
 42
 Pokémon Breeder Albert
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Tyrogue
 26
@@ -10404,7 +10404,7 @@ Reflect
 43
 Pokémon Breeder Jennifer
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Azurill
 26
@@ -10488,7 +10488,7 @@ Extrasensory
 46
 Poké Kid Danielle
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Pichu
 28
@@ -10533,7 +10533,7 @@ Feint
 44
 Cowgirl Shelley
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Ponyta
 30
@@ -10565,7 +10565,7 @@ Take Down
 44
 Cowgirl Shelley
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Ponyta
 30
@@ -10597,7 +10597,7 @@ Take Down
 44
 Cowgirl Shelley
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Ponyta
 30
@@ -10629,7 +10629,7 @@ Take Down
 218
 Twins Emma
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Flareon
 30
@@ -10648,7 +10648,7 @@ Play Rough
 219
 Twins Lil
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Vaporeon
 30
@@ -10667,7 +10667,7 @@ Extrasensory
 45
 Jogger Richard
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Dodrio
 31
@@ -10686,7 +10686,7 @@ Drill Peck
 47
 Young Couple Ty
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Illumise
 31
@@ -10705,7 +10705,7 @@ Flatter
 48
 Young Couple Sue
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Volbeat
 31
@@ -10724,7 +10724,7 @@ Protect
 233
 Jogger Raul
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Fearow
 31
@@ -10743,7 +10743,7 @@ Agility
 405
 Youngster Oliver
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Shellos
 31
@@ -10788,7 +10788,7 @@ Poison Powder
 403
 Poké Fan Leonard
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Plusle
 31
@@ -10833,7 +10833,7 @@ Sweet Kiss
 402
 Roughneck Kirby
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Cleffa
 33
@@ -10852,7 +10852,7 @@ Draining Kiss
 404
 Poké Fan Rebekah
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Clefairy
 30
@@ -10910,7 +10910,7 @@ Charm
 406
 Ranchers Beth
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Flaaffy
 33
@@ -10929,7 +10929,7 @@ Power Gem
 407
 Ranchers Bob
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Ponyta
 33
@@ -10948,7 +10948,7 @@ Low Kick
 408
 Young Couple Mike
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Misdreavus
 33
@@ -10967,7 +10967,7 @@ Power Gem
 409
 Young Couple Nat
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Murkrow
 33
@@ -10986,7 +10986,7 @@ Tailwind
 501
 Cowgirl Eve
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Victreebel
 10
@@ -11070,7 +11070,7 @@ Vine Whip
 502
 Cowgirl Eve
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Bellsprout
 10
@@ -11154,7 +11154,7 @@ Vine Whip
 503
 Cowgirl Eve
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Weepinbell
 10
@@ -11238,7 +11238,7 @@ Vine Whip
 504
 Cowgirl Eve
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Metagross
 10
@@ -11322,7 +11322,7 @@ Tackle
 505
 Cowgirl Eve
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Beldum
 10
@@ -11406,7 +11406,7 @@ Tackle
 507
 Cowgirl Eve
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Metang
 10
@@ -11490,7 +11490,7 @@ Tackle
 508
 Cowgirl Eve
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Blissey
 10
@@ -11574,7 +11574,7 @@ Aromatherapy
 510
 Cowgirl Eve
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Happiny
 10
@@ -11658,7 +11658,7 @@ Aromatherapy
 513
 Cowgirl Eve
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Chansey
 10
@@ -11742,7 +11742,7 @@ Aromatherapy
 514
 Cowgirl Eve
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Vileplume
 10
@@ -11826,7 +11826,7 @@ Absorb
 515
 Cowgirl Eve
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Oddish
 10
@@ -11910,7 +11910,7 @@ Absorb
 516
 Cowgirl Eve
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Gloom
 10
@@ -11994,7 +11994,7 @@ Absorb
 517
 Cowgirl Eve
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Crobat
 10
@@ -12078,7 +12078,7 @@ Bite
 518
 Cowgirl Eve
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Zubat
 10
@@ -12162,7 +12162,7 @@ Bite
 519
 Cowgirl Eve
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Golbat
 10
@@ -12246,7 +12246,7 @@ Bite
 520
 Cowgirl Eve
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Ludicolo
 10
@@ -12330,7 +12330,7 @@ Absorb
 521
 Cowgirl Eve
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Lotad
 10
@@ -12414,7 +12414,7 @@ Absorb
 522
 Cowgirl Eve
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Lombre
 10
@@ -12498,7 +12498,7 @@ Absorb
 523
 Cowgirl Eve
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Blissey
 25
@@ -12582,7 +12582,7 @@ Healing Wish
 524
 Cowgirl Eve
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Blissey
 35
@@ -12666,7 +12666,7 @@ Healing Wish
 944
 Elite Four Lucian
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Claydol
 35
@@ -12750,7 +12750,7 @@ Shadow Sneak
 525
 Cowgirl Eve
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Blissey
 45
@@ -12834,7 +12834,7 @@ Healing Wish
 526
 Cowgirl Eve
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Blissey
 55
@@ -12918,7 +12918,7 @@ Healing Wish
 528
 Cowgirl Eve
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Blissey
 65
@@ -13002,7 +13002,7 @@ Healing Wish
 529
 Cowgirl Eve
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Blissey
 75
@@ -13086,7 +13086,7 @@ Healing Wish
 531
 Cowgirl Eve
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Blissey
 85
@@ -13170,7 +13170,7 @@ Healing Wish
 1079
 Cowgirl Eve
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Blissey
 100
@@ -13254,7 +13254,7 @@ Healing Wish
 428
 Ruin Maniac Karl
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Bronzor
 31
@@ -13299,7 +13299,7 @@ Sand Tomb
 49
 Pokémon Breeder Kahlil
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Riolu
 31
@@ -13344,7 +13344,7 @@ Rollout
 50
 Pokémon Breeder Amber
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Mantyke
 31
@@ -13389,7 +13389,7 @@ Destiny Bond
 51
 Twins Teri
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Furret
 32
@@ -13408,7 +13408,7 @@ Amnesia
 52
 Twins Tia
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Linoone
 32
@@ -13427,7 +13427,7 @@ Rest
 199
 Collector Fernando
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Dratini
 31
@@ -13459,7 +13459,7 @@ Safeguard
 200
 Collector Edwin
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Bagon
 31
@@ -13491,7 +13491,7 @@ Scary Face
 214
 Ranchers Ava
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Miltank
 33
@@ -13510,7 +13510,7 @@ Zen Headbutt
 215
 Ranchers Matt
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Tauros
 33
@@ -13529,7 +13529,7 @@ Body Slam
 216
 Rancher Marco
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Rapidash
 33
@@ -13548,7 +13548,7 @@ Low Kick
 231
 Jogger Wyatt
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Electrode
 33
@@ -13567,7 +13567,7 @@ Light Screen
 278
 Waitress Kati
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Clefable
 33
@@ -13586,7 +13586,7 @@ Life Dew
 366
 Ninja Boy Fabian
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Toxicroak
 41
@@ -13605,7 +13605,7 @@ Sucker Punch
 367
 Ninja Boy Brennan
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Ninjask
 41
@@ -13624,7 +13624,7 @@ Swords Dance
 368
 Ninja Boy Bruce
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Skuntank
 41
@@ -13643,7 +13643,7 @@ Crunch
 229
 Ruin Maniac Calvin
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Marowak
 33
@@ -13675,7 +13675,7 @@ Screech
 98
 Black Belt Derek
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Combusken
 34
@@ -13707,7 +13707,7 @@ Endure
 99
 Black Belt Nathaniel
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Machoke
 34
@@ -13739,7 +13739,7 @@ Detect
 100
 Jogger Scott
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Staraptor
 34
@@ -13758,7 +13758,7 @@ Close Combat
 232
 Jogger Craig
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Luxray
 34
@@ -13777,7 +13777,7 @@ Crunch
 202
 Ace Trainer Dennis
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Gligar
 35
@@ -13822,7 +13822,7 @@ Amnesia
 211
 Ace Trainer Maya
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Lickitung
 35
@@ -13867,7 +13867,7 @@ Stun Spore
 234
 Black Belt Colby
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Machop
 33
@@ -13938,7 +13938,7 @@ Cross Chop
 235
 Black Belt Darren
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Primeape
 35
@@ -13983,7 +13983,7 @@ Mach Punch
 236
 Black Belt Rafael
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Hitmonchan
 35
@@ -14028,7 +14028,7 @@ Focus Energy
 237
 Black Belt Jeffery
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Heracross
 36
@@ -14060,7 +14060,7 @@ Vacuum Wave
 835
 Gym Leader Maylene Team 1
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Hariyama
 38
@@ -14144,7 +14144,7 @@ Thunder Punch
 836
 Gym Leader Maylene Team 2
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Farfetch’d
 38
@@ -14228,7 +14228,7 @@ Dark Pulse
 837
 Gym Leader Maylene Team 3
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Poliwrath
 38
@@ -14312,7 +14312,7 @@ Dark Pulse
 838
 Gym Leader Maylene Team 4
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Hitmontop
 38
@@ -14396,7 +14396,7 @@ Thunder Punch
 674
 Team Galactic Grunt
 Level Cap:
-Format: Multi
+Format: Multi Battle Enemy
 
 Skuntank
 35
@@ -14441,7 +14441,7 @@ Paired with 675
 675
 Team Galactic Grunt
 Level Cap:
-Format: Multi
+Format: Multi Battle Enemy
 
 Weezing
 35
@@ -14486,7 +14486,7 @@ Paired with 674
 495
 Pokémon Trainer Lucas
 Level Cap:
-Format: Multi
+Format: Multi Battle Partner
 
 Kadabra
 35
@@ -14531,7 +14531,7 @@ Paired with Support
 496
 Pokémon Trainer Lucas
 Level Cap:
-Format: Multi
+Format: Multi Battle Partner
 
 Kadabra
 35
@@ -14576,7 +14576,7 @@ Paired with Support
 497
 Pokémon Trainer Lucas
 Level Cap:
-Format: Multi
+Format: Multi Battle Partner
 
 Kadabra
 35
@@ -14621,7 +14621,7 @@ Paired with Support
 498
 Pokémon Trainer Dawn
 Level Cap:
-Format: Multi
+Format: Multi Battle Partner
 
 Kadabra
 35
@@ -14666,7 +14666,7 @@ Paired with Support
 499
 Pokémon Trainer Dawn
 Level Cap:
-Format: Multi
+Format: Multi Battle Partner
 
 Kadabra
 35
@@ -14711,7 +14711,7 @@ Paired with Support
 500
 Pokémon Trainer Dawn
 Level Cap:
-Format: Multi
+Format: Multi Battle Partner
 
 Kadabra
 35
@@ -14756,7 +14756,7 @@ Paired with Support
 970
 Dragon Tamer Nils
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Dragonair
 35
@@ -14814,7 +14814,7 @@ Yawn
 945
 Elite Four Bertha
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Hippowdon
 39
@@ -14898,7 +14898,7 @@ Poison Jab
 92
 Ruin Maniac Bryan
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Anorith
 33
@@ -14943,7 +14943,7 @@ Take Down
 196
 Collector Douglas
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Jolteon
 33
@@ -14988,7 +14988,7 @@ Scary Face
 197
 Collector Brady
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Kangaskhan
 33
@@ -15033,7 +15033,7 @@ Toxic
 369
 Beauty Devon
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Wormadam
 33
@@ -15078,7 +15078,7 @@ Energy Ball
 94
 Psychic Mitchell
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Kadabra
 34
@@ -15123,7 +15123,7 @@ Zen Headbutt
 95
 Psychic Abigail
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Kirlia
 34
@@ -15168,7 +15168,7 @@ Crunch
 93
 Ruin Maniac Hunter
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Relicanth
 35
@@ -15187,7 +15187,7 @@ Zen Headbutt
 292
 Collector Jamal
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Lapras
 35
@@ -15206,7 +15206,7 @@ Drill Run
 96
 PI Carlos
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Dugtrio
 36
@@ -15225,7 +15225,7 @@ Earth Power
 91
 Fisher Kenneth
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Carvanha
 36
@@ -15270,7 +15270,7 @@ Laser Focus
 88
 Tuber Jared
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Gastrodon
 37
@@ -15289,7 +15289,7 @@ Body Slam
 89
 Tuber Chelsea
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Azumarill
 37
@@ -15308,7 +15308,7 @@ Ice Punch
 268
 Beauty Cyndy
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Delcatty
 37
@@ -15340,7 +15340,7 @@ Hypnosis
 84
 Swimmer Shelton
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Gyarados
 43
@@ -15385,7 +15385,7 @@ Outrage
 86
 Swimmer Haley
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Golduck
 43
@@ -15430,7 +15430,7 @@ Aqua Ring
 85
 Swimmer Evan
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Quagsire
 44
@@ -15462,7 +15462,7 @@ Skull Bash
 87
 Swimmer Mary
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Pelipper
 44
@@ -15494,7 +15494,7 @@ Whirlpool
 90
 Sailor Paul
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Politoed
 45
@@ -15513,7 +15513,7 @@ Hydro Pump
 706
 GAME FREAK’s Morimoto
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Togekiss
 88
@@ -15597,7 +15597,7 @@ Fake Out
 291
 Collector Dominique
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Dratini
 31
@@ -15629,7 +15629,7 @@ Safeguard
 76
 Fisher Juan
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Shellder
 36
@@ -15674,7 +15674,7 @@ Pin Missile
 256
 Police Officer Danny
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Growlithe
 37
@@ -15719,7 +15719,7 @@ Psychic
 365
 Scientist Shaun
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Magneton
 37
@@ -15764,7 +15764,7 @@ Thunderbolt
 78
 Fisher Travis
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Barboach
 38
@@ -15796,7 +15796,7 @@ Pin Missile
 82
 Scientist Stefano
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Muk
 38
@@ -15828,7 +15828,7 @@ Dark Pulse
 251
 Parasol Lady Alexa
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Seadra
 38
@@ -15860,7 +15860,7 @@ Psych Up
 77
 Fisher Cameron
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Whiscash
 39
@@ -15905,7 +15905,7 @@ Drill Run
 79
 Pokémon Ranger Taylor
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Carnivine
 39
@@ -15950,7 +15950,7 @@ Cross Chop
 80
 Pokémon Ranger Jeffrey
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Magmar
 39
@@ -15995,7 +15995,7 @@ Poison Jab
 81
 Pokémon Ranger Allison
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Milotic
 39
@@ -16040,7 +16040,7 @@ Body Slam
 252
 Parasol Lady Sabrina
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Castform
 39
@@ -16059,7 +16059,7 @@ Blizzard
 354
 Pokémon Trainer Cedric
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Staraptor
 41
@@ -16143,7 +16143,7 @@ Iron Head
 355
 Pokémon Trainer Cedric
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Staraptor
 41
@@ -16227,7 +16227,7 @@ Thunder Punch
 356
 Pokémon Trainer Cedric
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Staraptor
 41
@@ -16311,7 +16311,7 @@ Swagger
 772
 Pokémon Trainer Cedric Turtwig Team 4
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Golem
 41
@@ -16395,7 +16395,7 @@ Mach Punch
 773
 Pokémon Trainer Cedric Turtwig Team 1
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Absol
 41
@@ -16479,7 +16479,7 @@ Mach Punch
 774
 Pokémon Trainer Cedric Turtwig Team 2
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Omastar
 41
@@ -16563,7 +16563,7 @@ Mach Punch
 775
 Pokémon Trainer Cedric Turtwig Team 3
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Infernape
 42
@@ -16647,7 +16647,7 @@ Mach Punch
 776
 Pokémon Trainer Cedric Chimchar Team 1
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Smeargle
 41
@@ -16731,7 +16731,7 @@ Aqua Jet
 777
 Pokémon Trainer Cedric Chimchar Team 2
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Lopunny
 41
@@ -16815,7 +16815,7 @@ Aqua Jet
 778
 Pokémon Trainer Cedric Chimchar Team 3
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Empoleon
 42
@@ -16899,7 +16899,7 @@ Night Slash
 779
 Pokémon Trainer Cedric Chimchar Team 4
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Camerupt
 41
@@ -16983,7 +16983,7 @@ Aqua Jet
 780
 Pokémon Trainer Cedric Piplup Team 1
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Bastiodon
 41
@@ -17067,7 +17067,7 @@ Protect
 781
 Pokémon Trainer Cedric Piplup Team 2
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Porygon2
 41
@@ -17151,7 +17151,7 @@ Crunch
 782
 Pokémon Trainer Cedric Piplup Team 3
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Torterra
 42
@@ -17235,7 +17235,7 @@ Knock Off
 783
 Pokémon Trainer Cedric Piplup Team 4
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Xatu
 41
@@ -17319,7 +17319,7 @@ Protect
 217
 Fisher Erick
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Lumineon
 39
@@ -17364,7 +17364,7 @@ Slam
 261
 Sailor Damian
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Pelipper
 39
@@ -17409,7 +17409,7 @@ Psych Up
 307
 Fisher Walter
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Whiscash
 39
@@ -17454,7 +17454,7 @@ Drill Run
 364
 Sailor Samson
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Slowbro
 39
@@ -17499,7 +17499,7 @@ Mirror Coat
 373
 Tuber Jacky
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Bibarel
 39
@@ -17544,7 +17544,7 @@ Aqua Tail
 374
 Tuber Caitlyn
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Azumarill
 39
@@ -17589,7 +17589,7 @@ Safeguard
 839
 Gym Leader Wake Team 1
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Gyarados
 43
@@ -17673,7 +17673,7 @@ Crunch
 840
 Gym Leader Wake Team 2
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Lumineon
 43
@@ -17757,7 +17757,7 @@ Crunch
 841
 Gym Leader Wake Team 3
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Qwilfish
 43
@@ -17841,7 +17841,7 @@ Crunch
 842
 Gym Leader Wake Team 4
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Floatzel
 44
@@ -17925,7 +17925,7 @@ Ice Punch
 57
 Ninja Boy Joel
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Scyther
 39
@@ -17970,7 +17970,7 @@ Haze
 58
 Ninja Boy Nathan
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Swalot
 39
@@ -18015,7 +18015,7 @@ Air Slash
 53
 Ace Trainer Ernest
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Politoed
 41
@@ -18073,7 +18073,7 @@ Confuse Ray
 59
 Ninja Boy Davey
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Ninetales
 41
@@ -18092,7 +18092,7 @@ Extrasensory
 60
 Dragon Tamer Patrick
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Gabite
 41
@@ -18150,7 +18150,7 @@ Dragon Dance
 54
 Ace Trainer Alyssa
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Ambipom
 42
@@ -18195,7 +18195,7 @@ Iron Head
 56
 Black Belt Adam
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Machamp
 42
@@ -18240,7 +18240,7 @@ Throat Chop
 61
 Bird Keeper Brianna
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Dodrio
 42
@@ -18285,7 +18285,7 @@ Air Slash
 62
 Double Team Zac
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Typhlosion
 42
@@ -18330,7 +18330,7 @@ Power Gem
 63
 Double Team Jen
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Gyarados
 42
@@ -18375,7 +18375,7 @@ Poison Jab
 55
 Veteran Brian
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Tangrowth
 43
@@ -18420,7 +18420,7 @@ Screech
 319
 Team Galactic Grunt
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Houndoom
 43
@@ -18465,7 +18465,7 @@ Outrage
 879
 Team Galactic Boss Cyrus
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Crobat
 45
@@ -18549,7 +18549,7 @@ Swords Dance
 260
 Sailor Skyler
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Omastar
 43
@@ -18594,7 +18594,7 @@ Amnesia
 118
 Fisher Miguel
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Huntail
 44
@@ -18626,7 +18626,7 @@ Confuse Ray
 225
 Guitarist Tony
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Kricketune
 44
@@ -18658,7 +18658,7 @@ Hammer Arm
 119
 Fisher Luc
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Crawdaunt
 45
@@ -18677,7 +18677,7 @@ Payback
 670
 Worker Dillan
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Machop
 42
@@ -18722,7 +18722,7 @@ Cross Chop
 671
 Worker Holden
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Magnemite
 42
@@ -18767,7 +18767,7 @@ Sandstorm
 672
 Worker Conrad
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Magmar
 43
@@ -18812,7 +18812,7 @@ Bounce
 273
 Tuber Trenton
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Poliwhirl
 42
@@ -18857,7 +18857,7 @@ Superpower
 275
 Tuber Mariel
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Azumarill
 43
@@ -18889,7 +18889,7 @@ Hydro Pump
 120
 Swimmer Adrian
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Octillery
 43
@@ -18934,7 +18934,7 @@ Future Sight
 123
 Swimmer Jessica
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Seadra
 43
@@ -18979,7 +18979,7 @@ Bounce
 125
 Swimmer Katelyn
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Floatzel
 43
@@ -19024,7 +19024,7 @@ Bounce
 121
 Swimmer Erik
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Politoed
 44
@@ -19056,7 +19056,7 @@ Take Down
 124
 Swimmer Erica
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Lumineon
 44
@@ -19088,7 +19088,7 @@ Aqua Ring
 371
 Swimmer Claire
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Starmie
 44
@@ -19120,7 +19120,7 @@ Aqua Tail
 122
 Swimmer Vincent
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Wailord
 45
@@ -19139,7 +19139,7 @@ Aqua Ring
 128
 Fisher Cory
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Whiscash
 44
@@ -19184,7 +19184,7 @@ Hydro Pump
 129
 Ace Trainer Jake
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Claydol
 45
@@ -19242,7 +19242,7 @@ Slash
 130
 Ace Trainer Shannon
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Vileplume
 45
@@ -19300,7 +19300,7 @@ Flatter
 198
 Collector Ivan
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Togekiss
 45
@@ -19332,7 +19332,7 @@ Counter
 126
 Swimmer Dillon
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Swampert
 46
@@ -19351,7 +19351,7 @@ Muddy Water
 127
 Swimmer Vanessa
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Milotic
 46
@@ -19370,7 +19370,7 @@ Safeguard
 957
 Castle Valet Darach
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Gallade
 48
@@ -19454,7 +19454,7 @@ Iron Head
 950
 Lass Aitwo
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Pikachu
 88
@@ -19538,7 +19538,7 @@ Aura Sphere
 784
 Pokémon Trainer Cedric Turtwig Team 1
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Infernape
 49
@@ -19622,7 +19622,7 @@ Giga Drain
 785
 Pokémon Trainer Cedric Turtwig Team 2
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Electrode
 48
@@ -19706,7 +19706,7 @@ Mach Punch
 786
 Pokémon Trainer Cedric Turtwig Team 3
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Qwilfish
 48
@@ -19790,7 +19790,7 @@ Mach Punch
 787
 Pokémon Trainer Cedric Turtwig Team 4
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Mawile
 48
@@ -19874,7 +19874,7 @@ Mach Punch
 788
 Pokémon Trainer Cedric Chimchar Team 1
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Empoleon
 49
@@ -19958,7 +19958,7 @@ Knock Off
 789
 Pokémon Trainer Cedric Chimchar Team 2
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Sableye
 48
@@ -20042,7 +20042,7 @@ Aqua Jet
 790
 Pokémon Trainer Cedric Chimchar Team 3
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Volbeat
 48
@@ -20126,7 +20126,7 @@ Aqua Jet
 791
 Pokémon Trainer Cedric Chimchar Team 4
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Drifblim
 48
@@ -20210,7 +20210,7 @@ Aqua Jet
 792
 Pokémon Trainer Cedric Piplup Team 1
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Torterra
 49
@@ -20294,7 +20294,7 @@ Aqua Jet
 793
 Pokémon Trainer Cedric Piplup Team 2
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Skarmory
 48
@@ -20378,7 +20378,7 @@ Iron Head
 794
 Pokémon Trainer Cedric Piplup Team 3
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Skarmory
 48
@@ -20462,7 +20462,7 @@ Iron Head
 795
 Pokémon Trainer Cedric Piplup Team 4
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Probopass
 48
@@ -20546,7 +20546,7 @@ Iron Head
 958
 Pokémon Trainer Riley
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Absol
 49
@@ -20630,7 +20630,7 @@ Bullet Punch
 288
 Camper Lawrence
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Charmeleon
 46
@@ -20675,7 +20675,7 @@ Agility
 346
 Picnicker Summer
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Grovyle
 46
@@ -20720,7 +20720,7 @@ Slam
 377
 Worker Willy
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Magneton
 48
@@ -20765,7 +20765,7 @@ Iron Defense
 378
 Worker Braden
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Camerupt
 48
@@ -20784,7 +20784,7 @@ Double-Edge
 341
 Hiker Damon
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Pupitar
 46
@@ -20829,7 +20829,7 @@ Sandstorm
 661
 Team Galactic Grunt
 Level Cap:
-Format: Double
+Format: Double Battle
 
 Purugly
 46
@@ -20874,7 +20874,7 @@ Paired with 662
 662
 Team Galactic Grunt
 Level Cap:
-Format: Double
+Format: Double Battle
 
 Golbat
 46
@@ -20919,7 +20919,7 @@ Paired with 661
 342
 Hiker Maurice
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Rhydon
 47
@@ -20951,7 +20951,7 @@ Double-Edge
 379
 Worker Brendon
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Magneton
 47
@@ -20983,7 +20983,7 @@ Scary Face
 380
 Worker Quentin
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Lairon
 47
@@ -21015,7 +21015,7 @@ Double-Edge
 285
 Battle Girl Tylor
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Hitmontop
 48
@@ -21047,7 +21047,7 @@ Stomping Tantrum
 295
 Ace Trainer Jonah
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Masquerain
 48
@@ -21092,7 +21092,7 @@ Stealth Rock
 298
 Ace Trainer Brenda
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Gardevoir
 48
@@ -21137,7 +21137,7 @@ Power Trick
 336
 Black Belt Kendal
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Poliwrath
 48
@@ -21169,7 +21169,7 @@ Close Combat
 181
 Worker Gary
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Magnemite
 46
@@ -21240,7 +21240,7 @@ Heavy Slam
 180
 Worker Jackson
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Magneton
 48
@@ -21285,7 +21285,7 @@ Iron Defense
 279
 Worker Gerardo
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Probopass
 49
@@ -21317,7 +21317,7 @@ Iron Defense
 203
 Ace Trainer Cesar
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Empoleon
 50
@@ -21362,7 +21362,7 @@ Rock Slide
 207
 Ace Trainer Breanna
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Skarmory
 50
@@ -21407,7 +21407,7 @@ Psychic
 164
 Black Belt David
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Lucario
 51
@@ -21426,7 +21426,7 @@ Blaze Kick
 239
 Black Belt Ricky
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Steelix
 51
@@ -21445,7 +21445,7 @@ Thunder Fang
 843
 Gym Leader Byron Team 1
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Bronzong
 52
@@ -21529,7 +21529,7 @@ Ice Beam
 844
 Gym Leader Byron Team 2
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Skarmory
 52
@@ -21613,7 +21613,7 @@ Ice Beam
 845
 Gym Leader Byron Team 3
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Forretress
 52
@@ -21697,7 +21697,7 @@ Ice Beam
 846
 Gym Leader Byron Team 4
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Bastiodon
 53
@@ -21781,7 +21781,7 @@ Iron Head
 410
 Aroma Lady Alison
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Meganium
 37
@@ -21800,7 +21800,7 @@ Body Slam
 410
 Aroma Lady Alison
 Level Cap:
-Format: Double
+Format: Double Battle
 
 Meganium
 37
@@ -21819,7 +21819,7 @@ Paired with 414
 411
 Artist Ismael
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Smeargle
 37
@@ -21838,7 +21838,7 @@ Sketch
 411
 Artist Ismael
 Level Cap:
-Format: Double
+Format: Double Battle
 
 Smeargle
 37
@@ -21857,7 +21857,7 @@ Paired with 426
 412
 Pokémon Breeder Kaylee
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Azumarill
 37
@@ -21876,7 +21876,7 @@ Ice Punch
 412
 Pokémon Breeder Kaylee
 Level Cap:
-Format: Double
+Format: Double Battle
 
 Azumarill
 37
@@ -21895,7 +21895,7 @@ Paired with 424
 413
 Cameraman Darryl
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Magneton
 37
@@ -21914,7 +21914,7 @@ Screech
 413
 Cameraman Darryl
 Level Cap:
-Format: Double
+Format: Double Battle
 
 Magneton
 37
@@ -21933,7 +21933,7 @@ Paired with 422
 414
 Collector Eugene
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Milotic
 37
@@ -21952,7 +21952,7 @@ Moonblast
 414
 Collector Eugene
 Level Cap:
-Format: Double
+Format: Double Battle
 
 Milotic
 37
@@ -21971,7 +21971,7 @@ Paired with 410
 415
 Poké Fan Meredith
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Pachirisu
 37
@@ -21990,7 +21990,7 @@ Fake Tears
 415
 Poké Fan Meredith
 Level Cap:
-Format: Double
+Format: Double Battle
 
 Pachirisu
 37
@@ -22009,7 +22009,7 @@ Paired with 423
 416
 PI Kendrick
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Rhydon
 37
@@ -22028,7 +22028,7 @@ Hammer Arm
 416
 PI Kendrick
 Level Cap:
-Format: Double
+Format: Double Battle
 
 Rhydon
 37
@@ -22047,7 +22047,7 @@ Paired with 425
 417
 Gentleman Leonardo
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Chatot
 37
@@ -22066,7 +22066,7 @@ Echoed Voice
 417
 Gentleman Leonardo
 Level Cap:
-Format: Double
+Format: Double Battle
 
 Chatot
 37
@@ -22085,7 +22085,7 @@ Paired with 418
 418
 Madame Rebecca
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Persian
 37
@@ -22104,7 +22104,7 @@ Hypnosis
 418
 Madame Rebecca
 Level Cap:
-Format: Double
+Format: Double Battle
 
 Persian
 37
@@ -22123,7 +22123,7 @@ Paired with 417
 419
 Lass Blythe
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Lopunny
 37
@@ -22142,7 +22142,7 @@ Flail
 419
 Lass Blythe
 Level Cap:
-Format: Double
+Format: Double Battle
 
 Lopunny
 37
@@ -22161,7 +22161,7 @@ Paired with 427
 420
 Rich Boy Roman
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Arcanine
 37
@@ -22180,7 +22180,7 @@ Reversal
 420
 Rich Boy Roman
 Level Cap:
-Format: Double
+Format: Double Battle
 
 Arcanine
 37
@@ -22199,7 +22199,7 @@ Paired with 421
 421
 Lady Kylie
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Vileplume
 37
@@ -22218,7 +22218,7 @@ Giga Drain
 421
 Lady Kylie
 Level Cap:
-Format: Double
+Format: Double Battle
 
 Vileplume
 37
@@ -22237,7 +22237,7 @@ Paired with 420
 422
 Reporter Valerie
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Loudred
 37
@@ -22256,7 +22256,7 @@ Roar
 422
 Reporter Valerie
 Level Cap:
-Format: Double
+Format: Double Battle
 
 Loudred
 37
@@ -22275,7 +22275,7 @@ Paired with 413
 423
 School Kid Esteban
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Quagsire
 37
@@ -22294,7 +22294,7 @@ Earthquake
 423
 School Kid Esteban
 Level Cap:
-Format: Double
+Format: Double Battle
 
 Quagsire
 37
@@ -22313,7 +22313,7 @@ Paired with 415
 424
 Scientist Emilio
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Alakazam
 37
@@ -22332,7 +22332,7 @@ Psychic
 424
 Scientist Emilio
 Level Cap:
-Format: Double
+Format: Double Battle
 
 Alakazam
 37
@@ -22351,7 +22351,7 @@ Paired with 412
 425
 Beauty Gabriella
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Lumineon
 37
@@ -22370,7 +22370,7 @@ Aqua Tail
 425
 Beauty Gabriella
 Level Cap:
-Format: Double
+Format: Double Battle
 
 Lumineon
 37
@@ -22389,7 +22389,7 @@ Paired with 416
 426
 Beauty Harley
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Golduck
 37
@@ -22408,7 +22408,7 @@ Psychic
 426
 Beauty Harley
 Level Cap:
-Format: Double
+Format: Double Battle
 
 Golduck
 37
@@ -22427,7 +22427,7 @@ Paired with 411
 427
 Veteran Emanuel
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Blaziken
 37
@@ -22446,7 +22446,7 @@ Blaze Kick
 427
 Veteran Emanuel
 Level Cap:
-Format: Double
+Format: Double Battle
 
 Blaziken
 37
@@ -22465,7 +22465,7 @@ Paired with 419
 673
 Team Galactic Grunt
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Toxicroak
 41
@@ -22484,7 +22484,7 @@ Sucker Punch
 320
 Team Galactic Grunt
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Skuntank
 50
@@ -22503,7 +22503,7 @@ Venom Drench
 321
 Team Galactic Grunt
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Houndoom
 50
@@ -22522,7 +22522,7 @@ Nasty Plot
 327
 Team Galactic Grunt
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Purugly
 50
@@ -22541,7 +22541,7 @@ Body Slam
 880
 Commander Saturn
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Bronzong
 52
@@ -22625,7 +22625,7 @@ Swords Dance
 323
 Team Galactic Grunt
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Nidorino
 49
@@ -22670,7 +22670,7 @@ Flail
 329
 Team Galactic Grunt
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Nidorina
 49
@@ -22715,7 +22715,7 @@ Lunge
 322
 Team Galactic Grunt
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Dustox
 50
@@ -22747,7 +22747,7 @@ Megahorn
 328
 Team Galactic Grunt
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Beautifly
 50
@@ -22779,7 +22779,7 @@ Hurricane
 881
 Commander Mars
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Crobat
 52
@@ -22863,7 +22863,7 @@ Body Slam
 111
 Skier Shawn
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Snover
 49
@@ -22908,7 +22908,7 @@ Sheer Cold
 112
 Skier Bjorn
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Swinub
 49
@@ -22953,7 +22953,7 @@ Blizzard
 114
 Skier Madison
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Smoochum
 49
@@ -22998,7 +22998,7 @@ Blizzard
 113
 Skier Lexie
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Dewgong
 51
@@ -23030,7 +23030,7 @@ Blizzard
 115
 Ninja Boy Antonio
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Crobat
 51
@@ -23049,7 +23049,7 @@ Brave Bird
 116
 Ninja Boy Ethan
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Drapion
 51
@@ -23068,7 +23068,7 @@ Cross Poison
 117
 Black Belt Luke
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Machamp
 51
@@ -23113,7 +23113,7 @@ Meteor Mash
 109
 Ace Trainer Dalton
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Magmortar
 52
@@ -23158,7 +23158,7 @@ Yawn
 110
 Ace Trainer Olivia
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Shiftry
 52
@@ -23203,7 +23203,7 @@ Last Resort
 735
 Ace Trainer Aran
 Level Cap:
-Format: Double
+Format: Double Battle
 
 Heracross
 54
@@ -23248,7 +23248,7 @@ Paired with 736
 736
 Ace Trainer Nephenee
 Level Cap:
-Format: Double
+Format: Double Battle
 
 Blissey
 54
@@ -23293,7 +23293,7 @@ Paired with 735
 192
 Ace Trainer Sergio
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Swinub
 51
@@ -23338,7 +23338,7 @@ Rock Slide
 194
 Ace Trainer Savannah
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Seel
 51
@@ -23383,7 +23383,7 @@ Surf
 195
 Ace Trainer Alicia
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Spheal
 51
@@ -23428,7 +23428,7 @@ Blizzard
 653
 Ace Trainer Anton
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Snorunt
 51
@@ -23473,7 +23473,7 @@ Crunch
 654
 Ace Trainer Brenna
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Dewgong
 53
@@ -23518,7 +23518,7 @@ Blizzard
 193
 Ace Trainer Isaiah
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Abomasnow
 54
@@ -23550,7 +23550,7 @@ Future Sight
 847
 Gym Leader Candice Team 1
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Glalie
 55
@@ -23634,7 +23634,7 @@ Thunderbolt
 848
 Gym Leader Candice Team 2
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Delibird
 55
@@ -23718,7 +23718,7 @@ Will-O-Wisp
 849
 Gym Leader Candice Team 3
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Lapras
 55
@@ -23802,7 +23802,7 @@ Thunderbolt
 850
 Gym Leader Candice Team 4
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Froslass
 56
@@ -23886,7 +23886,7 @@ Freeze-Dry
 883
 Commander Saturn
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Bronzong
 57
@@ -23970,7 +23970,7 @@ Sucker Punch
 330
 Team Galactic Grunt
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Beautifly
 53
@@ -24015,7 +24015,7 @@ Destiny Bond
 656
 Scientist Fredrick
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Kirlia
 53
@@ -24060,7 +24060,7 @@ Gyro Ball
 331
 Team Galactic Grunt
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Golbat
 53
@@ -24105,7 +24105,7 @@ Cotton Spore
 386
 Team Galactic Grunt
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Golbat
 53
@@ -24150,7 +24150,7 @@ Psychic
 384
 Team Galactic Grunt
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Toxicroak
 54
@@ -24182,7 +24182,7 @@ Sucker Punch
 655
 Scientist Darrius
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Porygon-Z
 55
@@ -24201,7 +24201,7 @@ Hyper Beam
 383
 Team Galactic Grunt
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Scyther
 54
@@ -24233,7 +24233,7 @@ Sucker Punch
 385
 Team Galactic Grunt
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Pinsir
 54
@@ -24265,7 +24265,7 @@ Belch
 387
 Team Galactic Grunt
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Muk
 54
@@ -24297,7 +24297,7 @@ Belch
 395
 Team Galactic Grunt
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Skuntank
 54
@@ -24342,7 +24342,7 @@ Leaf Storm
 882
 Team Galactic Boss Cyrus
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Crobat
 57
@@ -24426,7 +24426,7 @@ Icicle Spear
 381
 Team Galactic Grunt
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Golbat
 53
@@ -24471,7 +24471,7 @@ Aromatherapy
 382
 Team Galactic Grunt
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Murkrow
 54
@@ -24503,7 +24503,7 @@ Nasty Plot
 388
 Team Galactic Grunt
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Nidorino
 54
@@ -24548,7 +24548,7 @@ Perish Song
 396
 Team Galactic Grunt
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Nidorina
 54
@@ -24593,7 +24593,7 @@ Double-Edge
 389
 Team Galactic Grunt
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Houndoom
 54
@@ -24638,7 +24638,7 @@ Megahorn
 390
 Team Galactic Grunt
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Ledian
 55
@@ -24670,7 +24670,7 @@ Memento
 393
 Team Galactic Grunt
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Ariados
 55
@@ -24715,7 +24715,7 @@ Magnet Rise
 398
 Team Galactic Grunt
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Golbat
 55
@@ -24760,7 +24760,7 @@ Bug Buzz
 399
 Team Galactic Grunt
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Murkrow
 55
@@ -24818,7 +24818,7 @@ Guillotine
 397
 Team Galactic Grunt
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Murkrow
 54
@@ -24863,7 +24863,7 @@ Dark Pulse
 391
 Team Galactic Grunt
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Masquerain
 55
@@ -24895,7 +24895,7 @@ Belch
 392
 Team Galactic Grunt
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Golbat
 56
@@ -24914,7 +24914,7 @@ Brave Bird
 394
 Team Galactic Grunt
 Level Cap:
-Format: Double
+Format: Double Battle
 
 Toxicroak
 56
@@ -24959,7 +24959,7 @@ Paired with 400
 400
 Team Galactic Grunt
 Level Cap:
-Format: Double
+Format: Double Battle
 
 Persian
 56
@@ -25004,7 +25004,7 @@ Paired with 394
 884
 Commander Mars
 Level Cap:
-Format: Multi
+Format: Multi Battle Enemy
 
 Crobat
 57
@@ -25088,7 +25088,7 @@ Paired with 885
 885
 Commander Jupiter
 Level Cap:
-Format: Multi
+Format: Multi Battle Enemy
 
 Sableye
 57
@@ -25172,7 +25172,7 @@ Paired with 884
 796
 Pokémon Trainer Cedric
 Level Cap:
-Format: Multi
+Format: Multi Battle Partner
 
 Delibird
 58
@@ -25256,7 +25256,7 @@ Paired with Support
 797
 Pokémon Trainer Cedric
 Level Cap:
-Format: Multi
+Format: Multi Battle Partner
 
 Drifblim
 58
@@ -25340,7 +25340,7 @@ Paired with Support
 798
 Pokémon Trainer Cedric
 Level Cap:
-Format: Multi
+Format: Multi Battle Partner
 
 Probopass
 58
@@ -25424,7 +25424,7 @@ Paired with Support
 887
 Team Galactic Boss Cyrus Team 1
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Probopass
 59
@@ -25508,7 +25508,7 @@ Knock Off
 888
 Team Galactic Boss Cyrus Team 2
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Gyarados
 59
@@ -25592,7 +25592,7 @@ Knock Off
 889
 Team Galactic Boss Cyrus Team 3
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Absol
 59
@@ -25676,7 +25676,7 @@ Knock Off
 890
 Team Galactic Boss Cyrus Team 4
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Houndoom
 59
@@ -25760,7 +25760,7 @@ Knock Off
 886
 Team Galactic Boss Cyrus
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Palkia
 70
@@ -25792,7 +25792,7 @@ Aura Sphere
 135
 Sailor Luther
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Pelipper
 56
@@ -25850,7 +25850,7 @@ Liquidation
 132
 Fisher Alec
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Gyarados
 57
@@ -25895,7 +25895,7 @@ Hyper Beam
 134
 Fisher Cole
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Seaking
 57
@@ -25940,7 +25940,7 @@ Hyper Beam
 258
 Rich Boy Trey
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Luxray
 57
@@ -25985,7 +25985,7 @@ Extreme Speed
 259
 Sailor Marc
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Lanturn
 57
@@ -26030,7 +26030,7 @@ Hydro Pump
 274
 Tuber Conner
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Remoraid
 57
@@ -26062,7 +26062,7 @@ Water Spout
 370
 Beauty Nicola
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Lopunny
 57
@@ -26107,7 +26107,7 @@ Solar Beam
 658
 Poké Kid Janet
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Pikachu
 57
@@ -26139,7 +26139,7 @@ Thunder
 133
 Fisher George
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Octillery
 58
@@ -26171,7 +26171,7 @@ Hydro Pump
 276
 Tuber Holly
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Azumarill
 58
@@ -26190,7 +26190,7 @@ Liquidation
 131
 Fisher Brett
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Qwilfish
 59
@@ -26209,7 +26209,7 @@ Liquidation
 257
 Police Officer Thomas
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Noctowl
 59
@@ -26228,7 +26228,7 @@ Hurricane
 946
 Elite Four Flint
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Camerupt
 60
@@ -26312,7 +26312,7 @@ Dark Pulse
 1080
 Gym Leader Volkner
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Jolteon
 61
@@ -26396,7 +26396,7 @@ Earthquake
 266
 School Kid Tiera
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Plusle
 56
@@ -26441,7 +26441,7 @@ Charm
 255
 Poké Kid Meghan
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Pichu
 56
@@ -26486,7 +26486,7 @@ Thunder
 263
 School Kid Forrest
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Elekid
 56
@@ -26531,7 +26531,7 @@ Ice Punch
 226
 Guitarist Jerry
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Electabuzz
 60
@@ -26563,7 +26563,7 @@ Charge
 205
 Ace Trainer Zachery
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Ampharos
 60
@@ -26621,7 +26621,7 @@ Sucker Punch
 209
 Ace Trainer Destiny
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Raichu
 60
@@ -26679,7 +26679,7 @@ Howl
 227
 Guitarist Preston
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Electabuzz
 60
@@ -26711,7 +26711,7 @@ Supersonic
 228
 Guitarist Lonnie
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Electabuzz
 60
@@ -26743,7 +26743,7 @@ Thunder
 851
 Gym Leader Volkner Team 1
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Raichu
 61
@@ -26827,7 +26827,7 @@ Close Combat
 852
 Gym Leader Volkner Team 2
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Jolteon
 61
@@ -26911,7 +26911,7 @@ Close Combat
 853
 Gym Leader Volkner Team 3
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Electrode
 61
@@ -26995,7 +26995,7 @@ Close Combat
 854
 Gym Leader Volkner Team 4
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Rotom
 62
@@ -27079,7 +27079,7 @@ Play Rough
 363
 Sailor Zachariah
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Kingler
 58
@@ -27137,7 +27137,7 @@ Aura Sphere
 136
 Swimmer Wesley
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Floatzel
 59
@@ -27182,7 +27182,7 @@ Liquidation
 138
 Swimmer Francisco
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Ludicolo
 59
@@ -27227,7 +27227,7 @@ Earth Power
 139
 Swimmer Colton
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Pelipper
 59
@@ -27272,7 +27272,7 @@ Hydro Pump
 141
 Swimmer Oscar
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Mantine
 59
@@ -27317,7 +27317,7 @@ Fissure
 144
 Swimmer Paige
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Azumarill
 59
@@ -27362,7 +27362,7 @@ Hydro Pump
 145
 Swimmer Crystal
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Wailord
 59
@@ -27407,7 +27407,7 @@ Flail
 147
 Swimmer Gabrielle
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Golduck
 59
@@ -27452,7 +27452,7 @@ Light Screen
 142
 Swimmer Miranda
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Cloyster
 60
@@ -27484,7 +27484,7 @@ Tailwind
 143
 Swimmer Aubree
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Bibarel
 60
@@ -27516,7 +27516,7 @@ Recover
 137
 Swimmer Ricardo
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Tentacruel
 61
@@ -27535,7 +27535,7 @@ Sludge Wave
 140
 Swimmer Troy
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Gyarados
 61
@@ -27554,7 +27554,7 @@ Hyper Beam
 146
 Swimmer Cassandra
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Vaporeon
 61
@@ -27573,7 +27573,7 @@ Hydro Pump
 212
 Psychic Maxwell
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Mismagius
 66
@@ -27631,7 +27631,7 @@ Explosion
 213
 Psychic Brittney
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Hypno
 66
@@ -27689,7 +27689,7 @@ Moonblast
 230
 Ruin Maniac Larry
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Aerodactyl
 66
@@ -27747,7 +27747,7 @@ Head Smash
 238
 Black Belt Carl
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Hariyama
 66
@@ -27805,7 +27805,7 @@ Earthquake
 201
 Dragon Tamer Hayden
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Altaria
 67
@@ -27863,7 +27863,7 @@ Wing Attack
 206
 Ace Trainer Ruben
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Shiftry
 67
@@ -27921,7 +27921,7 @@ Quick Attack
 210
 Ace Trainer Jamie
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Vaporeon
 67
@@ -27979,7 +27979,7 @@ Aerial Ace
 277
 Veteran Armando
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Muk
 68
@@ -28037,7 +28037,7 @@ Hurricane
 158
 Ace Trainer Mariah
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Blissey
 63
@@ -28108,7 +28108,7 @@ Power Gem
 165
 Bird Keeper Hana
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Noctowl
 63
@@ -28166,7 +28166,7 @@ Roost
 166
 Psychic Bryce
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Gengar
 63
@@ -28224,7 +28224,7 @@ Hyper Voice
 335
 Black Belt Miles
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Machamp
 63
@@ -28282,7 +28282,7 @@ Double-Edge
 160
 Veteran Edgar
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Porygon-Z
 64
@@ -28353,7 +28353,7 @@ Earth Power
 163
 Dragon Tamer Clinton
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Flygon
 64
@@ -28411,7 +28411,7 @@ Fire Fang
 156
 Ace Trainer Omar
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Rapidash
 63
@@ -28482,7 +28482,7 @@ Ice Shard
 159
 Ace Trainer Sydney
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Clefable
 63
@@ -28553,7 +28553,7 @@ Wild Charge
 161
 Veteran Clayton
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Lickilicky
 64
@@ -28624,7 +28624,7 @@ Fire Punch
 170
 Double Team Al
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Whiscash
 64
@@ -28656,7 +28656,7 @@ Leaf Storm
 171
 Double Team Kay
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Whiscash
 64
@@ -28688,7 +28688,7 @@ Last Resort
 157
 Ace Trainer Henry
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Honchkrow
 63
@@ -28759,7 +28759,7 @@ Aura Sphere
 167
 Psychic Valencia
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Chimecho
 63
@@ -28817,7 +28817,7 @@ Confuse Ray
 162
 Dragon Tamer Andre
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Kingdra
 64
@@ -28875,7 +28875,7 @@ Crunch
 168
 Double Team Jo
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Ninetales
 64
@@ -28907,7 +28907,7 @@ Leech Life
 169
 Double Team Pat
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Medicham
 64
@@ -28939,7 +28939,7 @@ Attract
 286
 Bird Keeper Autumn
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Xatu
 64
@@ -28984,7 +28984,7 @@ Destiny Bond
 297
 Ace Trainer Arthur
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Gastrodon
 64
@@ -29029,7 +29029,7 @@ Thunder
 300
 Ace Trainer Clarice
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Swalot
 64
@@ -29074,7 +29074,7 @@ Feint
 302
 Psychic Landon
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Banette
 64
@@ -29119,7 +29119,7 @@ Dazzling Gleam
 303
 Psychic Deandre
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Dusclops
 64
@@ -29164,7 +29164,7 @@ Destiny Bond
 305
 Psychic Desiree
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Mr. Mime
 64
@@ -29209,7 +29209,7 @@ Swagger
 306
 Psychic Kendra
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Chimecho
 64
@@ -29254,7 +29254,7 @@ Safeguard
 337
 Black Belt Eddie
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Primeape
 64
@@ -29299,7 +29299,7 @@ Fake Out
 338
 Black Belt Willie
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Heracross
 64
@@ -29344,7 +29344,7 @@ Gunk Shot
 294
 Dragon Tamer Joe
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Dragonair
 65
@@ -29389,7 +29389,7 @@ Rain Dance
 296
 Ace Trainer Micah
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Metagross
 65
@@ -29434,7 +29434,7 @@ Quick Attack
 299
 Ace Trainer Brandi
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Nidoqueen
 65
@@ -29479,7 +29479,7 @@ Focus Blast
 375
 Veteran Terrell
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Parasect
 66
@@ -29524,7 +29524,7 @@ Will-O-Wisp
 376
 Veteran Brenden
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Forretress
 66
@@ -29569,7 +29569,7 @@ Head Smash
 707
 Pokémon Trainer Marley
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Starmie
 65
@@ -29653,7 +29653,7 @@ Extreme Speed
 799
 Pokémon Trainer Cedric Turtwig Team 1
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Infernape
 71
@@ -29737,7 +29737,7 @@ Protect
 800
 Pokémon Trainer Cedric Turtwig Team 2
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Ursaring
 70
@@ -29821,7 +29821,7 @@ Mach Punch
 801
 Pokémon Trainer Cedric Turtwig Team 3
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Qwilfish
 70
@@ -29905,7 +29905,7 @@ Mach Punch
 802
 Pokémon Trainer Cedric Turtwig Team 4
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Rhyperior
 70
@@ -29989,7 +29989,7 @@ Mach Punch
 803
 Pokémon Trainer Cedric Chimchar Team 1
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Empoleon
 71
@@ -30073,7 +30073,7 @@ Shadow Sneak
 804
 Pokémon Trainer Cedric Chimchar Team 2
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Forretress
 70
@@ -30157,7 +30157,7 @@ Grass Knot
 805
 Pokémon Trainer Cedric Chimchar Team 3
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Sableye
 70
@@ -30241,7 +30241,7 @@ Grass Knot
 806
 Pokémon Trainer Cedric Chimchar Team 4
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Tyranitar
 70
@@ -30325,7 +30325,7 @@ Knock Off
 807
 Pokémon Trainer Cedric Piplup Team 1
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Torterra
 71
@@ -30409,7 +30409,7 @@ U-turn
 808
 Pokémon Trainer Cedric Piplup Team 2
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Xatu
 70
@@ -30493,7 +30493,7 @@ Iron Head
 809
 Pokémon Trainer Cedric Piplup Team 3
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Masquerain
 70
@@ -30577,7 +30577,7 @@ Iron Head
 810
 Pokémon Trainer Cedric Piplup Team 4
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Bastiodon
 70
@@ -30661,7 +30661,7 @@ Iron Head
 855
 Elite Four Aaron Team 1
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Shuckle
 71
@@ -30745,7 +30745,7 @@ Knock Off
 856
 Elite Four Aaron Team 2
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Forretress
 71
@@ -30829,7 +30829,7 @@ X-Scissor
 857
 Elite Four Aaron Team 3
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Masquerain
 71
@@ -30913,7 +30913,7 @@ Cut
 858
 Elite Four Aaron Team 4
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Drapion
 72
@@ -30997,7 +30997,7 @@ Bug Buzz
 859
 Elite Four Bertha Team 1
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Hippowdon
 72
@@ -31081,7 +31081,7 @@ Ice Punch
 860
 Elite Four Bertha Team 2
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Camerupt
 72
@@ -31165,7 +31165,7 @@ Ice Punch
 861
 Elite Four Bertha Team 3
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Nidoqueen
 72
@@ -31249,7 +31249,7 @@ Ice Punch
 862
 Elite Four Bertha Team 4
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Rhyperior
 73
@@ -31333,7 +31333,7 @@ Ice Punch
 863
 Elite Four Flint Team 1
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Charizard
 73
@@ -31417,7 +31417,7 @@ Scald
 864
 Elite Four Flint Team 2
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Rotom
 73
@@ -31501,7 +31501,7 @@ Scald
 865
 Elite Four Flint Team 3
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Torkoal
 73
@@ -31585,7 +31585,7 @@ Scald
 866
 Elite Four Flint Team 4
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Magmortar
 74
@@ -31669,7 +31669,7 @@ Morning Sun
 867
 Elite Four Lucian Team 1
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Xatu
 74
@@ -31753,7 +31753,7 @@ Shadow Sneak
 868
 Elite Four Lucian Team 2
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Claydol
 74
@@ -31837,7 +31837,7 @@ Shadow Sneak
 869
 Elite Four Lucian Team 3
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Espeon
 74
@@ -31921,7 +31921,7 @@ Shadow Sneak
 870
 Elite Four Lucian Team 4
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Grumpig
 74
@@ -32005,7 +32005,7 @@ Shadow Sneak
 871
 Champion Cynthia Team 1
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Ninetales
 77
@@ -32089,7 +32089,7 @@ Iron Head
 872
 Champion Cynthia Team 2
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Lucario
 77
@@ -32173,7 +32173,7 @@ Dragon Dance
 873
 Champion Cynthia Team 3
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Roserade
 77
@@ -32257,7 +32257,7 @@ Extreme Speed
 874
 Champion Cynthia Team 4
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Spiritomb
 77
@@ -32341,7 +32341,7 @@ Outrage
 999
 Ace Trainer Gene
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Swellow
 77
@@ -32425,7 +32425,7 @@ Ice Beam
 666
 Pokémon Trainer Cedric
 Level Cap:
-Format: Multi
+Format: Multi Battle Partner
 
 Torterra
 75
@@ -32470,7 +32470,7 @@ Paired with Support
 667
 Pokémon Trainer Cedric
 Level Cap:
-Format: Multi
+Format: Multi Battle Partner
 
 Infernape
 75
@@ -32515,7 +32515,7 @@ Paired with Support
 668
 Pokémon Trainer Cedric
 Level Cap:
-Format: Multi
+Format: Multi Battle Partner
 
 Empoleon
 75
@@ -32560,7 +32560,7 @@ Paired with Support
 703
 Elite Four Flint
 Level Cap:
-Format: Multi
+Format: Multi Battle Enemy
 
 Magmortar
 75
@@ -32605,7 +32605,7 @@ Paired with 708
 708
 Gym Leader Volkner
 Level Cap:
-Format: Multi
+Format: Multi Battle Enemy
 
 Electivire
 75
@@ -32650,7 +32650,7 @@ Paired with 703
 1034
 Pokémon Trainer Cedric
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Staraptor
 90
@@ -32734,7 +32734,7 @@ Feather Dance
 1037
 Pokémon Trainer Cedric
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Staraptor
 90
@@ -32818,7 +32818,7 @@ Seed Bomb
 1039
 Pokémon Trainer Cedric
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Staraptor
 90
@@ -32902,7 +32902,7 @@ Fling
 429
 Bird Keeper Audrey
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Farfetch’d
 73
@@ -32947,7 +32947,7 @@ Brave Bird
 438
 Ace Trainer Rodolfo
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Starmie
 73
@@ -33005,7 +33005,7 @@ Confuse Ray
 442
 Ace Trainer Quinn
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Pinsir
 73
@@ -33063,7 +33063,7 @@ Boomburst
 448
 Ace Trainer Deanna
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Ampharos
 73
@@ -33121,7 +33121,7 @@ Earthquake
 468
 Pokémon Ranger Dwayne
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Skarmory
 73
@@ -33166,7 +33166,7 @@ Head Smash
 469
 Pokémon Ranger Ashlee
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Linoone
 73
@@ -33211,7 +33211,7 @@ Hurricane
 460
 Psychic Daisy
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Slowbro
 74
@@ -33243,7 +33243,7 @@ Aura Sphere
 432
 Dragon Tamer Geoffrey
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Altaria
 75
@@ -33262,7 +33262,7 @@ Sky Attack
 479
 Swimmer Lydia
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Azumarill
 73
@@ -33307,7 +33307,7 @@ Fissure
 430
 Bird Keeper Geneva
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Fearow
 74
@@ -33352,7 +33352,7 @@ Hurricane
 443
 Ace Trainer Graham
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Tyrogue
 74
@@ -33410,7 +33410,7 @@ High Jump Kick
 475
 Swimmer Wade
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Sharpedo
 74
@@ -33442,7 +33442,7 @@ Fissure
 435
 Dragon Tamer Stanley
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Kingdra
 76
@@ -33461,7 +33461,7 @@ Rain Dance
 463
 Black Belt Griffin
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Breloom
 75
@@ -33506,7 +33506,7 @@ Crunch
 451
 Ace Trainer Mikayla
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Seviper
 76
@@ -33551,7 +33551,7 @@ Quick Attack
 470
 Pokémon Ranger Felicia
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Jumpluff
 76
@@ -33583,7 +33583,7 @@ High Jump Kick
 439
 Ace Trainer Saul
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Tauros
 78
@@ -33602,7 +33602,7 @@ Payback
 1022
 Pokémon Trainer Buck
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Claydol
 82
@@ -33686,7 +33686,7 @@ Rest
 462
 Black Belt Davon
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Hariyama
 75
@@ -33731,7 +33731,7 @@ Close Combat
 466
 Pokémon Ranger Kyler
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Exeggutor
 75
@@ -33776,7 +33776,7 @@ Hydro Pump
 434
 Dragon Tamer Keegan
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Flygon
 76
@@ -33795,7 +33795,7 @@ Boomburst
 440
 Ace Trainer Jose
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Floatzel
 76
@@ -33840,7 +33840,7 @@ Electric Terrain
 449
 Ace Trainer Ariana
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Cacturne
 76
@@ -33885,7 +33885,7 @@ Explosion
 458
 Psychic Corbin
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Hypno
 76
@@ -33917,7 +33917,7 @@ Memento
 471
 Pokémon Ranger Krista
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Marowak
 76
@@ -33949,7 +33949,7 @@ Heavy Slam
 452
 Ace Trainer Meagan
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Delcatty
 77
@@ -33981,7 +33981,7 @@ Sheer Cold
 453
 Ace Trainer Sandra
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Dugtrio
 74
@@ -34039,7 +34039,7 @@ Strength Sap
 467
 Pokémon Ranger Deshawn
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Spinda
 74
@@ -34084,7 +34084,7 @@ Outrage
 450
 Ace Trainer Dana
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Mightyena
 75
@@ -34129,7 +34129,7 @@ Hurricane
 441
 Ace Trainer Felix
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Dusknoir
 76
@@ -34161,7 +34161,7 @@ Outrage
 473
 Swimmer Kurt
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Krabby
 70
@@ -34219,7 +34219,7 @@ Endeavor
 474
 Swimmer Sam
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Walrein
 72
@@ -34264,7 +34264,7 @@ Horn Drill
 476
 Swimmer Joanna
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Luvdisc
 72
@@ -34309,7 +34309,7 @@ Hydro Pump
 472
 Swimmer Glenn
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Octillery
 73
@@ -34341,7 +34341,7 @@ Hyper Voice
 477
 Swimmer Sophia
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Delibird
 73
@@ -34373,7 +34373,7 @@ Hydro Pump
 478
 Swimmer Mallory
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Masquerain
 73
@@ -34405,7 +34405,7 @@ Hydro Pump
 433
 Dragon Tamer Darien
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Dragonite
 78
@@ -34424,7 +34424,7 @@ Hurricane
 1059
 Commander Mars
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Bronzong
 82
@@ -34508,7 +34508,7 @@ Hone Claws
 1061
 Commander Jupiter
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Blastoise
 83
@@ -34592,7 +34592,7 @@ Sucker Punch
 431
 Bird Keeper Krystal
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Staraptor
 78
@@ -34637,7 +34637,7 @@ Hurricane
 436
 Dragon Tamer Drake
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Garchomp
 78
@@ -34682,7 +34682,7 @@ Rain Dance
 437
 Dragon Tamer Kenny
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Salamence
 78
@@ -34727,7 +34727,7 @@ Sky Attack
 444
 Ace Trainer Keenan
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Primeape
 78
@@ -34772,7 +34772,7 @@ Giga Impact
 445
 Ace Trainer Stefan
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Tyranitar
 78
@@ -34817,7 +34817,7 @@ Heavy Slam
 446
 Ace Trainer Skyler
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Exploud
 78
@@ -34862,7 +34862,7 @@ Shock Wave
 447
 Ace Trainer Abel
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Glalie
 78
@@ -34907,7 +34907,7 @@ Confuse Ray
 454
 Ace Trainer Kassandra
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Jumpluff
 78
@@ -34952,7 +34952,7 @@ Fire Punch
 455
 Ace Trainer Jasmin
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Drapion
 78
@@ -34997,7 +34997,7 @@ Focus Blast
 456
 Ace Trainer Natasha
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Wigglytuff
 78
@@ -35042,7 +35042,7 @@ Rock Slide
 457
 Ace Trainer Monique
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Luxray
 78
@@ -35087,7 +35087,7 @@ Guillotine
 459
 Psychic Sterling
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Solrock
 78
@@ -35132,7 +35132,7 @@ Explosion
 461
 Psychic Chelsey
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Lunatone
 78
@@ -35177,7 +35177,7 @@ Hurricane
 464
 Black Belt Ray
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Breloom
 78
@@ -35222,7 +35222,7 @@ Earthquake
 465
 Black Belt Jarrett
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Machamp
 78
@@ -35267,7 +35267,7 @@ Double-Edge
 480
 Veteran Harlan
 Level Cap:
-Format: Single
+Format: Single Battle
 
 Raticate
 78

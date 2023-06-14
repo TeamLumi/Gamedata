@@ -7,8 +7,12 @@ PEARL_SPEAR_PILLAR = "d05r0115"
 EVE_AREA_NAME = "SODATEYA"
 MORIMOTO = "MORIMOTO_01"
 
-SINGLE_FORMAT = "Single"
-DOUBLE_FORMAT = "Double"
+# Formats for the different battles
+SINGLE_FORMAT = "Single Battle"
+DOUBLE_FORMAT = "Double Battle"
+MULTI_FORMAT = "Multi Battle Enemy"
+MULTI_PARTNER_FORMAT = "Multi Battle Partner"
+EVIL_TYPE = "Evil"
 
 # Needed to hard code Wurmple's and Goomy's target evos
 WURMPLE = 265
@@ -43,9 +47,6 @@ SCRIPTED_METHOD = "Scripted"
 TRACKER_METHOD = "Tracker"
 E4_METHOD = "Elite Four Trainers"
 DOCS_METHOD = "Docs"
-
-MULTI_FORMAT = "Multi"
-EVIL_TYPE = "Evil"
 
 GENDER = {"0": "MALE", "1": "FEMALE", "2": "NEUTRAL"}
 MALE = "male"

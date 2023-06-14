@@ -318,7 +318,7 @@ def get_support_trainers_data(file_path, area_name, support_name, zoneID):
     for ID in temp_support_IDs:
         trainer = get_trainer_data(zoneID, int(ID), constants.SCRIPTED_METHOD)
         trainer["method"] = constants.SCRIPTED_METHOD
-        trainer["format"] = constants.MULTI_FORMAT
+        trainer["format"] = constants.MULTI_PARTNER_FORMAT
         trainer["link"] = constants.SUPPORT_LINK
         trainers.append(trainer)
     return trainers
