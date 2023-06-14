@@ -689,8 +689,8 @@
     "zoneId": 53,
     "trainerId": 1081,
     "rematch": 0,
-    "name": "Volkner",
-    "type": "Gym Leader",
+    "name": "Steven",
+    "type": "Pok\u00e9mon Trainer",
     "method": "Scripted",
     "format": "Single Battle",
     "link": ""
@@ -1721,8 +1721,8 @@
     "zoneId": 142,
     "trainerId": 1080,
     "rematch": 0,
-    "name": "Volkner",
-    "type": "Gym Leader",
+    "name": "Dahlia",
+    "type": "Arcade Star",
     "method": "Scripted",
     "format": "Single Battle",
     "link": ""
