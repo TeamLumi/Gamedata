@@ -132,7 +132,7 @@ jobs:
         API_TOKEN_GITHUB: ${{ secrets.DENMARK_AUTOMATION_TOKEN }}
       with:
         source_file: 'input/.'
-        destination_branch: 'feature/evolution-utils'
+        destination_branch: 'Source-Of-Truth'
         destination_repo: 'TeamLumi/Gamedata'
         destination_folder: './input'
         user_email: '<support+actions@github.com>'
