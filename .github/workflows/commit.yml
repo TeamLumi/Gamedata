@@ -34,10 +34,10 @@ jobs:
     - name: Pushes test file
       uses: TeamLumi/Gamedata@main
       env:
-        API_TOKEN_GITHUB: ${{ secrets.DENMARK_AUTOMATION_TOKEN }}
+        API_TOKEN_GITHUB: ${{ secrets.DENMARK_GAMEDATA_AUTOMATION_TOKEN }}
       with:
         source_file: 'input/.'
-        destination_branch: 'feature/pokedex-plugin'
+        destination_branch: 'master'
         destination_repo: 'TeamLumi/Lumibot'
         destination_folder: './__gamedata'
         user_email: '<support+actions@github.com>'
@@ -72,7 +72,7 @@ jobs:
     - name: Pushes test file
       uses: TeamLumi/Gamedata@main
       env:
-        API_TOKEN_GITHUB: ${{ secrets.DENMARK_AUTOMATION_TOKEN }}
+        API_TOKEN_GITHUB: ${{ secrets.DENMARK_GAMEDATA_AUTOMATION_TOKEN }}
       with:
         source_file: 'input/.'
         destination_branch: 'main'
@@ -91,7 +91,7 @@ jobs:
     - name: Pushes test file
       uses: TeamLumi/Gamedata@main
       env:
-        API_TOKEN_GITHUB: ${{ secrets.DENMARK_AUTOMATION_TOKEN }}
+        API_TOKEN_GITHUB: ${{ secrets.DENMARK_GAMEDATA_AUTOMATION_TOKEN }}
       with:
         source_file: 'input/.'
         destination_branch: 'feature/pokedex-plugin'
@@ -110,7 +110,7 @@ jobs:
     - name: Pushes test file
       uses: TeamLumi/Gamedata@main
       env:
-        API_TOKEN_GITHUB: ${{ secrets.DENMARK_AUTOMATION_TOKEN }}
+        API_TOKEN_GITHUB: ${{ secrets.DENMARK_GAMEDATA_AUTOMATION_TOKEN }}
       with:
         source_file: 'input/.'
         destination_branch: 'feature/evolution-utils'
@@ -129,7 +129,7 @@ jobs:
     - name: Pushes test file
       uses: TeamLumi/Gamedata@main
       env:
-        API_TOKEN_GITHUB: ${{ secrets.DENMARK_AUTOMATION_TOKEN }}
+        API_TOKEN_GITHUB: ${{ secrets.DENMARK_GAMEDATA_AUTOMATION_TOKEN }}
       with:
         source_file: 'input/.'
         destination_branch: 'Source-Of-Truth'
