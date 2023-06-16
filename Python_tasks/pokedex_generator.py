@@ -36,11 +36,17 @@ def remove_duplicates(path_dictionary):
 
 def remove_duplicate_forms(evolution_paths):
     '''
-    Removes any duplicate forms after'''
+    Removes any duplicate forms after getting all of the evo data
+    '''
     for pokemon in evolution_paths.keys():
         evolution_paths[pokemon]["path"] = remove_duplicates(evolution_paths[pokemon]["path"])
 
 def add_forms(evolution_paths, graph):
+    '''
+    This is an optional function to add any different forms to the evolution paths
+    It's mostly for the pokedex in the tracker as an easy way of handling different forms
+    Included in this is mons like Rotom and Arceus that have different forms but they don't evolve into them
+    '''
     for form in forms:
         form_num = forms[form]
         pokemon_id = int(form[-7:-4])
@@ -122,51 +128,77 @@ def get_second_pathfind_targets(evolution_paths, previous_mon, current_mon, grap
             # This is for mons that have multiple evolutions in their first evo array like Burmy or Snorunt.
             evolution_paths[previous_mon]["targets"].append(current_mon)
 
-def second_pathfind(pokemon, evolution_paths, new_queue, graph):
+def second_pathfind(first_pokemon, evolution_paths, new_queue, graph):
+    '''
+    
+    '''
 
     while new_queue:
         current_mon, current_form = process_current_mon(new_queue)
 
-        evolution_paths[current_mon]["path"].append(pokemon)
+        evolution_paths[current_mon]["path"].append(first_pokemon)
         current_mon_path = evolution_paths[current_mon]["path"]
         update_evolve_paths(evolution_paths, current_mon, current_mon_path)
-        get_second_pathfind_targets(evolution_paths, pokemon, current_mon, graph)
+        get_second_pathfind_targets(evolution_paths, first_pokemon, current_mon, graph)
 
-def first_pathfind(pokemon, evolution_paths, graph, queue, new_queue):
+def first_pathfind(first_pokemon, evolution_paths, graph, first_queue, next_queue):
+    '''
+    first_pokemon is the PID of the root pokemon that started the pathfind
+    Here's what this function is doing:
+    1. Gets the first mon's PID and form from the queue
+    2. If the current_mon_evo_array has nothing in it, then it continues to the next first_pokemon
+    3. Initializes the first mon's evo array
+    4. Processes the very next mon in the evo array
+    5. If that next mon isn't in the current mon's targets, it's added to it.
+    6. Adds current_mon's path to the next_mon's path as well as the next_mon
+    7. Iterates over every evo that may be in the current_mon's array and repeats the same process as above
+    8. Adds the next mon and form to the first_queue.
+    9. Finally, this adds all of the evo methods for each pokemon and the evo arrays
+    '''
 
-    while queue:
-        current_mon, current_form = process_current_mon(queue)
+    while first_queue:
+        current_mon, current_mon_form = process_current_mon(first_queue)
 
-        adjacent_nodes = graph[current_mon]["ar"]
-        if len(adjacent_nodes) == 0:
+        current_mon_evo_array = graph[current_mon]["ar"]
+        if len(current_mon_evo_array) == 0:
             continue
-        next_mon, next_form = process_next_mon(adjacent_nodes)
+        next_mon, next_mon_form = process_next_mon(current_mon_evo_array)
 
         targets = evolution_paths[current_mon]["targets"]
         if next_mon not in targets:
             evolution_paths[current_mon]["targets"].append(next_mon)
 
         evolution_paths[next_mon]["path"] = evolution_paths[current_mon]["path"] + [next_mon]
-        for i in range(2, len(adjacent_nodes), 5):
+        for i in range(2, len(current_mon_evo_array), 5):
             # Increments by 5 starting on the third value which is the target evolution
-            new_queue.append(adjacent_nodes[i])
-            new_queue.append(adjacent_nodes[i + 1])
+            next_current_mon = current_mon_evo_array[i]
+            next_current_mon_form = current_mon_evo_array[i + 1]
 
-            second_pathfind(pokemon, evolution_paths, new_queue, graph)
+            next_queue.append(next_current_mon)
+            next_queue.append(next_current_mon_form)
 
-            new_queue.append(adjacent_nodes[i])
-            new_queue.append(adjacent_nodes[i + 1])
+            second_pathfind(first_pokemon, evolution_paths, next_queue, graph)
 
-        queue.append(next_mon)
-        queue.append(next_form)
+            next_queue.append(next_current_mon)
+            next_queue.append(next_current_mon_form)
 
-    for extra in evolution_paths[pokemon]["path"]:
+        first_queue.append(next_mon)
+        first_queue.append(next_mon_form)
+
+    for extra in evolution_paths[first_pokemon]["path"]:
         for i in range(0, len(graph[extra]["ar"]), 5):
-            evolution_paths[pokemon]["method"].append(graph[extra]["ar"][i])
-        evolution_paths[pokemon]["ar"].append(graph[extra]["ar"])
+            mon_evo_method = graph[extra]["ar"][i]
+            evolution_paths[first_pokemon]["method"].append(mon_evo_method)
+        evolution_paths[first_pokemon]["ar"].append(graph[extra]["ar"])
 
 def start_pathfinding(evolution_paths, graph):
-
+    '''
+    This starts the pathfinding to find the evolution paths inside of the graph
+    The graph is the EvolveTable that details only the very next evolution in the chain.
+    The first part of this just adds the first pokemon to it's own evolution path.
+    It also initializes the queue which goes until there are no more mons in subsequent evo array.
+    It then passes all of the data to the first_pathfind
+    '''
     for pokemon in evolution_paths.keys():
         queue = []
         queue.append(pokemon)
@@ -178,6 +210,10 @@ def start_pathfinding(evolution_paths, graph):
         first_pathfind(pokemon, evolution_paths, graph, queue, new_queue)
 
 def evolution_pathfinding():
+    '''
+    This initializes everything needed for the pathfinding and starts the process
+    All of the pathfinding is output to the evolution.json without any alternate forms
+    '''
     with open(os.path.join(input_file_path, 'EvolveTable.json'), "r", encoding="utf-8") as f:
         graphing = json.load(f)
     graph = graphing["Evolve"]
@@ -195,6 +231,24 @@ def evolution_pathfinding():
     return evolution_paths
 
 def get_mon_dex_info(pokemon, evolution_paths):
+    '''
+    This is for the pokedex that is used in the Tracker.
+    It initializes every pokemon for the pokedex and formats them
+    The format is:
+    {"value": pokemonID,
+     "text": pokemon Name,
+     "type": First type,
+     "dualtype": second type,
+     "evolve": evolution path for the pokemon,
+     "generation": Always 8 for this game,
+     "abilities": [
+        ability1,
+        ability2,
+        hiddenAbility
+     ],
+     "dexNum": monsNo,
+     "form": formNo}
+    '''
     poke_info = get_pokemon_info(pokemon)
     poke_name = get_pokemon_name(pokemon)
 
@@ -222,6 +276,10 @@ def get_mon_dex_info(pokemon, evolution_paths):
     return dex_info
 
 def getPokedexInfo():
+    '''
+    This iterates over every mon from the evolution_pathfinding
+    There are limits surrounding the valid pokemon in the game and they are not allowed.
+    '''
     pokedex = []
     evolutions = evolution_pathfinding()
 
