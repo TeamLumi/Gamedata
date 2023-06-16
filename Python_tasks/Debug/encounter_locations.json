@@ -235,62 +235,8 @@
       "20%",
       34,
       34,
-      0,
-      385
-    ],
-    [
-      "Route 213",
-      "swayGrass",
-      "20%",
-      34,
-      34,
-      1,
-      385
-    ],
-    [
-      "Route 213",
-      "swayGrass",
-      "20%",
-      34,
-      34,
-      2,
-      385
-    ],
-    [
-      "Route 213",
-      "swayGrass",
-      "20%",
-      34,
-      34,
       3,
       385
-    ],
-    [
-      "Route 215",
-      "swayGrass",
-      "20%",
-      30,
-      30,
-      0,
-      394
-    ],
-    [
-      "Route 215",
-      "swayGrass",
-      "20%",
-      30,
-      30,
-      1,
-      394
-    ],
-    [
-      "Route 215",
-      "swayGrass",
-      "20%",
-      30,
-      30,
-      2,
-      394
     ],
     [
       "Route 215",
@@ -2123,33 +2069,6 @@
       "20%",
       30,
       30,
-      0,
-      368
-    ],
-    [
-      "Lost Tower 1F",
-      "swayGrass",
-      "20%",
-      30,
-      30,
-      1,
-      368
-    ],
-    [
-      "Lost Tower 1F",
-      "swayGrass",
-      "20%",
-      30,
-      30,
-      2,
-      368
-    ],
-    [
-      "Lost Tower 1F",
-      "swayGrass",
-      "20%",
-      30,
-      30,
       3,
       368
     ],
@@ -2169,33 +2088,6 @@
       30,
       30,
       11,
-      369
-    ],
-    [
-      "Lost Tower 2F",
-      "swayGrass",
-      "20%",
-      30,
-      30,
-      0,
-      369
-    ],
-    [
-      "Lost Tower 2F",
-      "swayGrass",
-      "20%",
-      30,
-      30,
-      1,
-      369
-    ],
-    [
-      "Lost Tower 2F",
-      "swayGrass",
-      "20%",
-      30,
-      30,
-      2,
       369
     ],
     [
@@ -2231,33 +2123,6 @@
       "20%",
       30,
       30,
-      0,
-      370
-    ],
-    [
-      "Lost Tower 3F",
-      "swayGrass",
-      "20%",
-      30,
-      30,
-      1,
-      370
-    ],
-    [
-      "Lost Tower 3F",
-      "swayGrass",
-      "20%",
-      30,
-      30,
-      2,
-      370
-    ],
-    [
-      "Lost Tower 3F",
-      "swayGrass",
-      "20%",
-      30,
-      30,
       3,
       370
     ],
@@ -2285,33 +2150,6 @@
       "20%",
       30,
       30,
-      0,
-      371
-    ],
-    [
-      "Lost Tower 4F",
-      "swayGrass",
-      "20%",
-      30,
-      30,
-      1,
-      371
-    ],
-    [
-      "Lost Tower 4F",
-      "swayGrass",
-      "20%",
-      30,
-      30,
-      2,
-      371
-    ],
-    [
-      "Lost Tower 4F",
-      "swayGrass",
-      "20%",
-      30,
-      30,
       3,
       371
     ],
@@ -2331,33 +2169,6 @@
       30,
       30,
       11,
-      372
-    ],
-    [
-      "Lost Tower 5F",
-      "swayGrass",
-      "20%",
-      30,
-      30,
-      0,
-      372
-    ],
-    [
-      "Lost Tower 5F",
-      "swayGrass",
-      "20%",
-      30,
-      30,
-      1,
-      372
-    ],
-    [
-      "Lost Tower 5F",
-      "swayGrass",
-      "20%",
-      30,
-      30,
-      2,
       372
     ],
     [
@@ -2999,33 +2810,6 @@
       "20%",
       36,
       36,
-      0,
-      219
-    ],
-    [
-      "Great Marsh Area 1",
-      "swayGrass",
-      "20%",
-      36,
-      36,
-      1,
-      219
-    ],
-    [
-      "Great Marsh Area 1",
-      "swayGrass",
-      "20%",
-      36,
-      36,
-      2,
-      219
-    ],
-    [
-      "Great Marsh Area 1",
-      "swayGrass",
-      "20%",
-      36,
-      36,
       3,
       219
     ],
@@ -3081,33 +2865,6 @@
       36,
       36,
       0,
-      220
-    ],
-    [
-      "Great Marsh Area 2",
-      "swayGrass",
-      "20%",
-      36,
-      36,
-      0,
-      220
-    ],
-    [
-      "Great Marsh Area 2",
-      "swayGrass",
-      "20%",
-      36,
-      36,
-      1,
-      220
-    ],
-    [
-      "Great Marsh Area 2",
-      "swayGrass",
-      "20%",
-      36,
-      36,
-      2,
       220
     ],
     [
@@ -3311,33 +3068,6 @@
       "20%",
       36,
       36,
-      0,
-      223
-    ],
-    [
-      "Great Marsh Area 5",
-      "swayGrass",
-      "20%",
-      36,
-      36,
-      1,
-      223
-    ],
-    [
-      "Great Marsh Area 5",
-      "swayGrass",
-      "20%",
-      36,
-      36,
-      2,
-      223
-    ],
-    [
-      "Great Marsh Area 5",
-      "swayGrass",
-      "20%",
-      36,
-      36,
       3,
       223
     ],
@@ -3366,33 +3096,6 @@
       36,
       36,
       11,
-      224
-    ],
-    [
-      "Great Marsh Area 6",
-      "swayGrass",
-      "20%",
-      36,
-      36,
-      0,
-      224
-    ],
-    [
-      "Great Marsh Area 6",
-      "swayGrass",
-      "20%",
-      36,
-      36,
-      1,
-      224
-    ],
-    [
-      "Great Marsh Area 6",
-      "swayGrass",
-      "20%",
-      36,
-      36,
-      2,
       224
     ],
     [
@@ -4293,33 +3996,6 @@
       "20%",
       26,
       26,
-      0,
-      297
-    ],
-    [
-      "Trophy Garden",
-      "swayGrass",
-      "20%",
-      26,
-      26,
-      1,
-      297
-    ],
-    [
-      "Trophy Garden",
-      "swayGrass",
-      "20%",
-      26,
-      26,
-      2,
-      297
-    ],
-    [
-      "Trophy Garden",
-      "swayGrass",
-      "20%",
-      26,
-      26,
       3,
       297
     ],
@@ -5125,62 +4801,8 @@
       "20%",
       53,
       53,
-      0,
-      206
-    ],
-    [
-      "Mt. Coronet Snow Area",
-      "swayGrass",
-      "20%",
-      53,
-      53,
-      1,
-      206
-    ],
-    [
-      "Mt. Coronet Snow Area",
-      "swayGrass",
-      "20%",
-      53,
-      53,
-      2,
-      206
-    ],
-    [
-      "Mt. Coronet Snow Area",
-      "swayGrass",
-      "20%",
-      53,
-      53,
       3,
       206
-    ],
-    [
-      "Mt. Coronet Summit",
-      "swayGrass",
-      "20%",
-      52,
-      52,
-      0,
-      207
-    ],
-    [
-      "Mt. Coronet Summit",
-      "swayGrass",
-      "20%",
-      52,
-      52,
-      1,
-      207
-    ],
-    [
-      "Mt. Coronet Summit",
-      "swayGrass",
-      "20%",
-      52,
-      52,
-      2,
-      207
     ],
     [
       "Mt. Coronet Summit",
@@ -6364,33 +5986,6 @@
       "20%",
       54,
       54,
-      0,
-      407
-    ],
-    [
-      "Route 222",
-      "swayGrass",
-      "20%",
-      54,
-      54,
-      1,
-      407
-    ],
-    [
-      "Route 222",
-      "swayGrass",
-      "20%",
-      54,
-      54,
-      2,
-      407
-    ],
-    [
-      "Route 222",
-      "swayGrass",
-      "20%",
-      54,
-      54,
       3,
       407
     ]
@@ -6404,33 +5999,6 @@
       49,
       5,
       351
-    ],
-    [
-      "Route 216",
-      "swayGrass",
-      "20%",
-      20,
-      20,
-      0,
-      395
-    ],
-    [
-      "Route 216",
-      "swayGrass",
-      "20%",
-      20,
-      20,
-      1,
-      395
-    ],
-    [
-      "Route 216",
-      "swayGrass",
-      "20%",
-      20,
-      20,
-      2,
-      395
     ],
     [
       "Route 216",
@@ -6568,33 +6136,6 @@
       "20%",
       9,
       9,
-      0,
-      255
-    ],
-    [
-      "Oreburgh Gate 1F",
-      "swayGrass",
-      "20%",
-      9,
-      9,
-      1,
-      255
-    ],
-    [
-      "Oreburgh Gate 1F",
-      "swayGrass",
-      "20%",
-      9,
-      9,
-      2,
-      255
-    ],
-    [
-      "Oreburgh Gate 1F",
-      "swayGrass",
-      "20%",
-      9,
-      9,
       3,
       255
     ],
@@ -6668,33 +6209,6 @@
       10,
       10,
       0,
-      256
-    ],
-    [
-      "Oreburgh Gate B1F",
-      "swayGrass",
-      "20%",
-      10,
-      10,
-      0,
-      256
-    ],
-    [
-      "Oreburgh Gate B1F",
-      "swayGrass",
-      "20%",
-      10,
-      10,
-      1,
-      256
-    ],
-    [
-      "Oreburgh Gate B1F",
-      "swayGrass",
-      "20%",
-      10,
-      10,
-      2,
       256
     ],
     [
@@ -6829,33 +6343,6 @@
     ]
   ],
   "Doduo": [
-    [
-      "Route 201",
-      "swayGrass",
-      "20%",
-      5,
-      5,
-      0,
-      354
-    ],
-    [
-      "Route 201",
-      "swayGrass",
-      "20%",
-      5,
-      5,
-      1,
-      354
-    ],
-    [
-      "Route 201",
-      "swayGrass",
-      "20%",
-      5,
-      5,
-      2,
-      354
-    ],
     [
       "Route 201",
       "swayGrass",
@@ -7274,33 +6761,6 @@
       "20%",
       32,
       32,
-      0,
-      294
-    ],
-    [
-      "Maniac Tunnel",
-      "swayGrass",
-      "20%",
-      32,
-      32,
-      1,
-      294
-    ],
-    [
-      "Maniac Tunnel",
-      "swayGrass",
-      "20%",
-      32,
-      32,
-      2,
-      294
-    ],
-    [
-      "Maniac Tunnel",
-      "swayGrass",
-      "20%",
-      32,
-      32,
       3,
       294
     ],
@@ -7328,33 +6788,6 @@
       "20%",
       32,
       32,
-      0,
-      295
-    ],
-    [
-      "Maniac Tunnel",
-      "swayGrass",
-      "20%",
-      32,
-      32,
-      1,
-      295
-    ],
-    [
-      "Maniac Tunnel",
-      "swayGrass",
-      "20%",
-      32,
-      32,
-      2,
-      295
-    ],
-    [
-      "Maniac Tunnel",
-      "swayGrass",
-      "20%",
-      32,
-      32,
       3,
       295
     ],
@@ -7374,33 +6807,6 @@
       32,
       32,
       11,
-      296
-    ],
-    [
-      "Maniac Tunnel",
-      "swayGrass",
-      "20%",
-      32,
-      32,
-      0,
-      296
-    ],
-    [
-      "Maniac Tunnel",
-      "swayGrass",
-      "20%",
-      32,
-      32,
-      1,
-      296
-    ],
-    [
-      "Maniac Tunnel",
-      "swayGrass",
-      "20%",
-      32,
-      32,
-      2,
       296
     ],
     [
@@ -7477,33 +6883,6 @@
     ]
   ],
   "Dunsparce": [
-    [
-      "Route 208",
-      "swayGrass",
-      "20%",
-      24,
-      24,
-      0,
-      365
-    ],
-    [
-      "Route 208",
-      "swayGrass",
-      "20%",
-      24,
-      24,
-      1,
-      365
-    ],
-    [
-      "Route 208",
-      "swayGrass",
-      "20%",
-      24,
-      24,
-      2,
-      365
-    ],
     [
       "Route 208",
       "swayGrass",
@@ -8935,33 +8314,6 @@
       "20%",
       39,
       39,
-      0,
-      400
-    ],
-    [
-      "Route 218",
-      "swayGrass",
-      "20%",
-      39,
-      39,
-      1,
-      400
-    ],
-    [
-      "Route 218",
-      "swayGrass",
-      "20%",
-      39,
-      39,
-      2,
-      400
-    ],
-    [
-      "Route 218",
-      "swayGrass",
-      "20%",
-      39,
-      39,
       3,
       400
     ],
@@ -9121,33 +8473,6 @@
     ]
   ],
   "Farfetch\u2019d": [
-    [
-      "Route 212 North",
-      "swayGrass",
-      "20%",
-      26,
-      26,
-      0,
-      379
-    ],
-    [
-      "Route 212 North",
-      "swayGrass",
-      "20%",
-      26,
-      26,
-      1,
-      379
-    ],
-    [
-      "Route 212 North",
-      "swayGrass",
-      "20%",
-      26,
-      26,
-      2,
-      379
-    ],
     [
       "Route 212 North",
       "swayGrass",
@@ -9672,62 +8997,8 @@
       "20%",
       49,
       49,
-      0,
-      351
-    ],
-    [
-      "Acuity Lakefront",
-      "swayGrass",
-      "20%",
-      49,
-      49,
-      1,
-      351
-    ],
-    [
-      "Acuity Lakefront",
-      "swayGrass",
-      "20%",
-      49,
-      49,
-      2,
-      351
-    ],
-    [
-      "Acuity Lakefront",
-      "swayGrass",
-      "20%",
-      49,
-      49,
       3,
       351
-    ],
-    [
-      "Route 217",
-      "swayGrass",
-      "20%",
-      48,
-      48,
-      0,
-      397
-    ],
-    [
-      "Route 217",
-      "swayGrass",
-      "20%",
-      48,
-      48,
-      1,
-      397
-    ],
-    [
-      "Route 217",
-      "swayGrass",
-      "20%",
-      48,
-      48,
-      2,
-      397
     ],
     [
       "Route 217",
@@ -9782,33 +9053,6 @@
       "20%",
       59,
       59,
-      0,
-      245
-    ],
-    [
-      "Victory Road 2F",
-      "swayGrass",
-      "20%",
-      59,
-      59,
-      1,
-      245
-    ],
-    [
-      "Victory Road 2F",
-      "swayGrass",
-      "20%",
-      59,
-      59,
-      2,
-      245
-    ],
-    [
-      "Victory Road 2F",
-      "swayGrass",
-      "20%",
-      59,
-      59,
       3,
       245
     ],
@@ -9837,33 +9081,6 @@
       59,
       59,
       11,
-      246
-    ],
-    [
-      "Victory Road B1F",
-      "swayGrass",
-      "20%",
-      59,
-      59,
-      0,
-      246
-    ],
-    [
-      "Victory Road B1F",
-      "swayGrass",
-      "20%",
-      59,
-      59,
-      1,
-      246
-    ],
-    [
-      "Victory Road B1F",
-      "swayGrass",
-      "20%",
-      59,
-      59,
-      2,
       246
     ],
     [
@@ -11002,33 +10219,6 @@
       "20%",
       11,
       11,
-      0,
-      196
-    ],
-    [
-      "Oreburgh Mine B1F",
-      "swayGrass",
-      "20%",
-      11,
-      11,
-      1,
-      196
-    ],
-    [
-      "Oreburgh Mine B1F",
-      "swayGrass",
-      "20%",
-      11,
-      11,
-      2,
-      196
-    ],
-    [
-      "Oreburgh Mine B1F",
-      "swayGrass",
-      "20%",
-      11,
-      11,
       3,
       196
     ],
@@ -11138,33 +10328,6 @@
       8,
       8,
       0,
-      252
-    ],
-    [
-      "Ravaged Path",
-      "swayGrass",
-      "20%",
-      8,
-      8,
-      0,
-      252
-    ],
-    [
-      "Ravaged Path",
-      "swayGrass",
-      "20%",
-      8,
-      8,
-      1,
-      252
-    ],
-    [
-      "Ravaged Path",
-      "swayGrass",
-      "20%",
-      8,
-      8,
-      2,
       252
     ],
     [
@@ -11328,33 +10491,6 @@
       "20%",
       22,
       22,
-      0,
-      292
-    ],
-    [
-      "Wayward Cave",
-      "swayGrass",
-      "20%",
-      22,
-      22,
-      1,
-      292
-    ],
-    [
-      "Wayward Cave",
-      "swayGrass",
-      "20%",
-      22,
-      22,
-      2,
-      292
-    ],
-    [
-      "Wayward Cave",
-      "swayGrass",
-      "20%",
-      22,
-      22,
       3,
       292
     ],
@@ -11428,33 +10564,6 @@
       22,
       22,
       0,
-      293
-    ],
-    [
-      "Wayward Cave",
-      "swayGrass",
-      "20%",
-      22,
-      22,
-      0,
-      293
-    ],
-    [
-      "Wayward Cave",
-      "swayGrass",
-      "20%",
-      22,
-      22,
-      1,
-      293
-    ],
-    [
-      "Wayward Cave",
-      "swayGrass",
-      "20%",
-      22,
-      22,
-      2,
       293
     ],
     [
@@ -11706,33 +10815,6 @@
       67,
       67,
       1,
-      414
-    ],
-    [
-      "Route 227",
-      "swayGrass",
-      "20%",
-      67,
-      67,
-      0,
-      414
-    ],
-    [
-      "Route 227",
-      "swayGrass",
-      "20%",
-      67,
-      67,
-      1,
-      414
-    ],
-    [
-      "Route 227",
-      "swayGrass",
-      "20%",
-      67,
-      67,
-      2,
       414
     ],
     [
@@ -12258,33 +11340,6 @@
       "20%",
       50,
       50,
-      0,
-      286
-    ],
-    [
-      "Snowpoint Temple 1F",
-      "swayGrass",
-      "20%",
-      50,
-      50,
-      1,
-      286
-    ],
-    [
-      "Snowpoint Temple 1F",
-      "swayGrass",
-      "20%",
-      50,
-      50,
-      2,
-      286
-    ],
-    [
-      "Snowpoint Temple 1F",
-      "swayGrass",
-      "20%",
-      50,
-      50,
       3,
       286
     ],
@@ -12321,33 +11376,6 @@
       "20%",
       50,
       50,
-      0,
-      287
-    ],
-    [
-      "Snowpoint Temple B1F",
-      "swayGrass",
-      "20%",
-      50,
-      50,
-      1,
-      287
-    ],
-    [
-      "Snowpoint Temple B1F",
-      "swayGrass",
-      "20%",
-      50,
-      50,
-      2,
-      287
-    ],
-    [
-      "Snowpoint Temple B1F",
-      "swayGrass",
-      "20%",
-      50,
-      50,
       3,
       287
     ],
@@ -12376,33 +11404,6 @@
       50,
       50,
       11,
-      288
-    ],
-    [
-      "Snowpoint Temple B2F",
-      "swayGrass",
-      "20%",
-      50,
-      50,
-      0,
-      288
-    ],
-    [
-      "Snowpoint Temple B2F",
-      "swayGrass",
-      "20%",
-      50,
-      50,
-      1,
-      288
-    ],
-    [
-      "Snowpoint Temple B2F",
-      "swayGrass",
-      "20%",
-      50,
-      50,
-      2,
       288
     ],
     [
@@ -12447,33 +11448,6 @@
       "20%",
       50,
       50,
-      0,
-      289
-    ],
-    [
-      "Snowpoint Temple B3F",
-      "swayGrass",
-      "20%",
-      50,
-      50,
-      1,
-      289
-    ],
-    [
-      "Snowpoint Temple B3F",
-      "swayGrass",
-      "20%",
-      50,
-      50,
-      2,
-      289
-    ],
-    [
-      "Snowpoint Temple B3F",
-      "swayGrass",
-      "20%",
-      50,
-      50,
       3,
       289
     ],
@@ -12510,33 +11484,6 @@
       "20%",
       50,
       50,
-      0,
-      290
-    ],
-    [
-      "Snowpoint Temple B4F",
-      "swayGrass",
-      "20%",
-      50,
-      50,
-      1,
-      290
-    ],
-    [
-      "Snowpoint Temple B4F",
-      "swayGrass",
-      "20%",
-      50,
-      50,
-      2,
-      290
-    ],
-    [
-      "Snowpoint Temple B4F",
-      "swayGrass",
-      "20%",
-      50,
-      50,
       3,
       290
     ],
@@ -12565,33 +11512,6 @@
       50,
       50,
       11,
-      291
-    ],
-    [
-      "Snowpoint Temple B5F",
-      "swayGrass",
-      "20%",
-      50,
-      50,
-      0,
-      291
-    ],
-    [
-      "Snowpoint Temple B5F",
-      "swayGrass",
-      "20%",
-      50,
-      50,
-      1,
-      291
-    ],
-    [
-      "Snowpoint Temple B5F",
-      "swayGrass",
-      "20%",
-      50,
-      50,
-      2,
       291
     ],
     [
@@ -14072,33 +12992,6 @@
       "20%",
       67,
       67,
-      0,
-      412
-    ],
-    [
-      "Route 225",
-      "swayGrass",
-      "20%",
-      67,
-      67,
-      1,
-      412
-    ],
-    [
-      "Route 225",
-      "swayGrass",
-      "20%",
-      67,
-      67,
-      2,
-      412
-    ],
-    [
-      "Route 225",
-      "swayGrass",
-      "20%",
-      67,
-      67,
       3,
       412
     ]
@@ -15189,33 +14082,6 @@
       "20%",
       18,
       18,
-      0,
-      306
-    ],
-    [
-      "Old Chateau",
-      "swayGrass",
-      "20%",
-      18,
-      18,
-      1,
-      306
-    ],
-    [
-      "Old Chateau",
-      "swayGrass",
-      "20%",
-      18,
-      18,
-      2,
-      306
-    ],
-    [
-      "Old Chateau",
-      "swayGrass",
-      "20%",
-      18,
-      18,
       3,
       306
     ],
@@ -15243,33 +14109,6 @@
       "20%",
       18,
       18,
-      0,
-      307
-    ],
-    [
-      "Old Chateau",
-      "swayGrass",
-      "20%",
-      18,
-      18,
-      1,
-      307
-    ],
-    [
-      "Old Chateau",
-      "swayGrass",
-      "20%",
-      18,
-      18,
-      2,
-      307
-    ],
-    [
-      "Old Chateau",
-      "swayGrass",
-      "20%",
-      18,
-      18,
       3,
       307
     ],
@@ -15297,33 +14136,6 @@
       "20%",
       18,
       18,
-      0,
-      308
-    ],
-    [
-      "Old Chateau",
-      "swayGrass",
-      "20%",
-      18,
-      18,
-      1,
-      308
-    ],
-    [
-      "Old Chateau",
-      "swayGrass",
-      "20%",
-      18,
-      18,
-      2,
-      308
-    ],
-    [
-      "Old Chateau",
-      "swayGrass",
-      "20%",
-      18,
-      18,
       3,
       308
     ],
@@ -15351,33 +14163,6 @@
       "20%",
       18,
       18,
-      0,
-      309
-    ],
-    [
-      "Old Chateau",
-      "swayGrass",
-      "20%",
-      18,
-      18,
-      1,
-      309
-    ],
-    [
-      "Old Chateau",
-      "swayGrass",
-      "20%",
-      18,
-      18,
-      2,
-      309
-    ],
-    [
-      "Old Chateau",
-      "swayGrass",
-      "20%",
-      18,
-      18,
       3,
       309
     ],
@@ -15405,33 +14190,6 @@
       "20%",
       18,
       18,
-      0,
-      310
-    ],
-    [
-      "Old Chateau",
-      "swayGrass",
-      "20%",
-      18,
-      18,
-      1,
-      310
-    ],
-    [
-      "Old Chateau",
-      "swayGrass",
-      "20%",
-      18,
-      18,
-      2,
-      310
-    ],
-    [
-      "Old Chateau",
-      "swayGrass",
-      "20%",
-      18,
-      18,
       3,
       310
     ],
@@ -15451,33 +14209,6 @@
       18,
       18,
       11,
-      311
-    ],
-    [
-      "Old Chateau",
-      "swayGrass",
-      "20%",
-      18,
-      18,
-      0,
-      311
-    ],
-    [
-      "Old Chateau",
-      "swayGrass",
-      "20%",
-      18,
-      18,
-      1,
-      311
-    ],
-    [
-      "Old Chateau",
-      "swayGrass",
-      "20%",
-      18,
-      18,
-      2,
       311
     ],
     [
@@ -15513,33 +14244,6 @@
       "20%",
       18,
       18,
-      0,
-      312
-    ],
-    [
-      "Old Chateau",
-      "swayGrass",
-      "20%",
-      18,
-      18,
-      1,
-      312
-    ],
-    [
-      "Old Chateau",
-      "swayGrass",
-      "20%",
-      18,
-      18,
-      2,
-      312
-    ],
-    [
-      "Old Chateau",
-      "swayGrass",
-      "20%",
-      18,
-      18,
       3,
       312
     ],
@@ -15567,33 +14271,6 @@
       "20%",
       18,
       18,
-      0,
-      313
-    ],
-    [
-      "Old Chateau",
-      "swayGrass",
-      "20%",
-      18,
-      18,
-      1,
-      313
-    ],
-    [
-      "Old Chateau",
-      "swayGrass",
-      "20%",
-      18,
-      18,
-      2,
-      313
-    ],
-    [
-      "Old Chateau",
-      "swayGrass",
-      "20%",
-      18,
-      18,
       3,
       313
     ],
@@ -15613,33 +14290,6 @@
       18,
       18,
       11,
-      314
-    ],
-    [
-      "Old Chateau",
-      "swayGrass",
-      "20%",
-      18,
-      18,
-      0,
-      314
-    ],
-    [
-      "Old Chateau",
-      "swayGrass",
-      "20%",
-      18,
-      18,
-      1,
-      314
-    ],
-    [
-      "Old Chateau",
-      "swayGrass",
-      "20%",
-      18,
-      18,
-      2,
       314
     ],
     [
@@ -16105,33 +14755,6 @@
       67,
       67,
       11,
-      416
-    ],
-    [
-      "Route 228",
-      "swayGrass",
-      "20%",
-      67,
-      67,
-      0,
-      416
-    ],
-    [
-      "Route 228",
-      "swayGrass",
-      "20%",
-      67,
-      67,
-      1,
-      416
-    ],
-    [
-      "Route 228",
-      "swayGrass",
-      "20%",
-      67,
-      67,
-      2,
       416
     ],
     [
@@ -17033,33 +15656,6 @@
       "20%",
       6,
       6,
-      0,
-      355
-    ],
-    [
-      "Route 202",
-      "swayGrass",
-      "20%",
-      6,
-      6,
-      1,
-      355
-    ],
-    [
-      "Route 202",
-      "swayGrass",
-      "20%",
-      6,
-      6,
-      2,
-      355
-    ],
-    [
-      "Route 202",
-      "swayGrass",
-      "20%",
-      6,
-      6,
       3,
       355
     ],
@@ -17503,62 +16099,8 @@
       "20%",
       30,
       30,
-      0,
-      373
-    ],
-    [
-      "Route 210 South",
-      "swayGrass",
-      "20%",
-      30,
-      30,
-      1,
-      373
-    ],
-    [
-      "Route 210 South",
-      "swayGrass",
-      "20%",
-      30,
-      30,
-      2,
-      373
-    ],
-    [
-      "Route 210 South",
-      "swayGrass",
-      "20%",
-      30,
-      30,
       3,
       373
-    ],
-    [
-      "Route 210 North",
-      "swayGrass",
-      "20%",
-      38,
-      38,
-      0,
-      375
-    ],
-    [
-      "Route 210 North",
-      "swayGrass",
-      "20%",
-      38,
-      38,
-      1,
-      375
-    ],
-    [
-      "Route 210 North",
-      "swayGrass",
-      "20%",
-      38,
-      38,
-      2,
-      375
     ],
     [
       "Route 210 North",
@@ -18495,33 +17037,6 @@
       "20%",
       23,
       23,
-      0,
-      203
-    ],
-    [
-      "Mt. Coronet Route 207 Entrance",
-      "swayGrass",
-      "20%",
-      23,
-      23,
-      1,
-      203
-    ],
-    [
-      "Mt. Coronet Route 207 Entrance",
-      "swayGrass",
-      "20%",
-      23,
-      23,
-      2,
-      203
-    ],
-    [
-      "Mt. Coronet Route 207 Entrance",
-      "swayGrass",
-      "20%",
-      23,
-      23,
       3,
       203
     ],
@@ -18549,33 +17064,6 @@
       "20%",
       51,
       51,
-      0,
-      204
-    ],
-    [
-      "Mt. Coronet 2F",
-      "swayGrass",
-      "20%",
-      51,
-      51,
-      1,
-      204
-    ],
-    [
-      "Mt. Coronet 2F",
-      "swayGrass",
-      "20%",
-      51,
-      51,
-      2,
-      204
-    ],
-    [
-      "Mt. Coronet 2F",
-      "swayGrass",
-      "20%",
-      51,
-      51,
       3,
       204
     ],
@@ -18603,33 +17091,6 @@
       "20%",
       51,
       51,
-      0,
-      205
-    ],
-    [
-      "Mt. Coronet 3F",
-      "swayGrass",
-      "20%",
-      51,
-      51,
-      1,
-      205
-    ],
-    [
-      "Mt. Coronet 3F",
-      "swayGrass",
-      "20%",
-      51,
-      51,
-      2,
-      205
-    ],
-    [
-      "Mt. Coronet 3F",
-      "swayGrass",
-      "20%",
-      51,
-      51,
       3,
       205
     ],
@@ -18657,33 +17118,6 @@
       "20%",
       53,
       53,
-      0,
-      208
-    ],
-    [
-      "Mt. Coronet 4F",
-      "swayGrass",
-      "20%",
-      53,
-      53,
-      1,
-      208
-    ],
-    [
-      "Mt. Coronet 4F",
-      "swayGrass",
-      "20%",
-      53,
-      53,
-      2,
-      208
-    ],
-    [
-      "Mt. Coronet 4F",
-      "swayGrass",
-      "20%",
-      53,
-      53,
       3,
       208
     ],
@@ -18711,33 +17145,6 @@
       "20%",
       53,
       53,
-      0,
-      209
-    ],
-    [
-      "Mt. Coronet 5F",
-      "swayGrass",
-      "20%",
-      53,
-      53,
-      1,
-      209
-    ],
-    [
-      "Mt. Coronet 5F",
-      "swayGrass",
-      "20%",
-      53,
-      53,
-      2,
-      209
-    ],
-    [
-      "Mt. Coronet 5F",
-      "swayGrass",
-      "20%",
-      53,
-      53,
       3,
       209
     ],
@@ -18765,33 +17172,6 @@
       "20%",
       53,
       53,
-      0,
-      210
-    ],
-    [
-      "Mt. Coronet 6F",
-      "swayGrass",
-      "20%",
-      53,
-      53,
-      1,
-      210
-    ],
-    [
-      "Mt. Coronet 6F",
-      "swayGrass",
-      "20%",
-      53,
-      53,
-      2,
-      210
-    ],
-    [
-      "Mt. Coronet 6F",
-      "swayGrass",
-      "20%",
-      53,
-      53,
       3,
       210
     ],
@@ -18819,33 +17199,6 @@
       "20%",
       53,
       53,
-      0,
-      211
-    ],
-    [
-      "Mt. Coronet 7F",
-      "swayGrass",
-      "20%",
-      53,
-      53,
-      1,
-      211
-    ],
-    [
-      "Mt. Coronet 7F",
-      "swayGrass",
-      "20%",
-      53,
-      53,
-      2,
-      211
-    ],
-    [
-      "Mt. Coronet 7F",
-      "swayGrass",
-      "20%",
-      53,
-      53,
       3,
       211
     ],
@@ -18865,33 +17218,6 @@
       19,
       19,
       11,
-      212
-    ],
-    [
-      "Mt. Coronet Summit",
-      "swayGrass",
-      "20%",
-      19,
-      19,
-      0,
-      212
-    ],
-    [
-      "Mt. Coronet Summit",
-      "swayGrass",
-      "20%",
-      19,
-      19,
-      1,
-      212
-    ],
-    [
-      "Mt. Coronet Summit",
-      "swayGrass",
-      "20%",
-      19,
-      19,
-      2,
       212
     ],
     [
@@ -18927,33 +17253,6 @@
       "20%",
       19,
       19,
-      0,
-      213
-    ],
-    [
-      "Mt. Coronet B1F",
-      "swayGrass",
-      "20%",
-      19,
-      19,
-      1,
-      213
-    ],
-    [
-      "Mt. Coronet B1F",
-      "swayGrass",
-      "20%",
-      19,
-      19,
-      2,
-      213
-    ],
-    [
-      "Mt. Coronet B1F",
-      "swayGrass",
-      "20%",
-      19,
-      19,
       3,
       213
     ],
@@ -18981,33 +17280,6 @@
       "20%",
       18,
       18,
-      0,
-      214
-    ],
-    [
-      "Mt. Coronet Route 211 Entrance",
-      "swayGrass",
-      "20%",
-      18,
-      18,
-      1,
-      214
-    ],
-    [
-      "Mt. Coronet Route 211 Entrance",
-      "swayGrass",
-      "20%",
-      18,
-      18,
-      2,
-      214
-    ],
-    [
-      "Mt. Coronet Route 211 Entrance",
-      "swayGrass",
-      "20%",
-      18,
-      18,
       3,
       214
     ],
@@ -19027,33 +17299,6 @@
       20,
       20,
       11,
-      215
-    ],
-    [
-      "Mt. Coronet Route 216 Entrance",
-      "swayGrass",
-      "20%",
-      20,
-      20,
-      0,
-      215
-    ],
-    [
-      "Mt. Coronet Route 216 Entrance",
-      "swayGrass",
-      "20%",
-      20,
-      20,
-      1,
-      215
-    ],
-    [
-      "Mt. Coronet Route 216 Entrance",
-      "swayGrass",
-      "20%",
-      20,
-      20,
-      2,
       215
     ],
     [
@@ -23260,33 +21505,6 @@
       "20%",
       13,
       13,
-      0,
-      359
-    ],
-    [
-      "Route 205 South",
-      "swayGrass",
-      "20%",
-      13,
-      13,
-      1,
-      359
-    ],
-    [
-      "Route 205 South",
-      "swayGrass",
-      "20%",
-      13,
-      13,
-      2,
-      359
-    ],
-    [
-      "Route 205 South",
-      "swayGrass",
-      "20%",
-      13,
-      13,
       3,
       359
     ],
@@ -23468,33 +21686,6 @@
       "20%",
       69,
       69,
-      0,
-      260
-    ],
-    [
-      "Stark Mountain (Entrance)",
-      "swayGrass",
-      "20%",
-      69,
-      69,
-      1,
-      260
-    ],
-    [
-      "Stark Mountain (Entrance)",
-      "swayGrass",
-      "20%",
-      69,
-      69,
-      2,
-      260
-    ],
-    [
-      "Stark Mountain (Entrance)",
-      "swayGrass",
-      "20%",
-      69,
-      69,
       3,
       260
     ],
@@ -23531,62 +21722,8 @@
       "20%",
       69,
       69,
-      0,
-      261
-    ],
-    [
-      "Stark Mountain (Interior)",
-      "swayGrass",
-      "20%",
-      69,
-      69,
-      1,
-      261
-    ],
-    [
-      "Stark Mountain (Interior)",
-      "swayGrass",
-      "20%",
-      69,
-      69,
-      2,
-      261
-    ],
-    [
-      "Stark Mountain (Interior)",
-      "swayGrass",
-      "20%",
-      69,
-      69,
       3,
       261
-    ],
-    [
-      "Route 212 South",
-      "swayGrass",
-      "20%",
-      36,
-      36,
-      0,
-      383
-    ],
-    [
-      "Route 212 South",
-      "swayGrass",
-      "20%",
-      36,
-      36,
-      1,
-      383
-    ],
-    [
-      "Route 212 South",
-      "swayGrass",
-      "20%",
-      36,
-      36,
-      2,
-      383
     ],
     [
       "Route 212 South",
@@ -23913,33 +22050,6 @@
       40,
       40,
       1,
-      404
-    ],
-    [
-      "Route 221",
-      "swayGrass",
-      "20%",
-      40,
-      40,
-      0,
-      404
-    ],
-    [
-      "Route 221",
-      "swayGrass",
-      "20%",
-      40,
-      40,
-      1,
-      404
-    ],
-    [
-      "Route 221",
-      "swayGrass",
-      "20%",
-      40,
-      40,
-      2,
       404
     ],
     [
@@ -25353,33 +23463,6 @@
       "20%",
       8,
       8,
-      0,
-      356
-    ],
-    [
-      "Route 203",
-      "swayGrass",
-      "20%",
-      8,
-      8,
-      1,
-      356
-    ],
-    [
-      "Route 203",
-      "swayGrass",
-      "20%",
-      8,
-      8,
-      2,
-      356
-    ],
-    [
-      "Route 203",
-      "swayGrass",
-      "20%",
-      8,
-      8,
       3,
       356
     ],
@@ -25459,33 +23542,6 @@
     ]
   ],
   "Plusle": [
-    [
-      "Valley Windworks",
-      "swayGrass",
-      "20%",
-      13,
-      13,
-      0,
-      197
-    ],
-    [
-      "Valley Windworks",
-      "swayGrass",
-      "20%",
-      13,
-      13,
-      1,
-      197
-    ],
-    [
-      "Valley Windworks",
-      "swayGrass",
-      "20%",
-      13,
-      13,
-      2,
-      197
-    ],
     [
       "Valley Windworks",
       "swayGrass",
@@ -26078,33 +24134,6 @@
     ]
   ],
   "Purugly": [
-    [
-      "Route 209",
-      "swayGrass",
-      "20%",
-      26,
-      26,
-      0,
-      367
-    ],
-    [
-      "Route 209",
-      "swayGrass",
-      "20%",
-      26,
-      26,
-      1,
-      367
-    ],
-    [
-      "Route 209",
-      "swayGrass",
-      "20%",
-      26,
-      26,
-      2,
-      367
-    ],
     [
       "Route 209",
       "swayGrass",
@@ -27584,62 +25613,8 @@
       "20%",
       7,
       7,
-      0,
-      357
-    ],
-    [
-      "Route 204 South",
-      "swayGrass",
-      "20%",
-      7,
-      7,
-      1,
-      357
-    ],
-    [
-      "Route 204 South",
-      "swayGrass",
-      "20%",
-      7,
-      7,
-      2,
-      357
-    ],
-    [
-      "Route 204 South",
-      "swayGrass",
-      "20%",
-      7,
-      7,
       3,
       357
-    ],
-    [
-      "Route 204 North",
-      "swayGrass",
-      "20%",
-      12,
-      12,
-      0,
-      358
-    ],
-    [
-      "Route 204 North",
-      "swayGrass",
-      "20%",
-      12,
-      12,
-      1,
-      358
-    ],
-    [
-      "Route 204 North",
-      "swayGrass",
-      "20%",
-      12,
-      12,
-      2,
-      358
     ],
     [
       "Route 204 North",
@@ -27879,33 +25854,6 @@
       67,
       67,
       1,
-      487
-    ],
-    [
-      "Route 226",
-      "swayGrass",
-      "20%",
-      67,
-      67,
-      0,
-      487
-    ],
-    [
-      "Route 226",
-      "swayGrass",
-      "20%",
-      67,
-      67,
-      1,
-      487
-    ],
-    [
-      "Route 226",
-      "swayGrass",
-      "20%",
-      67,
-      67,
-      2,
       487
     ],
     [
@@ -29552,33 +27500,6 @@
       "20%",
       67,
       67,
-      0,
-      489
-    ],
-    [
-      "Route 230",
-      "swayGrass",
-      "20%",
-      67,
-      67,
-      1,
-      489
-    ],
-    [
-      "Route 230",
-      "swayGrass",
-      "20%",
-      67,
-      67,
-      2,
-      489
-    ],
-    [
-      "Route 230",
-      "swayGrass",
-      "20%",
-      67,
-      67,
       3,
       489
     ]
@@ -30486,33 +28407,6 @@
       "20%",
       66,
       66,
-      0,
-      264
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
-      1,
-      264
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
-      2,
-      264
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
       3,
       264
     ],
@@ -30549,33 +28443,6 @@
       "20%",
       66,
       66,
-      0,
-      265
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
-      1,
-      265
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
-      2,
-      265
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
       3,
       265
     ],
@@ -30612,33 +28479,6 @@
       "20%",
       66,
       66,
-      0,
-      266
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
-      1,
-      266
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
-      2,
-      266
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
       3,
       266
     ],
@@ -30675,33 +28515,6 @@
       "20%",
       66,
       66,
-      0,
-      267
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
-      1,
-      267
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
-      2,
-      267
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
       3,
       267
     ],
@@ -30738,33 +28551,6 @@
       "20%",
       66,
       66,
-      0,
-      268
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
-      1,
-      268
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
-      2,
-      268
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
       3,
       268
     ],
@@ -30801,33 +28587,6 @@
       "20%",
       66,
       66,
-      0,
-      269
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
-      1,
-      269
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
-      2,
-      269
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
       3,
       269
     ],
@@ -30864,33 +28623,6 @@
       "20%",
       66,
       66,
-      0,
-      270
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
-      1,
-      270
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
-      2,
-      270
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
       3,
       270
     ],
@@ -30927,33 +28659,6 @@
       "20%",
       66,
       66,
-      0,
-      271
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
-      1,
-      271
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
-      2,
-      271
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
       3,
       271
     ],
@@ -30990,33 +28695,6 @@
       "20%",
       66,
       66,
-      0,
-      272
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
-      1,
-      272
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
-      2,
-      272
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
       3,
       272
     ],
@@ -31053,33 +28731,6 @@
       "20%",
       66,
       66,
-      0,
-      273
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
-      1,
-      273
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
-      2,
-      273
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
       3,
       273
     ],
@@ -31116,33 +28767,6 @@
       "20%",
       66,
       66,
-      0,
-      274
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
-      1,
-      274
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
-      2,
-      274
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
       3,
       274
     ],
@@ -31179,33 +28803,6 @@
       "20%",
       66,
       66,
-      0,
-      275
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
-      1,
-      275
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
-      2,
-      275
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
       3,
       275
     ],
@@ -31242,33 +28839,6 @@
       "20%",
       66,
       66,
-      0,
-      276
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
-      1,
-      276
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
-      2,
-      276
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
       3,
       276
     ],
@@ -31305,33 +28875,6 @@
       "20%",
       66,
       66,
-      0,
-      277
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
-      1,
-      277
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
-      2,
-      277
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
       3,
       277
     ],
@@ -31368,33 +28911,6 @@
       "20%",
       66,
       66,
-      0,
-      278
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
-      1,
-      278
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
-      2,
-      278
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
       3,
       278
     ],
@@ -31431,33 +28947,6 @@
       "20%",
       66,
       66,
-      0,
-      279
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
-      1,
-      279
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
-      2,
-      279
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
       3,
       279
     ],
@@ -31494,33 +28983,6 @@
       "20%",
       66,
       66,
-      0,
-      280
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
-      1,
-      280
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
-      2,
-      280
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
       3,
       280
     ],
@@ -31549,33 +29011,6 @@
       66,
       66,
       11,
-      281
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
-      0,
-      281
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
-      1,
-      281
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
-      2,
       281
     ],
     [
@@ -31620,33 +29055,6 @@
       "20%",
       66,
       66,
-      0,
-      282
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
-      1,
-      282
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
-      2,
-      282
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
       3,
       282
     ],
@@ -31683,33 +29091,6 @@
       "20%",
       66,
       66,
-      0,
-      283
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
-      1,
-      283
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
-      2,
-      283
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
       3,
       283
     ],
@@ -31738,33 +29119,6 @@
       66,
       66,
       11,
-      284
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
-      0,
-      284
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
-      1,
-      284
-    ],
-    [
-      "Turnback Cave",
-      "swayGrass",
-      "20%",
-      66,
-      66,
-      2,
       284
     ],
     [
@@ -31871,33 +29225,6 @@
       "20%",
       32,
       32,
-      0,
-      392
-    ],
-    [
-      "Route 214",
-      "swayGrass",
-      "20%",
-      32,
-      32,
-      1,
-      392
-    ],
-    [
-      "Route 214",
-      "swayGrass",
-      "20%",
-      32,
-      32,
-      2,
-      392
-    ],
-    [
-      "Route 214",
-      "swayGrass",
-      "20%",
-      32,
-      32,
       3,
       392
     ],
@@ -31940,33 +29267,6 @@
       16,
       0,
       200
-    ],
-    [
-      "Route 207",
-      "swayGrass",
-      "20%",
-      10,
-      10,
-      0,
-      364
-    ],
-    [
-      "Route 207",
-      "swayGrass",
-      "20%",
-      10,
-      10,
-      1,
-      364
-    ],
-    [
-      "Route 207",
-      "swayGrass",
-      "20%",
-      10,
-      10,
-      2,
-      364
     ],
     [
       "Route 207",
@@ -32569,33 +29869,6 @@
       "20%",
       59,
       59,
-      0,
-      244
-    ],
-    [
-      "Victory Road 1F",
-      "swayGrass",
-      "20%",
-      59,
-      59,
-      1,
-      244
-    ],
-    [
-      "Victory Road 1F",
-      "swayGrass",
-      "20%",
-      59,
-      59,
-      2,
-      244
-    ],
-    [
-      "Victory Road 1F",
-      "swayGrass",
-      "20%",
-      59,
-      59,
       3,
       244
     ],
@@ -32686,33 +29959,6 @@
       "20%",
       45,
       45,
-      0,
-      299
-    ],
-    [
-      "Iron Island 1F",
-      "swayGrass",
-      "20%",
-      45,
-      45,
-      1,
-      299
-    ],
-    [
-      "Iron Island 1F",
-      "swayGrass",
-      "20%",
-      45,
-      45,
-      2,
-      299
-    ],
-    [
-      "Iron Island 1F",
-      "swayGrass",
-      "20%",
-      45,
-      45,
       3,
       299
     ],
@@ -32740,33 +29986,6 @@
       "20%",
       45,
       45,
-      0,
-      300
-    ],
-    [
-      "Iron Island B1F Left Cave",
-      "swayGrass",
-      "20%",
-      45,
-      45,
-      1,
-      300
-    ],
-    [
-      "Iron Island B1F Left Cave",
-      "swayGrass",
-      "20%",
-      45,
-      45,
-      2,
-      300
-    ],
-    [
-      "Iron Island B1F Left Cave",
-      "swayGrass",
-      "20%",
-      45,
-      45,
       3,
       300
     ],
@@ -32786,33 +30005,6 @@
       45,
       45,
       11,
-      301
-    ],
-    [
-      "Iron Island B1F Right Cave",
-      "swayGrass",
-      "20%",
-      45,
-      45,
-      0,
-      301
-    ],
-    [
-      "Iron Island B1F Right Cave",
-      "swayGrass",
-      "20%",
-      45,
-      45,
-      1,
-      301
-    ],
-    [
-      "Iron Island B1F Right Cave",
-      "swayGrass",
-      "20%",
-      45,
-      45,
-      2,
       301
     ],
     [
@@ -32848,33 +30040,6 @@
       "20%",
       45,
       45,
-      0,
-      302
-    ],
-    [
-      "Iron Island B2F Left Cave",
-      "swayGrass",
-      "20%",
-      45,
-      45,
-      1,
-      302
-    ],
-    [
-      "Iron Island B2F Left Cave",
-      "swayGrass",
-      "20%",
-      45,
-      45,
-      2,
-      302
-    ],
-    [
-      "Iron Island B2F Left Cave",
-      "swayGrass",
-      "20%",
-      45,
-      45,
       3,
       302
     ],
@@ -32902,33 +30067,6 @@
       "20%",
       45,
       45,
-      0,
-      303
-    ],
-    [
-      "Iron Island B3F Right Cave",
-      "swayGrass",
-      "20%",
-      45,
-      45,
-      1,
-      303
-    ],
-    [
-      "Iron Island B3F Right Cave",
-      "swayGrass",
-      "20%",
-      45,
-      45,
-      2,
-      303
-    ],
-    [
-      "Iron Island B3F Right Cave",
-      "swayGrass",
-      "20%",
-      45,
-      45,
       3,
       303
     ],
@@ -32948,33 +30086,6 @@
       45,
       45,
       11,
-      304
-    ],
-    [
-      "Iron Island B3F",
-      "swayGrass",
-      "20%",
-      45,
-      45,
-      0,
-      304
-    ],
-    [
-      "Iron Island B3F",
-      "swayGrass",
-      "20%",
-      45,
-      45,
-      1,
-      304
-    ],
-    [
-      "Iron Island B3F",
-      "swayGrass",
-      "20%",
-      45,
-      45,
-      2,
       304
     ],
     [
@@ -34097,33 +31208,6 @@
       "20%",
       69,
       69,
-      0,
-      259
-    ],
-    [
-      "Stark Mountain (Outside)",
-      "swayGrass",
-      "20%",
-      69,
-      69,
-      1,
-      259
-    ],
-    [
-      "Stark Mountain (Outside)",
-      "swayGrass",
-      "20%",
-      69,
-      69,
-      2,
-      259
-    ],
-    [
-      "Stark Mountain (Outside)",
-      "swayGrass",
-      "20%",
-      69,
-      69,
       3,
       259
     ],
@@ -34144,33 +31228,6 @@
       69,
       5,
       261
-    ],
-    [
-      "Route 206",
-      "swayGrass",
-      "20%",
-      22,
-      22,
-      0,
-      362
-    ],
-    [
-      "Route 206",
-      "swayGrass",
-      "20%",
-      22,
-      22,
-      1,
-      362
-    ],
-    [
-      "Route 206",
-      "swayGrass",
-      "20%",
-      22,
-      22,
-      2,
-      362
     ],
     [
       "Route 206",
@@ -34593,62 +31650,8 @@
       "20%",
       18,
       18,
-      0,
-      377
-    ],
-    [
-      "Route 211 West",
-      "swayGrass",
-      "20%",
-      18,
-      18,
-      1,
-      377
-    ],
-    [
-      "Route 211 West",
-      "swayGrass",
-      "20%",
-      18,
-      18,
-      2,
-      377
-    ],
-    [
-      "Route 211 West",
-      "swayGrass",
-      "20%",
-      18,
-      18,
       3,
       377
-    ],
-    [
-      "Route 211 East",
-      "swayGrass",
-      "20%",
-      19,
-      19,
-      0,
-      378
-    ],
-    [
-      "Route 211 East",
-      "swayGrass",
-      "20%",
-      19,
-      19,
-      1,
-      378
-    ],
-    [
-      "Route 211 East",
-      "swayGrass",
-      "20%",
-      19,
-      19,
-      2,
-      378
     ],
     [
       "Route 211 East",
@@ -34820,33 +31823,6 @@
       "20%",
       25,
       25,
-      0,
-      225
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
-      1,
-      225
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
-      2,
-      225
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
       3,
       225
     ],
@@ -35009,33 +31985,6 @@
       "20%",
       25,
       25,
-      0,
-      227
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
-      1,
-      227
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
-      2,
-      227
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
       3,
       227
     ],
@@ -35198,33 +32147,6 @@
       "20%",
       25,
       25,
-      0,
-      228
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
-      1,
-      228
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
-      2,
-      228
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
       3,
       228
     ],
@@ -35387,33 +32309,6 @@
       "20%",
       25,
       25,
-      0,
-      229
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
-      1,
-      229
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
-      2,
-      229
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
       3,
       229
     ],
@@ -35576,33 +32471,6 @@
       "20%",
       25,
       25,
-      0,
-      230
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
-      1,
-      230
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
-      2,
-      230
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
       3,
       230
     ],
@@ -35765,33 +32633,6 @@
       "20%",
       25,
       25,
-      0,
-      231
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
-      1,
-      231
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
-      2,
-      231
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
       3,
       231
     ],
@@ -35954,33 +32795,6 @@
       "20%",
       25,
       25,
-      0,
-      232
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
-      1,
-      232
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
-      2,
-      232
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
       3,
       232
     ],
@@ -36143,33 +32957,6 @@
       "20%",
       25,
       25,
-      0,
-      233
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
-      1,
-      233
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
-      2,
-      233
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
       3,
       233
     ],
@@ -36332,33 +33119,6 @@
       "20%",
       25,
       25,
-      0,
-      234
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
-      1,
-      234
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
-      2,
-      234
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
       3,
       234
     ],
@@ -36521,33 +33281,6 @@
       "20%",
       25,
       25,
-      0,
-      235
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
-      1,
-      235
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
-      2,
-      235
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
       3,
       235
     ],
@@ -36710,33 +33443,6 @@
       "20%",
       25,
       25,
-      0,
-      236
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
-      1,
-      236
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
-      2,
-      236
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
       3,
       236
     ],
@@ -36899,33 +33605,6 @@
       "20%",
       25,
       25,
-      0,
-      237
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
-      1,
-      237
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
-      2,
-      237
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
       3,
       237
     ],
@@ -37088,33 +33767,6 @@
       "20%",
       25,
       25,
-      0,
-      238
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
-      1,
-      238
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
-      2,
-      238
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
       3,
       238
     ],
@@ -37277,33 +33929,6 @@
       "20%",
       25,
       25,
-      0,
-      239
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
-      1,
-      239
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
-      2,
-      239
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
       3,
       239
     ],
@@ -37458,33 +34083,6 @@
       25,
       25,
       1,
-      240
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
-      0,
-      240
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
-      1,
-      240
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
-      2,
       240
     ],
     [
@@ -37655,33 +34253,6 @@
       "20%",
       25,
       25,
-      0,
-      241
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
-      1,
-      241
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
-      2,
-      241
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
       3,
       241
     ],
@@ -37844,33 +34415,6 @@
       "20%",
       25,
       25,
-      0,
-      242
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
-      1,
-      242
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
-      2,
-      242
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
       3,
       242
     ],
@@ -38025,33 +34569,6 @@
       25,
       25,
       1,
-      243
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
-      0,
-      243
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
-      1,
-      243
-    ],
-    [
-      "Solaceon Ruins",
-      "swayGrass",
-      "20%",
-      25,
-      25,
-      2,
       243
     ],
     [
@@ -38121,33 +34638,6 @@
     ]
   ],
   "Venomoth": [
-    [
-      "Valor Lakefront",
-      "swayGrass",
-      "20%",
-      33,
-      33,
-      0,
-      347
-    ],
-    [
-      "Valor Lakefront",
-      "swayGrass",
-      "20%",
-      33,
-      33,
-      1,
-      347
-    ],
-    [
-      "Valor Lakefront",
-      "swayGrass",
-      "20%",
-      33,
-      33,
-      2,
-      347
-    ],
     [
       "Valor Lakefront",
       "swayGrass",
@@ -38282,33 +34772,6 @@
       67,
       67,
       11,
-      420
-    ],
-    [
-      "Route 229",
-      "swayGrass",
-      "20%",
-      67,
-      67,
-      0,
-      420
-    ],
-    [
-      "Route 229",
-      "swayGrass",
-      "20%",
-      67,
-      67,
-      1,
-      420
-    ],
-    [
-      "Route 229",
-      "swayGrass",
-      "20%",
-      67,
-      67,
-      2,
       420
     ],
     [
@@ -38963,33 +35426,6 @@
       "20%",
       40,
       40,
-      0,
-      201
-    ],
-    [
-      "Fuego Ironworks (Outside)",
-      "swayGrass",
-      "20%",
-      40,
-      40,
-      1,
-      201
-    ],
-    [
-      "Fuego Ironworks (Outside)",
-      "swayGrass",
-      "20%",
-      40,
-      40,
-      2,
-      201
-    ],
-    [
-      "Fuego Ironworks (Outside)",
-      "swayGrass",
-      "20%",
-      40,
-      40,
       3,
       201
     ],
@@ -39502,33 +35938,6 @@
       "20%",
       54,
       54,
-      0,
-      263
-    ],
-    [
-      "Sendoff Spring",
-      "swayGrass",
-      "20%",
-      54,
-      54,
-      1,
-      263
-    ],
-    [
-      "Sendoff Spring",
-      "swayGrass",
-      "20%",
-      54,
-      54,
-      2,
-      263
-    ],
-    [
-      "Sendoff Spring",
-      "swayGrass",
-      "20%",
-      54,
-      54,
       3,
       263
     ],
@@ -39538,62 +35947,8 @@
       "20%",
       54,
       54,
-      0,
-      327
-    ],
-    [
-      "Lake Valor (After)",
-      "swayGrass",
-      "20%",
-      54,
-      54,
-      1,
-      327
-    ],
-    [
-      "Lake Valor (After)",
-      "swayGrass",
-      "20%",
-      54,
-      54,
-      2,
-      327
-    ],
-    [
-      "Lake Valor (After)",
-      "swayGrass",
-      "20%",
-      54,
-      54,
       3,
       327
-    ],
-    [
-      "Lake Acuity (After)",
-      "swayGrass",
-      "20%",
-      51,
-      51,
-      0,
-      330
-    ],
-    [
-      "Lake Acuity (After)",
-      "swayGrass",
-      "20%",
-      51,
-      51,
-      1,
-      330
-    ],
-    [
-      "Lake Acuity (After)",
-      "swayGrass",
-      "20%",
-      51,
-      51,
-      2,
-      330
     ],
     [
       "Lake Acuity (After)",
@@ -39787,33 +36142,6 @@
       "20%",
       16,
       16,
-      0,
-      200
-    ],
-    [
-      "Eterna Forest",
-      "swayGrass",
-      "20%",
-      16,
-      16,
-      1,
-      200
-    ],
-    [
-      "Eterna Forest",
-      "swayGrass",
-      "20%",
-      16,
-      16,
-      2,
-      200
-    ],
-    [
-      "Eterna Forest",
-      "swayGrass",
-      "20%",
-      16,
-      16,
       3,
       200
     ],
@@ -39888,62 +36216,8 @@
       "20%",
       5,
       5,
-      0,
-      323
-    ],
-    [
-      "Lake Verity (Before)",
-      "swayGrass",
-      "20%",
-      5,
-      5,
-      1,
-      323
-    ],
-    [
-      "Lake Verity (Before)",
-      "swayGrass",
-      "20%",
-      5,
-      5,
-      2,
-      323
-    ],
-    [
-      "Lake Verity (Before)",
-      "swayGrass",
-      "20%",
-      5,
-      5,
       3,
       323
-    ],
-    [
-      "Lake Verity (After)",
-      "swayGrass",
-      "20%",
-      5,
-      5,
-      0,
-      324
-    ],
-    [
-      "Lake Verity (After)",
-      "swayGrass",
-      "20%",
-      5,
-      5,
-      1,
-      324
-    ],
-    [
-      "Lake Verity (After)",
-      "swayGrass",
-      "20%",
-      5,
-      5,
-      2,
-      324
     ],
     [
       "Lake Verity (After)",
@@ -39981,33 +36255,6 @@
       59,
       59,
       11,
-      411
-    ],
-    [
-      "Route 224",
-      "swayGrass",
-      "20%",
-      59,
-      59,
-      0,
-      411
-    ],
-    [
-      "Route 224",
-      "swayGrass",
-      "20%",
-      59,
-      59,
-      1,
-      411
-    ],
-    [
-      "Route 224",
-      "swayGrass",
-      "20%",
-      59,
-      59,
-      2,
       411
     ],
     [
@@ -40054,33 +36301,6 @@
       "20%",
       36,
       36,
-      0,
-      221
-    ],
-    [
-      "Great Marsh Area 3",
-      "swayGrass",
-      "20%",
-      36,
-      36,
-      1,
-      221
-    ],
-    [
-      "Great Marsh Area 3",
-      "swayGrass",
-      "20%",
-      36,
-      36,
-      2,
-      221
-    ],
-    [
-      "Great Marsh Area 3",
-      "swayGrass",
-      "20%",
-      36,
-      36,
       3,
       221
     ],
@@ -40117,62 +36337,8 @@
       "20%",
       36,
       36,
-      0,
-      222
-    ],
-    [
-      "Great Marsh Area 4",
-      "swayGrass",
-      "20%",
-      36,
-      36,
-      1,
-      222
-    ],
-    [
-      "Great Marsh Area 4",
-      "swayGrass",
-      "20%",
-      36,
-      36,
-      2,
-      222
-    ],
-    [
-      "Great Marsh Area 4",
-      "swayGrass",
-      "20%",
-      36,
-      36,
       3,
       222
-    ],
-    [
-      "Route 205 North",
-      "swayGrass",
-      "20%",
-      17,
-      17,
-      0,
-      361
-    ],
-    [
-      "Route 205 North",
-      "swayGrass",
-      "20%",
-      17,
-      17,
-      1,
-      361
-    ],
-    [
-      "Route 205 North",
-      "swayGrass",
-      "20%",
-      17,
-      17,
-      2,
-      361
     ],
     [
       "Route 205 North",
@@ -40268,33 +36434,6 @@
       10,
       10,
       11,
-      195
-    ],
-    [
-      "Oreburgh Mine 1F",
-      "swayGrass",
-      "20%",
-      10,
-      10,
-      0,
-      195
-    ],
-    [
-      "Oreburgh Mine 1F",
-      "swayGrass",
-      "20%",
-      10,
-      10,
-      1,
-      195
-    ],
-    [
-      "Oreburgh Mine 1F",
-      "swayGrass",
-      "20%",
-      10,
-      10,
-      2,
       195
     ],
     [

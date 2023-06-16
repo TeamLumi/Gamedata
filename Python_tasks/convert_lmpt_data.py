@@ -8,7 +8,7 @@ import unicodedata
 from collections import defaultdict
 
 import constants
-from data_checks import check_bad_encounter, check_mons_list, get_average_time
+from data_checks import check_bad_encounter, check_mons_list, get_average_time, check_monsName
 from load_files import get_lumi_data, load_data
 from pokedex_generator import getPokedexInfo
 from pokemonUtils import (get_diff_form_dictionary,
@@ -25,9 +25,9 @@ output_file_path = os.path.join(repo_file_path, "Python_tasks", "output")
 honeywork_cpp_filepath = os.path.join(input_file_path, "honeywork.cpp")
 areas_file_path = os.path.join(input_file_path, 'areas_copy.csv')
 
-bad_encounters = []
-final_list = {}
-areas_list = 0
+bad_encounters = [] # This is to check any bad encounters that are in diff_forms
+final_list = {} # This is for the encounters check to make sure none are being skipped over
+areas_list = 0 # This is used for storing the areas in a list
 
 first_excecution_time_list = [] # These are for adding times for length of executions in loops for debugging
 second_execution_time_list = []
@@ -66,11 +66,16 @@ def get_zone_name(zoneID):
     if not zoneID:
         print("Get a new zoneID")
         return
-    zones = areas_list[zoneID + 1]
+    zones = areas_list[zoneID + 1] # Adds 1 because this is the index of the csv rows which starts at -1 bc of the title
     zoneName = zones[3] if zones[3] != '' else zones[4]
     return zoneName
 
 def get_tracker_route(zoneID):
+    '''
+    This is just used for the check_bad_encounter function
+    It gets the name of the tracker_route (lmpt-##) based on the zoneIDs
+    You can find this data in the name_routes.json
+    '''
     route = next((route for tracker_route in name_routes.keys() for route in name_routes[tracker_route] if str(zoneID) in route), None)
     if route is not None:
         zoneName = get_zone_name(int(route))
@@ -317,6 +322,13 @@ def get_standard_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, m
             print("Something missing here?", method_index, monsName, encounter_list_order)
 
 def get_diff_form_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, method_index):
+    '''
+    This decodes the Lumi Formula ((FormNo * 2^16) + MonsNo).
+    After decoding it, it checks if there are any special mons like Female Indeedee
+    There is another check for any bad encounters in the list
+    These can be found in the BAD_ENCOUNTER_LIST in constants.py
+    If there are no bad encounters, every mon's location is added to their key which is their name
+    '''
     new_method = method
     formNo = monsNo//(2**16)
     reverse_lumi_formula_mon = monsNo - (formNo * (2**16))
@@ -350,6 +362,11 @@ def get_diff_form_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, 
             print("Something missing here?", method_index, monsName, encounter_list_order)
 
 def update_mons_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, method_index):
+    '''
+    Branching paths based on MonsNo.
+    2000 was chosen here as a buffer for any additional base forms in the game.
+    This isn't perfect but will suffice for awhile
+    '''
     if monsNo == 0:
         return
     if monsNo < 2000:
@@ -358,29 +375,56 @@ def update_mons_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, me
         get_diff_form_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, method_index)
 
 def get_encounter_rates(route_mons, method, zoneID, encounters):
+    '''
+    This is to start getting the encounter rates for each mon.
+    route_mons is from each of the areas of the FieldEncountTable_d.json
+    encounters is the dictionary full of lists for each mon and their corresponding areas
+    There is a check for the method to ensure the following:
+    It is the 1st slot of Swarm
+    It is the 4th slot of the Radar
+    It then passes all of that info to update_mons_rates
+    '''
     for method_index, mon in enumerate(route_mons):
         monsNo = mon['monsNo']
         maxlevel, minlevel = mon['maxlv'], mon['minlv']
-        if method == constants.SWARM and method_index == 1:
+        if method == constants.SWARM and method_index != 0:
+            continue
+        if method == constants.RADAR and method_index != 3:
             continue
         update_mons_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, method_index)
 
+def organize_honey_tree_list(mons_data):
+    '''
+    This organizes the list of what goes into the list for the honey tree locations
+    The route is the location that the honey tree/pokemon is found
+    Rate is the percentage based on the count_mons_in_honey_trees function
+    minlevel and maxlevel are the same in game
+    There isn't a different slot for Honey trees so index is None
+    zoneID is None for now for simplicity
+    '''
+    route = mons_data[0]
+    method = constants.HONEY_TREE
+    rate = mons_data[1]
+    minlevel = mons_data[2]
+    maxlevel = mons_data[2]
+    index = None
+    zoneID = None
+    return [route, method, rate, minlevel, maxlevel, index, zoneID]
+
 def get_honey_tree_encounter_rates(rates_list):
+    '''
+    Requires the honey_tree_encounter_data function and the list of all encounter rates
+    This iterates through each of the mons in the honey_encounter_data and adds their rates to the rates list
+    There is a check that ensures that the monsName is correctly spelled for the pokedex.
+    '''
     honey_encounter_data = honey_tree_encounter_data()
 
     for mon in honey_encounter_data.keys():
-        for data in honey_encounter_data[mon]:
-            route = data[0]
+        for mons_data in honey_encounter_data[mon]:
             monsName = constants.RIGHT_FARFETCHD if mon == constants.WRONG_FARFETCHD.capitalize() else mon
-            monsNo = get_pokemon_mons_no_from_name(monsName)
-            method = constants.HONEY_TREE
-            rate = data[1]
-            minlevel = data[2]
-            maxlevel = data[2]
-            index = None
-            encounter_list_order = [route, method, rate, minlevel, maxlevel, index, None]
-            if monsNo == -1:
-                print(monsName)
+            check_monsName(monsName)
+
+            encounter_list_order = organize_honey_tree_list(mons_data)
             if monsName not in rates_list:
                 rates_list[monsName] = [encounter_list_order]
             elif encounter_list_order not in rates_list[monsName]:
@@ -389,6 +433,9 @@ def get_honey_tree_encounter_rates(rates_list):
                 print("Something missing here?", method_index, monsName, encounter_list_order)
 
 def get_trophy_garden_encounter_rates(trophy_garden_encounters, rates_list):
+    '''
+    This is for adding the trophy garden encounter rates for each route
+    '''
     for mon in trophy_garden_encounters:
         zoneName = get_zone_name(297) # This is the zoneID for Trophy Garden
         method = constants.TROPHY_GARDEN
@@ -408,6 +455,10 @@ def get_trophy_garden_encounter_rates(trophy_garden_encounters, rates_list):
             print("Something missing here?", method_index, monsName, encounter_list_order)
 
 def getEncounterData():
+    '''
+    This is the main function to get all encounter data
+    This includes each pokemon's location data and each route's list of pokemon
+    '''
     encounter_data = full_data["raw_encounters"]
     encounter_list = defaultdict(list)
     rates_list = defaultdict((list))
@@ -431,6 +482,7 @@ def getEncounterData():
     for mon in encounter_data[constants.TROPHY_GARDEN_NAME]:
         monsNo = mon['monsNo']
         encounter_list[constants.TROPHY_GARDEN_TRACKER_VAR].append(get_pokemon_name(monsNo))
+
     get_trophy_garden_encounter_rates(encounter_data[constants.TROPHY_GARDEN_NAME], rates_list)
 
     ##This is for adding all of the Honey Tree encounters to the list
@@ -450,11 +502,6 @@ def getEncounterData():
         output.write(json.dumps(bad_encounters, default=tuple, indent=2))
     with open(os.path.join(output_file_path, 'Encounter_output.json'), 'w') as output:
         output.write(json.dumps(sorted_encounters, indent=2))
-
-def get_avg_time(times):
-    average_time = sum(times) / len(times)
-    sum(times)
-    return average_time
 
 if __name__ != "__main__":
     full_data = load_data()

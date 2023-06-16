@@ -4,7 +4,14 @@ import time
 import constants
 from load_files import load_data, get_lumi_data
 from pokemonUtils import (get_form_name, get_form_pokemon_personal_id,
-                          get_pokemon_name, get_pokemon_name, get_diff_form_dictionary)
+                          get_pokemon_name, get_pokemon_name, get_diff_form_dictionary,
+                          get_pokemon_mons_no_from_name)
+
+def check_monsName(monsName):
+    monsNo = get_pokemon_mons_no_from_name(monsName)
+    if monsNo == -1:
+        print(monsName)
+    pass
 
 def get_average_time(execution_times):
     return sum(execution_times) / len(execution_times)
