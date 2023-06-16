@@ -46,13 +46,16 @@ with open(areas_file_path, encoding="utf-8") as f:
 
 def get_trainer_name(label_name):
     '''
-    
+    This takes the label of a trainer, matches it to the labelName in the trainer_names files and returns the trainerType
     '''
     label_data_array = trainer_names['labelDataArray']
     match = next((e for e in label_data_array if e['labelName'] == label_name), None)
     return match['wordDataArray'][0]['str'] if match else None
 
 def get_trainer_id_from_partial(label_name):
+    '''
+    This is for finding the trainerID from a label name and matching it to the end of the labelName
+    '''
     label_data_array = trainer_names['labelDataArray']
     for e in label_data_array:
         if e['labelName'].endswith(str(label_name.strip("'"))):
@@ -83,6 +86,10 @@ def get_map_info(label_name):
     return get_area_display_name(match['MSLabel']) if match and len(match['MSLabel']) > 0 else get_area_name(match['PokePlaceName'])
 
 def get_trainer_data_from_place_datas():
+    '''
+    This iterates through every placedata file and searches for any person that has a trainerID > 0
+    If it is, then it passes that event data to the diff_trainer_data function
+    '''
     trainers = []
     for bdsp_location_file in bdsp_location_files:
         with open(os.path.join(repo_file_path, 'placedatas', bdsp_location_file), 'r') as f:
@@ -114,6 +121,10 @@ def generate_trainer_name(raw_trainer_name, pokemon1_level):
     return trainer_substring
 
 def get_random_team_data(file_path, areaName, zoneID, trainerID1, trainerID2, lookup, team_num):
+    '''
+    This is called in the get_assorted_trainer_data for any trainers that have randomized teams.
+    Soooo many branching paths here @.@
+    '''
     trainers = []
 
     def add_trainers(zoneID, trainer_ids, team_types=None):
@@ -132,14 +143,14 @@ def get_random_team_data(file_path, areaName, zoneID, trainerID1, trainerID2, lo
         add_trainers(zoneID, temp_celebi_IDs, [lookup] * len(temp_celebi_IDs))
         return trainers
         
+    elif constants.BARRY in lookup:
+        temp_trainer_IDs = parse_randomized_teams(file_path, lookup, team_num, None)
+        for ID in temp_trainer_IDs:
+            team_type = lookup.split("_")[-1].strip('"')
+            trainer = get_single_trainer(zoneID, ID, temp_trainer_IDs, team_type)
+            trainers.append(trainer)
+        return trainers
     else:
-        if constants.BARRY in lookup:
-            temp_trainer_IDs = parse_randomized_teams(file_path, lookup, team_num, None)
-            for ID in temp_trainer_IDs:
-                team_type = lookup.split("_")[-1].strip('"')
-                trainer = get_single_trainer(zoneID, ID, temp_trainer_IDs, team_type)
-                trainers.append(trainer)
-            return trainers
         temp_trainer_IDs = parse_randomized_teams(file_path, lookup, team_num, None)
         add_trainers(zoneID, temp_trainer_IDs)
         for ID in temp_trainer_IDs:
@@ -362,6 +373,13 @@ def get_multi_trainers(trainerID1, trainerID2, zoneID, format):
     return trainers
 
 def get_named_trainer_data(zoneID, trainerID1, trainerID2, args):
+    '''
+    This is for all the trainers that have names instead of trainerIDs
+    An example is LASS01
+    The first thing this checks is if there is a 2nd trainerID for multi/double battles
+    Inside of each of these is a check for any trainerID above 651.
+    If it is above 651, it pulls the trainer name from the trainer enum obtained from Sma
+    '''
     trainers = []
     special_trainer_names = full_data['special_trainer_names']
     if len(trainerID2) > 0:
@@ -378,6 +396,9 @@ def get_named_trainer_data(zoneID, trainerID1, trainerID2, args):
 
     temp_trainerID1 = get_trainer_id_from_partial(trainerID1)
     if temp_trainerID1 > 651:
+        # There is a discrepancy in the data with the trainer labels and named trainers
+        # This only happens after TID 651
+        # IF it is above 651 it pulls from the trainer enums obtained from Sma
         temp_trainerID1 = special_trainer_names[trainerID1.strip("'")]
 
     trainer = diff_trainer_data(None, zoneID, int(temp_trainerID1))
@@ -389,6 +410,14 @@ def get_named_trainer_data(zoneID, trainerID1, trainerID2, args):
     return trainers
 
 def get_multi_trainer_data(file_path, areaName, zoneID, trainerID1, trainerID2, trainerID3, substring):
+    '''
+    This is for Multi Trainer Battles.
+    It operates the same way as the other files except there is a third trainerID.
+    Something to note in the format the multi_trainer_battles are called:
+    The support trainer is in the first slot, 
+    The left enemy trainer is in the 2nd slot
+    The right enemy trainer is in the 3rd slot
+    '''
 
     def get_multi_support_trainers(file_path, areaName, zoneID):
         return [
@@ -399,6 +428,7 @@ def get_multi_trainer_data(file_path, areaName, zoneID, trainerID1, trainerID2, 
     trainers = []
 
     if trainerID3.isnumeric():
+        # This is for if the trainerID is just the number like 751
         trainer2, trainer3 = get_multi_trainers(trainerID2, trainerID3, zoneID, constants.MULTI_FORMAT)
         trainers.extend([
             trainer2,
@@ -407,7 +437,7 @@ def get_multi_trainer_data(file_path, areaName, zoneID, trainerID1, trainerID2, 
         ])
         return trainers
     elif trainerID3[0] == "@":
-
+        # This is for the trainers that are defined previously in the function
         trainers.extend(get_multi_support_trainers(file_path, areaName, zoneID))
         team_galactic_lookup = f"pos_{areaName.lower()}_gingakanbu"
 
@@ -427,6 +457,12 @@ def get_multi_trainer_data(file_path, areaName, zoneID, trainerID1, trainerID2, 
         raise MultiTrainerError
 
 def get_temp_var_trainer_data(file_path, areaName, zoneID, trainerID1, trainerID2, args):
+    '''
+    This is when the trainerID starts with @.
+    This covers the following situations:
+        1. Any fight that has been randomized (i.e. Gym Leaders, E4 Members)
+        2. Any other trainer that doesn't follow the same format as the other situations defined in get_all_trainer_data 
+    '''
 
     trainers = []
     gym_leader_lookup = f"ev_{areaName.lower()}_randomteam"

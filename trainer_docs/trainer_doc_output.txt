@@ -5963,7 +5963,7 @@ Format: Single Battle
 Ivysaur
 25
 Bold
-Overgrow
+Grassy Surge
 
 Black Sludge
 Nature Power
@@ -10984,7 +10984,7 @@ Tailwind
 
 
 501
-Cowgirl Eve
+Cowgirl Evey
 Level Cap:
 Format: Single Battle
 
@@ -11068,7 +11068,7 @@ Vine Whip
 
 
 502
-Cowgirl Eve
+Cowgirl Evey
 Level Cap:
 Format: Single Battle
 
@@ -11152,7 +11152,7 @@ Vine Whip
 
 
 503
-Cowgirl Eve
+Cowgirl Evey
 Level Cap:
 Format: Single Battle
 
@@ -11236,7 +11236,7 @@ Vine Whip
 
 
 504
-Cowgirl Eve
+Cowgirl Evey
 Level Cap:
 Format: Single Battle
 
@@ -11320,7 +11320,7 @@ Tackle
 
 
 505
-Cowgirl Eve
+Cowgirl Evey
 Level Cap:
 Format: Single Battle
 
@@ -11404,7 +11404,7 @@ Tackle
 
 
 507
-Cowgirl Eve
+Cowgirl Evey
 Level Cap:
 Format: Single Battle
 
@@ -11488,7 +11488,7 @@ Tackle
 
 
 508
-Cowgirl Eve
+Cowgirl Evey
 Level Cap:
 Format: Single Battle
 
@@ -11572,7 +11572,7 @@ Tail Whip
 
 
 510
-Cowgirl Eve
+Cowgirl Evey
 Level Cap:
 Format: Single Battle
 
@@ -11656,7 +11656,7 @@ Tail Whip
 
 
 513
-Cowgirl Eve
+Cowgirl Evey
 Level Cap:
 Format: Single Battle
 
@@ -11740,7 +11740,7 @@ Tail Whip
 
 
 514
-Cowgirl Eve
+Cowgirl Evey
 Level Cap:
 Format: Single Battle
 
@@ -11824,7 +11824,7 @@ Absorb
 
 
 515
-Cowgirl Eve
+Cowgirl Evey
 Level Cap:
 Format: Single Battle
 
@@ -11908,7 +11908,7 @@ Absorb
 
 
 516
-Cowgirl Eve
+Cowgirl Evey
 Level Cap:
 Format: Single Battle
 
@@ -11992,7 +11992,7 @@ Absorb
 
 
 517
-Cowgirl Eve
+Cowgirl Evey
 Level Cap:
 Format: Single Battle
 
@@ -12076,7 +12076,7 @@ Bite
 
 
 518
-Cowgirl Eve
+Cowgirl Evey
 Level Cap:
 Format: Single Battle
 
@@ -12160,7 +12160,7 @@ Bite
 
 
 519
-Cowgirl Eve
+Cowgirl Evey
 Level Cap:
 Format: Single Battle
 
@@ -12244,7 +12244,7 @@ Bite
 
 
 520
-Cowgirl Eve
+Cowgirl Evey
 Level Cap:
 Format: Single Battle
 
@@ -12328,7 +12328,7 @@ Absorb
 
 
 521
-Cowgirl Eve
+Cowgirl Evey
 Level Cap:
 Format: Single Battle
 
@@ -12412,7 +12412,7 @@ Absorb
 
 
 522
-Cowgirl Eve
+Cowgirl Evey
 Level Cap:
 Format: Single Battle
 
@@ -12496,7 +12496,7 @@ Absorb
 
 
 523
-Cowgirl Eve
+Cowgirl Evey
 Level Cap:
 Format: Single Battle
 
@@ -12580,7 +12580,7 @@ Healing Wish
 
 
 524
-Cowgirl Eve
+Cowgirl Evey
 Level Cap:
 Format: Single Battle
 
@@ -12748,7 +12748,7 @@ Shadow Sneak
 
 
 525
-Cowgirl Eve
+Cowgirl Evey
 Level Cap:
 Format: Single Battle
 
@@ -12832,7 +12832,7 @@ Healing Wish
 
 
 526
-Cowgirl Eve
+Cowgirl Evey
 Level Cap:
 Format: Single Battle
 
@@ -12916,7 +12916,7 @@ Healing Wish
 
 
 528
-Cowgirl Eve
+Cowgirl Evey
 Level Cap:
 Format: Single Battle
 
@@ -13000,7 +13000,7 @@ Healing Wish
 
 
 529
-Cowgirl Eve
+Cowgirl Evey
 Level Cap:
 Format: Single Battle
 
@@ -13084,7 +13084,7 @@ Healing Wish
 
 
 531
-Cowgirl Eve
+Cowgirl Evey
 Level Cap:
 Format: Single Battle
 
@@ -13168,7 +13168,7 @@ Healing Wish
 
 
 1079
-Cowgirl Eve
+Cowgirl Evey
 Level Cap:
 Format: Single Battle
 
