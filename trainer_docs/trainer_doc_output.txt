@@ -2719,6 +2719,342 @@ Tackle
 20/252/0/0/0/0
 
 
+891
+Gym Leader Roark Team 1 Rematch
+Level Cap:
+Format: Single Battle
+
+Tyranitar
+100
+Careful
+Sand Stream
+
+Smooth Rock
+Stealth Rock
+Earthquake
+Crunch
+Thunder Wave
+31/31/31/31/31/31
+4/252/0/0/0/252
+
+Rhyperior
+100
+Adamant
+Solid Rock
+
+Weakness Policy
+Stone Edge
+Thunder Punch
+Ice Punch
+Rock Polish
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Aerodactyl
+100
+Jolly
+Strong Jaw
+
+Choice Band
+Brave Bird
+Ice Fang
+Crunch
+Thunder Fang
+31/31/31/31/31/31
+0/252/0/252/0/4
+
+Cradily
+100
+Calm
+Storm Drain
+
+Leftovers
+Giga Drain
+Stockpile
+Recover
+Toxic
+31/0/31/31/31/31
+248/0/0/0/8/252
+
+Kabutops
+100
+Jolly
+Weak Armor
+
+Focus Sash
+Liquidation
+Stone Edge
+Knock Off
+Leech Life
+31/31/31/31/31/31
+4/252/0/0/0/252
+
+Rampardos
+100
+Adamant
+Rock Head
+
+Weakness Policy
+Head Smash
+Ice Punch
+Thunder Punch
+Earthquake
+31/31/31/31/31/31
+252/252/0/0/0/4
+
+
+892
+Gym Leader Roark Team 2 Rematch
+Level Cap:
+Format: Single Battle
+
+Forretress
+100
+Relaxed
+Sand Spit
+
+Leftovers
+Stealth Rock
+Volt Switch
+Toxic
+Gyro Ball
+31/31/31/31/31/0
+252/4/252/0/0/0
+
+Regirock
+100
+Adamant
+Solid Rock
+
+Choice Band
+Stone Edge
+Earthquake
+Fire Punch
+Thunder Punch
+31/31/31/31/31/31
+252/252/0/0/0/4
+
+Cradily
+100
+Calm
+Storm Drain
+
+Leftovers
+Giga Drain
+Stockpile
+Recover
+Toxic
+31/0/31/31/31/31
+248/0/0/0/8/252
+
+Relicanth
+100
+Adamant
+Rock Head
+
+Focus Sash
+Double-Edge
+Head Smash
+Yawn
+Liquidation
+31/31/31/31/31/31
+252/252/0/0/0/4
+
+Probopass
+100
+Hardy
+Sturdy
+
+Chesto Berry
+Iron Defense
+Body Press
+Rest
+Sleep Talk
+31/0/31/31/31/31
+0/0/0/0/0/0
+
+Rampardos
+100
+Adamant
+Rock Head
+
+Weakness Policy
+Head Smash
+Ice Punch
+Thunder Punch
+Earthquake
+31/31/31/31/31/31
+252/252/0/0/0/4
+
+
+893
+Gym Leader Roark Team 3 Rematch
+Level Cap:
+Format: Single Battle
+
+Tyranitar
+100
+Careful
+Sand Stream
+
+Smooth Rock
+Stealth Rock
+Earthquake
+Crunch
+Thunder Wave
+31/31/31/31/31/31
+252/4/0/0/0/252
+
+Corsola
+100
+Careful
+Regenerator
+
+Leftovers
+Toxic
+Recover
+Sucker Punch
+Protect
+31/31/31/31/31/31
+252/4/0/0/0/252
+
+Glalie
+100
+Adamant
+Levitate
+
+Focus Sash
+Stone Edge
+Icicle Crash
+Earthquake
+Rock Polish
+31/31/31/31/31/31
+0/252/4/0/0/252
+
+Onix
+100
+Adamant
+Rock Head
+
+Eviolite
+Dragon Dance
+Earthquake
+Stone Edge
+Iron Head
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Golem
+100
+Adamant
+Sand Force
+
+Assault Vest
+Fire Punch
+Thunder Punch
+Earthquake
+Stone Edge
+31/31/31/31/31/31
+252/252/0/0/0/4
+
+Rampardos
+100
+Adamant
+Rock Head
+
+Weakness Policy
+Head Smash
+Ice Punch
+Thunder Punch
+Earthquake
+31/31/31/31/31/31
+252/252/0/0/0/4
+
+
+894
+Gym Leader Roark Team 4 Rematch
+Level Cap:
+Format: Single Battle
+
+Regirock
+100
+Adamant
+Solid Rock
+
+Leftovers
+Stealth Rock
+Drain Punch
+Thunder Wave
+Stone Edge
+31/31/31/31/31/31
+252/252/0/0/0/4
+
+Aerodactyl
+100
+Jolly
+Rock Head
+
+Choice Band
+Brave Bird
+Double-Edge
+Earthquake
+Stone Edge
+31/31/31/31/31/31
+0/252/4/0/0/252
+
+Rhydon
+100
+Adamant
+Sheer Force
+
+Eviolite
+Drill Run
+Ice Punch
+Thunder Punch
+Stone Edge
+31/31/31/31/31/31
+252/252/0/0/0/4
+
+Probopass
+100
+Modest
+Sturdy
+
+Wiki Berry
+Volt Switch
+Earth Power
+Flash Cannon
+Power Gem
+31/0/31/31/31/31
+252/0/0/0/252/4
+
+Lunatone
+100
+Modest
+Levitate
+
+Choice Specs
+Ice Beam
+Power Gem
+Moonblast
+Psychic
+31/0/31/31/31/31
+248/0/0/0/252/8
+
+Rampardos
+100
+Adamant
+Rock Head
+
+Weakness Policy
+Head Smash
+Ice Punch
+Thunder Punch
+Earthquake
+31/31/31/31/31/31
+252/252/0/0/0/4
+
+
 9
 Aroma Lady Teighler
 Level Cap:
@@ -6207,6 +6543,342 @@ Synthesis
 252/4/252/0/0/0
 
 
+895
+Gym Leader Gardenia Team 1 Rematch
+Level Cap:
+Format: Single Battle
+
+Venusaur
+100
+Timid
+Grassy Surge
+
+Grassy Seed
+Giga Drain
+Sludge Bomb
+Earth Power
+Sleep Powder
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+Tangrowth
+100
+Sassy
+Regenerator
+
+Assault Vest
+Power Whip
+Knock Off
+Focus Blast
+Earthquake
+31/31/31/31/31/31
+252/0/4/0/0/252
+
+Abomasnow
+100
+Adamant
+Thick Fat
+
+Assault Vest
+Icicle Crash
+Ice Shard
+Rock Slide
+Wood Hammer
+31/31/31/31/31/31
+248/252/0/0/0/8
+
+Leafeon
+100
+Jolly
+Grass Pelt
+
+Expert Belt
+Power Whip
+Psycho Cut
+Knock Off
+Swords Dance
+31/31/31/31/31/31
+252/252/4/0/0/0
+
+Roserade
+100
+Timid
+Technician
+
+Life Orb
+Sleep Powder
+Sludge Bomb
+Giga Drain
+Hidden Power
+31/0/31/31/31/31
+0/0/4/252/0/252
+
+Celebi
+100
+Modest
+Natural Cure
+
+Tanga Berry
+Leaf Storm
+Future Sight
+U-turn
+Stealth Rock
+31/31/31/31/31/31
+0/4/0/252/252/0
+
+
+896
+Gym Leader Gardenia Team 2 Rematch
+Level Cap:
+Format: Single Battle
+
+Venusaur
+100
+Timid
+Grassy Surge
+
+Terrain Extender
+Leaf Storm
+Sludge Bomb
+Earth Power
+Knock Off
+31/31/31/31/31/31
+0/0/0/252/4/252
+
+Breloom
+100
+Jolly
+Quick Feet
+
+Toxic Orb
+Superpower
+Spore
+Stone Edge
+Seed Bomb
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Tangrowth
+100
+Relaxed
+Regenerator
+
+Leftovers
+Leaf Storm
+Leech Seed
+Sleep Powder
+Knock Off
+31/31/31/31/31/31
+252/0/252/0/0/4
+
+Parasect
+100
+Adamant
+Oblivious
+
+Leftovers
+Spore
+U-turn
+Leech Life
+Knock Off
+31/31/31/31/31/31
+252/252/0/0/0/4
+
+Roserade
+100
+Timid
+Natural Cure
+
+Black Sludge
+Synthesis
+Giga Drain
+Sludge Bomb
+Spikes
+31/0/31/31/31/31
+0/0/4/252/0/252
+
+Shaymin
+100
+Modest
+Natural Cure
+
+Choice Specs
+Seed Flare
+Dazzling Gleam
+Air Slash
+Earth Power
+31/31/31/31/31/31
+0/0/0/252/4/0
+
+
+897
+Gym Leader Gardenia Team 3 Rematch
+Level Cap:
+Format: Single Battle
+
+Roserade
+100
+Timid
+Natural Cure
+
+Focus Sash
+Spikes
+Toxic Spikes
+Sleep Powder
+Leaf Storm
+31/0/31/31/31/31
+252/0/0/252/4/0
+
+Ludicolo
+100
+Timid
+Own Tempo
+
+Heat Rock
+Sunny Day
+Synthesis
+Scald
+Leaf Storm
+31/0/31/31/31/31
+252/0/0/252/4/0
+
+Sunflora
+100
+Calm
+Solar Power
+
+Leftovers
+Giga Drain
+Growth
+Weather Ball
+Ingrain
+31/0/31/31/31/31
+252/0/4/0/0/252
+
+Cherrim
+100
+Calm
+Flower Gift
+
+Heat Rock
+Sunny Day
+Weather Ball
+Solar Beam
+Synthesis
+31/0/31/31/31/31
+0/0/0/252/252/4
+
+Jumpluff
+100
+Timid
+Infiltrator
+
+Leftovers
+Spore
+U-turn
+Solar Beam
+Air Slash
+31/31/31/31/31/31
+252/0/0/252/4/0
+
+Celebi
+100
+Jolly
+Natural Cure
+
+Heavy-Duty Boots
+Stealth Rock
+Heal Bell
+U-turn
+Zen Headbutt
+31/31/31/31/31/31
+0/252/0/0/0/4
+
+
+898
+Gym Leader Gardenia Team 4 Rematch
+Level Cap:
+Format: Single Battle
+
+Meganium
+100
+Bold
+Triage
+
+Big Root
+Earth Power
+Calm Mind
+Giga Drain
+Draining Kiss
+31/0/31/31/31/31
+252/0/252/0/0/4
+
+Exeggutor
+100
+Modest
+Harvest
+
+Chesto Berry
+Rest
+Giga Drain
+Sleep Powder
+Future Sight
+31/0/31/31/31/31
+252/0/0/0/252/4
+
+Victreebel
+100
+Modest
+Chlorophyll
+
+Life Orb
+Sunny Day
+Leaf Storm
+Weather Ball
+Strength Sap
+31/0/31/31/31/31
+252/0/0/4/252/0
+
+Cherrim
+100
+Timid
+Flower Gift
+
+Heat Rock
+Sunny Day
+Dazzling Gleam
+Giga Drain
+Weather Ball
+31/0/31/31/31/31
+252/0/0/252/4/0
+
+Roserade
+100
+Timid
+Technician
+
+Life Orb
+Weather Ball
+Leaf Storm
+Sludge Bomb
+Sleep Powder
+31/0/31/31/31/31
+0/0/4/252/0/252
+
+Shaymin
+100
+Modest
+Natural Cure
+
+Choice Specs
+Seed Flare
+Dazzling Gleam
+Air Slash
+Earth Power
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+
 315
 Team Galactic Grunt
 Level Cap:
@@ -8345,6 +9017,342 @@ Stockpile
 Strength Sap
 25/0/25/25/25/25
 12/0/0/248/4/244
+
+
+899
+Gym Leader Fantina Team 1 Rematch
+Level Cap:
+Format: Single Battle
+
+Spiritomb
+100
+Calm
+Cursed Body
+
+Leftovers
+Strength Sap
+Hex
+Will-O-Wisp
+Dark Pulse
+31/0/31/31/31/31
+252/0/0/0/4/252
+
+Banette
+100
+Adamant
+Prankster
+
+Life Orb
+Double-Edge
+Phantom Force
+Shadow Sneak
+Destiny Bond
+31/31/31/31/31/31
+252/252/0/0/0/4
+
+Absol
+100
+Jolly
+Super Luck
+
+Scope Lens
+Night Slash
+Psycho Cut
+X-Scissor
+Stone Edge
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Luxray
+100
+Jolly
+Guts
+
+Flame Orb
+Sucker Punch
+Wild Charge
+Volt Switch
+Ice Fang
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Mismagius
+100
+Timid
+Levitate
+
+Choice Specs
+Moonblast
+Mystical Fire
+Shadow Ball
+Thunderbolt
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+Darkrai
+100
+Timid
+Bad Dreams
+
+Focus Sash
+Dark Void
+Dream Eater
+Dark Pulse
+Nasty Plot
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+
+900
+Gym Leader Fantina Team 2 Rematch
+Level Cap:
+Format: Single Battle
+
+Umbreon
+100
+Calm
+Immunity
+
+Leftovers
+Toxic
+Wish
+Protect
+Foul Play
+31/0/31/31/31/31
+252/0/4/0/0/252
+
+Sharpedo
+100
+Adamant
+Speed Boost
+
+Life Orb
+Protect
+Liquidation
+Crunch
+Earthquake
+31/31/31/31/31/31
+4/252/0/0/0/252
+
+Dusclops
+100
+Calm
+Regenerator
+
+Eviolite
+Parting Shot
+Night Shade
+Will-O-Wisp
+Pain Split
+31/0/31/31/31/31
+252/0/4/0/0/252
+
+Gengar
+100
+Timid
+Levitate
+
+Choice Scarf
+Shadow Ball
+Sludge Wave
+Dazzling Gleam
+Energy Ball
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+Mismagius
+100
+Timid
+Levitate
+
+Choice Specs
+Moonblast
+Mystical Fire
+Shadow Ball
+Thunderbolt
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+Darkrai
+100
+Timid
+Bad Dreams
+
+Focus Sash
+Dark Void
+Dream Eater
+Dark Pulse
+Nasty Plot
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+
+901
+Gym Leader Fantina Team 3 Rematch
+Level Cap:
+Format: Single Battle
+
+Sableye
+100
+Impish
+Magic Bounce
+
+Leftovers
+Shadow Sneak
+Toxic
+Recover
+Knock Off
+31/31/31/31/31/31
+248/8/252/0/0/0
+
+Dusknoir
+100
+Adamant
+Iron Fist
+
+Expert Belt
+Shadow Punch
+Ice Punch
+Thunder Punch
+Shadow Sneak
+31/31/31/31/31/31
+252/252/0/0/0/4
+
+Houndoom
+100
+Adamant
+Intimidate
+
+Chesto Berry
+Sucker Punch
+Flare Blitz
+Rest
+Curse
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Skuntank
+100
+Timid
+Flare Boost
+
+Flame Orb
+Sludge Bomb
+Dark Pulse
+Flamethrower
+Hidden Power
+31/0/31/31/31/31
+4/0/0/252/0/252
+
+Mismagius
+100
+Timid
+Levitate
+
+Choice Specs
+Moonblast
+Mystical Fire
+Shadow Ball
+Thunderbolt
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+Darkrai
+100
+Timid
+Bad Dreams
+
+Focus Sash
+Dark Void
+Dream Eater
+Dark Pulse
+Nasty Plot
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+
+902
+Gym Leader Fantina Team 4 Rematch
+Level Cap:
+Format: Single Battle
+
+Misdreavus
+100
+Calm
+Prankster
+
+Eviolite
+Confuse Ray
+Thunder Wave
+Destiny Bond
+Dazzling Gleam
+31/0/31/31/31/31
+252/0/0/0/4/252
+
+Crawdaunt
+100
+Adamant
+Adaptability
+
+Heavy-Duty Boots
+Dragon Dance
+Liquidation
+Crunch
+Aqua Jet
+31/31/31/31/31/31
+4/252/0/0/0/252
+
+Drifblim
+100
+Timid
+Flare Boost
+
+Flame Orb
+Thunderbolt
+Hurricane
+Flamethrower
+Strength Sap
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+Banette
+100
+Adamant
+Prankster
+
+Life Orb
+Double-Edge
+Phantom Force
+Shadow Sneak
+Destiny Bond
+31/31/31/31/31/31
+252/252/0/0/0/4
+
+Mismagius
+100
+Timid
+Levitate
+
+Choice Specs
+Moonblast
+Mystical Fire
+Shadow Ball
+Thunderbolt
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+Darkrai
+100
+Timid
+Bad Dreams
+
+Focus Sash
+Dark Void
+Dream Eater
+Dark Pulse
+Nasty Plot
+31/0/31/31/31/31
+0/0/0/252/4/252
 
 
 943
@@ -14393,6 +15401,342 @@ Thunder Punch
 0/248/0/0/16/244
 
 
+903
+Gym Leader Maylene Team 1 Rematch
+Level Cap:
+Format: Single Battle
+
+Infernape
+100
+Timid
+Unburden
+
+Focus Sash
+Stealth Rock
+Taunt
+U-turn
+Overheat
+31/31/31/31/31/31
+252/0/0/252/4/0
+
+Heracross
+100
+Jolly
+Guts
+
+Flame Orb
+Close Combat
+Megahorn
+Stone Edge
+Knock Off
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Toxicroak
+100
+Timid
+Dry Skin
+
+Focus Sash
+Nasty Plot
+Vacuum Wave
+Sludge Wave
+Dark Pulse
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+Primeape
+100
+Jolly
+Defiant
+
+Choice Scarf
+Close Combat
+Ice Punch
+Throat Chop
+Thunder Punch
+31/31/31/31/31/31
+0/252/4/0/0/252
+
+Lucario
+100
+Jolly
+Adaptability
+
+Choice Band
+Bullet Punch
+Close Combat
+Ice Punch
+Meteor Mash
+31/31/31/31/31/31
+0/252/4/0/0/252
+
+Salamence
+100
+Timid
+Intimidate
+
+Choice Specs
+Draco Meteor
+Fire Blast
+Hurricane
+Hydro Pump
+31/0/31/31/31/31
+0/0/4/252/0/252
+
+
+904
+Gym Leader Maylene Team 2 Rematch
+Level Cap:
+Format: Single Battle
+
+Crobat
+100
+Jolly
+Inner Focus
+
+Focus Sash
+U-turn
+Taunt
+Brave Bird
+Poison Fang
+31/31/31/31/31/31
+0/252/4/0/0/252
+
+Hariyama
+100
+Adamant
+Guts
+
+Flame Orb
+Bullet Punch
+Close Combat
+Poison Jab
+Knock Off
+31/31/31/31/31/31
+252/252/0/0/0/4
+
+Gallade
+100
+Jolly
+Inner Focus
+
+Choice Band
+Close Combat
+Psycho Cut
+Shadow Sneak
+Thunder Punch
+31/31/31/31/31/31
+0/252/4/0/0/252
+
+Hitmonlee
+100
+Jolly
+Reckless
+
+Choice Scarf
+High Jump Kick
+Double-Edge
+Bullet Punch
+Stone Edge
+31/31/31/31/31/31
+0/252/4/0/0/252
+
+Lucario
+100
+Timid
+Adaptability
+
+Choice Specs
+Flash Cannon
+Focus Blast
+Vacuum Wave
+Dark Pulse
+31/0/31/31/31/31
+4/0/0/252/0/252
+
+Dragonite
+100
+Adamant
+Multiscale
+
+Expert Belt
+Dragon Dance
+Dragon Claw
+Fire Punch
+Roost
+31/31/31/31/31/31
+0/252/4/0/0/252
+
+
+905
+Gym Leader Maylene Team 3 Rematch
+Level Cap:
+Format: Single Battle
+
+Machamp
+100
+Adamant
+No Guard
+
+Assault Vest
+Stone Edge
+Dynamic Punch
+Knock Off
+Poison Jab
+31/31/31/31/31/31
+248/252/0/0/0/8
+
+Hitmonchan
+100
+Adamant
+Iron Fist
+
+Assault Vest
+Bullet Punch
+Drain Punch
+Ice Punch
+Power-Up Punch
+31/31/31/31/31/31
+248/252/0/0/0/8
+
+Medicham
+100
+Jolly
+Pure Power
+
+Focus Sash
+Bullet Punch
+High Jump Kick
+Ice Punch
+Zen Headbutt
+31/31/31/31/31/31
+0/252/4/0/0/252
+
+Mantine
+100
+Modest
+Swift Swim
+
+Choice Specs
+Hurricane
+Hydro Pump
+Ice Beam
+U-turn
+31/31/31/31/31/31
+0/0/4/252/0/252
+
+Lucario
+100
+Timid
+Adaptability
+
+Choice Specs
+Flash Cannon
+Focus Blast
+Vacuum Wave
+Dark Pulse
+31/0/31/31/31/31
+0/0/4/252/0/252
+
+Salamence
+100
+Adamant
+Aerilate
+
+Life Orb
+Double-Edge
+Dragon Dance
+Dragon Claw
+Earthquake
+31/31/31/31/31/31
+0/0/4/252/0/252
+
+
+906
+Gym Leader Maylene Team 4 Rematch
+Level Cap:
+Format: Single Battle
+
+Hitmontop
+100
+Adamant
+Intimidate
+
+Leftovers
+Bullet Punch
+Close Combat
+Earthquake
+Rapid Spin
+31/31/31/31/31/31
+248/252/0/0/0/8
+
+Blaziken
+100
+Adamant
+Speed Boost
+
+Life Orb
+Protect
+High Jump Kick
+Flare Blitz
+Thunder Punch
+31/31/31/31/31/31
+0/252/4/0/0/252
+
+Breloom
+100
+Adamant
+Poison Heal
+
+Toxic Orb
+Substitute
+Focus Punch
+Seed Bomb
+Stone Edge
+31/31/31/31/31/31
+248/252/0/0/0/8
+
+Poliwrath
+100
+Adamant
+Iron Fist
+
+Assault Vest
+Ice Punch
+Mach Punch
+Liquidation
+Drain Punch
+31/31/31/31/31/31
+248/252/0/0/0/8
+
+Lucario
+100
+Timid
+Adaptability
+
+Choice Specs
+Flash Cannon
+Focus Blast
+Vacuum Wave
+Dark Pulse
+31/0/31/31/31/31
+0/0/4/252/0/252
+
+Dragonite
+100
+Adamant
+Multiscale
+
+Expert Belt
+Dragon Dance
+Dragon Claw
+Fire Punch
+Roost
+31/31/31/31/31/31
+0/252/4/0/0/252
+
+
 674
 Team Galactic Grunt
 Level Cap:
@@ -17920,6 +19264,342 @@ Rock Slide
 Ice Punch
 25/25/25/25/25/25
 0/252/0/0/4/252
+
+
+907
+Gym Leader Wake Team 1 Rematch
+Level Cap:
+Format: Single Battle
+
+Lumineon
+100
+Modest
+Swift Swim
+
+Choice Specs
+U-turn
+Ice Beam
+Scald
+Hurricane
+31/31/31/31/31/31
+0/0/4/252/0/252
+
+Kingdra
+100
+Modest
+Swift Swim
+
+Life Orb
+Draco Meteor
+Hurricane
+Hydro Pump
+Ice Beam
+31/0/31/31/31/31
+0/0/4/252/0/252
+
+Tentacruel
+100
+Hasty
+Rain Dish
+
+Black Sludge
+Sludge Wave
+Scald
+Ice Beam
+Knock Off
+31/31/31/31/31/31
+0/4/0/252/0/252
+
+Whiscash
+100
+Adamant
+Simple
+
+Rindo Berry
+Dragon Dance
+Liquidation
+Earthquake
+Zen Headbutt
+31/31/31/31/31/31
+0/252/4/0/0/252
+
+Floatzel
+100
+Modest
+Swift Swim
+
+Life Orb
+Focus Blast
+Ice Beam
+Hydro Pump
+Taunt
+31/0/31/31/31/31
+0/0/4/252/0/252
+
+Suicune
+100
+Bold
+Pressure
+
+Leftovers
+Rest
+Sleep Talk
+Scald
+Calm Mind
+31/31/31/31/31/31
+252/0/240/16/0/0
+
+
+908
+Gym Leader Wake Team 2 Rematch
+Level Cap:
+Format: Single Battle
+
+Omastar
+100
+Rash
+Swift Swim
+
+Focus Sash
+Spikes
+Hydro Pump
+Ice Beam
+Knock Off
+31/31/31/31/31/31
+4/0/0/252/252/0
+
+Lanturn
+100
+Modest
+Volt Absorb
+
+Leftovers
+Thunderbolt
+Scald
+Rest
+Sleep Talk
+31/0/31/31/31/31
+252/0/0/0/252/4
+
+Gorebyss
+100
+Modest
+Swift Swim
+
+White Herb
+Hydro Pump
+Ice Beam
+Shell Smash
+Shadow Ball
+31/0/31/31/31/31
+0/0/4/252/0/252
+
+Empoleon
+100
+Adamant
+Torrent
+
+Life Orb
+Drill Peck
+Earthquake
+Aqua Jet
+Liquidation
+31/31/31/31/31/31
+252/252/0/0/0/4
+
+Floatzel
+100
+Adamant
+Swift Swim
+
+Choice Band
+Liquidation
+Ice Punch
+Brick Break
+Aqua Jet
+31/31/31/31/31/31
+0/252/4/0/0/252
+
+Suicune
+100
+Bold
+Pressure
+
+Leftovers
+Rest
+Sleep Talk
+Scald
+Calm Mind
+31/31/31/31/31/31
+252/0/240/16/0/0
+
+
+909
+Gym Leader Wake Team 3 Rematch
+Level Cap:
+Format: Single Battle
+
+Slowking
+100
+Calm
+Regenerator
+
+Leftovers
+Teleport
+Future Sight
+Scald
+Slack Off
+31/0/31/31/31/31
+252/0/4/0/252/0
+
+Azumarill
+100
+Adamant
+Huge Power
+
+Choice Band
+Liquidation
+Ice Punch
+Play Rough
+Aqua Jet
+31/31/31/31/31/31
+252/252/0/0/0/4
+
+Gyarados
+100
+Adamant
+Intimidate
+
+Leftovers
+Dragon Dance
+Waterfall
+Earthquake
+Power Whip
+31/31/31/31/31/31
+0/252/4/0/0/252
+
+Swampert
+100
+Adamant
+Swift Swim
+
+Life Orb
+Liquidation
+Earthquake
+Ice Punch
+Stone Edge
+31/31/31/31/31/31
+0/252/4/0/0/252
+
+Floatzel
+100
+Modest
+Swift Swim
+
+Life Orb
+Focus Blast
+Ice Beam
+Hydro Pump
+Taunt
+31/0/31/31/31/31
+0/0/4/252/0/252
+
+Suicune
+100
+Bold
+Pressure
+
+Leftovers
+Rest
+Sleep Talk
+Scald
+Calm Mind
+31/31/31/31/31/31
+252/0/240/16/0/0
+
+
+910
+Gym Leader Wake Team 4 Rematch
+Level Cap:
+Format: Single Battle
+
+Huntail
+100
+Hardy
+Swift Swim
+
+White Herb
+Sucker Punch
+Waterfall
+Shell Smash
+Ice Fang
+31/31/31/31/31/31
+0/252/4/0/0/252
+
+Lapras
+100
+Modest
+Hydration
+
+Heavy-Duty Boots
+Freeze-Dry
+Hydro Pump
+Thunderbolt
+Rest
+31/0/31/31/31/31
+248/0/0/0/252/8
+
+Blastoise
+100
+Modest
+Mega Launcher
+
+Assault Vest
+Hydro Pump
+Dragon Pulse
+Flash Cannon
+Aura Sphere
+31/0/31/31/31/31
+252/0/0/0/4/252
+
+Luvdisc
+100
+Modest
+Swift Swim
+
+Choice Specs
+Moonblast
+Hydro Pump
+Ice Beam
+Hidden Power
+31/0/31/31/31/31
+0/0/4/252/0/252
+
+Floatzel
+100
+Adamant
+Swift Swim
+
+Choice Band
+Liquidation
+Ice Punch
+Brick Break
+Aqua Jet
+31/31/31/31/31/31
+0/252/4/0/0/252
+
+Suicune
+100
+Bold
+Pressure
+
+Leftovers
+Rest
+Sleep Talk
+Scald
+Calm Mind
+31/31/31/31/31/31
+252/0/240/16/0/0
 
 
 57
@@ -21778,6 +23458,342 @@ Iron Head
 248/252/0/0/4/0
 
 
+911
+Gym Leader Byron Team 1 Rematch
+Level Cap:
+Format: Single Battle
+
+Skarmory
+100
+Calm
+Mirror Armor
+
+Leftovers
+Spikes
+Body Press
+Iron Defense
+Roost
+31/0/31/31/31/31
+252/0/0/0/24/232
+
+Scizor
+100
+Adamant
+Technician
+
+Leftovers
+Swords Dance
+Bullet Punch
+Roost
+Knock Off
+31/31/31/31/31/31
+248/252/0/0/0/8
+
+Mawile
+100
+Adamant
+Huge Power
+
+Choice Band
+Iron Head
+Power-Up Punch
+Play Rough
+Stone Edge
+31/31/31/31/31/31
+248/252/0/0/0/8
+
+Magnezone
+100
+Modest
+Levitate
+
+Air Balloon
+Thunderbolt
+Flash Cannon
+Volt Switch
+Bug Buzz
+31/0/31/31/31/31
+248/0/0/252/0/8
+
+Bastiodon
+100
+Modest
+Filter
+
+Weakness Policy
+Flash Cannon
+Ice Beam
+Thunderbolt
+Earth Power
+31/0/31/31/31/31
+252/0/0/252/0/4
+
+Registeel
+100
+Careful
+Filter
+
+Leftovers
+Toxic
+Curse
+Protect
+Iron Head
+31/31/31/31/31/31
+252/0/4/0/252/0
+
+
+912
+Gym Leader Byron Team 2 Rematch
+Level Cap:
+Format: Single Battle
+
+Forretress
+100
+Relaxed
+Sturdy
+
+Leftovers
+Spikes
+Volt Switch
+Rapid Spin
+Gyro Ball
+31/31/31/31/31/0
+252/4/252/0/0/0
+
+Wormadam
+100
+Modest
+Battle Armor
+
+Leftovers
+Quiver Dance
+Bug Buzz
+Flash Cannon
+Psychic
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+Lucario
+100
+Timid
+Adaptability
+
+Focus Sash
+Vacuum Wave
+Flash Cannon
+Aura Sphere
+Nasty Plot
+31/0/31/31/31/31
+0/0/4/252/0/252
+
+Mawile
+100
+Adamant
+Huge Power
+
+Choice Band
+Iron Head
+Power-Up Punch
+Play Rough
+Stone Edge
+31/31/31/31/31/31
+248/252/0/0/0/8
+
+Bastiodon
+100
+Modest
+Filter
+
+Weakness Policy
+Flash Cannon
+Ice Beam
+Thunderbolt
+Earth Power
+31/0/31/31/31/31
+252/0/0/252/0/4
+
+Jirachi
+100
+Adamant
+Serene Grace
+
+Leftovers
+Iron Head
+Zen Headbutt
+Headbutt
+Thunder Wave
+31/31/31/31/31/31
+224/252/0/0/0/32
+
+
+913
+Gym Leader Byron Team 3 Rematch
+Level Cap:
+Format: Single Battle
+
+Bronzong
+100
+Sassy
+Levitate
+
+Terrain Extender
+Trick Room
+Gyro Ball
+Stealth Rock
+Teleport
+31/31/31/31/31/0
+252/4/0/0/252/0
+
+Steelix
+100
+Adamant
+Sheer Force
+
+Choice Band
+Drill Run
+Stone Edge
+Iron Head
+Crunch
+31/31/31/31/31/31
+252/252/0/0/4/0
+
+Bronzor
+100
+Impish
+Heatproof
+
+Eviolite
+Trick Room
+Memento
+(No Move)
+(No Move)
+31/0/31/31/31/31
+252/0/252/0/0/4
+
+Aggron
+100
+Adamant
+Heavy Metal
+
+Choice Band
+Heavy Slam
+Stone Edge
+Earthquake
+Ice Punch
+31/31/31/31/31/31
+248/252/0/0/0/8
+
+Bastiodon
+100
+Modest
+Filter
+
+Weakness Policy
+Flash Cannon
+Ice Beam
+Thunderbolt
+Earth Power
+31/0/31/31/31/31
+252/0/0/4/0/252
+
+Registeel
+100
+Adamant
+Heavy Metal
+
+Choice Band
+Heavy Slam
+Thunder Punch
+Ice Punch
+Earthquake
+31/31/31/31/31/31
+252/252/0/4/0/0
+
+
+914
+Gym Leader Byron Team 4 Rematch
+Level Cap:
+Format: Single Battle
+
+Bastiodon
+100
+Modest
+Filter
+
+Leftovers
+Stealth Rock
+Metal Burst
+Thunderbolt
+Ice Beam
+31/0/31/31/31/31
+252/0/0/252/0/4
+
+Empoleon
+100
+Modest
+Competitive
+
+Focus Sash
+Hydro Pump
+Ice Beam
+Flash Cannon
+Agility
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+Magneton
+100
+Modest
+Magnet Pull
+
+Eviolite
+Thunderbolt
+Flash Cannon
+Hidden Power
+Volt Switch
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+Metagross
+100
+Adamant
+Iron Fist
+
+Choice Band
+Bullet Punch
+Meteor Mash
+Zen Headbutt
+Ice Punch
+31/31/31/31/31/31
+252/252/0/0/0/0
+
+Scizor
+100
+Adamant
+Technician
+
+Leftovers
+Bullet Punch
+Bug Bite
+Swords Dance
+Roost
+31/31/31/31/31/31
+252/252/0/0/0/4
+
+Jirachi
+100
+Adamant
+Serene Grace
+
+Leftovers
+Iron Head
+Zen Headbutt
+Headbutt
+Thunder Wave
+31/31/31/31/31/31
+224/252/0/0/0/32
+
+
 410
 Aroma Lady Alison
 Level Cap:
@@ -23879,6 +25895,342 @@ Blizzard
 Earth Power
 Extrasensory
 Freeze-Dry
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+
+915
+Gym Leader Candice Team 1 Rematch
+Level Cap:
+Format: Single Battle
+
+Mamoswine
+100
+Jolly
+Thick Fat
+
+Salac Berry
+Icicle Crash
+Earthquake
+Ice Shard
+Stealth Rock
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Cloyster
+100
+Adamant
+Skill Link
+
+White Herb
+Shell Smash
+Rock Blast
+Icicle Spear
+Liquidation
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Weavile
+100
+Jolly
+Technician
+
+Life Orb
+Icicle Spear
+Aerial Ace
+Knock Off
+Ice Shard
+31/31/31/31/31/31
+0/252/4/0/0/252
+
+Lapras
+100
+Adamant
+Water Absorb
+
+Leftovers
+Liquidation
+Dragon Dance
+Icicle Crash
+Drill Run
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Froslass
+100
+Timid
+Levitate
+
+Choice Specs
+Shadow Ball
+Ice Beam
+Psychic
+Thunderbolt
+31/0/31/31/31/31
+0/0/4/252/0/252
+
+Regice
+100
+Modest
+Filter
+
+Assault Vest
+Ice Beam
+Thunderbolt
+Focus Blast
+Flash Cannon
+31/0/31/31/31/31
+248/0/0/252/0/8
+
+
+916
+Gym Leader Candice Team 2 Rematch
+Level Cap:
+Format: Single Battle
+
+Articuno
+100
+Timid
+Snow Warning
+
+Light Clay
+Aurora Veil
+Blizzard
+Hurricane
+U-turn
+31/31/31/31/31/31
+0/0/0/252/4/252
+
+Glaceon
+100
+Modest
+Slush Rush
+
+Choice Specs
+Blizzard
+Extrasensory
+Earth Power
+Freeze-Dry
+31/0/31/31/31/31
+0/0/4/252/0/252
+
+Walrein
+100
+Adamant
+Slush Rush
+
+Sitrus Berry
+Belly Drum
+Liquidation
+Icicle Spear
+Double-Edge
+31/31/31/31/31/31
+248/252/0/0/0/8
+
+Dewgong
+100
+Modest
+Snow Warning
+
+Icy Rock
+Rest
+Blizzard
+Toxic
+Sleep Talk
+31/0/31/31/31/31
+248/0/0/252/0/8
+
+Delibird
+100
+Jolly
+Technician
+
+Heavy-Duty Boots
+Aerial Ace
+Ice Shard
+Rapid Spin
+U-turn
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Froslass
+100
+Timid
+Levitate
+
+Choice Specs
+Shadow Ball
+Ice Beam
+Psychic
+Thunderbolt
+31/0/31/31/31/31
+0/0/4/252/0/252
+
+
+917
+Gym Leader Candice Team 3 Rematch
+Level Cap:
+Format: Single Battle
+
+Glalie
+100
+Jolly
+Moody
+
+Focus Sash
+Stealth Rock
+Icicle Crash
+Stone Edge
+Iron Head
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Abomasnow
+100
+Adamant
+Thick Fat
+
+Assault Vest
+Wood Hammer
+Ice Punch
+Ice Shard
+Earthquake
+31/31/31/31/31/31
+248/252/0/0/0/8
+
+Weavile
+100
+Jolly
+Technician
+
+Life Orb
+Icicle Spear
+Aerial Ace
+Knock Off
+Ice Shard
+31/31/31/31/31/31
+0/252/4/0/0/252
+
+Jynx
+100
+Timid
+Dazzling
+
+Choice Scarf
+Freeze-Dry
+Psycho Boost
+Shadow Ball
+Focus Blast
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+Froslass
+100
+Timid
+Levitate
+
+Choice Specs
+Shadow Ball
+Ice Beam
+Psychic
+Thunderbolt
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+Regice
+100
+Modest
+Filter
+
+Heavy-Duty Boots
+Rock Polish
+Ice Beam
+Thunderbolt
+Focus Blast
+31/0/31/31/31/31
+0/0/4/252/0/252
+
+
+918
+Gym Leader Candice Team 4 Rematch
+Level Cap:
+Format: Single Battle
+
+Articuno
+100
+Timid
+Snow Warning
+
+Light Clay
+Aurora Veil
+Blizzard
+Hurricane
+U-turn
+31/31/31/31/31/31
+0/0/0/252/4/252
+
+Abomasnow
+100
+Modest
+Snow Warning
+
+Icy Rock
+Blizzard
+Leaf Storm
+Earth Power
+Giga Drain
+31/0/31/31/31/31
+248/0/0/252/0/8
+
+Rotom
+100
+Timid
+Levitate
+
+Heavy-Duty Boots
+Blizzard
+Volt Switch
+Will-O-Wisp
+Hex
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+Glaceon
+100
+Modest
+Slush Rush
+
+Choice Specs
+Blizzard
+Extrasensory
+Earth Power
+Freeze-Dry
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+Cloyster
+100
+Adamant
+Skill Link
+
+White Herb
+Shell Smash
+Rock Blast
+Icicle Spear
+Liquidation
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Froslass
+100
+Timid
+Levitate
+
+Choice Specs
+Shadow Ball
+Ice Beam
+Psychic
+Thunderbolt
 31/0/31/31/31/31
 0/0/0/252/4/252
 
@@ -27074,6 +29426,342 @@ Knock Off
 Play Rough
 31/31/31/31/31/31
 0/252/0/0/4/252
+
+
+919
+Gym Leader Volkner Team 1 Rematch
+Level Cap:
+Format: Single Battle
+
+Pelipper
+100
+Bold
+Drizzle
+
+Damp Rock
+U-turn
+Scald
+Hurricane
+Defog
+31/31/31/31/31/31
+248/0/252/0/0/8
+
+Pachirisu
+100
+Calm
+Prankster
+
+Leftovers
+Super Fang
+Encore
+Volt Switch
+Thunder Wave
+31/0/31/31/31/31
+252/0/4/0/252/0
+
+Minun
+100
+Adamant
+Galvanize
+
+Air Balloon
+Extreme Speed
+Body Slam
+Wish
+Volt Switch
+31/31/31/31/31/31
+252/252/0/0/0/4
+
+Rotom
+100
+Timid
+Motor Drive
+
+Heavy-Duty Boots
+Thunder
+Volt Switch
+Air Slash
+Thunder Wave
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+Electivire
+100
+Adamant
+Iron Fist
+
+Choice Band
+Thunder Punch
+Close Combat
+Ice Punch
+Mach Punch
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Zapdos
+100
+Timid
+Pressure
+
+Heavy-Duty Boots
+Weather Ball
+Thunder
+Hurricane
+Volt Switch
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+
+920
+Gym Leader Volkner Team 2 Rematch
+Level Cap:
+Format: Single Battle
+
+Electrode
+100
+Rash
+Electric Surge
+
+Terrain Extender
+Volt Switch
+Explosion
+(No Move)
+(No Move)
+31/31/31/31/31/31
+0/4/0/252/0/252
+
+Raichu
+100
+Jolly
+Galvanize
+
+Life Orb
+Knock Off
+Extreme Speed
+Ice Punch
+Volt Switch
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Plusle
+100
+Bold
+Prankster
+
+Air Balloon
+Wish
+Volt Switch
+Thunder Wave
+Encore
+31/0/31/31/31/31
+252/0/252/0/4/0
+
+Luxray
+100
+Timid
+Guts
+
+Flame Orb
+Sucker Punch
+Volt Switch
+Wild Charge
+Superpower
+31/31/31/31/31/31
+0/0/0/252/4/252
+
+Electivire
+100
+Adamant
+Iron Fist
+
+Choice Scarf
+Thunder Punch
+Close Combat
+Ice Punch
+Fire Punch
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Raikou
+100
+Timid
+Volt Absorb
+
+Choice Specs
+Scald
+Thunderbolt
+Volt Switch
+Aura Sphere
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+
+921
+Gym Leader Volkner Team 3 Rematch
+Level Cap:
+Format: Single Battle
+
+Jolteon
+100
+Timid
+Competitive
+
+Air Balloon
+Volt Switch
+Thunderbolt
+Extrasensory
+Grass Knot
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+Ambipom
+100
+Modest
+Technician
+
+Life Orb
+Hidden Power
+Water Pulse
+U-turn
+Beat Up
+31/30/31/31/31/31
+0/4/0/252/0/252
+
+Octillery
+100
+Brave
+Sniper
+
+Scope Lens
+Scald
+Bullet Seed
+Fire Blast
+Gunk Shot
+31/31/31/31/31/31
+252/252/0/4/0/0
+
+Magnezone
+100
+Sassy
+Analytic
+
+Air Balloon
+Flash Cannon
+Rain Dance
+Thunder
+Volt Switch
+31/0/31/31/31/31
+248/0/8/0/252/0
+
+Electivire
+100
+Hasty
+Iron Fist
+
+Life Orb
+Thunder Punch
+Volt Switch
+Close Combat
+Mach Punch
+31/31/31/31/31/31
+0/252/0/4/0/252
+
+Zapdos
+100
+Bold
+Lightning Rod
+
+Heavy-Duty Boots
+Volt Switch
+Heat Wave
+Thunderbolt
+Roost
+31/0/31/31/31/31
+252/0/252/4/0/0
+
+
+922
+Gym Leader Volkner Team 4 Rematch
+Level Cap:
+Format: Single Battle
+
+Electrode
+100
+Timid
+Electric Surge
+
+Light Clay
+Volt Switch
+Light Screen
+Reflect
+Explosion
+31/31/31/31/31/31
+252/0/0/4/0/252
+
+Ampharos
+100
+Modest
+Mold Breaker
+
+Leftovers
+Thunderbolt
+Dragon Pulse
+Flash Cannon
+Tail Glow
+31/0/31/31/31/31
+252/0/0/252/0/4
+
+Manectric
+100
+Timid
+Intimidate
+
+Choice Specs
+Overheat
+Volt Switch
+Hidden Power
+Thunderbolt
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+Lanturn
+100
+Bold
+Water Absorb
+
+Leftovers
+Scald
+Thunderbolt
+Thunder Wave
+Volt Switch
+31/0/31/31/31/31
+252/0/252/0/4/0
+
+Electivire
+100
+Jolly
+Iron Fist
+
+Choice Band
+Thunder Punch
+Close Combat
+Ice Punch
+Mach Punch
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Raikou
+100
+Timid
+Volt Absorb
+
+Air Balloon
+Thunderbolt
+Extrasensory
+Calm Mind
+Shadow Ball
+31/0/31/31/31/31
+0/0/0/252/4/252
 
 
 363
@@ -32420,6 +35108,1686 @@ Psychic
 Ice Beam
 31/0/31/31/31/31
 0/0/0/252/252/4
+
+
+923
+Elite Four Aaron Team 1 Rematch
+Level Cap:
+Format: Single Battle
+
+Illumise
+100
+Careful
+Prankster
+
+Light Clay
+Reflect
+Light Screen
+U-turn
+Defog
+31/31/31/31/31/31
+252/0/4/0/252/0
+
+Scizor
+100
+Adamant
+Technician
+
+Choice Band
+Bullet Punch
+U-turn
+Aerial Ace
+Knock Off
+31/31/31/31/31/31
+248/252/0/0/0/8
+
+Dustox
+100
+Modest
+Shield Dust
+
+Focus Sash
+Quiver Dance
+Sludge Bomb
+Bug Buzz
+Giga Drain
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+Armaldo
+100
+Adamant
+Tough Claws
+
+Choice Band
+X-Scissor
+Knock Off
+Stone Edge
+Aqua Jet
+31/31/31/31/31/31
+252/252/0/0/4/0
+
+Drapion
+100
+Jolly
+Sniper
+
+Scope Lens
+Night Slash
+X-Scissor
+Cross Poison
+Knock Off
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Flygon
+100
+Modest
+Levitate
+
+Leftovers
+Quiver Dance
+Boomburst
+Earth Power
+Dragon Pulse
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+
+924
+Elite Four Aaron Team 2 Rematch
+Level Cap:
+Format: Single Battle
+
+Ariados
+100
+Jolly
+Swarm
+
+Focus Sash
+Sticky Web
+Shadow Sneak
+Leech Life
+Sucker Punch
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Heracross
+100
+Jolly
+Skill Link
+
+Life Orb
+Arm Thrust
+Pin Missile
+Rock Blast
+Knock Off
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Pinsir
+100
+Jolly
+Moxie
+
+Choice Band
+Close Combat
+Megahorn
+U-turn
+Earthquake
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Ledian
+100
+Jolly
+Iron Fist
+
+Choice Band
+Meteor Assault
+Close Combat
+Lunge
+U-turn
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Drapion
+100
+Jolly
+Sniper
+
+Scope Lens
+Night Slash
+X-Scissor
+Cross Poison
+Knock Off
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Shaymin
+100
+Modest
+Serene Grace
+
+Life Orb
+Air Slash
+Seed Flare
+Earth Power
+Dazzling Gleam
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+
+925
+Elite Four Aaron Team 3 Rematch
+Level Cap:
+Format: Single Battle
+
+Parasect
+100
+Adamant
+Oblivious
+
+Focus Sash
+Spore
+Knock Off
+U-turn
+Seed Bomb
+31/31/31/31/31/31
+248/252/0/0/8/0
+
+Ninjask
+100
+Jolly
+Speed Boost
+
+Focus Sash
+Protect
+Baton Pass
+Substitute
+X-Scissor
+31/31/31/31/31/31
+248/8/0/0/0/252
+
+Heracross
+100
+Jolly
+Guts
+
+Flame Orb
+Close Combat
+Megahorn
+Stone Edge
+Knock Off
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Armaldo
+100
+Adamant
+Tough Claws
+
+Life Orb
+Stone Edge
+Liquidation
+Knock Off
+Earthquake
+31/31/31/31/31/31
+252/252/0/0/4/0
+
+Drapion
+100
+Jolly
+Sniper
+
+Scope Lens
+Night Slash
+X-Scissor
+Cross Poison
+Knock Off
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Flygon
+100
+Timid
+Levitate
+
+Choice Specs
+Bug Buzz
+Boomburst
+Earth Power
+Dragon Pulse
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+
+926
+Elite Four Aaron Team 4 Rematch
+Level Cap:
+Format: Single Battle
+
+Drapion
+100
+Impish
+Battle Armor
+
+Leftovers
+Toxic Spikes
+Parting Shot
+Knock Off
+Protect
+31/31/31/31/31/31
+252/4/252/0/0/0
+
+Beautifly
+100
+Timid
+Merciless
+
+Choice Scarf
+Hurricane
+Energy Ball
+Bug Buzz
+U-turn
+31/31/31/31/31/31
+0/0/0/252/4/252
+
+Beedrill
+100
+Jolly
+Adaptability
+
+Choice Band
+Poison Jab
+Megahorn
+Drill Run
+Drill Peck
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Vespiquen
+100
+Careful
+Pressure
+
+Leftovers
+Heal Order
+Defend Order
+Attack Order
+Protect
+31/31/31/31/31/31
+252/4/0/0/252/0
+
+Scizor
+100
+Adamant
+Technician
+
+Leftovers
+Bullet Punch
+Bug Bite
+Roost
+Swords Dance
+31/31/31/31/31/31
+252/252/0/0/0/4
+
+Shaymin
+100
+Modest
+Serene Grace
+
+Life Orb
+Air Slash
+Seed Flare
+Earth Power
+Dazzling Gleam
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+
+927
+Elite Four Bertha Team 1 Rematch
+Level Cap:
+Format: Single Battle
+
+Tyranitar
+100
+Adamant
+Sand Stream
+
+Smooth Rock
+Stealth Rock
+Thunder Wave
+Stone Edge
+Crunch
+31/31/31/31/31/31
+252/4/0/0/252/0
+
+Sandslash
+100
+Adamant
+Sand Rush
+
+Life Orb
+Earthquake
+Knock Off
+Poison Jab
+Stone Edge
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Garchomp
+100
+Timid
+Sand Veil
+
+Bright Powder
+Fire Blast
+Dragon Pulse
+Hidden Power
+Earth Power
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+Hippowdon
+100
+Adamant
+Sand Stream
+
+Smooth Rock
+Earthquake
+Iron Head
+Stone Edge
+Ice Fang
+31/31/31/31/31/31
+252/252/0/0/0/4
+
+Golem
+100
+Adamant
+Sand Force
+
+Assault Vest
+Stone Edge
+Earthquake
+Fire Punch
+Thunder Punch
+31/31/31/31/31/31
+252/252/0/0/4/0
+
+Rhyperior
+100
+Adamant
+Solid Rock
+
+Weakness Policy
+Stone Edge
+Earthquake
+Ice Punch
+Thunder Punch
+31/31/31/31/31/31
+252/252/0/0/4/0
+
+
+928
+Elite Four Bertha Team 2 Rematch
+Level Cap:
+Format: Single Battle
+
+Hippowdon
+100
+Impish
+Sand Stream
+
+Smooth Rock
+Earthquake
+Slack Off
+Toxic
+Body Press
+31/31/31/31/31/31
+252/4/252/0/0/0
+
+Steelix
+100
+Brave
+Sand Force
+
+Choice Band
+Earthquake
+Gyro Ball
+Stone Edge
+Thunder Fang
+31/31/31/31/31/0
+252/252/0/0/4/0
+
+Gliscor
+100
+Jolly
+Poison Heal
+
+Toxic Orb
+Swords Dance
+Protect
+Earthquake
+Knock Off
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Mamoswine
+100
+Jolly
+Thick Fat
+
+Choice Band
+Icicle Crash
+Earthquake
+Ice Shard
+Stone Edge
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Rhyperior
+100
+Adamant
+Solid Rock
+
+Weakness Policy
+Stone Edge
+Earthquake
+Ice Punch
+Thunder Punch
+31/31/31/31/31/31
+252/252/0/0/4/0
+
+Regirock
+100
+Adamant
+Solid Rock
+
+Leftovers
+Stone Edge
+Earthquake
+Fire Punch
+Toxic
+31/31/31/31/31/31
+252/252/0/0/4/0
+
+
+929
+Elite Four Bertha Team 3 Rematch
+Level Cap:
+Format: Single Battle
+
+Nidoqueen
+100
+Modest
+Mold Breaker
+
+Leftovers
+Spikes
+Blizzard
+Sludge Wave
+Thunder
+31/0/31/31/31/31
+252/0/0/252/4/0
+
+Nidoking
+100
+Timid
+Sheer Force
+
+Life Orb
+Earth Power
+Sludge Wave
+Ice Beam
+Thunderbolt
+31/0/31/31/31/31
+0/0/0/252/4/25
+
+Donphan
+100
+Adamant
+Technician
+
+Choice Band
+Bulldoze
+Rock Tomb
+Ice Shard
+Knock Off
+31/31/31/31/31/31
+248/252/0/0/8/0
+
+Whiscash
+100
+Adamant
+Simple
+
+Focus Sash
+Dragon Dance
+Earthquake
+Liquidation
+Rock Slide
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Rhyperior
+100
+Adamant
+Solid Rock
+
+Weakness Policy
+Stone Edge
+Earthquake
+Ice Punch
+Thunder Punch
+31/31/31/31/31/31
+252/252/0/0/4/0
+
+Regirock
+100
+Adamant
+Solid Rock
+
+Choice Band
+Stone Edge
+Earthquake
+Fire Punch
+Thunder Punch
+31/31/31/31/31/31
+252/252/0/0/4/0
+
+
+930
+Elite Four Bertha Team 4 Rematch
+Level Cap:
+Format: Single Battle
+
+Rhyperior
+100
+Adamant
+Solid Rock
+
+Weakness Policy
+Stealth Rock
+Earthquake
+Stone Edge
+Ice Punch
+31/31/31/31/31/31
+252/252/0/0/4/0
+
+Torterra
+100
+Adamant
+Solid Rock
+
+White Herb
+Shell Smash
+Wood Hammer
+Earthquake
+Iron Head
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Camerupt
+100
+Modest
+Sheer Force
+
+Choice Specs
+Fire Blast
+Earth Power
+Flash Cannon
+Hidden Power
+31/0/31/31/31/31
+248/0/0/252/8/0
+
+Gastrodon
+100
+Bold
+Storm Drain
+
+Leftovers
+Recover
+Toxic
+Scald
+Earth Power
+31/31/31/31/31/31
+252/0/252/0/4/0
+
+Dugtrio
+100
+Jolly
+Arena Trap
+
+Focus Sash
+Earthquake
+Stone Edge
+Double-Edge
+Sucker Punch
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Tyranitar
+100
+Jolly
+Sand Stream
+
+Lum Berry
+Dragon Dance
+Stone Edge
+Earthquake
+Heavy Slam
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+
+931
+Elite Four Flint Team 1 Rematch
+Level Cap:
+Format: Single Battle
+
+Infernape
+100
+Adamant
+Unburden
+
+Focus Sash
+Close Combat
+Thunder Punch
+Blaze Kick
+Acrobatics
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Charizard
+100
+Timid
+Levitate
+
+White Herb
+Overheat
+Air Slash
+Draco Meteor
+Hurricane
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+Arcanine
+100
+Jolly
+Intimidate
+
+Choice Band
+Flare Blitz
+Wild Charge
+Extreme Speed
+Close Combat
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Houndoom
+100
+Hasty
+Adaptability
+
+Life Orb
+Dark Pulse
+Fire Blast
+Sludge Bomb
+Sucker Punch
+31/31/31/31/31/31
+0/4/0/252/0/252
+
+Magmortar
+100
+Timid
+Mega Launcher
+
+Choice Scarf
+Fire Blast
+Aura Sphere
+Scald
+Dark Pulse
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+Heatran
+100
+Timid
+Flame Body
+
+Leftovers
+Magma Storm
+Earth Power
+Taunt
+Toxic
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+
+932
+Elite Four Flint Team 2 Rematch
+Level Cap:
+Format: Single Battle
+
+Rotom
+100
+Timid
+Levitate
+
+Choice Scarf
+Trick
+Overheat
+Thunderbolt
+Volt Switch
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+Blaziken
+100
+Adamant
+Speed Boost
+
+Life Orb
+Protect
+High Jump Kick
+Flare Blitz
+Stone Edge
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Rapidash
+100
+Jolly
+Reckless
+
+Choice Band
+Flare Blitz
+Double-Edge
+Wild Charge
+Megahorn
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Typhlosion
+100
+Timid
+Adaptability
+
+Choice Scarf
+Eruption
+Focus Blast
+Overheat
+Earth Power
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+Magmortar
+100
+Timid
+Mega Launcher
+
+Choice Scarf
+Fire Blast
+Aura Sphere
+Scald
+Dark Pulse
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+Entei
+100
+Jolly
+Inner Focus
+
+Choice Band
+Sacred Fire
+Flare Blitz
+Stone Edge
+Extreme Speed
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+
+933
+Elite Four Flint Team 3 Rematch
+Level Cap:
+Format: Single Battle
+
+Camerupt
+100
+Modest
+Sheer Force
+
+Assault Vest
+Fire Blast
+Earth Power
+Flash Cannon
+Hidden Power
+31/0/31/31/31/31
+248/0/0/252/8/0
+
+Ninetales
+100
+Timid
+Cursed Body
+
+Choice Specs
+Fire Blast
+Moonblast
+Shadow Ball
+Energy Ball
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+Houndoom
+100
+Timid
+Adaptability
+
+Focus Sash
+Dark Pulse
+Fire Blast
+Sludge Bomb
+Nasty Plot
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+Blaziken
+100
+Adamant
+Speed Boost
+
+Life Orb
+Protect
+High Jump Kick
+Flare Blitz
+Stone Edge
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Magmortar
+100
+Timid
+Mega Launcher
+
+Choice Scarf
+Fire Blast
+Aura Sphere
+Scald
+Dark Pulse
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+Heatran
+100
+Timid
+Flame Body
+
+Leftovers
+Magma Storm
+Earth Power
+Taunt
+Toxic
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+
+934
+Elite Four Flint Team 4 Rematch
+Level Cap:
+Format: Single Battle
+
+Torkoal
+100
+Sassy
+Drought
+
+Heat Rock
+Stealth Rock
+Explosion
+Gyro Ball
+Will-O-Wisp
+31/31/31/31/31/0
+248/8/0/0/252/0
+
+Flareon
+100
+Adamant
+Guts
+
+Toxic Orb
+Flare Blitz
+Play Rough
+Close Combat
+Quick Attack
+31/31/31/31/31/31
+252/252/0/0/4/0
+
+Charizard
+100
+Timid
+Drought
+
+Heat Rock
+Fire Blast
+Solar Beam
+Draco Meteor
+Air Slash
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+Infernape
+100
+Hasty
+Iron Fist
+
+Life Orb
+Close Combat
+Fire Pledge
+Thunder Punch
+Mach Punch
+31/31/31/31/31/31
+0/252/0/4/0/252
+
+Magmortar
+100
+Timid
+Mega Launcher
+
+Choice Scarf
+Fire Blast
+Aura Sphere
+Scald
+Dark Pulse
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+Entei
+100
+Jolly
+Inner Focus
+
+Choice Band
+Sacred Fire
+Flare Blitz
+Stone Edge
+Extreme Speed
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+
+935
+Elite Four Lucian Team 1 Rematch
+Level Cap:
+Format: Single Battle
+
+Noctowl
+100
+Calm
+Intimidate
+
+Flame Orb
+Psycho Shift
+Hurricane
+Psychic
+Roost
+31/0/31/31/31/31
+248/0/0/8/252/0
+
+Slowbro
+100
+Bold
+Regenerator
+
+Leftovers
+Future Sight
+Scald
+Slack Off
+Teleport
+31/0/31/31/31/31
+252/0/252/4/0/0
+
+Medicham
+100
+Jolly
+Pure Power
+
+Assault Vest
+Psycho Cut
+Bullet Punch
+Drain Punch
+Thunder Punch
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Jynx
+100
+Timid
+Dazzling
+
+Choice Scarf
+Psycho Boost
+Freeze-Dry
+Ice Beam
+Shadow Ball
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+Gallade
+100
+Jolly
+Inner Focus
+
+Life Orb
+Close Combat
+Zen Headbutt
+Shadow Sneak
+Ice Punch
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Latios
+100
+Timid
+Levitate
+
+Choice Specs
+Draco Meteor
+Psychic
+Surf
+Dragon Pulse
+31/31/31/31/31/31
+0/0/4/252/0/252
+
+
+936
+Elite Four Lucian Team 2 Rematch
+Level Cap:
+Format: Single Battle
+
+Exeggutor
+100
+Modest
+Harvest
+
+Wiki Berry
+Giga Drain
+Calm Mind
+Sleep Powder
+Ancient Power
+31/0/31/31/31/31
+252/0/0/252/4/0
+
+Grumpig
+100
+Bold
+Prankster
+
+Leftovers
+Will-O-Wisp
+Substitute
+Psychic
+Calm Mind
+31/0/31/31/31/31
+248/0/252/0/8/0
+
+Starmie
+100
+Timid
+Natural Cure
+
+Choice Specs
+Hydro Pump
+Ice Beam
+Power Gem
+Thunderbolt
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+Alakazam
+100
+Timid
+Magic Guard
+
+Life Orb
+Psychic
+Shadow Ball
+Dazzling Gleam
+Focus Blast
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+Gallade
+100
+Jolly
+Inner Focus
+
+Life Orb
+Close Combat
+Zen Headbutt
+Shadow Sneak
+Ice Punch
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Latias
+100
+Timid
+Levitate
+
+Heavy-Duty Boots
+Calm Mind
+Stored Power
+Ice Beam
+Roost
+31/31/31/31/31/31
+248/0/8/0/0/252
+
+
+937
+Elite Four Lucian Team 3 Rematch
+Level Cap:
+Format: Single Battle
+
+Xatu
+100
+Timid
+Magic Bounce
+
+Light Clay
+Reflect
+Light Screen
+Psychic
+U-turn
+31/31/31/31/31/31
+252/0/0/4/0/252
+
+Slowking
+100
+Calm
+Regenerator
+
+Leftovers
+Future Sight
+Scald
+Slack Off
+Teleport
+31/0/31/31/31/31
+252/0/4/0/252/0
+
+Girafarig
+100
+Timid
+Contrary
+
+Choice Scarf
+Psycho Boost
+Dazzling Gleam
+Energy Ball
+Trick
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+Metagross
+100
+Adamant
+Iron Fist
+
+Choice Band
+Meteor Mash
+Zen Headbutt
+Bullet Punch
+Ice Punch
+31/31/31/31/31/31
+252/252/0/0/4/0
+
+Gallade
+100
+Jolly
+Inner Focus
+
+Life Orb
+Close Combat
+Zen Headbutt
+Shadow Sneak
+Ice Punch
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Latios
+100
+Timid
+Levitate
+
+Choice Specs
+Draco Meteor
+Psychic
+Surf
+Dragon Pulse
+31/31/31/31/31/31
+0/0/4/252/0/252
+
+
+938
+Elite Four Lucian Team 4 Rematch
+Level Cap:
+Format: Single Battle
+
+Claydol
+100
+Modest
+Psychic Surge
+
+Terrain Extender
+Psychic
+Earth Power
+Shadow Ball
+Teleport
+31/0/31/31/31/31
+252/0/0/252/4/0
+
+Alakazam
+100
+Timid
+Download
+
+Choice Scarf
+Psychic
+Shadow Ball
+Dazzling Gleam
+Focus Blast
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+Espeon
+100
+Bold
+Magic Bounce
+
+Focus Sash
+Calm Mind
+Baton Pass
+Stored Power
+Morning Sun
+31/0/31/31/31/31
+252/0/4/0/252/0
+
+Bronzong
+100
+Calm
+Levitate
+
+Leftovers
+Iron Defense
+Body Press
+Rest
+Sleep Talk
+31/0/31/31/31/31
+252/0/4/0/252/0
+
+Gallade
+100
+Jolly
+Inner Focus
+
+Life Orb
+Close Combat
+Zen Headbutt
+Shadow Sneak
+Ice Punch
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Latias
+100
+Timid
+Levitate
+
+Heavy-Duty Boots
+Calm Mind
+Stored Power
+Ice Beam
+Roost
+31/31/31/31/31/31
+248/0/8/0/0/252
+
+
+939
+Champion Cynthia Team 1 Rematch
+Level Cap:
+Format: Single Battle
+
+Blissey
+100
+Bold
+Serene Grace
+
+Leftovers
+Stealth Rock
+Soft-Boiled
+Ice Beam
+Thunderbolt
+31/0/31/31/31/31
+252/0/252/4/0/0
+
+Typhlosion
+100
+Timid
+Adaptability
+
+Choice Scarf
+Eruption
+Focus Blast
+Overheat
+Earth Power
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+Mismagius
+100
+Timid
+Levitate
+
+Choice Specs
+Shadow Ball
+Moonblast
+Mystical Fire
+Psychic
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+Staraptor
+100
+Adamant
+Reckless
+
+Choice Scarf
+Brave Bird
+Double-Edge
+U-turn
+Close Combat
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Garchomp
+100
+Naive
+Rough Skin
+
+Choice Scarf
+Outrage
+Earthquake
+Fire Blast
+Dual Chop
+31/31/31/31/31/31
+0/252/0/4/0/252
+
+Rayquaza
+100
+Adamant
+Delta Stream
+
+Life Orb
+Dragon Ascent
+Dragon Dance
+Dragon Claw
+Earthquake
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+
+940
+Champion Cynthia Team 2 Rematch
+Level Cap:
+Format: Single Battle
+
+Staraptor
+100
+Jolly
+Intimidate
+
+Choice Band
+Brave Bird
+Close Combat
+Quick Attack
+U-turn
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Togekiss
+100
+Modest
+Serene Grace
+
+Leftovers
+Air Slash
+Moonblast
+Nasty Plot
+Thunder Wave
+31/0/31/31/31/31
+252/0/0/252/4/0
+
+Ampharos
+100
+Modest
+Mold Breaker
+
+Assault Vest
+Thunder
+Draco Meteor
+Focus Blast
+Flash Cannon
+31/0/31/31/31/31
+248/0/0/252/8/0
+
+Toxicroak
+100
+Jolly
+Dry Skin
+
+Focus Sash
+Swords Dance
+Bullet Punch
+Drain Punch
+Gunk Shot
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Garchomp
+100
+Naive
+Rough Skin
+
+Choice Scarf
+Outrage
+Earthquake
+Fire Blast
+Dual Chop
+31/31/31/31/31/31
+0/252/0/4/0/252
+
+Giratina
+100
+Quiet
+Levitate
+
+Griseous Orb
+Hex
+Draco Meteor
+Shadow Sneak
+Will-O-Wisp
+31/31/31/31/31/31
+0/12/216/0/28/252
+
+
+941
+Champion Cynthia Team 3 Rematch
+Level Cap:
+Format: Single Battle
+
+Roserade
+100
+Timid
+Natural Cure
+
+Focus Sash
+Sleep Powder
+Spikes
+Leaf Storm
+Sludge Bomb
+31/0/31/31/31/31
+252/0/0/4/0/252
+
+Milotic
+100
+Calm
+Marvel Scale
+
+Flame Orb
+Toxic
+Hydro Pump
+Mirror Coat
+Recover
+31/0/31/31/31/31
+252/0/0/4/252/0
+
+Lopunny
+100
+Jolly
+Scrappy
+
+Choice Band
+High Jump Kick
+Frustration
+Ice Punch
+Thunder Punch
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Lucario
+100
+Timid
+Adaptability
+
+Choice Specs
+Flash Cannon
+Aura Sphere
+Vacuum Wave
+Shadow Ball
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+Garchomp
+100
+Naive
+Rough Skin
+
+Choice Scarf
+Outrage
+Earthquake
+Fire Blast
+Dual Chop
+31/31/31/31/31/31
+0/252/0/4/0/252
+
+Rayquaza
+100
+Adamant
+Delta Stream
+
+Life Orb
+Dragon Ascent
+Dragon Dance
+Dragon Claw
+Earthquake
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+
+942
+Champion Cynthia Team 4 Rematch
+Level Cap:
+Format: Single Battle
+
+Garchomp
+100
+Jolly
+Rough Skin
+
+Yache Berry
+Stealth Rock
+Earthquake
+Toxic
+Protect
+31/31/31/31/31/31
+252/0/136/0/0/120
+
+Gastrodon
+100
+Modest
+Storm Drain
+
+Leftovers
+Hydro Cannon
+Earth Power
+Recover
+Ice Beam
+31/0/31/31/31/31
+252/0/0/4/0/252
+
+Spiritomb
+100
+Modest
+Pressure
+
+Leftovers
+Strength Sap
+Calm Mind
+Dark Pulse
+Shadow Ball
+31/0/31/31/31/31
+248/0/0/252/8/0
+
+Clefable
+100
+Calm
+Magic Guard
+
+Leftovers
+Wish
+Teleport
+Moonblast
+Protect
+31/0/31/31/31/31
+252/0/0/4/252/0
+
+Lickilicky
+100
+Adamant
+Own Tempo
+
+Leftovers
+Thrash
+Knock Off
+Swords Dance
+Zen Headbutt
+31/31/31/31/31/31
+252/252/0/0/4/0
+
+Giratina
+100
+Quiet
+Levitate
+
+Griseous Orb
+Hex
+Draco Meteor
+Shadow Sneak
+Will-O-Wisp
+31/31/31/31/31/31
+0/12/216/0/28/252
 
 
 666
