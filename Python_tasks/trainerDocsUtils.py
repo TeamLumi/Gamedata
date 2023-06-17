@@ -140,6 +140,8 @@ def write_to_trainer_docs_file(trainer, trainer_name):
     link = trainer['link']
     team = trainer['team']
     level_cap = "Level Cap:"
+    if rematch == 1:
+        trainer_name += " Rematch"
     with open(trainer_doc_data_file_path, "a") as f:
         f.write(f"{trainerId}\n{trainer_name}\n{level_cap}\n{battle_format}\n")
         for mon in team:

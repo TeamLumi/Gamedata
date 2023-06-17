@@ -7,6 +7,23 @@ PEARL_SPEAR_PILLAR = "d05r0115"
 EVE_AREA_NAME = "SODATEYA"
 MORIMOTO = "MORIMOTO_01"
 
+# Gym Leader lookup based on the file name
+GYM_LEADER_LOOKUP = {
+    "c03gym0101":"roark",
+    "c04gym0102":"gardenia",
+    "c05gym0113":"fantina",
+    "c07gym0101":"maylene",
+    "c06gym0101":"wake",
+    "c02gym0101":"byron",
+    "c09gym0101":"candice",
+    "c08gym0103":"volkner",
+    "c10r0111":"cynthia",
+    "c10r0109":"lucian",
+    "c10r0107":"flint",
+    "c10r0105":"bertha",
+    "c10r0103":"aaron",
+}
+
 # Formats for the different battles
 SINGLE_FORMAT = "Single Battle"
 DOUBLE_FORMAT = "Double Battle"

@@ -124,12 +124,16 @@ def get_random_team_data(file_path, areaName, zoneID, trainerID1, trainerID2, lo
     '''
     This is called in the get_assorted_trainer_data for any trainers that have randomized teams.
     Soooo many branching paths here @.@
+    1. Master Type Trainers for Arceus Event
+    2. Celebi event trainers (gym Leaders from Johto)
+    3. Any Barry trainer that has randomized teams
+    4. Every other single trainer battle that has randomized teams
     '''
     trainers = []
 
-    def add_trainers(zoneID, trainer_ids, team_types=None):
+    def add_trainers(zoneID, trainer_ids, team_types=None, is_gym_rematch = 0):
         for trainer_id, team_type in zip(trainer_ids, team_types or []):
-            trainer = get_single_trainer(zoneID, trainer_id, trainer_ids, team_type)
+            trainer = get_single_trainer(zoneID, trainer_id, trainer_ids, team_type, is_gym_rematch)
             trainers.append(trainer)
         return trainers
 
@@ -151,10 +155,14 @@ def get_random_team_data(file_path, areaName, zoneID, trainerID1, trainerID2, lo
             trainers.append(trainer)
         return trainers
     else:
+        #print(trainerID1, trainerID2, lookup, zoneID)
         temp_trainer_IDs = parse_randomized_teams(file_path, lookup, team_num, None)
-        add_trainers(zoneID, temp_trainer_IDs)
+        is_gym_rematch = 0
+        if constants.REMATCH_SUBSTRING in lookup:
+            is_gym_rematch = 1
+        add_trainers(zoneID, temp_trainer_IDs, None, is_gym_rematch)
         for ID in temp_trainer_IDs:
-            trainer = get_single_trainer(zoneID, ID, temp_trainer_IDs, None)
+            trainer = get_single_trainer(zoneID, ID, temp_trainer_IDs, None, is_gym_rematch)
             trainers.append(trainer)
         return trainers
 
@@ -187,8 +195,8 @@ def get_assorted_trainer_data(file_path, areaName, zoneID, trainerID1, trainerID
         print("Lucas and Dawn's Single Battles are not yet supported:", areaName, args)
         return trainers
 
-def get_single_trainer(zoneID, ID, temp_IDs, name):
-    trainer = diff_trainer_data(None, zoneID, int(ID))
+def get_single_trainer(zoneID, ID, temp_IDs, name, is_gym_rematch=0):
+    trainer = diff_trainer_data(None, zoneID, int(ID), is_gym_rematch)
     if name in constants.STARTERS:
         # This is for Rival Battles for right now, it may have Lucas/Dawn battles eventually?
         trainer["name"] = f"{trainer['name']} {name.capitalize()} Team {str(temp_IDs.index(ID) + 1)}"
@@ -216,7 +224,7 @@ def get_single_trainer(zoneID, ID, temp_IDs, name):
     
     return trainer
 
-def get_trainer_data(zoneID, trainerID, method):
+def get_trainer_data(zoneID, trainerID, method, is_gym_rematch=0):
     TRAINER_TABLE = full_data['raw_trainer_data']
     trainer_data = TRAINER_TABLE['TrainerData'][trainerID]
     trainer_type = TRAINER_TABLE['TrainerType'][trainer_data['TypeID']]
@@ -252,7 +260,7 @@ def get_trainer_data(zoneID, trainerID, method):
         'zoneName': zoneName,
         'zoneId': int(zoneID),
         'trainerId': trainerID,
-        'rematch': 0,
+        'rematch': is_gym_rematch,
         'name': trainer_name,
         'type': trainer_label,
         'method': "",
@@ -285,6 +293,7 @@ def parse_randomized_teams(file_path, lookup, count, type):
         for line in f:
             substrings = line.split('\n')
             for substring in substrings:
+                is_rematch = True if constants.REMATCH_SUBSTRING in lookup and constants.REMATCH_SUBSTRING in substring else False
                 if found_lookup and regex_lookup in substring:
                     match = re.split(constants.LDVAL_PATTERN, substring)[2]
                     if match:
@@ -292,7 +301,9 @@ def parse_randomized_teams(file_path, lookup, count, type):
                         trainers.append(trainer_id)
                         if len(trainers) == count:
                             return trainers
-                elif not found_lookup and substring.startswith(lookup) and constants.REMATCH_SUBSTRING not in substring:
+                elif not found_lookup and substring.startswith(lookup):
+                    found_lookup = True
+                elif not found_lookup and substring.startswith(lookup) and is_rematch:
                     found_lookup = True
     return trainers
 
@@ -334,7 +345,7 @@ def get_support_trainers_data(file_path, area_name, support_name, zoneID):
         trainers.append(trainer)
     return trainers
 
-def diff_trainer_data(event, zoneID, trainerID):
+def diff_trainer_data(event, zoneID, trainerID, is_gym_rematch=0):
     '''
     The event variable is for the place_datas function
     The zoneID and trainerID is for the ev_script function
@@ -350,7 +361,7 @@ def diff_trainer_data(event, zoneID, trainerID):
         trainer['format'] = constants.SINGLE_FORMAT
         return trainer
     else:
-        trainer = get_trainer_data(zoneID, trainerID, constants.SCRIPTED_METHOD)
+        trainer = get_trainer_data(zoneID, trainerID, constants.SCRIPTED_METHOD, is_gym_rematch)
         trainer['method'] = constants.SCRIPTED_METHOD
         return trainer
 
@@ -469,10 +480,18 @@ def get_temp_var_trainer_data(file_path, areaName, zoneID, trainerID1, trainerID
     if constants.GYM_AREA_NAME in areaName:
         gym_leaders = get_random_team_data(file_path, areaName, zoneID, trainerID1, trainerID2, gym_leader_lookup, 4)
         trainers.extend(gym_leaders)
+
+        gym_leader_rematch_lookup = f"ev_{areaName.lower()}_randomteam_{constants.GYM_LEADER_LOOKUP[areaName.lower()]}_rematch"
+        rematch_gym_leaders = get_random_team_data(file_path, areaName, zoneID, trainerID1, trainerID2, gym_leader_rematch_lookup, 4)
+        trainers.extend(rematch_gym_leaders)
         return trainers
     elif constants.E4_AREA_NAME in areaName and constants.ROOM_AREA_NAME not in areaName:
         e4_trainers = get_random_team_data(file_path, areaName, zoneID, trainerID1, trainerID2, gym_leader_lookup, 4)
         trainers.extend(e4_trainers)
+
+        e4_trainers_lookup = f"ev_{areaName.lower()}_randomteam_{constants.GYM_LEADER_LOOKUP[areaName.lower()]}_rematch"
+        rematch_e4_trainers = get_random_team_data(file_path, areaName, zoneID, trainerID1, trainerID2, e4_trainers_lookup, 4)
+        trainers.extend(rematch_e4_trainers)
         return trainers
     assorted_trainers = get_assorted_trainer_data(file_path, areaName, zoneID, trainerID1, trainerID2, args)
     trainers.extend(assorted_trainers)
