@@ -174,6 +174,29 @@ def write_trainer_docs(trainer_list):
 
         write_to_trainer_docs_file(trainer, full_trainer_name)
 
+def generate_repeat_trainer_name(trainer, index_dict):
+    zone_name = f"{trainer['zoneName']} Trainers"
+    name = f"{trainer['type']} {trainer['name']}"
+
+    if constants.REPEAT_TRAINERS_LIST[0] in name:
+        index_dict['Grunt'] += 1
+        return get_trainer_name(name, zone_name, index_dict['Grunt'])
+    elif constants.REPEAT_TRAINERS_LIST[1] in name:
+        STARTER_INDEX = constants.STARTERS[index_dict['Lucas']].capitalize()
+        index_dict['Lucas'] += 1
+        return get_trainer_name(name, zone_name, STARTER_INDEX)
+    elif constants.REPEAT_TRAINERS_LIST[2] in name:
+        STARTER_INDEX = constants.STARTERS[index_dict['Dawn']].capitalize()
+        index_dict['Dawn'] += 1
+        return get_trainer_name(name, zone_name, STARTER_INDEX)
+    elif constants.REPEAT_TRAINERS_LIST[3] in name:
+        if index_dict['Barry'] < 3:
+            STARTER_INDEX = constants.STARTERS[index_dict['Barry']].capitalize()
+        else:
+            STARTER_INDEX = "End Game"
+        index_dict['Barry'] += 1
+        return get_trainer_name(name, zone_name, STARTER_INDEX)
+
 def write_tracker_docs(trainers_list):
     '''
     Requires the trainers sorted for the Nuzlocke Tracker
@@ -183,34 +206,20 @@ def write_tracker_docs(trainers_list):
 
     for zone in trainers_list.keys():
         zone_trainers = []
-        GRUNT_INDEX = 0
-        LUCAS_INDEX = 0
-        DAWN_INDEX = 0
-        BARRY_INDEX = 0
+        index_dict = {
+            "Grunt": 0,
+            "Lucas": 0,
+            "Dawn": 0,
+            "Barry": 0,
+        }
         for trainer in trainers_list[zone]:
             zone_trainer = {}
             zone_name = f"{trainer['zoneName']} Trainers"
             zone_id = trainer['zoneId']
             name = f"{trainer['type']} {trainer['name']}"
-            if any(substring in name for substring in constants.REPEAT_TRAINERS_LIST) and not re.findall(constants.TEAM_REGEX, name):
-                if constants.REPEAT_TRAINERS_LIST[0] in name:
-                    GRUNT_INDEX += 1
-                    full_trainer_name = get_trainer_name(name, zone_name, GRUNT_INDEX)
-                elif constants.REPEAT_TRAINERS_LIST[1] in name:
-                    STARTER_INDEX = constants.STARTERS[LUCAS_INDEX].capitalize()
-                    LUCAS_INDEX += 1
-                    full_trainer_name = get_trainer_name(name, zone_name, STARTER_INDEX)
-                elif constants.REPEAT_TRAINERS_LIST[2] in name:
-                    STARTER_INDEX = constants.STARTERS[DAWN_INDEX].capitalize()
-                    DAWN_INDEX += 1
-                    full_trainer_name = get_trainer_name(name, zone_name, STARTER_INDEX)
-                elif constants.REPEAT_TRAINERS_LIST[3] in name:
-                    if BARRY_INDEX < 3:
-                        STARTER_INDEX = constants.STARTERS[BARRY_INDEX].capitalize()
-                    else:
-                        STARTER_INDEX = "End Game"
-                    BARRY_INDEX += 1
-                    full_trainer_name = get_trainer_name(name, zone_name, STARTER_INDEX)
+            is_repeat_trainer = any(substring in name for substring in constants.REPEAT_TRAINERS_LIST) and not re.findall(constants.TEAM_REGEX, name)
+            if is_repeat_trainer:
+                full_trainer_name = generate_repeat_trainer_name(trainer, index_dict)
             else:
                 full_trainer_name = get_trainer_name(name, zone_name)
             trainer_name = full_trainer_name[0]

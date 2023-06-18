@@ -120,7 +120,7 @@ def generate_trainer_name(raw_trainer_name, pokemon1_level):
         return trainer_substring + ' Rematch'
     return trainer_substring
 
-def get_random_team_data(file_path, areaName, zoneID, trainerID1, trainerID2, lookup, team_num):
+def get_random_team_data(file_path, trainerID1, trainerID2, lookup, team_num):
     '''
     This is called in the get_assorted_trainer_data for any trainers that have randomized teams.
     Soooo many branching paths here @.@
@@ -130,6 +130,7 @@ def get_random_team_data(file_path, areaName, zoneID, trainerID1, trainerID2, lo
     4. Every other single trainer battle that has randomized teams
     '''
     trainers = []
+    zoneID, areaName = get_zone_info(file_path)
 
     def add_trainers(zoneID, trainer_ids, team_types=None, is_gym_rematch = 0):
         for trainer_id, team_type in zip(trainer_ids, team_types or []):
@@ -166,28 +167,32 @@ def get_random_team_data(file_path, areaName, zoneID, trainerID1, trainerID2, lo
             trainers.append(trainer)
         return trainers
 
-def get_assorted_trainer_data(file_path, areaName, zoneID, trainerID1, trainerID2, args):
+def get_assorted_trainer_data(file_path, trainerID1, trainerID2, args):
+    '''
+    Refer to get_random_team_data for info about the branching paths here
+    '''
     count_keeper = []
     trainers = []
-    cyrus_lookup = f"ev_{areaName.lower()}_randomteam_cyrus"
+    zoneID, areaName = get_zone_info(file_path)
     for starter in constants.STARTERS:
         rival_lookup = f"ev_{areaName.lower()}_randomteam_barry_{starter}"
-        rival_teams = get_random_team_data(file_path, areaName, zoneID, trainerID1, trainerID2, rival_lookup, 4)
+        rival_teams = get_random_team_data(file_path, trainerID1, trainerID2, rival_lookup, 4)
         trainers.extend(rival_teams)
     if rival_teams:
         return trainers
     if count_keeper == []:
-        cyrus_teams = get_random_team_data(file_path, areaName, zoneID, trainerID1, trainerID2, cyrus_lookup, 4)
+        cyrus_lookup = f"ev_{areaName.lower()}_randomteam_cyrus"
+        cyrus_teams = get_random_team_data(file_path, trainerID1, trainerID2, cyrus_lookup, 4)
         if cyrus_teams:
             trainers.extend(cyrus_teams)
             return trainers
     if count_keeper == []:
-        master_teams = get_random_team_data(file_path, areaName, zoneID, trainerID1, trainerID2, constants.MASTER_TRAINER, constants.MASTER_TRAINER_TYPES)
+        master_teams = get_random_team_data(file_path, trainerID1, trainerID2, constants.MASTER_TRAINER, constants.MASTER_TRAINER_TYPES)
         if master_teams:
             trainers.extend(master_teams)
             return trainers
     if count_keeper == []:
-        celebi_teams = get_random_team_data(file_path, areaName, zoneID, trainerID1, trainerID2, constants.CELEBI, 7)
+        celebi_teams = get_random_team_data(file_path, trainerID1, trainerID2, constants.CELEBI, 7)
         if celebi_teams:
             trainers.extend(celebi_teams)
             return trainers
@@ -196,6 +201,9 @@ def get_assorted_trainer_data(file_path, areaName, zoneID, trainerID1, trainerID
         return trainers
 
 def get_single_trainer(zoneID, ID, temp_IDs, name, is_gym_rematch=0):
+    '''
+    Branching paths are the result of get_random_team_data
+    '''
     trainer = diff_trainer_data(None, zoneID, int(ID), is_gym_rematch)
     if name in constants.STARTERS:
         # This is for Rival Battles for right now, it may have Lucas/Dawn battles eventually?
@@ -221,10 +229,19 @@ def get_single_trainer(zoneID, ID, temp_IDs, name, is_gym_rematch=0):
     trainer["name"] = f"{trainer['name']}"
     trainer["format"] = constants.SINGLE_FORMAT
     trainer["link"] = ""
-    
+
     return trainer
 
 def get_trainer_data(zoneID, trainerID, method, is_gym_rematch=0):
+    '''
+    This is the core of getting trainer data for any trainer.
+    This takes the trainerID and pulls data from each trainer file that is needed.
+    It then checks if there is a trainer_label and trainer_name as a check for new trainers in the TrainerTable.json
+    The zoneID is used to get the areaName (for the tracker) and the zoneName (for everything else)
+    The areaName is a generalized name for the region the zoneID is in
+    zoneName pulls from the areas_copy.csv which has the specific areas that are typically unique to the zoneID
+    After these checks, the trainer info is created to be used everywhere else in the script
+    '''
     TRAINER_TABLE = full_data['raw_trainer_data']
     trainer_data = TRAINER_TABLE['TrainerData'][trainerID]
     trainer_type = TRAINER_TABLE['TrainerType'][trainer_data['TypeID']]
@@ -245,16 +262,10 @@ def get_trainer_data(zoneID, trainerID, method, is_gym_rematch=0):
     for name, route in name_routes.items():
         if areaName in route:
             areaName = name
-    tracker_vars = {
-        constants.GALACTIC_HQ: constants.GALACTIC_HQ_TRACKER_VAR,
-        constants.LEAGUE: constants.LEAGUE_TRACKER_VAR,
-        constants.RENEGADE: constants.RENEGADE_TRACKER_VAR,
-        constants.DISTORTION: constants.DISTORTION_TRACKER_VAR
-    }
-    if areaName in tracker_vars.keys():
-        areaName = tracker_vars.get(areaName, areaName)
-    #if not areaName.startswith("lmpt"):
-    #    print(areaName)
+    if areaName in constants.TRACKER_VARS.keys():
+        areaName = constants.TRACKER_VARS.get(areaName, areaName)
+    if not areaName.startswith("lmpt"):
+        print(areaName)
     trainer = {
         'areaName': areaName,
         'zoneName': zoneName,
@@ -420,7 +431,7 @@ def get_named_trainer_data(zoneID, trainerID1, trainerID2, args):
         print("There's something wrong with the Named Trainer Data!!")
     return trainers
 
-def get_multi_trainer_data(file_path, areaName, zoneID, trainerID1, trainerID2, trainerID3, substring):
+def get_multi_trainer_data(file_path, trainerID1, trainerID2, trainerID3, substring):
     '''
     This is for Multi Trainer Battles.
     It operates the same way as the other files except there is a third trainerID.
@@ -437,7 +448,7 @@ def get_multi_trainer_data(file_path, areaName, zoneID, trainerID1, trainerID2, 
         ]
 
     trainers = []
-
+    zoneID, areaName = get_zone_info(file_path)
     if trainerID3.isnumeric():
         # This is for if the trainerID is just the number like 751
         trainer2, trainer3 = get_multi_trainers(trainerID2, trainerID3, zoneID, constants.MULTI_FORMAT)
@@ -467,38 +478,41 @@ def get_multi_trainer_data(file_path, areaName, zoneID, trainerID1, trainerID2, 
         print("Unable to get enough trainers for Multi Trainers here:", areaName, substring)
         raise MultiTrainerError
 
-def get_temp_var_trainer_data(file_path, areaName, zoneID, trainerID1, trainerID2, args):
+def get_temp_var_trainer_data(file_path, trainerID1, trainerID2, args):
     '''
     This is when the trainerID starts with @.
-    This covers the following situations:
+    This covers 2 situations:
         1. Any fight that has been randomized (i.e. Gym Leaders, E4 Members)
-        2. Any other trainer that doesn't follow the same format as the other situations defined in get_all_trainer_data 
+        2. Every other fight with temp variables. Check the get_random_team_data
     '''
 
     trainers = []
+    zoneID, areaName = get_zone_info(file_path)
     gym_leader_lookup = f"ev_{areaName.lower()}_randomteam"
     if constants.GYM_AREA_NAME in areaName:
-        gym_leaders = get_random_team_data(file_path, areaName, zoneID, trainerID1, trainerID2, gym_leader_lookup, 4)
+        gym_leaders = get_random_team_data(file_path, trainerID1, trainerID2, gym_leader_lookup, 4)
         trainers.extend(gym_leaders)
 
         gym_leader_rematch_lookup = f"ev_{areaName.lower()}_randomteam_{constants.GYM_LEADER_LOOKUP[areaName.lower()]}_rematch"
-        rematch_gym_leaders = get_random_team_data(file_path, areaName, zoneID, trainerID1, trainerID2, gym_leader_rematch_lookup, 4)
+        rematch_gym_leaders = get_random_team_data(file_path, trainerID1, trainerID2, gym_leader_rematch_lookup, 4)
         trainers.extend(rematch_gym_leaders)
         return trainers
     elif constants.E4_AREA_NAME in areaName and constants.ROOM_AREA_NAME not in areaName:
-        e4_trainers = get_random_team_data(file_path, areaName, zoneID, trainerID1, trainerID2, gym_leader_lookup, 4)
+        e4_trainers = get_random_team_data(file_path, trainerID1, trainerID2, gym_leader_lookup, 4)
         trainers.extend(e4_trainers)
 
         e4_trainers_lookup = f"ev_{areaName.lower()}_randomteam_{constants.GYM_LEADER_LOOKUP[areaName.lower()]}_rematch"
-        rematch_e4_trainers = get_random_team_data(file_path, areaName, zoneID, trainerID1, trainerID2, e4_trainers_lookup, 4)
+        rematch_e4_trainers = get_random_team_data(file_path, trainerID1, trainerID2, e4_trainers_lookup, 4)
         trainers.extend(rematch_e4_trainers)
         return trainers
-    assorted_trainers = get_assorted_trainer_data(file_path, areaName, zoneID, trainerID1, trainerID2, args)
+    assorted_trainers = get_assorted_trainer_data(file_path, trainerID1, trainerID2, args)
     trainers.extend(assorted_trainers)
     return trainers
 
 def get_standard_trainer_data(trainerID1, trainerID2, zoneID):
-
+    '''
+    This is for standard trainers that only have their trainerIDs in the trainer battle calls
+    '''
     trainers = []
     if trainerID2.isnumeric():
         trainer1, trainer2 = get_multi_trainers(trainerID1, trainerID2, zoneID, constants.DOUBLE_FORMAT)
@@ -511,8 +525,14 @@ def get_standard_trainer_data(trainerID1, trainerID2, zoneID):
     trainers.append(trainer)
     return trainers
 
-def get_all_trainer_data(file_path, areaName, zoneID, args, substring):
-
+def get_all_trainer_data(file_path, args, substring):
+    '''
+    This is the root function that branches to get all trainer's data
+    Multi Battles are checked to see if the trainerID3 is > 0
+    Standard trainers are check to see if the trainerID is just a number
+    Temporary trainers are called if the trainerID starts with an "@"
+    Named Trainers are called last if the trainerID is anything like LASS01 or similar
+    '''
     trainers = []
     trainerID1 = args[0]
     trainerID2, trainerID3 = "", ""
@@ -520,10 +540,11 @@ def get_all_trainer_data(file_path, areaName, zoneID, args, substring):
         trainerID2 = args[1].strip()
     if len(args) > 2:
         trainerID3 = args[2].strip()
+    zoneID, areaName = get_zone_info(file_path)
 
     ### Multi trainer data here
     if len(trainerID3) > 0:
-        trainers.extend(get_multi_trainer_data(file_path, areaName, zoneID, trainerID1, trainerID2, trainerID3, substring))
+        trainers.extend(get_multi_trainer_data(file_path, trainerID1, trainerID2, trainerID3, substring))
         return trainers
 
     # This second section is for if the trainerID is bog standard just calling a number from the TTable
@@ -532,7 +553,7 @@ def get_all_trainer_data(file_path, areaName, zoneID, args, substring):
         return trainers
     # This next section is for the temp variables that are called like @SCWK_TEMP3
     elif trainerID1[0] == "@":
-        trainers.extend(get_temp_var_trainer_data(file_path, areaName, zoneID, trainerID1, trainerID2, args))
+        trainers.extend(get_temp_var_trainer_data(file_path, trainerID1, trainerID2, args))
         return trainers
     # This last section is for the trainers that are called by name in the scripts like BATTLEG_01 or something like that.
     elif not trainerID1.isnumeric():
@@ -543,6 +564,10 @@ def get_all_trainer_data(file_path, areaName, zoneID, args, substring):
         raise MissingData
 
 def parse_trainer_btl_set(substring):
+    '''
+    This is the regex function that splits the _TRAINER_BTL_SET or _TRAINER_MULTI_BTL_SET into it's separate parts
+    2 or 3 parts respectively
+    '''
     match = re.search(constants.TRAINER_PATTERN, substring)
     match2 = re.split(constants.MULTI_TRAINER_PATTERN, substring)
     if match:
@@ -570,44 +595,53 @@ def create_zone_id_map():
         zone_id = areas[zone_index][0]
         zone_dict[zone_name] = zone_id
     return zone_dict
- 
-def get_zoneID(zone_name):
+
+def get_zone_info(file_path):
+    zone_name = separate_area_name(file_path)
+    if zone_name == constants.EVE_AREA_NAME:
+        return 446, zone_name # This is the zoneID for Solaceon Town
     if zone_name in zone_dict.keys():
-        return int(zone_dict[zone_name])
+        return int(zone_dict[zone_name]), zone_name
     else:
-        return None
+        return -1, zone_name
 
-def parse_ev_script_file(file_path):
-    """
-    The purpose of this function is to parse a text file and find every instance of the substring _TRAINER_BTL_SET or _TRAINER_MULTI_BTL_SET.
-    """
-    
-    trainers = []
+def separate_area_name(file_path):
+    return file_path.split("/")[-1].split(".")[0].upper()
 
+def create_ev_lines_list(file_path):
+    ev_lines = []
     with open(file_path, 'r', encoding="utf-8") as f:
         for line in f:
             substrings = line.split('\n')
             for substring in substrings:
-                areaName = file_path.split("/")[-1].split(".")[0].upper()
-                zoneID = get_zoneID(areaName)
-                if areaName == constants.EVE_AREA_NAME:
-                    zoneID = 446
+                ev_lines.append(substring)
+    return ev_lines
 
+def parse_ev_script_file(file_path):
+    """
+    The purpose of this function is to parse an ev file
+    This finds every instance of the substring _TRAINER_BTL_SET or _TRAINER_MULTI_BTL_SET.
+    """
+    trainers = []
+    zoneID, areaName = get_zone_info(file_path)
+
+    if zoneID < 0:
+        raise UnsupportedTrainer
+    with open(file_path, 'r', encoding="utf-8") as f:
+        for line in f:
+            substrings = line.split('\n')
+            for substring in substrings:
                 if constants.TRAINER_BATTLE in substring or constants.MULTI_TRAINER_BATTLE in substring:
                     args = parse_trainer_btl_set(substring.strip())
                 else:
                     continue
 
-                if zoneID is None or zoneID < 0:
-                    print("The trainers in this area are currently not supported:", zoneID, areaName, args[0])
-                    raise UnsupportedTrainer
-
                 if substring in args:
                     print("There is something wrong with the args from this area", zoneID, areaName, args[0])
                     raise InvalidArg
+                if zoneID != -1:
+                    trainers.extend(get_all_trainer_data(file_path, args, substring))
 
-                trainers.extend(get_all_trainer_data(file_path, areaName, zoneID, args, substring))
-                
     return trainers
 
 def process_files(folder_path, callback):

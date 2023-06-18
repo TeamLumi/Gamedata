@@ -300,7 +300,7 @@
     "link": ""
   },
   {
-    "areaName": "Trainers\u2019 School",
+    "areaName": "lmpt-7",
     "zoneName": "Jubilife City",
     "zoneId": 21,
     "trainerId": 264,
@@ -312,7 +312,7 @@
     "link": ""
   },
   {
-    "areaName": "Trainers\u2019 School",
+    "areaName": "lmpt-7",
     "zoneName": "Jubilife City",
     "zoneId": 21,
     "trainerId": 267,
@@ -948,7 +948,7 @@
     "link": ""
   },
   {
-    "areaName": "T.G. Eterna Bldg",
+    "areaName": "lmpt-19",
     "zoneName": "Eterna City",
     "zoneId": 62,
     "trainerId": 315,
@@ -960,7 +960,7 @@
     "link": ""
   },
   {
-    "areaName": "T.G. Eterna Bldg",
+    "areaName": "lmpt-19",
     "zoneName": "Eterna City",
     "zoneId": 62,
     "trainerId": 324,
@@ -972,7 +972,7 @@
     "link": ""
   },
   {
-    "areaName": "T.G. Eterna Bldg",
+    "areaName": "lmpt-19",
     "zoneName": "Eterna City",
     "zoneId": 63,
     "trainerId": 316,
@@ -984,7 +984,7 @@
     "link": ""
   },
   {
-    "areaName": "T.G. Eterna Bldg",
+    "areaName": "lmpt-19",
     "zoneName": "Eterna City",
     "zoneId": 63,
     "trainerId": 325,
@@ -996,7 +996,7 @@
     "link": ""
   },
   {
-    "areaName": "T.G. Eterna Bldg",
+    "areaName": "lmpt-19",
     "zoneName": "Eterna City",
     "zoneId": 64,
     "trainerId": 326,
@@ -1008,7 +1008,7 @@
     "link": ""
   },
   {
-    "areaName": "T.G. Eterna Bldg",
+    "areaName": "lmpt-19",
     "zoneName": "Eterna City",
     "zoneId": 64,
     "trainerId": 657,
@@ -1020,7 +1020,7 @@
     "link": ""
   },
   {
-    "areaName": "T.G. Eterna Bldg",
+    "areaName": "lmpt-19",
     "zoneName": "Eterna City",
     "zoneId": 65,
     "trainerId": 876,
@@ -2400,7 +2400,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 171,
     "trainerId": 799,
@@ -2412,7 +2412,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 171,
     "trainerId": 800,
@@ -2424,7 +2424,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 171,
     "trainerId": 801,
@@ -2436,7 +2436,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 171,
     "trainerId": 802,
@@ -2448,7 +2448,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 171,
     "trainerId": 803,
@@ -2460,7 +2460,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 171,
     "trainerId": 804,
@@ -2472,7 +2472,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 171,
     "trainerId": 805,
@@ -2484,7 +2484,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 171,
     "trainerId": 806,
@@ -2496,7 +2496,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 171,
     "trainerId": 807,
@@ -2508,7 +2508,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 171,
     "trainerId": 808,
@@ -2520,7 +2520,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 171,
     "trainerId": 809,
@@ -2532,7 +2532,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 171,
     "trainerId": 810,
@@ -2544,7 +2544,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 173,
     "trainerId": 855,
@@ -2556,7 +2556,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 173,
     "trainerId": 856,
@@ -2568,7 +2568,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 173,
     "trainerId": 857,
@@ -2580,7 +2580,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 173,
     "trainerId": 858,
@@ -2592,7 +2592,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 173,
     "trainerId": 923,
@@ -2604,7 +2604,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 173,
     "trainerId": 924,
@@ -2616,7 +2616,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 173,
     "trainerId": 925,
@@ -2628,7 +2628,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 173,
     "trainerId": 926,
@@ -2640,7 +2640,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 175,
     "trainerId": 859,
@@ -2652,7 +2652,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 175,
     "trainerId": 860,
@@ -2664,7 +2664,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 175,
     "trainerId": 861,
@@ -2676,7 +2676,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 175,
     "trainerId": 862,
@@ -2688,7 +2688,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 175,
     "trainerId": 927,
@@ -2700,7 +2700,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 175,
     "trainerId": 928,
@@ -2712,7 +2712,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 175,
     "trainerId": 929,
@@ -2724,7 +2724,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 175,
     "trainerId": 930,
@@ -2736,7 +2736,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 177,
     "trainerId": 863,
@@ -2748,7 +2748,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 177,
     "trainerId": 864,
@@ -2760,7 +2760,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 177,
     "trainerId": 865,
@@ -2772,7 +2772,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 177,
     "trainerId": 866,
@@ -2784,7 +2784,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 177,
     "trainerId": 931,
@@ -2796,7 +2796,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 177,
     "trainerId": 932,
@@ -2808,7 +2808,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 177,
     "trainerId": 933,
@@ -2820,7 +2820,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 177,
     "trainerId": 934,
@@ -2832,7 +2832,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 179,
     "trainerId": 867,
@@ -2844,7 +2844,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 179,
     "trainerId": 868,
@@ -2856,7 +2856,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 179,
     "trainerId": 869,
@@ -2868,7 +2868,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 179,
     "trainerId": 870,
@@ -2880,7 +2880,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 179,
     "trainerId": 935,
@@ -2892,7 +2892,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 179,
     "trainerId": 936,
@@ -2904,7 +2904,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 179,
     "trainerId": 937,
@@ -2916,7 +2916,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 179,
     "trainerId": 938,
@@ -2928,7 +2928,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 181,
     "trainerId": 871,
@@ -2940,7 +2940,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 181,
     "trainerId": 872,
@@ -2952,7 +2952,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 181,
     "trainerId": 873,
@@ -2964,7 +2964,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 181,
     "trainerId": 874,
@@ -2976,7 +2976,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 181,
     "trainerId": 939,
@@ -2988,7 +2988,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 181,
     "trainerId": 940,
@@ -3000,7 +3000,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 181,
     "trainerId": 941,
@@ -3012,7 +3012,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 181,
     "trainerId": 942,
@@ -3024,7 +3024,7 @@
     "link": ""
   },
   {
-    "areaName": "Pok\u00e9mon League",
+    "areaName": "lmpt-61",
     "zoneName": "Pokemon League",
     "zoneId": 181,
     "trainerId": 999,
