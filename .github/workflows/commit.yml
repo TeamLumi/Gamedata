@@ -137,4 +137,4 @@ jobs:
         destination_folder: './input'
         user_email: '<support+actions@github.com>'
         user_name: 'github-actions-bot'
-        commit_message: 'Updating gamedata files'        
+        commit_message: 'Updating gamedata files'
