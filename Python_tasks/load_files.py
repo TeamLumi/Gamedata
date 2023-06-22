@@ -45,6 +45,7 @@ def load_data():
         'trainer_labels': 'english_dp_trainers_type.json',
         'trainer_names': 'english_dp_trainers_name.json',
         'type_namedata': 'english_ss_typename.json',
+        'personal_table': 'PersonalTable.json',
     }
     resource_file_paths = {
         'gym_leaders': 'NewGymLeaders.json',

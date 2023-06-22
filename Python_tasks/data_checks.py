@@ -20,11 +20,15 @@ def get_average_time(execution_times):
     # Do I really need to explain this one?
     return sum(execution_times) / len(execution_times)
 
-def bad_encounter_data(pkmn_name, routeName, route):
+def bad_encounter_data(pkmn_name, routeName=None, route=None):
     '''
     This is useful for checking whether there are bad encounters within the diff_forms
     '''
     bad_encounters = []
+    if routeName == None and route == None:
+        print("This is an invalid pokemon in the dex:", pkmn_name)
+        bad_encounters.append([pkmn_name, "Pokedex"])
+        return bad_encounters
     print('BAD ENCOUNTER', pkmn_name, routeName, route)
     bad_encounters.append({pkmn_name, routeName, route})
     return bad_encounters
@@ -37,18 +41,29 @@ def check_bad_encounter(encounters, tracker_route, pkmn_key, lumi_formula_mon, t
 
     bad_encounters = []
     pokemonPersonalId = get_form_pokemon_personal_id(lumi_formula_mon, temp_form_no)
+    is_valid = personal_table[pokemonPersonalId]['valid_flag']
 
-    if pokemonPersonalId is not None and any(substring in get_pokemon_name(pokemonPersonalId) for substring in constants.BAD_ENCOUNTER_LIST):
-        bad_encounters.append(bad_encounter_data(get_pokemon_name(pokemonPersonalId), name_routes[tracker_route], zoneID))
+    if pokemonPersonalId is not None and is_valid == 0:
+        bad_encounter = bad_encounter_data(get_pokemon_name(pokemonPersonalId), name_routes[tracker_route], zoneID)
+        bad_encounters.append(bad_encounter)
         return bad_encounters
     elif pkmn_key not in diff_forms.keys():
-        bad_encounters.append(bad_encounter_data(get_pokemon_name(lumi_formula_mon), name_routes[tracker_route], zoneID))
+        bad_encounter = bad_encounter_data(get_pokemon_name(pokemonPersonalId), name_routes[tracker_route], zoneID)
+        bad_encounters.append(bad_encounter)
         return bad_encounters
     elif method == constants.TRACKER_METHOD:
         encounters[str(tracker_route)].append(diff_forms[pkmn_key][1])
         return -1
     else:
         return -2
+
+def check_bad_dex_mon(pokemonID, invalid_pokemon):
+    pokemonName = get_pokemon_name(pokemonID)
+    is_valid = personal_table[pokemonID]['valid_flag']
+    if pokemonID is not None and is_valid == 0:
+        invalid_pokemon.append(bad_encounter_data(pokemonName))
+        return invalid_pokemon
+    return 1
 
 def check_mons_list(pokemon_list, zoneID, final_list):
     '''
@@ -107,4 +122,5 @@ def check_mons_list(pokemon_list, zoneID, final_list):
 
 if __name__ != "__main__":
     full_data = load_data()
+    personal_table = full_data['personal_table']['Personal']
     diff_forms = get_diff_form_dictionary()

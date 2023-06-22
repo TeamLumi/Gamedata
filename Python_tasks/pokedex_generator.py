@@ -3,7 +3,7 @@ import os
 import time
 
 import constants
-from data_checks import get_average_time
+from data_checks import get_average_time, check_bad_dex_mon
 from load_files import load_data
 from pokemonUtils import GenForms, get_pokemon_info, get_pokemon_name, get_diff_form_dictionary
 
@@ -47,25 +47,29 @@ def add_forms(evolution_paths, graph):
     It's mostly for the pokedex in the tracker as an easy way of handling different forms
     Included in this is mons like Rotom and Arceus that have different forms but they don't evolve into them
     '''
+    invalid_pokemon = []
     for form in forms:
-        form_num = forms[form]
-        pokemon_id = int(form[-7:-4])
-        evolve_array = graph[form_num]["ar"]
+        pokemonID = forms[form]
+        monsNo = int(form[-7:-4])
+        evolve_array = graph[pokemonID]["ar"]
+        is_invalid = check_bad_dex_mon(pokemonID, invalid_pokemon)
+        if is_invalid != 1:
+            continue
         for pokemon in evolution_paths.keys():
-            if int(pokemon) != pokemon_id:
+            if int(pokemon) != monsNo:
                 continue
             initial_evolution_path = evolution_paths[pokemon]["path"]
-            form_evo_path = evolution_paths[form_num]["path"]
+            form_evo_path = evolution_paths[pokemonID]["path"]
             first_form_evo = form_evo_path[0]
 
             for evolution in initial_evolution_path:
                 if len(evolve_array) != 0:
                     continue
                 if evolution in evolution_paths[first_form_evo]["path"]:
-                    evolution_paths[evolution]["path"].append(form_num)
-                if len(evolution_paths[form_num]["path"]) < 2:
+                    evolution_paths[evolution]["path"].append(pokemonID)
+                if len(evolution_paths[pokemonID]["path"]) < 2:
                     evolution_path = evolution_paths[evolution]["path"] + form_evo_path
-                    evolution_paths[form_num]["path"] = remove_duplicates(evolution_path)
+                    evolution_paths[pokemonID]["path"] = remove_duplicates(evolution_path)
                     evolution_paths[evolution]["path"] = remove_duplicates(evolution_path)
 
 def process_next_mon(adjacent_nodes):
