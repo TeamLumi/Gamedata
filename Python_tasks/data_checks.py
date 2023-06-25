@@ -13,8 +13,7 @@ def check_monsName(monsName):
     '''
     monsNo = get_pokemon_mons_no_from_name(monsName)
     if monsNo == -1:
-        print(monsName)
-    pass
+        raise SyntaxError("This monsName is not formatted correctly to get a correct monsNo:", monsName)
 
 def get_average_time(execution_times):
     # Do I really need to explain this one?
