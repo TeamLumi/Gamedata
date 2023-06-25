@@ -156,7 +156,6 @@ def get_random_team_data(file_path, trainerID1, trainerID2, lookup, team_num):
             trainers.append(trainer)
         return trainers
     else:
-        #print(trainerID1, trainerID2, lookup, zoneID)
         temp_trainer_IDs = parse_randomized_teams(file_path, lookup, team_num, None)
         is_gym_rematch = 0
         if constants.REMATCH_SUBSTRING in lookup:
@@ -400,7 +399,7 @@ def get_named_trainer_data(zoneID, trainerID1, trainerID2, args):
     An example is LASS01
     The first thing this checks is if there is a 2nd trainerID for multi/double battles
     Inside of each of these is a check for any trainerID above 651.
-    If it is above 651, it pulls the trainer name from the trainer enum obtained from Sma
+    If it is above 651, it pulls the trainer name from the trainer enum obtained from @Sma
     '''
     trainers = []
     special_trainer_names = full_data['special_trainer_names']
@@ -420,7 +419,7 @@ def get_named_trainer_data(zoneID, trainerID1, trainerID2, args):
     if temp_trainerID1 > 651:
         # There is a discrepancy in the data with the trainer labels and named trainers
         # This only happens after TID 651
-        # IF it is above 651 it pulls from the trainer enums obtained from Sma
+        # If it is above 651, it pulls from the trainer enums obtained from @Sma
         temp_trainerID1 = special_trainer_names[trainerID1.strip("'")]
 
     trainer = diff_trainer_data(None, zoneID, int(temp_trainerID1))
@@ -588,6 +587,9 @@ def parse_trainer_btl_set(substring):
         return substring
 
 def create_zone_id_map():
+    '''
+    This creates a {zone_name: zone_id} dictionary using the areas_copy.csv
+    '''
     zone_dict = {}
     for place in areas:
         zone_index = int(areas.index(place) - 1)
@@ -597,6 +599,11 @@ def create_zone_id_map():
     return zone_dict
 
 def get_zone_info(file_path):
+    '''
+    This takes the zone_id_map that has been created and the filepath of the ev file
+    It then returns the zone_id and zone_name if there is a match in the zone_dict keys
+    If not, it errors with -1 and the zone_name to track down the culprit
+    '''
     zone_name = separate_area_name(file_path)
     if zone_name == constants.EVE_AREA_NAME:
         return 446, zone_name # This is the zoneID for Solaceon Town
@@ -606,16 +613,8 @@ def get_zone_info(file_path):
         return -1, zone_name
 
 def separate_area_name(file_path):
+    # Takes the full filepath of the ev file and splits it to return just the areaName
     return file_path.split("/")[-1].split(".")[0].upper()
-
-def create_ev_lines_list(file_path):
-    ev_lines = []
-    with open(file_path, 'r', encoding="utf-8") as f:
-        for line in f:
-            substrings = line.split('\n')
-            for substring in substrings:
-                ev_lines.append(substring)
-    return ev_lines
 
 def parse_ev_script_file(file_path):
     """
