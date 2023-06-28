@@ -48,6 +48,7 @@ def make_ability_object(ha):
     return {0: abilityString}
 
 def convert_lumi_formula_mon(lumi_mons_no):
+    # converts anything more than 2^16 (65,536) to it's correct PID
     form_no = lumi_mons_no//(2**16)
     lumi_formula_mon = lumi_mons_no - (form_no * (2**16))
     pkmn_key = pokedex[str(lumi_formula_mon)] + str(form_no)
@@ -55,6 +56,10 @@ def convert_lumi_formula_mon(lumi_mons_no):
     return mons_no
 
 def get_pokemon_name(mons_no = 0):
+    '''
+    Trys 3 different ways of getting the pokemon name
+    Replaces any trouble characters into workable characters
+    '''
     try:
         pokemon_name = ""
         if mons_no < len(name_data["labelDataArray"]):
@@ -73,22 +78,22 @@ def get_pokemon_name(mons_no = 0):
         print(mons_no, e)
 
 def get_form_name(id):
+    '''
+    Checks if there are any 
+    '''
     form_namedata = full_data['form_namedata']
 
-    if id == 1242:
-        return 'Ash-Greninja'
-    elif id == 1285:
-        return 'Meowstic-F'
-    elif id == 1310:
-        return 'Rockruff Own-Tempo'
-    elif id == 1441:
-        return 'Indeedee-F'
-    elif id == 1454:
-        return 'Basculegion-F'
-    elif id == 1456:
-        return 'Oinkologne-F'
-    elif id == 1067:
-        return "Galarian Farfetch'd"
+    trouble_pokemon_names = {
+        1242: 'Ash-Greninja',
+        1285: 'Meowstic-F',
+        1310: 'Rockruff Own-Tempo',
+        1441: 'Indeedee-F',
+        1454: 'Basculegion-F',
+        1456: 'Oinkologne-F',
+        1067: "Galarian Farfetch'd"
+    }
+    if id in trouble_pokemon_names.keys():
+        return trouble_pokemon_names.get(id, None)
     else:
         name = form_namedata['labelDataArray'][id]['wordDataArray'][0]['str']
         dexNum = form_namedata['labelDataArray'][id]['labelName'][-7:-4]
@@ -97,7 +102,7 @@ def get_form_name(id):
         if(get_pokemon_name(int(dexNum)) not in name):
             return get_pokemon_name(int(dexNum)) + ' ' + name
         return name
-    
+
 def get_item_string(item_id):
     item_namedata = full_data['raw_items']
 
