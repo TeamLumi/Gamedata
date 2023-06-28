@@ -72,6 +72,14 @@ def add_forms(evolution_paths, graph):
                     evolution_paths[pokemonID]["path"] = remove_duplicates(evolution_path)
                     evolution_paths[evolution]["path"] = remove_duplicates(evolution_path)
 
+def get_evolution_arrays(evolution_paths, graph):
+    for pokemon in evolution_paths:
+        for extra in evolution_paths[pokemon]["path"]:
+            for i in range(0, len(graph[extra]["ar"]), 5):
+                mon_evo_method = graph[extra]["ar"][i]
+                evolution_paths[pokemon]["method"].append(mon_evo_method)
+            evolution_paths[pokemon]["ar"].append(graph[extra]["ar"])
+
 def process_next_mon(adjacent_nodes):
     next_mon = adjacent_nodes[2]
     next_form = adjacent_nodes[3]
@@ -189,12 +197,6 @@ def first_pathfind(first_pokemon, evolution_paths, graph, first_queue, next_queu
         first_queue.append(next_mon)
         first_queue.append(next_mon_form)
 
-    for extra in evolution_paths[first_pokemon]["path"]:
-        for i in range(0, len(graph[extra]["ar"]), 5):
-            mon_evo_method = graph[extra]["ar"][i]
-            evolution_paths[first_pokemon]["method"].append(mon_evo_method)
-        evolution_paths[first_pokemon]["ar"].append(graph[extra]["ar"])
-
 def start_pathfinding(evolution_paths, graph):
     '''
     This starts the pathfinding to find the evolution paths inside of the graph
@@ -226,6 +228,7 @@ def evolution_pathfinding():
         evolution_paths[node["id"]] = {"path": [], "method": [], "ar": [], "targets": []}
 
     start_pathfinding(evolution_paths, graph)
+    get_evolution_arrays(evolution_paths, graph)
 
     with open(os.path.join(debug_file_path, "evolution.json"), "w", encoding = "utf-8") as output:
         json.dump(evolution_paths, output, ensure_ascii=False, indent=2)
