@@ -309,7 +309,7 @@ def get_pokemon_info(personalId=0):
     info_dict['held_item3'] = get_item_string(p['item3'])
     return info_dict
 
-def GenForms():
+def generate_form_name_to_pokemon_id():
     form_namedata = full_data['form_namedata']
     forms_list = form_namedata["labelDataArray"]
     forms = {}
@@ -318,6 +318,14 @@ def GenForms():
         if all_forms["arrayIndex"] != 0 and formNo > 000:
             forms[all_forms["labelName"]] = all_forms["arrayIndex"]
     return forms
+
+def get_mons_no_and_form_no(pokemon_id):
+    if pokemon_id < 1010:
+        return pokemon_id, 0
+    form_format = reversed_forms[pokemon_id].split("_")
+    mons_no = int(form_format[-2].lstrip("0"))
+    form_no = int(form_format[-1].lstrip("0"))
+    return mons_no, form_no
 
 def get_pokemon_from_trainer_info(trainer, output_format):
     pokemon_list = []
@@ -363,7 +371,8 @@ def get_pokemon_from_trainer_info(trainer, output_format):
 
 if __name__ != '__main__':
     full_data = load_data()
-    forms = GenForms()
+    forms = generate_form_name_to_pokemon_id()
+    reversed_forms = {v: k for k, v in forms.items()}
     name_data = full_data['raw_pokedex']
     pokedex = get_lumi_data(name_data, get_pokemon_name)
     diff_forms = get_diff_form_dictionary()
