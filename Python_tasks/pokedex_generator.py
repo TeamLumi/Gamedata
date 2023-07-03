@@ -122,53 +122,56 @@ def get_second_pathfind_targets(evolution_paths, previous_mon, current_mon, grap
     Either the first_mon_path if there is more than 3 pokemon (This will happen for mons)
     '''
     targets = evolution_paths[previous_mon]["targets"]
+    if current_mon in targets:
+        return
+
     previous_mon_array = graph[previous_mon]["ar"]
-
-    current_mon_path = evolution_paths[current_mon]["path"]
-
-    first_mon = current_mon_path[0]
-    first_mon_path = evolution_paths[first_mon]["path"]
-    first_mon_array = graph[first_mon]["ar"]
-
     monsNo = current_mon
     formNo = 0
     if monsNo > 1010:
         monsNo, formNo = get_mons_no_and_form_no(current_mon)
     form_check = f"{monsNo}, {formNo}"
+    if form_check not in str(previous_mon_array):
+        return
 
-    if current_mon not in targets:
-        if len(first_mon_path) > 3 and form_check in str(previous_mon_array):
-            # This is for when a pokemon has a branching path at it's second form and not it's first form
-            evolution_paths[previous_mon]["targets"].append(current_mon)
-        elif len(first_mon_array) > 5 and form_check in str(previous_mon_array):
-            # This is for mons that have multiple evolutions in their first evo array like Burmy or Snorunt.
-            evolution_paths[previous_mon]["targets"].append(current_mon)
+    current_mon_path = evolution_paths[current_mon]["path"]
+    first_mon = current_mon_path[0]
+    first_mon_path = evolution_paths[first_mon]["path"]
+    first_mon_array = graph[first_mon]["ar"]
+
+    if len(first_mon_path) > 3:
+        # This is for when a pokemon has a branching path at it's second form and not it's first form
+        evolution_paths[previous_mon]["targets"].append(current_mon)
+    elif len(first_mon_array) > 5:
+        # This is for mons that have multiple evolutions in their first evo array like Burmy or Snorunt.
+        evolution_paths[previous_mon]["targets"].append(current_mon)
 
 def check_evo_path(first_pokemon, evolution_paths, current_mon, graph):
-    if first_pokemon not in evolution_paths[current_mon]["path"]:
-        current_mon_path = evolution_paths[current_mon]["path"]
-        current_mon_path_exists = len(current_mon_path) > 0
-        first_evolves_into_current = current_mon in graph[first_pokemon]['ar']
-        if not current_mon_path_exists:
-            if len(graph[current_mon]['ar']) > 0:
-                current_mons_no, current_form_no = (graph[current_mon]['ar'][2], graph[current_mon]['ar'][3])
-                current_mon_evo = get_form_pokemon_personal_id(current_mons_no, current_form_no)
-                evo_path = [first_pokemon, current_mon, current_mon_evo]
-                evolution_paths[current_mon]["path"].extend(evo_path)
-                evolution_paths[current_mon_evo]["path"].extend(evo_path)
-                return
-            evolution_paths[current_mon]["path"].extend([first_pokemon, current_mon])
+    if first_pokemon in evolution_paths[current_mon]["path"]:
+        return
+    current_mon_path = evolution_paths[current_mon]["path"]
+    current_mon_path_exists = len(current_mon_path) > 0
+    first_evolves_into_current = current_mon in graph[first_pokemon]['ar']
+    if not current_mon_path_exists:
+        if len(graph[current_mon]['ar']) > 0:
+            current_mons_no, current_form_no = (graph[current_mon]['ar'][2], graph[current_mon]['ar'][3])
+            current_mon_evo = get_form_pokemon_personal_id(current_mons_no, current_form_no)
+            evo_path = [first_pokemon, current_mon, current_mon_evo]
+            evolution_paths[current_mon]["path"].extend(evo_path)
+            evolution_paths[current_mon_evo]["path"].extend(evo_path)
             return
+        evolution_paths[current_mon]["path"].extend([first_pokemon, current_mon])
+        return
 
-        if first_evolves_into_current:
-            evolution_paths[current_mon]["path"].insert(1, first_pokemon)
-        else:
-            evolution_paths[current_mon]["path"].insert(0, first_pokemon)
+    if first_evolves_into_current:
+        evolution_paths[current_mon]["path"].insert(1, first_pokemon)
+    else:
+        evolution_paths[current_mon]["path"].insert(0, first_pokemon)
 
 def add_initial_mons(evolution_paths, current_mon, next_mon):
+    targets = evolution_paths[current_mon]["targets"]
     current_mon_path = evolution_paths[current_mon]["path"]
     next_mon_path = evolution_paths[next_mon]["path"]
-    targets = evolution_paths[current_mon]["targets"]
     if next_mon not in targets:
         evolution_paths[current_mon]["targets"].append(next_mon)
     if next_mon not in current_mon_path:
