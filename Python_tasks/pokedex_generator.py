@@ -5,7 +5,7 @@ import time
 import constants
 from data_checks import get_average_time, check_bad_dex_mon
 from load_files import load_data
-from pokemonUtils import GenForms, get_pokemon_info, get_pokemon_name, get_diff_form_dictionary
+from pokemonUtils import generate_form_name_to_pokemon_id, get_pokemon_info, get_pokemon_name, get_diff_form_dictionary, get_mons_no_and_form_no, get_form_pokemon_personal_id
 
 repo_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 input_file_path = os.path.join(repo_file_path, 'input')
@@ -18,6 +18,7 @@ def get_form_format(monsNo, formNo):
     '''
     Returns the format of a mon based on the zkn_form file
     Requires the monsNo and formNo
+    This should only be used with PID 1010 or greater
     '''
     mon_zeros = 3 - len(str(monsNo))
     form_zeros = 3 - len(str(formNo))
@@ -80,9 +81,9 @@ def get_evolution_arrays(evolution_paths, graph):
                 evolution_paths[pokemon]["method"].append(mon_evo_method)
             evolution_paths[pokemon]["ar"].append(graph[extra]["ar"])
 
-def process_next_mon(adjacent_nodes):
-    next_mon = adjacent_nodes[2]
-    next_form = adjacent_nodes[3]
+def process_next_mon(current_mon_evo_array):
+    next_mon = current_mon_evo_array[2]
+    next_form = current_mon_evo_array[3]
     form_format = get_form_format(next_mon, next_form)
 
     if form_format in forms.keys():
@@ -91,7 +92,6 @@ def process_next_mon(adjacent_nodes):
     return next_mon, next_form
 
 def process_current_mon(queue):
-
     current_mon = queue.pop(0)
     current_form = queue.pop(0)
     form_format = get_form_format(current_mon, current_form)
@@ -122,33 +122,67 @@ def get_second_pathfind_targets(evolution_paths, previous_mon, current_mon, grap
     Either the first_mon_path if there is more than 3 pokemon (This will happen for mons)
     '''
     targets = evolution_paths[previous_mon]["targets"]
-    current_mon_path = evolution_paths[current_mon]["path"]
-    first_mon_path = evolution_paths[current_mon_path[0]]["path"]
-    first_mon_array = graph[current_mon_path[0]]["ar"]
+    if current_mon in targets:
+        return
 
-    if current_mon not in targets:
-        if previous_mon == constants.WURMPLE or previous_mon == constants.GOOMY:
-            evolution_paths[constants.WURMPLE]["targets"] = [constants.SILCOON, constants.CASCOON]
-            '''
-            Uncomment this for when Goomy is actually able to evolve into Hisuian Sliggo
-            evolution_paths[constants.GOOMY]["targets"] = [constants.SLIGGOO, constants.HISUI_SLIGGOO]
-            '''
-        elif len(first_mon_path) > 3:
-            # This is for when a pokemon has a branching path at it's second form and not it's first form
-            evolution_paths[previous_mon]["targets"].append(current_mon)
-        elif len(first_mon_array) > 5:
-            # This is for mons that have multiple evolutions in their first evo array like Burmy or Snorunt.
-            evolution_paths[previous_mon]["targets"].append(current_mon)
+    previous_mon_array = graph[previous_mon]["ar"]
+    monsNo = current_mon
+    formNo = 0
+    if monsNo > 1010:
+        monsNo, formNo = get_mons_no_and_form_no(current_mon)
+    form_check = f"{monsNo}, {formNo}"
+    if form_check not in str(previous_mon_array):
+        return
+
+    current_mon_path = evolution_paths[current_mon]["path"]
+    first_mon = current_mon_path[0]
+    first_mon_path = evolution_paths[first_mon]["path"]
+    first_mon_array = graph[first_mon]["ar"]
+
+    if len(first_mon_path) > 3:
+        # This is for when a pokemon has a branching path at it's second form and not it's first form
+        evolution_paths[previous_mon]["targets"].append(current_mon)
+    elif len(first_mon_array) > 5:
+        # This is for mons that have multiple evolutions in their first evo array like Burmy or Snorunt.
+        evolution_paths[previous_mon]["targets"].append(current_mon)
+
+def check_evo_path(first_pokemon, evolution_paths, current_mon, graph):
+    if first_pokemon in evolution_paths[current_mon]["path"]:
+        return
+    current_mon_path = evolution_paths[current_mon]["path"]
+    current_mon_path_exists = len(current_mon_path) > 0
+    first_evolves_into_current = current_mon in graph[first_pokemon]['ar']
+    if not current_mon_path_exists:
+        if len(graph[current_mon]['ar']) > 0:
+            current_mons_no, current_form_no = (graph[current_mon]['ar'][2], graph[current_mon]['ar'][3])
+            current_mon_evo = get_form_pokemon_personal_id(current_mons_no, current_form_no)
+            evo_path = [first_pokemon, current_mon, current_mon_evo]
+            evolution_paths[current_mon]["path"].extend(evo_path)
+            evolution_paths[current_mon_evo]["path"].extend(evo_path)
+            return
+        evolution_paths[current_mon]["path"].extend([first_pokemon, current_mon])
+        return
+
+    if first_evolves_into_current:
+        evolution_paths[current_mon]["path"].insert(1, first_pokemon)
+    else:
+        evolution_paths[current_mon]["path"].insert(0, first_pokemon)
+
+def add_initial_mons(evolution_paths, current_mon, next_mon):
+    targets = evolution_paths[current_mon]["targets"]
+    current_mon_path = evolution_paths[current_mon]["path"]
+    next_mon_path = evolution_paths[next_mon]["path"]
+    if next_mon not in targets:
+        evolution_paths[current_mon]["targets"].append(next_mon)
+    if next_mon not in current_mon_path:
+        evolution_paths[current_mon]["path"].append(next_mon)
+    if next_mon not in next_mon_path:
+        evolution_paths[next_mon]["path"].append(next_mon)
 
 def second_pathfind(first_pokemon, evolution_paths, new_queue, graph):
-    '''
-    
-    '''
-
     while new_queue:
         current_mon, current_form = process_current_mon(new_queue)
-
-        evolution_paths[current_mon]["path"].append(first_pokemon)
+        check_evo_path(first_pokemon, evolution_paths, current_mon, graph)
         current_mon_path = evolution_paths[current_mon]["path"]
         update_evolve_paths(evolution_paths, current_mon, current_mon_path)
         get_second_pathfind_targets(evolution_paths, first_pokemon, current_mon, graph)
@@ -176,11 +210,8 @@ def first_pathfind(first_pokemon, evolution_paths, graph, first_queue, next_queu
             continue
         next_mon, next_mon_form = process_next_mon(current_mon_evo_array)
 
-        targets = evolution_paths[current_mon]["targets"]
-        if next_mon not in targets:
-            evolution_paths[current_mon]["targets"].append(next_mon)
+        add_initial_mons(evolution_paths, current_mon, next_mon)
 
-        evolution_paths[next_mon]["path"] = evolution_paths[current_mon]["path"] + [next_mon]
         for i in range(2, len(current_mon_evo_array), 5):
             # Increments by 5 starting on the third value which is the target evolution
             next_current_mon = current_mon_evo_array[i]
@@ -225,7 +256,7 @@ def evolution_pathfinding():
     graph = graphing["Evolve"]
     evolution_paths = {}
     for node in graph:
-        evolution_paths[node["id"]] = {"path": [], "method": [], "ar": [], "targets": []}
+        evolution_paths[node["id"]] = {"path": [], "method": [], "targets": [], "ar": []}
 
     start_pathfinding(evolution_paths, graph)
     get_evolution_arrays(evolution_paths, graph)
@@ -306,10 +337,10 @@ if __name__ == "__main__":
 
     diff_forms = get_diff_form_dictionary()
     full_data = load_data()
-    forms = GenForms()
+    forms = generate_form_name_to_pokemon_id()
     getPokedexInfo()
 
 if __name__ != "__main__":
     diff_forms = get_diff_form_dictionary()
     full_data = load_data()
-    forms = GenForms()
+    forms = generate_form_name_to_pokemon_id()
