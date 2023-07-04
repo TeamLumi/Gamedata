@@ -31,21 +31,116 @@ jobs:
         user_name: 'github-actions-bot'
         commit_message: 'Updating gamedata files'
 
-#  update-calc:
-#    runs-on: ubuntu-latest
-#    steps:
-#    - name: Checkout
-#      uses: actions/checkout@v2
-#
-#    - name: Pushes test file
-#      uses: TeamLumi/Gamedata@main
-#      env:
-#        API_TOKEN_GITHUB: ${{ secrets.DENMARK_AUTOMATION_TOKEN }}
-#      with:
-#        source_file: 'input'
-#        destination_branch: 'master'
-#        destination_repo: 'Denmark14/lumi-calc'
-#        destination_folder: './'
-#        user_email: '<support+actions@github.com>'
-#        user_name: 'github-actions-bot'
-#        commit_message: 'Updating gamedata files'
+  update-lumibot:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Pushes test file
+      uses: TeamLumi/Gamedata@main
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.DENMARK_LUMIBOT_TOKEN }}
+      with:
+        source_file: 'input/.'
+        destination_branch: 'master'
+        destination_repo: 'TeamLumi/Lumibot'
+        destination_folder: './__gamedata'
+        user_email: '<support+actions@github.com>'
+        user_name: 'github-actions-bot'
+        commit_message: 'Updating gamedata files'
+
+  update-calc:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Pushes test file
+      uses: TeamLumi/Gamedata@main
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.DENMARK_AUTOMATION_TOKEN }}
+      with:
+        source_file: 'input'
+        destination_branch: 'master'
+        destination_repo: 'Denmark14/lumi-calc'
+        destination_folder: './'
+        user_email: '<support+actions@github.com>'
+        user_name: 'github-actions-bot'
+        commit_message: 'Updating gamedata files'
+
+  update-website-main:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Pushes test file
+      uses: TeamLumi/Gamedata@main
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.DENMARK_LUMIBOT_TOKEN }}
+      with:
+        source_file: 'input/.'
+        destination_branch: 'main'
+        destination_repo: 'TeamLumi/luminescent-team'
+        destination_folder: './__gamedata'
+        user_email: '<support+actions@github.com>'
+        user_name: 'github-actions-bot'
+        commit_message: 'Updating gamedata files'
+
+  update-website-pokedex-branch:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Pushes test file
+      uses: TeamLumi/Gamedata@main
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.DENMARK_LUMIBOT_TOKEN }}
+      with:
+        source_file: 'input/.'
+        destination_branch: 'feature/pokedex-plugin'
+        destination_repo: 'TeamLumi/luminescent-team'
+        destination_folder: './__gamedata'
+        user_email: '<support+actions@github.com>'
+        user_name: 'github-actions-bot'
+        commit_message: 'Updating gamedata files'
+
+  update-website-evolution-branch:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Pushes test file
+      uses: TeamLumi/Gamedata@main
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.DENMARK_LUMIBOT_TOKEN }}
+      with:
+        source_file: 'input/.'
+        destination_branch: 'feature/evolution-utils'
+        destination_repo: 'TeamLumi/luminescent-team'
+        destination_folder: './__gamedata'
+        user_email: '<support+actions@github.com>'
+        user_name: 'github-actions-bot'
+        commit_message: 'Updating gamedata files'
+
+  update-source-of-truth:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Pushes test file
+      uses: TeamLumi/Gamedata@main
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.DENMARK_GAMEDATA_AUTOMATION_TOKEN }}
+      with:
+        source_file: 'input/.'
+        destination_branch: 'Source-Of-Truth'
+        destination_repo: 'TeamLumi/Gamedata'
+        destination_folder: './input'
+        user_email: '<support+actions@github.com>'
+        user_name: 'github-actions-bot'
+        commit_message: 'Updating gamedata files'
