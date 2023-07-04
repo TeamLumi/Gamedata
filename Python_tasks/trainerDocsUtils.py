@@ -90,7 +90,7 @@ def sort_trainers_by_route(trainer_info):
             sorted_trainers_by_route[areaName].append(trainer)
     return sorted_trainers_by_route
 
-def get_trainer_name(trainer_name, zone_name, TRAINER_INDEX=0):
+def get_trainer_name(trainer_name, zone_name, TRAINER_INDEX=0, rematch=0):
     '''
     Requires trainer's name, zone name with optional trainer index
     Finds if there is team already in the trainer's name and adds zone_name in the middle
@@ -100,13 +100,19 @@ def get_trainer_name(trainer_name, zone_name, TRAINER_INDEX=0):
     if re.findall(constants.TEAM_REGEX, trainer_name):
         split_name = trainer_name.split()
         altered_trainer_name = ' '.join(split_name[:-2])
+        if rematch == 1:
+            altered_trainer_name += ' Rematch'
         team_name = ' '.join(split_name[-2:])
         updated_name = f"{altered_trainer_name} ({zone_name}) [{team_name}]"
         return [trainer_name, updated_name]
     if TRAINER_INDEX != 0:
+        if rematch == 1:
+            trainer_name += ' Rematch'
         updated_name = f"{trainer_name} {TRAINER_INDEX} ({zone_name})"
         name = f"{trainer_name} {TRAINER_INDEX}"
         return [name, updated_name]
+    if rematch == 1:
+        trainer_name += ' Rematch'
     updated_name = f"{trainer_name} ({zone_name})"
     return [trainer_name, updated_name]
 
@@ -217,11 +223,12 @@ def write_tracker_docs(trainers_list):
             zone_name = f"{trainer['zoneName']} Trainers"
             zone_id = trainer['zoneId']
             name = f"{trainer['type']} {trainer['name']}"
+            rematch = trainer['rematch']
             is_repeat_trainer = any(substring in name for substring in constants.REPEAT_TRAINERS_LIST) and not re.findall(constants.TEAM_REGEX, name)
             if is_repeat_trainer:
                 full_trainer_name = generate_repeat_trainer_name(trainer, index_dict)
             else:
-                full_trainer_name = get_trainer_name(name, zone_name)
+                full_trainer_name = get_trainer_name(name, zone_name, 0, rematch)
             trainer_name = full_trainer_name[0]
             team_name = full_trainer_name[1]
             trainer_team = trainer['team']
