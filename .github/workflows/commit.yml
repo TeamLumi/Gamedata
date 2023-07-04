@@ -88,25 +88,6 @@ jobs:
         user_name: 'github-actions-bot'
         commit_message: 'Updating gamedata files'
 
-  update-website-pokedex-branch:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-
-    - name: Pushes test file
-      uses: TeamLumi/Gamedata@main
-      env:
-        API_TOKEN_GITHUB: ${{ secrets.DENMARK_LUMIBOT_TOKEN }}
-      with:
-        source_file: 'input/.'
-        destination_branch: 'feature/pokedex-plugin'
-        destination_repo: 'TeamLumi/luminescent-team'
-        destination_folder: './__gamedata'
-        user_email: '<support+actions@github.com>'
-        user_name: 'github-actions-bot'
-        commit_message: 'Updating gamedata files'
-
   update-website-evolution-branch:
     runs-on: ubuntu-latest
     steps:
