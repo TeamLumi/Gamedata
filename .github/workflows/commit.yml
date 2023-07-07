@@ -24,7 +24,7 @@ jobs:
         API_TOKEN_GITHUB: ${{ secrets.DENMARK_GAMEDATA_AUTOMATION_TOKEN }}
       with:
         source_file: 'Python_tasks/output/.'
-        destination_branch: 'Trainer-Teams' #Pushing to Trainer-Teams for now until all of the changes are done.
+        destination_branch: 'master'
         destination_repo: 'TeamLumi/LumiPlat_NuzlockeTracker'
         destination_folder: './src/constants/generated_files'
         user_email: '<support+actions@github.com>'
@@ -103,25 +103,6 @@ jobs:
         destination_branch: 'feature/evolution-utils'
         destination_repo: 'TeamLumi/luminescent-team'
         destination_folder: './__gamedata'
-        user_email: '<support+actions@github.com>'
-        user_name: 'github-actions-bot'
-        commit_message: 'Updating gamedata files'
-
-  update-source-of-truth:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-
-    - name: Pushes test file
-      uses: TeamLumi/Gamedata@main
-      env:
-        API_TOKEN_GITHUB: ${{ secrets.DENMARK_GAMEDATA_AUTOMATION_TOKEN }}
-      with:
-        source_file: 'input/.'
-        destination_branch: 'Source-Of-Truth'
-        destination_repo: 'TeamLumi/Gamedata'
-        destination_folder: './input'
         user_email: '<support+actions@github.com>'
         user_name: 'github-actions-bot'
         commit_message: 'Updating gamedata files'
