@@ -8,7 +8,7 @@ from load_files import load_data
 from pokemonUtils import generate_form_name_to_pokemon_id, get_pokemon_info, get_pokemon_name, get_diff_form_dictionary, get_mons_no_and_form_no, get_form_pokemon_personal_id
 
 repo_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-input_file_path = os.path.join(repo_file_path, 'input')
+input_file_path = os.path.join(repo_file_path, '3.0Input')
 debug_file_path = os.path.join(repo_file_path, "Python_tasks", "Debug")
 output_file_path = os.path.join(repo_file_path, "Python_tasks", "output")
 first_execution_list = []
@@ -51,7 +51,7 @@ def add_forms(evolution_paths, graph):
     invalid_pokemon = []
     for form in forms:
         pokemonID = forms[form]
-        monsNo = int(form[-7:-4])
+        monsNo = int(form.split("_")[-2])
         evolve_array = graph[pokemonID]["ar"]
         is_invalid = check_bad_dex_mon(pokemonID, invalid_pokemon)
         if is_invalid != 1:
