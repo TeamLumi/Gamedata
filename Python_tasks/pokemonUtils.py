@@ -96,7 +96,7 @@ def get_form_name(id):
         return trouble_pokemon_names.get(id, None)
     else:
         name = form_namedata['labelDataArray'][id]['wordDataArray'][0]['str']
-        dexNum = form_namedata['labelDataArray'][id]['labelName'][-7:-4]
+        dexNum = form_namedata['labelDataArray'][id]['labelName'].split("_")[-2]
         if(name == ""):
             return get_pokemon_name(id)
         if(get_pokemon_name(int(dexNum)) not in name):
@@ -250,12 +250,13 @@ def create_diff_forms_dictionary(form_dict):
             if idx != 0 or isSpecialPokemon(current_pokemon_name):
                 mon_zeros = 3 - len(str(mons_no))
                 form_zeros = 3 - len(str(idx))
-                if f"ZKN_FORM_{mon_zeros*'0'}{mons_no}_{form_zeros*'0'}{idx}" in forms.keys():
-                    tracker_monsno = forms[f"ZKN_FORM_{mon_zeros*'0'}{mons_no}_{form_zeros*'0'}{idx}"]
+                form_format = f"ZKN_FORM_{mon_zeros*'0'}{mons_no}_{form_zeros*'0'}{idx}"
+                if form_format in forms.keys():
+                    pokemon_id = forms[form_format]
                 if isSpecialPokemon(current_pokemon_name):
-                    tracker_monsno = int(mons_no)
+                    pokemon_id = int(mons_no)
                 
-                diff_forms[current_pokemon_name + (str(idx or 1)) ] = [tracker_monsno, mon, slugify(mon), mons_no, idx or 1]
+                diff_forms[current_pokemon_name + (str(idx or 1)) ] = [pokemon_id, mon, slugify(mon), mons_no, idx or 1]
     with open(os.path.join(debug_file_path, "diff_forms_output.json"), "w", encoding="utf-8") as output:
         json.dump(diff_forms, output, ensure_ascii=False, indent=2)
     return diff_forms
