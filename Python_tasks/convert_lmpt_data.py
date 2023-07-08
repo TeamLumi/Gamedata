@@ -13,7 +13,7 @@ from load_files import get_lumi_data, load_data
 from pokedex_generator import getPokedexInfo
 from pokemonUtils import (get_diff_form_dictionary,
                           get_pokemon_from_trainer_info,
-                          get_pokemon_pokemon_id_from_name, get_pokemon_name,
+                          get_pokemon_id_from_name, get_pokemon_name,
                           isSpecialPokemon, get_form_pokemon_personal_id)
 
 # Get the repo file path for cleaner path generating
@@ -424,7 +424,7 @@ def get_honey_tree_encounter_rates(rates_list):
         for mons_data in honey_encounter_data[mon]:
             monsName = constants.RIGHT_FARFETCHD if mon == constants.WRONG_FARFETCHD.capitalize() else mon
             check_monsName(monsName)
-            monsNo = get_pokemon_pokemon_id_from_name(monsName)
+            monsNo = get_pokemon_id_from_name(monsName)
 
             encounter_list_order = organize_honey_tree_list(mons_data)
             if monsNo not in rates_list:

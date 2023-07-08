@@ -139,7 +139,7 @@ def get_ability_id_from_ability_name(ability_string):
     ability_id = next((i for i, e in enumerate(ability_namedata['labelDataArray']) if e['wordDataArray'][0]['str'] == ability_string), -1)
     return ability_id
 
-def get_pokemon_pokemon_id_from_name(pokemon_name):
+def get_pokemon_id_from_name(pokemon_name):
     if not pokemon_name:
         return -1
     return NAME_MAP[pokemon_name]

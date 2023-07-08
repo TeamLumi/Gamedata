@@ -5,13 +5,13 @@ import constants
 from load_files import load_data, get_lumi_data
 from pokemonUtils import (get_form_name, get_form_pokemon_personal_id,
                           get_pokemon_name, get_pokemon_name, get_diff_form_dictionary,
-                          get_pokemon_pokemon_id_from_name)
+                          get_pokemon_id_from_name)
 
 def check_monsName(monsName):
     '''
     This checks that a pokemons name is formatted correctly specifically for the Honey trees
     '''
-    monsNo = get_pokemon_pokemon_id_from_name(monsName)
+    monsNo = get_pokemon_id_from_name(monsName)
     if monsNo == -1:
         raise SyntaxError("This monsName is not formatted correctly to get a correct monsNo:", monsName)
 
