@@ -13,8 +13,8 @@ from load_files import get_lumi_data, load_data
 from pokedex_generator import getPokedexInfo
 from pokemonUtils import (get_diff_form_dictionary,
                           get_pokemon_from_trainer_info,
-                          get_pokemon_mons_no_from_name, get_pokemon_name,
-                          isSpecialPokemon)
+                          get_pokemon_pokemon_id_from_name, get_pokemon_name,
+                          isSpecialPokemon, get_form_pokemon_personal_id)
 
 # Get the repo file path for cleaner path generating
 repo_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
@@ -314,12 +314,12 @@ def get_standard_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, m
         rate = get_route_rate(new_method, method_index, route_rates)
         encounter_list_order = [zoneName, new_method, rate, minlevel, maxlevel, method_index, zoneID]
 
-        if monsName not in encounters:
-            encounters[monsName] = [encounter_list_order]
-        elif encounter_list_order not in encounters[monsName] and encounter_list_order[1] not in ["Incense", "Surfing Incense"]:
-            encounters[monsName].append(encounter_list_order)
+        if monsNo not in encounters:
+            encounters[monsNo] = [encounter_list_order]
+        elif encounter_list_order not in encounters[monsNo] and encounter_list_order[1] not in ["Incense", "Surfing Incense"]:
+            encounters[monsNo].append(encounter_list_order)
         elif "Incense" not in new_method:
-            print("Something missing here?", method_index, monsName, encounter_list_order)
+            print("Something missing here?", method_index, monsNo, encounter_list_order)
 
 def get_diff_form_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, method_index):
     '''
@@ -335,6 +335,7 @@ def get_diff_form_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, 
     pkmn_key = pokedex[str(reverse_lumi_formula_mon)] + str(formNo)
     diff_forms_key = diff_forms[pkmn_key][1]
     monsName = get_pokemon_name(monsNo)
+    pokemon_id = get_form_pokemon_personal_id(reverse_lumi_formula_mon, formNo)
 
     temp_form_no = formNo
     if isSpecialPokemon(get_pokemon_name(monsNo)):
@@ -354,12 +355,12 @@ def get_diff_form_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, 
             bad_encounters.append(check)
             return
 
-        if monsName not in encounters:
-            encounters[monsName] = [encounter_list_order]
-        elif encounter_list_order not in encounters[monsName]:
-            encounters[monsName].append(encounter_list_order)
+        if pokemon_id not in encounters:
+            encounters[pokemon_id] = [encounter_list_order]
+        elif encounter_list_order not in encounters[pokemon_id]:
+            encounters[pokemon_id].append(encounter_list_order)
         elif "Incense" not in new_method:
-            print("Something missing here?", method_index, monsName, encounter_list_order)
+            print("Something missing here?", method_index, pokemon_id, encounter_list_order)
 
 def update_mons_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, method_index):
     '''
@@ -423,15 +424,15 @@ def get_honey_tree_encounter_rates(rates_list):
         for mons_data in honey_encounter_data[mon]:
             monsName = constants.RIGHT_FARFETCHD if mon == constants.WRONG_FARFETCHD.capitalize() else mon
             check_monsName(monsName)
-            monsNo = get_pokemon_mons_no_from_name(monsName)
+            monsNo = get_pokemon_pokemon_id_from_name(monsName)
 
             encounter_list_order = organize_honey_tree_list(mons_data)
-            if monsName not in rates_list:
-                rates_list[monsName] = [encounter_list_order]
-            elif encounter_list_order not in rates_list[monsName]:
-                rates_list[monsName].append(encounter_list_order)
+            if monsNo not in rates_list:
+                rates_list[monsNo] = [encounter_list_order]
+            elif encounter_list_order not in rates_list[monsNo]:
+                rates_list[monsNo].append(encounter_list_order)
             elif method != "Incense" or method != "Surfing Incense":
-                print("Something missing here?", method_index, monsName, encounter_list_order)
+                print("Something missing here?", method_index, monsNo, encounter_list_order)
 
 def get_trophy_garden_encounter_rates(trophy_garden_encounters, rates_list):
     '''
@@ -448,12 +449,12 @@ def get_trophy_garden_encounter_rates(trophy_garden_encounters, rates_list):
         monsName = get_pokemon_name(monsNo)
         encounter_list_order = [zoneName, method, rate, minlevel, maxlevel, index, 297]
 
-        if monsName not in rates_list:
-            rates_list[monsName] = [encounter_list_order]
-        elif encounter_list_order not in rates_list[monsName]:
-            rates_list[monsName].append(encounter_list_order)
+        if monsNo not in rates_list:
+            rates_list[monsNo] = [encounter_list_order]
+        elif encounter_list_order not in rates_list[monsNo]:
+            rates_list[monsNo].append(encounter_list_order)
         elif method != "Incense" or method != "Surfing Incense":
-            print("Something missing here?", method_index, monsName, encounter_list_order)
+            print("Something missing here?", method_index, monsNo, encounter_list_order)
 
 def getEncounterData():
     '''
@@ -519,7 +520,7 @@ if __name__ == "__main__":
     rates = full_data['rates']
 
     
-    diff_forms = get_diff_form_dictionary()
+    diff_forms, NAME_MAP = get_diff_form_dictionary()
     getPokedexInfo()
 
     mid_time = time.time()

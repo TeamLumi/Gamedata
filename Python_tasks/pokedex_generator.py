@@ -335,12 +335,12 @@ def getPokedexInfo():
 
 if __name__ == "__main__":
 
-    diff_forms = get_diff_form_dictionary()
+    diff_forms, NAME_MAP = get_diff_form_dictionary()
     full_data = load_data()
     forms = generate_form_name_to_pokemon_id()
     getPokedexInfo()
 
 if __name__ != "__main__":
-    diff_forms = get_diff_form_dictionary()
+    diff_forms, NAME_MAP = get_diff_form_dictionary()
     full_data = load_data()
     forms = generate_form_name_to_pokemon_id()

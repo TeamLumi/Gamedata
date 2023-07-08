@@ -82,7 +82,16 @@ def get_form_name(id):
     Checks if there are any 
     '''
     form_namedata = full_data['form_namedata']
-
+    new_trouble_pokemon_names = { 
+        # This is to test the 3.0 data
+        1245: 'Ash-Greninja',
+        1288: 'Meowstic-F',
+        1314: 'Rockruff Own-Tempo',
+        1445: 'Indeedee-F',
+        1459: 'Basculegion-F',
+        1461: 'Oinkologne-F',
+        1067: "Galarian Farfetch'd"
+    }
     trouble_pokemon_names = {
         1242: 'Ash-Greninja',
         1285: 'Meowstic-F',
@@ -130,11 +139,10 @@ def get_ability_id_from_ability_name(ability_string):
     ability_id = next((i for i, e in enumerate(ability_namedata['labelDataArray']) if e['wordDataArray'][0]['str'] == ability_string), -1)
     return ability_id
 
-def get_pokemon_mons_no_from_name(pokemon_name):
+def get_pokemon_pokemon_id_from_name(pokemon_name):
     if not pokemon_name:
         return -1
-    mons_no = next((i for i, e in enumerate(name_data['labelDataArray']) if e['wordDataArray'][0]['str'] == pokemon_name), -1)
-    return mons_no
+    return NAME_MAP[pokemon_name]
 
 def get_nature_id(nature_string):
     nature_namedata = full_data['nature_namedata']
@@ -242,6 +250,7 @@ def create_diff_forms_dictionary(form_dict):
     Add the slugged current value as the third value in the array
     """
     diff_forms = {}
+    NAME_MAP = {}    
     for mons_no in form_dict.keys():
         mons_array = form_dict[mons_no]
         current_pokemon_name = get_pokemon_name(int(mons_no))
@@ -257,9 +266,12 @@ def create_diff_forms_dictionary(form_dict):
                     pokemon_id = int(mons_no)
                 
                 diff_forms[current_pokemon_name + (str(idx or 1)) ] = [pokemon_id, mon, slugify(mon), mons_no, idx or 1]
+                NAME_MAP[mon] = pokemon_id
+            else:
+                NAME_MAP[mon] = int(mons_no)
     with open(os.path.join(debug_file_path, "diff_forms_output.json"), "w", encoding="utf-8") as output:
         json.dump(diff_forms, output, ensure_ascii=False, indent=2)
-    return diff_forms
+    return diff_forms, NAME_MAP
 
 def get_pokemon_name_dictionary():
     pokemon = {}
@@ -376,5 +388,5 @@ if __name__ != '__main__':
     reversed_forms = {v: k for k, v in forms.items()}
     name_data = full_data['raw_pokedex']
     pokedex = get_lumi_data(name_data, get_pokemon_name)
-    diff_forms = get_diff_form_dictionary()
+    diff_forms, NAME_MAP = get_diff_form_dictionary()
 
