@@ -312,11 +312,19 @@ def get_standard_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, m
         zoneName = zones[3] if zones[3] != '' else zones[4]
         new_method = check_for_incense(new_method, method_index)
         rate = get_route_rate(new_method, method_index, route_rates)
-        encounter_list_order = [zoneName, new_method, rate, minlevel, maxlevel, method_index, zoneID]
+        encounter_list_order = {
+            "routeName": zoneName, 
+            "encounterType": new_method,
+            "encounterRate": rate,
+            "minLevel": minlevel,
+            "maxLevel": maxlevel,
+            "encounterTypeIndex": method_index,
+            "zoneId": zoneID
+        }
 
         if monsNo not in encounters:
             encounters[monsNo] = [encounter_list_order]
-        elif encounter_list_order not in encounters[monsNo] and encounter_list_order[1] not in ["Incense", "Surfing Incense"]:
+        elif encounter_list_order not in encounters[monsNo] and new_method not in ["Incense", "Surfing Incense"]:
             encounters[monsNo].append(encounter_list_order)
         elif "Incense" not in new_method:
             print("Something missing here?", method_index, monsNo, encounter_list_order)
@@ -346,7 +354,15 @@ def get_diff_form_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, 
         zoneName = zones[3] if zones[3] != '' else zones[4]
         new_method = check_for_incense(new_method, method_index)
         rate = get_route_rate(new_method, method_index, route_rates)
-        encounter_list_order = [zoneName, new_method, rate, minlevel, maxlevel, method_index, zoneID]
+        encounter_list_order = {
+            "routeName": zoneName, 
+            "encounterType": new_method,
+            "encounterRate": rate,
+            "minLevel": minlevel,
+            "maxLevel": maxlevel,
+            "encounterTypeIndex": method_index,
+            "zoneId": zoneID
+        }
 
         tracker_route = get_tracker_route(zoneID)
 
@@ -410,7 +426,15 @@ def organize_honey_tree_list(mons_data):
     maxlevel = mons_data[2]
     index = None
     zoneID = None
-    return [route, method, rate, minlevel, maxlevel, index, zoneID]
+    return {
+        "routeName": route, 
+        "encounterType": method,
+        "encounterRate": rate,
+        "minLevel": minlevel,
+        "maxLevel": maxlevel,
+        "encounterTypeIndex": index,
+        "zoneId": zoneID
+    }
 
 def get_honey_tree_encounter_rates(rates_list):
     '''
@@ -447,7 +471,15 @@ def get_trophy_garden_encounter_rates(trophy_garden_encounters, rates_list):
         index = None
         monsNo = mon['monsNo']
         monsName = get_pokemon_name(monsNo)
-        encounter_list_order = [zoneName, method, rate, minlevel, maxlevel, index, 297]
+        encounter_list_order = {
+            "routeName": zoneName, 
+            "encounterType": method,
+            "encounterRate": rate,
+            "minLevel": minlevel,
+            "maxLevel": maxlevel,
+            "encounterTypeIndex": index,
+            "zoneId": 297
+        }
 
         if monsNo not in rates_list:
             rates_list[monsNo] = [encounter_list_order]
