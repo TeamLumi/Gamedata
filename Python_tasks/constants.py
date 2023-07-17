@@ -67,7 +67,6 @@ TRACKER_VARS = {
     TRAINER_SCHOOL: TRAINER_SCHOOL_TRACKER_VAR,
 }
 
-
 BAD_ENCOUNTER_LIST = ["Gigantamax", "Eternamax", "Mega ", "Totem "]
 STARTERS = ["piplup", "turtwig", "chimchar"]
 MASTER_TRAINER_TYPES = ["fire", "water", "electric", "grass", "ice", "fighting", "poison", "ground", "flying", "psychic", "bug", "rock", "ghost", "dragon", "dark", "steel", "fairy"]
@@ -124,6 +123,28 @@ DAY_ENC = "day"
 NIGHT_ENC = "night"
 REGULAR_ENC_LIST = [REGULAR_ENC, DAY_ENC, NIGHT_ENC]
 INCENSE_LIST = ["gbaRuby", "gbaSapp", "gbaEme", "gbaFire", "gbaLeaf"]
+
+### This section is for the eggGroups file
+EGG_GROUPS = {
+    0: "None",
+    1: "Monster",
+    2: "Water 1",
+    3: "Bug",
+    4: "Flying",
+    5: "Field",
+    6: "Fairy",
+    7: "Grass",
+    8: "Human-Like",
+    9: "Water 3",
+    10: "Mineral",
+    11: "Amorphous",
+    12: "Water 2",
+    13: "Ditto",
+    14: "Dragon",
+    15: "No Eggs",
+}
+
+HIGHEST_EGG_GROUP_ID = 15
 
 ZONE_ORDER = [
     "Route 201",
