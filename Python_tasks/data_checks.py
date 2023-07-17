@@ -147,7 +147,7 @@ def check_for_valid_ability(poke_num, ability, trainerID):
     if ability not in abilities:
         print(
             f"This trainer: {trainer_label} {trainer_name} ({trainerID}), has a pokemon with an invalid ability."
-            f"\n   Pokemon: {pokemon_name} ({poke_num}), Current Ability: {ability}, Valid Abilities {abilities}"
+            f"\n   Pokemon: {pokemon_name} ({poke_num}), Current Ability: '{ability}', Valid Abilities: {abilities}\n"
         )
     pass
 
