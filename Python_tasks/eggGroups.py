@@ -15,7 +15,7 @@ def createPokemonByEggGroupMap(pokemonMap, currentPokemon):
 
 def pokemonIdsByEggGroup(POKEMON_IDS_BY_EGG_GROUP):
   for pokemon in PersonalTable['Personal']:
-      return createPokemonByEggGroupMap(POKEMON_IDS_BY_EGG_GROUP, pokemon)
+    createPokemonByEggGroupMap(POKEMON_IDS_BY_EGG_GROUP, pokemon)
 
 def getEggGroupViaPokemonId(pokemonId=0):
     if not isinstance(pokemonId, int) or pokemonId < 0 or pokemonId >= len(PersonalTable['Personal']):
@@ -40,5 +40,5 @@ if __name__ != "__main__":
   POKEMON_IDS_BY_EGG_GROUP = {}
   full_data = load_data()
   PersonalTable = full_data["personal_table"]
-  POKEMON_IDS_BY_EGG_GROUP = pokemonIdsByEggGroup(POKEMON_IDS_BY_EGG_GROUP)
+  POKEMON_IDS_IN_EGG_GROUP = pokemonIdsByEggGroup(POKEMON_IDS_BY_EGG_GROUP)
   

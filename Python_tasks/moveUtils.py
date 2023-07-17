@@ -214,6 +214,16 @@ def get_grass_knot_power(weightkg):
     else:
         return 20
 
+def get_mon_full_learnset(id=0):
+    '''
+    Returns the full learnset and egg learnsets of a pokemon
+    '''
+    full_learnset = full_data['full_learnset']
+    for pokemon_learnset in full_learnset:
+        if pokemon_learnset['id'] == id:
+            return pokemon_learnset
+    return None
+
 if __name__ != "__main__":
     full_data = load_data()
     learnset_data = full_data['learnset_data']
