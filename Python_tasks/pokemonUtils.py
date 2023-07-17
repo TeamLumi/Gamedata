@@ -340,7 +340,7 @@ def get_mons_no_and_form_no(pokemon_id):
     form_no = int(form_format[-1].lstrip("0"))
     return mons_no, form_no
 
-def get_pokemon_from_trainer_info(trainer, output_format):
+def get_pokemon_from_trainer_info(trainer, output_format, check_for_valid_ability):
     pokemon_list = []
     for poke_num in range(1,7):
         level = trainer[f"P{poke_num}Level"]
@@ -356,8 +356,10 @@ def get_pokemon_from_trainer_info(trainer, output_format):
 
         form = trainer[f"P{poke_num}FormNo"]
         pokemonId = diff_forms[pokedex[str(trainer[f"P{poke_num}MonsNo"])] + str(form)][0] if form > 0 and output_format == constants.TRACKER_METHOD else monsno
+        pID = get_form_pokemon_personal_id(monsno, form)
         trainer_item = trainer[f"P{poke_num}Item"]
         item = get_item_string(trainer_item) if trainer_item != 0 else None
+        check_for_valid_ability(pID, ability, trainer['ID'])
         pokemon = {
             "ability": ability,
             "gender": gender,

@@ -5,7 +5,20 @@ import constants
 from load_files import load_data, get_lumi_data
 from pokemonUtils import (get_form_name, get_form_pokemon_personal_id,
                           get_pokemon_name, get_pokemon_name, get_diff_form_dictionary,
-                          get_pokemon_id_from_name)
+                          get_pokemon_id_from_name, get_pokemon_info)
+
+def get_trainer_name(label_name):
+    '''
+    This takes the label of a trainer, matches it to the labelName in the trainer_names files and returns the trainerType
+    '''
+    label_data_array = trainer_names['labelDataArray']
+    match = next((e for e in label_data_array if e['labelName'] == label_name), None)
+    return match['wordDataArray'][0]['str'] if match else None
+
+def get_trainer_label(label_name):
+    label_data_array = trainer_labels['labelDataArray']
+    match = next((e for e in label_data_array if e['labelName'] == label_name), None)
+    return match['wordDataArray'][0]['str'] if match else None
 
 def check_monsName(monsName):
     '''
@@ -119,7 +132,26 @@ def check_mons_list(pokemon_list, zoneID, final_list):
         return unique_list
     return -1
 
+def check_for_valid_ability(poke_num, ability, trainerID):
+    poke_info = get_pokemon_info(poke_num)
+    abilities = [
+        poke_info['ability1'],
+        poke_info['ability2'],
+        poke_info['abilityH'],
+    ]
+    pokemon_name = get_pokemon_name(poke_num)
+    trainer_data = TRAINER_TABLE['TrainerData'][trainerID]
+    trainer_name = get_trainer_name(trainer_data['NameLabel'])
+    trainer_type = TRAINER_TABLE['TrainerType'][trainer_data['TypeID']]
+    trainer_label = trainer_label = get_trainer_label(trainer_type['LabelTrType'])
+    if ability not in abilities:
+        print(f"This trainer: {trainer_label} {trainer_name} ({trainerID}), has a pokemon with an invalid ability.\n   Pokemon: {pokemon_name} ({poke_num}), Current Ability: {ability}, Valid Abilities {abilities}")
+    pass
+
 if __name__ != "__main__":
     full_data = load_data()
     personal_table = full_data['personal_table']['Personal']
     diff_forms, NAME_MAP = get_diff_form_dictionary()
+    TRAINER_TABLE = full_data['raw_trainer_data']
+    trainer_names = full_data['trainer_names']
+    trainer_labels = full_data['trainer_labels']
