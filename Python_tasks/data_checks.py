@@ -145,7 +145,10 @@ def check_for_valid_ability(poke_num, ability, trainerID):
     trainer_type = TRAINER_TABLE['TrainerType'][trainer_data['TypeID']]
     trainer_label = trainer_label = get_trainer_label(trainer_type['LabelTrType'])
     if ability not in abilities:
-        print(f"This trainer: {trainer_label} {trainer_name} ({trainerID}), has a pokemon with an invalid ability.\n   Pokemon: {pokemon_name} ({poke_num}), Current Ability: {ability}, Valid Abilities {abilities}")
+        print(
+            f"This trainer: {trainer_label} {trainer_name} ({trainerID}), has a pokemon with an invalid ability."
+            f"\n   Pokemon: {pokemon_name} ({poke_num}), Current Ability: {ability}, Valid Abilities {abilities}"
+        )
     pass
 
 if __name__ != "__main__":
