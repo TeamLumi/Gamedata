@@ -18,10 +18,10 @@ def custom_json_dump(obj, fp, *, indent=4):
         if isinstance(obj, list):
             if len(obj) == 0:
                 return "[]"
-            if all(isinstance(item, list) and len(item) == 2 for item in obj):
+            if all(isinstance(item, list) and len(item) == 3 for item in obj):
                 result = "[\n"
                 for item in obj:
-                    result += f'{" " * (indent * (level + 1))}[{json.dumps(item[0])}, {json.dumps(item[1])}],\n'
+                    result += f'{" " * (indent * (level + 1))}[{json.dumps(item[0])}, {json.dumps(item[1])}, {json.dumps(item[2])}],\n'
                 result = result[:-2] + "\n" + " " * (indent * level) + "]"
             else:
                 result = "["
