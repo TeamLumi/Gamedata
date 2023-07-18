@@ -18,9 +18,9 @@ def check_monsName(monsName):
     if monsNo == -1:
         raise SyntaxError("This monsName is not formatted correctly to get a correct monsNo:", monsName)
 
-def get_average_time(execution_times):
-    # Do I really need to explain this one?
-    return sum(execution_times) / len(execution_times)
+def get_average_time(execution_times_list):
+    '''Do I really need to explain this one?'''
+    return sum(execution_times_list) / len(execution_times_list)
 
 def bad_encounter_data(pkmn_name, routeName=None, route=None):
     '''
@@ -122,12 +122,56 @@ def check_mons_list(pokemon_list, zoneID, final_list):
         return unique_list
     return -1
 
-def find_egg_moveset_path(pokemonID, egg_move_path, move):
+def bfs_egg_moves(pokemonList, move):
+    new_egg_move_path = defaultdict(list)
+    visited = set()
+    move_name = get_move_string(move)
+
+    for pokemonID in pokemonList:
+        egg_groups_list = []
+        mon_egg_group = getEggGroupViaPokemonId(pokemonID)
+        for group in mon_egg_group:
+            egg_groups_list.extend(getPokemonIdsInEggGroup(int(group)))
+        for pokemon in egg_groups_list:
+            if pokemon in evolution_dex[str(pokemonID)]['path'] or pokemon in visited:
+                continue
+            visited.add(pokemon)
+            egg_move_dict = find_egg_moveset_path(pokemon, move)
+            if egg_move_dict == -1:
+                continue
+            new_egg_move_path[move_name].append(egg_move_dict)
+
+    egg_move_check = check_for_all_egg_moves(new_egg_move_path[move_name])
+    if egg_move_check[0] == 0:
+        print(new_egg_move_path[move_name])
+        return new_egg_move_path[move_name], egg_move_check[1]
+    else:
+        bfs_egg_moves(egg_move_check, move)
+
+def check_for_all_egg_moves(egg_move_paths):
+    if not egg_move_paths:  # Check if the array is empty
+        return [-1]
+
+    all_eggs = all(egg_move_dict['Method'] == 'Egg Move' for egg_move_dict in egg_move_paths)
+
+    if all_eggs:
+        egg_pokemon = [get_pokemon_id_from_name(egg_move_dict['Pokemon']) for egg_move_dict in egg_move_paths]
+        print("All methods are Egg Moves.", egg_pokemon)
+        return egg_pokemon
+    else:
+        non_egg_pokemon = [get_pokemon_id_from_name(egg_move_dict['Pokemon'])
+                    for egg_move_dict in egg_move_paths
+                    if egg_move_dict['Method'] != 'Egg Move']
+        return [0, non_egg_pokemon]
+
+def find_egg_moveset_path(pokemonID, move):
     pokemon_name = get_pokemon_name(pokemonID)
     baby_mon_id = evolution_dex[str(pokemonID)]['path'][0]
     baby_mon_egg_set = get_egg_moves(baby_mon_id)['moveId']
     pokemon_learnset = get_mon_full_learnset(pokemonID)
     if pokemon_learnset is None:
+        #This is for if the pokemon doesn't have a moveset according the the fullLearnset.json
+        #AKA this pokemon is not currently valid
         return -1
 
     if move in pokemon_learnset['level']:
@@ -138,6 +182,7 @@ def find_egg_moveset_path(pokemonID, egg_move_path, move):
         return {'Pokemon': pokemon_name, 'Method': "Tutor", 'Path': []}
     elif move in baby_mon_egg_set:
         return {'Pokemon': pokemon_name, 'Method': "Egg Move", 'Path': []}
+    #Getting to the end here means that there wasn't a match for any move in the current mon's set
     return -1
 
 def check_egg_moveset(pokemonID):
@@ -157,11 +202,23 @@ def check_egg_moveset(pokemonID):
         for mon in egg_groups_list:
             if mon in evolution_dex[str(pokemonID)]['path']:
                 continue
-            egg_move_dict = find_egg_moveset_path(mon, egg_move_path, move)
+            egg_move_dict = find_egg_moveset_path(mon, move)
             if egg_move_dict == -1:
                 continue
             egg_move_path[move_name].append(egg_move_dict)
-    
+        egg_move_check = check_for_all_egg_moves(egg_move_path[move_name])
+        if egg_move_check[0] == 0:
+            continue
+        elif egg_move_check[0] == -1:
+            print("This pokemon has an invalid egg move:", get_pokemon_name(pokemonID))
+            print("    This move is not a valid egg move:", move_name)
+            continue
+        else:
+            # This means that egg_move_check is a list of mons 
+            # and that all obtain the current move from egg moves
+            shortest_egg_path = bfs_egg_moves(egg_move_check, move)
+            egg_move_path[move_name]
+
     return egg_move_path
 
 if __name__ != "__main__":

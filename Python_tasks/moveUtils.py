@@ -188,9 +188,9 @@ def get_move_id(move_name):
 
 def get_egg_moves(dex_id=0):
     """
-    Requires the ID of a Pokemon, not the MonsNo, this is how we must handle Forms.
+    Requires the ID of the first form in this pokemon's line
     """
-    egg_learnset = full_data['egg_learnset']['Data']    
+    egg_learnset = full_data['egg_learnset']['Data']
     egg_moves = egg_learnset[dex_id]['wazaNo']
     return {'level': 'egg', 'moveId': egg_moves}
 
