@@ -237,7 +237,7 @@ def check_egg_moveset(pokemonID):
         if egg_move_check[0] == 0:
             continue
         elif egg_move_check[0] == -1:
-            print(f"Pokemon: {get_pokemon_name(pokemonID)}", f"Move: {move_name}")
+            print(f"Pokemon: {get_pokemon_name(pokemonID)}", f"Move: {move_name} ({move})")
             continue
         else:
             # This means that egg_move_check is a list of mons 
