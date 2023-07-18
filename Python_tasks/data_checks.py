@@ -124,9 +124,7 @@ def check_mons_list(pokemon_list, zoneID, final_list):
 
 def bfs_egg_moves(pokemonList, move, current_path, original_pokemon, visited):
     new_egg_move_path = defaultdict(list)
-    print(current_path, pokemonList)
     move_name = get_move_string(move)
-    print(move_name)
 
     for pokemonID in pokemonList:
         if pokemonID == -1:
@@ -137,6 +135,12 @@ def bfs_egg_moves(pokemonList, move, current_path, original_pokemon, visited):
         egg_groups_list = []
         mon_egg_group = getEggGroupViaPokemonId(pokemonID)
         for group in mon_egg_group:
+            if group == int(5) and move not in constants.SMEARGLE_NO_SKETCH_LIST:
+                current_path.append(235) # This is Smeargle
+                egg_move_dict = find_egg_moveset_path(235, move)
+                egg_move_dict['Path'] = current_path
+                new_egg_move_path[move_name].append(egg_move_dict)
+                return new_egg_move_path[move_name]
             egg_groups_list.extend(getPokemonIdsInEggGroup(int(group)))
         for pokemon in egg_groups_list:
             if pokemon in evolution_dex[str(original_pokemon)]['path'] or pokemon in visited:
@@ -155,12 +159,9 @@ def bfs_egg_moves(pokemonList, move, current_path, original_pokemon, visited):
             if egg_move_dict == -1:
                 continue
             egg_move_dict['Path'] = current_path_copy
-            print(egg_move_dict)
             new_egg_move_path[move_name].append(egg_move_dict)
             if egg_move_dict['Method'] != "Egg Move":
-                print(egg_move_dict, move_name, original_pokemon)
-                break
-
+                continue
     egg_move_check = check_for_all_egg_moves(new_egg_move_path[move_name])
     if egg_move_check[0] == 0:
         return new_egg_move_path[move_name]
@@ -177,7 +178,6 @@ def check_for_all_egg_moves(egg_move_paths):
 
     if all_eggs:
         egg_pokemon = [get_pokemon_id_from_name(egg_move_dict['Pokemon']) for egg_move_dict in egg_move_paths]
-        #print("All methods are Egg Moves.", egg_pokemon)
         return egg_pokemon
     else:
         non_egg_pokemon = [get_pokemon_id_from_name(egg_move_dict['Pokemon'])
@@ -186,6 +186,8 @@ def check_for_all_egg_moves(egg_move_paths):
         return [0, non_egg_pokemon]
 
 def find_egg_moveset_path(pokemonID, move):
+    if pokemonID == 235:
+        return {'Pokemon': "Smeargle", 'Method': "Sketch that Bitch", 'Path': []}
     pokemon_name = get_pokemon_name(pokemonID)
     baby_mon_id = evolution_dex[str(pokemonID)]['path'][0]
     baby_mon_egg_set = get_egg_moves(baby_mon_id)['moveId']
@@ -220,6 +222,10 @@ def check_egg_moveset(pokemonID):
 
     for move in egg_set:
         move_name = get_move_string(move)
+        if 5 in mon_egg_group and move not in constants.SMEARGLE_NO_SKETCH_LIST:
+            egg_move_dict = find_egg_moveset_path(235, move)
+            egg_move_path[move_name].append(egg_move_dict)
+            continue
         for mon in egg_groups_list:
             if mon in evolution_dex[str(pokemonID)]['path']:
                 continue
@@ -231,8 +237,7 @@ def check_egg_moveset(pokemonID):
         if egg_move_check[0] == 0:
             continue
         elif egg_move_check[0] == -1:
-            print("This pokemon has an invalid egg move:", get_pokemon_name(pokemonID))
-            print("    This move is not a valid egg move:", move_name)
+            print(f"Pokemon: {get_pokemon_name(pokemonID)}", f"Move: {move_name}")
             continue
         else:
             # This means that egg_move_check is a list of mons 
@@ -240,9 +245,7 @@ def check_egg_moveset(pokemonID):
             shortest_egg_paths = bfs_egg_moves(egg_move_check, move, [egg_move_check[0]], pokemonID, set())
             if not shortest_egg_paths:
                 break
-            print(shortest_egg_paths)
             shortest_egg_path = shortest_egg_paths[-1]
-            print(shortest_egg_path)
             egg_move_path[move_name] = shortest_egg_path
 
     return egg_move_path
@@ -256,4 +259,4 @@ if __name__ != "__main__":
 if __name__ == "__main__":
     full_data = load_data()
     evolution_dex = full_data['evolution_dex']
-    check_egg_moveset(54)
+    print(check_egg_moveset(54))
