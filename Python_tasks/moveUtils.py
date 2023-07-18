@@ -190,11 +190,9 @@ def get_egg_moves(dex_id=0):
     """
     Requires the ID of a Pokemon, not the MonsNo, this is how we must handle Forms.
     """
-    egg_learnset = full_data['egg_learnset']
-    monsno = personal_data['Personal'][dex_id]['monsno']
-    form_no = get_pokemon_form_id(monsno, dex_id)
-    egg_moves = [e['wazaNo'] for e in egg_learnset['Data'] if e['no'] == monsno and e['formNo'] == form_no]
-    return [{'level': 'egg', 'moveId': move_id} for move_id in egg_moves]
+    egg_learnset = full_data['egg_learnset']['Data']    
+    egg_moves = egg_learnset[dex_id]['wazaNo']
+    return {'level': 'egg', 'moveId': egg_moves}
 
 def get_grass_knot_power(weightkg):
     """
@@ -219,9 +217,8 @@ def get_mon_full_learnset(id=0):
     Returns the full learnset and egg learnsets of a pokemon
     '''
     full_learnset = full_data['full_learnset']
-    for pokemon_learnset in full_learnset:
-        if pokemon_learnset['id'] == id:
-            return pokemon_learnset
+    if str(id) in full_learnset.keys():
+        return full_learnset[str(id)]
     return None
 
 if __name__ != "__main__":
