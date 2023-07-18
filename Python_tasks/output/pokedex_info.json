@@ -8,9 +8,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "—",
-      "—",
-      "—"
+      "\u2014",
+      "\u2014",
+      "\u2014"
     ],
     "dexNum": 0,
     "form": 0
@@ -1537,7 +1537,7 @@
   },
   {
     "value": 83,
-    "text": "Farfetch’d",
+    "text": "Farfetch\u2019d",
     "type": "FIGHTING",
     "dualtype": "FLYING",
     "evolve": [
@@ -12020,7 +12020,7 @@
   },
   {
     "value": 669,
-    "text": "Flabébé",
+    "text": "Flab\u00e9b\u00e9",
     "type": "FAIRY",
     "evolve": [
       669,
@@ -16018,9 +16018,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Dragon’s Maw",
-      "Dragon’s Maw",
-      "Dragon’s Maw"
+      "Dragon\u2019s Maw",
+      "Dragon\u2019s Maw",
+      "Dragon\u2019s Maw"
     ],
     "dexNum": 895,
     "form": 0
@@ -23414,7 +23414,7 @@
   },
   {
     "value": 1262,
-    "text": "Vivillon Poké Ball Pattern",
+    "text": "Vivillon Pok\u00e9 Ball Pattern",
     "type": "BUG",
     "dualtype": "FLYING",
     "evolve": [
@@ -23431,7 +23431,7 @@
   },
   {
     "value": 1263,
-    "text": "Flabébé Yellow Flower",
+    "text": "Flab\u00e9b\u00e9 Yellow Flower",
     "type": "FAIRY",
     "evolve": [
       1263,
@@ -23449,7 +23449,7 @@
   },
   {
     "value": 1264,
-    "text": "Flabébé Orange Flower",
+    "text": "Flab\u00e9b\u00e9 Orange Flower",
     "type": "FAIRY",
     "evolve": [
       1264,
@@ -23467,7 +23467,7 @@
   },
   {
     "value": 1265,
-    "text": "Flabébé Blue Flower",
+    "text": "Flab\u00e9b\u00e9 Blue Flower",
     "type": "FAIRY",
     "evolve": [
       1265,
@@ -23485,7 +23485,7 @@
   },
   {
     "value": 1266,
-    "text": "Flabébé White Flower",
+    "text": "Flab\u00e9b\u00e9 White Flower",
     "type": "FAIRY",
     "evolve": [
       1266,

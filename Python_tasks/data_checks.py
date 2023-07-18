@@ -129,7 +129,7 @@ def check_egg_moveset(pokemonID):
     learnset = get_mon_full_learnset(pokemonID)
     mon_egg_group = getEggGroupViaPokemonId(pokemonID)
     baby_pokemon_id = evolution_dex[str(pokemonID)]['path'][0]
-    egg_set = get_egg_moves(baby_pokemon_id)[0]['moveId']
+    egg_set = get_egg_moves(baby_pokemon_id)['moveId']
     print(pokemonID)
 
     for group in mon_egg_group:
@@ -144,7 +144,7 @@ def check_egg_moveset(pokemonID):
             if mon_learnset == None:
                 continue
             baby_mon_id = evolution_dex[str(mon)]['path'][0]
-            baby_mon_egg_set = get_egg_moves(baby_mon_id)[0]['moveId']
+            baby_mon_egg_set = get_egg_moves(baby_mon_id)['moveId']
             pokemon_name = get_pokemon_name(mon)
             if move in mon_learnset['level']:
                 egg_move_path[move_name].append([pokemon_name, "Level Up"])

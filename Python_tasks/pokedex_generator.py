@@ -5,7 +5,7 @@ from collections import defaultdict
 
 import constants
 from data_checks import get_average_time, check_bad_dex_mon, check_egg_moveset
-from load_files import load_data
+from load_files import load_data, custom_json_dump
 from pokemonUtils import generate_form_name_to_pokemon_id, get_pokemon_info, get_pokemon_name, get_diff_form_dictionary, get_mons_no_and_form_no, get_form_pokemon_personal_id
 
 repo_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
@@ -320,7 +320,7 @@ def getPokedexInfo():
     There are limits surrounding the valid pokemon in the game and they are not allowed.
     '''
     pokedex = []
-    egg_move_dict = defaultdict(list)
+    egg_move_dict = {}
     evolutions = evolution_pathfinding()
 
     for pokemon in evolutions.keys():
@@ -329,18 +329,20 @@ def getPokedexInfo():
         evolution_path = evolutions[pokemon]["path"]
         if pokemon < 906 or pokemon > 1010:
             dex_info = get_mon_dex_info(pokemon, evolution_path)
-            egg_move_info = check_egg_moveset(pokemon)
+            if pokemon != 0:
+                egg_move_info = check_egg_moveset(pokemon)
+            else:
+                egg_move_info = []
         pokedex.append(dex_info)
-        egg_move_dict[pokemon] = [egg_move_info]
+        egg_move_dict[pokemon] = egg_move_info
 
     with open(os.path.join(output_file_path, "pokedex_info.json"), "w", encoding="utf-8") as output:
-        json.dump(pokedex, output, ensure_ascii=False, indent=2)
+        custom_json_dump(pokedex, output, indent=2)
     with open(os.path.join(debug_file_path, "egg_move_paths.json"), "w", encoding="utf-8") as output:
-        json.dump(egg_move_dict, output, ensure_ascii=False, indent=2)
+        custom_json_dump(egg_move_dict, output, indent=2)
     return pokedex
 
 if __name__ == "__main__":
-
     diff_forms, NAME_MAP = get_diff_form_dictionary()
     full_data = load_data()
     forms = generate_form_name_to_pokemon_id()
