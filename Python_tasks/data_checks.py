@@ -122,31 +122,52 @@ def check_mons_list(pokemon_list, zoneID, final_list):
         return unique_list
     return -1
 
-def bfs_egg_moves(pokemonList, move):
+def bfs_egg_moves(pokemonList, move, current_path, original_pokemon, visited):
     new_egg_move_path = defaultdict(list)
-    visited = set()
+    print(current_path, pokemonList)
     move_name = get_move_string(move)
+    print(move_name)
 
     for pokemonID in pokemonList:
+        if pokemonID == -1:
+            break
+        egg_move_check = check_for_all_egg_moves(new_egg_move_path[move_name])
+        if egg_move_check[0] == 0:
+            break
         egg_groups_list = []
         mon_egg_group = getEggGroupViaPokemonId(pokemonID)
         for group in mon_egg_group:
             egg_groups_list.extend(getPokemonIdsInEggGroup(int(group)))
         for pokemon in egg_groups_list:
-            if pokemon in evolution_dex[str(pokemonID)]['path'] or pokemon in visited:
+            if pokemon in evolution_dex[str(original_pokemon)]['path'] or pokemon in visited:
                 continue
             visited.add(pokemon)
+            pokemon_name = get_pokemon_name(pokemon)
+
+            # Create a separate copy of the current_path for each Pokémon
+            current_path_copy = current_path.copy()
+            if current_path_copy[0] != original_pokemon:
+                current_path_copy.insert(0, original_pokemon)  # Add the initial pokemonID only if the list is empty
+            current_path_copy.append(pokemonID)
+            current_path_copy.append(pokemon)
+
             egg_move_dict = find_egg_moveset_path(pokemon, move)
             if egg_move_dict == -1:
                 continue
+            egg_move_dict['Path'] = current_path_copy
+            print(egg_move_dict)
             new_egg_move_path[move_name].append(egg_move_dict)
+            if egg_move_dict['Method'] != "Egg Move":
+                print(egg_move_dict, move_name, original_pokemon)
+                break
 
     egg_move_check = check_for_all_egg_moves(new_egg_move_path[move_name])
     if egg_move_check[0] == 0:
-        print(new_egg_move_path[move_name])
-        return new_egg_move_path[move_name], egg_move_check[1]
+        return new_egg_move_path[move_name]
+    if egg_move_check[0] == -1:
+        return
     else:
-        bfs_egg_moves(egg_move_check, move)
+        bfs_egg_moves(egg_move_check, move, current_path, original_pokemon, visited)
 
 def check_for_all_egg_moves(egg_move_paths):
     if not egg_move_paths:  # Check if the array is empty
@@ -156,7 +177,7 @@ def check_for_all_egg_moves(egg_move_paths):
 
     if all_eggs:
         egg_pokemon = [get_pokemon_id_from_name(egg_move_dict['Pokemon']) for egg_move_dict in egg_move_paths]
-        print("All methods are Egg Moves.", egg_pokemon)
+        #print("All methods are Egg Moves.", egg_pokemon)
         return egg_pokemon
     else:
         non_egg_pokemon = [get_pokemon_id_from_name(egg_move_dict['Pokemon'])
@@ -216,8 +237,13 @@ def check_egg_moveset(pokemonID):
         else:
             # This means that egg_move_check is a list of mons 
             # and that all obtain the current move from egg moves
-            shortest_egg_path = bfs_egg_moves(egg_move_check, move)
-            egg_move_path[move_name]
+            shortest_egg_paths = bfs_egg_moves(egg_move_check, move, [egg_move_check[0]], pokemonID, set())
+            if not shortest_egg_paths:
+                break
+            print(shortest_egg_paths)
+            shortest_egg_path = shortest_egg_paths[-1]
+            print(shortest_egg_path)
+            egg_move_path[move_name] = shortest_egg_path
 
     return egg_move_path
 
@@ -230,4 +256,4 @@ if __name__ != "__main__":
 if __name__ == "__main__":
     full_data = load_data()
     evolution_dex = full_data['evolution_dex']
-    print(check_egg_moveset(41))
+    check_egg_moveset(54)
