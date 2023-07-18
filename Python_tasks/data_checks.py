@@ -122,6 +122,24 @@ def check_mons_list(pokemon_list, zoneID, final_list):
         return unique_list
     return -1
 
+def find_egg_moveset_path(pokemonID, egg_move_path, move):
+    pokemon_name = get_pokemon_name(pokemonID)
+    baby_mon_id = evolution_dex[str(pokemonID)]['path'][0]
+    baby_mon_egg_set = get_egg_moves(baby_mon_id)['moveId']
+    pokemon_learnset = get_mon_full_learnset(pokemonID)
+    if pokemon_learnset is None:
+        return -1
+
+    if move in pokemon_learnset['level']:
+        return {'Pokemon': pokemon_name, 'Method': "Level Up", 'Path': []}
+    elif move in pokemon_learnset['tm']:
+        return {'Pokemon': pokemon_name, 'Method': "TM Move", 'Path': []}
+    elif move in pokemon_learnset['tutor']:
+        return {'Pokemon': pokemon_name, 'Method': "Tutor", 'Path': []}
+    elif move in baby_mon_egg_set:
+        return {'Pokemon': pokemon_name, 'Method': "Egg Move", 'Path': []}
+    return -1
+
 def check_egg_moveset(pokemonID):
     egg_move_path = defaultdict(list)
     egg_groups_list = []
@@ -130,7 +148,6 @@ def check_egg_moveset(pokemonID):
     mon_egg_group = getEggGroupViaPokemonId(pokemonID)
     baby_pokemon_id = evolution_dex[str(pokemonID)]['path'][0]
     egg_set = get_egg_moves(baby_pokemon_id)['moveId']
-    print(pokemonID)
 
     for group in mon_egg_group:
         egg_groups_list.extend(getPokemonIdsInEggGroup(int(group)))
@@ -140,20 +157,10 @@ def check_egg_moveset(pokemonID):
         for mon in egg_groups_list:
             if mon in evolution_dex[str(pokemonID)]['path']:
                 continue
-            mon_learnset = get_mon_full_learnset(mon)
-            if mon_learnset == None:
+            egg_move_dict = find_egg_moveset_path(mon, egg_move_path, move)
+            if egg_move_dict == -1:
                 continue
-            baby_mon_id = evolution_dex[str(mon)]['path'][0]
-            baby_mon_egg_set = get_egg_moves(baby_mon_id)['moveId']
-            pokemon_name = get_pokemon_name(mon)
-            if move in mon_learnset['level']:
-                egg_move_path[move_name].append([pokemon_name, "Level Up"])
-            elif move in mon_learnset['tm']:
-                egg_move_path[move_name].append([pokemon_name, "TM Move"])
-            elif move in mon_learnset['tutor']:
-                egg_move_path[move_name].append([pokemon_name, "Tutor"])
-            elif move in baby_mon_egg_set and move_name not in egg_move_path.keys():
-                egg_move_path[move_name].append([pokemon_name, "Egg Move From Different Mon"])
+            egg_move_path[move_name].append(egg_move_dict)
     
     return egg_move_path
 
@@ -166,4 +173,4 @@ if __name__ != "__main__":
 if __name__ == "__main__":
     full_data = load_data()
     evolution_dex = full_data['evolution_dex']
-    print(check_egg_moveset(246))
+    print(check_egg_moveset(41))
