@@ -313,7 +313,7 @@ def get_standard_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, m
         new_method = check_for_incense(new_method, method_index)
         rate = get_route_rate(new_method, method_index, route_rates)
         encounter_list_order = {
-            "routeName": zoneName, 
+            "pokemonName": monsName, 
             "encounterType": new_method,
             "encounterRate": rate,
             "minLevel": minlevel,
@@ -322,10 +322,10 @@ def get_standard_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, m
             "zoneId": zoneID
         }
 
-        if monsNo not in encounters:
-            encounters[monsNo] = [encounter_list_order]
-        elif encounter_list_order not in encounters[monsNo] and new_method not in ["Incense", "Surfing Incense"]:
-            encounters[monsNo].append(encounter_list_order)
+        if zoneName not in encounters:
+            encounters[zoneName] = [encounter_list_order]
+        elif encounter_list_order not in encounters[zoneName] and new_method not in ["Incense", "Surfing Incense"]:
+            encounters[zoneName].append(encounter_list_order)
         elif "Incense" not in new_method:
             print("Something missing here?", method_index, monsNo, encounter_list_order)
 
@@ -355,7 +355,7 @@ def get_diff_form_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, 
         new_method = check_for_incense(new_method, method_index)
         rate = get_route_rate(new_method, method_index, route_rates)
         encounter_list_order = {
-            "routeName": zoneName, 
+            "pokemonName": monsName,
             "encounterType": new_method,
             "encounterRate": rate,
             "minLevel": minlevel,
@@ -371,10 +371,10 @@ def get_diff_form_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, 
             bad_encounters.append(check)
             return
 
-        if pokemon_id not in encounters:
-            encounters[pokemon_id] = [encounter_list_order]
-        elif encounter_list_order not in encounters[pokemon_id]:
-            encounters[pokemon_id].append(encounter_list_order)
+        if zoneName not in encounters:
+            encounters[zoneName] = [encounter_list_order]
+        elif encounter_list_order not in encounters[zoneName]:
+            encounters[zoneName].append(encounter_list_order)
         elif "Incense" not in new_method:
             print("Something missing here?", method_index, pokemon_id, encounter_list_order)
 
@@ -419,7 +419,7 @@ def organize_honey_tree_list(mons_data):
     There isn't a different slot for Honey trees so index is None
     zoneID is None for now for simplicity
     '''
-    route = mons_data[0]
+    zoneName = mons_data[0]
     method = constants.HONEY_TREE
     rate = mons_data[1]
     minlevel = mons_data[2]
@@ -427,7 +427,7 @@ def organize_honey_tree_list(mons_data):
     index = None
     zoneID = None
     return {
-        "routeName": route, 
+        "pokemonName": "", 
         "encounterType": method,
         "encounterRate": rate,
         "minLevel": minlevel,
@@ -449,12 +449,14 @@ def get_honey_tree_encounter_rates(rates_list):
             monsName = constants.RIGHT_FARFETCHD if mon == constants.WRONG_FARFETCHD.capitalize() else mon
             check_monsName(monsName)
             monsNo = get_pokemon_id_from_name(monsName)
+            zoneName = mons_data[0]
 
             encounter_list_order = organize_honey_tree_list(mons_data)
-            if monsNo not in rates_list:
-                rates_list[monsNo] = [encounter_list_order]
-            elif encounter_list_order not in rates_list[monsNo]:
-                rates_list[monsNo].append(encounter_list_order)
+            encounter_list_order['pokemonName'] = monsName
+            if zoneName not in rates_list:
+                rates_list[zoneName] = [encounter_list_order]
+            elif encounter_list_order not in rates_list[zoneName]:
+                rates_list[zoneName].append(encounter_list_order)
             elif method != "Incense" or method != "Surfing Incense":
                 print("Something missing here?", method_index, monsNo, encounter_list_order)
 
@@ -472,7 +474,7 @@ def get_trophy_garden_encounter_rates(trophy_garden_encounters, rates_list):
         monsNo = mon['monsNo']
         monsName = get_pokemon_name(monsNo)
         encounter_list_order = {
-            "routeName": zoneName, 
+            "pokemonName": monsName, 
             "encounterType": method,
             "encounterRate": rate,
             "minLevel": minlevel,
@@ -481,10 +483,10 @@ def get_trophy_garden_encounter_rates(trophy_garden_encounters, rates_list):
             "zoneId": 297
         }
 
-        if monsNo not in rates_list:
-            rates_list[monsNo] = [encounter_list_order]
-        elif encounter_list_order not in rates_list[monsNo]:
-            rates_list[monsNo].append(encounter_list_order)
+        if zoneName not in rates_list:
+            rates_list[zoneName] = [encounter_list_order]
+        elif encounter_list_order not in rates_list[zoneName]:
+            rates_list[zoneName].append(encounter_list_order)
         elif method != "Incense" or method != "Surfing Incense":
             print("Something missing here?", method_index, monsNo, encounter_list_order)
 
