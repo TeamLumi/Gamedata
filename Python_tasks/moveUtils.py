@@ -5,6 +5,7 @@ import unicodedata
 
 import constants
 from load_files import load_data
+from types import get_type_name
 
 parent_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 input_file_path = os.path.join(parent_file_path, 'input')
