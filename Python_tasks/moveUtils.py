@@ -2,10 +2,11 @@ import json
 import os
 import re
 import unicodedata
+from collections import defaultdict
 
 import constants
 from load_files import load_data
-from types import get_type_name
+from pokemonTypes import get_type_name
 
 parent_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 input_file_path = os.path.join(parent_file_path, 'input')
@@ -215,6 +216,33 @@ def get_grass_knot_power(weightkg):
     else:
         return 20
 
+def get_list_of_moves_by_type():
+    '''
+    This grabs all of the moves possible, grabs their id and outputs a text document
+    It will be ordered by move type and then by move_id
+    The output will be as follows:
+    Pound|Normal
+    Double Slap|Normal
+    Comet Punch|Normal
+    etc.
+    '''
+    moves = full_data['moves_table']['Waza']
+    moves_list = defaultdict(list)
+    with open(os.path.join(debug_file_path, "moves_by_types.txt"), "w") as output:
+        for move in moves:
+            move_props = get_move_properties(move['wazaNo'])
+            move_type = move_props['type']
+            move_name = move_props['name']
+            moves_list[move_type].append(move_name)
+        for move_type in moves_list.keys():
+            for move_name in moves_list[move_type]:
+                output.write(f"{move_name}|{move_type}\n")
+
 if __name__ != "__main__":
     full_data = load_data()
     learnset_data = full_data['learnset_data']
+
+if __name__ == "__main__":
+    full_data = load_data()
+    get_list_of_moves_by_type()
+

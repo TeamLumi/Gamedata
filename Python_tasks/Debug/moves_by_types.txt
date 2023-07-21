@@ -1,0 +1,827 @@
+———|Normal
+Pound|Normal
+Double Slap|Normal
+Comet Punch|Normal
+Mega Punch|Normal
+Pay Day|Normal
+Scratch|Normal
+Vise Grip|Normal
+Guillotine|Normal
+Razor Wind|Normal
+Swords Dance|Normal
+Whirlwind|Normal
+Bind|Normal
+Slam|Normal
+Stomp|Normal
+Mega Kick|Normal
+Headbutt|Normal
+Horn Attack|Normal
+Fury Attack|Normal
+Horn Drill|Normal
+Tackle|Normal
+Body Slam|Normal
+Wrap|Normal
+Take Down|Normal
+Thrash|Normal
+Double-Edge|Normal
+Tail Whip|Normal
+Leer|Normal
+Growl|Normal
+Roar|Normal
+Sing|Normal
+Supersonic|Normal
+Sonic Boom|Normal
+Disable|Normal
+Hyper Beam|Normal
+Strength|Normal
+Growth|Normal
+Quick Attack|Normal
+Rage|Normal
+Mimic|Normal
+Screech|Normal
+Double Team|Normal
+Recover|Normal
+Harden|Normal
+Minimize|Normal
+Smokescreen|Normal
+Defense Curl|Normal
+Focus Energy|Normal
+Bide|Normal
+Metronome|Normal
+Self-Destruct|Normal
+Egg Bomb|Normal
+Swift|Normal
+Skull Bash|Normal
+Spike Cannon|Normal
+Constrict|Normal
+Soft-Boiled|Normal
+Glare|Normal
+Barrage|Normal
+Lovely Kiss|Normal
+Transform|Normal
+Dizzy Punch|Normal
+Flash|Normal
+Splash|Normal
+Explosion|Normal
+Fury Swipes|Normal
+Hyper Fang|Normal
+Sharpen|Normal
+Conversion|Normal
+Tri Attack|Normal
+Super Fang|Normal
+Slash|Normal
+Substitute|Normal
+Struggle|Normal
+Sketch|Normal
+Mind Reader|Normal
+Snore|Normal
+Flail|Normal
+Conversion 2|Normal
+Protect|Normal
+Scary Face|Normal
+Belly Drum|Normal
+Foresight|Normal
+Perish Song|Normal
+Lock-On|Normal
+Endure|Normal
+False Swipe|Normal
+Swagger|Normal
+Milk Drink|Normal
+Mean Look|Normal
+Attract|Normal
+Sleep Talk|Normal
+Heal Bell|Normal
+Return|Normal
+Present|Normal
+Frustration|Normal
+Safeguard|Normal
+Pain Split|Normal
+Baton Pass|Normal
+Encore|Normal
+Rapid Spin|Normal
+Sweet Scent|Normal
+Morning Sun|Normal
+Hidden Power|Normal
+Psych Up|Normal
+Extreme Speed|Normal
+Fake Out|Normal
+Uproar|Normal
+Stockpile|Normal
+Spit Up|Normal
+Swallow|Normal
+Facade|Normal
+Smelling Salts|Normal
+Follow Me|Normal
+Nature Power|Normal
+Helping Hand|Normal
+Wish|Normal
+Assist|Normal
+Recycle|Normal
+Yawn|Normal
+Endeavor|Normal
+Refresh|Normal
+Secret Power|Normal
+Camouflage|Normal
+Teeter Dance|Normal
+Slack Off|Normal
+Hyper Voice|Normal
+Crush Claw|Normal
+Weather Ball|Normal
+Odor Sleuth|Normal
+Tickle|Normal
+Block|Normal
+Howl|Normal
+Covet|Normal
+Natural Gift|Normal
+Feint|Normal
+Acupressure|Normal
+Trump Card|Normal
+Wring Out|Normal
+Lucky Chant|Normal
+Me First|Normal
+Copycat|Normal
+Last Resort|Normal
+Giga Impact|Normal
+Captivate|Normal
+Judgment|Normal
+Double Hit|Normal
+Crush Grip|Normal
+Simple Beam|Normal
+Entrainment|Normal
+After You|Normal
+Round|Normal
+Echoed Voice|Normal
+Chip Away|Normal
+Shell Smash|Normal
+Reflect Type|Normal
+Retaliate|Normal
+Bestow|Normal
+Work Up|Normal
+Tail Slap|Normal
+Head Charge|Normal
+Techno Blast|Normal
+Relic Song|Normal
+Noble Roar|Normal
+Boomburst|Normal
+Play Nice|Normal
+Confide|Normal
+Happy Hour|Normal
+Celebrate|Normal
+Hold Hands|Normal
+Hold Back|Normal
+Breakneck Blitz|Normal
+Breakneck Blitz|Normal
+Spotlight|Normal
+Laser Focus|Normal
+Revelation Dance|Normal
+Pulverizing Pancake|Normal
+Extreme Evoboost|Normal
+Tearful Look|Normal
+Multi-Attack|Normal
+Veevee Volley|Normal
+Max Guard|Normal
+Stuff Cheeks|Normal
+Teatime|Normal
+Court Change|Normal
+Max Strike|Normal
+Terrain Pulse|Normal
+Karate Chop|Fighting
+Double Kick|Fighting
+Jump Kick|Fighting
+Rolling Kick|Fighting
+Submission|Fighting
+Low Kick|Fighting
+Counter|Fighting
+Seismic Toss|Fighting
+High Jump Kick|Fighting
+Triple Kick|Fighting
+Reversal|Fighting
+Mach Punch|Fighting
+Detect|Fighting
+Dynamic Punch|Fighting
+Vital Throw|Fighting
+Cross Chop|Fighting
+Rock Smash|Fighting
+Focus Punch|Fighting
+Superpower|Fighting
+Revenge|Fighting
+Brick Break|Fighting
+Arm Thrust|Fighting
+Sky Uppercut|Fighting
+Bulk Up|Fighting
+Wake-Up Slap|Fighting
+Hammer Arm|Fighting
+Close Combat|Fighting
+Force Palm|Fighting
+Aura Sphere|Fighting
+Drain Punch|Fighting
+Vacuum Wave|Fighting
+Focus Blast|Fighting
+Storm Throw|Fighting
+Low Sweep|Fighting
+Quick Guard|Fighting
+Circle Throw|Fighting
+Final Gambit|Fighting
+Sacred Sword|Fighting
+Secret Sword|Fighting
+Flying Press|Fighting
+Mat Block|Fighting
+Power-Up Punch|Fighting
+All-Out Pummeling|Fighting
+All-Out Pummeling|Fighting
+No Retreat|Fighting
+Octolock|Fighting
+Max Knuckle|Fighting
+Body Press|Fighting
+Meteor Assault|Fighting
+Coaching|Fighting
+Thunderous Kick|Fighting
+Fire Punch|Fire
+Ember|Fire
+Flamethrower|Fire
+Fire Spin|Fire
+Fire Blast|Fire
+Flame Wheel|Fire
+Sacred Fire|Fire
+Sunny Day|Fire
+Heat Wave|Fire
+Will-O-Wisp|Fire
+Eruption|Fire
+Blaze Kick|Fire
+Blast Burn|Fire
+Overheat|Fire
+Flare Blitz|Fire
+Fire Fang|Fire
+Lava Plume|Fire
+Magma Storm|Fire
+Flame Burst|Fire
+Flame Charge|Fire
+Incinerate|Fire
+Inferno|Fire
+Fire Pledge|Fire
+Heat Crash|Fire
+Searing Shot|Fire
+Blue Flare|Fire
+Fiery Dance|Fire
+V-create|Fire
+Fusion Flare|Fire
+Mystical Fire|Fire
+Inferno Overdrive|Fire
+Inferno Overdrive|Fire
+Fire Lash|Fire
+Burn Up|Fire
+Shell Trap|Fire
+Mind Blown|Fire
+Sizzly Slide|Fire
+Max Flare|Fire
+Pyro Ball|Fire
+Burning Jealousy|Fire
+Ice Punch|Ice
+Mist|Ice
+Ice Beam|Ice
+Blizzard|Ice
+Aurora Beam|Ice
+Haze|Ice
+Powder Snow|Ice
+Icy Wind|Ice
+Hail|Ice
+Ice Ball|Ice
+Sheer Cold|Ice
+Icicle Spear|Ice
+Avalanche|Ice
+Ice Shard|Ice
+Ice Fang|Ice
+Frost Breath|Ice
+Glaciate|Ice
+Freeze Shock|Ice
+Ice Burn|Ice
+Icicle Crash|Ice
+Freeze-Dry|Ice
+Subzero Slammer|Ice
+Subzero Slammer|Ice
+Ice Hammer|Ice
+Aurora Veil|Ice
+Freezy Frost|Ice
+Max Hailstorm|Ice
+Triple Axel|Ice
+Glacial Lance|Ice
+Thunder Punch|Electric
+Thunder Shock|Electric
+Thunderbolt|Electric
+Thunder Wave|Electric
+Thunder|Electric
+Zap Cannon|Electric
+Spark|Electric
+Charge|Electric
+Volt Tackle|Electric
+Shock Wave|Electric
+Magnet Rise|Electric
+Thunder Fang|Electric
+Discharge|Electric
+Charge Beam|Electric
+Electro Ball|Electric
+Volt Switch|Electric
+Electroweb|Electric
+Wild Charge|Electric
+Bolt Strike|Electric
+Fusion Bolt|Electric
+Ion Deluge|Electric
+Parabolic Charge|Electric
+Electrify|Electric
+Eerie Impulse|Electric
+Magnetic Flux|Electric
+Electric Terrain|Electric
+Nuzzle|Electric
+Gigavolt Havoc|Electric
+Gigavolt Havoc|Electric
+Catastropika|Electric
+Stoked Sparksurfer|Electric
+Zing Zap|Electric
+10,000,000 Volt Thunderbolt|Electric
+Plasma Fists|Electric
+Zippy Zap|Electric
+Pika Papow|Electric
+Buzzy Buzz|Electric
+Bolt Beak|Electric
+Max Lightning|Electric
+Aura Wheel|Electric
+Overdrive|Electric
+Rising Voltage|Electric
+Thunder Cage|Electric
+Cut|Grass
+Vine Whip|Grass
+Absorb|Grass
+Mega Drain|Grass
+Leech Seed|Grass
+Razor Leaf|Grass
+Solar Beam|Grass
+Stun Spore|Grass
+Sleep Powder|Grass
+Petal Dance|Grass
+Spore|Grass
+Cotton Spore|Grass
+Giga Drain|Grass
+Synthesis|Grass
+Ingrain|Grass
+Needle Arm|Grass
+Aromatherapy|Grass
+Grass Whistle|Grass
+Bullet Seed|Grass
+Frenzy Plant|Grass
+Magical Leaf|Grass
+Leaf Blade|Grass
+Worry Seed|Grass
+Seed Bomb|Grass
+Energy Ball|Grass
+Leaf Storm|Grass
+Power Whip|Grass
+Grass Knot|Grass
+Wood Hammer|Grass
+Seed Flare|Grass
+Grass Pledge|Grass
+Horn Leech|Grass
+Leaf Tornado|Grass
+Cotton Guard|Grass
+Forest’s Curse|Grass
+Petal Blizzard|Grass
+Grassy Terrain|Grass
+Spiky Shield|Grass
+Bloom Doom|Grass
+Bloom Doom|Grass
+Strength Sap|Grass
+Solar Blade|Grass
+Leafage|Grass
+Trop Kick|Grass
+Sappy Seed|Grass
+Max Overgrowth|Grass
+Drum Beating|Grass
+Snap Trap|Grass
+Branch Poke|Grass
+Apple Acid|Grass
+Grav Apple|Grass
+Grassy Glide|Grass
+Jungle Healing|Grass
+Gust|Flying
+Wing Attack|Flying
+Fly|Flying
+Peck|Flying
+Drill Peck|Flying
+Mirror Move|Flying
+Sky Attack|Flying
+Aeroblast|Flying
+Feather Dance|Flying
+Air Cutter|Flying
+Aerial Ace|Flying
+Bounce|Flying
+Roost|Flying
+Pluck|Flying
+Tailwind|Flying
+Air Slash|Flying
+Brave Bird|Flying
+Defog|Flying
+Chatter|Flying
+Sky Drop|Flying
+Acrobatics|Flying
+Hurricane|Flying
+Oblivion Wing|Flying
+Dragon Ascent|Flying
+Supersonic Skystrike|Flying
+Supersonic Skystrike|Flying
+Beak Blast|Flying
+Floaty Fall|Flying
+Max Airstream|Flying
+Dual Wingbeat|Flying
+Sand Attack|Ground
+Earthquake|Ground
+Fissure|Ground
+Dig|Ground
+Bone Club|Ground
+Bonemerang|Ground
+Mud-Slap|Ground
+Spikes|Ground
+Bone Rush|Ground
+Magnitude|Ground
+Mud Sport|Ground
+Sand Tomb|Ground
+Mud Shot|Ground
+Earth Power|Ground
+Mud Bomb|Ground
+Bulldoze|Ground
+Drill Run|Ground
+Rototiller|Ground
+Thousand Arrows|Ground
+Thousand Waves|Ground
+Land’s Wrath|Ground
+Precipice Blades|Ground
+Tectonic Rage|Ground
+Tectonic Rage|Ground
+Shore Up|Ground
+High Horsepower|Ground
+Stomping Tantrum|Ground
+Max Quake|Ground
+Scorching Sands|Ground
+Poison Sting|Poison
+Acid|Poison
+Poison Powder|Poison
+Toxic|Poison
+Smog|Poison
+Sludge|Poison
+Poison Gas|Poison
+Acid Armor|Poison
+Sludge Bomb|Poison
+Poison Fang|Poison
+Poison Tail|Poison
+Gastro Acid|Poison
+Toxic Spikes|Poison
+Poison Jab|Poison
+Cross Poison|Poison
+Gunk Shot|Poison
+Venoshock|Poison
+Sludge Wave|Poison
+Coil|Poison
+Acid Spray|Poison
+Clear Smog|Poison
+Belch|Poison
+Venom Drench|Poison
+Acid Downpour|Poison
+Acid Downpour|Poison
+Baneful Bunker|Poison
+Toxic Thread|Poison
+Purify|Poison
+Max Ooze|Poison
+Shell Side Arm|Poison
+Corrosive Gas|Poison
+Twineedle|Bug
+Pin Missile|Bug
+String Shot|Bug
+Leech Life|Bug
+Spider Web|Bug
+Fury Cutter|Bug
+Megahorn|Bug
+Tail Glow|Bug
+Silver Wind|Bug
+Signal Beam|Bug
+U-turn|Bug
+X-Scissor|Bug
+Bug Buzz|Bug
+Bug Bite|Bug
+Attack Order|Bug
+Defend Order|Bug
+Heal Order|Bug
+Rage Powder|Bug
+Quiver Dance|Bug
+Struggle Bug|Bug
+Steamroller|Bug
+Sticky Web|Bug
+Fell Stinger|Bug
+Powder|Bug
+Infestation|Bug
+Savage Spin-Out|Bug
+Savage Spin-Out|Bug
+First Impression|Bug
+Pollen Puff|Bug
+Lunge|Bug
+Max Flutterby|Bug
+Skitter Smack|Bug
+Bite|Dark
+Thief|Dark
+Feint Attack|Dark
+Pursuit|Dark
+Crunch|Dark
+Beat Up|Dark
+Torment|Dark
+Flatter|Dark
+Memento|Dark
+Taunt|Dark
+Knock Off|Dark
+Snatch|Dark
+Fake Tears|Dark
+Payback|Dark
+Assurance|Dark
+Embargo|Dark
+Fling|Dark
+Punishment|Dark
+Sucker Punch|Dark
+Dark Pulse|Dark
+Night Slash|Dark
+Switcheroo|Dark
+Nasty Plot|Dark
+Dark Void|Dark
+Hone Claws|Dark
+Foul Play|Dark
+Quash|Dark
+Night Daze|Dark
+Snarl|Dark
+Parting Shot|Dark
+Topsy-Turvy|Dark
+Hyperspace Fury|Dark
+Black Hole Eclipse|Dark
+Black Hole Eclipse|Dark
+Darkest Lariat|Dark
+Throat Chop|Dark
+Power Trip|Dark
+Brutal Swing|Dark
+Malicious Moonsault|Dark
+Baddy Bad|Dark
+Jaw Lock|Dark
+Max Darkness|Dark
+Obstruct|Dark
+False Surrender|Dark
+Lash Out|Dark
+Wicked Blow|Dark
+Fiery Wrath|Dark
+Water Gun|Water
+Hydro Pump|Water
+Surf|Water
+Bubble Beam|Water
+Withdraw|Water
+Waterfall|Water
+Clamp|Water
+Bubble|Water
+Crabhammer|Water
+Octazooka|Water
+Rain Dance|Water
+Whirlpool|Water
+Dive|Water
+Hydro Cannon|Water
+Water Spout|Water
+Muddy Water|Water
+Water Sport|Water
+Water Pulse|Water
+Brine|Water
+Aqua Ring|Water
+Aqua Tail|Water
+Aqua Jet|Water
+Soak|Water
+Scald|Water
+Water Pledge|Water
+Razor Shell|Water
+Steam Eruption|Water
+Water Shuriken|Water
+Origin Pulse|Water
+Hydro Vortex|Water
+Hydro Vortex|Water
+Sparkling Aria|Water
+Oceanic Operetta|Water
+Liquidation|Water
+Splishy Splash|Water
+Bouncy Bubble|Water
+Snipe Shot|Water
+Fishious Rend|Water
+Max Geyser|Water
+Life Dew|Water
+Flip Turn|Water
+Surging Strikes|Water
+Psybeam|Psychic
+Confusion|Psychic
+Psychic|Psychic
+Hypnosis|Psychic
+Meditate|Psychic
+Agility|Psychic
+Teleport|Psychic
+Barrier|Psychic
+Light Screen|Psychic
+Reflect|Psychic
+Amnesia|Psychic
+Kinesis|Psychic
+Dream Eater|Psychic
+Psywave|Psychic
+Rest|Psychic
+Mirror Coat|Psychic
+Future Sight|Psychic
+Trick|Psychic
+Role Play|Psychic
+Magic Coat|Psychic
+Skill Swap|Psychic
+Imprison|Psychic
+Luster Purge|Psychic
+Mist Ball|Psychic
+Cosmic Power|Psychic
+Extrasensory|Psychic
+Calm Mind|Psychic
+Psycho Boost|Psychic
+Gravity|Psychic
+Miracle Eye|Psychic
+Healing Wish|Psychic
+Psycho Shift|Psychic
+Heal Block|Psychic
+Power Trick|Psychic
+Power Swap|Psychic
+Guard Swap|Psychic
+Heart Swap|Psychic
+Psycho Cut|Psychic
+Zen Headbutt|Psychic
+Trick Room|Psychic
+Lunar Dance|Psychic
+Guard Split|Psychic
+Power Split|Psychic
+Wonder Room|Psychic
+Psyshock|Psychic
+Telekinesis|Psychic
+Magic Room|Psychic
+Synchronoise|Psychic
+Stored Power|Psychic
+Ally Switch|Psychic
+Heal Pulse|Psychic
+Heart Stamp|Psychic
+Psystrike|Psychic
+Hyperspace Hole|Psychic
+Shattered Psyche|Psychic
+Shattered Psyche|Psychic
+Psychic Terrain|Psychic
+Speed Swap|Psychic
+Instruct|Psychic
+Genesis Supernova|Psychic
+Psychic Fangs|Psychic
+Prismatic Laser|Psychic
+Photon Geyser|Psychic
+Light That Burns the Sky|Psychic
+Glitzy Glow|Psychic
+Magic Powder|Psychic
+Max Mindstorm|Psychic
+Expanding Force|Psychic
+Freezing Glare|Psychic
+Eerie Spell|Psychic
+Dragon Rage|Dragon
+Outrage|Dragon
+Dragon Breath|Dragon
+Twister|Dragon
+Dragon Claw|Dragon
+Dragon Dance|Dragon
+Dragon Pulse|Dragon
+Dragon Rush|Dragon
+Draco Meteor|Dragon
+Roar of Time|Dragon
+Spacial Rend|Dragon
+Dragon Tail|Dragon
+Dual Chop|Dragon
+Devastating Drake|Dragon
+Devastating Drake|Dragon
+Core Enforcer|Dragon
+Clanging Scales|Dragon
+Dragon Hammer|Dragon
+Clangorous Soulblaze|Dragon
+Dynamax Cannon|Dragon
+Dragon Darts|Dragon
+Max Wyrmwind|Dragon
+Clangorous Soul|Dragon
+Breaking Swipe|Dragon
+Eternabeam|Dragon
+Scale Shot|Dragon
+Dragon Energy|Dragon
+Rock Throw|Rock
+Rock Slide|Rock
+Sandstorm|Rock
+Rollout|Rock
+Ancient Power|Rock
+Rock Tomb|Rock
+Rock Blast|Rock
+Rock Polish|Rock
+Power Gem|Rock
+Rock Climb|Rock
+Rock Wrecker|Rock
+Stone Edge|Rock
+Stealth Rock|Rock
+Head Smash|Rock
+Wide Guard|Rock
+Smack Down|Rock
+Diamond Storm|Rock
+Continental Crush|Rock
+Continental Crush|Rock
+Accelerock|Rock
+Splintered Stormshards|Rock
+Tar Shot|Rock
+Max Rockfall|Rock
+Meteor Beam|Rock
+Night Shade|Ghost
+Confuse Ray|Ghost
+Lick|Ghost
+Nightmare|Ghost
+Curse|Ghost
+Spite|Ghost
+Destiny Bond|Ghost
+Shadow Ball|Ghost
+Grudge|Ghost
+Astonish|Ghost
+Shadow Punch|Ghost
+Shadow Claw|Ghost
+Shadow Sneak|Ghost
+Ominous Wind|Ghost
+Shadow Force|Ghost
+Hex|Ghost
+Phantom Force|Ghost
+Trick-or-Treat|Ghost
+Never-Ending Nightmare|Ghost
+Never-Ending Nightmare|Ghost
+Spirit Shackle|Ghost
+Sinister Arrow Raid|Ghost
+Soul-Stealing 7-Star Strike|Ghost
+Shadow Bone|Ghost
+Spectral Thief|Ghost
+Moongeist Beam|Ghost
+Menacing Moonraze Maelstrom|Ghost
+Max Phantasm|Ghost
+Poltergeist|Ghost
+Astral Barrage|Ghost
+Sweet Kiss|Fairy
+Charm|Fairy
+Moonlight|Fairy
+Disarming Voice|Fairy
+Draining Kiss|Fairy
+Crafty Shield|Fairy
+Flower Shield|Fairy
+Misty Terrain|Fairy
+Play Rough|Fairy
+Fairy Wind|Fairy
+Moonblast|Fairy
+Fairy Lock|Fairy
+Aromatic Mist|Fairy
+Geomancy|Fairy
+Dazzling Gleam|Fairy
+Baby-Doll Eyes|Fairy
+Light of Ruin|Fairy
+Twinkle Tackle|Fairy
+Twinkle Tackle|Fairy
+Floral Healing|Fairy
+Guardian of Alola|Fairy
+Fleur Cannon|Fairy
+Nature’s Madness|Fairy
+Let’s Snuggle Forever|Fairy
+Sparkly Swirl|Fairy
+Max Starfall|Fairy
+Decorate|Fairy
+Spirit Break|Fairy
+Strange Steam|Fairy
+Misty Explosion|Fairy
+Steel Wing|Steel
+Iron Tail|Steel
+Metal Claw|Steel
+Meteor Mash|Steel
+Metal Sound|Steel
+Iron Defense|Steel
+Doom Desire|Steel
+Gyro Ball|Steel
+Metal Burst|Steel
+Bullet Punch|Steel
+Mirror Shot|Steel
+Flash Cannon|Steel
+Iron Head|Steel
+Magnet Bomb|Steel
+Autotomize|Steel
+Heavy Slam|Steel
+Shift Gear|Steel
+Gear Grind|Steel
+King’s Shield|Steel
+Corkscrew Crash|Steel
+Corkscrew Crash|Steel
+Gear Up|Steel
+Anchor Shot|Steel
+Smart Strike|Steel
+Sunsteel Strike|Steel
+Searing Sunraze Smash|Steel
+Double Iron Bash|Steel
+Max Steelspike|Steel
+Behemoth Blade|Steel
+Behemoth Bash|Steel
+Steel Beam|Steel
+Steel Roller|Steel
