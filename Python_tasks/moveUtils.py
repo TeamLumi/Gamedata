@@ -45,7 +45,7 @@ def get_move_properties(move_id=0):
     MovesTable = full_data['moves_table']
 
     move = MovesTable['Waza'][move_id]
-    type_ = move['type']
+    type_ = get_type_name(move['type'])
     damage_type = move['damageType']
     power = move['power']
     hit_per = move['hitPer']
