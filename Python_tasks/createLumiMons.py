@@ -1,6 +1,7 @@
 import os
 import json
-from pokemonUtils import get_pokemon_name, get_types, make_ability_object, get_gender, get_form_name
+from pokemonUtils import get_pokemon_name, make_ability_object, get_gender, get_form_name
+from types import get_types
 
 parent_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 personal_data_file_path = os.path.join(parent_file_path, 'input', 'PersonalTable.json')
