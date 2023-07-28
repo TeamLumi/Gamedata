@@ -539,6 +539,103 @@ def getEncounterData():
     with open(os.path.join(output_file_path, 'Encounter_output.json'), 'w') as output:
         output.write(json.dumps(sorted_encounters, indent=2))
 
+def gatherEncounterDocData(route):
+    enc_dict = {
+        "Grass": [],
+        "TOD": [],
+        "Surf": [],
+        "Fishing": [],
+        "SR": [],
+        "Honey Tree": [],
+        "Incense": [],
+        }
+    for pokemon in route:
+        if pokemon['encounterType'] == constants.REGULAR_ENC:
+            enc_dict["Grass"].append(pokemon)
+        elif pokemon['encounterType'] == constants.DAY_ENC or pokemon['encounterType'] == constants.NIGHT_ENC:
+            enc_dict['TOD'].append(pokemon)
+        elif pokemon['encounterType'] == constants.SURF_ENC:
+            enc_dict['Surf'].append(pokemon)
+        elif pokemon['encounterType'] in constants.ROD_ENC_LIST:
+            enc_dict['Fishing'].append(pokemon)
+        elif pokemon['encounterType'] == constants.SWARM or pokemon['encounterType'] == constants.RADAR:
+            enc_dict['SR'].append(pokemon)
+        elif pokemon['encounterType'] == constants.HONEY_TREE:
+            enc_dict['Honey Tree'].append(pokemon)
+        elif constants.INCENSE in pokemon['encounterType']:
+            enc_dict['Incense'].append(pokemon)
+        else:
+            print(pokemon)
+    return enc_dict
+
+def writeEncounterDocData():
+    with open(os.path.join(debug_file_path, 'encounter_locations.json')) as f:
+        data = json.load(f)
+    with open(os.path.join(debug_file_path, 'encounter_locations.txt'), 'w') as output:
+        for route in data.keys():
+            route_mons = gatherEncounterDocData(data[route])
+            output.write(f"{route}|")
+            if len(route_mons['Grass']) == 0:
+                output.write(constants.GRASS_NONE)
+            else:
+                for pokemon in route_mons['Grass']:
+                    output.write(f"{pokemon['pokemonName']}|{pokemon['maxLevel']}|{pokemon['encounterRate']}|")
+            if len(route_mons['TOD']) == 0:
+                output.write(constants.TOD_NONE)
+            else:
+                for pokemon in route_mons['TOD']:
+                    output.write(f"{pokemon['pokemonName']}|{pokemon['maxLevel']}|{pokemon['encounterRate']}|")
+            if len(route_mons['Surf']) == 0:
+                for i in range(constants.SURF_NONE):
+                    output.write(f"{constants.DEFAULT_NONE}|")
+            else:
+                for pokemon in route_mons['Surf']:
+                    output.write(f"{pokemon['pokemonName']}|{pokemon['maxLevel']}|{pokemon['encounterRate']}|")
+            if len(route_mons['Fishing']) == 0:
+                for i in range(constants.ROD_NONE):
+                    output.write(f"{constants.DEFAULT_NONE}|")
+            else:
+                for pokemon in route_mons['Fishing']:
+                    output.write(f"{pokemon['pokemonName']}|{pokemon['maxLevel']}|{pokemon['encounterRate']}|")
+            if len(route_mons['SR']) == 0:
+                for i in range(2):
+                    output.write(f"{constants.DEFAULT_NONE}|")
+            elif len(route_mons['SR']) == 1 and route_mons['SR'][0]['encounterType'] == constants.SWARM:
+                output.write(f"{route_mons['SR'][0]['pokemonName']}|{route_mons['SR'][0]['maxLevel']}|{route_mons['SR'][0]['encounterRate']}|")
+                output.write(f"{constants.DEFAULT_NONE}|")
+            elif len(route_mons['SR']) == 1 and route_mons['SR'][0]['encounterType'] == constants.RADAR:
+                output.write(f"{constants.DEFAULT_NONE}|")
+                output.write(f"{route_mons['SR'][0]['pokemonName']}|{route_mons['SR'][0]['maxLevel']}|{route_mons['SR'][0]['encounterRate']}|")
+            else:
+                for pokemon in route_mons['SR']:
+                    output.write(f"{pokemon['pokemonName']}|{pokemon['maxLevel']}|{pokemon['encounterRate']}|")
+            if len(route_mons['Honey Tree']) == 0:
+                for i in range(constants.HONEY_NONE):
+                    output.write(f"{constants.DEFAULT_NONE}|")
+            else:
+                for pokemon in route_mons['Honey Tree']:
+                    output.write(f"{pokemon['pokemonName']}|{pokemon['maxLevel']}|{pokemon['encounterRate']}|")
+                if len(route_mons['Honey Tree']) < 8:
+                    for i in range( 8 - len(route_mons['Honey Tree'])):
+                        output.write(f"{constants.DEFAULT_NONE}|")
+            if len(route_mons['Incense']) == 0:
+                for i in range(15):
+                    output.write(f"{constants.DEFAULT_NONE}|")
+            else:
+                for i in range(5):
+                    if len(route_mons['Incense']) == 2:
+                        output.write(f"{route_mons['Incense'][0]['pokemonName']}|{route_mons['Incense'][0]['maxLevel']}|{route_mons['Incense'][0]['encounterRate']}|")
+                        output.write(f"{route_mons['Incense'][1]['pokemonName']}|{route_mons['Incense'][1]['maxLevel']}|{route_mons['Incense'][1]['encounterRate']}|")
+                        output.write(f"{constants.DEFAULT_NONE}|")
+                    elif len(route_mons['Incense']) == 1:
+                        output.write(f"{constants.DEFAULT_NONE}|")
+                        output.write(f"{constants.DEFAULT_NONE}|")
+                        output.write(f"{route_mons['Incense'][0]['pokemonName']}|{route_mons['Incense'][0]['maxLevel']}|{route_mons['Incense'][0]['encounterRate']}|")
+                    else:
+                        for pokemon in route_mons['Incense']:
+                            output.write(f"{pokemon['pokemonName']}|{pokemon['maxLevel']}|{pokemon['encounterRate']}|")
+            output.write("\n")
+
 if __name__ != "__main__":
     full_data = load_data()
     trainer_data = full_data["raw_trainer_data"]
@@ -560,6 +657,7 @@ if __name__ == "__main__":
     mid_time = time.time()
     print("Middle Execution time:", mid_time - start_time, "seconds")
     getEncounterData()
+    writeEncounterDocData()
 
     end_time = time.time()
     execution_time = end_time - start_time
