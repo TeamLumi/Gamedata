@@ -308,6 +308,8 @@ def get_standard_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, m
     monsName = get_pokemon_name(monsNo)
 
     if any(str(zoneID) in route for route in name_routes.values()):
+        if zoneID in [ 214 ]:
+            print(monsNo)
         zones = areas_list[zoneID + 1]
         zoneName = zones[3] if zones[3] != '' else zones[4]
         new_method = check_for_incense(new_method, method_index)
