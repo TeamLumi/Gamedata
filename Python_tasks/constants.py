@@ -122,7 +122,12 @@ RADAR = "swayGrass"
 REGULAR_ENC = "ground_mons"
 DAY_ENC = "day"
 NIGHT_ENC = "night"
+SURF_ENC = "water_mons"
+OLD_ENC = "boro_mons"
+GOOD_ENC = "ii_mons"
+SUPER_ENC = "sugoi_mons"
 REGULAR_ENC_LIST = [REGULAR_ENC, DAY_ENC, NIGHT_ENC]
+ROD_ENC_LIST = [OLD_ENC, GOOD_ENC, SUPER_ENC]
 INCENSE_LIST = ["gbaRuby", "gbaSapp", "gbaEme", "gbaFire", "gbaLeaf"]
 
 ZONE_ORDER = [
