@@ -9572,6 +9572,188 @@
       "zoneId": 203
     }
   ],
+  "Mt. Coronet Route 211 Entrance": [
+    {
+      "pokemonName": "Geodude",
+      "encounterType": "ground_mons",
+      "encounterRate": "20%",
+      "minLevel": 18,
+      "maxLevel": 18,
+      "encounterTypeIndex": 0,
+      "zoneId": 214
+    },
+    {
+      "pokemonName": "Bronzor",
+      "encounterType": "ground_mons",
+      "encounterRate": "20%",
+      "minLevel": 18,
+      "maxLevel": 18,
+      "encounterTypeIndex": 1,
+      "zoneId": 214
+    },
+    {
+      "pokemonName": "Cleffa",
+      "encounterType": "ground_mons",
+      "encounterRate": "morning",
+      "minLevel": 18,
+      "maxLevel": 18,
+      "encounterTypeIndex": 2,
+      "zoneId": 214
+    },
+    {
+      "pokemonName": "Beldum",
+      "encounterType": "ground_mons",
+      "encounterRate": "morning",
+      "minLevel": 18,
+      "maxLevel": 18,
+      "encounterTypeIndex": 3,
+      "zoneId": 214
+    },
+    {
+      "pokemonName": "Chingling",
+      "encounterType": "ground_mons",
+      "encounterRate": "10%",
+      "minLevel": 18,
+      "maxLevel": 18,
+      "encounterTypeIndex": 4,
+      "zoneId": 214
+    },
+    {
+      "pokemonName": "Zubat",
+      "encounterType": "ground_mons",
+      "encounterRate": "10%",
+      "minLevel": 18,
+      "maxLevel": 18,
+      "encounterTypeIndex": 5,
+      "zoneId": 214
+    },
+    {
+      "pokemonName": "Nosepass",
+      "encounterType": "ground_mons",
+      "encounterRate": "5%",
+      "minLevel": 18,
+      "maxLevel": 18,
+      "encounterTypeIndex": 6,
+      "zoneId": 214
+    },
+    {
+      "pokemonName": "Nosepass",
+      "encounterType": "ground_mons",
+      "encounterRate": "5%",
+      "minLevel": 18,
+      "maxLevel": 18,
+      "encounterTypeIndex": 7,
+      "zoneId": 214
+    },
+    {
+      "pokemonName": "Solrock",
+      "encounterType": "ground_mons",
+      "encounterRate": "4%",
+      "minLevel": 18,
+      "maxLevel": 18,
+      "encounterTypeIndex": 8,
+      "zoneId": 214
+    },
+    {
+      "pokemonName": "Lunatone",
+      "encounterType": "ground_mons",
+      "encounterRate": "4%",
+      "minLevel": 18,
+      "maxLevel": 18,
+      "encounterTypeIndex": 9,
+      "zoneId": 214
+    },
+    {
+      "pokemonName": "Solrock",
+      "encounterType": "ground_mons",
+      "encounterRate": "1%",
+      "minLevel": 18,
+      "maxLevel": 18,
+      "encounterTypeIndex": 10,
+      "zoneId": 214
+    },
+    {
+      "pokemonName": "Lunatone",
+      "encounterType": "ground_mons",
+      "encounterRate": "1%",
+      "minLevel": 18,
+      "maxLevel": 18,
+      "encounterTypeIndex": 11,
+      "zoneId": 214
+    },
+    {
+      "pokemonName": "Cleffa",
+      "encounterType": "tairyo",
+      "encounterRate": "20%",
+      "minLevel": 18,
+      "maxLevel": 18,
+      "encounterTypeIndex": 0,
+      "zoneId": 214
+    },
+    {
+      "pokemonName": "Cleffa",
+      "encounterType": "day",
+      "encounterRate": "10%",
+      "minLevel": 18,
+      "maxLevel": 18,
+      "encounterTypeIndex": 0,
+      "zoneId": 214
+    },
+    {
+      "pokemonName": "Beldum",
+      "encounterType": "day",
+      "encounterRate": "10%",
+      "minLevel": 18,
+      "maxLevel": 18,
+      "encounterTypeIndex": 1,
+      "zoneId": 214
+    },
+    {
+      "pokemonName": "Cleffa",
+      "encounterType": "night",
+      "encounterRate": "10%",
+      "minLevel": 18,
+      "maxLevel": 18,
+      "encounterTypeIndex": 0,
+      "zoneId": 214
+    },
+    {
+      "pokemonName": "Beldum",
+      "encounterType": "night",
+      "encounterRate": "10%",
+      "minLevel": 18,
+      "maxLevel": 18,
+      "encounterTypeIndex": 1,
+      "zoneId": 214
+    },
+    {
+      "pokemonName": "Lunatone",
+      "encounterType": "swayGrass",
+      "encounterRate": "20%",
+      "minLevel": 18,
+      "maxLevel": 18,
+      "encounterTypeIndex": 3,
+      "zoneId": 214
+    },
+    {
+      "pokemonName": "Alolan Grimer",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 18,
+      "maxLevel": 18,
+      "encounterTypeIndex": 0,
+      "zoneId": 214
+    },
+    {
+      "pokemonName": "Alolan Grimer",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 18,
+      "maxLevel": 18,
+      "encounterTypeIndex": 1,
+      "zoneId": 214
+    }
+  ],
   "Mt. Coronet Route 216 Entrance": [
     {
       "pokemonName": "Geodude",
@@ -10287,186 +10469,6 @@
       "maxLevel": 52,
       "encounterTypeIndex": 1,
       "zoneId": 207
-    },
-    {
-      "pokemonName": "Geodude",
-      "encounterType": "ground_mons",
-      "encounterRate": "20%",
-      "minLevel": 19,
-      "maxLevel": 19,
-      "encounterTypeIndex": 0,
-      "zoneId": 212
-    },
-    {
-      "pokemonName": "Bronzor",
-      "encounterType": "ground_mons",
-      "encounterRate": "20%",
-      "minLevel": 19,
-      "maxLevel": 19,
-      "encounterTypeIndex": 1,
-      "zoneId": 212
-    },
-    {
-      "pokemonName": "Clefairy",
-      "encounterType": "ground_mons",
-      "encounterRate": "morning",
-      "minLevel": 19,
-      "maxLevel": 19,
-      "encounterTypeIndex": 2,
-      "zoneId": 212
-    },
-    {
-      "pokemonName": "Nosepass",
-      "encounterType": "ground_mons",
-      "encounterRate": "morning",
-      "minLevel": 19,
-      "maxLevel": 19,
-      "encounterTypeIndex": 3,
-      "zoneId": 212
-    },
-    {
-      "pokemonName": "Beldum",
-      "encounterType": "ground_mons",
-      "encounterRate": "10%",
-      "minLevel": 19,
-      "maxLevel": 19,
-      "encounterTypeIndex": 4,
-      "zoneId": 212
-    },
-    {
-      "pokemonName": "Zubat",
-      "encounterType": "ground_mons",
-      "encounterRate": "10%",
-      "minLevel": 19,
-      "maxLevel": 19,
-      "encounterTypeIndex": 5,
-      "zoneId": 212
-    },
-    {
-      "pokemonName": "Chimecho",
-      "encounterType": "ground_mons",
-      "encounterRate": "5%",
-      "minLevel": 19,
-      "maxLevel": 19,
-      "encounterTypeIndex": 6,
-      "zoneId": 212
-    },
-    {
-      "pokemonName": "Chimecho",
-      "encounterType": "ground_mons",
-      "encounterRate": "5%",
-      "minLevel": 19,
-      "maxLevel": 19,
-      "encounterTypeIndex": 7,
-      "zoneId": 212
-    },
-    {
-      "pokemonName": "Solrock",
-      "encounterType": "ground_mons",
-      "encounterRate": "4%",
-      "minLevel": 19,
-      "maxLevel": 19,
-      "encounterTypeIndex": 8,
-      "zoneId": 212
-    },
-    {
-      "pokemonName": "Lunatone",
-      "encounterType": "ground_mons",
-      "encounterRate": "4%",
-      "minLevel": 19,
-      "maxLevel": 19,
-      "encounterTypeIndex": 9,
-      "zoneId": 212
-    },
-    {
-      "pokemonName": "Solrock",
-      "encounterType": "ground_mons",
-      "encounterRate": "1%",
-      "minLevel": 19,
-      "maxLevel": 19,
-      "encounterTypeIndex": 10,
-      "zoneId": 212
-    },
-    {
-      "pokemonName": "Lunatone",
-      "encounterType": "ground_mons",
-      "encounterRate": "1%",
-      "minLevel": 19,
-      "maxLevel": 19,
-      "encounterTypeIndex": 11,
-      "zoneId": 212
-    },
-    {
-      "pokemonName": "Clefairy",
-      "encounterType": "tairyo",
-      "encounterRate": "20%",
-      "minLevel": 19,
-      "maxLevel": 19,
-      "encounterTypeIndex": 0,
-      "zoneId": 212
-    },
-    {
-      "pokemonName": "Clefairy",
-      "encounterType": "day",
-      "encounterRate": "10%",
-      "minLevel": 19,
-      "maxLevel": 19,
-      "encounterTypeIndex": 0,
-      "zoneId": 212
-    },
-    {
-      "pokemonName": "Nosepass",
-      "encounterType": "day",
-      "encounterRate": "10%",
-      "minLevel": 19,
-      "maxLevel": 19,
-      "encounterTypeIndex": 1,
-      "zoneId": 212
-    },
-    {
-      "pokemonName": "Clefairy",
-      "encounterType": "night",
-      "encounterRate": "10%",
-      "minLevel": 19,
-      "maxLevel": 19,
-      "encounterTypeIndex": 0,
-      "zoneId": 212
-    },
-    {
-      "pokemonName": "Nosepass",
-      "encounterType": "night",
-      "encounterRate": "10%",
-      "minLevel": 19,
-      "maxLevel": 19,
-      "encounterTypeIndex": 1,
-      "zoneId": 212
-    },
-    {
-      "pokemonName": "Lunatone",
-      "encounterType": "swayGrass",
-      "encounterRate": "20%",
-      "minLevel": 19,
-      "maxLevel": 19,
-      "encounterTypeIndex": 3,
-      "zoneId": 212
-    },
-    {
-      "pokemonName": "Alolan Grimer",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 19,
-      "maxLevel": 19,
-      "encounterTypeIndex": 0,
-      "zoneId": 212
-    },
-    {
-      "pokemonName": "Alolan Grimer",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 19,
-      "maxLevel": 19,
-      "encounterTypeIndex": 1,
-      "zoneId": 212
     }
   ],
   "Mt. Coronet Tunnel to Route 211 Entrance": [
@@ -10474,181 +10476,181 @@
       "pokemonName": "Geodude",
       "encounterType": "ground_mons",
       "encounterRate": "20%",
-      "minLevel": 18,
-      "maxLevel": 18,
+      "minLevel": 19,
+      "maxLevel": 19,
       "encounterTypeIndex": 0,
-      "zoneId": 214
+      "zoneId": 212
     },
     {
       "pokemonName": "Bronzor",
       "encounterType": "ground_mons",
       "encounterRate": "20%",
-      "minLevel": 18,
-      "maxLevel": 18,
+      "minLevel": 19,
+      "maxLevel": 19,
       "encounterTypeIndex": 1,
-      "zoneId": 214
+      "zoneId": 212
     },
     {
-      "pokemonName": "Cleffa",
+      "pokemonName": "Clefairy",
       "encounterType": "ground_mons",
       "encounterRate": "morning",
-      "minLevel": 18,
-      "maxLevel": 18,
+      "minLevel": 19,
+      "maxLevel": 19,
       "encounterTypeIndex": 2,
-      "zoneId": 214
+      "zoneId": 212
+    },
+    {
+      "pokemonName": "Nosepass",
+      "encounterType": "ground_mons",
+      "encounterRate": "morning",
+      "minLevel": 19,
+      "maxLevel": 19,
+      "encounterTypeIndex": 3,
+      "zoneId": 212
     },
     {
       "pokemonName": "Beldum",
       "encounterType": "ground_mons",
-      "encounterRate": "morning",
-      "minLevel": 18,
-      "maxLevel": 18,
-      "encounterTypeIndex": 3,
-      "zoneId": 214
-    },
-    {
-      "pokemonName": "Chingling",
-      "encounterType": "ground_mons",
       "encounterRate": "10%",
-      "minLevel": 18,
-      "maxLevel": 18,
+      "minLevel": 19,
+      "maxLevel": 19,
       "encounterTypeIndex": 4,
-      "zoneId": 214
+      "zoneId": 212
     },
     {
       "pokemonName": "Zubat",
       "encounterType": "ground_mons",
       "encounterRate": "10%",
-      "minLevel": 18,
-      "maxLevel": 18,
+      "minLevel": 19,
+      "maxLevel": 19,
       "encounterTypeIndex": 5,
-      "zoneId": 214
+      "zoneId": 212
     },
     {
-      "pokemonName": "Nosepass",
+      "pokemonName": "Chimecho",
       "encounterType": "ground_mons",
       "encounterRate": "5%",
-      "minLevel": 18,
-      "maxLevel": 18,
+      "minLevel": 19,
+      "maxLevel": 19,
       "encounterTypeIndex": 6,
-      "zoneId": 214
+      "zoneId": 212
     },
     {
-      "pokemonName": "Nosepass",
+      "pokemonName": "Chimecho",
       "encounterType": "ground_mons",
       "encounterRate": "5%",
-      "minLevel": 18,
-      "maxLevel": 18,
+      "minLevel": 19,
+      "maxLevel": 19,
       "encounterTypeIndex": 7,
-      "zoneId": 214
+      "zoneId": 212
     },
     {
       "pokemonName": "Solrock",
       "encounterType": "ground_mons",
       "encounterRate": "4%",
-      "minLevel": 18,
-      "maxLevel": 18,
+      "minLevel": 19,
+      "maxLevel": 19,
       "encounterTypeIndex": 8,
-      "zoneId": 214
+      "zoneId": 212
     },
     {
       "pokemonName": "Lunatone",
       "encounterType": "ground_mons",
       "encounterRate": "4%",
-      "minLevel": 18,
-      "maxLevel": 18,
+      "minLevel": 19,
+      "maxLevel": 19,
       "encounterTypeIndex": 9,
-      "zoneId": 214
+      "zoneId": 212
     },
     {
       "pokemonName": "Solrock",
       "encounterType": "ground_mons",
       "encounterRate": "1%",
-      "minLevel": 18,
-      "maxLevel": 18,
+      "minLevel": 19,
+      "maxLevel": 19,
       "encounterTypeIndex": 10,
-      "zoneId": 214
+      "zoneId": 212
     },
     {
       "pokemonName": "Lunatone",
       "encounterType": "ground_mons",
       "encounterRate": "1%",
-      "minLevel": 18,
-      "maxLevel": 18,
+      "minLevel": 19,
+      "maxLevel": 19,
       "encounterTypeIndex": 11,
-      "zoneId": 214
+      "zoneId": 212
     },
     {
-      "pokemonName": "Cleffa",
+      "pokemonName": "Clefairy",
       "encounterType": "tairyo",
       "encounterRate": "20%",
-      "minLevel": 18,
-      "maxLevel": 18,
+      "minLevel": 19,
+      "maxLevel": 19,
       "encounterTypeIndex": 0,
-      "zoneId": 214
+      "zoneId": 212
     },
     {
-      "pokemonName": "Cleffa",
+      "pokemonName": "Clefairy",
       "encounterType": "day",
       "encounterRate": "10%",
-      "minLevel": 18,
-      "maxLevel": 18,
+      "minLevel": 19,
+      "maxLevel": 19,
       "encounterTypeIndex": 0,
-      "zoneId": 214
+      "zoneId": 212
     },
     {
-      "pokemonName": "Beldum",
+      "pokemonName": "Nosepass",
       "encounterType": "day",
       "encounterRate": "10%",
-      "minLevel": 18,
-      "maxLevel": 18,
+      "minLevel": 19,
+      "maxLevel": 19,
       "encounterTypeIndex": 1,
-      "zoneId": 214
+      "zoneId": 212
     },
     {
-      "pokemonName": "Cleffa",
+      "pokemonName": "Clefairy",
       "encounterType": "night",
       "encounterRate": "10%",
-      "minLevel": 18,
-      "maxLevel": 18,
+      "minLevel": 19,
+      "maxLevel": 19,
       "encounterTypeIndex": 0,
-      "zoneId": 214
+      "zoneId": 212
     },
     {
-      "pokemonName": "Beldum",
+      "pokemonName": "Nosepass",
       "encounterType": "night",
       "encounterRate": "10%",
-      "minLevel": 18,
-      "maxLevel": 18,
+      "minLevel": 19,
+      "maxLevel": 19,
       "encounterTypeIndex": 1,
-      "zoneId": 214
+      "zoneId": 212
     },
     {
       "pokemonName": "Lunatone",
       "encounterType": "swayGrass",
       "encounterRate": "20%",
-      "minLevel": 18,
-      "maxLevel": 18,
+      "minLevel": 19,
+      "maxLevel": 19,
       "encounterTypeIndex": 3,
-      "zoneId": 214
+      "zoneId": 212
     },
     {
       "pokemonName": "Alolan Grimer",
       "encounterType": "Incense",
       "encounterRate": "10%",
-      "minLevel": 18,
-      "maxLevel": 18,
+      "minLevel": 19,
+      "maxLevel": 19,
       "encounterTypeIndex": 0,
-      "zoneId": 214
+      "zoneId": 212
     },
     {
       "pokemonName": "Alolan Grimer",
       "encounterType": "Incense",
       "encounterRate": "10%",
-      "minLevel": 18,
-      "maxLevel": 18,
+      "minLevel": 19,
+      "maxLevel": 19,
       "encounterTypeIndex": 1,
-      "zoneId": 214
+      "zoneId": 212
     }
   ],
   "Old Chateau": [
