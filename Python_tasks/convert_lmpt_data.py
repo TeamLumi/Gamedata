@@ -539,6 +539,64 @@ def getEncounterData():
     with open(os.path.join(output_file_path, 'Encounter_output.json'), 'w') as output:
         output.write(json.dumps(sorted_encounters, indent=2))
 
+def writeEncounterDocData():
+    with open(os.path.join(debug_file_path, 'encounter_locations.json')) as f:
+        data = json.load(f)
+    largest_number = ["", 0]
+    with open(os.path.join(debug_file_path, 'pokemon_locations.txt'), 'w') as output:
+        for monsNo in data.keys():
+            monsName = get_pokemon_name(int(monsNo))
+            enc_dict = defaultdict(list)
+            output.write(f"{monsName}|")
+            for location in data[monsNo]:
+                enc_type = location['encounterType']
+                enc_location = location['routeName']
+                if enc_type == constants.REGULAR_ENC:
+                    enc_type = "Grass"
+                elif enc_type == constants.SWARM:
+                    enc_type = "Swarm"
+                elif enc_type == constants.RADAR:
+                    enc_type = "Radar"
+                elif enc_type == constants.SURF_ENC:
+                    enc_type = "Surfing"
+                elif enc_type == constants.OLD_ENC:
+                    enc_type = "Old Rod"
+                elif enc_type == constants.GOOD_ENC:
+                    enc_type = "Good Rod"
+                elif enc_type == constants.SUPER_ENC:
+                    enc_type = "Super Rod"
+                enc_level = location['maxLevel']
+                enc_rate = location['encounterRate']
+                if enc_rate == "morning":
+                    enc_rate_num = 10
+                    enc_type = "Morning"
+                else:
+                    enc_rate_num = int(enc_rate.split('%')[0])
+                enc_dict[enc_location].append([enc_type, enc_level, enc_rate_num])
+            number = 0
+            for enc_loc in enc_dict.keys():
+                number += 1
+                nest_list = enc_dict[enc_loc]
+                route_dict = defaultdict(int)
+                level_dict = {}
+                for enc_type in nest_list:
+                    level_dict[enc_loc] = enc_type[1]
+                    route_dict[f"{enc_loc}|{enc_type[0]}"] += enc_type[2]
+                for key in route_dict.keys():
+                    split_key = key.split("|")
+                    location = split_key[0]
+                    enc_type = split_key[1]
+                    level = level_dict[location]
+                    rate = route_dict[key]
+                    output.write(f"{location}|")
+                    output.write(f"{enc_type}|")
+                    output.write(f"{level}|")
+                    output.write(f"{rate}%|")
+            if number > largest_number[1] and monsName not in ["Magikarp", "Gyarados", "Golbat"] :
+                largest_number = [monsName, number]
+            output.write("\n")
+    print("This is the largest number of encounters:",largest_number)
+
 if __name__ != "__main__":
     full_data = load_data()
     trainer_data = full_data["raw_trainer_data"]
@@ -560,6 +618,7 @@ if __name__ == "__main__":
     mid_time = time.time()
     print("Middle Execution time:", mid_time - start_time, "seconds")
     getEncounterData()
+    writeEncounterDocData()
 
     end_time = time.time()
     execution_time = end_time - start_time
