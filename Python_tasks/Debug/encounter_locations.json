@@ -35185,6 +35185,750 @@
       "zoneId": 244
     }
   ],
+  "Victory Road 1F Back 1": [
+    {
+      "pokemonName": "Azumarill",
+      "encounterType": "ground_mons",
+      "encounterRate": "20%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 0,
+      "zoneId": 247
+    },
+    {
+      "pokemonName": "Floatzel",
+      "encounterType": "ground_mons",
+      "encounterRate": "20%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 1,
+      "zoneId": 247
+    },
+    {
+      "pokemonName": "Graveler",
+      "encounterType": "ground_mons",
+      "encounterRate": "morning",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 2,
+      "zoneId": 247
+    },
+    {
+      "pokemonName": "Machoke",
+      "encounterType": "ground_mons",
+      "encounterRate": "morning",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 3,
+      "zoneId": 247
+    },
+    {
+      "pokemonName": "Medicham",
+      "encounterType": "ground_mons",
+      "encounterRate": "10%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 4,
+      "zoneId": 247
+    },
+    {
+      "pokemonName": "Dewgong",
+      "encounterType": "ground_mons",
+      "encounterRate": "10%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 5,
+      "zoneId": 247
+    },
+    {
+      "pokemonName": "Golbat",
+      "encounterType": "ground_mons",
+      "encounterRate": "5%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 6,
+      "zoneId": 247
+    },
+    {
+      "pokemonName": "Gabite",
+      "encounterType": "ground_mons",
+      "encounterRate": "5%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 7,
+      "zoneId": 247
+    },
+    {
+      "pokemonName": "Golbat",
+      "encounterType": "ground_mons",
+      "encounterRate": "4%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 8,
+      "zoneId": 247
+    },
+    {
+      "pokemonName": "Gabite",
+      "encounterType": "ground_mons",
+      "encounterRate": "4%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 9,
+      "zoneId": 247
+    },
+    {
+      "pokemonName": "Golbat",
+      "encounterType": "ground_mons",
+      "encounterRate": "1%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 10,
+      "zoneId": 247
+    },
+    {
+      "pokemonName": "Gabite",
+      "encounterType": "ground_mons",
+      "encounterRate": "1%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 11,
+      "zoneId": 247
+    },
+    {
+      "pokemonName": "Graveler",
+      "encounterType": "tairyo",
+      "encounterRate": "20%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 0,
+      "zoneId": 247
+    },
+    {
+      "pokemonName": "Graveler",
+      "encounterType": "day",
+      "encounterRate": "10%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 0,
+      "zoneId": 247
+    },
+    {
+      "pokemonName": "Machoke",
+      "encounterType": "day",
+      "encounterRate": "10%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 1,
+      "zoneId": 247
+    },
+    {
+      "pokemonName": "Graveler",
+      "encounterType": "night",
+      "encounterRate": "10%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 0,
+      "zoneId": 247
+    },
+    {
+      "pokemonName": "Machoke",
+      "encounterType": "night",
+      "encounterRate": "10%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 1,
+      "zoneId": 247
+    },
+    {
+      "pokemonName": "Gabite",
+      "encounterType": "swayGrass",
+      "encounterRate": "20%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 3,
+      "zoneId": 247
+    },
+    {
+      "pokemonName": "Alolan Golem",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 0,
+      "zoneId": 247
+    },
+    {
+      "pokemonName": "Alolan Golem",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 1,
+      "zoneId": 247
+    },
+    {
+      "pokemonName": "Galarian Slowbro",
+      "encounterType": "Surfing Incense",
+      "encounterRate": "30%",
+      "minLevel": 60,
+      "maxLevel": 60,
+      "encounterTypeIndex": 2,
+      "zoneId": 247
+    },
+    {
+      "pokemonName": "Galarian Slowbro",
+      "encounterType": "Surfing Incense",
+      "encounterRate": "30%",
+      "minLevel": 60,
+      "maxLevel": 40,
+      "encounterTypeIndex": 2,
+      "zoneId": 247
+    },
+    {
+      "pokemonName": "Sealeo",
+      "encounterType": "water_mons",
+      "encounterRate": "60%",
+      "minLevel": 60,
+      "maxLevel": 60,
+      "encounterTypeIndex": 0,
+      "zoneId": 247
+    },
+    {
+      "pokemonName": "Dewgong",
+      "encounterType": "water_mons",
+      "encounterRate": "30%",
+      "minLevel": 60,
+      "maxLevel": 60,
+      "encounterTypeIndex": 1,
+      "zoneId": 247
+    },
+    {
+      "pokemonName": "Lapras",
+      "encounterType": "water_mons",
+      "encounterRate": "5%",
+      "minLevel": 60,
+      "maxLevel": 60,
+      "encounterTypeIndex": 2,
+      "zoneId": 247
+    },
+    {
+      "pokemonName": "Lapras",
+      "encounterType": "water_mons",
+      "encounterRate": "4%",
+      "minLevel": 60,
+      "maxLevel": 60,
+      "encounterTypeIndex": 3,
+      "zoneId": 247
+    },
+    {
+      "pokemonName": "Lapras",
+      "encounterType": "water_mons",
+      "encounterRate": "1%",
+      "minLevel": 60,
+      "maxLevel": 60,
+      "encounterTypeIndex": 4,
+      "zoneId": 247
+    },
+    {
+      "pokemonName": "Magikarp",
+      "encounterType": "boro_mons",
+      "encounterRate": "60%",
+      "minLevel": 10,
+      "maxLevel": 10,
+      "encounterTypeIndex": 0,
+      "zoneId": 247
+    },
+    {
+      "pokemonName": "Magikarp",
+      "encounterType": "boro_mons",
+      "encounterRate": "30%",
+      "minLevel": 10,
+      "maxLevel": 10,
+      "encounterTypeIndex": 1,
+      "zoneId": 247
+    },
+    {
+      "pokemonName": "Magikarp",
+      "encounterType": "boro_mons",
+      "encounterRate": "5%",
+      "minLevel": 10,
+      "maxLevel": 10,
+      "encounterTypeIndex": 2,
+      "zoneId": 247
+    },
+    {
+      "pokemonName": "Magikarp",
+      "encounterType": "boro_mons",
+      "encounterRate": "4%",
+      "minLevel": 10,
+      "maxLevel": 10,
+      "encounterTypeIndex": 3,
+      "zoneId": 247
+    },
+    {
+      "pokemonName": "Magikarp",
+      "encounterType": "boro_mons",
+      "encounterRate": "1%",
+      "minLevel": 10,
+      "maxLevel": 10,
+      "encounterTypeIndex": 4,
+      "zoneId": 247
+    },
+    {
+      "pokemonName": "Magikarp",
+      "encounterType": "ii_mons",
+      "encounterRate": "60%",
+      "minLevel": 25,
+      "maxLevel": 25,
+      "encounterTypeIndex": 0,
+      "zoneId": 247
+    },
+    {
+      "pokemonName": "Magikarp",
+      "encounterType": "ii_mons",
+      "encounterRate": "30%",
+      "minLevel": 25,
+      "maxLevel": 25,
+      "encounterTypeIndex": 1,
+      "zoneId": 247
+    },
+    {
+      "pokemonName": "Magikarp",
+      "encounterType": "ii_mons",
+      "encounterRate": "5%",
+      "minLevel": 25,
+      "maxLevel": 25,
+      "encounterTypeIndex": 2,
+      "zoneId": 247
+    },
+    {
+      "pokemonName": "Magikarp",
+      "encounterType": "ii_mons",
+      "encounterRate": "4%",
+      "minLevel": 25,
+      "maxLevel": 25,
+      "encounterTypeIndex": 3,
+      "zoneId": 247
+    },
+    {
+      "pokemonName": "Magikarp",
+      "encounterType": "ii_mons",
+      "encounterRate": "1%",
+      "minLevel": 25,
+      "maxLevel": 25,
+      "encounterTypeIndex": 4,
+      "zoneId": 247
+    },
+    {
+      "pokemonName": "Gyarados",
+      "encounterType": "sugoi_mons",
+      "encounterRate": "60%",
+      "minLevel": 50,
+      "maxLevel": 50,
+      "encounterTypeIndex": 0,
+      "zoneId": 247
+    },
+    {
+      "pokemonName": "Gyarados",
+      "encounterType": "sugoi_mons",
+      "encounterRate": "30%",
+      "minLevel": 50,
+      "maxLevel": 50,
+      "encounterTypeIndex": 1,
+      "zoneId": 247
+    },
+    {
+      "pokemonName": "Gyarados",
+      "encounterType": "sugoi_mons",
+      "encounterRate": "5%",
+      "minLevel": 50,
+      "maxLevel": 50,
+      "encounterTypeIndex": 2,
+      "zoneId": 247
+    },
+    {
+      "pokemonName": "Gyarados",
+      "encounterType": "sugoi_mons",
+      "encounterRate": "4%",
+      "minLevel": 50,
+      "maxLevel": 50,
+      "encounterTypeIndex": 3,
+      "zoneId": 247
+    },
+    {
+      "pokemonName": "Gyarados",
+      "encounterType": "sugoi_mons",
+      "encounterRate": "1%",
+      "minLevel": 50,
+      "maxLevel": 50,
+      "encounterTypeIndex": 4,
+      "zoneId": 247
+    }
+  ],
+  "Victory Road 1F Back 2": [
+    {
+      "pokemonName": "Azumarill",
+      "encounterType": "ground_mons",
+      "encounterRate": "20%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 0,
+      "zoneId": 248
+    },
+    {
+      "pokemonName": "Floatzel",
+      "encounterType": "ground_mons",
+      "encounterRate": "20%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 1,
+      "zoneId": 248
+    },
+    {
+      "pokemonName": "Graveler",
+      "encounterType": "ground_mons",
+      "encounterRate": "morning",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 2,
+      "zoneId": 248
+    },
+    {
+      "pokemonName": "Machoke",
+      "encounterType": "ground_mons",
+      "encounterRate": "morning",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 3,
+      "zoneId": 248
+    },
+    {
+      "pokemonName": "Medicham",
+      "encounterType": "ground_mons",
+      "encounterRate": "10%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 4,
+      "zoneId": 248
+    },
+    {
+      "pokemonName": "Steelix",
+      "encounterType": "ground_mons",
+      "encounterRate": "10%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 5,
+      "zoneId": 248
+    },
+    {
+      "pokemonName": "Golbat",
+      "encounterType": "ground_mons",
+      "encounterRate": "5%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 6,
+      "zoneId": 248
+    },
+    {
+      "pokemonName": "Gabite",
+      "encounterType": "ground_mons",
+      "encounterRate": "5%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 7,
+      "zoneId": 248
+    },
+    {
+      "pokemonName": "Golbat",
+      "encounterType": "ground_mons",
+      "encounterRate": "4%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 8,
+      "zoneId": 248
+    },
+    {
+      "pokemonName": "Gabite",
+      "encounterType": "ground_mons",
+      "encounterRate": "4%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 9,
+      "zoneId": 248
+    },
+    {
+      "pokemonName": "Golbat",
+      "encounterType": "ground_mons",
+      "encounterRate": "1%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 10,
+      "zoneId": 248
+    },
+    {
+      "pokemonName": "Gabite",
+      "encounterType": "ground_mons",
+      "encounterRate": "1%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 11,
+      "zoneId": 248
+    },
+    {
+      "pokemonName": "Graveler",
+      "encounterType": "tairyo",
+      "encounterRate": "20%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 0,
+      "zoneId": 248
+    },
+    {
+      "pokemonName": "Graveler",
+      "encounterType": "day",
+      "encounterRate": "10%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 0,
+      "zoneId": 248
+    },
+    {
+      "pokemonName": "Machoke",
+      "encounterType": "day",
+      "encounterRate": "10%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 1,
+      "zoneId": 248
+    },
+    {
+      "pokemonName": "Graveler",
+      "encounterType": "night",
+      "encounterRate": "10%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 0,
+      "zoneId": 248
+    },
+    {
+      "pokemonName": "Machoke",
+      "encounterType": "night",
+      "encounterRate": "10%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 1,
+      "zoneId": 248
+    },
+    {
+      "pokemonName": "Gabite",
+      "encounterType": "swayGrass",
+      "encounterRate": "20%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 3,
+      "zoneId": 248
+    },
+    {
+      "pokemonName": "Alolan Golem",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 0,
+      "zoneId": 248
+    },
+    {
+      "pokemonName": "Alolan Golem",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 1,
+      "zoneId": 248
+    }
+  ],
+  "Victory Road 1F Back 3": [
+    {
+      "pokemonName": "Azumarill",
+      "encounterType": "ground_mons",
+      "encounterRate": "20%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 0,
+      "zoneId": 249
+    },
+    {
+      "pokemonName": "Floatzel",
+      "encounterType": "ground_mons",
+      "encounterRate": "20%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 1,
+      "zoneId": 249
+    },
+    {
+      "pokemonName": "Graveler",
+      "encounterType": "ground_mons",
+      "encounterRate": "morning",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 2,
+      "zoneId": 249
+    },
+    {
+      "pokemonName": "Machoke",
+      "encounterType": "ground_mons",
+      "encounterRate": "morning",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 3,
+      "zoneId": 249
+    },
+    {
+      "pokemonName": "Medicham",
+      "encounterType": "ground_mons",
+      "encounterRate": "10%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 4,
+      "zoneId": 249
+    },
+    {
+      "pokemonName": "Steelix",
+      "encounterType": "ground_mons",
+      "encounterRate": "10%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 5,
+      "zoneId": 249
+    },
+    {
+      "pokemonName": "Golbat",
+      "encounterType": "ground_mons",
+      "encounterRate": "5%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 6,
+      "zoneId": 249
+    },
+    {
+      "pokemonName": "Gabite",
+      "encounterType": "ground_mons",
+      "encounterRate": "5%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 7,
+      "zoneId": 249
+    },
+    {
+      "pokemonName": "Golbat",
+      "encounterType": "ground_mons",
+      "encounterRate": "4%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 8,
+      "zoneId": 249
+    },
+    {
+      "pokemonName": "Gabite",
+      "encounterType": "ground_mons",
+      "encounterRate": "4%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 9,
+      "zoneId": 249
+    },
+    {
+      "pokemonName": "Golbat",
+      "encounterType": "ground_mons",
+      "encounterRate": "1%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 10,
+      "zoneId": 249
+    },
+    {
+      "pokemonName": "Gabite",
+      "encounterType": "ground_mons",
+      "encounterRate": "1%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 11,
+      "zoneId": 249
+    },
+    {
+      "pokemonName": "Graveler",
+      "encounterType": "tairyo",
+      "encounterRate": "20%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 0,
+      "zoneId": 249
+    },
+    {
+      "pokemonName": "Graveler",
+      "encounterType": "day",
+      "encounterRate": "10%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 0,
+      "zoneId": 249
+    },
+    {
+      "pokemonName": "Machoke",
+      "encounterType": "day",
+      "encounterRate": "10%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 1,
+      "zoneId": 249
+    },
+    {
+      "pokemonName": "Graveler",
+      "encounterType": "night",
+      "encounterRate": "10%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 0,
+      "zoneId": 249
+    },
+    {
+      "pokemonName": "Machoke",
+      "encounterType": "night",
+      "encounterRate": "10%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 1,
+      "zoneId": 249
+    },
+    {
+      "pokemonName": "Gabite",
+      "encounterType": "swayGrass",
+      "encounterRate": "20%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 3,
+      "zoneId": 249
+    },
+    {
+      "pokemonName": "Alolan Golem",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 0,
+      "zoneId": 249
+    },
+    {
+      "pokemonName": "Alolan Golem",
+      "encounterType": "Incense",
+      "encounterRate": "10%",
+      "minLevel": 59,
+      "maxLevel": 59,
+      "encounterTypeIndex": 1,
+      "zoneId": 249
+    }
+  ],
   "Victory Road 2F": [
     {
       "pokemonName": "Steelix",
@@ -35745,750 +36489,6 @@
       "maxLevel": 50,
       "encounterTypeIndex": 4,
       "zoneId": 246
-    }
-  ],
-  "Victory Road Nat Dex Area": [
-    {
-      "pokemonName": "Azumarill",
-      "encounterType": "ground_mons",
-      "encounterRate": "20%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 0,
-      "zoneId": 247
-    },
-    {
-      "pokemonName": "Floatzel",
-      "encounterType": "ground_mons",
-      "encounterRate": "20%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 1,
-      "zoneId": 247
-    },
-    {
-      "pokemonName": "Graveler",
-      "encounterType": "ground_mons",
-      "encounterRate": "morning",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 2,
-      "zoneId": 247
-    },
-    {
-      "pokemonName": "Machoke",
-      "encounterType": "ground_mons",
-      "encounterRate": "morning",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 3,
-      "zoneId": 247
-    },
-    {
-      "pokemonName": "Medicham",
-      "encounterType": "ground_mons",
-      "encounterRate": "10%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 4,
-      "zoneId": 247
-    },
-    {
-      "pokemonName": "Dewgong",
-      "encounterType": "ground_mons",
-      "encounterRate": "10%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 5,
-      "zoneId": 247
-    },
-    {
-      "pokemonName": "Golbat",
-      "encounterType": "ground_mons",
-      "encounterRate": "5%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 6,
-      "zoneId": 247
-    },
-    {
-      "pokemonName": "Gabite",
-      "encounterType": "ground_mons",
-      "encounterRate": "5%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 7,
-      "zoneId": 247
-    },
-    {
-      "pokemonName": "Golbat",
-      "encounterType": "ground_mons",
-      "encounterRate": "4%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 8,
-      "zoneId": 247
-    },
-    {
-      "pokemonName": "Gabite",
-      "encounterType": "ground_mons",
-      "encounterRate": "4%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 9,
-      "zoneId": 247
-    },
-    {
-      "pokemonName": "Golbat",
-      "encounterType": "ground_mons",
-      "encounterRate": "1%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 10,
-      "zoneId": 247
-    },
-    {
-      "pokemonName": "Gabite",
-      "encounterType": "ground_mons",
-      "encounterRate": "1%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 11,
-      "zoneId": 247
-    },
-    {
-      "pokemonName": "Graveler",
-      "encounterType": "tairyo",
-      "encounterRate": "20%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 0,
-      "zoneId": 247
-    },
-    {
-      "pokemonName": "Graveler",
-      "encounterType": "day",
-      "encounterRate": "10%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 0,
-      "zoneId": 247
-    },
-    {
-      "pokemonName": "Machoke",
-      "encounterType": "day",
-      "encounterRate": "10%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 1,
-      "zoneId": 247
-    },
-    {
-      "pokemonName": "Graveler",
-      "encounterType": "night",
-      "encounterRate": "10%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 0,
-      "zoneId": 247
-    },
-    {
-      "pokemonName": "Machoke",
-      "encounterType": "night",
-      "encounterRate": "10%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 1,
-      "zoneId": 247
-    },
-    {
-      "pokemonName": "Gabite",
-      "encounterType": "swayGrass",
-      "encounterRate": "20%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 3,
-      "zoneId": 247
-    },
-    {
-      "pokemonName": "Alolan Golem",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 0,
-      "zoneId": 247
-    },
-    {
-      "pokemonName": "Alolan Golem",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 1,
-      "zoneId": 247
-    },
-    {
-      "pokemonName": "Galarian Slowbro",
-      "encounterType": "Surfing Incense",
-      "encounterRate": "30%",
-      "minLevel": 60,
-      "maxLevel": 60,
-      "encounterTypeIndex": 2,
-      "zoneId": 247
-    },
-    {
-      "pokemonName": "Galarian Slowbro",
-      "encounterType": "Surfing Incense",
-      "encounterRate": "30%",
-      "minLevel": 60,
-      "maxLevel": 40,
-      "encounterTypeIndex": 2,
-      "zoneId": 247
-    },
-    {
-      "pokemonName": "Sealeo",
-      "encounterType": "water_mons",
-      "encounterRate": "60%",
-      "minLevel": 60,
-      "maxLevel": 60,
-      "encounterTypeIndex": 0,
-      "zoneId": 247
-    },
-    {
-      "pokemonName": "Dewgong",
-      "encounterType": "water_mons",
-      "encounterRate": "30%",
-      "minLevel": 60,
-      "maxLevel": 60,
-      "encounterTypeIndex": 1,
-      "zoneId": 247
-    },
-    {
-      "pokemonName": "Lapras",
-      "encounterType": "water_mons",
-      "encounterRate": "5%",
-      "minLevel": 60,
-      "maxLevel": 60,
-      "encounterTypeIndex": 2,
-      "zoneId": 247
-    },
-    {
-      "pokemonName": "Lapras",
-      "encounterType": "water_mons",
-      "encounterRate": "4%",
-      "minLevel": 60,
-      "maxLevel": 60,
-      "encounterTypeIndex": 3,
-      "zoneId": 247
-    },
-    {
-      "pokemonName": "Lapras",
-      "encounterType": "water_mons",
-      "encounterRate": "1%",
-      "minLevel": 60,
-      "maxLevel": 60,
-      "encounterTypeIndex": 4,
-      "zoneId": 247
-    },
-    {
-      "pokemonName": "Magikarp",
-      "encounterType": "boro_mons",
-      "encounterRate": "60%",
-      "minLevel": 10,
-      "maxLevel": 10,
-      "encounterTypeIndex": 0,
-      "zoneId": 247
-    },
-    {
-      "pokemonName": "Magikarp",
-      "encounterType": "boro_mons",
-      "encounterRate": "30%",
-      "minLevel": 10,
-      "maxLevel": 10,
-      "encounterTypeIndex": 1,
-      "zoneId": 247
-    },
-    {
-      "pokemonName": "Magikarp",
-      "encounterType": "boro_mons",
-      "encounterRate": "5%",
-      "minLevel": 10,
-      "maxLevel": 10,
-      "encounterTypeIndex": 2,
-      "zoneId": 247
-    },
-    {
-      "pokemonName": "Magikarp",
-      "encounterType": "boro_mons",
-      "encounterRate": "4%",
-      "minLevel": 10,
-      "maxLevel": 10,
-      "encounterTypeIndex": 3,
-      "zoneId": 247
-    },
-    {
-      "pokemonName": "Magikarp",
-      "encounterType": "boro_mons",
-      "encounterRate": "1%",
-      "minLevel": 10,
-      "maxLevel": 10,
-      "encounterTypeIndex": 4,
-      "zoneId": 247
-    },
-    {
-      "pokemonName": "Magikarp",
-      "encounterType": "ii_mons",
-      "encounterRate": "60%",
-      "minLevel": 25,
-      "maxLevel": 25,
-      "encounterTypeIndex": 0,
-      "zoneId": 247
-    },
-    {
-      "pokemonName": "Magikarp",
-      "encounterType": "ii_mons",
-      "encounterRate": "30%",
-      "minLevel": 25,
-      "maxLevel": 25,
-      "encounterTypeIndex": 1,
-      "zoneId": 247
-    },
-    {
-      "pokemonName": "Magikarp",
-      "encounterType": "ii_mons",
-      "encounterRate": "5%",
-      "minLevel": 25,
-      "maxLevel": 25,
-      "encounterTypeIndex": 2,
-      "zoneId": 247
-    },
-    {
-      "pokemonName": "Magikarp",
-      "encounterType": "ii_mons",
-      "encounterRate": "4%",
-      "minLevel": 25,
-      "maxLevel": 25,
-      "encounterTypeIndex": 3,
-      "zoneId": 247
-    },
-    {
-      "pokemonName": "Magikarp",
-      "encounterType": "ii_mons",
-      "encounterRate": "1%",
-      "minLevel": 25,
-      "maxLevel": 25,
-      "encounterTypeIndex": 4,
-      "zoneId": 247
-    },
-    {
-      "pokemonName": "Gyarados",
-      "encounterType": "sugoi_mons",
-      "encounterRate": "60%",
-      "minLevel": 50,
-      "maxLevel": 50,
-      "encounterTypeIndex": 0,
-      "zoneId": 247
-    },
-    {
-      "pokemonName": "Gyarados",
-      "encounterType": "sugoi_mons",
-      "encounterRate": "30%",
-      "minLevel": 50,
-      "maxLevel": 50,
-      "encounterTypeIndex": 1,
-      "zoneId": 247
-    },
-    {
-      "pokemonName": "Gyarados",
-      "encounterType": "sugoi_mons",
-      "encounterRate": "5%",
-      "minLevel": 50,
-      "maxLevel": 50,
-      "encounterTypeIndex": 2,
-      "zoneId": 247
-    },
-    {
-      "pokemonName": "Gyarados",
-      "encounterType": "sugoi_mons",
-      "encounterRate": "4%",
-      "minLevel": 50,
-      "maxLevel": 50,
-      "encounterTypeIndex": 3,
-      "zoneId": 247
-    },
-    {
-      "pokemonName": "Gyarados",
-      "encounterType": "sugoi_mons",
-      "encounterRate": "1%",
-      "minLevel": 50,
-      "maxLevel": 50,
-      "encounterTypeIndex": 4,
-      "zoneId": 247
-    }
-  ],
-  "Victory Road Nat Dex Area Area 2": [
-    {
-      "pokemonName": "Azumarill",
-      "encounterType": "ground_mons",
-      "encounterRate": "20%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 0,
-      "zoneId": 249
-    },
-    {
-      "pokemonName": "Floatzel",
-      "encounterType": "ground_mons",
-      "encounterRate": "20%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 1,
-      "zoneId": 249
-    },
-    {
-      "pokemonName": "Graveler",
-      "encounterType": "ground_mons",
-      "encounterRate": "morning",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 2,
-      "zoneId": 249
-    },
-    {
-      "pokemonName": "Machoke",
-      "encounterType": "ground_mons",
-      "encounterRate": "morning",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 3,
-      "zoneId": 249
-    },
-    {
-      "pokemonName": "Medicham",
-      "encounterType": "ground_mons",
-      "encounterRate": "10%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 4,
-      "zoneId": 249
-    },
-    {
-      "pokemonName": "Steelix",
-      "encounterType": "ground_mons",
-      "encounterRate": "10%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 5,
-      "zoneId": 249
-    },
-    {
-      "pokemonName": "Golbat",
-      "encounterType": "ground_mons",
-      "encounterRate": "5%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 6,
-      "zoneId": 249
-    },
-    {
-      "pokemonName": "Gabite",
-      "encounterType": "ground_mons",
-      "encounterRate": "5%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 7,
-      "zoneId": 249
-    },
-    {
-      "pokemonName": "Golbat",
-      "encounterType": "ground_mons",
-      "encounterRate": "4%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 8,
-      "zoneId": 249
-    },
-    {
-      "pokemonName": "Gabite",
-      "encounterType": "ground_mons",
-      "encounterRate": "4%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 9,
-      "zoneId": 249
-    },
-    {
-      "pokemonName": "Golbat",
-      "encounterType": "ground_mons",
-      "encounterRate": "1%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 10,
-      "zoneId": 249
-    },
-    {
-      "pokemonName": "Gabite",
-      "encounterType": "ground_mons",
-      "encounterRate": "1%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 11,
-      "zoneId": 249
-    },
-    {
-      "pokemonName": "Graveler",
-      "encounterType": "tairyo",
-      "encounterRate": "20%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 0,
-      "zoneId": 249
-    },
-    {
-      "pokemonName": "Graveler",
-      "encounterType": "day",
-      "encounterRate": "10%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 0,
-      "zoneId": 249
-    },
-    {
-      "pokemonName": "Machoke",
-      "encounterType": "day",
-      "encounterRate": "10%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 1,
-      "zoneId": 249
-    },
-    {
-      "pokemonName": "Graveler",
-      "encounterType": "night",
-      "encounterRate": "10%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 0,
-      "zoneId": 249
-    },
-    {
-      "pokemonName": "Machoke",
-      "encounterType": "night",
-      "encounterRate": "10%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 1,
-      "zoneId": 249
-    },
-    {
-      "pokemonName": "Gabite",
-      "encounterType": "swayGrass",
-      "encounterRate": "20%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 3,
-      "zoneId": 249
-    },
-    {
-      "pokemonName": "Alolan Golem",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 0,
-      "zoneId": 249
-    },
-    {
-      "pokemonName": "Alolan Golem",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 1,
-      "zoneId": 249
-    }
-  ],
-  "Victory Road Nat Dex Area B1F": [
-    {
-      "pokemonName": "Azumarill",
-      "encounterType": "ground_mons",
-      "encounterRate": "20%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 0,
-      "zoneId": 248
-    },
-    {
-      "pokemonName": "Floatzel",
-      "encounterType": "ground_mons",
-      "encounterRate": "20%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 1,
-      "zoneId": 248
-    },
-    {
-      "pokemonName": "Graveler",
-      "encounterType": "ground_mons",
-      "encounterRate": "morning",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 2,
-      "zoneId": 248
-    },
-    {
-      "pokemonName": "Machoke",
-      "encounterType": "ground_mons",
-      "encounterRate": "morning",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 3,
-      "zoneId": 248
-    },
-    {
-      "pokemonName": "Medicham",
-      "encounterType": "ground_mons",
-      "encounterRate": "10%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 4,
-      "zoneId": 248
-    },
-    {
-      "pokemonName": "Steelix",
-      "encounterType": "ground_mons",
-      "encounterRate": "10%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 5,
-      "zoneId": 248
-    },
-    {
-      "pokemonName": "Golbat",
-      "encounterType": "ground_mons",
-      "encounterRate": "5%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 6,
-      "zoneId": 248
-    },
-    {
-      "pokemonName": "Gabite",
-      "encounterType": "ground_mons",
-      "encounterRate": "5%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 7,
-      "zoneId": 248
-    },
-    {
-      "pokemonName": "Golbat",
-      "encounterType": "ground_mons",
-      "encounterRate": "4%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 8,
-      "zoneId": 248
-    },
-    {
-      "pokemonName": "Gabite",
-      "encounterType": "ground_mons",
-      "encounterRate": "4%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 9,
-      "zoneId": 248
-    },
-    {
-      "pokemonName": "Golbat",
-      "encounterType": "ground_mons",
-      "encounterRate": "1%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 10,
-      "zoneId": 248
-    },
-    {
-      "pokemonName": "Gabite",
-      "encounterType": "ground_mons",
-      "encounterRate": "1%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 11,
-      "zoneId": 248
-    },
-    {
-      "pokemonName": "Graveler",
-      "encounterType": "tairyo",
-      "encounterRate": "20%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 0,
-      "zoneId": 248
-    },
-    {
-      "pokemonName": "Graveler",
-      "encounterType": "day",
-      "encounterRate": "10%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 0,
-      "zoneId": 248
-    },
-    {
-      "pokemonName": "Machoke",
-      "encounterType": "day",
-      "encounterRate": "10%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 1,
-      "zoneId": 248
-    },
-    {
-      "pokemonName": "Graveler",
-      "encounterType": "night",
-      "encounterRate": "10%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 0,
-      "zoneId": 248
-    },
-    {
-      "pokemonName": "Machoke",
-      "encounterType": "night",
-      "encounterRate": "10%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 1,
-      "zoneId": 248
-    },
-    {
-      "pokemonName": "Gabite",
-      "encounterType": "swayGrass",
-      "encounterRate": "20%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 3,
-      "zoneId": 248
-    },
-    {
-      "pokemonName": "Alolan Golem",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 0,
-      "zoneId": 248
-    },
-    {
-      "pokemonName": "Alolan Golem",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 59,
-      "maxLevel": 59,
-      "encounterTypeIndex": 1,
-      "zoneId": 248
     }
   ],
   "Wayward Cave": [

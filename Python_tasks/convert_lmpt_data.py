@@ -5,7 +5,7 @@ import os
 import re
 import time
 import unicodedata
-from collections import defaultdict
+from collections import defaultdict, OrderedDict
 
 import constants
 from data_checks import check_bad_encounter, check_mons_list, get_average_time, check_monsName
@@ -87,6 +87,13 @@ def sort_dict_by_keys(d):
     sorted_dict = {}
     for key in sorted(d.keys()):
         sorted_dict[key] = d[key]
+    return sorted_dict
+
+def sort_keys_by_list(dct, lst):
+    """
+    Sorts a dictionary based on the order specified in lst and returns the sorted dictionary.
+    """
+    sorted_dict = OrderedDict(sorted(dct.items(), key=lambda x: lst.index(x[0])))
     return sorted_dict
 
 def getTrainerData(gymLeaderList):
@@ -548,6 +555,7 @@ def gatherEncounterDocData(route):
         "SR": [],
         "Honey Tree": [],
         "Incense": [],
+        "MOD": []
         }
     for pokemon in route:
         if pokemon['encounterType'] == constants.REGULAR_ENC:
@@ -565,12 +573,13 @@ def gatherEncounterDocData(route):
         elif constants.INCENSE in pokemon['encounterType']:
             enc_dict['Incense'].append(pokemon)
         else:
+            enc_dict['MOD'].append(pokemon)
             print(pokemon)
     return enc_dict
 
 def writeEncounterDocData():
     with open(os.path.join(debug_file_path, 'encounter_locations.json')) as f:
-        data = json.load(f)
+        data = sort_keys_by_list(json.load(f), constants.DOCS_ZONE_ORDER)
     with open(os.path.join(debug_file_path, 'encounter_locations.txt'), 'w') as output:
         for route in data.keys():
             route_mons = gatherEncounterDocData(data[route])
@@ -578,25 +587,32 @@ def writeEncounterDocData():
             if len(route_mons['Grass']) == 0:
                 output.write(constants.GRASS_NONE)
             else:
+                morningEnc = []
                 for pokemon in route_mons['Grass']:
-                    output.write(f"{pokemon['pokemonName']}|{pokemon['maxLevel']}|{pokemon['encounterRate']}|")
+                    if pokemon['encounterRate'] != "morning":
+                        output.write(f"{pokemon['pokemonName']}|{pokemon['maxLevel']}|{pokemon['encounterRate']}|")
+                    else:
+                        morningEnc.append(f"{pokemon['pokemonName']}|{pokemon['maxLevel']}|{pokemon['encounterRate']}|")
+                for pokemon in morningEnc:
+                    output.write(pokemon)
+
+
             if len(route_mons['TOD']) == 0:
                 output.write(constants.TOD_NONE)
             else:
                 for pokemon in route_mons['TOD']:
                     output.write(f"{pokemon['pokemonName']}|{pokemon['maxLevel']}|{pokemon['encounterRate']}|")
-            if len(route_mons['Surf']) == 0:
-                for i in range(constants.SURF_NONE):
+
+
+            if len(route_mons['Incense']) == 0:
+                for i in range(10):
                     output.write(f"{constants.DEFAULT_NONE}|")
-            else:
-                for pokemon in route_mons['Surf']:
-                    output.write(f"{pokemon['pokemonName']}|{pokemon['maxLevel']}|{pokemon['encounterRate']}|")
-            if len(route_mons['Fishing']) == 0:
-                for i in range(constants.ROD_NONE):
-                    output.write(f"{constants.DEFAULT_NONE}|")
-            else:
-                for pokemon in route_mons['Fishing']:
-                    output.write(f"{pokemon['pokemonName']}|{pokemon['maxLevel']}|{pokemon['encounterRate']}|")
+            elif len(route_mons['Incense']) == 2 or len(route_mons['Incense']) == 3:
+                for i in range(5):
+                    output.write(f"{route_mons['Incense'][0]['pokemonName']}|{route_mons['Incense'][0]['maxLevel']}|{route_mons['Incense'][0]['encounterRate']}|")
+                    output.write(f"{route_mons['Incense'][1]['pokemonName']}|{route_mons['Incense'][1]['maxLevel']}|{route_mons['Incense'][1]['encounterRate']}|")
+
+
             if len(route_mons['SR']) == 0:
                 for i in range(2):
                     output.write(f"{constants.DEFAULT_NONE}|")
@@ -609,6 +625,43 @@ def writeEncounterDocData():
             else:
                 for pokemon in route_mons['SR']:
                     output.write(f"{pokemon['pokemonName']}|{pokemon['maxLevel']}|{pokemon['encounterRate']}|")
+
+
+            if len(route_mons['MOD']) == 0:
+                for i in range(16):
+                    output.write(f"{constants.DEFAULT_NONE}|")
+            else:
+                for pokemon in route_mons['MOD']:
+                    output.write(f"{pokemon['pokemonName']}|{pokemon['maxLevel']}|{pokemon['encounterRate']}|")
+
+
+            if len(route_mons['Fishing']) == 0:
+                for i in range(constants.ROD_NONE):
+                    output.write(f"{constants.DEFAULT_NONE}|")
+            else:
+                for pokemon in route_mons['Fishing']:
+                    output.write(f"{pokemon['pokemonName']}|{pokemon['maxLevel']}|{pokemon['encounterRate']}|")
+
+
+            if len(route_mons['Surf']) == 0:
+                for i in range(constants.SURF_NONE):
+                    output.write(f"{constants.DEFAULT_NONE}|")
+            else:
+                for pokemon in route_mons['Surf']:
+                    output.write(f"{pokemon['pokemonName']}|{pokemon['maxLevel']}|{pokemon['encounterRate']}|")
+
+
+            if len(route_mons['Incense']) == 0:
+                for i in range(5):
+                    output.write(f"{constants.DEFAULT_NONE}|")
+            else:
+                if len(route_mons['Incense']) == 1:
+                    for i in range(5):
+                        output.write(f"{route_mons['Incense'][0]['pokemonName']}|{route_mons['Incense'][0]['maxLevel']}|{route_mons['Incense'][0]['encounterRate']}|")
+                elif len(route_mons['Incense']) == 3:
+                        output.write(f"{route_mons['Incense'][2]['pokemonName']}|{route_mons['Incense'][2]['maxLevel']}|{route_mons['Incense'][2]['encounterRate']}|")
+
+
             if len(route_mons['Honey Tree']) == 0:
                 for i in range(constants.HONEY_NONE):
                     output.write(f"{constants.DEFAULT_NONE}|")
@@ -618,22 +671,6 @@ def writeEncounterDocData():
                 if len(route_mons['Honey Tree']) < 8:
                     for i in range( 8 - len(route_mons['Honey Tree'])):
                         output.write(f"{constants.DEFAULT_NONE}|")
-            if len(route_mons['Incense']) == 0:
-                for i in range(15):
-                    output.write(f"{constants.DEFAULT_NONE}|")
-            else:
-                for i in range(5):
-                    if len(route_mons['Incense']) == 2:
-                        output.write(f"{route_mons['Incense'][0]['pokemonName']}|{route_mons['Incense'][0]['maxLevel']}|{route_mons['Incense'][0]['encounterRate']}|")
-                        output.write(f"{route_mons['Incense'][1]['pokemonName']}|{route_mons['Incense'][1]['maxLevel']}|{route_mons['Incense'][1]['encounterRate']}|")
-                        output.write(f"{constants.DEFAULT_NONE}|")
-                    elif len(route_mons['Incense']) == 1:
-                        output.write(f"{constants.DEFAULT_NONE}|")
-                        output.write(f"{constants.DEFAULT_NONE}|")
-                        output.write(f"{route_mons['Incense'][0]['pokemonName']}|{route_mons['Incense'][0]['maxLevel']}|{route_mons['Incense'][0]['encounterRate']}|")
-                    else:
-                        for pokemon in route_mons['Incense']:
-                            output.write(f"{pokemon['pokemonName']}|{pokemon['maxLevel']}|{pokemon['encounterRate']}|")
             output.write("\n")
 
 if __name__ != "__main__":
