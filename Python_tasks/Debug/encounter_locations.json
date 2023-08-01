@@ -2132,7 +2132,7 @@
       "zoneId": 246
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 1",
       "encounterType": "ground_mons",
       "encounterRate": "5%",
       "minLevel": 59,
@@ -2141,7 +2141,7 @@
       "zoneId": 247
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 1",
       "encounterType": "ground_mons",
       "encounterRate": "4%",
       "minLevel": 59,
@@ -2150,7 +2150,7 @@
       "zoneId": 247
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 1",
       "encounterType": "ground_mons",
       "encounterRate": "1%",
       "minLevel": 59,
@@ -2159,7 +2159,7 @@
       "zoneId": 247
     },
     {
-      "routeName": "Victory Road Nat Dex Area B1F",
+      "routeName": "Victory Road 1F Back 2",
       "encounterType": "ground_mons",
       "encounterRate": "5%",
       "minLevel": 59,
@@ -2168,7 +2168,7 @@
       "zoneId": 248
     },
     {
-      "routeName": "Victory Road Nat Dex Area B1F",
+      "routeName": "Victory Road 1F Back 2",
       "encounterType": "ground_mons",
       "encounterRate": "4%",
       "minLevel": 59,
@@ -2177,7 +2177,7 @@
       "zoneId": 248
     },
     {
-      "routeName": "Victory Road Nat Dex Area B1F",
+      "routeName": "Victory Road 1F Back 2",
       "encounterType": "ground_mons",
       "encounterRate": "1%",
       "minLevel": 59,
@@ -2186,7 +2186,7 @@
       "zoneId": 248
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 3",
       "encounterType": "ground_mons",
       "encounterRate": "5%",
       "minLevel": 59,
@@ -2195,7 +2195,7 @@
       "zoneId": 249
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 3",
       "encounterType": "ground_mons",
       "encounterRate": "4%",
       "minLevel": 59,
@@ -2204,7 +2204,7 @@
       "zoneId": 249
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 3",
       "encounterType": "ground_mons",
       "encounterRate": "1%",
       "minLevel": 59,
@@ -4620,7 +4620,7 @@
       "zoneId": 244
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 1",
       "encounterType": "ground_mons",
       "encounterRate": "morning",
       "minLevel": 59,
@@ -4629,7 +4629,7 @@
       "zoneId": 247
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 1",
       "encounterType": "day",
       "encounterRate": "10%",
       "minLevel": 59,
@@ -4638,7 +4638,7 @@
       "zoneId": 247
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 1",
       "encounterType": "night",
       "encounterRate": "10%",
       "minLevel": 59,
@@ -4647,7 +4647,7 @@
       "zoneId": 247
     },
     {
-      "routeName": "Victory Road Nat Dex Area B1F",
+      "routeName": "Victory Road 1F Back 2",
       "encounterType": "ground_mons",
       "encounterRate": "morning",
       "minLevel": 59,
@@ -4656,7 +4656,7 @@
       "zoneId": 248
     },
     {
-      "routeName": "Victory Road Nat Dex Area B1F",
+      "routeName": "Victory Road 1F Back 2",
       "encounterType": "day",
       "encounterRate": "10%",
       "minLevel": 59,
@@ -4665,7 +4665,7 @@
       "zoneId": 248
     },
     {
-      "routeName": "Victory Road Nat Dex Area B1F",
+      "routeName": "Victory Road 1F Back 2",
       "encounterType": "night",
       "encounterRate": "10%",
       "minLevel": 59,
@@ -4674,7 +4674,7 @@
       "zoneId": 248
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 3",
       "encounterType": "ground_mons",
       "encounterRate": "morning",
       "minLevel": 59,
@@ -4683,7 +4683,7 @@
       "zoneId": 249
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 3",
       "encounterType": "day",
       "encounterRate": "10%",
       "minLevel": 59,
@@ -4692,7 +4692,7 @@
       "zoneId": 249
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 3",
       "encounterType": "night",
       "encounterRate": "10%",
       "minLevel": 59,
@@ -5685,7 +5685,7 @@
       "zoneId": 246
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 1",
       "encounterType": "ground_mons",
       "encounterRate": "morning",
       "minLevel": 59,
@@ -5694,7 +5694,7 @@
       "zoneId": 247
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 1",
       "encounterType": "tairyo",
       "encounterRate": "20%",
       "minLevel": 59,
@@ -5703,7 +5703,7 @@
       "zoneId": 247
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 1",
       "encounterType": "day",
       "encounterRate": "10%",
       "minLevel": 59,
@@ -5712,7 +5712,7 @@
       "zoneId": 247
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 1",
       "encounterType": "night",
       "encounterRate": "10%",
       "minLevel": 59,
@@ -5721,7 +5721,7 @@
       "zoneId": 247
     },
     {
-      "routeName": "Victory Road Nat Dex Area B1F",
+      "routeName": "Victory Road 1F Back 2",
       "encounterType": "ground_mons",
       "encounterRate": "morning",
       "minLevel": 59,
@@ -5730,7 +5730,7 @@
       "zoneId": 248
     },
     {
-      "routeName": "Victory Road Nat Dex Area B1F",
+      "routeName": "Victory Road 1F Back 2",
       "encounterType": "tairyo",
       "encounterRate": "20%",
       "minLevel": 59,
@@ -5739,7 +5739,7 @@
       "zoneId": 248
     },
     {
-      "routeName": "Victory Road Nat Dex Area B1F",
+      "routeName": "Victory Road 1F Back 2",
       "encounterType": "day",
       "encounterRate": "10%",
       "minLevel": 59,
@@ -5748,7 +5748,7 @@
       "zoneId": 248
     },
     {
-      "routeName": "Victory Road Nat Dex Area B1F",
+      "routeName": "Victory Road 1F Back 2",
       "encounterType": "night",
       "encounterRate": "10%",
       "minLevel": 59,
@@ -5757,7 +5757,7 @@
       "zoneId": 248
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 3",
       "encounterType": "ground_mons",
       "encounterRate": "morning",
       "minLevel": 59,
@@ -5766,7 +5766,7 @@
       "zoneId": 249
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 3",
       "encounterType": "tairyo",
       "encounterRate": "20%",
       "minLevel": 59,
@@ -5775,7 +5775,7 @@
       "zoneId": 249
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 3",
       "encounterType": "day",
       "encounterRate": "10%",
       "minLevel": 59,
@@ -5784,7 +5784,7 @@
       "zoneId": 249
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 3",
       "encounterType": "night",
       "encounterRate": "10%",
       "minLevel": 59,
@@ -6371,7 +6371,7 @@
       "zoneId": 246
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 1",
       "encounterType": "ground_mons",
       "encounterRate": "10%",
       "minLevel": 59,
@@ -6380,7 +6380,7 @@
       "zoneId": 247
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 1",
       "encounterType": "water_mons",
       "encounterRate": "30%",
       "minLevel": 60,
@@ -10382,7 +10382,7 @@
       "zoneId": 246
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 1",
       "encounterType": "boro_mons",
       "encounterRate": "60%",
       "minLevel": 10,
@@ -10391,7 +10391,7 @@
       "zoneId": 247
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 1",
       "encounterType": "boro_mons",
       "encounterRate": "30%",
       "minLevel": 10,
@@ -10400,7 +10400,7 @@
       "zoneId": 247
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 1",
       "encounterType": "boro_mons",
       "encounterRate": "5%",
       "minLevel": 10,
@@ -10409,7 +10409,7 @@
       "zoneId": 247
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 1",
       "encounterType": "boro_mons",
       "encounterRate": "4%",
       "minLevel": 10,
@@ -10418,7 +10418,7 @@
       "zoneId": 247
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 1",
       "encounterType": "boro_mons",
       "encounterRate": "1%",
       "minLevel": 10,
@@ -10427,7 +10427,7 @@
       "zoneId": 247
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 1",
       "encounterType": "ii_mons",
       "encounterRate": "60%",
       "minLevel": 25,
@@ -10436,7 +10436,7 @@
       "zoneId": 247
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 1",
       "encounterType": "ii_mons",
       "encounterRate": "30%",
       "minLevel": 25,
@@ -10445,7 +10445,7 @@
       "zoneId": 247
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 1",
       "encounterType": "ii_mons",
       "encounterRate": "5%",
       "minLevel": 25,
@@ -10454,7 +10454,7 @@
       "zoneId": 247
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 1",
       "encounterType": "ii_mons",
       "encounterRate": "4%",
       "minLevel": 25,
@@ -10463,7 +10463,7 @@
       "zoneId": 247
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 1",
       "encounterType": "ii_mons",
       "encounterRate": "1%",
       "minLevel": 25,
@@ -12094,7 +12094,7 @@
       "zoneId": 246
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 1",
       "encounterType": "sugoi_mons",
       "encounterRate": "60%",
       "minLevel": 50,
@@ -12103,7 +12103,7 @@
       "zoneId": 247
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 1",
       "encounterType": "sugoi_mons",
       "encounterRate": "30%",
       "minLevel": 50,
@@ -12112,7 +12112,7 @@
       "zoneId": 247
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 1",
       "encounterType": "sugoi_mons",
       "encounterRate": "5%",
       "minLevel": 50,
@@ -12121,7 +12121,7 @@
       "zoneId": 247
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 1",
       "encounterType": "sugoi_mons",
       "encounterRate": "4%",
       "minLevel": 50,
@@ -12130,7 +12130,7 @@
       "zoneId": 247
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 1",
       "encounterType": "sugoi_mons",
       "encounterRate": "1%",
       "minLevel": 50,
@@ -12735,7 +12735,7 @@
   ],
   "131": [
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 1",
       "encounterType": "water_mons",
       "encounterRate": "5%",
       "minLevel": 60,
@@ -12744,7 +12744,7 @@
       "zoneId": 247
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 1",
       "encounterType": "water_mons",
       "encounterRate": "4%",
       "minLevel": 60,
@@ -12753,7 +12753,7 @@
       "zoneId": 247
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 1",
       "encounterType": "water_mons",
       "encounterRate": "1%",
       "minLevel": 60,
@@ -13952,7 +13952,7 @@
       "zoneId": 246
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 1",
       "encounterType": "ground_mons",
       "encounterRate": "20%",
       "minLevel": 59,
@@ -13961,7 +13961,7 @@
       "zoneId": 247
     },
     {
-      "routeName": "Victory Road Nat Dex Area B1F",
+      "routeName": "Victory Road 1F Back 2",
       "encounterType": "ground_mons",
       "encounterRate": "20%",
       "minLevel": 59,
@@ -13970,7 +13970,7 @@
       "zoneId": 248
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 3",
       "encounterType": "ground_mons",
       "encounterRate": "20%",
       "minLevel": 59,
@@ -17991,7 +17991,7 @@
       "zoneId": 245
     },
     {
-      "routeName": "Victory Road Nat Dex Area B1F",
+      "routeName": "Victory Road 1F Back 2",
       "encounterType": "ground_mons",
       "encounterRate": "10%",
       "minLevel": 59,
@@ -18000,7 +18000,7 @@
       "zoneId": 248
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 3",
       "encounterType": "ground_mons",
       "encounterRate": "10%",
       "minLevel": 59,
@@ -23086,7 +23086,7 @@
       "zoneId": 244
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 1",
       "encounterType": "ground_mons",
       "encounterRate": "10%",
       "minLevel": 59,
@@ -23095,7 +23095,7 @@
       "zoneId": 247
     },
     {
-      "routeName": "Victory Road Nat Dex Area B1F",
+      "routeName": "Victory Road 1F Back 2",
       "encounterType": "ground_mons",
       "encounterRate": "10%",
       "minLevel": 59,
@@ -23104,7 +23104,7 @@
       "zoneId": 248
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 3",
       "encounterType": "ground_mons",
       "encounterRate": "10%",
       "minLevel": 59,
@@ -31005,7 +31005,7 @@
       "zoneId": 215
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 1",
       "encounterType": "water_mons",
       "encounterRate": "60%",
       "minLevel": 60,
@@ -32614,7 +32614,7 @@
       "zoneId": 246
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 1",
       "encounterType": "ground_mons",
       "encounterRate": "20%",
       "minLevel": 59,
@@ -32623,7 +32623,7 @@
       "zoneId": 247
     },
     {
-      "routeName": "Victory Road Nat Dex Area B1F",
+      "routeName": "Victory Road 1F Back 2",
       "encounterType": "ground_mons",
       "encounterRate": "20%",
       "minLevel": 59,
@@ -32632,7 +32632,7 @@
       "zoneId": 248
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 3",
       "encounterType": "ground_mons",
       "encounterRate": "20%",
       "minLevel": 59,
@@ -33851,7 +33851,7 @@
       "zoneId": 246
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 1",
       "encounterType": "ground_mons",
       "encounterRate": "5%",
       "minLevel": 59,
@@ -33860,7 +33860,7 @@
       "zoneId": 247
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 1",
       "encounterType": "ground_mons",
       "encounterRate": "4%",
       "minLevel": 59,
@@ -33869,7 +33869,7 @@
       "zoneId": 247
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 1",
       "encounterType": "ground_mons",
       "encounterRate": "1%",
       "minLevel": 59,
@@ -33878,7 +33878,7 @@
       "zoneId": 247
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 1",
       "encounterType": "swayGrass",
       "encounterRate": "20%",
       "minLevel": 59,
@@ -33887,7 +33887,7 @@
       "zoneId": 247
     },
     {
-      "routeName": "Victory Road Nat Dex Area B1F",
+      "routeName": "Victory Road 1F Back 2",
       "encounterType": "ground_mons",
       "encounterRate": "5%",
       "minLevel": 59,
@@ -33896,7 +33896,7 @@
       "zoneId": 248
     },
     {
-      "routeName": "Victory Road Nat Dex Area B1F",
+      "routeName": "Victory Road 1F Back 2",
       "encounterType": "ground_mons",
       "encounterRate": "4%",
       "minLevel": 59,
@@ -33905,7 +33905,7 @@
       "zoneId": 248
     },
     {
-      "routeName": "Victory Road Nat Dex Area B1F",
+      "routeName": "Victory Road 1F Back 2",
       "encounterType": "ground_mons",
       "encounterRate": "1%",
       "minLevel": 59,
@@ -33914,7 +33914,7 @@
       "zoneId": 248
     },
     {
-      "routeName": "Victory Road Nat Dex Area B1F",
+      "routeName": "Victory Road 1F Back 2",
       "encounterType": "swayGrass",
       "encounterRate": "20%",
       "minLevel": 59,
@@ -33923,7 +33923,7 @@
       "zoneId": 248
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 3",
       "encounterType": "ground_mons",
       "encounterRate": "5%",
       "minLevel": 59,
@@ -33932,7 +33932,7 @@
       "zoneId": 249
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 3",
       "encounterType": "ground_mons",
       "encounterRate": "4%",
       "minLevel": 59,
@@ -33941,7 +33941,7 @@
       "zoneId": 249
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 3",
       "encounterType": "ground_mons",
       "encounterRate": "1%",
       "minLevel": 59,
@@ -33950,7 +33950,7 @@
       "zoneId": 249
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 3",
       "encounterType": "swayGrass",
       "encounterRate": "20%",
       "minLevel": 59,
@@ -35880,7 +35880,7 @@
       "zoneId": 246
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 1",
       "encounterType": "Incense",
       "encounterRate": "10%",
       "minLevel": 59,
@@ -35889,7 +35889,7 @@
       "zoneId": 247
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 1",
       "encounterType": "Incense",
       "encounterRate": "10%",
       "minLevel": 59,
@@ -35898,7 +35898,7 @@
       "zoneId": 247
     },
     {
-      "routeName": "Victory Road Nat Dex Area B1F",
+      "routeName": "Victory Road 1F Back 2",
       "encounterType": "Incense",
       "encounterRate": "10%",
       "minLevel": 59,
@@ -35907,7 +35907,7 @@
       "zoneId": 248
     },
     {
-      "routeName": "Victory Road Nat Dex Area B1F",
+      "routeName": "Victory Road 1F Back 2",
       "encounterType": "Incense",
       "encounterRate": "10%",
       "minLevel": 59,
@@ -35916,7 +35916,7 @@
       "zoneId": 248
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 3",
       "encounterType": "Incense",
       "encounterRate": "10%",
       "minLevel": 59,
@@ -35925,7 +35925,7 @@
       "zoneId": 249
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 3",
       "encounterType": "Incense",
       "encounterRate": "10%",
       "minLevel": 59,
@@ -36086,7 +36086,7 @@
       "zoneId": 246
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 1",
       "encounterType": "Surfing Incense",
       "encounterRate": "30%",
       "minLevel": 60,
@@ -36095,7 +36095,7 @@
       "zoneId": 247
     },
     {
-      "routeName": "Victory Road Nat Dex Area",
+      "routeName": "Victory Road 1F Back 1",
       "encounterType": "Surfing Incense",
       "encounterRate": "30%",
       "minLevel": 60,

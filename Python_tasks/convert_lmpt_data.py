@@ -89,6 +89,13 @@ def sort_dict_by_keys(d):
         sorted_dict[key] = d[key]
     return sorted_dict
 
+def sort_dicts_by_keys_and_list(dicts_list, sort_key1, sort_key1_order):
+    """
+    Sorts a list of dictionaries by a given key in ascending order using sort_key1_order.
+    The sorting order of the first key is specified by ZONE_ORDER in Constants.py.
+    """
+    return sorted(dicts_list, key=lambda x: sort_key1_order.index(x[sort_key1]))
+
 def getTrainerData(gymLeaderList):
     '''
     This is a placeholder for the first 13 trainers for the tracker.
@@ -548,7 +555,8 @@ def writeEncounterDocData():
             monsName = get_pokemon_name(int(monsNo))
             enc_dict = defaultdict(list)
             output.write(f"{monsName}|")
-            for location in data[monsNo]:
+            sorted_data = sort_dicts_by_keys_and_list(data[monsNo], "routeName", constants.DOCS_ZONE_ORDER)
+            for location in sorted_data:
                 enc_type = location['encounterType']
                 enc_location = location['routeName']
                 if enc_type == constants.REGULAR_ENC:
