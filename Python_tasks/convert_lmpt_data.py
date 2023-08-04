@@ -23,7 +23,7 @@ debug_file_path = os.path.join(repo_file_path, "Python_tasks", "Debug")
 output_file_path = os.path.join(repo_file_path, "Python_tasks", "output")
 
 honeywork_cpp_filepath = os.path.join(input_file_path, "honeywork.cpp")
-areas_file_path = os.path.join(input_file_path, 'areas_copy.csv')
+areas_file_path = os.path.join(input_file_path, 'areas_updated.csv')
 
 bad_encounters = [] # This is to check any bad encounters that are in diff_forms
 final_list = {} # This is for the encounters check to make sure none are being skipped over
