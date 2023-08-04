@@ -315,11 +315,8 @@ def get_standard_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, m
     monsName = get_pokemon_name(monsNo)
 
     if any(str(zoneID) in route for route in name_routes.values()):
-        zones = areas_list[zoneID + 1]
-        zoneName = zones[3] if zones[3] != '' else zones[4]
+        zoneName = get_zone_name(zoneID)
         new_method = check_for_incense(new_method, method_index)
-        if new_method == "Incense" and monsNo == 25:
-            print(monsName, zoneID)
         rate = get_route_rate(new_method, method_index, route_rates)
         encounter_list_order = {
             "routeName": zoneName, 
@@ -332,17 +329,11 @@ def get_standard_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, m
         }
 
         if monsNo not in encounters:
-            if monsNo == 25:
-                print("This is normal:",encounter_list_order)
             encounters[monsNo] = [encounter_list_order]
         elif encounter_list_order not in encounters[monsNo]:
-            if monsNo == 25:
-                print(encounter_list_order)
             encounters[monsNo].append(encounter_list_order)
         elif "Incense" not in new_method:
             print("Something missing here?", method_index, monsNo, encounter_list_order)
-        if monsNo == 25:
-            print(encounters[monsNo])
 
 def get_diff_form_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, method_index):
     '''
@@ -365,12 +356,9 @@ def get_diff_form_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, 
         temp_form_no = 0
 
     if any(str(zoneID) in route for route in name_routes.values()):
-        zones = areas_list[zoneID + 1]
-        zoneName = zones[3] if zones[3] != '' else zones[4]
+        zoneName = get_zone_name(zoneID)
         new_method = check_for_incense(new_method, method_index)
         rate = get_route_rate(new_method, method_index, route_rates)
-        if pokemon_id == 25:
-            print(new_method)
         encounter_list_order = {
             "routeName": zoneName, 
             "encounterType": new_method,
