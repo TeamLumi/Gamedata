@@ -92,7 +92,7 @@ def sort_dict_by_keys(d):
 def sort_dicts_by_keys_and_list(dicts_list, sort_key1, sort_key1_order):
     """
     Sorts a list of dictionaries by a given key in ascending order using sort_key1_order.
-    The sorting order of the first key is specified by ZONE_ORDER in Constants.py.
+    The sorting order of the first key is specified by DOCS_ZONE_ORDER in Constants.py.
     """
     return sorted(dicts_list, key=lambda x: sort_key1_order.index(x[sort_key1]))
 
