@@ -130,6 +130,19 @@ REGULAR_ENC_LIST = [REGULAR_ENC, DAY_ENC, NIGHT_ENC]
 ROD_ENC_LIST = [OLD_ENC, GOOD_ENC, SUPER_ENC]
 INCENSE_LIST = ["gbaRuby", "gbaSapp", "gbaEme", "gbaFire", "gbaLeaf"]
 
+OG_TOP_10 = ["Magikarp", "Gyarados", "Golbat", "Graveler", "Tentacruel", "Nosepass","Steelix","Golduck","Lunatone","Solrock"]
+NEW_TOP_10 = ["Golbat", 54, 
+              "Magikarp", 50, 
+              "Gyarados", 49, 
+              "Haunter", 35, 
+              "Lunatone", 33,
+              "Solrock", 33,
+              "Chimecho", 32,
+              "Graveler", 28,
+              "Dusclops", 27,
+              "Bronzong", 27,
+              ]
+
 ZONE_ORDER = [
     "Route 201",
     "Lake Verity (Before)",

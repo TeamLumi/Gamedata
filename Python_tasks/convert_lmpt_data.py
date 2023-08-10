@@ -596,7 +596,7 @@ def writeEncounterDocData():
                     output.write(f"{enc_type}|")
                     output.write(f"{level}|")
                     output.write(f"{rate}%|")
-            if number > largest_number[1] and monsName not in ["Magikarp", "Gyarados", "Golbat", "Graveler", "Tentacruel", "Nosepass","Steelix","Golduck","Lunatone","Solrock"] :
+            if number > largest_number[1] and monsName not in constants.NEW_TOP_10:
                 largest_number = [monsName, number]
             output.write("\n")
     print("This is the largest number of encounters:",largest_number)
