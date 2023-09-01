@@ -23,7 +23,7 @@ debug_file_path = os.path.join(repo_file_path, "Python_tasks", "Debug")
 output_file_path = os.path.join(repo_file_path, "Python_tasks", "output")
 
 honeywork_cpp_filepath = os.path.join(input_file_path, "honeywork.cpp")
-areas_file_path = os.path.join(input_file_path, 'areas_copy.csv')
+areas_file_path = os.path.join(input_file_path, 'areas_updated.csv')
 
 bad_encounters = [] # This is to check any bad encounters that are in diff_forms
 final_list = {} # This is for the encounters check to make sure none are being skipped over
@@ -88,6 +88,13 @@ def sort_dict_by_keys(d):
     for key in sorted(d.keys()):
         sorted_dict[key] = d[key]
     return sorted_dict
+
+def sort_dicts_by_keys_and_list(dicts_list, sort_key1, sort_key1_order):
+    """
+    Sorts a list of dictionaries by a given key in ascending order using sort_key1_order.
+    The sorting order of the first key is specified by DOCS_ZONE_ORDER in Constants.py.
+    """
+    return sorted(dicts_list, key=lambda x: sort_key1_order.index(x[sort_key1]))
 
 def getTrainerData(gymLeaderList):
     '''
@@ -308,8 +315,7 @@ def get_standard_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, m
     monsName = get_pokemon_name(monsNo)
 
     if any(str(zoneID) in route for route in name_routes.values()):
-        zones = areas_list[zoneID + 1]
-        zoneName = zones[3] if zones[3] != '' else zones[4]
+        zoneName = get_zone_name(zoneID)
         new_method = check_for_incense(new_method, method_index)
         rate = get_route_rate(new_method, method_index, route_rates)
         encounter_list_order = {
@@ -324,7 +330,7 @@ def get_standard_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, m
 
         if monsNo not in encounters:
             encounters[monsNo] = [encounter_list_order]
-        elif encounter_list_order not in encounters[monsNo] and new_method not in ["Incense", "Surfing Incense"]:
+        elif encounter_list_order not in encounters[monsNo]:
             encounters[monsNo].append(encounter_list_order)
         elif "Incense" not in new_method:
             print("Something missing here?", method_index, monsNo, encounter_list_order)
@@ -350,8 +356,7 @@ def get_diff_form_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, 
         temp_form_no = 0
 
     if any(str(zoneID) in route for route in name_routes.values()):
-        zones = areas_list[zoneID + 1]
-        zoneName = zones[3] if zones[3] != '' else zones[4]
+        zoneName = get_zone_name(zoneID)
         new_method = check_for_incense(new_method, method_index)
         rate = get_route_rate(new_method, method_index, route_rates)
         encounter_list_order = {
@@ -537,6 +542,65 @@ def getEncounterData():
     with open(os.path.join(output_file_path, 'Encounter_output.json'), 'w') as output:
         output.write(json.dumps(sorted_encounters, indent=2))
 
+def writeEncounterDocData():
+    with open(os.path.join(debug_file_path, 'encounter_locations.json')) as f:
+        data = json.load(f)
+    largest_number = ["", 0]
+    with open(os.path.join(debug_file_path, 'pokemon_locations.txt'), 'w') as output:
+        for monsNo in data.keys():
+            monsName = get_pokemon_name(int(monsNo))
+            enc_dict = defaultdict(list)
+            output.write(f"{monsName}|")
+            sorted_data = sort_dicts_by_keys_and_list(data[monsNo], "routeName", constants.DOCS_ZONE_ORDER)
+            for location in sorted_data:
+                enc_type = location['encounterType']
+                enc_location = location['routeName']
+                if enc_type == constants.REGULAR_ENC:
+                    enc_type = "Grass"
+                elif enc_type == constants.SWARM:
+                    enc_type = "Swarm"
+                elif enc_type == constants.RADAR:
+                    enc_type = "Radar"
+                elif enc_type == constants.SURF_ENC:
+                    enc_type = "Surfing"
+                elif enc_type == constants.OLD_ENC:
+                    enc_type = "Old Rod"
+                elif enc_type == constants.GOOD_ENC:
+                    enc_type = "Good Rod"
+                elif enc_type == constants.SUPER_ENC:
+                    enc_type = "Super Rod"
+                enc_level = location['maxLevel']
+                enc_rate = location['encounterRate']
+                if enc_rate == "morning":
+                    enc_rate_num = 10
+                    enc_type = "Morning"
+                else:
+                    enc_rate_num = int(enc_rate.split('%')[0])
+                enc_dict[enc_location].append([enc_type, enc_level, enc_rate_num])
+            number = 0
+            for enc_loc in enc_dict.keys():
+                number += 1
+                nest_list = enc_dict[enc_loc]
+                route_dict = defaultdict(int)
+                level_dict = {}
+                for enc_type in nest_list:
+                    level_dict[enc_loc] = enc_type[1]
+                    route_dict[f"{enc_loc}|{enc_type[0]}"] += enc_type[2]
+                for key in route_dict.keys():
+                    split_key = key.split("|")
+                    location = split_key[0]
+                    enc_type = split_key[1]
+                    level = level_dict[location]
+                    rate = route_dict[key]
+                    output.write(f"{location}|")
+                    output.write(f"{enc_type}|")
+                    output.write(f"{level}|")
+                    output.write(f"{rate}%|")
+            if number > largest_number[1] and monsName not in constants.NEW_TOP_10:
+                largest_number = [monsName, number]
+            output.write("\n")
+    print("This is the largest number of encounters:",largest_number)
+
 if __name__ != "__main__":
     full_data = load_data()
     trainer_data = full_data["raw_trainer_data"]
@@ -558,6 +622,7 @@ if __name__ == "__main__":
     mid_time = time.time()
     print("Middle Execution time:", mid_time - start_time, "seconds")
     getEncounterData()
+    writeEncounterDocData()
 
     end_time = time.time()
     execution_time = end_time - start_time

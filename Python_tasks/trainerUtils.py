@@ -13,7 +13,7 @@ parent_file_path = os.path.abspath(os.path.dirname(__file__))
 input_file_path = os.path.join(repo_file_path, 'input')
 debug_file_path =os.path.join(parent_file_path, "Debug")
 
-areas_file_path = os.path.join(input_file_path, 'areas_copy.csv')
+areas_file_path = os.path.join(input_file_path, 'areas_updated.csv')
 
 scripts_file_path = os.path.join(repo_file_path, 'scriptdata')
 bdsp_location_files_path = os.path.join(repo_file_path, 'placedatas')
@@ -238,7 +238,7 @@ def get_trainer_data(zoneID, trainerID, method, is_gym_rematch=0):
     It then checks if there is a trainer_label and trainer_name as a check for new trainers in the TrainerTable.json
     The zoneID is used to get the areaName (for the tracker) and the zoneName (for everything else)
     The areaName is a generalized name for the region the zoneID is in
-    zoneName pulls from the areas_copy.csv which has the specific areas that are typically unique to the zoneID
+    zoneName pulls from the areas_updated.csv which has the specific areas that are typically unique to the zoneID
     After these checks, the trainer info is created to be used everywhere else in the script
     '''
     TRAINER_TABLE = full_data['raw_trainer_data']
@@ -588,7 +588,7 @@ def parse_trainer_btl_set(substring):
 
 def create_zone_id_map():
     '''
-    This creates a {zone_name: zone_id} dictionary using the areas_copy.csv
+    This creates a {zone_name: zone_id} dictionary using the areas_updated.csv
     '''
     zone_dict = {}
     for place in areas:
