@@ -6,6 +6,7 @@ import unicodedata
 import constants
 from load_files import load_data
 from moveUtils import (get_moves, get_pokemon_learnset, get_tech_machine_learnset, get_egg_moves, get_grass_knot_power)
+from pokemonTypes import get_type_name
 
 parent_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 input_file_path = os.path.join(parent_file_path, 'input')
@@ -30,16 +31,6 @@ def get_lumi_data(raw_data, callback):
     for (idx, _) in enumerate(raw_data["labelDataArray"]):
         data[str(idx)] = callback(idx)
     return data
-
-def get_types(e):
-    if e['type1'] == e['type2']:
-        return [get_type_name(e['type1'])]
-    else:
-        return [get_type_name(e['type1']), get_type_name(e['type2'])]
-
-def get_type_name(typeId):
-    type_namedata = full_data['type_namedata']
-    return type_namedata["labelDataArray"][typeId]["wordDataArray"][0]["str"]
 
 def make_ability_object(ha):
     ability_namedata = full_data['ability_namedata']

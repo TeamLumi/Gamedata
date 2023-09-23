@@ -39,7 +39,7 @@ def get_trainer_pokemon(trainerId, output_format):
 def sort_dicts_by_key(dicts_list, sort_key1, sort_key2, sort_key1_order):
     """
     Sorts a list of dictionaries by two given keys in ascending order
-    The sorting order of the first key is specified by ZONE_ORDER in Constants.py
+    The sorting order of the first key is specified by DOCS_ZONE_ORDER in Constants.py
     """
     return sorted(dicts_list, key=lambda x: (sort_key1_order.index(x[sort_key1]), x[sort_key2]))
 
@@ -68,7 +68,7 @@ def sort_trainers_by_level(trainer_info):
         trainerId = trainer['trainerId']
         trainer['team'] = get_trainer_pokemon(trainerId, constants.DOCS_METHOD)
         trainer['avg_lvl'] = get_avg_trainer_level(trainer['team'])
-    sorted_trainers_by_level = sort_dicts_by_key(trainer_info, 'zoneName', 'avg_lvl', constants.ZONE_ORDER)
+    sorted_trainers_by_level = sort_dicts_by_key(trainer_info, 'zoneName', 'avg_lvl', constants.DOCS_ZONE_ORDER)
     return sorted_trainers_by_level
 
 def sort_trainers_by_route(trainer_info):
@@ -78,7 +78,7 @@ def sort_trainers_by_route(trainer_info):
     Adds the trainer's team to trainer_info
     Adds each trainer to an `areaName: trainer_info` dictionary for use later
     '''
-    sorted_trainers_by_key = sort_dicts_by_key(trainer_info, 'zoneName', 'trainerId', constants.ZONE_ORDER)
+    sorted_trainers_by_key = sort_dicts_by_key(trainer_info, 'zoneName', 'trainerId', constants.DOCS_ZONE_ORDER)
     sorted_trainers_by_route = {}
     for trainer in sorted_trainers_by_key:
         areaName = trainer['areaName']

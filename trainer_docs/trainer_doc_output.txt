@@ -1425,546 +1425,6 @@ Flail
 0/0/0/0/0/0
 
 
-745
-Pokémon Trainer Cedric Turtwig Team 1
-Level Cap:
-Format: Single Battle
-
-Makuhita
-10
-Careful
-Thick Fat
-
-Focus Sash
-Fake Out
-Arm Thrust
-Tackle
-Sand Attack
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Bellsprout
-10
-Hasty
-Corrosion
-
-Expert Belt
-Sleep Powder
-Acid
-Vine Whip
-Growth
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Chimchar
-11
-Jolly
-Iron Fist
-
-Oran Berry
-Ember
-Fury Swipes
-Taunt
-Hidden Power
-24/25/26/25/24/25
-0/0/0/0/0/0
-
-
-746
-Pokémon Trainer Cedric Turtwig Team 2
-Level Cap:
-Format: Single Battle
-
-Nidoran-M
-10
-Lonely
-Poison Point
-
-Focus Sash
-Double Kick
-Fury Attack
-Peck
-Poison Sting
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Elekid
-10
-Lax
-Static
-
-Expert Belt
-Thunder Shock
-Quick Attack
-Low Kick
-Leer
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Chimchar
-11
-Jolly
-Iron Fist
-
-Oran Berry
-Ember
-Fury Swipes
-Taunt
-Hidden Power
-24/25/26/25/24/25
-0/0/0/0/0/0
-
-
-747
-Pokémon Trainer Cedric Turtwig Team 3
-Level Cap:
-Format: Single Battle
-
-Azurill
-10
-Brave
-Huge Power
-
-Soothe Bell
-Tail Whip
-Bubble Beam
-Charm
-Splash
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Bulbasaur
-10
-Impish
-Overgrow
-
-Expert Belt
-Tackle
-Growl
-Vine Whip
-Leech Seed
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Chimchar
-11
-Jolly
-Iron Fist
-
-Oran Berry
-Ember
-Fury Swipes
-Taunt
-Hidden Power
-25/24/26/25/25/25
-0/0/0/0/0/0
-
-
-748
-Pokémon Trainer Cedric Turtwig Team 4
-Level Cap:
-Format: Single Battle
-
-Cubone
-10
-Careful
-Rattled
-
-Focus Sash
-Headbutt
-Bone Club
-Sing
-Leer
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Shinx
-10
-Sassy
-Guts
-
-Expert Belt
-Spark
-Quick Attack
-Howl
-Leer
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Chimchar
-11
-Jolly
-Iron Fist
-
-Oran Berry
-Ember
-Fury Swipes
-Taunt
-Hidden Power
-24/25/26/25/24/25
-0/0/0/0/0/0
-
-
-749
-Pokémon Trainer Cedric Chimchar Team 1
-Level Cap:
-Format: Single Battle
-
-Pidgey
-10
-Naughty
-Big Pecks
-
-Focus Sash
-Wing Attack
-Quick Attack
-Sand Attack
-Gust
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Ralts
-10
-Bold
-Telepathy
-
-Expert Belt
-Disarming Voice
-Confusion
-Growl
-Teleport
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Piplup
-11
-Modest
-Torrent
-
-Oran Berry
-Water Gun
-Peck
-Charm
-Hidden Power
-25/24/26/25/25/25
-0/0/0/0/0/0
-
-
-750
-Pokémon Trainer Cedric Chimchar Team 2
-Level Cap:
-Format: Single Battle
-
-Poochyena
-10
-Relaxed
-Strong Jaw
-
-Focus Sash
-Bite
-Tackle
-Howl
-Sand Attack
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Smoochum
-10
-Calm
-Dazzling
-
-Expert Belt
-Powder Snow
-Confusion
-Sing
-Sweet Kiss
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Piplup
-11
-Modest
-Torrent
-
-Oran Berry
-Water Gun
-Peck
-Charm
-Hidden Power
-25/24/26/25/25/25
-0/0/0/0/0/0
-
-
-751
-Pokémon Trainer Cedric Chimchar Team 3
-Level Cap:
-Format: Single Battle
-
-Wynaut
-10
-Quirky
-Telepathy
-
-Focus Sash
-Counter
-Mirror Coat
-Splash
-Encore
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Pineco
-10
-Impish
-Sturdy
-
-Expert Belt
-Revenge
-Bug Bite
-Self-Destruct
-Tackle
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Piplup
-11
-Modest
-Torrent
-
-Oran Berry
-Water Gun
-Peck
-Charm
-Hidden Power
-25/24/26/25/25/25
-0/0/0/0/0/0
-
-
-752
-Pokémon Trainer Cedric Chimchar Team 4
-Level Cap:
-Format: Single Battle
-
-Sandshrew
-10
-Careful
-Sand Rush
-
-Focus Sash
-Bulldoze
-Rollout
-Poison Sting
-Defense Curl
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Charmander
-10
-Mild
-Blaze
-
-Expert Belt
-Scratch
-Ember
-Growl
-Smokescreen
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Piplup
-11
-Modest
-Torrent
-
-Oran Berry
-Water Gun
-Peck
-Charm
-Hidden Power
-25/24/26/25/25/25
-0/0/0/0/0/0
-
-
-753
-Pokémon Trainer Cedric Piplup Team 1
-Level Cap:
-Format: Single Battle
-
-Growlithe
-10
-Quiet
-Intimidate
-
-Focus Sash
-Ember
-Bite
-Roar
-Leer
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Starly
-10
-Gentle
-Keen Eye
-
-Expert Belt
-Wing Attack
-Quick Attack
-Tackle
-Growl
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Turtwig
-11
-Careful
-Shell Armor
-
-Oran Berry
-Razor Leaf
-Tackle
-Hidden Power
-Curse
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-754
-Pokémon Trainer Cedric Piplup Team 2
-Level Cap:
-Format: Single Battle
-
-Geodude
-10
-Calm
-Sturdy
-
-Focus Sash
-Rock Throw
-Tackle
-Rock Polish
-Mega Punch
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Mantyke
-10
-Lax
-Water Absorb
-
-Expert Belt
-Water Pulse
-Air Cutter
-Tackle
-Confuse Ray
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Turtwig
-11
-Careful
-Shell Armor
-
-Oran Berry
-Razor Leaf
-Tackle
-Hidden Power
-Curse
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-755
-Pokémon Trainer Cedric Piplup Team 3
-Level Cap:
-Format: Single Battle
-
-Nidoran-F
-10
-Sassy
-Hustle
-
-Focus Sash
-Double Kick
-Fury Swipes
-Poison Sting
-Growl
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Surskit
-10
-Naughty
-Swift Swim
-
-Expert Belt
-Bug Bite
-Quick Attack
-Sweet Scent
-Water Gun
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Turtwig
-11
-Careful
-Shell Armor
-
-Oran Berry
-Razor Leaf
-Tackle
-Hidden Power
-Curse
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-756
-Pokémon Trainer Cedric Piplup Team 4
-Level Cap:
-Format: Single Battle
-
-Abra
-10
-Rash
-Magic Guard
-
-Focus Sash
-Teleport
-Hidden Power
-(No Move)
-(No Move)
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Squirtle
-10
-Naive
-Rain Dish
-
-Expert Belt
-Water Gun
-Withdraw
-Tackle
-Tail Whip
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Turtwig
-11
-Careful
-Shell Armor
-
-Oran Berry
-Razor Leaf
-Tackle
-Hidden Power
-Curse
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
 189
 Camper Curtis
 Level Cap:
@@ -3215,6 +2675,51 @@ Scary Face
 0/0/0/0/0/0
 
 
+669
+Team Galactic Grunt
+Level Cap:
+Format: Single Battle
+
+Poochyena
+14
+Hardy
+Run Away
+
+None
+Bite
+Mud-Slap
+Odor Sleuth
+Assurance
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Gulpin
+14
+Bashful
+Liquid Ooze
+
+None
+Yawn
+Smog
+Poison Gas
+Amnesia
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Houndour
+14
+Serious
+Intimidate
+
+None
+Feint Attack
+Bite
+Roar
+Smog
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
 221
 Team Galactic Grunt
 Level Cap:
@@ -3278,51 +2783,6 @@ Aerial Ace
 25/25/25/25/25/25
 0/0/0/0/0/0
 Paired with 221
-
-669
-Team Galactic Grunt
-Level Cap:
-Format: Single Battle
-
-Poochyena
-14
-Hardy
-Run Away
-
-None
-Bite
-Mud-Slap
-Odor Sleuth
-Assurance
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Gulpin
-14
-Bashful
-Liquid Ooze
-
-None
-Yawn
-Smog
-Poison Gas
-Amnesia
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Houndour
-14
-Serious
-Intimidate
-
-None
-Feint Attack
-Bite
-Roar
-Smog
-25/25/25/25/25/25
-0/0/0/0/0/0
-
 
 224
 Team Galactic Grunt
@@ -5208,6 +4668,38 @@ Silver Wind
 0/0/0/0/0/0
 
 
+948
+Team Galactic Grunt
+Level Cap:
+Format: Single Battle
+
+Ledian
+24
+Naive
+Technician
+
+None
+Silver Wind
+U-turn
+Struggle Bug
+Comet Punch
+31/31/31/31/31/31
+0/0/0/0/0/0
+
+Ariados
+24
+Timid
+Insomnia
+
+None
+Shadow Sneak
+Leech Life
+Swords Dance
+Night Slash
+31/31/31/31/31/31
+0/0/0/0/0/0
+
+
 65
 Ninja Boy Zach
 Level Cap:
@@ -5447,6 +4939,102 @@ Ice Punch
 Fire Punch
 Feint
 Detect
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+397
+Team Galactic Grunt
+Level Cap:
+Format: Single Battle
+
+Murkrow
+54
+Bashful
+Insomnia
+
+None
+Dark Pulse
+Torment
+Brave Bird
+Foul Play
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Mightyena
+54
+Bashful
+Intimidate
+
+None
+Yawn
+Take Down
+Play Rough
+Sucker Punch
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Sneasel
+54
+Bashful
+Inner Focus
+
+None
+Screech
+Hone Claws
+Crunch
+Dark Pulse
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+391
+Team Galactic Grunt
+Level Cap:
+Format: Single Battle
+
+Masquerain
+55
+Serious
+Intimidate
+
+None
+Air Slash
+Hydro Pump
+Bug Buzz
+Quiver Dance
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Muk
+55
+Bashful
+Stench
+
+None
+Acid Armor
+Gunk Shot
+Memento
+Belch
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+392
+Team Galactic Grunt
+Level Cap:
+Format: Single Battle
+
+Golbat
+56
+Docile
+Inner Focus
+
+None
+Zen Headbutt
+Nasty Plot
+Venoshock
+Brave Bird
 25/25/25/25/25/25
 0/0/0/0/0/0
 
@@ -5748,268 +5336,6 @@ Cross Chop
 Scary Face
 Dynamic Punch
 Close Combat
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-21
-Cyclist Axel
-Level Cap:
-Format: Single Battle
-
-Pichu
-19
-Quirky
-Static
-
-None
-Thunder Wave
-Nuzzle
-Nasty Plot
-Disarming Voice
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Pichu
-19
-Hardy
-Static
-
-None
-Thunder Wave
-Nuzzle
-Nasty Plot
-Disarming Voice
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Pikachu
-19
-Hardy
-Static
-
-None
-Electro Ball
-Shock Wave
-Feint
-Spark
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-26
-Cyclist Nicole
-Level Cap:
-Format: Single Battle
-
-Taillow
-19
-Quirky
-Guts
-
-None
-Quick Attack
-Wing Attack
-Double Team
-Aerial Ace
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Doduo
-19
-Docile
-Tangled Feet
-
-None
-Fury Attack
-Wing Attack
-Pluck
-Double Hit
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Wingull
-19
-Bashful
-Keen Eye
-
-None
-Wing Attack
-Water Pulse
-Mist
-Air Cutter
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-27
-Cyclist Kayla
-Level Cap:
-Format: Single Battle
-
-Voltorb
-19
-Quirky
-Soundproof
-
-None
-Thunder Shock
-Rollout
-Spark
-Charge Beam
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Magnemite
-19
-Hardy
-Magnet Pull
-
-None
-Spark
-Electro Ball
-Light Screen
-Charge Beam
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Electrike
-19
-Quirky
-Static
-
-None
-Spark
-Shock Wave
-Bite
-Charge Beam
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-22
-Cyclist James
-Level Cap:
-Format: Single Battle
-
-Ponyta
-20
-Quirky
-Flame Body
-
-None
-Double Kick
-Flame Charge
-Flame Wheel
-Take Down
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Flaaffy
-20
-Serious
-Static
-
-None
-Thunder Shock
-Cotton Spore
-Charge
-Charge Beam
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-23
-Cyclist John
-Level Cap:
-Format: Single Battle
-
-Farfetch’d
-21
-Quirky
-Keen Eye
-
-None
-Cut
-Swords Dance
-Agility
-Air Cutter
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-24
-Cyclist Ryan
-Level Cap:
-Format: Single Battle
-
-Luxio
-21
-Quirky
-Guts
-
-None
-Spark
-Bite
-Charge
-Double Kick
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-25
-Cyclist Megan
-Level Cap:
-Format: Single Battle
-
-Pidgeotto
-21
-Quirky
-Keen Eye
-
-None
-Wing Attack
-Swift
-Air Cutter
-Feather Dance
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-28
-Cyclist Rachel
-Level Cap:
-Format: Single Battle
-
-Jolteon
-21
-Bashful
-Volt Absorb
-
-None
-Thunder Wave
-Baby-Doll Eyes
-Shock Wave
-Double Kick
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-340
-Hiker Theodore
-Level Cap:
-Format: Single Battle
-
-Torkoal
-26
-Bashful
-White Smoke
-
-None
-Flame Wheel
-Curse
-Body Slam
-Lava Plume
 25/25/25/25/25/25
 0/0/0/0/0/0
 
@@ -6988,6 +6314,38 @@ Draining Kiss
 0/0/0/0/0/0
 
 
+316
+Team Galactic Grunt
+Level Cap:
+Format: Single Battle
+
+Croagunk
+24
+Hardy
+Anticipation
+
+None
+Feint Attack
+Revenge
+Venoshock
+Swagger
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Golbat
+24
+Docile
+Inner Focus
+
+None
+Mean Look
+Quick Guard
+Crunch
+Leech Life
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
 326
 Team Galactic Grunt
 Level Cap:
@@ -7029,70 +6387,6 @@ Stun Spore
 Mega Drain
 Silver Wind
 Air Cutter
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-948
-Team Galactic Grunt
-Level Cap:
-Format: Single Battle
-
-Ledian
-24
-Naive
-Technician
-
-None
-Silver Wind
-U-turn
-Struggle Bug
-Comet Punch
-31/31/31/31/31/31
-0/0/0/0/0/0
-
-Ariados
-24
-Timid
-Insomnia
-
-None
-Shadow Sneak
-Leech Life
-Swords Dance
-Night Slash
-31/31/31/31/31/31
-0/0/0/0/0/0
-
-
-316
-Team Galactic Grunt
-Level Cap:
-Format: Single Battle
-
-Croagunk
-24
-Hardy
-Anticipation
-
-None
-Feint Attack
-Revenge
-Venoshock
-Swagger
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Golbat
-24
-Docile
-Inner Focus
-
-None
-Mean Look
-Quick Guard
-Crunch
-Leech Life
 25/25/25/25/25/25
 0/0/0/0/0/0
 
@@ -7198,6 +6492,268 @@ Poison Jab
 Defog
 25/25/25/25/25/25
 0/244/0/20/0/244
+
+
+21
+Cyclist Axel
+Level Cap:
+Format: Single Battle
+
+Pichu
+19
+Quirky
+Static
+
+None
+Thunder Wave
+Nuzzle
+Nasty Plot
+Disarming Voice
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Pichu
+19
+Hardy
+Static
+
+None
+Thunder Wave
+Nuzzle
+Nasty Plot
+Disarming Voice
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Pikachu
+19
+Hardy
+Static
+
+None
+Electro Ball
+Shock Wave
+Feint
+Spark
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+26
+Cyclist Nicole
+Level Cap:
+Format: Single Battle
+
+Taillow
+19
+Quirky
+Guts
+
+None
+Quick Attack
+Wing Attack
+Double Team
+Aerial Ace
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Doduo
+19
+Docile
+Tangled Feet
+
+None
+Fury Attack
+Wing Attack
+Pluck
+Double Hit
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Wingull
+19
+Bashful
+Keen Eye
+
+None
+Wing Attack
+Water Pulse
+Mist
+Air Cutter
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+27
+Cyclist Kayla
+Level Cap:
+Format: Single Battle
+
+Voltorb
+19
+Quirky
+Soundproof
+
+None
+Thunder Shock
+Rollout
+Spark
+Charge Beam
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Magnemite
+19
+Hardy
+Magnet Pull
+
+None
+Spark
+Electro Ball
+Light Screen
+Charge Beam
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Electrike
+19
+Quirky
+Static
+
+None
+Spark
+Shock Wave
+Bite
+Charge Beam
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+22
+Cyclist James
+Level Cap:
+Format: Single Battle
+
+Ponyta
+20
+Quirky
+Flame Body
+
+None
+Double Kick
+Flame Charge
+Flame Wheel
+Take Down
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Flaaffy
+20
+Serious
+Static
+
+None
+Thunder Shock
+Cotton Spore
+Charge
+Charge Beam
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+23
+Cyclist John
+Level Cap:
+Format: Single Battle
+
+Farfetch’d
+21
+Quirky
+Keen Eye
+
+None
+Cut
+Swords Dance
+Agility
+Air Cutter
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+24
+Cyclist Ryan
+Level Cap:
+Format: Single Battle
+
+Luxio
+21
+Quirky
+Guts
+
+None
+Spark
+Bite
+Charge
+Double Kick
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+25
+Cyclist Megan
+Level Cap:
+Format: Single Battle
+
+Pidgeotto
+21
+Quirky
+Keen Eye
+
+None
+Wing Attack
+Swift
+Air Cutter
+Feather Dance
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+28
+Cyclist Rachel
+Level Cap:
+Format: Single Battle
+
+Jolteon
+21
+Bashful
+Volt Absorb
+
+None
+Thunder Wave
+Baby-Doll Eyes
+Shock Wave
+Double Kick
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+340
+Hiker Theodore
+Level Cap:
+Format: Single Battle
+
+Torkoal
+26
+Bashful
+White Smoke
+
+None
+Flame Wheel
+Curse
+Body Slam
+Lava Plume
+25/25/25/25/25/25
+0/0/0/0/0/0
 
 
 30
@@ -8362,96 +7918,6 @@ Hydro Pump
 0/0/0/0/0/0
 
 
-262
-School Kid Chance
-Level Cap:
-Format: Single Battle
-
-Duskull
-26
-Docile
-Levitate
-
-None
-Foresight
-Shadow Sneak
-Will-O-Wisp
-Payback
-25/25/25/25/25/25
-196/0/196/0/116/0
-
-Shuppet
-26
-Bashful
-Insomnia
-
-None
-Pain Split
-Feint Attack
-Hex
-Curse
-25/25/25/25/25/25
-4/236/156/0/0/0
-
-Duskull
-26
-Bashful
-Levitate
-
-None
-Foresight
-Shadow Sneak
-Will-O-Wisp
-Payback
-25/25/25/25/25/25
-196/0/196/0/116/0
-
-
-265
-School Kid Mackenzie
-Level Cap:
-Format: Single Battle
-
-Shuppet
-26
-Docile
-Insomnia
-
-None
-Pain Split
-Feint Attack
-Hex
-Curse
-25/25/25/25/25/25
-4/236/156/0/0/0
-
-Duskull
-26
-Serious
-Levitate
-
-None
-Foresight
-Shadow Sneak
-Will-O-Wisp
-Payback
-25/25/25/25/25/25
-196/0/196/0/116/0
-
-Shuppet
-26
-Serious
-Insomnia
-
-None
-Pain Split
-Feint Attack
-Hex
-Curse
-25/25/25/25/25/25
-4/236/156/0/0/0
-
-
 190
 Camper Drew
 Level Cap:
@@ -8542,6 +8008,25 @@ Shadow Ball
 0/0/0/200/80/200
 
 
+249
+Lass Molly
+Level Cap:
+Format: Single Battle
+
+Misdreavus
+29
+Hardy
+Levitate
+
+None
+Pain Split
+Shadow Ball
+Payback
+Mean Look
+25/25/25/25/25/25
+252/0/4/0/0/252
+
+
 254
 Picnicker Cheyenne
 Level Cap:
@@ -8574,23 +8059,94 @@ Confuse Ray
 0/0/0/0/0/0
 
 
-249
-Lass Molly
+262
+School Kid Chance
 Level Cap:
 Format: Single Battle
 
-Misdreavus
-29
-Hardy
+Duskull
+26
+Docile
 Levitate
 
 None
-Pain Split
-Shadow Ball
+Foresight
+Shadow Sneak
+Will-O-Wisp
 Payback
-Mean Look
 25/25/25/25/25/25
-252/0/4/0/0/252
+196/0/196/0/116/0
+
+Shuppet
+26
+Bashful
+Insomnia
+
+None
+Pain Split
+Feint Attack
+Hex
+Curse
+25/25/25/25/25/25
+4/236/156/0/0/0
+
+Duskull
+26
+Bashful
+Levitate
+
+None
+Foresight
+Shadow Sneak
+Will-O-Wisp
+Payback
+25/25/25/25/25/25
+196/0/196/0/116/0
+
+
+265
+School Kid Mackenzie
+Level Cap:
+Format: Single Battle
+
+Shuppet
+26
+Docile
+Insomnia
+
+None
+Pain Split
+Feint Attack
+Hex
+Curse
+25/25/25/25/25/25
+4/236/156/0/0/0
+
+Duskull
+26
+Serious
+Levitate
+
+None
+Foresight
+Shadow Sneak
+Will-O-Wisp
+Payback
+25/25/25/25/25/25
+196/0/196/0/116/0
+
+Shuppet
+26
+Serious
+Insomnia
+
+None
+Pain Split
+Feint Attack
+Hex
+Curse
+25/25/25/25/25/25
+4/236/156/0/0/0
 
 
 204
@@ -10524,96 +10080,6 @@ Bug Buzz
 248/0/120/140/0/0
 
 
-967
-Team Galactic Grunt
-Level Cap:
-Format: Single Battle
-
-Croagunk
-28
-Naive
-Dry Skin
-
-None
-Revenge
-Venoshock
-Swagger
-Poison Jab
-31/31/31/31/31/31
-0/252/0/252/0/4
-
-Seviper
-28
-Hardy
-Shed Skin
-
-None
-Poison Tail
-Venom Drench
-Night Slash
-Gastro Acid
-31/31/31/31/31/31
-8/56/0/220/224/0
-
-Butterfree
-28
-Hardy
-Tinted Lens
-
-None
-Supersonic
-Air Slash
-Safeguard
-Bug Buzz
-31/31/31/31/31/31
-8/56/0/220/224/0
-
-
-969
-Team Galactic Grunt
-Level Cap:
-Format: Single Battle
-
-Stunky
-28
-Naive
-Aftermath
-
-None
-Slash
-Night Slash
-Feint
-Toxic
-31/31/31/31/31/31
-0/252/0/252/0/4
-
-Venonat
-28
-Hardy
-Tinted Lens
-
-None
-Leech Life
-Mega Drain
-Signal Beam
-Zen Headbutt
-31/31/31/31/31/31
-36/0/36/236/116/76
-
-Arbok
-28
-Hardy
-Intimidate
-
-None
-Screech
-Spit Up
-Swallow
-Stockpile
-31/31/31/31/31/31
-0/252/0/252/0/0
-
-
 964
 Team Galactic Grunt
 Level Cap:
@@ -10677,38 +10143,6 @@ Cosmic Power
 31/31/31/31/31/31
 0/0/0/252/252/4
 Paired with 964
-
-966
-Team Galactic Grunt
-Level Cap:
-Format: Single Battle
-
-Beedrill
-29
-Naive
-Adaptability
-
-None
-Venoshock
-Poison Jab
-Assurance
-X-Scissor
-31/31/31/31/31/31
-0/252/0/252/0/4
-
-Golbat
-29
-Hardy
-Inner Focus
-
-None
-Quick Guard
-Crunch
-Leech Life
-Swift
-31/31/31/31/31/31
-252/0/0/176/0/80
-
 
 69
 Rich Boy Jason
@@ -10788,82 +10222,6 @@ None
 Focus Energy
 Slash
 Night Slash
-X-Scissor
-31/31/31/31/31/31
-0/252/0/252/0/0
-
-
-968
-Team Galactic Grunt
-Level Cap:
-Format: Single Battle
-
-Murkrow
-30
-Naive
-Super Luck
-
-None
-Taunt
-Drill Peck
-Mean Look
-Sucker Punch
-31/31/31/31/31/31
-0/252/0/252/0/4
-
-
-977
-Team Galactic Grunt
-Level Cap:
-Format: Single Battle
-
-Nincada
-30
-Naive
-Compound Eyes
-
-None
-Leech Life
-Mind Reader
-Metal Claw
-Dig
-31/31/31/31/31/31
-252/0/0/0/0/0
-
-
-978
-Team Galactic Grunt
-Level Cap:
-Format: Single Battle
-
-Ninjask
-30
-Naive
-Speed Boost
-
-Focus Sash
-Screech
-Slash
-Night Slash
-Aerial Ace
-31/31/31/31/31/31
-0/252/0/252/0/0
-
-
-979
-Team Galactic Grunt
-Level Cap:
-Format: Single Battle
-
-Shedinja
-30
-Naive
-Wonder Guard
-
-Focus Sash
-Leech Life
-Mind Reader
-Shadow Sneak
 X-Scissor
 31/31/31/31/31/31
 0/252/0/252/0/0
@@ -10981,6 +10339,204 @@ Play Rough
 Crunch
 25/25/25/25/25/25
 0/0/0/0/0/0
+
+
+967
+Team Galactic Grunt
+Level Cap:
+Format: Single Battle
+
+Croagunk
+28
+Naive
+Dry Skin
+
+None
+Revenge
+Venoshock
+Swagger
+Poison Jab
+31/31/31/31/31/31
+0/252/0/252/0/4
+
+Seviper
+28
+Hardy
+Shed Skin
+
+None
+Poison Tail
+Venom Drench
+Night Slash
+Gastro Acid
+31/31/31/31/31/31
+8/56/0/220/224/0
+
+Butterfree
+28
+Hardy
+Tinted Lens
+
+None
+Supersonic
+Air Slash
+Safeguard
+Bug Buzz
+31/31/31/31/31/31
+8/56/0/220/224/0
+
+
+969
+Team Galactic Grunt
+Level Cap:
+Format: Single Battle
+
+Stunky
+28
+Naive
+Aftermath
+
+None
+Slash
+Night Slash
+Feint
+Toxic
+31/31/31/31/31/31
+0/252/0/252/0/4
+
+Venonat
+28
+Hardy
+Tinted Lens
+
+None
+Leech Life
+Mega Drain
+Signal Beam
+Zen Headbutt
+31/31/31/31/31/31
+36/0/36/236/116/76
+
+Arbok
+28
+Hardy
+Intimidate
+
+None
+Screech
+Spit Up
+Swallow
+Stockpile
+31/31/31/31/31/31
+0/252/0/252/0/0
+
+
+966
+Team Galactic Grunt
+Level Cap:
+Format: Single Battle
+
+Beedrill
+29
+Naive
+Adaptability
+
+None
+Venoshock
+Poison Jab
+Assurance
+X-Scissor
+31/31/31/31/31/31
+0/252/0/252/0/4
+
+Golbat
+29
+Hardy
+Inner Focus
+
+None
+Quick Guard
+Crunch
+Leech Life
+Swift
+31/31/31/31/31/31
+252/0/0/176/0/80
+
+
+968
+Team Galactic Grunt
+Level Cap:
+Format: Single Battle
+
+Murkrow
+30
+Naive
+Super Luck
+
+None
+Taunt
+Drill Peck
+Mean Look
+Sucker Punch
+31/31/31/31/31/31
+0/252/0/252/0/4
+
+
+977
+Team Galactic Grunt
+Level Cap:
+Format: Single Battle
+
+Nincada
+30
+Naive
+Compound Eyes
+
+None
+Leech Life
+Mind Reader
+Metal Claw
+Dig
+31/31/31/31/31/31
+252/0/0/0/0/0
+
+
+978
+Team Galactic Grunt
+Level Cap:
+Format: Single Battle
+
+Ninjask
+30
+Naive
+Speed Boost
+
+Focus Sash
+Screech
+Slash
+Night Slash
+Aerial Ace
+31/31/31/31/31/31
+0/252/0/252/0/0
+
+
+979
+Team Galactic Grunt
+Level Cap:
+Format: Single Battle
+
+Shedinja
+30
+Naive
+Wonder Guard
+
+Focus Sash
+Leech Life
+Mind Reader
+Shadow Sneak
+X-Scissor
+31/31/31/31/31/31
+0/252/0/252/0/0
 
 
 769
@@ -14432,70 +13988,6 @@ Rest
 0/0/0/0/0/0
 
 
-199
-Collector Fernando
-Level Cap:
-Format: Single Battle
-
-Dratini
-31
-Serious
-Shed Skin
-
-None
-Agility
-Dragon Pulse
-Aqua Tail
-Safeguard
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Dragonair
-33
-Bashful
-Shed Skin
-
-None
-Agility
-Dragon Pulse
-Aqua Tail
-Safeguard
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-200
-Collector Edwin
-Level Cap:
-Format: Single Battle
-
-Bagon
-31
-Docile
-Rock Head
-
-None
-Dragon Claw
-Crunch
-Zen Headbutt
-Scary Face
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Shelgon
-33
-Hardy
-Rock Head
-
-None
-Crunch
-Zen Headbutt
-Protect
-Scary Face
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
 214
 Ranchers Ava
 Level Cap:
@@ -14572,25 +14064,6 @@ Light Screen
 0/0/0/0/0/0
 
 
-278
-Waitress Kati
-Level Cap:
-Format: Single Battle
-
-Clefable
-33
-Docile
-Cute Charm
-
-None
-After You
-Follow Me
-Draining Kiss
-Life Dew
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
 366
 Ninja Boy Fabian
 Level Cap:
@@ -14644,6 +14117,89 @@ Poison Jab
 Flamethrower
 Memento
 Crunch
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+199
+Collector Fernando
+Level Cap:
+Format: Single Battle
+
+Dratini
+31
+Serious
+Shed Skin
+
+None
+Agility
+Dragon Pulse
+Aqua Tail
+Safeguard
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Dragonair
+33
+Bashful
+Shed Skin
+
+None
+Agility
+Dragon Pulse
+Aqua Tail
+Safeguard
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+200
+Collector Edwin
+Level Cap:
+Format: Single Battle
+
+Bagon
+31
+Docile
+Rock Head
+
+None
+Dragon Claw
+Crunch
+Zen Headbutt
+Scary Face
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Shelgon
+33
+Hardy
+Rock Head
+
+None
+Crunch
+Zen Headbutt
+Protect
+Scary Face
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+278
+Waitress Kati
+Level Cap:
+Format: Single Battle
+
+Clefable
+33
+Docile
+Cute Charm
+
+None
+After You
+Follow Me
+Draining Kiss
+Life Dew
 25/25/25/25/25/25
 0/0/0/0/0/0
 
@@ -16566,6 +16122,25 @@ Earth Power
 0/0/0/0/0/0
 
 
+673
+Team Galactic Grunt
+Level Cap:
+Format: Single Battle
+
+Toxicroak
+41
+Hardy
+Anticipation
+
+None
+Drain Punch
+Nasty Plot
+Toxic
+Sucker Punch
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
 91
 Fisher Kenneth
 Level Cap:
@@ -16934,468 +16509,6 @@ Overheat
 Close Combat
 Thunder Punch
 Fake Out
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-291
-Collector Dominique
-Level Cap:
-Format: Single Battle
-
-Dratini
-31
-Serious
-Shed Skin
-
-None
-Agility
-Dragon Pulse
-Aqua Tail
-Safeguard
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Dragonair
-33
-Bashful
-Shed Skin
-
-None
-Agility
-Dragon Pulse
-Aqua Tail
-Safeguard
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-76
-Fisher Juan
-Level Cap:
-Format: Single Battle
-
-Shellder
-36
-Hardy
-Shell Armor
-
-None
-Iron Defense
-Razor Shell
-Ice Beam
-Aqua Ring
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Clamperl
-36
-Bashful
-Shell Armor
-
-None
-Water Gun
-Clamp
-Water Pulse
-Muddy Water
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Cloyster
-39
-Docile
-Shell Armor
-
-None
-Spikes
-Clamp
-Ice Shard
-Pin Missile
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-256
-Police Officer Danny
-Level Cap:
-Format: Single Battle
-
-Growlithe
-37
-Serious
-Intimidate
-
-None
-Retaliate
-Crunch
-Outrage
-Heat Wave
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Machoke
-37
-Serious
-Guts
-
-None
-Strength
-Payback
-Counter
-Dual Chop
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Noctowl
-37
-Bashful
-Insomnia
-
-None
-Air Slash
-Take Down
-Reflect
-Psychic
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-365
-Scientist Shaun
-Level Cap:
-Format: Single Battle
-
-Magneton
-37
-Bashful
-Magnet Pull
-
-None
-Discharge
-Tri Attack
-Flash Cannon
-Screech
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Electrode
-37
-Quirky
-Soundproof
-
-None
-Self-Destruct
-Discharge
-Light Screen
-Magnet Rise
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Porygon2
-37
-Quirky
-Trace
-
-None
-Signal Beam
-Lock-On
-Magic Coat
-Thunderbolt
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-78
-Fisher Travis
-Level Cap:
-Format: Single Battle
-
-Barboach
-38
-Quirky
-Oblivious
-
-None
-Earth Power
-Muddy Water
-Future Sight
-Earthquake
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Qwilfish
-38
-Quirky
-Poison Point
-
-None
-Poison Jab
-Revenge
-Aqua Tail
-Pin Missile
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-82
-Scientist Stefano
-Level Cap:
-Format: Single Battle
-
-Muk
-38
-Bashful
-Stench
-
-None
-Payback
-Sludge Wave
-Screech
-Sludge Bomb
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Weezing
-38
-Serious
-Levitate
-
-None
-Destiny Bond
-Double Hit
-Toxic
-Dark Pulse
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-251
-Parasol Lady Alexa
-Level Cap:
-Format: Single Battle
-
-Seadra
-38
-Docile
-Poison Point
-
-None
-Agility
-Muddy Water
-Dragon Pulse
-Laser Focus
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Golduck
-38
-Serious
-Damp
-
-None
-Aqua Tail
-Power Gem
-Psychic
-Psych Up
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-77
-Fisher Cameron
-Level Cap:
-Format: Single Battle
-
-Whiscash
-39
-Quirky
-Oblivious
-
-None
-Earth Power
-Thrash
-Muddy Water
-Future Sight
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Lanturn
-39
-Docile
-Volt Absorb
-
-None
-Discharge
-Signal Beam
-Flail
-Thunderbolt
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Seaking
-39
-Quirky
-Swift Swim
-
-None
-Body Slam
-Aqua Tail
-Knock Off
-Drill Run
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-79
-Pokémon Ranger Taylor
-Level Cap:
-Format: Single Battle
-
-Carnivine
-39
-Serious
-Levitate
-
-None
-Swallow
-Crunch
-Iron Head
-Energy Ball
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Kecleon
-39
-Bashful
-Color Change
-
-None
-Fake Out
-Detect
-Shadow Claw
-Screech
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Electabuzz
-39
-Hardy
-Static
-
-None
-Brick Break
-Discharge
-Screech
-Cross Chop
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-80
-Pokémon Ranger Jeffrey
-Level Cap:
-Format: Single Battle
-
-Magmar
-39
-Quirky
-Flame Body
-
-None
-Brick Break
-Lava Plume
-Sunny Day
-Cross Chop
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Manectric
-39
-Quirky
-Static
-
-None
-Roar
-Discharge
-Flamethrower
-Crunch
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Nidoking
-39
-Bashful
-Poison Point
-
-None
-Helping Hand
-Thrash
-Toxic Spikes
-Poison Jab
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-81
-Pokémon Ranger Allison
-Level Cap:
-Format: Single Battle
-
-Milotic
-39
-Hardy
-Marvel Scale
-
-None
-Hypnosis
-Attract
-Moonblast
-Dragon Pulse
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Leafeon
-39
-Bashful
-Leaf Guard
-
-None
-Night Slash
-Swords Dance
-Leaf Blade
-Psycho Cut
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Jynx
-39
-Quirky
-Dry Skin
-
-None
-Fake Tears
-Ice Beam
-Psychic
-Body Slam
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-252
-Parasol Lady Sabrina
-Level Cap:
-Format: Single Battle
-
-Castform
-39
-Docile
-Forecast
-
-None
-Weather Ball
-Hydro Pump
-Fire Blast
-Blizzard
 25/25/25/25/25/25
 0/0/0/0/0/0
 
@@ -18658,6 +17771,468 @@ Leech Seed
 Protect
 25/25/25/25/25/25
 252/252/0/0/4/0
+
+
+291
+Collector Dominique
+Level Cap:
+Format: Single Battle
+
+Dratini
+31
+Serious
+Shed Skin
+
+None
+Agility
+Dragon Pulse
+Aqua Tail
+Safeguard
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Dragonair
+33
+Bashful
+Shed Skin
+
+None
+Agility
+Dragon Pulse
+Aqua Tail
+Safeguard
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+76
+Fisher Juan
+Level Cap:
+Format: Single Battle
+
+Shellder
+36
+Hardy
+Shell Armor
+
+None
+Iron Defense
+Razor Shell
+Ice Beam
+Aqua Ring
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Clamperl
+36
+Bashful
+Shell Armor
+
+None
+Water Gun
+Clamp
+Water Pulse
+Muddy Water
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Cloyster
+39
+Docile
+Shell Armor
+
+None
+Spikes
+Clamp
+Ice Shard
+Pin Missile
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+256
+Police Officer Danny
+Level Cap:
+Format: Single Battle
+
+Growlithe
+37
+Serious
+Intimidate
+
+None
+Retaliate
+Crunch
+Outrage
+Heat Wave
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Machoke
+37
+Serious
+Guts
+
+None
+Strength
+Payback
+Counter
+Dual Chop
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Noctowl
+37
+Bashful
+Insomnia
+
+None
+Air Slash
+Take Down
+Reflect
+Psychic
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+365
+Scientist Shaun
+Level Cap:
+Format: Single Battle
+
+Magneton
+37
+Bashful
+Magnet Pull
+
+None
+Discharge
+Tri Attack
+Flash Cannon
+Screech
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Electrode
+37
+Quirky
+Soundproof
+
+None
+Self-Destruct
+Discharge
+Light Screen
+Magnet Rise
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Porygon2
+37
+Quirky
+Trace
+
+None
+Signal Beam
+Lock-On
+Magic Coat
+Thunderbolt
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+78
+Fisher Travis
+Level Cap:
+Format: Single Battle
+
+Barboach
+38
+Quirky
+Oblivious
+
+None
+Earth Power
+Muddy Water
+Future Sight
+Earthquake
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Qwilfish
+38
+Quirky
+Poison Point
+
+None
+Poison Jab
+Revenge
+Aqua Tail
+Pin Missile
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+82
+Scientist Stefano
+Level Cap:
+Format: Single Battle
+
+Muk
+38
+Bashful
+Stench
+
+None
+Payback
+Sludge Wave
+Screech
+Sludge Bomb
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Weezing
+38
+Serious
+Levitate
+
+None
+Destiny Bond
+Double Hit
+Toxic
+Dark Pulse
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+251
+Parasol Lady Alexa
+Level Cap:
+Format: Single Battle
+
+Seadra
+38
+Docile
+Poison Point
+
+None
+Agility
+Muddy Water
+Dragon Pulse
+Laser Focus
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Golduck
+38
+Serious
+Damp
+
+None
+Aqua Tail
+Power Gem
+Psychic
+Psych Up
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+77
+Fisher Cameron
+Level Cap:
+Format: Single Battle
+
+Whiscash
+39
+Quirky
+Oblivious
+
+None
+Earth Power
+Thrash
+Muddy Water
+Future Sight
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Lanturn
+39
+Docile
+Volt Absorb
+
+None
+Discharge
+Signal Beam
+Flail
+Thunderbolt
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Seaking
+39
+Quirky
+Swift Swim
+
+None
+Body Slam
+Aqua Tail
+Knock Off
+Drill Run
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+79
+Pokémon Ranger Taylor
+Level Cap:
+Format: Single Battle
+
+Carnivine
+39
+Serious
+Levitate
+
+None
+Swallow
+Crunch
+Iron Head
+Energy Ball
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Kecleon
+39
+Bashful
+Color Change
+
+None
+Fake Out
+Detect
+Shadow Claw
+Screech
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Electabuzz
+39
+Hardy
+Static
+
+None
+Brick Break
+Discharge
+Screech
+Cross Chop
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+80
+Pokémon Ranger Jeffrey
+Level Cap:
+Format: Single Battle
+
+Magmar
+39
+Quirky
+Flame Body
+
+None
+Brick Break
+Lava Plume
+Sunny Day
+Cross Chop
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Manectric
+39
+Quirky
+Static
+
+None
+Roar
+Discharge
+Flamethrower
+Crunch
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Nidoking
+39
+Bashful
+Poison Point
+
+None
+Helping Hand
+Thrash
+Toxic Spikes
+Poison Jab
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+81
+Pokémon Ranger Allison
+Level Cap:
+Format: Single Battle
+
+Milotic
+39
+Hardy
+Marvel Scale
+
+None
+Hypnosis
+Attract
+Moonblast
+Dragon Pulse
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Leafeon
+39
+Bashful
+Leaf Guard
+
+None
+Night Slash
+Swords Dance
+Leaf Blade
+Psycho Cut
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Jynx
+39
+Quirky
+Dry Skin
+
+None
+Fake Tears
+Ice Beam
+Psychic
+Body Slam
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+252
+Parasol Lady Sabrina
+Level Cap:
+Format: Single Battle
+
+Castform
+39
+Docile
+Forecast
+
+None
+Weather Ball
+Hydro Pump
+Fire Blast
+Blizzard
+25/25/25/25/25/25
+0/0/0/0/0/0
 
 
 217
@@ -20226,269 +19801,6 @@ Swords Dance
 0/248/0/0/8/252
 
 
-260
-Sailor Skyler
-Level Cap:
-Format: Single Battle
-
-Omastar
-43
-Hardy
-Swift Swim
-
-None
-Muddy Water
-Brine
-Earth Power
-Tickle
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Kabutops
-43
-Bashful
-Swift Swim
-
-None
-Brine
-Knock Off
-Mega Drain
-Protect
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Relicanth
-43
-Hardy
-Swift Swim
-
-None
-Zen Headbutt
-Flail
-Stone Edge
-Amnesia
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-118
-Fisher Miguel
-Level Cap:
-Format: Single Battle
-
-Huntail
-44
-Hardy
-Swift Swim
-
-None
-Aqua Tail
-Crunch
-Baton Pass
-Confuse Ray
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Gorebyss
-44
-Bashful
-Swift Swim
-
-None
-Psychic
-Aqua Tail
-Baton Pass
-Confuse Ray
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-225
-Guitarist Tony
-Level Cap:
-Format: Single Battle
-
-Kricketune
-44
-Quirky
-Swarm
-
-None
-Taunt
-Heal Bell
-Bug Buzz
-Sticky Web
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Exploud
-44
-Bashful
-Scrappy
-
-None
-Rest
-Sleep Talk
-Crunch
-Hammer Arm
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-119
-Fisher Luc
-Level Cap:
-Format: Single Battle
-
-Crawdaunt
-45
-Bashful
-Hyper Cutter
-
-None
-Razor Shell
-Swords Dance
-Crunch
-Payback
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-670
-Worker Dillan
-Level Cap:
-Format: Single Battle
-
-Machop
-42
-Bashful
-Guts
-
-None
-Counter
-Bulk Up
-Cross Chop
-Scary Face
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Machoke
-43
-Docile
-Guts
-
-None
-Counter
-Dual Chop
-Bulk Up
-Cross Chop
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Machamp
-44
-Quirky
-Guts
-
-None
-Counter
-Dual Chop
-Bulk Up
-Cross Chop
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-671
-Worker Holden
-Level Cap:
-Format: Single Battle
-
-Magnemite
-42
-Serious
-Magnet Pull
-
-None
-Flash Cannon
-Screech
-Thunderbolt
-Lock-On
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Magnemite
-42
-Hardy
-Magnet Pull
-
-None
-Flash Cannon
-Screech
-Thunderbolt
-Lock-On
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Steelix
-45
-Serious
-Rock Head
-
-None
-Crunch
-Stone Edge
-Double-Edge
-Sandstorm
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-672
-Worker Conrad
-Level Cap:
-Format: Single Battle
-
-Magmar
-43
-Bashful
-Flame Body
-
-None
-Sunny Day
-Cross Chop
-Low Kick
-Flamethrower
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Magcargo
-43
-Serious
-Solid Rock
-
-None
-Earth Power
-Flamethrower
-Power Gem
-Body Slam
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Rapidash
-43
-Quirky
-Flame Body
-
-None
-Flare Blitz
-Fury Attack
-Double-Edge
-Bounce
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
 273
 Tuber Trenton
 Level Cap:
@@ -21131,6 +20443,374 @@ Iron Head
 0/252/4/0/252/0
 
 
+887
+Team Galactic Boss Cyrus Team 1
+Level Cap:
+Format: Single Battle
+
+Probopass
+59
+Calm
+Sturdy
+
+Leftovers
+Stealth Rock
+Pain Split
+Toxic
+Volt Switch
+31/0/31/31/31/31
+252/0/4/0/252/0
+
+Gyarados
+59
+Adamant
+Moxie
+
+Leftovers
+Dragon Dance
+Waterfall
+Bounce
+Substitute
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Raticate
+59
+Jolly
+Technician
+
+Choice Band
+Flame Wheel
+Quick Attack
+Aerial Ace
+U-turn
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Arcanine
+59
+Adamant
+Intimidate
+
+Leftovers
+Morning Sun
+Flare Blitz
+Extreme Speed
+Will-O-Wisp
+31/31/31/31/31/31
+252/252/0/0/4/0
+
+Honchkrow
+60
+Modest
+Super Luck
+
+Mago Berry
+Dark Pulse
+Heat Wave
+Air Cutter
+Roost
+31/0/31/31/31/31
+252/0/0/252/0/4
+
+Weavile
+60
+Jolly
+Technician
+
+Heavy-Duty Boots
+Icicle Spear
+Ice Shard
+Aerial Ace
+Knock Off
+31/31/31/31/31/31
+4/252/0/0/0/252
+
+
+888
+Team Galactic Boss Cyrus Team 2
+Level Cap:
+Format: Single Battle
+
+Gyarados
+59
+Adamant
+Intimidate
+
+Wacan Berry
+Earthquake
+Waterfall
+Ice Fang
+Dragon Dance
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Magnezone
+59
+Modest
+Magnet Pull
+
+Air Balloon
+Thunderbolt
+Flash Cannon
+Body Press
+Iron Defense
+31/0/31/31/31/31
+248/0/0/252/8/0
+
+Absol
+59
+Jolly
+Super Luck
+
+Scope Lens
+Night Slash
+Psycho Cut
+Slash
+X-Scissor
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Charizard
+59
+Timid
+Levitate
+
+Choice Specs
+Fire Blast
+Air Slash
+Dragon Pulse
+Overheat
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+Honchkrow
+60
+Modest
+Moxie
+
+Choice Scarf
+Foul Play
+Heat Wave
+Air Cutter
+Roost
+31/0/31/31/31/31
+252/0/0/252/0/4
+
+Weavile
+60
+Jolly
+Technician
+
+Heavy-Duty Boots
+Icicle Spear
+Ice Shard
+Aerial Ace
+Knock Off
+31/31/31/31/31/31
+4/252/0/0/0/252
+
+
+889
+Team Galactic Boss Cyrus Team 3
+Level Cap:
+Format: Single Battle
+
+Absol
+59
+Jolly
+Magic Bounce
+
+Focus Sash
+Knock Off
+Play Rough
+Megahorn
+Stone Edge
+31/31/31/31/31/31
+4/248/0/0/8/248
+
+Manectric
+59
+Timid
+Intimidate
+
+Choice Specs
+Thunder
+Overheat
+Volt Switch
+Hidden Power
+31/0/30/31/31/31
+0/0/0/252/0/252
+
+Crawdaunt
+59
+Adamant
+Adaptability
+
+Focus Sash
+Dragon Dance
+Liquidation
+Crunch
+Aqua Jet
+31/31/31/31/31/31
+4/252/0/0/0/252
+
+Houndoom
+59
+Hasty
+Adaptability
+
+Life Orb
+Dark Pulse
+Overheat
+Sludge Bomb
+Sucker Punch
+31/31/31/31/31/31
+0/4/0/252/0/252
+
+Honchkrow
+60
+Lonely
+Super Luck
+
+Mago Berry
+Night Slash
+Drill Peck
+Heat Wave
+Sucker Punch
+31/31/31/31/31/31
+252/252/0/4/0/0
+
+Weavile
+60
+Jolly
+Technician
+
+Choice Band
+Icicle Spear
+Ice Shard
+Aerial Ace
+Knock Off
+31/31/31/31/31/31
+4/252/0/0/0/252
+
+
+890
+Team Galactic Boss Cyrus Team 4
+Level Cap:
+Format: Single Battle
+
+Houndoom
+59
+Jolly
+Intimidate
+
+Focus Sash
+Flare Blitz
+Sucker Punch
+Flame Charge
+Throat Chop
+31/31/31/31/31/31
+4/248/0/0/4/252
+
+Crobat
+59
+Jolly
+Infiltrator
+
+Choice Band
+Brave Bird
+Cross Poison
+U-turn
+Zen Headbutt
+31/31/31/31/31/31
+0/248/0/0/12/248
+
+Probopass
+59
+Calm
+Sturdy
+
+Leftovers
+Iron Defense
+Body Press
+Pain Split
+Substitute
+31/0/31/31/31/31
+252/0/0/0/252/4
+
+Raticate
+59
+Jolly
+Guts
+
+Flame Orb
+Protect
+Double-Edge
+Sucker Punch
+U-turn
+31/31/31/31/31/31
+8/252/0/0/0/248
+
+Honchkrow
+60
+Modest
+Moxie
+
+Life Orb
+Foul Play
+Heat Wave
+Air Cutter
+Roost
+31/0/31/31/31/31
+252/0/0/252/0/4
+
+Weavile
+60
+Jolly
+Technician
+
+Heavy-Duty Boots
+Icicle Spear
+Ice Shard
+Aerial Ace
+Knock Off
+31/31/31/31/31/31
+4/252/0/0/0/252
+
+
+886
+Team Galactic Boss Cyrus
+Level Cap:
+Format: Single Battle
+
+Palkia
+70
+Docile
+Pressure
+
+None
+Hydro Pump
+Spacial Rend
+Earth Power
+Aura Sphere
+0/0/0/0/0/0
+0/0/0/0/0/0
+
+Dialga
+70
+Hardy
+Pressure
+
+None
+Flash Cannon
+Roar of Time
+Earth Power
+Aura Sphere
+0/0/0/0/0/0
+0/0/0/0/0/0
+
+
 950
 Lass Aitwo
 Level Cap:
@@ -21213,6 +20893,269 @@ Flash Cannon
 Aura Sphere
 20/31/31/31/31/31
 0/0/4/252/0/252
+
+
+260
+Sailor Skyler
+Level Cap:
+Format: Single Battle
+
+Omastar
+43
+Hardy
+Swift Swim
+
+None
+Muddy Water
+Brine
+Earth Power
+Tickle
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Kabutops
+43
+Bashful
+Swift Swim
+
+None
+Brine
+Knock Off
+Mega Drain
+Protect
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Relicanth
+43
+Hardy
+Swift Swim
+
+None
+Zen Headbutt
+Flail
+Stone Edge
+Amnesia
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+118
+Fisher Miguel
+Level Cap:
+Format: Single Battle
+
+Huntail
+44
+Hardy
+Swift Swim
+
+None
+Aqua Tail
+Crunch
+Baton Pass
+Confuse Ray
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Gorebyss
+44
+Bashful
+Swift Swim
+
+None
+Psychic
+Aqua Tail
+Baton Pass
+Confuse Ray
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+225
+Guitarist Tony
+Level Cap:
+Format: Single Battle
+
+Kricketune
+44
+Quirky
+Swarm
+
+None
+Taunt
+Heal Bell
+Bug Buzz
+Sticky Web
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Exploud
+44
+Bashful
+Scrappy
+
+None
+Rest
+Sleep Talk
+Crunch
+Hammer Arm
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+119
+Fisher Luc
+Level Cap:
+Format: Single Battle
+
+Crawdaunt
+45
+Bashful
+Hyper Cutter
+
+None
+Razor Shell
+Swords Dance
+Crunch
+Payback
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+670
+Worker Dillan
+Level Cap:
+Format: Single Battle
+
+Machop
+42
+Bashful
+Guts
+
+None
+Counter
+Bulk Up
+Cross Chop
+Scary Face
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Machoke
+43
+Docile
+Guts
+
+None
+Counter
+Dual Chop
+Bulk Up
+Cross Chop
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Machamp
+44
+Quirky
+Guts
+
+None
+Counter
+Dual Chop
+Bulk Up
+Cross Chop
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+671
+Worker Holden
+Level Cap:
+Format: Single Battle
+
+Magnemite
+42
+Serious
+Magnet Pull
+
+None
+Flash Cannon
+Screech
+Thunderbolt
+Lock-On
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Magnemite
+42
+Hardy
+Magnet Pull
+
+None
+Flash Cannon
+Screech
+Thunderbolt
+Lock-On
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Steelix
+45
+Serious
+Rock Head
+
+None
+Crunch
+Stone Edge
+Double-Edge
+Sandstorm
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+672
+Worker Conrad
+Level Cap:
+Format: Single Battle
+
+Magmar
+43
+Bashful
+Flame Body
+
+None
+Sunny Day
+Cross Chop
+Low Kick
+Flamethrower
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Magcargo
+43
+Serious
+Solid Rock
+
+None
+Earth Power
+Flamethrower
+Power Gem
+Body Slam
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Rapidash
+43
+Quirky
+Flame Body
+
+None
+Flare Blitz
+Fury Attack
+Double-Edge
+Bounce
+25/25/25/25/25/25
+0/0/0/0/0/0
 
 
 784
@@ -22397,70 +22340,6 @@ Slam
 0/0/0/0/0/0
 
 
-377
-Worker Willy
-Level Cap:
-Format: Single Battle
-
-Magneton
-48
-Serious
-Magnet Pull
-
-None
-Flash Cannon
-Screech
-Thunderbolt
-Lock-On
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Lairon
-48
-Hardy
-Sturdy
-
-None
-Iron Tail
-Iron Defense
-Double-Edge
-Autotomize
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Metang
-48
-Hardy
-Iron Fist
-
-None
-Psychic
-Agility
-Meteor Mash
-Iron Defense
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-378
-Worker Braden
-Level Cap:
-Format: Single Battle
-
-Camerupt
-48
-Serious
-Magma Armor
-
-None
-Flamethrower
-Yawn
-Earthquake
-Double-Edge
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
 341
 Hiker Damon
 Level Cap:
@@ -22842,6 +22721,70 @@ Cross Chop
 Focus Punch
 Endure
 Close Combat
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+377
+Worker Willy
+Level Cap:
+Format: Single Battle
+
+Magneton
+48
+Serious
+Magnet Pull
+
+None
+Flash Cannon
+Screech
+Thunderbolt
+Lock-On
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Lairon
+48
+Hardy
+Sturdy
+
+None
+Iron Tail
+Iron Defense
+Double-Edge
+Autotomize
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Metang
+48
+Hardy
+Iron Fist
+
+None
+Psychic
+Agility
+Meteor Mash
+Iron Defense
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+378
+Worker Braden
+Level Cap:
+Format: Single Battle
+
+Camerupt
+48
+Serious
+Magma Armor
+
+None
+Flamethrower
+Yawn
+Earthquake
+Double-Edge
 25/25/25/25/25/25
 0/0/0/0/0/0
 
@@ -24477,25 +24420,6 @@ Blaze Kick
 25/25/25/25/25/25
 0/0/0/0/0/0
 Paired with 419
-
-673
-Team Galactic Grunt
-Level Cap:
-Format: Single Battle
-
-Toxicroak
-41
-Hardy
-Anticipation
-
-None
-Drain Punch
-Nasty Plot
-Toxic
-Sucker Punch
-25/25/25/25/25/25
-0/0/0/0/0/0
-
 
 320
 Team Galactic Grunt
@@ -26235,90 +26159,6 @@ Thunderbolt
 0/0/0/252/4/252
 
 
-883
-Commander Saturn
-Level Cap:
-Format: Single Battle
-
-Bronzong
-57
-Calm
-Levitate
-
-Light Clay
-Reflect
-Light Screen
-Iron Defense
-Body Press
-31/0/31/31/31/31
-252/0/8/0/0/248
-
-Octillery
-57
-Timid
-Sniper
-
-Choice Scarf
-Water Spout
-Energy Ball
-Fire Blast
-Ice Beam
-31/0/31/31/31/31
-0/0/0/248/252/8
-
-Alakazam
-57
-Timid
-Magic Guard
-
-Life Orb
-Psychic
-Shadow Ball
-Focus Blast
-Dazzling Gleam
-31/0/31/31/31/31
-0/0/0/252/252/4
-
-Rhydon
-57
-Adamant
-Sheer Force
-
-Eviolite
-Stone Edge
-Drill Run
-Thunder Punch
-Ice Punch
-31/31/31/31/31/31
-244/248/0/0/0/16
-
-Magmortar
-57
-Timid
-Mega Launcher
-
-Heavy-Duty Boots
-Fire Blast
-Aura Sphere
-Dark Pulse
-Scald
-31/0/31/31/31/31
-0/0/0/252/252/4
-
-Toxicroak
-58
-Jolly
-Dry Skin
-
-Focus Sash
-Swords Dance
-Gunk Shot
-Drain Punch
-Sucker Punch
-31/31/31/31/31/31
-0/252/0/252/0/0
-
-
 330
 Team Galactic Grunt
 Level Cap:
@@ -26852,6 +26692,90 @@ Nasty Plot
 0/0/0/0/0/0
 
 
+883
+Commander Saturn
+Level Cap:
+Format: Single Battle
+
+Bronzong
+57
+Calm
+Levitate
+
+Light Clay
+Reflect
+Light Screen
+Iron Defense
+Body Press
+31/0/31/31/31/31
+252/0/8/0/0/248
+
+Octillery
+57
+Timid
+Sniper
+
+Choice Scarf
+Water Spout
+Energy Ball
+Fire Blast
+Ice Beam
+31/0/31/31/31/31
+0/0/0/248/252/8
+
+Alakazam
+57
+Timid
+Magic Guard
+
+Life Orb
+Psychic
+Shadow Ball
+Focus Blast
+Dazzling Gleam
+31/0/31/31/31/31
+0/0/0/252/252/4
+
+Rhydon
+57
+Adamant
+Sheer Force
+
+Eviolite
+Stone Edge
+Drill Run
+Thunder Punch
+Ice Punch
+31/31/31/31/31/31
+244/248/0/0/0/16
+
+Magmortar
+57
+Timid
+Mega Launcher
+
+Heavy-Duty Boots
+Fire Blast
+Aura Sphere
+Dark Pulse
+Scald
+31/0/31/31/31/31
+0/0/0/252/252/4
+
+Toxicroak
+58
+Jolly
+Dry Skin
+
+Focus Sash
+Swords Dance
+Gunk Shot
+Drain Punch
+Sucker Punch
+31/31/31/31/31/31
+0/252/0/252/0/0
+
+
 388
 Team Galactic Grunt
 Level Cap:
@@ -27163,102 +27087,6 @@ Megahorn
 Submission
 Superpower
 Guillotine
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-397
-Team Galactic Grunt
-Level Cap:
-Format: Single Battle
-
-Murkrow
-54
-Bashful
-Insomnia
-
-None
-Dark Pulse
-Torment
-Brave Bird
-Foul Play
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Mightyena
-54
-Bashful
-Intimidate
-
-None
-Yawn
-Take Down
-Play Rough
-Sucker Punch
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Sneasel
-54
-Bashful
-Inner Focus
-
-None
-Screech
-Hone Claws
-Crunch
-Dark Pulse
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-391
-Team Galactic Grunt
-Level Cap:
-Format: Single Battle
-
-Masquerain
-55
-Serious
-Intimidate
-
-None
-Air Slash
-Hydro Pump
-Bug Buzz
-Quiver Dance
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Muk
-55
-Bashful
-Stench
-
-None
-Acid Armor
-Gunk Shot
-Memento
-Belch
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-392
-Team Galactic Grunt
-Level Cap:
-Format: Single Battle
-
-Golbat
-56
-Docile
-Inner Focus
-
-None
-Zen Headbutt
-Nasty Plot
-Venoshock
-Brave Bird
 25/25/25/25/25/25
 0/0/0/0/0/0
 
@@ -27773,374 +27601,6 @@ Heavy Slam
 0/252/0/0/4/252
 Paired with Support
 
-887
-Team Galactic Boss Cyrus Team 1
-Level Cap:
-Format: Single Battle
-
-Probopass
-59
-Calm
-Sturdy
-
-Leftovers
-Stealth Rock
-Pain Split
-Toxic
-Volt Switch
-31/0/31/31/31/31
-252/0/4/0/252/0
-
-Gyarados
-59
-Adamant
-Moxie
-
-Leftovers
-Dragon Dance
-Waterfall
-Bounce
-Substitute
-31/31/31/31/31/31
-0/252/0/0/4/252
-
-Raticate
-59
-Jolly
-Technician
-
-Choice Band
-Flame Wheel
-Quick Attack
-Aerial Ace
-U-turn
-31/31/31/31/31/31
-0/252/0/0/4/252
-
-Arcanine
-59
-Adamant
-Intimidate
-
-Leftovers
-Morning Sun
-Flare Blitz
-Extreme Speed
-Will-O-Wisp
-31/31/31/31/31/31
-252/252/0/0/4/0
-
-Honchkrow
-60
-Modest
-Super Luck
-
-Mago Berry
-Dark Pulse
-Heat Wave
-Air Cutter
-Roost
-31/0/31/31/31/31
-252/0/0/252/0/4
-
-Weavile
-60
-Jolly
-Technician
-
-Heavy-Duty Boots
-Icicle Spear
-Ice Shard
-Aerial Ace
-Knock Off
-31/31/31/31/31/31
-4/252/0/0/0/252
-
-
-888
-Team Galactic Boss Cyrus Team 2
-Level Cap:
-Format: Single Battle
-
-Gyarados
-59
-Adamant
-Intimidate
-
-Wacan Berry
-Earthquake
-Waterfall
-Ice Fang
-Dragon Dance
-31/31/31/31/31/31
-0/252/0/0/4/252
-
-Magnezone
-59
-Modest
-Magnet Pull
-
-Air Balloon
-Thunderbolt
-Flash Cannon
-Body Press
-Iron Defense
-31/0/31/31/31/31
-248/0/0/252/8/0
-
-Absol
-59
-Jolly
-Super Luck
-
-Scope Lens
-Night Slash
-Psycho Cut
-Slash
-X-Scissor
-31/31/31/31/31/31
-0/252/0/0/4/252
-
-Charizard
-59
-Timid
-Levitate
-
-Choice Specs
-Fire Blast
-Air Slash
-Dragon Pulse
-Overheat
-31/0/31/31/31/31
-0/0/0/252/4/252
-
-Honchkrow
-60
-Modest
-Moxie
-
-Choice Scarf
-Foul Play
-Heat Wave
-Air Cutter
-Roost
-31/0/31/31/31/31
-252/0/0/252/0/4
-
-Weavile
-60
-Jolly
-Technician
-
-Heavy-Duty Boots
-Icicle Spear
-Ice Shard
-Aerial Ace
-Knock Off
-31/31/31/31/31/31
-4/252/0/0/0/252
-
-
-889
-Team Galactic Boss Cyrus Team 3
-Level Cap:
-Format: Single Battle
-
-Absol
-59
-Jolly
-Magic Bounce
-
-Focus Sash
-Knock Off
-Play Rough
-Megahorn
-Stone Edge
-31/31/31/31/31/31
-4/248/0/0/8/248
-
-Manectric
-59
-Timid
-Intimidate
-
-Choice Specs
-Thunder
-Overheat
-Volt Switch
-Hidden Power
-31/0/30/31/31/31
-0/0/0/252/0/252
-
-Crawdaunt
-59
-Adamant
-Adaptability
-
-Focus Sash
-Dragon Dance
-Liquidation
-Crunch
-Aqua Jet
-31/31/31/31/31/31
-4/252/0/0/0/252
-
-Houndoom
-59
-Hasty
-Adaptability
-
-Life Orb
-Dark Pulse
-Overheat
-Sludge Bomb
-Sucker Punch
-31/31/31/31/31/31
-0/4/0/252/0/252
-
-Honchkrow
-60
-Lonely
-Super Luck
-
-Mago Berry
-Night Slash
-Drill Peck
-Heat Wave
-Sucker Punch
-31/31/31/31/31/31
-252/252/0/4/0/0
-
-Weavile
-60
-Jolly
-Technician
-
-Choice Band
-Icicle Spear
-Ice Shard
-Aerial Ace
-Knock Off
-31/31/31/31/31/31
-4/252/0/0/0/252
-
-
-890
-Team Galactic Boss Cyrus Team 4
-Level Cap:
-Format: Single Battle
-
-Houndoom
-59
-Jolly
-Intimidate
-
-Focus Sash
-Flare Blitz
-Sucker Punch
-Flame Charge
-Throat Chop
-31/31/31/31/31/31
-4/248/0/0/4/252
-
-Crobat
-59
-Jolly
-Infiltrator
-
-Choice Band
-Brave Bird
-Cross Poison
-U-turn
-Zen Headbutt
-31/31/31/31/31/31
-0/248/0/0/12/248
-
-Probopass
-59
-Calm
-Sturdy
-
-Leftovers
-Iron Defense
-Body Press
-Pain Split
-Substitute
-31/0/31/31/31/31
-252/0/0/0/252/4
-
-Raticate
-59
-Jolly
-Guts
-
-Flame Orb
-Protect
-Double-Edge
-Sucker Punch
-U-turn
-31/31/31/31/31/31
-8/252/0/0/0/248
-
-Honchkrow
-60
-Modest
-Moxie
-
-Life Orb
-Foul Play
-Heat Wave
-Air Cutter
-Roost
-31/0/31/31/31/31
-252/0/0/252/0/4
-
-Weavile
-60
-Jolly
-Technician
-
-Heavy-Duty Boots
-Icicle Spear
-Ice Shard
-Aerial Ace
-Knock Off
-31/31/31/31/31/31
-4/252/0/0/0/252
-
-
-886
-Team Galactic Boss Cyrus
-Level Cap:
-Format: Single Battle
-
-Palkia
-70
-Docile
-Pressure
-
-None
-Hydro Pump
-Spacial Rend
-Earth Power
-Aura Sphere
-0/0/0/0/0/0
-0/0/0/0/0/0
-
-Dialga
-70
-Hardy
-Pressure
-
-None
-Flash Cannon
-Roar of Time
-Earth Power
-Aura Sphere
-0/0/0/0/0/0
-0/0/0/0/0/0
-
-
 135
 Sailor Luther
 Level Cap:
@@ -28456,38 +27916,6 @@ Solar Beam
 0/0/0/0/0/0
 
 
-658
-Poké Kid Janet
-Level Cap:
-Format: Single Battle
-
-Pikachu
-57
-Docile
-Static
-
-Light Ball
-Discharge
-Wild Charge
-Light Screen
-Thunder
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Pikachu
-57
-Bashful
-Static
-
-Light Ball
-Discharge
-Wild Charge
-Light Screen
-Thunder
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
 133
 Fisher George
 Level Cap:
@@ -28573,6 +28001,38 @@ Moonblast
 Roost
 Dream Eater
 Hurricane
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+658
+Poké Kid Janet
+Level Cap:
+Format: Single Battle
+
+Pikachu
+57
+Docile
+Static
+
+Light Ball
+Discharge
+Wild Charge
+Light Screen
+Thunder
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Pikachu
+57
+Bashful
+Static
+
+Light Ball
+Discharge
+Wild Charge
+Light Screen
+Thunder
 25/25/25/25/25/25
 0/0/0/0/0/0
 
@@ -30254,470 +29714,6 @@ Muddy Water
 Ice Beam
 Last Resort
 Hydro Pump
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-212
-Psychic Maxwell
-Level Cap:
-Format: Single Battle
-
-Mismagius
-66
-Quirky
-Levitate
-
-None
-Moonblast
-Shadow Ball
-Magical Leaf
-Confuse Ray
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Gengar
-66
-Serious
-Levitate
-
-None
-Toxic
-Protect
-Shadow Ball
-Sludge Bomb
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Slowbro
-66
-Bashful
-Oblivious
-
-None
-Slack Off
-Amnesia
-Psychic
-Scald
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Solrock
-66
-Hardy
-Levitate
-
-None
-Flare Blitz
-Iron Head
-Stone Edge
-Explosion
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-213
-Psychic Brittney
-Level Cap:
-Format: Single Battle
-
-Hypno
-66
-Hardy
-Insomnia
-
-None
-Future Sight
-Zap Cannon
-Psyshock
-Psycho Boost
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Alakazam
-66
-Docile
-Synchronize
-
-None
-Future Sight
-Substitute
-Trick
-Aura Sphere
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Medicham
-66
-Bashful
-Pure Power
-
-None
-Power Trick
-Reversal
-Counter
-Recover
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Lunatone
-66
-Serious
-Levitate
-
-None
-Magic Room
-Future Sight
-Explosion
-Moonblast
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-230
-Ruin Maniac Larry
-Level Cap:
-Format: Single Battle
-
-Aerodactyl
-66
-Serious
-Rock Head
-
-None
-Brave Bird
-Hyper Beam
-Giga Impact
-Sky Attack
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Armaldo
-66
-Quirky
-Battle Armor
-
-None
-Knock Off
-Protect
-Rock Blast
-Stone Edge
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Cradily
-66
-Bashful
-Suction Cups
-
-None
-Mirror Coat
-Spit Up
-Stockpile
-Swallow
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Relicanth
-66
-Docile
-Swift Swim
-
-None
-Earthquake
-Double-Edge
-Hydro Pump
-Head Smash
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-238
-Black Belt Carl
-Level Cap:
-Format: Single Battle
-
-Hariyama
-66
-Hardy
-Thick Fat
-
-None
-Close Combat
-Payback
-Fake Out
-Counter
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Hitmonlee
-66
-Docile
-Limber
-
-None
-High Jump Kick
-Blaze Kick
-Quick Attack
-Fake Out
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Hitmonchan
-66
-Serious
-Keen Eye
-
-None
-Close Combat
-Mach Punch
-Fire Punch
-Ice Punch
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Hitmontop
-66
-Serious
-Intimidate
-
-None
-Triple Kick
-Fake Out
-Mach Punch
-Earthquake
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-201
-Dragon Tamer Hayden
-Level Cap:
-Format: Single Battle
-
-Altaria
-67
-Quirky
-Cloud Nine
-
-None
-Dragon Dance
-Earthquake
-Dragon Claw
-Play Rough
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Salamence
-67
-Serious
-Intimidate
-
-None
-Outrage
-Aerial Ace
-Crunch
-Dragon Dance
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Kingdra
-67
-Hardy
-Swift Swim
-
-None
-Dragon Dance
-Waterfall
-Outrage
-Iron Head
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Dragonite
-67
-Quirky
-Marvel Scale
-
-None
-Dragon Dance
-Outrage
-Extreme Speed
-Wing Attack
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-206
-Ace Trainer Ruben
-Level Cap:
-Format: Single Battle
-
-Shiftry
-67
-Bashful
-Chlorophyll
-
-None
-Leaf Blade
-Fake Out
-Dark Pulse
-Hurricane
-25/25/25/25/25/25
-0/252/0/4/0/252
-
-Gyarados
-67
-Hardy
-Intimidate
-
-None
-Aqua Tail
-Outrage
-Dragon Dance
-Ice Fang
-25/25/25/25/25/25
-0/252/0/0/4/252
-
-Politoed
-67
-Quirky
-Drizzle
-
-None
-Hydro Pump
-Perish Song
-Attract
-Psychic
-25/25/25/25/25/25
-248/0/0/0/252/8
-
-Leafeon
-67
-Quirky
-Leaf Guard
-
-None
-Power Whip
-Psycho Cut
-Night Slash
-Quick Attack
-25/25/25/25/25/25
-0/252/4/0/0/252
-
-
-210
-Ace Trainer Jamie
-Level Cap:
-Format: Single Battle
-
-Vaporeon
-67
-Bashful
-Water Absorb
-
-None
-Muddy Water
-Ice Beam
-Shadow Ball
-Acid Armor
-25/25/25/25/25/25
-252/0/252/0/4/0
-
-Metagross
-67
-Hardy
-Iron Fist
-
-None
-Meteor Mash
-Earthquake
-Agility
-Explosion
-25/25/25/25/25/25
-0/252/252/4/0/0
-
-Roserade
-67
-Hardy
-Technician
-
-None
-Leaf Storm
-Shadow Ball
-Extrasensory
-Sludge Bomb
-25/25/25/25/25/25
-0/0/0/252/4/252
-
-Dugtrio
-67
-Hardy
-Sand Veil
-
-None
-Earthquake
-Stone Edge
-Sucker Punch
-Aerial Ace
-25/25/25/25/25/25
-0/252/4/0/0/252
-
-
-277
-Veteran Armando
-Level Cap:
-Format: Single Battle
-
-Muk
-68
-Serious
-Stench
-
-None
-Acid Armor
-Gunk Shot
-Memento
-Belch
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Mightyena
-68
-Serious
-Intimidate
-
-None
-Yawn
-Take Down
-Play Rough
-Sucker Punch
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Lickilicky
-68
-Serious
-Own Tempo
-
-None
-Hammer Arm
-Power Whip
-Gyro Ball
-Belly Drum
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Pelipper
-68
-Hardy
-Keen Eye
-
-None
-Tailwind
-Uproar
-Hydro Pump
-Hurricane
 25/25/25/25/25/25
 0/0/0/0/0/0
 
@@ -37265,6 +36261,470 @@ Mach Punch
 Fling
 31/31/31/31/31/31
 4/252/0/252/0/0
+
+
+212
+Psychic Maxwell
+Level Cap:
+Format: Single Battle
+
+Mismagius
+66
+Quirky
+Levitate
+
+None
+Moonblast
+Shadow Ball
+Magical Leaf
+Confuse Ray
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Gengar
+66
+Serious
+Levitate
+
+None
+Toxic
+Protect
+Shadow Ball
+Sludge Bomb
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Slowbro
+66
+Bashful
+Oblivious
+
+None
+Slack Off
+Amnesia
+Psychic
+Scald
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Solrock
+66
+Hardy
+Levitate
+
+None
+Flare Blitz
+Iron Head
+Stone Edge
+Explosion
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+213
+Psychic Brittney
+Level Cap:
+Format: Single Battle
+
+Hypno
+66
+Hardy
+Insomnia
+
+None
+Future Sight
+Zap Cannon
+Psyshock
+Psycho Boost
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Alakazam
+66
+Docile
+Synchronize
+
+None
+Future Sight
+Substitute
+Trick
+Aura Sphere
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Medicham
+66
+Bashful
+Pure Power
+
+None
+Power Trick
+Reversal
+Counter
+Recover
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Lunatone
+66
+Serious
+Levitate
+
+None
+Magic Room
+Future Sight
+Explosion
+Moonblast
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+230
+Ruin Maniac Larry
+Level Cap:
+Format: Single Battle
+
+Aerodactyl
+66
+Serious
+Rock Head
+
+None
+Brave Bird
+Hyper Beam
+Giga Impact
+Sky Attack
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Armaldo
+66
+Quirky
+Battle Armor
+
+None
+Knock Off
+Protect
+Rock Blast
+Stone Edge
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Cradily
+66
+Bashful
+Suction Cups
+
+None
+Mirror Coat
+Spit Up
+Stockpile
+Swallow
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Relicanth
+66
+Docile
+Swift Swim
+
+None
+Earthquake
+Double-Edge
+Hydro Pump
+Head Smash
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+238
+Black Belt Carl
+Level Cap:
+Format: Single Battle
+
+Hariyama
+66
+Hardy
+Thick Fat
+
+None
+Close Combat
+Payback
+Fake Out
+Counter
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Hitmonlee
+66
+Docile
+Limber
+
+None
+High Jump Kick
+Blaze Kick
+Quick Attack
+Fake Out
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Hitmonchan
+66
+Serious
+Keen Eye
+
+None
+Close Combat
+Mach Punch
+Fire Punch
+Ice Punch
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Hitmontop
+66
+Serious
+Intimidate
+
+None
+Triple Kick
+Fake Out
+Mach Punch
+Earthquake
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+201
+Dragon Tamer Hayden
+Level Cap:
+Format: Single Battle
+
+Altaria
+67
+Quirky
+Cloud Nine
+
+None
+Dragon Dance
+Earthquake
+Dragon Claw
+Play Rough
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Salamence
+67
+Serious
+Intimidate
+
+None
+Outrage
+Aerial Ace
+Crunch
+Dragon Dance
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Kingdra
+67
+Hardy
+Swift Swim
+
+None
+Dragon Dance
+Waterfall
+Outrage
+Iron Head
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Dragonite
+67
+Quirky
+Marvel Scale
+
+None
+Dragon Dance
+Outrage
+Extreme Speed
+Wing Attack
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+206
+Ace Trainer Ruben
+Level Cap:
+Format: Single Battle
+
+Shiftry
+67
+Bashful
+Chlorophyll
+
+None
+Leaf Blade
+Fake Out
+Dark Pulse
+Hurricane
+25/25/25/25/25/25
+0/252/0/4/0/252
+
+Gyarados
+67
+Hardy
+Intimidate
+
+None
+Aqua Tail
+Outrage
+Dragon Dance
+Ice Fang
+25/25/25/25/25/25
+0/252/0/0/4/252
+
+Politoed
+67
+Quirky
+Drizzle
+
+None
+Hydro Pump
+Perish Song
+Attract
+Psychic
+25/25/25/25/25/25
+248/0/0/0/252/8
+
+Leafeon
+67
+Quirky
+Leaf Guard
+
+None
+Power Whip
+Psycho Cut
+Night Slash
+Quick Attack
+25/25/25/25/25/25
+0/252/4/0/0/252
+
+
+210
+Ace Trainer Jamie
+Level Cap:
+Format: Single Battle
+
+Vaporeon
+67
+Bashful
+Water Absorb
+
+None
+Muddy Water
+Ice Beam
+Shadow Ball
+Acid Armor
+25/25/25/25/25/25
+252/0/252/0/4/0
+
+Metagross
+67
+Hardy
+Iron Fist
+
+None
+Meteor Mash
+Earthquake
+Agility
+Explosion
+25/25/25/25/25/25
+0/252/252/4/0/0
+
+Roserade
+67
+Hardy
+Technician
+
+None
+Leaf Storm
+Shadow Ball
+Extrasensory
+Sludge Bomb
+25/25/25/25/25/25
+0/0/0/252/4/252
+
+Dugtrio
+67
+Hardy
+Sand Veil
+
+None
+Earthquake
+Stone Edge
+Sucker Punch
+Aerial Ace
+25/25/25/25/25/25
+0/252/4/0/0/252
+
+
+277
+Veteran Armando
+Level Cap:
+Format: Single Battle
+
+Muk
+68
+Serious
+Stench
+
+None
+Acid Armor
+Gunk Shot
+Memento
+Belch
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Mightyena
+68
+Serious
+Intimidate
+
+None
+Yawn
+Take Down
+Play Rough
+Sucker Punch
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Lickilicky
+68
+Serious
+Own Tempo
+
+None
+Hammer Arm
+Power Whip
+Gyro Ball
+Belly Drum
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Pelipper
+68
+Hardy
+Keen Eye
+
+None
+Tailwind
+Uproar
+Hydro Pump
+Hurricane
+25/25/25/25/25/25
+0/0/0/0/0/0
 
 
 429
