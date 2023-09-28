@@ -313,6 +313,47 @@ def get_mon_dex_info(pokemon, evolution_paths):
 
     return dex_info
 
+def export_pokedex_for_csv(pokemon):
+    '''
+    This is for the pokedex that is used in the Tracker.
+    It initializes every pokemon for the pokedex and formats them
+    The format is:
+    {"value": pokemonID,
+     "text": pokemon Name,
+     "type": First type,
+     "dualtype": second type,
+     "evolve": evolution path for the pokemon,
+     "generation": Always 8 for this game,
+     "abilities": [
+        ability1,
+        ability2,
+        hiddenAbility
+     ],
+     "dexNum": monsNo,
+     "form": formNo}
+    '''
+    poke_info = get_pokemon_info(pokemon)
+    poke_name = get_pokemon_name(pokemon)
+
+    dex_info = {
+        "value": pokemon,
+        "text": poke_name,
+        "type": poke_info["type"]
+        }
+    if "dualtype" in poke_info.keys() and poke_info["dualtype"] != 0:
+        dex_info["dualtype"] = poke_info["dualtype"]
+    dex_info["generation"] = 8
+    dex_info["abilities"] = [poke_info['ability1'], poke_info['ability2'], poke_info['abilityH']]
+    dex_info["learnset"] = poke_info['learnset']
+    dex_info["tmLearnset"] = poke_info['tmLearnset']
+    dex_info["eggLearnset"] = poke_info['eggLearnset']
+    dex_info["tutorLearnset"] = poke_info['tutorLearnset']
+    dex_info["baseStats"] = poke_info["baseStats"]
+    dex_info["dexNum"] = poke_info['monsno']
+    dex_info["form"] = poke_info['formno']
+
+    return dex_info
+
 def getPokedexInfo():
     '''
     This iterates over every mon from the evolution_pathfinding
@@ -333,12 +374,32 @@ def getPokedexInfo():
         json.dump(pokedex, output, ensure_ascii=False, indent=2)
     return pokedex
 
+def export_csv():
+    '''
+    This iterates over every mon from the evolution_pathfinding
+    There are limits surrounding the valid pokemon in the game and they are not allowed.
+    '''
+    pokedex = []
+    evolutions = evolution_pathfinding()
+
+    for pokemon in evolutions.keys():
+        if pokemon >= 1456:
+            continue
+        evolution_path = evolutions[pokemon]["path"]
+        dex_info = export_pokedex_for_csv(pokemon)
+        pokedex.append(dex_info)
+
+    with open(os.path.join(debug_file_path, "pokedex_info_for_csv.json"), "w", encoding="utf-8") as output:
+        json.dump(pokedex, output, ensure_ascii=False, indent=2)
+    return pokedex
+
 if __name__ == "__main__":
 
     diff_forms, NAME_MAP = get_diff_form_dictionary()
     full_data = load_data()
     forms = generate_form_name_to_pokemon_id()
     getPokedexInfo()
+    export_csv()
 
 if __name__ != "__main__":
     diff_forms, NAME_MAP = get_diff_form_dictionary()

@@ -5,7 +5,15 @@ import unicodedata
 
 import constants
 from load_files import load_data
-from moveUtils import (get_moves, get_pokemon_learnset, get_tech_machine_learnset, get_egg_moves, get_grass_knot_power)
+from moveUtils import (
+    get_moves,
+    get_pokemon_learnset,
+    get_tech_machine_learnset,
+    get_egg_moves,
+    get_grass_knot_power,
+    get_tutor_moves,
+    get_move_string,
+    )
 from pokemonTypes import get_type_name
 
 parent_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
@@ -281,18 +289,37 @@ def get_pokemon_info(personalId=0):
     """
     BDSP works on an ID system, thus it is imperative to be able to swap between monsno and "ID", which is the index of the Pokemon in any of the relevant Pokemon gamefiles. 
     """
+    tmLearnset = {}
+    eggLearnset = {}
+    tutorLearnset = {}
+
     p = personal_data['Personal'][int(personalId)]
+    _, formNo = get_mons_no_and_form_no(personalId)
+    tms = get_tech_machine_learnset(personalId)
+    eggs = get_egg_moves(int(personalId))
+    tutors = get_tutor_moves(p['monsno'], formNo)
+
+    for tm in tms:
+        tmLearnset[get_move_string(tm['moveId'])] = tm['moveId']
+
+    for egg in eggs[0]['moveId']:
+        eggLearnset[get_move_string(egg)] = egg
+
+    for tutor in tutors:
+        tutorLearnset[tutor["move"]["name"]] = tutor["moveId"]
 
     info_dict = {
         'id': p['id'],
         'monsno': p['monsno'],
+        'formno': formNo,
         'name': get_pokemon_name(int(personalId)),
         'ability1': get_ability_string(p['tokusei1']),
         'ability2': get_ability_string(p['tokusei2']),
         'abilityH': get_ability_string(p['tokusei3']),
         'learnset': get_pokemon_learnset(int(personalId)),
-        'tmLearnset': get_tech_machine_learnset(p['machine1'], p['machine2'], p['machine3'], p['machine4']),
-        'eggLearnset': get_egg_moves(int(personalId)),
+        'tmLearnset': tmLearnset,
+        'eggLearnset': eggLearnset,
+        'tutorLearnset': tutorLearnset,
         'baseStats': {
             'hp': p['basic_hp'], 'atk': p['basic_atk'], 'def': p['basic_def'], 
             'spa': p['basic_spatk'], 'spd': p['basic_spdef'], 'spe': p['basic_agi']
@@ -321,10 +348,12 @@ def generate_form_name_to_pokemon_id():
         formNo = int(all_forms["labelName"].split("_")[-1])
         if all_forms["arrayIndex"] != 0 and formNo > 000:
             forms[all_forms["labelName"]] = all_forms["arrayIndex"]
+    with open(os.path.join(debug_file_path, "forms_format.json"), "w", encoding="utf-8") as output:
+        json.dump(forms, output, ensure_ascii=False, indent=2)
     return forms
 
 def get_mons_no_and_form_no(pokemon_id):
-    if pokemon_id < 1010:
+    if pokemon_id <= 1010:
         return pokemon_id, 0
     form_format = reversed_forms[pokemon_id].split("_")
     mons_no = int(form_format[-2].lstrip("0"))

@@ -76,24 +76,58 @@ def get_move_description(move_id=0):
     description = ' '.join(wd['str'] for wd in word_data)
     return description
 
-def parse_tm_learnset_section(dec):
-    """
-    TM learnset are stored in 4 separate 32 bit binary properties. This is the conversion function.
-    """
-    return bin(dec)[2:].zfill(32)[::-1]
+def get_tm_compatibility(pokemon_id=0):
+    if pokemon_id == 0:
+        return None
+    personal_data = full_data['personal_table']['Personal'][pokemon_id]
+    machine1, machine2, machine3, machine4 = personal_data['machine1'], personal_data['machine2'], personal_data['machine3'], personal_data['machine4']
+    tm_compatibility = []
 
-def get_tech_machine_learnset(m1, m2, m3, m4):
+    for i in range(32):
+        tm_compatibility.append((machine1 & (1 << i)) != 0)
+    for i in range(32):
+        tm_compatibility.append((machine2 & (1 << i)) != 0)
+    for i in range(32):
+        tm_compatibility.append((machine3 & (1 << i)) != 0)
+    for i in range(32):
+        tm_compatibility.append((machine4 & (1 << i)) != 0)
+
+    return tm_compatibility
+
+def convert_to_32_bit_integers(binary_array):
+    if len(binary_array) != 128:
+        raise ValueError("Input array must have a length of 128")
+
+    integers = []
+
+    for i in range(0, 128, 32):
+        integer_slice = binary_array[i:i+32]
+        reversed_slice = integer_slice[::-1]
+        integer_value = 0
+
+        for bit in reversed_slice:
+            integer_value = (integer_value << 1) | bit
+
+        integers.append(integer_value)
+
+    return integers
+
+def get_tech_machine_learnset(pokemon_id=0):
     ItemTable = full_data['item_table']
-    learnset = [parse_tm_learnset_section(m) for m in (m1, m2, m3, m4)]
-    learnset = [int(bit) for bits in learnset for bit in bits]
-
+    learnset = get_tm_compatibility(pokemon_id)
+    MAX_TM_COUNT = 104
+    if learnset == None:
+        return []
     can_learn = []
-    for i, has_move in enumerate(learnset):
-        if not has_move:
-            continue
-
+    for i in range(MAX_TM_COUNT):
         tm = ItemTable['WazaMachine'][i]
-        can_learn.append({'level': 'tm', 'moveId': tm['wazaNo']})
+
+        item_no = tm['itemNo']
+        legality_set_value = ItemTable['Item'][item_no]['group_id']
+        is_learnable = learnset[legality_set_value - 1]
+
+        if is_learnable:
+            can_learn.append({'level': 'tm', 'moveId': tm['wazaNo']})
 
     return can_learn
 
@@ -237,6 +271,22 @@ def get_list_of_moves_by_type():
         for move_type in moves_list.keys():
             for move_name in moves_list[move_type]:
                 output.write(f"{move_name}|{move_type}\n")
+
+def get_tutor_moves(monsno=0, formno=0):
+    tutor_moves = full_data['tutor_moves']
+    monsNo = str(monsno)
+    formNo = str(formno)
+    if monsno == 0:
+        return []
+    if monsNo not in tutor_moves.keys():
+        return []
+    if formNo not in tutor_moves[monsNo].keys():
+        return []
+
+    moveset = tutor_moves[monsNo][formNo]
+    tutor_set = [{'moveLevel': 0, 'move': get_move_properties(move_id), 'moveId': move_id} for move_id in moveset]
+
+    return tutor_set
 
 if __name__ != "__main__":
     full_data = load_data()
