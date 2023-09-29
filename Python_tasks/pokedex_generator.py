@@ -1,6 +1,7 @@
 import json
 import os
 import time
+import csv
 
 import constants
 from data_checks import get_average_time, check_bad_dex_mon
@@ -342,7 +343,6 @@ def export_pokedex_for_csv(pokemon):
         }
     if "dualtype" in poke_info.keys() and poke_info["dualtype"] != 0:
         dex_info["dualtype"] = poke_info["dualtype"]
-    dex_info["generation"] = 8
     dex_info["abilities"] = [poke_info['ability1'], poke_info['ability2'], poke_info['abilityH']]
     dex_info["learnset"] = poke_info['learnset']
     dex_info["tmLearnset"] = poke_info['tmLearnset']
@@ -382,12 +382,93 @@ def export_csv():
     pokedex = []
     evolutions = evolution_pathfinding()
 
-    for pokemon in evolutions.keys():
-        if pokemon >= 1456:
-            continue
-        evolution_path = evolutions[pokemon]["path"]
-        dex_info = export_pokedex_for_csv(pokemon)
-        pokedex.append(dex_info)
+    with open(os.path.join(debug_file_path, "pokedex.csv") , mode='w', newline='') as file:
+        writer = csv.writer(file)
+        firstRow = ["Name",
+            "PokemonID",
+            "MonsNo",
+            "FormNo",
+            ]
+        statBlock = [
+            "HP",
+            "Attack",
+            "Defense",
+            "Special Attack",
+            "Special Defense",
+            "Speed"
+        ]
+        for i in range(3):
+            firstRow.append(f"Ability{i + 1}")
+        for stat in statBlock:
+            firstRow.append(stat)
+        firstRow.append("Learnset")
+        for i in range(99):
+            firstRow.append("")
+        firstRow.append("TM Learnset")
+        for i in range(109):
+            firstRow.append("")
+        firstRow.append("Egg Learnset")
+        for i in range(99):
+            firstRow.append("")
+        firstRow.append("Tutor Learnset")
+        for i in range(99):
+            firstRow.append("")
+        writer.writerow(firstRow)
+
+        for pokemon in evolutions.keys():
+            if pokemon >= 1456:
+                continue
+            evolution_path = evolutions[pokemon]["path"]
+            dex_info = export_pokedex_for_csv(pokemon)
+            pokedex.append(dex_info)
+            types = [dex_info['type']]
+            if "dualtype" in dex_info.keys():
+                types.append(dex_info['dualtype'])
+            abilities = dex_info['abilities']
+            baseStats = dex_info['baseStats'].values()
+
+            learnsetKeys = list(dex_info['learnset'].keys())
+            learnsetValues = list(dex_info['learnset'].values())
+            actualLearnset = []
+            for i in range(len(learnsetKeys)):
+                actualLearnset.append(learnsetValues[i])
+                actualLearnset.append(learnsetKeys[i])
+
+            tmlearnset = list(dex_info['tmLearnset'].keys())
+            egglearnset = list(dex_info['eggLearnset'].keys())
+            tutorlearnset = list(dex_info['tutorLearnset'].keys())
+
+            row = [dex_info['text'],
+                dex_info['value'],
+                dex_info['dexNum'],
+                dex_info['form'],
+                ]
+            for ability in abilities:
+                row.append(ability)
+            for stat in baseStats:
+                row.append(stat)
+            for move in actualLearnset:
+                row.append(move)
+            if len(actualLearnset) < 100:
+                for i in range(100 - len(actualLearnset)):
+                    row.append("")
+            for move in tmlearnset:
+                row.append(move)
+            if len(tmlearnset) < 110:
+                for i in range(110 - len(tmlearnset)):
+                    row.append("")
+            for move in egglearnset:
+                row.append(move)
+            if len(egglearnset) < 100:
+                for i in range(100 - len(egglearnset)):
+                    row.append("")
+            for move in tutorlearnset:
+                row.append(move)
+            if len(tutorlearnset) < 100:
+                for i in range(100 - len(tutorlearnset)):
+                    row.append("")
+
+            writer.writerow(row)
 
     with open(os.path.join(debug_file_path, "pokedex_info_for_csv.json"), "w", encoding="utf-8") as output:
         json.dump(pokedex, output, ensure_ascii=False, indent=2)
