@@ -112,7 +112,24 @@ def convert_to_32_bit_integers(binary_array):
 
     return integers
 
-def get_tech_machine_learnset(pokemon_id=0):
+def convert_int_to_bit(integer_list):
+    MachineList = {"machine1" : 0, "machine2" : 0, "machine3" : 0, "machine4" : 0}
+    for i in integer_list:
+        if i > 0 and i < 33:
+            MachineList["machine1"] = MachineList["machine1"] | (1<<(i - 1))
+            pass
+        elif i > 32 and i < 65:
+            MachineList["machine2"] = MachineList["machine2"] | (1<<(i - 33))
+            pass
+        elif i > 64 and i < 97:
+            MachineList["machine3"] = MachineList["machine3"] | (1<<(i - 65))
+            pass
+        elif i > 96 and i < 129:
+            MachineList["machine4"] = MachineList["machine4"] | (1<<(i - 97))
+            pass
+    return MachineList
+
+def get_tech_machine_learnset(pokemon_id=0, baseMode=False):
     learnset = get_tm_compatibility(pokemon_id)
     MAX_TM_COUNT = 104
     if learnset == None:
@@ -125,8 +142,10 @@ def get_tech_machine_learnset(pokemon_id=0):
         legality_set_value = ItemTable['Item'][item_no]['group_id']
         is_learnable = learnset[legality_set_value - 1]
 
-        if is_learnable:
+        if is_learnable and not baseMode:
             can_learn.append({'level': 'tm', 'moveId': tm['wazaNo']})
+        elif is_learnable and baseMode:
+            can_learn.append(tm['machineNo'])
 
     return can_learn
 

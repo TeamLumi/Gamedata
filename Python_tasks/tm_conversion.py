@@ -3,7 +3,7 @@ import json
 
 from moveUtils import (
   get_tech_machine_learnset,
-  convert_to_32_bit_integers,
+  convert_int_to_bit,
   personal_data
 )
 from pokemonUtils import get_mons_no_and_form_no
@@ -13,14 +13,14 @@ input_file_path = os.path.join(parent_file_path, 'input')
 debug_file_path = os.path.join(parent_file_path, "Python_tasks", "Debug")
 
 def create_converted_tm_list():
-  for pokemon in PersonalTable["Personal"]:
+  for pokemon in personal_data["Personal"]:
     if pokemon["id"] == 0:
       continue
 
     pokemonID = pokemon["id"]
     monsNo, formNo = get_mons_no_and_form_no(pokemonID)
-    LearnedList = get_tech_machine_learnset(pokemonID)
-    convertedInts = convert_to_32_bit_integers(LearnedList)
+    LearnedList = get_tech_machine_learnset(pokemonID, True)
+    convertedInts = convert_int_to_bit(LearnedList)
 
     outputObj = {
       "set01" : 0,
