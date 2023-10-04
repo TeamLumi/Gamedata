@@ -113,7 +113,6 @@ def convert_to_32_bit_integers(binary_array):
     return integers
 
 def get_tech_machine_learnset(pokemon_id=0):
-    ItemTable = full_data['item_table']
     learnset = get_tm_compatibility(pokemon_id)
     MAX_TM_COUNT = 104
     if learnset == None:
@@ -130,6 +129,28 @@ def get_tech_machine_learnset(pokemon_id=0):
             can_learn.append({'level': 'tm', 'moveId': tm['wazaNo']})
 
     return can_learn
+
+def find_item_no_by_waza_no(waza_no):
+    for waza_machine in ItemTable['WazaMachine']:
+        if waza_machine['wazaNo'] == waza_no:
+            return waza_machine['itemNo']
+    return None
+
+def create_tm_learnset(move_ids):
+    tm_bitfield = [0] * 128
+
+    for move_id in move_ids:
+        item_id = find_item_no_by_waza_no(move_id)
+        if(item_id == None):
+            continue
+
+        bit_index = ItemTable['Item'][item_id]['group_id']
+        if bit_index > 128:
+            continue
+        
+        tm_bitfield[bit_index] = 1
+    
+    return convert_to_32_bit_integers(tm_bitfield)
 
 def get_pokemon_learnset(monsno=0):
     """
@@ -291,6 +312,7 @@ def get_tutor_moves(monsno=0, formno=0):
 if __name__ != "__main__":
     full_data = load_data()
     learnset_data = full_data['learnset_data']
+    ItemTable = full_data['item_table']
 
 if __name__ == "__main__":
     full_data = load_data()
