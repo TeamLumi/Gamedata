@@ -103,13 +103,15 @@ def get_form_name(id):
     if id in trouble_pokemon_names.keys():
         return trouble_pokemon_names.get(id, None)
     else:
-        name = form_namedata['labelDataArray'][id]['wordDataArray'][0]['str']
-        dexNum = form_namedata['labelDataArray'][id]['labelName'].split("_")[-2]
-        if(name == ""):
+        form_data = form_namedata['labelDataArray'][id]
+        form_name = form_data['wordDataArray'][0]['str']
+        monsNo = form_data['labelName'].split("_")[-2]
+        pokemon_name = get_pokemon_name(int(monsNo))
+        if(form_name == ""):
             return get_pokemon_name(id)
-        if(get_pokemon_name(int(dexNum)) not in name):
-            return get_pokemon_name(int(dexNum)) + ' ' + name
-        return name
+        if(pokemon_name not in form_name):
+            return f"{pokemon_name} {form_name}"
+        return form_name
 
 def get_item_string(item_id):
     item_namedata = full_data['raw_items']
