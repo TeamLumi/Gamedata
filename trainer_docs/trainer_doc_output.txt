@@ -19672,6 +19672,510 @@ Screech
 0/0/0/0/0/0
 
 
+951
+Pokémon Trainer Dawn
+Level Cap:
+Format: Multi Battle Partner
+
+Alakazam
+44
+Timid
+Magic Guard
+
+Life Orb
+Psychic
+Shadow Ball
+Energy Ball
+Dazzling Gleam
+31/31/31/31/31/31
+0/0/0/4/252/252
+
+Mamoswine
+44
+Timid
+Thick Fat
+
+Passho Berry
+Earthquake
+Avalanche
+Stone Edge
+Ice Shard
+31/31/31/31/31/31
+0/252/0/4/252/0
+
+Clefable
+44
+Modest
+Cute Charm
+
+Leftovers
+Moonblast
+Moonlight
+Psychic
+Thunder Wave
+31/31/31/31/31/31
+252/0/252/4/0/0
+
+Lopunny
+44
+Serious
+Scrappy
+
+Choice Band
+Strength
+Fire Punch
+Ice Punch
+Jump Kick
+31/31/31/31/31/31
+0/252/4/0/252/0
+
+Vaporeon
+44
+Naughty
+Water Absorb
+
+Wise Glasses
+Hydro Pump
+Ice Beam
+Extrasensory
+Aqua Ring
+31/31/31/31/31/31
+252/0/252/4/0/0
+
+Torterra
+45
+Jolly
+Overgrow
+
+Sitrus Berry
+Wood Hammer
+Earthquake
+Iron Head
+Rock Slide
+31/31/31/31/31/31
+248/0/252/8/0/0
+Paired with Support
+
+952
+Pokémon Trainer Dawn
+Level Cap:
+Format: Multi Battle Partner
+
+Alakazam
+44
+Timid
+Magic Guard
+
+Life Orb
+Psychic
+Shadow Ball
+Energy Ball
+Dazzling Gleam
+31/31/31/31/31/31
+0/0/0/4/252/252
+
+Mamoswine
+44
+Timid
+Thick Fat
+
+Passho Berry
+Earthquake
+Avalanche
+Stone Edge
+Ice Shard
+31/31/31/31/31/31
+0/252/0/4/252/0
+
+Clefable
+44
+Modest
+Cute Charm
+
+Leftovers
+Moonblast
+Moonlight
+Psychic
+Thunder Wave
+31/31/31/31/31/31
+252/0/252/4/0/0
+
+Lopunny
+44
+Serious
+Scrappy
+
+Choice Band
+Strength
+Fire Punch
+Ice Punch
+Jump Kick
+31/31/31/31/31/31
+0/252/4/0/252/0
+
+Jolteon
+44
+Naughty
+Volt Absorb
+
+Wise Glasses
+Thunder
+Shadow Ball
+Extrasensory
+Thunder Wave
+31/31/31/31/31/31
+0/0/0/4/252/252
+
+Infernape
+45
+Jolly
+Iron Fist
+
+Sitrus Berry
+Fire Blast
+Close Combat
+Thunder Punch
+Rock Slide
+31/31/31/31/31/31
+0/252/4/0/252/0
+Paired with Support
+
+953
+Pokémon Trainer Dawn
+Level Cap:
+Format: Multi Battle Partner
+
+Alakazam
+44
+Timid
+Magic Guard
+
+Life Orb
+Psychic
+Shadow Ball
+Energy Ball
+Dazzling Gleam
+31/31/31/31/31/31
+0/0/0/4/252/252
+
+Mamoswine
+44
+Timid
+Thick Fat
+
+Passho Berry
+Earthquake
+Avalanche
+Stone Edge
+Ice Shard
+31/31/31/31/31/31
+0/252/0/4/252/0
+
+Clefable
+44
+Modest
+Cute Charm
+
+Leftovers
+Moonblast
+Moonlight
+Psychic
+Thunder Wave
+31/31/31/31/31/31
+252/0/252/4/0/0
+
+Lopunny
+44
+Serious
+Scrappy
+
+Choice Band
+Strength
+Fire Punch
+Ice Punch
+Jump Kick
+31/31/31/31/31/31
+0/252/4/0/252/0
+
+Flareon
+44
+Naughty
+Flash Fire
+
+Muscle Band
+Flare Blitz
+Play Rough
+Close Combat
+Will-O-Wisp
+31/31/31/31/31/31
+0/252/4/0/252/0
+
+Empoleon
+45
+Jolly
+Torrent
+
+Sitrus Berry
+Surf
+Flash Cannon
+Grass Knot
+Feather Dance
+31/31/31/31/31/31
+252/0/76/180/0/0
+Paired with Support
+
+954
+Pokémon Trainer Lucas
+Level Cap:
+Format: Multi Battle Partner
+
+Alakazam
+44
+Timid
+Magic Guard
+
+Life Orb
+Psychic
+Shadow Ball
+Energy Ball
+Dazzling Gleam
+31/31/31/31/31/31
+0/0/0/4/252/252
+
+Mamoswine
+44
+Timid
+Thick Fat
+
+Passho Berry
+Earthquake
+Avalanche
+Stone Edge
+Ice Shard
+31/31/31/31/31/31
+0/252/0/4/252/0
+
+Granbull
+44
+Modest
+Intimidate
+
+Choice Band
+Play Rough
+Close Combat
+Earthquake
+Crunch
+31/31/31/31/31/31
+212/252/0/0/44/0
+
+Lickilicky
+44
+Serious
+Oblivious
+
+Leftovers
+Strength
+Zen Headbutt
+Earthquake
+Amnesia
+31/31/31/31/31/31
+248/244/8/0/0/0
+
+Vaporeon
+44
+Naughty
+Water Absorb
+
+Wise Glasses
+Hydro Pump
+Ice Beam
+Extrasensory
+Aqua Ring
+31/31/31/31/31/31
+251/0/252/4/0/0
+
+Torterra
+45
+Jolly
+Overgrow
+
+Sitrus Berry
+Wood Hammer
+Earthquake
+Iron Head
+Rock Slide
+31/31/31/31/31/31
+247/0/252/8/0/0
+Paired with Support
+
+955
+Pokémon Trainer Lucas
+Level Cap:
+Format: Multi Battle Partner
+
+Alakazam
+44
+Timid
+Magic Guard
+
+Life Orb
+Psychic
+Shadow Ball
+Energy Ball
+Dazzling Gleam
+31/31/31/31/31/31
+0/0/0/4/252/252
+
+Mamoswine
+44
+Timid
+Thick Fat
+
+Passho Berry
+Earthquake
+Avalanche
+Stone Edge
+Ice Shard
+31/31/31/31/31/31
+0/252/0/4/252/0
+
+Granbull
+44
+Modest
+Intimidate
+
+Choice Band
+Play Rough
+Close Combat
+Earthquake
+Crunch
+31/31/31/31/31/31
+212/252/0/0/44/0
+
+Lickilicky
+44
+Serious
+Oblivious
+
+Leftovers
+Strength
+Zen Headbutt
+Earthquake
+Amnesia
+31/31/31/31/31/31
+248/244/8/0/0/0
+
+Jolteon
+44
+Naughty
+Volt Absorb
+
+Wise Glasses
+Thunder
+Shadow Ball
+Extrasensory
+Thunder Wave
+31/31/31/31/31/31
+0/0/0/4/252/252
+
+Infernape
+45
+Jolly
+Iron Fist
+
+Sitrus Berry
+Fire Blast
+Close Combat
+Thunder Punch
+Rock Slide
+31/31/31/31/31/31
+0/251/4/0/0/252
+Paired with Support
+
+956
+Pokémon Trainer Lucas
+Level Cap:
+Format: Multi Battle Partner
+
+Alakazam
+44
+Timid
+Magic Guard
+
+Life Orb
+Psychic
+Shadow Ball
+Energy Ball
+Dazzling Gleam
+31/31/31/31/31/31
+0/0/0/4/252/252
+
+Mamoswine
+44
+Timid
+Thick Fat
+
+Passho Berry
+Earthquake
+Avalanche
+Stone Edge
+Ice Shard
+31/31/31/31/31/31
+0/252/0/4/252/0
+
+Granbull
+44
+Modest
+Intimidate
+
+Choice Band
+Play Rough
+Close Combat
+Earthquake
+Crunch
+31/31/31/31/31/31
+212/252/0/0/44/0
+
+Lickilicky
+44
+Serious
+Oblivious
+
+Leftovers
+Strength
+Zen Headbutt
+Earthquake
+Amnesia
+31/31/31/31/31/31
+248/244/8/0/0/0
+
+Flareon
+44
+Naughty
+Flash Fire
+
+Muscle Band
+Flare Blitz
+Play Rough
+Close Combat
+Will-O-Wisp
+31/31/31/31/31/31
+0/252/4/0/252/0
+
+Empoleon
+45
+Jolly
+Torrent
+
+Sitrus Berry
+Surf
+Flash Cannon
+Grass Knot
+Feather Dance
+31/31/31/31/31/31
+251/0/76/180/0/0
+Paired with Support
+
 319
 Team Galactic Grunt
 Level Cap:
@@ -36726,6 +37230,510 @@ Hurricane
 25/25/25/25/25/25
 0/0/0/0/0/0
 
+
+971
+Pokémon Trainer Dawn
+Level Cap:
+Format: Multi Battle Partner
+
+Alakazam
+69
+Timid
+Magic Guard
+
+Life Orb
+Psychic
+Shadow Ball
+Aura Sphere
+Dazzling Gleam
+31/31/31/31/31/31
+4/0/0/252/0/252
+
+Mamoswine
+69
+Jolly
+Thick Fat
+
+Choice Band
+Earthquake
+Icicle Crash
+Stone Edge
+Superpower
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Clefable
+69
+Modest
+Magic Guard
+
+Leftovers
+Moonblast
+Soft-Boiled
+Calm Mind
+Flamethrower
+31/31/31/31/31/31
+252/0/196/0/60/0
+
+Lopunny
+69
+Jolly
+Scrappy
+
+Focus Sash
+Mega Kick
+High Jump Kick
+Fake Out
+Iron Tail
+31/31/31/31/31/31
+0/252/0/0/0/252
+
+Vaporeon
+69
+Bold
+Water Absorb
+
+Petaya Berry
+Hydro Pump
+Ice Beam
+Rest
+Sleep Talk
+31/31/31/31/31/31
+252/0/228/0/28/0
+
+Torterra
+70
+Adamant
+Solid Rock
+
+Yache Berry
+Wood Hammer
+Earthquake
+Stone Edge
+Heavy Slam
+31/31/31/31/31/31
+252/0/46/0/210/0
+Paired with Support
+
+972
+Pokémon Trainer Dawn
+Level Cap:
+Format: Multi Battle Partner
+
+Alakazam
+69
+Timid
+Magic Guard
+
+Life Orb
+Psychic
+Shadow Ball
+Aura Sphere
+Dazzling Gleam
+31/31/31/31/31/31
+4/0/0/252/0/252
+
+Mamoswine
+69
+Jolly
+Thick Fat
+
+Choice Band
+Earthquake
+Icicle Crash
+Stone Edge
+Superpower
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Clefable
+69
+Modest
+Magic Guard
+
+Leftovers
+Moonblast
+Soft-Boiled
+Calm Mind
+Flamethrower
+31/31/31/31/31/31
+252/0/196/0/60/0
+
+Lopunny
+69
+Jolly
+Scrappy
+
+Focus Sash
+Mega Kick
+High Jump Kick
+Fake Out
+Iron Tail
+31/31/31/31/31/31
+0/252/0/0/0/252
+
+Jolteon
+69
+Adamant
+Volt Absorb
+
+Shuca Berry
+Thunderbolt
+Grass Knot
+Shadow Ball
+Thunder Wave
+31/31/31/31/31/31
+4/0/0/252/0/252
+
+Infernape
+70
+Adamant
+Unburden
+
+Lansat Berry
+Flare Blitz
+Close Combat
+Stone Edge
+Thunder Punch
+31/31/31/31/31/31
+0/252/4/0/0/252
+Paired with Support
+
+973
+Pokémon Trainer Dawn
+Level Cap:
+Format: Multi Battle Partner
+
+Alakazam
+69
+Timid
+Magic Guard
+
+Life Orb
+Psychic
+Shadow Ball
+Aura Sphere
+Dazzling Gleam
+31/31/31/31/31/31
+4/0/0/252/0/252
+
+Mamoswine
+69
+Jolly
+Thick Fat
+
+Choice Band
+Earthquake
+Icicle Crash
+Stone Edge
+Superpower
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Clefable
+69
+Modest
+Magic Guard
+
+Leftovers
+Moonblast
+Soft-Boiled
+Calm Mind
+Flamethrower
+31/31/31/31/31/31
+252/0/196/0/60/0
+
+Lopunny
+69
+Jolly
+Scrappy
+
+Focus Sash
+Mega Kick
+High Jump Kick
+Fake Out
+Iron Tail
+31/31/31/31/31/31
+0/252/0/0/0/252
+
+Flareon
+69
+Adamant
+Flash Fire
+
+Passho Berry
+Flare Blitz
+Play Rough
+Close Combat
+Wild Charge
+31/31/31/31/31/31
+4/252/0/0/0/252
+
+Empoleon
+70
+Timid
+Competitive
+
+Custap Berry
+Hydro Cannon
+Flash Cannon
+Grass Knot
+Ice Beam
+31/31/31/31/31/31
+252/0/76/180/0/0
+Paired with Support
+
+974
+Pokémon Trainer Lucas
+Level Cap:
+Format: Multi Battle Partner
+
+Alakazam
+69
+Timid
+Magic Guard
+
+Life Orb
+Psychic
+Shadow Ball
+Aura Sphere
+Dazzling Gleam
+31/31/31/31/31/31
+4/0/0/252/0/252
+
+Mamoswine
+69
+Jolly
+Thick Fat
+
+Choice Band
+Earthquake
+Icicle Crash
+Stone Edge
+Superpower
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Granbull
+69
+Adamant
+Intimidate
+
+Expert Belt
+Play Rough
+Close Combat
+Crunch
+Earthquake
+31/31/31/31/31/31
+252/252/0/0/0/4
+
+Lickilicky
+69
+Adamant
+Oblivious
+
+Chople Berry
+Zen Headbutt
+Explosion
+Hammer Arm
+Earthquake
+31/31/31/31/31/31
+252/252/0/0/4/0
+
+Vaporeon
+69
+Bold
+Water Absorb
+
+Petaya Berry
+Hydro Pump
+Ice Beam
+Rest
+Sleep Talk
+31/31/31/31/31/31
+252/0/228/0/28/0
+
+Torterra
+70
+Adamant
+Solid Rock
+
+Yache Berry
+Wood Hammer
+Earthquake
+Stone Edge
+Heavy Slam
+31/31/31/31/31/31
+252/0/46/0/210/0
+Paired with Support
+
+975
+Pokémon Trainer Lucas
+Level Cap:
+Format: Multi Battle Partner
+
+Alakazam
+69
+Timid
+Magic Guard
+
+Life Orb
+Psychic
+Shadow Ball
+Aura Sphere
+Dazzling Gleam
+31/31/31/31/31/31
+4/0/0/252/0/252
+
+Mamoswine
+69
+Jolly
+Thick Fat
+
+Choice Band
+Earthquake
+Icicle Crash
+Stone Edge
+Superpower
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Granbull
+69
+Adamant
+Intimidate
+
+Expert Belt
+Play Rough
+Close Combat
+Crunch
+Earthquake
+31/31/31/31/31/31
+252/252/0/0/0/4
+
+Lickilicky
+69
+Adamant
+Oblivious
+
+Chople Berry
+Zen Headbutt
+Explosion
+Hammer Arm
+Earthquake
+31/31/31/31/31/31
+252/252/0/0/4/0
+
+Jolteon
+69
+Adamant
+Volt Absorb
+
+Shuca Berry
+Thunderbolt
+Grass Knot
+Shadow Ball
+Thunder Wave
+31/31/31/31/31/31
+4/0/0/252/0/252
+
+Infernape
+70
+Adamant
+Unburden
+
+Lansat Berry
+Flare Blitz
+Close Combat
+Stone Edge
+Thunder Punch
+31/31/31/31/31/31
+0/252/4/0/0/252
+Paired with Support
+
+976
+Pokémon Trainer Lucas
+Level Cap:
+Format: Multi Battle Partner
+
+Alakazam
+69
+Timid
+Magic Guard
+
+Life Orb
+Psychic
+Shadow Ball
+Aura Sphere
+Dazzling Gleam
+31/31/31/31/31/31
+4/0/0/252/0/252
+
+Mamoswine
+69
+Jolly
+Thick Fat
+
+Choice Band
+Earthquake
+Icicle Crash
+Stone Edge
+Superpower
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Granbull
+69
+Adamant
+Intimidate
+
+Expert Belt
+Play Rough
+Close Combat
+Crunch
+Earthquake
+31/31/31/31/31/31
+252/252/0/0/0/4
+
+Lickilicky
+69
+Adamant
+Oblivious
+
+Chople Berry
+Zen Headbutt
+Explosion
+Hammer Arm
+Earthquake
+31/31/31/31/31/31
+252/252/0/0/4/0
+
+Flareon
+69
+Adamant
+Flash Fire
+
+Passho Berry
+Flare Blitz
+Play Rough
+Close Combat
+Wild Charge
+31/31/31/31/31/31
+4/252/0/0/0/252
+
+Empoleon
+70
+Timid
+Competitive
+
+Custap Berry
+Hydro Cannon
+Flash Cannon
+Grass Knot
+Ice Beam
+31/31/31/31/31/31
+252/0/76/180/0/0
+Paired with Support
 
 429
 Bird Keeper Audrey

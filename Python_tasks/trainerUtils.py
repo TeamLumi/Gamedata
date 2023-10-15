@@ -170,7 +170,6 @@ def get_assorted_trainer_data(file_path, trainerID1, trainerID2, args):
     '''
     Refer to get_random_team_data for info about the branching paths here
     '''
-    count_keeper = []
     trainers = []
     zoneID, areaName = get_zone_info(file_path)
     for starter in constants.STARTERS:
@@ -179,25 +178,33 @@ def get_assorted_trainer_data(file_path, trainerID1, trainerID2, args):
         trainers.extend(rival_teams)
     if rival_teams:
         return trainers
-    if count_keeper == []:
+    if trainers == []:
         cyrus_lookup = f"ev_{areaName.lower()}_randomteam_cyrus"
         cyrus_teams = get_random_team_data(file_path, trainerID1, trainerID2, cyrus_lookup, 4)
         if cyrus_teams:
             trainers.extend(cyrus_teams)
             return trainers
-    if count_keeper == []:
+    if trainers == []:
         master_teams = get_random_team_data(file_path, trainerID1, trainerID2, constants.MASTER_TRAINER, constants.MASTER_TRAINER_TYPES)
         if master_teams:
             trainers.extend(master_teams)
             return trainers
-    if count_keeper == []:
+    if trainers == []:
         celebi_teams = get_random_team_data(file_path, trainerID1, trainerID2, constants.CELEBI, 7)
         if celebi_teams:
             trainers.extend(celebi_teams)
             return trainers
-    if count_keeper == []:
+    for i in [constants.MALE, constants.FEMALE]:
+        if i == constants.MALE:
+            lucas_support_teams = get_support_trainers_data(file_path, areaName, constants.MALE, zoneID )
+            if lucas_support_teams:
+                trainers.extend(lucas_support_teams)
+        dawn_support_teams = get_support_trainers_data(file_path, areaName, constants.FEMALE, zoneID )
+        if dawn_support_teams:
+            trainers.extend(dawn_support_teams)
+            return trainers
+    if trainers == []:
         print("Lucas and Dawn's Single Battles are not yet supported:", areaName, args)
-        return trainers
 
 def get_single_trainer(zoneID, ID, temp_IDs, name, is_gym_rematch=0):
     '''
@@ -337,11 +344,34 @@ def get_support_trainers_data(file_path, area_name, support_name, zoneID):
     temp_support_IDs = []
     rival_multi_lookup = f"{area_name.lower()}_rival_support"
 
-    for support in [support_name]:
-        current_support_lookup = f"{area_name.lower()}_{support}_100" ### This is for Lucas and Dawn in C01 and C07. Is this the most optimal? Maybe?
-        temp_support_IDs = parse_randomized_teams(file_path, current_support_lookup, 3, None)
+    current_support_lookup = f"{area_name.lower()}_{support_name}_100" ### This is for Lucas and Dawn in C01 and C07. Is this the most optimal? Maybe?
+    temp_support_IDs = parse_randomized_teams(file_path, current_support_lookup, 3, None)
     if temp_support_IDs == [] and support_name != None:
         temp_support_IDs = get_bad_support_IDs(support_name, file_path)
+    if (
+        temp_support_IDs == [] 
+        and support_name == constants.FEMALE 
+        and area_name == constants.ROUTE_210
+        ):
+        temp_support_IDs = parse_randomized_teams(file_path, constants.R210B_BAD_SUPPORT_LOOKUP1, 3, None)
+    elif (
+        temp_support_IDs == [] 
+        and support_name == constants.MALE 
+        and area_name == constants.ROUTE_210
+        ):
+        temp_support_IDs = parse_randomized_teams(file_path, constants.R210B_BAD_SUPPORT_LOOKUP2, 3, None)        
+    if (
+        temp_support_IDs == [] 
+        and support_name == constants.MALE 
+        and area_name == constants.ROUTE_224
+    ):
+        temp_support_IDs = parse_randomized_teams(file_path, constants.R224_BAD_SUPPORT_LOOKUP2, 3, None)
+    elif (
+        temp_support_IDs == [] 
+        and support_name == constants.FEMALE 
+        and area_name == constants.ROUTE_224
+        ):
+        temp_support_IDs = parse_randomized_teams(file_path, constants.R224_BAD_SUPPORT_LOOKUP1, 3, None)
     if temp_support_IDs == []:
         temp_support_IDs = parse_randomized_teams(file_path, rival_multi_lookup, 3, None)
     if temp_support_IDs == []:

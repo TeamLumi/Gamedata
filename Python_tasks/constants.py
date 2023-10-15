@@ -87,8 +87,15 @@ MALE = "male"
 FEMALE = "female"
 
 MASTER_TRAINER = "Master"
+ROUTE_224 = "R224"
+ROUTE_210 = "R210B"
 BAD_SUPPORT_LOOKUP1 = "ev_r207_func_17" ### These bad lookups are for Lucas and Dawn on Route 207
 BAD_SUPPORT_LOOKUP2 = "ev_r207_func_20"
+R224_BAD_SUPPORT_LOOKUP1 = "ev_r224_support_dawn_battle_party"
+R224_BAD_SUPPORT_LOOKUP2 = "ev_r224_support_lucas_battle_party"
+R210B_BAD_SUPPORT_LOOKUP1 = "ev_r210b_support_set_dawn_party_1"
+R210B_BAD_SUPPORT_LOOKUP2 = "ev_r210b_support_set_lucas_party_1"
+
 SUPPORT_LINK = "Support"
 CITY_TRAINER = 'City'
 LEAGUE_TRAINER = "League"
