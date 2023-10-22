@@ -1,3 +1,16 @@
+## All that needs to change to change modes is this INPUT_NAME
+## If you are using 3.0 files, change it to "3.0Input"
+## Otherwise just set it to "input"
+INPUT_NAME = "3.0Input"
+if INPUT_NAME == "input":
+    DEBUG_NAME = "Debug"
+    OUTPUT_NAME = "output"
+    POKEDEX_LENGTH = 1010
+elif INPUT_NAME == "3.0Input":
+    DEBUG_NAME = "3.0Debug"
+    OUTPUT_NAME = "3.0Output"
+    POKEDEX_LENGTH = 1017
+
 TRAINER_BATTLE = '_TRAINER_BTL_SET'
 MULTI_TRAINER_BATTLE = '_TRAINER_MULTI_BTL_SET'
 GYM_AREA_NAME = "GYM"

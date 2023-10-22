@@ -17,8 +17,8 @@ from moveUtils import (
 from pokemonTypes import get_type_name
 
 parent_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-input_file_path = os.path.join(parent_file_path, 'input')
-debug_file_path = os.path.join(parent_file_path, "Python_tasks", "Debug")
+input_file_path = os.path.join(parent_file_path, constants.INPUT_NAME)
+debug_file_path = os.path.join(parent_file_path, "Python_tasks", constants.DEBUG_NAME)
 personal_data_path = os.path.join(input_file_path, 'PersonalTable.json')
 
 personal_data = 0
@@ -83,12 +83,12 @@ def get_form_name(id):
     form_namedata = full_data['form_namedata']
     new_trouble_pokemon_names = { 
         # This is to test the 3.0 data
-        1245: 'Ash-Greninja',
-        1288: 'Meowstic-F',
+        1258: 'Ash-Greninja',
+        1301: 'Meowstic-F',
         1314: 'Rockruff Own-Tempo',
-        1445: 'Indeedee-F',
-        1459: 'Basculegion-F',
-        1461: 'Oinkologne-F',
+        1458: 'Indeedee-F',
+        1473: 'Basculegion-F',
+        1475: 'Oinkologne-F',
         1067: "Galarian Farfetch'd"
     }
     trouble_pokemon_names = {
@@ -100,8 +100,13 @@ def get_form_name(id):
         1456: 'Oinkologne-F',
         1067: "Galarian Farfetch'd"
     }
-    if id in trouble_pokemon_names.keys():
-        return trouble_pokemon_names.get(id, None)
+    if constants.INPUT_NAME == "3.0Input":
+        problem_names = new_trouble_pokemon_names
+    else:
+        problem_names = trouble_pokemon_names
+
+    if id in problem_names.keys():
+        return problem_names.get(id, None)
     else:
         form_data = form_namedata['labelDataArray'][id]
         form_name = form_data['wordDataArray'][0]['str']
@@ -251,7 +256,7 @@ def create_diff_forms_dictionary(form_dict):
     Add the slugged current value as the third value in the array
     """
     diff_forms = {}
-    NAME_MAP = {}    
+    NAME_MAP = {}
     for mons_no in form_dict.keys():
         mons_array = form_dict[mons_no]
         current_pokemon_name = get_pokemon_name(int(mons_no))
@@ -355,7 +360,7 @@ def generate_form_name_to_pokemon_id():
     return forms
 
 def get_mons_no_and_form_no(pokemon_id):
-    if pokemon_id <= 1010:
+    if pokemon_id <= constants.POKEDEX_LENGTH:
         return pokemon_id, 0
     form_format = reversed_forms[pokemon_id].split("_")
     mons_no = int(form_format[-2].lstrip("0"))

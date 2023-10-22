@@ -18,9 +18,9 @@ from pokemonUtils import (get_diff_form_dictionary,
 
 # Get the repo file path for cleaner path generating
 repo_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-input_file_path = os.path.join(repo_file_path, 'input')
-debug_file_path = os.path.join(repo_file_path, "Python_tasks", "Debug")
-output_file_path = os.path.join(repo_file_path, "Python_tasks", "output")
+input_file_path = os.path.join(repo_file_path, constants.INPUT_NAME)
+debug_file_path = os.path.join(repo_file_path, "Python_tasks", constants.DEBUG_NAME)
+output_file_path = os.path.join(repo_file_path, "Python_tasks", constants.OUTPUT_NAME)
 
 honeywork_cpp_filepath = os.path.join(input_file_path, "honeywork.cpp")
 areas_file_path = os.path.join(input_file_path, 'areas_updated.csv')

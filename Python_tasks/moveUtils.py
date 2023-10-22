@@ -9,8 +9,8 @@ from load_files import load_data
 from pokemonTypes import get_type_name
 
 parent_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-input_file_path = os.path.join(parent_file_path, 'input')
-debug_file_path = os.path.join(parent_file_path, "Python_tasks", "Debug")
+input_file_path = os.path.join(parent_file_path, constants.INPUT_NAME)
+debug_file_path = os.path.join(parent_file_path, "Python_tasks", constants.DEBUG_NAME)
 personal_data_path = os.path.join(input_file_path, 'PersonalTable.json')
 
 move_enum = 0

@@ -1,5 +1,6 @@
 import os
 import json
+import constants
 
 from moveUtils import (
   get_tech_machine_learnset,
@@ -9,8 +10,8 @@ from moveUtils import (
 from pokemonUtils import get_mons_no_and_form_no
 
 parent_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-input_file_path = os.path.join(parent_file_path, 'input')
-debug_file_path = os.path.join(parent_file_path, "Python_tasks", "Debug")
+input_file_path = os.path.join(parent_file_path, constants.INPUT_NAME)
+debug_file_path = os.path.join(parent_file_path, "Python_tasks", constants.DEBUG_NAME)
 
 def create_converted_tm_list():
   for pokemon in personal_data["Personal"]:

@@ -9,9 +9,9 @@ from load_files import load_data
 from pokemonUtils import generate_form_name_to_pokemon_id, get_pokemon_info, get_pokemon_name, get_diff_form_dictionary, get_mons_no_and_form_no, get_form_pokemon_personal_id
 
 repo_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-input_file_path = os.path.join(repo_file_path, 'input')
-debug_file_path = os.path.join(repo_file_path, "Python_tasks", "Debug")
-output_file_path = os.path.join(repo_file_path, "Python_tasks", "output")
+input_file_path = os.path.join(repo_file_path, constants.INPUT_NAME)
+debug_file_path = os.path.join(repo_file_path, "Python_tasks", constants.DEBUG_NAME)
+output_file_path = os.path.join(repo_file_path, "Python_tasks", constants.OUTPUT_NAME)
 first_execution_list = []
 second_execution_list = []
 
@@ -303,7 +303,7 @@ def get_mon_dex_info(pokemon, evolution_paths):
     dex_info["abilities"] = [poke_info['ability1'], poke_info['ability2'], poke_info['abilityH']]
     dex_info["dexNum"] = pokemon
     dex_info["form"] = 0
-    if pokemon > 1010:
+    if pokemon > constants.POKEDEX_LENGTH:
         for poke_form in diff_forms.keys():
             if poke_name in diff_forms[poke_form]:
                 form_number = diff_forms[poke_form][4]

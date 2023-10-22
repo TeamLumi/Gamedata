@@ -1,11 +1,12 @@
 import os
 import json
+import constants
 from pokemonUtils import get_pokemon_name, make_ability_object, get_gender, get_form_name
 from pokemonTypes import get_types
 
 parent_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-personal_data_file_path = os.path.join(parent_file_path, 'input', 'PersonalTable.json')
-output_file_path = os.path.join(parent_file_path, 'output', 'LumiMons_Py.json')
+personal_data_file_path = os.path.join(parent_file_path, constants.INPUT_NAME, 'PersonalTable.json')
+output_file_path = os.path.join(parent_file_path, constants.OUTPUT_NAME, 'LumiMons_Py.json')
 
 with open(personal_data_file_path, 'r') as f:
     personal_data = json.load(f)
