@@ -416,7 +416,7 @@ def export_csv():
         writer.writerow(firstRow)
 
         for pokemon in evolutions.keys():
-            if pokemon >= 1456:
+            if pokemon >= constants.NAT_DEX_LENGTH:
                 continue
             evolution_path = evolutions[pokemon]["path"]
             dex_info = export_pokedex_for_csv(pokemon)
