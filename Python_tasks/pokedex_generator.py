@@ -351,6 +351,7 @@ def export_pokedex_for_csv(pokemon):
     dex_info["baseStats"] = poke_info["baseStats"]
     dex_info["dexNum"] = poke_info['monsno']
     dex_info["form"] = poke_info['formno']
+    dex_info["eggGroups"] = []
 
     return dex_info
 
@@ -389,6 +390,8 @@ def export_csv():
             "PokemonID",
             "MonsNo",
             "FormNo",
+            "Type 1",
+            "Type 2"
             ]
         statBlock = [
             "HP",
@@ -425,6 +428,8 @@ def export_csv():
             types = [dex_info['type']]
             if "dualtype" in dex_info.keys():
                 types.append(dex_info['dualtype'])
+            else:
+                types.append("")
             abilities = dex_info['abilities']
             baseStats = dex_info['baseStats'].values()
 
@@ -444,6 +449,8 @@ def export_csv():
                 dex_info['dexNum'],
                 dex_info['form'],
                 ]
+            for type in types:
+                row.append(type)
             for ability in abilities:
                 row.append(ability)
             for stat in baseStats:
