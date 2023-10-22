@@ -82,6 +82,24 @@ TRACKER_VARS = {
     TRAINER_SCHOOL: TRAINER_SCHOOL_TRACKER_VAR,
 }
 
+EGG_GROUPS = {
+    0: "None",
+    1: "Monster",
+    2: "Water 1",
+    3: "Bug",
+    4: "Flying",
+    5: "Field",
+    6: "Fairy",
+    7: "Grass",
+    8: "Human-Like",
+    9: "Water 3",
+    10: "Mineral",
+    11: "Amorphous",
+    12: "Water 2",
+    13: "Ditto",
+    14: "Dragon",
+    15: "No Eggs",
+}
 
 BAD_ENCOUNTER_LIST = ["Gigantamax", "Eternamax", "Mega ", "Totem "]
 STARTERS = ["piplup", "turtwig", "chimchar"]

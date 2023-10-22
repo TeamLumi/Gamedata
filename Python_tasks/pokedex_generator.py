@@ -351,7 +351,7 @@ def export_pokedex_for_csv(pokemon):
     dex_info["baseStats"] = poke_info["baseStats"]
     dex_info["dexNum"] = poke_info['monsno']
     dex_info["form"] = poke_info['formno']
-    dex_info["eggGroups"] = []
+    dex_info["eggGroups"] = [constants.EGG_GROUPS[poke_info['egg_group1']], constants.EGG_GROUPS[poke_info['egg_group2']]]
 
     return dex_info
 
@@ -391,7 +391,9 @@ def export_csv():
             "MonsNo",
             "FormNo",
             "Type 1",
-            "Type 2"
+            "Type 2",
+            "Egg Group 1",
+            "Egg Group 2",
             ]
         statBlock = [
             "HP",
@@ -432,6 +434,7 @@ def export_csv():
                 types.append("")
             abilities = dex_info['abilities']
             baseStats = dex_info['baseStats'].values()
+            egg_groups = dex_info['eggGroups']
 
             learnsetKeys = list(dex_info['learnset'].keys())
             learnsetValues = list(dex_info['learnset'].values())
@@ -449,8 +452,10 @@ def export_csv():
                 dex_info['dexNum'],
                 dex_info['form'],
                 ]
-            for type in types:
-                row.append(type)
+            for _type in types:
+                row.append(_type)
+            for group in egg_groups:
+                row.append(group)
             for ability in abilities:
                 row.append(ability)
             for stat in baseStats:

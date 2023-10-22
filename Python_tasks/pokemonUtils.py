@@ -320,6 +320,8 @@ def get_pokemon_info(personalId=0):
         'monsno': p['monsno'],
         'formno': formNo,
         'name': get_pokemon_name(int(personalId)),
+        'egg_group1': p['egg_group1'],
+        'egg_group2': p['egg_group2'],
         'ability1': get_ability_string(p['tokusei1']),
         'ability2': get_ability_string(p['tokusei2']),
         'abilityH': get_ability_string(p['tokusei3']),
