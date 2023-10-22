@@ -12,7 +12,7 @@ from pokemonUtils import get_pokemon_from_trainer_info, get_pokemon_name
 from trainerUtils import parse_ev_script_file, process_files
 
 repo_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-output_file_path = os.path.join(repo_file_path, "Python_tasks", "output")
+output_file_path = os.path.join(repo_file_path, "Python_tasks", constants.OUTPUT_NAME)
 trainer_doc_data_file_path = os.path.join(repo_file_path, "trainer_docs", "trainer_doc_output.txt")
 
 first_excecution_time_list = []

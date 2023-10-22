@@ -1,6 +1,7 @@
 import json
 import os
 import time
+import csv
 
 import constants
 from data_checks import get_average_time, check_bad_dex_mon
@@ -8,9 +9,9 @@ from load_files import load_data
 from pokemonUtils import generate_form_name_to_pokemon_id, get_pokemon_info, get_pokemon_name, get_diff_form_dictionary, get_mons_no_and_form_no, get_form_pokemon_personal_id
 
 repo_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-input_file_path = os.path.join(repo_file_path, 'input')
-debug_file_path = os.path.join(repo_file_path, "Python_tasks", "Debug")
-output_file_path = os.path.join(repo_file_path, "Python_tasks", "output")
+input_file_path = os.path.join(repo_file_path, constants.INPUT_NAME)
+debug_file_path = os.path.join(repo_file_path, "Python_tasks", constants.DEBUG_NAME)
+output_file_path = os.path.join(repo_file_path, "Python_tasks", constants.OUTPUT_NAME)
 first_execution_list = []
 second_execution_list = []
 
@@ -302,7 +303,7 @@ def get_mon_dex_info(pokemon, evolution_paths):
     dex_info["abilities"] = [poke_info['ability1'], poke_info['ability2'], poke_info['abilityH']]
     dex_info["dexNum"] = pokemon
     dex_info["form"] = 0
-    if pokemon > 1010:
+    if pokemon > constants.POKEDEX_LENGTH:
         for poke_form in diff_forms.keys():
             if poke_name in diff_forms[poke_form]:
                 form_number = diff_forms[poke_form][4]
@@ -310,6 +311,46 @@ def get_mon_dex_info(pokemon, evolution_paths):
         dex_info["dexNum"] = og_num
         dex_info["form"] = int(form_number)
         return dex_info
+
+    return dex_info
+
+def export_pokedex_for_csv(pokemon):
+    '''
+    This is for the pokedex that is used in the Tracker.
+    It initializes every pokemon for the pokedex and formats them
+    The format is:
+    {"value": pokemonID,
+     "text": pokemon Name,
+     "type": First type,
+     "dualtype": second type,
+     "evolve": evolution path for the pokemon,
+     "generation": Always 8 for this game,
+     "abilities": [
+        ability1,
+        ability2,
+        hiddenAbility
+     ],
+     "dexNum": monsNo,
+     "form": formNo}
+    '''
+    poke_info = get_pokemon_info(pokemon)
+    poke_name = get_pokemon_name(pokemon)
+
+    dex_info = {
+        "value": pokemon,
+        "text": poke_name,
+        "type": poke_info["type"]
+        }
+    if "dualtype" in poke_info.keys() and poke_info["dualtype"] != 0:
+        dex_info["dualtype"] = poke_info["dualtype"]
+    dex_info["abilities"] = [poke_info['ability1'], poke_info['ability2'], poke_info['abilityH']]
+    dex_info["learnset"] = poke_info['learnset']
+    dex_info["tmLearnset"] = poke_info['tmLearnset']
+    dex_info["eggLearnset"] = poke_info['eggLearnset']
+    dex_info["tutorLearnset"] = poke_info['tutorLearnset']
+    dex_info["baseStats"] = poke_info["baseStats"]
+    dex_info["dexNum"] = poke_info['monsno']
+    dex_info["form"] = poke_info['formno']
 
     return dex_info
 
@@ -333,12 +374,113 @@ def getPokedexInfo():
         json.dump(pokedex, output, ensure_ascii=False, indent=2)
     return pokedex
 
+def export_csv():
+    '''
+    This iterates over every mon from the evolution_pathfinding
+    There are limits surrounding the valid pokemon in the game and they are not allowed.
+    '''
+    pokedex = []
+    evolutions = evolution_pathfinding()
+
+    with open(os.path.join(debug_file_path, "pokedex.csv") , mode='w', newline='') as file:
+        writer = csv.writer(file)
+        firstRow = ["Name",
+            "PokemonID",
+            "MonsNo",
+            "FormNo",
+            ]
+        statBlock = [
+            "HP",
+            "Attack",
+            "Defense",
+            "Special Attack",
+            "Special Defense",
+            "Speed"
+        ]
+        for i in range(3):
+            firstRow.append(f"Ability{i + 1}")
+        for stat in statBlock:
+            firstRow.append(stat)
+        firstRow.append("Learnset")
+        for i in range(99):
+            firstRow.append("")
+        firstRow.append("TM Learnset")
+        for i in range(109):
+            firstRow.append("")
+        firstRow.append("Egg Learnset")
+        for i in range(99):
+            firstRow.append("")
+        firstRow.append("Tutor Learnset")
+        for i in range(99):
+            firstRow.append("")
+        writer.writerow(firstRow)
+
+        for pokemon in evolutions.keys():
+            if pokemon >= 1456:
+                continue
+            evolution_path = evolutions[pokemon]["path"]
+            dex_info = export_pokedex_for_csv(pokemon)
+            pokedex.append(dex_info)
+            types = [dex_info['type']]
+            if "dualtype" in dex_info.keys():
+                types.append(dex_info['dualtype'])
+            abilities = dex_info['abilities']
+            baseStats = dex_info['baseStats'].values()
+
+            learnsetKeys = list(dex_info['learnset'].keys())
+            learnsetValues = list(dex_info['learnset'].values())
+            actualLearnset = []
+            for i in range(len(learnsetKeys)):
+                actualLearnset.append(learnsetValues[i])
+                actualLearnset.append(learnsetKeys[i])
+
+            tmlearnset = list(dex_info['tmLearnset'].keys())
+            egglearnset = list(dex_info['eggLearnset'].keys())
+            tutorlearnset = list(dex_info['tutorLearnset'].keys())
+
+            row = [dex_info['text'],
+                dex_info['value'],
+                dex_info['dexNum'],
+                dex_info['form'],
+                ]
+            for ability in abilities:
+                row.append(ability)
+            for stat in baseStats:
+                row.append(stat)
+            for move in actualLearnset:
+                row.append(move)
+            if len(actualLearnset) < 100:
+                for i in range(100 - len(actualLearnset)):
+                    row.append("")
+            for move in tmlearnset:
+                row.append(move)
+            if len(tmlearnset) < 110:
+                for i in range(110 - len(tmlearnset)):
+                    row.append("")
+            for move in egglearnset:
+                row.append(move)
+            if len(egglearnset) < 100:
+                for i in range(100 - len(egglearnset)):
+                    row.append("")
+            for move in tutorlearnset:
+                row.append(move)
+            if len(tutorlearnset) < 100:
+                for i in range(100 - len(tutorlearnset)):
+                    row.append("")
+
+            writer.writerow(row)
+
+    with open(os.path.join(debug_file_path, "pokedex_info_for_csv.json"), "w", encoding="utf-8") as output:
+        json.dump(pokedex, output, ensure_ascii=False, indent=2)
+    return pokedex
+
 if __name__ == "__main__":
 
     diff_forms, NAME_MAP = get_diff_form_dictionary()
     full_data = load_data()
     forms = generate_form_name_to_pokemon_id()
     getPokedexInfo()
+    export_csv()
 
 if __name__ != "__main__":
     diff_forms, NAME_MAP = get_diff_form_dictionary()

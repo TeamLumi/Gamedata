@@ -1,3 +1,16 @@
+## All that needs to change to change modes is this INPUT_NAME
+## If you are using 3.0 files, change it to "3.0Input"
+## Otherwise just set it to "input"
+INPUT_NAME = "3.0Input"
+if INPUT_NAME == "input":
+    DEBUG_NAME = "Debug"
+    OUTPUT_NAME = "output"
+    POKEDEX_LENGTH = 1010
+elif INPUT_NAME == "3.0Input":
+    DEBUG_NAME = "3.0Debug"
+    OUTPUT_NAME = "3.0Output"
+    POKEDEX_LENGTH = 1017
+
 TRAINER_BATTLE = '_TRAINER_BTL_SET'
 MULTI_TRAINER_BATTLE = '_TRAINER_MULTI_BTL_SET'
 GYM_AREA_NAME = "GYM"
@@ -87,8 +100,15 @@ MALE = "male"
 FEMALE = "female"
 
 MASTER_TRAINER = "Master"
+ROUTE_224 = "R224"
+ROUTE_210 = "R210B"
 BAD_SUPPORT_LOOKUP1 = "ev_r207_func_17" ### These bad lookups are for Lucas and Dawn on Route 207
 BAD_SUPPORT_LOOKUP2 = "ev_r207_func_20"
+R224_BAD_SUPPORT_LOOKUP1 = "ev_r224_support_dawn_battle_party"
+R224_BAD_SUPPORT_LOOKUP2 = "ev_r224_support_lucas_battle_party"
+R210B_BAD_SUPPORT_LOOKUP1 = "ev_r210b_support_set_dawn_party_1"
+R210B_BAD_SUPPORT_LOOKUP2 = "ev_r210b_support_set_lucas_party_1"
+
 SUPPORT_LINK = "Support"
 CITY_TRAINER = 'City'
 LEAGUE_TRAINER = "League"

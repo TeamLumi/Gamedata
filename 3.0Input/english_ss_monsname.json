@@ -30343,6 +30343,216 @@
                     "strWidth": 106.609375
                 }
             ]
+        },
+        {
+            "labelIndex": 1011,
+            "arrayIndex": 1011,
+            "labelName": "MONSNAME_1011",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Dipplin",
+                    "strWidth": 129.453125
+                }
+            ]
+        },
+        {
+            "labelIndex": 1012,
+            "arrayIndex": 1012,
+            "labelName": "MONSNAME_1012",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Poltchageist",
+                    "strWidth": 106.609375
+                }
+            ]
+        },
+        {
+            "labelIndex": 1013,
+            "arrayIndex": 1013,
+            "labelName": "MONSNAME_1013",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Sinistcha",
+                    "strWidth": 106.609375
+                }
+            ]
+        },
+        {
+            "labelIndex": 1014,
+            "arrayIndex": 1014,
+            "labelName": "MONSNAME_1014",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Okidogi",
+                    "strWidth": 102.734375
+                }
+            ]
+        },
+        {
+            "labelIndex": 1015,
+            "arrayIndex": 1015,
+            "labelName": "MONSNAME_1015",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Munkidori",
+                    "strWidth": 102.734375
+                }
+            ]
+        },
+        {
+            "labelIndex": 1016,
+            "arrayIndex": 1016,
+            "labelName": "MONSNAME_1016",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Fezandipiti",
+                    "strWidth": 102.734375
+                }
+            ]
+        },
+        {
+            "labelIndex": 1017,
+            "arrayIndex": 1017,
+            "labelName": "MONSNAME_1017",
+            "styleInfo": {
+                "styleIndex": 120,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 294,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Ogerpon",
+                    "strWidth": 86.078125
+                }
+            ]
         }
     ]
 }

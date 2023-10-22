@@ -4,11 +4,11 @@ import os
 import re
 
 from json_cache import JsonCache
-
+import constants
 repo_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
-input_file_path = os.path.join(repo_file_path, 'input')
+input_file_path = os.path.join(repo_file_path, constants.INPUT_NAME)
 resource_file_path = os.path.join(repo_file_path, "Python_tasks", "Resources")
-output_file_path = os.path.join(repo_file_path, "Python_tasks", "output")
+output_file_path = os.path.join(repo_file_path, "Python_tasks", constants.OUTPUT_NAME)
 
 # Create an instance of JsonCache
 json_cache = JsonCache()
@@ -46,6 +46,7 @@ def load_data():
         'trainer_names': 'english_dp_trainers_name.json',
         'type_namedata': 'english_ss_typename.json',
         'personal_table': 'PersonalTable.json',
+        'tutor_moves': 'tutorMoves.json',
     }
     resource_file_paths = {
         'gym_leaders': 'NewGymLeaders.json',
