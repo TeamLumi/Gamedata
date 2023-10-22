@@ -30343,6 +30343,216 @@
                     "strWidth": 270.0
                 }
             ]
+        },
+        {
+            "labelIndex": 1011,
+            "arrayIndex": 1011,
+            "labelName": "ZKN_TYPE_1011",
+            "styleInfo": {
+                "styleIndex": 44,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 546,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Emperor Pokémon",
+                    "strWidth": 270.0
+                }
+            ]
+        },
+        {
+            "labelIndex": 1012,
+            "arrayIndex": 1012,
+            "labelName": "ZKN_TYPE_1012",
+            "styleInfo": {
+                "styleIndex": 44,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 546,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Gratitude Pokémon",
+                    "strWidth": 270.0
+                }
+            ]
+        },
+        {
+            "labelIndex": 1013,
+            "arrayIndex": 1013,
+            "labelName": "ZKN_TYPE_1013",
+            "styleInfo": {
+                "styleIndex": 44,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 546,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Gratitude Pokémon",
+                    "strWidth": 270.0
+                }
+            ]
+        },
+        {
+            "labelIndex": 1014,
+            "arrayIndex": 1014,
+            "labelName": "ZKN_TYPE_1014",
+            "styleInfo": {
+                "styleIndex": 44,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 546,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Blade Pokémon",
+                    "strWidth": 270.0
+                }
+            ]
+        },
+        {
+            "labelIndex": 1015,
+            "arrayIndex": 1015,
+            "labelName": "ZKN_TYPE_1015",
+            "styleInfo": {
+                "styleIndex": 44,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 546,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Blade Pokémon",
+                    "strWidth": 270.0
+                }
+            ]
+        },
+        {
+            "labelIndex": 1016,
+            "arrayIndex": 1016,
+            "labelName": "ZKN_TYPE_1016",
+            "styleInfo": {
+                "styleIndex": 44,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 546,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Blade Pokémon",
+                    "strWidth": 270.0
+                }
+            ]
+        },
+        {
+            "labelIndex": 1017,
+            "arrayIndex": 1017,
+            "labelName": "ZKN_TYPE_1017",
+            "styleInfo": {
+                "styleIndex": 44,
+                "colorIndex": -1,
+                "fontSize": 42,
+                "maxWidth": 546,
+                "controlID": 0
+            },
+            "attributeValueArray": [
+                -1,
+                0,
+                0,
+                -1,
+                0
+            ],
+            "tagDataArray": [],
+            "wordDataArray": [
+                {
+                    "patternID": 0,
+                    "eventID": 7,
+                    "tagIndex": -1,
+                    "tagValue": 0.0,
+                    "str": "Happiness Pokémon",
+                    "strWidth": 270.0
+                }
+            ]
         }
     ]
 }
