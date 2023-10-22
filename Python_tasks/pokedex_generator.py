@@ -4,7 +4,7 @@ import time
 import csv
 
 import constants
-from data_checks import get_average_time, check_bad_dex_mon
+from data_checks import get_average_time, check_bad_dex_mon, is_valid_pokemon
 from load_files import load_data
 from pokemonUtils import generate_form_name_to_pokemon_id, get_pokemon_info, get_pokemon_name, get_diff_form_dictionary, get_mons_no_and_form_no, get_form_pokemon_personal_id
 
@@ -363,10 +363,11 @@ def getPokedexInfo():
     evolutions = evolution_pathfinding()
 
     for pokemon in evolutions.keys():
-        if pokemon >= 1456:
+        if pokemon >= constants.NAT_DEX_LENGTH:
             continue
+        is_valid = is_valid_pokemon(pokemon)
         evolution_path = evolutions[pokemon]["path"]
-        if pokemon < 906 or pokemon > 1010:
+        if is_valid == 1:
             dex_info = get_mon_dex_info(pokemon, evolution_path)
         pokedex.append(dex_info)
 

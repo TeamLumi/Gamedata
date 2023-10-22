@@ -32,6 +32,9 @@ def bad_encounter_data(pkmn_name, routeName=None, route=None):
     bad_encounters.append({pkmn_name, routeName, route})
     return bad_encounters
 
+def is_valid_pokemon(pokemonId):
+    return personal_table[pokemonId]['valid_flag']
+
 def check_bad_encounter(encounters, tracker_route, pkmn_key, lumi_formula_mon, temp_form_no, zoneID, method=''):
     '''
     This checks the methods that are on each route and verifies that no pokemon is missing
@@ -40,7 +43,7 @@ def check_bad_encounter(encounters, tracker_route, pkmn_key, lumi_formula_mon, t
 
     bad_encounters = []
     pokemonPersonalId = get_form_pokemon_personal_id(lumi_formula_mon, temp_form_no)
-    is_valid = personal_table[pokemonPersonalId]['valid_flag']
+    is_valid = is_valid_pokemon(pokemonPersonalId)
 
     if pokemonPersonalId is not None and is_valid == 0:
         bad_encounter = bad_encounter_data(get_pokemon_name(pokemonPersonalId), name_routes[tracker_route], zoneID)
@@ -58,7 +61,7 @@ def check_bad_encounter(encounters, tracker_route, pkmn_key, lumi_formula_mon, t
 
 def check_bad_dex_mon(pokemonID, invalid_pokemon):
     pokemonName = get_pokemon_name(pokemonID)
-    is_valid = personal_table[pokemonID]['valid_flag']
+    is_valid = is_valid_pokemon(pokemonID)
     if pokemonID is not None and is_valid == 0:
         invalid_pokemon.append(bad_encounter_data(pokemonName))
         return invalid_pokemon
