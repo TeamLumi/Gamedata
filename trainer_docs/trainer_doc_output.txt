@@ -324,70 +324,6 @@ Water Gun
 0/0/0/0/0/0
 
 
-264
-School Kid Harrison
-Level Cap:
-Format: Single Battle
-
-Abra
-8
-Serious
-Synchronize
-
-None
-Teleport
-(No Move)
-(No Move)
-(No Move)
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Psyduck
-8
-Quirky
-Damp
-
-None
-Tail Whip
-Scratch
-Bubble
-Water Gun
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-267
-School Kid Christine
-Level Cap:
-Format: Single Battle
-
-Ralts
-8
-Docile
-Synchronize
-
-None
-Growl
-Teleport
-Confusion
-Disarming Voice
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Staryu
-8
-Bashful
-Illuminate
-
-None
-Harden
-Tackle
-Water Gun
-Rapid Spin
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
 280
 Interviewers Roxy
 Level Cap:
@@ -688,38 +624,6 @@ Thunder Shock
 0/0/0/0/0/0
 
 
-332
-Guitarist Arturo
-Level Cap:
-Format: Single Battle
-
-Kricketot
-10
-Bashful
-Shed Skin
-
-None
-Growl
-Bug Bite
-String Shot
-Struggle Bug
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Voltorb
-10
-Bashful
-Soundproof
-
-None
-Charge
-Screech
-Eerie Impulse
-Thunder Shock
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
 349
 Clown Lee
 Level Cap:
@@ -780,51 +684,6 @@ Teleport
 (No Move)
 (No Move)
 (No Move)
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-350
-Poké Kid Ariel
-Level Cap:
-Format: Single Battle
-
-Pichu
-10
-Quirky
-Static
-
-None
-Disarming Voice
-Play Nice
-Charm
-Sweet Kiss
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Pichu
-10
-Bashful
-Static
-
-None
-Disarming Voice
-Play Nice
-Charm
-Sweet Kiss
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Pichu
-10
-Serious
-Static
-
-None
-Disarming Voice
-Play Nice
-Charm
-Sweet Kiss
 25/25/25/25/25/25
 0/0/0/0/0/0
 
@@ -1129,6 +988,173 @@ Peck
 25/25/25/25/25/25
 92/0/252/148/0/0
 Paired with Support
+
+262
+School Kid Chance
+Level Cap:
+Format: Single Battle
+
+Duskull
+26
+Docile
+Levitate
+
+None
+Foresight
+Shadow Sneak
+Will-O-Wisp
+Payback
+25/25/25/25/25/25
+196/0/196/0/116/0
+
+Shuppet
+26
+Bashful
+Insomnia
+
+None
+Pain Split
+Feint Attack
+Hex
+Curse
+25/25/25/25/25/25
+4/236/156/0/0/0
+
+Duskull
+26
+Bashful
+Levitate
+
+None
+Foresight
+Shadow Sneak
+Will-O-Wisp
+Payback
+25/25/25/25/25/25
+196/0/196/0/116/0
+
+
+265
+School Kid Mackenzie
+Level Cap:
+Format: Single Battle
+
+Shuppet
+26
+Docile
+Insomnia
+
+None
+Pain Split
+Feint Attack
+Hex
+Curse
+25/25/25/25/25/25
+4/236/156/0/0/0
+
+Duskull
+26
+Serious
+Levitate
+
+None
+Foresight
+Shadow Sneak
+Will-O-Wisp
+Payback
+25/25/25/25/25/25
+196/0/196/0/116/0
+
+Shuppet
+26
+Serious
+Insomnia
+
+None
+Pain Split
+Feint Attack
+Hex
+Curse
+25/25/25/25/25/25
+4/236/156/0/0/0
+
+
+46
+Poké Kid Danielle
+Level Cap:
+Format: Single Battle
+
+Pichu
+28
+Hardy
+Static
+
+None
+Thunder Wave
+Nuzzle
+Nasty Plot
+Disarming Voice
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Pikachu
+29
+Serious
+Static
+
+None
+Double Team
+Slam
+Thunderbolt
+Agility
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Raichu
+30
+Bashful
+Static
+
+None
+Electro Ball
+Shock Wave
+Fake Out
+Feint
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+225
+Guitarist Tony
+Level Cap:
+Format: Single Battle
+
+Kricketune
+44
+Quirky
+Swarm
+
+None
+Taunt
+Heal Bell
+Bug Buzz
+Sticky Web
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Exploud
+44
+Bashful
+Scrappy
+
+None
+Rest
+Sleep Talk
+Crunch
+Hammer Arm
+25/25/25/25/25/25
+0/0/0/0/0/0
+
 
 6
 Lass Samantha
@@ -2675,47 +2701,34 @@ Scary Face
 0/0/0/0/0/0
 
 
-669
+221
 Team Galactic Grunt
 Level Cap:
 Format: Single Battle
 
-Poochyena
-14
-Hardy
-Run Away
-
-None
-Bite
-Mud-Slap
-Odor Sleuth
-Assurance
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Gulpin
-14
-Bashful
-Liquid Ooze
-
-None
-Yawn
-Smog
-Poison Gas
-Amnesia
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Houndour
-14
+Zubat
+15
 Serious
-Intimidate
+Inner Focus
 
 None
-Feint Attack
 Bite
-Roar
-Smog
+Wing Attack
+Poison Fang
+Confuse Ray
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Spinarak
+15
+Bashful
+Swarm
+
+None
+Bug Bite
+Scary Face
+Poison Fang
+Night Shade
 25/25/25/25/25/25
 0/0/0/0/0/0
 
@@ -2748,38 +2761,6 @@ Bug Bite
 Scary Face
 Poison Fang
 Night Shade
-25/25/25/25/25/25
-0/0/0/0/0/0
-Paired with 222
-
-222
-Team Galactic Grunt
-Level Cap:
-Format: Double Battle
-
-Croagunk
-15
-Bashful
-Anticipation
-
-None
-Fake Out
-Mud-Slap
-Poison Sting
-Torment
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Ledyba
-15
-Serious
-Iron Fist
-
-None
-Reflect
-Safeguard
-Mach Punch
-Aerial Ace
 25/25/25/25/25/25
 0/0/0/0/0/0
 Paired with 221
@@ -5340,195 +5321,79 @@ Close Combat
 0/0/0/0/0/0
 
 
-248
-Lass Caroline
+3
+Lass Natalie
 Level Cap:
 Format: Single Battle
 
-Lotad
-22
-Hardy
-Swift Swim
+Sentret
+7
+Docile
+Run Away
 
 None
-Mega Drain
-Flail
-Bubble Beam
-Giga Drain
+Scratch
+Defense Curl
+Quick Attack
+Fury Swipes
 25/25/25/25/25/25
-0/0/116/196/0/196
+0/0/0/0/0/0
 
-Cacnea
-22
-Serious
-Sand Veil
+Bidoof
+7
+Bashful
+Simple
 
 None
-Needle Arm
-Assurance
-Feint Attack
-Ingrain
+Growl
+Tackle
+Defense Curl
+(No Move)
 25/25/25/25/25/25
-0/236/116/0/0/156
+0/0/0/0/0/0
 
-Exeggcute
-22
+
+9
+Aroma Lady Teighler
+Level Cap:
+Format: Single Battle
+
+Cherubi
+13
+Quirky
+Chlorophyll
+
+None
+Leafage
+Growth
+Leech Seed
+Helping Hand
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Hoppip
+13
 Hardy
 Chlorophyll
 
 None
-Leech Seed
-Stun Spore
-Poison Powder
-Sleep Powder
+Bullet Seed
+Fairy Wind
+Air Cutter
+Mega Drain
 25/25/25/25/25/25
-36/0/200/40/0/0
+0/0/0/0/0/0
 
 Shroomish
-22
+13
 Bashful
 Technician
 
 None
-Stun Spore
-Spore
-Poison Powder
-Seed Bomb
-25/25/25/25/25/25
-36/36/196/0/0/0
-
-
-183
-Aroma Lady Jenna
-Level Cap:
-Format: Single Battle
-
-Weepinbell
-23
-Serious
-Chlorophyll
-
-None
-Razor Leaf
-Sweet Scent
-Gastro Acid
-Leech Life
-25/25/25/25/25/25
-4/252/0/252/0/0
-
-Ivysaur
-23
-Quirky
-Overgrow
-
-None
-Magical Leaf
-Sludge
-Seed Bomb
-Take Down
-25/25/25/25/25/25
-0/0/4/252/252/0
-
-Gloom
-23
-Quirky
-Chlorophyll
-
-None
-Stun Spore
+Tackle
 Mega Drain
-Sludge
-Moonlight
-25/25/25/25/25/25
-0/0/4/252/252/0
-
-
-184
-Aroma Lady Angela
-Level Cap:
-Format: Single Battle
-
-Roselia
-23
-Hardy
-Natural Cure
-
-None
 Leech Seed
-Magical Leaf
-Sludge
-Grass Whistle
-25/25/25/25/25/25
-248/0/0/0/236/24
-
-Bayleef
-23
-Hardy
-Serene Grace
-
-None
-Magical Leaf
-Light Screen
-Reflect
-Draining Kiss
-25/25/25/25/25/25
-0/0/252/4/252/0
-
-Skiploom
-23
-Docile
-Chlorophyll
-
-None
-Poison Powder
-Leech Seed
-Cotton Spore
-Worry Seed
-25/25/25/25/25/25
-0/0/0/252/4/252
-
-
-269
-Beauty Lindsay
-Level Cap:
-Format: Single Battle
-
-Leafeon
-25
-Hardy
-Chlorophyll
-
-Heat Rock
-Sunny Day
 Bullet Seed
-Curse
-Leech Seed
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Wormadam
-26
-Hardy
-Overcoat
-
-Occa Berry
-Hidden Power
-Quiver Dance
-Energy Ball
-Protect
-25/25/25/20/25/20
-0/0/0/0/0/0
-
-Grovyle
-26
-Hardy
-Unburden
-
-Light Ball
-Fling
-Giga Drain
-Dragon Breath
-Quick Attack
 25/25/25/25/25/25
 0/0/0/0/0/0
 
@@ -5867,6 +5732,38 @@ Ingrain
 Synthesis
 25/25/25/25/25/25
 252/4/252/0/0/0
+
+
+268
+Beauty Cyndy
+Level Cap:
+Format: Single Battle
+
+Delcatty
+37
+Serious
+Cute Charm
+
+None
+Covet
+Copycat
+Payback
+Zen Headbutt
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Persian
+37
+Docile
+Limber
+
+None
+Taunt
+Power Gem
+Assurance
+Hypnosis
+25/25/25/25/25/25
+0/0/0/0/0/0
 
 
 895
@@ -16122,21 +16019,34 @@ Earth Power
 0/0/0/0/0/0
 
 
-673
+221
 Team Galactic Grunt
 Level Cap:
 Format: Single Battle
 
-Toxicroak
-41
-Hardy
-Anticipation
+Zubat
+15
+Serious
+Inner Focus
 
 None
-Drain Punch
-Nasty Plot
-Toxic
-Sucker Punch
+Bite
+Wing Attack
+Poison Fang
+Confuse Ray
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Spinarak
+15
+Bashful
+Swarm
+
+None
+Bug Bite
+Scary Face
+Poison Fang
+Night Shade
 25/25/25/25/25/25
 0/0/0/0/0/0
 
@@ -16513,256 +16423,49 @@ Fake Out
 0/0/0/0/0/0
 
 
-354
+176
 Pokémon Trainer Cedric
 Level Cap:
 Format: Single Battle
 
-Staraptor
-41
-Adamant
-Intimidate
-
-Muscle Band
-Double-Edge
-Close Combat
-Aerial Ace
-Roost
-31/31/31/31/31/31
-0/252/4/0/0/252
-
-Heracross
-41
+Starly
+10
 Docile
-Guts
+Keen Eye
 
-Coba Berry
-Megahorn
-Brick Break
-Bullet Seed
-Night Slash
-31/31/31/31/31/31
-0/252/0/0/252/4
+None
+Wing Attack
+Quick Attack
+Growl
+(No Move)
+25/25/25/25/25/25
+36/236/0/36/0/0
 
-Snorlax
-41
-Calm
-Immunity
+Munchlax
+10
+Docile
+Pickup
 
-Leftovers
-Body Slam
-Crunch
-Rest
-Sleep Talk
-31/31/31/31/31/31
-188/0/128/0/192/0
+None
+Metronome
+Tackle
+Amnesia
+Rock Tomb
+25/25/25/25/25/25
+0/236/36/0/236/0
 
-Azumarill
-41
-Adamant
-Thick Fat
-
-Life Orb
-Aqua Tail
-Play Rough
-Body Slam
-Aqua Jet
-31/31/31/31/31/31
-4/252/0/0/0/252
-
-Arcanine
-41
-Adamant
-Intimidate
-
-Expert Belt
-Heat Wave
-Thunder Fang
-Outrage
-Crunch
-31/31/31/31/31/31
-0/252/4/0/0/252
-
-Torterra
-42
-Bashful
+Turtwig
+11
+Quirky
 Overgrow
 
-Sitrus Berry
-Seed Bomb
-Earthquake
-Crunch
-Iron Head
-31/31/31/31/31/31
-248/0/252/0/8/0
-
-
-355
-Pokémon Trainer Cedric
-Level Cap:
-Format: Single Battle
-
-Staraptor
-41
-Adamant
-Intimidate
-
-Muscle Band
-Double-Edge
-Close Combat
-Aerial Ace
-Roost
-31/31/31/31/31/31
-0/252/4/0/0/252
-
-Heracross
-41
-Docile
-Guts
-
-Coba Berry
-Megahorn
-Brick Break
-Bullet Seed
-Night Slash
-31/31/31/31/31/31
-0/252/0/0/252/4
-
-Snorlax
-41
-Calm
-Immunity
-
-Leftovers
-Body Slam
-Crunch
-Rest
-Sleep Talk
-31/31/31/31/31/31
-188/0/128/0/192/0
-
-Azumarill
-41
-Adamant
-Thick Fat
-
-Life Orb
-Aqua Tail
-Play Rough
-Body Slam
-Aqua Jet
-31/31/31/31/31/31
-4/252/0/0/0/252
-
-Arcanine
-41
-Adamant
-Intimidate
-
-Expert Belt
-Heat Wave
-Thunder Fang
-Outrage
-Crunch
-31/31/31/31/31/31
-0/252/4/0/0/252
-
-Infernape
-42
-Adamant
-Blaze
-
-Sitrus Berry
-Flamethrower
-Close Combat
-Fake Out
-Thunder Punch
-31/31/31/31/31/31
-0/0/4/252/0/252
-
-
-356
-Pokémon Trainer Cedric
-Level Cap:
-Format: Single Battle
-
-Staraptor
-41
-Adamant
-Intimidate
-
-Muscle Band
-Double-Edge
-Close Combat
-Aerial Ace
-Roost
-31/31/31/31/31/31
-0/252/4/0/0/252
-
-Heracross
-41
-Docile
-Guts
-
-Coba Berry
-Megahorn
-Brick Break
-Bullet Seed
-Night Slash
-31/31/31/31/31/31
-0/252/0/0/252/4
-
-Snorlax
-41
-Calm
-Immunity
-
-Leftovers
-Body Slam
-Crunch
-Rest
-Sleep Talk
-31/31/31/31/31/31
-188/0/128/0/192/0
-
-Azumarill
-41
-Adamant
-Thick Fat
-
-Life Orb
-Aqua Tail
-Play Rough
-Body Slam
-Aqua Jet
-31/31/31/31/31/31
-4/252/0/0/0/252
-
-Arcanine
-41
-Adamant
-Intimidate
-
-Expert Belt
-Heat Wave
-Thunder Fang
-Outrage
-Crunch
-31/31/31/31/31/31
-0/252/4/0/0/252
-
-Empoleon
-42
-Modest
-Torrent
-
-Sitrus Berry
-Scald
-Flash Cannon
-Agility
-Swagger
-31/31/31/31/31/31
-252/0/76/0/180/0
+Oran Berry
+Razor Leaf
+Curse
+Tackle
+(No Move)
+25/25/25/25/25/25
+76/52/244/0/0/0
 
 
 772
@@ -20176,47 +19879,34 @@ Feather Dance
 251/0/76/180/0/0
 Paired with Support
 
-319
+221
 Team Galactic Grunt
 Level Cap:
 Format: Single Battle
 
-Houndoom
-43
-Hardy
-Intimidate
-
-None
-Sucker Punch
-Dark Pulse
-Flame Charge
-Embargo
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Golbat
-43
-Docile
+Zubat
+15
+Serious
 Inner Focus
 
 None
-Hypnosis
-Air Slash
-Haze
-Zen Headbutt
+Bite
+Wing Attack
+Poison Fang
+Confuse Ray
 25/25/25/25/25/25
 0/0/0/0/0/0
 
-Beedrill
-43
-Serious
-Adaptability
+Spinarak
+15
+Bashful
+Swarm
 
 None
-Drill Run
-Agility
-Endeavor
-Outrage
+Bug Bite
+Scary Face
+Poison Fang
+Night Shade
 25/25/25/25/25/25
 0/0/0/0/0/0
 
@@ -22844,6 +22534,38 @@ Slam
 0/0/0/0/0/0
 
 
+221
+Team Galactic Grunt
+Level Cap:
+Format: Double Battle
+
+Zubat
+15
+Serious
+Inner Focus
+
+None
+Bite
+Wing Attack
+Poison Fang
+Confuse Ray
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Spinarak
+15
+Bashful
+Swarm
+
+None
+Bug Bite
+Scary Face
+Poison Fang
+Night Shade
+25/25/25/25/25/25
+0/0/0/0/0/0
+Paired with 221
+
 341
 Hiker Damon
 Level Cap:
@@ -22888,96 +22610,6 @@ Sandstorm
 25/25/25/25/25/25
 0/0/0/0/0/0
 
-
-661
-Team Galactic Grunt
-Level Cap:
-Format: Double Battle
-
-Purugly
-46
-Docile
-Thick Fat
-
-None
-Retaliate
-Swagger
-Play Rough
-Attract
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Toxicroak
-46
-Bashful
-Anticipation
-
-None
-Nasty Plot
-Toxic
-Sucker Punch
-Cross Chop
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Skuntank
-46
-Serious
-Stench
-
-None
-Memento
-Crunch
-Belch
-Sludge Bomb
-25/25/25/25/25/25
-0/0/0/0/0/0
-Paired with 662
-
-662
-Team Galactic Grunt
-Level Cap:
-Format: Double Battle
-
-Golbat
-46
-Quirky
-Inner Focus
-
-None
-Hypnosis
-Air Slash
-Haze
-Zen Headbutt
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Houndoom
-46
-Quirky
-Intimidate
-
-None
-Flame Charge
-Embargo
-Foul Play
-Nasty Plot
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Muk
-46
-Serious
-Stench
-
-None
-Screech
-Sludge Bomb
-Acid Armor
-Gunk Shot
-25/25/25/25/25/25
-0/0/0/0/0/0
-Paired with 661
 
 342
 Hiker Maurice
@@ -24241,6 +23873,609 @@ Thunder Wave
 224/252/0/0/0/32
 
 
+3
+Lass Natalie
+Level Cap:
+Format: Double Battle
+
+Sentret
+7
+Docile
+Run Away
+
+None
+Scratch
+Defense Curl
+Quick Attack
+Fury Swipes
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Bidoof
+7
+Bashful
+Simple
+
+None
+Growl
+Tackle
+Defense Curl
+(No Move)
+25/25/25/25/25/25
+0/0/0/0/0/0
+Paired with 55
+
+282
+Cameraman Tevin
+Level Cap:
+Format: Double Battle
+
+Mime Jr.
+10
+Bashful
+Technician
+
+None
+Confusion
+Copycat
+Meditate
+Double Slap
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Machop
+10
+Bashful
+Guts
+
+None
+Focus Energy
+Karate Chop
+Low Sweep
+Foresight
+25/25/25/25/25/25
+0/0/0/0/0/0
+Paired with 283
+
+283
+Reporter Kinsey
+Level Cap:
+Format: Double Battle
+
+Drifloon
+10
+Bashful
+Aftermath
+
+None
+Constrict
+Minimize
+Gust
+Focus Energy
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Shinx
+10
+Hardy
+Guts
+
+None
+Howl
+Thunder Shock
+Quick Attack
+Spark
+25/25/25/25/25/25
+0/0/0/0/0/0
+Paired with 282
+
+9
+Aroma Lady Teighler
+Level Cap:
+Format: Double Battle
+
+Cherubi
+13
+Quirky
+Chlorophyll
+
+None
+Leafage
+Growth
+Leech Seed
+Helping Hand
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Hoppip
+13
+Hardy
+Chlorophyll
+
+None
+Bullet Seed
+Fairy Wind
+Air Cutter
+Mega Drain
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Shroomish
+13
+Bashful
+Technician
+
+None
+Tackle
+Mega Drain
+Leech Seed
+Bullet Seed
+25/25/25/25/25/25
+0/0/0/0/0/0
+Paired with 196
+
+41
+Artist William
+Level Cap:
+Format: Double Battle
+
+Smeargle
+26
+Bashful
+Own Tempo
+
+None
+Sketch
+Sketch
+Sketch
+Sketch
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Smeargle
+26
+Bashful
+Own Tempo
+
+None
+Sketch
+Sketch
+Sketch
+Sketch
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Smeargle
+26
+Quirky
+Own Tempo
+
+None
+Sketch
+Sketch
+Sketch
+Sketch
+25/25/25/25/25/25
+0/0/0/0/0/0
+Paired with 268
+
+43
+Pokémon Breeder Jennifer
+Level Cap:
+Format: Double Battle
+
+Azurill
+26
+Quirky
+Thick Fat
+
+None
+Sing
+Helping Hand
+Slam
+Bounce
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Togepi
+26
+Serious
+Super Luck
+
+None
+Wish
+Safeguard
+Ancient Power
+Soft-Boiled
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Cleffa
+26
+Serious
+Cute Charm
+
+None
+Sing
+Copycat
+Magical Leaf
+Draining Kiss
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Igglybuff
+26
+Quirky
+Cute Charm
+
+None
+Sweet Kiss
+Copycat
+Draining Kiss
+Disable
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Smoochum
+26
+Hardy
+Hydration
+
+None
+Covet
+Mean Look
+Extrasensory
+Fake Tears
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Budew
+26
+Hardy
+Natural Cure
+
+None
+Stun Spore
+Sleep Powder
+Worry Seed
+Extrasensory
+25/25/25/25/25/25
+0/0/0/0/0/0
+Paired with 82
+
+262
+School Kid Chance
+Level Cap:
+Format: Double Battle
+
+Duskull
+26
+Docile
+Levitate
+
+None
+Foresight
+Shadow Sneak
+Will-O-Wisp
+Payback
+25/25/25/25/25/25
+196/0/196/0/116/0
+
+Shuppet
+26
+Bashful
+Insomnia
+
+None
+Pain Split
+Feint Attack
+Hex
+Curse
+25/25/25/25/25/25
+4/236/156/0/0/0
+
+Duskull
+26
+Bashful
+Levitate
+
+None
+Foresight
+Shadow Sneak
+Will-O-Wisp
+Payback
+25/25/25/25/25/25
+196/0/196/0/116/0
+Paired with 404
+
+69
+Rich Boy Jason
+Level Cap:
+Format: Double Battle
+
+Prinplup
+30
+Hardy
+Torrent
+
+None
+Icy Wind
+Swagger
+Scald
+Fury Attack
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Azumarill
+30
+Hardy
+Thick Fat
+
+None
+Body Slam
+Helping Hand
+Aqua Tail
+Play Rough
+25/25/25/25/25/25
+0/0/0/0/0/0
+Paired with 70
+
+70
+Lady Melissa
+Level Cap:
+Format: Double Battle
+
+Cherrim
+30
+Serious
+Flower Gift
+
+None
+Sunny Day
+Petal Dance
+Giga Drain
+Take Down
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Jumpluff
+30
+Docile
+Chlorophyll
+
+None
+Cotton Spore
+Worry Seed
+Giga Drain
+Air Slash
+25/25/25/25/25/25
+0/0/0/0/0/0
+Paired with 69
+
+404
+Poké Fan Rebekah
+Level Cap:
+Format: Double Battle
+
+Clefairy
+30
+Hardy
+Cute Charm
+
+Sitrus Berry
+Minimize
+Metronome
+Cosmic Power
+Moonblast
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Wailmer
+30
+Hardy
+Water Veil
+
+Sitrus Berry
+Mist
+Brine
+Dive
+Rest
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Bonsly
+30
+Quirky
+Sturdy
+
+Sitrus Berry
+Tearful Look
+Rollout
+Rock Slide
+Block
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Skitty
+30
+Docile
+Cute Charm
+
+Sitrus Berry
+Feint Attack
+Zen Headbutt
+Sucker Punch
+Charm
+25/25/25/25/25/25
+0/0/0/0/0/0
+Paired with 262
+
+71
+Gentleman Jeremy
+Level Cap:
+Format: Double Battle
+
+Chatot
+31
+Serious
+Soundproof
+
+None
+Uproar
+Mimic
+Round
+Chatter
+25/25/25/25/25/25
+0/0/0/0/0/0
+Paired with 72
+
+72
+Madame Reina
+Level Cap:
+Format: Double Battle
+
+Delcatty
+31
+Serious
+Cute Charm
+
+None
+Fury Swipes
+Double Slap
+Covet
+Copycat
+25/25/25/25/25/25
+0/0/0/0/0/0
+Paired with 71
+
+196
+Collector Douglas
+Level Cap:
+Format: Double Battle
+
+Jolteon
+33
+Docile
+Volt Absorb
+
+None
+Thunder Fang
+Discharge
+Extrasensory
+Agility
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Vaporeon
+33
+Quirky
+Water Absorb
+
+None
+Aqua Ring
+Scald
+Extrasensory
+Acid Armor
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Flareon
+33
+Quirky
+Flash Fire
+
+None
+Flame Wheel
+Lava Plume
+Play Rough
+Scary Face
+25/25/25/25/25/25
+0/0/0/0/0/0
+Paired with 9
+
+96
+PI Carlos
+Level Cap:
+Format: Double Battle
+
+Dugtrio
+36
+Hardy
+Sand Veil
+
+None
+Tri Attack
+Rock Slide
+Sandstorm
+Earth Power
+25/25/25/25/25/25
+0/0/0/0/0/0
+Paired with 268
+
+268
+Beauty Cyndy
+Level Cap:
+Format: Double Battle
+
+Delcatty
+37
+Serious
+Cute Charm
+
+None
+Covet
+Copycat
+Payback
+Zen Headbutt
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Persian
+37
+Docile
+Limber
+
+None
+Taunt
+Power Gem
+Assurance
+Hypnosis
+25/25/25/25/25/25
+0/0/0/0/0/0
+Paired with 96
+
+268
+Beauty Cyndy
+Level Cap:
+Format: Double Battle
+
+Delcatty
+37
+Serious
+Cute Charm
+
+None
+Covet
+Copycat
+Payback
+Zen Headbutt
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Persian
+37
+Docile
+Limber
+
+None
+Taunt
+Power Gem
+Assurance
+Hypnosis
+25/25/25/25/25/25
+0/0/0/0/0/0
+Paired with 41
+
 410
 Aroma Lady Alison
 Level Cap:
@@ -24259,25 +24494,6 @@ Body Slam
 25/25/25/25/25/25
 0/0/0/0/0/0
 
-
-410
-Aroma Lady Alison
-Level Cap:
-Format: Double Battle
-
-Meganium
-37
-Quirky
-Serene Grace
-
-None
-Nature Power
-Sweet Scent
-Petal Dance
-Body Slam
-25/25/25/25/25/25
-0/0/0/0/0/0
-Paired with 414
 
 411
 Artist Ismael
@@ -24298,25 +24514,6 @@ Sketch
 0/0/0/0/0/0
 
 
-411
-Artist Ismael
-Level Cap:
-Format: Double Battle
-
-Smeargle
-37
-Bashful
-Own Tempo
-
-None
-Sketch
-Sketch
-Sketch
-Sketch
-25/25/25/25/25/25
-0/0/0/0/0/0
-Paired with 426
-
 412
 Pokémon Breeder Kaylee
 Level Cap:
@@ -24335,25 +24532,6 @@ Ice Punch
 25/25/25/25/25/25
 0/0/0/0/0/0
 
-
-412
-Pokémon Breeder Kaylee
-Level Cap:
-Format: Double Battle
-
-Azumarill
-37
-Bashful
-Thick Fat
-
-None
-Aqua Tail
-Play Rough
-Aqua Ring
-Ice Punch
-25/25/25/25/25/25
-0/0/0/0/0/0
-Paired with 424
 
 413
 Cameraman Darryl
@@ -24374,556 +24552,348 @@ Screech
 0/0/0/0/0/0
 
 
-413
-Cameraman Darryl
+414
+Collector Eugene
+Level Cap:
+Format: Single Battle
+
+Milotic
+37
+Hardy
+Marvel Scale
+
+None
+Recover
+Hypnosis
+Attract
+Moonblast
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+415
+Poké Fan Meredith
+Level Cap:
+Format: Single Battle
+
+Pachirisu
+37
+Quirky
+Volt Absorb
+
+Sitrus Berry
+Sweet Kiss
+Thunder Wave
+Thunderbolt
+Fake Tears
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+416
+PI Kendrick
+Level Cap:
+Format: Single Battle
+
+Rhydon
+37
+Serious
+Reckless
+
+None
+Crunch
+Rock Slide
+Poison Jab
+Hammer Arm
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+417
+Gentleman Leonardo
+Level Cap:
+Format: Single Battle
+
+Chatot
+37
+Docile
+Soundproof
+
+None
+Chatter
+Roost
+Agility
+Echoed Voice
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+418
+Madame Rebecca
+Level Cap:
+Format: Single Battle
+
+Persian
+37
+Docile
+Limber
+
+None
+Taunt
+Power Gem
+Assurance
+Hypnosis
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+419
+Lass Blythe
+Level Cap:
+Format: Single Battle
+
+Lopunny
+37
+Docile
+Scrappy
+
+None
+Headbutt
+Charm
+Dizzy Punch
+Flail
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+420
+Rich Boy Roman
+Level Cap:
+Format: Single Battle
+
+Arcanine
+37
+Hardy
+Intimidate
+
+None
+Helping Hand
+Agility
+Fire Fang
+Reversal
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+421
+Lady Kylie
+Level Cap:
+Format: Single Battle
+
+Vileplume
+37
+Quirky
+Chlorophyll
+
+None
+Stun Spore
+Mega Drain
+Leaf Blade
+Giga Drain
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+422
+Reporter Valerie
+Level Cap:
+Format: Single Battle
+
+Loudred
+37
+Bashful
+Scrappy
+
+None
+Extrasensory
+Fake Tears
+Hyper Voice
+Roar
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+423
+School Kid Esteban
+Level Cap:
+Format: Single Battle
+
+Quagsire
+37
+Serious
+Unaware
+
+None
+Aqua Tail
+Yawn
+Body Slam
+Earthquake
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+424
+Scientist Emilio
+Level Cap:
+Format: Single Battle
+
+Alakazam
+37
+Quirky
+Synchronize
+
+None
+Psyshock
+Psycho Cut
+Recover
+Psychic
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+425
+Beauty Gabriella
+Level Cap:
+Format: Single Battle
+
+Lumineon
+37
+Serious
+Swift Swim
+
+None
+Psybeam
+Flail
+Safeguard
+Aqua Tail
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+426
+Beauty Harley
+Level Cap:
+Format: Single Battle
+
+Golduck
+37
+Hardy
+Damp
+
+None
+Soak
+Aqua Tail
+Power Gem
+Psychic
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+427
+Veteran Emanuel
+Level Cap:
+Format: Single Battle
+
+Blaziken
+37
+Quirky
+Blaze
+
+None
+Focus Energy
+Sky Uppercut
+Flamethrower
+Blaze Kick
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+82
+Scientist Stefano
 Level Cap:
 Format: Double Battle
 
-Magneton
-37
+Muk
+38
 Bashful
-Magnet Pull
+Stench
 
 None
-Discharge
-Tri Attack
-Flash Cannon
+Payback
+Sludge Wave
+Screech
+Sludge Bomb
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Weezing
+38
+Serious
+Levitate
+
+None
+Destiny Bond
+Double Hit
+Toxic
+Dark Pulse
+25/25/25/25/25/25
+0/0/0/0/0/0
+Paired with 43
+
+55
+Veteran Brian
+Level Cap:
+Format: Double Battle
+
+Tangrowth
+43
+Docile
+Chlorophyll
+
+None
+Giga Drain
+Ancient Power
+Slam
+Tickle
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Rapidash
+43
+Bashful
+Flame Body
+
+None
+Flare Blitz
+Fury Attack
+Double-Edge
+Bounce
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Feraligatr
+43
+Quirky
+Intimidate
+
+None
+Agility
+Slash
+Night Slash
 Screech
 25/25/25/25/25/25
 0/0/0/0/0/0
-Paired with 422
-
-414
-Collector Eugene
-Level Cap:
-Format: Single Battle
-
-Milotic
-37
-Hardy
-Marvel Scale
-
-None
-Recover
-Hypnosis
-Attract
-Moonblast
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-414
-Collector Eugene
-Level Cap:
-Format: Double Battle
-
-Milotic
-37
-Hardy
-Marvel Scale
-
-None
-Recover
-Hypnosis
-Attract
-Moonblast
-25/25/25/25/25/25
-0/0/0/0/0/0
-Paired with 410
-
-415
-Poké Fan Meredith
-Level Cap:
-Format: Single Battle
-
-Pachirisu
-37
-Quirky
-Volt Absorb
-
-Sitrus Berry
-Sweet Kiss
-Thunder Wave
-Thunderbolt
-Fake Tears
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-415
-Poké Fan Meredith
-Level Cap:
-Format: Double Battle
-
-Pachirisu
-37
-Quirky
-Volt Absorb
-
-Sitrus Berry
-Sweet Kiss
-Thunder Wave
-Thunderbolt
-Fake Tears
-25/25/25/25/25/25
-0/0/0/0/0/0
-Paired with 423
-
-416
-PI Kendrick
-Level Cap:
-Format: Single Battle
-
-Rhydon
-37
-Serious
-Reckless
-
-None
-Crunch
-Rock Slide
-Poison Jab
-Hammer Arm
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-416
-PI Kendrick
-Level Cap:
-Format: Double Battle
-
-Rhydon
-37
-Serious
-Reckless
-
-None
-Crunch
-Rock Slide
-Poison Jab
-Hammer Arm
-25/25/25/25/25/25
-0/0/0/0/0/0
-Paired with 425
-
-417
-Gentleman Leonardo
-Level Cap:
-Format: Single Battle
-
-Chatot
-37
-Docile
-Soundproof
-
-None
-Chatter
-Roost
-Agility
-Echoed Voice
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-417
-Gentleman Leonardo
-Level Cap:
-Format: Double Battle
-
-Chatot
-37
-Docile
-Soundproof
-
-None
-Chatter
-Roost
-Agility
-Echoed Voice
-25/25/25/25/25/25
-0/0/0/0/0/0
-Paired with 418
-
-418
-Madame Rebecca
-Level Cap:
-Format: Single Battle
-
-Persian
-37
-Docile
-Limber
-
-None
-Taunt
-Power Gem
-Assurance
-Hypnosis
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-418
-Madame Rebecca
-Level Cap:
-Format: Double Battle
-
-Persian
-37
-Docile
-Limber
-
-None
-Taunt
-Power Gem
-Assurance
-Hypnosis
-25/25/25/25/25/25
-0/0/0/0/0/0
-Paired with 417
-
-419
-Lass Blythe
-Level Cap:
-Format: Single Battle
-
-Lopunny
-37
-Docile
-Scrappy
-
-None
-Headbutt
-Charm
-Dizzy Punch
-Flail
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-419
-Lass Blythe
-Level Cap:
-Format: Double Battle
-
-Lopunny
-37
-Docile
-Scrappy
-
-None
-Headbutt
-Charm
-Dizzy Punch
-Flail
-25/25/25/25/25/25
-0/0/0/0/0/0
-Paired with 427
-
-420
-Rich Boy Roman
-Level Cap:
-Format: Single Battle
-
-Arcanine
-37
-Hardy
-Intimidate
-
-None
-Helping Hand
-Agility
-Fire Fang
-Reversal
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-420
-Rich Boy Roman
-Level Cap:
-Format: Double Battle
-
-Arcanine
-37
-Hardy
-Intimidate
-
-None
-Helping Hand
-Agility
-Fire Fang
-Reversal
-25/25/25/25/25/25
-0/0/0/0/0/0
-Paired with 421
-
-421
-Lady Kylie
-Level Cap:
-Format: Single Battle
-
-Vileplume
-37
-Quirky
-Chlorophyll
-
-None
-Stun Spore
-Mega Drain
-Leaf Blade
-Giga Drain
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-421
-Lady Kylie
-Level Cap:
-Format: Double Battle
-
-Vileplume
-37
-Quirky
-Chlorophyll
-
-None
-Stun Spore
-Mega Drain
-Leaf Blade
-Giga Drain
-25/25/25/25/25/25
-0/0/0/0/0/0
-Paired with 420
-
-422
-Reporter Valerie
-Level Cap:
-Format: Single Battle
-
-Loudred
-37
-Bashful
-Scrappy
-
-None
-Extrasensory
-Fake Tears
-Hyper Voice
-Roar
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-422
-Reporter Valerie
-Level Cap:
-Format: Double Battle
-
-Loudred
-37
-Bashful
-Scrappy
-
-None
-Extrasensory
-Fake Tears
-Hyper Voice
-Roar
-25/25/25/25/25/25
-0/0/0/0/0/0
-Paired with 413
-
-423
-School Kid Esteban
-Level Cap:
-Format: Single Battle
-
-Quagsire
-37
-Serious
-Unaware
-
-None
-Aqua Tail
-Yawn
-Body Slam
-Earthquake
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-423
-School Kid Esteban
-Level Cap:
-Format: Double Battle
-
-Quagsire
-37
-Serious
-Unaware
-
-None
-Aqua Tail
-Yawn
-Body Slam
-Earthquake
-25/25/25/25/25/25
-0/0/0/0/0/0
-Paired with 415
-
-424
-Scientist Emilio
-Level Cap:
-Format: Single Battle
-
-Alakazam
-37
-Quirky
-Synchronize
-
-None
-Psyshock
-Psycho Cut
-Recover
-Psychic
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-424
-Scientist Emilio
-Level Cap:
-Format: Double Battle
-
-Alakazam
-37
-Quirky
-Synchronize
-
-None
-Psyshock
-Psycho Cut
-Recover
-Psychic
-25/25/25/25/25/25
-0/0/0/0/0/0
-Paired with 412
-
-425
-Beauty Gabriella
-Level Cap:
-Format: Single Battle
-
-Lumineon
-37
-Serious
-Swift Swim
-
-None
-Psybeam
-Flail
-Safeguard
-Aqua Tail
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-425
-Beauty Gabriella
-Level Cap:
-Format: Double Battle
-
-Lumineon
-37
-Serious
-Swift Swim
-
-None
-Psybeam
-Flail
-Safeguard
-Aqua Tail
-25/25/25/25/25/25
-0/0/0/0/0/0
-Paired with 416
-
-426
-Beauty Harley
-Level Cap:
-Format: Single Battle
-
-Golduck
-37
-Hardy
-Damp
-
-None
-Soak
-Aqua Tail
-Power Gem
-Psychic
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-426
-Beauty Harley
-Level Cap:
-Format: Double Battle
-
-Golduck
-37
-Hardy
-Damp
-
-None
-Soak
-Aqua Tail
-Power Gem
-Psychic
-25/25/25/25/25/25
-0/0/0/0/0/0
-Paired with 411
-
-427
-Veteran Emanuel
-Level Cap:
-Format: Single Battle
-
-Blaziken
-37
-Quirky
-Blaze
-
-None
-Focus Energy
-Sky Uppercut
-Flamethrower
-Blaze Kick
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-427
-Veteran Emanuel
-Level Cap:
-Format: Double Battle
-
-Blaziken
-37
-Quirky
-Blaze
-
-None
-Focus Energy
-Sky Uppercut
-Flamethrower
-Blaze Kick
-25/25/25/25/25/25
-0/0/0/0/0/0
-Paired with 419
+Paired with 3
 
 320
 Team Galactic Grunt
