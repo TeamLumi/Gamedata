@@ -83,7 +83,8 @@ def get_map_info(label_name):
     map_info = full_data['map_info']
     zone_data = map_info['ZoneData']
     match = next((e for e in zone_data if e['ZoneID'] == label_name), None)
-    return get_area_display_name(match['MSLabel']) if match and len(match['MSLabel']) > 0 else get_area_name(match['PokePlaceName'])
+    areaName = get_area_display_name(match['MSLabel']) if match and len(match['MSLabel']) > 0 else get_area_name(match['PokePlaceName'])
+    return areaName, match['MSLabel']
 
 def get_trainer_data_from_place_datas():
     '''
@@ -260,7 +261,7 @@ def get_trainer_data(zoneID, trainerID, method, is_gym_rematch=0):
     if not trainer_name:
         trainer_name = trainer_data['NameLabel'].split("_")[-1].capitalize()
         print("This trainer doesn't have a name in game:", trainer_data['NameLabel'], trainerID)
-    areaName = get_map_info(zoneID)
+    areaName, _ = get_map_info(zoneID)
     zones = areas[zoneID + 1]
     zoneName = zones[3] if zones[3] != '' else zones[4]
     if zoneName == '':
@@ -621,12 +622,14 @@ def create_zone_id_map():
     This creates a {zone_name: zone_id} dictionary using the areas_updated.csv
     '''
     zone_dict = {}
+    reverse_zone_dict = {}
     for place in areas:
         zone_index = int(areas.index(place) - 1)
         zone_name = areas[zone_index][-1]
         zone_id = areas[zone_index][0]
         zone_dict[zone_name] = zone_id
-    return zone_dict
+        reverse_zone_dict[zone_id] = zone_name
+    return zone_dict, reverse_zone_dict
 
 def get_zone_info(file_path):
     '''
@@ -710,6 +713,6 @@ def process_files(folder_path, callback):
 
 if __name__ != "__main__":
     full_data = load_data()
-    zone_dict = create_zone_id_map()
+    zone_dict, reverse_zone_dict = create_zone_id_map()
     trainer_labels = full_data['trainer_labels']
     trainer_names = full_data['trainer_names']

@@ -9,7 +9,7 @@ from convert_lmpt_data import getTrainerData
 from data_checks import get_average_time
 from load_files import load_data
 from pokemonUtils import get_pokemon_from_trainer_info, get_pokemon_name
-from trainerUtils import parse_ev_script_file, process_files
+from trainerUtils import parse_ev_script_file, process_files, get_map_info, get_area_display_name
 
 repo_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 output_file_path = os.path.join(repo_file_path, "Python_tasks", constants.OUTPUT_NAME)
@@ -246,6 +246,50 @@ def write_tracker_docs(trainers_list):
         all_trainers.append(zone_trainers)
     return all_trainers
 
+def write_mapper_docs(trainers_list):
+    '''
+    Requires the trainers sorted for the Nuzlocke Tracker
+    This formats all of the trainers for use in the Tracker
+    '''
+    all_trainers = {}
+
+    for zone in trainers_list.keys():
+        zone_trainers = []
+        index_dict = {
+            "Grunt": 0,
+            "Lucas": 0,
+            "Dawn": 0,
+            "Barry": 0,
+        }
+        for trainer in trainers_list[zone]:
+            zone_trainer = {}
+            zone_name = trainer['zoneName']
+            zone_id = trainer['zoneId']
+            name = f"{trainer['type']} {trainer['name']}"
+            rematch = trainer['rematch']
+            is_repeat_trainer = any(substring in name for substring in constants.REPEAT_TRAINERS_LIST) and not re.findall(constants.TEAM_REGEX, name)
+            if is_repeat_trainer:
+                full_trainer_name = generate_repeat_trainer_name(trainer, index_dict)
+            else:
+                full_trainer_name = get_trainer_name(name, zone_name, 0, rematch)
+            trainer_name = full_trainer_name[0]
+            team_name = full_trainer_name[1]
+            trainer_team = trainer['team']
+            trainer_type = trainer['format']
+            zone_trainer = {
+                "team": trainer_team,
+                "team_name": team_name,
+                "name": trainer_name,
+                "route": zone_name,
+                "zoneId": zone_id,
+                "trainerType": trainer_type
+            }
+            zone_trainers.append(zone_trainer)
+        zoneId = zone_trainers[0]["zoneId"]
+        areaName, area_display_name = get_map_info(zoneId)
+        all_trainers[areaName] = zone_trainers
+    return all_trainers
+
 def get_trainer_doc_data():
     '''
     This gets the trainer documentation for Solarnce's Trainer Docs in the Google Sheets
@@ -270,10 +314,13 @@ def get_tracker_trainer_data():
     sorted_tracker_trainers = sort_trainers_by_route(trainer_info)
     print("Trainers have been sorted")
     new_trainers = write_tracker_docs(sorted_tracker_trainers)
+    mapper_trainers = write_mapper_docs(sorted_tracker_trainers)
     for route in new_trainers:
         original_teams["1"].append(route)
     with open(os.path.join(output_file_path, 'Trainer_output.json'), 'w', encoding='utf-8') as f:
         json.dump(original_teams, f, indent=2)
+    with open(os.path.join(output_file_path, "Mapper_Trainer_Output.json"), "w", encoding='utf-8') as f:
+        json.dump(mapper_trainers, f, indent=2)
 
 if __name__ == "__main__":
     start_time = time.time()
