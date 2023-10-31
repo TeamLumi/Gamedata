@@ -272,7 +272,7 @@ def get_trainer_data(zoneID, trainerID, method, is_gym_rematch=0):
     if areaName in constants.TRACKER_VARS.keys():
         areaName = constants.TRACKER_VARS.get(areaName, areaName)
     if not areaName.startswith("lmpt"):
-        print(areaName)
+        print(f"This areaName is not in line with the tracker standards: {areaName}")
     trainer = {
         'areaName': areaName,
         'zoneName': zoneName,
