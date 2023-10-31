@@ -1,7 +1,7 @@
 ## All that needs to change to change modes is this INPUT_NAME
 ## If you are using 3.0 files, change it to "3.0Input"
 ## Otherwise just set it to "input"
-INPUT_NAME = "3.0Input"
+INPUT_NAME = "input"
 if INPUT_NAME == "input":
     DEBUG_NAME = "Debug"
     OUTPUT_NAME = "output"
