@@ -262,7 +262,7 @@ def evolution_pathfinding():
     start_pathfinding(evolution_paths, graph)
     get_evolution_arrays(evolution_paths, graph)
 
-    with open(os.path.join(debug_file_path, "evolution.json"), "w", encoding = "utf-8") as output:
+    with open(os.path.join(input_file_path, "evolution.json"), "w", encoding = "utf-8") as output:
         json.dump(evolution_paths, output, ensure_ascii=False, indent=2)
 
     add_forms(evolution_paths, graph)
