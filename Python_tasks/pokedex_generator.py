@@ -269,7 +269,7 @@ def evolution_pathfinding():
     remove_duplicate_forms(evolution_paths)
     return evolution_paths
 
-def get_mon_dex_info(pokemon, evolution_paths):
+def get_mon_dex_info(pokemonId, evolution_paths):
     '''
     This is for the pokedex that is used in the Tracker.
     It initializes every pokemon for the pokedex and formats them
@@ -288,11 +288,12 @@ def get_mon_dex_info(pokemon, evolution_paths):
      "dexNum": monsNo,
      "form": formNo}
     '''
-    poke_info = get_pokemon_info(pokemon)
-    poke_name = get_pokemon_name(pokemon)
+    poke_info = get_pokemon_info(pokemonId)
+    poke_name = get_pokemon_name(pokemonId)
+    mons_no, form_no = get_mons_no_and_form_no(pokemonId)
 
     dex_info = {
-        "value": pokemon,
+        "value": pokemonId,
         "text": poke_name,
         "type": poke_info["type"].upper()
         }
@@ -301,16 +302,8 @@ def get_mon_dex_info(pokemon, evolution_paths):
     dex_info["evolve"] = evolution_paths
     dex_info["generation"] = 8
     dex_info["abilities"] = [poke_info['ability1'], poke_info['ability2'], poke_info['abilityH']]
-    dex_info["dexNum"] = pokemon
-    dex_info["form"] = 0
-    if pokemon > constants.POKEDEX_LENGTH:
-        for poke_form in diff_forms.keys():
-            if poke_name in diff_forms[poke_form]:
-                form_number = diff_forms[poke_form][4]
-                og_num = diff_forms[poke_form][3]
-        dex_info["dexNum"] = og_num
-        dex_info["form"] = int(form_number)
-        return dex_info
+    dex_info["dexNum"] = mons_no
+    dex_info["form"] = form_no
 
     return dex_info
 
@@ -368,8 +361,7 @@ def getPokedexInfo():
             continue
         is_valid = is_valid_pokemon(pokemon)
         evolution_path = evolutions[pokemon]["path"]
-        if is_valid == 1:
-            dex_info = get_mon_dex_info(pokemon, evolution_path)
+        dex_info = get_mon_dex_info(pokemon, evolution_path)
         pokedex.append(dex_info)
 
     with open(os.path.join(output_file_path, "pokedex_info.json"), "w", encoding="utf-8") as output:
