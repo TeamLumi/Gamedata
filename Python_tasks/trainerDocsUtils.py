@@ -199,7 +199,7 @@ def generate_repeat_trainer_name(trainer, index_dict):
         if index_dict['Barry'] < 3:
             STARTER_INDEX = constants.STARTERS[index_dict['Barry']].capitalize()
         else:
-            STARTER_INDEX = "End Game"
+            STARTER_INDEX = f"End Game {index_dict['Barry'] - 2}"
         index_dict['Barry'] += 1
         return get_trainer_name(name, zone_name, STARTER_INDEX)
 

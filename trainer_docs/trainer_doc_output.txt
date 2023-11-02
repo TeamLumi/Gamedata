@@ -7918,999 +7918,6 @@ Hydro Pump
 0/0/0/0/0/0
 
 
-190
-Camper Drew
-Level Cap:
-Format: Single Battle
-
-Gastly
-27
-Bashful
-Levitate
-
-None
-Payback
-Sucker Punch
-Confuse Ray
-(No Move)
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Gastly
-27
-Serious
-Levitate
-
-None
-Sucker Punch
-Night Shade
-Confuse Ray
-(No Move)
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Gastly
-27
-Bashful
-Levitate
-
-None
-Night Shade
-Payback
-Confuse Ray
-(No Move)
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-272
-Youngster Donny
-Level Cap:
-Format: Single Battle
-
-Gastly
-27
-Serious
-Levitate
-
-None
-Hex
-Curse
-Sucker Punch
-Shadow Ball
-25/25/25/25/25/25
-0/0/0/200/80/200
-
-Gastly
-27
-Bashful
-Levitate
-
-None
-Hex
-Curse
-Sucker Punch
-Shadow Ball
-25/25/25/25/25/25
-0/0/0/200/80/200
-
-Gastly
-27
-Bashful
-Levitate
-
-None
-Hex
-Curse
-Sucker Punch
-Shadow Ball
-25/25/25/25/25/25
-0/0/0/200/80/200
-
-
-249
-Lass Molly
-Level Cap:
-Format: Single Battle
-
-Misdreavus
-29
-Hardy
-Levitate
-
-None
-Pain Split
-Shadow Ball
-Payback
-Mean Look
-25/25/25/25/25/25
-252/0/4/0/0/252
-
-
-254
-Picnicker Cheyenne
-Level Cap:
-Format: Single Battle
-
-Drifloon
-28
-Quirky
-Aftermath
-
-None
-Spit Up
-Swallow
-Stockpile
-(No Move)
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Misdreavus
-28
-Bashful
-Levitate
-
-None
-Psybeam
-Astonish
-Confuse Ray
-(No Move)
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-262
-School Kid Chance
-Level Cap:
-Format: Single Battle
-
-Duskull
-26
-Docile
-Levitate
-
-None
-Foresight
-Shadow Sneak
-Will-O-Wisp
-Payback
-25/25/25/25/25/25
-196/0/196/0/116/0
-
-Shuppet
-26
-Bashful
-Insomnia
-
-None
-Pain Split
-Feint Attack
-Hex
-Curse
-25/25/25/25/25/25
-4/236/156/0/0/0
-
-Duskull
-26
-Bashful
-Levitate
-
-None
-Foresight
-Shadow Sneak
-Will-O-Wisp
-Payback
-25/25/25/25/25/25
-196/0/196/0/116/0
-
-
-265
-School Kid Mackenzie
-Level Cap:
-Format: Single Battle
-
-Shuppet
-26
-Docile
-Insomnia
-
-None
-Pain Split
-Feint Attack
-Hex
-Curse
-25/25/25/25/25/25
-4/236/156/0/0/0
-
-Duskull
-26
-Serious
-Levitate
-
-None
-Foresight
-Shadow Sneak
-Will-O-Wisp
-Payback
-25/25/25/25/25/25
-196/0/196/0/116/0
-
-Shuppet
-26
-Serious
-Insomnia
-
-None
-Pain Split
-Feint Attack
-Hex
-Curse
-25/25/25/25/25/25
-4/236/156/0/0/0
-
-
-204
-Ace Trainer Allen
-Level Cap:
-Format: Single Battle
-
-Haunter
-29
-Serious
-Levitate
-
-None
-Shadow Ball
-Hypnosis
-Sludge Bomb
-Confuse Ray
-25/25/25/25/25/25
-0/0/4/252/0/252
-
-Shedinja
-29
-Serious
-Wonder Guard
-
-None
-Shadow Claw
-Shadow Sneak
-Leech Life
-Confuse Ray
-25/25/25/25/25/25
-0/252/0/0/0/252
-
-Sableye
-29
-Docile
-Magic Guard
-
-None
-Shadow Claw
-Shadow Sneak
-Knock Off
-Fake Out
-25/25/25/25/25/25
-0/252/252/4/0/0
-
-
-208
-Ace Trainer Catherine
-Level Cap:
-Format: Single Battle
-
-Haunter
-29
-Bashful
-Levitate
-
-None
-Shadow Ball
-Toxic
-Protect
-Curse
-25/25/25/25/25/25
-0/0/4/252/0/252
-
-Rotom
-29
-Bashful
-Levitate
-
-None
-Shadow Ball
-Charge Beam
-Will-O-Wisp
-Confuse Ray
-25/25/25/25/25/25
-248/0/0/8/0/252
-
-Froslass
-29
-Bashful
-Levitate
-
-None
-Icy Wind
-Shadow Ball
-Will-O-Wisp
-Double Team
-25/25/25/25/25/25
-4/0/0/252/0/252
-
-
-831
-Gym Leader Fantina Team 1
-Level Cap:
-Format: Single Battle
-
-Sableye
-32
-Adamant
-Magic Bounce
-
-Leftovers
-Knock Off
-Shadow Claw
-Fake Out
-Shadow Sneak
-25/25/25/25/25/25
-252/0/252/0/4/0
-
-Gengar
-32
-Hasty
-Levitate
-
-Adrenaline Orb
-Shadow Ball
-Dazzling Gleam
-Psychic
-Energy Ball
-25/0/25/25/25/25
-0/0/0/252/4/248
-
-Banette
-32
-Adamant
-Prankster
-
-Colbur Berry
-Crush Claw
-Shadow Claw
-Thunder Wave
-Shadow Sneak
-25/25/25/25/25/25
-252/244/0/0/12/0
-
-Rotom
-32
-Timid
-Levitate
-
-Magnet
-Discharge
-Shadow Ball
-Volt Switch
-Will-O-Wisp
-25/0/25/25/25/25
-4/0/0/244/12/248
-
-Drifblim
-33
-Timid
-Flare Boost
-
-Flame Orb
-Shadow Ball
-Air Slash
-Stockpile
-Strength Sap
-25/0/25/25/25/25
-12/0/0/248/4/244
-
-Mismagius
-33
-Timid
-Levitate
-
-Spell Tag
-Shadow Ball
-Mystical Fire
-Hyper Beam
-Dazzling Gleam
-25/0/25/25/25/25
-4/0/0/252/0/252
-
-
-832
-Gym Leader Fantina Team 2
-Level Cap:
-Format: Single Battle
-
-Dusclops
-32
-Careful
-Regenerator
-
-Red Card
-Will-O-Wisp
-Pain Split
-Parting Shot
-Shadow Punch
-25/25/25/25/25/25
-252/4/0/0/252/0
-
-Sableye
-32
-Adamant
-Prankster
-
-Lagging Tail
-Trick
-Will-O-Wisp
-Fake Out
-Shadow Sneak
-25/25/25/25/25/25
-252/0/252/0/4/0
-
-Gengar
-32
-Hasty
-Levitate
-
-Wise Glasses
-Shadow Ball
-Dazzling Gleam
-Psychic
-Energy Ball
-25/0/25/25/25/25
-0/0/0/252/4/248
-
-Spiritomb
-32
-Sassy
-Cursed Body
-
-Leftovers
-Shadow Sneak
-Pain Split
-Protect
-Foul Play
-25/25/25/25/25/25
-248/8/0/0/252/0
-
-Drifblim
-33
-Timid
-Flare Boost
-
-Flame Orb
-Shadow Ball
-Air Slash
-Stockpile
-Strength Sap
-25/0/25/25/25/25
-12/0/0/248/4/244
-
-Mismagius
-33
-Timid
-Levitate
-
-Spell Tag
-Shadow Ball
-Mystical Fire
-Hyper Beam
-Dazzling Gleam
-25/0/25/25/25/25
-4/0/0/252/0/252
-
-
-833
-Gym Leader Fantina Team 3
-Level Cap:
-Format: Single Battle
-
-Sableye
-32
-Adamant
-Magic Bounce
-
-Leftovers
-Knock Off
-Shadow Claw
-Fake Out
-Shadow Sneak
-25/25/25/25/25/25
-252/0/252/0/4/0
-
-Gengar
-32
-Hasty
-Levitate
-
-Wise Glasses
-Shadow Ball
-Dazzling Gleam
-Psychic
-Energy Ball
-25/0/25/25/25/25
-0/0/0/252/4/248
-
-Shedinja
-32
-Naive
-Wonder Guard
-
-Focus Sash
-Confuse Ray
-Shadow Claw
-X-Scissor
-Shadow Sneak
-25/25/25/25/25/25
-0/252/4/0/0/252
-
-Dusclops
-32
-Careful
-Pressure
-
-Eviolite
-Will-O-Wisp
-Pain Split
-Sucker Punch
-Shadow Punch
-25/25/25/25/25/25
-252/4/0/0/252/0
-
-Drifblim
-33
-Timid
-Flare Boost
-
-Flame Orb
-Shadow Ball
-Air Slash
-Stockpile
-Strength Sap
-25/0/25/25/25/25
-12/0/0/248/4/244
-
-Mismagius
-33
-Timid
-Levitate
-
-Spell Tag
-Shadow Ball
-Mystical Fire
-Hyper Beam
-Dazzling Gleam
-25/0/25/25/25/25
-4/0/0/252/0/252
-
-
-834
-Gym Leader Fantina Team 4
-Level Cap:
-Format: Single Battle
-
-Mismagius
-33
-Timid
-Prankster
-
-Focus Sash
-Shadow Ball
-Mean Look
-Destiny Bond
-Dazzling Gleam
-25/0/25/25/25/25
-248/0/0/8/0/252
-
-Sableye
-32
-Adamant
-Prankster
-
-Lagging Tail
-Trick
-Will-O-Wisp
-Fake Out
-Shadow Sneak
-25/25/25/25/25/25
-252/0/252/0/4/0
-
-Gengar
-32
-Hasty
-Levitate
-
-Wise Glasses
-Shadow Ball
-Dazzling Gleam
-Psychic
-Energy Ball
-25/0/25/25/25/25
-0/0/0/252/4/248
-
-Spiritomb
-32
-Sassy
-Cursed Body
-
-Leftovers
-Shadow Sneak
-Pain Split
-Protect
-Foul Play
-25/25/25/25/25/25
-248/8/0/0/252/0
-
-Banette
-32
-Adamant
-Cursed Body
-
-Colbur Berry
-Crush Claw
-Shadow Claw
-Gunk Shot
-Shadow Sneak
-25/25/25/25/25/25
-252/244/0/0/12/0
-
-Drifblim
-33
-Timid
-Flare Boost
-
-Flame Orb
-Shadow Ball
-Air Slash
-Stockpile
-Strength Sap
-25/0/25/25/25/25
-12/0/0/248/4/244
-
-
-899
-Gym Leader Fantina Team 1 Rematch
-Level Cap:
-Format: Single Battle
-
-Spiritomb
-100
-Calm
-Cursed Body
-
-Leftovers
-Strength Sap
-Hex
-Will-O-Wisp
-Dark Pulse
-31/0/31/31/31/31
-252/0/0/0/4/252
-
-Banette
-100
-Adamant
-Prankster
-
-Life Orb
-Double-Edge
-Phantom Force
-Shadow Sneak
-Destiny Bond
-31/31/31/31/31/31
-252/252/0/0/0/4
-
-Absol
-100
-Jolly
-Super Luck
-
-Scope Lens
-Night Slash
-Psycho Cut
-X-Scissor
-Stone Edge
-31/31/31/31/31/31
-0/252/0/0/4/252
-
-Luxray
-100
-Jolly
-Guts
-
-Flame Orb
-Sucker Punch
-Wild Charge
-Volt Switch
-Ice Fang
-31/31/31/31/31/31
-0/252/0/0/4/252
-
-Mismagius
-100
-Timid
-Levitate
-
-Choice Specs
-Moonblast
-Mystical Fire
-Shadow Ball
-Thunderbolt
-31/0/31/31/31/31
-0/0/0/252/4/252
-
-Darkrai
-100
-Timid
-Bad Dreams
-
-Focus Sash
-Dark Void
-Dream Eater
-Dark Pulse
-Nasty Plot
-31/0/31/31/31/31
-0/0/0/252/4/252
-
-
-900
-Gym Leader Fantina Team 2 Rematch
-Level Cap:
-Format: Single Battle
-
-Umbreon
-100
-Calm
-Immunity
-
-Leftovers
-Toxic
-Wish
-Protect
-Foul Play
-31/0/31/31/31/31
-252/0/4/0/0/252
-
-Sharpedo
-100
-Adamant
-Speed Boost
-
-Life Orb
-Protect
-Liquidation
-Crunch
-Earthquake
-31/31/31/31/31/31
-4/252/0/0/0/252
-
-Dusclops
-100
-Calm
-Regenerator
-
-Eviolite
-Parting Shot
-Night Shade
-Will-O-Wisp
-Pain Split
-31/0/31/31/31/31
-252/0/4/0/0/252
-
-Gengar
-100
-Timid
-Levitate
-
-Choice Scarf
-Shadow Ball
-Sludge Wave
-Dazzling Gleam
-Energy Ball
-31/0/31/31/31/31
-0/0/0/252/4/252
-
-Mismagius
-100
-Timid
-Levitate
-
-Choice Specs
-Moonblast
-Mystical Fire
-Shadow Ball
-Thunderbolt
-31/0/31/31/31/31
-0/0/0/252/4/252
-
-Darkrai
-100
-Timid
-Bad Dreams
-
-Focus Sash
-Dark Void
-Dream Eater
-Dark Pulse
-Nasty Plot
-31/0/31/31/31/31
-0/0/0/252/4/252
-
-
-901
-Gym Leader Fantina Team 3 Rematch
-Level Cap:
-Format: Single Battle
-
-Sableye
-100
-Impish
-Magic Bounce
-
-Leftovers
-Shadow Sneak
-Toxic
-Recover
-Knock Off
-31/31/31/31/31/31
-248/8/252/0/0/0
-
-Dusknoir
-100
-Adamant
-Iron Fist
-
-Expert Belt
-Shadow Punch
-Ice Punch
-Thunder Punch
-Shadow Sneak
-31/31/31/31/31/31
-252/252/0/0/0/4
-
-Houndoom
-100
-Adamant
-Intimidate
-
-Chesto Berry
-Sucker Punch
-Flare Blitz
-Rest
-Curse
-31/31/31/31/31/31
-0/252/0/0/4/252
-
-Skuntank
-100
-Timid
-Flare Boost
-
-Flame Orb
-Sludge Bomb
-Dark Pulse
-Flamethrower
-Hidden Power
-31/0/31/31/31/31
-4/0/0/252/0/252
-
-Mismagius
-100
-Timid
-Levitate
-
-Choice Specs
-Moonblast
-Mystical Fire
-Shadow Ball
-Thunderbolt
-31/0/31/31/31/31
-0/0/0/252/4/252
-
-Darkrai
-100
-Timid
-Bad Dreams
-
-Focus Sash
-Dark Void
-Dream Eater
-Dark Pulse
-Nasty Plot
-31/0/31/31/31/31
-0/0/0/252/4/252
-
-
-902
-Gym Leader Fantina Team 4 Rematch
-Level Cap:
-Format: Single Battle
-
-Misdreavus
-100
-Calm
-Prankster
-
-Eviolite
-Confuse Ray
-Thunder Wave
-Destiny Bond
-Dazzling Gleam
-31/0/31/31/31/31
-252/0/0/0/4/252
-
-Crawdaunt
-100
-Adamant
-Adaptability
-
-Heavy-Duty Boots
-Dragon Dance
-Liquidation
-Crunch
-Aqua Jet
-31/31/31/31/31/31
-4/252/0/0/0/252
-
-Drifblim
-100
-Timid
-Flare Boost
-
-Flame Orb
-Thunderbolt
-Hurricane
-Flamethrower
-Strength Sap
-31/0/31/31/31/31
-0/0/0/252/4/252
-
-Banette
-100
-Adamant
-Prankster
-
-Life Orb
-Double-Edge
-Phantom Force
-Shadow Sneak
-Destiny Bond
-31/31/31/31/31/31
-252/252/0/0/0/4
-
-Mismagius
-100
-Timid
-Levitate
-
-Choice Specs
-Moonblast
-Mystical Fire
-Shadow Ball
-Thunderbolt
-31/0/31/31/31/31
-0/0/0/252/4/252
-
-Darkrai
-100
-Timid
-Bad Dreams
-
-Focus Sash
-Dark Void
-Dream Eater
-Dark Pulse
-Nasty Plot
-31/0/31/31/31/31
-0/0/0/252/4/252
-
-
 943
 Elite Four Aaron
 Level Cap:
@@ -10001,6 +9008,999 @@ Crunch
 Bulldoze
 25/25/25/25/25/25
 116/252/52/0/88/0
+
+
+190
+Camper Drew
+Level Cap:
+Format: Single Battle
+
+Gastly
+27
+Bashful
+Levitate
+
+None
+Payback
+Sucker Punch
+Confuse Ray
+(No Move)
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Gastly
+27
+Serious
+Levitate
+
+None
+Sucker Punch
+Night Shade
+Confuse Ray
+(No Move)
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Gastly
+27
+Bashful
+Levitate
+
+None
+Night Shade
+Payback
+Confuse Ray
+(No Move)
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+272
+Youngster Donny
+Level Cap:
+Format: Single Battle
+
+Gastly
+27
+Serious
+Levitate
+
+None
+Hex
+Curse
+Sucker Punch
+Shadow Ball
+25/25/25/25/25/25
+0/0/0/200/80/200
+
+Gastly
+27
+Bashful
+Levitate
+
+None
+Hex
+Curse
+Sucker Punch
+Shadow Ball
+25/25/25/25/25/25
+0/0/0/200/80/200
+
+Gastly
+27
+Bashful
+Levitate
+
+None
+Hex
+Curse
+Sucker Punch
+Shadow Ball
+25/25/25/25/25/25
+0/0/0/200/80/200
+
+
+249
+Lass Molly
+Level Cap:
+Format: Single Battle
+
+Misdreavus
+29
+Hardy
+Levitate
+
+None
+Pain Split
+Shadow Ball
+Payback
+Mean Look
+25/25/25/25/25/25
+252/0/4/0/0/252
+
+
+254
+Picnicker Cheyenne
+Level Cap:
+Format: Single Battle
+
+Drifloon
+28
+Quirky
+Aftermath
+
+None
+Spit Up
+Swallow
+Stockpile
+(No Move)
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Misdreavus
+28
+Bashful
+Levitate
+
+None
+Psybeam
+Astonish
+Confuse Ray
+(No Move)
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+262
+School Kid Chance
+Level Cap:
+Format: Single Battle
+
+Duskull
+26
+Docile
+Levitate
+
+None
+Foresight
+Shadow Sneak
+Will-O-Wisp
+Payback
+25/25/25/25/25/25
+196/0/196/0/116/0
+
+Shuppet
+26
+Bashful
+Insomnia
+
+None
+Pain Split
+Feint Attack
+Hex
+Curse
+25/25/25/25/25/25
+4/236/156/0/0/0
+
+Duskull
+26
+Bashful
+Levitate
+
+None
+Foresight
+Shadow Sneak
+Will-O-Wisp
+Payback
+25/25/25/25/25/25
+196/0/196/0/116/0
+
+
+265
+School Kid Mackenzie
+Level Cap:
+Format: Single Battle
+
+Shuppet
+26
+Docile
+Insomnia
+
+None
+Pain Split
+Feint Attack
+Hex
+Curse
+25/25/25/25/25/25
+4/236/156/0/0/0
+
+Duskull
+26
+Serious
+Levitate
+
+None
+Foresight
+Shadow Sneak
+Will-O-Wisp
+Payback
+25/25/25/25/25/25
+196/0/196/0/116/0
+
+Shuppet
+26
+Serious
+Insomnia
+
+None
+Pain Split
+Feint Attack
+Hex
+Curse
+25/25/25/25/25/25
+4/236/156/0/0/0
+
+
+204
+Ace Trainer Allen
+Level Cap:
+Format: Single Battle
+
+Haunter
+29
+Serious
+Levitate
+
+None
+Shadow Ball
+Hypnosis
+Sludge Bomb
+Confuse Ray
+25/25/25/25/25/25
+0/0/4/252/0/252
+
+Shedinja
+29
+Serious
+Wonder Guard
+
+None
+Shadow Claw
+Shadow Sneak
+Leech Life
+Confuse Ray
+25/25/25/25/25/25
+0/252/0/0/0/252
+
+Sableye
+29
+Docile
+Magic Guard
+
+None
+Shadow Claw
+Shadow Sneak
+Knock Off
+Fake Out
+25/25/25/25/25/25
+0/252/252/4/0/0
+
+
+208
+Ace Trainer Catherine
+Level Cap:
+Format: Single Battle
+
+Haunter
+29
+Bashful
+Levitate
+
+None
+Shadow Ball
+Toxic
+Protect
+Curse
+25/25/25/25/25/25
+0/0/4/252/0/252
+
+Rotom
+29
+Bashful
+Levitate
+
+None
+Shadow Ball
+Charge Beam
+Will-O-Wisp
+Confuse Ray
+25/25/25/25/25/25
+248/0/0/8/0/252
+
+Froslass
+29
+Bashful
+Levitate
+
+None
+Icy Wind
+Shadow Ball
+Will-O-Wisp
+Double Team
+25/25/25/25/25/25
+4/0/0/252/0/252
+
+
+831
+Gym Leader Fantina Team 1
+Level Cap:
+Format: Single Battle
+
+Sableye
+32
+Adamant
+Magic Bounce
+
+Leftovers
+Knock Off
+Shadow Claw
+Fake Out
+Shadow Sneak
+25/25/25/25/25/25
+252/0/252/0/4/0
+
+Gengar
+32
+Hasty
+Levitate
+
+Adrenaline Orb
+Shadow Ball
+Dazzling Gleam
+Psychic
+Energy Ball
+25/0/25/25/25/25
+0/0/0/252/4/248
+
+Banette
+32
+Adamant
+Prankster
+
+Colbur Berry
+Crush Claw
+Shadow Claw
+Thunder Wave
+Shadow Sneak
+25/25/25/25/25/25
+252/244/0/0/12/0
+
+Rotom
+32
+Timid
+Levitate
+
+Magnet
+Discharge
+Shadow Ball
+Volt Switch
+Will-O-Wisp
+25/0/25/25/25/25
+4/0/0/244/12/248
+
+Drifblim
+33
+Timid
+Flare Boost
+
+Flame Orb
+Shadow Ball
+Air Slash
+Stockpile
+Strength Sap
+25/0/25/25/25/25
+12/0/0/248/4/244
+
+Mismagius
+33
+Timid
+Levitate
+
+Spell Tag
+Shadow Ball
+Mystical Fire
+Hyper Beam
+Dazzling Gleam
+25/0/25/25/25/25
+4/0/0/252/0/252
+
+
+832
+Gym Leader Fantina Team 2
+Level Cap:
+Format: Single Battle
+
+Dusclops
+32
+Careful
+Regenerator
+
+Red Card
+Will-O-Wisp
+Pain Split
+Parting Shot
+Shadow Punch
+25/25/25/25/25/25
+252/4/0/0/252/0
+
+Sableye
+32
+Adamant
+Prankster
+
+Lagging Tail
+Trick
+Will-O-Wisp
+Fake Out
+Shadow Sneak
+25/25/25/25/25/25
+252/0/252/0/4/0
+
+Gengar
+32
+Hasty
+Levitate
+
+Wise Glasses
+Shadow Ball
+Dazzling Gleam
+Psychic
+Energy Ball
+25/0/25/25/25/25
+0/0/0/252/4/248
+
+Spiritomb
+32
+Sassy
+Cursed Body
+
+Leftovers
+Shadow Sneak
+Pain Split
+Protect
+Foul Play
+25/25/25/25/25/25
+248/8/0/0/252/0
+
+Drifblim
+33
+Timid
+Flare Boost
+
+Flame Orb
+Shadow Ball
+Air Slash
+Stockpile
+Strength Sap
+25/0/25/25/25/25
+12/0/0/248/4/244
+
+Mismagius
+33
+Timid
+Levitate
+
+Spell Tag
+Shadow Ball
+Mystical Fire
+Hyper Beam
+Dazzling Gleam
+25/0/25/25/25/25
+4/0/0/252/0/252
+
+
+833
+Gym Leader Fantina Team 3
+Level Cap:
+Format: Single Battle
+
+Sableye
+32
+Adamant
+Magic Bounce
+
+Leftovers
+Knock Off
+Shadow Claw
+Fake Out
+Shadow Sneak
+25/25/25/25/25/25
+252/0/252/0/4/0
+
+Gengar
+32
+Hasty
+Levitate
+
+Wise Glasses
+Shadow Ball
+Dazzling Gleam
+Psychic
+Energy Ball
+25/0/25/25/25/25
+0/0/0/252/4/248
+
+Shedinja
+32
+Naive
+Wonder Guard
+
+Focus Sash
+Confuse Ray
+Shadow Claw
+X-Scissor
+Shadow Sneak
+25/25/25/25/25/25
+0/252/4/0/0/252
+
+Dusclops
+32
+Careful
+Pressure
+
+Eviolite
+Will-O-Wisp
+Pain Split
+Sucker Punch
+Shadow Punch
+25/25/25/25/25/25
+252/4/0/0/252/0
+
+Drifblim
+33
+Timid
+Flare Boost
+
+Flame Orb
+Shadow Ball
+Air Slash
+Stockpile
+Strength Sap
+25/0/25/25/25/25
+12/0/0/248/4/244
+
+Mismagius
+33
+Timid
+Levitate
+
+Spell Tag
+Shadow Ball
+Mystical Fire
+Hyper Beam
+Dazzling Gleam
+25/0/25/25/25/25
+4/0/0/252/0/252
+
+
+834
+Gym Leader Fantina Team 4
+Level Cap:
+Format: Single Battle
+
+Mismagius
+33
+Timid
+Prankster
+
+Focus Sash
+Shadow Ball
+Mean Look
+Destiny Bond
+Dazzling Gleam
+25/0/25/25/25/25
+248/0/0/8/0/252
+
+Sableye
+32
+Adamant
+Prankster
+
+Lagging Tail
+Trick
+Will-O-Wisp
+Fake Out
+Shadow Sneak
+25/25/25/25/25/25
+252/0/252/0/4/0
+
+Gengar
+32
+Hasty
+Levitate
+
+Wise Glasses
+Shadow Ball
+Dazzling Gleam
+Psychic
+Energy Ball
+25/0/25/25/25/25
+0/0/0/252/4/248
+
+Spiritomb
+32
+Sassy
+Cursed Body
+
+Leftovers
+Shadow Sneak
+Pain Split
+Protect
+Foul Play
+25/25/25/25/25/25
+248/8/0/0/252/0
+
+Banette
+32
+Adamant
+Cursed Body
+
+Colbur Berry
+Crush Claw
+Shadow Claw
+Gunk Shot
+Shadow Sneak
+25/25/25/25/25/25
+252/244/0/0/12/0
+
+Drifblim
+33
+Timid
+Flare Boost
+
+Flame Orb
+Shadow Ball
+Air Slash
+Stockpile
+Strength Sap
+25/0/25/25/25/25
+12/0/0/248/4/244
+
+
+899
+Gym Leader Fantina Team 1 Rematch
+Level Cap:
+Format: Single Battle
+
+Spiritomb
+100
+Calm
+Cursed Body
+
+Leftovers
+Strength Sap
+Hex
+Will-O-Wisp
+Dark Pulse
+31/0/31/31/31/31
+252/0/0/0/4/252
+
+Banette
+100
+Adamant
+Prankster
+
+Life Orb
+Double-Edge
+Phantom Force
+Shadow Sneak
+Destiny Bond
+31/31/31/31/31/31
+252/252/0/0/0/4
+
+Absol
+100
+Jolly
+Super Luck
+
+Scope Lens
+Night Slash
+Psycho Cut
+X-Scissor
+Stone Edge
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Luxray
+100
+Jolly
+Guts
+
+Flame Orb
+Sucker Punch
+Wild Charge
+Volt Switch
+Ice Fang
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Mismagius
+100
+Timid
+Levitate
+
+Choice Specs
+Moonblast
+Mystical Fire
+Shadow Ball
+Thunderbolt
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+Darkrai
+100
+Timid
+Bad Dreams
+
+Focus Sash
+Dark Void
+Dream Eater
+Dark Pulse
+Nasty Plot
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+
+900
+Gym Leader Fantina Team 2 Rematch
+Level Cap:
+Format: Single Battle
+
+Umbreon
+100
+Calm
+Immunity
+
+Leftovers
+Toxic
+Wish
+Protect
+Foul Play
+31/0/31/31/31/31
+252/0/4/0/0/252
+
+Sharpedo
+100
+Adamant
+Speed Boost
+
+Life Orb
+Protect
+Liquidation
+Crunch
+Earthquake
+31/31/31/31/31/31
+4/252/0/0/0/252
+
+Dusclops
+100
+Calm
+Regenerator
+
+Eviolite
+Parting Shot
+Night Shade
+Will-O-Wisp
+Pain Split
+31/0/31/31/31/31
+252/0/4/0/0/252
+
+Gengar
+100
+Timid
+Levitate
+
+Choice Scarf
+Shadow Ball
+Sludge Wave
+Dazzling Gleam
+Energy Ball
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+Mismagius
+100
+Timid
+Levitate
+
+Choice Specs
+Moonblast
+Mystical Fire
+Shadow Ball
+Thunderbolt
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+Darkrai
+100
+Timid
+Bad Dreams
+
+Focus Sash
+Dark Void
+Dream Eater
+Dark Pulse
+Nasty Plot
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+
+901
+Gym Leader Fantina Team 3 Rematch
+Level Cap:
+Format: Single Battle
+
+Sableye
+100
+Impish
+Magic Bounce
+
+Leftovers
+Shadow Sneak
+Toxic
+Recover
+Knock Off
+31/31/31/31/31/31
+248/8/252/0/0/0
+
+Dusknoir
+100
+Adamant
+Iron Fist
+
+Expert Belt
+Shadow Punch
+Ice Punch
+Thunder Punch
+Shadow Sneak
+31/31/31/31/31/31
+252/252/0/0/0/4
+
+Houndoom
+100
+Adamant
+Intimidate
+
+Chesto Berry
+Sucker Punch
+Flare Blitz
+Rest
+Curse
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Skuntank
+100
+Timid
+Flare Boost
+
+Flame Orb
+Sludge Bomb
+Dark Pulse
+Flamethrower
+Hidden Power
+31/0/31/31/31/31
+4/0/0/252/0/252
+
+Mismagius
+100
+Timid
+Levitate
+
+Choice Specs
+Moonblast
+Mystical Fire
+Shadow Ball
+Thunderbolt
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+Darkrai
+100
+Timid
+Bad Dreams
+
+Focus Sash
+Dark Void
+Dream Eater
+Dark Pulse
+Nasty Plot
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+
+902
+Gym Leader Fantina Team 4 Rematch
+Level Cap:
+Format: Single Battle
+
+Misdreavus
+100
+Calm
+Prankster
+
+Eviolite
+Confuse Ray
+Thunder Wave
+Destiny Bond
+Dazzling Gleam
+31/0/31/31/31/31
+252/0/0/0/4/252
+
+Crawdaunt
+100
+Adamant
+Adaptability
+
+Heavy-Duty Boots
+Dragon Dance
+Liquidation
+Crunch
+Aqua Jet
+31/31/31/31/31/31
+4/252/0/0/0/252
+
+Drifblim
+100
+Timid
+Flare Boost
+
+Flame Orb
+Thunderbolt
+Hurricane
+Flamethrower
+Strength Sap
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+Banette
+100
+Adamant
+Prankster
+
+Life Orb
+Double-Edge
+Phantom Force
+Shadow Sneak
+Destiny Bond
+31/31/31/31/31/31
+252/252/0/0/0/4
+
+Mismagius
+100
+Timid
+Levitate
+
+Choice Specs
+Moonblast
+Mystical Fire
+Shadow Ball
+Thunderbolt
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+Darkrai
+100
+Timid
+Bad Dreams
+
+Focus Sash
+Dark Void
+Dream Eater
+Dark Pulse
+Nasty Plot
+31/0/31/31/31/31
+0/0/0/252/4/252
 
 
 961
@@ -36520,83 +36520,83 @@ Pokémon Trainer Cedric
 Level Cap:
 Format: Single Battle
 
-Staraptor
-90
+Metagross
+82
 Jolly
-Intimidate
+Iron Fist
 
-Assault Vest
-Brave Bird
-Close Combat
-U-turn
-Quick Attack
+Light Clay
+Meteor Mash
+Zen Headbutt
+Reflect
+Light Screen
 31/31/31/31/31/31
-0/248/0/252/0/8
+4/252/0/0/0/248
 
-Heracross
-90
-Jolly
-Skill Link
-
-Aguav Berry
-Bullet Seed
-Arm Thrust
-Rock Blast
-Fury Attack
-31/31/31/31/31/31
-0/252/0/252/0/4
-
-Snorlax
-90
-Adamant
-Immunity
-
-Leftovers
-Facade
-Earthquake
-Power-Up Punch
-Counter
-31/31/31/31/31/31
-252/252/0/0/0/4
-
-Breloom
-90
-Adamant
-Poison Heal
-
-Toxic Orb
-Spore
-Bulk Up
-Seed Bomb
-Thunder Punch
-31/31/31/31/31/31
-252/252/0/0/0/4
-
-Arcanine
-90
-Hasty
-Intimidate
+Charizard
+82
+Timid
+Drought
 
 Life Orb
-Extreme Speed
-Play Rough
-Flare Blitz
-Wild Charge
-31/31/31/31/31/31
-0/252/0/252/4/0
-
-Empoleon
-90
-Modest
-Torrent
-
-Custap Berry
-Hydro Pump
-Ice Beam
-Flash Cannon
-Feather Dance
+Solar Beam
+Flamethrower
+Roost
+Defog
 31/0/31/31/31/31
-252/0/0/0/252/4
+0/0/0/248/8/252
+
+Infernape
+83
+Jolly
+Iron Fist
+
+Choice Band
+Flare Blitz
+U-turn
+Close Combat
+Knock Off
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Azelf
+82
+Jolly
+Levitate
+
+Expert Belt
+Psychic
+Flamethrower
+U-turn
+Knock Off
+31/31/31/31/31/31
+4/252/0/0/0/252
+
+Ursaluna
+82
+Adamant
+Guts
+
+Flame Orb
+Swords Dance
+Facade
+Earthquake
+Fire Punch
+31/31/31/31/31/31
+252/252/0/0/4/0
+
+Rotom
+82
+Timid
+Levitate
+
+Choice Specs
+Leaf Storm
+Volt Switch
+Trick
+Hidden Power
+31/0/30/31/31/31
+0/0/0/252/4/252
 
 
 1037
@@ -36604,83 +36604,83 @@ Pokémon Trainer Cedric
 Level Cap:
 Format: Single Battle
 
-Staraptor
-90
-Jolly
-Intimidate
+Rotom
+82
+Timid
+Levitate
 
-Assault Vest
+Choice Specs
+Volt Switch
+Trick
+Hydro Pump
+Hidden Power
+31/0/30/31/31/31
+0/0/0/252/4/252
+
+Crobat
+82
+Jolly
+Infiltrator
+
+Black Sludge
 Brave Bird
-Close Combat
-U-turn
-Quick Attack
+Roost
+Toxic
+Defog
 31/31/31/31/31/31
-8/252/0/0/0/248
+252/0/4/0/0/252
 
-Heracross
-90
-Jolly
-Skill Link
-
-Aguav Berry
-Bullet Seed
-Arm Thrust
-Rock Blast
-Fury Attack
-31/31/31/31/31/31
-4/252/0/0/0/252
-
-Snorlax
-90
-Adamant
-Immunity
+Uxie
+82
+Calm
+Levitate
 
 Leftovers
-Facade
-Earthquake
-Power-Up Punch
-Counter
+Yawn
+Psychic
+U-turn
+Stealth Rock
 31/31/31/31/31/31
-252/252/0/0/0/4
+252/0/0/4/252/0
 
-Azumarill
-90
-Modest
-Sap Sipper
+Electrode
+82
+Timid
+Grassy Surge
 
-Life Orb
-Ice Beam
-Hydro Pump
-Scald
-Grass Knot
+Light Clay
+Volt Switch
+Leaf Storm
+Light Screen
+Reflect
 31/0/31/31/31/31
-248/0/0/0/252/8
+0/0/0/252/4/252
 
-Arcanine
-90
-Hasty
-Intimidate
+Leafeon
+82
+Jolly
+Grass Pelt
 
 Life Orb
-Extreme Speed
-Play Rough
-Flare Blitz
-Wild Charge
+Leaf Blade
+Swords Dance
+Leech Seed
+Baton Pass
 31/31/31/31/31/31
-0/252/0/4/0/252
+252/8/0/0/0/248
 
 Torterra
-90
+83
 Adamant
-Shell Armor
+Solid Rock
 
 White Herb
 Shell Smash
-Earthquake
-Synthesis
 Seed Bomb
+Earthquake
+Stone Edge
 31/31/31/31/31/31
-0/252/0/0/4/252
+0/248/0/0/12/248
 
 
 1039
@@ -36688,83 +36688,83 @@ Pokémon Trainer Cedric
 Level Cap:
 Format: Single Battle
 
-Staraptor
-90
-Jolly
-Intimidate
+Ninetales
+82
+Timid
+Snow Warning
 
-Assault Vest
-Brave Bird
-Close Combat
-U-turn
-Quick Attack
-31/31/31/31/31/31
-8/252/0/0/0/248
+Light Clay
+Aurora Veil
+Blizzard
+Nasty Plot
+Moonblast
+31/0/31/31/31/31
+0/0/0/248/8/248
 
-Heracross
-90
-Jolly
-Skill Link
+Rotom
+82
+Timid
+Levitate
 
-Aguav Berry
-Bullet Seed
-Arm Thrust
-Rock Blast
-Fury Attack
-31/31/31/31/31/31
-4/252/0/0/0/252
+Choice Specs
+Blizzard
+Volt Switch
+Trick
+Will-O-Wisp
+31/0/31/31/31/31
+0/0/0/252/4/252
 
-Snorlax
-90
-Adamant
-Immunity
+Empoleon
+83
+Modest
+Slush Rush
 
 Leftovers
-Facade
-Earthquake
-Power-Up Punch
-Counter
-31/31/31/31/31/31
-252/252/0/0/0/4
+Scald
+Ice Beam
+Flash Cannon
+Defog
+31/0/31/31/31/31
+252/0/0/252/4/0
 
-Azumarill
-90
-Modest
-Sap Sipper
+Mesprit
+82
+Timid
+Levitate
+
+Damp Rock
+Psychic
+Moonblast
+Shadow Ball
+Rain Dance
+31/0/31/31/31/31
+4/0/0/252/0/252
+
+Kingdra
+82
+Adamant
+Swift Swim
 
 Life Orb
-Ice Beam
-Hydro Pump
-Scald
-Grass Knot
+Liquidation
+Iron Head
+Outrage
+Dragon Dance
+31/31/31/31/31/31
+4/248/0/0/4/252
+
+Drifblim
+82
+Timid
+Flare Boost
+
+Flame Orb
+Strength Sap
+Shadow Ball
+Calm Mind
+Hurricane
 31/0/31/31/31/31
-248/0/0/0/252/8
-
-Breloom
-90
-Adamant
-Poison Heal
-
-Toxic Orb
-Spore
-Bulk Up
-Seed Bomb
-Thunder Punch
-31/31/31/31/31/31
-252/252/0/0/0/4
-
-Infernape
-90
-Jolly
-Iron Fist
-
-Light Ball
-Fire Punch
-Thunder Punch
-Mach Punch
-Fling
-31/31/31/31/31/31
-4/252/0/252/0/0
+0/0/0/252/4/252
 
 
 212

@@ -11,7 +11,7 @@ from data_checks import get_average_time
 repo_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 parent_file_path = os.path.abspath(os.path.dirname(__file__))
 input_file_path = os.path.join(repo_file_path, constants.INPUT_NAME)
-debug_file_path =os.path.join(parent_file_path, constants.DEBUG_NAME)
+debug_file_path = os.path.join(parent_file_path, constants.DEBUG_NAME)
 
 areas_file_path = os.path.join(input_file_path, 'areas_updated.csv')
 
