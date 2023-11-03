@@ -21,6 +21,19 @@ jobs:
     - name: Run Pokedex Script
       run: python3 Python_tasks/pokedex_generator.py
 
+    - name: Pushes Input Files
+      uses: TeamLumi/Gamedata@main
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.DENMARK_GAMEDATA_AUTOMATION_TOKEN }}
+      with:
+        source_file: 'input/.'
+        destination_branch: 'master'
+        destination_repo: 'TeamLumi/LumiPlat_NuzlockeTracker'
+        destination_folder: './src/lumi-calc/input'
+        user_email: '<support+actions@github.com>'
+        user_name: 'github-actions-bot'
+        commit_message: 'Updating gamedata files'
+
     - name: Pushes test file
       uses: TeamLumi/Gamedata@main
       env:
