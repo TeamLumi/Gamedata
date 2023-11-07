@@ -5,7 +5,7 @@ from collections import defaultdict
 
 import constants
 from data_checks import get_average_time, check_bad_dex_mon, check_egg_moveset
-from load_files import load_data, custom_json_dump
+from load_files import load_data
 from pokemonUtils import generate_form_name_to_pokemon_id, get_pokemon_info, get_pokemon_name, get_diff_form_dictionary, get_mons_no_and_form_no, get_form_pokemon_personal_id
 
 repo_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
