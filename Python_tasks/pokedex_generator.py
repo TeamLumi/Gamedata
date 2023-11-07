@@ -338,9 +338,9 @@ def getPokedexInfo():
         egg_move_dict[pokemon_name] = egg_move_info
 
     with open(os.path.join(output_file_path, "pokedex_info.json"), "w", encoding="utf-8") as output:
-        custom_json_dump(pokedex, output, indent=2)
+        json.dump(pokedex, output, ensure_ascii=False, indent=2)
     with open(os.path.join(debug_file_path, "egg_move_paths.json"), "w", encoding="utf-8") as output:
-        custom_json_dump(egg_move_dict, output, indent=2)
+        json.dump(egg_move_dict, output, ensure_ascii=False, indent=2)
     return pokedex
 
 if __name__ == "__main__":

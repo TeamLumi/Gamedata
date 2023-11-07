@@ -13,36 +13,6 @@ output_file_path = os.path.join(repo_file_path, "Python_tasks", "output")
 # Create an instance of JsonCache
 json_cache = JsonCache()
 
-def custom_json_dump(obj, fp, *, indent=4):
-    def format_json(obj, level):
-        if isinstance(obj, list):
-            if len(obj) == 0:
-                return "[]"
-            if all(isinstance(item, list) and len(item) == 3 for item in obj):
-                result = "[\n"
-                for item in obj:
-                    result += f'{" " * (indent * (level + 1))}[{json.dumps(item[0])}, {json.dumps(item[1])}, {json.dumps(item[2])}],\n'
-                result = result[:-2] + "\n" + " " * (indent * level) + "]"
-            else:
-                result = "["
-                for item in obj:
-                    result += "\n" + " " * (indent * (level + 1)) + format_json(item, level + 1) + ","
-                result = result[:-1] + "\n" + " " * (indent * level) + "]"
-            return result
-        elif isinstance(obj, dict):
-            if len(obj) == 0:
-                return "{}"
-            result = "{"
-            for key, value in obj.items():
-                result += f'\n{" " * (indent * (level + 1))}"{key}": {format_json(value, level + 1)},'
-            result = result[:-1] + "\n" + " " * (indent * level) + "}"
-            return result
-        else:
-            return json.dumps(obj)
-
-    formatted_json = format_json(obj, 0)
-    fp.write(formatted_json)
-
 def get_lumi_data(raw_data, callback):
     data = {}
     for (idx, _) in enumerate(raw_data["labelDataArray"]):
