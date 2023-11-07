@@ -1425,6 +1425,546 @@ Flail
 0/0/0/0/0/0
 
 
+745
+Pokémon Trainer Cedric Turtwig Team 1
+Level Cap:
+Format: Single Battle
+
+Makuhita
+10
+Careful
+Thick Fat
+
+Focus Sash
+Fake Out
+Arm Thrust
+Tackle
+Sand Attack
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Bellsprout
+10
+Hasty
+Corrosion
+
+Expert Belt
+Sleep Powder
+Acid
+Vine Whip
+Growth
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Chimchar
+11
+Jolly
+Iron Fist
+
+Oran Berry
+Ember
+Fury Swipes
+Taunt
+Hidden Power
+24/25/26/25/24/25
+0/0/0/0/0/0
+
+
+746
+Pokémon Trainer Cedric Turtwig Team 2
+Level Cap:
+Format: Single Battle
+
+Nidoran-M
+10
+Lonely
+Poison Point
+
+Focus Sash
+Double Kick
+Fury Attack
+Peck
+Poison Sting
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Elekid
+10
+Lax
+Static
+
+Expert Belt
+Thunder Shock
+Quick Attack
+Low Kick
+Leer
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Chimchar
+11
+Jolly
+Iron Fist
+
+Oran Berry
+Ember
+Fury Swipes
+Taunt
+Hidden Power
+24/25/26/25/24/25
+0/0/0/0/0/0
+
+
+747
+Pokémon Trainer Cedric Turtwig Team 3
+Level Cap:
+Format: Single Battle
+
+Azurill
+10
+Brave
+Huge Power
+
+Soothe Bell
+Tail Whip
+Bubble Beam
+Charm
+Splash
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Bulbasaur
+10
+Impish
+Overgrow
+
+Expert Belt
+Tackle
+Growl
+Vine Whip
+Leech Seed
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Chimchar
+11
+Jolly
+Iron Fist
+
+Oran Berry
+Ember
+Fury Swipes
+Taunt
+Hidden Power
+25/24/26/25/25/25
+0/0/0/0/0/0
+
+
+748
+Pokémon Trainer Cedric Turtwig Team 4
+Level Cap:
+Format: Single Battle
+
+Cubone
+10
+Careful
+Rattled
+
+Focus Sash
+Headbutt
+Bone Club
+Sing
+Leer
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Shinx
+10
+Sassy
+Guts
+
+Expert Belt
+Spark
+Quick Attack
+Howl
+Leer
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Chimchar
+11
+Jolly
+Iron Fist
+
+Oran Berry
+Ember
+Fury Swipes
+Taunt
+Hidden Power
+24/25/26/25/24/25
+0/0/0/0/0/0
+
+
+749
+Pokémon Trainer Cedric Chimchar Team 1
+Level Cap:
+Format: Single Battle
+
+Pidgey
+10
+Naughty
+Big Pecks
+
+Focus Sash
+Wing Attack
+Quick Attack
+Sand Attack
+Gust
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Ralts
+10
+Bold
+Telepathy
+
+Expert Belt
+Disarming Voice
+Confusion
+Growl
+Teleport
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Piplup
+11
+Modest
+Torrent
+
+Oran Berry
+Water Gun
+Peck
+Charm
+Hidden Power
+25/24/26/25/25/25
+0/0/0/0/0/0
+
+
+750
+Pokémon Trainer Cedric Chimchar Team 2
+Level Cap:
+Format: Single Battle
+
+Poochyena
+10
+Relaxed
+Strong Jaw
+
+Focus Sash
+Bite
+Tackle
+Howl
+Sand Attack
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Smoochum
+10
+Calm
+Dazzling
+
+Expert Belt
+Powder Snow
+Confusion
+Sing
+Sweet Kiss
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Piplup
+11
+Modest
+Torrent
+
+Oran Berry
+Water Gun
+Peck
+Charm
+Hidden Power
+25/24/26/25/25/25
+0/0/0/0/0/0
+
+
+751
+Pokémon Trainer Cedric Chimchar Team 3
+Level Cap:
+Format: Single Battle
+
+Wynaut
+10
+Quirky
+Telepathy
+
+Focus Sash
+Counter
+Mirror Coat
+Splash
+Encore
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Pineco
+10
+Impish
+Sturdy
+
+Expert Belt
+Revenge
+Bug Bite
+Self-Destruct
+Tackle
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Piplup
+11
+Modest
+Torrent
+
+Oran Berry
+Water Gun
+Peck
+Charm
+Hidden Power
+25/24/26/25/25/25
+0/0/0/0/0/0
+
+
+752
+Pokémon Trainer Cedric Chimchar Team 4
+Level Cap:
+Format: Single Battle
+
+Sandshrew
+10
+Careful
+Sand Rush
+
+Focus Sash
+Bulldoze
+Rollout
+Poison Sting
+Defense Curl
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Charmander
+10
+Mild
+Blaze
+
+Expert Belt
+Scratch
+Ember
+Growl
+Smokescreen
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Piplup
+11
+Modest
+Torrent
+
+Oran Berry
+Water Gun
+Peck
+Charm
+Hidden Power
+25/24/26/25/25/25
+0/0/0/0/0/0
+
+
+753
+Pokémon Trainer Cedric Piplup Team 1
+Level Cap:
+Format: Single Battle
+
+Growlithe
+10
+Quiet
+Intimidate
+
+Focus Sash
+Ember
+Bite
+Roar
+Leer
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Starly
+10
+Gentle
+Keen Eye
+
+Expert Belt
+Wing Attack
+Quick Attack
+Tackle
+Growl
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Turtwig
+11
+Careful
+Shell Armor
+
+Oran Berry
+Razor Leaf
+Tackle
+Hidden Power
+Curse
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+754
+Pokémon Trainer Cedric Piplup Team 2
+Level Cap:
+Format: Single Battle
+
+Geodude
+10
+Calm
+Sturdy
+
+Focus Sash
+Rock Throw
+Tackle
+Rock Polish
+Mega Punch
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Mantyke
+10
+Lax
+Water Absorb
+
+Expert Belt
+Water Pulse
+Air Cutter
+Tackle
+Confuse Ray
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Turtwig
+11
+Careful
+Shell Armor
+
+Oran Berry
+Razor Leaf
+Tackle
+Hidden Power
+Curse
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+755
+Pokémon Trainer Cedric Piplup Team 3
+Level Cap:
+Format: Single Battle
+
+Nidoran-F
+10
+Sassy
+Hustle
+
+Focus Sash
+Double Kick
+Fury Swipes
+Poison Sting
+Growl
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Surskit
+10
+Naughty
+Swift Swim
+
+Expert Belt
+Bug Bite
+Quick Attack
+Sweet Scent
+Water Gun
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Turtwig
+11
+Careful
+Shell Armor
+
+Oran Berry
+Razor Leaf
+Tackle
+Hidden Power
+Curse
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+756
+Pokémon Trainer Cedric Piplup Team 4
+Level Cap:
+Format: Single Battle
+
+Abra
+10
+Rash
+Magic Guard
+
+Focus Sash
+Teleport
+Hidden Power
+(No Move)
+(No Move)
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Squirtle
+10
+Naive
+Rain Dish
+
+Expert Belt
+Water Gun
+Withdraw
+Tackle
+Tail Whip
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Turtwig
+11
+Careful
+Shell Armor
+
+Oran Berry
+Razor Leaf
+Tackle
+Hidden Power
+Curse
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
 189
 Camper Curtis
 Level Cap:
