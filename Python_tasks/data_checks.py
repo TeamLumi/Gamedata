@@ -239,6 +239,7 @@ def check_egg_moveset(pokemonID):
     baby_pokemon_id = evolution_dex[str(pokemonID)]['path'][0]
     egg_set = get_egg_moves(baby_pokemon_id)['moveId']
     pokemon_name = get_pokemon_name(pokemonID)
+    egg_group_names = [getEggGroupNameById(egg_group_id) for egg_group_id in mon_egg_group]
 
     for group in mon_egg_group:
         egg_groups_list.extend(getPokemonIdsInEggGroup(int(group)))
@@ -260,7 +261,7 @@ def check_egg_moveset(pokemonID):
         if egg_move_check[0] == 0:
             continue
         elif egg_move_check[0] == -1:
-            print(f"Pokemon: {pokemon_name}", f"Move: {move_name} ({move})")
+            print(f"Pokemon: {pokemon_name}", f"Egg Groups: {egg_group_names}", f"Move: {move_name} ({move})")
             continue
         else:
             # This means that egg_move_check is a list of mons 
@@ -282,4 +283,3 @@ if __name__ != "__main__":
 if __name__ == "__main__":
     full_data = load_data()
     evolution_dex = full_data['evolution_dex']
-    print(check_egg_moveset(54))
