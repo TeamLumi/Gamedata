@@ -324,6 +324,7 @@ def getPokedexInfo():
     evolutions = evolution_pathfinding()
 
     for pokemon in evolutions.keys():
+        pokemon_name = get_pokemon_name(pokemon)
         if pokemon >= 1456:
             continue
         evolution_path = evolutions[pokemon]["path"]
@@ -334,7 +335,7 @@ def getPokedexInfo():
             else:
                 egg_move_info = []
         pokedex.append(dex_info)
-        egg_move_dict[pokemon] = egg_move_info
+        egg_move_dict[pokemon_name] = egg_move_info
 
     with open(os.path.join(output_file_path, "pokedex_info.json"), "w", encoding="utf-8") as output:
         custom_json_dump(pokedex, output, indent=2)

@@ -8,7 +8,7 @@ from pokemonUtils import (get_form_name, get_form_pokemon_personal_id,
                           get_pokemon_name, get_pokemon_name, get_diff_form_dictionary,
                           get_pokemon_id_from_name)
 from moveUtils import get_move_string, get_mon_full_learnset, get_egg_moves
-from eggGroups import getEggGroupViaPokemonId, getPokemonIdsInEggGroup, pokemonIdsByEggGroup
+from eggGroups import getEggGroupViaPokemonId, getPokemonIdsInEggGroup, pokemonIdsByEggGroup, getEggGroupNameById
 
 def check_monsName(monsName):
     '''
@@ -192,19 +192,41 @@ def find_egg_moveset_path(pokemonID, move):
     baby_mon_id = evolution_dex[str(pokemonID)]['path'][0]
     baby_mon_egg_set = get_egg_moves(baby_mon_id)['moveId']
     pokemon_learnset = get_mon_full_learnset(pokemonID)
+    egg_group_ids = getEggGroupViaPokemonId(pokemonID)
+    egg_group_names = [getEggGroupNameById(egg_group_id) for egg_group_id in egg_group_ids]
     if pokemon_learnset is None:
         #This is for if the pokemon doesn't have a moveset according the the fullLearnset.json
         #AKA this pokemon is not currently valid
         return -1
 
     if move in pokemon_learnset['level']:
-        return {'Pokemon': pokemon_name, 'Method': "Level Up", 'Path': []}
+        return {
+            'Pokemon': pokemon_name,
+            'Egg Groups': egg_group_names,
+            'Method': "Level Up",
+            'Path': []
+        }
     elif move in pokemon_learnset['tm']:
-        return {'Pokemon': pokemon_name, 'Method': "TM Move", 'Path': []}
+        return {
+            'Pokemon': pokemon_name,
+            'Egg Groups': egg_group_names,
+            'Method': "TM Move",
+            'Path': []
+        }
     elif move in pokemon_learnset['tutor']:
-        return {'Pokemon': pokemon_name, 'Method': "Tutor", 'Path': []}
+        return {
+            'Pokemon': pokemon_name,
+            'Egg Groups': egg_group_names,
+            'Method': "Tutor",
+            'Path': []
+        }
     elif move in baby_mon_egg_set:
-        return {'Pokemon': pokemon_name, 'Method': "Egg Move", 'Path': []}
+        return {
+            'Pokemon': pokemon_name,
+            'Egg Groups': egg_group_names,
+            'Method': "Egg Move",
+            'Path': []
+        }
     #Getting to the end here means that there wasn't a match for any move in the current mon's set
     return -1
 
@@ -216,6 +238,7 @@ def check_egg_moveset(pokemonID):
     mon_egg_group = getEggGroupViaPokemonId(pokemonID)
     baby_pokemon_id = evolution_dex[str(pokemonID)]['path'][0]
     egg_set = get_egg_moves(baby_pokemon_id)['moveId']
+    pokemon_name = get_pokemon_name(pokemonID)
 
     for group in mon_egg_group:
         egg_groups_list.extend(getPokemonIdsInEggGroup(int(group)))
@@ -237,7 +260,7 @@ def check_egg_moveset(pokemonID):
         if egg_move_check[0] == 0:
             continue
         elif egg_move_check[0] == -1:
-            print(f"Pokemon: {get_pokemon_name(pokemonID)}", f"Move: {move_name} ({move})")
+            print(f"Pokemon: {pokemon_name}", f"Move: {move_name} ({move})")
             continue
         else:
             # This means that egg_move_check is a list of mons 
