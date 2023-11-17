@@ -6078,7 +6078,7 @@ Gym Leader Gardenia Team 1
 Level Cap:
 Format: Single Battle
 
-Voltorb
+Hisuian Voltorb
 25
 Timid
 Grassy Surge
@@ -6395,7 +6395,7 @@ Synthesis
 25/25/25/25/25/25
 244/244/0/20/0/0
 
-Exeggutor
+Alolan Exeggutor
 25
 Relaxed
 Harvest
@@ -16488,7 +16488,7 @@ Energy Ball
 25/25/25/25/25/25
 0/0/0/0/0/0
 
-Wormadam
+Wormadam Sandy Cloak
 33
 Docile
 Battle Armor
@@ -16501,7 +16501,7 @@ Energy Ball
 25/25/25/25/25/25
 0/0/0/0/0/0
 
-Wormadam
+Wormadam Trash Cloak
 33
 Docile
 Battle Armor
@@ -24057,7 +24057,7 @@ Crunch
 25/25/25/25/25/25
 0/252/252/0/4/0
 
-Wormadam
+Wormadam Trash Cloak
 50
 Hardy
 Battle Armor
@@ -24166,7 +24166,7 @@ Iron Head
 31/31/31/31/31/31
 248/252/0/0/4/0
 
-Wormadam
+Wormadam Trash Cloak
 52
 Modest
 Battle Armor
@@ -24250,7 +24250,7 @@ Ice Punch
 31/31/31/31/31/31
 248/252/0/0/8/0
 
-Wormadam
+Wormadam Trash Cloak
 52
 Modest
 Battle Armor
@@ -24547,7 +24547,7 @@ Gyro Ball
 31/31/31/31/31/0
 252/4/252/0/0/0
 
-Wormadam
+Wormadam Trash Cloak
 100
 Modest
 Battle Armor
@@ -27150,7 +27150,7 @@ Giga Drain
 31/0/31/31/31/31
 248/0/0/252/0/8
 
-Rotom
+Frost Rotom
 100
 Timid
 Levitate
@@ -29614,7 +29614,7 @@ Volt Switch
 31/31/31/31/31/31
 0/4/0/252/0/252
 
-Rotom
+Frost Rotom
 62
 Timid
 Levitate
@@ -29711,7 +29711,7 @@ Wish
 31/0/30/31/31/31
 0/0/0/252/4/252
 
-Rotom
+Heat Rotom
 62
 Timid
 Levitate
@@ -29795,7 +29795,7 @@ Flash Cannon
 31/0/31/31/31/31
 252/0/4/248/4/0
 
-Rotom
+Mow Rotom
 62
 Timid
 Levitate
@@ -29853,7 +29853,7 @@ Gym Leader Volkner Team 4
 Level Cap:
 Format: Single Battle
 
-Rotom
+Wash Rotom
 62
 Calm
 Levitate
@@ -29976,7 +29976,7 @@ Volt Switch
 31/31/31/31/31/31
 252/252/0/0/0/4
 
-Rotom
+Fan Rotom
 100
 Timid
 Motor Drive
@@ -33708,7 +33708,7 @@ Attack Order
 31/31/31/31/31/31
 252/4/0/0/252/0
 
-Wormadam
+Wormadam Sandy Cloak
 71
 Modest
 Battle Armor
@@ -34102,7 +34102,7 @@ Thunder Punch
 31/31/31/31/31/31
 0/248/0/0/8/252
 
-Rotom
+Heat Rotom
 73
 Timid
 Levitate
@@ -34147,7 +34147,7 @@ Elite Four Flint Team 2
 Level Cap:
 Format: Single Battle
 
-Rotom
+Heat Rotom
 73
 Timid
 Levitate
@@ -34735,7 +34735,7 @@ Champion Cynthia Team 1
 Level Cap:
 Format: Single Battle
 
-Ninetales
+Alolan Ninetales
 77
 Timid
 Snow Warning
@@ -34761,7 +34761,7 @@ Shadow Claw
 31/31/31/31/31/31
 0/252/4/0/0/252
 
-Typhlosion
+Hisuian Typhlosion
 77
 Timid
 Flash Fire
@@ -34929,7 +34929,7 @@ Roost
 31/31/31/31/31/31
 252/0/252/0/0/4
 
-Rotom
+Fan Rotom
 77
 Modest
 Motor Drive
@@ -35304,7 +35304,7 @@ Knock Off
 31/31/31/31/31/31
 0/252/0/0/4/252
 
-Shaymin
+Shaymin Sky Forme
 100
 Modest
 Serene Grace
@@ -35472,7 +35472,7 @@ Swords Dance
 31/31/31/31/31/31
 252/252/0/0/0/4
 
-Shaymin
+Shaymin Sky Forme
 100
 Modest
 Serene Grace
@@ -35911,7 +35911,7 @@ Elite Four Flint Team 2 Rematch
 Level Cap:
 Format: Single Battle
 
-Rotom
+Heat Rotom
 100
 Timid
 Levitate
@@ -36648,7 +36648,7 @@ Dual Chop
 31/31/31/31/31/31
 0/252/0/4/0/252
 
-Giratina
+Giratina Origin Forme
 100
 Quiet
 Levitate
@@ -36816,7 +36816,7 @@ Zen Headbutt
 31/31/31/31/31/31
 252/252/0/0/4/0
 
-Giratina
+Giratina Origin Forme
 100
 Quiet
 Levitate
@@ -36983,7 +36983,7 @@ Scorching Sands
 31/0/31/31/31/31
 0/0/0/252/4/252
 
-Rotom
+Heat Rotom
 74
 Calm
 Levitate
@@ -37041,7 +37041,7 @@ Volt Switch
 31/0/31/31/31/31
 0/0/0/252/4/252
 
-Rotom
+Frost Rotom
 74
 Timid
 Levitate
@@ -37125,7 +37125,7 @@ Fire Punch
 31/31/31/31/31/31
 252/252/0/0/4/0
 
-Rotom
+Mow Rotom
 82
 Timid
 Levitate
@@ -37144,7 +37144,7 @@ Pokémon Trainer Cedric
 Level Cap:
 Format: Single Battle
 
-Rotom
+Wash Rotom
 82
 Timid
 Levitate
@@ -37183,7 +37183,7 @@ Stealth Rock
 31/31/31/31/31/31
 252/0/0/4/252/0
 
-Electrode
+Hisuian Electrode
 82
 Timid
 Grassy Surge
@@ -37228,7 +37228,7 @@ Pokémon Trainer Cedric
 Level Cap:
 Format: Single Battle
 
-Ninetales
+Alolan Ninetales
 82
 Timid
 Snow Warning
@@ -37241,7 +37241,7 @@ Moonblast
 31/0/31/31/31/31
 0/0/0/248/8/248
 
-Rotom
+Frost Rotom
 82
 Timid
 Levitate

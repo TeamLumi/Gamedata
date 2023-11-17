@@ -118,6 +118,15 @@ def get_form_name(id):
             return f"{pokemon_name} {form_name}"
         return form_name
 
+def get_pokemon_id_from_mons_no_and_form(mons_no, form_no):
+    for entry in personal_table["Personal"]:
+        if (
+            entry["monsno"] == mons_no
+            and FORM_MAP[entry["monsno"]][form_no] == entry["id"]
+        ):
+            return entry["id"]
+    return None  # Return None if no matching ID is found
+
 def get_item_string(item_id):
     item_namedata = full_data['raw_items']
 
@@ -384,7 +393,7 @@ def get_pokemon_from_trainer_info(trainer, output_format):
         moves = get_moves(m1, m2, m3, m4, monsno, level, output_format)
 
         form = trainer[f"P{poke_num}FormNo"]
-        pokemonId = diff_forms[pokedex[str(trainer[f"P{poke_num}MonsNo"])] + str(form)][0] if form > 0 and output_format == constants.TRACKER_METHOD else monsno
+        pokemonId = get_pokemon_id_from_mons_no_and_form(monsno, form)
         trainer_item = trainer[f"P{poke_num}Item"]
         item = get_item_string(trainer_item) if trainer_item != 0 else None
         pokemon = {
@@ -416,6 +425,7 @@ if __name__ != '__main__':
     forms = generate_form_name_to_pokemon_id()
     reversed_forms = {v: k for k, v in forms.items()}
     name_data = full_data['raw_pokedex']
+    personal_table = full_data['personal_table'];
     pokedex = get_lumi_data(name_data, get_pokemon_name)
     diff_forms, NAME_MAP = get_diff_form_dictionary()
 
