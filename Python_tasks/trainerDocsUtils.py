@@ -222,6 +222,9 @@ def write_tracker_docs(trainers_list):
             zone_trainer = {}
             zone_name = f"{trainer['zoneName']} Trainers"
             zone_id = trainer['zoneId']
+            person_name = trainer['name']
+            if person_name == constants.CEDRIC:
+                trainer['name'] = constants.BARRY.capitalize()
             name = f"{trainer['type']} {trainer['name']}"
             rematch = trainer['rematch']
             is_repeat_trainer = any(substring in name for substring in constants.REPEAT_TRAINERS_LIST) and not re.findall(constants.TEAM_REGEX, name)
