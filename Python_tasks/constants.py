@@ -1,17 +1,46 @@
+import sys
+
 ## All that needs to change to change modes is this INPUT_NAME
 ## If you are using 3.0 files, change it to "3.0Input"
 ## Otherwise just set it to "input"
-INPUT_NAME = "input"
+if len(sys.argv) > 1:
+    if sys.argv[1] == "3.0":
+        INPUT_NAME = "3.0Input"
+        print("Running in 3.0 mode")
+    elif sys.argv[1] == "2.0":
+        INPUT_NAME = "input"
+        print("Running in 2.0F mode")
+else:
+    INPUT_NAME = "input"
+
 if INPUT_NAME == "input":
     DEBUG_NAME = "Debug"
     OUTPUT_NAME = "output"
     POKEDEX_LENGTH = 1010
     NAT_DEX_LENGTH = 1456
+    TROUBLE_MONS_NAMES = { 
+        1242: 'Ash-Greninja',
+        1285: 'Meowstic-F',
+        1310: 'Rockruff Own-Tempo',
+        1441: 'Indeedee-F',
+        1454: 'Basculegion-F',
+        1456: 'Oinkologne-F',
+        1067: "Galarian Farfetch'd"
+    }
 elif INPUT_NAME == "3.0Input":
     DEBUG_NAME = "3.0Debug"
     OUTPUT_NAME = "3.0Output"
-    POKEDEX_LENGTH = 1017
-    NAT_DEX_LENGTH = 1504
+    POKEDEX_LENGTH = 1025
+    NAT_DEX_LENGTH = 1528
+    TROUBLE_MONS_NAMES = { 
+        1266: 'Ash-Greninja',
+        1309: 'Meowstic-F',
+        1335: 'Rockruff Own-Tempo',
+        1466: 'Indeedee-F',
+        1481: 'Basculegion-F',
+        1483: 'Oinkologne-F',
+        1083: "Galarian Farfetch'd"
+    }
 
 TRAINER_BATTLE = '_TRAINER_BTL_SET'
 MULTI_TRAINER_BATTLE = '_TRAINER_MULTI_BTL_SET'
