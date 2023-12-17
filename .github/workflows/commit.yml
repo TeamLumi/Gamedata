@@ -127,7 +127,7 @@ jobs:
         source_file: 'input/.'
         destination_branch: 'update/3.0Dex'
         destination_repo: 'TeamLumi/luminescent-team'
-        destination_folder: './__gamedata'
+        destination_folder: './__3.0gamedata'
         user_email: '<support+actions@github.com>'
         user_name: 'github-actions-bot'
         commit_message: 'Updating gamedata files'
