@@ -81,32 +81,9 @@ def get_form_name(id):
     Checks if there are any 
     '''
     form_namedata = full_data['form_namedata']
-    new_trouble_pokemon_names = { 
-        # This is to test the 3.0 data
-        1266: 'Ash-Greninja',
-        1309: 'Meowstic-F',
-        1335: 'Rockruff Own-Tempo',
-        1466: 'Indeedee-F',
-        1481: 'Basculegion-F',
-        1483: 'Oinkologne-F',
-        1083: "Galarian Farfetch'd"
-    }
-    trouble_pokemon_names = {
-        1242: 'Ash-Greninja',
-        1285: 'Meowstic-F',
-        1310: 'Rockruff Own-Tempo',
-        1441: 'Indeedee-F',
-        1454: 'Basculegion-F',
-        1456: 'Oinkologne-F',
-        1067: "Galarian Farfetch'd"
-    }
-    if constants.INPUT_NAME == "3.0Input":
-        problem_names = new_trouble_pokemon_names
-    else:
-        problem_names = trouble_pokemon_names
 
-    if id in problem_names.keys():
-        return problem_names.get(id, None)
+    if id in constants.TROUBLE_MONS_NAMES.keys():
+        return constants.TROUBLE_MONS_NAMES.get(id, None)
     else:
         form_data = form_namedata['labelDataArray'][id]
         form_name = form_data['wordDataArray'][0]['str']

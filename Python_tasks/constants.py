@@ -7,11 +7,29 @@ if INPUT_NAME == "input":
     OUTPUT_NAME = "output"
     POKEDEX_LENGTH = 1010
     NAT_DEX_LENGTH = 1456
+    TROUBLE_MONS_NAMES = { 
+        1242: 'Ash-Greninja',
+        1285: 'Meowstic-F',
+        1310: 'Rockruff Own-Tempo',
+        1441: 'Indeedee-F',
+        1454: 'Basculegion-F',
+        1456: 'Oinkologne-F',
+        1067: "Galarian Farfetch'd"
+    }
 elif INPUT_NAME == "3.0Input":
     DEBUG_NAME = "3.0Debug"
     OUTPUT_NAME = "3.0Output"
     POKEDEX_LENGTH = 1025
     NAT_DEX_LENGTH = 1528
+    TROUBLE_MONS_NAMES = { 
+        1266: 'Ash-Greninja',
+        1309: 'Meowstic-F',
+        1335: 'Rockruff Own-Tempo',
+        1466: 'Indeedee-F',
+        1481: 'Basculegion-F',
+        1483: 'Oinkologne-F',
+        1083: "Galarian Farfetch'd"
+    }
 
 TRAINER_BATTLE = '_TRAINER_BTL_SET'
 MULTI_TRAINER_BATTLE = '_TRAINER_MULTI_BTL_SET'
