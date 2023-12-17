@@ -1,7 +1,18 @@
+import sys
+
 ## All that needs to change to change modes is this INPUT_NAME
 ## If you are using 3.0 files, change it to "3.0Input"
 ## Otherwise just set it to "input"
-INPUT_NAME = "3.0Input"
+if len(sys.argv) > 1:
+    if sys.argv[1] == "3.0":
+        INPUT_NAME = "3.0Input"
+        print("Running in 3.0 mode")
+    elif sys.argv[1] == "2.0":
+        INPUT_NAME = "input"
+        print("Running in 2.0F mode")
+else:
+    INPUT_NAME = "input"
+
 if INPUT_NAME == "input":
     DEBUG_NAME = "Debug"
     OUTPUT_NAME = "output"
