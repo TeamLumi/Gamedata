@@ -357,7 +357,7 @@ def getPokedexInfo():
     evolutions = evolution_pathfinding()
 
     for pokemon in evolutions.keys():
-        if pokemon >= constants.NAT_DEX_LENGTH:
+        if pokemon > constants.NAT_DEX_LENGTH:
             continue
         is_valid = is_valid_pokemon(pokemon)
         evolution_path = evolutions[pokemon]["path"]
@@ -414,7 +414,7 @@ def export_csv():
         writer.writerow(firstRow)
 
         for pokemon in evolutions.keys():
-            if pokemon >= constants.NAT_DEX_LENGTH:
+            if pokemon > constants.NAT_DEX_LENGTH:
                 continue
             evolution_path = evolutions[pokemon]["path"]
             dex_info = export_pokedex_for_csv(pokemon)

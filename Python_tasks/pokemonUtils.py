@@ -83,13 +83,13 @@ def get_form_name(id):
     form_namedata = full_data['form_namedata']
     new_trouble_pokemon_names = { 
         # This is to test the 3.0 data
-        1258: 'Ash-Greninja',
-        1301: 'Meowstic-F',
-        1314: 'Rockruff Own-Tempo',
-        1458: 'Indeedee-F',
-        1473: 'Basculegion-F',
-        1475: 'Oinkologne-F',
-        1067: "Galarian Farfetch'd"
+        1266: 'Ash-Greninja',
+        1309: 'Meowstic-F',
+        1335: 'Rockruff Own-Tempo',
+        1466: 'Indeedee-F',
+        1481: 'Basculegion-F',
+        1483: 'Oinkologne-F',
+        1083: "Galarian Farfetch'd"
     }
     trouble_pokemon_names = {
         1242: 'Ash-Greninja',

@@ -1,7 +1,7 @@
 ## All that needs to change to change modes is this INPUT_NAME
 ## If you are using 3.0 files, change it to "3.0Input"
 ## Otherwise just set it to "input"
-INPUT_NAME = "input"
+INPUT_NAME = "3.0Input"
 if INPUT_NAME == "input":
     DEBUG_NAME = "Debug"
     OUTPUT_NAME = "output"
@@ -10,8 +10,8 @@ if INPUT_NAME == "input":
 elif INPUT_NAME == "3.0Input":
     DEBUG_NAME = "3.0Debug"
     OUTPUT_NAME = "3.0Output"
-    POKEDEX_LENGTH = 1017
-    NAT_DEX_LENGTH = 1504
+    POKEDEX_LENGTH = 1025
+    NAT_DEX_LENGTH = 1528
 
 TRAINER_BATTLE = '_TRAINER_BTL_SET'
 MULTI_TRAINER_BATTLE = '_TRAINER_MULTI_BTL_SET'
