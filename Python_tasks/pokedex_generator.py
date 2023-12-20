@@ -164,10 +164,7 @@ def check_evo_path(first_pokemon, evolution_paths, current_mon, graph):
         evolution_paths[current_mon]["path"].extend([first_pokemon, current_mon])
         return
 
-    if first_evolves_into_current:
-        evolution_paths[current_mon]["path"].insert(1, first_pokemon)
-    else:
-        evolution_paths[current_mon]["path"].insert(0, first_pokemon)
+    evolution_paths[current_mon]["path"].insert(1, first_pokemon)
 
 def add_initial_mons(evolution_paths, current_mon, next_mon):
     targets = evolution_paths[current_mon]["targets"]

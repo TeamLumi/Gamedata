@@ -24770,8 +24770,8 @@
     "type": "FIRE",
     "dualtype": "GROUND",
     "evolve": [
-      665,
       664,
+      665,
       1268,
       1269,
       1270,
@@ -24807,8 +24807,8 @@
     "type": "NORMAL",
     "dualtype": "FIGHTING",
     "evolve": [
-      665,
       664,
+      665,
       1269,
       1270,
       1271,
@@ -24843,8 +24843,8 @@
     "type": "DRAGON",
     "dualtype": "FLYING",
     "evolve": [
-      665,
       664,
+      665,
       1270,
       1271,
       1272,
@@ -24878,8 +24878,8 @@
     "type": "BUG",
     "dualtype": "POISON",
     "evolve": [
-      665,
       664,
+      665,
       1271,
       1272,
       1273,
@@ -24912,8 +24912,8 @@
     "type": "DARK",
     "dualtype": "NORMAL",
     "evolve": [
-      665,
       664,
+      665,
       1272,
       1273,
       1274,
@@ -24945,8 +24945,8 @@
     "type": "PSYCHIC",
     "dualtype": "DARK",
     "evolve": [
-      665,
       664,
+      665,
       1273,
       1274,
       1275,
@@ -24977,8 +24977,8 @@
     "type": "DARK",
     "dualtype": "NORMAL",
     "evolve": [
-      665,
       664,
+      665,
       1274,
       1275,
       1276,
@@ -25008,8 +25008,8 @@
     "type": "DARK",
     "dualtype": "NORMAL",
     "evolve": [
-      665,
       664,
+      665,
       1275,
       1276,
       1277,
@@ -25037,8 +25037,8 @@
     "text": "Vivillon Archipelago Pattern",
     "type": "ELECTRIC",
     "evolve": [
-      665,
       664,
+      665,
       1276,
       1277,
       1278,
@@ -25065,8 +25065,8 @@
     "text": "Vivillon High Plains Pattern",
     "type": "ELECTRIC",
     "evolve": [
-      665,
       664,
+      665,
       1277,
       1278,
       1279,
@@ -25092,8 +25092,8 @@
     "text": "Vivillon Sandstorm Pattern",
     "type": "ELECTRIC",
     "evolve": [
-      665,
       664,
+      665,
       1278,
       1279,
       1280,
@@ -25118,8 +25118,8 @@
     "text": "Vivillon River Pattern",
     "type": "ELECTRIC",
     "evolve": [
-      665,
       664,
+      665,
       1279,
       1280,
       1281,
@@ -25143,8 +25143,8 @@
     "text": "Vivillon Monsoon Pattern",
     "type": "ELECTRIC",
     "evolve": [
-      665,
       664,
+      665,
       1280,
       1281,
       1282,
@@ -25167,8 +25167,8 @@
     "text": "Vivillon Savanna Pattern",
     "type": "ELECTRIC",
     "evolve": [
-      665,
       664,
+      665,
       1281,
       1282,
       1283,
@@ -25191,8 +25191,8 @@
     "type": "ELECTRIC",
     "dualtype": "PSYCHIC",
     "evolve": [
-      665,
       664,
+      665,
       1282,
       1283,
       1284,
@@ -25214,8 +25214,8 @@
     "type": "ICE",
     "dualtype": "STEEL",
     "evolve": [
-      665,
       664,
+      665,
       1283,
       1284,
       1285,
@@ -25236,8 +25236,8 @@
     "type": "ICE",
     "dualtype": "STEEL",
     "evolve": [
-      665,
       664,
+      665,
       1284,
       1285,
       1286
@@ -25256,8 +25256,8 @@
     "text": "Vivillon Fancy Pattern",
     "type": "STEEL",
     "evolve": [
-      665,
       664,
+      665,
       1285,
       1286
     ],
@@ -25275,8 +25275,8 @@
     "text": "Vivillon Poké Ball Pattern",
     "type": "PSYCHIC",
     "evolve": [
-      665,
       664,
+      665,
       1286
     ],
     "generation": 8,
