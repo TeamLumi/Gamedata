@@ -4,6 +4,7 @@ import re
 import unicodedata
 
 import constants
+import poke_api_constants
 from load_files import load_data
 from moveUtils import (
     get_moves,
@@ -216,14 +217,35 @@ def get_height(monsno=0):
     else:
         return 0
 
-def slugify(value):
+def slugify(value, pokeapi=False):
     """
     Converts to lowercase, removes non-word characters (alphanumerics and
-    underscores) and converts spaces to hyphens. Also strips leading and
-    trailing whitespace.
+    underscores), converts spaces to hyphens, and rearranges string before
+    the space at the end if the first part is "Mega" or "Gigantamax".
+    Also strips leading and trailing whitespace.
     """
+    initial_value = value
     value = unicodedata.normalize('NFKD', value).encode('ascii', 'ignore').decode('ascii')
     value = re.sub('[^\w\s-]', '', value).strip().lower()
+    if pokeapi == False:
+        return re.sub('[-\s]+', '-', value)
+
+    if ' ' in value or "-" in value:
+        # Split the string at the last space
+        for bad_value in poke_api_constants.START_OF_LINE_FORMS.keys():
+            if bad_value in value:
+                value = value.replace(bad_value, poke_api_constants.START_OF_LINE_FORMS[bad_value])
+        for bad_end_value in poke_api_constants.END_OF_LINE_FORMS.keys():
+            if bad_end_value == value.split()[-1]:
+                value = value.replace(f" {bad_end_value}", poke_api_constants.END_OF_LINE_FORMS[bad_end_value])
+        parts = value.rsplit(' ', 1)
+        
+        # Check if the first part is "Mega" or "Gigantamax"
+        if parts[0] in poke_api_constants.REVERSE_ORDER_ARRAY or parts[-1] == "genesect":
+            # Rearrange string and join with hyphen
+            value = '-'.join([parts[1], parts[0]])
+            return value
+
     return re.sub('[-\s]+', '-', value)
 
 def isSpecialPokemon(current_pokemon_name):
