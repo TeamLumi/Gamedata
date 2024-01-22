@@ -1,0 +1,28 @@
+{
+  "name": "fraxure",
+  "id": 611,
+  "abilities": [
+    "rivalry",
+    "mold-breaker",
+    "unnerve"
+  ],
+  "types": [
+    "dragon"
+  ],
+  "height": 10,
+  "weight": 360,
+  "stats": {
+    "hp": 66,
+    "attack": 117,
+    "defense": 70,
+    "special-attack": 40,
+    "special-defense": 50,
+    "speed": 67
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    1,
+    14
+  ]
+}

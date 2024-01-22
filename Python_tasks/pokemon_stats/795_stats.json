@@ -1,0 +1,26 @@
+{
+  "name": "pheromosa",
+  "id": 795,
+  "abilities": [
+    "beast-boost"
+  ],
+  "types": [
+    "bug",
+    "fighting"
+  ],
+  "height": 18,
+  "weight": 250,
+  "stats": {
+    "hp": 71,
+    "attack": 137,
+    "defense": 37,
+    "special-attack": 137,
+    "special-defense": 37,
+    "speed": 151
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

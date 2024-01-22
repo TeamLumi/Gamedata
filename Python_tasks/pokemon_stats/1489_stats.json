@@ -1,0 +1,28 @@
+{
+  "name": "bombirdier",
+  "id": 962,
+  "abilities": [
+    "big-pecks",
+    "keen-eye",
+    "rocky-payload"
+  ],
+  "types": [
+    "flying",
+    "dark"
+  ],
+  "height": 15,
+  "weight": 429,
+  "stats": {
+    "hp": 70,
+    "attack": 103,
+    "defense": 85,
+    "special-attack": 60,
+    "special-defense": 85,
+    "speed": 82
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    4
+  ]
+}

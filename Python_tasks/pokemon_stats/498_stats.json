@@ -1,0 +1,26 @@
+{
+  "name": "tepig",
+  "id": 498,
+  "abilities": [
+    "blaze",
+    "thick-fat"
+  ],
+  "types": [
+    "fire"
+  ],
+  "height": 5,
+  "weight": 99,
+  "stats": {
+    "hp": 65,
+    "attack": 63,
+    "defense": 45,
+    "special-attack": 45,
+    "special-defense": 45,
+    "speed": 45
+  },
+  "gender_ratio": 31,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "espathra",
+  "id": 956,
+  "abilities": [
+    "opportunist",
+    "frisk",
+    "speed-boost"
+  ],
+  "types": [
+    "psychic"
+  ],
+  "height": 19,
+  "weight": 900,
+  "stats": {
+    "hp": 95,
+    "attack": 60,
+    "defense": 60,
+    "special-attack": 101,
+    "special-defense": 60,
+    "speed": 105
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    4
+  ]
+}

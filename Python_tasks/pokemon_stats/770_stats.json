@@ -1,0 +1,32 @@
+{
+  "name": "palossand",
+  "id": 770,
+  "abilities": [
+    "water-compaction",
+    "sand-veil"
+  ],
+  "types": [
+    "ghost",
+    "ground"
+  ],
+  "height": 13,
+  "weight": 2500,
+  "stats": {
+    "hp": 85,
+    "attack": 75,
+    "defense": 110,
+    "special-attack": 100,
+    "special-defense": 75,
+    "speed": 35
+  },
+  "gender_ratio": 127,
+  "held_items": [
+    {
+      "held_item": "spell-tag",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    11
+  ]
+}

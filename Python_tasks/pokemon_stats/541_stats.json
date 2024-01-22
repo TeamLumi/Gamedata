@@ -1,0 +1,33 @@
+{
+  "name": "swadloon",
+  "id": 541,
+  "abilities": [
+    "leaf-guard",
+    "chlorophyll",
+    "overcoat"
+  ],
+  "types": [
+    "bug",
+    "grass"
+  ],
+  "height": 5,
+  "weight": 73,
+  "stats": {
+    "hp": 55,
+    "attack": 63,
+    "defense": 90,
+    "special-attack": 50,
+    "special-defense": 80,
+    "speed": 42
+  },
+  "gender_ratio": 127,
+  "held_items": [
+    {
+      "held_item": "mental-herb",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    3
+  ]
+}

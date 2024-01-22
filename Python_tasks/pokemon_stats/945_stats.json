@@ -1,0 +1,28 @@
+{
+  "name": "grafaiai",
+  "id": 945,
+  "abilities": [
+    "unburden",
+    "poison-touch",
+    "prankster"
+  ],
+  "types": [
+    "poison",
+    "normal"
+  ],
+  "height": 7,
+  "weight": 272,
+  "stats": {
+    "hp": 63,
+    "attack": 95,
+    "defense": 65,
+    "special-attack": 80,
+    "special-defense": 72,
+    "speed": 110
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

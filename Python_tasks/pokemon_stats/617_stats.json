@@ -1,0 +1,27 @@
+{
+  "name": "accelgor",
+  "id": 617,
+  "abilities": [
+    "hydration",
+    "sticky-hold",
+    "unburden"
+  ],
+  "types": [
+    "bug"
+  ],
+  "height": 8,
+  "weight": 253,
+  "stats": {
+    "hp": 80,
+    "attack": 70,
+    "defense": 40,
+    "special-attack": 100,
+    "special-defense": 60,
+    "speed": 145
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    3
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "armarouge",
+  "id": 936,
+  "abilities": [
+    "flash-fire",
+    "weak-armor"
+  ],
+  "types": [
+    "fire",
+    "psychic"
+  ],
+  "height": 15,
+  "weight": 850,
+  "stats": {
+    "hp": 85,
+    "attack": 60,
+    "defense": 100,
+    "special-attack": 125,
+    "special-defense": 80,
+    "speed": 75
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    8
+  ]
+}

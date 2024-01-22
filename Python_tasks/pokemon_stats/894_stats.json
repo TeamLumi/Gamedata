@@ -1,0 +1,25 @@
+{
+  "name": "regieleki",
+  "id": 894,
+  "abilities": [
+    "transistor"
+  ],
+  "types": [
+    "electric"
+  ],
+  "height": 12,
+  "weight": 1450,
+  "stats": {
+    "hp": 80,
+    "attack": 100,
+    "defense": 50,
+    "special-attack": 100,
+    "special-defense": 50,
+    "speed": 200
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

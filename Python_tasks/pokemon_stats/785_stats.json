@@ -1,0 +1,27 @@
+{
+  "name": "tapu-koko",
+  "id": 785,
+  "abilities": [
+    "electric-surge",
+    "telepathy"
+  ],
+  "types": [
+    "electric",
+    "fairy"
+  ],
+  "height": 18,
+  "weight": 205,
+  "stats": {
+    "hp": 70,
+    "attack": 115,
+    "defense": 85,
+    "special-attack": 95,
+    "special-defense": 75,
+    "speed": 130
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "pawniard",
+  "id": 624,
+  "abilities": [
+    "defiant",
+    "inner-focus",
+    "pressure"
+  ],
+  "types": [
+    "dark",
+    "steel"
+  ],
+  "height": 5,
+  "weight": 102,
+  "stats": {
+    "hp": 45,
+    "attack": 85,
+    "defense": 70,
+    "special-attack": 40,
+    "special-defense": 40,
+    "speed": 60
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    8
+  ]
+}

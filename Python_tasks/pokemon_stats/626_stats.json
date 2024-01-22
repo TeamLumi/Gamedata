@@ -1,0 +1,27 @@
+{
+  "name": "bouffalant",
+  "id": 626,
+  "abilities": [
+    "reckless",
+    "sap-sipper",
+    "soundproof"
+  ],
+  "types": [
+    "normal"
+  ],
+  "height": 16,
+  "weight": 946,
+  "stats": {
+    "hp": 95,
+    "attack": 110,
+    "defense": 95,
+    "special-attack": 40,
+    "special-defense": 95,
+    "speed": 55
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

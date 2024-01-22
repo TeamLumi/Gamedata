@@ -1,0 +1,27 @@
+{
+  "name": "ceruledge",
+  "id": 937,
+  "abilities": [
+    "flash-fire",
+    "weak-armor"
+  ],
+  "types": [
+    "fire",
+    "ghost"
+  ],
+  "height": 16,
+  "weight": 620,
+  "stats": {
+    "hp": 75,
+    "attack": 125,
+    "defense": 80,
+    "special-attack": 60,
+    "special-defense": 100,
+    "speed": 85
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    8
+  ]
+}

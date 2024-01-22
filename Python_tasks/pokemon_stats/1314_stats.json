@@ -1,0 +1,28 @@
+{
+  "name": "pumpkaboo-large",
+  "id": 10028,
+  "abilities": [
+    "pickup",
+    "frisk",
+    "insomnia"
+  ],
+  "types": [
+    "ghost",
+    "grass"
+  ],
+  "height": 5,
+  "weight": 75,
+  "stats": {
+    "hp": 54,
+    "attack": 66,
+    "defense": 70,
+    "special-attack": 44,
+    "special-defense": 55,
+    "speed": 46
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    11
+  ]
+}

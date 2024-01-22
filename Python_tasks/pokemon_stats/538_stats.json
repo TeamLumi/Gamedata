@@ -1,0 +1,36 @@
+{
+  "name": "throh",
+  "id": 538,
+  "abilities": [
+    "guts",
+    "inner-focus",
+    "mold-breaker"
+  ],
+  "types": [
+    "fighting"
+  ],
+  "height": 13,
+  "weight": 555,
+  "stats": {
+    "hp": 120,
+    "attack": 100,
+    "defense": 85,
+    "special-attack": 30,
+    "special-defense": 85,
+    "speed": 45
+  },
+  "gender_ratio": 0,
+  "held_items": [
+    {
+      "held_item": "black-belt",
+      "rarity": null
+    },
+    {
+      "held_item": "expert-belt",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    8
+  ]
+}

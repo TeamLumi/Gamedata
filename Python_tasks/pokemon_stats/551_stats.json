@@ -1,0 +1,33 @@
+{
+  "name": "sandile",
+  "id": 551,
+  "abilities": [
+    "intimidate",
+    "moxie",
+    "anger-point"
+  ],
+  "types": [
+    "ground",
+    "dark"
+  ],
+  "height": 7,
+  "weight": 152,
+  "stats": {
+    "hp": 50,
+    "attack": 72,
+    "defense": 35,
+    "special-attack": 35,
+    "special-defense": 35,
+    "speed": 65
+  },
+  "gender_ratio": 127,
+  "held_items": [
+    {
+      "held_item": "black-glasses",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    5
+  ]
+}

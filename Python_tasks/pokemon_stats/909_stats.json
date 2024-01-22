@@ -1,0 +1,26 @@
+{
+  "name": "fuecoco",
+  "id": 909,
+  "abilities": [
+    "blaze",
+    "unaware"
+  ],
+  "types": [
+    "fire"
+  ],
+  "height": 4,
+  "weight": 98,
+  "stats": {
+    "hp": 67,
+    "attack": 45,
+    "defense": 59,
+    "special-attack": 63,
+    "special-defense": 40,
+    "speed": 36
+  },
+  "gender_ratio": 31,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

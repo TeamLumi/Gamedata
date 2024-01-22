@@ -1,0 +1,27 @@
+{
+  "name": "corvisquire",
+  "id": 822,
+  "abilities": [
+    "keen-eye",
+    "unnerve",
+    "big-pecks"
+  ],
+  "types": [
+    "flying"
+  ],
+  "height": 8,
+  "weight": 160,
+  "stats": {
+    "hp": 68,
+    "attack": 67,
+    "defense": 55,
+    "special-attack": 43,
+    "special-defense": 55,
+    "speed": 77
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    4
+  ]
+}

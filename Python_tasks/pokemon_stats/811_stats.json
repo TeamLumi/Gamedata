@@ -1,0 +1,27 @@
+{
+  "name": "thwackey",
+  "id": 811,
+  "abilities": [
+    "overgrow",
+    "grassy-surge"
+  ],
+  "types": [
+    "grass"
+  ],
+  "height": 7,
+  "weight": 140,
+  "stats": {
+    "hp": 70,
+    "attack": 85,
+    "defense": 70,
+    "special-attack": 55,
+    "special-defense": 60,
+    "speed": 80
+  },
+  "gender_ratio": 31,
+  "held_items": [],
+  "egg_groups": [
+    5,
+    7
+  ]
+}

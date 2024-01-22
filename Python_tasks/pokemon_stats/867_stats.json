@@ -1,0 +1,27 @@
+{
+  "name": "runerigus",
+  "id": 867,
+  "abilities": [
+    "wandering-spirit"
+  ],
+  "types": [
+    "ground",
+    "ghost"
+  ],
+  "height": 16,
+  "weight": 666,
+  "stats": {
+    "hp": 58,
+    "attack": 95,
+    "defense": 145,
+    "special-attack": 50,
+    "special-defense": 105,
+    "speed": 30
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    10,
+    11
+  ]
+}

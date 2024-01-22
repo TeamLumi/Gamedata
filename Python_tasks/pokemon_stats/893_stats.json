@@ -1,0 +1,26 @@
+{
+  "name": "zarude",
+  "id": 893,
+  "abilities": [
+    "leaf-guard"
+  ],
+  "types": [
+    "dark",
+    "grass"
+  ],
+  "height": 18,
+  "weight": 700,
+  "stats": {
+    "hp": 105,
+    "attack": 120,
+    "defense": 105,
+    "special-attack": 70,
+    "special-defense": 95,
+    "speed": 105
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

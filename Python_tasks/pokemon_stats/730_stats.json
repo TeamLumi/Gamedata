@@ -1,0 +1,28 @@
+{
+  "name": "primarina",
+  "id": 730,
+  "abilities": [
+    "torrent",
+    "liquid-voice"
+  ],
+  "types": [
+    "water",
+    "fairy"
+  ],
+  "height": 18,
+  "weight": 440,
+  "stats": {
+    "hp": 80,
+    "attack": 74,
+    "defense": 74,
+    "special-attack": 126,
+    "special-defense": 116,
+    "speed": 60
+  },
+  "gender_ratio": 31,
+  "held_items": [],
+  "egg_groups": [
+    2,
+    5
+  ]
+}

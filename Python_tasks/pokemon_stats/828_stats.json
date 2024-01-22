@@ -1,0 +1,27 @@
+{
+  "name": "thievul",
+  "id": 828,
+  "abilities": [
+    "run-away",
+    "unburden",
+    "stakeout"
+  ],
+  "types": [
+    "dark"
+  ],
+  "height": 12,
+  "weight": 199,
+  "stats": {
+    "hp": 70,
+    "attack": 58,
+    "defense": 58,
+    "special-attack": 87,
+    "special-defense": 92,
+    "speed": 90
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

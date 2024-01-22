@@ -1,0 +1,32 @@
+{
+  "name": "vanillite",
+  "id": 582,
+  "abilities": [
+    "ice-body",
+    "snow-cloak",
+    "weak-armor"
+  ],
+  "types": [
+    "ice"
+  ],
+  "height": 4,
+  "weight": 57,
+  "stats": {
+    "hp": 36,
+    "attack": 50,
+    "defense": 50,
+    "special-attack": 65,
+    "special-defense": 60,
+    "speed": 44
+  },
+  "gender_ratio": 127,
+  "held_items": [
+    {
+      "held_item": "never-melt-ice",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    10
+  ]
+}

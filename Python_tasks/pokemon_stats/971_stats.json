@@ -1,0 +1,26 @@
+{
+  "name": "greavard",
+  "id": 971,
+  "abilities": [
+    "pickup",
+    "fluffy"
+  ],
+  "types": [
+    "ghost"
+  ],
+  "height": 6,
+  "weight": 350,
+  "stats": {
+    "hp": 50,
+    "attack": 61,
+    "defense": 60,
+    "special-attack": 30,
+    "special-defense": 55,
+    "speed": 34
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

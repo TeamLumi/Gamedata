@@ -1,0 +1,28 @@
+{
+  "name": "meowscarada",
+  "id": 908,
+  "abilities": [
+    "overgrow",
+    "protean"
+  ],
+  "types": [
+    "grass",
+    "dark"
+  ],
+  "height": 15,
+  "weight": 312,
+  "stats": {
+    "hp": 76,
+    "attack": 110,
+    "defense": 70,
+    "special-attack": 81,
+    "special-defense": 70,
+    "speed": 123
+  },
+  "gender_ratio": 31,
+  "held_items": [],
+  "egg_groups": [
+    5,
+    7
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "baxcalibur",
+  "id": 998,
+  "abilities": [
+    "thermal-exchange",
+    "ice-body"
+  ],
+  "types": [
+    "dragon",
+    "ice"
+  ],
+  "height": 21,
+  "weight": 2100,
+  "stats": {
+    "hp": 115,
+    "attack": 145,
+    "defense": 92,
+    "special-attack": 75,
+    "special-defense": 86,
+    "speed": 87
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    14,
+    10
+  ]
+}

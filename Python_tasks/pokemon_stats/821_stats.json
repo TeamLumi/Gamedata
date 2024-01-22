@@ -1,0 +1,27 @@
+{
+  "name": "rookidee",
+  "id": 821,
+  "abilities": [
+    "keen-eye",
+    "unnerve",
+    "big-pecks"
+  ],
+  "types": [
+    "flying"
+  ],
+  "height": 2,
+  "weight": 18,
+  "stats": {
+    "hp": 38,
+    "attack": 47,
+    "defense": 35,
+    "special-attack": 33,
+    "special-defense": 35,
+    "speed": 57
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    4
+  ]
+}

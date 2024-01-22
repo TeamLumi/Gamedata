@@ -1,0 +1,29 @@
+{
+  "name": "duraludon-gmax",
+  "id": 10225,
+  "abilities": [
+    "light-metal",
+    "heavy-metal",
+    "stalwart"
+  ],
+  "types": [
+    "steel",
+    "dragon"
+  ],
+  "height": 430,
+  "weight": 10000,
+  "stats": {
+    "hp": 70,
+    "attack": 95,
+    "defense": 115,
+    "special-attack": 120,
+    "special-defense": 50,
+    "speed": 85
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    10,
+    14
+  ]
+}

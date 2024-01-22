@@ -1,0 +1,29 @@
+{
+  "name": "drednaw-gmax",
+  "id": 10214,
+  "abilities": [
+    "strong-jaw",
+    "shell-armor",
+    "swift-swim"
+  ],
+  "types": [
+    "water",
+    "rock"
+  ],
+  "height": 240,
+  "weight": 10000,
+  "stats": {
+    "hp": 90,
+    "attack": 115,
+    "defense": 90,
+    "special-attack": 48,
+    "special-defense": 68,
+    "speed": 74
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    1,
+    2
+  ]
+}

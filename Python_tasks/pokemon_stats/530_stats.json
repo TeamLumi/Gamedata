@@ -1,0 +1,28 @@
+{
+  "name": "excadrill",
+  "id": 530,
+  "abilities": [
+    "sand-rush",
+    "sand-force",
+    "mold-breaker"
+  ],
+  "types": [
+    "ground",
+    "steel"
+  ],
+  "height": 7,
+  "weight": 404,
+  "stats": {
+    "hp": 110,
+    "attack": 135,
+    "defense": 60,
+    "special-attack": 50,
+    "special-defense": 65,
+    "speed": 88
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

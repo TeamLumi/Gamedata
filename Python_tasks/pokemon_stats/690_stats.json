@@ -1,0 +1,29 @@
+{
+  "name": "skrelp",
+  "id": 690,
+  "abilities": [
+    "poison-point",
+    "poison-touch",
+    "adaptability"
+  ],
+  "types": [
+    "poison",
+    "water"
+  ],
+  "height": 5,
+  "weight": 73,
+  "stats": {
+    "hp": 50,
+    "attack": 60,
+    "defense": 60,
+    "special-attack": 60,
+    "special-defense": 60,
+    "speed": 30
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    2,
+    14
+  ]
+}

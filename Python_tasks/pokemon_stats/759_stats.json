@@ -1,0 +1,28 @@
+{
+  "name": "stufful",
+  "id": 759,
+  "abilities": [
+    "fluffy",
+    "klutz",
+    "cute-charm"
+  ],
+  "types": [
+    "normal",
+    "fighting"
+  ],
+  "height": 5,
+  "weight": 68,
+  "stats": {
+    "hp": 70,
+    "attack": 75,
+    "defense": 50,
+    "special-attack": 45,
+    "special-defense": 50,
+    "speed": 50
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

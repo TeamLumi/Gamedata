@@ -1,0 +1,28 @@
+{
+  "name": "sliggoo-hisui",
+  "id": 10241,
+  "abilities": [
+    "sap-sipper",
+    "shell-armor",
+    "gooey"
+  ],
+  "types": [
+    "steel",
+    "dragon"
+  ],
+  "height": 7,
+  "weight": 685,
+  "stats": {
+    "hp": 58,
+    "attack": 75,
+    "defense": 83,
+    "special-attack": 83,
+    "special-defense": 113,
+    "speed": 40
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    14
+  ]
+}

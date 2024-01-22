@@ -1,0 +1,27 @@
+{
+  "name": "golisopod",
+  "id": 768,
+  "abilities": [
+    "emergency-exit"
+  ],
+  "types": [
+    "bug",
+    "water"
+  ],
+  "height": 20,
+  "weight": 1080,
+  "stats": {
+    "hp": 75,
+    "attack": 125,
+    "defense": 140,
+    "special-attack": 60,
+    "special-defense": 90,
+    "speed": 40
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    3,
+    9
+  ]
+}

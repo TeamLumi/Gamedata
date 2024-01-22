@@ -1,0 +1,28 @@
+{
+  "name": "axew",
+  "id": 610,
+  "abilities": [
+    "rivalry",
+    "mold-breaker",
+    "unnerve"
+  ],
+  "types": [
+    "dragon"
+  ],
+  "height": 6,
+  "weight": 180,
+  "stats": {
+    "hp": 46,
+    "attack": 87,
+    "defense": 60,
+    "special-attack": 30,
+    "special-defense": 40,
+    "speed": 57
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    1,
+    14
+  ]
+}

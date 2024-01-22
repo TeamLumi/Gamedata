@@ -1,0 +1,26 @@
+{
+  "name": "zygarde-10",
+  "id": 10181,
+  "abilities": [
+    "aura-break"
+  ],
+  "types": [
+    "dragon",
+    "ground"
+  ],
+  "height": 12,
+  "weight": 335,
+  "stats": {
+    "hp": 54,
+    "attack": 100,
+    "defense": 71,
+    "special-attack": 61,
+    "special-defense": 85,
+    "speed": 115
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

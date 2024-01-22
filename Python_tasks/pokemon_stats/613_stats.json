@@ -1,0 +1,32 @@
+{
+  "name": "cubchoo",
+  "id": 613,
+  "abilities": [
+    "snow-cloak",
+    "slush-rush",
+    "rattled"
+  ],
+  "types": [
+    "ice"
+  ],
+  "height": 5,
+  "weight": 85,
+  "stats": {
+    "hp": 55,
+    "attack": 70,
+    "defense": 40,
+    "special-attack": 60,
+    "special-defense": 40,
+    "speed": 40
+  },
+  "gender_ratio": 127,
+  "held_items": [
+    {
+      "held_item": "aspear-berry",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    5
+  ]
+}

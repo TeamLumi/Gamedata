@@ -1,0 +1,31 @@
+{
+  "name": "fomantis",
+  "id": 753,
+  "abilities": [
+    "leaf-guard",
+    "contrary"
+  ],
+  "types": [
+    "grass"
+  ],
+  "height": 3,
+  "weight": 15,
+  "stats": {
+    "hp": 40,
+    "attack": 55,
+    "defense": 35,
+    "special-attack": 50,
+    "special-defense": 35,
+    "speed": 35
+  },
+  "gender_ratio": 127,
+  "held_items": [
+    {
+      "held_item": "miracle-seed",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    7
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "xerneas-neutral",
+  "id": 716,
+  "abilities": [
+    "fairy-aura"
+  ],
+  "types": [
+    "fairy"
+  ],
+  "height": 30,
+  "weight": 2150,
+  "stats": {
+    "hp": 126,
+    "attack": 131,
+    "defense": 95,
+    "special-attack": 131,
+    "special-defense": 98,
+    "speed": 99
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

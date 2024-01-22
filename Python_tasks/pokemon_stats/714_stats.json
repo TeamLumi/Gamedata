@@ -1,0 +1,29 @@
+{
+  "name": "noibat",
+  "id": 714,
+  "abilities": [
+    "frisk",
+    "infiltrator",
+    "telepathy"
+  ],
+  "types": [
+    "flying",
+    "dragon"
+  ],
+  "height": 5,
+  "weight": 80,
+  "stats": {
+    "hp": 40,
+    "attack": 30,
+    "defense": 35,
+    "special-attack": 45,
+    "special-defense": 40,
+    "speed": 55
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    4,
+    14
+  ]
+}

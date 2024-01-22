@@ -1,0 +1,27 @@
+{
+  "name": "wiglett",
+  "id": 960,
+  "abilities": [
+    "gooey",
+    "rattled",
+    "sand-veil"
+  ],
+  "types": [
+    "water"
+  ],
+  "height": 12,
+  "weight": 18,
+  "stats": {
+    "hp": 10,
+    "attack": 55,
+    "defense": 25,
+    "special-attack": 35,
+    "special-defense": 25,
+    "speed": 95
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    9
+  ]
+}

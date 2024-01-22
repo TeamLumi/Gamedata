@@ -1,0 +1,33 @@
+{
+  "name": "ferrothorn",
+  "id": 598,
+  "abilities": [
+    "iron-barbs",
+    "anticipation"
+  ],
+  "types": [
+    "grass",
+    "steel"
+  ],
+  "height": 10,
+  "weight": 1100,
+  "stats": {
+    "hp": 74,
+    "attack": 94,
+    "defense": 131,
+    "special-attack": 54,
+    "special-defense": 116,
+    "speed": 20
+  },
+  "gender_ratio": 127,
+  "held_items": [
+    {
+      "held_item": "sticky-barb",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    7,
+    10
+  ]
+}

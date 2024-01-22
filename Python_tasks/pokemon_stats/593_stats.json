@@ -1,0 +1,28 @@
+{
+  "name": "jellicent",
+  "id": 593,
+  "abilities": [
+    "water-absorb",
+    "cursed-body",
+    "damp"
+  ],
+  "types": [
+    "water",
+    "ghost"
+  ],
+  "height": 22,
+  "weight": 1350,
+  "stats": {
+    "hp": 100,
+    "attack": 60,
+    "defense": 70,
+    "special-attack": 85,
+    "special-defense": 105,
+    "speed": 60
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    11
+  ]
+}

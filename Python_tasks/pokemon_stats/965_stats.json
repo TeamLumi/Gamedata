@@ -1,0 +1,27 @@
+{
+  "name": "varoom",
+  "id": 965,
+  "abilities": [
+    "overcoat",
+    "slow-start"
+  ],
+  "types": [
+    "steel",
+    "poison"
+  ],
+  "height": 10,
+  "weight": 350,
+  "stats": {
+    "hp": 45,
+    "attack": 70,
+    "defense": 63,
+    "special-attack": 30,
+    "special-defense": 45,
+    "speed": 47
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    10
+  ]
+}

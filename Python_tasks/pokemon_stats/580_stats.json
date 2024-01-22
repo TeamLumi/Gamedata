@@ -1,0 +1,29 @@
+{
+  "name": "ducklett",
+  "id": 580,
+  "abilities": [
+    "keen-eye",
+    "big-pecks",
+    "hydration"
+  ],
+  "types": [
+    "water",
+    "flying"
+  ],
+  "height": 5,
+  "weight": 55,
+  "stats": {
+    "hp": 62,
+    "attack": 44,
+    "defense": 50,
+    "special-attack": 44,
+    "special-defense": 50,
+    "speed": 55
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    2,
+    4
+  ]
+}

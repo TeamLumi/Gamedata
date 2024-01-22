@@ -1,0 +1,26 @@
+{
+  "name": "stakataka",
+  "id": 805,
+  "abilities": [
+    "beast-boost"
+  ],
+  "types": [
+    "rock",
+    "steel"
+  ],
+  "height": 55,
+  "weight": 8200,
+  "stats": {
+    "hp": 61,
+    "attack": 131,
+    "defense": 211,
+    "special-attack": 53,
+    "special-defense": 101,
+    "speed": 13
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

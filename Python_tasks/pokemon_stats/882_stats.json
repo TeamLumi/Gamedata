@@ -1,0 +1,28 @@
+{
+  "name": "dracovish",
+  "id": 882,
+  "abilities": [
+    "water-absorb",
+    "strong-jaw",
+    "sand-rush"
+  ],
+  "types": [
+    "water",
+    "dragon"
+  ],
+  "height": 23,
+  "weight": 2150,
+  "stats": {
+    "hp": 90,
+    "attack": 90,
+    "defense": 100,
+    "special-attack": 70,
+    "special-defense": 80,
+    "speed": 75
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

@@ -1,0 +1,33 @@
+{
+  "name": "toxapex",
+  "id": 748,
+  "abilities": [
+    "merciless",
+    "limber",
+    "regenerator"
+  ],
+  "types": [
+    "poison",
+    "water"
+  ],
+  "height": 7,
+  "weight": 145,
+  "stats": {
+    "hp": 50,
+    "attack": 63,
+    "defense": 152,
+    "special-attack": 53,
+    "special-defense": 142,
+    "speed": 35
+  },
+  "gender_ratio": 127,
+  "held_items": [
+    {
+      "held_item": "poison-barb",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    2
+  ]
+}

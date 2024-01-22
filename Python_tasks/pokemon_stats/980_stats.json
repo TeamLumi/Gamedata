@@ -1,0 +1,29 @@
+{
+  "name": "clodsire",
+  "id": 980,
+  "abilities": [
+    "poison-point",
+    "water-absorb",
+    "unaware"
+  ],
+  "types": [
+    "poison",
+    "ground"
+  ],
+  "height": 18,
+  "weight": 2230,
+  "stats": {
+    "hp": 130,
+    "attack": 75,
+    "defense": 60,
+    "special-attack": 45,
+    "special-defense": 100,
+    "speed": 20
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    2,
+    5
+  ]
+}

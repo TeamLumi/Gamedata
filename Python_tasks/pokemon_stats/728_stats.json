@@ -1,0 +1,27 @@
+{
+  "name": "popplio",
+  "id": 728,
+  "abilities": [
+    "torrent",
+    "liquid-voice"
+  ],
+  "types": [
+    "water"
+  ],
+  "height": 4,
+  "weight": 75,
+  "stats": {
+    "hp": 50,
+    "attack": 54,
+    "defense": 54,
+    "special-attack": 66,
+    "special-defense": 56,
+    "speed": 40
+  },
+  "gender_ratio": 31,
+  "held_items": [],
+  "egg_groups": [
+    2,
+    5
+  ]
+}

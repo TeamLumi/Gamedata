@@ -1,0 +1,34 @@
+{
+  "name": "scrafty",
+  "id": 560,
+  "abilities": [
+    "shed-skin",
+    "moxie",
+    "intimidate"
+  ],
+  "types": [
+    "dark",
+    "fighting"
+  ],
+  "height": 11,
+  "weight": 300,
+  "stats": {
+    "hp": 65,
+    "attack": 90,
+    "defense": 115,
+    "special-attack": 45,
+    "special-defense": 115,
+    "speed": 58
+  },
+  "gender_ratio": 127,
+  "held_items": [
+    {
+      "held_item": "shed-shell",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    5,
+    14
+  ]
+}

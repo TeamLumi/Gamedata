@@ -1,0 +1,27 @@
+{
+  "name": "espurr",
+  "id": 677,
+  "abilities": [
+    "keen-eye",
+    "infiltrator",
+    "own-tempo"
+  ],
+  "types": [
+    "psychic"
+  ],
+  "height": 3,
+  "weight": 35,
+  "stats": {
+    "hp": 62,
+    "attack": 48,
+    "defense": 54,
+    "special-attack": 63,
+    "special-defense": 60,
+    "speed": 68
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

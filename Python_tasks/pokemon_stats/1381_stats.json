@@ -1,0 +1,25 @@
+{
+  "name": "melmetal-gmax",
+  "id": 10208,
+  "abilities": [
+    "iron-fist"
+  ],
+  "types": [
+    "steel"
+  ],
+  "height": 250,
+  "weight": 10000,
+  "stats": {
+    "hp": 135,
+    "attack": 143,
+    "defense": 143,
+    "special-attack": 80,
+    "special-defense": 65,
+    "speed": 34
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

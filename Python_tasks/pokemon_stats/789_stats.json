@@ -1,0 +1,25 @@
+{
+  "name": "cosmog",
+  "id": 789,
+  "abilities": [
+    "unaware"
+  ],
+  "types": [
+    "psychic"
+  ],
+  "height": 2,
+  "weight": 1,
+  "stats": {
+    "hp": 43,
+    "attack": 29,
+    "defense": 31,
+    "special-attack": 29,
+    "special-defense": 31,
+    "speed": 37
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

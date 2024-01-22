@@ -1,0 +1,27 @@
+{
+  "name": "aurorus",
+  "id": 699,
+  "abilities": [
+    "refrigerate",
+    "snow-warning"
+  ],
+  "types": [
+    "rock",
+    "ice"
+  ],
+  "height": 27,
+  "weight": 2250,
+  "stats": {
+    "hp": 123,
+    "attack": 77,
+    "defense": 72,
+    "special-attack": 99,
+    "special-defense": 92,
+    "speed": 58
+  },
+  "gender_ratio": 31,
+  "held_items": [],
+  "egg_groups": [
+    1
+  ]
+}

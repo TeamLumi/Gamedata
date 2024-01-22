@@ -1,0 +1,31 @@
+{
+  "name": "cofagrigus",
+  "id": 563,
+  "abilities": [
+    "mummy"
+  ],
+  "types": [
+    "ghost"
+  ],
+  "height": 17,
+  "weight": 765,
+  "stats": {
+    "hp": 58,
+    "attack": 50,
+    "defense": 145,
+    "special-attack": 95,
+    "special-defense": 105,
+    "speed": 30
+  },
+  "gender_ratio": 127,
+  "held_items": [
+    {
+      "held_item": "spell-tag",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    10,
+    11
+  ]
+}

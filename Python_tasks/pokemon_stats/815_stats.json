@@ -1,0 +1,27 @@
+{
+  "name": "cinderace",
+  "id": 815,
+  "abilities": [
+    "blaze",
+    "libero"
+  ],
+  "types": [
+    "fire"
+  ],
+  "height": 14,
+  "weight": 330,
+  "stats": {
+    "hp": 80,
+    "attack": 116,
+    "defense": 75,
+    "special-attack": 65,
+    "special-defense": 75,
+    "speed": 119
+  },
+  "gender_ratio": 31,
+  "held_items": [],
+  "egg_groups": [
+    5,
+    8
+  ]
+}

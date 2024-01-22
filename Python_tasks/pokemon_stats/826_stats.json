@@ -1,0 +1,28 @@
+{
+  "name": "orbeetle",
+  "id": 826,
+  "abilities": [
+    "swarm",
+    "frisk",
+    "telepathy"
+  ],
+  "types": [
+    "bug",
+    "psychic"
+  ],
+  "height": 4,
+  "weight": 408,
+  "stats": {
+    "hp": 60,
+    "attack": 45,
+    "defense": 110,
+    "special-attack": 80,
+    "special-defense": 120,
+    "speed": 90
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    3
+  ]
+}

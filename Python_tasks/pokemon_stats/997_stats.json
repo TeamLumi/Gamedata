@@ -1,0 +1,28 @@
+{
+  "name": "arctibax",
+  "id": 997,
+  "abilities": [
+    "thermal-exchange",
+    "ice-body"
+  ],
+  "types": [
+    "dragon",
+    "ice"
+  ],
+  "height": 8,
+  "weight": 300,
+  "stats": {
+    "hp": 90,
+    "attack": 95,
+    "defense": 66,
+    "special-attack": 45,
+    "special-defense": 65,
+    "speed": 62
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    14,
+    10
+  ]
+}

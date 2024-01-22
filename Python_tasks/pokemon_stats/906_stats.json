@@ -1,0 +1,27 @@
+{
+  "name": "sprigatito",
+  "id": 906,
+  "abilities": [
+    "overgrow",
+    "protean"
+  ],
+  "types": [
+    "grass"
+  ],
+  "height": 4,
+  "weight": 41,
+  "stats": {
+    "hp": 40,
+    "attack": 61,
+    "defense": 54,
+    "special-attack": 45,
+    "special-defense": 45,
+    "speed": 65
+  },
+  "gender_ratio": 31,
+  "held_items": [],
+  "egg_groups": [
+    5,
+    7
+  ]
+}

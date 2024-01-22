@@ -1,0 +1,27 @@
+{
+  "name": "drilbur",
+  "id": 529,
+  "abilities": [
+    "sand-rush",
+    "sand-force",
+    "mold-breaker"
+  ],
+  "types": [
+    "ground"
+  ],
+  "height": 3,
+  "weight": 85,
+  "stats": {
+    "hp": 60,
+    "attack": 85,
+    "defense": 40,
+    "special-attack": 30,
+    "special-defense": 45,
+    "speed": 68
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

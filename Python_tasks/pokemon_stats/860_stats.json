@@ -1,0 +1,29 @@
+{
+  "name": "morgrem",
+  "id": 860,
+  "abilities": [
+    "prankster",
+    "frisk",
+    "pickpocket"
+  ],
+  "types": [
+    "dark",
+    "fairy"
+  ],
+  "height": 8,
+  "weight": 125,
+  "stats": {
+    "hp": 65,
+    "attack": 60,
+    "defense": 45,
+    "special-attack": 75,
+    "special-defense": 55,
+    "speed": 70
+  },
+  "gender_ratio": 0,
+  "held_items": [],
+  "egg_groups": [
+    6,
+    8
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "name": "tornadus-therian",
+  "id": 10019,
+  "abilities": [
+    "regenerator"
+  ],
+  "types": [
+    "flying"
+  ],
+  "height": 14,
+  "weight": 630,
+  "stats": {
+    "hp": 79,
+    "attack": 100,
+    "defense": 80,
+    "special-attack": 110,
+    "special-defense": 90,
+    "speed": 121
+  },
+  "gender_ratio": 0,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

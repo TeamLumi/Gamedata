@@ -1,0 +1,27 @@
+{
+  "name": "samurott-hisui",
+  "id": 10236,
+  "abilities": [
+    "torrent",
+    "sharpness"
+  ],
+  "types": [
+    "water",
+    "dark"
+  ],
+  "height": 15,
+  "weight": 582,
+  "stats": {
+    "hp": 90,
+    "attack": 108,
+    "defense": 80,
+    "special-attack": 100,
+    "special-defense": 65,
+    "speed": 85
+  },
+  "gender_ratio": 31,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

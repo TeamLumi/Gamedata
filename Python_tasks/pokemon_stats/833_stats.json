@@ -1,0 +1,28 @@
+{
+  "name": "chewtle",
+  "id": 833,
+  "abilities": [
+    "strong-jaw",
+    "shell-armor",
+    "swift-swim"
+  ],
+  "types": [
+    "water"
+  ],
+  "height": 3,
+  "weight": 85,
+  "stats": {
+    "hp": 50,
+    "attack": 64,
+    "defense": 50,
+    "special-attack": 38,
+    "special-defense": 38,
+    "speed": 44
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    1,
+    2
+  ]
+}

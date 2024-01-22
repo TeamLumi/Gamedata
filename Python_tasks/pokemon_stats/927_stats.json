@@ -1,0 +1,27 @@
+{
+  "name": "dachsbun",
+  "id": 927,
+  "abilities": [
+    "well-baked-body",
+    "aroma-veil"
+  ],
+  "types": [
+    "fairy"
+  ],
+  "height": 5,
+  "weight": 149,
+  "stats": {
+    "hp": 57,
+    "attack": 80,
+    "defense": 115,
+    "special-attack": 50,
+    "special-defense": 80,
+    "speed": 95
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    5,
+    10
+  ]
+}

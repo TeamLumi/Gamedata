@@ -1,0 +1,26 @@
+{
+  "name": "kyurem-white",
+  "id": 10023,
+  "abilities": [
+    "turboblaze"
+  ],
+  "types": [
+    "dragon",
+    "ice"
+  ],
+  "height": 36,
+  "weight": 3250,
+  "stats": {
+    "hp": 125,
+    "attack": 120,
+    "defense": 90,
+    "special-attack": 170,
+    "special-defense": 100,
+    "speed": 95
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

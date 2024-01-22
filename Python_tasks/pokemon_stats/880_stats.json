@@ -1,0 +1,28 @@
+{
+  "name": "dracozolt",
+  "id": 880,
+  "abilities": [
+    "volt-absorb",
+    "hustle",
+    "sand-rush"
+  ],
+  "types": [
+    "electric",
+    "dragon"
+  ],
+  "height": 18,
+  "weight": 1900,
+  "stats": {
+    "hp": 90,
+    "attack": 100,
+    "defense": 90,
+    "special-attack": 80,
+    "special-defense": 70,
+    "speed": 75
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

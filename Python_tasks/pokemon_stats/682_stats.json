@@ -1,0 +1,26 @@
+{
+  "name": "spritzee",
+  "id": 682,
+  "abilities": [
+    "healer",
+    "aroma-veil"
+  ],
+  "types": [
+    "fairy"
+  ],
+  "height": 2,
+  "weight": 5,
+  "stats": {
+    "hp": 78,
+    "attack": 52,
+    "defense": 60,
+    "special-attack": 63,
+    "special-defense": 65,
+    "speed": 23
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    6
+  ]
+}

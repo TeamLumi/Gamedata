@@ -1,0 +1,28 @@
+{
+  "name": "arctozolt",
+  "id": 881,
+  "abilities": [
+    "volt-absorb",
+    "static",
+    "slush-rush"
+  ],
+  "types": [
+    "electric",
+    "ice"
+  ],
+  "height": 23,
+  "weight": 1500,
+  "stats": {
+    "hp": 90,
+    "attack": 100,
+    "defense": 90,
+    "special-attack": 90,
+    "special-defense": 80,
+    "speed": 55
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

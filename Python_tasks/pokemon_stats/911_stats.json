@@ -1,0 +1,27 @@
+{
+  "name": "skeledirge",
+  "id": 911,
+  "abilities": [
+    "blaze",
+    "unaware"
+  ],
+  "types": [
+    "fire",
+    "ghost"
+  ],
+  "height": 16,
+  "weight": 3265,
+  "stats": {
+    "hp": 104,
+    "attack": 75,
+    "defense": 100,
+    "special-attack": 110,
+    "special-defense": 75,
+    "speed": 66
+  },
+  "gender_ratio": 31,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

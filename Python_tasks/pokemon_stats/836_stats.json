@@ -1,0 +1,26 @@
+{
+  "name": "boltund",
+  "id": 836,
+  "abilities": [
+    "strong-jaw",
+    "competitive"
+  ],
+  "types": [
+    "electric"
+  ],
+  "height": 10,
+  "weight": 340,
+  "stats": {
+    "hp": 69,
+    "attack": 90,
+    "defense": 60,
+    "special-attack": 90,
+    "special-defense": 60,
+    "speed": 121
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

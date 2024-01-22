@@ -1,0 +1,27 @@
+{
+  "name": "cursola",
+  "id": 864,
+  "abilities": [
+    "weak-armor",
+    "perish-body"
+  ],
+  "types": [
+    "ghost"
+  ],
+  "height": 10,
+  "weight": 4,
+  "stats": {
+    "hp": 60,
+    "attack": 95,
+    "defense": 50,
+    "special-attack": 145,
+    "special-defense": 130,
+    "speed": 30
+  },
+  "gender_ratio": 191,
+  "held_items": [],
+  "egg_groups": [
+    2,
+    9
+  ]
+}

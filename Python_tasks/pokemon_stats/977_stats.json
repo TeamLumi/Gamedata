@@ -1,0 +1,27 @@
+{
+  "name": "dondozo",
+  "id": 977,
+  "abilities": [
+    "unaware",
+    "oblivious",
+    "water-veil"
+  ],
+  "types": [
+    "water"
+  ],
+  "height": 120,
+  "weight": 2200,
+  "stats": {
+    "hp": 150,
+    "attack": 100,
+    "defense": 115,
+    "special-attack": 65,
+    "special-defense": 65,
+    "speed": 35
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    12
+  ]
+}

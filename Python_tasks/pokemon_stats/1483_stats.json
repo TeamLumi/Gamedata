@@ -1,0 +1,27 @@
+{
+  "name": "oinkologne-female",
+  "id": 10254,
+  "abilities": [
+    "aroma-veil",
+    "gluttony",
+    "thick-fat"
+  ],
+  "types": [
+    "normal"
+  ],
+  "height": 10,
+  "weight": 1200,
+  "stats": {
+    "hp": 115,
+    "attack": 90,
+    "defense": 70,
+    "special-attack": 59,
+    "special-defense": 90,
+    "speed": 65
+  },
+  "gender_ratio": 0,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

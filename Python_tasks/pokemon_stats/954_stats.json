@@ -1,0 +1,27 @@
+{
+  "name": "rabsca",
+  "id": 954,
+  "abilities": [
+    "synchronize",
+    "telepathy"
+  ],
+  "types": [
+    "bug",
+    "psychic"
+  ],
+  "height": 3,
+  "weight": 35,
+  "stats": {
+    "hp": 75,
+    "attack": 50,
+    "defense": 85,
+    "special-attack": 115,
+    "special-defense": 100,
+    "speed": 45
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    3
+  ]
+}

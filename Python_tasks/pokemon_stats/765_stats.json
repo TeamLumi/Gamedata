@@ -1,0 +1,28 @@
+{
+  "name": "oranguru",
+  "id": 765,
+  "abilities": [
+    "inner-focus",
+    "telepathy",
+    "symbiosis"
+  ],
+  "types": [
+    "normal",
+    "psychic"
+  ],
+  "height": 15,
+  "weight": 760,
+  "stats": {
+    "hp": 90,
+    "attack": 60,
+    "defense": 80,
+    "special-attack": 90,
+    "special-defense": 110,
+    "speed": 60
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

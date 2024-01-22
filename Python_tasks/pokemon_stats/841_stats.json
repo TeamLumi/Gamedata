@@ -1,0 +1,29 @@
+{
+  "name": "flapple",
+  "id": 841,
+  "abilities": [
+    "ripen",
+    "gluttony",
+    "hustle"
+  ],
+  "types": [
+    "grass",
+    "dragon"
+  ],
+  "height": 3,
+  "weight": 10,
+  "stats": {
+    "hp": 70,
+    "attack": 110,
+    "defense": 80,
+    "special-attack": 95,
+    "special-defense": 60,
+    "speed": 70
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    7,
+    14
+  ]
+}

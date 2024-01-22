@@ -1,0 +1,28 @@
+{
+  "name": "lampent",
+  "id": 608,
+  "abilities": [
+    "flash-fire",
+    "flame-body",
+    "infiltrator"
+  ],
+  "types": [
+    "ghost",
+    "fire"
+  ],
+  "height": 6,
+  "weight": 130,
+  "stats": {
+    "hp": 60,
+    "attack": 40,
+    "defense": 60,
+    "special-attack": 95,
+    "special-defense": 60,
+    "speed": 55
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    11
+  ]
+}

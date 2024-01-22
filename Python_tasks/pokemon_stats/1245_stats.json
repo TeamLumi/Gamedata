@@ -1,0 +1,26 @@
+{
+  "name": "zorua-hisui",
+  "id": 10238,
+  "abilities": [
+    "illusion"
+  ],
+  "types": [
+    "normal",
+    "ghost"
+  ],
+  "height": 7,
+  "weight": 125,
+  "stats": {
+    "hp": 35,
+    "attack": 60,
+    "defense": 40,
+    "special-attack": 85,
+    "special-defense": 40,
+    "speed": 70
+  },
+  "gender_ratio": 31,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

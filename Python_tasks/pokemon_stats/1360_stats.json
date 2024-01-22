@@ -1,0 +1,31 @@
+{
+  "name": "minior-yellow-meteor",
+  "id": 10131,
+  "abilities": [
+    "shields-down"
+  ],
+  "types": [
+    "rock",
+    "flying"
+  ],
+  "height": 3,
+  "weight": 400,
+  "stats": {
+    "hp": 60,
+    "attack": 60,
+    "defense": 100,
+    "special-attack": 60,
+    "special-defense": 100,
+    "speed": 60
+  },
+  "gender_ratio": 255,
+  "held_items": [
+    {
+      "held_item": "star-piece",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    10
+  ]
+}

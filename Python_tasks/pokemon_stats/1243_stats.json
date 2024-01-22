@@ -1,0 +1,27 @@
+{
+  "name": "yamask-galar",
+  "id": 10179,
+  "abilities": [
+    "wandering-spirit"
+  ],
+  "types": [
+    "ground",
+    "ghost"
+  ],
+  "height": 5,
+  "weight": 15,
+  "stats": {
+    "hp": 38,
+    "attack": 55,
+    "defense": 85,
+    "special-attack": 30,
+    "special-defense": 65,
+    "speed": 30
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    10,
+    11
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "zygarde-complete",
+  "id": 10120,
+  "abilities": [
+    "power-construct"
+  ],
+  "types": [
+    "dragon",
+    "ground"
+  ],
+  "height": 45,
+  "weight": 6100,
+  "stats": {
+    "hp": 216,
+    "attack": 100,
+    "defense": 121,
+    "special-attack": 91,
+    "special-defense": 95,
+    "speed": 85
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

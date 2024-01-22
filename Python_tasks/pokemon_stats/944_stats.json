@@ -1,0 +1,28 @@
+{
+  "name": "shroodle",
+  "id": 944,
+  "abilities": [
+    "unburden",
+    "pickpocket",
+    "prankster"
+  ],
+  "types": [
+    "poison",
+    "normal"
+  ],
+  "height": 2,
+  "weight": 7,
+  "stats": {
+    "hp": 40,
+    "attack": 65,
+    "defense": 35,
+    "special-attack": 40,
+    "special-defense": 35,
+    "speed": 75
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

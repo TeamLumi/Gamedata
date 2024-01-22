@@ -1,0 +1,27 @@
+{
+  "name": "dubwool",
+  "id": 832,
+  "abilities": [
+    "fluffy",
+    "steadfast",
+    "bulletproof"
+  ],
+  "types": [
+    "normal"
+  ],
+  "height": 13,
+  "weight": 430,
+  "stats": {
+    "hp": 72,
+    "attack": 80,
+    "defense": 100,
+    "special-attack": 60,
+    "special-defense": 90,
+    "speed": 88
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

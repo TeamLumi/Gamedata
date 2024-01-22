@@ -1,0 +1,29 @@
+{
+  "name": "appletun-gmax",
+  "id": 10217,
+  "abilities": [
+    "ripen",
+    "gluttony",
+    "thick-fat"
+  ],
+  "types": [
+    "grass",
+    "dragon"
+  ],
+  "height": 240,
+  "weight": 10000,
+  "stats": {
+    "hp": 110,
+    "attack": 85,
+    "defense": 80,
+    "special-attack": 100,
+    "special-defense": 80,
+    "speed": 30
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    7,
+    14
+  ]
+}

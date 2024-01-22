@@ -1,0 +1,28 @@
+{
+  "name": "tyrantrum",
+  "id": 697,
+  "abilities": [
+    "strong-jaw",
+    "rock-head"
+  ],
+  "types": [
+    "rock",
+    "dragon"
+  ],
+  "height": 25,
+  "weight": 2700,
+  "stats": {
+    "hp": 82,
+    "attack": 121,
+    "defense": 119,
+    "special-attack": 69,
+    "special-defense": 59,
+    "speed": 71
+  },
+  "gender_ratio": 31,
+  "held_items": [],
+  "egg_groups": [
+    1,
+    14
+  ]
+}

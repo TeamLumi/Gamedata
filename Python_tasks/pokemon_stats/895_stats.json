@@ -1,0 +1,25 @@
+{
+  "name": "regidrago",
+  "id": 895,
+  "abilities": [
+    "dragons-maw"
+  ],
+  "types": [
+    "dragon"
+  ],
+  "height": 21,
+  "weight": 2000,
+  "stats": {
+    "hp": 200,
+    "attack": 100,
+    "defense": 50,
+    "special-attack": 100,
+    "special-defense": 50,
+    "speed": 80
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

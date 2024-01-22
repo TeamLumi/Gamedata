@@ -1,0 +1,28 @@
+{
+  "name": "gourgeist-small",
+  "id": 10030,
+  "abilities": [
+    "pickup",
+    "frisk",
+    "insomnia"
+  ],
+  "types": [
+    "ghost",
+    "grass"
+  ],
+  "height": 7,
+  "weight": 95,
+  "stats": {
+    "hp": 55,
+    "attack": 85,
+    "defense": 122,
+    "special-attack": 58,
+    "special-defense": 75,
+    "speed": 99
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    11
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "avalugg",
+  "id": 713,
+  "abilities": [
+    "own-tempo",
+    "ice-body",
+    "sturdy"
+  ],
+  "types": [
+    "ice"
+  ],
+  "height": 20,
+  "weight": 5050,
+  "stats": {
+    "hp": 95,
+    "attack": 117,
+    "defense": 184,
+    "special-attack": 44,
+    "special-defense": 46,
+    "speed": 28
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    1,
+    10
+  ]
+}

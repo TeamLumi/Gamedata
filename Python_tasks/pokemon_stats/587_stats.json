@@ -1,0 +1,32 @@
+{
+  "name": "emolga",
+  "id": 587,
+  "abilities": [
+    "static",
+    "motor-drive"
+  ],
+  "types": [
+    "electric",
+    "flying"
+  ],
+  "height": 4,
+  "weight": 50,
+  "stats": {
+    "hp": 55,
+    "attack": 75,
+    "defense": 60,
+    "special-attack": 75,
+    "special-defense": 60,
+    "speed": 103
+  },
+  "gender_ratio": 127,
+  "held_items": [
+    {
+      "held_item": "cheri-berry",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    5
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "cobalion",
+  "id": 638,
+  "abilities": [
+    "justified"
+  ],
+  "types": [
+    "steel",
+    "fighting"
+  ],
+  "height": 21,
+  "weight": 2500,
+  "stats": {
+    "hp": 91,
+    "attack": 90,
+    "defense": 129,
+    "special-attack": 90,
+    "special-defense": 72,
+    "speed": 108
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

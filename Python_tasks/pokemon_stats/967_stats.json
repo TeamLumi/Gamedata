@@ -1,0 +1,27 @@
+{
+  "name": "cyclizar",
+  "id": 967,
+  "abilities": [
+    "shed-skin",
+    "regenerator"
+  ],
+  "types": [
+    "dragon",
+    "normal"
+  ],
+  "height": 16,
+  "weight": 630,
+  "stats": {
+    "hp": 70,
+    "attack": 95,
+    "defense": 65,
+    "special-attack": 85,
+    "special-defense": 65,
+    "speed": 121
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

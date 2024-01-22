@@ -1,0 +1,33 @@
+{
+  "name": "toucannon",
+  "id": 733,
+  "abilities": [
+    "keen-eye",
+    "skill-link",
+    "sheer-force"
+  ],
+  "types": [
+    "normal",
+    "flying"
+  ],
+  "height": 11,
+  "weight": 260,
+  "stats": {
+    "hp": 80,
+    "attack": 120,
+    "defense": 75,
+    "special-attack": 75,
+    "special-defense": 75,
+    "speed": 60
+  },
+  "gender_ratio": 127,
+  "held_items": [
+    {
+      "held_item": "rawst-berry",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    4
+  ]
+}

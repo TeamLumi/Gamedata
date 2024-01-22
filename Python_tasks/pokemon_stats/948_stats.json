@@ -1,0 +1,27 @@
+{
+  "name": "toedscool",
+  "id": 948,
+  "abilities": [
+    "mycelium-might",
+    "mycelium-might"
+  ],
+  "types": [
+    "ground",
+    "grass"
+  ],
+  "height": 9,
+  "weight": 330,
+  "stats": {
+    "hp": 40,
+    "attack": 40,
+    "defense": 35,
+    "special-attack": 50,
+    "special-defense": 100,
+    "speed": 70
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    7
+  ]
+}

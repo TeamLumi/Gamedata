@@ -1,0 +1,25 @@
+{
+  "name": "meltan",
+  "id": 808,
+  "abilities": [
+    "magnet-pull"
+  ],
+  "types": [
+    "steel"
+  ],
+  "height": 2,
+  "weight": 80,
+  "stats": {
+    "hp": 46,
+    "attack": 65,
+    "defense": 65,
+    "special-attack": 55,
+    "special-defense": 35,
+    "speed": 34
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

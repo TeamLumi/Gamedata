@@ -1,0 +1,29 @@
+{
+  "name": "helioptile",
+  "id": 694,
+  "abilities": [
+    "dry-skin",
+    "sand-veil",
+    "solar-power"
+  ],
+  "types": [
+    "electric",
+    "normal"
+  ],
+  "height": 5,
+  "weight": 60,
+  "stats": {
+    "hp": 44,
+    "attack": 38,
+    "defense": 33,
+    "special-attack": 61,
+    "special-defense": 43,
+    "speed": 70
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    1,
+    14
+  ]
+}

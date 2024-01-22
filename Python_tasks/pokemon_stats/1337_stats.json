@@ -1,0 +1,25 @@
+{
+  "name": "lycanroc-dusk",
+  "id": 10152,
+  "abilities": [
+    "tough-claws"
+  ],
+  "types": [
+    "rock"
+  ],
+  "height": 8,
+  "weight": 250,
+  "stats": {
+    "hp": 75,
+    "attack": 117,
+    "defense": 65,
+    "special-attack": 55,
+    "special-defense": 65,
+    "speed": 110
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

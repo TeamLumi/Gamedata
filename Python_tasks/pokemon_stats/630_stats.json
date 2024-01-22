@@ -1,0 +1,28 @@
+{
+  "name": "mandibuzz",
+  "id": 630,
+  "abilities": [
+    "big-pecks",
+    "overcoat",
+    "weak-armor"
+  ],
+  "types": [
+    "dark",
+    "flying"
+  ],
+  "height": 12,
+  "weight": 395,
+  "stats": {
+    "hp": 110,
+    "attack": 65,
+    "defense": 105,
+    "special-attack": 55,
+    "special-defense": 95,
+    "speed": 80
+  },
+  "gender_ratio": 254,
+  "held_items": [],
+  "egg_groups": [
+    4
+  ]
+}

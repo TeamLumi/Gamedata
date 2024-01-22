@@ -1,0 +1,27 @@
+{
+  "name": "dolliv",
+  "id": 929,
+  "abilities": [
+    "early-bird",
+    "harvest"
+  ],
+  "types": [
+    "grass",
+    "normal"
+  ],
+  "height": 6,
+  "weight": 119,
+  "stats": {
+    "hp": 52,
+    "attack": 53,
+    "defense": 60,
+    "special-attack": 78,
+    "special-defense": 78,
+    "speed": 33
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    7
+  ]
+}

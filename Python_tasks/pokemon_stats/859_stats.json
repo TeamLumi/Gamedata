@@ -1,0 +1,29 @@
+{
+  "name": "impidimp",
+  "id": 859,
+  "abilities": [
+    "prankster",
+    "frisk",
+    "pickpocket"
+  ],
+  "types": [
+    "dark",
+    "fairy"
+  ],
+  "height": 4,
+  "weight": 55,
+  "stats": {
+    "hp": 45,
+    "attack": 45,
+    "defense": 30,
+    "special-attack": 55,
+    "special-defense": 40,
+    "speed": 50
+  },
+  "gender_ratio": 0,
+  "held_items": [],
+  "egg_groups": [
+    6,
+    8
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "frogadier",
+  "id": 657,
+  "abilities": [
+    "torrent",
+    "protean"
+  ],
+  "types": [
+    "water"
+  ],
+  "height": 6,
+  "weight": 109,
+  "stats": {
+    "hp": 54,
+    "attack": 63,
+    "defense": 52,
+    "special-attack": 83,
+    "special-defense": 56,
+    "speed": 97
+  },
+  "gender_ratio": 31,
+  "held_items": [],
+  "egg_groups": [
+    2
+  ]
+}

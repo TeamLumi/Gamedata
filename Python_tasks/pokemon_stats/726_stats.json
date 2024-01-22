@@ -1,0 +1,26 @@
+{
+  "name": "torracat",
+  "id": 726,
+  "abilities": [
+    "blaze",
+    "intimidate"
+  ],
+  "types": [
+    "fire"
+  ],
+  "height": 7,
+  "weight": 250,
+  "stats": {
+    "hp": 65,
+    "attack": 85,
+    "defense": 50,
+    "special-attack": 80,
+    "special-defense": 50,
+    "speed": 90
+  },
+  "gender_ratio": 31,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

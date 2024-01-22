@@ -1,0 +1,26 @@
+{
+  "name": "dhelmise",
+  "id": 781,
+  "abilities": [
+    "steelworker"
+  ],
+  "types": [
+    "ghost",
+    "grass"
+  ],
+  "height": 39,
+  "weight": 2100,
+  "stats": {
+    "hp": 70,
+    "attack": 131,
+    "defense": 100,
+    "special-attack": 86,
+    "special-defense": 90,
+    "speed": 40
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    10
+  ]
+}

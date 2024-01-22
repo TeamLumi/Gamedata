@@ -1,0 +1,32 @@
+{
+  "name": "petilil",
+  "id": 548,
+  "abilities": [
+    "chlorophyll",
+    "own-tempo",
+    "leaf-guard"
+  ],
+  "types": [
+    "grass"
+  ],
+  "height": 5,
+  "weight": 66,
+  "stats": {
+    "hp": 45,
+    "attack": 35,
+    "defense": 50,
+    "special-attack": 70,
+    "special-defense": 50,
+    "speed": 30
+  },
+  "gender_ratio": 254,
+  "held_items": [
+    {
+      "held_item": "absorb-bulb",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    7
+  ]
+}

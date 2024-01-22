@@ -1,0 +1,25 @@
+{
+  "name": "wishiwashi-school",
+  "id": 10127,
+  "abilities": [
+    "schooling"
+  ],
+  "types": [
+    "water"
+  ],
+  "height": 82,
+  "weight": 786,
+  "stats": {
+    "hp": 45,
+    "attack": 140,
+    "defense": 130,
+    "special-attack": 140,
+    "special-defense": 135,
+    "speed": 30
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    12
+  ]
+}

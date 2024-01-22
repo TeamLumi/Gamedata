@@ -1,0 +1,38 @@
+{
+  "name": "dwebble",
+  "id": 557,
+  "abilities": [
+    "sturdy",
+    "shell-armor",
+    "weak-armor"
+  ],
+  "types": [
+    "bug",
+    "rock"
+  ],
+  "height": 3,
+  "weight": 145,
+  "stats": {
+    "hp": 50,
+    "attack": 65,
+    "defense": 85,
+    "special-attack": 35,
+    "special-defense": 35,
+    "speed": 55
+  },
+  "gender_ratio": 127,
+  "held_items": [
+    {
+      "held_item": "rare-bone",
+      "rarity": null
+    },
+    {
+      "held_item": "hard-stone",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    3,
+    10
+  ]
+}

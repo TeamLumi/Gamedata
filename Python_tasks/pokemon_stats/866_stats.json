@@ -1,0 +1,28 @@
+{
+  "name": "mr-rime",
+  "id": 866,
+  "abilities": [
+    "tangled-feet",
+    "screen-cleaner",
+    "ice-body"
+  ],
+  "types": [
+    "ice",
+    "psychic"
+  ],
+  "height": 15,
+  "weight": 582,
+  "stats": {
+    "hp": 80,
+    "attack": 85,
+    "defense": 75,
+    "special-attack": 110,
+    "special-defense": 100,
+    "speed": 70
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    8
+  ]
+}

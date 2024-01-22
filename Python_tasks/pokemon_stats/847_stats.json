@@ -1,0 +1,26 @@
+{
+  "name": "barraskewda",
+  "id": 847,
+  "abilities": [
+    "swift-swim",
+    "propeller-tail"
+  ],
+  "types": [
+    "water"
+  ],
+  "height": 13,
+  "weight": 300,
+  "stats": {
+    "hp": 61,
+    "attack": 123,
+    "defense": 60,
+    "special-attack": 60,
+    "special-defense": 50,
+    "speed": 136
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    12
+  ]
+}

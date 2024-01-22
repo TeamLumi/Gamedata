@@ -1,0 +1,28 @@
+{
+  "name": "durant",
+  "id": 632,
+  "abilities": [
+    "swarm",
+    "hustle",
+    "truant"
+  ],
+  "types": [
+    "bug",
+    "steel"
+  ],
+  "height": 3,
+  "weight": 330,
+  "stats": {
+    "hp": 58,
+    "attack": 109,
+    "defense": 112,
+    "special-attack": 48,
+    "special-defense": 48,
+    "speed": 109
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    3
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "corviknight",
+  "id": 823,
+  "abilities": [
+    "pressure",
+    "unnerve",
+    "mirror-armor"
+  ],
+  "types": [
+    "flying",
+    "steel"
+  ],
+  "height": 22,
+  "weight": 750,
+  "stats": {
+    "hp": 98,
+    "attack": 87,
+    "defense": 105,
+    "special-attack": 53,
+    "special-defense": 85,
+    "speed": 67
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    4
+  ]
+}

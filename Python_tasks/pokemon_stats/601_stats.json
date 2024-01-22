@@ -1,0 +1,27 @@
+{
+  "name": "klinklang",
+  "id": 601,
+  "abilities": [
+    "plus",
+    "minus",
+    "clear-body"
+  ],
+  "types": [
+    "steel"
+  ],
+  "height": 6,
+  "weight": 810,
+  "stats": {
+    "hp": 60,
+    "attack": 100,
+    "defense": 115,
+    "special-attack": 70,
+    "special-defense": 85,
+    "speed": 90
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    10
+  ]
+}

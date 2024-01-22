@@ -1,0 +1,27 @@
+{
+  "name": "bramblin",
+  "id": 946,
+  "abilities": [
+    "wind-rider",
+    "infiltrator"
+  ],
+  "types": [
+    "grass",
+    "ghost"
+  ],
+  "height": 6,
+  "weight": 6,
+  "stats": {
+    "hp": 40,
+    "attack": 65,
+    "defense": 30,
+    "special-attack": 45,
+    "special-defense": 35,
+    "speed": 60
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    7
+  ]
+}

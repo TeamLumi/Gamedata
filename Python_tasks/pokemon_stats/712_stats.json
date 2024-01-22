@@ -1,0 +1,28 @@
+{
+  "name": "bergmite",
+  "id": 712,
+  "abilities": [
+    "own-tempo",
+    "ice-body",
+    "sturdy"
+  ],
+  "types": [
+    "ice"
+  ],
+  "height": 10,
+  "weight": 995,
+  "stats": {
+    "hp": 55,
+    "attack": 69,
+    "defense": 85,
+    "special-attack": 32,
+    "special-defense": 35,
+    "speed": 28
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    1,
+    10
+  ]
+}

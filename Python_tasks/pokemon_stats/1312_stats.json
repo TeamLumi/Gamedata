@@ -1,0 +1,28 @@
+{
+  "name": "goodra-hisui",
+  "id": 10242,
+  "abilities": [
+    "sap-sipper",
+    "shell-armor",
+    "gooey"
+  ],
+  "types": [
+    "steel",
+    "dragon"
+  ],
+  "height": 17,
+  "weight": 3341,
+  "stats": {
+    "hp": 80,
+    "attack": 100,
+    "defense": 100,
+    "special-attack": 110,
+    "special-defense": 150,
+    "speed": 60
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    14
+  ]
+}

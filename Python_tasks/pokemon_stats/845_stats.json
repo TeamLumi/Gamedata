@@ -1,0 +1,27 @@
+{
+  "name": "cramorant",
+  "id": 845,
+  "abilities": [
+    "gulp-missile"
+  ],
+  "types": [
+    "flying",
+    "water"
+  ],
+  "height": 8,
+  "weight": 180,
+  "stats": {
+    "hp": 70,
+    "attack": 85,
+    "defense": 55,
+    "special-attack": 85,
+    "special-defense": 95,
+    "speed": 85
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    2,
+    4
+  ]
+}

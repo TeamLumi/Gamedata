@@ -1,0 +1,27 @@
+{
+  "name": "iron-moth",
+  "id": 994,
+  "abilities": [
+    "quark-drive",
+    "quark-drive"
+  ],
+  "types": [
+    "fire",
+    "poison"
+  ],
+  "height": 12,
+  "weight": 360,
+  "stats": {
+    "hp": 80,
+    "attack": 70,
+    "defense": 60,
+    "special-attack": 140,
+    "special-defense": 110,
+    "speed": 110
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

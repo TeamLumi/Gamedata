@@ -1,0 +1,28 @@
+{
+  "name": "vullaby",
+  "id": 629,
+  "abilities": [
+    "big-pecks",
+    "overcoat",
+    "weak-armor"
+  ],
+  "types": [
+    "dark",
+    "flying"
+  ],
+  "height": 5,
+  "weight": 90,
+  "stats": {
+    "hp": 70,
+    "attack": 55,
+    "defense": 75,
+    "special-attack": 45,
+    "special-defense": 65,
+    "speed": 60
+  },
+  "gender_ratio": 254,
+  "held_items": [],
+  "egg_groups": [
+    4
+  ]
+}

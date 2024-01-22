@@ -1,0 +1,28 @@
+{
+  "name": "sandaconda",
+  "id": 844,
+  "abilities": [
+    "sand-spit",
+    "shed-skin",
+    "sand-veil"
+  ],
+  "types": [
+    "ground"
+  ],
+  "height": 38,
+  "weight": 655,
+  "stats": {
+    "hp": 72,
+    "attack": 107,
+    "defense": 125,
+    "special-attack": 65,
+    "special-defense": 70,
+    "speed": 71
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    5,
+    14
+  ]
+}

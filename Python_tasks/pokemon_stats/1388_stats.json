@@ -1,0 +1,28 @@
+{
+  "name": "coalossal-gmax",
+  "id": 10215,
+  "abilities": [
+    "steam-engine",
+    "flame-body",
+    "flash-fire"
+  ],
+  "types": [
+    "rock",
+    "fire"
+  ],
+  "height": 420,
+  "weight": 10000,
+  "stats": {
+    "hp": 110,
+    "attack": 80,
+    "defense": 120,
+    "special-attack": 80,
+    "special-defense": 90,
+    "speed": 30
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    10
+  ]
+}

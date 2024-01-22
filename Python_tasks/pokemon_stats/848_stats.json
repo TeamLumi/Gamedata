@@ -1,0 +1,28 @@
+{
+  "name": "toxel",
+  "id": 848,
+  "abilities": [
+    "rattled",
+    "static",
+    "klutz"
+  ],
+  "types": [
+    "electric",
+    "poison"
+  ],
+  "height": 4,
+  "weight": 110,
+  "stats": {
+    "hp": 40,
+    "attack": 38,
+    "defense": 35,
+    "special-attack": 54,
+    "special-defense": 35,
+    "speed": 40
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

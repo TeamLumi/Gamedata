@@ -1,0 +1,32 @@
+{
+  "name": "duosion",
+  "id": 578,
+  "abilities": [
+    "overcoat",
+    "magic-guard",
+    "regenerator"
+  ],
+  "types": [
+    "psychic"
+  ],
+  "height": 6,
+  "weight": 80,
+  "stats": {
+    "hp": 65,
+    "attack": 40,
+    "defense": 50,
+    "special-attack": 125,
+    "special-defense": 60,
+    "speed": 30
+  },
+  "gender_ratio": 127,
+  "held_items": [
+    {
+      "held_item": "persim-berry",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    11
+  ]
+}

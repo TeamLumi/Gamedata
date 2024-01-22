@@ -1,0 +1,27 @@
+{
+  "name": "arboliva",
+  "id": 930,
+  "abilities": [
+    "seed-sower",
+    "harvest"
+  ],
+  "types": [
+    "grass",
+    "normal"
+  ],
+  "height": 14,
+  "weight": 482,
+  "stats": {
+    "hp": 78,
+    "attack": 69,
+    "defense": 90,
+    "special-attack": 125,
+    "special-defense": 109,
+    "speed": 39
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    7
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "gumshoos",
+  "id": 735,
+  "abilities": [
+    "stakeout",
+    "strong-jaw",
+    "adaptability"
+  ],
+  "types": [
+    "normal"
+  ],
+  "height": 7,
+  "weight": 142,
+  "stats": {
+    "hp": 88,
+    "attack": 110,
+    "defense": 60,
+    "special-attack": 55,
+    "special-defense": 60,
+    "speed": 45
+  },
+  "gender_ratio": 127,
+  "held_items": [
+    {
+      "held_item": "pecha-berry",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    5
+  ]
+}

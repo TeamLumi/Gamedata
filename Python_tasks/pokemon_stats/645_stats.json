@@ -1,0 +1,27 @@
+{
+  "name": "landorus-incarnate",
+  "id": 645,
+  "abilities": [
+    "sand-force",
+    "sheer-force"
+  ],
+  "types": [
+    "ground",
+    "flying"
+  ],
+  "height": 15,
+  "weight": 680,
+  "stats": {
+    "hp": 89,
+    "attack": 125,
+    "defense": 90,
+    "special-attack": 115,
+    "special-defense": 80,
+    "speed": 101
+  },
+  "gender_ratio": 0,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

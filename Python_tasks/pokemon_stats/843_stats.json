@@ -1,0 +1,28 @@
+{
+  "name": "silicobra",
+  "id": 843,
+  "abilities": [
+    "sand-spit",
+    "shed-skin",
+    "sand-veil"
+  ],
+  "types": [
+    "ground"
+  ],
+  "height": 22,
+  "weight": 76,
+  "stats": {
+    "hp": 52,
+    "attack": 57,
+    "defense": 75,
+    "special-attack": 35,
+    "special-defense": 50,
+    "speed": 46
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    5,
+    14
+  ]
+}

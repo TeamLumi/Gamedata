@@ -1,0 +1,27 @@
+{
+  "name": "bunnelby",
+  "id": 659,
+  "abilities": [
+    "pickup",
+    "cheek-pouch",
+    "huge-power"
+  ],
+  "types": [
+    "normal"
+  ],
+  "height": 4,
+  "weight": 50,
+  "stats": {
+    "hp": 38,
+    "attack": 36,
+    "defense": 38,
+    "special-attack": 32,
+    "special-defense": 36,
+    "speed": 57
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

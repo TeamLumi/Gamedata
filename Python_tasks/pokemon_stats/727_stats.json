@@ -1,0 +1,27 @@
+{
+  "name": "incineroar",
+  "id": 727,
+  "abilities": [
+    "blaze",
+    "intimidate"
+  ],
+  "types": [
+    "fire",
+    "dark"
+  ],
+  "height": 18,
+  "weight": 830,
+  "stats": {
+    "hp": 95,
+    "attack": 115,
+    "defense": 90,
+    "special-attack": 80,
+    "special-defense": 90,
+    "speed": 60
+  },
+  "gender_ratio": 31,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

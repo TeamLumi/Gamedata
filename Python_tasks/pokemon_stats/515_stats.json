@@ -1,0 +1,35 @@
+{
+  "name": "panpour",
+  "id": 515,
+  "abilities": [
+    "gluttony",
+    "torrent"
+  ],
+  "types": [
+    "water"
+  ],
+  "height": 6,
+  "weight": 135,
+  "stats": {
+    "hp": 50,
+    "attack": 53,
+    "defense": 48,
+    "special-attack": 53,
+    "special-defense": 48,
+    "speed": 64
+  },
+  "gender_ratio": 31,
+  "held_items": [
+    {
+      "held_item": "oran-berry",
+      "rarity": null
+    },
+    {
+      "held_item": "rindo-berry",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    5
+  ]
+}

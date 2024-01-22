@@ -1,0 +1,29 @@
+{
+  "name": "malamar",
+  "id": 687,
+  "abilities": [
+    "contrary",
+    "suction-cups",
+    "infiltrator"
+  ],
+  "types": [
+    "dark",
+    "psychic"
+  ],
+  "height": 15,
+  "weight": 470,
+  "stats": {
+    "hp": 86,
+    "attack": 92,
+    "defense": 88,
+    "special-attack": 68,
+    "special-defense": 75,
+    "speed": 73
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    2,
+    12
+  ]
+}

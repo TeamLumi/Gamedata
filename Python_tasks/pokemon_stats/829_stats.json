@@ -1,0 +1,27 @@
+{
+  "name": "gossifleur",
+  "id": 829,
+  "abilities": [
+    "cotton-down",
+    "regenerator",
+    "effect-spore"
+  ],
+  "types": [
+    "grass"
+  ],
+  "height": 4,
+  "weight": 22,
+  "stats": {
+    "hp": 40,
+    "attack": 40,
+    "defense": 60,
+    "special-attack": 40,
+    "special-defense": 60,
+    "speed": 10
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    7
+  ]
+}

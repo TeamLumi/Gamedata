@@ -1,0 +1,27 @@
+{
+  "name": "gholdengo",
+  "id": 1000,
+  "abilities": [
+    "good-as-gold",
+    "good-as-gold"
+  ],
+  "types": [
+    "steel",
+    "ghost"
+  ],
+  "height": 12,
+  "weight": 300,
+  "stats": {
+    "hp": 87,
+    "attack": 60,
+    "defense": 95,
+    "special-attack": 133,
+    "special-defense": 91,
+    "speed": 84
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

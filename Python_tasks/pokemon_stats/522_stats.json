@@ -1,0 +1,32 @@
+{
+  "name": "blitzle",
+  "id": 522,
+  "abilities": [
+    "lightning-rod",
+    "motor-drive",
+    "sap-sipper"
+  ],
+  "types": [
+    "electric"
+  ],
+  "height": 8,
+  "weight": 298,
+  "stats": {
+    "hp": 45,
+    "attack": 60,
+    "defense": 32,
+    "special-attack": 50,
+    "special-defense": 32,
+    "speed": 76
+  },
+  "gender_ratio": 127,
+  "held_items": [
+    {
+      "held_item": "cheri-berry",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    5
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "overqwil",
+  "id": 904,
+  "abilities": [
+    "poison-point",
+    "swift-swim",
+    "intimidate"
+  ],
+  "types": [
+    "dark",
+    "poison"
+  ],
+  "height": 25,
+  "weight": 605,
+  "stats": {
+    "hp": 85,
+    "attack": 115,
+    "defense": 95,
+    "special-attack": 65,
+    "special-defense": 65,
+    "speed": 85
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    12
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "raboot",
+  "id": 814,
+  "abilities": [
+    "blaze",
+    "libero"
+  ],
+  "types": [
+    "fire"
+  ],
+  "height": 6,
+  "weight": 90,
+  "stats": {
+    "hp": 65,
+    "attack": 86,
+    "defense": 60,
+    "special-attack": 55,
+    "special-defense": 60,
+    "speed": 94
+  },
+  "gender_ratio": 31,
+  "held_items": [],
+  "egg_groups": [
+    5,
+    8
+  ]
+}

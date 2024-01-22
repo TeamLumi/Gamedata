@@ -1,0 +1,26 @@
+{
+  "name": "enamorus-therian",
+  "id": 10249,
+  "abilities": [
+    "overcoat"
+  ],
+  "types": [
+    "fairy",
+    "flying"
+  ],
+  "height": 16,
+  "weight": 480,
+  "stats": {
+    "hp": 74,
+    "attack": 115,
+    "defense": 110,
+    "special-attack": 135,
+    "special-defense": 100,
+    "speed": 46
+  },
+  "gender_ratio": 254,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

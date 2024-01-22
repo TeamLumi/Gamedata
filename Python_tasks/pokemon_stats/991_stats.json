@@ -1,0 +1,27 @@
+{
+  "name": "iron-bundle",
+  "id": 991,
+  "abilities": [
+    "quark-drive",
+    "quark-drive"
+  ],
+  "types": [
+    "ice",
+    "water"
+  ],
+  "height": 6,
+  "weight": 110,
+  "stats": {
+    "hp": 56,
+    "attack": 80,
+    "defense": 114,
+    "special-attack": 124,
+    "special-defense": 60,
+    "speed": 136
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

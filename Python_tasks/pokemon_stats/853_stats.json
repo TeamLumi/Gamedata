@@ -1,0 +1,27 @@
+{
+  "name": "grapploct",
+  "id": 853,
+  "abilities": [
+    "limber",
+    "technician"
+  ],
+  "types": [
+    "fighting"
+  ],
+  "height": 16,
+  "weight": 390,
+  "stats": {
+    "hp": 80,
+    "attack": 118,
+    "defense": 90,
+    "special-attack": 70,
+    "special-defense": 80,
+    "speed": 42
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    2,
+    8
+  ]
+}

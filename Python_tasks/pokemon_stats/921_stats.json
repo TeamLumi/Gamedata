@@ -1,0 +1,27 @@
+{
+  "name": "pawmi",
+  "id": 921,
+  "abilities": [
+    "static",
+    "natural-cure",
+    "iron-fist"
+  ],
+  "types": [
+    "electric"
+  ],
+  "height": 3,
+  "weight": 25,
+  "stats": {
+    "hp": 45,
+    "attack": 50,
+    "defense": 20,
+    "special-attack": 40,
+    "special-defense": 25,
+    "speed": 60
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

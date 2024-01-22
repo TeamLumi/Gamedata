@@ -1,0 +1,28 @@
+{
+  "name": "braviary-hisui",
+  "id": 10240,
+  "abilities": [
+    "keen-eye",
+    "sheer-force",
+    "tinted-lens"
+  ],
+  "types": [
+    "psychic",
+    "flying"
+  ],
+  "height": 17,
+  "weight": 434,
+  "stats": {
+    "hp": 110,
+    "attack": 83,
+    "defense": 70,
+    "special-attack": 112,
+    "special-defense": 70,
+    "speed": 65
+  },
+  "gender_ratio": 0,
+  "held_items": [],
+  "egg_groups": [
+    4
+  ]
+}

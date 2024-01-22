@@ -1,0 +1,25 @@
+{
+  "name": "poipole",
+  "id": 803,
+  "abilities": [
+    "beast-boost"
+  ],
+  "types": [
+    "poison"
+  ],
+  "height": 6,
+  "weight": 18,
+  "stats": {
+    "hp": 67,
+    "attack": 73,
+    "defense": 67,
+    "special-attack": 73,
+    "special-defense": 67,
+    "speed": 73
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

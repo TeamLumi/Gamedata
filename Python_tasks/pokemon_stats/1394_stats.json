@@ -1,0 +1,28 @@
+{
+  "name": "toxtricity-low-key",
+  "id": 10184,
+  "abilities": [
+    "punk-rock",
+    "minus",
+    "technician"
+  ],
+  "types": [
+    "electric",
+    "poison"
+  ],
+  "height": 16,
+  "weight": 400,
+  "stats": {
+    "hp": 75,
+    "attack": 98,
+    "defense": 70,
+    "special-attack": 114,
+    "special-defense": 70,
+    "speed": 75
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    8
+  ]
+}

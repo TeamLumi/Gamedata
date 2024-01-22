@@ -1,0 +1,29 @@
+{
+  "name": "grimmsnarl",
+  "id": 861,
+  "abilities": [
+    "prankster",
+    "frisk",
+    "pickpocket"
+  ],
+  "types": [
+    "dark",
+    "fairy"
+  ],
+  "height": 15,
+  "weight": 610,
+  "stats": {
+    "hp": 95,
+    "attack": 120,
+    "defense": 65,
+    "special-attack": 95,
+    "special-defense": 75,
+    "speed": 60
+  },
+  "gender_ratio": 0,
+  "held_items": [],
+  "egg_groups": [
+    6,
+    8
+  ]
+}

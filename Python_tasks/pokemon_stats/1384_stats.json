@@ -1,0 +1,27 @@
+{
+  "name": "inteleon-gmax",
+  "id": 10211,
+  "abilities": [
+    "torrent",
+    "sniper"
+  ],
+  "types": [
+    "water"
+  ],
+  "height": 400,
+  "weight": 10000,
+  "stats": {
+    "hp": 70,
+    "attack": 85,
+    "defense": 65,
+    "special-attack": 125,
+    "special-defense": 65,
+    "speed": 120
+  },
+  "gender_ratio": 31,
+  "held_items": [],
+  "egg_groups": [
+    2,
+    5
+  ]
+}

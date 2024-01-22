@@ -1,0 +1,27 @@
+{
+  "name": "toedscruel",
+  "id": 949,
+  "abilities": [
+    "mycelium-might",
+    "mycelium-might"
+  ],
+  "types": [
+    "ground",
+    "grass"
+  ],
+  "height": 19,
+  "weight": 580,
+  "stats": {
+    "hp": 80,
+    "attack": 70,
+    "defense": 65,
+    "special-attack": 80,
+    "special-defense": 120,
+    "speed": 100
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    7
+  ]
+}

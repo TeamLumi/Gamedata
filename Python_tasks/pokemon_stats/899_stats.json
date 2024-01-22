@@ -1,0 +1,28 @@
+{
+  "name": "wyrdeer",
+  "id": 899,
+  "abilities": [
+    "intimidate",
+    "frisk",
+    "sap-sipper"
+  ],
+  "types": [
+    "normal",
+    "psychic"
+  ],
+  "height": 18,
+  "weight": 951,
+  "stats": {
+    "hp": 103,
+    "attack": 105,
+    "defense": 72,
+    "special-attack": 105,
+    "special-defense": 75,
+    "speed": 65
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "applin",
+  "id": 840,
+  "abilities": [
+    "ripen",
+    "gluttony",
+    "bulletproof"
+  ],
+  "types": [
+    "grass",
+    "dragon"
+  ],
+  "height": 2,
+  "weight": 5,
+  "stats": {
+    "hp": 40,
+    "attack": 40,
+    "defense": 80,
+    "special-attack": 40,
+    "special-defense": 40,
+    "speed": 20
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    7,
+    14
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "snom",
+  "id": 872,
+  "abilities": [
+    "shield-dust",
+    "ice-scales"
+  ],
+  "types": [
+    "ice",
+    "bug"
+  ],
+  "height": 3,
+  "weight": 38,
+  "stats": {
+    "hp": 30,
+    "attack": 25,
+    "defense": 35,
+    "special-attack": 45,
+    "special-defense": 30,
+    "speed": 20
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    3
+  ]
+}

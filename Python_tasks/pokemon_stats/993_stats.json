@@ -1,0 +1,27 @@
+{
+  "name": "iron-jugulis",
+  "id": 993,
+  "abilities": [
+    "quark-drive",
+    "quark-drive"
+  ],
+  "types": [
+    "dark",
+    "flying"
+  ],
+  "height": 13,
+  "weight": 1110,
+  "stats": {
+    "hp": 94,
+    "attack": 80,
+    "defense": 86,
+    "special-attack": 122,
+    "special-defense": 80,
+    "speed": 108
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "bewear",
+  "id": 760,
+  "abilities": [
+    "fluffy",
+    "klutz",
+    "unnerve"
+  ],
+  "types": [
+    "normal",
+    "fighting"
+  ],
+  "height": 21,
+  "weight": 1350,
+  "stats": {
+    "hp": 120,
+    "attack": 125,
+    "defense": 80,
+    "special-attack": 55,
+    "special-defense": 60,
+    "speed": 60
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

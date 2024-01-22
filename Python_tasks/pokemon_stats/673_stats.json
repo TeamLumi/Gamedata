@@ -1,0 +1,26 @@
+{
+  "name": "gogoat",
+  "id": 673,
+  "abilities": [
+    "sap-sipper",
+    "grass-pelt"
+  ],
+  "types": [
+    "grass"
+  ],
+  "height": 17,
+  "weight": 910,
+  "stats": {
+    "hp": 123,
+    "attack": 100,
+    "defense": 62,
+    "special-attack": 97,
+    "special-defense": 81,
+    "speed": 68
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

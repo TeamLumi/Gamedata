@@ -1,0 +1,29 @@
+{
+  "name": "heliolisk",
+  "id": 695,
+  "abilities": [
+    "dry-skin",
+    "sand-veil",
+    "solar-power"
+  ],
+  "types": [
+    "electric",
+    "normal"
+  ],
+  "height": 10,
+  "weight": 210,
+  "stats": {
+    "hp": 62,
+    "attack": 55,
+    "defense": 52,
+    "special-attack": 109,
+    "special-defense": 94,
+    "speed": 109
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    1,
+    14
+  ]
+}

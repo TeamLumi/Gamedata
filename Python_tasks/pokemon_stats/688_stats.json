@@ -1,0 +1,28 @@
+{
+  "name": "binacle",
+  "id": 688,
+  "abilities": [
+    "tough-claws",
+    "sniper",
+    "pickpocket"
+  ],
+  "types": [
+    "rock",
+    "water"
+  ],
+  "height": 5,
+  "weight": 310,
+  "stats": {
+    "hp": 42,
+    "attack": 52,
+    "defense": 67,
+    "special-attack": 39,
+    "special-defense": 56,
+    "speed": 50
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    9
+  ]
+}

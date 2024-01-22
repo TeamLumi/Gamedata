@@ -1,0 +1,27 @@
+{
+  "name": "tapu-fini",
+  "id": 788,
+  "abilities": [
+    "misty-surge",
+    "telepathy"
+  ],
+  "types": [
+    "water",
+    "fairy"
+  ],
+  "height": 13,
+  "weight": 212,
+  "stats": {
+    "hp": 70,
+    "attack": 75,
+    "defense": 115,
+    "special-attack": 95,
+    "special-defense": 130,
+    "speed": 85
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

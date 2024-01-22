@@ -1,0 +1,27 @@
+{
+  "name": "klang",
+  "id": 600,
+  "abilities": [
+    "plus",
+    "minus",
+    "clear-body"
+  ],
+  "types": [
+    "steel"
+  ],
+  "height": 6,
+  "weight": 510,
+  "stats": {
+    "hp": 60,
+    "attack": 80,
+    "defense": 95,
+    "special-attack": 70,
+    "special-defense": 85,
+    "speed": 50
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    10
+  ]
+}

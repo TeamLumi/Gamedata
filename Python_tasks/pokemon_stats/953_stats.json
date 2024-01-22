@@ -1,0 +1,26 @@
+{
+  "name": "rellor",
+  "id": 953,
+  "abilities": [
+    "compound-eyes",
+    "shed-skin"
+  ],
+  "types": [
+    "bug"
+  ],
+  "height": 2,
+  "weight": 10,
+  "stats": {
+    "hp": 41,
+    "attack": 50,
+    "defense": 60,
+    "special-attack": 31,
+    "special-defense": 58,
+    "speed": 30
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    3
+  ]
+}

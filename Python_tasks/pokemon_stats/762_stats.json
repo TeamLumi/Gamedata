@@ -1,0 +1,32 @@
+{
+  "name": "steenee",
+  "id": 762,
+  "abilities": [
+    "leaf-guard",
+    "oblivious",
+    "sweet-veil"
+  ],
+  "types": [
+    "grass"
+  ],
+  "height": 7,
+  "weight": 82,
+  "stats": {
+    "hp": 52,
+    "attack": 40,
+    "defense": 48,
+    "special-attack": 40,
+    "special-defense": 48,
+    "speed": 62
+  },
+  "gender_ratio": 254,
+  "held_items": [
+    {
+      "held_item": "grassy-seed",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    7
+  ]
+}

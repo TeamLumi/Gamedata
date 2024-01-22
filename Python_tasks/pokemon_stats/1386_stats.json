@@ -1,0 +1,28 @@
+{
+  "name": "orbeetle-gmax",
+  "id": 10213,
+  "abilities": [
+    "swarm",
+    "frisk",
+    "telepathy"
+  ],
+  "types": [
+    "bug",
+    "psychic"
+  ],
+  "height": 140,
+  "weight": 10000,
+  "stats": {
+    "hp": 60,
+    "attack": 45,
+    "defense": 110,
+    "special-attack": 80,
+    "special-defense": 120,
+    "speed": 90
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    3
+  ]
+}

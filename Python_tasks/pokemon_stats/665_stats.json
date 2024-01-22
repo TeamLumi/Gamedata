@@ -1,0 +1,26 @@
+{
+  "name": "spewpa",
+  "id": 665,
+  "abilities": [
+    "shed-skin",
+    "friend-guard"
+  ],
+  "types": [
+    "bug"
+  ],
+  "height": 3,
+  "weight": 84,
+  "stats": {
+    "hp": 45,
+    "attack": 22,
+    "defense": 60,
+    "special-attack": 27,
+    "special-defense": 30,
+    "speed": 29
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    3
+  ]
+}

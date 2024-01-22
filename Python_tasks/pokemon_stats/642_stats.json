@@ -1,0 +1,27 @@
+{
+  "name": "thundurus-incarnate",
+  "id": 642,
+  "abilities": [
+    "prankster",
+    "defiant"
+  ],
+  "types": [
+    "electric",
+    "flying"
+  ],
+  "height": 15,
+  "weight": 610,
+  "stats": {
+    "hp": 79,
+    "attack": 115,
+    "defense": 70,
+    "special-attack": 125,
+    "special-defense": 80,
+    "speed": 111
+  },
+  "gender_ratio": 0,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

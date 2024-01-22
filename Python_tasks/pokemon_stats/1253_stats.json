@@ -1,0 +1,27 @@
+{
+  "name": "stunfisk-galar",
+  "id": 10180,
+  "abilities": [
+    "mimicry"
+  ],
+  "types": [
+    "ground",
+    "steel"
+  ],
+  "height": 7,
+  "weight": 205,
+  "stats": {
+    "hp": 109,
+    "attack": 81,
+    "defense": 99,
+    "special-attack": 66,
+    "special-defense": 84,
+    "speed": 32
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    2,
+    11
+  ]
+}

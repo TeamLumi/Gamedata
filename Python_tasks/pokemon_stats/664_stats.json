@@ -1,0 +1,27 @@
+{
+  "name": "scatterbug",
+  "id": 664,
+  "abilities": [
+    "shield-dust",
+    "compound-eyes",
+    "friend-guard"
+  ],
+  "types": [
+    "bug"
+  ],
+  "height": 3,
+  "weight": 25,
+  "stats": {
+    "hp": 38,
+    "attack": 35,
+    "defense": 40,
+    "special-attack": 27,
+    "special-defense": 25,
+    "speed": 35
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    3
+  ]
+}

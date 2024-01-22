@@ -1,0 +1,27 @@
+{
+  "name": "cetitan",
+  "id": 975,
+  "abilities": [
+    "thick-fat",
+    "slush-rush",
+    "sheer-force"
+  ],
+  "types": [
+    "ice"
+  ],
+  "height": 45,
+  "weight": 7000,
+  "stats": {
+    "hp": 170,
+    "attack": 113,
+    "defense": 65,
+    "special-attack": 45,
+    "special-defense": 55,
+    "speed": 73
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

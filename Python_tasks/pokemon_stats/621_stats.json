@@ -1,0 +1,33 @@
+{
+  "name": "druddigon",
+  "id": 621,
+  "abilities": [
+    "rough-skin",
+    "sheer-force",
+    "mold-breaker"
+  ],
+  "types": [
+    "dragon"
+  ],
+  "height": 16,
+  "weight": 1390,
+  "stats": {
+    "hp": 77,
+    "attack": 120,
+    "defense": 90,
+    "special-attack": 60,
+    "special-defense": 90,
+    "speed": 48
+  },
+  "gender_ratio": 127,
+  "held_items": [
+    {
+      "held_item": "dragon-fang",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    14,
+    1
+  ]
+}

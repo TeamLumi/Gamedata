@@ -1,0 +1,28 @@
+{
+  "name": "galvantula",
+  "id": 596,
+  "abilities": [
+    "compound-eyes",
+    "unnerve",
+    "swarm"
+  ],
+  "types": [
+    "bug",
+    "electric"
+  ],
+  "height": 8,
+  "weight": 143,
+  "stats": {
+    "hp": 70,
+    "attack": 77,
+    "defense": 60,
+    "special-attack": 97,
+    "special-defense": 60,
+    "speed": 108
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    3
+  ]
+}

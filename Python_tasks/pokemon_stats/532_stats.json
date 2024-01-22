@@ -1,0 +1,27 @@
+{
+  "name": "timburr",
+  "id": 532,
+  "abilities": [
+    "guts",
+    "sheer-force",
+    "iron-fist"
+  ],
+  "types": [
+    "fighting"
+  ],
+  "height": 6,
+  "weight": 125,
+  "stats": {
+    "hp": 75,
+    "attack": 80,
+    "defense": 55,
+    "special-attack": 25,
+    "special-defense": 35,
+    "speed": 35
+  },
+  "gender_ratio": 63,
+  "held_items": [],
+  "egg_groups": [
+    8
+  ]
+}

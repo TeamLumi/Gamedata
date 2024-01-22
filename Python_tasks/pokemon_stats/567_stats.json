@@ -1,0 +1,27 @@
+{
+  "name": "archeops",
+  "id": 567,
+  "abilities": [
+    "defeatist"
+  ],
+  "types": [
+    "rock",
+    "flying"
+  ],
+  "height": 14,
+  "weight": 320,
+  "stats": {
+    "hp": 75,
+    "attack": 140,
+    "defense": 65,
+    "special-attack": 112,
+    "special-defense": 65,
+    "speed": 110
+  },
+  "gender_ratio": 31,
+  "held_items": [],
+  "egg_groups": [
+    4,
+    9
+  ]
+}

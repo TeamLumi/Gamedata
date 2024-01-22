@@ -1,0 +1,26 @@
+{
+  "name": "spidops",
+  "id": 918,
+  "abilities": [
+    "insomnia",
+    "stakeout"
+  ],
+  "types": [
+    "bug"
+  ],
+  "height": 10,
+  "weight": 165,
+  "stats": {
+    "hp": 60,
+    "attack": 79,
+    "defense": 92,
+    "special-attack": 52,
+    "special-defense": 86,
+    "speed": 35
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    3
+  ]
+}

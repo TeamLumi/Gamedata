@@ -1,0 +1,33 @@
+{
+  "name": "gourgeist-super",
+  "id": 10032,
+  "abilities": [
+    "pickup",
+    "frisk",
+    "insomnia"
+  ],
+  "types": [
+    "ghost",
+    "grass"
+  ],
+  "height": 17,
+  "weight": 390,
+  "stats": {
+    "hp": 85,
+    "attack": 100,
+    "defense": 122,
+    "special-attack": 58,
+    "special-defense": 75,
+    "speed": 54
+  },
+  "gender_ratio": 127,
+  "held_items": [
+    {
+      "held_item": "miracle-seed",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    11
+  ]
+}

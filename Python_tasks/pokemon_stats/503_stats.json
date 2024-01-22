@@ -1,0 +1,26 @@
+{
+  "name": "samurott",
+  "id": 503,
+  "abilities": [
+    "torrent",
+    "shell-armor"
+  ],
+  "types": [
+    "water"
+  ],
+  "height": 15,
+  "weight": 946,
+  "stats": {
+    "hp": 95,
+    "attack": 100,
+    "defense": 85,
+    "special-attack": 108,
+    "special-defense": 70,
+    "speed": 70
+  },
+  "gender_ratio": 31,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

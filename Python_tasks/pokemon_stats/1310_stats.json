@@ -1,0 +1,26 @@
+{
+  "name": "aegislash-blade",
+  "id": 10026,
+  "abilities": [
+    "stance-change"
+  ],
+  "types": [
+    "steel",
+    "ghost"
+  ],
+  "height": 17,
+  "weight": 530,
+  "stats": {
+    "hp": 60,
+    "attack": 140,
+    "defense": 50,
+    "special-attack": 140,
+    "special-defense": 50,
+    "speed": 60
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    10
+  ]
+}

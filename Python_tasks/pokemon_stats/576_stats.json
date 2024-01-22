@@ -1,0 +1,32 @@
+{
+  "name": "gothitelle",
+  "id": 576,
+  "abilities": [
+    "frisk",
+    "competitive",
+    "shadow-tag"
+  ],
+  "types": [
+    "psychic"
+  ],
+  "height": 15,
+  "weight": 440,
+  "stats": {
+    "hp": 70,
+    "attack": 55,
+    "defense": 95,
+    "special-attack": 95,
+    "special-defense": 110,
+    "speed": 65
+  },
+  "gender_ratio": 191,
+  "held_items": [
+    {
+      "held_item": "persim-berry",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    8
+  ]
+}

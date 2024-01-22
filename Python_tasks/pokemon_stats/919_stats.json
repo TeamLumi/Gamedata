@@ -1,0 +1,26 @@
+{
+  "name": "nymble",
+  "id": 919,
+  "abilities": [
+    "swarm",
+    "tinted-lens"
+  ],
+  "types": [
+    "bug"
+  ],
+  "height": 2,
+  "weight": 10,
+  "stats": {
+    "hp": 33,
+    "attack": 46,
+    "defense": 40,
+    "special-attack": 21,
+    "special-defense": 25,
+    "speed": 45
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    3
+  ]
+}

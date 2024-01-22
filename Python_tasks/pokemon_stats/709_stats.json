@@ -1,0 +1,29 @@
+{
+  "name": "trevenant",
+  "id": 709,
+  "abilities": [
+    "natural-cure",
+    "frisk",
+    "harvest"
+  ],
+  "types": [
+    "ghost",
+    "grass"
+  ],
+  "height": 15,
+  "weight": 710,
+  "stats": {
+    "hp": 85,
+    "attack": 110,
+    "defense": 76,
+    "special-attack": 65,
+    "special-defense": 82,
+    "speed": 56
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    7,
+    11
+  ]
+}

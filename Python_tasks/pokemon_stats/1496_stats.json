@@ -1,0 +1,26 @@
+{
+  "name": "orthworm",
+  "id": 968,
+  "abilities": [
+    "earth-eater",
+    "sand-veil"
+  ],
+  "types": [
+    "steel"
+  ],
+  "height": 25,
+  "weight": 3100,
+  "stats": {
+    "hp": 70,
+    "attack": 85,
+    "defense": 145,
+    "special-attack": 60,
+    "special-defense": 55,
+    "speed": 65
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

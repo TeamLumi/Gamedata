@@ -1,0 +1,26 @@
+{
+  "name": "tarountula",
+  "id": 917,
+  "abilities": [
+    "insomnia",
+    "stakeout"
+  ],
+  "types": [
+    "bug"
+  ],
+  "height": 3,
+  "weight": 40,
+  "stats": {
+    "hp": 35,
+    "attack": 41,
+    "defense": 45,
+    "special-attack": 29,
+    "special-defense": 40,
+    "speed": 20
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    3
+  ]
+}

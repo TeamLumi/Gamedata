@@ -1,0 +1,27 @@
+{
+  "name": "quaxly",
+  "id": 912,
+  "abilities": [
+    "torrent",
+    "moxie"
+  ],
+  "types": [
+    "water"
+  ],
+  "height": 5,
+  "weight": 61,
+  "stats": {
+    "hp": 55,
+    "attack": 65,
+    "defense": 45,
+    "special-attack": 50,
+    "special-defense": 45,
+    "speed": 50
+  },
+  "gender_ratio": 31,
+  "held_items": [],
+  "egg_groups": [
+    4,
+    2
+  ]
+}

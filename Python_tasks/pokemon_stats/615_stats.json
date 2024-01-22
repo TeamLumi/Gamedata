@@ -1,0 +1,30 @@
+{
+  "name": "cryogonal",
+  "id": 615,
+  "abilities": [
+    "levitate"
+  ],
+  "types": [
+    "ice"
+  ],
+  "height": 11,
+  "weight": 1480,
+  "stats": {
+    "hp": 80,
+    "attack": 50,
+    "defense": 50,
+    "special-attack": 95,
+    "special-defense": 135,
+    "speed": 105
+  },
+  "gender_ratio": 255,
+  "held_items": [
+    {
+      "held_item": "never-melt-ice",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    10
+  ]
+}

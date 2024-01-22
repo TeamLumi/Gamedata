@@ -1,0 +1,32 @@
+{
+  "name": "cinccino",
+  "id": 573,
+  "abilities": [
+    "cute-charm",
+    "technician",
+    "skill-link"
+  ],
+  "types": [
+    "normal"
+  ],
+  "height": 5,
+  "weight": 75,
+  "stats": {
+    "hp": 75,
+    "attack": 95,
+    "defense": 60,
+    "special-attack": 65,
+    "special-defense": 60,
+    "speed": 115
+  },
+  "gender_ratio": 191,
+  "held_items": [
+    {
+      "held_item": "chesto-berry",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    5
+  ]
+}

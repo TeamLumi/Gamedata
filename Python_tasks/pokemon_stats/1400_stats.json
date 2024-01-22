@@ -1,0 +1,28 @@
+{
+  "name": "hatterene-gmax",
+  "id": 10221,
+  "abilities": [
+    "healer",
+    "anticipation",
+    "magic-bounce"
+  ],
+  "types": [
+    "psychic",
+    "fairy"
+  ],
+  "height": 260,
+  "weight": 10000,
+  "stats": {
+    "hp": 57,
+    "attack": 90,
+    "defense": 95,
+    "special-attack": 136,
+    "special-defense": 103,
+    "speed": 29
+  },
+  "gender_ratio": 254,
+  "held_items": [],
+  "egg_groups": [
+    6
+  ]
+}

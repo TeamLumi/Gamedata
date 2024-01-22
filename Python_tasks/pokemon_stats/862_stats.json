@@ -1,0 +1,28 @@
+{
+  "name": "obstagoon",
+  "id": 862,
+  "abilities": [
+    "reckless",
+    "guts",
+    "defiant"
+  ],
+  "types": [
+    "dark",
+    "normal"
+  ],
+  "height": 16,
+  "weight": 460,
+  "stats": {
+    "hp": 93,
+    "attack": 90,
+    "defense": 101,
+    "special-attack": 60,
+    "special-defense": 81,
+    "speed": 95
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

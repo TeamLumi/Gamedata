@@ -1,0 +1,26 @@
+{
+  "name": "flabebe-yellow",
+  "id": 669,
+  "abilities": [
+    "flower-veil",
+    "symbiosis"
+  ],
+  "types": [
+    "fairy"
+  ],
+  "height": 1,
+  "weight": 1,
+  "stats": {
+    "hp": 44,
+    "attack": 38,
+    "defense": 39,
+    "special-attack": 61,
+    "special-defense": 79,
+    "speed": 42
+  },
+  "gender_ratio": 254,
+  "held_items": [],
+  "egg_groups": [
+    6
+  ]
+}

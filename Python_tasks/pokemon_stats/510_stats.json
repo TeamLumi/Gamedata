@@ -1,0 +1,27 @@
+{
+  "name": "liepard",
+  "id": 510,
+  "abilities": [
+    "limber",
+    "unburden",
+    "prankster"
+  ],
+  "types": [
+    "dark"
+  ],
+  "height": 11,
+  "weight": 375,
+  "stats": {
+    "hp": 64,
+    "attack": 88,
+    "defense": 50,
+    "special-attack": 88,
+    "special-defense": 50,
+    "speed": 106
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

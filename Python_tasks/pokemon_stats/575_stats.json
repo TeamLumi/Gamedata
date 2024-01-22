@@ -1,0 +1,32 @@
+{
+  "name": "gothorita",
+  "id": 575,
+  "abilities": [
+    "frisk",
+    "competitive",
+    "shadow-tag"
+  ],
+  "types": [
+    "psychic"
+  ],
+  "height": 7,
+  "weight": 180,
+  "stats": {
+    "hp": 60,
+    "attack": 45,
+    "defense": 70,
+    "special-attack": 75,
+    "special-defense": 85,
+    "speed": 55
+  },
+  "gender_ratio": 191,
+  "held_items": [
+    {
+      "held_item": "persim-berry",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    8
+  ]
+}

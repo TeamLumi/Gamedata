@@ -1,0 +1,27 @@
+{
+  "name": "quaxwell",
+  "id": 913,
+  "abilities": [
+    "torrent",
+    "moxie"
+  ],
+  "types": [
+    "water"
+  ],
+  "height": 12,
+  "weight": 215,
+  "stats": {
+    "hp": 70,
+    "attack": 85,
+    "defense": 65,
+    "special-attack": 65,
+    "special-defense": 60,
+    "speed": 65
+  },
+  "gender_ratio": 31,
+  "held_items": [],
+  "egg_groups": [
+    4,
+    2
+  ]
+}

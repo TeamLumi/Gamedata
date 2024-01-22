@@ -1,0 +1,26 @@
+{
+  "name": "sylveon",
+  "id": 700,
+  "abilities": [
+    "cute-charm",
+    "pixilate"
+  ],
+  "types": [
+    "fairy"
+  ],
+  "height": 10,
+  "weight": 235,
+  "stats": {
+    "hp": 95,
+    "attack": 65,
+    "defense": 65,
+    "special-attack": 110,
+    "special-defense": 130,
+    "speed": 60
+  },
+  "gender_ratio": 31,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

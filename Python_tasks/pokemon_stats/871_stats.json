@@ -1,0 +1,27 @@
+{
+  "name": "pincurchin",
+  "id": 871,
+  "abilities": [
+    "lightning-rod",
+    "electric-surge"
+  ],
+  "types": [
+    "electric"
+  ],
+  "height": 3,
+  "weight": 10,
+  "stats": {
+    "hp": 48,
+    "attack": 101,
+    "defense": 95,
+    "special-attack": 91,
+    "special-defense": 85,
+    "speed": 15
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    2,
+    11
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "revavroom",
+  "id": 966,
+  "abilities": [
+    "overcoat",
+    "filter"
+  ],
+  "types": [
+    "steel",
+    "poison"
+  ],
+  "height": 18,
+  "weight": 1200,
+  "stats": {
+    "hp": 80,
+    "attack": 119,
+    "defense": 90,
+    "special-attack": 54,
+    "special-defense": 67,
+    "speed": 90
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    10
+  ]
+}

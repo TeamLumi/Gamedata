@@ -1,0 +1,27 @@
+{
+  "name": "klawf",
+  "id": 950,
+  "abilities": [
+    "anger-shell",
+    "shell-armor",
+    "regenerator"
+  ],
+  "types": [
+    "rock"
+  ],
+  "height": 13,
+  "weight": 790,
+  "stats": {
+    "hp": 70,
+    "attack": 100,
+    "defense": 115,
+    "special-attack": 35,
+    "special-defense": 55,
+    "speed": 75
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    9
+  ]
+}

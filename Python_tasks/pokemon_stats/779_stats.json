@@ -1,0 +1,33 @@
+{
+  "name": "bruxish",
+  "id": 779,
+  "abilities": [
+    "dazzling",
+    "strong-jaw",
+    "wonder-skin"
+  ],
+  "types": [
+    "water",
+    "psychic"
+  ],
+  "height": 9,
+  "weight": 190,
+  "stats": {
+    "hp": 68,
+    "attack": 105,
+    "defense": 70,
+    "special-attack": 70,
+    "special-defense": 70,
+    "speed": 92
+  },
+  "gender_ratio": 127,
+  "held_items": [
+    {
+      "held_item": "razor-fang",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    12
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "pumpkaboo-small",
+  "id": 10027,
+  "abilities": [
+    "pickup",
+    "frisk",
+    "insomnia"
+  ],
+  "types": [
+    "ghost",
+    "grass"
+  ],
+  "height": 3,
+  "weight": 35,
+  "stats": {
+    "hp": 44,
+    "attack": 66,
+    "defense": 70,
+    "special-attack": 44,
+    "special-defense": 55,
+    "speed": 56
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    11
+  ]
+}

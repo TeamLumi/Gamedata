@@ -1,0 +1,27 @@
+{
+  "name": "capsakid",
+  "id": 951,
+  "abilities": [
+    "chlorophyll",
+    "insomnia",
+    "klutz"
+  ],
+  "types": [
+    "grass"
+  ],
+  "height": 3,
+  "weight": 30,
+  "stats": {
+    "hp": 50,
+    "attack": 62,
+    "defense": 40,
+    "special-attack": 62,
+    "special-defense": 40,
+    "speed": 50
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    7
+  ]
+}

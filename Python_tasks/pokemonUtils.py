@@ -55,15 +55,23 @@ def convert_lumi_formula_mon(lumi_mons_no):
     mons_no = diff_forms[pkmn_key][0]
     return mons_no
 
-def get_pokemon_name(mons_no = 0):
+def get_pokemon_name(mons_no = 0, form_mode = False):
     '''
     Trys 3 different ways of getting the pokemon name
     Replaces any trouble characters into workable characters
     '''
+    form_namedata = full_data['form_namedata']
     try:
         pokemon_name = ""
         if mons_no < len(name_data["labelDataArray"]):
-            pokemon_name = name_data["labelDataArray"][mons_no]["wordDataArray"][0]["str"]
+            mons_name = name_data["labelDataArray"][mons_no]["wordDataArray"][0]["str"]
+            form_name = form_namedata["labelDataArray"][mons_no]["wordDataArray"][0]["str"]
+            if len(form_name) > 0 and mons_name not in form_name and not form_mode:
+                pokemon_name = f"{mons_name} {form_name}"
+            elif len(form_name) > 0 and mons_name in form_name and not form_mode:
+                pokemon_name = form_name
+            else:
+                pokemon_name = mons_name
         elif mons_no > 2**16:
             pokemon_id = convert_lumi_formula_mon(mons_no)
             pokemon_name = get_form_name(pokemon_id)
@@ -89,9 +97,7 @@ def get_form_name(id):
         form_data = form_namedata['labelDataArray'][id]
         form_name = form_data['wordDataArray'][0]['str']
         monsNo = form_data['labelName'].split("_")[-2]
-        pokemon_name = get_pokemon_name(int(monsNo))
-        if(form_name == ""):
-            return get_pokemon_name(id)
+        pokemon_name = get_pokemon_name(int(monsNo), True)
         if(pokemon_name not in form_name):
             return f"{pokemon_name} {form_name}"
         return form_name
@@ -267,7 +273,7 @@ def create_diff_forms_dictionary(form_dict):
     NAME_MAP = {}
     for mons_no in form_dict.keys():
         mons_array = form_dict[mons_no]
-        current_pokemon_name = get_pokemon_name(int(mons_no))
+        current_pokemon_name = get_pokemon_name(int(mons_no), True)
 
         for (idx, mon) in enumerate(mons_array):
             if idx != 0 or isSpecialPokemon(current_pokemon_name):

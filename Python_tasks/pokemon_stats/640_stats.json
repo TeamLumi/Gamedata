@@ -1,0 +1,26 @@
+{
+  "name": "virizion",
+  "id": 640,
+  "abilities": [
+    "justified"
+  ],
+  "types": [
+    "grass",
+    "fighting"
+  ],
+  "height": 20,
+  "weight": 2000,
+  "stats": {
+    "hp": 91,
+    "attack": 90,
+    "defense": 72,
+    "special-attack": 90,
+    "special-defense": 129,
+    "speed": 108
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

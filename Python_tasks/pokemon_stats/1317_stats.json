@@ -1,0 +1,28 @@
+{
+  "name": "gourgeist-large",
+  "id": 10031,
+  "abilities": [
+    "pickup",
+    "frisk",
+    "insomnia"
+  ],
+  "types": [
+    "ghost",
+    "grass"
+  ],
+  "height": 11,
+  "weight": 140,
+  "stats": {
+    "hp": 75,
+    "attack": 95,
+    "defense": 122,
+    "special-attack": 58,
+    "special-defense": 75,
+    "speed": 69
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    11
+  ]
+}

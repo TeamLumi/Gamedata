@@ -46,21 +46,21 @@ def get_pokemon_stats(pokemon_name, pokemonId, monsno, counter=0):
   species_name = pokemon_name
   try:
     # Use pokebase to get Pokemon information
-    if pokemonId > constants.POKEDEX_LENGTH and counter != 1:
+    if counter < 2:
       form = pokebase.pokemon_form(pokemon_name)
       form_name = form.pokemon.name
     pokemon = pokebase.pokemon(form_name)
-    if pokemonId > constants.POKEDEX_LENGTH and counter != 1:
+    if counter < 2:
       species_name = pokemon.species.name
     species = pokebase.pokemon_species(species_name)
 
   except AttributeError as e:
-    if counter == 1:
+    if counter == 2:
       log_error(f"Error: Could not handle this pokemon: {pokemon_name} ({pokemonId})")
       return
     counter += 1
     log_warning(f"Warning: {pokemon_name} ({pokemonId}) will be run again with their base form")
-    new_mons_name = slugify(get_pokemon_name(monsno), True)
+    new_mons_name = slugify(get_pokemon_name(monsno, pokemonId <= constants.POKEDEX_LENGTH), True)
     get_pokemon_stats(new_mons_name, pokemonId, monsno, counter)
     return
   except Exception as e:
@@ -115,3 +115,4 @@ if __name__ == "__main__":
       continue
     mons_name = slugify(get_pokemon_name(pokemonId), True)
     get_pokemon_stats(mons_name, pokemonId, mon["monsno"])
+  # get_pokemon_name(555, True)

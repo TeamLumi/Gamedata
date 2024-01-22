@@ -1,0 +1,28 @@
+{
+  "name": "squawkabilly-white-plumage",
+  "id": 10262,
+  "abilities": [
+    "intimidate",
+    "hustle",
+    "sheer-force"
+  ],
+  "types": [
+    "normal",
+    "flying"
+  ],
+  "height": 6,
+  "weight": 24,
+  "stats": {
+    "hp": 82,
+    "attack": 96,
+    "defense": 51,
+    "special-attack": 45,
+    "special-defense": 51,
+    "speed": 92
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    4
+  ]
+}

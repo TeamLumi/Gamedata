@@ -1,0 +1,26 @@
+{
+  "name": "darmanitan-galar-standard",
+  "id": 10177,
+  "abilities": [
+    "gorilla-tactics",
+    "zen-mode"
+  ],
+  "types": [
+    "ice"
+  ],
+  "height": 17,
+  "weight": 1200,
+  "stats": {
+    "hp": 105,
+    "attack": 140,
+    "defense": 55,
+    "special-attack": 30,
+    "special-defense": 55,
+    "speed": 95
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

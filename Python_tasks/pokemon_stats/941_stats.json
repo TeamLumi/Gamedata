@@ -1,0 +1,29 @@
+{
+  "name": "kilowattrel",
+  "id": 941,
+  "abilities": [
+    "wind-power",
+    "volt-absorb",
+    "competitive"
+  ],
+  "types": [
+    "electric",
+    "flying"
+  ],
+  "height": 14,
+  "weight": 386,
+  "stats": {
+    "hp": 70,
+    "attack": 70,
+    "defense": 60,
+    "special-attack": 105,
+    "special-defense": 60,
+    "speed": 125
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    2,
+    4
+  ]
+}

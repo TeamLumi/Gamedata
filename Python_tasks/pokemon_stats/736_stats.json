@@ -1,0 +1,25 @@
+{
+  "name": "grubbin",
+  "id": 736,
+  "abilities": [
+    "swarm"
+  ],
+  "types": [
+    "bug"
+  ],
+  "height": 4,
+  "weight": 44,
+  "stats": {
+    "hp": 47,
+    "attack": 62,
+    "defense": 45,
+    "special-attack": 55,
+    "special-defense": 45,
+    "speed": 46
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    3
+  ]
+}

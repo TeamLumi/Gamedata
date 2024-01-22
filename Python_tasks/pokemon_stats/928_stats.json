@@ -1,0 +1,27 @@
+{
+  "name": "smoliv",
+  "id": 928,
+  "abilities": [
+    "early-bird",
+    "harvest"
+  ],
+  "types": [
+    "grass",
+    "normal"
+  ],
+  "height": 3,
+  "weight": 65,
+  "stats": {
+    "hp": 41,
+    "attack": 35,
+    "defense": 45,
+    "special-attack": 58,
+    "special-defense": 51,
+    "speed": 30
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    7
+  ]
+}

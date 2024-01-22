@@ -1,0 +1,29 @@
+{
+  "name": "drakloak",
+  "id": 886,
+  "abilities": [
+    "clear-body",
+    "infiltrator",
+    "cursed-body"
+  ],
+  "types": [
+    "dragon",
+    "ghost"
+  ],
+  "height": 14,
+  "weight": 110,
+  "stats": {
+    "hp": 68,
+    "attack": 80,
+    "defense": 50,
+    "special-attack": 60,
+    "special-defense": 50,
+    "speed": 102
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    11,
+    14
+  ]
+}

@@ -1,0 +1,36 @@
+{
+  "name": "gigalith",
+  "id": 526,
+  "abilities": [
+    "sturdy",
+    "sand-stream",
+    "sand-force"
+  ],
+  "types": [
+    "rock"
+  ],
+  "height": 17,
+  "weight": 2600,
+  "stats": {
+    "hp": 85,
+    "attack": 135,
+    "defense": 130,
+    "special-attack": 60,
+    "special-defense": 80,
+    "speed": 25
+  },
+  "gender_ratio": 127,
+  "held_items": [
+    {
+      "held_item": "everstone",
+      "rarity": null
+    },
+    {
+      "held_item": "hard-stone",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    10
+  ]
+}

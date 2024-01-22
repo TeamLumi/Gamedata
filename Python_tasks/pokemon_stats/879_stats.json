@@ -1,0 +1,27 @@
+{
+  "name": "copperajah",
+  "id": 879,
+  "abilities": [
+    "sheer-force",
+    "heavy-metal"
+  ],
+  "types": [
+    "steel"
+  ],
+  "height": 30,
+  "weight": 6500,
+  "stats": {
+    "hp": 122,
+    "attack": 130,
+    "defense": 69,
+    "special-attack": 80,
+    "special-defense": 69,
+    "speed": 30
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    5,
+    10
+  ]
+}

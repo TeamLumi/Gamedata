@@ -1,0 +1,33 @@
+{
+  "name": "trumbeak",
+  "id": 732,
+  "abilities": [
+    "keen-eye",
+    "skill-link",
+    "pickup"
+  ],
+  "types": [
+    "normal",
+    "flying"
+  ],
+  "height": 6,
+  "weight": 148,
+  "stats": {
+    "hp": 55,
+    "attack": 85,
+    "defense": 50,
+    "special-attack": 40,
+    "special-defense": 50,
+    "speed": 75
+  },
+  "gender_ratio": 127,
+  "held_items": [
+    {
+      "held_item": "sitrus-berry",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    4
+  ]
+}

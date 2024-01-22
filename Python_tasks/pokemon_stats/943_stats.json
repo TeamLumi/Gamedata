@@ -1,0 +1,27 @@
+{
+  "name": "mabosstiff",
+  "id": 943,
+  "abilities": [
+    "intimidate",
+    "guard-dog",
+    "stakeout"
+  ],
+  "types": [
+    "dark"
+  ],
+  "height": 11,
+  "weight": 610,
+  "stats": {
+    "hp": 80,
+    "attack": 120,
+    "defense": 90,
+    "special-attack": 60,
+    "special-defense": 70,
+    "speed": 85
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

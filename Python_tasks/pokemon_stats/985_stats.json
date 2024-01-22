@@ -1,0 +1,27 @@
+{
+  "name": "scream-tail",
+  "id": 985,
+  "abilities": [
+    "protosynthesis",
+    "protosynthesis"
+  ],
+  "types": [
+    "fairy",
+    "psychic"
+  ],
+  "height": 12,
+  "weight": 80,
+  "stats": {
+    "hp": 115,
+    "attack": 65,
+    "defense": 99,
+    "special-attack": 65,
+    "special-defense": 115,
+    "speed": 111
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

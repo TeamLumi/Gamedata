@@ -1,0 +1,36 @@
+{
+  "name": "roggenrola",
+  "id": 524,
+  "abilities": [
+    "sturdy",
+    "weak-armor",
+    "sand-force"
+  ],
+  "types": [
+    "rock"
+  ],
+  "height": 4,
+  "weight": 180,
+  "stats": {
+    "hp": 55,
+    "attack": 75,
+    "defense": 85,
+    "special-attack": 25,
+    "special-defense": 25,
+    "speed": 15
+  },
+  "gender_ratio": 127,
+  "held_items": [
+    {
+      "held_item": "everstone",
+      "rarity": null
+    },
+    {
+      "held_item": "hard-stone",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    10
+  ]
+}

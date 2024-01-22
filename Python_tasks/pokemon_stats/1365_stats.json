@@ -1,0 +1,26 @@
+{
+  "name": "minior-red",
+  "id": 10136,
+  "abilities": [
+    "shields-down"
+  ],
+  "types": [
+    "rock",
+    "flying"
+  ],
+  "height": 3,
+  "weight": 3,
+  "stats": {
+    "hp": 60,
+    "attack": 100,
+    "defense": 60,
+    "special-attack": 100,
+    "special-defense": 60,
+    "speed": 120
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    10
+  ]
+}

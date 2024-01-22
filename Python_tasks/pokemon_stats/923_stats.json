@@ -1,0 +1,28 @@
+{
+  "name": "pawmot",
+  "id": 923,
+  "abilities": [
+    "volt-absorb",
+    "natural-cure",
+    "iron-fist"
+  ],
+  "types": [
+    "electric",
+    "fighting"
+  ],
+  "height": 9,
+  "weight": 410,
+  "stats": {
+    "hp": 70,
+    "attack": 115,
+    "defense": 70,
+    "special-attack": 70,
+    "special-defense": 60,
+    "speed": 105
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

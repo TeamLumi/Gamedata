@@ -1,0 +1,29 @@
+{
+  "name": "phantump",
+  "id": 708,
+  "abilities": [
+    "natural-cure",
+    "frisk",
+    "harvest"
+  ],
+  "types": [
+    "ghost",
+    "grass"
+  ],
+  "height": 4,
+  "weight": 70,
+  "stats": {
+    "hp": 43,
+    "attack": 70,
+    "defense": 48,
+    "special-attack": 50,
+    "special-defense": 60,
+    "speed": 38
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    7,
+    11
+  ]
+}

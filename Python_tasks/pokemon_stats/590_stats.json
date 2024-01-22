@@ -1,0 +1,40 @@
+{
+  "name": "foongus",
+  "id": 590,
+  "abilities": [
+    "effect-spore",
+    "regenerator"
+  ],
+  "types": [
+    "grass",
+    "poison"
+  ],
+  "height": 2,
+  "weight": 10,
+  "stats": {
+    "hp": 69,
+    "attack": 55,
+    "defense": 45,
+    "special-attack": 55,
+    "special-defense": 55,
+    "speed": 15
+  },
+  "gender_ratio": 127,
+  "held_items": [
+    {
+      "held_item": "tiny-mushroom",
+      "rarity": null
+    },
+    {
+      "held_item": "big-mushroom",
+      "rarity": null
+    },
+    {
+      "held_item": "balm-mushroom",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    7
+  ]
+}

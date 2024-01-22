@@ -1,0 +1,32 @@
+{
+  "name": "audino-mega",
+  "id": 10069,
+  "abilities": [
+    "healer"
+  ],
+  "types": [
+    "normal",
+    "fairy"
+  ],
+  "height": 15,
+  "weight": 320,
+  "base_experience": 425,
+  "stats": {
+    "hp": 103,
+    "attack": 60,
+    "defense": 126,
+    "special-attack": 80,
+    "special-defense": 126,
+    "speed": 50
+  },
+  "held_items": [
+    {
+      "held_item": "oran-berry",
+      "rarity": null
+    },
+    {
+      "held_item": "sitrus-berry",
+      "rarity": null
+    }
+  ]
+}

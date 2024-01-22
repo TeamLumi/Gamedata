@@ -1,0 +1,28 @@
+{
+  "name": "mienfoo",
+  "id": 619,
+  "abilities": [
+    "inner-focus",
+    "regenerator",
+    "reckless"
+  ],
+  "types": [
+    "fighting"
+  ],
+  "height": 9,
+  "weight": 200,
+  "stats": {
+    "hp": 45,
+    "attack": 85,
+    "defense": 50,
+    "special-attack": 55,
+    "special-defense": 50,
+    "speed": 65
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    5,
+    8
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "darumaka",
+  "id": 554,
+  "abilities": [
+    "hustle",
+    "inner-focus"
+  ],
+  "types": [
+    "fire"
+  ],
+  "height": 6,
+  "weight": 375,
+  "stats": {
+    "hp": 70,
+    "attack": 90,
+    "defense": 45,
+    "special-attack": 15,
+    "special-defense": 45,
+    "speed": 50
+  },
+  "gender_ratio": 127,
+  "held_items": [
+    {
+      "held_item": "rawst-berry",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    5
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "hatenna",
+  "id": 856,
+  "abilities": [
+    "healer",
+    "anticipation",
+    "magic-bounce"
+  ],
+  "types": [
+    "psychic"
+  ],
+  "height": 4,
+  "weight": 34,
+  "stats": {
+    "hp": 42,
+    "attack": 30,
+    "defense": 45,
+    "special-attack": 56,
+    "special-defense": 53,
+    "speed": 39
+  },
+  "gender_ratio": 254,
+  "held_items": [],
+  "egg_groups": [
+    6
+  ]
+}

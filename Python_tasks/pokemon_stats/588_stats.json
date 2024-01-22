@@ -1,0 +1,27 @@
+{
+  "name": "karrablast",
+  "id": 588,
+  "abilities": [
+    "swarm",
+    "shed-skin",
+    "no-guard"
+  ],
+  "types": [
+    "bug"
+  ],
+  "height": 5,
+  "weight": 59,
+  "stats": {
+    "hp": 50,
+    "attack": 75,
+    "defense": 45,
+    "special-attack": 40,
+    "special-defense": 45,
+    "speed": 60
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    3
+  ]
+}

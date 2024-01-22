@@ -1,0 +1,27 @@
+{
+  "name": "herdier",
+  "id": 507,
+  "abilities": [
+    "intimidate",
+    "sand-rush",
+    "scrappy"
+  ],
+  "types": [
+    "normal"
+  ],
+  "height": 9,
+  "weight": 147,
+  "stats": {
+    "hp": 65,
+    "attack": 80,
+    "defense": 65,
+    "special-attack": 35,
+    "special-defense": 65,
+    "speed": 60
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

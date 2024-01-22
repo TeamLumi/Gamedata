@@ -1,0 +1,27 @@
+{
+  "name": "tapu-bulu",
+  "id": 787,
+  "abilities": [
+    "grassy-surge",
+    "telepathy"
+  ],
+  "types": [
+    "grass",
+    "fairy"
+  ],
+  "height": 19,
+  "weight": 455,
+  "stats": {
+    "hp": 70,
+    "attack": 130,
+    "defense": 115,
+    "special-attack": 85,
+    "special-defense": 95,
+    "speed": 75
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

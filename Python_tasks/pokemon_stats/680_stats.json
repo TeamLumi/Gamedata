@@ -1,0 +1,26 @@
+{
+  "name": "doublade",
+  "id": 680,
+  "abilities": [
+    "no-guard"
+  ],
+  "types": [
+    "steel",
+    "ghost"
+  ],
+  "height": 8,
+  "weight": 45,
+  "stats": {
+    "hp": 59,
+    "attack": 110,
+    "defense": 150,
+    "special-attack": 45,
+    "special-defense": 49,
+    "speed": 35
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    10
+  ]
+}

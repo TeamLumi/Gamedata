@@ -1,0 +1,33 @@
+{
+  "name": "salazzle-totem",
+  "id": 10129,
+  "abilities": [
+    "corrosion",
+    "oblivious"
+  ],
+  "types": [
+    "poison",
+    "fire"
+  ],
+  "height": 21,
+  "weight": 810,
+  "stats": {
+    "hp": 68,
+    "attack": 64,
+    "defense": 60,
+    "special-attack": 111,
+    "special-defense": 60,
+    "speed": 117
+  },
+  "gender_ratio": 254,
+  "held_items": [
+    {
+      "held_item": "smoke-ball",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    1,
+    14
+  ]
+}

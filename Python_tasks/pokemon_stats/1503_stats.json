@@ -1,0 +1,27 @@
+{
+  "name": "dudunsparce-three-segment",
+  "id": 10255,
+  "abilities": [
+    "serene-grace",
+    "run-away",
+    "rattled"
+  ],
+  "types": [
+    "normal"
+  ],
+  "height": 45,
+  "weight": 474,
+  "stats": {
+    "hp": 125,
+    "attack": 100,
+    "defense": 80,
+    "special-attack": 85,
+    "special-defense": 75,
+    "speed": 55
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

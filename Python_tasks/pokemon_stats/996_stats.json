@@ -1,0 +1,28 @@
+{
+  "name": "frigibax",
+  "id": 996,
+  "abilities": [
+    "thermal-exchange",
+    "ice-body"
+  ],
+  "types": [
+    "dragon",
+    "ice"
+  ],
+  "height": 5,
+  "weight": 170,
+  "stats": {
+    "hp": 65,
+    "attack": 75,
+    "defense": 45,
+    "special-attack": 35,
+    "special-defense": 45,
+    "speed": 55
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    14,
+    10
+  ]
+}

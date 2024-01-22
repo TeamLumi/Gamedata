@@ -1,0 +1,27 @@
+{
+  "name": "frosmoth",
+  "id": 873,
+  "abilities": [
+    "shield-dust",
+    "ice-scales"
+  ],
+  "types": [
+    "ice",
+    "bug"
+  ],
+  "height": 13,
+  "weight": 420,
+  "stats": {
+    "hp": 70,
+    "attack": 65,
+    "defense": 60,
+    "special-attack": 125,
+    "special-defense": 90,
+    "speed": 65
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    3
+  ]
+}

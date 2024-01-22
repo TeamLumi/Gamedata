@@ -1,0 +1,26 @@
+{
+  "name": "necrozma-ultra",
+  "id": 10157,
+  "abilities": [
+    "neuroforce"
+  ],
+  "types": [
+    "psychic",
+    "dragon"
+  ],
+  "height": 75,
+  "weight": 2300,
+  "stats": {
+    "hp": 97,
+    "attack": 167,
+    "defense": 97,
+    "special-attack": 167,
+    "special-defense": 97,
+    "speed": 129
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

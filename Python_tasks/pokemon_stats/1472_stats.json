@@ -1,0 +1,26 @@
+{
+  "name": "eternatus-eternamax",
+  "id": 10190,
+  "abilities": [
+    "pressure"
+  ],
+  "types": [
+    "poison",
+    "dragon"
+  ],
+  "height": 1000,
+  "weight": 0,
+  "stats": {
+    "hp": 255,
+    "attack": 115,
+    "defense": 250,
+    "special-attack": 125,
+    "special-defense": 250,
+    "speed": 130
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "deerling-spring",
+  "id": 585,
+  "abilities": [
+    "chlorophyll",
+    "sap-sipper",
+    "serene-grace"
+  ],
+  "types": [
+    "normal",
+    "grass"
+  ],
+  "height": 6,
+  "weight": 195,
+  "stats": {
+    "hp": 60,
+    "attack": 60,
+    "defense": 50,
+    "special-attack": 40,
+    "special-defense": 50,
+    "speed": 75
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

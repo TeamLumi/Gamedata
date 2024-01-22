@@ -1,0 +1,27 @@
+{
+  "name": "glimmet",
+  "id": 969,
+  "abilities": [
+    "toxic-debris",
+    "corrosion"
+  ],
+  "types": [
+    "rock",
+    "poison"
+  ],
+  "height": 7,
+  "weight": 80,
+  "stats": {
+    "hp": 48,
+    "attack": 35,
+    "defense": 42,
+    "special-attack": 105,
+    "special-defense": 60,
+    "speed": 60
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    10
+  ]
+}

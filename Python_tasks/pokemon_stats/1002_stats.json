@@ -1,0 +1,27 @@
+{
+  "name": "chien-pao",
+  "id": 1002,
+  "abilities": [
+    "sword-of-ruin",
+    "sword-of-ruin"
+  ],
+  "types": [
+    "dark",
+    "ice"
+  ],
+  "height": 19,
+  "weight": 1522,
+  "stats": {
+    "hp": 80,
+    "attack": 120,
+    "defense": 80,
+    "special-attack": 90,
+    "special-defense": 65,
+    "speed": 135
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

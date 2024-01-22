@@ -1,0 +1,26 @@
+{
+  "name": "diancie",
+  "id": 719,
+  "abilities": [
+    "clear-body"
+  ],
+  "types": [
+    "rock",
+    "fairy"
+  ],
+  "height": 7,
+  "weight": 88,
+  "stats": {
+    "hp": 50,
+    "attack": 100,
+    "defense": 150,
+    "special-attack": 100,
+    "special-defense": 150,
+    "speed": 50
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

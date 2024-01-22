@@ -1,0 +1,32 @@
+{
+  "name": "tsareena",
+  "id": 763,
+  "abilities": [
+    "leaf-guard",
+    "queenly-majesty",
+    "sweet-veil"
+  ],
+  "types": [
+    "grass"
+  ],
+  "height": 12,
+  "weight": 214,
+  "stats": {
+    "hp": 72,
+    "attack": 120,
+    "defense": 98,
+    "special-attack": 50,
+    "special-defense": 98,
+    "speed": 72
+  },
+  "gender_ratio": 254,
+  "held_items": [
+    {
+      "held_item": "grassy-seed",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    7
+  ]
+}

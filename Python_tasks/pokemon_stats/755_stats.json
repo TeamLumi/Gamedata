@@ -1,0 +1,37 @@
+{
+  "name": "morelull",
+  "id": 755,
+  "abilities": [
+    "illuminate",
+    "effect-spore",
+    "rain-dish"
+  ],
+  "types": [
+    "grass",
+    "fairy"
+  ],
+  "height": 2,
+  "weight": 15,
+  "stats": {
+    "hp": 40,
+    "attack": 35,
+    "defense": 55,
+    "special-attack": 65,
+    "special-defense": 75,
+    "speed": 15
+  },
+  "gender_ratio": 127,
+  "held_items": [
+    {
+      "held_item": "tiny-mushroom",
+      "rarity": null
+    },
+    {
+      "held_item": "big-mushroom",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    7
+  ]
+}

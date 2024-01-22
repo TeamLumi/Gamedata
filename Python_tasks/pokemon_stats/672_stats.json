@@ -1,0 +1,26 @@
+{
+  "name": "skiddo",
+  "id": 672,
+  "abilities": [
+    "sap-sipper",
+    "grass-pelt"
+  ],
+  "types": [
+    "grass"
+  ],
+  "height": 9,
+  "weight": 310,
+  "stats": {
+    "hp": 66,
+    "attack": 65,
+    "defense": 48,
+    "special-attack": 62,
+    "special-defense": 57,
+    "speed": 52
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

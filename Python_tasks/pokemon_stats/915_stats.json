@@ -1,0 +1,27 @@
+{
+  "name": "lechonk",
+  "id": 915,
+  "abilities": [
+    "aroma-veil",
+    "gluttony",
+    "thick-fat"
+  ],
+  "types": [
+    "normal"
+  ],
+  "height": 5,
+  "weight": 102,
+  "stats": {
+    "hp": 54,
+    "attack": 45,
+    "defense": 40,
+    "special-attack": 35,
+    "special-defense": 45,
+    "speed": 35
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

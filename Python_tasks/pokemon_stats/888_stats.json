@@ -1,0 +1,25 @@
+{
+  "name": "zacian",
+  "id": 888,
+  "abilities": [
+    "intrepid-sword"
+  ],
+  "types": [
+    "fairy"
+  ],
+  "height": 28,
+  "weight": 1100,
+  "stats": {
+    "hp": 92,
+    "attack": 120,
+    "defense": 115,
+    "special-attack": 80,
+    "special-defense": 115,
+    "speed": 138
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "name": "comfey",
+  "id": 764,
+  "abilities": [
+    "flower-veil",
+    "triage",
+    "natural-cure"
+  ],
+  "types": [
+    "fairy"
+  ],
+  "height": 1,
+  "weight": 3,
+  "stats": {
+    "hp": 51,
+    "attack": 52,
+    "defense": 90,
+    "special-attack": 82,
+    "special-defense": 110,
+    "speed": 100
+  },
+  "gender_ratio": 191,
+  "held_items": [
+    {
+      "held_item": "misty-seed",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    7
+  ]
+}

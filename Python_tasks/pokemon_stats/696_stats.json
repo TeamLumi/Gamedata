@@ -1,0 +1,28 @@
+{
+  "name": "tyrunt",
+  "id": 696,
+  "abilities": [
+    "strong-jaw",
+    "sturdy"
+  ],
+  "types": [
+    "rock",
+    "dragon"
+  ],
+  "height": 8,
+  "weight": 260,
+  "stats": {
+    "hp": 58,
+    "attack": 89,
+    "defense": 77,
+    "special-attack": 45,
+    "special-defense": 45,
+    "speed": 48
+  },
+  "gender_ratio": 31,
+  "held_items": [],
+  "egg_groups": [
+    1,
+    14
+  ]
+}

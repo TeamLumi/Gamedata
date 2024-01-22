@@ -1,0 +1,26 @@
+{
+  "name": "celesteela",
+  "id": 797,
+  "abilities": [
+    "beast-boost"
+  ],
+  "types": [
+    "steel",
+    "flying"
+  ],
+  "height": 92,
+  "weight": 9999,
+  "stats": {
+    "hp": 97,
+    "attack": 101,
+    "defense": 103,
+    "special-attack": 107,
+    "special-defense": 101,
+    "speed": 61
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

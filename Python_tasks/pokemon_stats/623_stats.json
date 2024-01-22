@@ -1,0 +1,33 @@
+{
+  "name": "golurk",
+  "id": 623,
+  "abilities": [
+    "iron-fist",
+    "klutz",
+    "no-guard"
+  ],
+  "types": [
+    "ground",
+    "ghost"
+  ],
+  "height": 28,
+  "weight": 3300,
+  "stats": {
+    "hp": 89,
+    "attack": 124,
+    "defense": 80,
+    "special-attack": 55,
+    "special-defense": 80,
+    "speed": 55
+  },
+  "gender_ratio": 255,
+  "held_items": [
+    {
+      "held_item": "light-clay",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    10
+  ]
+}

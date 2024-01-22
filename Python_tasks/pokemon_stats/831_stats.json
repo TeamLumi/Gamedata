@@ -1,0 +1,27 @@
+{
+  "name": "wooloo",
+  "id": 831,
+  "abilities": [
+    "fluffy",
+    "run-away",
+    "bulletproof"
+  ],
+  "types": [
+    "normal"
+  ],
+  "height": 6,
+  "weight": 60,
+  "stats": {
+    "hp": 42,
+    "attack": 40,
+    "defense": 55,
+    "special-attack": 40,
+    "special-defense": 45,
+    "speed": 48
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "crocalor",
+  "id": 910,
+  "abilities": [
+    "blaze",
+    "unaware"
+  ],
+  "types": [
+    "fire"
+  ],
+  "height": 10,
+  "weight": 307,
+  "stats": {
+    "hp": 81,
+    "attack": 55,
+    "defense": 78,
+    "special-attack": 90,
+    "special-defense": 58,
+    "speed": 49
+  },
+  "gender_ratio": 31,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

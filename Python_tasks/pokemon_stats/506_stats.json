@@ -1,0 +1,27 @@
+{
+  "name": "lillipup",
+  "id": 506,
+  "abilities": [
+    "vital-spirit",
+    "pickup",
+    "run-away"
+  ],
+  "types": [
+    "normal"
+  ],
+  "height": 4,
+  "weight": 41,
+  "stats": {
+    "hp": 45,
+    "attack": 60,
+    "defense": 45,
+    "special-attack": 25,
+    "special-defense": 45,
+    "speed": 55
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

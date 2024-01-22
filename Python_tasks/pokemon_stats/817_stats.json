@@ -1,0 +1,27 @@
+{
+  "name": "drizzile",
+  "id": 817,
+  "abilities": [
+    "torrent",
+    "sniper"
+  ],
+  "types": [
+    "water"
+  ],
+  "height": 7,
+  "weight": 115,
+  "stats": {
+    "hp": 65,
+    "attack": 60,
+    "defense": 55,
+    "special-attack": 95,
+    "special-defense": 55,
+    "speed": 90
+  },
+  "gender_ratio": 31,
+  "held_items": [],
+  "egg_groups": [
+    2,
+    5
+  ]
+}

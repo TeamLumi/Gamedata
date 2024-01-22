@@ -1,0 +1,32 @@
+{
+  "name": "ferroseed",
+  "id": 597,
+  "abilities": [
+    "iron-barbs"
+  ],
+  "types": [
+    "grass",
+    "steel"
+  ],
+  "height": 6,
+  "weight": 188,
+  "stats": {
+    "hp": 44,
+    "attack": 50,
+    "defense": 91,
+    "special-attack": 24,
+    "special-defense": 86,
+    "speed": 10
+  },
+  "gender_ratio": 127,
+  "held_items": [
+    {
+      "held_item": "sticky-barb",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    7,
+    10
+  ]
+}

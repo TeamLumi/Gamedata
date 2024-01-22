@@ -1,0 +1,28 @@
+{
+  "name": "indeedee-female",
+  "id": 10186,
+  "abilities": [
+    "own-tempo",
+    "synchronize",
+    "psychic-surge"
+  ],
+  "types": [
+    "psychic",
+    "normal"
+  ],
+  "height": 9,
+  "weight": 280,
+  "stats": {
+    "hp": 70,
+    "attack": 55,
+    "defense": 65,
+    "special-attack": 95,
+    "special-defense": 105,
+    "speed": 85
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    6
+  ]
+}

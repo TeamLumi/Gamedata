@@ -1,0 +1,26 @@
+{
+  "name": "eiscue-noice",
+  "id": 10185,
+  "abilities": [
+    "ice-face"
+  ],
+  "types": [
+    "ice"
+  ],
+  "height": 14,
+  "weight": 890,
+  "stats": {
+    "hp": 75,
+    "attack": 80,
+    "defense": 70,
+    "special-attack": 65,
+    "special-defense": 50,
+    "speed": 130
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    2,
+    5
+  ]
+}

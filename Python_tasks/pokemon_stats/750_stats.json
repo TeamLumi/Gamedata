@@ -1,0 +1,32 @@
+{
+  "name": "mudsdale",
+  "id": 750,
+  "abilities": [
+    "own-tempo",
+    "stamina",
+    "inner-focus"
+  ],
+  "types": [
+    "ground"
+  ],
+  "height": 25,
+  "weight": 9200,
+  "stats": {
+    "hp": 100,
+    "attack": 125,
+    "defense": 100,
+    "special-attack": 55,
+    "special-defense": 85,
+    "speed": 35
+  },
+  "gender_ratio": 127,
+  "held_items": [
+    {
+      "held_item": "light-clay",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    5
+  ]
+}

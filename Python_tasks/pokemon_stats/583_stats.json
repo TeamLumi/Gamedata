@@ -1,0 +1,32 @@
+{
+  "name": "vanillish",
+  "id": 583,
+  "abilities": [
+    "ice-body",
+    "snow-cloak",
+    "weak-armor"
+  ],
+  "types": [
+    "ice"
+  ],
+  "height": 11,
+  "weight": 410,
+  "stats": {
+    "hp": 51,
+    "attack": 65,
+    "defense": 65,
+    "special-attack": 80,
+    "special-defense": 75,
+    "speed": 59
+  },
+  "gender_ratio": 127,
+  "held_items": [
+    {
+      "held_item": "never-melt-ice",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    10
+  ]
+}

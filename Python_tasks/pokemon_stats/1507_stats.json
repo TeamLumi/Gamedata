@@ -1,0 +1,27 @@
+{
+  "name": "koraidon-limited-build",
+  "id": 10264,
+  "abilities": [
+    "orichalcum-pulse",
+    "orichalcum-pulse"
+  ],
+  "types": [
+    "fighting",
+    "dragon"
+  ],
+  "height": 35,
+  "weight": 3030,
+  "stats": {
+    "hp": 100,
+    "attack": 135,
+    "defense": 115,
+    "special-attack": 85,
+    "special-defense": 100,
+    "speed": 135
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

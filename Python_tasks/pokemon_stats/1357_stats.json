@@ -1,0 +1,25 @@
+{
+  "name": "silvally-dark",
+  "id": 773,
+  "abilities": [
+    "rks-system"
+  ],
+  "types": [
+    "dark"
+  ],
+  "height": 23,
+  "weight": 1005,
+  "stats": {
+    "hp": 95,
+    "attack": 95,
+    "defense": 95,
+    "special-attack": 95,
+    "special-defense": 95,
+    "speed": 95
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

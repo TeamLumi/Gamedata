@@ -1,0 +1,28 @@
+{
+  "name": "tinkaton",
+  "id": 959,
+  "abilities": [
+    "mold-breaker",
+    "own-tempo",
+    "pickpocket"
+  ],
+  "types": [
+    "fairy",
+    "steel"
+  ],
+  "height": 7,
+  "weight": 1128,
+  "stats": {
+    "hp": 85,
+    "attack": 75,
+    "defense": 77,
+    "special-attack": 70,
+    "special-defense": 105,
+    "speed": 94
+  },
+  "gender_ratio": 254,
+  "held_items": [],
+  "egg_groups": [
+    6
+  ]
+}

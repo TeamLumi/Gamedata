@@ -1,0 +1,27 @@
+{
+  "name": "veluza",
+  "id": 976,
+  "abilities": [
+    "mold-breaker",
+    "sharpness"
+  ],
+  "types": [
+    "water",
+    "psychic"
+  ],
+  "height": 25,
+  "weight": 900,
+  "stats": {
+    "hp": 90,
+    "attack": 102,
+    "defense": 73,
+    "special-attack": 78,
+    "special-defense": 65,
+    "speed": 70
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    12
+  ]
+}

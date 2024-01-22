@@ -1,0 +1,33 @@
+{
+  "name": "araquanid-totem",
+  "id": 10153,
+  "abilities": [
+    "water-bubble",
+    "water-absorb"
+  ],
+  "types": [
+    "water",
+    "bug"
+  ],
+  "height": 31,
+  "weight": 2175,
+  "stats": {
+    "hp": 68,
+    "attack": 70,
+    "defense": 92,
+    "special-attack": 50,
+    "special-defense": 132,
+    "speed": 42
+  },
+  "gender_ratio": 127,
+  "held_items": [
+    {
+      "held_item": "mystic-water",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    2,
+    3
+  ]
+}

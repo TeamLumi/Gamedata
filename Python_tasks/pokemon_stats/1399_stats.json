@@ -1,0 +1,27 @@
+{
+  "name": "polteageist-antique",
+  "id": 855,
+  "abilities": [
+    "weak-armor",
+    "cursed-body"
+  ],
+  "types": [
+    "ghost"
+  ],
+  "height": 2,
+  "weight": 4,
+  "stats": {
+    "hp": 60,
+    "attack": 65,
+    "defense": 65,
+    "special-attack": 134,
+    "special-defense": 114,
+    "speed": 70
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    10,
+    11
+  ]
+}

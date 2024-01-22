@@ -1,0 +1,28 @@
+{
+  "name": "annihilape",
+  "id": 979,
+  "abilities": [
+    "vital-spirit",
+    "inner-focus",
+    "defiant"
+  ],
+  "types": [
+    "fighting",
+    "ghost"
+  ],
+  "height": 12,
+  "weight": 560,
+  "stats": {
+    "hp": 110,
+    "attack": 115,
+    "defense": 80,
+    "special-attack": 50,
+    "special-defense": 90,
+    "speed": 90
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

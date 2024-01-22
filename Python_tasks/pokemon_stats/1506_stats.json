@@ -1,0 +1,26 @@
+{
+  "name": "gimmighoul-roaming",
+  "id": 10263,
+  "abilities": [
+    "run-away",
+    "run-away"
+  ],
+  "types": [
+    "ghost"
+  ],
+  "height": 1,
+  "weight": 10,
+  "stats": {
+    "hp": 45,
+    "attack": 30,
+    "defense": 25,
+    "special-attack": 75,
+    "special-defense": 45,
+    "speed": 80
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "lurantis",
+  "id": 754,
+  "abilities": [
+    "leaf-guard",
+    "contrary"
+  ],
+  "types": [
+    "grass"
+  ],
+  "height": 9,
+  "weight": 185,
+  "stats": {
+    "hp": 70,
+    "attack": 105,
+    "defense": 90,
+    "special-attack": 80,
+    "special-defense": 90,
+    "speed": 45
+  },
+  "gender_ratio": 127,
+  "held_items": [
+    {
+      "held_item": "miracle-seed",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    7
+  ]
+}

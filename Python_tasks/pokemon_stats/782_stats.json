@@ -1,0 +1,32 @@
+{
+  "name": "jangmo-o",
+  "id": 782,
+  "abilities": [
+    "bulletproof",
+    "soundproof",
+    "overcoat"
+  ],
+  "types": [
+    "dragon"
+  ],
+  "height": 6,
+  "weight": 297,
+  "stats": {
+    "hp": 45,
+    "attack": 55,
+    "defense": 65,
+    "special-attack": 45,
+    "special-defense": 45,
+    "speed": 45
+  },
+  "gender_ratio": 127,
+  "held_items": [
+    {
+      "held_item": "razor-claw",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    14
+  ]
+}

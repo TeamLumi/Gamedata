@@ -1,0 +1,27 @@
+{
+  "name": "sandy-shocks",
+  "id": 989,
+  "abilities": [
+    "protosynthesis",
+    "protosynthesis"
+  ],
+  "types": [
+    "electric",
+    "ground"
+  ],
+  "height": 23,
+  "weight": 600,
+  "stats": {
+    "hp": 85,
+    "attack": 81,
+    "defense": 97,
+    "special-attack": 121,
+    "special-defense": 85,
+    "speed": 101
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

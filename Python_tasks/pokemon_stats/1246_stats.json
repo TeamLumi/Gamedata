@@ -1,0 +1,26 @@
+{
+  "name": "zoroark-hisui",
+  "id": 10239,
+  "abilities": [
+    "illusion"
+  ],
+  "types": [
+    "normal",
+    "ghost"
+  ],
+  "height": 16,
+  "weight": 730,
+  "stats": {
+    "hp": 55,
+    "attack": 100,
+    "defense": 60,
+    "special-attack": 125,
+    "special-defense": 60,
+    "speed": 110
+  },
+  "gender_ratio": 31,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

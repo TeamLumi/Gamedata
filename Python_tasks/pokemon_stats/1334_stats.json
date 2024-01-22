@@ -1,0 +1,34 @@
+{
+  "name": "ribombee-totem",
+  "id": 10150,
+  "abilities": [
+    "honey-gather",
+    "shield-dust",
+    "sweet-veil"
+  ],
+  "types": [
+    "bug",
+    "fairy"
+  ],
+  "height": 4,
+  "weight": 20,
+  "stats": {
+    "hp": 60,
+    "attack": 55,
+    "defense": 60,
+    "special-attack": 95,
+    "special-defense": 70,
+    "speed": 124
+  },
+  "gender_ratio": 127,
+  "held_items": [
+    {
+      "held_item": "honey",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    3,
+    6
+  ]
+}

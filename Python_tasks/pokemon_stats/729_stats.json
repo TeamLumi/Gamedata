@@ -1,0 +1,27 @@
+{
+  "name": "brionne",
+  "id": 729,
+  "abilities": [
+    "torrent",
+    "liquid-voice"
+  ],
+  "types": [
+    "water"
+  ],
+  "height": 6,
+  "weight": 175,
+  "stats": {
+    "hp": 60,
+    "attack": 69,
+    "defense": 69,
+    "special-attack": 91,
+    "special-defense": 81,
+    "speed": 50
+  },
+  "gender_ratio": 31,
+  "held_items": [],
+  "egg_groups": [
+    2,
+    5
+  ]
+}

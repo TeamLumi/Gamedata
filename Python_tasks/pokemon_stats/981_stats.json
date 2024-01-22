@@ -1,0 +1,28 @@
+{
+  "name": "farigiraf",
+  "id": 981,
+  "abilities": [
+    "cud-chew",
+    "armor-tail",
+    "sap-sipper"
+  ],
+  "types": [
+    "normal",
+    "psychic"
+  ],
+  "height": 32,
+  "weight": 1600,
+  "stats": {
+    "hp": 120,
+    "attack": 90,
+    "defense": 70,
+    "special-attack": 110,
+    "special-defense": 70,
+    "speed": 60
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

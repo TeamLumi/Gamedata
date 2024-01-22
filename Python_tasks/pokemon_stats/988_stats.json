@@ -1,0 +1,27 @@
+{
+  "name": "slither-wing",
+  "id": 988,
+  "abilities": [
+    "protosynthesis",
+    "protosynthesis"
+  ],
+  "types": [
+    "bug",
+    "fighting"
+  ],
+  "height": 32,
+  "weight": 920,
+  "stats": {
+    "hp": 85,
+    "attack": 135,
+    "defense": 79,
+    "special-attack": 85,
+    "special-defense": 105,
+    "speed": 81
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

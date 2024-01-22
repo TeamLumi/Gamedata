@@ -1,0 +1,26 @@
+{
+  "name": "vikavolt",
+  "id": 738,
+  "abilities": [
+    "levitate"
+  ],
+  "types": [
+    "bug",
+    "electric"
+  ],
+  "height": 15,
+  "weight": 450,
+  "stats": {
+    "hp": 77,
+    "attack": 70,
+    "defense": 90,
+    "special-attack": 145,
+    "special-defense": 75,
+    "speed": 43
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    3
+  ]
+}

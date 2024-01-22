@@ -1,0 +1,27 @@
+{
+  "name": "servine",
+  "id": 496,
+  "abilities": [
+    "overgrow",
+    "contrary"
+  ],
+  "types": [
+    "grass"
+  ],
+  "height": 8,
+  "weight": 160,
+  "stats": {
+    "hp": 60,
+    "attack": 60,
+    "defense": 75,
+    "special-attack": 60,
+    "special-defense": 75,
+    "speed": 83
+  },
+  "gender_ratio": 31,
+  "held_items": [],
+  "egg_groups": [
+    5,
+    7
+  ]
+}

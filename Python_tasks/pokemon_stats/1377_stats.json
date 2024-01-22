@@ -1,0 +1,26 @@
+{
+  "name": "necrozma-dusk",
+  "id": 10155,
+  "abilities": [
+    "prism-armor"
+  ],
+  "types": [
+    "psychic",
+    "steel"
+  ],
+  "height": 38,
+  "weight": 4600,
+  "stats": {
+    "hp": 97,
+    "attack": 157,
+    "defense": 127,
+    "special-attack": 113,
+    "special-defense": 109,
+    "speed": 77
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

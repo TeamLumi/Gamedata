@@ -1,0 +1,26 @@
+{
+  "name": "greninja-ash",
+  "id": 10117,
+  "abilities": [
+    "battle-bond"
+  ],
+  "types": [
+    "water",
+    "dark"
+  ],
+  "height": 15,
+  "weight": 400,
+  "stats": {
+    "hp": 72,
+    "attack": 145,
+    "defense": 67,
+    "special-attack": 153,
+    "special-defense": 71,
+    "speed": 132
+  },
+  "gender_ratio": 31,
+  "held_items": [],
+  "egg_groups": [
+    2
+  ]
+}

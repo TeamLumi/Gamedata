@@ -1,0 +1,26 @@
+{
+  "name": "yamper",
+  "id": 835,
+  "abilities": [
+    "ball-fetch",
+    "rattled"
+  ],
+  "types": [
+    "electric"
+  ],
+  "height": 3,
+  "weight": 135,
+  "stats": {
+    "hp": 59,
+    "attack": 45,
+    "defense": 50,
+    "special-attack": 40,
+    "special-defense": 50,
+    "speed": 26
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "cetoddle",
+  "id": 974,
+  "abilities": [
+    "thick-fat",
+    "snow-cloak",
+    "sheer-force"
+  ],
+  "types": [
+    "ice"
+  ],
+  "height": 12,
+  "weight": 450,
+  "stats": {
+    "hp": 108,
+    "attack": 68,
+    "defense": 45,
+    "special-attack": 30,
+    "special-defense": 40,
+    "speed": 43
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

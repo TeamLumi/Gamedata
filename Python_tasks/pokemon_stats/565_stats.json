@@ -1,0 +1,29 @@
+{
+  "name": "carracosta",
+  "id": 565,
+  "abilities": [
+    "solid-rock",
+    "sturdy",
+    "swift-swim"
+  ],
+  "types": [
+    "water",
+    "rock"
+  ],
+  "height": 12,
+  "weight": 810,
+  "stats": {
+    "hp": 74,
+    "attack": 108,
+    "defense": 133,
+    "special-attack": 83,
+    "special-defense": 65,
+    "speed": 32
+  },
+  "gender_ratio": 31,
+  "held_items": [],
+  "egg_groups": [
+    2,
+    9
+  ]
+}

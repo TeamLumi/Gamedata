@@ -1,0 +1,27 @@
+{
+  "name": "great-tusk",
+  "id": 984,
+  "abilities": [
+    "protosynthesis",
+    "protosynthesis"
+  ],
+  "types": [
+    "ground",
+    "fighting"
+  ],
+  "height": 22,
+  "weight": 3200,
+  "stats": {
+    "hp": 115,
+    "attack": 131,
+    "defense": 131,
+    "special-attack": 53,
+    "special-defense": 53,
+    "speed": 87
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

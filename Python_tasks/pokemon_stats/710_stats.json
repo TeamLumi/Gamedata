@@ -1,0 +1,28 @@
+{
+  "name": "pumpkaboo-average",
+  "id": 710,
+  "abilities": [
+    "pickup",
+    "frisk",
+    "insomnia"
+  ],
+  "types": [
+    "ghost",
+    "grass"
+  ],
+  "height": 4,
+  "weight": 50,
+  "stats": {
+    "hp": 49,
+    "attack": 66,
+    "defense": 70,
+    "special-attack": 44,
+    "special-defense": 55,
+    "speed": 51
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    11
+  ]
+}

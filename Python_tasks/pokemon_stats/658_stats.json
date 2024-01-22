@@ -1,0 +1,27 @@
+{
+  "name": "greninja",
+  "id": 658,
+  "abilities": [
+    "torrent",
+    "protean"
+  ],
+  "types": [
+    "water",
+    "dark"
+  ],
+  "height": 15,
+  "weight": 400,
+  "stats": {
+    "hp": 72,
+    "attack": 95,
+    "defense": 67,
+    "special-attack": 103,
+    "special-defense": 71,
+    "speed": 122
+  },
+  "gender_ratio": 31,
+  "held_items": [],
+  "egg_groups": [
+    2
+  ]
+}

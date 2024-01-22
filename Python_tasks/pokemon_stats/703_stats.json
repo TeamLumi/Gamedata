@@ -1,0 +1,28 @@
+{
+  "name": "carbink",
+  "id": 703,
+  "abilities": [
+    "clear-body",
+    "sturdy"
+  ],
+  "types": [
+    "rock",
+    "fairy"
+  ],
+  "height": 3,
+  "weight": 57,
+  "stats": {
+    "hp": 50,
+    "attack": 50,
+    "defense": 150,
+    "special-attack": 50,
+    "special-defense": 150,
+    "speed": 50
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    6,
+    10
+  ]
+}

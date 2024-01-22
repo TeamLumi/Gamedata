@@ -1,0 +1,26 @@
+{
+  "name": "zacian-crowned",
+  "id": 10188,
+  "abilities": [
+    "intrepid-sword"
+  ],
+  "types": [
+    "fairy",
+    "steel"
+  ],
+  "height": 28,
+  "weight": 3550,
+  "stats": {
+    "hp": 92,
+    "attack": 150,
+    "defense": 115,
+    "special-attack": 80,
+    "special-defense": 115,
+    "speed": 148
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

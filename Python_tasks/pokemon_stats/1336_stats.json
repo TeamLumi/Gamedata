@@ -1,0 +1,27 @@
+{
+  "name": "lycanroc-midnight",
+  "id": 10126,
+  "abilities": [
+    "keen-eye",
+    "vital-spirit",
+    "no-guard"
+  ],
+  "types": [
+    "rock"
+  ],
+  "height": 11,
+  "weight": 250,
+  "stats": {
+    "hp": 85,
+    "attack": 115,
+    "defense": 75,
+    "special-attack": 55,
+    "special-defense": 75,
+    "speed": 82
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "naclstack",
+  "id": 933,
+  "abilities": [
+    "purifying-salt",
+    "sturdy",
+    "clear-body"
+  ],
+  "types": [
+    "rock"
+  ],
+  "height": 6,
+  "weight": 1050,
+  "stats": {
+    "hp": 60,
+    "attack": 60,
+    "defense": 100,
+    "special-attack": 35,
+    "special-defense": 65,
+    "speed": 35
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    10
+  ]
+}

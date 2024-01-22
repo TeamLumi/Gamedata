@@ -1,0 +1,26 @@
+{
+  "name": "marshadow",
+  "id": 802,
+  "abilities": [
+    "technician"
+  ],
+  "types": [
+    "fighting",
+    "ghost"
+  ],
+  "height": 7,
+  "weight": 222,
+  "stats": {
+    "hp": 90,
+    "attack": 125,
+    "defense": 80,
+    "special-attack": 90,
+    "special-defense": 90,
+    "speed": 125
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

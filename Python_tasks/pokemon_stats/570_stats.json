@@ -1,0 +1,25 @@
+{
+  "name": "zorua",
+  "id": 570,
+  "abilities": [
+    "illusion"
+  ],
+  "types": [
+    "dark"
+  ],
+  "height": 7,
+  "weight": 125,
+  "stats": {
+    "hp": 40,
+    "attack": 65,
+    "defense": 40,
+    "special-attack": 80,
+    "special-defense": 40,
+    "speed": 65
+  },
+  "gender_ratio": 31,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

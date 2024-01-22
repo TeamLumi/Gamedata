@@ -1,0 +1,26 @@
+{
+  "name": "honedge",
+  "id": 679,
+  "abilities": [
+    "no-guard"
+  ],
+  "types": [
+    "steel",
+    "ghost"
+  ],
+  "height": 8,
+  "weight": 20,
+  "stats": {
+    "hp": 45,
+    "attack": 80,
+    "defense": 100,
+    "special-attack": 35,
+    "special-defense": 37,
+    "speed": 28
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    10
+  ]
+}

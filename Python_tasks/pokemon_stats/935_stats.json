@@ -1,0 +1,26 @@
+{
+  "name": "charcadet",
+  "id": 935,
+  "abilities": [
+    "flash-fire",
+    "flame-body"
+  ],
+  "types": [
+    "fire"
+  ],
+  "height": 6,
+  "weight": 105,
+  "stats": {
+    "hp": 40,
+    "attack": 50,
+    "defense": 40,
+    "special-attack": 50,
+    "special-defense": 40,
+    "speed": 35
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    8
+  ]
+}

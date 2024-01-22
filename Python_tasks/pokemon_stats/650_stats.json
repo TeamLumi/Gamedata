@@ -1,0 +1,26 @@
+{
+  "name": "chespin",
+  "id": 650,
+  "abilities": [
+    "overgrow",
+    "bulletproof"
+  ],
+  "types": [
+    "grass"
+  ],
+  "height": 4,
+  "weight": 90,
+  "stats": {
+    "hp": 56,
+    "attack": 61,
+    "defense": 65,
+    "special-attack": 48,
+    "special-defense": 45,
+    "speed": 38
+  },
+  "gender_ratio": 31,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

@@ -1,0 +1,31 @@
+{
+  "name": "oricorio-baile",
+  "id": 741,
+  "abilities": [
+    "dancer"
+  ],
+  "types": [
+    "fire",
+    "flying"
+  ],
+  "height": 6,
+  "weight": 34,
+  "stats": {
+    "hp": 75,
+    "attack": 70,
+    "defense": 70,
+    "special-attack": 98,
+    "special-defense": 70,
+    "speed": 93
+  },
+  "gender_ratio": 191,
+  "held_items": [
+    {
+      "held_item": "honey",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    4
+  ]
+}

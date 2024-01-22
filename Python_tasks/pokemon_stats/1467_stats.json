@@ -1,0 +1,27 @@
+{
+  "name": "morpeko-hangry",
+  "id": 10187,
+  "abilities": [
+    "hunger-switch"
+  ],
+  "types": [
+    "electric",
+    "dark"
+  ],
+  "height": 3,
+  "weight": 30,
+  "stats": {
+    "hp": 58,
+    "attack": 95,
+    "defense": 58,
+    "special-attack": 70,
+    "special-defense": 58,
+    "speed": 97
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    5,
+    6
+  ]
+}

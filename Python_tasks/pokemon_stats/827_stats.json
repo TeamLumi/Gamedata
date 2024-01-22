@@ -1,0 +1,27 @@
+{
+  "name": "nickit",
+  "id": 827,
+  "abilities": [
+    "run-away",
+    "unburden",
+    "stakeout"
+  ],
+  "types": [
+    "dark"
+  ],
+  "height": 6,
+  "weight": 89,
+  "stats": {
+    "hp": 40,
+    "attack": 28,
+    "defense": 28,
+    "special-attack": 47,
+    "special-defense": 52,
+    "speed": 50
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

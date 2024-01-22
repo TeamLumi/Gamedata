@@ -1,0 +1,28 @@
+{
+  "name": "tandemaus",
+  "id": 924,
+  "abilities": [
+    "run-away",
+    "pickup",
+    "own-tempo"
+  ],
+  "types": [
+    "normal"
+  ],
+  "height": 3,
+  "weight": 18,
+  "stats": {
+    "hp": 50,
+    "attack": 50,
+    "defense": 45,
+    "special-attack": 40,
+    "special-defense": 45,
+    "speed": 75
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    5,
+    6
+  ]
+}

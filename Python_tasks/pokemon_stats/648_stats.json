@@ -1,0 +1,31 @@
+{
+  "name": "meloetta-aria",
+  "id": 648,
+  "abilities": [
+    "serene-grace"
+  ],
+  "types": [
+    "normal",
+    "psychic"
+  ],
+  "height": 6,
+  "weight": 65,
+  "stats": {
+    "hp": 100,
+    "attack": 77,
+    "defense": 77,
+    "special-attack": 128,
+    "special-defense": 128,
+    "speed": 90
+  },
+  "gender_ratio": 255,
+  "held_items": [
+    {
+      "held_item": "star-piece",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    15
+  ]
+}

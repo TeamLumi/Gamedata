@@ -1,0 +1,27 @@
+{
+  "name": "bellibolt",
+  "id": 939,
+  "abilities": [
+    "electromorphosis",
+    "static",
+    "damp"
+  ],
+  "types": [
+    "electric"
+  ],
+  "height": 12,
+  "weight": 1130,
+  "stats": {
+    "hp": 109,
+    "attack": 64,
+    "defense": 91,
+    "special-attack": 103,
+    "special-defense": 83,
+    "speed": 45
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    2
+  ]
+}

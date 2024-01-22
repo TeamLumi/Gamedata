@@ -1,0 +1,28 @@
+{
+  "name": "unfezant",
+  "id": 521,
+  "abilities": [
+    "big-pecks",
+    "super-luck",
+    "rivalry"
+  ],
+  "types": [
+    "normal",
+    "flying"
+  ],
+  "height": 12,
+  "weight": 290,
+  "stats": {
+    "hp": 80,
+    "attack": 115,
+    "defense": 80,
+    "special-attack": 65,
+    "special-defense": 55,
+    "speed": 93
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    4
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "ursaluna",
+  "id": 901,
+  "abilities": [
+    "guts",
+    "bulletproof",
+    "unnerve"
+  ],
+  "types": [
+    "ground",
+    "normal"
+  ],
+  "height": 24,
+  "weight": 2900,
+  "stats": {
+    "hp": 130,
+    "attack": 140,
+    "defense": 105,
+    "special-attack": 45,
+    "special-defense": 80,
+    "speed": 50
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "sawsbuck-autumn",
+  "id": 586,
+  "abilities": [
+    "chlorophyll",
+    "sap-sipper",
+    "serene-grace"
+  ],
+  "types": [
+    "normal",
+    "grass"
+  ],
+  "height": 19,
+  "weight": 925,
+  "stats": {
+    "hp": 80,
+    "attack": 100,
+    "defense": 70,
+    "special-attack": 60,
+    "special-defense": 70,
+    "speed": 95
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

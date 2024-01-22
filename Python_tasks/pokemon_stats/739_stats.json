@@ -1,0 +1,32 @@
+{
+  "name": "crabrawler",
+  "id": 739,
+  "abilities": [
+    "hyper-cutter",
+    "iron-fist",
+    "anger-point"
+  ],
+  "types": [
+    "fighting"
+  ],
+  "height": 6,
+  "weight": 70,
+  "stats": {
+    "hp": 47,
+    "attack": 82,
+    "defense": 57,
+    "special-attack": 42,
+    "special-defense": 47,
+    "speed": 63
+  },
+  "gender_ratio": 127,
+  "held_items": [
+    {
+      "held_item": "aspear-berry",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    9
+  ]
+}

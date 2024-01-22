@@ -1,0 +1,44 @@
+{
+  "name": "garbodor",
+  "id": 569,
+  "abilities": [
+    "stench",
+    "weak-armor",
+    "aftermath"
+  ],
+  "types": [
+    "poison"
+  ],
+  "height": 19,
+  "weight": 1073,
+  "stats": {
+    "hp": 80,
+    "attack": 95,
+    "defense": 82,
+    "special-attack": 60,
+    "special-defense": 82,
+    "speed": 75
+  },
+  "gender_ratio": 127,
+  "held_items": [
+    {
+      "held_item": "nugget",
+      "rarity": null
+    },
+    {
+      "held_item": "silk-scarf",
+      "rarity": null
+    },
+    {
+      "held_item": "black-sludge",
+      "rarity": null
+    },
+    {
+      "held_item": "big-nugget",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    10
+  ]
+}

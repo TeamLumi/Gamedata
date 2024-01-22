@@ -1,0 +1,27 @@
+{
+  "name": "maschiff",
+  "id": 942,
+  "abilities": [
+    "intimidate",
+    "run-away",
+    "stakeout"
+  ],
+  "types": [
+    "dark"
+  ],
+  "height": 5,
+  "weight": 160,
+  "stats": {
+    "hp": 60,
+    "attack": 78,
+    "defense": 60,
+    "special-attack": 40,
+    "special-defense": 51,
+    "speed": 51
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

@@ -36,7 +36,7 @@ START_OF_LINE_FORMS = {
   "ash-": "ash ",
   "-f": "-female",
   "drive ": "",
-  "type": "",
+  "type ": " ",
   " strawberry sweet": "",
   " berry sweet": "",
   " love sweet": "",
@@ -47,7 +47,7 @@ START_OF_LINE_FORMS = {
   " forme power construct": "",
   " rider": "",
   " wings": "",
-  " mane": "",
+  " mane ": " ",
   " color": "",
 }
 

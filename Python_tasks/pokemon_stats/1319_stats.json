@@ -1,0 +1,29 @@
+{
+  "name": "avalugg-hisui",
+  "id": 10243,
+  "abilities": [
+    "strong-jaw",
+    "ice-body",
+    "sturdy"
+  ],
+  "types": [
+    "ice",
+    "rock"
+  ],
+  "height": 14,
+  "weight": 2624,
+  "stats": {
+    "hp": 95,
+    "attack": 127,
+    "defense": 184,
+    "special-attack": 34,
+    "special-defense": 36,
+    "speed": 38
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    1,
+    10
+  ]
+}

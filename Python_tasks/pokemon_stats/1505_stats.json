@@ -1,0 +1,27 @@
+{
+  "name": "iron-treads",
+  "id": 990,
+  "abilities": [
+    "quark-drive",
+    "quark-drive"
+  ],
+  "types": [
+    "ground",
+    "steel"
+  ],
+  "height": 9,
+  "weight": 2400,
+  "stats": {
+    "hp": 90,
+    "attack": 112,
+    "defense": 120,
+    "special-attack": 72,
+    "special-defense": 70,
+    "speed": 106
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

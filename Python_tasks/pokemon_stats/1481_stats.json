@@ -1,0 +1,28 @@
+{
+  "name": "basculegion-female",
+  "id": 10248,
+  "abilities": [
+    "swift-swim",
+    "adaptability",
+    "mold-breaker"
+  ],
+  "types": [
+    "water",
+    "ghost"
+  ],
+  "height": 30,
+  "weight": 1100,
+  "stats": {
+    "hp": 120,
+    "attack": 92,
+    "defense": 65,
+    "special-attack": 100,
+    "special-defense": 75,
+    "speed": 78
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    12
+  ]
+}

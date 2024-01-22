@@ -1,0 +1,27 @@
+{
+  "name": "sinistea-antique",
+  "id": 854,
+  "abilities": [
+    "weak-armor",
+    "cursed-body"
+  ],
+  "types": [
+    "ghost"
+  ],
+  "height": 1,
+  "weight": 2,
+  "stats": {
+    "hp": 40,
+    "attack": 45,
+    "defense": 45,
+    "special-attack": 74,
+    "special-defense": 54,
+    "speed": 50
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    10,
+    11
+  ]
+}

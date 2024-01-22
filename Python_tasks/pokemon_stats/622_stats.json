@@ -1,0 +1,33 @@
+{
+  "name": "golett",
+  "id": 622,
+  "abilities": [
+    "iron-fist",
+    "klutz",
+    "no-guard"
+  ],
+  "types": [
+    "ground",
+    "ghost"
+  ],
+  "height": 10,
+  "weight": 920,
+  "stats": {
+    "hp": 59,
+    "attack": 74,
+    "defense": 50,
+    "special-attack": 35,
+    "special-defense": 50,
+    "speed": 35
+  },
+  "gender_ratio": 255,
+  "held_items": [
+    {
+      "held_item": "light-clay",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    10
+  ]
+}

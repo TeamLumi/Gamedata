@@ -1,0 +1,26 @@
+{
+  "name": "floette-blue",
+  "id": 670,
+  "abilities": [
+    "flower-veil",
+    "symbiosis"
+  ],
+  "types": [
+    "fairy"
+  ],
+  "height": 2,
+  "weight": 9,
+  "stats": {
+    "hp": 54,
+    "attack": 45,
+    "defense": 47,
+    "special-attack": 75,
+    "special-defense": 98,
+    "speed": 52
+  },
+  "gender_ratio": 254,
+  "held_items": [],
+  "egg_groups": [
+    6
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "name": "braixen",
+  "id": 654,
+  "abilities": [
+    "blaze",
+    "magician"
+  ],
+  "types": [
+    "fire"
+  ],
+  "height": 10,
+  "weight": 145,
+  "stats": {
+    "hp": 59,
+    "attack": 59,
+    "defense": 58,
+    "special-attack": 90,
+    "special-defense": 70,
+    "speed": 73
+  },
+  "gender_ratio": 31,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

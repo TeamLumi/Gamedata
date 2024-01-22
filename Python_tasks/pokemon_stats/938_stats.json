@@ -1,0 +1,27 @@
+{
+  "name": "tadbulb",
+  "id": 938,
+  "abilities": [
+    "own-tempo",
+    "static",
+    "damp"
+  ],
+  "types": [
+    "electric"
+  ],
+  "height": 3,
+  "weight": 4,
+  "stats": {
+    "hp": 61,
+    "attack": 31,
+    "defense": 41,
+    "special-attack": 59,
+    "special-defense": 35,
+    "speed": 45
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    2
+  ]
+}

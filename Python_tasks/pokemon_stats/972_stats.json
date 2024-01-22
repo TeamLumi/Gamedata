@@ -1,0 +1,26 @@
+{
+  "name": "houndstone",
+  "id": 972,
+  "abilities": [
+    "sand-rush",
+    "fluffy"
+  ],
+  "types": [
+    "ghost"
+  ],
+  "height": 20,
+  "weight": 150,
+  "stats": {
+    "hp": 72,
+    "attack": 101,
+    "defense": 100,
+    "special-attack": 50,
+    "special-defense": 97,
+    "speed": 68
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    5
+  ]
+}

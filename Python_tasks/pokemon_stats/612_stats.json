@@ -1,0 +1,28 @@
+{
+  "name": "haxorus",
+  "id": 612,
+  "abilities": [
+    "rivalry",
+    "mold-breaker",
+    "unnerve"
+  ],
+  "types": [
+    "dragon"
+  ],
+  "height": 18,
+  "weight": 1055,
+  "stats": {
+    "hp": 76,
+    "attack": 147,
+    "defense": 90,
+    "special-attack": 60,
+    "special-defense": 70,
+    "speed": 97
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    1,
+    14
+  ]
+}

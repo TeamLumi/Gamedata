@@ -1,0 +1,25 @@
+{
+  "name": "lilligant-hisui",
+  "id": 10237,
+  "abilities": [
+    "chlorophyll",
+    "hustle",
+    "leaf-guard"
+  ],
+  "types": [
+    "grass",
+    "fighting"
+  ],
+  "height": 12,
+  "weight": 192,
+  "base_experience": null,
+  "stats": {
+    "hp": 70,
+    "attack": 105,
+    "defense": 75,
+    "special-attack": 50,
+    "special-defense": 75,
+    "speed": 105
+  },
+  "held_items": []
+}

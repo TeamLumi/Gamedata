@@ -1,0 +1,27 @@
+{
+  "name": "wugtrio",
+  "id": 961,
+  "abilities": [
+    "gooey",
+    "rattled",
+    "sand-veil"
+  ],
+  "types": [
+    "water"
+  ],
+  "height": 12,
+  "weight": 54,
+  "stats": {
+    "hp": 35,
+    "attack": 100,
+    "defense": 50,
+    "special-attack": 50,
+    "special-defense": 70,
+    "speed": 120
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    9
+  ]
+}

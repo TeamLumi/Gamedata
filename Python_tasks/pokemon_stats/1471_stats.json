@@ -1,0 +1,26 @@
+{
+  "name": "zamazenta-crowned",
+  "id": 10189,
+  "abilities": [
+    "dauntless-shield"
+  ],
+  "types": [
+    "fighting",
+    "steel"
+  ],
+  "height": 29,
+  "weight": 7850,
+  "stats": {
+    "hp": 92,
+    "attack": 120,
+    "defense": 140,
+    "special-attack": 80,
+    "special-defense": 140,
+    "speed": 128
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

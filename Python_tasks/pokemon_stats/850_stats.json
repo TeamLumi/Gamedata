@@ -1,0 +1,28 @@
+{
+  "name": "sizzlipede",
+  "id": 850,
+  "abilities": [
+    "flash-fire",
+    "white-smoke",
+    "flame-body"
+  ],
+  "types": [
+    "fire",
+    "bug"
+  ],
+  "height": 7,
+  "weight": 10,
+  "stats": {
+    "hp": 50,
+    "attack": 65,
+    "defense": 45,
+    "special-attack": 50,
+    "special-defense": 50,
+    "speed": 45
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    3
+  ]
+}

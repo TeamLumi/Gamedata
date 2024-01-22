@@ -1,0 +1,27 @@
+{
+  "name": "ting-lu",
+  "id": 1003,
+  "abilities": [
+    "vessel-of-ruin",
+    "vessel-of-ruin"
+  ],
+  "types": [
+    "dark",
+    "ground"
+  ],
+  "height": 27,
+  "weight": 6997,
+  "stats": {
+    "hp": 155,
+    "attack": 110,
+    "defense": 125,
+    "special-attack": 55,
+    "special-defense": 80,
+    "speed": 45
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

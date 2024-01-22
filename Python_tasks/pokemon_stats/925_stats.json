@@ -1,0 +1,28 @@
+{
+  "name": "maushold-family-of-four",
+  "id": 925,
+  "abilities": [
+    "friend-guard",
+    "cheek-pouch",
+    "technician"
+  ],
+  "types": [
+    "normal"
+  ],
+  "height": 3,
+  "weight": 23,
+  "stats": {
+    "hp": 74,
+    "attack": 75,
+    "defense": 70,
+    "special-attack": 65,
+    "special-defense": 75,
+    "speed": 111
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    5,
+    6
+  ]
+}

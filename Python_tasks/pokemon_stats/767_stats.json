@@ -1,0 +1,27 @@
+{
+  "name": "wimpod",
+  "id": 767,
+  "abilities": [
+    "wimp-out"
+  ],
+  "types": [
+    "bug",
+    "water"
+  ],
+  "height": 5,
+  "weight": 120,
+  "stats": {
+    "hp": 25,
+    "attack": 35,
+    "defense": 40,
+    "special-attack": 20,
+    "special-defense": 30,
+    "speed": 80
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    3,
+    9
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "nacli",
+  "id": 932,
+  "abilities": [
+    "purifying-salt",
+    "sturdy",
+    "clear-body"
+  ],
+  "types": [
+    "rock"
+  ],
+  "height": 4,
+  "weight": 160,
+  "stats": {
+    "hp": 55,
+    "attack": 55,
+    "defense": 75,
+    "special-attack": 35,
+    "special-defense": 35,
+    "speed": 25
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    10
+  ]
+}

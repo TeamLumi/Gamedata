@@ -1,0 +1,27 @@
+{
+  "name": "floragato",
+  "id": 907,
+  "abilities": [
+    "overgrow",
+    "protean"
+  ],
+  "types": [
+    "grass"
+  ],
+  "height": 9,
+  "weight": 122,
+  "stats": {
+    "hp": 61,
+    "attack": 80,
+    "defense": 63,
+    "special-attack": 60,
+    "special-defense": 63,
+    "speed": 83
+  },
+  "gender_ratio": 31,
+  "held_items": [],
+  "egg_groups": [
+    5,
+    7
+  ]
+}

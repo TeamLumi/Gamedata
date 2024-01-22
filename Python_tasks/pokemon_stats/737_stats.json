@@ -1,0 +1,31 @@
+{
+  "name": "charjabug",
+  "id": 737,
+  "abilities": [
+    "battery"
+  ],
+  "types": [
+    "bug",
+    "electric"
+  ],
+  "height": 5,
+  "weight": 105,
+  "stats": {
+    "hp": 57,
+    "attack": 82,
+    "defense": 95,
+    "special-attack": 55,
+    "special-defense": 75,
+    "speed": 36
+  },
+  "gender_ratio": 127,
+  "held_items": [
+    {
+      "held_item": "cell-battery",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    3
+  ]
+}

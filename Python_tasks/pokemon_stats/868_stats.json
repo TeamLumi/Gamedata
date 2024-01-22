@@ -1,0 +1,27 @@
+{
+  "name": "milcery",
+  "id": 868,
+  "abilities": [
+    "sweet-veil",
+    "aroma-veil"
+  ],
+  "types": [
+    "fairy"
+  ],
+  "height": 2,
+  "weight": 3,
+  "stats": {
+    "hp": 45,
+    "attack": 40,
+    "defense": 40,
+    "special-attack": 50,
+    "special-defense": 61,
+    "speed": 34
+  },
+  "gender_ratio": 254,
+  "held_items": [],
+  "egg_groups": [
+    6,
+    11
+  ]
+}

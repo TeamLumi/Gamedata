@@ -1,0 +1,28 @@
+{
+  "name": "bisharp",
+  "id": 625,
+  "abilities": [
+    "defiant",
+    "inner-focus",
+    "pressure"
+  ],
+  "types": [
+    "dark",
+    "steel"
+  ],
+  "height": 16,
+  "weight": 700,
+  "stats": {
+    "hp": 65,
+    "attack": 125,
+    "defense": 100,
+    "special-attack": 60,
+    "special-defense": 70,
+    "speed": 70
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    8
+  ]
+}

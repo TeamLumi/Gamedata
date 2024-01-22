@@ -1,0 +1,27 @@
+{
+  "name": "wo-chien",
+  "id": 1001,
+  "abilities": [
+    "tablets-of-ruin",
+    "tablets-of-ruin"
+  ],
+  "types": [
+    "dark",
+    "grass"
+  ],
+  "height": 15,
+  "weight": 742,
+  "stats": {
+    "hp": 85,
+    "attack": 85,
+    "defense": 100,
+    "special-attack": 95,
+    "special-defense": 135,
+    "speed": 70
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

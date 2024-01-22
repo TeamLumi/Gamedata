@@ -1,0 +1,26 @@
+{
+  "name": "terrakion",
+  "id": 639,
+  "abilities": [
+    "justified"
+  ],
+  "types": [
+    "rock",
+    "fighting"
+  ],
+  "height": 19,
+  "weight": 2600,
+  "stats": {
+    "hp": 91,
+    "attack": 129,
+    "defense": 90,
+    "special-attack": 72,
+    "special-defense": 90,
+    "speed": 108
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

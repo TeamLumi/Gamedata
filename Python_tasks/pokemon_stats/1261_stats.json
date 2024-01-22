@@ -1,0 +1,31 @@
+{
+  "name": "meloetta-pirouette",
+  "id": 10018,
+  "abilities": [
+    "serene-grace"
+  ],
+  "types": [
+    "normal",
+    "fighting"
+  ],
+  "height": 6,
+  "weight": 65,
+  "stats": {
+    "hp": 100,
+    "attack": 128,
+    "defense": 90,
+    "special-attack": 77,
+    "special-defense": 77,
+    "speed": 128
+  },
+  "gender_ratio": 255,
+  "held_items": [
+    {
+      "held_item": "star-piece",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    15
+  ]
+}

@@ -1,0 +1,27 @@
+{
+  "name": "flittle",
+  "id": 955,
+  "abilities": [
+    "anticipation",
+    "frisk",
+    "speed-boost"
+  ],
+  "types": [
+    "psychic"
+  ],
+  "height": 2,
+  "weight": 15,
+  "stats": {
+    "hp": 30,
+    "attack": 35,
+    "defense": 30,
+    "special-attack": 55,
+    "special-defense": 30,
+    "speed": 75
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    4
+  ]
+}

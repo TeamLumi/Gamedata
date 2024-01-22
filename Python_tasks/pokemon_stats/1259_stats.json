@@ -1,0 +1,26 @@
+{
+  "name": "kyurem-black",
+  "id": 10022,
+  "abilities": [
+    "teravolt"
+  ],
+  "types": [
+    "dragon",
+    "ice"
+  ],
+  "height": 33,
+  "weight": 3250,
+  "stats": {
+    "hp": 125,
+    "attack": 170,
+    "defense": 100,
+    "special-attack": 120,
+    "special-defense": 90,
+    "speed": 95
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

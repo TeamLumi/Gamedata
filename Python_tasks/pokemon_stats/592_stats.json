@@ -1,0 +1,28 @@
+{
+  "name": "frillish",
+  "id": 592,
+  "abilities": [
+    "water-absorb",
+    "cursed-body",
+    "damp"
+  ],
+  "types": [
+    "water",
+    "ghost"
+  ],
+  "height": 12,
+  "weight": 330,
+  "stats": {
+    "hp": 55,
+    "attack": 40,
+    "defense": 50,
+    "special-attack": 65,
+    "special-defense": 85,
+    "speed": 40
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    11
+  ]
+}

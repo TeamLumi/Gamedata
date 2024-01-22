@@ -1,0 +1,26 @@
+{
+  "name": "buzzwole",
+  "id": 794,
+  "abilities": [
+    "beast-boost"
+  ],
+  "types": [
+    "bug",
+    "fighting"
+  ],
+  "height": 24,
+  "weight": 3336,
+  "stats": {
+    "hp": 107,
+    "attack": 139,
+    "defense": 139,
+    "special-attack": 53,
+    "special-defense": 53,
+    "speed": 79
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

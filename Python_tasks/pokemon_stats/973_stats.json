@@ -1,0 +1,28 @@
+{
+  "name": "flamigo",
+  "id": 973,
+  "abilities": [
+    "scrappy",
+    "tangled-feet",
+    "costar"
+  ],
+  "types": [
+    "flying",
+    "fighting"
+  ],
+  "height": 16,
+  "weight": 370,
+  "stats": {
+    "hp": 82,
+    "attack": 115,
+    "defense": 74,
+    "special-attack": 75,
+    "special-defense": 64,
+    "speed": 90
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    4
+  ]
+}

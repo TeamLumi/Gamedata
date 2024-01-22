@@ -1,0 +1,33 @@
+{
+  "name": "hakamo-o",
+  "id": 783,
+  "abilities": [
+    "bulletproof",
+    "soundproof",
+    "overcoat"
+  ],
+  "types": [
+    "dragon",
+    "fighting"
+  ],
+  "height": 12,
+  "weight": 470,
+  "stats": {
+    "hp": 55,
+    "attack": 75,
+    "defense": 90,
+    "special-attack": 65,
+    "special-defense": 70,
+    "speed": 65
+  },
+  "gender_ratio": 127,
+  "held_items": [
+    {
+      "held_item": "razor-claw",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    14
+  ]
+}

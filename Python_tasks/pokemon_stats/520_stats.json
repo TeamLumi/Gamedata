@@ -1,0 +1,28 @@
+{
+  "name": "tranquill",
+  "id": 520,
+  "abilities": [
+    "big-pecks",
+    "super-luck",
+    "rivalry"
+  ],
+  "types": [
+    "normal",
+    "flying"
+  ],
+  "height": 6,
+  "weight": 150,
+  "stats": {
+    "hp": 62,
+    "attack": 77,
+    "defense": 62,
+    "special-attack": 50,
+    "special-defense": 42,
+    "speed": 65
+  },
+  "gender_ratio": 127,
+  "held_items": [],
+  "egg_groups": [
+    4
+  ]
+}

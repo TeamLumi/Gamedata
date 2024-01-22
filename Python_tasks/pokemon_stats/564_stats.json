@@ -1,0 +1,29 @@
+{
+  "name": "tirtouga",
+  "id": 564,
+  "abilities": [
+    "solid-rock",
+    "sturdy",
+    "swift-swim"
+  ],
+  "types": [
+    "water",
+    "rock"
+  ],
+  "height": 7,
+  "weight": 165,
+  "stats": {
+    "hp": 54,
+    "attack": 78,
+    "defense": 103,
+    "special-attack": 53,
+    "special-defense": 45,
+    "speed": 22
+  },
+  "gender_ratio": 31,
+  "held_items": [],
+  "egg_groups": [
+    2,
+    9
+  ]
+}

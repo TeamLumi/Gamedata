@@ -1,0 +1,32 @@
+{
+  "name": "yungoos",
+  "id": 734,
+  "abilities": [
+    "stakeout",
+    "strong-jaw",
+    "adaptability"
+  ],
+  "types": [
+    "normal"
+  ],
+  "height": 4,
+  "weight": 60,
+  "stats": {
+    "hp": 48,
+    "attack": 70,
+    "defense": 30,
+    "special-attack": 30,
+    "special-defense": 30,
+    "speed": 45
+  },
+  "gender_ratio": 127,
+  "held_items": [
+    {
+      "held_item": "pecha-berry",
+      "rarity": null
+    }
+  ],
+  "egg_groups": [
+    5
+  ]
+}

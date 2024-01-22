@@ -1,0 +1,26 @@
+{
+  "name": "thundurus-therian",
+  "id": 10020,
+  "abilities": [
+    "volt-absorb"
+  ],
+  "types": [
+    "electric",
+    "flying"
+  ],
+  "height": 30,
+  "weight": 610,
+  "stats": {
+    "hp": 79,
+    "attack": 105,
+    "defense": 70,
+    "special-attack": 145,
+    "special-defense": 80,
+    "speed": 101
+  },
+  "gender_ratio": 0,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}

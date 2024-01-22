@@ -1,0 +1,26 @@
+{
+  "name": "hoopa-unbound",
+  "id": 10086,
+  "abilities": [
+    "magician"
+  ],
+  "types": [
+    "psychic",
+    "dark"
+  ],
+  "height": 65,
+  "weight": 4900,
+  "stats": {
+    "hp": 80,
+    "attack": 160,
+    "defense": 60,
+    "special-attack": 170,
+    "special-defense": 130,
+    "speed": 80
+  },
+  "gender_ratio": 255,
+  "held_items": [],
+  "egg_groups": [
+    15
+  ]
+}
