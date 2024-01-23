@@ -219,7 +219,7 @@ def write_pokeapi_data_to_file():
       print(f"Error: {e} {api_mon['name']} ({pokemonId})")
 
   with open(os.path.join(debug_file_path, "New_Personal_Table.json"), "w") as json_file:
-    json.dump(new_personal_table, json_file, ensure_ascii=False, indent=2)
+    json.dump(new_personal_table, json_file, ensure_ascii=False, indent=4)
 
 if __name__ == "__main__":
   full_data = load_data()
