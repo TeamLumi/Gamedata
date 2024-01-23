@@ -2,12 +2,14 @@ import pokebase
 import json
 import os
 import sys
+import copy
 
 import constants
 import poke_api_constants
 from load_files import load_data
 from pokemonUtils import get_pokemon_name, slugify
 from moveUtils import create_tm_learnset
+from pokemonTypes import get_type_id
 
 repo_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 input_file_path = os.path.join(repo_file_path, constants.INPUT_NAME)
@@ -150,17 +152,87 @@ def get_pokemon_stats(pokemon_name, pokemonId, monsno, counter=0):
     log_error(f"Error: This pokemon is currently unavailable in PokeApi: {pokemon_name} ({pokemonId})")
     return
 
+def write_pokeapi_data_to_file():
+  new_personal_table = copy.deepcopy(full_data["personal_table"])
+  new_personal_data = new_personal_table["Personal"]
+  for filename in os.listdir(stats_file_path):
+    file_path = os.path.join(stats_file_path, filename)
+    pokemonId = int(filename.split("_")[0])
+    with open(file_path, "r", encoding="utf-8") as f:
+      api_mon = json.load(f)
+    new_pokemon_dict = new_personal_data[pokemonId]
+
+    try:
+      new_pokemon_dict["basic_hp"] = api_mon["stats"]["hp"]
+      new_pokemon_dict["basic_atk"] = api_mon["stats"]["attack"]
+      new_pokemon_dict["basic_def"] = api_mon["stats"]["defense"]
+      new_pokemon_dict["basic_spatk"] = api_mon["stats"]["special-attack"]
+      new_pokemon_dict["basic_spdef"] = api_mon["stats"]["special-defense"]
+      new_pokemon_dict["basic_agi"] = api_mon["stats"]["speed"]
+
+      new_pokemon_dict["type1"] = get_type_id(api_mon["types"][0])
+      new_pokemon_dict["type2"] = get_type_id(api_mon["types"][0])
+      if len(api_mon["types"]) > 1:
+        new_pokemon_dict["type2"] = get_type_id(api_mon["types"][1])
+      
+      item_slots_conversion = {
+        50: "item1",
+        5: "item2",
+        45: "item3",
+      }
+      new_pokemon_dict["item1"] = 0
+      new_pokemon_dict["item2"] = 0
+      new_pokemon_dict["item3"] = 0
+      for held_item in api_mon["held_items"]:
+        if not held_item["rarity"]:
+          continue
+        if held_item["rarity"] == 100:
+          new_pokemon_dict["item1"] = held_item["held_item_no"]
+          new_pokemon_dict["item2"] = held_item["held_item_no"]
+          new_pokemon_dict["item3"] = held_item["held_item_no"]
+          break
+        rarity_conv = item_slots_conversion[held_item["rarity"]]
+        new_pokemon_dict[rarity_conv] = held_item["held_item_no"]
+      
+      new_pokemon_dict["sex"] = api_mon["gender_ratio"]
+      new_pokemon_dict["egg_group1"] = api_mon["egg_groups"][0]
+      new_pokemon_dict["egg_group2"] = api_mon["egg_groups"][0]
+      if len(api_mon["egg_groups"]) > 1:
+        new_pokemon_dict["egg_group2"] = api_mon["egg_groups"][1]
+      
+      new_pokemon_dict["tokusei1"] = api_mon["abilities"][0]
+      new_pokemon_dict["tokusei2"] = api_mon["abilities"][0]
+      new_pokemon_dict["tokusei3"] = api_mon["abilities"][0]
+      if len(api_mon["abilities"]) > 1:
+        new_pokemon_dict["tokusei2"] = api_mon["abilities"][1]
+      if len(api_mon["abilities"]) > 2:
+        new_pokemon_dict["tokusei3"] = api_mon["abilities"][2]
+      
+      new_pokemon_dict["height"] = api_mon["height"]
+      new_pokemon_dict["weight"] = api_mon["weight"]
+
+      for index, bitfield in enumerate(api_mon["tm_bitfields"]):
+        new_pokemon_dict[f"machine{index + 1}"] = bitfield
+      
+
+    except Exception as e:
+      print(f"Error: {e} {api_mon['name']} ({pokemonId})")
+
+  with open(os.path.join(debug_file_path, "New_Personal_Table.json"), "w") as json_file:
+    json.dump(new_personal_table, json_file, ensure_ascii=False, indent=2)
+
 if __name__ == "__main__":
   full_data = load_data()
   personal_table = full_data['personal_table']["Personal"]
-  clear_logs()
-  for pokemonId, mon in enumerate(personal_table):
-    # if pokemonId <= constants.POKEDEX_LENGTH:
-    #   continue
-    if mon["monsno"] <= 493:
-      continue
-    mons_name = slugify(get_pokemon_name(pokemonId), True)
-    get_pokemon_stats(mons_name, pokemonId, mon["monsno"])
+  write_pokeapi_data_to_file()
+  # clear_logs()
+  # for pokemonId, mon in enumerate(personal_table):
+  #   # if pokemonId <= constants.POKEDEX_LENGTH:
+  #   #   continue
+  #   if mon["monsno"] <= 493:
+  #     continue
+  #   mons_name = slugify(get_pokemon_name(pokemonId), True)
+  #   get_pokemon_stats(mons_name, pokemonId, mon["monsno"])
   # get_pokemon_name(555, True)
   # get_pokemon_tm_learnsets()
   # get_pokemon_stats("simisage", 512, 512)
