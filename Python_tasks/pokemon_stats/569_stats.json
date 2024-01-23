@@ -22,11 +22,6 @@
   "gender_ratio": 127,
   "held_items": [
     {
-      "held_item_no": 92,
-      "held_item_name": "nugget",
-      "rarity": 5
-    },
-    {
       "held_item_no": 228,
       "held_item_name": "silk-scarf",
       "rarity": 50
@@ -35,11 +30,6 @@
       "held_item_no": 258,
       "held_item_name": "black-sludge",
       "rarity": 5
-    },
-    {
-      "held_item_no": 622,
-      "held_item_name": "big-nugget",
-      "rarity": 1
     }
   ],
   "egg_groups": [
