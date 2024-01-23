@@ -203,8 +203,8 @@ def write_pokeapi_data_to_file():
       new_pokemon_dict["tokusei1"] = api_mon["abilities"][0]
       new_pokemon_dict["tokusei2"] = api_mon["abilities"][0]
       new_pokemon_dict["tokusei3"] = api_mon["abilities"][0]
-      if len(api_mon["abilities"]) > 1:
-        new_pokemon_dict["tokusei2"] = api_mon["abilities"][1]
+      if len(api_mon["abilities"]) == 2:
+        new_pokemon_dict["tokusei3"] = api_mon["abilities"][1]
       if len(api_mon["abilities"]) > 2:
         new_pokemon_dict["tokusei3"] = api_mon["abilities"][2]
       
