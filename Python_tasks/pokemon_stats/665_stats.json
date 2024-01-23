@@ -22,5 +22,15 @@
   "held_items": [],
   "egg_groups": [
     3
+  ],
+  "tm_learnset": [
+    182,
+    334
+  ],
+  "tm_bitfields": [
+    131072,
+    0,
+    0,
+    0
   ]
 }

@@ -25,5 +25,15 @@
   "egg_groups": [
     7,
     14
+  ],
+  "tm_learnset": [
+    213,
+    278
+  ],
+  "tm_bitfields": [
+    0,
+    8192,
+    8,
+    0
   ]
 }

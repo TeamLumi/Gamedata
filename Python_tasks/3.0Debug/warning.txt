@@ -9,6 +9,10 @@ Warning: aegislash (681) will be run again with their base form
 Warning: hoopa-confined (720) will be run again with their base form
 Warning: -null (772) will be run again with their base form
 Warning: -null (772) will be run again with their base form
+Warning: cosmog (789) does not have a tm learnset. Trying again with base form
+Warning: cosmog (789) does not have a tm learnset. Trying again with base form
+Warning: blipbug (824) does not have a tm learnset. Trying again with base form
+Warning: blipbug (824) does not have a tm learnset. Trying again with base form
 Warning: indeedee (876) will be run again with their base form
 Warning: indeedee (876) will be run again with their base form
 Warning: zacian-hero-of-many-battles (888) will be run again with their base form
