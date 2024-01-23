@@ -29,12 +29,7 @@
     {
       "held_item_no": 133,
       "held_item_name": "persim-berry",
-      "rarity": 45
-    },
-    {
-      "held_item_no": 133,
-      "held_item_name": "persim-berry",
-      "rarity": 5
+      "rarity": 50
     }
   ],
   "egg_groups": [
@@ -59,18 +54,7 @@
     207,
     164,
     57,
-    57,
-    164,
-    188,
-    203,
-    214,
-    253,
-    304,
-    330,
-    414,
-    482,
-    503,
-    599
+    57
   ],
   "tm_bitfields": [
     393416,

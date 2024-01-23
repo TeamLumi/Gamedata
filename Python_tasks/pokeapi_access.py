@@ -45,7 +45,9 @@ def get_pokemon_tm_learnsets():
   tm_items = full_data["item_table"]
   tm_moves = tm_items["WazaMachine"]
   pokemon_tm_learnsets = {}
-  for tm in tm_moves:
+  for index, tm in enumerate(tm_moves):
+    if index > 104:
+      break
     tm_move_no = tm["wazaNo"]
     pokemon_list = None
     try:
@@ -119,12 +121,13 @@ def get_pokemon_stats(pokemon_name, pokemonId, monsno, counter=0):
       },
       "gender_ratio": poke_api_constants.GENDER_RATIOS[species.gender_rate],
       "held_items": [
-        {
-          "held_item_no": int(item.item.url.split("/")[-2]),
-          "held_item_name": item.item.name,
-          "rarity": item.version_details[-1].rarity
-        }
-        for item in pokemon.held_items
+          {
+              "held_item_no": int(item.item.url.split("/")[-2]),
+              "held_item_name": item.item.name,
+              "rarity": item.version_details[-1].rarity
+          }
+          for item in pokemon.held_items
+          if item.version_details[-1].rarity != 1
       ],
       "egg_groups": [
         poke_api_constants.EGG_GROUPS[egg_group.name]
@@ -183,11 +186,18 @@ def write_pokeapi_data_to_file():
       new_pokemon_dict["item1"] = 0
       new_pokemon_dict["item2"] = 0
       new_pokemon_dict["item3"] = 0
+      count_for_50s = 0
       for held_item in api_mon["held_items"]:
         if not held_item["rarity"]:
           continue
         if held_item["rarity"] == 100:
           new_pokemon_dict["item1"] = held_item["held_item_no"]
+          new_pokemon_dict["item2"] = held_item["held_item_no"]
+          new_pokemon_dict["item3"] = held_item["held_item_no"]
+          break
+        if held_item["rarity"] == 50:
+          count_for_50s += 1
+        if count_for_50s == 2:
           new_pokemon_dict["item2"] = held_item["held_item_no"]
           new_pokemon_dict["item3"] = held_item["held_item_no"]
           break
@@ -221,18 +231,20 @@ def write_pokeapi_data_to_file():
   with open(os.path.join(debug_file_path, "New_Personal_Table.json"), "w") as json_file:
     json.dump(new_personal_table, json_file, ensure_ascii=False, indent=4)
 
+def get_all_api_mon_data():
+  for pokemonId, mon in enumerate(personal_table):
+    if mon["monsno"] <= 493:
+      continue
+    mons_name = slugify(get_pokemon_name(pokemonId), True)
+    get_pokemon_stats(mons_name, pokemonId, mon["monsno"])
+
+def full_run():
+  # get_pokemon_tm_learnsets()
+  # clear_logs()
+  # get_all_api_mon_data()
+  write_pokeapi_data_to_file()
+
 if __name__ == "__main__":
   full_data = load_data()
   personal_table = full_data['personal_table']["Personal"]
-  write_pokeapi_data_to_file()
-  # clear_logs()
-  # for pokemonId, mon in enumerate(personal_table):
-  #   # if pokemonId <= constants.POKEDEX_LENGTH:
-  #   #   continue
-  #   if mon["monsno"] <= 493:
-  #     continue
-  #   mons_name = slugify(get_pokemon_name(pokemonId), True)
-  #   get_pokemon_stats(mons_name, pokemonId, mon["monsno"])
-  # get_pokemon_name(555, True)
-  # get_pokemon_tm_learnsets()
-  # get_pokemon_stats("simisage", 512, 512)
+  full_run()
