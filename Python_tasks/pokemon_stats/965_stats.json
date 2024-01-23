@@ -2,8 +2,8 @@
   "name": "varoom",
   "id": 965,
   "abilities": [
-    "overcoat",
-    "slow-start"
+    142,
+    112
   ],
   "types": [
     "steel",

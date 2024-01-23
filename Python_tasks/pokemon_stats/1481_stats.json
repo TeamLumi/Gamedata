@@ -2,9 +2,9 @@
   "name": "basculegion-female",
   "id": 10248,
   "abilities": [
-    "swift-swim",
-    "adaptability",
-    "mold-breaker"
+    33,
+    91,
+    104
   ],
   "types": [
     "water",

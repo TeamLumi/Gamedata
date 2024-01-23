@@ -2,9 +2,9 @@
   "name": "cottonee",
   "id": 546,
   "abilities": [
-    "prankster",
-    "infiltrator",
-    "chlorophyll"
+    158,
+    151,
+    34
   ],
   "types": [
     "grass",
@@ -23,8 +23,9 @@
   "gender_ratio": 127,
   "held_items": [
     {
-      "held_item": "absorb-bulb",
-      "rarity": null
+      "held_item_no": 588,
+      "held_item_name": "absorb-bulb",
+      "rarity": 5
     }
   ],
   "egg_groups": [

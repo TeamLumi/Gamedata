@@ -2,9 +2,9 @@
   "name": "overqwil",
   "id": 904,
   "abilities": [
-    "poison-point",
-    "swift-swim",
-    "intimidate"
+    38,
+    33,
+    22
   ],
   "types": [
     "dark",

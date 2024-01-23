@@ -2,8 +2,8 @@
   "name": "cyclizar",
   "id": 967,
   "abilities": [
-    "shed-skin",
-    "regenerator"
+    61,
+    144
   ],
   "types": [
     "dragon",

@@ -2,8 +2,8 @@
   "name": "tapu-fini",
   "id": 788,
   "abilities": [
-    "misty-surge",
-    "telepathy"
+    228,
+    140
   ],
   "types": [
     "water",

@@ -2,8 +2,8 @@
   "name": "floette-eternal",
   "id": 10061,
   "abilities": [
-    "flower-veil",
-    "symbiosis"
+    166,
+    180
   ],
   "types": [
     "fairy"

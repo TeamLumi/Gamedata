@@ -2,9 +2,9 @@
   "name": "gossifleur",
   "id": 829,
   "abilities": [
-    "cotton-down",
-    "regenerator",
-    "effect-spore"
+    238,
+    144,
+    27
   ],
   "types": [
     "grass"

@@ -2,8 +2,8 @@
   "name": "gimmighoul-roaming",
   "id": 10263,
   "abilities": [
-    "run-away",
-    "run-away"
+    50,
+    50
   ],
   "types": [
     "ghost"

@@ -2,8 +2,8 @@
   "name": "spidops",
   "id": 918,
   "abilities": [
-    "insomnia",
-    "stakeout"
+    15,
+    198
   ],
   "types": [
     "bug"

@@ -2,9 +2,9 @@
   "name": "arctozolt",
   "id": 881,
   "abilities": [
-    "volt-absorb",
-    "static",
-    "slush-rush"
+    10,
+    9,
+    202
   ],
   "types": [
     "electric",

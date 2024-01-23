@@ -2,8 +2,8 @@
   "name": "rillaboom-gmax",
   "id": 10209,
   "abilities": [
-    "overgrow",
-    "grassy-surge"
+    65,
+    229
   ],
   "types": [
     "grass"

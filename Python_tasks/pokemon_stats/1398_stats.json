@@ -2,8 +2,8 @@
   "name": "sinistea-antique",
   "id": 854,
   "abilities": [
-    "weak-armor",
-    "cursed-body"
+    133,
+    130
   ],
   "types": [
     "ghost"

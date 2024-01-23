@@ -2,9 +2,9 @@
   "name": "shroodle",
   "id": 944,
   "abilities": [
-    "unburden",
-    "pickpocket",
-    "prankster"
+    84,
+    124,
+    158
   ],
   "types": [
     "poison",

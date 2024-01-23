@@ -2,9 +2,9 @@
   "name": "toxel",
   "id": 848,
   "abilities": [
-    "rattled",
-    "static",
-    "klutz"
+    155,
+    9,
+    103
   ],
   "types": [
     "electric",

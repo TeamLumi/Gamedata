@@ -2,9 +2,9 @@
   "name": "tandemaus",
   "id": 924,
   "abilities": [
-    "run-away",
-    "pickup",
-    "own-tempo"
+    50,
+    53,
+    20
   ],
   "types": [
     "normal"

@@ -2,8 +2,8 @@
   "name": "sobble",
   "id": 816,
   "abilities": [
-    "torrent",
-    "sniper"
+    67,
+    97
   ],
   "types": [
     "water"

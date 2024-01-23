@@ -2,8 +2,8 @@
   "name": "arctibax",
   "id": 997,
   "abilities": [
-    "thermal-exchange",
-    "ice-body"
+    270,
+    115
   ],
   "types": [
     "dragon",

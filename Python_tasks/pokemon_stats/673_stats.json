@@ -2,8 +2,8 @@
   "name": "gogoat",
   "id": 673,
   "abilities": [
-    "sap-sipper",
-    "grass-pelt"
+    157,
+    179
   ],
   "types": [
     "grass"

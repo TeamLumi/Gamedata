@@ -2,9 +2,9 @@
   "name": "hattrem",
   "id": 857,
   "abilities": [
-    "healer",
-    "anticipation",
-    "magic-bounce"
+    131,
+    107,
+    156
   ],
   "types": [
     "psychic"

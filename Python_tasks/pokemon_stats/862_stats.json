@@ -2,9 +2,9 @@
   "name": "obstagoon",
   "id": 862,
   "abilities": [
-    "reckless",
-    "guts",
-    "defiant"
+    120,
+    62,
+    128
   ],
   "types": [
     "dark",

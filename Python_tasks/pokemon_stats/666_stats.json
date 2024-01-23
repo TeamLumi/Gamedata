@@ -2,9 +2,9 @@
   "name": "vivillon-icy-snow",
   "id": 666,
   "abilities": [
-    "shield-dust",
-    "compound-eyes",
-    "friend-guard"
+    19,
+    14,
+    132
   ],
   "types": [
     "bug",

@@ -2,9 +2,9 @@
   "name": "skrelp",
   "id": 690,
   "abilities": [
-    "poison-point",
-    "poison-touch",
-    "adaptability"
+    38,
+    143,
+    91
   ],
   "types": [
     "poison",

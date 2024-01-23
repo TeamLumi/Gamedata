@@ -2,8 +2,8 @@
   "name": "thwackey",
   "id": 811,
   "abilities": [
-    "overgrow",
-    "grassy-surge"
+    65,
+    229
   ],
   "types": [
     "grass"

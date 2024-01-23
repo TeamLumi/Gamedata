@@ -2,9 +2,9 @@
   "name": "dracovish",
   "id": 882,
   "abilities": [
-    "water-absorb",
-    "strong-jaw",
-    "sand-rush"
+    11,
+    173,
+    146
   ],
   "types": [
     "water",

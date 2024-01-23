@@ -2,9 +2,9 @@
   "name": "oranguru",
   "id": 765,
   "abilities": [
-    "inner-focus",
-    "telepathy",
-    "symbiosis"
+    39,
+    140,
+    180
   ],
   "types": [
     "normal",

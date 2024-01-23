@@ -2,9 +2,9 @@
   "name": "zebstrika",
   "id": 523,
   "abilities": [
-    "lightning-rod",
-    "motor-drive",
-    "sap-sipper"
+    31,
+    78,
+    157
   ],
   "types": [
     "electric"
@@ -22,8 +22,9 @@
   "gender_ratio": 127,
   "held_items": [
     {
-      "held_item": "cheri-berry",
-      "rarity": null
+      "held_item_no": 126,
+      "held_item_name": "cheri-berry",
+      "rarity": 50
     }
   ],
   "egg_groups": [

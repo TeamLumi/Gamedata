@@ -2,9 +2,9 @@
   "name": "mudbray",
   "id": 749,
   "abilities": [
-    "own-tempo",
-    "stamina",
-    "inner-focus"
+    20,
+    192,
+    39
   ],
   "types": [
     "ground"
@@ -22,8 +22,9 @@
   "gender_ratio": 127,
   "held_items": [
     {
-      "held_item": "light-clay",
-      "rarity": null
+      "held_item_no": 246,
+      "held_item_name": "light-clay",
+      "rarity": 5
     }
   ],
   "egg_groups": [

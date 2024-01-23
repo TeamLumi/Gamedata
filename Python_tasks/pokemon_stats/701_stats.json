@@ -2,9 +2,9 @@
   "name": "hawlucha",
   "id": 701,
   "abilities": [
-    "limber",
-    "unburden",
-    "mold-breaker"
+    7,
+    84,
+    104
   ],
   "types": [
     "fighting",
@@ -23,8 +23,9 @@
   "gender_ratio": 127,
   "held_items": [
     {
-      "held_item": "kings-rock",
-      "rarity": null
+      "held_item_no": 198,
+      "held_item_name": "kings-rock",
+      "rarity": 5
     }
   ],
   "egg_groups": [

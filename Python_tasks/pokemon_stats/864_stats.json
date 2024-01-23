@@ -2,8 +2,8 @@
   "name": "cursola",
   "id": 864,
   "abilities": [
-    "weak-armor",
-    "perish-body"
+    133,
+    253
   ],
   "types": [
     "ghost"

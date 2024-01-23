@@ -2,9 +2,9 @@
   "name": "pawmo",
   "id": 922,
   "abilities": [
-    "volt-absorb",
-    "natural-cure",
-    "iron-fist"
+    10,
+    30,
+    89
   ],
   "types": [
     "electric",

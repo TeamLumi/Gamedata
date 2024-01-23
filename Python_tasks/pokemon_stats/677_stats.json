@@ -2,9 +2,9 @@
   "name": "espurr",
   "id": 677,
   "abilities": [
-    "keen-eye",
-    "infiltrator",
-    "own-tempo"
+    51,
+    151,
+    20
   ],
   "types": [
     "psychic"

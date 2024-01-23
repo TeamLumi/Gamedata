@@ -2,9 +2,9 @@
   "name": "alomomola",
   "id": 594,
   "abilities": [
-    "healer",
-    "hydration",
-    "regenerator"
+    131,
+    93,
+    144
   ],
   "types": [
     "water"

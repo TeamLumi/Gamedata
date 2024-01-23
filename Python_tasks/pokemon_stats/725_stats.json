@@ -2,8 +2,8 @@
   "name": "litten",
   "id": 725,
   "abilities": [
-    "blaze",
-    "intimidate"
+    66,
+    22
   ],
   "types": [
     "fire"

@@ -2,8 +2,8 @@
   "name": "grapploct",
   "id": 853,
   "abilities": [
-    "limber",
-    "technician"
+    7,
+    101
   ],
   "types": [
     "fighting"

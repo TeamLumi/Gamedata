@@ -2,9 +2,9 @@
   "name": "lycanroc-midnight",
   "id": 10126,
   "abilities": [
-    "keen-eye",
-    "vital-spirit",
-    "no-guard"
+    51,
+    72,
+    99
   ],
   "types": [
     "rock"

@@ -2,9 +2,9 @@
   "name": "silicobra",
   "id": 843,
   "abilities": [
-    "sand-spit",
-    "shed-skin",
-    "sand-veil"
+    245,
+    61,
+    8
   ],
   "types": [
     "ground"

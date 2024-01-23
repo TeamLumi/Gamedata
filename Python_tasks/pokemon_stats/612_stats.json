@@ -2,9 +2,9 @@
   "name": "haxorus",
   "id": 612,
   "abilities": [
-    "rivalry",
-    "mold-breaker",
-    "unnerve"
+    79,
+    104,
+    127
   ],
   "types": [
     "dragon"

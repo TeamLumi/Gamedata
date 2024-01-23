@@ -2,8 +2,8 @@
   "name": "tapu-bulu",
   "id": 787,
   "abilities": [
-    "grassy-surge",
-    "telepathy"
+    229,
+    140
   ],
   "types": [
     "grass",

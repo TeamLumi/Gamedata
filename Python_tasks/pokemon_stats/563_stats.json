@@ -2,7 +2,7 @@
   "name": "cofagrigus",
   "id": 563,
   "abilities": [
-    "mummy"
+    152
   ],
   "types": [
     "ghost"
@@ -20,8 +20,9 @@
   "gender_ratio": 127,
   "held_items": [
     {
-      "held_item": "spell-tag",
-      "rarity": null
+      "held_item_no": 224,
+      "held_item_name": "spell-tag",
+      "rarity": 5
     }
   ],
   "egg_groups": [

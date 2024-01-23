@@ -2,9 +2,9 @@
   "name": "litwick",
   "id": 607,
   "abilities": [
-    "flash-fire",
-    "flame-body",
-    "infiltrator"
+    18,
+    49,
+    151
   ],
   "types": [
     "ghost",

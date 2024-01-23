@@ -2,8 +2,8 @@
   "name": "veluza",
   "id": 976,
   "abilities": [
-    "mold-breaker",
-    "sharpness"
+    104,
+    292
   ],
   "types": [
     "water",

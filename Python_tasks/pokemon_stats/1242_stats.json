@@ -2,8 +2,8 @@
   "name": "darmanitan-galar-zen",
   "id": 10178,
   "abilities": [
-    "gorilla-tactics",
-    "zen-mode"
+    255,
+    161
   ],
   "types": [
     "ice",

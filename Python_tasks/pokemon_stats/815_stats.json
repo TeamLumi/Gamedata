@@ -2,8 +2,8 @@
   "name": "cinderace",
   "id": 815,
   "abilities": [
-    "blaze",
-    "libero"
+    66,
+    236
   ],
   "types": [
     "fire"

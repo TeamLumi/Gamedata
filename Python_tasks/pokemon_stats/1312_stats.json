@@ -2,9 +2,9 @@
   "name": "goodra-hisui",
   "id": 10242,
   "abilities": [
-    "sap-sipper",
-    "shell-armor",
-    "gooey"
+    157,
+    75,
+    183
   ],
   "types": [
     "steel",

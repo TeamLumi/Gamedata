@@ -2,9 +2,9 @@
   "name": "pyroar",
   "id": 668,
   "abilities": [
-    "rivalry",
-    "unnerve",
-    "moxie"
+    79,
+    127,
+    153
   ],
   "types": [
     "fire",

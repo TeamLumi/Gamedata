@@ -2,7 +2,7 @@
   "name": "oricorio-baile",
   "id": 741,
   "abilities": [
-    "dancer"
+    216
   ],
   "types": [
     "fire",
@@ -21,8 +21,9 @@
   "gender_ratio": 191,
   "held_items": [
     {
-      "held_item": "honey",
-      "rarity": null
+      "held_item_no": 94,
+      "held_item_name": "honey",
+      "rarity": 5
     }
   ],
   "egg_groups": [

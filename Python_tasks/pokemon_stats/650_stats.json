@@ -2,8 +2,8 @@
   "name": "chespin",
   "id": 650,
   "abilities": [
-    "overgrow",
-    "bulletproof"
+    65,
+    171
   ],
   "types": [
     "grass"

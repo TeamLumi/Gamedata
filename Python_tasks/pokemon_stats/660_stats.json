@@ -2,9 +2,9 @@
   "name": "diggersby",
   "id": 660,
   "abilities": [
-    "pickup",
-    "cheek-pouch",
-    "huge-power"
+    53,
+    167,
+    37
   ],
   "types": [
     "normal",

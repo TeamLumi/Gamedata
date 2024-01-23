@@ -2,9 +2,9 @@
   "name": "chewtle",
   "id": 833,
   "abilities": [
-    "strong-jaw",
-    "shell-armor",
-    "swift-swim"
+    173,
+    75,
+    33
   ],
   "types": [
     "water"

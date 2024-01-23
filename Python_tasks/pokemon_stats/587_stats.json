@@ -2,8 +2,8 @@
   "name": "emolga",
   "id": 587,
   "abilities": [
-    "static",
-    "motor-drive"
+    9,
+    78
   ],
   "types": [
     "electric",
@@ -22,8 +22,9 @@
   "gender_ratio": 127,
   "held_items": [
     {
-      "held_item": "cheri-berry",
-      "rarity": null
+      "held_item_no": 126,
+      "held_item_name": "cheri-berry",
+      "rarity": 100
     }
   ],
   "egg_groups": [

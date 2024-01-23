@@ -2,8 +2,8 @@
   "name": "nymble",
   "id": 919,
   "abilities": [
-    "swarm",
-    "tinted-lens"
+    68,
+    110
   ],
   "types": [
     "bug"

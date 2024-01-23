@@ -2,9 +2,9 @@
   "name": "corviknight-gmax",
   "id": 10212,
   "abilities": [
-    "pressure",
-    "unnerve",
-    "mirror-armor"
+    46,
+    127,
+    240
   ],
   "types": [
     "flying",

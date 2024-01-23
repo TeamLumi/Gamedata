@@ -2,9 +2,9 @@
   "name": "squawkabilly-yellow-plumage",
   "id": 10261,
   "abilities": [
-    "intimidate",
-    "hustle",
-    "sheer-force"
+    22,
+    55,
+    125
   ],
   "types": [
     "normal",

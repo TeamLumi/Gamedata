@@ -2,8 +2,8 @@
   "name": "sylveon",
   "id": 700,
   "abilities": [
-    "cute-charm",
-    "pixilate"
+    56,
+    182
   ],
   "types": [
     "fairy"

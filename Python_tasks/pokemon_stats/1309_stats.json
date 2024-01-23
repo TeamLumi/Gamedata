@@ -2,9 +2,9 @@
   "name": "meowstic-female",
   "id": 10025,
   "abilities": [
-    "keen-eye",
-    "infiltrator",
-    "competitive"
+    51,
+    151,
+    172
   ],
   "types": [
     "psychic"

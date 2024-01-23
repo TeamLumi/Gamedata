@@ -2,9 +2,9 @@
   "name": "impidimp",
   "id": 859,
   "abilities": [
-    "prankster",
-    "frisk",
-    "pickpocket"
+    158,
+    119,
+    124
   ],
   "types": [
     "dark",

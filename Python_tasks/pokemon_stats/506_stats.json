@@ -2,9 +2,9 @@
   "name": "lillipup",
   "id": 506,
   "abilities": [
-    "vital-spirit",
-    "pickup",
-    "run-away"
+    72,
+    53,
+    50
   ],
   "types": [
     "normal"

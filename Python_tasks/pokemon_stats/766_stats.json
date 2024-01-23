@@ -2,8 +2,8 @@
   "name": "passimian",
   "id": 766,
   "abilities": [
-    "receiver",
-    "defiant"
+    222,
+    128
   ],
   "types": [
     "fighting"

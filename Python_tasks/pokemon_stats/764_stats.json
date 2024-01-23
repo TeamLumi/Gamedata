@@ -2,9 +2,9 @@
   "name": "comfey",
   "id": 764,
   "abilities": [
-    "flower-veil",
-    "triage",
-    "natural-cure"
+    166,
+    205,
+    30
   ],
   "types": [
     "fairy"
@@ -22,8 +22,9 @@
   "gender_ratio": 191,
   "held_items": [
     {
-      "held_item": "misty-seed",
-      "rarity": null
+      "held_item_no": 900,
+      "held_item_name": "misty-seed",
+      "rarity": 5
     }
   ],
   "egg_groups": [

@@ -2,9 +2,9 @@
   "name": "dwebble",
   "id": 557,
   "abilities": [
-    "sturdy",
-    "shell-armor",
-    "weak-armor"
+    5,
+    75,
+    133
   ],
   "types": [
     "bug",
@@ -23,12 +23,14 @@
   "gender_ratio": 127,
   "held_items": [
     {
-      "held_item": "rare-bone",
-      "rarity": null
+      "held_item_no": 106,
+      "held_item_name": "rare-bone",
+      "rarity": 1
     },
     {
-      "held_item": "hard-stone",
-      "rarity": null
+      "held_item_no": 215,
+      "held_item_name": "hard-stone",
+      "rarity": 5
     }
   ],
   "egg_groups": [

@@ -2,9 +2,9 @@
   "name": "inkay",
   "id": 686,
   "abilities": [
-    "contrary",
-    "suction-cups",
-    "infiltrator"
+    126,
+    21,
+    151
   ],
   "types": [
     "dark",

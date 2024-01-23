@@ -2,8 +2,8 @@
   "name": "fletchling",
   "id": 661,
   "abilities": [
-    "big-pecks",
-    "gale-wings"
+    145,
+    177
   ],
   "types": [
     "normal",

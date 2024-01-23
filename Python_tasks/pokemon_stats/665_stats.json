@@ -2,8 +2,8 @@
   "name": "spewpa",
   "id": 665,
   "abilities": [
-    "shed-skin",
-    "friend-guard"
+    61,
+    132
   ],
   "types": [
     "bug"

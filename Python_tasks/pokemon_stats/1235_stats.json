@@ -2,9 +2,9 @@
   "name": "lilligant-hisui",
   "id": 10237,
   "abilities": [
-    "chlorophyll",
-    "hustle",
-    "leaf-guard"
+    34,
+    55,
+    102
   ],
   "types": [
     "grass",

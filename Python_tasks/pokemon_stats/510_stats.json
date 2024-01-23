@@ -2,9 +2,9 @@
   "name": "liepard",
   "id": 510,
   "abilities": [
-    "limber",
-    "unburden",
-    "prankster"
+    7,
+    84,
+    158
   ],
   "types": [
     "dark"

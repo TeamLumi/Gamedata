@@ -2,8 +2,8 @@
   "name": "darumaka",
   "id": 554,
   "abilities": [
-    "hustle",
-    "inner-focus"
+    55,
+    39
   ],
   "types": [
     "fire"
@@ -21,8 +21,9 @@
   "gender_ratio": 127,
   "held_items": [
     {
-      "held_item": "rawst-berry",
-      "rarity": null
+      "held_item_no": 129,
+      "held_item_name": "rawst-berry",
+      "rarity": 50
     }
   ],
   "egg_groups": [

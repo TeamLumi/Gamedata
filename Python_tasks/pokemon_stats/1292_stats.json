@@ -2,8 +2,8 @@
   "name": "floette-orange",
   "id": 670,
   "abilities": [
-    "flower-veil",
-    "symbiosis"
+    166,
+    180
   ],
   "types": [
     "fairy"

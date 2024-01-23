@@ -2,9 +2,9 @@
   "name": "musharna",
   "id": 518,
   "abilities": [
-    "forewarn",
-    "synchronize",
-    "telepathy"
+    108,
+    28,
+    140
   ],
   "types": [
     "psychic"

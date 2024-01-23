@@ -2,8 +2,8 @@
   "name": "sirfetchd",
   "id": 865,
   "abilities": [
-    "steadfast",
-    "scrappy"
+    80,
+    113
   ],
   "types": [
     "fighting"

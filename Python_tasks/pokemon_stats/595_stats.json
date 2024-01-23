@@ -2,9 +2,9 @@
   "name": "joltik",
   "id": 595,
   "abilities": [
-    "compound-eyes",
-    "unnerve",
-    "swarm"
+    14,
+    127,
+    68
   ],
   "types": [
     "bug",

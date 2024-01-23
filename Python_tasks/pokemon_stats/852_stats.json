@@ -2,8 +2,8 @@
   "name": "clobbopus",
   "id": 852,
   "abilities": [
-    "limber",
-    "technician"
+    7,
+    101
   ],
   "types": [
     "fighting"

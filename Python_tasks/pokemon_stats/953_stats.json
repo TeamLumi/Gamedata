@@ -2,8 +2,8 @@
   "name": "rellor",
   "id": 953,
   "abilities": [
-    "compound-eyes",
-    "shed-skin"
+    14,
+    61
   ],
   "types": [
     "bug"

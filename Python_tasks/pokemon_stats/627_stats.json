@@ -2,9 +2,9 @@
   "name": "rufflet",
   "id": 627,
   "abilities": [
-    "keen-eye",
-    "sheer-force",
-    "hustle"
+    51,
+    125,
+    55
   ],
   "types": [
     "normal",

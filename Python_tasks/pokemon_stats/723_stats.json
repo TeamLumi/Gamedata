@@ -2,8 +2,8 @@
   "name": "dartrix",
   "id": 723,
   "abilities": [
-    "overgrow",
-    "long-reach"
+    65,
+    203
   ],
   "types": [
     "grass",

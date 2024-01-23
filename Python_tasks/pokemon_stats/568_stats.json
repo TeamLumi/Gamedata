@@ -2,9 +2,9 @@
   "name": "trubbish",
   "id": 568,
   "abilities": [
-    "stench",
-    "sticky-hold",
-    "aftermath"
+    1,
+    60,
+    106
   ],
   "types": [
     "poison"
@@ -22,16 +22,19 @@
   "gender_ratio": 127,
   "held_items": [
     {
-      "held_item": "nugget",
-      "rarity": null
+      "held_item_no": 92,
+      "held_item_name": "nugget",
+      "rarity": 1
     },
     {
-      "held_item": "silk-scarf",
-      "rarity": null
+      "held_item_no": 228,
+      "held_item_name": "silk-scarf",
+      "rarity": 5
     },
     {
-      "held_item": "black-sludge",
-      "rarity": null
+      "held_item_no": 258,
+      "held_item_name": "black-sludge",
+      "rarity": 5
     }
   ],
   "egg_groups": [

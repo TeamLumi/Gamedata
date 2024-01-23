@@ -2,9 +2,9 @@
   "name": "durant",
   "id": 632,
   "abilities": [
-    "swarm",
-    "hustle",
-    "truant"
+    68,
+    55,
+    54
   ],
   "types": [
     "bug",

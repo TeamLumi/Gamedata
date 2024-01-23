@@ -2,9 +2,9 @@
   "name": "clodsire",
   "id": 980,
   "abilities": [
-    "poison-point",
-    "water-absorb",
-    "unaware"
+    38,
+    11,
+    109
   ],
   "types": [
     "poison",

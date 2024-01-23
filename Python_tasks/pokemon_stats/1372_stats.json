@@ -2,9 +2,9 @@
   "name": "togedemaru-totem",
   "id": 10154,
   "abilities": [
-    "iron-barbs",
-    "lightning-rod",
-    "sturdy"
+    160,
+    31,
+    5
   ],
   "types": [
     "electric",
@@ -23,8 +23,9 @@
   "gender_ratio": 127,
   "held_items": [
     {
-      "held_item": "electric-seed",
-      "rarity": null
+      "held_item_no": 898,
+      "held_item_name": "electric-seed",
+      "rarity": 5
     }
   ],
   "egg_groups": [

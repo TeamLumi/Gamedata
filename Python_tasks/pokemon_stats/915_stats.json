@@ -2,9 +2,9 @@
   "name": "lechonk",
   "id": 915,
   "abilities": [
-    "aroma-veil",
-    "gluttony",
-    "thick-fat"
+    165,
+    82,
+    47
   ],
   "types": [
     "normal"

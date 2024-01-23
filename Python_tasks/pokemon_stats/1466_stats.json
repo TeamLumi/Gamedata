@@ -2,9 +2,9 @@
   "name": "indeedee-female",
   "id": 10186,
   "abilities": [
-    "own-tempo",
-    "synchronize",
-    "psychic-surge"
+    20,
+    28,
+    227
   ],
   "types": [
     "psychic",

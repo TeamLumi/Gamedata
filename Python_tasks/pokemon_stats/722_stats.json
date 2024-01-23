@@ -2,8 +2,8 @@
   "name": "rowlet",
   "id": 722,
   "abilities": [
-    "overgrow",
-    "long-reach"
+    65,
+    203
   ],
   "types": [
     "grass",

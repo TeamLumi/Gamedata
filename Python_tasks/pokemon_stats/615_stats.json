@@ -2,7 +2,7 @@
   "name": "cryogonal",
   "id": 615,
   "abilities": [
-    "levitate"
+    26
   ],
   "types": [
     "ice"
@@ -20,8 +20,9 @@
   "gender_ratio": 255,
   "held_items": [
     {
-      "held_item": "never-melt-ice",
-      "rarity": null
+      "held_item_no": 223,
+      "held_item_name": "never-melt-ice",
+      "rarity": 5
     }
   ],
   "egg_groups": [

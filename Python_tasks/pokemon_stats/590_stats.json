@@ -2,8 +2,8 @@
   "name": "foongus",
   "id": 590,
   "abilities": [
-    "effect-spore",
-    "regenerator"
+    27,
+    144
   ],
   "types": [
     "grass",
@@ -22,16 +22,19 @@
   "gender_ratio": 127,
   "held_items": [
     {
-      "held_item": "tiny-mushroom",
-      "rarity": null
+      "held_item_no": 86,
+      "held_item_name": "tiny-mushroom",
+      "rarity": 50
     },
     {
-      "held_item": "big-mushroom",
-      "rarity": null
+      "held_item_no": 87,
+      "held_item_name": "big-mushroom",
+      "rarity": 5
     },
     {
-      "held_item": "balm-mushroom",
-      "rarity": null
+      "held_item_no": 621,
+      "held_item_name": "balm-mushroom",
+      "rarity": 1
     }
   ],
   "egg_groups": [

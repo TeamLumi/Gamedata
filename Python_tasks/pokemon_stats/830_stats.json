@@ -2,9 +2,9 @@
   "name": "eldegoss",
   "id": 830,
   "abilities": [
-    "cotton-down",
-    "regenerator",
-    "effect-spore"
+    238,
+    144,
+    27
   ],
   "types": [
     "grass"

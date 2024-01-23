@@ -2,8 +2,8 @@
   "name": "glimmet",
   "id": 969,
   "abilities": [
-    "toxic-debris",
-    "corrosion"
+    295,
+    212
   ],
   "types": [
     "rock",

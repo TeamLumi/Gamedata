@@ -2,9 +2,9 @@
   "name": "braviary-hisui",
   "id": 10240,
   "abilities": [
-    "keen-eye",
-    "sheer-force",
-    "tinted-lens"
+    51,
+    125,
+    110
   ],
   "types": [
     "psychic",

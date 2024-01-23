@@ -2,9 +2,9 @@
   "name": "goomy",
   "id": 704,
   "abilities": [
-    "sap-sipper",
-    "hydration",
-    "gooey"
+    157,
+    93,
+    183
   ],
   "types": [
     "dragon"
@@ -22,8 +22,9 @@
   "gender_ratio": 127,
   "held_items": [
     {
-      "held_item": "shed-shell",
-      "rarity": null
+      "held_item_no": 272,
+      "held_item_name": "shed-shell",
+      "rarity": 5
     }
   ],
   "egg_groups": [

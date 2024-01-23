@@ -2,8 +2,8 @@
   "name": "charcadet",
   "id": 935,
   "abilities": [
-    "flash-fire",
-    "flame-body"
+    18,
+    49
   ],
   "types": [
     "fire"

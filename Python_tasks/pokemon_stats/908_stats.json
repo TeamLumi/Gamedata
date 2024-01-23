@@ -2,8 +2,8 @@
   "name": "meowscarada",
   "id": 908,
   "abilities": [
-    "overgrow",
-    "protean"
+    65,
+    168
   ],
   "types": [
     "grass",

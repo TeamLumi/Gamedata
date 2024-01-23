@@ -2,8 +2,8 @@
   "name": "raboot",
   "id": 814,
   "abilities": [
-    "blaze",
-    "libero"
+    66,
+    236
   ],
   "types": [
     "fire"

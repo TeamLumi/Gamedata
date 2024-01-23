@@ -2,8 +2,8 @@
   "name": "torracat",
   "id": 726,
   "abilities": [
-    "blaze",
-    "intimidate"
+    66,
+    22
   ],
   "types": [
     "fire"

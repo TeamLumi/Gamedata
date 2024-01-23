@@ -2,9 +2,9 @@
   "name": "goodra",
   "id": 706,
   "abilities": [
-    "sap-sipper",
-    "hydration",
-    "gooey"
+    157,
+    93,
+    183
   ],
   "types": [
     "dragon"

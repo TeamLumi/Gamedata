@@ -2,9 +2,9 @@
   "name": "pumpkaboo-average",
   "id": 710,
   "abilities": [
-    "pickup",
-    "frisk",
-    "insomnia"
+    53,
+    119,
+    15
   ],
   "types": [
     "ghost",

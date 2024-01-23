@@ -2,9 +2,9 @@
   "name": "centiskorch",
   "id": 851,
   "abilities": [
-    "flash-fire",
-    "white-smoke",
-    "flame-body"
+    18,
+    73,
+    49
   ],
   "types": [
     "fire",

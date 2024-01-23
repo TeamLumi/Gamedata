@@ -2,9 +2,9 @@
   "name": "pumpkaboo-large",
   "id": 10028,
   "abilities": [
-    "pickup",
-    "frisk",
-    "insomnia"
+    53,
+    119,
+    15
   ],
   "types": [
     "ghost",

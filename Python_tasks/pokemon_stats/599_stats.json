@@ -2,9 +2,9 @@
   "name": "klink",
   "id": 599,
   "abilities": [
-    "plus",
-    "minus",
-    "clear-body"
+    57,
+    58,
+    29
   ],
   "types": [
     "steel"

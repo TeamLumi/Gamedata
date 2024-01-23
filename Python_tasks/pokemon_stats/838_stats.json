@@ -2,9 +2,9 @@
   "name": "carkol",
   "id": 838,
   "abilities": [
-    "steam-engine",
-    "flame-body",
-    "flash-fire"
+    243,
+    49,
+    18
   ],
   "types": [
     "rock",

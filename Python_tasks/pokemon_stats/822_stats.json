@@ -2,9 +2,9 @@
   "name": "corvisquire",
   "id": 822,
   "abilities": [
-    "keen-eye",
-    "unnerve",
-    "big-pecks"
+    51,
+    127,
+    145
   ],
   "types": [
     "flying"

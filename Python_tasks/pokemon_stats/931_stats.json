@@ -2,9 +2,9 @@
   "name": "squawkabilly-green-plumage",
   "id": 931,
   "abilities": [
-    "intimidate",
-    "hustle",
-    "guts"
+    22,
+    55,
+    62
   ],
   "types": [
     "normal",

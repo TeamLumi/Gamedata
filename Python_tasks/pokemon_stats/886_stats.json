@@ -2,9 +2,9 @@
   "name": "drakloak",
   "id": 886,
   "abilities": [
-    "clear-body",
-    "infiltrator",
-    "cursed-body"
+    29,
+    151,
+    130
   ],
   "types": [
     "dragon",

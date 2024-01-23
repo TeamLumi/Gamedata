@@ -2,8 +2,8 @@
   "name": "decidueye-hisui",
   "id": 10244,
   "abilities": [
-    "overgrow",
-    "scrappy"
+    65,
+    113
   ],
   "types": [
     "grass",

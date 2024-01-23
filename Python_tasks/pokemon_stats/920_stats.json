@@ -2,8 +2,8 @@
   "name": "lokix",
   "id": 920,
   "abilities": [
-    "swarm",
-    "tinted-lens"
+    68,
+    110
   ],
   "types": [
     "bug",

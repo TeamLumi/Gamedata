@@ -2,9 +2,9 @@
   "name": "dudunsparce-two-segment",
   "id": 982,
   "abilities": [
-    "serene-grace",
-    "run-away",
-    "rattled"
+    32,
+    50,
+    155
   ],
   "types": [
     "normal"

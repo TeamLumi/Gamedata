@@ -2,9 +2,9 @@
   "name": "basculin-blue-striped",
   "id": 10016,
   "abilities": [
-    "rock-head",
-    "adaptability",
-    "mold-breaker"
+    69,
+    91,
+    104
   ],
   "types": [
     "water"
@@ -22,8 +22,9 @@
   "gender_ratio": 127,
   "held_items": [
     {
-      "held_item": "deep-sea-scale",
-      "rarity": null
+      "held_item_no": 204,
+      "held_item_name": "deep-sea-scale",
+      "rarity": 5
     }
   ],
   "egg_groups": [

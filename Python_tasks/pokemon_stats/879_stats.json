@@ -2,8 +2,8 @@
   "name": "copperajah",
   "id": 879,
   "abilities": [
-    "sheer-force",
-    "heavy-metal"
+    125,
+    134
   ],
   "types": [
     "steel"

@@ -2,9 +2,9 @@
   "name": "rockruff",
   "id": 744,
   "abilities": [
-    "keen-eye",
-    "vital-spirit",
-    "steadfast"
+    51,
+    72,
+    80
   ],
   "types": [
     "rock"

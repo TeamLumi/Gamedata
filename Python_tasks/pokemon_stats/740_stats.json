@@ -2,9 +2,9 @@
   "name": "crabominable",
   "id": 740,
   "abilities": [
-    "hyper-cutter",
-    "iron-fist",
-    "anger-point"
+    52,
+    89,
+    83
   ],
   "types": [
     "fighting",
@@ -23,8 +23,9 @@
   "gender_ratio": 127,
   "held_items": [
     {
-      "held_item": "cheri-berry",
-      "rarity": null
+      "held_item_no": 126,
+      "held_item_name": "cheri-berry",
+      "rarity": 5
     }
   ],
   "egg_groups": [

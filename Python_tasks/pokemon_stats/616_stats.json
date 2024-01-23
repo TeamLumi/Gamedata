@@ -2,9 +2,9 @@
   "name": "shelmet",
   "id": 616,
   "abilities": [
-    "hydration",
-    "shell-armor",
-    "overcoat"
+    93,
+    75,
+    142
   ],
   "types": [
     "bug"

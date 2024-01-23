@@ -107,7 +107,7 @@ def get_pokemon_stats(pokemon_name, pokemonId, monsno, counter=0):
     pokemon_stats = {
       "name": form.name if form else pokemon.name,
       "id": pokemon.id,
-      "abilities": [ability.ability.name for ability in pokemon.abilities],
+      "abilities": [int(ability.ability.url.split("/")[-2]) for ability in pokemon.abilities],
       "types": [type_.type.name for type_ in (form.types if form else pokemon.types)],
       "height": pokemon.height,
       "weight": pokemon.weight,
@@ -118,8 +118,9 @@ def get_pokemon_stats(pokemon_name, pokemonId, monsno, counter=0):
       "gender_ratio": poke_api_constants.GENDER_RATIOS[species.gender_rate],
       "held_items": [
         {
-          "held_item": item.item.name,
-          "rarity": next((vd.rarity for vd in item.version_details if vd.version.name == "platinum"), None)
+          "held_item_no": int(item.item.url.split("/")[-2]),
+          "held_item_name": item.item.name,
+          "rarity": item.version_details[-1].rarity
         }
         for item in pokemon.held_items
       ],

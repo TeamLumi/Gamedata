@@ -2,8 +2,8 @@
   "name": "aromatisse",
   "id": 683,
   "abilities": [
-    "healer",
-    "aroma-veil"
+    131,
+    165
   ],
   "types": [
     "fairy"

@@ -2,9 +2,9 @@
   "name": "pawniard",
   "id": 624,
   "abilities": [
-    "defiant",
-    "inner-focus",
-    "pressure"
+    128,
+    39,
+    46
   ],
   "types": [
     "dark",

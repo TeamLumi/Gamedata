@@ -2,8 +2,8 @@
   "name": "falinks",
   "id": 870,
   "abilities": [
-    "battle-armor",
-    "defiant"
+    4,
+    128
   ],
   "types": [
     "fighting"

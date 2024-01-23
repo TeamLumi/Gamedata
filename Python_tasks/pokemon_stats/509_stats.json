@@ -2,9 +2,9 @@
   "name": "purrloin",
   "id": 509,
   "abilities": [
-    "limber",
-    "unburden",
-    "prankster"
+    7,
+    84,
+    158
   ],
   "types": [
     "dark"

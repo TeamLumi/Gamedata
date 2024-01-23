@@ -2,9 +2,9 @@
   "name": "ursaluna",
   "id": 901,
   "abilities": [
-    "guts",
-    "bulletproof",
-    "unnerve"
+    62,
+    171,
+    127
   ],
   "types": [
     "ground",

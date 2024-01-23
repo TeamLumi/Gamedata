@@ -2,9 +2,9 @@
   "name": "squawkabilly-white-plumage",
   "id": 10262,
   "abilities": [
-    "intimidate",
-    "hustle",
-    "sheer-force"
+    22,
+    55,
+    125
   ],
   "types": [
     "normal",

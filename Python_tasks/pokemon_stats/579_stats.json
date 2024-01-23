@@ -2,9 +2,9 @@
   "name": "reuniclus",
   "id": 579,
   "abilities": [
-    "overcoat",
-    "magic-guard",
-    "regenerator"
+    142,
+    98,
+    144
   ],
   "types": [
     "psychic"
@@ -22,8 +22,9 @@
   "gender_ratio": 127,
   "held_items": [
     {
-      "held_item": "persim-berry",
-      "rarity": null
+      "held_item_no": 133,
+      "held_item_name": "persim-berry",
+      "rarity": 50
     }
   ],
   "egg_groups": [

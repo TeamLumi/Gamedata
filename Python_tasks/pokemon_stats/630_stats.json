@@ -2,9 +2,9 @@
   "name": "mandibuzz",
   "id": 630,
   "abilities": [
-    "big-pecks",
-    "overcoat",
-    "weak-armor"
+    145,
+    142,
+    133
   ],
   "types": [
     "dark",

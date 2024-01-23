@@ -2,9 +2,9 @@
   "name": "maractus",
   "id": 556,
   "abilities": [
-    "water-absorb",
-    "chlorophyll",
-    "storm-drain"
+    11,
+    34,
+    114
   ],
   "types": [
     "grass"
@@ -22,8 +22,9 @@
   "gender_ratio": 127,
   "held_items": [
     {
-      "held_item": "miracle-seed",
-      "rarity": null
+      "held_item_no": 216,
+      "held_item_name": "miracle-seed",
+      "rarity": 5
     }
   ],
   "egg_groups": [

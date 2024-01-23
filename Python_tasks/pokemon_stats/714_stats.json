@@ -2,9 +2,9 @@
   "name": "noibat",
   "id": 714,
   "abilities": [
-    "frisk",
-    "infiltrator",
-    "telepathy"
+    119,
+    151,
+    140
   ],
   "types": [
     "flying",

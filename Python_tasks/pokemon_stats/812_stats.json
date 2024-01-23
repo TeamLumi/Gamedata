@@ -2,8 +2,8 @@
   "name": "rillaboom",
   "id": 812,
   "abilities": [
-    "overgrow",
-    "grassy-surge"
+    65,
+    229
   ],
   "types": [
     "grass"

@@ -2,9 +2,9 @@
   "name": "tranquill",
   "id": 520,
   "abilities": [
-    "big-pecks",
-    "super-luck",
-    "rivalry"
+    145,
+    105,
+    79
   ],
   "types": [
     "normal",

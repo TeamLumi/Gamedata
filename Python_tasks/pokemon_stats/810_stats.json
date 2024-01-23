@@ -2,8 +2,8 @@
   "name": "grookey",
   "id": 810,
   "abilities": [
-    "overgrow",
-    "grassy-surge"
+    65,
+    229
   ],
   "types": [
     "grass"

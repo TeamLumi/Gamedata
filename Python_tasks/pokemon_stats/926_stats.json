@@ -2,8 +2,8 @@
   "name": "fidough",
   "id": 926,
   "abilities": [
-    "own-tempo",
-    "klutz"
+    20,
+    103
   ],
   "types": [
     "fairy"

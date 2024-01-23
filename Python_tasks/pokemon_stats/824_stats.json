@@ -2,9 +2,9 @@
   "name": "blipbug",
   "id": 824,
   "abilities": [
-    "swarm",
-    "compound-eyes",
-    "telepathy"
+    68,
+    14,
+    140
   ],
   "types": [
     "bug"

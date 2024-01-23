@@ -2,9 +2,9 @@
   "name": "bellibolt",
   "id": 939,
   "abilities": [
-    "electromorphosis",
-    "static",
-    "damp"
+    280,
+    9,
+    6
   ],
   "types": [
     "electric"

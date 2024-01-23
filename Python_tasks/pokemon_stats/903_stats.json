@@ -2,9 +2,9 @@
   "name": "sneasler",
   "id": 903,
   "abilities": [
-    "pressure",
-    "unburden",
-    "poison-touch"
+    46,
+    84,
+    143
   ],
   "types": [
     "fighting",

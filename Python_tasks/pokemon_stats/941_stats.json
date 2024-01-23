@@ -2,9 +2,9 @@
   "name": "kilowattrel",
   "id": 941,
   "abilities": [
-    "wind-power",
-    "volt-absorb",
-    "competitive"
+    277,
+    10,
+    172
   ],
   "types": [
     "electric",

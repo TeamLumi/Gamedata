@@ -2,9 +2,9 @@
   "name": "lampent",
   "id": 608,
   "abilities": [
-    "flash-fire",
-    "flame-body",
-    "infiltrator"
+    18,
+    49,
+    151
   ],
   "types": [
     "ghost",

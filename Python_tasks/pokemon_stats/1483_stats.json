@@ -2,9 +2,9 @@
   "name": "oinkologne-female",
   "id": 10254,
   "abilities": [
-    "aroma-veil",
-    "gluttony",
-    "thick-fat"
+    165,
+    82,
+    47
   ],
   "types": [
     "normal"

@@ -2,9 +2,9 @@
   "name": "perrserker",
   "id": 863,
   "abilities": [
-    "battle-armor",
-    "tough-claws",
-    "steely-spirit"
+    4,
+    181,
+    252
   ],
   "types": [
     "steel"

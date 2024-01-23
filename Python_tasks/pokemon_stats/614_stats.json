@@ -2,9 +2,9 @@
   "name": "beartic",
   "id": 614,
   "abilities": [
-    "snow-cloak",
-    "slush-rush",
-    "swift-swim"
+    81,
+    202,
+    33
   ],
   "types": [
     "ice"
@@ -22,8 +22,9 @@
   "gender_ratio": 127,
   "held_items": [
     {
-      "held_item": "aspear-berry",
-      "rarity": null
+      "held_item_no": 130,
+      "held_item_name": "aspear-berry",
+      "rarity": 50
     }
   ],
   "egg_groups": [

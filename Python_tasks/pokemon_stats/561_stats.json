@@ -2,9 +2,9 @@
   "name": "sigilyph",
   "id": 561,
   "abilities": [
-    "wonder-skin",
-    "magic-guard",
-    "tinted-lens"
+    147,
+    98,
+    110
   ],
   "types": [
     "psychic",

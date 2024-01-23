@@ -2,9 +2,9 @@
   "name": "tinkatuff",
   "id": 958,
   "abilities": [
-    "mold-breaker",
-    "own-tempo",
-    "pickpocket"
+    104,
+    20,
+    124
   ],
   "types": [
     "fairy",

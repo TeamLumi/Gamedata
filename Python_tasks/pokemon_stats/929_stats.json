@@ -2,8 +2,8 @@
   "name": "dolliv",
   "id": 929,
   "abilities": [
-    "early-bird",
-    "harvest"
+    48,
+    139
   ],
   "types": [
     "grass",

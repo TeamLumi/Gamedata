@@ -2,9 +2,9 @@
   "name": "swoobat",
   "id": 528,
   "abilities": [
-    "unaware",
-    "klutz",
-    "simple"
+    109,
+    103,
+    86
   ],
   "types": [
     "psychic",

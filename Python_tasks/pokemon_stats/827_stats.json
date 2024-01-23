@@ -2,9 +2,9 @@
   "name": "nickit",
   "id": 827,
   "abilities": [
-    "run-away",
-    "unburden",
-    "stakeout"
+    50,
+    84,
+    198
   ],
   "types": [
     "dark"

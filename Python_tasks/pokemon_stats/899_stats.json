@@ -2,9 +2,9 @@
   "name": "wyrdeer",
   "id": 899,
   "abilities": [
-    "intimidate",
-    "frisk",
-    "sap-sipper"
+    22,
+    119,
+    157
   ],
   "types": [
     "normal",

@@ -2,8 +2,8 @@
   "name": "skeledirge",
   "id": 911,
   "abilities": [
-    "blaze",
-    "unaware"
+    66,
+    109
   ],
   "types": [
     "fire",

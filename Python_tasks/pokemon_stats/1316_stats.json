@@ -2,9 +2,9 @@
   "name": "gourgeist-small",
   "id": 10030,
   "abilities": [
-    "pickup",
-    "frisk",
-    "insomnia"
+    53,
+    119,
+    15
   ],
   "types": [
     "ghost",

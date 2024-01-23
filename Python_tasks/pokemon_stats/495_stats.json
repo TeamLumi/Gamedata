@@ -2,8 +2,8 @@
   "name": "snivy",
   "id": 495,
   "abilities": [
-    "overgrow",
-    "contrary"
+    65,
+    126
   ],
   "types": [
     "grass"

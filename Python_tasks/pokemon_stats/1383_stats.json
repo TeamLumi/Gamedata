@@ -2,8 +2,8 @@
   "name": "cinderace-gmax",
   "id": 10210,
   "abilities": [
-    "blaze",
-    "libero"
+    66,
+    236
   ],
   "types": [
     "fire"

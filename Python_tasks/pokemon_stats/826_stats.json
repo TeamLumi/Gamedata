@@ -2,9 +2,9 @@
   "name": "orbeetle",
   "id": 826,
   "abilities": [
-    "swarm",
-    "frisk",
-    "telepathy"
+    68,
+    119,
+    140
   ],
   "types": [
     "bug",

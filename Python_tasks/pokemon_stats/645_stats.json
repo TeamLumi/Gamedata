@@ -2,8 +2,8 @@
   "name": "landorus-incarnate",
   "id": 645,
   "abilities": [
-    "sand-force",
-    "sheer-force"
+    159,
+    125
   ],
   "types": [
     "ground",

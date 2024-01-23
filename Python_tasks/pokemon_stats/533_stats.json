@@ -2,9 +2,9 @@
   "name": "gurdurr",
   "id": 533,
   "abilities": [
-    "guts",
-    "sheer-force",
-    "iron-fist"
+    62,
+    125,
+    89
   ],
   "types": [
     "fighting"

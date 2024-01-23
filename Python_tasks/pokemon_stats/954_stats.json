@@ -2,8 +2,8 @@
   "name": "rabsca",
   "id": 954,
   "abilities": [
-    "synchronize",
-    "telepathy"
+    28,
+    140
   ],
   "types": [
     "bug",

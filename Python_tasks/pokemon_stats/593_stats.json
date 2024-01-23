@@ -2,9 +2,9 @@
   "name": "jellicent",
   "id": 593,
   "abilities": [
-    "water-absorb",
-    "cursed-body",
-    "damp"
+    11,
+    130,
+    6
   ],
   "types": [
     "water",

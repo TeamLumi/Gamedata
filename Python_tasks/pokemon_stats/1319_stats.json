@@ -2,9 +2,9 @@
   "name": "avalugg-hisui",
   "id": 10243,
   "abilities": [
-    "strong-jaw",
-    "ice-body",
-    "sturdy"
+    173,
+    115,
+    5
   ],
   "types": [
     "ice",

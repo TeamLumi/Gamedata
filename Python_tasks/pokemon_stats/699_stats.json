@@ -2,8 +2,8 @@
   "name": "aurorus",
   "id": 699,
   "abilities": [
-    "refrigerate",
-    "snow-warning"
+    174,
+    117
   ],
   "types": [
     "rock",

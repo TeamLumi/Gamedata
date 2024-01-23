@@ -2,9 +2,9 @@
   "name": "kingambit",
   "id": 983,
   "abilities": [
-    "defiant",
-    "supreme-overlord",
-    "pressure"
+    128,
+    293,
+    46
   ],
   "types": [
     "dark",

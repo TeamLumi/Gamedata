@@ -2,8 +2,8 @@
   "name": "volcarona",
   "id": 637,
   "abilities": [
-    "flame-body",
-    "swarm"
+    49,
+    68
   ],
   "types": [
     "bug",
@@ -22,8 +22,9 @@
   "gender_ratio": 127,
   "held_items": [
     {
-      "held_item": "silver-powder",
-      "rarity": null
+      "held_item_no": 199,
+      "held_item_name": "silver-powder",
+      "rarity": 5
     }
   ],
   "egg_groups": [

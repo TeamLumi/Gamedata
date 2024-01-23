@@ -2,9 +2,9 @@
   "name": "lycanroc-midday",
   "id": 745,
   "abilities": [
-    "keen-eye",
-    "sand-rush",
-    "steadfast"
+    51,
+    146,
+    80
   ],
   "types": [
     "rock"

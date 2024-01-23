@@ -2,8 +2,8 @@
   "name": "snom",
   "id": 872,
   "abilities": [
-    "shield-dust",
-    "ice-scales"
+    19,
+    246
   ],
   "types": [
     "ice",

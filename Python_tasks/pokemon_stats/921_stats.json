@@ -2,9 +2,9 @@
   "name": "pawmi",
   "id": 921,
   "abilities": [
-    "static",
-    "natural-cure",
-    "iron-fist"
+    9,
+    30,
+    89
   ],
   "types": [
     "electric"

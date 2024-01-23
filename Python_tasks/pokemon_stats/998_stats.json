@@ -2,8 +2,8 @@
   "name": "baxcalibur",
   "id": 998,
   "abilities": [
-    "thermal-exchange",
-    "ice-body"
+    270,
+    115
   ],
   "types": [
     "dragon",

@@ -2,8 +2,8 @@
   "name": "greavard",
   "id": 971,
   "abilities": [
-    "pickup",
-    "fluffy"
+    53,
+    218
   ],
   "types": [
     "ghost"

@@ -2,9 +2,9 @@
   "name": "naclstack",
   "id": 933,
   "abilities": [
-    "purifying-salt",
-    "sturdy",
-    "clear-body"
+    272,
+    5,
+    29
   ],
   "types": [
     "rock"

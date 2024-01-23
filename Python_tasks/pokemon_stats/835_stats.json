@@ -2,8 +2,8 @@
   "name": "yamper",
   "id": 835,
   "abilities": [
-    "ball-fetch",
-    "rattled"
+    237,
+    155
   ],
   "types": [
     "electric"

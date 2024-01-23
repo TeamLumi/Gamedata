@@ -2,9 +2,9 @@
   "name": "mareanie",
   "id": 747,
   "abilities": [
-    "merciless",
-    "limber",
-    "regenerator"
+    196,
+    7,
+    144
   ],
   "types": [
     "poison",
@@ -23,8 +23,9 @@
   "gender_ratio": 127,
   "held_items": [
     {
-      "held_item": "poison-barb",
-      "rarity": null
+      "held_item_no": 222,
+      "held_item_name": "poison-barb",
+      "rarity": 5
     }
   ],
   "egg_groups": [

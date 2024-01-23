@@ -2,8 +2,8 @@
   "name": "emboar",
   "id": 500,
   "abilities": [
-    "blaze",
-    "reckless"
+    66,
+    120
   ],
   "types": [
     "fire",

@@ -2,8 +2,8 @@
   "name": "floragato",
   "id": 907,
   "abilities": [
-    "overgrow",
-    "protean"
+    65,
+    168
   ],
   "types": [
     "grass"

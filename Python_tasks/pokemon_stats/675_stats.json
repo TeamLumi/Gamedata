@@ -2,9 +2,9 @@
   "name": "pangoro",
   "id": 675,
   "abilities": [
-    "iron-fist",
-    "mold-breaker",
-    "scrappy"
+    89,
+    104,
+    113
   ],
   "types": [
     "fighting",
@@ -23,8 +23,9 @@
   "gender_ratio": 127,
   "held_items": [
     {
-      "held_item": "mental-herb",
-      "rarity": null
+      "held_item_no": 196,
+      "held_item_name": "mental-herb",
+      "rarity": 5
     }
   ],
   "egg_groups": [

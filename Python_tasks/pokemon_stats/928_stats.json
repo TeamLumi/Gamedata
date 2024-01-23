@@ -2,8 +2,8 @@
   "name": "smoliv",
   "id": 928,
   "abilities": [
-    "early-bird",
-    "harvest"
+    48,
+    139
   ],
   "types": [
     "grass",

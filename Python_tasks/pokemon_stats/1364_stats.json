@@ -2,7 +2,7 @@
   "name": "minior-violet-meteor",
   "id": 10135,
   "abilities": [
-    "shields-down"
+    197
   ],
   "types": [
     "rock",
@@ -21,8 +21,9 @@
   "gender_ratio": 255,
   "held_items": [
     {
-      "held_item": "star-piece",
-      "rarity": null
+      "held_item_no": 91,
+      "held_item_name": "star-piece",
+      "rarity": 5
     }
   ],
   "egg_groups": [

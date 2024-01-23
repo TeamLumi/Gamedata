@@ -2,9 +2,9 @@
   "name": "coalossal-gmax",
   "id": 10215,
   "abilities": [
-    "steam-engine",
-    "flame-body",
-    "flash-fire"
+    243,
+    49,
+    18
   ],
   "types": [
     "rock",

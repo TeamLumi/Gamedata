@@ -2,9 +2,9 @@
   "name": "bergmite",
   "id": 712,
   "abilities": [
-    "own-tempo",
-    "ice-body",
-    "sturdy"
+    20,
+    115,
+    5
   ],
   "types": [
     "ice"

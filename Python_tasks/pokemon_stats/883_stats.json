@@ -2,9 +2,9 @@
   "name": "arctovish",
   "id": 883,
   "abilities": [
-    "water-absorb",
-    "ice-body",
-    "slush-rush"
+    11,
+    115,
+    202
   ],
   "types": [
     "water",

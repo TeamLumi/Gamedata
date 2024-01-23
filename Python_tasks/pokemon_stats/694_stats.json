@@ -2,9 +2,9 @@
   "name": "helioptile",
   "id": 694,
   "abilities": [
-    "dry-skin",
-    "sand-veil",
-    "solar-power"
+    87,
+    8,
+    94
   ],
   "types": [
     "electric",

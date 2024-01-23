@@ -2,8 +2,8 @@
   "name": "chesnaught",
   "id": 652,
   "abilities": [
-    "overgrow",
-    "bulletproof"
+    65,
+    171
   ],
   "types": [
     "grass",

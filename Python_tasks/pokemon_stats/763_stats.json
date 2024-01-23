@@ -2,9 +2,9 @@
   "name": "tsareena",
   "id": 763,
   "abilities": [
-    "leaf-guard",
-    "queenly-majesty",
-    "sweet-veil"
+    102,
+    214,
+    175
   ],
   "types": [
     "grass"
@@ -22,8 +22,9 @@
   "gender_ratio": 254,
   "held_items": [
     {
-      "held_item": "grassy-seed",
-      "rarity": null
+      "held_item_no": 901,
+      "held_item_name": "grassy-seed",
+      "rarity": 50
     }
   ],
   "egg_groups": [

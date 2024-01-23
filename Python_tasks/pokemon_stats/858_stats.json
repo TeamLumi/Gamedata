@@ -2,9 +2,9 @@
   "name": "hatterene",
   "id": 858,
   "abilities": [
-    "healer",
-    "anticipation",
-    "magic-bounce"
+    131,
+    107,
+    156
   ],
   "types": [
     "psychic",

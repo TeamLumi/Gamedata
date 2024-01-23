@@ -2,8 +2,8 @@
   "name": "sprigatito",
   "id": 906,
   "abilities": [
-    "overgrow",
-    "protean"
+    65,
+    168
   ],
   "types": [
     "grass"

@@ -2,8 +2,8 @@
   "name": "arboliva",
   "id": 930,
   "abilities": [
-    "seed-sower",
-    "harvest"
+    269,
+    139
   ],
   "types": [
     "grass",

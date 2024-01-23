@@ -2,9 +2,9 @@
   "name": "phantump",
   "id": 708,
   "abilities": [
-    "natural-cure",
-    "frisk",
-    "harvest"
+    30,
+    119,
+    139
   ],
   "types": [
     "ghost",

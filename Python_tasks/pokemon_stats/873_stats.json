@@ -2,8 +2,8 @@
   "name": "frosmoth",
   "id": 873,
   "abilities": [
-    "shield-dust",
-    "ice-scales"
+    19,
+    246
   ],
   "types": [
     "ice",

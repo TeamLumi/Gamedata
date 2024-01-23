@@ -2,9 +2,9 @@
   "name": "noivern",
   "id": 715,
   "abilities": [
-    "frisk",
-    "infiltrator",
-    "telepathy"
+    119,
+    151,
+    140
   ],
   "types": [
     "flying",

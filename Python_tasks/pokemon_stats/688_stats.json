@@ -2,9 +2,9 @@
   "name": "binacle",
   "id": 688,
   "abilities": [
-    "tough-claws",
-    "sniper",
-    "pickpocket"
+    181,
+    97,
+    124
   ],
   "types": [
     "rock",

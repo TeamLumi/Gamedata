@@ -2,9 +2,9 @@
   "name": "orbeetle-gmax",
   "id": 10213,
   "abilities": [
-    "swarm",
-    "frisk",
-    "telepathy"
+    68,
+    119,
+    140
   ],
   "types": [
     "bug",

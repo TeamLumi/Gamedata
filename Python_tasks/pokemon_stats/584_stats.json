@@ -2,9 +2,9 @@
   "name": "vanilluxe",
   "id": 584,
   "abilities": [
-    "ice-body",
-    "snow-warning",
-    "weak-armor"
+    115,
+    117,
+    133
   ],
   "types": [
     "ice"
@@ -22,8 +22,9 @@
   "gender_ratio": 127,
   "held_items": [
     {
-      "held_item": "never-melt-ice",
-      "rarity": null
+      "held_item_no": 223,
+      "held_item_name": "never-melt-ice",
+      "rarity": 50
     }
   ],
   "egg_groups": [

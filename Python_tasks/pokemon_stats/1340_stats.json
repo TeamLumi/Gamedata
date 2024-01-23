@@ -2,8 +2,8 @@
   "name": "lurantis-totem",
   "id": 10128,
   "abilities": [
-    "leaf-guard",
-    "contrary"
+    102,
+    126
   ],
   "types": [
     "grass"
@@ -21,8 +21,9 @@
   "gender_ratio": 127,
   "held_items": [
     {
-      "held_item": "miracle-seed",
-      "rarity": null
+      "held_item_no": 216,
+      "held_item_name": "miracle-seed",
+      "rarity": 5
     }
   ],
   "egg_groups": [

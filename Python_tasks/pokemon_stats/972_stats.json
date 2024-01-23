@@ -2,8 +2,8 @@
   "name": "houndstone",
   "id": 972,
   "abilities": [
-    "sand-rush",
-    "fluffy"
+    146,
+    218
   ],
   "types": [
     "ghost"

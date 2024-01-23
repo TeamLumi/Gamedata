@@ -2,9 +2,9 @@
   "name": "wiglett",
   "id": 960,
   "abilities": [
-    "gooey",
-    "rattled",
-    "sand-veil"
+    183,
+    155,
+    8
   ],
   "types": [
     "water"

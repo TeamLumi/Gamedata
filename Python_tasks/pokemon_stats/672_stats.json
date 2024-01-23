@@ -2,8 +2,8 @@
   "name": "skiddo",
   "id": 672,
   "abilities": [
-    "sap-sipper",
-    "grass-pelt"
+    157,
+    179
   ],
   "types": [
     "grass"

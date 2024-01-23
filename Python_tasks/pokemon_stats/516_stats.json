@@ -2,8 +2,8 @@
   "name": "simipour",
   "id": 516,
   "abilities": [
-    "gluttony",
-    "torrent"
+    82,
+    67
   ],
   "types": [
     "water"
@@ -21,12 +21,14 @@
   "gender_ratio": 31,
   "held_items": [
     {
-      "held_item": "oran-berry",
-      "rarity": null
+      "held_item_no": 132,
+      "held_item_name": "oran-berry",
+      "rarity": 50
     },
     {
-      "held_item": "rindo-berry",
-      "rarity": null
+      "held_item_no": 164,
+      "held_item_name": "rindo-berry",
+      "rarity": 5
     }
   ],
   "egg_groups": [

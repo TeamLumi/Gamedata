@@ -2,8 +2,8 @@
   "name": "arrokuda",
   "id": 846,
   "abilities": [
-    "swift-swim",
-    "propeller-tail"
+    33,
+    239
   ],
   "types": [
     "water"

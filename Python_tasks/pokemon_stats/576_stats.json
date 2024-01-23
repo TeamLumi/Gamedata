@@ -2,9 +2,9 @@
   "name": "gothitelle",
   "id": 576,
   "abilities": [
-    "frisk",
-    "competitive",
-    "shadow-tag"
+    119,
+    172,
+    23
   ],
   "types": [
     "psychic"
@@ -22,8 +22,9 @@
   "gender_ratio": 191,
   "held_items": [
     {
-      "held_item": "persim-berry",
-      "rarity": null
+      "held_item_no": 133,
+      "held_item_name": "persim-berry",
+      "rarity": 50
     }
   ],
   "egg_groups": [

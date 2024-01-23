@@ -2,9 +2,9 @@
   "name": "sandile",
   "id": 551,
   "abilities": [
-    "intimidate",
-    "moxie",
-    "anger-point"
+    22,
+    153,
+    83
   ],
   "types": [
     "ground",
@@ -23,8 +23,9 @@
   "gender_ratio": 127,
   "held_items": [
     {
-      "held_item": "black-glasses",
-      "rarity": null
+      "held_item_no": 217,
+      "held_item_name": "black-glasses",
+      "rarity": 5
     }
   ],
   "egg_groups": [

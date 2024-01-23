@@ -2,9 +2,9 @@
   "name": "morgrem",
   "id": 860,
   "abilities": [
-    "prankster",
-    "frisk",
-    "pickpocket"
+    158,
+    119,
+    124
   ],
   "types": [
     "dark",

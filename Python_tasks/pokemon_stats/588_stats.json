@@ -2,9 +2,9 @@
   "name": "karrablast",
   "id": 588,
   "abilities": [
-    "swarm",
-    "shed-skin",
-    "no-guard"
+    68,
+    61,
+    99
   ],
   "types": [
     "bug"

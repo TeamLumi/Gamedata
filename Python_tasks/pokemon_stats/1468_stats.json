@@ -2,8 +2,8 @@
   "name": "copperajah-gmax",
   "id": 10224,
   "abilities": [
-    "sheer-force",
-    "heavy-metal"
+    125,
+    134
   ],
   "types": [
     "steel"

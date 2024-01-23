@@ -2,9 +2,9 @@
   "name": "sawk",
   "id": 539,
   "abilities": [
-    "sturdy",
-    "inner-focus",
-    "mold-breaker"
+    5,
+    39,
+    104
   ],
   "types": [
     "fighting"
@@ -22,12 +22,14 @@
   "gender_ratio": 0,
   "held_items": [
     {
-      "held_item": "black-belt",
-      "rarity": null
+      "held_item_no": 218,
+      "held_item_name": "black-belt",
+      "rarity": 5
     },
     {
-      "held_item": "expert-belt",
-      "rarity": null
+      "held_item_no": 245,
+      "held_item_name": "expert-belt",
+      "rarity": 1
     }
   ],
   "egg_groups": [

@@ -2,9 +2,9 @@
   "name": "flittle",
   "id": 955,
   "abilities": [
-    "anticipation",
-    "frisk",
-    "speed-boost"
+    107,
+    119,
+    3
   ],
   "types": [
     "psychic"

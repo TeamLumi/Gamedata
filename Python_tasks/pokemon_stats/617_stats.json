@@ -2,9 +2,9 @@
   "name": "accelgor",
   "id": 617,
   "abilities": [
-    "hydration",
-    "sticky-hold",
-    "unburden"
+    93,
+    60,
+    84
   ],
   "types": [
     "bug"

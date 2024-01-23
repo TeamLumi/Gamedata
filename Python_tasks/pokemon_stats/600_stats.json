@@ -2,9 +2,9 @@
   "name": "klang",
   "id": 600,
   "abilities": [
-    "plus",
-    "minus",
-    "clear-body"
+    57,
+    58,
+    29
   ],
   "types": [
     "steel"

@@ -2,9 +2,9 @@
   "name": "grimmsnarl",
   "id": 861,
   "abilities": [
-    "prankster",
-    "frisk",
-    "pickpocket"
+    158,
+    119,
+    124
   ],
   "types": [
     "dark",

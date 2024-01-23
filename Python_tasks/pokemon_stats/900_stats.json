@@ -2,9 +2,9 @@
   "name": "kleavor",
   "id": 900,
   "abilities": [
-    "swarm",
-    "sheer-force",
-    "sharpness"
+    68,
+    125,
+    292
   ],
   "types": [
     "bug",

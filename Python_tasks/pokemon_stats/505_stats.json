@@ -2,9 +2,9 @@
   "name": "watchog",
   "id": 505,
   "abilities": [
-    "illuminate",
-    "keen-eye",
-    "analytic"
+    35,
+    51,
+    148
   ],
   "types": [
     "normal"

@@ -2,8 +2,8 @@
   "name": "samurott",
   "id": 503,
   "abilities": [
-    "torrent",
-    "shell-armor"
+    67,
+    75
   ],
   "types": [
     "water"

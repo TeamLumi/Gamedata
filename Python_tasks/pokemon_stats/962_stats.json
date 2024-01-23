@@ -2,9 +2,9 @@
   "name": "bombirdier",
   "id": 962,
   "abilities": [
-    "big-pecks",
-    "keen-eye",
-    "rocky-payload"
+    145,
+    51,
+    276
   ],
   "types": [
     "flying",

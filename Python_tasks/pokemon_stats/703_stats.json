@@ -2,8 +2,8 @@
   "name": "carbink",
   "id": 703,
   "abilities": [
-    "clear-body",
-    "sturdy"
+    29,
+    5
   ],
   "types": [
     "rock",

@@ -2,9 +2,9 @@
   "name": "cinccino",
   "id": 573,
   "abilities": [
-    "cute-charm",
-    "technician",
-    "skill-link"
+    56,
+    101,
+    92
   ],
   "types": [
     "normal"
@@ -22,8 +22,9 @@
   "gender_ratio": 191,
   "held_items": [
     {
-      "held_item": "chesto-berry",
-      "rarity": null
+      "held_item_no": 127,
+      "held_item_name": "chesto-berry",
+      "rarity": 50
     }
   ],
   "egg_groups": [

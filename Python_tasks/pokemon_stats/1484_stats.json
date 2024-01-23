@@ -2,9 +2,9 @@
   "name": "maushold-family-of-three",
   "id": 10257,
   "abilities": [
-    "friend-guard",
-    "cheek-pouch",
-    "technician"
+    132,
+    167,
+    101
   ],
   "types": [
     "normal"

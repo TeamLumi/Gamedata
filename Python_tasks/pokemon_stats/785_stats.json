@@ -2,8 +2,8 @@
   "name": "tapu-koko",
   "id": 785,
   "abilities": [
-    "electric-surge",
-    "telepathy"
+    226,
+    140
   ],
   "types": [
     "electric",

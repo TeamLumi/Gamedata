@@ -2,9 +2,9 @@
   "name": "escavalier",
   "id": 589,
   "abilities": [
-    "swarm",
-    "shell-armor",
-    "overcoat"
+    68,
+    75,
+    142
   ],
   "types": [
     "bug",

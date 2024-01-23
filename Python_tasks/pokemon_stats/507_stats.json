@@ -2,9 +2,9 @@
   "name": "herdier",
   "id": 507,
   "abilities": [
-    "intimidate",
-    "sand-rush",
-    "scrappy"
+    22,
+    146,
+    113
   ],
   "types": [
     "normal"

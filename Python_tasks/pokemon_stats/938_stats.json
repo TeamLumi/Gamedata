@@ -2,9 +2,9 @@
   "name": "tadbulb",
   "id": 938,
   "abilities": [
-    "own-tempo",
-    "static",
-    "damp"
+    20,
+    9,
+    6
   ],
   "types": [
     "electric"

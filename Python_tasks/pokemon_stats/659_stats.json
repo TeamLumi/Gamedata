@@ -2,9 +2,9 @@
   "name": "bunnelby",
   "id": 659,
   "abilities": [
-    "pickup",
-    "cheek-pouch",
-    "huge-power"
+    53,
+    167,
+    37
   ],
   "types": [
     "normal"

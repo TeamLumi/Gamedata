@@ -2,8 +2,8 @@
   "name": "araquanid",
   "id": 752,
   "abilities": [
-    "water-bubble",
-    "water-absorb"
+    199,
+    11
   ],
   "types": [
     "water",
@@ -22,8 +22,9 @@
   "gender_ratio": 127,
   "held_items": [
     {
-      "held_item": "mystic-water",
-      "rarity": null
+      "held_item_no": 220,
+      "held_item_name": "mystic-water",
+      "rarity": 5
     }
   ],
   "egg_groups": [

@@ -2,9 +2,9 @@
   "name": "chandelure",
   "id": 609,
   "abilities": [
-    "flash-fire",
-    "flame-body",
-    "infiltrator"
+    18,
+    49,
+    151
   ],
   "types": [
     "ghost",

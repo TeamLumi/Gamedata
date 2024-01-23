@@ -2,8 +2,8 @@
   "name": "inteleon-gmax",
   "id": 10211,
   "abilities": [
-    "torrent",
-    "sniper"
+    67,
+    97
   ],
   "types": [
     "water"

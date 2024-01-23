@@ -2,9 +2,9 @@
   "name": "carracosta",
   "id": 565,
   "abilities": [
-    "solid-rock",
-    "sturdy",
-    "swift-swim"
+    116,
+    5,
+    33
   ],
   "types": [
     "water",

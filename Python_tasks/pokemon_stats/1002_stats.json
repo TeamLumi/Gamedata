@@ -2,8 +2,8 @@
   "name": "chien-pao",
   "id": 1002,
   "abilities": [
-    "sword-of-ruin",
-    "sword-of-ruin"
+    285,
+    285
   ],
   "types": [
     "dark",

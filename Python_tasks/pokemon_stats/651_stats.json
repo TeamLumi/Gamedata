@@ -2,8 +2,8 @@
   "name": "quilladin",
   "id": 651,
   "abilities": [
-    "overgrow",
-    "bulletproof"
+    65,
+    171
   ],
   "types": [
     "grass"

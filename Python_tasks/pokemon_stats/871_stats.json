@@ -2,8 +2,8 @@
   "name": "pincurchin",
   "id": 871,
   "abilities": [
-    "lightning-rod",
-    "electric-surge"
+    31,
+    226
   ],
   "types": [
     "electric"

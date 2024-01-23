@@ -2,8 +2,8 @@
   "name": "armarouge",
   "id": 936,
   "abilities": [
-    "flash-fire",
-    "weak-armor"
+    18,
+    133
   ],
   "types": [
     "fire",

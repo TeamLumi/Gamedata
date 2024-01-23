@@ -2,9 +2,9 @@
   "name": "grafaiai",
   "id": 945,
   "abilities": [
-    "unburden",
-    "poison-touch",
-    "prankster"
+    84,
+    143,
+    158
   ],
   "types": [
     "poison",

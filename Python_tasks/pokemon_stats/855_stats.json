@@ -2,8 +2,8 @@
   "name": "polteageist-phony",
   "id": 855,
   "abilities": [
-    "weak-armor",
-    "cursed-body"
+    133,
+    130
   ],
   "types": [
     "ghost"

@@ -2,8 +2,8 @@
   "name": "larvesta",
   "id": 636,
   "abilities": [
-    "flame-body",
-    "swarm"
+    49,
+    68
   ],
   "types": [
     "bug",

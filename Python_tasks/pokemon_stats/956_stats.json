@@ -2,9 +2,9 @@
   "name": "espathra",
   "id": 956,
   "abilities": [
-    "opportunist",
-    "frisk",
-    "speed-boost"
+    290,
+    119,
+    3
   ],
   "types": [
     "psychic"

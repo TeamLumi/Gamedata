@@ -2,9 +2,9 @@
   "name": "bouffalant",
   "id": 626,
   "abilities": [
-    "reckless",
-    "sap-sipper",
-    "soundproof"
+    120,
+    157,
+    43
   ],
   "types": [
     "normal"

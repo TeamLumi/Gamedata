@@ -2,8 +2,8 @@
   "name": "decidueye",
   "id": 724,
   "abilities": [
-    "overgrow",
-    "long-reach"
+    65,
+    203
   ],
   "types": [
     "grass",

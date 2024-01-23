@@ -2,9 +2,9 @@
   "name": "duraludon",
   "id": 884,
   "abilities": [
-    "light-metal",
-    "heavy-metal",
-    "stalwart"
+    135,
+    134,
+    242
   ],
   "types": [
     "steel",

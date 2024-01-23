@@ -2,9 +2,9 @@
   "name": "nacli",
   "id": 932,
   "abilities": [
-    "purifying-salt",
-    "sturdy",
-    "clear-body"
+    272,
+    5,
+    29
   ],
   "types": [
     "rock"

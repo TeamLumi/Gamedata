@@ -2,9 +2,9 @@
   "name": "pumpkaboo-super",
   "id": 10029,
   "abilities": [
-    "pickup",
-    "frisk",
-    "insomnia"
+    53,
+    119,
+    15
   ],
   "types": [
     "ghost",
@@ -23,8 +23,9 @@
   "gender_ratio": 127,
   "held_items": [
     {
-      "held_item": "miracle-seed",
-      "rarity": null
+      "held_item_no": 216,
+      "held_item_name": "miracle-seed",
+      "rarity": 5
     }
   ],
   "egg_groups": [

@@ -2,9 +2,9 @@
   "name": "flamigo",
   "id": 973,
   "abilities": [
-    "scrappy",
-    "tangled-feet",
-    "costar"
+    113,
+    77,
+    294
   ],
   "types": [
     "flying",

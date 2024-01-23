@@ -2,9 +2,9 @@
   "name": "wattrel",
   "id": 940,
   "abilities": [
-    "wind-power",
-    "volt-absorb",
-    "competitive"
+    277,
+    10,
+    172
   ],
   "types": [
     "electric",

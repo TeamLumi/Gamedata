@@ -2,9 +2,9 @@
   "name": "druddigon",
   "id": 621,
   "abilities": [
-    "rough-skin",
-    "sheer-force",
-    "mold-breaker"
+    24,
+    125,
+    104
   ],
   "types": [
     "dragon"
@@ -22,8 +22,9 @@
   "gender_ratio": 127,
   "held_items": [
     {
-      "held_item": "dragon-fang",
-      "rarity": null
+      "held_item_no": 227,
+      "held_item_name": "dragon-fang",
+      "rarity": 5
     }
   ],
   "egg_groups": [

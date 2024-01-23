@@ -2,9 +2,9 @@
   "name": "bruxish",
   "id": 779,
   "abilities": [
-    "dazzling",
-    "strong-jaw",
-    "wonder-skin"
+    219,
+    173,
+    147
   ],
   "types": [
     "water",
@@ -23,8 +23,9 @@
   "gender_ratio": 127,
   "held_items": [
     {
-      "held_item": "razor-fang",
-      "rarity": null
+      "held_item_no": 304,
+      "held_item_name": "razor-fang",
+      "rarity": 5
     }
   ],
   "egg_groups": [

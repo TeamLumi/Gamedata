@@ -2,8 +2,8 @@
   "name": "oshawott",
   "id": 501,
   "abilities": [
-    "torrent",
-    "shell-armor"
+    67,
+    75
   ],
   "types": [
     "water"

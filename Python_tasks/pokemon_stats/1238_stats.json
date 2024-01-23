@@ -2,9 +2,9 @@
   "name": "basculin-white-striped",
   "id": 10247,
   "abilities": [
-    "rattled",
-    "adaptability",
-    "mold-breaker"
+    155,
+    91,
+    104
   ],
   "types": [
     "water"

@@ -2,7 +2,7 @@
   "name": "mimikyu-disguised",
   "id": 778,
   "abilities": [
-    "disguise"
+    209
   ],
   "types": [
     "ghost",
@@ -21,8 +21,9 @@
   "gender_ratio": 127,
   "held_items": [
     {
-      "held_item": "chesto-berry",
-      "rarity": null
+      "held_item_no": 127,
+      "held_item_name": "chesto-berry",
+      "rarity": 5
     }
   ],
   "egg_groups": [

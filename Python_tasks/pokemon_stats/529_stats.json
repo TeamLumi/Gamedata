@@ -2,9 +2,9 @@
   "name": "drilbur",
   "id": 529,
   "abilities": [
-    "sand-rush",
-    "sand-force",
-    "mold-breaker"
+    146,
+    159,
+    104
   ],
   "types": [
     "ground"

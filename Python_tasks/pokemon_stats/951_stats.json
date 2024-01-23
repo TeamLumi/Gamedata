@@ -2,9 +2,9 @@
   "name": "capsakid",
   "id": 951,
   "abilities": [
-    "chlorophyll",
-    "insomnia",
-    "klutz"
+    34,
+    15,
+    103
   ],
   "types": [
     "grass"

@@ -2,9 +2,9 @@
   "name": "conkeldurr",
   "id": 534,
   "abilities": [
-    "guts",
-    "sheer-force",
-    "iron-fist"
+    62,
+    125,
+    89
   ],
   "types": [
     "fighting"

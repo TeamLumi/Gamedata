@@ -2,9 +2,9 @@
   "name": "braviary",
   "id": 628,
   "abilities": [
-    "keen-eye",
-    "sheer-force",
-    "defiant"
+    51,
+    125,
+    128
   ],
   "types": [
     "normal",

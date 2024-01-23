@@ -2,9 +2,9 @@
   "name": "dondozo",
   "id": 977,
   "abilities": [
-    "unaware",
-    "oblivious",
-    "water-veil"
+    109,
+    12,
+    41
   ],
   "types": [
     "water"

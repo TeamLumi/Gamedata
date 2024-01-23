@@ -2,8 +2,8 @@
   "name": "fuecoco",
   "id": 909,
   "abilities": [
-    "blaze",
-    "unaware"
+    66,
+    109
   ],
   "types": [
     "fire"

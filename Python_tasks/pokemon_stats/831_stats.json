@@ -2,9 +2,9 @@
   "name": "wooloo",
   "id": 831,
   "abilities": [
-    "fluffy",
-    "run-away",
-    "bulletproof"
+    218,
+    50,
+    171
   ],
   "types": [
     "normal"

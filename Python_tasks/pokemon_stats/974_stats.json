@@ -2,9 +2,9 @@
   "name": "cetoddle",
   "id": 974,
   "abilities": [
-    "thick-fat",
-    "snow-cloak",
-    "sheer-force"
+    47,
+    81,
+    125
   ],
   "types": [
     "ice"

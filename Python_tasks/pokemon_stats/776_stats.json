@@ -2,7 +2,7 @@
   "name": "turtonator",
   "id": 776,
   "abilities": [
-    "shell-armor"
+    75
   ],
   "types": [
     "fire",
@@ -21,8 +21,9 @@
   "gender_ratio": 127,
   "held_items": [
     {
-      "held_item": "charcoal",
-      "rarity": null
+      "held_item_no": 226,
+      "held_item_name": "charcoal",
+      "rarity": 5
     }
   ],
   "egg_groups": [

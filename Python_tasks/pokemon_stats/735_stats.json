@@ -2,9 +2,9 @@
   "name": "gumshoos",
   "id": 735,
   "abilities": [
-    "stakeout",
-    "strong-jaw",
-    "adaptability"
+    198,
+    173,
+    91
   ],
   "types": [
     "normal"
@@ -22,8 +22,9 @@
   "gender_ratio": 127,
   "held_items": [
     {
-      "held_item": "pecha-berry",
-      "rarity": null
+      "held_item_no": 128,
+      "held_item_name": "pecha-berry",
+      "rarity": 5
     }
   ],
   "egg_groups": [

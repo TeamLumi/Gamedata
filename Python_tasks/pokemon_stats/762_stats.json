@@ -2,9 +2,9 @@
   "name": "steenee",
   "id": 762,
   "abilities": [
-    "leaf-guard",
-    "oblivious",
-    "sweet-veil"
+    102,
+    12,
+    175
   ],
   "types": [
     "grass"
@@ -22,8 +22,9 @@
   "gender_ratio": 254,
   "held_items": [
     {
-      "held_item": "grassy-seed",
-      "rarity": null
+      "held_item_no": 901,
+      "held_item_name": "grassy-seed",
+      "rarity": 5
     }
   ],
   "egg_groups": [

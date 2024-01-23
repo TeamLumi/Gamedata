@@ -2,9 +2,9 @@
   "name": "maschiff",
   "id": 942,
   "abilities": [
-    "intimidate",
-    "run-away",
-    "stakeout"
+    22,
+    50,
+    198
   ],
   "types": [
     "dark"

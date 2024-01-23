@@ -2,9 +2,9 @@
   "name": "squawkabilly-blue-plumage",
   "id": 10260,
   "abilities": [
-    "intimidate",
-    "hustle",
-    "guts"
+    22,
+    55,
+    62
   ],
   "types": [
     "normal",

@@ -2,9 +2,9 @@
   "name": "rolycoly",
   "id": 837,
   "abilities": [
-    "steam-engine",
-    "heatproof",
-    "flash-fire"
+    243,
+    85,
+    18
   ],
   "types": [
     "rock"

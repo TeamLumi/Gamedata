@@ -2,9 +2,9 @@
   "name": "basculin-red-striped",
   "id": 550,
   "abilities": [
-    "reckless",
-    "adaptability",
-    "mold-breaker"
+    120,
+    91,
+    104
   ],
   "types": [
     "water"
@@ -22,8 +22,9 @@
   "gender_ratio": 127,
   "held_items": [
     {
-      "held_item": "deep-sea-tooth",
-      "rarity": null
+      "held_item_no": 203,
+      "held_item_name": "deep-sea-tooth",
+      "rarity": 5
     }
   ],
   "egg_groups": [

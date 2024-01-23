@@ -2,8 +2,8 @@
   "name": "ferrothorn",
   "id": 598,
   "abilities": [
-    "iron-barbs",
-    "anticipation"
+    160,
+    107
   ],
   "types": [
     "grass",
@@ -22,8 +22,9 @@
   "gender_ratio": 127,
   "held_items": [
     {
-      "held_item": "sticky-barb",
-      "rarity": null
+      "held_item_no": 265,
+      "held_item_name": "sticky-barb",
+      "rarity": 5
     }
   ],
   "egg_groups": [

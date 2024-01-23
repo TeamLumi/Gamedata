@@ -2,8 +2,8 @@
   "name": "servine",
   "id": 496,
   "abilities": [
-    "overgrow",
-    "contrary"
+    65,
+    126
   ],
   "types": [
     "grass"

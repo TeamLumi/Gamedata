@@ -2,9 +2,9 @@
   "name": "duraludon-gmax",
   "id": 10225,
   "abilities": [
-    "light-metal",
-    "heavy-metal",
-    "stalwart"
+    135,
+    134,
+    242
   ],
   "types": [
     "steel",

@@ -2,9 +2,9 @@
   "name": "tinkatink",
   "id": 957,
   "abilities": [
-    "mold-breaker",
-    "own-tempo",
-    "pickpocket"
+    104,
+    20,
+    124
   ],
   "types": [
     "fairy",

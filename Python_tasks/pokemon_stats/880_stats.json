@@ -2,9 +2,9 @@
   "name": "dracozolt",
   "id": 880,
   "abilities": [
-    "volt-absorb",
-    "hustle",
-    "sand-rush"
+    10,
+    55,
+    146
   ],
   "types": [
     "electric",

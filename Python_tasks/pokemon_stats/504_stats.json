@@ -2,9 +2,9 @@
   "name": "patrat",
   "id": 504,
   "abilities": [
-    "run-away",
-    "keen-eye",
-    "analytic"
+    50,
+    51,
+    148
   ],
   "types": [
     "normal"

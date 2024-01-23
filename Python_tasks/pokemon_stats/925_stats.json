@@ -2,9 +2,9 @@
   "name": "maushold-family-of-four",
   "id": 925,
   "abilities": [
-    "friend-guard",
-    "cheek-pouch",
-    "technician"
+    132,
+    167,
+    101
   ],
   "types": [
     "normal"

@@ -2,8 +2,8 @@
   "name": "crocalor",
   "id": 910,
   "abilities": [
-    "blaze",
-    "unaware"
+    66,
+    109
   ],
   "types": [
     "fire"

@@ -2,8 +2,8 @@
   "name": "gimmighoul-chest",
   "id": 999,
   "abilities": [
-    "rattled",
-    "rattled"
+    155,
+    155
   ],
   "types": [
     "ghost"

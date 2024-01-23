@@ -2,9 +2,9 @@
   "name": "mienshao",
   "id": 620,
   "abilities": [
-    "inner-focus",
-    "regenerator",
-    "reckless"
+    39,
+    144,
+    120
   ],
   "types": [
     "fighting"

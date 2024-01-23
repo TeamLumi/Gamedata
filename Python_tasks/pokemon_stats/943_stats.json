@@ -2,9 +2,9 @@
   "name": "mabosstiff",
   "id": 943,
   "abilities": [
-    "intimidate",
-    "guard-dog",
-    "stakeout"
+    22,
+    275,
+    198
   ],
   "types": [
     "dark"

@@ -2,9 +2,9 @@
   "name": "heatmor",
   "id": 631,
   "abilities": [
-    "gluttony",
-    "flash-fire",
-    "white-smoke"
+    82,
+    18,
+    73
   ],
   "types": [
     "fire"
@@ -22,8 +22,9 @@
   "gender_ratio": 127,
   "held_items": [
     {
-      "held_item": "flame-orb",
-      "rarity": null
+      "held_item_no": 250,
+      "held_item_name": "flame-orb",
+      "rarity": 1
     }
   ],
   "egg_groups": [

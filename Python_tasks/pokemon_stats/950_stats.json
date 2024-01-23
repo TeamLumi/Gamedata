@@ -2,9 +2,9 @@
   "name": "klawf",
   "id": 950,
   "abilities": [
-    "anger-shell",
-    "shell-armor",
-    "regenerator"
+    271,
+    75,
+    144
   ],
   "types": [
     "rock"

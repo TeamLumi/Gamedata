@@ -2,8 +2,8 @@
   "name": "serperior",
   "id": 497,
   "abilities": [
-    "overgrow",
-    "contrary"
+    65,
+    126
   ],
   "types": [
     "grass"

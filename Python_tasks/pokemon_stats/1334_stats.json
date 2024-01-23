@@ -2,9 +2,9 @@
   "name": "ribombee-totem",
   "id": 10150,
   "abilities": [
-    "honey-gather",
-    "shield-dust",
-    "sweet-veil"
+    118,
+    19,
+    175
   ],
   "types": [
     "bug",
@@ -23,8 +23,9 @@
   "gender_ratio": 127,
   "held_items": [
     {
-      "held_item": "honey",
-      "rarity": null
+      "held_item_no": 94,
+      "held_item_name": "honey",
+      "rarity": 5
     }
   ],
   "egg_groups": [

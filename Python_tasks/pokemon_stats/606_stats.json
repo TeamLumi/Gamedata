@@ -2,9 +2,9 @@
   "name": "beheeyem",
   "id": 606,
   "abilities": [
-    "telepathy",
-    "synchronize",
-    "analytic"
+    140,
+    28,
+    148
   ],
   "types": [
     "psychic"
