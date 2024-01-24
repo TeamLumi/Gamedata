@@ -238,9 +238,9 @@ def get_all_api_mon_data():
     get_pokemon_stats(mons_name, pokemonId, mon["monsno"])
 
 def full_run():
-  get_pokemon_tm_learnsets()
-  clear_logs()
-  get_all_api_mon_data()
+  # get_pokemon_tm_learnsets()
+  # clear_logs()
+  # get_all_api_mon_data()
   write_pokeapi_data_to_file()
 
 if __name__ == "__main__":

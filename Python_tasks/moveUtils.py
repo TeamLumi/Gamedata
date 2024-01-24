@@ -152,18 +152,18 @@ def get_tech_machine_learnset(pokemon_id=0, baseMode=False):
 def find_item_no_by_waza_no(waza_no):
     for waza_machine in ItemTable['WazaMachine']:
         if waza_machine['wazaNo'] == waza_no:
-            return waza_machine['itemNo']
+            return waza_machine['machineNo']
     return None
 
 def create_tm_learnset(move_ids):
     tm_bitfield = [0] * 128
 
     for move_id in move_ids:
-        item_id = find_item_no_by_waza_no(move_id)
-        if(item_id == None):
+        tm_no = find_item_no_by_waza_no(move_id)
+        if(tm_no == None):
             continue
 
-        bit_index = ItemTable['Item'][item_id]['group_id']
+        bit_index = tm_no - 1
         if bit_index > 128:
             continue
         
