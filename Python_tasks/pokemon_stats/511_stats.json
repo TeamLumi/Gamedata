@@ -21,12 +21,12 @@
   "gender_ratio": 31,
   "held_items": [
     {
-      "held_item_no": 132,
+      "held_item_no": 155,
       "held_item_name": "oran-berry",
       "rarity": 50
     },
     {
-      "held_item_no": 161,
+      "held_item_no": 184,
       "held_item_name": "occa-berry",
       "rarity": 5
     }

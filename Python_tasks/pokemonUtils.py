@@ -158,6 +158,8 @@ def get_item_id_from_item_name(item_name):
     for i, item in enumerate(item_namedata['labelDataArray']):
         if item['wordDataArray'][0]['str'] == item_name:
             return i
+        if slugify(item['wordDataArray'][0]['str']) == item_name:
+            return i
     return -1
 
 def get_gender(sex):

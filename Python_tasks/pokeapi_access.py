@@ -7,7 +7,7 @@ import copy
 import constants
 import poke_api_constants
 from load_files import load_data
-from pokemonUtils import get_pokemon_name, slugify
+from pokemonUtils import get_pokemon_name, slugify, get_item_id_from_item_name
 from moveUtils import create_tm_learnset
 from pokemonTypes import get_type_id
 
@@ -122,7 +122,7 @@ def get_pokemon_stats(pokemon_name, pokemonId, monsno, counter=0):
       "gender_ratio": poke_api_constants.GENDER_RATIOS[species.gender_rate],
       "held_items": [
           {
-              "held_item_no": int(item.item.url.split("/")[-2]),
+              "held_item_no": get_item_id_from_item_name(item.item.name),
               "held_item_name": item.item.name,
               "rarity": item.version_details[-1].rarity
           }
@@ -223,7 +223,6 @@ def write_pokeapi_data_to_file():
 
       for index, bitfield in enumerate(api_mon["tm_bitfields"]):
         new_pokemon_dict[f"machine{index + 1}"] = bitfield
-      
 
     except Exception as e:
       print(f"Error: {e} {api_mon['name']} ({pokemonId})")
@@ -239,9 +238,9 @@ def get_all_api_mon_data():
     get_pokemon_stats(mons_name, pokemonId, mon["monsno"])
 
 def full_run():
-  # get_pokemon_tm_learnsets()
-  # clear_logs()
-  # get_all_api_mon_data()
+  get_pokemon_tm_learnsets()
+  clear_logs()
+  get_all_api_mon_data()
   write_pokeapi_data_to_file()
 
 if __name__ == "__main__":
