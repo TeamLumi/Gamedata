@@ -48,10 +48,10 @@ def create_converted_tm_list():
       "set08" : 0,
     }
 
-    outputObj["set01"] = convertedInts["machine1"]
-    outputObj["set02"] = convertedInts["machine2"]
-    outputObj["set03"] = convertedInts["machine3"]
-    outputObj["set04"] = convertedInts["machine4"]
+    outputObj["set01"] = convertedInts[0]
+    outputObj["set02"] = convertedInts[1]
+    outputObj["set03"] = convertedInts[2]
+    outputObj["set04"] = convertedInts[3]
 
     current_filepath = os.path.join(debug_file_path, "tm_conversion", f'monsno_{monsNo}_formno_{formNo}.json')
     with open( current_filepath, 'w') as file:
