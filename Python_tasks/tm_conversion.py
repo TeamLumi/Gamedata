@@ -5,9 +5,9 @@ import constants
 from moveUtils import (
   get_tech_machine_learnset,
   convert_int_to_bit,
-  personal_data
 )
 from pokemonUtils import get_mons_no_and_form_no
+from load_files import load_data
 
 parent_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 input_file_path = os.path.join(parent_file_path, constants.INPUT_NAME)
@@ -44,4 +44,9 @@ def create_converted_tm_list():
       json.dump(outputObj, file, ensure_ascii=False, indent = 2)
 
 if __name__ == "__main__":
+  full_data = load_data()
+  personal_table = full_data["personal_table"]
+  # This is only useful to grab from the poke_api_access output files.
+  # with open(os.path.join(debug_file_path, "New_Personal_Table.json"), "r") as json_file:
+  #   personal_data = json.load(json_file)
   create_converted_tm_list()
