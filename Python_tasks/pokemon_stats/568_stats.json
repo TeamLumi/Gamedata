@@ -24,7 +24,7 @@
     {
       "held_item_no": 251,
       "held_item_name": "silk-scarf",
-      "rarity": 50
+      "rarity": 5
     },
     {
       "held_item_no": 281,
@@ -59,9 +59,9 @@
     164
   ],
   "tm_bitfields": [
-    919616,
-    268460049,
-    32781,
+    2147943968,
+    2315270664,
+    37896198,
     0
   ]
 }

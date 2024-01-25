@@ -45,6 +45,7 @@ def get_pokemon_tm_learnsets():
   tm_items = full_data["item_table"]
   tm_moves = tm_items["WazaMachine"]
   pokemon_tm_learnsets = {}
+  print("Gathering TM Learnsets from PokeApi...")
   for index, tm in enumerate(tm_moves):
     if index > 104:
       break
@@ -53,7 +54,8 @@ def get_pokemon_tm_learnsets():
     try:
       api_move = pokebase.move(tm_move_no)
       pokemon_list = api_move.learned_by_pokemon
-      print(f"Move Pokemon List succesfully retrieved for {api_move.name}")
+      # Enable this for Debug
+      # print(f"Move Pokemon List succesfully retrieved for {api_move.name}")
     except Exception as e:
       print(f"Error: {e}")
 
@@ -67,6 +69,7 @@ def get_pokemon_tm_learnsets():
       print(f"Error: {e}")
   with open(os.path.join(debug_file_path, "pokemon_api_learnsets.json"), "w", encoding="utf-8") as json_file:
     json.dump(pokemon_tm_learnsets, json_file, ensure_ascii=False, indent=2)
+  print(f"Successfully wrote PokeApi TM Learnsets to {os.path.join(debug_file_path, 'pokemon_api_learnsets.json')}!")
   return pokemon_tm_learnsets
 
 def get_pokemon_stats(pokemon_name, pokemonId, monsno, counter=0):
@@ -156,6 +159,7 @@ def get_pokemon_stats(pokemon_name, pokemonId, monsno, counter=0):
     return
 
 def write_pokeapi_data_to_file():
+  print("Writing PokeApi data to file...")
   new_personal_table = copy.deepcopy(full_data["personal_table"])
   new_personal_data = new_personal_table["Personal"]
   for filename in os.listdir(stats_file_path):
@@ -229,8 +233,10 @@ def write_pokeapi_data_to_file():
 
   with open(os.path.join(debug_file_path, "New_Personal_Table.json"), "w") as json_file:
     json.dump(new_personal_table, json_file, ensure_ascii=False, indent=4)
+  print(f"Successfully wrote PokeApi data to {os.path.join(debug_file_path, 'New_Personal_Table.json')}")
 
 def get_all_api_mon_data():
+  print("Gathering all Pokemon data via PokeApi...")
   for pokemonId, mon in enumerate(personal_table):
     if mon["monsno"] <= 493:
       continue
@@ -238,9 +244,9 @@ def get_all_api_mon_data():
     get_pokemon_stats(mons_name, pokemonId, mon["monsno"])
 
 def full_run():
-  # get_pokemon_tm_learnsets()
-  # clear_logs()
-  # get_all_api_mon_data()
+  get_pokemon_tm_learnsets()
+  clear_logs()
+  get_all_api_mon_data()
   write_pokeapi_data_to_file()
 
 if __name__ == "__main__":

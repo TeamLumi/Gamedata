@@ -22,6 +22,11 @@
   "gender_ratio": 127,
   "held_items": [
     {
+      "held_item_no": 92,
+      "held_item_name": "nugget",
+      "rarity": 5
+    },
+    {
       "held_item_no": 251,
       "held_item_name": "silk-scarf",
       "rarity": 50
@@ -67,9 +72,9 @@
     164
   ],
   "tm_bitfields": [
-    558794816,
-    286285841,
-    32829,
+    2426881568,
+    2324183560,
+    37896222,
     0
   ]
 }
