@@ -80,19 +80,40 @@ def get_tm_compatibility(pokemon_id=0):
     if pokemon_id == 0:
         return None
     personal_data = full_data['personal_table']['Personal'][pokemon_id]
-    machine1, machine2, machine3, machine4 = personal_data['machine1'], personal_data['machine2'], personal_data['machine3'], personal_data['machine4']
-    tm_compatibility = []
-
-    for i in range(32):
-        tm_compatibility.append((machine1 & (1 << i)) != 0)
-    for i in range(32):
-        tm_compatibility.append((machine2 & (1 << i)) != 0)
-    for i in range(32):
-        tm_compatibility.append((machine3 & (1 << i)) != 0)
-    for i in range(32):
-        tm_compatibility.append((machine4 & (1 << i)) != 0)
+    machine_nos = [personal_data['machine1'], personal_data['machine2'], personal_data['machine3'], personal_data['machine4']]
+    tm_binary_list = convert_list_to_binary_array(machine_nos)
+    tm_compatibility = create_move_id_learnset(tm_binary_list)
 
     return tm_compatibility
+
+def decimal_to_binary_array(decimal_number):
+    if not isinstance(decimal_number, int) or decimal_number < 0:
+        raise ValueError("Input must be a non-negative integer")
+
+    binary_string = bin(decimal_number)[2:]  # Convert to binary and remove the '0b' prefix
+    binary_array = [int(bit) for bit in binary_string]
+
+    # Pad the binary array to have a length of 32 by adding leading zeros
+    binary_array = [0] * (32 - len(binary_array)) + binary_array
+
+    return binary_array[::-1]
+
+def convert_list_to_binary_array(decimal_list):
+    if len(decimal_list) != 4:
+        raise ValueError("Input list must have exactly 4 elements")
+
+    binary_array = []
+
+    for decimal_number in decimal_list:
+        if not isinstance(decimal_number, int) or decimal_number < 0:
+            raise ValueError("All elements in the list must be non-negative integers")
+
+        binary_array.extend(decimal_to_binary_array(decimal_number))
+
+    # Pad the binary array to have a length of 128 by adding leading zeros
+    binary_array = [0] * (128 - len(binary_array)) + binary_array
+
+    return binary_array
 
 def convert_to_32_bit_integers(binary_array):
     if len(binary_array) != 128:
@@ -129,47 +150,56 @@ def convert_int_to_bit(integer_list):
             pass
     return MachineList
 
-def get_tech_machine_learnset(pokemon_id=0, baseMode=False):
+def get_tech_machine_learnset(pokemon_id=0):
     learnset = get_tm_compatibility(pokemon_id)
     MAX_TM_COUNT = 104
     if learnset == None:
         return []
     can_learn = []
-    for i in range(MAX_TM_COUNT):
-        tm = ItemTable['WazaMachine'][i]
-
-        item_no = tm['itemNo']
-        legality_set_value = ItemTable['Item'][item_no]['group_id']
-        is_learnable = learnset[legality_set_value - 1]
-
-        if is_learnable and not baseMode:
-            can_learn.append({'level': 'tm', 'moveId': tm['wazaNo']})
-        elif is_learnable and baseMode:
-            can_learn.append(tm['machineNo'])
+    for move in learnset:
+        can_learn.append({'level': 'tm', 'moveId': move})
 
     return can_learn
 
-def find_item_no_by_waza_no(waza_no):
+def find_machine_no_by_waza_no(waza_no):
     for waza_machine in ItemTable['WazaMachine']:
         if waza_machine['wazaNo'] == waza_no:
             return waza_machine['machineNo']
+    return None
+
+def find_waza_no_by_machine_no(machineNo):
+    for waza_machine in ItemTable['WazaMachine']:
+        if waza_machine['machineNo'] == machineNo:
+            return waza_machine['wazaNo']
     return None
 
 def create_tm_learnset(move_ids):
     tm_bitfield = [0] * 128
 
     for move_id in move_ids:
-        tm_no = find_item_no_by_waza_no(move_id)
+        tm_no = find_machine_no_by_waza_no(move_id)
         if(tm_no == None):
             continue
 
         bit_index = tm_no - 1
         if bit_index > 128:
             continue
-        
+
         tm_bitfield[bit_index] = 1
-    
     return convert_to_32_bit_integers(tm_bitfield)
+
+def create_move_id_learnset(binary_array):
+    tm_array = []
+    for machine_no_index, binary_int in enumerate(binary_array):
+        if binary_int == 0:
+            continue
+        if machine_no_index > 103:
+            break
+        machine_no = machine_no_index + 1
+        print(machine_no)
+        tm_array.append(find_waza_no_by_machine_no(machine_no))
+    
+    return tm_array
 
 def get_pokemon_learnset(monsno=0):
     """

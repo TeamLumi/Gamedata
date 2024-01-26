@@ -3791,7 +3791,7 @@
   },
   {
     "value": 201,
-    "text": "Unown",
+    "text": "Unown A Form",
     "type": "PSYCHIC",
     "evolve": [
       201,
@@ -6519,7 +6519,7 @@
   },
   {
     "value": 351,
-    "text": "Castform",
+    "text": "Castform Normal",
     "type": "NORMAL",
     "evolve": [
       351,
@@ -7150,7 +7150,7 @@
   },
   {
     "value": 386,
-    "text": "Deoxys",
+    "text": "Deoxys Normal Forme",
     "type": "PSYCHIC",
     "evolve": [
       386,
@@ -7624,7 +7624,7 @@
   },
   {
     "value": 412,
-    "text": "Burmy",
+    "text": "Burmy Plant Cloak",
     "type": "BUG",
     "evolve": [
       412,
@@ -7642,7 +7642,7 @@
   },
   {
     "value": 413,
-    "text": "Wormadam",
+    "text": "Wormadam Plant Cloak",
     "type": "BUG",
     "dualtype": "GRASS",
     "evolve": [
@@ -7784,7 +7784,7 @@
   },
   {
     "value": 421,
-    "text": "Cherrim",
+    "text": "Cherrim Overcast Form",
     "type": "GRASS",
     "evolve": [
       420,
@@ -7802,7 +7802,7 @@
   },
   {
     "value": 422,
-    "text": "Shellos",
+    "text": "Shellos West Sea",
     "type": "WATER",
     "evolve": [
       422,
@@ -7819,7 +7819,7 @@
   },
   {
     "value": 423,
-    "text": "Gastrodon",
+    "text": "Gastrodon West Sea",
     "type": "WATER",
     "dualtype": "GROUND",
     "evolve": [
@@ -8976,7 +8976,7 @@
   },
   {
     "value": 487,
-    "text": "Giratina",
+    "text": "Giratina Altered Forme",
     "type": "GHOST",
     "dualtype": "DRAGON",
     "evolve": [
@@ -9058,7 +9058,7 @@
   },
   {
     "value": 492,
-    "text": "Shaymin",
+    "text": "Shaymin Land Forme",
     "type": "GRASS",
     "evolve": [
       492,
@@ -9075,7 +9075,7 @@
   },
   {
     "value": 493,
-    "text": "Arceus",
+    "text": "Arceus Blank Plate",
     "type": "NORMAL",
     "evolve": [
       493,
@@ -10113,7 +10113,7 @@
   },
   {
     "value": 550,
-    "text": "Basculin",
+    "text": "Basculin Red-Striped Form",
     "type": "WATER",
     "evolve": [
       550,
@@ -10206,7 +10206,7 @@
   },
   {
     "value": 555,
-    "text": "Darmanitan",
+    "text": "Darmanitan Standard Mode",
     "type": "FIRE",
     "evolve": [
       554,
@@ -10738,7 +10738,7 @@
   },
   {
     "value": 585,
-    "text": "Deerling",
+    "text": "Deerling Spring Form",
     "type": "NORMAL",
     "dualtype": "GRASS",
     "evolve": [
@@ -10756,7 +10756,7 @@
   },
   {
     "value": 586,
-    "text": "Sawsbuck",
+    "text": "Sawsbuck Spring Form",
     "type": "NORMAL",
     "dualtype": "GRASS",
     "evolve": [
@@ -11730,7 +11730,7 @@
   },
   {
     "value": 641,
-    "text": "Tornadus",
+    "text": "Tornadus Incarnate Forme",
     "type": "FLYING",
     "evolve": [
       641,
@@ -11747,7 +11747,7 @@
   },
   {
     "value": 642,
-    "text": "Thundurus",
+    "text": "Thundurus Incarnate Forme",
     "type": "ELECTRIC",
     "dualtype": "FLYING",
     "evolve": [
@@ -11799,7 +11799,7 @@
   },
   {
     "value": 645,
-    "text": "Landorus",
+    "text": "Landorus Incarnate Forme",
     "type": "GROUND",
     "dualtype": "FLYING",
     "evolve": [
@@ -11836,7 +11836,7 @@
   },
   {
     "value": 647,
-    "text": "Keldeo",
+    "text": "Keldeo Ordinary Form",
     "type": "WATER",
     "dualtype": "FIGHTING",
     "evolve": [
@@ -11854,7 +11854,7 @@
   },
   {
     "value": 648,
-    "text": "Meloetta",
+    "text": "Meloetta Aria Forme",
     "type": "NORMAL",
     "dualtype": "PSYCHIC",
     "evolve": [
@@ -12230,7 +12230,7 @@
   },
   {
     "value": 666,
-    "text": "Vivillon",
+    "text": "Vivillon Icy Snow Pattern",
     "type": "BUG",
     "dualtype": "FLYING",
     "evolve": [
@@ -12304,7 +12304,7 @@
   },
   {
     "value": 669,
-    "text": "Flabébé",
+    "text": "Flabébé Red Flower",
     "type": "FAIRY",
     "evolve": [
       669,
@@ -12323,7 +12323,7 @@
   },
   {
     "value": 670,
-    "text": "Floette",
+    "text": "Floette Red Flower",
     "type": "FAIRY",
     "evolve": [
       669,
@@ -12342,7 +12342,7 @@
   },
   {
     "value": 671,
-    "text": "Florges",
+    "text": "Florges Red Flower",
     "type": "FAIRY",
     "evolve": [
       669,
@@ -12430,7 +12430,7 @@
   },
   {
     "value": 676,
-    "text": "Furfrou",
+    "text": "Furfrou Natural Form",
     "type": "NORMAL",
     "evolve": [
       676,
@@ -12531,7 +12531,7 @@
   },
   {
     "value": 681,
-    "text": "Aegislash",
+    "text": "Aegislash Shield Forme",
     "type": "STEEL",
     "dualtype": "GHOST",
     "evolve": [
@@ -13046,7 +13046,7 @@
   },
   {
     "value": 710,
-    "text": "Pumpkaboo",
+    "text": "Pumpkaboo Average Size",
     "type": "GHOST",
     "dualtype": "GRASS",
     "evolve": [
@@ -13064,7 +13064,7 @@
   },
   {
     "value": 711,
-    "text": "Gourgeist",
+    "text": "Gourgeist Average Size",
     "type": "GHOST",
     "dualtype": "GRASS",
     "evolve": [
@@ -13156,7 +13156,7 @@
   },
   {
     "value": 716,
-    "text": "Xerneas",
+    "text": "Xerneas Neutral Mode",
     "type": "FAIRY",
     "evolve": [
       716,
@@ -13190,7 +13190,7 @@
   },
   {
     "value": 718,
-    "text": "Zygarde",
+    "text": "Zygarde 50% Forme",
     "type": "DRAGON",
     "dualtype": "GROUND",
     "evolve": [
@@ -13229,7 +13229,7 @@
   },
   {
     "value": 720,
-    "text": "Hoopa",
+    "text": "Hoopa Confined",
     "type": "PSYCHIC",
     "dualtype": "GHOST",
     "evolve": [
@@ -13621,7 +13621,7 @@
   },
   {
     "value": 741,
-    "text": "Oricorio",
+    "text": "Oricorio Baile Style",
     "type": "FIRE",
     "dualtype": "FLYING",
     "evolve": [
@@ -13697,7 +13697,7 @@
   },
   {
     "value": 745,
-    "text": "Lycanroc",
+    "text": "Lycanroc Midday Form",
     "type": "ROCK",
     "evolve": [
       744,
@@ -13715,7 +13715,7 @@
   },
   {
     "value": 746,
-    "text": "Wishiwashi",
+    "text": "Wishiwashi Solo Form",
     "type": "WATER",
     "evolve": [
       746,
@@ -14211,7 +14211,7 @@
   },
   {
     "value": 773,
-    "text": "Silvally",
+    "text": "Silvally Type: Normal",
     "type": "NORMAL",
     "evolve": [
       772,
@@ -14245,7 +14245,7 @@
   },
   {
     "value": 774,
-    "text": "Minior",
+    "text": "Minior Red Meteor Form",
     "type": "ROCK",
     "dualtype": "FLYING",
     "evolve": [
@@ -14326,7 +14326,7 @@
   },
   {
     "value": 778,
-    "text": "Mimikyu",
+    "text": "Mimikyu Disguised Form",
     "type": "GHOST",
     "dualtype": "FAIRY",
     "evolve": [
@@ -15612,7 +15612,7 @@
   },
   {
     "value": 849,
-    "text": "Toxtricity",
+    "text": "Toxtricity Amped Form",
     "type": "ELECTRIC",
     "dualtype": "POISON",
     "evolve": [
@@ -15705,7 +15705,7 @@
   },
   {
     "value": 854,
-    "text": "Sinistea",
+    "text": "Sinistea Phony Form",
     "type": "GHOST",
     "evolve": [
       854,
@@ -15722,7 +15722,7 @@
   },
   {
     "value": 855,
-    "text": "Polteageist",
+    "text": "Polteageist Phony Form",
     "type": "GHOST",
     "evolve": [
       854,
@@ -16044,7 +16044,7 @@
   },
   {
     "value": 869,
-    "text": "Alcremie",
+    "text": "Alcremie Vanilla Cream Strawberry Sweet",
     "type": "FAIRY",
     "evolve": [
       868,
@@ -16208,7 +16208,7 @@
   },
   {
     "value": 875,
-    "text": "Eiscue",
+    "text": "Eiscue Ice Face",
     "type": "ICE",
     "evolve": [
       875,
@@ -16243,7 +16243,7 @@
   },
   {
     "value": 877,
-    "text": "Morpeko",
+    "text": "Morpeko Full Belly Mode",
     "type": "ELECTRIC",
     "dualtype": "DARK",
     "evolve": [
@@ -16441,7 +16441,7 @@
   },
   {
     "value": 888,
-    "text": "Zacian",
+    "text": "Zacian Hero of Many Battles",
     "type": "FAIRY",
     "evolve": [
       888,
@@ -16458,7 +16458,7 @@
   },
   {
     "value": 889,
-    "text": "Zamazenta",
+    "text": "Zamazenta Hero of Many Battles",
     "type": "FIGHTING",
     "evolve": [
       889,
@@ -16513,7 +16513,7 @@
   },
   {
     "value": 892,
-    "text": "Urshifu",
+    "text": "Urshifu Single Strike Style",
     "type": "FIGHTING",
     "dualtype": "DARK",
     "evolve": [
@@ -16747,7 +16747,7 @@
   },
   {
     "value": 905,
-    "text": "Enamorus",
+    "text": "Enamorus Incarnate Forme",
     "type": "FAIRY",
     "dualtype": "FLYING",
     "evolve": [
@@ -17109,7 +17109,7 @@
   },
   {
     "value": 925,
-    "text": "Maushold",
+    "text": "Maushold Family of Four",
     "type": "NORMAL",
     "evolve": [
       924,
@@ -17218,7 +17218,7 @@
   },
   {
     "value": 931,
-    "text": "Squawkabilly",
+    "text": "Squawkabilly Green Plumage",
     "type": "NORMAL",
     "dualtype": "FLYING",
     "evolve": [
@@ -17806,7 +17806,7 @@
   },
   {
     "value": 964,
-    "text": "Palafin",
+    "text": "Palafin Zero Form",
     "type": "WATER",
     "evolve": [
       963,
@@ -17847,7 +17847,7 @@
   },
   {
     "value": 966,
-    "text": "Revravroom",
+    "text": "Revavroom",
     "type": "STEEL",
     "dualtype": "POISON",
     "evolve": [
@@ -18060,7 +18060,7 @@
   },
   {
     "value": 978,
-    "text": "Tatsugiri",
+    "text": "Tatsugiri Curly Form",
     "type": "DRAGON",
     "dualtype": "WATER",
     "evolve": [
@@ -18137,7 +18137,7 @@
   },
   {
     "value": 982,
-    "text": "Dudunsparce",
+    "text": "Dudunsparce Two-Segment Form",
     "type": "NORMAL",
     "evolve": [
       206,
@@ -18437,7 +18437,7 @@
   },
   {
     "value": 999,
-    "text": "Gimmighoul",
+    "text": "Gimmighoul Chest Form",
     "type": "GHOST",
     "evolve": [
       999,
@@ -18575,7 +18575,7 @@
   },
   {
     "value": 1007,
-    "text": "Koraidon",
+    "text": "Koraidon Apex Build",
     "type": "FIGHTING",
     "dualtype": "DRAGON",
     "evolve": [
@@ -18596,7 +18596,7 @@
   },
   {
     "value": 1008,
-    "text": "Miraidon",
+    "text": "Miraidon Ultimate Mode",
     "type": "ELECTRIC",
     "dualtype": "DRAGON",
     "evolve": [
@@ -18670,7 +18670,7 @@
   },
   {
     "value": 1012,
-    "text": "Poltchageist",
+    "text": "Poltchageist Counterfeit Form",
     "type": "GRASS",
     "dualtype": "GHOST",
     "evolve": [
@@ -18688,7 +18688,7 @@
   },
   {
     "value": 1013,
-    "text": "Sinistcha",
+    "text": "Sinistcha Unremarkable Form",
     "type": "GRASS",
     "dualtype": "GHOST",
     "evolve": [
@@ -18760,7 +18760,7 @@
   },
   {
     "value": 1017,
-    "text": "Ogerpon",
+    "text": "Ogerpon Teal Mask",
     "type": "GRASS",
     "evolve": [
       1017,
@@ -18889,7 +18889,7 @@
   },
   {
     "value": 1024,
-    "text": "Terapagos",
+    "text": "Terapagos Normal Form",
     "type": "NORMAL",
     "evolve": [
       1024,
@@ -18959,9 +18959,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Overgrow",
-      "Overgrow",
-      "Chlorophyll"
+      "Chlorophyll",
+      "Thick Fat",
+      "Grassy Surge"
     ],
     "dexNum": 3,
     "form": 2
@@ -18981,9 +18981,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Overgrow",
-      "Overgrow",
-      "Chlorophyll"
+      "Chlorophyll",
+      "Thick Fat",
+      "Grassy Surge"
     ],
     "dexNum": 3,
     "form": 3
@@ -19038,7 +19038,7 @@
     "value": 1031,
     "text": "Gigantamax Charizard",
     "type": "FIRE",
-    "dualtype": "FLYING",
+    "dualtype": "DRAGON",
     "evolve": [
       4,
       5,
@@ -19050,9 +19050,9 @@
     ],
     "generation": 8,
     "abilities": [
+      "Levitate",
       "Blaze",
-      "Blaze",
-      "Solar Power"
+      "Drought"
     ],
     "dexNum": 6,
     "form": 3
@@ -19061,7 +19061,7 @@
     "value": 1032,
     "text": "Clone Charizard",
     "type": "FIRE",
-    "dualtype": "FLYING",
+    "dualtype": "DRAGON",
     "evolve": [
       4,
       5,
@@ -19073,9 +19073,9 @@
     ],
     "generation": 8,
     "abilities": [
+      "Levitate",
       "Blaze",
-      "Blaze",
-      "Solar Power"
+      "Drought"
     ],
     "dexNum": 6,
     "form": 4
@@ -19105,6 +19105,7 @@
     "value": 1034,
     "text": "Gigantamax Blastoise",
     "type": "WATER",
+    "dualtype": "STEEL",
     "evolve": [
       7,
       8,
@@ -19126,6 +19127,7 @@
     "value": 1035,
     "text": "Clone Blastoise",
     "type": "WATER",
+    "dualtype": "STEEL",
     "evolve": [
       7,
       8,
@@ -19156,9 +19158,9 @@
     ],
     "generation": 8,
     "abilities": [
+      "Tinted Lens",
       "Compound Eyes",
-      "Compound Eyes",
-      "Tinted Lens"
+      "Effect Spore"
     ],
     "dexNum": 12,
     "form": 1
@@ -19289,8 +19291,8 @@
     "generation": 8,
     "abilities": [
       "Static",
-      "Static",
-      "Lightning Rod"
+      "Lightning Rod",
+      "Galvanize"
     ],
     "dexNum": 25,
     "form": 1
@@ -19326,8 +19328,8 @@
     "generation": 8,
     "abilities": [
       "Static",
-      "Static",
-      "Lightning Rod"
+      "Lightning Rod",
+      "Galvanize"
     ],
     "dexNum": 25,
     "form": 2
@@ -19363,8 +19365,8 @@
     "generation": 8,
     "abilities": [
       "Static",
-      "Static",
-      "Lightning Rod"
+      "Lightning Rod",
+      "Galvanize"
     ],
     "dexNum": 25,
     "form": 3
@@ -19400,8 +19402,8 @@
     "generation": 8,
     "abilities": [
       "Static",
-      "Static",
-      "Lightning Rod"
+      "Lightning Rod",
+      "Galvanize"
     ],
     "dexNum": 25,
     "form": 4
@@ -19437,8 +19439,8 @@
     "generation": 8,
     "abilities": [
       "Static",
-      "Static",
-      "Lightning Rod"
+      "Lightning Rod",
+      "Galvanize"
     ],
     "dexNum": 25,
     "form": 5
@@ -19474,8 +19476,8 @@
     "generation": 8,
     "abilities": [
       "Static",
-      "Static",
-      "Lightning Rod"
+      "Lightning Rod",
+      "Galvanize"
     ],
     "dexNum": 25,
     "form": 6
@@ -19511,8 +19513,8 @@
     "generation": 8,
     "abilities": [
       "Static",
-      "Static",
-      "Lightning Rod"
+      "Lightning Rod",
+      "Galvanize"
     ],
     "dexNum": 25,
     "form": 7
@@ -19548,8 +19550,8 @@
     "generation": 8,
     "abilities": [
       "Static",
-      "Static",
-      "Lightning Rod"
+      "Lightning Rod",
+      "Galvanize"
     ],
     "dexNum": 25,
     "form": 8
@@ -19585,8 +19587,8 @@
     "generation": 8,
     "abilities": [
       "Static",
-      "Static",
-      "Lightning Rod"
+      "Lightning Rod",
+      "Galvanize"
     ],
     "dexNum": 25,
     "form": 9
@@ -19622,8 +19624,8 @@
     "generation": 8,
     "abilities": [
       "Static",
-      "Static",
-      "Lightning Rod"
+      "Lightning Rod",
+      "Galvanize"
     ],
     "dexNum": 25,
     "form": 10
@@ -19659,8 +19661,8 @@
     "generation": 8,
     "abilities": [
       "Static",
-      "Static",
-      "Lightning Rod"
+      "Lightning Rod",
+      "Galvanize"
     ],
     "dexNum": 25,
     "form": 11
@@ -19696,8 +19698,8 @@
     "generation": 8,
     "abilities": [
       "Static",
-      "Static",
-      "Lightning Rod"
+      "Lightning Rod",
+      "Galvanize"
     ],
     "dexNum": 25,
     "form": 12
@@ -19733,8 +19735,8 @@
     "generation": 8,
     "abilities": [
       "Static",
-      "Static",
-      "Lightning Rod"
+      "Lightning Rod",
+      "Galvanize"
     ],
     "dexNum": 25,
     "form": 13
@@ -19770,8 +19772,8 @@
     "generation": 8,
     "abilities": [
       "Static",
-      "Static",
-      "Lightning Rod"
+      "Lightning Rod",
+      "Galvanize"
     ],
     "dexNum": 25,
     "form": 14
@@ -19807,8 +19809,8 @@
     "generation": 8,
     "abilities": [
       "Static",
-      "Static",
-      "Lightning Rod"
+      "Lightning Rod",
+      "Galvanize"
     ],
     "dexNum": 25,
     "form": 15
@@ -19844,8 +19846,8 @@
     "generation": 8,
     "abilities": [
       "Static",
-      "Static",
-      "Lightning Rod"
+      "Lightning Rod",
+      "Galvanize"
     ],
     "dexNum": 25,
     "form": 16
@@ -19881,8 +19883,8 @@
     "generation": 8,
     "abilities": [
       "Static",
-      "Static",
-      "Lightning Rod"
+      "Lightning Rod",
+      "Galvanize"
     ],
     "dexNum": 25,
     "form": 17
@@ -20076,9 +20078,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Pickup",
       "Technician",
-      "Unnerve"
+      "Pickup",
+      "Super Luck"
     ],
     "dexNum": 52,
     "form": 3
@@ -20253,7 +20255,7 @@
   {
     "value": 1078,
     "text": "Galarian Ponyta",
-    "type": "PSYCHIC",
+    "type": "FAIRY",
     "evolve": [
       1078,
       1079
@@ -20270,8 +20272,8 @@
   {
     "value": 1079,
     "text": "Galarian Rapidash",
-    "type": "PSYCHIC",
-    "dualtype": "FAIRY",
+    "type": "FAIRY",
+    "dualtype": "FIRE",
     "evolve": [
       1078,
       1079
@@ -20417,7 +20419,6 @@
     "value": 1087,
     "text": "Haunter GHOST",
     "type": "GHOST",
-    "dualtype": "POISON",
     "evolve": [
       1087,
       94
@@ -20545,8 +20546,8 @@
     "generation": 8,
     "abilities": [
       "Soundproof",
-      "Static",
-      "Aftermath"
+      "Aftermath",
+      "Grassy Surge"
     ],
     "dexNum": 100,
     "form": 1
@@ -20563,8 +20564,8 @@
     "generation": 8,
     "abilities": [
       "Soundproof",
-      "Static",
-      "Aftermath"
+      "Aftermath",
+      "Grassy Surge"
     ],
     "dexNum": 101,
     "form": 1
@@ -20581,8 +20582,8 @@
     "generation": 8,
     "abilities": [
       "Soundproof",
-      "Static",
-      "Aftermath"
+      "Aftermath",
+      "Grassy Surge"
     ],
     "dexNum": 101,
     "form": 2
@@ -20885,7 +20886,7 @@
     "value": 1111,
     "text": "Kabutops Fossilized",
     "type": "ROCK",
-    "dualtype": "WATER",
+    "dualtype": "GHOST",
     "evolve": [
       140,
       141,
@@ -20923,7 +20924,7 @@
     "value": 1113,
     "text": "Aerodactyl Fossilized",
     "type": "ROCK",
-    "dualtype": "FLYING",
+    "dualtype": "GHOST",
     "evolve": [
       142,
       1112,
@@ -23141,8 +23142,7 @@
   {
     "value": 1195,
     "text": "Burmy Sandy Cloak",
-    "type": "FIRE",
-    "dualtype": "DRAGON",
+    "type": "BUG",
     "evolve": [
       1195,
       1197,
@@ -23150,9 +23150,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Tough Claws",
-      "Tough Claws",
-      "Tough Claws"
+      "Battle Armor",
+      "Shed Skin",
+      "Overcoat"
     ],
     "dexNum": 412,
     "form": 1
@@ -23160,8 +23160,7 @@
   {
     "value": 1196,
     "text": "Burmy Trash Cloak",
-    "type": "FIRE",
-    "dualtype": "FLYING",
+    "type": "BUG",
     "evolve": [
       1196,
       1198,
@@ -23169,9 +23168,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Drought",
-      "Drought",
-      "Drought"
+      "Battle Armor",
+      "Shed Skin",
+      "Overcoat"
     ],
     "dexNum": 412,
     "form": 2
@@ -23179,17 +23178,17 @@
   {
     "value": 1197,
     "text": "Wormadam Sandy Cloak",
-    "type": "FIRE",
-    "dualtype": "DRAGON",
+    "type": "BUG",
+    "dualtype": "GROUND",
     "evolve": [
       1195,
       1197
     ],
     "generation": 8,
     "abilities": [
-      "Tough Claws",
-      "Tough Claws",
-      "Tough Claws"
+      "Battle Armor",
+      "Anticipation",
+      "Overcoat"
     ],
     "dexNum": 413,
     "form": 1
@@ -23197,17 +23196,17 @@
   {
     "value": 1198,
     "text": "Wormadam Trash Cloak",
-    "type": "FIRE",
-    "dualtype": "FLYING",
+    "type": "BUG",
+    "dualtype": "STEEL",
     "evolve": [
       1196,
       1198
     ],
     "generation": 8,
     "abilities": [
-      "Drought",
-      "Drought",
-      "Drought"
+      "Battle Armor",
+      "Anticipation",
+      "Overcoat"
     ],
     "dexNum": 413,
     "form": 2
@@ -23215,8 +23214,8 @@
   {
     "value": 1199,
     "text": "Cherrim Sunshine Form",
-    "type": "GHOST",
-    "dualtype": "POISON",
+    "type": "GRASS",
+    "dualtype": "FIRE",
     "evolve": [
       420,
       421,
@@ -23224,9 +23223,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Shadow Tag",
-      "Shadow Tag",
-      "Shadow Tag"
+      "Flower Gift",
+      "Flower Gift",
+      "Flower Gift"
     ],
     "dexNum": 421,
     "form": 1
@@ -23234,16 +23233,16 @@
   {
     "value": 1200,
     "text": "Shellos East Sea",
-    "type": "NORMAL",
+    "type": "WATER",
     "evolve": [
       1200,
       1201
     ],
     "generation": 8,
     "abilities": [
-      "Parental Bond",
-      "Parental Bond",
-      "Parental Bond"
+      "Sticky Hold",
+      "Storm Drain",
+      "Sand Force"
     ],
     "dexNum": 422,
     "form": 1
@@ -23251,17 +23250,17 @@
   {
     "value": 1201,
     "text": "Gastrodon East Sea",
-    "type": "BUG",
-    "dualtype": "FLYING",
+    "type": "WATER",
+    "dualtype": "GROUND",
     "evolve": [
       1200,
       1201
     ],
     "generation": 8,
     "abilities": [
-      "Aerilate",
-      "Aerilate",
-      "Aerilate"
+      "Sticky Hold",
+      "Storm Drain",
+      "Sand Force"
     ],
     "dexNum": 423,
     "form": 1
@@ -23487,7 +23486,7 @@
     "generation": 8,
     "abilities": [
       "Pressure",
-      "Pressure",
+      "Full Metal Body",
       "Telepathy"
     ],
     "dexNum": 483,
@@ -23505,7 +23504,7 @@
     "generation": 8,
     "abilities": [
       "Pressure",
-      "Pressure",
+      "Clear Body",
       "Telepathy"
     ],
     "dexNum": 484,
@@ -24170,7 +24169,6 @@
     "value": 1236,
     "text": "Lilligant Frenzied Lady of the Ridge",
     "type": "GRASS",
-    "dualtype": "FIGHTING",
     "evolve": [
       548,
       549,
@@ -24180,7 +24178,7 @@
     "generation": 8,
     "abilities": [
       "Chlorophyll",
-      "Hustle",
+      "Own Tempo",
       "Leaf Guard"
     ],
     "dexNum": 549,
@@ -24370,17 +24368,17 @@
   {
     "value": 1247,
     "text": "Deerling Summer Form",
-    "type": "PSYCHIC",
-    "dualtype": "FIGHTING",
+    "type": "NORMAL",
+    "dualtype": "GRASS",
     "evolve": [
       1247,
       1250
     ],
     "generation": 8,
     "abilities": [
-      "Inner Focus",
-      "Inner Focus",
-      "Inner Focus"
+      "Chlorophyll",
+      "Sap Sipper",
+      "Serene Grace"
     ],
     "dexNum": 585,
     "form": 1
@@ -24389,16 +24387,16 @@
     "value": 1248,
     "text": "Deerling Autumn Form",
     "type": "NORMAL",
-    "dualtype": "FAIRY",
+    "dualtype": "GRASS",
     "evolve": [
       1248,
       1251
     ],
     "generation": 8,
     "abilities": [
-      "Healer",
-      "Healer",
-      "Healer"
+      "Chlorophyll",
+      "Sap Sipper",
+      "Serene Grace"
     ],
     "dexNum": 585,
     "form": 2
@@ -24406,17 +24404,17 @@
   {
     "value": 1249,
     "text": "Deerling Winter Form",
-    "type": "WATER",
-    "dualtype": "DARK",
+    "type": "NORMAL",
+    "dualtype": "GRASS",
     "evolve": [
       1249,
       1252
     ],
     "generation": 8,
     "abilities": [
-      "Strong Jaw",
-      "Strong Jaw",
-      "Strong Jaw"
+      "Chlorophyll",
+      "Sap Sipper",
+      "Serene Grace"
     ],
     "dexNum": 585,
     "form": 3
@@ -24424,17 +24422,17 @@
   {
     "value": 1250,
     "text": "Sawsbuck Summer Form",
-    "type": "WATER",
-    "dualtype": "PSYCHIC",
+    "type": "NORMAL",
+    "dualtype": "GRASS",
     "evolve": [
       1247,
       1250
     ],
     "generation": 8,
     "abilities": [
-      "Shell Armor",
-      "Shell Armor",
-      "Shell Armor"
+      "Chlorophyll",
+      "Sap Sipper",
+      "Serene Grace"
     ],
     "dexNum": 586,
     "form": 1
@@ -24442,17 +24440,17 @@
   {
     "value": 1251,
     "text": "Sawsbuck Autumn Form",
-    "type": "STEEL",
-    "dualtype": "GROUND",
+    "type": "NORMAL",
+    "dualtype": "GRASS",
     "evolve": [
       1248,
       1251
     ],
     "generation": 8,
     "abilities": [
-      "Sand Force",
-      "Sand Force",
-      "Sand Force"
+      "Chlorophyll",
+      "Sap Sipper",
+      "Serene Grace"
     ],
     "dexNum": 586,
     "form": 2
@@ -24461,16 +24459,16 @@
     "value": 1252,
     "text": "Sawsbuck Winter Form",
     "type": "NORMAL",
-    "dualtype": "FLYING",
+    "dualtype": "GRASS",
     "evolve": [
       1249,
       1252
     ],
     "generation": 8,
     "abilities": [
-      "No Guard",
-      "No Guard",
-      "No Guard"
+      "Chlorophyll",
+      "Sap Sipper",
+      "Serene Grace"
     ],
     "dexNum": 586,
     "form": 3
@@ -24642,8 +24640,8 @@
   {
     "value": 1262,
     "text": "Douse Drive Genesect",
-    "type": "STEEL",
-    "dualtype": "PSYCHIC",
+    "type": "BUG",
+    "dualtype": "STEEL",
     "evolve": [
       649,
       1262,
@@ -24653,9 +24651,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Tough Claws",
-      "Tough Claws",
-      "Tough Claws"
+      "Download",
+      "Download",
+      "Download"
     ],
     "dexNum": 649,
     "form": 1
@@ -24663,7 +24661,8 @@
   {
     "value": 1263,
     "text": "Shock Drive Genesect",
-    "type": "WATER",
+    "type": "BUG",
+    "dualtype": "STEEL",
     "evolve": [
       649,
       1262,
@@ -24673,9 +24672,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Primordial Sea",
-      "Primordial Sea",
-      "Primordial Sea"
+      "Download",
+      "Download",
+      "Download"
     ],
     "dexNum": 649,
     "form": 2
@@ -24683,8 +24682,8 @@
   {
     "value": 1264,
     "text": "Burn Drive Genesect",
-    "type": "GROUND",
-    "dualtype": "FIRE",
+    "type": "BUG",
+    "dualtype": "STEEL",
     "evolve": [
       649,
       1262,
@@ -24694,9 +24693,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Desolate Land",
-      "Desolate Land",
-      "Desolate Land"
+      "Download",
+      "Download",
+      "Download"
     ],
     "dexNum": 649,
     "form": 3
@@ -24704,8 +24703,8 @@
   {
     "value": 1265,
     "text": "Chill Drive Genesect",
-    "type": "ROCK",
-    "dualtype": "FAIRY",
+    "type": "BUG",
+    "dualtype": "STEEL",
     "evolve": [
       649,
       1262,
@@ -24715,9 +24714,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Magic Bounce",
-      "Magic Bounce",
-      "Magic Bounce"
+      "Download",
+      "Download",
+      "Download"
     ],
     "dexNum": 649,
     "form": 4
@@ -24767,8 +24766,8 @@
   {
     "value": 1268,
     "text": "Vivillon Polar Pattern",
-    "type": "FIRE",
-    "dualtype": "GROUND",
+    "type": "BUG",
+    "dualtype": "FLYING",
     "evolve": [
       664,
       665,
@@ -24794,9 +24793,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Sheer Force",
-      "Sheer Force",
-      "Sheer Force"
+      "Shield Dust",
+      "Compound Eyes",
+      "Friend Guard"
     ],
     "dexNum": 666,
     "form": 1
@@ -24804,8 +24803,8 @@
   {
     "value": 1269,
     "text": "Vivillon Tundra Pattern",
-    "type": "NORMAL",
-    "dualtype": "FIGHTING",
+    "type": "BUG",
+    "dualtype": "FLYING",
     "evolve": [
       664,
       665,
@@ -24830,9 +24829,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Scrappy",
-      "Scrappy",
-      "Scrappy"
+      "Shield Dust",
+      "Compound Eyes",
+      "Friend Guard"
     ],
     "dexNum": 666,
     "form": 2
@@ -24840,7 +24839,7 @@
   {
     "value": 1270,
     "text": "Vivillon Continental Pattern",
-    "type": "DRAGON",
+    "type": "BUG",
     "dualtype": "FLYING",
     "evolve": [
       664,
@@ -24865,9 +24864,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Aerilate",
-      "Aerilate",
-      "Aerilate"
+      "Shield Dust",
+      "Compound Eyes",
+      "Friend Guard"
     ],
     "dexNum": 666,
     "form": 3
@@ -24876,7 +24875,7 @@
     "value": 1271,
     "text": "Vivillon Garden Pattern",
     "type": "BUG",
-    "dualtype": "POISON",
+    "dualtype": "FLYING",
     "evolve": [
       664,
       665,
@@ -24899,9 +24898,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Adaptability",
-      "Adaptability",
-      "Adaptability"
+      "Shield Dust",
+      "Compound Eyes",
+      "Friend Guard"
     ],
     "dexNum": 666,
     "form": 4
@@ -24909,8 +24908,8 @@
   {
     "value": 1272,
     "text": "Vivillon Elegant Pattern",
-    "type": "DARK",
-    "dualtype": "NORMAL",
+    "type": "BUG",
+    "dualtype": "FLYING",
     "evolve": [
       664,
       665,
@@ -24932,9 +24931,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Gluttony",
-      "Hustle",
-      "Thick Fat"
+      "Shield Dust",
+      "Compound Eyes",
+      "Friend Guard"
     ],
     "dexNum": 666,
     "form": 5
@@ -24942,8 +24941,8 @@
   {
     "value": 1273,
     "text": "Vivillon Meadow Pattern",
-    "type": "PSYCHIC",
-    "dualtype": "DARK",
+    "type": "BUG",
+    "dualtype": "FLYING",
     "evolve": [
       664,
       665,
@@ -24964,9 +24963,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Magician",
-      "Magician",
-      "Magician"
+      "Shield Dust",
+      "Compound Eyes",
+      "Friend Guard"
     ],
     "dexNum": 666,
     "form": 6
@@ -24974,8 +24973,8 @@
   {
     "value": 1274,
     "text": "Vivillon Modern Pattern",
-    "type": "DARK",
-    "dualtype": "NORMAL",
+    "type": "BUG",
+    "dualtype": "FLYING",
     "evolve": [
       664,
       665,
@@ -24995,9 +24994,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Gluttony",
-      "Hustle",
-      "Thick Fat"
+      "Shield Dust",
+      "Compound Eyes",
+      "Friend Guard"
     ],
     "dexNum": 666,
     "form": 7
@@ -25005,8 +25004,8 @@
   {
     "value": 1275,
     "text": "Vivillon Marine Pattern",
-    "type": "DARK",
-    "dualtype": "NORMAL",
+    "type": "BUG",
+    "dualtype": "FLYING",
     "evolve": [
       664,
       665,
@@ -25025,9 +25024,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Gluttony",
-      "Hustle",
-      "Thick Fat"
+      "Shield Dust",
+      "Compound Eyes",
+      "Friend Guard"
     ],
     "dexNum": 666,
     "form": 8
@@ -25035,7 +25034,8 @@
   {
     "value": 1276,
     "text": "Vivillon Archipelago Pattern",
-    "type": "ELECTRIC",
+    "type": "BUG",
+    "dualtype": "FLYING",
     "evolve": [
       664,
       665,
@@ -25053,9 +25053,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Static",
-      "Static",
-      "Lightning Rod"
+      "Shield Dust",
+      "Compound Eyes",
+      "Friend Guard"
     ],
     "dexNum": 666,
     "form": 9
@@ -25063,7 +25063,8 @@
   {
     "value": 1277,
     "text": "Vivillon High Plains Pattern",
-    "type": "ELECTRIC",
+    "type": "BUG",
+    "dualtype": "FLYING",
     "evolve": [
       664,
       665,
@@ -25080,9 +25081,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Static",
-      "Static",
-      "Lightning Rod"
+      "Shield Dust",
+      "Compound Eyes",
+      "Friend Guard"
     ],
     "dexNum": 666,
     "form": 10
@@ -25090,7 +25091,8 @@
   {
     "value": 1278,
     "text": "Vivillon Sandstorm Pattern",
-    "type": "ELECTRIC",
+    "type": "BUG",
+    "dualtype": "FLYING",
     "evolve": [
       664,
       665,
@@ -25106,9 +25108,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Static",
-      "Static",
-      "Lightning Rod"
+      "Shield Dust",
+      "Compound Eyes",
+      "Friend Guard"
     ],
     "dexNum": 666,
     "form": 11
@@ -25116,7 +25118,8 @@
   {
     "value": 1279,
     "text": "Vivillon River Pattern",
-    "type": "ELECTRIC",
+    "type": "BUG",
+    "dualtype": "FLYING",
     "evolve": [
       664,
       665,
@@ -25131,9 +25134,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Static",
-      "Static",
-      "Lightning Rod"
+      "Shield Dust",
+      "Compound Eyes",
+      "Friend Guard"
     ],
     "dexNum": 666,
     "form": 12
@@ -25141,7 +25144,8 @@
   {
     "value": 1280,
     "text": "Vivillon Monsoon Pattern",
-    "type": "ELECTRIC",
+    "type": "BUG",
+    "dualtype": "FLYING",
     "evolve": [
       664,
       665,
@@ -25155,9 +25159,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Static",
-      "Static",
-      "Lightning Rod"
+      "Shield Dust",
+      "Compound Eyes",
+      "Friend Guard"
     ],
     "dexNum": 666,
     "form": 13
@@ -25165,7 +25169,8 @@
   {
     "value": 1281,
     "text": "Vivillon Savanna Pattern",
-    "type": "ELECTRIC",
+    "type": "BUG",
+    "dualtype": "FLYING",
     "evolve": [
       664,
       665,
@@ -25178,9 +25183,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Static",
-      "Static",
-      "Lightning Rod"
+      "Shield Dust",
+      "Compound Eyes",
+      "Friend Guard"
     ],
     "dexNum": 666,
     "form": 14
@@ -25188,8 +25193,8 @@
   {
     "value": 1282,
     "text": "Vivillon Sun Pattern",
-    "type": "ELECTRIC",
-    "dualtype": "PSYCHIC",
+    "type": "BUG",
+    "dualtype": "FLYING",
     "evolve": [
       664,
       665,
@@ -25201,9 +25206,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Surge Surfer",
-      "Surge Surfer",
-      "Surge Surfer"
+      "Shield Dust",
+      "Compound Eyes",
+      "Friend Guard"
     ],
     "dexNum": 666,
     "form": 15
@@ -25211,8 +25216,8 @@
   {
     "value": 1283,
     "text": "Vivillon Ocean Pattern",
-    "type": "ICE",
-    "dualtype": "STEEL",
+    "type": "BUG",
+    "dualtype": "FLYING",
     "evolve": [
       664,
       665,
@@ -25223,9 +25228,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Snow Cloak",
-      "Snow Cloak",
-      "Slush Rush"
+      "Shield Dust",
+      "Compound Eyes",
+      "Friend Guard"
     ],
     "dexNum": 666,
     "form": 16
@@ -25233,8 +25238,8 @@
   {
     "value": 1284,
     "text": "Vivillon Jungle Pattern",
-    "type": "ICE",
-    "dualtype": "STEEL",
+    "type": "BUG",
+    "dualtype": "FLYING",
     "evolve": [
       664,
       665,
@@ -25244,9 +25249,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Snow Cloak",
-      "Snow Cloak",
-      "Slush Rush"
+      "Shield Dust",
+      "Compound Eyes",
+      "Friend Guard"
     ],
     "dexNum": 666,
     "form": 17
@@ -25254,7 +25259,8 @@
   {
     "value": 1285,
     "text": "Vivillon Fancy Pattern",
-    "type": "STEEL",
+    "type": "BUG",
+    "dualtype": "FLYING",
     "evolve": [
       664,
       665,
@@ -25263,9 +25269,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Pickup",
-      "Tough Claws",
-      "Unnerve"
+      "Shield Dust",
+      "Compound Eyes",
+      "Friend Guard"
     ],
     "dexNum": 666,
     "form": 18
@@ -25273,7 +25279,8 @@
   {
     "value": 1286,
     "text": "Vivillon Poké Ball Pattern",
-    "type": "PSYCHIC",
+    "type": "BUG",
+    "dualtype": "FLYING",
     "evolve": [
       664,
       665,
@@ -25281,9 +25288,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Run Away",
-      "Pastel Veil",
-      "Anticipation"
+      "Shield Dust",
+      "Compound Eyes",
+      "Friend Guard"
     ],
     "dexNum": 666,
     "form": 19
@@ -25291,7 +25298,7 @@
   {
     "value": 1287,
     "text": "Flabébé Yellow Flower",
-    "type": "ICE",
+    "type": "FAIRY",
     "evolve": [
       1287,
       1291,
@@ -25299,9 +25306,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Snow Cloak",
-      "Snow Cloak",
-      "Snow Warning"
+      "Flower Veil",
+      "Flower Veil",
+      "Symbiosis"
     ],
     "dexNum": 669,
     "form": 1
@@ -25309,8 +25316,7 @@
   {
     "value": 1288,
     "text": "Flabébé Orange Flower",
-    "type": "ICE",
-    "dualtype": "FAIRY",
+    "type": "FAIRY",
     "evolve": [
       1288,
       1292,
@@ -25318,9 +25324,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Snow Cloak",
-      "Snow Cloak",
-      "Snow Warning"
+      "Flower Veil",
+      "Flower Veil",
+      "Symbiosis"
     ],
     "dexNum": 669,
     "form": 2
@@ -25328,8 +25334,7 @@
   {
     "value": 1289,
     "text": "Flabébé Blue Flower",
-    "type": "GROUND",
-    "dualtype": "STEEL",
+    "type": "FAIRY",
     "evolve": [
       1289,
       1293,
@@ -25337,9 +25342,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Sand Veil",
-      "Tangling Hair",
-      "Sand Force"
+      "Flower Veil",
+      "Flower Veil",
+      "Symbiosis"
     ],
     "dexNum": 669,
     "form": 3
@@ -25347,8 +25352,7 @@
   {
     "value": 1290,
     "text": "Flabébé White Flower",
-    "type": "GROUND",
-    "dualtype": "STEEL",
+    "type": "FAIRY",
     "evolve": [
       1290,
       1294,
@@ -25356,9 +25360,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Sand Veil",
-      "Tangling Hair",
-      "Sand Force"
+      "Flower Veil",
+      "Flower Veil",
+      "Symbiosis"
     ],
     "dexNum": 669,
     "form": 4
@@ -25366,7 +25370,7 @@
   {
     "value": 1291,
     "text": "Floette Yellow Flower",
-    "type": "DARK",
+    "type": "FAIRY",
     "evolve": [
       1287,
       1291,
@@ -25374,9 +25378,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Pickup",
-      "Technician",
-      "Rattled"
+      "Flower Veil",
+      "Flower Veil",
+      "Symbiosis"
     ],
     "dexNum": 670,
     "form": 1
@@ -25384,7 +25388,7 @@
   {
     "value": 1292,
     "text": "Floette Orange Flower",
-    "type": "DARK",
+    "type": "FAIRY",
     "evolve": [
       1288,
       1292,
@@ -25392,9 +25396,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Fur Coat",
-      "Technician",
-      "Rattled"
+      "Flower Veil",
+      "Flower Veil",
+      "Symbiosis"
     ],
     "dexNum": 670,
     "form": 2
@@ -25402,8 +25406,7 @@
   {
     "value": 1293,
     "text": "Floette Blue Flower",
-    "type": "ROCK",
-    "dualtype": "ELECTRIC",
+    "type": "FAIRY",
     "evolve": [
       1289,
       1293,
@@ -25411,9 +25414,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Magnet Pull",
-      "Sturdy",
-      "Galvanize"
+      "Flower Veil",
+      "Flower Veil",
+      "Symbiosis"
     ],
     "dexNum": 670,
     "form": 3
@@ -25421,8 +25424,7 @@
   {
     "value": 1294,
     "text": "Floette White Flower",
-    "type": "ROCK",
-    "dualtype": "ELECTRIC",
+    "type": "FAIRY",
     "evolve": [
       1290,
       1294,
@@ -25430,16 +25432,16 @@
     ],
     "generation": 8,
     "abilities": [
-      "Magnet Pull",
-      "Sturdy",
-      "Galvanize"
+      "Flower Veil",
+      "Flower Veil",
+      "Symbiosis"
     ],
     "dexNum": 670,
     "form": 4
   },
   {
     "value": 1295,
-    "text": "Eternal Flower Floette",
+    "text": "Floette Eternal Flower",
     "type": "FAIRY",
     "evolve": [
       669,
@@ -25459,8 +25461,7 @@
   {
     "value": 1296,
     "text": "Florges Yellow Flower",
-    "type": "ROCK",
-    "dualtype": "ELECTRIC",
+    "type": "FAIRY",
     "evolve": [
       1287,
       1291,
@@ -25468,9 +25469,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Magnet Pull",
-      "Sturdy",
-      "Galvanize"
+      "Flower Veil",
+      "Flower Veil",
+      "Symbiosis"
     ],
     "dexNum": 671,
     "form": 1
@@ -25478,8 +25479,7 @@
   {
     "value": 1297,
     "text": "Florges Orange Flower",
-    "type": "POISON",
-    "dualtype": "DARK",
+    "type": "FAIRY",
     "evolve": [
       1288,
       1292,
@@ -25487,9 +25487,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Poison Touch",
-      "Gluttony",
-      "Power of Alchemy"
+      "Flower Veil",
+      "Flower Veil",
+      "Symbiosis"
     ],
     "dexNum": 671,
     "form": 2
@@ -25497,8 +25497,7 @@
   {
     "value": 1298,
     "text": "Florges Blue Flower",
-    "type": "POISON",
-    "dualtype": "DARK",
+    "type": "FAIRY",
     "evolve": [
       1289,
       1293,
@@ -25506,9 +25505,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Poison Touch",
-      "Gluttony",
-      "Power of Alchemy"
+      "Flower Veil",
+      "Flower Veil",
+      "Symbiosis"
     ],
     "dexNum": 671,
     "form": 3
@@ -25516,8 +25515,7 @@
   {
     "value": 1299,
     "text": "Florges White Flower",
-    "type": "GRASS",
-    "dualtype": "DRAGON",
+    "type": "FAIRY",
     "evolve": [
       1290,
       1294,
@@ -25525,9 +25523,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Frisk",
-      "Frisk",
-      "Harvest"
+      "Flower Veil",
+      "Flower Veil",
+      "Symbiosis"
     ],
     "dexNum": 671,
     "form": 4
@@ -25535,8 +25533,7 @@
   {
     "value": 1300,
     "text": "Furfrou Heart Trim",
-    "type": "FIRE",
-    "dualtype": "GHOST",
+    "type": "NORMAL",
     "evolve": [
       676,
       1300,
@@ -25551,9 +25548,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Cursed Body",
-      "Lightning Rod",
-      "Rock Head"
+      "Fur Coat",
+      "Fur Coat",
+      "Fur Coat"
     ],
     "dexNum": 676,
     "form": 1
@@ -25561,8 +25558,7 @@
   {
     "value": 1301,
     "text": "Furfrou Star Trim",
-    "type": "WATER",
-    "dualtype": "DARK",
+    "type": "NORMAL",
     "evolve": [
       676,
       1300,
@@ -25577,9 +25573,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Battle Bond",
-      "Battle Bond",
-      "Battle Bond"
+      "Fur Coat",
+      "Fur Coat",
+      "Fur Coat"
     ],
     "dexNum": 676,
     "form": 2
@@ -25587,8 +25583,7 @@
   {
     "value": 1302,
     "text": "Furfrou Diamond Trim",
-    "type": "WATER",
-    "dualtype": "DARK",
+    "type": "NORMAL",
     "evolve": [
       676,
       1300,
@@ -25603,9 +25598,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Battle Bond",
-      "Battle Bond",
-      "Battle Bond"
+      "Fur Coat",
+      "Fur Coat",
+      "Fur Coat"
     ],
     "dexNum": 676,
     "form": 3
@@ -25613,8 +25608,7 @@
   {
     "value": 1303,
     "text": "Furfrou Debutante Trim",
-    "type": "DRAGON",
-    "dualtype": "GROUND",
+    "type": "NORMAL",
     "evolve": [
       676,
       1300,
@@ -25629,9 +25623,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Power Construct",
-      "Power Construct",
-      "Power Construct"
+      "Fur Coat",
+      "Fur Coat",
+      "Fur Coat"
     ],
     "dexNum": 676,
     "form": 4
@@ -25639,8 +25633,7 @@
   {
     "value": 1304,
     "text": "Furfrou Matron Trim",
-    "type": "DRAGON",
-    "dualtype": "GROUND",
+    "type": "NORMAL",
     "evolve": [
       676,
       1300,
@@ -25655,9 +25648,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Power Construct",
-      "Power Construct",
-      "Power Construct"
+      "Fur Coat",
+      "Fur Coat",
+      "Fur Coat"
     ],
     "dexNum": 676,
     "form": 5
@@ -25665,8 +25658,7 @@
   {
     "value": 1305,
     "text": "Furfrou Dandy Trim",
-    "type": "DRAGON",
-    "dualtype": "GROUND",
+    "type": "NORMAL",
     "evolve": [
       676,
       1300,
@@ -25681,9 +25673,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Power Construct",
-      "Power Construct",
-      "Power Construct"
+      "Fur Coat",
+      "Fur Coat",
+      "Fur Coat"
     ],
     "dexNum": 676,
     "form": 6
@@ -25706,9 +25698,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Stakeout",
-      "Strong Jaw",
-      "Adaptability"
+      "Fur Coat",
+      "Fur Coat",
+      "Fur Coat"
     ],
     "dexNum": 676,
     "form": 7
@@ -25716,8 +25708,7 @@
   {
     "value": 1307,
     "text": "Furfrou Kabuki Trim",
-    "type": "BUG",
-    "dualtype": "ELECTRIC",
+    "type": "NORMAL",
     "evolve": [
       676,
       1300,
@@ -25732,9 +25723,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Levitate",
-      "Levitate",
-      "Levitate"
+      "Fur Coat",
+      "Fur Coat",
+      "Fur Coat"
     ],
     "dexNum": 676,
     "form": 8
@@ -25742,8 +25733,7 @@
   {
     "value": 1308,
     "text": "Furfrou Pharaoh Trim",
-    "type": "ELECTRIC",
-    "dualtype": "FLYING",
+    "type": "NORMAL",
     "evolve": [
       676,
       1300,
@@ -25758,9 +25748,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Dancer",
-      "Dancer",
-      "Dancer"
+      "Fur Coat",
+      "Fur Coat",
+      "Fur Coat"
     ],
     "dexNum": 676,
     "form": 9
@@ -25970,7 +25960,6 @@
     "value": 1320,
     "text": "Avalugg Frenzied Lord of the Tundra",
     "type": "ICE",
-    "dualtype": "ROCK",
     "evolve": [
       712,
       713,
@@ -25979,7 +25968,7 @@
     ],
     "generation": 8,
     "abilities": [
-      "Strong Jaw",
+      "Own Tempo",
       "Ice Body",
       "Sturdy"
     ],
@@ -26038,9 +26027,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Power Construct",
-      "Power Construct",
-      "Power Construct"
+      "Aura Break",
+      "Aura Break",
+      "Aura Break"
     ],
     "dexNum": 718,
     "form": 2
@@ -26059,9 +26048,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Dazzling",
-      "Power Construct",
-      "Dazzling"
+      "Aura Break",
+      "Aura Break",
+      "Aura Break"
     ],
     "dexNum": 718,
     "form": 3
@@ -26387,8 +26376,7 @@
   {
     "value": 1342,
     "text": "Silvally Type: Fighting",
-    "type": "ELECTRIC",
-    "dualtype": "GRASS",
+    "type": "FIGHTING",
     "evolve": [
       772,
       773,
@@ -26412,9 +26400,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Soundproof",
-      "Static",
-      "Aftermath"
+      "RKS System",
+      "RKS System",
+      "RKS System"
     ],
     "dexNum": 773,
     "form": 1
@@ -26422,8 +26410,7 @@
   {
     "value": 1343,
     "text": "Silvally Type: Flying",
-    "type": "FIRE",
-    "dualtype": "GHOST",
+    "type": "FLYING",
     "evolve": [
       772,
       773,
@@ -26447,9 +26434,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Blaze",
-      "Blaze",
-      "Frisk"
+      "RKS System",
+      "RKS System",
+      "RKS System"
     ],
     "dexNum": 773,
     "form": 2
@@ -26457,8 +26444,7 @@
   {
     "value": 1344,
     "text": "Silvally Type: Poison",
-    "type": "DARK",
-    "dualtype": "POISON",
+    "type": "POISON",
     "evolve": [
       772,
       773,
@@ -26482,9 +26468,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Poison Point",
-      "Swift Swim",
-      "Intimidate"
+      "RKS System",
+      "RKS System",
+      "RKS System"
     ],
     "dexNum": 773,
     "form": 3
@@ -26492,8 +26478,7 @@
   {
     "value": 1345,
     "text": "Silvally Type: Ground",
-    "type": "FIGHTING",
-    "dualtype": "POISON",
+    "type": "GROUND",
     "evolve": [
       772,
       773,
@@ -26517,9 +26502,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Inner Focus",
-      "Keen Eye",
-      "Pickpocket"
+      "RKS System",
+      "RKS System",
+      "RKS System"
     ],
     "dexNum": 773,
     "form": 4
@@ -26527,8 +26512,7 @@
   {
     "value": 1346,
     "text": "Silvally Type: Rock",
-    "type": "WATER",
-    "dualtype": "DARK",
+    "type": "ROCK",
     "evolve": [
       772,
       773,
@@ -26552,9 +26536,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Torrent",
-      "Torrent",
-      "Sharpness"
+      "RKS System",
+      "RKS System",
+      "RKS System"
     ],
     "dexNum": 773,
     "form": 5
@@ -26562,8 +26546,7 @@
   {
     "value": 1347,
     "text": "Silvally Type: Bug",
-    "type": "GRASS",
-    "dualtype": "FIGHTING",
+    "type": "BUG",
     "evolve": [
       772,
       773,
@@ -26587,9 +26570,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Chlorophyll",
-      "Hustle",
-      "Leaf Guard"
+      "RKS System",
+      "RKS System",
+      "RKS System"
     ],
     "dexNum": 773,
     "form": 6
@@ -26597,8 +26580,7 @@
   {
     "value": 1348,
     "text": "Silvally Type: Ghost",
-    "type": "NORMAL",
-    "dualtype": "GHOST",
+    "type": "GHOST",
     "evolve": [
       772,
       773,
@@ -26622,9 +26604,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Illusion",
-      "Illusion",
-      "Illusion"
+      "RKS System",
+      "RKS System",
+      "RKS System"
     ],
     "dexNum": 773,
     "form": 7
@@ -26632,8 +26614,7 @@
   {
     "value": 1349,
     "text": "Silvally Type: Steel",
-    "type": "NORMAL",
-    "dualtype": "GHOST",
+    "type": "STEEL",
     "evolve": [
       772,
       773,
@@ -26657,9 +26638,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Illusion",
-      "Illusion",
-      "Illusion"
+      "RKS System",
+      "RKS System",
+      "RKS System"
     ],
     "dexNum": 773,
     "form": 8
@@ -26667,8 +26648,7 @@
   {
     "value": 1350,
     "text": "Silvally Type: Fire",
-    "type": "PSYCHIC",
-    "dualtype": "FLYING",
+    "type": "FIRE",
     "evolve": [
       772,
       773,
@@ -26692,9 +26672,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Keen Eye",
-      "Sheer Force",
-      "Tinted Lens"
+      "RKS System",
+      "RKS System",
+      "RKS System"
     ],
     "dexNum": 773,
     "form": 9
@@ -26702,8 +26682,7 @@
   {
     "value": 1351,
     "text": "Silvally Type: Water",
-    "type": "STEEL",
-    "dualtype": "DRAGON",
+    "type": "WATER",
     "evolve": [
       772,
       773,
@@ -26727,9 +26706,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Sap Sipper",
-      "Shell Armor",
-      "Gooey"
+      "RKS System",
+      "RKS System",
+      "RKS System"
     ],
     "dexNum": 773,
     "form": 10
@@ -26737,8 +26716,7 @@
   {
     "value": 1352,
     "text": "Silvally Type: Grass",
-    "type": "STEEL",
-    "dualtype": "DRAGON",
+    "type": "GRASS",
     "evolve": [
       772,
       773,
@@ -26762,9 +26740,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Sap Sipper",
-      "Shell Armor",
-      "Gooey"
+      "RKS System",
+      "RKS System",
+      "RKS System"
     ],
     "dexNum": 773,
     "form": 11
@@ -26772,8 +26750,7 @@
   {
     "value": 1353,
     "text": "Silvally Type: Electric",
-    "type": "ICE",
-    "dualtype": "ROCK",
+    "type": "ELECTRIC",
     "evolve": [
       772,
       773,
@@ -26797,9 +26774,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Strong Jaw",
-      "Ice Body",
-      "Sturdy"
+      "RKS System",
+      "RKS System",
+      "RKS System"
     ],
     "dexNum": 773,
     "form": 12
@@ -26807,8 +26784,7 @@
   {
     "value": 1354,
     "text": "Silvally Type: Psychic",
-    "type": "GRASS",
-    "dualtype": "FIGHTING",
+    "type": "PSYCHIC",
     "evolve": [
       772,
       773,
@@ -26832,9 +26808,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Overgrow",
-      "Overgrow",
-      "Scrappy"
+      "RKS System",
+      "RKS System",
+      "RKS System"
     ],
     "dexNum": 773,
     "form": 13
@@ -26842,8 +26818,7 @@
   {
     "value": 1355,
     "text": "Silvally Type: Ice",
-    "type": "STEEL",
-    "dualtype": "DRAGON",
+    "type": "ICE",
     "evolve": [
       772,
       773,
@@ -26867,9 +26842,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Pressure",
-      "Pressure",
-      "Telepathy"
+      "RKS System",
+      "RKS System",
+      "RKS System"
     ],
     "dexNum": 773,
     "form": 14
@@ -26877,8 +26852,7 @@
   {
     "value": 1356,
     "text": "Silvally Type: Dragon",
-    "type": "WATER",
-    "dualtype": "DRAGON",
+    "type": "DRAGON",
     "evolve": [
       772,
       773,
@@ -26902,9 +26876,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Pressure",
-      "Pressure",
-      "Telepathy"
+      "RKS System",
+      "RKS System",
+      "RKS System"
     ],
     "dexNum": 773,
     "form": 15
@@ -26912,7 +26886,7 @@
   {
     "value": 1357,
     "text": "Silvally Type: Dark",
-    "type": "WATER",
+    "type": "DARK",
     "evolve": [
       772,
       773,
@@ -26936,9 +26910,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Rattled",
-      "Adaptability",
-      "Mold Breaker"
+      "RKS System",
+      "RKS System",
+      "RKS System"
     ],
     "dexNum": 773,
     "form": 16
@@ -26946,8 +26920,7 @@
   {
     "value": 1358,
     "text": "Silvally Type: Fairy",
-    "type": "WATER",
-    "dualtype": "GHOST",
+    "type": "FAIRY",
     "evolve": [
       772,
       773,
@@ -26971,9 +26944,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Swift Swim",
-      "Adaptability",
-      "Mold Breaker"
+      "RKS System",
+      "RKS System",
+      "RKS System"
     ],
     "dexNum": 773,
     "form": 17
@@ -27851,7 +27824,7 @@
     "generation": 8,
     "abilities": [
       "Punk Rock",
-      "Minus",
+      "Plus",
       "Technician"
     ],
     "dexNum": 849,
@@ -33039,7 +33012,7 @@
     "value": 1475,
     "text": "Gigantamax Urshifu",
     "type": "FIGHTING",
-    "dualtype": "WATER",
+    "dualtype": "DARK",
     "evolve": [
       891,
       892,
@@ -33126,9 +33099,9 @@
     ],
     "generation": 8,
     "abilities": [
+      "Swarm",
       "Sheer Force",
-      "Technician",
-      "Steadfast"
+      "Sharpness"
     ],
     "dexNum": 900,
     "form": 1
@@ -33293,7 +33266,7 @@
     ],
     "generation": 8,
     "abilities": [
-      "Honey Gather",
+      "Anger Shell",
       "Shell Armor",
       "Regenerator"
     ],
@@ -33313,7 +33286,7 @@
     "abilities": [
       "Big Pecks",
       "Keen Eye",
-      "Honey Gather"
+      "Rocky Payload"
     ],
     "dexNum": 962,
     "form": 1
@@ -33338,8 +33311,9 @@
   },
   {
     "value": 1491,
-    "text": "Segin Starmobile Revravroom",
-    "type": "DARK",
+    "text": "Segin Starmobile Revavroom",
+    "type": "STEEL",
+    "dualtype": "POISON",
     "evolve": [
       965,
       966,
@@ -33360,8 +33334,9 @@
   },
   {
     "value": 1492,
-    "text": "Schedar Starmobile Revravroom",
-    "type": "FIRE",
+    "text": "Schedar Starmobile Revavroom",
+    "type": "STEEL",
+    "dualtype": "POISON",
     "evolve": [
       965,
       966,
@@ -33382,8 +33357,9 @@
   },
   {
     "value": 1493,
-    "text": "Navi Starmobile Revravroom",
-    "type": "POISON",
+    "text": "Navi Starmobile Revavroom",
+    "type": "STEEL",
+    "dualtype": "POISON",
     "evolve": [
       965,
       966,
@@ -33404,8 +33380,9 @@
   },
   {
     "value": 1494,
-    "text": "Ruchbah Starmobile Revravroom",
-    "type": "FAIRY",
+    "text": "Ruchbah Starmobile Revavroom",
+    "type": "STEEL",
+    "dualtype": "POISON",
     "evolve": [
       965,
       966,
@@ -33426,8 +33403,9 @@
   },
   {
     "value": 1495,
-    "text": "Caph Starmobile Revravroom",
-    "type": "FIGHTING",
+    "text": "Caph Starmobile Revavroom",
+    "type": "STEEL",
+    "dualtype": "POISON",
     "evolve": [
       965,
       966,
@@ -33456,8 +33434,8 @@
     ],
     "generation": 8,
     "abilities": [
-      "Honey Gather",
-      "Honey Gather",
+      "Earth Eater",
+      "Earth Eater",
       "Sand Veil"
     ],
     "dexNum": 968,
@@ -33618,9 +33596,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Honey Gather",
-      "Honey Gather",
-      "Honey Gather"
+      "Protosynthesis",
+      "Protosynthesis",
+      "Protosynthesis"
     ],
     "dexNum": 984,
     "form": 1
@@ -33636,9 +33614,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Honey Gather",
-      "Honey Gather",
-      "Honey Gather"
+      "Quark Drive",
+      "Quark Drive",
+      "Quark Drive"
     ],
     "dexNum": 990,
     "form": 1
