@@ -47780,8 +47780,8 @@
     "type": "Water",
     "abilities": [
       "Torrent",
-      "Torrent",
-      "Shell Armor"
+      "Shell Armor",
+      "Sharpness"
     ],
     "learnset": {
       "Tackle": 1,
@@ -47820,7 +47820,6 @@
       "Thief": 168,
       "Brine": 362,
       "False Swipe": 206,
-      "Scald": 503,
       "Fling": 374,
       "Endure": 203,
       "Avalanche": 419,
@@ -47833,8 +47832,7 @@
       "Cut": 15,
       "Surf": 57,
       "Rock Smash": 249,
-      "Waterfall": 127,
-      "Work Up": 526
+      "Waterfall": 127
     },
     "eggLearnset": {
       "Screech": 103,
@@ -47869,8 +47867,8 @@
     "type": "Water",
     "abilities": [
       "Torrent",
-      "Torrent",
-      "Shell Armor"
+      "Shell Armor",
+      "Sharpness"
     ],
     "learnset": {
       "Tackle": 1,
@@ -47908,8 +47906,8 @@
       "Rest": 156,
       "Attract": 213,
       "Thief": 168,
+      "Brine": 362,
       "False Swipe": 206,
-      "Scald": 503,
       "Fling": 374,
       "Endure": 203,
       "Avalanche": 419,
@@ -47922,16 +47920,15 @@
       "Cut": 15,
       "Surf": 57,
       "Rock Smash": 249,
-      "Waterfall": 127,
-      "Work Up": 526
+      "Waterfall": 127
     },
     "eggLearnset": {},
     "tutorLearnset": {},
     "baseStats": {
       "hp": 75,
       "atk": 75,
-      "def": 60,
-      "spa": 83,
+      "def": 70,
+      "spa": 73,
       "spd": 60,
       "spe": 60
     },
@@ -47948,8 +47945,8 @@
     "type": "Water",
     "abilities": [
       "Torrent",
-      "Torrent",
-      "Shell Armor"
+      "Shell Armor",
+      "Sharpness"
     ],
     "learnset": {
       "Slash": 1,
@@ -47990,8 +47987,8 @@
       "Rest": 156,
       "Attract": 213,
       "Thief": 168,
+      "Brine": 362,
       "False Swipe": 206,
-      "Scald": 503,
       "Fling": 374,
       "Endure": 203,
       "Giga Impact": 416,
@@ -48009,16 +48006,15 @@
       "Strength": 70,
       "Rock Smash": 249,
       "Waterfall": 127,
-      "Bulldoze": 523,
-      "Work Up": 526
+      "Bulldoze": 523
     },
     "eggLearnset": {},
     "tutorLearnset": {},
     "baseStats": {
       "hp": 95,
       "atk": 100,
-      "def": 85,
-      "spa": 108,
+      "def": 115,
+      "spa": 85,
       "spd": 70,
       "spe": 70
     },
@@ -50126,6 +50122,7 @@
     "value": 531,
     "text": "Audino",
     "type": "Normal",
+    "dualtype": "Fairy",
     "abilities": [
       "Healer",
       "Regenerator",
@@ -50183,7 +50180,6 @@
       "Wild Charge": 528,
       "Endure": 203,
       "Drain Punch": 409,
-      "Giga Impact": 416,
       "Flash": 148,
       "Thunder Wave": 86,
       "Psych Up": 244,
@@ -50194,9 +50190,7 @@
       "Swagger": 207,
       "Substitute": 164,
       "Trick Room": 433,
-      "Surf": 57,
-      "Charge Beam": 451,
-      "Work Up": 526
+      "Surf": 57
     },
     "eggLearnset": {
       "Sweet Kiss": 186,
@@ -50207,10 +50201,10 @@
     "tutorLearnset": {},
     "baseStats": {
       "hp": 103,
-      "atk": 60,
-      "def": 86,
-      "spa": 60,
-      "spd": 86,
+      "atk": 50,
+      "def": 91,
+      "spa": 86,
+      "spd": 91,
       "spe": 50
     },
     "dexNum": 531,
@@ -52075,6 +52069,7 @@
     "value": 556,
     "text": "Maractus",
     "type": "Grass",
+    "dualtype": "Ground",
     "abilities": [
       "Water Absorb",
       "Chlorophyll",
@@ -52103,28 +52098,25 @@
       "Cotton Guard": 60
     },
     "tmLearnset": {
+      "Water Pulse": 352,
       "Toxic": 92,
+      "Bulk Up": 339,
       "Bullet Seed": 331,
       "Hidden Power": 237,
       "Sunny Day": 241,
       "Protect": 182,
       "Rain Dance": 240,
       "Giga Drain": 202,
-      "Safeguard": 219,
       "Solar Beam": 76,
-      "Double Team": 104,
-      "Aerial Ace": 332,
+      "Earthquake": 89,
+      "Dig": 91,
+      "Sandstorm": 201,
       "Facade": 263,
       "Rest": 156,
-      "Attract": 213,
       "Energy Ball": 412,
-      "Endure": 203,
       "Drain Punch": 409,
-      "Sleep Talk": 214,
-      "Hyper Voice": 304,
       "Poison Jab": 398,
       "Grass Knot": 447,
-      "Swagger": 207,
       "Substitute": 164
     },
     "eggLearnset": {
@@ -52133,12 +52125,12 @@
     },
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 75,
-      "atk": 86,
-      "def": 67,
-      "spa": 106,
-      "spd": 67,
-      "spe": 60
+      "hp": 80,
+      "atk": 75,
+      "def": 95,
+      "spa": 105,
+      "spd": 95,
+      "spe": 50
     },
     "dexNum": 556,
     "form": 0,
@@ -52911,7 +52903,7 @@
     "abilities": [
       "Defeatist",
       "Defeatist",
-      "Defeatist"
+      "Emergency Exit"
     ],
     "learnset": {
       "Leer": 1,
@@ -53001,7 +52993,7 @@
     "abilities": [
       "Defeatist",
       "Defeatist",
-      "Defeatist"
+      "Emergency Exit"
     ],
     "learnset": {
       "Leer": 1,
@@ -53059,9 +53051,7 @@
       "Cut": 15,
       "Fly": 19,
       "Defog": 432,
-      "Rock Smash": 249,
-      "Bulldoze": 523,
-      "Pluck": 365
+      "Rock Smash": 249
     },
     "eggLearnset": {},
     "tutorLearnset": {},
@@ -56923,9 +56913,10 @@
     "value": 617,
     "text": "Accelgor",
     "type": "Bug",
+    "dualtype": "Dark",
     "abilities": [
       "Hydration",
-      "Sticky Hold",
+      "Sheer Force",
       "Unburden"
     ],
     "learnset": {
@@ -56968,9 +56959,10 @@
       "Focus Blast": 411,
       "Energy Ball": 412,
       "Endure": 203,
-      "Drain Punch": 409,
       "Bug Buzz": 405,
       "Giga Impact": 416,
+      "Snarl": 555,
+      "Dark Pulse": 399,
       "Sleep Talk": 214,
       "Swagger": 207,
       "U-turn": 369,
@@ -58689,8 +58681,8 @@
     "dualtype": "Fighting",
     "abilities": [
       "Justified",
-      "Justified",
-      "Justified"
+      "Full Metal Body",
+      "Sharpness"
     ],
     "learnset": {
       "Helping Hand": 1,
@@ -58713,13 +58705,10 @@
       "Roar": 46,
       "Toxic": 92,
       "Hidden Power": 237,
-      "Sunny Day": 241,
       "Taunt": 269,
       "Hyper Beam": 63,
       "Protect": 182,
-      "Rain Dance": 240,
       "Safeguard": 219,
-      "Brick Break": 280,
       "Double Team": 104,
       "Reflect": 115,
       "Sandstorm": 201,
@@ -58745,8 +58734,7 @@
       "Flash Cannon": 430,
       "Cut": 15,
       "Strength": 70,
-      "Rock Smash": 249,
-      "Work Up": 526
+      "Rock Smash": 249
     },
     "eggLearnset": {},
     "tutorLearnset": {},
@@ -58772,8 +58760,8 @@
     "dualtype": "Fighting",
     "abilities": [
       "Justified",
-      "Justified",
-      "Justified"
+      "Solid Rock",
+      "Sharpness"
     ],
     "learnset": {
       "Helping Hand": 1,
@@ -58801,7 +58789,6 @@
       "Protect": 182,
       "Safeguard": 219,
       "Earthquake": 89,
-      "Brick Break": 280,
       "Double Team": 104,
       "Reflect": 115,
       "Sandstorm": 201,
@@ -58826,9 +58813,7 @@
       "Substitute": 164,
       "Cut": 15,
       "Strength": 70,
-      "Rock Smash": 249,
-      "Bulldoze": 523,
-      "Work Up": 526
+      "Rock Smash": 249
     },
     "eggLearnset": {},
     "tutorLearnset": {},
@@ -58854,8 +58839,8 @@
     "dualtype": "Fighting",
     "abilities": [
       "Justified",
-      "Justified",
-      "Justified"
+      "Wind Rider",
+      "Sharpness"
     ],
     "learnset": {
       "Helping Hand": 1,
@@ -58877,7 +58862,6 @@
       "Calm Mind": 347,
       "Roar": 46,
       "Toxic": 92,
-      "Bullet Seed": 331,
       "Hidden Power": 237,
       "Sunny Day": 241,
       "Taunt": 269,
@@ -58887,7 +58871,6 @@
       "Giga Drain": 202,
       "Safeguard": 219,
       "Solar Beam": 76,
-      "Brick Break": 280,
       "Double Team": 104,
       "Reflect": 115,
       "Aerial Ace": 332,
@@ -58909,8 +58892,7 @@
       "Substitute": 164,
       "Cut": 15,
       "Strength": 70,
-      "Rock Smash": 249,
-      "Work Up": 526
+      "Rock Smash": 249
     },
     "eggLearnset": {},
     "tutorLearnset": {},
@@ -59471,8 +59453,8 @@
     "dualtype": "Fighting",
     "abilities": [
       "Justified",
-      "Justified",
-      "Justified"
+      "Water Veil",
+      "Sharpness"
     ],
     "learnset": {
       "Aqua Jet": 1,
@@ -59498,13 +59480,11 @@
       "Toxic": 92,
       "Hail": 258,
       "Hidden Power": 237,
-      "Sunny Day": 241,
       "Taunt": 269,
       "Hyper Beam": 63,
       "Protect": 182,
       "Rain Dance": 240,
       "Safeguard": 219,
-      "Brick Break": 280,
       "Double Team": 104,
       "Reflect": 115,
       "Aerial Ace": 332,
@@ -59512,7 +59492,6 @@
       "Rest": 156,
       "Focus Blast": 411,
       "False Swipe": 206,
-      "Scald": 503,
       "Endure": 203,
       "Giga Impact": 416,
       "Stone Edge": 444,
@@ -60016,8 +59995,8 @@
     "type": "Fire",
     "abilities": [
       "Blaze",
-      "Blaze",
-      "Magician"
+      "Magician",
+      "Magic Guard"
     ],
     "learnset": {
       "Scratch": 1,
@@ -60097,8 +60076,8 @@
     "type": "Fire",
     "abilities": [
       "Blaze",
-      "Blaze",
-      "Magician"
+      "Magician",
+      "Magic Guard"
     ],
     "learnset": {
       "Ember": 5,
@@ -60177,8 +60156,8 @@
     "dualtype": "Psychic",
     "abilities": [
       "Blaze",
-      "Blaze",
-      "Magician"
+      "Magician",
+      "Magic Guard"
     ],
     "learnset": {
       "Mystical Fire": 1,
@@ -60252,7 +60231,7 @@
       "hp": 75,
       "atk": 69,
       "def": 72,
-      "spa": 114,
+      "spa": 115,
       "spd": 100,
       "spe": 104
     },
@@ -61967,32 +61946,44 @@
       "Misty Terrain": 59
     },
     "tmLearnset": {
-      "Roar": 46,
-      "Hail": 258,
+      "Calm Mind": 347,
+      "Toxic": 92,
+      "Hidden Power": 237,
       "Sunny Day": 241,
-      "Taunt": 269,
+      "Hyper Beam": 63,
       "Light Screen": 113,
+      "Protect": 182,
       "Rain Dance": 240,
-      "Giga Drain": 202,
+      "Safeguard": 219,
       "Dream Eater": 138,
-      "Thunder": 87,
+      "Iron Tail": 231,
+      "Thunderbolt": 85,
+      "Dig": 91,
       "Psychic": 94,
-      "Brick Break": 280,
+      "Shadow Ball": 247,
+      "Double Team": 104,
       "Reflect": 115,
+      "Shock Wave": 351,
+      "Torment": 259,
       "Facade": 263,
-      "Thief": 168,
-      "False Swipe": 206,
+      "Rest": 156,
+      "Attract": 213,
+      "Skill Swap": 285,
+      "Energy Ball": 412,
       "Endure": 203,
-      "Explosion": 153,
+      "Nasty Plot": 417,
       "Recycle": 278,
       "Rock Polish": 397,
-      "Stone Edge": 444,
-      "Gyro Ball": 360,
-      "Snarl": 555,
-      "Rock Slide": 157,
-      "Grass Knot": 447,
+      "Thunder Wave": 86,
+      "Psych Up": 244,
+      "Dark Pulse": 399,
+      "Sleep Talk": 214,
+      "Swagger": 207,
+      "Substitute": 164,
+      "Trick Room": 433,
       "Cut": 15,
-      "Fly": 19
+      "Charge Beam": 451,
+      "Work Up": 526
     },
     "eggLearnset": {},
     "tutorLearnset": {},
@@ -62182,24 +62173,34 @@
       "Tackle": 1
     },
     "tmLearnset": {
-      "Hail": 258,
-      "Taunt": 269,
-      "Light Screen": 113,
+      "Toxic": 92,
+      "Hidden Power": 237,
+      "Sunny Day": 241,
+      "Hyper Beam": 63,
+      "Protect": 182,
       "Rain Dance": 240,
-      "Giga Drain": 202,
+      "Shadow Ball": 247,
       "Brick Break": 280,
       "Double Team": 104,
       "Reflect": 115,
       "Shock Wave": 351,
-      "Thief": 168,
-      "Scald": 503,
-      "Payback": 371,
-      "Rock Polish": 397,
+      "Aerial Ace": 332,
+      "Facade": 263,
+      "Rest": 156,
+      "Attract": 213,
+      "False Swipe": 206,
+      "Endure": 203,
+      "Shadow Claw": 421,
+      "Giga Impact": 416,
+      "Gyro Ball": 360,
       "Swords Dance": 14,
-      "X-Scissor": 404,
-      "Trick Room": 433,
-      "Fly": 19,
-      "Waterfall": 127
+      "Rock Slide": 157,
+      "Sleep Talk": 214,
+      "Swagger": 207,
+      "Substitute": 164,
+      "Flash Cannon": 430,
+      "Cut": 15,
+      "Rock Smash": 249
     },
     "eggLearnset": {},
     "tutorLearnset": {},
@@ -63906,7 +63907,7 @@
     "abilities": [
       "Cheek Pouch",
       "Pickup",
-      "Plus"
+      "Volt Absorb"
     ],
     "learnset": {
       "Nuzzle": 1,
@@ -63926,11 +63927,10 @@
       "Thunder": 60
     },
     "tmLearnset": {
+      "Calm Mind": 347,
       "Toxic": 92,
       "Hidden Power": 237,
       "Sunny Day": 241,
-      "Hyper Beam": 63,
-      "Light Screen": 113,
       "Protect": 182,
       "Rain Dance": 240,
       "Iron Tail": 231,
@@ -63953,13 +63953,11 @@
       "Flash": 148,
       "Thunder Wave": 86,
       "Sleep Talk": 214,
-      "Dazzling Gleam": 605,
       "Grass Knot": 447,
       "Swagger": 207,
       "U-turn": 369,
       "Substitute": 164,
-      "Cut": 15,
-      "Charge Beam": 451
+      "Cut": 15
     },
     "eggLearnset": {
       "Covet": 343,
@@ -63968,12 +63966,12 @@
     },
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 67,
-      "atk": 58,
-      "def": 57,
-      "spa": 81,
-      "spd": 67,
-      "spe": 101
+      "hp": 105,
+      "atk": 50,
+      "def": 70,
+      "spa": 83,
+      "spd": 92,
+      "spe": 50
     },
     "dexNum": 702,
     "form": 0,
@@ -64130,8 +64128,9 @@
     "value": 705,
     "text": "Sliggoo",
     "type": "Dragon",
+    "dualtype": "Poison",
     "abilities": [
-      "Sap Sipper",
+      "Water Absorb",
       "Hydration",
       "Gooey"
     ],
@@ -64162,7 +64161,6 @@
       "Rain Dance": 240,
       "Iron Tail": 231,
       "Thunderbolt": 85,
-      "Thunder": 87,
       "Double Team": 104,
       "Shock Wave": 351,
       "Sludge Bomb": 188,
@@ -64180,11 +64178,11 @@
     "tutorLearnset": {},
     "baseStats": {
       "hp": 68,
-      "atk": 75,
+      "atk": 90,
       "def": 53,
       "spa": 83,
       "spd": 113,
-      "spe": 60
+      "spe": 40
     },
     "dexNum": 705,
     "form": 0,
@@ -64197,8 +64195,9 @@
     "value": 706,
     "text": "Goodra",
     "type": "Dragon",
+    "dualtype": "Poison",
     "abilities": [
-      "Sap Sipper",
+      "Water Absorb",
       "Hydration",
       "Gooey"
     ],
@@ -64224,7 +64223,6 @@
     },
     "tmLearnset": {
       "Focus Punch": 264,
-      "Dragon Claw": 337,
       "Water Pulse": 352,
       "Toxic": 92,
       "Hail": 258,
@@ -64248,28 +64246,27 @@
       "Rest": 156,
       "Attract": 213,
       "Focus Blast": 411,
-      "Scald": 503,
       "Endure": 203,
       "Dragon Pulse": 406,
       "Giga Impact": 416,
       "Rock Slide": 157,
       "Sleep Talk": 214,
+      "Poison Jab": 398,
       "Swagger": 207,
       "Substitute": 164,
       "Surf": 57,
       "Strength": 70,
-      "Rock Smash": 249,
-      "Bulldoze": 523
+      "Rock Smash": 249
     },
     "eggLearnset": {},
     "tutorLearnset": {},
     "baseStats": {
       "hp": 90,
-      "atk": 100,
+      "atk": 130,
       "def": 70,
-      "spa": 110,
+      "spa": 100,
       "spd": 150,
-      "spe": 80
+      "spe": 60
     },
     "dexNum": 706,
     "form": 0,
@@ -65029,9 +65026,9 @@
     "tutorLearnset": {},
     "baseStats": {
       "hp": 85,
-      "atk": 70,
+      "atk": 60,
       "def": 80,
-      "spa": 97,
+      "spa": 107,
       "spd": 80,
       "spe": 123
     },
@@ -65717,8 +65714,8 @@
     "dualtype": "Ghost",
     "abilities": [
       "Overgrow",
-      "Overgrow",
-      "Long Reach"
+      "Long Reach",
+      "Tinted Lens"
     ],
     "learnset": {
       "Spirit Shackle": 1,
@@ -65742,17 +65739,13 @@
       "Brave Bird": 58
     },
     "tmLearnset": {
-      "Focus Punch": 264,
       "Toxic": 92,
-      "Bulk Up": 339,
       "Bullet Seed": 331,
       "Hidden Power": 237,
       "Sunny Day": 241,
-      "Taunt": 269,
       "Hyper Beam": 63,
       "Light Screen": 113,
       "Protect": 182,
-      "Rain Dance": 240,
       "Giga Drain": 202,
       "Safeguard": 219,
       "Solar Beam": 76,
@@ -65760,14 +65753,11 @@
       "Shadow Ball": 247,
       "Brick Break": 280,
       "Double Team": 104,
-      "Rock Tomb": 317,
-      "Aerial Ace": 332,
       "Facade": 263,
       "Rest": 156,
       "Attract": 213,
       "Steel Wing": 211,
       "Roost": 355,
-      "Focus Blast": 411,
       "Energy Ball": 412,
       "False Swipe": 206,
       "Endure": 203,
@@ -65781,9 +65771,7 @@
       "Hurricane": 542,
       "U-turn": 369,
       "Substitute": 164,
-      "Defog": 432,
-      "Pluck": 365,
-      "Work Up": 526
+      "Defog": 432
     },
     "eggLearnset": {},
     "tutorLearnset": {},
@@ -65792,8 +65780,8 @@
       "atk": 107,
       "def": 75,
       "spa": 100,
-      "spd": 100,
-      "spe": 70
+      "spd": 75,
+      "spe": 100
     },
     "dexNum": 724,
     "form": 0,
@@ -69027,7 +69015,7 @@
     "abilities": [
       "Emergency Exit",
       "Emergency Exit",
-      "Emergency Exit"
+      "Run Away"
     ],
     "learnset": {
       "First Impression": 1,
@@ -69069,23 +69057,24 @@
       "Attract": 213,
       "Focus Blast": 411,
       "False Swipe": 206,
-      "Scald": 503,
       "Fling": 374,
       "Endure": 203,
       "Bug Buzz": 405,
       "Shadow Claw": 421,
       "Payback": 371,
       "Giga Impact": 416,
+      "Stone Edge": 444,
       "Swords Dance": 14,
       "Psych Up": 244,
       "Snarl": 555,
       "Dark Pulse": 399,
       "Rock Slide": 157,
-      "X-Scissor": 404,
       "Sleep Talk": 214,
       "Poison Jab": 398,
       "Swagger": 207,
+      "U-turn": 369,
       "Substitute": 164,
+      "Cut": 15,
       "Surf": 57,
       "Rock Smash": 249,
       "Waterfall": 127
@@ -76441,8 +76430,8 @@
     "type": "Rock",
     "abilities": [
       "Power Spot",
-      "Power Spot",
-      "Power Spot"
+      "Hustle",
+      "Quick Draw"
     ],
     "learnset": {
       "Block": 1,
@@ -76460,27 +76449,32 @@
       "Mega Kick": 66
     },
     "tmLearnset": {
-      "Sunny Day": 241,
+      "Hidden Power": 237,
       "Hyper Beam": 63,
       "Protect": 182,
       "Safeguard": 219,
       "Earthquake": 89,
       "Low Sweep": 490,
+      "Double Team": 104,
       "Sandstorm": 201,
       "Rock Tomb": 317,
       "Facade": 263,
       "Rest": 156,
       "Attract": 213,
+      "Skill Swap": 285,
       "Endure": 203,
+      "Explosion": 153,
       "Giga Impact": 416,
       "Rock Polish": 397,
       "Stone Edge": 444,
       "Stealth Rock": 446,
-      "Psych Up": 244,
       "Rock Slide": 157,
       "Sleep Talk": 214,
+      "Swagger": 207,
       "Substitute": 164,
-      "Bulldoze": 523
+      "Trick Room": 433,
+      "Strength": 70,
+      "Rock Smash": 249
     },
     "eggLearnset": {
       "Curse": 174,
@@ -76492,7 +76486,7 @@
       "atk": 125,
       "def": 135,
       "spa": 20,
-      "spd": 20,
+      "spd": 50,
       "spe": 70
     },
     "dexNum": 874,
@@ -76596,16 +76590,26 @@
       "Last Resort": 55
     },
     "tmLearnset": {
-      "Rain Dance": 240,
-      "Solar Beam": 76,
-      "Brick Break": 280,
+      "Calm Mind": 347,
+      "Light Screen": 113,
+      "Protect": 182,
+      "Safeguard": 219,
+      "Psychic": 94,
+      "Shadow Ball": 247,
       "Reflect": 115,
+      "Facade": 263,
+      "Rest": 156,
       "Attract": 213,
-      "Thief": 168,
-      "Brine": 362,
-      "False Swipe": 206,
-      "Will-O-Wisp": 261,
-      "Cut": 15
+      "Skill Swap": 285,
+      "Energy Ball": 412,
+      "Endure": 203,
+      "Drain Punch": 409,
+      "Psych Up": 244,
+      "Sleep Talk": 214,
+      "Hyper Voice": 304,
+      "Dazzling Gleam": 605,
+      "Substitute": 164,
+      "Trick Room": 433
     },
     "eggLearnset": {
       "Psych Up": 244,
@@ -77352,11 +77356,11 @@
     },
     "tmLearnset": {
       "Dragon Claw": 337,
+      "Toxic": 92,
       "Sunny Day": 241,
       "Hyper Beam": 63,
       "Light Screen": 113,
       "Protect": 182,
-      "Solar Beam": 76,
       "Thunderbolt": 85,
       "Thunder": 87,
       "Shadow Ball": 247,
@@ -77366,20 +77370,19 @@
       "Facade": 263,
       "Rest": 156,
       "Attract": 213,
-      "Thief": 168,
-      "Steel Wing": 211,
-      "Brine": 362,
       "Scald": 503,
       "Endure": 203,
       "Dragon Pulse": 406,
       "Will-O-Wisp": 261,
+      "Shadow Claw": 421,
       "Giga Impact": 416,
       "Thunder Wave": 86,
       "Sleep Talk": 214,
+      "Swagger": 207,
       "U-turn": 369,
       "Substitute": 164,
       "Fly": 19,
-      "Surf": 57
+      "Strength": 70
     },
     "eggLearnset": {},
     "tutorLearnset": {},
@@ -78434,16 +78437,20 @@
       "Head Smash": 56
     },
     "tmLearnset": {
-      "Calm Mind": 347,
+      "Water Pulse": 352,
+      "Ice Beam": 58,
       "Blizzard": 59,
       "Hyper Beam": 63,
-      "Light Screen": 113,
+      "Protect": 182,
       "Rain Dance": 240,
-      "Giga Drain": 202,
-      "Reflect": 115,
-      "Rock Polish": 397,
-      "Strength": 70,
-      "Rock Climb": 431
+      "Shadow Ball": 247,
+      "Facade": 263,
+      "Rest": 156,
+      "Giga Impact": 416,
+      "Sleep Talk": 214,
+      "Substitute": 164,
+      "Surf": 57,
+      "Waterfall": 127
     },
     "eggLearnset": {},
     "tutorLearnset": {},
@@ -80732,8 +80739,8 @@
     "dualtype": "Psychic",
     "abilities": [
       "Flash Fire",
-      "Flash Fire",
-      "Weak Armor"
+      "Weak Armor",
+      "Mega Launcher"
     ],
     "learnset": {
       "Psyshock": 0,
@@ -80757,6 +80764,7 @@
     },
     "tmLearnset": {
       "Calm Mind": 347,
+      "Toxic": 92,
       "Sunny Day": 241,
       "Taunt": 269,
       "Light Screen": 113,
@@ -80764,11 +80772,14 @@
       "Solar Beam": 76,
       "Psychic": 94,
       "Shadow Ball": 247,
+      "Double Team": 104,
       "Reflect": 115,
       "Flamethrower": 53,
       "Fire Blast": 126,
+      "Rock Tomb": 317,
       "Facade": 263,
       "Rest": 156,
+      "Attract": 213,
       "Overheat": 315,
       "Focus Blast": 411,
       "Energy Ball": 412,
@@ -80776,10 +80787,8 @@
       "Endure": 203,
       "Dragon Pulse": 406,
       "Will-O-Wisp": 261,
-      "Psych Up": 244,
       "Dark Pulse": 399,
       "Sleep Talk": 214,
-      "Substitute": 164,
       "Flash Cannon": 430,
       "Trick Room": 433
     },
@@ -80811,8 +80820,8 @@
     "dualtype": "Ghost",
     "abilities": [
       "Flash Fire",
-      "Flash Fire",
-      "Weak Armor"
+      "Weak Armor",
+      "Sharpness"
     ],
     "learnset": {
       "Shadow Claw": 0,
@@ -80838,7 +80847,9 @@
     },
     "tmLearnset": {
       "Dragon Claw": 337,
+      "Toxic": 92,
       "Bulk Up": 339,
+      "Hidden Power": 237,
       "Sunny Day": 241,
       "Taunt": 269,
       "Light Screen": 113,
@@ -80857,11 +80868,11 @@
       "Will-O-Wisp": 261,
       "Shadow Claw": 421,
       "Swords Dance": 14,
-      "Psych Up": 244,
       "X-Scissor": 404,
       "Sleep Talk": 214,
       "Poison Jab": 398,
-      "Substitute": 164
+      "Swagger": 207,
+      "Cut": 15
     },
     "eggLearnset": {
       "Destiny Bond": 194,
@@ -103125,7 +103136,7 @@
     "dualtype": "Dark",
     "abilities": [
       "Torrent",
-      "Torrent",
+      "Weak Armor",
       "Sharpness"
     ],
     "learnset": {
@@ -103150,39 +103161,41 @@
     },
     "tmLearnset": {
       "Water Pulse": 352,
+      "Toxic": 92,
+      "Hidden Power": 237,
       "Taunt": 269,
       "Ice Beam": 58,
       "Blizzard": 59,
       "Hyper Beam": 63,
       "Protect": 182,
       "Rain Dance": 240,
+      "Iron Tail": 231,
       "Dig": 91,
       "Brick Break": 280,
+      "Double Team": 104,
       "Aerial Ace": 332,
       "Facade": 263,
       "Rest": 156,
-      "Thief": 168,
+      "Attract": 213,
       "False Swipe": 206,
       "Fling": 374,
-      "Endure": 203,
+      "Payback": 371,
       "Giga Impact": 416,
-      "Avalanche": 419,
       "Swords Dance": 14,
-      "Snarl": 555,
       "Dark Pulse": 399,
       "X-Scissor": 404,
-      "Sleep Talk": 214,
+      "Poison Jab": 398,
       "Grass Knot": 447,
+      "Swagger": 207,
       "Substitute": 164,
       "Surf": 57,
-      "Waterfall": 127,
-      "Bulldoze": 523
+      "Waterfall": 127
     },
     "eggLearnset": {},
     "tutorLearnset": {},
     "baseStats": {
       "hp": 90,
-      "atk": 108,
+      "atk": 115,
       "def": 80,
       "spa": 100,
       "spd": 65,
@@ -109061,10 +109074,8 @@
       "Energy Ball": 412,
       "Endure": 203,
       "Nasty Plot": 417,
-      "Payback": 371,
       "Recycle": 278,
-      "Giga Impact": 416,
-      "Flash": 148,
+      "Rock Polish": 397,
       "Thunder Wave": 86,
       "Psych Up": 244,
       "Dark Pulse": 399,
@@ -109268,33 +109279,31 @@
     "tmLearnset": {
       "Dragon Claw": 337,
       "Water Pulse": 352,
+      "Toxic": 92,
+      "Hidden Power": 237,
       "Sunny Day": 241,
       "Ice Beam": 58,
       "Blizzard": 59,
-      "Hyper Beam": 63,
       "Protect": 182,
       "Rain Dance": 240,
       "Iron Tail": 231,
       "Thunderbolt": 85,
-      "Thunder": 87,
       "Earthquake": 89,
+      "Double Team": 104,
       "Flamethrower": 53,
       "Sludge Bomb": 188,
-      "Sandstorm": 201,
       "Fire Blast": 126,
-      "Rock Tomb": 317,
       "Facade": 263,
       "Rest": 156,
-      "Endure": 203,
+      "Attract": 213,
+      "Energy Ball": 412,
       "Dragon Pulse": 406,
-      "Giga Impact": 416,
-      "Gyro Ball": 360,
       "Rock Slide": 157,
-      "Sleep Talk": 214,
+      "Swagger": 207,
       "Substitute": 164,
       "Flash Cannon": 430,
       "Surf": 57,
-      "Bulldoze": 523
+      "Waterfall": 127
     },
     "eggLearnset": {},
     "tutorLearnset": {},

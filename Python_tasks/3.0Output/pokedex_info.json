@@ -9246,8 +9246,8 @@
     "generation": 8,
     "abilities": [
       "Torrent",
-      "Torrent",
-      "Shell Armor"
+      "Shell Armor",
+      "Sharpness"
     ],
     "dexNum": 501,
     "form": 0
@@ -9265,8 +9265,8 @@
     "generation": 8,
     "abilities": [
       "Torrent",
-      "Torrent",
-      "Shell Armor"
+      "Shell Armor",
+      "Sharpness"
     ],
     "dexNum": 502,
     "form": 0
@@ -9284,8 +9284,8 @@
     "generation": 8,
     "abilities": [
       "Torrent",
-      "Torrent",
-      "Shell Armor"
+      "Shell Armor",
+      "Sharpness"
     ],
     "dexNum": 503,
     "form": 0
@@ -9768,6 +9768,7 @@
     "value": 531,
     "text": "Audino",
     "type": "NORMAL",
+    "dualtype": "FAIRY",
     "evolve": [
       531,
       1234
@@ -10227,6 +10228,7 @@
     "value": 556,
     "text": "Maractus",
     "type": "GRASS",
+    "dualtype": "GROUND",
     "evolve": [
       556
     ],
@@ -10411,7 +10413,7 @@
     "abilities": [
       "Defeatist",
       "Defeatist",
-      "Defeatist"
+      "Emergency Exit"
     ],
     "dexNum": 566,
     "form": 0
@@ -10429,7 +10431,7 @@
     "abilities": [
       "Defeatist",
       "Defeatist",
-      "Defeatist"
+      "Emergency Exit"
     ],
     "dexNum": 567,
     "form": 0
@@ -11308,6 +11310,7 @@
     "value": 617,
     "text": "Accelgor",
     "type": "BUG",
+    "dualtype": "DARK",
     "evolve": [
       616,
       617
@@ -11315,7 +11318,7 @@
     "generation": 8,
     "abilities": [
       "Hydration",
-      "Sticky Hold",
+      "Sheer Force",
       "Unburden"
     ],
     "dexNum": 617,
@@ -11688,8 +11691,8 @@
     "generation": 8,
     "abilities": [
       "Justified",
-      "Justified",
-      "Justified"
+      "Full Metal Body",
+      "Sharpness"
     ],
     "dexNum": 638,
     "form": 0
@@ -11705,8 +11708,8 @@
     "generation": 8,
     "abilities": [
       "Justified",
-      "Justified",
-      "Justified"
+      "Solid Rock",
+      "Sharpness"
     ],
     "dexNum": 639,
     "form": 0
@@ -11722,8 +11725,8 @@
     "generation": 8,
     "abilities": [
       "Justified",
-      "Justified",
-      "Justified"
+      "Wind Rider",
+      "Sharpness"
     ],
     "dexNum": 640,
     "form": 0
@@ -11846,8 +11849,8 @@
     "generation": 8,
     "abilities": [
       "Justified",
-      "Justified",
-      "Justified"
+      "Water Veil",
+      "Sharpness"
     ],
     "dexNum": 647,
     "form": 0
@@ -11958,8 +11961,8 @@
     "generation": 8,
     "abilities": [
       "Blaze",
-      "Blaze",
-      "Magician"
+      "Magician",
+      "Magic Guard"
     ],
     "dexNum": 653,
     "form": 0
@@ -11976,8 +11979,8 @@
     "generation": 8,
     "abilities": [
       "Blaze",
-      "Blaze",
-      "Magician"
+      "Magician",
+      "Magic Guard"
     ],
     "dexNum": 654,
     "form": 0
@@ -11995,8 +11998,8 @@
     "generation": 8,
     "abilities": [
       "Blaze",
-      "Blaze",
-      "Magician"
+      "Magician",
+      "Magic Guard"
     ],
     "dexNum": 655,
     "form": 0
@@ -12915,7 +12918,7 @@
     "abilities": [
       "Cheek Pouch",
       "Pickup",
-      "Plus"
+      "Volt Absorb"
     ],
     "dexNum": 702,
     "form": 0
@@ -12959,6 +12962,7 @@
     "value": 705,
     "text": "Sliggoo",
     "type": "DRAGON",
+    "dualtype": "POISON",
     "evolve": [
       704,
       705,
@@ -12966,7 +12970,7 @@
     ],
     "generation": 8,
     "abilities": [
-      "Sap Sipper",
+      "Water Absorb",
       "Hydration",
       "Gooey"
     ],
@@ -12977,6 +12981,7 @@
     "value": 706,
     "text": "Goodra",
     "type": "DRAGON",
+    "dualtype": "POISON",
     "evolve": [
       704,
       705,
@@ -12984,7 +12989,7 @@
     ],
     "generation": 8,
     "abilities": [
-      "Sap Sipper",
+      "Water Absorb",
       "Hydration",
       "Gooey"
     ],
@@ -13316,8 +13321,8 @@
     "generation": 8,
     "abilities": [
       "Overgrow",
-      "Overgrow",
-      "Long Reach"
+      "Long Reach",
+      "Tinted Lens"
     ],
     "dexNum": 724,
     "form": 0
@@ -14118,7 +14123,7 @@
     "abilities": [
       "Emergency Exit",
       "Emergency Exit",
-      "Emergency Exit"
+      "Run Away"
     ],
     "dexNum": 768,
     "form": 0
@@ -16200,8 +16205,8 @@
     "generation": 8,
     "abilities": [
       "Power Spot",
-      "Power Spot",
-      "Power Spot"
+      "Hustle",
+      "Quick Draw"
     ],
     "dexNum": 874,
     "form": 0
@@ -17320,8 +17325,8 @@
     "generation": 8,
     "abilities": [
       "Flash Fire",
-      "Flash Fire",
-      "Weak Armor"
+      "Weak Armor",
+      "Mega Launcher"
     ],
     "dexNum": 936,
     "form": 0
@@ -17338,8 +17343,8 @@
     "generation": 8,
     "abilities": [
       "Flash Fire",
-      "Flash Fire",
-      "Weak Armor"
+      "Weak Armor",
+      "Sharpness"
     ],
     "dexNum": 937,
     "form": 0
@@ -24121,7 +24126,7 @@
     "generation": 8,
     "abilities": [
       "Torrent",
-      "Torrent",
+      "Weak Armor",
       "Sharpness"
     ],
     "dexNum": 503,

@@ -196,7 +196,6 @@ def create_move_id_learnset(binary_array):
         if machine_no_index > 103:
             break
         machine_no = machine_no_index + 1
-        print(machine_no)
         tm_array.append(find_waza_no_by_machine_no(machine_no))
     
     return tm_array
