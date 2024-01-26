@@ -248,11 +248,13 @@ def is_smogon_compatible(str):
             return True
     return False
 
-def get_move_string(id=0):
-    str_ = move_enum[id]
-    if not is_smogon_compatible(str_):
-        raise ValueError(f'Incompatible move string found: ID - {id}, String: {str_}')
-    return str_
+def get_move_string(move_id=0):
+    moves_namedata = full_data['moves_namedata']
+    name_data = moves_namedata['labelDataArray'][move_id]['wordDataArray']
+    name = name_data[0]['str'] if name_data else 'None'
+    if not is_smogon_compatible(name):
+        raise ValueError(f'Incompatible move string found: ID - {id}, String: {name}')
+    return name
 
 def generate_moves_via_learnset(mons_no, level, output_format):
     """
@@ -285,11 +287,17 @@ def generate_moves_via_learnset(mons_no, level, output_format):
     else:
         return []
 
-def get_move_id(move_name):
+def get_move_id_from_move_name(move_name):
+    moves_namedata = full_data['moves_namedata']
+
     if not move_name:
-        return 0
-    id = next((i for i, e in enumerate(move_enum) if e == move_name.strip()), -1)
-    return id
+        return -1
+    for i, move in enumerate(moves_namedata['labelDataArray']):
+        if move['wordDataArray'][0]['str'] == move_name:
+            return i
+        if slugify(move['wordDataArray'][0]['str']) == move_name:
+            return i
+    return -1
 
 def get_egg_moves(dex_id=0):
     """
