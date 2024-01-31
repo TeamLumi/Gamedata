@@ -32,7 +32,7 @@ jobs:
         destination_folder: './src/lumi-calc/input'
         user_email: '<support+actions@github.com>'
         user_name: 'github-actions-bot'
-        commit_message: 'Updating gamedata files'
+        commit_message: 'Updating 2.0 gamedata files'
 
     - name: Pushes test file
       uses: TeamLumi/Gamedata@main
@@ -45,7 +45,7 @@ jobs:
         destination_folder: './src/constants/generated_files'
         user_email: '<support+actions@github.com>'
         user_name: 'github-actions-bot'
-        commit_message: 'Updating gamedata files'
+        commit_message: 'Updating 2.0 output files'
 
   update-lumibot:
     runs-on: ubuntu-latest
@@ -67,8 +67,21 @@ jobs:
         destination_folder: './__gamedata'
         user_email: '<support+actions@github.com>'
         user_name: 'github-actions-bot'
-        commit_message: 'Updating gamedata files'
+        commit_message: 'Updating 2.0 gamedata files'
 
+    - name: Pushes 3.0 test file
+      uses: TeamLumi/Gamedata@main
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.DENMARK_LUMIBOT_TOKEN }}
+      with:
+        source_file: '3.0Input/.'
+        destination_branch: 'master'
+        destination_repo: 'TeamLumi/Lumibot'
+        destination_folder: './__3.0gamedata'
+        user_email: '<support+actions@github.com>'
+        user_name: 'github-actions-bot'
+        commit_message: 'Updating 3.0 gamedata files'
+  
   update-calc:
     runs-on: ubuntu-latest
     steps:
@@ -108,7 +121,7 @@ jobs:
         destination_folder: './__gamedata'
         user_email: '<support+actions@github.com>'
         user_name: 'github-actions-bot'
-        commit_message: 'Updating gamedata files'
+        commit_message: 'Updating 2.0 gamedata files'
 
   update-website-branch:
     runs-on: ubuntu-latest
@@ -130,4 +143,4 @@ jobs:
         destination_folder: './__3.0gamedata'
         user_email: '<support+actions@github.com>'
         user_name: 'github-actions-bot'
-        commit_message: 'Updating gamedata files'
+        commit_message: 'Updating 3.0 gamedata files'
