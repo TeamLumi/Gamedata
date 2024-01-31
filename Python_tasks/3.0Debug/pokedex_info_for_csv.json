@@ -47034,7 +47034,7 @@
   },
   {
     "value": 493,
-    "text": "Arceus Blank Plate",
+    "text": "Blank Plate Arceus",
     "type": "Normal",
     "abilities": [
       "Multitype",
@@ -47835,7 +47835,6 @@
       "Waterfall": 127
     },
     "eggLearnset": {
-      "Night Slash": 400,
       "Air Slash": 403,
       "Sacred Sword": 533,
       "Knock Off": 282,
@@ -47880,6 +47879,7 @@
       "Water Pulse": 26,
       "Revenge": 29,
       "Aqua Jet": 34,
+      "Night Slash": 36,
       "Encore": 37,
       "Aqua Tail": 42,
       "Retaliate": 45,
@@ -47922,7 +47922,6 @@
       "Waterfall": 127
     },
     "eggLearnset": {
-      "Night Slash": 400,
       "Air Slash": 403,
       "Sacred Sword": 533,
       "Knock Off": 282,
@@ -48019,7 +48018,6 @@
       "Bulldoze": 523
     },
     "eggLearnset": {
-      "Night Slash": 400,
       "Air Slash": 403,
       "Sacred Sword": 533,
       "Knock Off": 282,
@@ -57854,6 +57852,7 @@
       "Slash": 36,
       "Whirlwind": 42,
       "Crush Claw": 48,
+      "Extrasensory": 54,
       "Air Slash": 55,
       "Defog": 60,
       "Thrash": 66,
@@ -64158,6 +64157,7 @@
       "Water Pulse": 25,
       "Rain Dance": 30,
       "Dragon Pulse": 35,
+      "Gyro Ball": 40,
       "Curse": 41,
       "Body Slam": 45,
       "Muddy Water": 50
@@ -64826,6 +64826,7 @@
       "Recover": 30,
       "Crunch": 33,
       "Take Down": 36,
+      "Rock Blast": 37,
       "Blizzard": 39,
       "Double-Edge": 42
     },
@@ -65764,6 +65765,7 @@
       "Synthesis": 20,
       "Pluck": 25,
       "Nasty Plot": 30,
+      "Low Kick": 34,
       "Sucker Punch": 35,
       "Leaf Blade": 40,
       "Feather Dance": 45,
@@ -69927,7 +69929,7 @@
   },
   {
     "value": 778,
-    "text": "Mimikyu Disguised Form",
+    "text": "Disguised Form Mimikyu",
     "type": "Ghost",
     "dualtype": "Fairy",
     "abilities": [
@@ -83003,7 +83005,7 @@
   },
   {
     "value": 966,
-    "text": "Revavroom",
+    "text": "Revravroom",
     "type": "Steel",
     "dualtype": "Poison",
     "abilities": [
@@ -86236,6 +86238,7 @@
       "Bullet Seed": 20,
       "Syrup Bomb": 28,
       "Dragon Pulse": 32,
+      "Dragon Cheer": 32,
       "Recover": 36,
       "Energy Ball": 40,
       "Substitute": 44
@@ -88545,7 +88548,7 @@
   },
   {
     "value": 1043,
-    "text": "Pikachu Rock Star",
+    "text": "Cosplay Rock Star Pikachu",
     "type": "Electric",
     "abilities": [
       "Static",
@@ -88624,7 +88627,7 @@
   },
   {
     "value": 1044,
-    "text": "Pikachu Belle",
+    "text": "Cosplay Belle Pikachu",
     "type": "Electric",
     "abilities": [
       "Static",
@@ -88703,7 +88706,7 @@
   },
   {
     "value": 1045,
-    "text": "Pikachu Pop Star",
+    "text": "Cosplay Pop Star Pikachu",
     "type": "Electric",
     "abilities": [
       "Static",
@@ -88782,7 +88785,7 @@
   },
   {
     "value": 1046,
-    "text": "Pikachu, Ph.D",
+    "text": "Cosplay Ph.D Pikachu",
     "type": "Electric",
     "abilities": [
       "Static",
@@ -88861,7 +88864,7 @@
   },
   {
     "value": 1047,
-    "text": "Pikachu Libre",
+    "text": "Cosplay Libre Pikachu",
     "type": "Electric",
     "abilities": [
       "Static",
@@ -92423,7 +92426,7 @@
   },
   {
     "value": 1087,
-    "text": "Haunter GHOST",
+    "text": "Haunter Glitch GHOST",
     "type": "Ghost",
     "abilities": [
       "Levitate",
@@ -94518,7 +94521,7 @@
   },
   {
     "value": 1111,
-    "text": "Kabutops Fossilized",
+    "text": "Glitch Kabutops",
     "type": "Rock",
     "dualtype": "Ghost",
     "abilities": [
@@ -94672,7 +94675,7 @@
   },
   {
     "value": 1113,
-    "text": "Aerodactyl Fossilized",
+    "text": "Glitch Aerodactyl",
     "type": "Rock",
     "dualtype": "Ghost",
     "abilities": [
@@ -99551,7 +99554,7 @@
   },
   {
     "value": 1189,
-    "text": "Meta Groudon",
+    "text": "Boss Meta Groudon",
     "type": "Ground",
     "abilities": [
       "Drought",
@@ -101505,7 +101508,7 @@
   },
   {
     "value": 1216,
-    "text": "Arceus Fist Plate",
+    "text": "Fist Plate Arceus",
     "type": "Fighting",
     "abilities": [
       "Multitype",
@@ -101625,7 +101628,7 @@
   },
   {
     "value": 1217,
-    "text": "Arceus Sky Plate",
+    "text": "Sky Plate Arceus",
     "type": "Flying",
     "abilities": [
       "Multitype",
@@ -101745,7 +101748,7 @@
   },
   {
     "value": 1218,
-    "text": "Arceus Toxic Plate",
+    "text": "Toxic Plate Arceus",
     "type": "Poison",
     "abilities": [
       "Multitype",
@@ -101865,7 +101868,7 @@
   },
   {
     "value": 1219,
-    "text": "Arceus Earth Plate",
+    "text": "Earth Plate Arceus",
     "type": "Ground",
     "abilities": [
       "Multitype",
@@ -101985,7 +101988,7 @@
   },
   {
     "value": 1220,
-    "text": "Arceus Stone Plate",
+    "text": "Stone Plate Arceus",
     "type": "Rock",
     "abilities": [
       "Multitype",
@@ -102105,7 +102108,7 @@
   },
   {
     "value": 1221,
-    "text": "Arceus Insect Plate",
+    "text": "Insect Plate Arceus",
     "type": "Bug",
     "abilities": [
       "Multitype",
@@ -102225,7 +102228,7 @@
   },
   {
     "value": 1222,
-    "text": "Arceus Spooky Plate",
+    "text": "Spooky Plate Arceus",
     "type": "Ghost",
     "abilities": [
       "Multitype",
@@ -102345,7 +102348,7 @@
   },
   {
     "value": 1223,
-    "text": "Arceus Iron Plate",
+    "text": "Iron Plate Arceus",
     "type": "Steel",
     "abilities": [
       "Multitype",
@@ -102465,7 +102468,7 @@
   },
   {
     "value": 1224,
-    "text": "Arceus Flame Plate",
+    "text": "Flame Plate Arceus",
     "type": "Fire",
     "abilities": [
       "Multitype",
@@ -102585,7 +102588,7 @@
   },
   {
     "value": 1225,
-    "text": "Arceus Splash Plate",
+    "text": "Splash Plate Arceus",
     "type": "Water",
     "abilities": [
       "Multitype",
@@ -102705,7 +102708,7 @@
   },
   {
     "value": 1226,
-    "text": "Arceus Meadow Plate",
+    "text": "Meadow Plate Arceus",
     "type": "Grass",
     "abilities": [
       "Multitype",
@@ -102825,7 +102828,7 @@
   },
   {
     "value": 1227,
-    "text": "Arceus Zap Plate",
+    "text": "Zap Plate Arceus",
     "type": "Electric",
     "abilities": [
       "Multitype",
@@ -102945,7 +102948,7 @@
   },
   {
     "value": 1228,
-    "text": "Arceus Mind Plate",
+    "text": "Mind Plate Arceus",
     "type": "Psychic",
     "abilities": [
       "Multitype",
@@ -103065,7 +103068,7 @@
   },
   {
     "value": 1229,
-    "text": "Arceus Icicle Plate",
+    "text": "Icicle Plate Arceus",
     "type": "Ice",
     "abilities": [
       "Multitype",
@@ -103185,7 +103188,7 @@
   },
   {
     "value": 1230,
-    "text": "Arceus Draco Plate",
+    "text": "Draco Plate Arceus",
     "type": "Dragon",
     "abilities": [
       "Multitype",
@@ -103305,7 +103308,7 @@
   },
   {
     "value": 1231,
-    "text": "Arceus Dread Plate",
+    "text": "Dread Plate Arceus",
     "type": "Dark",
     "abilities": [
       "Multitype",
@@ -103425,7 +103428,7 @@
   },
   {
     "value": 1232,
-    "text": "Arceus Pixie Plate",
+    "text": "Pixie Plate Arceus",
     "type": "Fairy",
     "abilities": [
       "Multitype",
@@ -103554,7 +103557,7 @@
       "Sharpness"
     ],
     "learnset": {
-      "Ceaseless Edge": 1,
+      "Ceaseless Edge": 0,
       "Sucker Punch": 1,
       "Slash": 1,
       "Megahorn": 1,
@@ -103607,7 +103610,6 @@
       "Waterfall": 127
     },
     "eggLearnset": {
-      "Night Slash": 400,
       "Air Slash": 403,
       "Sacred Sword": 533,
       "Knock Off": 282,
@@ -108462,7 +108464,7 @@
   },
   {
     "value": 1295,
-    "text": "Floette Eternal Flower",
+    "text": "Eternal Flower Floette",
     "type": "Fairy",
     "abilities": [
       "Flower Veil",
@@ -109614,7 +109616,8 @@
       "Gooey"
     ],
     "learnset": {
-      "Acid Armor": 0,
+      "Gyro Ball": 0,
+      "Acid Armor": 1,
       "Absorb": 1,
       "Acid Spray": 1,
       "Dragon Breath": 1,
@@ -109679,16 +109682,17 @@
       "Gooey"
     ],
     "learnset": {
-      "Iron Tail": 0,
-      "Absorb": 1,
-      "Acid Spray": 1,
-      "Aqua Tail": 1,
-      "Dragon Breath": 1,
-      "Feint": 1,
-      "Poison Tail": 1,
-      "Tackle": 1,
-      "Tearful Look": 1,
+      "Gyro Ball": 0,
       "Water Gun": 1,
+      "Tearful Look": 1,
+      "Tackle": 1,
+      "Poison Tail": 1,
+      "Iron Tail": 1,
+      "Dragon Breath": 1,
+      "Aqua Tail": 1,
+      "Acid Spray": 1,
+      "Absorb": 1,
+      "Feint": 1,
       "Protect": 15,
       "Flail": 20,
       "Water Pulse": 25,
@@ -110272,6 +110276,7 @@
       "Sturdy"
     ],
     "learnset": {
+      "Rock Blast": 0,
       "Body Slam": 1,
       "Harden": 1,
       "Powder Snow": 1,
@@ -110342,6 +110347,7 @@
       "Sturdy"
     ],
     "learnset": {
+      "Rock Blast": 0,
       "Body Slam": 1,
       "Harden": 1,
       "Powder Snow": 1,
@@ -110575,7 +110581,7 @@
   },
   {
     "value": 1323,
-    "text": "Zygarde 10% Forme Power Construct",
+    "text": "Zygarde 10% Power Construct Forme",
     "type": "Dragon",
     "dualtype": "Ground",
     "abilities": [
@@ -110652,7 +110658,7 @@
   },
   {
     "value": 1324,
-    "text": "Zygarde 50% Forme Power Construct",
+    "text": "Zygarde 50% Power Construct Forme",
     "type": "Dragon",
     "dualtype": "Ground",
     "abilities": [
@@ -110986,15 +110992,16 @@
       "Scrappy"
     ],
     "learnset": {
-      "Spirit Shackle": 1,
-      "Tackle": 1,
-      "Spite": 1,
-      "Leafage": 1,
-      "Phantom Force": 1,
-      "Leaf Storm": 1,
-      "Growl": 1,
+      "Triple Arrows": 0,
       "Astonish": 1,
+      "Growl": 1,
+      "Leaf Storm": 1,
+      "Phantom Force": 1,
       "U-turn": 1,
+      "Low Kick": 1,
+      "Spite": 1,
+      "Tackle": 1,
+      "Leafage": 1,
       "Peck": 9,
       "Shadow Sneak": 12,
       "Razor Leaf": 15,
@@ -114670,7 +114677,7 @@
   },
   {
     "value": 1373,
-    "text": "Mimikyu Busted Form",
+    "text": "Busted Form Mimikyu",
     "type": "Ghost",
     "dualtype": "Fairy",
     "abilities": [
@@ -114757,7 +114764,7 @@
   },
   {
     "value": 1374,
-    "text": "Totem Mimikyu",
+    "text": "Totem Disguised Form Mimikyu",
     "type": "Ghost",
     "dualtype": "Fairy",
     "abilities": [
@@ -114843,7 +114850,7 @@
   },
   {
     "value": 1375,
-    "text": "Totem Mimikyu",
+    "text": "Totem Busted Form Mimikyu",
     "type": "Ghost",
     "dualtype": "Fairy",
     "abilities": [
@@ -116368,7 +116375,7 @@
   },
   {
     "value": 1395,
-    "text": "Gigantamax Toxtricity",
+    "text": "Gigantamax Amped Form Toxtricity",
     "type": "Electric",
     "dualtype": "Poison",
     "abilities": [
@@ -116454,7 +116461,7 @@
   },
   {
     "value": 1396,
-    "text": "Gigantamax Toxtricity",
+    "text": "Gigantamax Low Key Form Toxtricity",
     "type": "Electric",
     "dualtype": "Poison",
     "abilities": [
@@ -121387,7 +121394,7 @@
   },
   {
     "value": 1473,
-    "text": "Urshifu Rapid Strike Style",
+    "text": "Rapid Strike Style Urshifu",
     "type": "Fighting",
     "dualtype": "Water",
     "abilities": [
@@ -121466,7 +121473,7 @@
   },
   {
     "value": 1474,
-    "text": "Gigantamax Urshifu",
+    "text": "Gigantamax Single Strike Style Urshifu",
     "type": "Fighting",
     "dualtype": "Dark",
     "abilities": [
@@ -121545,7 +121552,7 @@
   },
   {
     "value": 1475,
-    "text": "Gigantamax Urshifu",
+    "text": "Gigantamax Rapid Strike Style Urshifu",
     "type": "Fighting",
     "dualtype": "Dark",
     "abilities": [
@@ -122780,7 +122787,7 @@
   },
   {
     "value": 1491,
-    "text": "Segin Starmobile Revavroom",
+    "text": "Revravroom Segin Starmobile Revavroom",
     "type": "Steel",
     "dualtype": "Poison",
     "abilities": [
@@ -122856,7 +122863,7 @@
   },
   {
     "value": 1492,
-    "text": "Schedar Starmobile Revavroom",
+    "text": "Revravroom Schedar Starmobile Revavroom",
     "type": "Steel",
     "dualtype": "Poison",
     "abilities": [
@@ -122932,7 +122939,7 @@
   },
   {
     "value": 1493,
-    "text": "Navi Starmobile Revavroom",
+    "text": "Revravroom Navi Starmobile Revavroom",
     "type": "Steel",
     "dualtype": "Poison",
     "abilities": [
@@ -123008,7 +123015,7 @@
   },
   {
     "value": 1494,
-    "text": "Ruchbah Starmobile Revavroom",
+    "text": "Revravroom Ruchbah Starmobile Revavroom",
     "type": "Steel",
     "dualtype": "Poison",
     "abilities": [
@@ -123084,7 +123091,7 @@
   },
   {
     "value": 1495,
-    "text": "Caph Starmobile Revavroom",
+    "text": "Revravroom Caph Starmobile Revavroom",
     "type": "Steel",
     "dualtype": "Poison",
     "abilities": [
@@ -123418,7 +123425,7 @@
   },
   {
     "value": 1500,
-    "text": "Tatsugiri Curly False Dragon Titan",
+    "text": "Tatsugiri Curly Form False Dragon Titan",
     "type": "Dragon",
     "dualtype": "Water",
     "abilities": [
@@ -123479,7 +123486,7 @@
   },
   {
     "value": 1501,
-    "text": "Tatsugiri Droopy False Dragon Titan",
+    "text": "Tatsugiri Droopy Form False Dragon Titan",
     "type": "Dragon",
     "dualtype": "Water",
     "abilities": [
@@ -123548,7 +123555,7 @@
   },
   {
     "value": 1502,
-    "text": "Tatsugiri Stretchy False Dragon Titan",
+    "text": "Tatsugiri Stretchy Form False Dragon Titan",
     "type": "Dragon",
     "dualtype": "Water",
     "abilities": [
@@ -123707,7 +123714,7 @@
   },
   {
     "value": 1504,
-    "text": "Great Tusk Quaking Earth Titan",
+    "text": "Quaking Earth Titan Great Tusk",
     "type": "Ground",
     "dualtype": "Fighting",
     "abilities": [
@@ -123777,7 +123784,7 @@
   },
   {
     "value": 1505,
-    "text": "Iron Treads Quaking Earth Titan",
+    "text": "Quaking Earth Titan Iron Treads",
     "type": "Ground",
     "dualtype": "Steel",
     "abilities": [

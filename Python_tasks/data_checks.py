@@ -7,14 +7,6 @@ from pokemonUtils import (get_form_name, get_form_pokemon_personal_id,
                           get_pokemon_name, get_pokemon_name, get_diff_form_dictionary,
                           get_pokemon_id_from_name)
 
-def check_monsName(monsName):
-    '''
-    This checks that a pokemons name is formatted correctly specifically for the Honey trees
-    '''
-    monsNo = get_pokemon_id_from_name(monsName)
-    if monsNo == -1:
-        raise SyntaxError("This monsName is not formatted correctly to get a correct monsNo:", monsName)
-
 def get_average_time(execution_times):
     # Do I really need to explain this one?
     return sum(execution_times) / len(execution_times)
@@ -35,7 +27,7 @@ def bad_encounter_data(pkmn_name, routeName=None, route=None):
 def is_valid_pokemon(pokemonId):
     return personal_table[pokemonId]['valid_flag']
 
-def check_bad_encounter(encounters, tracker_route, pkmn_key, lumi_formula_mon, temp_form_no, zoneID, method=''):
+def check_bad_encounter(encounters, tracker_route, lumi_formula_mon, temp_form_no, zoneID, method=''):
     '''
     This checks the methods that are on each route and verifies that no pokemon is missing
     '''
@@ -49,13 +41,6 @@ def check_bad_encounter(encounters, tracker_route, pkmn_key, lumi_formula_mon, t
         bad_encounter = bad_encounter_data(get_pokemon_name(pokemonPersonalId), name_routes[tracker_route], zoneID)
         bad_encounters.append(bad_encounter)
         return bad_encounters
-    elif pkmn_key not in diff_forms.keys():
-        bad_encounter = bad_encounter_data(get_pokemon_name(pokemonPersonalId), name_routes[tracker_route], zoneID)
-        bad_encounters.append(bad_encounter)
-        return bad_encounters
-    elif method == constants.TRACKER_METHOD:
-        encounters[str(tracker_route)].append(diff_forms[pkmn_key][1])
-        return -1
     else:
         return -2
 

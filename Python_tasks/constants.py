@@ -14,6 +14,7 @@ else:
     INPUT_NAME = "input"
 
 if INPUT_NAME == "input":
+    GAME_MODE = "2.0"
     DEBUG_NAME = "Debug"
     OUTPUT_NAME = "output"
     POKEDEX_LENGTH = 1010
@@ -28,6 +29,7 @@ if INPUT_NAME == "input":
         1067: "Galarian Farfetch'd"
     }
 elif INPUT_NAME == "3.0Input":
+    GAME_MODE = "3.0"
     DEBUG_NAME = "3.0Debug"
     OUTPUT_NAME = "3.0Output"
     POKEDEX_LENGTH = 1025
