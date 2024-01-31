@@ -252,8 +252,8 @@ def get_move_string(move_id=0):
     moves_namedata = full_data['moves_namedata']
     name_data = moves_namedata['labelDataArray'][move_id]['wordDataArray']
     name = name_data[0]['str'] if name_data else 'None'
-    if not is_smogon_compatible(name):
-        raise ValueError(f'Incompatible move string found: ID - {id}, String: {name}')
+    if not is_smogon_compatible(name) and move_id != 0:
+        raise ValueError(f'Incompatible move string found: ID - {move_id}, String: {name}')
     return name
 
 def generate_moves_via_learnset(mons_no, level, output_format):
