@@ -345,14 +345,14 @@ Alolan Meowth|Lake Verity (Before)|Incense|5|20%|Lake Verity (After)|Incense|5|2
 Galarian Meowth|Route 207|Incense|10|20%|
 Alolan Persian|Route 225|Incense|67|20%|
 Hisuian Growlithe|Route 202|Incense|6|20%|Route 205 (North)|Incense|17|20%|
-Galarian Farfetch'd|Ravaged Path|Incense|8|20%|Route 206|Incense|22|20%|Mt. Coronet - Route 207 Entrance|Incense|23|20%|
+Alolan Geodude|Ravaged Path|Incense|8|20%|Route 206|Incense|22|20%|Mt. Coronet - Route 207 Entrance|Incense|23|20%|
 Alolan Graveler|Iron Island - 1F|Incense|45|20%|Iron Island - B1F Left|Incense|45|20%|Iron Island - B1F Right|Incense|45|20%|Iron Island - B2F Left (Riley's Room)|Incense|45|20%|Iron Island - B2F Right|Incense|45|20%|Iron Island - B3F|Incense|45|20%|
 Alolan Golem|Victory Road - 1F|Incense|59|20%|Victory Road - 2F|Incense|59|20%|Victory Road - B1F|Incense|59|20%|Victory Road - 1F Back (Marley)|Incense|59|20%|Victory Road - 1F Back (Entrance)|Incense|59|20%|Victory Road - 1F Back (214 Exit)|Incense|59|20%|
 Galarian Ponyta|Route 204 (North)|Incense|12|20%|
 Galarian Rapidash|Route 226|Incense|67|20%|
 Galarian Slowpoke|Lake Verity (Before)|Surfing Incense|40|30%|Route 203|Surfing Incense|40|30%|Oreburgh Gate - B1F|Surfing Incense|40|30%|Mt. Coronet - B1F|Surfing Incense|45|30%|Mt. Coronet - Route 207 Entrance|Surfing Incense|40|30%|Route 208|Surfing Incense|40|30%|Route 214|Surfing Incense|40|30%|Route 210 (North)|Surfing Incense|40|30%|Route 218|Surfing Incense|45|30%|Lake Verity (After)|Surfing Incense|40|30%|
 Galarian Slowbro|Route 219|Surfing Incense|45|30%|Route 220|Surfing Incense|45|30%|Lake Valor (After)|Surfing Incense|54|30%|Victory Road - B1F|Surfing Incense|40|60%|Victory Road - 1F Back (Marley)|Surfing Incense|40|60%|Route 224|Surfing Incense|60|30%|Route 229|Surfing Incense|67|30%|
-Galarian Farfetch’d|Route 208|Incense|24|20%|Route 214|Incense|32|20%|
+Galarian Farfetch'd|Route 208|Incense|24|20%|Route 214|Incense|32|20%|
 Alolan Grimer|Mt. Coronet - Route 211 Entrance|Incense|18|20%|Mt. Coronet - Tunnel to Route 211 Entrance|Incense|19|20%|Mt. Coronet - B1F|Incense|20|20%|Mt. Coronet - Route 216 Entrance|Incense|19|20%|Route 210 (South)|Incense|30|20%|
 Alolan Muk|Fuego Ironworks (Outside)|Incense|40|20%|
 Hisuian Voltorb|Valley Windworks (Outside)|Incense|13|20%|

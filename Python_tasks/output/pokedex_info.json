@@ -3670,7 +3670,7 @@
   },
   {
     "value": 201,
-    "text": "Unown One form",
+    "text": "Unown",
     "type": "PSYCHIC",
     "evolve": [
       201,
@@ -6357,7 +6357,7 @@
   },
   {
     "value": 351,
-    "text": "Castform Normal",
+    "text": "Castform",
     "type": "NORMAL",
     "evolve": [
       351,
@@ -6969,7 +6969,7 @@
   },
   {
     "value": 386,
-    "text": "Deoxys Normal Forme",
+    "text": "Deoxys",
     "type": "PSYCHIC",
     "evolve": [
       386,
@@ -7443,7 +7443,7 @@
   },
   {
     "value": 412,
-    "text": "Burmy Plant Cloak",
+    "text": "Burmy",
     "type": "BUG",
     "evolve": [
       412,
@@ -7461,7 +7461,7 @@
   },
   {
     "value": 413,
-    "text": "Wormadam Plant Cloak",
+    "text": "Wormadam",
     "type": "BUG",
     "dualtype": "GRASS",
     "evolve": [
@@ -7603,7 +7603,7 @@
   },
   {
     "value": 421,
-    "text": "Cherrim Overcast Form",
+    "text": "Cherrim",
     "type": "GRASS",
     "evolve": [
       420,
@@ -7621,7 +7621,7 @@
   },
   {
     "value": 422,
-    "text": "Shellos West Sea",
+    "text": "Shellos",
     "type": "WATER",
     "evolve": [
       422,
@@ -7638,7 +7638,7 @@
   },
   {
     "value": 423,
-    "text": "Gastrodon West Sea",
+    "text": "Gastrodon",
     "type": "WATER",
     "dualtype": "GROUND",
     "evolve": [
@@ -8782,7 +8782,7 @@
   },
   {
     "value": 487,
-    "text": "Giratina Altered Forme",
+    "text": "Giratina",
     "type": "GHOST",
     "dualtype": "DRAGON",
     "evolve": [
@@ -8864,7 +8864,7 @@
   },
   {
     "value": 492,
-    "text": "Shaymin Land Forme",
+    "text": "Shaymin",
     "type": "GRASS",
     "evolve": [
       492,
@@ -9911,7 +9911,7 @@
   },
   {
     "value": 550,
-    "text": "Basculin Red-Striped Form",
+    "text": "Basculin",
     "type": "WATER",
     "evolve": [
       550
@@ -10001,7 +10001,7 @@
   },
   {
     "value": 555,
-    "text": "Darmanitan Standard Mode",
+    "text": "Darmanitan",
     "type": "FIRE",
     "evolve": [
       554,
@@ -10529,7 +10529,7 @@
   },
   {
     "value": 585,
-    "text": "Deerling Spring Form",
+    "text": "Deerling",
     "type": "NORMAL",
     "dualtype": "GRASS",
     "evolve": [
@@ -10547,7 +10547,7 @@
   },
   {
     "value": 586,
-    "text": "Sawsbuck Spring Form",
+    "text": "Sawsbuck",
     "type": "NORMAL",
     "dualtype": "GRASS",
     "evolve": [
@@ -11516,7 +11516,7 @@
   },
   {
     "value": 641,
-    "text": "Tornadus Incarnate Forme",
+    "text": "Tornadus",
     "type": "FLYING",
     "evolve": [
       641
@@ -11532,7 +11532,7 @@
   },
   {
     "value": 642,
-    "text": "Thundurus Incarnate Forme",
+    "text": "Thundurus",
     "type": "ELECTRIC",
     "dualtype": "FLYING",
     "evolve": [
@@ -11583,7 +11583,7 @@
   },
   {
     "value": 645,
-    "text": "Landorus Incarnate Forme",
+    "text": "Landorus",
     "type": "GROUND",
     "dualtype": "FLYING",
     "evolve": [
@@ -11617,7 +11617,7 @@
   },
   {
     "value": 647,
-    "text": "Keldeo Ordinary Form",
+    "text": "Keldeo",
     "type": "WATER",
     "dualtype": "FIGHTING",
     "evolve": [
@@ -11634,7 +11634,7 @@
   },
   {
     "value": 648,
-    "text": "Meloetta Aria Forme",
+    "text": "Meloetta",
     "type": "NORMAL",
     "dualtype": "PSYCHIC",
     "evolve": [
@@ -11961,7 +11961,7 @@
   },
   {
     "value": 666,
-    "text": "Vivillon Meadow Pattern",
+    "text": "Vivillon",
     "type": "BUG",
     "dualtype": "FLYING",
     "evolve": [
@@ -12016,7 +12016,7 @@
   },
   {
     "value": 669,
-    "text": "Flabébé Red Flower",
+    "text": "Flabébé",
     "type": "FAIRY",
     "evolve": [
       669,
@@ -12034,7 +12034,7 @@
   },
   {
     "value": 670,
-    "text": "Floette Red Flower",
+    "text": "Floette",
     "type": "FAIRY",
     "evolve": [
       669,
@@ -12052,7 +12052,7 @@
   },
   {
     "value": 671,
-    "text": "Florges Red Flower",
+    "text": "Florges",
     "type": "FAIRY",
     "evolve": [
       669,
@@ -12139,7 +12139,7 @@
   },
   {
     "value": 676,
-    "text": "Furfrou Natural Form",
+    "text": "Furfrou",
     "type": "NORMAL",
     "evolve": [
       676
@@ -12228,7 +12228,7 @@
   },
   {
     "value": 681,
-    "text": "Aegislash Shield Forme",
+    "text": "Aegislash",
     "type": "STEEL",
     "dualtype": "GHOST",
     "evolve": [
@@ -12742,7 +12742,7 @@
   },
   {
     "value": 710,
-    "text": "Pumpkaboo Average Size",
+    "text": "Pumpkaboo",
     "type": "GHOST",
     "dualtype": "GRASS",
     "evolve": [
@@ -12760,7 +12760,7 @@
   },
   {
     "value": 711,
-    "text": "Gourgeist Average Size",
+    "text": "Gourgeist",
     "type": "GHOST",
     "dualtype": "GRASS",
     "evolve": [
@@ -12848,7 +12848,7 @@
   },
   {
     "value": 716,
-    "text": "Xerneas Neutral Mode",
+    "text": "Xerneas",
     "type": "FAIRY",
     "evolve": [
       716
@@ -12881,7 +12881,7 @@
   },
   {
     "value": 718,
-    "text": "Zygarde 50% Forme",
+    "text": "Zygarde",
     "type": "DRAGON",
     "dualtype": "GROUND",
     "evolve": [
@@ -12915,7 +12915,7 @@
   },
   {
     "value": 720,
-    "text": "Hoopa Confined",
+    "text": "Hoopa",
     "type": "PSYCHIC",
     "dualtype": "GHOST",
     "evolve": [
@@ -13298,7 +13298,7 @@
   },
   {
     "value": 741,
-    "text": "Oricorio Baile Style",
+    "text": "Oricorio",
     "type": "FIRE",
     "dualtype": "FLYING",
     "evolve": [
@@ -13368,7 +13368,7 @@
   },
   {
     "value": 745,
-    "text": "Lycanroc Midday Form",
+    "text": "Lycanroc",
     "type": "ROCK",
     "evolve": [
       744,
@@ -13385,7 +13385,7 @@
   },
   {
     "value": 746,
-    "text": "Wishiwashi Solo Form",
+    "text": "Wishiwashi",
     "type": "WATER",
     "evolve": [
       746
@@ -13857,7 +13857,7 @@
   },
   {
     "value": 773,
-    "text": "Silvally Type: Normal",
+    "text": "Silvally",
     "type": "NORMAL",
     "evolve": [
       772,
@@ -13874,7 +13874,7 @@
   },
   {
     "value": 774,
-    "text": "Minior Meteor Form",
+    "text": "Minior",
     "type": "ROCK",
     "dualtype": "FLYING",
     "evolve": [
@@ -13941,7 +13941,7 @@
   },
   {
     "value": 778,
-    "text": "Mimikyu Disguised Form",
+    "text": "Mimikyu",
     "type": "GHOST",
     "dualtype": "FAIRY",
     "evolve": [
@@ -15191,7 +15191,7 @@
   },
   {
     "value": 849,
-    "text": "Toxtricity Amped Form",
+    "text": "Toxtricity",
     "type": "ELECTRIC",
     "dualtype": "POISON",
     "evolve": [
@@ -15279,7 +15279,7 @@
   },
   {
     "value": 854,
-    "text": "Sinistea Phony Form",
+    "text": "Sinistea",
     "type": "GHOST",
     "evolve": [
       854,
@@ -15296,7 +15296,7 @@
   },
   {
     "value": 855,
-    "text": "Polteageist Phony Form",
+    "text": "Polteageist",
     "type": "GHOST",
     "evolve": [
       854,
@@ -15562,7 +15562,7 @@
   },
   {
     "value": 869,
-    "text": "Alcremie Vanilla Cream",
+    "text": "Alcremie",
     "type": "FAIRY",
     "evolve": [
       868,
@@ -15663,7 +15663,7 @@
   },
   {
     "value": 875,
-    "text": "Eiscue Ice Face",
+    "text": "Eiscue",
     "type": "ICE",
     "evolve": [
       875
@@ -15696,7 +15696,7 @@
   },
   {
     "value": 877,
-    "text": "Morpeko Full Belly Mode",
+    "text": "Morpeko",
     "type": "ELECTRIC",
     "dualtype": "DARK",
     "evolve": [
@@ -15889,7 +15889,7 @@
   },
   {
     "value": 888,
-    "text": "Zacian Hero of Many Battles",
+    "text": "Zacian",
     "type": "FAIRY",
     "evolve": [
       888
@@ -15905,7 +15905,7 @@
   },
   {
     "value": 889,
-    "text": "Zamazenta Hero of Many Battles",
+    "text": "Zamazenta",
     "type": "FIGHTING",
     "evolve": [
       889
@@ -15956,7 +15956,7 @@
   },
   {
     "value": 892,
-    "text": "Urshifu Single Strike Style",
+    "text": "Urshifu",
     "type": "FIGHTING",
     "dualtype": "DARK",
     "evolve": [
@@ -16181,7 +16181,7 @@
   },
   {
     "value": 905,
-    "text": "Enamorus Incarnate Forme",
+    "text": "Enamorus",
     "type": "FAIRY",
     "dualtype": "FLYING",
     "evolve": [
@@ -16520,7 +16520,7 @@
   },
   {
     "value": 925,
-    "text": "Maushold Family of Four",
+    "text": "Maushold",
     "type": "GRASS",
     "evolve": [
       925
@@ -16621,7 +16621,7 @@
   },
   {
     "value": 931,
-    "text": "Squawkabilly Green Plumage",
+    "text": "Squawkabilly",
     "type": "WATER",
     "dualtype": "STEEL",
     "evolve": [
@@ -17188,7 +17188,7 @@
   },
   {
     "value": 964,
-    "text": "Palafin Zero Form",
+    "text": "Palafin",
     "type": "WATER",
     "dualtype": "STEEL",
     "evolve": [
@@ -17426,7 +17426,7 @@
   },
   {
     "value": 978,
-    "text": "Tatsugiri Curly Form",
+    "text": "Tatsugiri",
     "type": "WATER",
     "dualtype": "STEEL",
     "evolve": [
@@ -17494,7 +17494,7 @@
   },
   {
     "value": 982,
-    "text": "Dudunsparce Two-Segment Form",
+    "text": "Dudunsparce",
     "type": "WATER",
     "dualtype": "STEEL",
     "evolve": [
@@ -17771,7 +17771,7 @@
   },
   {
     "value": 999,
-    "text": "Gimmighoul Chest Form",
+    "text": "Gimmighoul",
     "type": "GRASS",
     "evolve": [
       999

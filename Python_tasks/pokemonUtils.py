@@ -51,9 +51,8 @@ def convert_lumi_formula_mon(lumi_mons_no):
     # converts anything more than 2^16 (65,536) to it's correct PID
     form_no = lumi_mons_no//(2**16)
     lumi_formula_mon = lumi_mons_no - (form_no * (2**16))
-    pkmn_key = pokedex[str(lumi_formula_mon)] + str(form_no)
-    mons_no = diff_forms[pkmn_key][0]
-    return mons_no
+    pokemonId = get_pokemon_id_from_mons_no_and_form(lumi_formula_mon, form_no)
+    return pokemonId
 
 def get_pokemon_name(mons_no = 0, form_mode = False):
     '''
@@ -66,9 +65,9 @@ def get_pokemon_name(mons_no = 0, form_mode = False):
         if mons_no < len(name_data["labelDataArray"]):
             mons_name = name_data["labelDataArray"][mons_no]["wordDataArray"][0]["str"]
             form_name = form_namedata["labelDataArray"][mons_no]["wordDataArray"][0]["str"]
-            if len(form_name) > 0 and mons_name not in form_name and not form_mode:
+            if len(form_name) > 0 and mons_name not in form_name and form_mode:
                 pokemon_name = f"{mons_name} {form_name}"
-            elif len(form_name) > 0 and mons_name in form_name and not form_mode:
+            elif len(form_name) > 0 and mons_name in form_name and form_mode:
                 pokemon_name = form_name
             else:
                 pokemon_name = mons_name
@@ -97,7 +96,7 @@ def get_form_name(id):
         form_data = form_namedata['labelDataArray'][id]
         form_name = form_data['wordDataArray'][0]['str']
         monsNo = form_data['labelName'].split("_")[-2]
-        pokemon_name = get_pokemon_name(int(monsNo), True)
+        pokemon_name = get_pokemon_name(int(monsNo))
         if(pokemon_name not in form_name):
             return f"{pokemon_name} {form_name}"
         return form_name
@@ -139,9 +138,15 @@ def get_ability_id_from_ability_name(ability_string):
     return ability_id
 
 def get_pokemon_id_from_name(pokemon_name):
-    if not pokemon_name:
-        return -1
-    return NAME_MAP[pokemon_name]
+    try:
+        if not pokemon_name:
+            return -1
+        pokemonId = NAME_MAP[pokemon_name]
+        return pokemonId
+    except KeyError as e:
+        print("This pokemon is not in the FORM_MAP:", e)
+    except SyntaxError as e:
+        print("This monsName is not formatted correctly to get a correct monsNo:", e)
 
 def get_nature_id(nature_string):
     nature_namedata = full_data['nature_namedata']
@@ -263,7 +268,7 @@ def isSpecialPokemon(current_pokemon_name):
     """
     return current_pokemon_name == "Indeedee" or current_pokemon_name == "Meowstic"
 
-def create_diff_forms_dictionary(form_dict):
+def create_diff_forms_dictionary(form_dict, mode = "2.0"):
     """
     Each monsno will have an array of all the Pokemon names and forms.
     Add the current index to the name of the first object in the list as the key
@@ -275,7 +280,7 @@ def create_diff_forms_dictionary(form_dict):
     NAME_MAP = {}
     for mons_no in form_dict.keys():
         mons_array = form_dict[mons_no]
-        current_pokemon_name = get_pokemon_name(int(mons_no), True)
+        current_pokemon_name = get_pokemon_name(int(mons_no), mode != "2.0")
 
         for (idx, mon) in enumerate(mons_array):
             if idx != 0 or isSpecialPokemon(current_pokemon_name):
@@ -286,7 +291,7 @@ def create_diff_forms_dictionary(form_dict):
                     pokemon_id = forms[form_format]
                 if isSpecialPokemon(current_pokemon_name):
                     pokemon_id = int(mons_no)
-                
+
                 diff_forms[current_pokemon_name + (str(idx or 1)) ] = [pokemon_id, mon, slugify(mon), mons_no, idx or 1]
                 NAME_MAP[mon] = pokemon_id
             else:
@@ -295,18 +300,18 @@ def create_diff_forms_dictionary(form_dict):
         json.dump(diff_forms, output, ensure_ascii=False, indent=2)
     return diff_forms, NAME_MAP
 
-def get_pokemon_name_dictionary():
+def get_pokemon_name_dictionary(mode = "2.0"):
     pokemon = {}
     for (idx, p) in enumerate(personal_data["Personal"]):
         if(idx == 0):
             continue
         if(not str(p["monsno"]) in pokemon):
             pokemon[str(p["monsno"])] = []
-        pokemon[str(p["monsno"])].append(get_pokemon_name(p["id"]))
+        pokemon[str(p["monsno"])].append(get_pokemon_name(p["id"], mode))
     return pokemon
 
-def get_diff_form_dictionary():
-    return create_diff_forms_dictionary(get_pokemon_name_dictionary())
+def get_diff_form_dictionary(mode = "2.0"):
+    return create_diff_forms_dictionary(get_pokemon_name_dictionary(mode), mode)
 
 def get_pokemon_info(personalId=0):
     """
@@ -434,5 +439,5 @@ if __name__ != '__main__':
     name_data = full_data['raw_pokedex']
     personal_table = full_data['personal_table'];
     pokedex = get_lumi_data(name_data, get_pokemon_name)
-    diff_forms, NAME_MAP = get_diff_form_dictionary()
+    diff_forms, NAME_MAP = get_diff_form_dictionary(constants.GAME_MODE)
 

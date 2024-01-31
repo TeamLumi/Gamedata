@@ -8,7 +8,7 @@ import unicodedata
 from collections import defaultdict
 
 import constants
-from data_checks import check_bad_encounter, check_mons_list, get_average_time, check_monsName
+from data_checks import check_bad_encounter, check_mons_list, get_average_time
 from load_files import get_lumi_data, load_data
 from pokedex_generator import getPokedexInfo
 from pokemonUtils import (get_diff_form_dictionary,
@@ -250,15 +250,13 @@ def get_diff_form_mons(monsno, zoneID, encounters):
 
         if str(zoneID) not in route:
             continue
-        diff_key = get_pokemon_name(reverse_lumi_formula_mon) + str(formNo)
-        pkmn_key = pokedex[str(reverse_lumi_formula_mon)] + str(formNo)
 
         temp_form_no = formNo
-        if isSpecialPokemon(get_pokemon_name(monsno)):
+        if isSpecialPokemon(get_pokemon_name(reverse_lumi_formula_mon, constants.GAME_MODE == "3.0")):
             temp_form_no = 0
 
-        check = check_bad_encounter(encounters, tracker_route, pkmn_key, reverse_lumi_formula_mon, temp_form_no, zoneID, constants.TRACKER_METHOD)
-        if check != -1:
+        check = check_bad_encounter(encounters, tracker_route, reverse_lumi_formula_mon, temp_form_no, zoneID, constants.TRACKER_METHOD)
+        if check != -2:
             bad_encounters.append(check)
 
 def get_standard_mons(monsno, zoneID, encounters):
@@ -279,7 +277,7 @@ def update_routes_with_mons(monsno, zoneID, encounters):
     2000 was chosen here as a buffer for any additional base forms in the game.
     This isn't perfect but will suffice for awhile
     '''
-    if monsno < 2000:
+    if monsno < 2**16:
         get_standard_mons(monsno, zoneID, encounters)
     else:
         get_diff_form_mons(monsno, zoneID, encounters)
@@ -344,11 +342,9 @@ def get_diff_form_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, 
     If there are no bad encounters, every mon's location is added to their key which is their name
     '''
     new_method = method
+
     formNo = monsNo//(2**16)
     reverse_lumi_formula_mon = monsNo - (formNo * (2**16))
-    pkmn_key = pokedex[str(reverse_lumi_formula_mon)] + str(formNo)
-    diff_forms_key = diff_forms[pkmn_key][1]
-    monsName = get_pokemon_name(monsNo)
     pokemon_id = get_form_pokemon_personal_id(reverse_lumi_formula_mon, formNo)
 
     temp_form_no = formNo
@@ -371,7 +367,7 @@ def get_diff_form_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, 
 
         tracker_route = get_tracker_route(zoneID)
 
-        check = check_bad_encounter(encounters, tracker_route, pkmn_key, reverse_lumi_formula_mon, temp_form_no, zoneID)
+        check = check_bad_encounter(encounters, tracker_route, reverse_lumi_formula_mon, temp_form_no, zoneID)
         if check == -1:
             bad_encounters.append(check)
             return
@@ -452,7 +448,10 @@ def get_honey_tree_encounter_rates(rates_list):
     for mon in honey_encounter_data.keys():
         for mons_data in honey_encounter_data[mon]:
             monsName = constants.RIGHT_FARFETCHD if mon == constants.WRONG_FARFETCHD.capitalize() else mon
-            check_monsName(monsName)
+            if monsName == "Wormadam" or monsName == "Burmy":
+                monsName = f"{monsName} Plant Cloak"
+            if monsName == "Cherrim":
+                monsName = "Cherrim Overcast Form"
             monsNo = get_pokemon_id_from_name(monsName)
 
             encounter_list_order = organize_honey_tree_list(mons_data)
