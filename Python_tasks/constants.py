@@ -18,7 +18,7 @@ if INPUT_NAME == "input":
     DEBUG_NAME = "Debug"
     OUTPUT_NAME = "output"
     POKEDEX_LENGTH = 1010
-    NAT_DEX_LENGTH = 1456
+    NAT_DEX_LENGTH = 1455
     TROUBLE_MONS_NAMES = { 
         1242: 'Ash-Greninja',
         1285: 'Meowstic-F',
