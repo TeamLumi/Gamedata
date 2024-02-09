@@ -19072,7 +19072,7 @@
   },
   {
     "value": 201,
-    "text": "Unown One form",
+    "text": "Unown",
     "type": "Psychic",
     "abilities": [
       "Levitate",
@@ -33441,7 +33441,7 @@
   },
   {
     "value": 351,
-    "text": "Castform Normal",
+    "text": "Castform",
     "type": "Normal",
     "abilities": [
       "Forecast",
@@ -36712,7 +36712,7 @@
   },
   {
     "value": 386,
-    "text": "Deoxys Normal Forme",
+    "text": "Deoxys",
     "type": "Psychic",
     "abilities": [
       "Pressure",
@@ -39116,7 +39116,7 @@
   },
   {
     "value": 412,
-    "text": "Burmy Plant Cloak",
+    "text": "Burmy",
     "type": "Bug",
     "abilities": [
       "Battle Armor",
@@ -39154,7 +39154,7 @@
   },
   {
     "value": 413,
-    "text": "Wormadam Plant Cloak",
+    "text": "Wormadam",
     "type": "Bug",
     "dualtype": "Grass",
     "abilities": [
@@ -39819,7 +39819,7 @@
   },
   {
     "value": 421,
-    "text": "Cherrim Overcast Form",
+    "text": "Cherrim",
     "type": "Grass",
     "abilities": [
       "Flower Gift",
@@ -39891,7 +39891,7 @@
   },
   {
     "value": 422,
-    "text": "Shellos West Sea",
+    "text": "Shellos",
     "type": "Water",
     "abilities": [
       "Sticky Hold",
@@ -39975,7 +39975,7 @@
   },
   {
     "value": 423,
-    "text": "Gastrodon West Sea",
+    "text": "Gastrodon",
     "type": "Water",
     "dualtype": "Ground",
     "abilities": [
@@ -46488,7 +46488,7 @@
   },
   {
     "value": 487,
-    "text": "Giratina Altered Forme",
+    "text": "Giratina",
     "type": "Ghost",
     "dualtype": "Dragon",
     "abilities": [
@@ -46957,7 +46957,7 @@
   },
   {
     "value": 492,
-    "text": "Shaymin Land Forme",
+    "text": "Shaymin",
     "type": "Grass",
     "abilities": [
       "Natural Cure",
@@ -50855,7 +50855,7 @@
   },
   {
     "value": 550,
-    "text": "Basculin Red-Striped Form",
+    "text": "Basculin",
     "type": "Water",
     "abilities": [
       "Reckless",
@@ -51094,7 +51094,7 @@
   },
   {
     "value": 555,
-    "text": "Darmanitan Standard Mode",
+    "text": "Darmanitan",
     "type": "Fire",
     "abilities": [
       "Sheer Force",
@@ -53897,7 +53897,7 @@
   },
   {
     "value": 585,
-    "text": "Deerling Spring Form",
+    "text": "Deerling",
     "type": "Normal",
     "dualtype": "Grass",
     "abilities": [
@@ -54048,7 +54048,7 @@
   },
   {
     "value": 586,
-    "text": "Sawsbuck Spring Form",
+    "text": "Sawsbuck",
     "type": "Normal",
     "dualtype": "Grass",
     "abilities": [
@@ -61834,7 +61834,7 @@
   },
   {
     "value": 641,
-    "text": "Tornadus Incarnate Forme",
+    "text": "Tornadus",
     "type": "Flying",
     "abilities": [
       "Prankster",
@@ -61977,7 +61977,7 @@
   },
   {
     "value": 642,
-    "text": "Thundurus Incarnate Forme",
+    "text": "Thundurus",
     "type": "Electric",
     "dualtype": "Flying",
     "abilities": [
@@ -62407,7 +62407,7 @@
   },
   {
     "value": 645,
-    "text": "Landorus Incarnate Forme",
+    "text": "Landorus",
     "type": "Ground",
     "dualtype": "Flying",
     "abilities": [
@@ -62695,7 +62695,7 @@
   },
   {
     "value": 647,
-    "text": "Keldeo Ordinary Form",
+    "text": "Keldeo",
     "type": "Water",
     "dualtype": "Fighting",
     "abilities": [
@@ -62838,7 +62838,7 @@
   },
   {
     "value": 648,
-    "text": "Meloetta Aria Forme",
+    "text": "Meloetta",
     "type": "Normal",
     "dualtype": "Psychic",
     "abilities": [
@@ -65420,7 +65420,7 @@
   },
   {
     "value": 666,
-    "text": "Vivillon Meadow Pattern",
+    "text": "Vivillon",
     "type": "Bug",
     "dualtype": "Flying",
     "abilities": [
@@ -65855,7 +65855,7 @@
   },
   {
     "value": 669,
-    "text": "Flabébé Red Flower",
+    "text": "Flabébé",
     "type": "Fairy",
     "abilities": [
       "Flower Veil",
@@ -66001,7 +66001,7 @@
   },
   {
     "value": 670,
-    "text": "Floette Red Flower",
+    "text": "Floette",
     "type": "Fairy",
     "abilities": [
       "Flower Veil",
@@ -66142,7 +66142,7 @@
   },
   {
     "value": 671,
-    "text": "Florges Red Flower",
+    "text": "Florges",
     "type": "Fairy",
     "abilities": [
       "Flower Veil",
@@ -66864,7 +66864,7 @@
   },
   {
     "value": 676,
-    "text": "Furfrou Natural Form",
+    "text": "Furfrou",
     "type": "Normal",
     "abilities": [
       "Fur Coat",
@@ -67582,7 +67582,7 @@
   },
   {
     "value": 681,
-    "text": "Aegislash Shield Forme",
+    "text": "Aegislash",
     "type": "Steel",
     "dualtype": "Ghost",
     "abilities": [
@@ -71726,7 +71726,7 @@
   },
   {
     "value": 710,
-    "text": "Pumpkaboo Average Size",
+    "text": "Pumpkaboo",
     "type": "Ghost",
     "dualtype": "Grass",
     "abilities": [
@@ -71871,7 +71871,7 @@
   },
   {
     "value": 711,
-    "text": "Gourgeist Average Size",
+    "text": "Gourgeist",
     "type": "Ghost",
     "dualtype": "Grass",
     "abilities": [
@@ -72600,7 +72600,7 @@
   },
   {
     "value": 716,
-    "text": "Xerneas Neutral Mode",
+    "text": "Xerneas",
     "type": "Fairy",
     "abilities": [
       "Fairy Aura",
@@ -72893,7 +72893,7 @@
   },
   {
     "value": 718,
-    "text": "Zygarde 50% Forme",
+    "text": "Zygarde",
     "type": "Dragon",
     "dualtype": "Ground",
     "abilities": [
@@ -73182,7 +73182,7 @@
   },
   {
     "value": 720,
-    "text": "Hoopa Confined",
+    "text": "Hoopa",
     "type": "Psychic",
     "dualtype": "Ghost",
     "abilities": [
@@ -75969,7 +75969,7 @@
   },
   {
     "value": 741,
-    "text": "Oricorio Baile Style",
+    "text": "Oricorio",
     "type": "Fire",
     "dualtype": "Flying",
     "abilities": [
@@ -76545,7 +76545,7 @@
   },
   {
     "value": 745,
-    "text": "Lycanroc Midday Form",
+    "text": "Lycanroc",
     "type": "Rock",
     "abilities": [
       "Keen Eye",
@@ -76690,7 +76690,7 @@
   },
   {
     "value": 746,
-    "text": "Wishiwashi Solo Form",
+    "text": "Wishiwashi",
     "type": "Water",
     "abilities": [
       "Schooling",
@@ -80582,7 +80582,7 @@
   },
   {
     "value": 773,
-    "text": "Silvally Type: Normal",
+    "text": "Silvally",
     "type": "Normal",
     "abilities": [
       "RKS System",
@@ -80731,7 +80731,7 @@
   },
   {
     "value": 774,
-    "text": "Minior Meteor Form",
+    "text": "Minior",
     "type": "Rock",
     "dualtype": "Flying",
     "abilities": [
@@ -81316,7 +81316,7 @@
   },
   {
     "value": 778,
-    "text": "Mimikyu Disguised Form",
+    "text": "Mimikyu",
     "type": "Ghost",
     "dualtype": "Fairy",
     "abilities": [
@@ -91410,7 +91410,7 @@
   },
   {
     "value": 849,
-    "text": "Toxtricity Amped Form",
+    "text": "Toxtricity",
     "type": "Electric",
     "dualtype": "Poison",
     "abilities": [
@@ -92137,7 +92137,7 @@
   },
   {
     "value": 854,
-    "text": "Sinistea Phony Form",
+    "text": "Sinistea",
     "type": "Ghost",
     "abilities": [
       "Weak Armor",
@@ -92276,7 +92276,7 @@
   },
   {
     "value": 855,
-    "text": "Polteageist Phony Form",
+    "text": "Polteageist",
     "type": "Ghost",
     "abilities": [
       "Weak Armor",
@@ -93993,7 +93993,7 @@
   },
   {
     "value": 869,
-    "text": "Alcremie Vanilla Cream",
+    "text": "Alcremie",
     "type": "Fairy",
     "abilities": [
       "Sweet Veil",
@@ -94841,7 +94841,7 @@
   },
   {
     "value": 875,
-    "text": "Eiscue Ice Face",
+    "text": "Eiscue",
     "type": "Ice",
     "abilities": [
       "Ice Face",
@@ -95132,7 +95132,7 @@
   },
   {
     "value": 877,
-    "text": "Morpeko Full Belly Mode",
+    "text": "Morpeko",
     "type": "Electric",
     "dualtype": "Dark",
     "abilities": [
@@ -96714,7 +96714,7 @@
   },
   {
     "value": 888,
-    "text": "Zacian Hero of Many Battles",
+    "text": "Zacian",
     "type": "Fairy",
     "abilities": [
       "Intrepid Sword",
@@ -96855,7 +96855,7 @@
   },
   {
     "value": 889,
-    "text": "Zamazenta Hero of Many Battles",
+    "text": "Zamazenta",
     "type": "Fighting",
     "abilities": [
       "Dauntless Shield",
@@ -97281,7 +97281,7 @@
   },
   {
     "value": 892,
-    "text": "Urshifu Single Strike Style",
+    "text": "Urshifu",
     "type": "Fighting",
     "dualtype": "Dark",
     "abilities": [
@@ -98852,7 +98852,7 @@
   },
   {
     "value": 905,
-    "text": "Enamorus Incarnate Forme",
+    "text": "Enamorus",
     "type": "Fairy",
     "dualtype": "Flying",
     "abilities": [
@@ -100671,7 +100671,7 @@
   },
   {
     "value": 925,
-    "text": "Maushold Family of Four",
+    "text": "Maushold",
     "type": "Grass",
     "abilities": [
       "Natural Cure",
@@ -101202,7 +101202,7 @@
   },
   {
     "value": 931,
-    "text": "Squawkabilly Green Plumage",
+    "text": "Squawkabilly",
     "type": "Water",
     "dualtype": "Steel",
     "abilities": [
@@ -104226,7 +104226,7 @@
   },
   {
     "value": 964,
-    "text": "Palafin Zero Form",
+    "text": "Palafin",
     "type": "Water",
     "dualtype": "Steel",
     "abilities": [
@@ -105542,7 +105542,7 @@
   },
   {
     "value": 978,
-    "text": "Tatsugiri Curly Form",
+    "text": "Tatsugiri",
     "type": "Water",
     "dualtype": "Steel",
     "abilities": [
@@ -105918,7 +105918,7 @@
   },
   {
     "value": 982,
-    "text": "Dudunsparce Two-Segment Form",
+    "text": "Dudunsparce",
     "type": "Water",
     "dualtype": "Steel",
     "abilities": [
@@ -107120,7 +107120,7 @@
   },
   {
     "value": 999,
-    "text": "Gimmighoul Chest Form",
+    "text": "Gimmighoul",
     "type": "Grass",
     "abilities": [
       "Natural Cure",

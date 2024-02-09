@@ -106,7 +106,7 @@ Ember
 25/25/25/25/25/25
 0/0/0/0/0/0
 
-Burmy Plant Cloak
+Burmy
 7
 Quirky
 Battle Armor
@@ -1421,6 +1421,546 @@ Splash
 Tackle
 Flail
 (No Move)
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+745
+Pokémon Trainer Cedric Turtwig Team 1
+Level Cap:
+Format: Single Battle
+
+Makuhita
+10
+Careful
+Thick Fat
+
+Focus Sash
+Fake Out
+Arm Thrust
+Tackle
+Sand Attack
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Bellsprout
+10
+Hasty
+Corrosion
+
+Expert Belt
+Sleep Powder
+Acid
+Vine Whip
+Growth
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Chimchar
+11
+Jolly
+Iron Fist
+
+Oran Berry
+Ember
+Fury Swipes
+Taunt
+Hidden Power
+24/25/26/25/24/25
+0/0/0/0/0/0
+
+
+746
+Pokémon Trainer Cedric Turtwig Team 2
+Level Cap:
+Format: Single Battle
+
+Nidoran-M
+10
+Lonely
+Poison Point
+
+Focus Sash
+Double Kick
+Fury Attack
+Peck
+Poison Sting
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Elekid
+10
+Lax
+Static
+
+Expert Belt
+Thunder Shock
+Quick Attack
+Low Kick
+Leer
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Chimchar
+11
+Jolly
+Iron Fist
+
+Oran Berry
+Ember
+Fury Swipes
+Taunt
+Hidden Power
+24/25/26/25/24/25
+0/0/0/0/0/0
+
+
+747
+Pokémon Trainer Cedric Turtwig Team 3
+Level Cap:
+Format: Single Battle
+
+Azurill
+10
+Brave
+Huge Power
+
+Soothe Bell
+Tail Whip
+Bubble Beam
+Charm
+Splash
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Bulbasaur
+10
+Impish
+Overgrow
+
+Expert Belt
+Tackle
+Growl
+Vine Whip
+Leech Seed
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Chimchar
+11
+Jolly
+Iron Fist
+
+Oran Berry
+Ember
+Fury Swipes
+Taunt
+Hidden Power
+25/24/26/25/25/25
+0/0/0/0/0/0
+
+
+748
+Pokémon Trainer Cedric Turtwig Team 4
+Level Cap:
+Format: Single Battle
+
+Cubone
+10
+Careful
+Rattled
+
+Focus Sash
+Headbutt
+Bone Club
+Sing
+Leer
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Shinx
+10
+Sassy
+Guts
+
+Expert Belt
+Spark
+Quick Attack
+Howl
+Leer
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Chimchar
+11
+Jolly
+Iron Fist
+
+Oran Berry
+Ember
+Fury Swipes
+Taunt
+Hidden Power
+24/25/26/25/24/25
+0/0/0/0/0/0
+
+
+749
+Pokémon Trainer Cedric Chimchar Team 1
+Level Cap:
+Format: Single Battle
+
+Pidgey
+10
+Naughty
+Big Pecks
+
+Focus Sash
+Wing Attack
+Quick Attack
+Sand Attack
+Gust
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Ralts
+10
+Bold
+Telepathy
+
+Expert Belt
+Disarming Voice
+Confusion
+Growl
+Teleport
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Piplup
+11
+Modest
+Torrent
+
+Oran Berry
+Water Gun
+Peck
+Charm
+Hidden Power
+25/24/26/25/25/25
+0/0/0/0/0/0
+
+
+750
+Pokémon Trainer Cedric Chimchar Team 2
+Level Cap:
+Format: Single Battle
+
+Poochyena
+10
+Relaxed
+Strong Jaw
+
+Focus Sash
+Bite
+Tackle
+Howl
+Sand Attack
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Smoochum
+10
+Calm
+Dazzling
+
+Expert Belt
+Powder Snow
+Confusion
+Sing
+Sweet Kiss
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Piplup
+11
+Modest
+Torrent
+
+Oran Berry
+Water Gun
+Peck
+Charm
+Hidden Power
+25/24/26/25/25/25
+0/0/0/0/0/0
+
+
+751
+Pokémon Trainer Cedric Chimchar Team 3
+Level Cap:
+Format: Single Battle
+
+Wynaut
+10
+Quirky
+Telepathy
+
+Focus Sash
+Counter
+Mirror Coat
+Splash
+Encore
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Pineco
+10
+Impish
+Sturdy
+
+Expert Belt
+Revenge
+Bug Bite
+Self-Destruct
+Tackle
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Piplup
+11
+Modest
+Torrent
+
+Oran Berry
+Water Gun
+Peck
+Charm
+Hidden Power
+25/24/26/25/25/25
+0/0/0/0/0/0
+
+
+752
+Pokémon Trainer Cedric Chimchar Team 4
+Level Cap:
+Format: Single Battle
+
+Sandshrew
+10
+Careful
+Sand Rush
+
+Focus Sash
+Bulldoze
+Rollout
+Poison Sting
+Defense Curl
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Charmander
+10
+Mild
+Blaze
+
+Expert Belt
+Scratch
+Ember
+Growl
+Smokescreen
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Piplup
+11
+Modest
+Torrent
+
+Oran Berry
+Water Gun
+Peck
+Charm
+Hidden Power
+25/24/26/25/25/25
+0/0/0/0/0/0
+
+
+753
+Pokémon Trainer Cedric Piplup Team 1
+Level Cap:
+Format: Single Battle
+
+Growlithe
+10
+Quiet
+Intimidate
+
+Focus Sash
+Ember
+Bite
+Roar
+Leer
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Starly
+10
+Gentle
+Keen Eye
+
+Expert Belt
+Wing Attack
+Quick Attack
+Tackle
+Growl
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Turtwig
+11
+Careful
+Shell Armor
+
+Oran Berry
+Razor Leaf
+Tackle
+Hidden Power
+Curse
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+754
+Pokémon Trainer Cedric Piplup Team 2
+Level Cap:
+Format: Single Battle
+
+Geodude
+10
+Calm
+Sturdy
+
+Focus Sash
+Rock Throw
+Tackle
+Rock Polish
+Mega Punch
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Mantyke
+10
+Lax
+Water Absorb
+
+Expert Belt
+Water Pulse
+Air Cutter
+Tackle
+Confuse Ray
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Turtwig
+11
+Careful
+Shell Armor
+
+Oran Berry
+Razor Leaf
+Tackle
+Hidden Power
+Curse
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+755
+Pokémon Trainer Cedric Piplup Team 3
+Level Cap:
+Format: Single Battle
+
+Nidoran-F
+10
+Sassy
+Hustle
+
+Focus Sash
+Double Kick
+Fury Swipes
+Poison Sting
+Growl
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Surskit
+10
+Naughty
+Swift Swim
+
+Expert Belt
+Bug Bite
+Quick Attack
+Sweet Scent
+Water Gun
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Turtwig
+11
+Careful
+Shell Armor
+
+Oran Berry
+Razor Leaf
+Tackle
+Hidden Power
+Curse
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+756
+Pokémon Trainer Cedric Piplup Team 4
+Level Cap:
+Format: Single Battle
+
+Abra
+10
+Rash
+Magic Guard
+
+Focus Sash
+Teleport
+Hidden Power
+(No Move)
+(No Move)
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Squirtle
+10
+Naive
+Rain Dish
+
+Expert Belt
+Water Gun
+Withdraw
+Tackle
+Tail Whip
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Turtwig
+11
+Careful
+Shell Armor
+
+Oran Berry
+Razor Leaf
+Tackle
+Hidden Power
+Curse
 25/25/25/25/25/25
 0/0/0/0/0/0
 
@@ -3059,7 +3599,7 @@ Hiker Nicholas
 Level Cap:
 Format: Single Battle
 
-Shellos West Sea
+Shellos
 16
 Hardy
 Sticky Hold
@@ -5506,7 +6046,7 @@ Leech Seed
 25/25/25/25/25/25
 0/0/0/0/0/0
 
-Wormadam Plant Cloak
+Wormadam
 26
 Hardy
 Overcoat
@@ -5661,7 +6201,7 @@ Synthesis
 25/25/25/25/25/25
 252/204/0/0/48/4
 
-Cherrim Overcast Form
+Cherrim
 25
 Hasty
 Flower Gift
@@ -5829,7 +6369,7 @@ Quick Attack
 25/25/25/25/25/25
 0/252/0/12/0/240
 
-Wormadam Plant Cloak
+Wormadam
 25
 Modest
 Battle Armor
@@ -6023,7 +6563,7 @@ Spikes
 31/0/31/31/31/31
 0/0/4/252/0/252
 
-Shaymin Land Forme
+Shaymin
 100
 Modest
 Natural Cure
@@ -6081,7 +6621,7 @@ Ingrain
 31/0/31/31/31/31
 252/0/4/0/0/252
 
-Cherrim Overcast Form
+Cherrim
 100
 Calm
 Flower Gift
@@ -6165,7 +6705,7 @@ Strength Sap
 31/0/31/31/31/31
 252/0/0/4/252/0
 
-Cherrim Overcast Form
+Cherrim
 100
 Timid
 Flower Gift
@@ -6191,7 +6731,7 @@ Sleep Powder
 31/0/31/31/31/31
 0/0/4/252/0/252
 
-Shaymin Land Forme
+Shaymin
 100
 Modest
 Natural Cure
@@ -10181,7 +10721,7 @@ Lady Melissa
 Level Cap:
 Format: Single Battle
 
-Cherrim Overcast Form
+Cherrim
 30
 Serious
 Flower Gift
@@ -11309,7 +11849,7 @@ Youngster Oliver
 Level Cap:
 Format: Single Battle
 
-Shellos West Sea
+Shellos
 31
 Quirky
 Sticky Hold
@@ -11328,7 +11868,7 @@ Hardy
 Oblivious
 
 None
-Rest
+Snore
 Aqua Tail
 Earth Power
 Muddy Water
@@ -15324,7 +15864,7 @@ Toxic
 25/25/25/25/25/25
 0/0/0/0/0/0
 
-Wormadam Plant Cloak
+Wormadam
 35
 Hardy
 Battle Armor
@@ -15935,7 +16475,7 @@ Beauty Devon
 Level Cap:
 Format: Single Battle
 
-Wormadam Plant Cloak
+Wormadam
 33
 Serious
 Battle Armor
@@ -16191,7 +16731,7 @@ Tuber Jared
 Level Cap:
 Format: Single Battle
 
-Gastrodon West Sea
+Gastrodon
 37
 Serious
 Sticky Hold
@@ -18221,7 +18761,7 @@ Parasol Lady Sabrina
 Level Cap:
 Format: Single Battle
 
-Castform Normal
+Castform
 39
 Docile
 Forecast
@@ -18388,7 +18928,7 @@ Rain Dance
 25/25/25/25/25/25
 252/0/252/4/0/0
 
-Gastrodon West Sea
+Gastrodon
 39
 Quirky
 Sticky Hold
@@ -18704,7 +19244,7 @@ Sucker Punch
 25/25/25/25/25/25
 0/244/0/0/12/252
 
-Gastrodon West Sea
+Gastrodon
 43
 Modest
 Swift Swim
@@ -20323,7 +20863,7 @@ Earth Power
 25/25/25/25/25/25
 0/0/0/0/0/0
 
-Gastrodon West Sea
+Gastrodon
 42
 Serious
 Sticky Hold
@@ -25097,7 +25637,7 @@ Venoshock
 25/25/25/25/25/25
 0/0/0/0/0/0
 
-Wormadam Plant Cloak
+Wormadam
 49
 Serious
 Battle Armor
@@ -27021,7 +27561,7 @@ Hurricane
 25/25/25/25/25/25
 0/0/0/0/0/0
 
-Wormadam Plant Cloak
+Wormadam
 54
 Hardy
 Battle Armor
@@ -27813,7 +28353,7 @@ Sludge Wave
 31/0/31/31/31/31
 0/0/4/248/8/248
 
-Gastrodon West Sea
+Gastrodon
 57
 Bold
 Storm Drain
@@ -28123,7 +28663,7 @@ Hurricane
 25/25/25/25/25/25
 0/0/0/0/0/0
 
-Gastrodon West Sea
+Gastrodon
 56
 Docile
 Sticky Hold
@@ -29759,7 +30299,7 @@ Superpower
 25/25/25/25/25/25
 0/0/0/0/0/0
 
-Gastrodon West Sea
+Gastrodon
 58
 Docile
 Sticky Hold
@@ -31174,7 +31714,7 @@ Ace Trainer Arthur
 Level Cap:
 Format: Single Battle
 
-Gastrodon West Sea
+Gastrodon
 64
 Hardy
 Sticky Hold
@@ -33200,7 +33740,7 @@ Slack Off
 31/31/31/31/31/31
 252/4/252/0/0/0
 
-Gastrodon West Sea
+Gastrodon
 72
 Modest
 Storm Drain
@@ -34247,7 +34787,7 @@ Power Whip
 31/31/31/31/31/31
 0/248/0/0/8/252
 
-Gastrodon West Sea
+Gastrodon
 77
 Bold
 Storm Drain
@@ -34318,7 +34858,7 @@ Detect
 31/0/31/31/31/31
 0/0/0/252/0/252
 
-Gastrodon West Sea
+Gastrodon
 77
 Bold
 Storm Drain
@@ -35242,7 +35782,7 @@ Hidden Power
 31/0/31/31/31/31
 248/0/0/252/8/0
 
-Gastrodon West Sea
+Gastrodon
 100
 Bold
 Storm Drain
@@ -36224,7 +36764,7 @@ Protect
 31/31/31/31/31/31
 252/0/136/0/0/120
 
-Gastrodon West Sea
+Gastrodon
 100
 Modest
 Storm Drain
@@ -36366,7 +36906,7 @@ Tailwind
 31/31/31/31/31/31
 0/252/0/0/4/252
 
-Gastrodon West Sea
+Gastrodon
 74
 Calm
 Storm Drain
@@ -36520,83 +37060,83 @@ Pokémon Trainer Cedric
 Level Cap:
 Format: Single Battle
 
-Staraptor
-90
+Metagross
+82
 Jolly
-Intimidate
+Iron Fist
 
-Assault Vest
-Brave Bird
-Close Combat
-U-turn
-Quick Attack
+Light Clay
+Meteor Mash
+Zen Headbutt
+Reflect
+Light Screen
 31/31/31/31/31/31
-0/248/0/252/0/8
+4/252/0/0/0/248
 
-Heracross
-90
-Jolly
-Skill Link
-
-Aguav Berry
-Bullet Seed
-Arm Thrust
-Rock Blast
-Fury Attack
-31/31/31/31/31/31
-0/252/0/252/0/4
-
-Snorlax
-90
-Adamant
-Immunity
-
-Leftovers
-Facade
-Earthquake
-Power-Up Punch
-Counter
-31/31/31/31/31/31
-252/252/0/0/0/4
-
-Breloom
-90
-Adamant
-Poison Heal
-
-Toxic Orb
-Spore
-Bulk Up
-Seed Bomb
-Thunder Punch
-31/31/31/31/31/31
-252/252/0/0/0/4
-
-Arcanine
-90
-Hasty
-Intimidate
+Charizard
+82
+Timid
+Drought
 
 Life Orb
-Extreme Speed
-Play Rough
-Flare Blitz
-Wild Charge
-31/31/31/31/31/31
-0/252/0/252/4/0
-
-Empoleon
-90
-Modest
-Torrent
-
-Custap Berry
-Hydro Pump
-Ice Beam
-Flash Cannon
-Feather Dance
+Solar Beam
+Flamethrower
+Roost
+Defog
 31/0/31/31/31/31
-252/0/0/0/252/4
+0/0/0/248/8/252
+
+Infernape
+83
+Jolly
+Iron Fist
+
+Choice Band
+Flare Blitz
+U-turn
+Close Combat
+Knock Off
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+Azelf
+82
+Jolly
+Levitate
+
+Expert Belt
+Psychic
+Flamethrower
+U-turn
+Knock Off
+31/31/31/31/31/31
+4/252/0/0/0/252
+
+Ursaluna
+82
+Adamant
+Guts
+
+Flame Orb
+Swords Dance
+Facade
+Earthquake
+Fire Punch
+31/31/31/31/31/31
+252/252/0/0/4/0
+
+Mow Rotom
+82
+Timid
+Levitate
+
+Choice Specs
+Leaf Storm
+Volt Switch
+Trick
+Hidden Power
+31/0/30/31/31/31
+0/0/0/252/4/252
 
 
 1037
@@ -36604,83 +37144,83 @@ Pokémon Trainer Cedric
 Level Cap:
 Format: Single Battle
 
-Staraptor
-90
-Jolly
-Intimidate
+Wash Rotom
+82
+Timid
+Levitate
 
-Assault Vest
+Choice Specs
+Volt Switch
+Trick
+Hydro Pump
+Hidden Power
+31/0/30/31/31/31
+0/0/0/252/4/252
+
+Crobat
+82
+Jolly
+Infiltrator
+
+Black Sludge
 Brave Bird
-Close Combat
-U-turn
-Quick Attack
+Roost
+Toxic
+Defog
 31/31/31/31/31/31
-8/252/0/0/0/248
+252/0/4/0/0/252
 
-Heracross
-90
-Jolly
-Skill Link
-
-Aguav Berry
-Bullet Seed
-Arm Thrust
-Rock Blast
-Fury Attack
-31/31/31/31/31/31
-4/252/0/0/0/252
-
-Snorlax
-90
-Adamant
-Immunity
+Uxie
+82
+Calm
+Levitate
 
 Leftovers
-Facade
-Earthquake
-Power-Up Punch
-Counter
+Yawn
+Psychic
+U-turn
+Stealth Rock
 31/31/31/31/31/31
-252/252/0/0/0/4
+252/0/0/4/252/0
 
-Azumarill
-90
-Modest
-Sap Sipper
+Hisuian Electrode
+82
+Timid
+Grassy Surge
 
-Life Orb
-Ice Beam
-Hydro Pump
-Scald
-Grass Knot
+Light Clay
+Volt Switch
+Leaf Storm
+Light Screen
+Reflect
 31/0/31/31/31/31
-248/0/0/0/252/8
+0/0/0/252/4/252
 
-Arcanine
-90
-Hasty
-Intimidate
+Leafeon
+82
+Jolly
+Grass Pelt
 
 Life Orb
-Extreme Speed
-Play Rough
-Flare Blitz
-Wild Charge
+Leaf Blade
+Swords Dance
+Leech Seed
+Baton Pass
 31/31/31/31/31/31
-0/252/0/4/0/252
+252/8/0/0/0/248
 
 Torterra
-90
+83
 Adamant
-Shell Armor
+Solid Rock
 
 White Herb
 Shell Smash
-Earthquake
-Synthesis
 Seed Bomb
+Earthquake
+Stone Edge
 31/31/31/31/31/31
-0/252/0/0/4/252
+0/248/0/0/12/248
 
 
 1039
@@ -36688,83 +37228,83 @@ Pokémon Trainer Cedric
 Level Cap:
 Format: Single Battle
 
-Staraptor
-90
-Jolly
-Intimidate
+Alolan Ninetales
+82
+Timid
+Snow Warning
 
-Assault Vest
-Brave Bird
-Close Combat
-U-turn
-Quick Attack
-31/31/31/31/31/31
-8/252/0/0/0/248
+Light Clay
+Aurora Veil
+Blizzard
+Nasty Plot
+Moonblast
+31/0/31/31/31/31
+0/0/0/248/8/248
 
-Heracross
-90
-Jolly
-Skill Link
+Frost Rotom
+82
+Timid
+Levitate
 
-Aguav Berry
-Bullet Seed
-Arm Thrust
-Rock Blast
-Fury Attack
-31/31/31/31/31/31
-4/252/0/0/0/252
+Choice Specs
+Blizzard
+Volt Switch
+Trick
+Will-O-Wisp
+31/0/31/31/31/31
+0/0/0/252/4/252
 
-Snorlax
-90
-Adamant
-Immunity
+Empoleon
+83
+Modest
+Slush Rush
 
 Leftovers
-Facade
-Earthquake
-Power-Up Punch
-Counter
-31/31/31/31/31/31
-252/252/0/0/0/4
+Scald
+Ice Beam
+Flash Cannon
+Defog
+31/0/31/31/31/31
+252/0/0/252/4/0
 
-Azumarill
-90
-Modest
-Sap Sipper
+Mesprit
+82
+Timid
+Levitate
+
+Damp Rock
+Psychic
+Moonblast
+Shadow Ball
+Rain Dance
+31/0/31/31/31/31
+4/0/0/252/0/252
+
+Kingdra
+82
+Adamant
+Swift Swim
 
 Life Orb
-Ice Beam
-Hydro Pump
-Scald
-Grass Knot
+Liquidation
+Iron Head
+Outrage
+Dragon Dance
+31/31/31/31/31/31
+4/248/0/0/4/252
+
+Drifblim
+82
+Timid
+Flare Boost
+
+Flame Orb
+Strength Sap
+Shadow Ball
+Calm Mind
+Hurricane
 31/0/31/31/31/31
-248/0/0/0/252/8
-
-Breloom
-90
-Adamant
-Poison Heal
-
-Toxic Orb
-Spore
-Bulk Up
-Seed Bomb
-Thunder Punch
-31/31/31/31/31/31
-252/252/0/0/0/4
-
-Infernape
-90
-Jolly
-Iron Fist
-
-Light Ball
-Fire Punch
-Thunder Punch
-Mach Punch
-Fling
-31/31/31/31/31/31
-4/252/0/252/0/0
+0/0/0/252/4/252
 
 
 212
@@ -38691,7 +39231,7 @@ Destiny Bond
 25/25/25/25/25/25
 0/4/0/252/0/252
 
-Gastrodon West Sea
+Gastrodon
 76
 Quirky
 Sticky Hold
@@ -39070,7 +39610,7 @@ Sheer Cold
 25/25/25/25/25/25
 0/0/0/0/0/0
 
-Gastrodon West Sea
+Gastrodon
 72
 Docile
 Sticky Hold
@@ -39288,7 +39828,7 @@ Double Team
 31/31/31/31/31/31
 0/252/0/252/0/4
 
-Gastrodon West Sea
+Gastrodon
 82
 Modest
 Sticky Hold

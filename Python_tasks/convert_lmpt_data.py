@@ -246,6 +246,7 @@ def get_diff_form_mons(monsno, zoneID, encounters):
     routeNames = full_data["routes"]
     formNo = monsno//(2**16)
     reverse_lumi_formula_mon = monsno - (formNo * (2**16))
+    pokemonId = get_form_pokemon_personal_id(reverse_lumi_formula_mon, formNo)
     for tracker_route, route in routeNames.items():
 
         if str(zoneID) not in route:
@@ -256,7 +257,9 @@ def get_diff_form_mons(monsno, zoneID, encounters):
             temp_form_no = 0
 
         check = check_bad_encounter(encounters, tracker_route, reverse_lumi_formula_mon, temp_form_no, zoneID, constants.TRACKER_METHOD)
-        if check != -2:
+        if check == -1:
+            encounters[str(tracker_route)].append(get_pokemon_name(pokemonId))
+        else:
             bad_encounters.append(check)
 
 def get_standard_mons(monsno, zoneID, encounters):
@@ -448,10 +451,11 @@ def get_honey_tree_encounter_rates(rates_list):
     for mon in honey_encounter_data.keys():
         for mons_data in honey_encounter_data[mon]:
             monsName = constants.RIGHT_FARFETCHD if mon == constants.WRONG_FARFETCHD.capitalize() else mon
-            if monsName == "Wormadam" or monsName == "Burmy":
-                monsName = f"{monsName} Plant Cloak"
-            if monsName == "Cherrim":
-                monsName = "Cherrim Overcast Form"
+            if constants.GAME_MODE == "3.0":
+                if monsName == "Wormadam" or monsName == "Burmy":
+                    monsName = f"{monsName} Plant Cloak"
+                if monsName == "Cherrim":
+                    monsName = "Cherrim Overcast Form"
             monsNo = get_pokemon_id_from_name(monsName)
 
             encounter_list_order = organize_honey_tree_list(mons_data)

@@ -41,6 +41,8 @@ def check_bad_encounter(encounters, tracker_route, lumi_formula_mon, temp_form_n
         bad_encounter = bad_encounter_data(get_pokemon_name(pokemonPersonalId), name_routes[tracker_route], zoneID)
         bad_encounters.append(bad_encounter)
         return bad_encounters
+    elif method == constants.TRACKER_METHOD:
+        return -1
     else:
         return -2
 

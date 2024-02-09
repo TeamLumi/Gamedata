@@ -65,9 +65,9 @@ def get_pokemon_name(mons_no = 0, form_mode = False):
         if mons_no < len(name_data["labelDataArray"]):
             mons_name = name_data["labelDataArray"][mons_no]["wordDataArray"][0]["str"]
             form_name = form_namedata["labelDataArray"][mons_no]["wordDataArray"][0]["str"]
-            if len(form_name) > 0 and mons_name not in form_name and form_mode:
+            if len(form_name) > 0 and mons_name not in form_name and form_mode == True:
                 pokemon_name = f"{mons_name} {form_name}"
-            elif len(form_name) > 0 and mons_name in form_name and form_mode:
+            elif len(form_name) > 0 and mons_name in form_name and form_mode == True:
                 pokemon_name = form_name
             else:
                 pokemon_name = mons_name
@@ -307,7 +307,7 @@ def get_pokemon_name_dictionary(mode = "2.0"):
             continue
         if(not str(p["monsno"]) in pokemon):
             pokemon[str(p["monsno"])] = []
-        pokemon[str(p["monsno"])].append(get_pokemon_name(p["id"], mode))
+        pokemon[str(p["monsno"])].append(get_pokemon_name(p["id"], mode != "2.0"))
     return pokemon
 
 def get_diff_form_dictionary(mode = "2.0"):
