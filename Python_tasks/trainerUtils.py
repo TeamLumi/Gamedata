@@ -640,6 +640,8 @@ def get_zone_info(file_path):
     zone_name = separate_area_name(file_path)
     if zone_name == constants.EVE_AREA_NAME:
         return 446, zone_name # This is the zoneID for Solaceon Town
+    if zone_name == constants.SUPPORT_AREA_NAME:
+        return 429, zone_name # This is the zoneID for Sandgem Town
     if zone_name in zone_dict.keys():
         return int(zone_dict[zone_name]), zone_name
     else:
@@ -658,6 +660,8 @@ def parse_ev_script_file(file_path):
     zoneID, areaName = get_zone_info(file_path)
 
     if zoneID < 0:
+        raise UnsupportedTrainer
+    if areaName.startswith(constants.SHINING_PEARL_FILE_PREFIX):
         raise UnsupportedTrainer
     with open(file_path, 'r', encoding="utf-8") as f:
         for line in f:
@@ -696,6 +700,7 @@ def process_files(folder_path, callback):
             print(f"{file_path} is not a valid file path or does not exist")
             return
         except (MissingData, SupportTrainerError):
+            print(file_path)
             return
         except UnsupportedTrainer:
             continue

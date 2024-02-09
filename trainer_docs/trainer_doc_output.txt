@@ -40685,3 +40685,507 @@ Dark Pulse
 0/0/0/0/0/0
 
 
+1067
+Pokémon Trainer Dawn
+Level Cap:
+Format: Single Battle
+
+Alakazam
+90
+Timid
+Synchronize
+
+Choice Specs
+Aura Sphere
+Dazzling Gleam
+Psychic
+Shadow Ball
+31/0/31/31/31/31
+0/0/0/248/8/252
+
+Mamoswine
+90
+Jolly
+Thick Fat
+
+Leftovers
+Ice Shard
+Earthquake
+Body Slam
+Detect
+31/31/31/31/31/31
+0/252/0/252/0/4
+
+Clefable
+90
+Modest
+Magic Guard
+
+Aguav Berry
+Minimize
+Shadow Ball
+Dazzling Gleam
+Baton Pass
+31/0/31/31/31/31
+252/0/0/0/252/4
+
+Lopunny
+90
+Jolly
+Adaptability
+
+Wide Lens
+Frustration
+High Jump Kick
+Bounce
+U-turn
+31/31/31/31/31/31
+8/252/0/0/0/248
+
+Jolteon
+90
+Timid
+Volt Absorb
+
+Magnet
+Thunderbolt
+Extrasensory
+Shadow Ball
+Volt Switch
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+Infernape
+90
+Jolly
+Iron Fist
+
+Light Ball
+Fire Punch
+Thunder Punch
+Mach Punch
+Fling
+31/31/31/31/31/31
+4/252/0/252/0/0
+
+
+1068
+Pokémon Trainer Dawn
+Level Cap:
+Format: Single Battle
+
+Alakazam
+90
+Timid
+Synchronize
+
+Choice Specs
+Aura Sphere
+Dazzling Gleam
+Psychic
+Shadow Ball
+31/0/31/31/31/31
+0/0/0/248/8/252
+
+Mamoswine
+90
+Jolly
+Thick Fat
+
+Leftovers
+Ice Shard
+Earthquake
+Body Slam
+Detect
+31/31/31/31/31/31
+0/252/0/252/0/4
+
+Clefable
+90
+Modest
+Magic Guard
+
+Aguav Berry
+Minimize
+Shadow Ball
+Dazzling Gleam
+Baton Pass
+31/0/31/31/31/31
+252/0/0/0/252/4
+
+Lopunny
+90
+Jolly
+Adaptability
+
+Wide Lens
+Frustration
+High Jump Kick
+Bounce
+U-turn
+31/31/31/31/31/31
+8/252/0/0/0/248
+
+Flareon
+90
+Jolly
+Guts
+
+Toxic Orb
+Play Rough
+Close Combat
+Flame Wheel
+Protect
+31/31/31/31/31/31
+252/252/0/0/0/4
+
+Empoleon
+90
+Modest
+Torrent
+
+Custap Berry
+Hydro Pump
+Ice Beam
+Flash Cannon
+Feather Dance
+31/0/31/31/31/31
+252/0/0/0/252/4
+
+
+1069
+Pokémon Trainer Dawn
+Level Cap:
+Format: Single Battle
+
+Alakazam
+90
+Timid
+Synchronize
+
+Choice Specs
+Aura Sphere
+Dazzling Gleam
+Psychic
+Shadow Ball
+31/0/31/31/31/31
+0/0/0/248/8/252
+
+Mamoswine
+90
+Jolly
+Thick Fat
+
+Leftovers
+Ice Shard
+Earthquake
+Body Slam
+Detect
+31/31/31/31/31/31
+0/252/0/252/0/4
+
+Clefable
+90
+Modest
+Magic Guard
+
+Aguav Berry
+Minimize
+Shadow Ball
+Dazzling Gleam
+Baton Pass
+31/0/31/31/31/31
+252/0/0/0/252/4
+
+Lopunny
+90
+Jolly
+Adaptability
+
+Wide Lens
+Frustration
+High Jump Kick
+Bounce
+U-turn
+31/31/31/31/31/31
+8/252/0/0/0/248
+
+Vaporeon
+90
+Calm
+Water Absorb
+
+Leftovers
+Hydro Pump
+Ice Beam
+Toxic
+Wish
+31/0/31/31/31/31
+252/0/0/0/4/252
+
+Torterra
+90
+Adamant
+Shell Armor
+
+White Herb
+Shell Smash
+Earthquake
+Synthesis
+Seed Bomb
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+
+1070
+Pokémon Trainer Lucas
+Level Cap:
+Format: Single Battle
+
+Alakazam
+90
+Timid
+Synchronize
+
+Choice Specs
+Aura Sphere
+Dazzling Gleam
+Psychic
+Shadow Ball
+31/0/31/31/31/31
+0/0/0/248/8/252
+
+Mamoswine
+90
+Jolly
+Thick Fat
+
+Choice Band
+Ice Shard
+Earthquake
+Body Slam
+Detect
+31/31/31/31/31/31
+0/252/0/252/0/4
+
+Granbull
+90
+Adamant
+Intimidate
+
+Expert Belt
+Play Rough
+Close Combat
+Payback
+Dig
+31/31/31/31/31/31
+252/252/0/0/0/4
+
+Lickilicky
+90
+Adamant
+Oblivious
+
+Leftovers
+Body Press
+Earthquake
+Facade
+Knock Off
+31/31/31/31/31/31
+252/248/0/0/0/8
+
+Jolteon
+90
+Timid
+Volt Absorb
+
+Magnet
+Thunderbolt
+Extrasensory
+Shadow Ball
+Volt Switch
+31/0/31/31/31/31
+0/0/0/252/4/252
+
+Infernape
+90
+Jolly
+Iron Fist
+
+Light Ball
+Fire Punch
+Thunder Punch
+Mach Punch
+Fling
+31/31/31/31/31/31
+4/252/0/252/0/0
+
+
+1071
+Pokémon Trainer Lucas
+Level Cap:
+Format: Single Battle
+
+Alakazam
+90
+Timid
+Synchronize
+
+Choice Specs
+Aura Sphere
+Dazzling Gleam
+Psychic
+Shadow Ball
+31/0/31/31/31/31
+0/0/0/248/8/252
+
+Mamoswine
+90
+Jolly
+Thick Fat
+
+Choice Band
+Ice Shard
+Earthquake
+Body Slam
+Detect
+31/31/31/31/31/31
+0/252/0/252/0/4
+
+Granbull
+90
+Adamant
+Intimidate
+
+Expert Belt
+Play Rough
+Close Combat
+Payback
+Dig
+31/31/31/31/31/31
+252/252/0/0/0/4
+
+Lickilicky
+90
+Adamant
+Oblivious
+
+Leftovers
+Body Press
+Earthquake
+Facade
+Knock Off
+31/31/31/31/31/31
+252/248/0/0/0/8
+
+Flareon
+90
+Jolly
+Guts
+
+Toxic Orb
+Play Rough
+Close Combat
+Flame Wheel
+Protect
+31/31/31/31/31/31
+252/252/0/0/0/4
+
+Empoleon
+90
+Modest
+Torrent
+
+Custap Berry
+Hydro Pump
+Ice Beam
+Flash Cannon
+Feather Dance
+31/0/31/31/31/31
+252/0/0/0/252/4
+
+
+1072
+Pokémon Trainer Lucas
+Level Cap:
+Format: Single Battle
+
+Alakazam
+90
+Timid
+Synchronize
+
+Choice Specs
+Aura Sphere
+Dazzling Gleam
+Psychic
+Shadow Ball
+31/0/31/31/31/31
+0/0/0/248/8/252
+
+Mamoswine
+90
+Jolly
+Thick Fat
+
+Choice Band
+Ice Shard
+Earthquake
+Body Slam
+Detect
+31/31/31/31/31/31
+0/252/0/252/0/4
+
+Granbull
+90
+Adamant
+Intimidate
+
+Expert Belt
+Play Rough
+Close Combat
+Payback
+Dig
+31/31/31/31/31/31
+252/252/0/0/0/4
+
+Lickilicky
+90
+Adamant
+Oblivious
+
+Leftovers
+Body Press
+Earthquake
+Facade
+Knock Off
+31/31/31/31/31/31
+252/248/0/0/0/8
+
+Vaporeon
+90
+Calm
+Water Absorb
+
+Leftovers
+Hydro Pump
+Ice Beam
+Toxic
+Wish
+31/0/31/31/31/31
+252/0/0/0/4/252
+
+Torterra
+90
+Adamant
+Shell Armor
+
+White Herb
+Shell Smash
+Earthquake
+Synthesis
+Seed Bomb
+31/31/31/31/31/31
+0/252/0/0/4/252
+
+

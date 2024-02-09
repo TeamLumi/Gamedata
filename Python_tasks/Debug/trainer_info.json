@@ -8964,6 +8964,78 @@
     "link": ""
   },
   {
+    "areaName": "lmpt-5",
+    "zoneName": "Sandgem Town",
+    "zoneId": 429,
+    "trainerId": 1067,
+    "rematch": 0,
+    "name": "Dawn",
+    "type": "Pok\u00e9mon Trainer",
+    "method": "Scripted",
+    "format": "Single Battle",
+    "link": ""
+  },
+  {
+    "areaName": "lmpt-5",
+    "zoneName": "Sandgem Town",
+    "zoneId": 429,
+    "trainerId": 1068,
+    "rematch": 0,
+    "name": "Dawn",
+    "type": "Pok\u00e9mon Trainer",
+    "method": "Scripted",
+    "format": "Single Battle",
+    "link": ""
+  },
+  {
+    "areaName": "lmpt-5",
+    "zoneName": "Sandgem Town",
+    "zoneId": 429,
+    "trainerId": 1069,
+    "rematch": 0,
+    "name": "Dawn",
+    "type": "Pok\u00e9mon Trainer",
+    "method": "Scripted",
+    "format": "Single Battle",
+    "link": ""
+  },
+  {
+    "areaName": "lmpt-5",
+    "zoneName": "Sandgem Town",
+    "zoneId": 429,
+    "trainerId": 1070,
+    "rematch": 0,
+    "name": "Lucas",
+    "type": "Pok\u00e9mon Trainer",
+    "method": "Scripted",
+    "format": "Single Battle",
+    "link": ""
+  },
+  {
+    "areaName": "lmpt-5",
+    "zoneName": "Sandgem Town",
+    "zoneId": 429,
+    "trainerId": 1071,
+    "rematch": 0,
+    "name": "Lucas",
+    "type": "Pok\u00e9mon Trainer",
+    "method": "Scripted",
+    "format": "Single Battle",
+    "link": ""
+  },
+  {
+    "areaName": "lmpt-5",
+    "zoneName": "Sandgem Town",
+    "zoneId": 429,
+    "trainerId": 1072,
+    "rematch": 0,
+    "name": "Lucas",
+    "type": "Pok\u00e9mon Trainer",
+    "method": "Scripted",
+    "format": "Single Battle",
+    "link": ""
+  },
+  {
     "areaName": "lmpt-14",
     "zoneName": "Floaroma Town",
     "zoneId": 440,

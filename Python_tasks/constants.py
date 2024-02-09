@@ -52,6 +52,8 @@ ROOM_AREA_NAME = "R0101"
 PEARL_SPEAR_PILLAR = "d05r0115"
 EVE_AREA_NAME = "SODATEYA"
 MORIMOTO = "MORIMOTO_01"
+SUPPORT_AREA_NAME = "SUPPORT"
+SHINING_PEARL_FILE_PREFIX = "SP_"
 
 # Gym Leader lookup based on the file name
 GYM_LEADER_LOOKUP = {
@@ -332,6 +334,7 @@ ZONE_ORDER = [
     "Stark Mountain (Outside)",
     "Stark Mountain (Entrance)",
     "Stark Mountain (Interior)",
+    "Sandgem Town",
 ]
 
 DOCS_ZONE_ORDER = [
@@ -553,5 +556,6 @@ DOCS_ZONE_ORDER = [
     "Route 230",
     "Stark Mountain (Overworld)",
     "Stark Mountain - Entrance",
-    "Stark Mountain - Interior"
+    "Stark Mountain - Interior",
+    "Sandgem Town",
 ]
