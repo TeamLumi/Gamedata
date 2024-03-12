@@ -1149,15 +1149,6 @@
       "zoneId": 201
     },
     {
-      "pokemonName": "Galarian Corsola",
-      "encounterType": "Surfing Incense",
-      "encounterRate": "30%",
-      "minLevel": 45,
-      "maxLevel": 40,
-      "encounterTypeIndex": 2,
-      "zoneId": 201
-    },
-    {
       "pokemonName": "Tentacool",
       "encounterType": "water_mons",
       "encounterRate": "60%",
@@ -6281,7 +6272,7 @@
       "encounterType": "ii_mons",
       "encounterRate": "30%",
       "minLevel": 25,
-      "maxLevel": 20,
+      "maxLevel": 25,
       "encounterTypeIndex": 1,
       "zoneId": 323
     },
@@ -7360,15 +7351,6 @@
       "zoneId": 294
     },
     {
-      "pokemonName": "Alolan Dugtrio",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 32,
-      "maxLevel": 32,
-      "encounterTypeIndex": 1,
-      "zoneId": 294
-    },
-    {
       "pokemonName": "Diglett",
       "encounterType": "ground_mons",
       "encounterRate": "20%",
@@ -8081,15 +8063,6 @@
       "minLevel": 51,
       "maxLevel": 51,
       "encounterTypeIndex": 0,
-      "zoneId": 205
-    },
-    {
-      "pokemonName": "Alolan Sandshrew",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 51,
-      "maxLevel": 51,
-      "encounterTypeIndex": 1,
       "zoneId": 205
     },
     {
@@ -13785,11 +13758,11 @@
   ],
   "Resort Area": [
     {
-      "pokemonName": "Overqwil",
+      "pokemonName": "Magikarp",
       "encounterType": "Surfing Incense",
       "encounterRate": "30%",
-      "minLevel": 40,
-      "maxLevel": 40,
+      "minLevel": 1,
+      "maxLevel": 100,
       "encounterTypeIndex": 2,
       "zoneId": 473
     },
@@ -14888,186 +14861,6 @@
       "minLevel": 12,
       "maxLevel": 12,
       "encounterTypeIndex": 1,
-      "zoneId": 358
-    },
-    {
-      "pokemonName": "Psyduck",
-      "encounterType": "water_mons",
-      "encounterRate": "60%",
-      "minLevel": 40,
-      "maxLevel": 40,
-      "encounterTypeIndex": 0,
-      "zoneId": 358
-    },
-    {
-      "pokemonName": "Psyduck",
-      "encounterType": "water_mons",
-      "encounterRate": "30%",
-      "minLevel": 40,
-      "maxLevel": 40,
-      "encounterTypeIndex": 1,
-      "zoneId": 358
-    },
-    {
-      "pokemonName": "Golduck",
-      "encounterType": "water_mons",
-      "encounterRate": "5%",
-      "minLevel": 40,
-      "maxLevel": 40,
-      "encounterTypeIndex": 2,
-      "zoneId": 358
-    },
-    {
-      "pokemonName": "Golduck",
-      "encounterType": "water_mons",
-      "encounterRate": "4%",
-      "minLevel": 40,
-      "maxLevel": 40,
-      "encounterTypeIndex": 3,
-      "zoneId": 358
-    },
-    {
-      "pokemonName": "Golduck",
-      "encounterType": "water_mons",
-      "encounterRate": "1%",
-      "minLevel": 40,
-      "maxLevel": 40,
-      "encounterTypeIndex": 4,
-      "zoneId": 358
-    },
-    {
-      "pokemonName": "Magikarp",
-      "encounterType": "boro_mons",
-      "encounterRate": "60%",
-      "minLevel": 10,
-      "maxLevel": 10,
-      "encounterTypeIndex": 0,
-      "zoneId": 358
-    },
-    {
-      "pokemonName": "Magikarp",
-      "encounterType": "boro_mons",
-      "encounterRate": "30%",
-      "minLevel": 10,
-      "maxLevel": 10,
-      "encounterTypeIndex": 1,
-      "zoneId": 358
-    },
-    {
-      "pokemonName": "Magikarp",
-      "encounterType": "boro_mons",
-      "encounterRate": "5%",
-      "minLevel": 10,
-      "maxLevel": 10,
-      "encounterTypeIndex": 2,
-      "zoneId": 358
-    },
-    {
-      "pokemonName": "Magikarp",
-      "encounterType": "boro_mons",
-      "encounterRate": "4%",
-      "minLevel": 10,
-      "maxLevel": 10,
-      "encounterTypeIndex": 3,
-      "zoneId": 358
-    },
-    {
-      "pokemonName": "Magikarp",
-      "encounterType": "boro_mons",
-      "encounterRate": "1%",
-      "minLevel": 10,
-      "maxLevel": 10,
-      "encounterTypeIndex": 4,
-      "zoneId": 358
-    },
-    {
-      "pokemonName": "Magikarp",
-      "encounterType": "ii_mons",
-      "encounterRate": "60%",
-      "minLevel": 25,
-      "maxLevel": 25,
-      "encounterTypeIndex": 0,
-      "zoneId": 358
-    },
-    {
-      "pokemonName": "Goldeen",
-      "encounterType": "ii_mons",
-      "encounterRate": "30%",
-      "minLevel": 25,
-      "maxLevel": 25,
-      "encounterTypeIndex": 1,
-      "zoneId": 358
-    },
-    {
-      "pokemonName": "Magikarp",
-      "encounterType": "ii_mons",
-      "encounterRate": "5%",
-      "minLevel": 25,
-      "maxLevel": 25,
-      "encounterTypeIndex": 2,
-      "zoneId": 358
-    },
-    {
-      "pokemonName": "Goldeen",
-      "encounterType": "ii_mons",
-      "encounterRate": "4%",
-      "minLevel": 25,
-      "maxLevel": 25,
-      "encounterTypeIndex": 3,
-      "zoneId": 358
-    },
-    {
-      "pokemonName": "Goldeen",
-      "encounterType": "ii_mons",
-      "encounterRate": "1%",
-      "minLevel": 25,
-      "maxLevel": 25,
-      "encounterTypeIndex": 4,
-      "zoneId": 358
-    },
-    {
-      "pokemonName": "Gyarados",
-      "encounterType": "sugoi_mons",
-      "encounterRate": "60%",
-      "minLevel": 50,
-      "maxLevel": 50,
-      "encounterTypeIndex": 0,
-      "zoneId": 358
-    },
-    {
-      "pokemonName": "Seaking",
-      "encounterType": "sugoi_mons",
-      "encounterRate": "30%",
-      "minLevel": 50,
-      "maxLevel": 50,
-      "encounterTypeIndex": 1,
-      "zoneId": 358
-    },
-    {
-      "pokemonName": "Gyarados",
-      "encounterType": "sugoi_mons",
-      "encounterRate": "5%",
-      "minLevel": 50,
-      "maxLevel": 50,
-      "encounterTypeIndex": 2,
-      "zoneId": 358
-    },
-    {
-      "pokemonName": "Seaking",
-      "encounterType": "sugoi_mons",
-      "encounterRate": "4%",
-      "minLevel": 50,
-      "maxLevel": 50,
-      "encounterTypeIndex": 3,
-      "zoneId": 358
-    },
-    {
-      "pokemonName": "Seaking",
-      "encounterType": "sugoi_mons",
-      "encounterRate": "1%",
-      "minLevel": 50,
-      "maxLevel": 50,
-      "encounterTypeIndex": 4,
       "zoneId": 358
     }
   ],
@@ -19491,7 +19284,7 @@
       "zoneId": 385
     },
     {
-      "pokemonName": "Gastrodon East Sea",
+      "pokemonName": "Chatot",
       "encounterType": "night",
       "encounterRate": "10%",
       "minLevel": 34,
@@ -20896,7 +20689,7 @@
       "zoneId": 400
     },
     {
-      "pokemonName": "Purugly",
+      "pokemonName": "Chatot",
       "encounterType": "night",
       "encounterRate": "10%",
       "minLevel": 39,
@@ -21385,15 +21178,6 @@
     }
   ],
   "Route 220": [
-    {
-      "pokemonName": "Obstagoon",
-      "encounterType": "Incense",
-      "encounterRate": "10%",
-      "minLevel": 67,
-      "maxLevel": 67,
-      "encounterTypeIndex": 0,
-      "zoneId": 485
-    },
     {
       "pokemonName": "Galarian Slowbro",
       "encounterType": "Surfing Incense",
@@ -22128,7 +21912,7 @@
       "zoneId": 407
     },
     {
-      "pokemonName": "Luxio",
+      "pokemonName": "Chatot",
       "encounterType": "night",
       "encounterRate": "10%",
       "minLevel": 54,
@@ -25274,15 +25058,6 @@
       "encounterRate": "30%",
       "minLevel": 55,
       "maxLevel": 55,
-      "encounterTypeIndex": 2,
-      "zoneId": 263
-    },
-    {
-      "pokemonName": "Galarian Slowking",
-      "encounterType": "Surfing Incense",
-      "encounterRate": "30%",
-      "minLevel": 55,
-      "maxLevel": 54,
       "encounterTypeIndex": 2,
       "zoneId": 263
     },
@@ -29918,8 +29693,8 @@
       "pokemonName": "Alolan Marowak",
       "encounterType": "Incense",
       "encounterRate": "10%",
-      "minLevel": 68,
-      "maxLevel": 68,
+      "minLevel": 69,
+      "maxLevel": 69,
       "encounterTypeIndex": 0,
       "zoneId": 259
     },
@@ -29927,8 +29702,8 @@
       "pokemonName": "Alolan Marowak",
       "encounterType": "Incense",
       "encounterRate": "10%",
-      "minLevel": 68,
-      "maxLevel": 68,
+      "minLevel": 69,
+      "maxLevel": 69,
       "encounterTypeIndex": 1,
       "zoneId": 259
     }
@@ -35376,15 +35151,6 @@
       "zoneId": 247
     },
     {
-      "pokemonName": "Galarian Slowbro",
-      "encounterType": "Surfing Incense",
-      "encounterRate": "30%",
-      "minLevel": 60,
-      "maxLevel": 40,
-      "encounterTypeIndex": 2,
-      "zoneId": 247
-    },
-    {
       "pokemonName": "Sealeo",
       "encounterType": "water_mons",
       "encounterRate": "60%",
@@ -36298,15 +36064,6 @@
       "encounterRate": "30%",
       "minLevel": 60,
       "maxLevel": 60,
-      "encounterTypeIndex": 2,
-      "zoneId": 246
-    },
-    {
-      "pokemonName": "Galarian Slowbro",
-      "encounterType": "Surfing Incense",
-      "encounterRate": "30%",
-      "minLevel": 60,
-      "maxLevel": 40,
       "encounterTypeIndex": 2,
       "zoneId": 246
     },
