@@ -22,33 +22,49 @@ def get_lumi_data(raw_data, callback):
 def load_data():
     data = {}
     input_file_paths = {
+        # romfs/Data/StreamingAssets/AssetAssistant/Message/english
         'ability_namedata': 'english_ss_tokusei.json',
         'area_display_names': 'english_dp_fld_areaname_display.json',
         'area_names': 'english_dp_fld_areaname.json',
-        'egg_learnset': 'TamagoWazaTable.json',
-        'form_namedata': 'english_ss_zkn_form.json',
-        'item_table': 'ItemTable.json',
-        'learnset_data': 'WazaOboeTable.json',
-        'map_info': 'MapInfo.json',
         'move_info': 'english_ss_wazainfo.json',
         'moves_namedata': 'english_ss_wazaname.json',
-        'moves_table': 'WazaTable.json',
         'nature_namedata': 'english_ss_seikaku.json',
-        'pkmn_height_data': 'english_ss_zkn_height.json',
-        'pkmn_weight_data': 'english_ss_zkn_weight.json',
         'raw_abilities': 'english_ss_tokusei.json',
-        'raw_encounters': 'FieldEncountTable_d.json',
         'raw_items': 'english_ss_itemname.json',
-        'raw_pokedex': 'english_ss_monsname.json',
-        'raw_trainer_data': 'TrainerTable.json',
-        'smogon_moves': 'moves.json',
         'trainer_labels': 'english_dp_trainers_type.json',
         'trainer_names': 'english_dp_trainers_name.json',
         'type_namedata': 'english_ss_typename.json',
+
+
+        # romfs/Data/StreamingAssets/AssetAssistant/Pml/personal_masterdatas
+        'egg_learnset': 'TamagoWazaTable.json',
+        'item_table': 'ItemTable.json',
+        'learnset_data': 'WazaOboeTable.json',
+        'moves_table': 'WazaTable.json',
         'personal_table': 'PersonalTable.json',
+
+
+        # romfs/Data/StreamingAssets/AssetAssistant/Message/common_msbt
+        'form_namedata': 'english_ss_zkn_form.json',
+        'pkmn_height_data': 'english_ss_zkn_height.json',
+        'pkmn_weight_data': 'english_ss_zkn_weight.json',
+        'raw_pokedex': 'english_ss_monsname.json',
+
+
+        # romfs/Data/StreamingAssets/AssetAssistant/Dpr/scriptableobjects/gamesettings
+        'map_info': 'MapInfo.json',
+        'raw_encounters': 'FieldEncountTable_d.json',
+
+
+        # romfs/Data/StreamingAssets/AssetAssistant/Dpr/masterdatas
+        'raw_trainer_data': 'TrainerTable.json',
+
+        # These last two are custom files
         'tutor_moves': 'tutorMoves.json',
+        'smogon_moves': 'moves.json',
     }
     resource_file_paths = {
+        # Custom files created from various scripts
         'gym_leaders': 'NewGymLeaders.json',
         'honey_routes': 'honeyroutes.json',
         'rates': 'Rates.json',

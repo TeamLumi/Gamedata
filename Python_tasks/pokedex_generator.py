@@ -254,7 +254,8 @@ def evolution_pathfinding():
     graph = graphing["Evolve"]
     evolution_paths = {}
     for node in graph:
-        evolution_paths[node["id"]] = {"path": [], "method": [], "targets": [], "ar": []}
+        if (is_valid_pokemon(node["id"])):
+            evolution_paths[node["id"]] = {"path": [], "method": [], "targets": [], "ar": []}
 
     start_pathfinding(evolution_paths, graph)
     get_evolution_arrays(evolution_paths, graph)
