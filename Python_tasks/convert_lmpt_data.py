@@ -527,6 +527,8 @@ def getEncounterData():
 
     get_trophy_garden_encounter_rates(encounter_data[constants.TROPHY_GARDEN_NAME], rates_list)
 
+    ## Add Marsh Random Encounters percent chance is 10%
+
     ##This is for adding all of the Honey Tree encounters to the list
     get_honey_tree_mons(encounter_list)
     get_honey_tree_encounter_rates(rates_list)
