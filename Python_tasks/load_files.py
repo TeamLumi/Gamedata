@@ -29,7 +29,6 @@ def load_data():
         'move_info': 'english_ss_wazainfo.json',
         'moves_namedata': 'english_ss_wazaname.json',
         'nature_namedata': 'english_ss_seikaku.json',
-        'raw_abilities': 'english_ss_tokusei.json',
         'raw_items': 'english_ss_itemname.json',
         'trainer_labels': 'english_dp_trainers_type.json',
         'trainer_names': 'english_dp_trainers_name.json',
