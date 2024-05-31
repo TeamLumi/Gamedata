@@ -2433,7 +2433,8 @@
       700,
       196,
       197,
-      1090
+      1090,
+      1092
     ],
     "generation": 8,
     "abilities": [
@@ -2450,9 +2451,9 @@
     "type": "WATER",
     "evolve": [
       133,
-      1092,
       134,
-      1090
+      1090,
+      1092
     ],
     "generation": 8,
     "abilities": [
@@ -2469,9 +2470,9 @@
     "type": "ELECTRIC",
     "evolve": [
       133,
-      1092,
       135,
-      1090
+      1090,
+      1092
     ],
     "generation": 8,
     "abilities": [
@@ -2488,9 +2489,9 @@
     "type": "FIRE",
     "evolve": [
       133,
-      1092,
       136,
-      1090
+      1090,
+      1092
     ],
     "generation": 8,
     "abilities": [
@@ -3581,9 +3582,9 @@
     "type": "PSYCHIC",
     "evolve": [
       133,
-      1092,
       196,
-      1090
+      1090,
+      1092
     ],
     "generation": 8,
     "abilities": [
@@ -3600,9 +3601,9 @@
     "type": "DARK",
     "evolve": [
       133,
-      1092,
       197,
-      1090
+      1090,
+      1092
     ],
     "generation": 8,
     "abilities": [
@@ -8479,9 +8480,9 @@
     "type": "GRASS",
     "evolve": [
       133,
-      1092,
       470,
-      1090
+      1090,
+      1092
     ],
     "generation": 8,
     "abilities": [
@@ -8498,9 +8499,9 @@
     "type": "ICE",
     "evolve": [
       133,
-      1092,
       471,
-      1090
+      1090,
+      1092
     ],
     "generation": 8,
     "abilities": [
@@ -8974,9 +8975,9 @@
     "type": "FAIRY",
     "evolve": [
       133,
-      1092,
       700,
-      1090
+      1090,
+      1092
     ],
     "generation": 8,
     "abilities": [
@@ -10130,7 +10131,8 @@
       700,
       196,
       197,
-      1090
+      1090,
+      1092
     ],
     "generation": 8,
     "abilities": [
@@ -10146,7 +10148,7 @@
     "text": "Bandana Partner Eevee",
     "type": "NORMAL",
     "evolve": [
-      1092,
+      133,
       470,
       471,
       135,
@@ -10154,7 +10156,9 @@
       136,
       700,
       196,
-      197
+      197,
+      1090,
+      1092
     ],
     "generation": 8,
     "abilities": [

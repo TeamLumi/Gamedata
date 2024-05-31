@@ -658,8 +658,7 @@
       "Water Spout": 323,
       "Life Dew": 791,
       "Muddy Water": 330,
-      "Aura Sphere": 396,
-      "Foresight": 193
+      "Aura Sphere": 396
     },
     "tutorLearnset": {
       "Snore": 173,
@@ -1260,7 +1259,6 @@
       "Air Slash": 403,
       "Brave Bird": 413,
       "Uproar": 253,
-      "Foresight": 193,
       "Feint Attack": 185
     },
     "tutorLearnset": {
@@ -4268,7 +4266,6 @@
       "Struggle Bug": 1,
       "Disable": 1,
       "Tackle": 1,
-      "Foresight": 1,
       "Supersonic": 7,
       "Bug Bite": 10,
       "Confusion": 13,
@@ -4347,7 +4344,6 @@
       "Struggle Bug": 1,
       "Disable": 1,
       "Tackle": 1,
-      "Foresight": 1,
       "Whirlwind": 1,
       "Silver Wind": 1,
       "Supersonic": 7,
@@ -4862,8 +4858,7 @@
       "Yawn": 281,
       "Future Sight": 248,
       "Encore": 227,
-      "Mud Bomb": 426,
-      "Foresight": 193
+      "Mud Bomb": 426
     },
     "tutorLearnset": {
       "Snore": 173,
@@ -5076,8 +5071,7 @@
       "Close Combat": 370,
       "Encore": 227,
       "Night Slash": 400,
-      "Meditate": 96,
-      "Foresight": 193
+      "Meditate": 96
     },
     "tutorLearnset": {
       "Snore": 173,
@@ -5986,7 +5980,6 @@
       "Focus Energy": 1,
       "Karate Chop": 4,
       "Low Sweep": 7,
-      "Foresight": 10,
       "Brick Break": 13,
       "Seismic Toss": 15,
       "Revenge": 17,
@@ -6099,7 +6092,6 @@
       "Low Kick": 1,
       "Karate Chop": 4,
       "Low Sweep": 7,
-      "Foresight": 10,
       "Brick Break": 13,
       "Seismic Toss": 15,
       "Knock Off": 20,
@@ -6198,7 +6190,6 @@
       "Bullet Punch": 1,
       "Karate Chop": 4,
       "Low Sweep": 7,
-      "Foresight": 10,
       "Brick Break": 13,
       "Seismic Toss": 15,
       "Knock Off": 20,
@@ -7635,7 +7626,6 @@
       "Mud-Slap": 189,
       "Leaf Blade": 348,
       "Revenge": 279,
-      "Foresight": 193,
       "Dual Wingbeat": 814
     },
     "tutorLearnset": {
@@ -9782,7 +9772,6 @@
       "Jump Kick": 29,
       "Endure": 33,
       "Close Combat": 35,
-      "Foresight": 37,
       "Mega Kick": 39,
       "High Jump Kick": 41,
       "Mind Reader": 41,
@@ -10799,8 +10788,7 @@
       "Stomp": 23,
       "Focus Energy": 116,
       "Crush Claw": 306,
-      "Uproar": 253,
-      "Foresight": 193
+      "Uproar": 253
     },
     "tutorLearnset": {
       "Snore": 173,
@@ -12279,8 +12267,7 @@
       "Freeze-Dry": 573,
       "Dragon Dance": 349,
       "Whirlpool": 250,
-      "Future Sight": 248,
-      "Foresight": 193
+      "Future Sight": 248
     },
     "tutorLearnset": {
       "Snore": 173,
@@ -13066,8 +13053,7 @@
       "Mega Drain": 72,
       "Mud Shot": 341,
       "Icy Wind": 196,
-      "Screech": 103,
-      "Foresight": 193
+      "Screech": 103
     },
     "tutorLearnset": {
       "Snore": 173,
@@ -13275,8 +13261,7 @@
       "Tailwind": 366,
       "Whirlwind": 18,
       "Wide Guard": 469,
-      "Assurance": 372,
-      "Foresight": 193
+      "Assurance": 372
     },
     "tutorLearnset": {
       "Snore": 173,
@@ -14682,8 +14667,7 @@
       "Double Kick": 24,
       "Flare Blitz": 394,
       "Extrasensory": 326,
-      "Nature Power": 267,
-      "Foresight": 193
+      "Nature Power": 267
     },
     "tutorLearnset": {
       "Snore": 173,
@@ -15212,7 +15196,6 @@
     ],
     "learnset": {
       "Growl": 1,
-      "Foresight": 1,
       "Scratch": 1,
       "Defense Curl": 1,
       "Quick Attack": 1,
@@ -15317,7 +15300,6 @@
     "learnset": {
       "Agility": 15,
       "Growl": 1,
-      "Foresight": 1,
       "Quick Attack": 1,
       "Defense Curl": 1,
       "Scratch": 1,
@@ -15422,7 +15404,6 @@
       "Growl": 1,
       "Peck": 1,
       "Tackle": 1,
-      "Foresight": 1,
       "Echoed Voice": 6,
       "Hypnosis": 6,
       "Confusion": 9,
@@ -15522,7 +15503,6 @@
     "learnset": {
       "Echoed Voice": 1,
       "Tackle": 1,
-      "Foresight": 1,
       "Growl": 1,
       "Peck": 1,
       "Sky Attack": 1,
@@ -16595,8 +16575,7 @@
       "Extrasensory": 326,
       "Morning Sun": 234,
       "Future Sight": 248,
-      "Stored Power": 500,
-      "Foresight": 193
+      "Stored Power": 500
     },
     "tutorLearnset": {
       "Snore": 173,
@@ -17381,8 +17360,7 @@
       "Future Sight": 248,
       "Superpower": 276,
       "Body Slam": 34,
-      "Muddy Water": 330,
-      "Foresight": 193
+      "Muddy Water": 330
     },
     "tutorLearnset": {
       "Snore": 173,
@@ -18263,7 +18241,6 @@
       "Gust": 1,
       "Tackle": 1,
       "Quick Attack": 1,
-      "Foresight": 1,
       "Double Team": 6,
       "Silver Wind": 11,
       "Wing Attack": 13,
@@ -19221,7 +19198,6 @@
       "Double Kick": 24,
       "Mirror Coat": 243,
       "Mean Look": 212,
-      "Foresight": 193,
       "Razor Wind": 13
     },
     "tutorLearnset": {
@@ -20480,8 +20456,7 @@
       "Icicle Crash": 556,
       "Crush Claw": 306,
       "Ice Punch": 8,
-      "Throat Chop": 675,
-      "Foresight": 193
+      "Throat Chop": 675
     },
     "tutorLearnset": {
       "Snore": 173,
@@ -22427,8 +22402,7 @@
       "Tackle": 1,
       "Low Kick": 1,
       "Mach Punch": 1,
-      "Rapid Spin": 1,
-      "Foresight": 1
+      "Rapid Spin": 1
     },
     "tmLearnset": {
       "Toxic": 92,
@@ -24671,7 +24645,6 @@
       "Water Gun": 5,
       "Rock Smash": 6,
       "Mud-Slap": 8,
-      "Foresight": 12,
       "Supersonic": 15,
       "Water Pulse": 18,
       "Rock Throw": 20,
@@ -24772,7 +24745,6 @@
       "Tackle": 1,
       "Mud-Slap": 8,
       "Rock Throw": 9,
-      "Foresight": 12,
       "Supersonic": 15,
       "Bulldoze": 16,
       "Water Pulse": 20,
@@ -24870,7 +24842,6 @@
       "Curse": 1,
       "Mud-Slap": 8,
       "Rock Throw": 9,
-      "Foresight": 12,
       "Supersonic": 15,
       "Bulldoze": 16,
       "Water Pulse": 20,
@@ -26892,7 +26863,6 @@
       "Fell Stinger": 565,
       "Power Split": 471,
       "Lunge": 679,
-      "Foresight": 193,
       "Signal Beam": 324
     },
     "tutorLearnset": {
@@ -28090,7 +28060,6 @@
       "Bullet Punch": 418,
       "Feint": 364,
       "Wide Guard": 469,
-      "Foresight": 193,
       "Feint Attack": 185
     },
     "tutorLearnset": {
@@ -28272,8 +28241,7 @@
       "Slam": 21,
       "Fake Tears": 313,
       "Body Slam": 34,
-      "Muddy Water": 330,
-      "Foresight": 193
+      "Muddy Water": 330
     },
     "tutorLearnset": {
       "Snore": 173,
@@ -28414,7 +28382,6 @@
       "Growl": 1,
       "Fake Out": 1,
       "Tackle": 1,
-      "Foresight": 4,
       "Sing": 7,
       "Disarming Voice": 13,
       "Attract": 15,
@@ -28522,7 +28489,6 @@
       "Growl": 1,
       "Fake Out": 1,
       "Tackle": 1,
-      "Foresight": 4,
       "Sing": 8,
       "Disarming Voice": 12,
       "Attract": 16,
@@ -28623,7 +28589,6 @@
       "Scratch": 1,
       "Leer": 1,
       "Night Shade": 4,
-      "Foresight": 4,
       "Astonish": 7,
       "Fury Swipes": 11,
       "Detect": 13,
@@ -29250,8 +29215,7 @@
       "Guard Swap": 385,
       "Psycho Cut": 427,
       "Bullet Punch": 418,
-      "Quick Guard": 501,
-      "Foresight": 193
+      "Quick Guard": 501
     },
     "tutorLearnset": {
       "Snore": 173,
@@ -33722,7 +33686,6 @@
       "Confuse Ray": 109,
       "Gunk Shot": 441,
       "Phantom Force": 566,
-      "Foresight": 193,
       "Ominous Wind": 466
     },
     "tutorLearnset": {
@@ -33870,7 +33833,6 @@
       "Night Shade": 1,
       "Disable": 7,
       "Astonish": 10,
-      "Foresight": 14,
       "Shadow Sneak": 16,
       "Will-O-Wisp": 22,
       "Payback": 25,
@@ -33968,7 +33930,6 @@
       "Night Shade": 1,
       "Disable": 7,
       "Astonish": 10,
-      "Foresight": 14,
       "Will-O-Wisp": 22,
       "Payback": 25,
       "Curse": 28,
@@ -37771,8 +37732,7 @@
       "Double-Edge": 38,
       "Uproar": 253,
       "Detect": 197,
-      "Revenge": 279,
-      "Foresight": 193
+      "Revenge": 279
     },
     "tutorLearnset": {
       "Snore": 173,
@@ -40400,7 +40360,6 @@
       "Pound": 1,
       "Splash": 1,
       "Defense Curl": 1,
-      "Foresight": 1,
       "Frustration": 1,
       "Endure": 7,
       "Baby-Doll Eyes": 8,
@@ -40518,7 +40477,6 @@
       "Return": 1,
       "Baby-Doll Eyes": 1,
       "Defense Curl": 1,
-      "Foresight": 1,
       "Pound": 1,
       "Splash": 1,
       "Magic Coat": 1,
@@ -42389,7 +42347,6 @@
     "learnset": {
       "Quick Attack": 1,
       "Low Kick": 1,
-      "Foresight": 1,
       "Bite": 4,
       "Counter": 7,
       "Metal Claw": 8,
@@ -42508,7 +42465,6 @@
       "Detect": 1,
       "Quick Attack": 1,
       "Low Kick": 1,
-      "Foresight": 1,
       "Reversal": 1,
       "Final Gambit": 1,
       "Copycat": 1,
@@ -44655,7 +44611,6 @@
       "Wing Attack": 1,
       "Hypnosis": 1,
       "Quick Attack": 1,
-      "Foresight": 1,
       "Gust": 1,
       "Tackle": 1,
       "Bug Bite": 1,
@@ -45491,7 +45446,6 @@
       "Night Shade": 1,
       "Disable": 7,
       "Astonish": 10,
-      "Foresight": 14,
       "Shadow Sneak": 16,
       "Will-O-Wisp": 22,
       "Payback": 25,
@@ -46397,7 +46351,6 @@
       "Fire Punch": 1,
       "Thunder Punch": 1,
       "Dizzy Punch": 1,
-      "Foresight": 1,
       "Knock Off": 6,
       "Confuse Ray": 10,
       "Stomp": 18,
@@ -54874,7 +54827,6 @@
       "Crush Claw": 306,
       "Ice Punch": 8,
       "Throat Chop": 675,
-      "Foresight": 193,
       "Sucker Punch": 389
     },
     "tutorLearnset": {

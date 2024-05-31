@@ -25,7 +25,7 @@
       "minLevel": 12,
       "maxLevel": 12,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 197
     }
   ],
   "11": [
@@ -36,7 +36,7 @@
       "minLevel": 21,
       "maxLevel": 21,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 364
     },
     {
       "routeName": "Route 211 (East)",
@@ -45,7 +45,7 @@
       "minLevel": 18,
       "maxLevel": 18,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 378
     },
     {
       "routeName": "Route 215",
@@ -54,7 +54,7 @@
       "minLevel": 28,
       "maxLevel": 28,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 394
     }
   ],
   "12": [
@@ -65,7 +65,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 392
     }
   ],
   "13": [
@@ -94,7 +94,7 @@
       "minLevel": 12,
       "maxLevel": 12,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 197
     }
   ],
   "14": [
@@ -105,7 +105,7 @@
       "minLevel": 21,
       "maxLevel": 21,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 364
     },
     {
       "routeName": "Route 211 (East)",
@@ -114,7 +114,7 @@
       "minLevel": 18,
       "maxLevel": 18,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 378
     },
     {
       "routeName": "Route 215",
@@ -123,7 +123,7 @@
       "minLevel": 28,
       "maxLevel": 28,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 394
     }
   ],
   "15": [
@@ -134,7 +134,7 @@
       "minLevel": 15,
       "maxLevel": 15,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 199
     },
     {
       "routeName": "Route 214",
@@ -143,7 +143,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 392
     }
   ],
   "16": [
@@ -190,7 +190,7 @@
       "minLevel": 16,
       "maxLevel": 16,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 361
     }
   ],
   "17": [
@@ -219,7 +219,7 @@
       "minLevel": 27,
       "maxLevel": 27,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 367
     },
     {
       "routeName": "Route 210 (North)",
@@ -228,7 +228,7 @@
       "minLevel": 37,
       "maxLevel": 37,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 375
     },
     {
       "routeName": "Route 213",
@@ -237,7 +237,7 @@
       "minLevel": 33,
       "maxLevel": 33,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 385
     }
   ],
   "19": [
@@ -6297,7 +6297,7 @@
       "minLevel": 16,
       "maxLevel": 16,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 361
     },
     {
       "routeName": "Route 209",
@@ -6306,7 +6306,7 @@
       "minLevel": 27,
       "maxLevel": 27,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 367
     },
     {
       "routeName": "Route 210 (North)",
@@ -6315,7 +6315,7 @@
       "minLevel": 37,
       "maxLevel": 37,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 375
     },
     {
       "routeName": "Route 213",
@@ -6324,7 +6324,7 @@
       "minLevel": 33,
       "maxLevel": 33,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 385
     },
     {
       "routeName": "Route 222",
@@ -6333,7 +6333,7 @@
       "minLevel": 54,
       "maxLevel": 54,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 407
     }
   ],
   "84": [
@@ -7890,7 +7890,7 @@
       "minLevel": 12,
       "maxLevel": 12,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 253
     },
     {
       "routeName": "Route 208",
@@ -7899,7 +7899,7 @@
       "minLevel": 28,
       "maxLevel": 28,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 365
     },
     {
       "routeName": "Route 212 (North)",
@@ -7908,7 +7908,7 @@
       "minLevel": 25,
       "maxLevel": 25,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 379
     },
     {
       "routeName": "Route 212 (South)",
@@ -7917,7 +7917,7 @@
       "minLevel": 34,
       "maxLevel": 34,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 383
     },
     {
       "routeName": "Route 221",
@@ -7926,7 +7926,7 @@
       "minLevel": 39,
       "maxLevel": 39,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 404
     }
   ],
   "104": [
@@ -8862,7 +8862,7 @@
       "minLevel": 12,
       "maxLevel": 12,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 253
     },
     {
       "routeName": "Route 208",
@@ -8871,7 +8871,7 @@
       "minLevel": 28,
       "maxLevel": 28,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 365
     },
     {
       "routeName": "Route 212 (North)",
@@ -8880,7 +8880,7 @@
       "minLevel": 25,
       "maxLevel": 25,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 379
     },
     {
       "routeName": "Route 212 (South)",
@@ -8889,7 +8889,7 @@
       "minLevel": 34,
       "maxLevel": 34,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 383
     },
     {
       "routeName": "Route 221",
@@ -8898,7 +8898,7 @@
       "minLevel": 39,
       "maxLevel": 39,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 404
     },
     {
       "routeName": "Route 222",
@@ -8907,7 +8907,7 @@
       "minLevel": 54,
       "maxLevel": 54,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 407
     }
   ],
   "115": [
@@ -13116,7 +13116,7 @@
       "minLevel": 54,
       "maxLevel": 54,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 407
     }
   ],
   "147": [
@@ -13459,7 +13459,7 @@
       "minLevel": 16,
       "maxLevel": 16,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 361
     }
   ],
   "164": [
@@ -13479,7 +13479,7 @@
       "minLevel": 27,
       "maxLevel": 27,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 367
     },
     {
       "routeName": "Route 210 (North)",
@@ -13488,7 +13488,7 @@
       "minLevel": 37,
       "maxLevel": 37,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 375
     },
     {
       "routeName": "Route 213",
@@ -13497,7 +13497,7 @@
       "minLevel": 33,
       "maxLevel": 33,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 385
     }
   ],
   "165": [
@@ -14320,7 +14320,7 @@
       "minLevel": 12,
       "maxLevel": 12,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 197
     },
     {
       "routeName": "Route 207",
@@ -14329,7 +14329,7 @@
       "minLevel": 21,
       "maxLevel": 21,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 364
     },
     {
       "routeName": "Route 211 (East)",
@@ -14338,7 +14338,7 @@
       "minLevel": 18,
       "maxLevel": 18,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 378
     },
     {
       "routeName": "Route 214",
@@ -14347,7 +14347,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 392
     },
     {
       "routeName": "Route 215",
@@ -14356,7 +14356,7 @@
       "minLevel": 28,
       "maxLevel": 28,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 394
     }
   ],
   "191": [
@@ -18282,7 +18282,7 @@
       "minLevel": 12,
       "maxLevel": 12,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 359
     },
     {
       "routeName": "Route 206",
@@ -18291,7 +18291,7 @@
       "minLevel": 21,
       "maxLevel": 21,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 362
     },
     {
       "routeName": "Route 210 (South)",
@@ -18300,7 +18300,7 @@
       "minLevel": 29,
       "maxLevel": 29,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 373
     }
   ],
   "205": [
@@ -18347,7 +18347,7 @@
       "minLevel": 40,
       "maxLevel": 40,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 201
     },
     {
       "routeName": "Route 218",
@@ -18356,7 +18356,7 @@
       "minLevel": 39,
       "maxLevel": 39,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 400
     }
   ],
   "206": [
@@ -18901,7 +18901,7 @@
       "minLevel": 40,
       "maxLevel": 40,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 201
     },
     {
       "routeName": "Route 205 (South)",
@@ -18910,7 +18910,7 @@
       "minLevel": 12,
       "maxLevel": 12,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 359
     },
     {
       "routeName": "Route 206",
@@ -18919,7 +18919,7 @@
       "minLevel": 21,
       "maxLevel": 21,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 362
     },
     {
       "routeName": "Route 210 (South)",
@@ -18928,7 +18928,7 @@
       "minLevel": 29,
       "maxLevel": 29,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 373
     },
     {
       "routeName": "Route 218",
@@ -18937,7 +18937,7 @@
       "minLevel": 39,
       "maxLevel": 39,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 400
     },
     {
       "routeName": "Route 222",
@@ -18946,7 +18946,7 @@
       "minLevel": 54,
       "maxLevel": 54,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 407
     }
   ],
   "215": [
@@ -20948,7 +20948,7 @@
       "minLevel": 12,
       "maxLevel": 12,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 359
     }
   ],
   "266": [
@@ -20959,7 +20959,7 @@
       "minLevel": 21,
       "maxLevel": 21,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 362
     },
     {
       "routeName": "Route 210 (South)",
@@ -20968,7 +20968,7 @@
       "minLevel": 29,
       "maxLevel": 29,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 373
     }
   ],
   "267": [
@@ -20988,7 +20988,7 @@
       "minLevel": 40,
       "maxLevel": 40,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 201
     },
     {
       "routeName": "Route 218",
@@ -20997,7 +20997,7 @@
       "minLevel": 39,
       "maxLevel": 39,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 400
     }
   ],
   "268": [
@@ -21008,7 +21008,7 @@
       "minLevel": 21,
       "maxLevel": 21,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 362
     },
     {
       "routeName": "Route 210 (South)",
@@ -21017,7 +21017,7 @@
       "minLevel": 29,
       "maxLevel": 29,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 373
     }
   ],
   "269": [
@@ -21037,7 +21037,7 @@
       "minLevel": 40,
       "maxLevel": 40,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 201
     },
     {
       "routeName": "Route 218",
@@ -21046,7 +21046,7 @@
       "minLevel": 39,
       "maxLevel": 39,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 400
     }
   ],
   "270": [
@@ -21088,7 +21088,7 @@
       "minLevel": 12,
       "maxLevel": 12,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 253
     },
     {
       "routeName": "Route 208",
@@ -21097,7 +21097,7 @@
       "minLevel": 28,
       "maxLevel": 28,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 365
     }
   ],
   "274": [
@@ -21117,7 +21117,7 @@
       "minLevel": 25,
       "maxLevel": 25,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 379
     },
     {
       "routeName": "Route 212 (South)",
@@ -21126,7 +21126,7 @@
       "minLevel": 34,
       "maxLevel": 34,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 383
     },
     {
       "routeName": "Route 221",
@@ -21135,7 +21135,7 @@
       "minLevel": 39,
       "maxLevel": 39,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 404
     }
   ],
   "276": [
@@ -21173,7 +21173,7 @@
       "minLevel": 16,
       "maxLevel": 16,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 361
     }
   ],
   "277": [
@@ -21229,7 +21229,7 @@
       "minLevel": 27,
       "maxLevel": 27,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 367
     },
     {
       "routeName": "Route 210 (North)",
@@ -21238,7 +21238,7 @@
       "minLevel": 37,
       "maxLevel": 37,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 375
     },
     {
       "routeName": "Route 213",
@@ -21247,7 +21247,7 @@
       "minLevel": 33,
       "maxLevel": 33,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 385
     }
   ],
   "278": [
@@ -22035,7 +22035,7 @@
       "minLevel": 12,
       "maxLevel": 12,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 253
     },
     {
       "routeName": "Route 208",
@@ -22044,7 +22044,7 @@
       "minLevel": 28,
       "maxLevel": 28,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 365
     },
     {
       "routeName": "Route 212 (North)",
@@ -22053,7 +22053,7 @@
       "minLevel": 25,
       "maxLevel": 25,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 379
     },
     {
       "routeName": "Route 212 (South)",
@@ -22062,7 +22062,7 @@
       "minLevel": 34,
       "maxLevel": 34,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 383
     },
     {
       "routeName": "Route 221",
@@ -22071,7 +22071,7 @@
       "minLevel": 39,
       "maxLevel": 39,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 404
     }
   ],
   "286": [
@@ -22165,7 +22165,7 @@
       "minLevel": 12,
       "maxLevel": 12,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 197
     },
     {
       "routeName": "Route 207",
@@ -22174,7 +22174,7 @@
       "minLevel": 21,
       "maxLevel": 21,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 364
     },
     {
       "routeName": "Route 211 (East)",
@@ -22183,7 +22183,7 @@
       "minLevel": 18,
       "maxLevel": 18,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 378
     }
   ],
   "288": [
@@ -22194,7 +22194,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 392
     },
     {
       "routeName": "Route 215",
@@ -22203,7 +22203,7 @@
       "minLevel": 28,
       "maxLevel": 28,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 394
     }
   ],
   "290": [
@@ -32368,7 +32368,7 @@
       "minLevel": 16,
       "maxLevel": 16,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 361
     }
   ],
   "397": [
@@ -32505,7 +32505,7 @@
       "minLevel": 27,
       "maxLevel": 27,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 367
     },
     {
       "routeName": "Route 210 (North)",
@@ -32514,7 +32514,7 @@
       "minLevel": 37,
       "maxLevel": 37,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 375
     },
     {
       "routeName": "Route 213",
@@ -32523,7 +32523,7 @@
       "minLevel": 33,
       "maxLevel": 33,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 385
     }
   ],
   "399": [
@@ -32899,7 +32899,7 @@
       "minLevel": 12,
       "maxLevel": 12,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 359
     },
     {
       "routeName": "Route 206",
@@ -32908,7 +32908,7 @@
       "minLevel": 21,
       "maxLevel": 21,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 362
     }
   ],
   "413": [
@@ -32919,7 +32919,7 @@
       "minLevel": 40,
       "maxLevel": 40,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 201
     },
     {
       "routeName": "Route 210 (South)",
@@ -32928,7 +32928,7 @@
       "minLevel": 29,
       "maxLevel": 29,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 373
     },
     {
       "routeName": "Route 218",
@@ -32937,7 +32937,7 @@
       "minLevel": 39,
       "maxLevel": 39,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 400
     }
   ],
   "414": [
@@ -32948,7 +32948,7 @@
       "minLevel": 40,
       "maxLevel": 40,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 201
     },
     {
       "routeName": "Route 210 (South)",
@@ -32957,7 +32957,7 @@
       "minLevel": 29,
       "maxLevel": 29,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 373
     },
     {
       "routeName": "Route 218",
@@ -32966,7 +32966,7 @@
       "minLevel": 39,
       "maxLevel": 39,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 400
     }
   ],
   "415": [
@@ -32977,7 +32977,7 @@
       "minLevel": 40,
       "maxLevel": 40,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 201
     },
     {
       "routeName": "Route 205 (South)",
@@ -32986,7 +32986,7 @@
       "minLevel": 12,
       "maxLevel": 12,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 359
     },
     {
       "routeName": "Route 206",
@@ -32995,7 +32995,7 @@
       "minLevel": 21,
       "maxLevel": 21,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 362
     },
     {
       "routeName": "Route 210 (South)",
@@ -33004,7 +33004,7 @@
       "minLevel": 29,
       "maxLevel": 29,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 373
     },
     {
       "routeName": "Route 218",
@@ -33013,7 +33013,7 @@
       "minLevel": 39,
       "maxLevel": 39,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 400
     }
   ],
   "416": [
@@ -33024,7 +33024,7 @@
       "minLevel": 40,
       "maxLevel": 40,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 201
     },
     {
       "routeName": "Route 218",
@@ -33033,7 +33033,7 @@
       "minLevel": 39,
       "maxLevel": 39,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 400
     }
   ],
   "417": [
@@ -33221,7 +33221,7 @@
       "minLevel": 12,
       "maxLevel": 12,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 253
     },
     {
       "routeName": "Route 208",
@@ -33230,7 +33230,7 @@
       "minLevel": 28,
       "maxLevel": 28,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 365
     },
     {
       "routeName": "Route 212 (North)",
@@ -33239,7 +33239,7 @@
       "minLevel": 25,
       "maxLevel": 25,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 379
     }
   ],
   "421": [
@@ -33250,7 +33250,7 @@
       "minLevel": 34,
       "maxLevel": 34,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 383
     },
     {
       "routeName": "Route 221",
@@ -33259,7 +33259,7 @@
       "minLevel": 39,
       "maxLevel": 39,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 404
     }
   ],
   "422": [
@@ -34575,7 +34575,7 @@
       "minLevel": 12,
       "maxLevel": 12,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 197
     },
     {
       "routeName": "Route 207",
@@ -34584,7 +34584,7 @@
       "minLevel": 21,
       "maxLevel": 21,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 364
     },
     {
       "routeName": "Route 211 (East)",
@@ -34593,7 +34593,7 @@
       "minLevel": 18,
       "maxLevel": 18,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 378
     },
     {
       "routeName": "Route 214",
@@ -34602,7 +34602,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 392
     },
     {
       "routeName": "Route 215",
@@ -34611,7 +34611,7 @@
       "minLevel": 28,
       "maxLevel": 28,
       "encounterTypeIndex": null,
-      "zoneId": null
+      "zoneId": 394
     }
   ],
   "447": [

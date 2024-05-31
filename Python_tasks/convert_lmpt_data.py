@@ -35,7 +35,7 @@ second_execution_time_list = []
 with open(areas_file_path, encoding="utf-8") as f:
     areas_list = [line.strip().split(',') for line in f.readlines()]
 
-def create_zone_id_map():
+def create_zone_name_map():
     '''
     Creates a dictionary from the areas_copy.csv
     Format is {zone_name: zone_id}
@@ -47,7 +47,20 @@ def create_zone_id_map():
         zone_id = areas_list[zone_index][0]
         zone_dict[zone_name] = zone_id
     return zone_dict
- 
+
+def create_area_name_map():
+    '''
+    Creates a dictionary from the areas_copy.csv
+    Format is {zone_name: zone_id}
+    '''
+    zone_dict = {}
+    for place in areas_list:
+        zone_index = int(areas_list.index(place) - 1)
+        area_name = areas_list[zone_index][-3]
+        zone_id = areas_list[zone_index][0]
+        zone_dict[area_name] = zone_id
+    return zone_dict
+
 def get_zoneID(zone_name):
     '''
     Uses the zone_dict created by create_zone_id_map.
@@ -58,6 +71,37 @@ def get_zoneID(zone_name):
         return int(zone_dict[zone_name])
     else:
         return None
+
+def get_display_name_from_zone_name(zone_name):
+    if zone_name is None:
+        return None
+
+    display_name = next((e['labelName'] for e in display_names['labelDataArray'] 
+                    if e.get('wordDataArray', [{}])[0].get('str') == zone_name), None)
+
+    return display_name if display_name else None
+
+def get_area_name_from_zone_name(zone_name):
+    if zone_name is None:
+        return None
+
+    area_name = next((e['labelName'] for e in area_names['labelDataArray'] 
+                    if e.get('wordDataArray', [{}])[0].get('str') == zone_name), None)
+
+    return area_name if area_name else None
+
+def find_zone_id(zone_name):
+    display_name = get_display_name_from_zone_name(zone_name)
+    area_name = get_area_name_from_zone_name(zone_name)
+
+    if display_name:
+        map_info_index = next((index for index, e in enumerate(map_info['ZoneData']) if e.get('MSLabel') == display_name), -1)
+    else:
+        map_info_index = next((index for index, e in enumerate(map_info['ZoneData']) if e.get('PokePlaceName') == area_name), -1)
+
+    zone_id = map_info['ZoneData'][map_info_index].get('ZoneID', -1) if map_info_index != -1 else -1
+    
+    return zone_id if zone_id != -1 else None
 
 def get_zone_name(zoneID):
     '''
@@ -429,7 +473,9 @@ def organize_honey_tree_list(mons_data):
     minlevel = mons_data[2]
     maxlevel = mons_data[2]
     index = None
-    zoneID = None
+    zoneID = find_zone_id(route)
+    if zoneID == None:
+        zoneID = int(zone_id_dict[route])
     return {
         "routeName": route, 
         "encounterType": method,
@@ -615,12 +661,15 @@ if __name__ == "__main__":
     full_data = load_data()
     
     pokedex = get_lumi_data(full_data["raw_pokedex"], get_pokemon_name)
-    zone_dict = create_zone_id_map()
+    zone_dict = create_zone_name_map()
+    zone_id_dict = create_area_name_map()
     route_rates = full_data['rates']
     name_routes = full_data['routes']
     rates = full_data['rates']
+    area_names = full_data['area_names']
+    display_names = full_data['area_display_names']
+    map_info = full_data['map_info']
 
-    
     diff_forms, NAME_MAP = get_diff_form_dictionary()
     getPokedexInfo()
 
