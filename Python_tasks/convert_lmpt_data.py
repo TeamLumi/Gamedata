@@ -23,7 +23,7 @@ debug_file_path = os.path.join(repo_file_path, "Python_tasks", "Debug")
 output_file_path = os.path.join(repo_file_path, "Python_tasks", "output")
 
 honeywork_cpp_filepath = os.path.join(input_file_path, "honeywork.cpp")
-areas_file_path = os.path.join(input_file_path, 'areas_copy.csv')
+areas_file_path = os.path.join(input_file_path, 'areas_updated.csv')
 
 bad_encounters = [] # This is to check any bad encounters that are in diff_forms
 final_list = {} # This is for the encounters check to make sure none are being skipped over
@@ -37,7 +37,7 @@ with open(areas_file_path, encoding="utf-8") as f:
 
 def create_zone_id_map():
     '''
-    Creates a dictionary from the areas_copy.csv
+    Creates a dictionary from the areas_updated.csv
     Format is {zone_name: zone_id}
     '''
     zone_dict = {}
@@ -61,7 +61,7 @@ def get_zoneID(zone_name):
 
 def get_zone_name(zoneID):
     '''
-    Uses areas_copy.csv to get zoneName based on zoneID
+    Uses areas_updated.csv to get zoneName based on zoneID
     '''
     if not zoneID:
         print("Get a new zoneID")
@@ -229,7 +229,7 @@ def honey_tree_encounter_data():
                     zoneName = get_zone_name(zoneID)
                 values = [v.strip() for v in submatch.group(2).split(",")]
                 if constants.AMPHAROS_PLACE_HOLDER not in values:
-                    honey_trees[zoneName] = [values, honey_routes[key][1]]
+                    honey_trees[str(zoneID)] = [values, honey_routes[key][1]]
 
     honey_trees = count_mons_in_honey_trees(honey_trees)
 
@@ -329,10 +329,10 @@ def get_standard_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, m
             "zoneId": zoneID
         }
 
-        if zoneName not in encounters:
-            encounters[zoneName] = [encounter_list_order]
-        elif encounter_list_order not in encounters[zoneName] and new_method not in ["Incense", "Surfing Incense"]:
-            encounters[zoneName].append(encounter_list_order)
+        if str(zoneID) not in encounters:
+            encounters[str(zoneID)] = [encounter_list_order]
+        elif encounter_list_order not in encounters[str(zoneID)] and new_method not in ["Incense", "Surfing Incense"]:
+            encounters[str(zoneID)].append(encounter_list_order)
         elif "Incense" not in new_method:
             print("Something missing here?", method_index, monsNo, encounter_list_order)
 
@@ -378,10 +378,10 @@ def get_diff_form_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, 
             bad_encounters.append(check)
             return
 
-        if zoneName not in encounters:
-            encounters[zoneName] = [encounter_list_order]
-        elif encounter_list_order not in encounters[zoneName]:
-            encounters[zoneName].append(encounter_list_order)
+        if str(zoneID) not in encounters:
+            encounters[str(zoneID)] = [encounter_list_order]
+        elif encounter_list_order not in encounters[str(zoneID)]:
+            encounters[str(zoneID)].append(encounter_list_order)
         elif "Incense" not in new_method:
             print("Something missing here?", method_index, pokemon_id, encounter_list_order)
 
@@ -472,7 +472,8 @@ def get_trophy_garden_encounter_rates(trophy_garden_encounters, rates_list):
     This is for adding the trophy garden encounter rates for each route
     '''
     for mon in trophy_garden_encounters:
-        zoneName = get_zone_name(297) # This is the zoneID for Trophy Garden
+        zoneId = 297
+        zoneName = get_zone_name(zoneId) # This is the zoneID for Trophy Garden
         method = constants.TROPHY_GARDEN
         rate = constants.TROPHY_GARDEN_RATE
         minlevel = constants.TROPHY_GARDEN_LEVEL
@@ -487,13 +488,13 @@ def get_trophy_garden_encounter_rates(trophy_garden_encounters, rates_list):
             "minLevel": minlevel,
             "maxLevel": maxlevel,
             "encounterTypeIndex": index,
-            "zoneId": 297
+            "zoneId": zoneId
         }
 
-        if zoneName not in rates_list:
-            rates_list[zoneName] = [encounter_list_order]
-        elif encounter_list_order not in rates_list[zoneName]:
-            rates_list[zoneName].append(encounter_list_order)
+        if str(zoneId) not in rates_list:
+            rates_list[str(zoneId)] = [encounter_list_order]
+        elif encounter_list_order not in rates_list[str(zoneId)]:
+            rates_list[str(zoneId)].append(encounter_list_order)
         elif method != "Incense" or method != "Surfing Incense":
             print("Something missing here?", method_index, monsNo, encounter_list_order)
 
@@ -694,7 +695,7 @@ if __name__ == "__main__":
     mid_time = time.time()
     print("Middle Execution time:", mid_time - start_time, "seconds")
     getEncounterData()
-    writeEncounterDocData()
+    # writeEncounterDocData()
 
     end_time = time.time()
     execution_time = end_time - start_time
