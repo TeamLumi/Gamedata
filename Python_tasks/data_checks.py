@@ -17,7 +17,7 @@ def bad_encounter_data(pkmn_name, routeName=None, route=None):
     '''
     bad_encounters = []
     if routeName == None and route == None:
-        print("This is an invalid pokemon in the dex:", pkmn_name)
+        # print("This is an invalid pokemon in the dex:", pkmn_name)
         bad_encounters.append([pkmn_name, "Pokedex"])
         return bad_encounters
     print('BAD ENCOUNTER', pkmn_name, routeName, route)

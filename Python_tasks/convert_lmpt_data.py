@@ -247,7 +247,7 @@ def count_mons_in_honey_trees(dict):
                     result_dict[mon] = [[route, percentage, level]]
     return result_dict
 
-def honey_tree_encounter_data():
+def honey_tree_encounter_data(mons_no_or_zoneId = "mons_no"):
     '''
     Original code and also a placeholder of the get_honey_tree_mons function
     This was added back in to allow the encounter_rates function to work properly
@@ -272,8 +272,12 @@ def honey_tree_encounter_data():
                 if zoneID:
                     zoneName = get_zone_name(zoneID)
                 values = [v.strip() for v in submatch.group(2).split(",")]
-                if constants.AMPHAROS_PLACE_HOLDER not in values:
-                    honey_trees[zoneName] = [values, honey_routes[key][1]]
+                if mons_no_or_zoneId == "mons_no":
+                    if constants.AMPHAROS_PLACE_HOLDER not in values:
+                        honey_trees[zoneName] = [values, honey_routes[key][1]]
+                elif mons_no_or_zoneId == "zoneId":
+                    if constants.AMPHAROS_PLACE_HOLDER not in values:
+                        honey_trees[str(zoneID)] = [values, honey_routes[key][1]]
 
     honey_trees = count_mons_in_honey_trees(honey_trees)
 
@@ -352,7 +356,7 @@ def check_for_incense(method, method_index):
         return constants.INCENSE
     return method
 
-def get_standard_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, method_index):
+def get_standard_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, method_index, mons_no_or_zoneId = "mons_no"):
     '''
     Iterates through the tracker routes
     '''
@@ -364,7 +368,8 @@ def get_standard_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, m
         new_method = check_for_incense(new_method, method_index)
         rate = get_route_rate(new_method, method_index, route_rates)
         encounter_list_order = {
-            "routeName": zoneName, 
+            "routeName": zoneName,
+            "pokemonName": monsName,
             "encounterType": new_method,
             "encounterRate": rate,
             "minLevel": minlevel,
@@ -373,14 +378,22 @@ def get_standard_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, m
             "zoneId": zoneID
         }
 
-        if monsNo not in encounters:
-            encounters[monsNo] = [encounter_list_order]
-        elif encounter_list_order not in encounters[monsNo]:
-            encounters[monsNo].append(encounter_list_order)
-        elif "Incense" not in new_method:
-            print("Something missing here?", method_index, monsNo, encounter_list_order)
+        if mons_no_or_zoneId == "mons_no":
+            if monsNo not in encounters:
+                encounters[monsNo] = [encounter_list_order]
+            elif encounter_list_order not in encounters[monsNo] and new_method not in ["Incense", "Surfing Incense"]:
+                encounters[monsNo].append(encounter_list_order)
+            elif "Incense" not in new_method:
+                print("Something missing here?", method_index, monsNo, encounter_list_order)
+        elif mons_no_or_zoneId == "zoneId":
+            if str(zoneID) not in encounters:
+                encounters[str(zoneID)] = [encounter_list_order]
+            elif encounter_list_order not in encounters[str(zoneID)] and new_method not in ["Incense", "Surfing Incense"]:
+                encounters[str(zoneID)].append(encounter_list_order)
+            elif "Incense" not in new_method:
+                print("Something missing here?", method_index, monsNo, encounter_list_order)
 
-def get_diff_form_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, method_index):
+def get_diff_form_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, method_index, mons_no_or_zoneId = "mons_no"):
     '''
     This decodes the Lumi Formula ((FormNo * 2^16) + MonsNo).
     After decoding it, it checks if there are any special mons like Female Indeedee
@@ -393,6 +406,7 @@ def get_diff_form_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, 
     formNo = monsNo//(2**16)
     reverse_lumi_formula_mon = monsNo - (formNo * (2**16))
     pokemon_id = get_form_pokemon_personal_id(reverse_lumi_formula_mon, formNo)
+    monsName = get_pokemon_name(monsNo)
 
     temp_form_no = formNo
     if isSpecialPokemon(get_pokemon_name(monsNo)):
@@ -403,7 +417,8 @@ def get_diff_form_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, 
         new_method = check_for_incense(new_method, method_index)
         rate = get_route_rate(new_method, method_index, route_rates)
         encounter_list_order = {
-            "routeName": zoneName, 
+            "routeName": zoneName,
+            "pokemonName": monsName,
             "encounterType": new_method,
             "encounterRate": rate,
             "minLevel": minlevel,
@@ -419,14 +434,22 @@ def get_diff_form_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, 
             bad_encounters.append(check)
             return
 
-        if pokemon_id not in encounters:
-            encounters[pokemon_id] = [encounter_list_order]
-        elif encounter_list_order not in encounters[pokemon_id]:
-            encounters[pokemon_id].append(encounter_list_order)
-        elif "Incense" not in new_method:
-            print("Something missing here?", method_index, pokemon_id, encounter_list_order)
+        if mons_no_or_zoneId == "mons_no":
+            if pokemon_id not in encounters:
+                encounters[pokemon_id] = [encounter_list_order]
+            elif encounter_list_order not in encounters[pokemon_id]:
+                encounters[pokemon_id].append(encounter_list_order)
+            elif "Incense" not in new_method:
+                print("Something missing here?", method_index, pokemon_id, encounter_list_order)
+        elif mons_no_or_zoneId == "zoneId":
+            if str(zoneID) not in encounters:
+                encounters[str(zoneID)] = [encounter_list_order]
+            elif encounter_list_order not in encounters[str(zoneID)]:
+                encounters[str(zoneID)].append(encounter_list_order)
+            elif "Incense" not in new_method:
+                print("Something missing here?", method_index, pokemon_id, encounter_list_order)
 
-def update_mons_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, method_index):
+def update_mons_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, method_index, mons_no_or_zoneId = "mons_no"):
     '''
     Branching paths based on MonsNo.
     2000 was chosen here as a buffer for any additional base forms in the game.
@@ -435,11 +458,11 @@ def update_mons_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, me
     if monsNo == 0:
         return
     if monsNo < 2000:
-        get_standard_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, method_index)
+        get_standard_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, method_index, mons_no_or_zoneId)
     else:
-        get_diff_form_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, method_index)
+        get_diff_form_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, method_index, mons_no_or_zoneId)
 
-def get_encounter_rates(route_mons, method, zoneID, encounters):
+def get_encounter_rates(route_mons, method, zoneID, encounters, mons_no_or_zoneId = "mons_no"):
     '''
     This is to start getting the encounter rates for each mon.
     route_mons is from each of the areas of the FieldEncountTable_d.json
@@ -456,9 +479,9 @@ def get_encounter_rates(route_mons, method, zoneID, encounters):
             continue
         if method == constants.RADAR and method_index != 3:
             continue
-        update_mons_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, method_index)
+        update_mons_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, method_index, mons_no_or_zoneId)
 
-def organize_honey_tree_list(mons_data):
+def organize_honey_tree_list(mons_data, mons_no_or_zoneId = "mons_no"):
     '''
     This organizes the list of what goes into the list for the honey tree locations
     The route is the location that the honey tree/pokemon is found
@@ -473,11 +496,15 @@ def organize_honey_tree_list(mons_data):
     minlevel = mons_data[2]
     maxlevel = mons_data[2]
     index = None
-    zoneID = find_zone_id(route)
-    if zoneID == None:
-        zoneID = int(zone_id_dict[route])
+    if mons_no_or_zoneId == "mons_no":
+        zoneID = find_zone_id(route)
+        if zoneID == None:
+            zoneID = int(zone_id_dict[route])
+    elif mons_no_or_zoneId == "zoneId":
+        zoneID = route
     return {
-        "routeName": route, 
+        "routeName": route,
+        "pokemonName": "",
         "encounterType": method,
         "encounterRate": rate,
         "minLevel": minlevel,
@@ -486,13 +513,13 @@ def organize_honey_tree_list(mons_data):
         "zoneId": zoneID
     }
 
-def get_honey_tree_encounter_rates(rates_list):
+def get_honey_tree_encounter_rates(rates_list, mons_no_or_zoneId = "mons_no"):
     '''
     Requires the honey_tree_encounter_data function and the list of all encounter rates
     This iterates through each of the mons in the honey_encounter_data and adds their rates to the rates list
     There is a check that ensures that the monsName is correctly spelled for the pokedex.
     '''
-    honey_encounter_data = honey_tree_encounter_data()
+    honey_encounter_data = honey_tree_encounter_data(mons_no_or_zoneId)
 
     for mon in honey_encounter_data.keys():
         for mons_data in honey_encounter_data[mon]:
@@ -503,21 +530,30 @@ def get_honey_tree_encounter_rates(rates_list):
                 if monsName == "Cherrim":
                     monsName = "Cherrim Overcast Form"
             monsNo = get_pokemon_id_from_name(monsName)
+            zoneName = mons_data[0]
 
-            encounter_list_order = organize_honey_tree_list(mons_data)
-            if monsNo not in rates_list:
-                rates_list[monsNo] = [encounter_list_order]
-            elif encounter_list_order not in rates_list[monsNo]:
-                rates_list[monsNo].append(encounter_list_order)
-            elif method != "Incense" or method != "Surfing Incense":
-                print("Something missing here?", method_index, monsNo, encounter_list_order)
+            encounter_list_order = organize_honey_tree_list(mons_data, mons_no_or_zoneId)
+            encounter_list_order['pokemonName'] = monsName
+            if mons_no_or_zoneId == "mons_no":
+                if monsNo not in rates_list:
+                    rates_list[monsNo] = [encounter_list_order]
+                elif encounter_list_order not in rates_list[monsNo]:
+                    rates_list[monsNo].append(encounter_list_order)
+                elif method != "Incense" or method != "Surfing Incense":
+                    print("Something missing here?", method_index, monsNo, encounter_list_order)
+            elif mons_no_or_zoneId == "zoneId":
+                if zoneName not in rates_list:
+                    rates_list[zoneName] = [encounter_list_order]
+                elif encounter_list_order not in rates_list[zoneName]:
+                    rates_list[zoneName].append(encounter_list_order)
 
-def get_trophy_garden_encounter_rates(trophy_garden_encounters, rates_list):
+def get_trophy_garden_encounter_rates(trophy_garden_encounters, rates_list, mons_no_or_zoneId = "mons_no"):
     '''
     This is for adding the trophy garden encounter rates for each route
     '''
     for mon in trophy_garden_encounters:
-        zoneName = get_zone_name(297) # This is the zoneID for Trophy Garden
+        zoneId = 297
+        zoneName = get_zone_name(zoneId) # This is the zoneID for Trophy Garden
         method = constants.TROPHY_GARDEN
         rate = constants.TROPHY_GARDEN_RATE
         minlevel = constants.TROPHY_GARDEN_LEVEL
@@ -526,23 +562,32 @@ def get_trophy_garden_encounter_rates(trophy_garden_encounters, rates_list):
         monsNo = mon['monsNo']
         monsName = get_pokemon_name(monsNo)
         encounter_list_order = {
-            "routeName": zoneName, 
+            "routeName": zoneName,
+            "pokemonName": monsName,
             "encounterType": method,
             "encounterRate": rate,
             "minLevel": minlevel,
             "maxLevel": maxlevel,
             "encounterTypeIndex": index,
-            "zoneId": 297
+            "zoneId": zoneId
         }
 
-        if monsNo not in rates_list:
-            rates_list[monsNo] = [encounter_list_order]
-        elif encounter_list_order not in rates_list[monsNo]:
-            rates_list[monsNo].append(encounter_list_order)
-        elif method != "Incense" or method != "Surfing Incense":
-            print("Something missing here?", method_index, monsNo, encounter_list_order)
+        if mons_no_or_zoneId == "mons_no":
+            if monsNo not in rates_list:
+                rates_list[monsNo] = [encounter_list_order]
+            elif encounter_list_order not in rates_list[monsNo]:
+                rates_list[monsNo].append(encounter_list_order)
+            elif method != "Incense" or method != "Surfing Incense":
+                print("Something missing here?", monsNo, encounter_list_order)
+        elif mons_no_or_zoneId == "zoneId":
+            if str(zoneId) not in rates_list:
+                rates_list[str(zoneId)] = [encounter_list_order]
+            elif encounter_list_order not in rates_list[str(zoneId)]:
+                rates_list[str(zoneId)].append(encounter_list_order)
+            elif method != "Incense" or method != "Surfing Incense":
+                print("Something missing here?", monsNo, encounter_list_order)
 
-def getEncounterData():
+def getEncounterData(mons_no_or_zoneId = "mons_no"):
     '''
     This is the main function to get all encounter data
     This includes each pokemon's location data and each route's list of pokemon
@@ -558,7 +603,7 @@ def getEncounterData():
                 continue
             if type(area[method][0]) != dict:
                 continue
-            get_encounter_rates(area[method], method, zoneID, rates_list)
+            get_encounter_rates(area[method], method, zoneID, rates_list, mons_no_or_zoneId)
             for method_index, mon in enumerate(area[method]):
                 monsNo = mon['monsNo']
                 check_mon_route_list.append([monsNo, method, method_index, zoneID])
@@ -571,13 +616,13 @@ def getEncounterData():
         monsNo = mon['monsNo']
         encounter_list[constants.TROPHY_GARDEN_TRACKER_VAR].append(get_pokemon_name(monsNo))
 
-    get_trophy_garden_encounter_rates(encounter_data[constants.TROPHY_GARDEN_NAME], rates_list)
+    get_trophy_garden_encounter_rates(encounter_data[constants.TROPHY_GARDEN_NAME], rates_list, mons_no_or_zoneId)
 
     ## Add Marsh Random Encounters percent chance is 10%
 
     ##This is for adding all of the Honey Tree encounters to the list
     get_honey_tree_mons(encounter_list)
-    get_honey_tree_encounter_rates(rates_list)
+    get_honey_tree_encounter_rates(rates_list, mons_no_or_zoneId)
 
     for key in encounter_list:
         encounter_list[key] = sorted(list(set(encounter_list[key])))
@@ -586,15 +631,19 @@ def getEncounterData():
     my_keys.sort(key = lambda x: int(x.split('-')[1]))
     sorted_encounters = {i: encounter_list[i] for i in my_keys}
     sorted_rates = sort_dict_by_keys(rates_list)
-    with open(os.path.join(debug_file_path, 'encounter_locations.json'), 'w') as output:
-        output.write(json.dumps(sorted_rates, indent=2))
+    if mons_no_or_zoneId == "mons_no":
+        with open(os.path.join(debug_file_path, 'pokemon_locations.json'), 'w') as output:
+            output.write(json.dumps(sorted_rates, indent=2))
+    elif mons_no_or_zoneId == "zoneId":
+        with open(os.path.join(debug_file_path, 'encounter_locations.json'), 'w') as output:
+            output.write(json.dumps(sorted_rates, indent=2))
     with open(os.path.join(debug_file_path, 'bad_encounters.json'), 'w') as output:
         output.write(json.dumps(bad_encounters, default=tuple, indent=2))
     with open(os.path.join(output_file_path, 'Encounter_output.json'), 'w') as output:
         output.write(json.dumps(sorted_encounters, indent=2))
 
 def writeEncounterDocData():
-    with open(os.path.join(debug_file_path, 'encounter_locations.json')) as f:
+    with open(os.path.join(debug_file_path, 'pokemon_locations.json')) as f:
         data = json.load(f)
     largest_number = ["", 0]
     with open(os.path.join(debug_file_path, 'pokemon_locations.txt'), 'w') as output:
@@ -675,7 +724,8 @@ if __name__ == "__main__":
 
     mid_time = time.time()
     print("Middle Execution time:", mid_time - start_time, "seconds")
-    getEncounterData()
+    getEncounterData("mons_no")
+    getEncounterData("zoneId")
     writeEncounterDocData()
 
     end_time = time.time()
