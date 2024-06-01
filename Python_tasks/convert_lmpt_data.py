@@ -140,6 +140,22 @@ def sort_dicts_by_keys_and_list(dicts_list, sort_key1, sort_key1_order):
     """
     return sorted(dicts_list, key=lambda x: sort_key1_order.index(x[sort_key1]))
 
+def sort_static_locations_by_route_name():
+    route_data = {}
+
+    for pokemon_name, encounters in static_encounters.items():
+        for encounter in encounters:
+            zoneId = encounter['zoneId']
+            if zoneId not in route_data:
+                route_data[zoneId] = []
+            encounter_with_pokemon = encounter.copy()
+            encounter_with_pokemon['pokemonName'] = pokemon_name
+            route_data[zoneId].append(encounter_with_pokemon)
+
+    with open(os.path.join(debug_file_path, 'static_area_locations.json'), 'w') as output:
+        output.write(json.dumps(route_data, indent=2))
+
+    pass
 def getTrainerData(gymLeaderList):
     '''
     This is a placeholder for the first 13 trainers for the tracker.
@@ -718,6 +734,7 @@ if __name__ == "__main__":
     area_names = full_data['area_names']
     display_names = full_data['area_display_names']
     map_info = full_data['map_info']
+    static_encounters = full_data['static_encounters']
 
     diff_forms, NAME_MAP = get_diff_form_dictionary()
     getPokedexInfo()
@@ -728,6 +745,7 @@ if __name__ == "__main__":
     getEncounterData("zoneId")
     writeEncounterDocData()
 
+    sort_static_locations_by_route_name()
     end_time = time.time()
     execution_time = end_time - start_time
     print("Execution time:", execution_time, "seconds")

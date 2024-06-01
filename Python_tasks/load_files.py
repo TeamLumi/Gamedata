@@ -58,9 +58,10 @@ def load_data():
         # romfs/Data/StreamingAssets/AssetAssistant/Dpr/masterdatas
         'raw_trainer_data': 'TrainerTable.json',
 
-        # These last two are custom files
+        # These last ones are custom files
         'tutor_moves': 'tutorMoves.json',
         'smogon_moves': 'moves.json',
+        'static_encounters': 'static_pokemon_locations.json',
     }
     resource_file_paths = {
         # Custom files created from various scripts
