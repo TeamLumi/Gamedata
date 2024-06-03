@@ -155,7 +155,6 @@ def sort_static_locations_by_route_name():
     with open(os.path.join(debug_file_path, 'static_area_locations.json'), 'w') as output:
         output.write(json.dumps(route_data, indent=2))
 
-    pass
 def getTrainerData(gymLeaderList):
     '''
     This is a placeholder for the first 13 trainers for the tracker.
@@ -397,14 +396,14 @@ def get_standard_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, m
         if mons_no_or_zoneId == "mons_no":
             if monsNo not in encounters:
                 encounters[monsNo] = [encounter_list_order]
-            elif encounter_list_order not in encounters[monsNo] and new_method not in ["Incense", "Surfing Incense"]:
+            elif encounter_list_order not in encounters[monsNo]:
                 encounters[monsNo].append(encounter_list_order)
             elif "Incense" not in new_method:
                 print("Something missing here?", method_index, monsNo, encounter_list_order)
         elif mons_no_or_zoneId == "zoneId":
             if str(zoneID) not in encounters:
                 encounters[str(zoneID)] = [encounter_list_order]
-            elif encounter_list_order not in encounters[str(zoneID)] and new_method not in ["Incense", "Surfing Incense"]:
+            elif encounter_list_order not in encounters[str(zoneID)]:
                 encounters[str(zoneID)].append(encounter_list_order)
             elif "Incense" not in new_method:
                 print("Something missing here?", method_index, monsNo, encounter_list_order)

@@ -1309,16 +1309,6 @@
       "pokemonName": "Aerodactyl"
     },
     {
-      "routeName": "Ravaged Path",
-      "encounterType": "Static",
-      "encounterRate": "100%",
-      "minLevel": 50,
-      "maxLevel": 50,
-      "encounterTypeIndex": 0,
-      "zoneId": 38,
-      "pokemonName": "Crystal Onix"
-    },
-    {
       "routeName": "Oreburgh City",
       "encounterType": "Trade",
       "encounterRate": "100%",
@@ -1328,6 +1318,18 @@
       "zoneId": 38,
       "link": "https://luminescent.team/docs/special-events/trade#ponyta",
       "pokemonName": "Spheal"
+    }
+  ],
+  "252": [
+    {
+      "routeName": "Ravaged Path",
+      "encounterType": "Static",
+      "encounterRate": "100%",
+      "minLevel": 50,
+      "maxLevel": 50,
+      "encounterTypeIndex": 0,
+      "zoneId": 252,
+      "pokemonName": "Crystal Onix"
     }
   ],
   "438": [
@@ -1400,7 +1402,7 @@
       "pokemonName": "Gabite"
     }
   ],
-  "311": [
+  "306": [
     {
       "routeName": "Old Chateau",
       "encounterType": "Static",
@@ -1408,7 +1410,7 @@
       "minLevel": 20,
       "maxLevel": 20,
       "encounterTypeIndex": 0,
-      "zoneId": 311,
+      "zoneId": 306,
       "pokemonName": "Stitched Gengar"
     },
     {
@@ -1418,9 +1420,11 @@
       "minLevel": 20,
       "maxLevel": 20,
       "encounterTypeIndex": 0,
-      "zoneId": 311,
+      "zoneId": 306,
       "pokemonName": "Rotom"
-    },
+    }
+  ],
+  "367": [
     {
       "routeName": "Route 209",
       "encounterType": "Static",
@@ -1428,7 +1432,7 @@
       "minLevel": 30,
       "maxLevel": 30,
       "encounterTypeIndex": 0,
-      "zoneId": 311,
+      "zoneId": 367,
       "pokemonName": "Spiritomb"
     }
   ],
