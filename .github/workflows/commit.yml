@@ -34,7 +34,7 @@ jobs:
         user_name: 'github-actions-bot'
         commit_message: 'Updating 2.0 gamedata files'
 
-    - name: Pushes test file
+    - name: Pushes test files
       uses: TeamLumi/Gamedata@main
       env:
         API_TOKEN_GITHUB: ${{ secrets.DENMARK_GAMEDATA_AUTOMATION_TOKEN }}
