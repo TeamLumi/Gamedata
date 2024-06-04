@@ -24,7 +24,7 @@ jobs:
     - name: Pushes Input Files
       uses: TeamLumi/Gamedata@main
       env:
-        API_TOKEN_GITHUB: ${{ secrets.DENMARK_GAMEDATA_AUTOMATION_TOKEN }}
+        API_TOKEN_GITHUB: ${{ secrets.LumiAccess }}
       with:
         source_file: 'input/.'
         destination_branch: 'master'
@@ -37,7 +37,7 @@ jobs:
     - name: Pushes test file
       uses: TeamLumi/Gamedata@main
       env:
-        API_TOKEN_GITHUB: ${{ secrets.DENMARK_GAMEDATA_AUTOMATION_TOKEN }}
+        API_TOKEN_GITHUB: ${{ secrets.LumiAccess }}
       with:
         source_file: 'Python_tasks/output/.'
         destination_branch: 'master'
