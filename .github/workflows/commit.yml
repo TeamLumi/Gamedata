@@ -82,25 +82,6 @@ jobs:
         user_name: 'github-actions-bot'
         commit_message: 'Updating 3.0 gamedata files'
   
-  update-calc:
-    runs-on: ubuntu-latest
-    steps:
-    - name: Checkout
-      uses: actions/checkout@v2
-
-    - name: Pushes test file
-      uses: TeamLumi/Gamedata@main
-      env:
-        API_TOKEN_GITHUB: ${{ secrets.DENMARK_AUTOMATION_TOKEN }}
-      with:
-        source_file: 'input'
-        destination_branch: 'master'
-        destination_repo: 'Denmark14/lumi-calc'
-        destination_folder: './'
-        user_email: '<support+actions@github.com>'
-        user_name: 'github-actions-bot'
-        commit_message: 'Updating gamedata files'
-
   update-website-main:
     runs-on: ubuntu-latest
     steps:
@@ -135,7 +116,7 @@ jobs:
     - name: Pushes test file
       uses: TeamLumi/Gamedata@main
       env:
-        API_TOKEN_GITHUB: ${{ secrets.DENMARK_LUMIBOT_TOKEN }}
+        API_TOKEN_GITHUB: ${{ secrets.DENMARK_AUTOMATION_TOKEN }}
       with:
         source_file: '3.0Input/.'
         destination_branch: 'update/3.0Dex'
