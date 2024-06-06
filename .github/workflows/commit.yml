@@ -125,3 +125,28 @@ jobs:
         user_email: '<support+actions@github.com>'
         user_name: 'github-actions-bot'
         commit_message: 'Updating 3.0 gamedata files'
+
+  update-dev-website:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v2
+
+    - name: Run 2.0 Pokedex Script
+      run: python3 Python_tasks/pokedex_generator.py 2.0
+
+    - name: Run Lumi Data Script
+      run: python3 Python_tasks/convert_lmpt_data.py 2.0
+
+    - name: Pushes test file
+      uses: TeamLumi/Gamedata@main
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.DENMARK_LUMIBOT_TOKEN }}
+      with:
+        source_file: 'input/.'
+        destination_branch: 'main'
+        destination_repo: 'TeamLumi/luminescent-team-dev'
+        destination_folder: './__gamedata'
+        user_email: '<support+actions@github.com>'
+        user_name: 'github-actions-bot'
+        commit_message: 'Updating 2.0 gamedata files'
