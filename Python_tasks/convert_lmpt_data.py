@@ -718,6 +718,9 @@ def writeEncounterDocData():
 
 if __name__ != "__main__":
     full_data = load_data()
+    area_names = full_data['area_names']
+    display_names = full_data['area_display_names']
+    map_info = full_data['map_info']
     trainer_data = full_data["raw_trainer_data"]
 
 if __name__ == "__main__":

@@ -5,7 +5,7 @@ import re
 import time
 
 import constants
-from convert_lmpt_data import getTrainerData
+from convert_lmpt_data import getTrainerData, find_zone_id
 from data_checks import get_average_time
 from load_files import load_data
 from pokemonUtils import get_pokemon_from_trainer_info, get_pokemon_name
@@ -257,7 +257,6 @@ def write_mapper_docs(trainers_list):
     all_trainers = {}
 
     for zone in trainers_list.keys():
-        zone_trainers = []
         index_dict = {
             "Grunt": 0,
             "Lucas": 0,
@@ -287,9 +286,19 @@ def write_mapper_docs(trainers_list):
                 "zoneId": zone_id,
                 "trainerType": trainer_type
             }
-            zone_trainers.append(zone_trainer)
-        zoneId = zone_trainers[0]["zoneId"]
-        all_trainers[zoneId] = zone_trainers
+            if zone_id not in constants.EXCLUSIVE_ZONE_IDS:
+                areaName, area_display_name = get_map_info(zone_id)
+                generalized_zone_id = find_zone_id(areaName)
+                if generalized_zone_id not in all_trainers.keys():
+                    all_trainers[generalized_zone_id] = [zone_trainer]
+                else:
+                    all_trainers[generalized_zone_id].append(zone_trainer)
+            else:
+                if zone_id not in all_trainers.keys():
+                    all_trainers[zone_id] = [zone_trainer]
+                else:
+                    all_trainers[zone_id].append(zone_trainer)
+
     return all_trainers
 
 def get_trainer_doc_data():

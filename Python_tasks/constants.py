@@ -559,3 +559,165 @@ DOCS_ZONE_ORDER = [
     "Stark Mountain - Interior",
     "Sandgem Town",
 ]
+
+# This will make sure that defined locations in the mapper won't get grouped together incorrectly
+EXCLUSIVE_ZONE_IDS = [
+    0, # Jubilife City
+    355, # Route 202
+    429, # Sandgem Town
+    346, # Verity Lakefront
+    326, # Lake Verity Cavern
+    328, # Lake Valor Cavern
+    331, # Lake Acuity Cavern
+    265, # Turnback Cave
+    211, # Mt. Coronet 6F
+    216, # Spear Pillar
+    624, # Distortion Room
+    354, # Route 201
+    422, # Twinleaf Town
+    323, # Lake Verity
+    400, # Route 218
+    24, # Canalave City
+    446, # Solaceon Town
+    225, # Solaceon Ruins
+    368, # Lost Tower
+    367, # Route 209
+    252, # Ravaged Path
+    358, # Route 204 (North)
+    357, # Route 204 (South)
+    438, # Floaroma Town
+    253, # Floaroma Meadow
+    201, # Fuego Ironworks (Outside)
+    202, # Fuego Ironworks (Inside)
+    359, # Route 205 South
+    361, # Route 205 North
+    197, # Valley Windworks (Outside)
+    198, # Valley Windworks (Inside)
+    200, # Eterna Forest
+    199, # Eterna Forest (Outside)
+    306, # Old Chateau (Lobby)
+    307, # Old Chateau (Dining Room)
+    308, # Old Chateau (2F Side Rooms)
+    309, # Old Chateau (2F Hallway)
+    310, # Old Chateau (Room 1 Hallway)
+    311, # Old Chateau (Room 2 Hallway)
+    312, # Old Chateau (Room 3 Hallway)
+    313, # Old Chateau (Room 4 Hallway)
+    314, # Old Chateau (Room 5 Hallway)
+    54, # Eterna City
+    62, # T.G. Building (1F)
+    63, # T.G. Building (2F)
+    64, # T.G. Building (3F)
+    65, # T.G. Building (4F)
+    362, # Route 206
+    292, # Wayward Cave
+    293, # Wayward Cave (Secret Area)
+    364, # Route 207
+    356, # Route 203
+    255, # Oreburgh Gate (1F)
+    256, # Oreburgh Gate (B1F)
+    38, # Oreburgh City
+    195, # Oreburgh Mine (B1F)
+    196, # Oreburgh Mine (B2F)
+    250, # Renegade Park
+    404, # Route 221
+    485, # Route 220
+    403, # Route 219
+    365, # Route 208
+    74, # Hearthome City
+    96, # Amity Square
+    377, # Route 211 (West)
+    379, # Route 212 (North)
+    383, # Route 212 (South)
+    380, # Pokémon Mansion
+    205, # Mt. Coronet 3F
+    204, # Mt. Coronet 2F
+    203, # Mt. Coronet Route 207
+    213, # Mt. Coronet 216 Entrance
+    215, # Mt. Coronet B1F
+    214, # Mt. Coronet 211 Entrance
+    212, # Mt. Coronet Tunnel To 211 Entrance
+    208, # Mt. Coronet 4F
+    207, # Mt. Coronet Summit
+    999, # Regice Ruins
+    210, # Mt. Coronet 5F
+    209, # Mt. Coronet 4F To Spear Pillar
+    206, # Mt. Coronet Snow Area
+    378, # Route 211 (East)
+    456, # Celestic Town
+    375, # Route 210 (North)
+    373, # Route 210 (South)
+    395, # Route 216
+    397, # Route 217
+    351, # Acuity Lakefront
+    330, # Lake Acuity
+    286, # Snowpoint Temple (1F)
+    287, # Snowpoint Temple (B1F)
+    288, # Snowpoint Temple (B2F)
+    289, # Snowpoint Temple (B3F)
+    290, # Snowpoint Temple (B4F)
+    291, # Snowpoint Temple (B5F)
+    159, # Snowpoint City
+    394, # Route 215
+    315, # T.G. H.Q. (1F)
+    316, # T.G. H.Q. (2F)
+    317, # T.G. H.Q. (3F)
+    318, # T.G. H.Q. (4F)
+    319, # T.G. H.Q. (B1F)
+    320, # T.G. H.Q. (B2F)
+    315, # T.G. H.Q. Lake Trio
+    315, # T.G. H.Q. Hall To Lake Trio
+    123, # Veilstone City
+    392, # Route 214
+    296, # Maniac Tunnel
+    352, # Spring Path
+    263, # Sendoff Spring
+    998, # Distortion World
+    327, # Lake Valor
+    385, # Route 213
+    347, # Valor Lakefront
+    219, # The Great Marsh (Area 1-2)
+    221, # The Great Marsh (Area 3-4)
+    223, # The Great Marsh (Area 5-6)
+    110, # Pastoria City
+    407, # Route 222
+    486, # Route 223
+    142, # Sunyshore City
+    169, # Pokémon League (Pre-Victory Road)
+    411, # Route 224
+    244, # Victory Road (1F)
+    245, # Victory Road (2F)
+    246, # Victory Road (B1F)
+    247, # Victory Road (1F Back Marley)
+    248, # Victory Road (1F Back Entrance)
+    249, # Victory Road (1F Back 214 Exit)
+    167, # Pokémon League (Outside)
+    490, # Seabreak Path
+    285, # Flower Paradise
+    336, # Battle Tower
+    186, # Fight Area
+    412, # Route 225
+    465, # Survival Area
+    472, # Battle House
+    487, # Route 226
+    414, # Route 227
+    416, # Route 228
+    997, # Regirock Ruins
+    420, # Route 229
+    489, # Route 230
+    473, # Resort Area
+    259, # Stark Mountain (Outside)
+    260, # Stark Mountain (Entrance)
+    261, # Stark Mountain (Interior)
+    262, # Stark Mountain (Heatran Room)
+    996, # Registeel Ruins
+    298, # Iron Island (Outside)
+    299, # Iron Island (1F)
+    300, # Iron Island (B1F Left)
+    301, # Iron Island (B1F Right)
+    302, # Iron Island (B2F Right)
+    303, # Iron Island (B2F Left)
+    304, # Iron Island (B3F)
+    257, # Fullmoon Island
+    332, # Newmoon Island
+]
