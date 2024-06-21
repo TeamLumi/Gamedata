@@ -289,8 +289,7 @@ def write_mapper_docs(trainers_list):
             }
             zone_trainers.append(zone_trainer)
         zoneId = zone_trainers[0]["zoneId"]
-        areaName, area_display_name = get_map_info(zoneId)
-        all_trainers[areaName] = zone_trainers
+        all_trainers[zoneId] = zone_trainers
     return all_trainers
 
 def get_trainer_doc_data():

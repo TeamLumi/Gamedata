@@ -67,8 +67,8 @@ Docile
 Insomnia
 
 None
+Peck
 Tackle
-Foresight
 Echoed Voice
 Hypnosis
 25/25/25/25/25/25
@@ -488,10 +488,10 @@ Bashful
 Guts
 
 None
+Low Kick
 Focus Energy
 Karate Chop
 Low Sweep
-Foresight
 25/25/25/25/25/25
 0/0/0/0/0/0
 
@@ -520,10 +520,10 @@ Bashful
 Guts
 
 None
+Low Kick
 Focus Energy
 Karate Chop
 Low Sweep
-Foresight
 25/25/25/25/25/25
 0/0/0/0/0/0
 
@@ -1398,10 +1398,10 @@ Docile
 Guts
 
 None
+Low Kick
 Focus Energy
 Karate Chop
 Low Sweep
-Foresight
 25/25/25/25/25/25
 0/0/0/0/0/0
 
@@ -2135,7 +2135,7 @@ Iron Head
 Drill Run
 Stealth Rock
 31/31/31/31/31/31
-0/0/0/0/0/0
+0/252/0/0/4/252
 
 Aggron
 88
@@ -2148,7 +2148,7 @@ Aqua Tail
 Iron Tail
 Thunder Wave
 31/31/31/31/31/31
-0/0/0/0/0/0
+0/252/0/0/4/252
 
 Aerodactyl
 88
@@ -2161,7 +2161,7 @@ Stone Edge
 Crunch
 Fire Fang
 31/31/31/31/31/31
-0/0/0/0/0/0
+0/252/0/0/4/252
 
 Cradily
 88
@@ -2174,7 +2174,7 @@ Rock Slide
 Toxic
 Recover
 31/31/31/31/31/31
-0/0/0/0/0/0
+252/0/132/0/120/0
 
 Armaldo
 88
@@ -2187,7 +2187,7 @@ X-Scissor
 Swords Dance
 Aqua Jet
 31/31/31/31/31/31
-0/0/0/0/0/0
+0/252/0/0/4/252
 
 Metagross
 88
@@ -2200,7 +2200,7 @@ Zen Headbutt
 Earthquake
 Ice Punch
 31/31/31/31/31/31
-0/0/0/0/0/0
+0/252/4/0/0/252
 
 
 148
@@ -2240,10 +2240,10 @@ Hardy
 Guts
 
 None
+Low Kick
 Focus Energy
 Karate Chop
 Low Sweep
-Foresight
 25/25/25/25/25/25
 0/0/0/0/0/0
 
@@ -2272,7 +2272,7 @@ Quirky
 Pickup
 
 None
-Odor Sleuth
+Tackle
 Mud-Slap
 Headbutt
 Rollout
@@ -2399,7 +2399,7 @@ Stealth Rock
 Rock Tomb
 Sandstorm
 25/25/25/25/25/25
-4/252/0/0/0/0
+4/252/252/0/0/0
 
 Lunatone
 15
@@ -2412,7 +2412,7 @@ Hypnosis
 Confusion
 Sandstorm
 25/25/25/25/25/25
-0/4/252/0/0/0
+0/4/252/0/252/0
 
 Kabuto
 15
@@ -2425,7 +2425,7 @@ Knock Off
 Rapid Spin
 Confuse Ray
 25/25/25/25/25/25
-4/252/0/0/0/0
+4/252/0/0/0/252
 
 Larvitar
 15
@@ -2438,7 +2438,7 @@ Rock Tomb
 Taunt
 Brick Break
 25/25/25/25/25/25
-0/0/252/0/4/0
+252/0/252/0/4/0
 
 Lileep
 15
@@ -2451,7 +2451,7 @@ Acid
 Confuse Ray
 Ancient Power
 25/0/25/25/25/25
-252/0/0/0/4/0
+252/0/252/0/4/0
 
 Cranidos
 16
@@ -2483,7 +2483,7 @@ Rock Throw
 Wrap
 Rollout
 25/25/25/25/25/25
-0/252/0/0/0/0
+4/252/0/0/252/0
 
 Anorith
 15
@@ -2496,7 +2496,7 @@ Smack Down
 Aqua Jet
 Scratch
 25/25/25/25/25/25
-0/236/0/0/36/0
+0/252/0/0/252/4
 
 Lunatone
 15
@@ -2509,7 +2509,7 @@ Hypnosis
 Confusion
 Sandstorm
 25/25/25/25/25/25
-0/4/252/0/0/0
+0/4/252/0/252/0
 
 Lileep
 15
@@ -2535,7 +2535,7 @@ Brick Break
 Rollout
 Defense Curl
 25/25/25/25/25/25
-0/252/0/0/236/12
+0/252/0/0/244/12
 
 Cranidos
 16
@@ -2580,7 +2580,7 @@ Smack Down
 Aqua Jet
 Scratch
 25/25/25/25/25/25
-0/236/0/0/36/236
+0/252/0/0/4/252
 
 Nosepass
 15
@@ -2593,7 +2593,7 @@ Shock Wave
 Rock Throw
 Sandstorm
 25/25/25/25/25/25
-0/0/236/0/0/12
+0/0/252/0/252/4
 
 Rhyhorn
 15
@@ -2606,7 +2606,7 @@ Stomp
 Smack Down
 Stealth Rock
 25/25/25/25/25/25
-12/236/0/0/0/0
+252/252/4/0/0/0
 
 Omanyte
 15
@@ -2619,7 +2619,7 @@ Aurora Beam
 Knock Off
 Bite
 25/25/25/25/25/25
-0/0/0/252/0/0
+0/0/4/252/0/252
 
 Cranidos
 16
@@ -2664,7 +2664,7 @@ Fire Spin
 Confusion
 Reflect
 25/25/25/25/25/25
-0/236/0/24/0/0
+0/252/252/4/0/0
 
 Rhyhorn
 15
@@ -2677,7 +2677,7 @@ Stomp
 Smack Down
 Stealth Rock
 25/25/25/25/25/25
-12/236/0/0/0/0
+4/252/0/0/252/0
 
 Larvitar
 15
@@ -2690,7 +2690,7 @@ Rock Tomb
 Taunt
 Brick Break
 25/25/25/25/25/25
-0/0/252/0/4/0
+0/0/252/0/252/4
 
 Geodude
 15
@@ -2703,7 +2703,7 @@ Fire Punch
 Rock Tomb
 Thunder Punch
 25/25/25/25/25/25
-4/252/0/0/0/0
+4/252/0/0/252/0
 
 Relicanth
 15
@@ -2716,7 +2716,7 @@ Dive
 Ancient Power
 Tackle
 25/25/25/25/25/25
-20/252/0/0/0/0
+4/252/0/0/252/0
 
 
 891
@@ -2845,7 +2845,7 @@ Stockpile
 Recover
 Toxic
 31/0/31/31/31/31
-248/0/0/0/8/252
+248/0/0/8/252/0
 
 Relicanth
 100
@@ -2871,7 +2871,7 @@ Body Press
 Rest
 Sleep Talk
 31/0/31/31/31/31
-0/0/0/0/0/0
+252/0/252/0/4/0
 
 Rampardos
 100
@@ -2903,7 +2903,7 @@ Earthquake
 Crunch
 Thunder Wave
 31/31/31/31/31/31
-252/4/0/0/0/252
+252/4/0/0/252/0
 
 Corsola
 100
@@ -2916,7 +2916,7 @@ Recover
 Sucker Punch
 Protect
 31/31/31/31/31/31
-252/4/0/0/0/252
+252/4/0/0/252/0
 
 Glalie
 100
@@ -3226,9 +3226,9 @@ Hardy
 Run Away
 
 None
+Sand Attack
 Bite
 Mud-Slap
-Odor Sleuth
 Assurance
 25/25/25/25/25/25
 0/0/0/0/0/0
@@ -3637,8 +3637,8 @@ Serious
 Guts
 
 None
+Karate Chop
 Low Sweep
-Foresight
 Brick Break
 Seismic Toss
 25/25/25/25/25/25
@@ -3842,7 +3842,7 @@ Serious
 Thick Fat
 
 None
-Odor Sleuth
+Growl
 Psybeam
 Psych Up
 Confuse Ray
@@ -4359,7 +4359,7 @@ Flamethrower
 Destiny Bond
 Shadow Ball
 31/31/31/31/31/31
-0/0/0/252/252/4
+0/0/0/252/4/252
 
 Weavile
 77
@@ -4372,7 +4372,7 @@ Low Kick
 Aerial Ace
 Fake Out
 31/31/31/31/31/31
-0/252/0/252/0/4
+0/252/0/0/4/252
 
 Shiftry
 78
@@ -4385,7 +4385,7 @@ Dark Pulse
 Hurricane
 Focus Blast
 31/31/31/31/31/31
-0/0/0/252/252/4
+0/0/0/252/4/252
 
 Sharpedo
 78
@@ -4398,7 +4398,7 @@ Crunch
 Ice Fang
 Zen Headbutt
 31/31/31/31/31/31
-0/252/0/252/0/4
+0/252/0/0/4/252
 
 Spiritomb
 78
@@ -4411,7 +4411,7 @@ Psychic
 Hypnosis
 Double Team
 31/31/31/31/31/31
-252/0/0/0/252/4
+252/0/0/252/4/0
 
 Tyranitar
 80
@@ -4424,7 +4424,7 @@ Crunch
 Stone Edge
 Avalanche
 31/31/31/31/31/31
-252/252/0/0/0/4
+252/252/0/0/4/0
 
 
 1007
@@ -4443,7 +4443,7 @@ Surf
 Ice Beam
 Toxic
 31/31/31/31/31/31
-0/0/0/252/252/4
+0/0/0/252/4/252
 
 Gengar
 77
@@ -4456,7 +4456,7 @@ Shadow Ball
 Hex
 Dazzling Gleam
 31/31/31/31/31/31
-0/0/0/252/252/4
+0/0/0/252/4/252
 
 Skuntank
 78
@@ -4469,7 +4469,7 @@ Sucker Punch
 Flamethrower
 Protect
 31/31/31/31/31/31
-0/252/0/252/4/0
+0/252/0/4/0/252
 
 Toxicroak
 78
@@ -4482,7 +4482,7 @@ Drain Punch
 Sucker Punch
 Fake Out
 31/31/31/31/31/31
-0/248/0/252/0/8
+0/248/0/0/8/252
 
 Venusaur
 78
@@ -4495,7 +4495,7 @@ Earth Power
 Leech Seed
 Protect
 31/31/31/31/31/31
-252/0/0/0/4/252
+252/0/0/4/252/0
 
 Crobat
 80
@@ -4508,7 +4508,7 @@ Leech Life
 U-turn
 Poison Fang
 31/31/31/31/31/31
-0/252/0/252/0/4
+0/252/0/0/4/252
 
 
 1010
@@ -4764,7 +4764,7 @@ U-turn
 
 
 980
-Ace Trainer Fire Master Trainer Tristan
+Ace Trainer Fire Master Trainer Edmund
 Level Cap:
 Format: Single Battle
 
@@ -4783,7 +4783,7 @@ Shell Smash
 
 
 981
-Beauty Water Master Trainer Tristan
+Beauty Water Master Trainer Tessa
 Level Cap:
 Format: Single Battle
 
@@ -4802,7 +4802,7 @@ Hydro Pump
 
 
 982
-Guitarist Electric Master Trainer Tristan
+Guitarist Electric Master Trainer Stephan
 Level Cap:
 Format: Single Battle
 
@@ -4821,7 +4821,7 @@ Earthquake
 
 
 983
-Lass Grass Master Trainer Tristan
+Lass Grass Master Trainer Sal
 Level Cap:
 Format: Single Battle
 
@@ -4840,7 +4840,7 @@ Sunny Day
 
 
 984
-Ace Trainer Ice Master Trainer Tristan
+Ace Trainer Ice Master Trainer Rosalyne
 Level Cap:
 Format: Single Battle
 
@@ -4859,7 +4859,7 @@ Night Slash
 
 
 985
-Black Belt Fighting Master Trainer Tristan
+Black Belt Fighting Master Trainer Randy
 Level Cap:
 Format: Single Battle
 
@@ -4878,7 +4878,7 @@ Zen Headbutt
 
 
 986
-Ninja Boy Poison Master Trainer Tristan
+Ninja Boy Poison Master Trainer Donnie
 Level Cap:
 Format: Single Battle
 
@@ -4897,7 +4897,7 @@ Earthquake
 
 
 987
-Ruin Maniac Ground Master Trainer Tristan
+Ruin Maniac Ground Master Trainer Dexter
 Level Cap:
 Format: Single Battle
 
@@ -4916,7 +4916,7 @@ Ice Beam
 
 
 988
-Bird Keeper Flying Master Trainer Tristan
+Bird Keeper Flying Master Trainer Thea
 Level Cap:
 Format: Single Battle
 
@@ -4935,7 +4935,7 @@ Thunder Wave
 
 
 989
-Psychic Psychic Master Trainer Tristan
+Psychic Psychic Master Trainer Fraiser
 Level Cap:
 Format: Single Battle
 
@@ -4954,7 +4954,7 @@ Thunder Punch
 
 
 990
-Bug Catcher Bug Master Trainer Tristan
+Bug Catcher Bug Master Trainer Louie
 Level Cap:
 Format: Single Battle
 
@@ -4973,7 +4973,7 @@ Bug Buzz
 
 
 991
-Hiker Rock Master Trainer Tristan
+Hiker Rock Master Trainer Jeffrey
 Level Cap:
 Format: Single Battle
 
@@ -4992,7 +4992,7 @@ Hammer Arm
 
 
 992
-Clown Ghost Master Trainer Tristan
+Clown Ghost Master Trainer Ari
 Level Cap:
 Format: Single Battle
 
@@ -5011,7 +5011,7 @@ Hypnosis
 
 
 993
-Dragon Tamer Dragon Master Trainer Tristan
+Dragon Tamer Dragon Master Trainer Grayson
 Level Cap:
 Format: Single Battle
 
@@ -5030,7 +5030,7 @@ Earthquake
 
 
 994
-Ace Trainer Dark Master Trainer Tristan
+Ace Trainer Dark Master Trainer Franklin
 Level Cap:
 Format: Single Battle
 
@@ -5049,7 +5049,7 @@ Low Kick
 
 
 995
-Worker Steel Master Trainer Tristan
+Worker Steel Master Trainer Julian
 Level Cap:
 Format: Single Battle
 
@@ -5068,7 +5068,7 @@ Earthquake
 
 
 996
-School Kid Fairy Master Trainer Tristan
+School Kid Fairy Master Trainer Marilyn
 Level Cap:
 Format: Single Battle
 
@@ -6141,7 +6141,7 @@ Hidden Power
 Toxic
 Sunny Day
 25/24/25/24/24/25
-236/244/0/0/0/0
+248/0/0/248/0/12
 
 Roserade
 26
@@ -6154,7 +6154,7 @@ Weather Ball
 Poison Jab
 Sleep Powder
 25/25/25/25/25/25
-0/0/0/248/0/252
+0/8/0/248/0/252
 
 
 828
@@ -6574,7 +6574,7 @@ Dazzling Gleam
 Air Slash
 Earth Power
 31/31/31/31/31/31
-0/0/0/252/4/0
+0/0/0/252/4/252
 
 
 897
@@ -6658,7 +6658,7 @@ Heal Bell
 U-turn
 Zen Headbutt
 31/31/31/31/31/31
-0/252/0/0/0/4
+4/252/0/0/0/252
 
 
 898
@@ -6897,9 +6897,9 @@ Docile
 Intimidate
 
 None
+Thunder Fang
 Fire Fang
 Taunt
-Odor Sleuth
 Beat Up
 25/25/25/25/25/25
 0/0/0/0/0/0
@@ -7493,10 +7493,10 @@ Serious
 Guts
 
 None
+Tackle
 Low Kick
 Mach Punch
 Rapid Spin
-Foresight
 25/25/25/25/25/25
 0/0/0/0/0/0
 
@@ -8021,7 +8021,7 @@ Quirky
 Pickup
 
 None
-Odor Sleuth
+Headbutt
 Hone Claws
 Fury Swipes
 Slash
@@ -8972,13 +8972,13 @@ Prinplup
 Modest
 Competitive
 
-Sitrus Berry
+Chesto Berry
 Scald
 Icy Wind
 Grass Knot
-Stealth Rock
+Rest
 25/0/25/25/25/25
-0/0/124/252/132/0
+252/0/0/252/0/4
 
 Bayleef
 32
@@ -9702,7 +9702,7 @@ Docile
 Levitate
 
 None
-Foresight
+Astonish
 Shadow Sneak
 Will-O-Wisp
 Payback
@@ -9728,7 +9728,7 @@ Bashful
 Levitate
 
 None
-Foresight
+Astonish
 Shadow Sneak
 Will-O-Wisp
 Payback
@@ -9760,7 +9760,7 @@ Serious
 Levitate
 
 None
-Foresight
+Astonish
 Shadow Sneak
 Will-O-Wisp
 Payback
@@ -10204,7 +10204,7 @@ Air Slash
 Stockpile
 Strength Sap
 25/0/25/25/25/25
-12/0/0/248/4/244
+12/0/0/248/0/248
 
 
 899
@@ -10987,7 +10987,7 @@ Poison Jab
 Assurance
 X-Scissor
 31/31/31/31/31/31
-0/252/0/252/0/4
+0/252/0/0/4/252
 
 Golbat
 29
@@ -11038,7 +11038,7 @@ Mind Reader
 Metal Claw
 Dig
 31/31/31/31/31/31
-252/0/0/0/0/0
+252/0/128/0/128/0
 
 
 978
@@ -11244,7 +11244,7 @@ Icy Wind
 Grass Knot
 Rest
 25/0/25/25/25/25
-0/0/124/0/252/132
+0/0/124/252/132/0
 Paired with Support
 
 771
@@ -11263,7 +11263,7 @@ Power Gem
 Stealth Rock
 Shock Wave
 25/0/25/25/25/25
-84/0/84/0/252/88
+84/0/84/252/88/0
 
 Marshtomp
 32
@@ -11276,7 +11276,7 @@ Rock Slide
 Yawn
 Rock Smash
 25/31/25/25/25/25
-244/124/0/140/0/0
+244/124/0/0/0/140
 
 Vespiquen
 32
@@ -11347,7 +11347,7 @@ Hyper Voice
 Sing
 Thunderbolt
 25/0/25/25/25/25
-0/0/0/0/0/0
+0/0/252/0/252/4
 
 Raichu
 33
@@ -11360,7 +11360,7 @@ Thunderbolt
 Grass Knot
 Teeter Dance
 25/0/25/25/25/25
-0/0/0/0/0/0
+4/0/0/252/0/252
 
 Espeon
 33
@@ -11373,7 +11373,7 @@ Power Gem
 Dazzling Gleam
 Protect
 25/0/25/25/25/25
-0/0/0/0/0/0
+0/0/0/252/4/252
 Paired with 877
 
 877
@@ -11405,7 +11405,7 @@ Signal Beam
 Ice Beam
 Flamethrower
 25/0/25/25/25/25
-0/0/0/0/0/0
+0/0/0/252/4/252
 
 Toxicroak
 34
@@ -11432,10 +11432,10 @@ Serious
 Guts
 
 None
+Tackle
 Low Kick
 Mach Punch
 Rapid Spin
-Foresight
 25/25/25/25/25/25
 0/0/0/0/0/0
 
@@ -11868,7 +11868,7 @@ Hardy
 Oblivious
 
 None
-Snore
+Rest
 Aqua Tail
 Earth Power
 Muddy Water
@@ -15939,7 +15939,7 @@ Recover
 Shock Wave
 Disable
 25/25/25/25/25/25
-4/0/0/0/252/252
+4/0/0/252/0/252
 
 Piloswine
 35
@@ -15965,7 +15965,7 @@ Flash Cannon
 Feather Dance
 Swagger
 25/25/25/25/25/25
-252/0/76/180/0/0
+252/0/76/0/180/0
 Paired with Support
 
 496
@@ -15975,7 +15975,7 @@ Format: Multi Battle Partner
 
 Kadabra
 35
-Hardy
+Docile
 Synchronize
 
 None
@@ -15984,11 +15984,11 @@ Recover
 Shock Wave
 Disable
 25/25/25/25/25/25
-4/0/0/0/252/252
+4/0/0/252/0/252
 
 Piloswine
 35
-Bashful
+Hardy
 Oblivious
 
 None
@@ -16029,11 +16029,11 @@ Recover
 Shock Wave
 Disable
 25/25/25/25/25/25
-4/0/0/0/252/252
+4/0/0/252/0/252
 
 Piloswine
 35
-Bashful
+Hardy
 Oblivious
 
 None
@@ -16055,7 +16055,7 @@ Close Combat
 Feint
 U-turn
 25/25/25/25/25/25
-0/0/4/0/252/252
+0/252/4/0/0/252
 Paired with Support
 
 498
@@ -16074,7 +16074,7 @@ Recover
 Shock Wave
 Disable
 25/25/25/25/25/25
-4/0/0/0/252/252
+4/0/0/252/0/252
 
 Piloswine
 35
@@ -16100,7 +16100,7 @@ Flash Cannon
 Feather Dance
 Swagger
 25/25/25/25/25/25
-252/0/76/180/0/0
+252/0/76/0/180/0
 Paired with Support
 
 499
@@ -16110,7 +16110,7 @@ Format: Multi Battle Partner
 
 Kadabra
 35
-Hardy
+Quirky
 Synchronize
 
 None
@@ -16119,7 +16119,7 @@ Recover
 Shock Wave
 Disable
 25/25/25/25/25/25
-4/0/0/0/252/252
+4/0/0/252/0/252
 
 Piloswine
 35
@@ -16155,7 +16155,7 @@ Format: Multi Battle Partner
 
 Kadabra
 35
-Bashful
+Quirky
 Synchronize
 
 None
@@ -16164,17 +16164,17 @@ Recover
 Shock Wave
 Disable
 25/25/25/25/25/25
-4/0/0/0/252/252
+4/0/0/252/0/252
 
 Piloswine
 35
-Docile
+Bashful
 Oblivious
 
 None
+Avalanche
 Take Down
-Fury Attack
-Earthquake
+Rock Slide
 Ice Shard
 25/25/25/25/25/25
 252/252/4/0/0/0
@@ -16190,7 +16190,7 @@ Close Combat
 Feint
 U-turn
 25/25/25/25/25/25
-0/0/4/0/252/252
+0/252/4/0/0/252
 Paired with Support
 
 970
@@ -20228,7 +20228,7 @@ Shadow Ball
 Energy Ball
 Dazzling Gleam
 31/31/31/31/31/31
-0/0/0/4/252/252
+0/0/0/252/4/252
 
 Mamoswine
 44
@@ -20241,7 +20241,7 @@ Avalanche
 Stone Edge
 Ice Shard
 31/31/31/31/31/31
-0/252/0/4/252/0
+0/252/0/0/4/252
 
 Clefable
 44
@@ -20267,7 +20267,7 @@ Fire Punch
 Ice Punch
 Jump Kick
 31/31/31/31/31/31
-0/252/4/0/252/0
+0/252/4/0/0/252
 
 Vaporeon
 44
@@ -20312,7 +20312,7 @@ Shadow Ball
 Energy Ball
 Dazzling Gleam
 31/31/31/31/31/31
-0/0/0/4/252/252
+0/0/0/252/4/252
 
 Mamoswine
 44
@@ -20325,7 +20325,7 @@ Avalanche
 Stone Edge
 Ice Shard
 31/31/31/31/31/31
-0/252/0/4/252/0
+0/252/0/0/4/252
 
 Clefable
 44
@@ -20351,7 +20351,7 @@ Fire Punch
 Ice Punch
 Jump Kick
 31/31/31/31/31/31
-0/252/4/0/252/0
+0/252/4/0/0/252
 
 Jolteon
 44
@@ -20364,7 +20364,7 @@ Shadow Ball
 Extrasensory
 Thunder Wave
 31/31/31/31/31/31
-0/0/0/4/252/252
+0/0/0/252/4/252
 
 Infernape
 45
@@ -20377,7 +20377,7 @@ Close Combat
 Thunder Punch
 Rock Slide
 31/31/31/31/31/31
-0/252/4/0/252/0
+0/252/4/0/0/252
 Paired with Support
 
 953
@@ -20396,7 +20396,7 @@ Shadow Ball
 Energy Ball
 Dazzling Gleam
 31/31/31/31/31/31
-0/0/0/4/252/252
+0/0/0/252/4/252
 
 Mamoswine
 44
@@ -20409,7 +20409,7 @@ Avalanche
 Stone Edge
 Ice Shard
 31/31/31/31/31/31
-0/252/0/4/252/0
+0/252/0/0/4/252
 
 Clefable
 44
@@ -20435,7 +20435,7 @@ Fire Punch
 Ice Punch
 Jump Kick
 31/31/31/31/31/31
-0/252/4/0/252/0
+0/252/4/0/0/252
 
 Flareon
 44
@@ -20448,7 +20448,7 @@ Play Rough
 Close Combat
 Will-O-Wisp
 31/31/31/31/31/31
-0/252/4/0/252/0
+0/252/4/0/0/252
 
 Empoleon
 45
@@ -20461,7 +20461,7 @@ Flash Cannon
 Grass Knot
 Feather Dance
 31/31/31/31/31/31
-252/0/76/180/0/0
+252/0/72/0/180/0
 Paired with Support
 
 954
@@ -20480,7 +20480,7 @@ Shadow Ball
 Energy Ball
 Dazzling Gleam
 31/31/31/31/31/31
-0/0/0/4/252/252
+0/0/0/252/4/252
 
 Mamoswine
 44
@@ -20493,7 +20493,7 @@ Avalanche
 Stone Edge
 Ice Shard
 31/31/31/31/31/31
-0/252/0/4/252/0
+0/252/0/0/4/252
 
 Granbull
 44
@@ -20506,7 +20506,7 @@ Close Combat
 Earthquake
 Crunch
 31/31/31/31/31/31
-212/252/0/0/44/0
+212/252/0/44/0/0
 
 Lickilicky
 44
@@ -20545,7 +20545,7 @@ Earthquake
 Iron Head
 Rock Slide
 31/31/31/31/31/31
-247/0/252/8/0/0
+247/0/252/0/0/8
 Paired with Support
 
 955
@@ -20564,7 +20564,7 @@ Shadow Ball
 Energy Ball
 Dazzling Gleam
 31/31/31/31/31/31
-0/0/0/4/252/252
+0/0/0/252/4/252
 
 Mamoswine
 44
@@ -20577,7 +20577,7 @@ Avalanche
 Stone Edge
 Ice Shard
 31/31/31/31/31/31
-0/252/0/4/252/0
+0/252/0/0/4/252
 
 Granbull
 44
@@ -20590,7 +20590,7 @@ Close Combat
 Earthquake
 Crunch
 31/31/31/31/31/31
-212/252/0/0/44/0
+212/252/0/44/0/0
 
 Lickilicky
 44
@@ -20616,7 +20616,7 @@ Shadow Ball
 Extrasensory
 Thunder Wave
 31/31/31/31/31/31
-0/0/0/4/252/252
+0/0/0/252/4/252
 
 Infernape
 45
@@ -20629,7 +20629,7 @@ Close Combat
 Thunder Punch
 Rock Slide
 31/31/31/31/31/31
-0/251/4/0/0/252
+0/252/4/0/0/252
 Paired with Support
 
 956
@@ -20648,7 +20648,7 @@ Shadow Ball
 Energy Ball
 Dazzling Gleam
 31/31/31/31/31/31
-0/0/0/4/252/252
+0/0/0/252/4/252
 
 Mamoswine
 44
@@ -20661,7 +20661,7 @@ Avalanche
 Stone Edge
 Ice Shard
 31/31/31/31/31/31
-0/252/0/4/252/0
+0/252/0/0/4/252
 
 Granbull
 44
@@ -20674,7 +20674,7 @@ Close Combat
 Earthquake
 Crunch
 31/31/31/31/31/31
-212/252/0/0/44/0
+212/252/0/44/0/0
 
 Lickilicky
 44
@@ -20700,7 +20700,7 @@ Play Rough
 Close Combat
 Will-O-Wisp
 31/31/31/31/31/31
-0/252/4/0/252/0
+0/252/4/0/0/252
 
 Empoleon
 45
@@ -20713,7 +20713,7 @@ Flash Cannon
 Grass Knot
 Feather Dance
 31/31/31/31/31/31
-251/0/76/180/0/0
+251/0/76/0/180/0
 Paired with Support
 
 319
@@ -21432,7 +21432,7 @@ Flash Cannon
 Ice Beam
 Aqua Jet
 31/31/31/31/31/31
-252/0/76/180/0/0
+252/0/76/0/180/0
 
 Alakazam
 48
@@ -21445,7 +21445,7 @@ Dazzling Gleam
 Focus Blast
 Energy Ball
 31/31/31/31/31/31
-0/0/0/0/252/252
+0/0/0/252/4/252
 
 Metagross
 48
@@ -21471,7 +21471,7 @@ Brave Bird
 Close Combat
 Roost
 31/31/31/31/31/31
-0/252/0/0/252/0
+0/252/0/0/0/252
 
 Entei
 48
@@ -21484,7 +21484,7 @@ Stone Edge
 Extreme Speed
 Iron Head
 31/31/31/31/31/31
-0/252/4/0/252/0
+0/252/4/0/0/252
 
 
 887
@@ -21839,7 +21839,7 @@ Spacial Rend
 Earth Power
 Aura Sphere
 0/0/0/0/0/0
-0/0/0/0/0/0
+0/0/252/4/252/0
 
 Dialga
 70
@@ -21852,7 +21852,7 @@ Roar of Time
 Earth Power
 Aura Sphere
 0/0/0/0/0/0
-0/0/0/0/0/0
+0/0/252/4/252/0
 
 
 950
@@ -23226,7 +23226,7 @@ Psycho Cut
 Megahorn
 Play Rough
 31/31/31/31/31/31
-0/252/0/0/252/0
+0/252/0/0/0/252
 
 Ursaring
 49
@@ -23239,7 +23239,7 @@ Close Combat
 Play Rough
 Protect
 31/31/31/31/31/31
-252/252/0/0/0/0
+252/252/4/0/0/0
 
 Metagross
 49
@@ -23252,7 +23252,7 @@ Earthquake
 Zen Headbutt
 Agility
 31/31/31/31/31/31
-252/252/0/0/0/0
+252/252/4/0/0/0
 
 Salamence
 49
@@ -23265,7 +23265,7 @@ Fly
 Crunch
 Dragon Dance
 31/31/31/31/31/31
-0/252/0/0/252/0
+0/252/4/0/0/252
 
 Slaking
 49
@@ -23278,7 +23278,7 @@ Hammer Arm
 Play Rough
 Slack Off
 31/31/31/31/31/31
-252/252/0/0/0/0
+252/252/4/0/0/0
 
 Lucario
 50
@@ -23291,7 +23291,7 @@ Meteor Mash
 Blaze Kick
 Bullet Punch
 31/31/31/31/31/31
-0/252/0/0/252/0
+4/252/0/0/0/252
 
 
 288
@@ -29181,7 +29181,7 @@ Baton Pass
 High Jump Kick
 Blaze Kick
 31/31/31/31/31/31
-0/0/0/0/0/0
+0/252/4/0/0/252
 
 Dusknoir
 63
@@ -29194,11 +29194,11 @@ Thunder Punch
 Ice Punch
 Drain Punch
 31/31/31/31/31/31
-0/0/0/0/0/0
+252/252/0/0/0/4
 
 Medicham
 63
-Modest
+Adamant
 Pure Power
 
 Choice Scarf
@@ -29207,7 +29207,7 @@ Zen Headbutt
 Ice Punch
 Fire Punch
 31/31/31/31/31/31
-0/0/0/0/0/0
+0/252/4/0/0/252
 
 Togekiss
 63
@@ -29220,7 +29220,7 @@ Moonblast
 Aura Sphere
 Flamethrower
 31/31/31/31/31/31
-0/0/0/0/0/0
+252/0/0/4/252/0
 
 Ludicolo
 63
@@ -29233,7 +29233,7 @@ Giga Drain
 Ice Beam
 Fake Out
 31/31/31/31/31/31
-0/0/0/0/0/0
+0/0/0/252/4/252
 
 Zapdos
 63
@@ -29246,7 +29246,7 @@ Heat Wave
 Drill Peck
 Light Screen
 31/31/31/31/31/31
-0/0/0/0/0/0
+0/0/0/252/4/252
 
 
 266
@@ -33105,7 +33105,7 @@ Flamethrower
 Sucker Punch
 Sludge Bomb
 31/31/31/31/31/31
-4/8/0/0/248/248
+4/8/0/248/0/248
 
 Hypno
 70
@@ -35082,7 +35082,7 @@ U-turn
 Extreme Speed
 Protect
 31/31/31/31/31/31
-0/252/0/252/0/4
+0/252/0/0/4/252
 
 Blissey
 77
@@ -35095,7 +35095,7 @@ Toxic
 Soft-Boiled
 Healing Wish
 31/31/31/31/31/31
-252/0/252/0/0/4
+252/0/252/0/4/0
 
 Snorlax
 78
@@ -35108,7 +35108,7 @@ Counter
 Earthquake
 Slack Off
 31/31/31/31/31/31
-252/4/0/0/0/252
+252/4/0/0/252/0
 
 Girafarig
 78
@@ -35121,7 +35121,7 @@ Psychic
 Thunderbolt
 Dazzling Gleam
 31/31/31/31/31/31
-0/0/0/252/252/4
+0/0/0/252/4/252
 
 Kangaskhan
 78
@@ -35134,7 +35134,7 @@ Fake Out
 Earthquake
 Double-Edge
 31/31/31/31/31/31
-0/252/0/252/0/4
+0/252/0/0/4/252
 
 Porygon-Z
 80
@@ -35147,7 +35147,7 @@ Thunderbolt
 Psychic
 Ice Beam
 31/0/31/31/31/31
-0/0/0/252/252/4
+0/0/0/252/4/252
 
 
 923
@@ -38736,10 +38736,10 @@ Serious
 Guts
 
 None
+Tackle
 Low Kick
 Mach Punch
 Rapid Spin
-Foresight
 25/25/25/25/25/25
 252/252/4/0/0/0
 
@@ -39813,7 +39813,7 @@ Light Screen
 Gyro Ball
 Future Sight
 31/31/31/0/31/31
-252/4/0/0/0/252
+252/4/0/0/252/0
 
 Ninjask
 82
@@ -39826,7 +39826,7 @@ Swords Dance
 Baton Pass
 Double Team
 31/31/31/31/31/31
-0/252/0/252/0/4
+0/252/0/4/252/0
 
 Gastrodon
 82
@@ -39852,7 +39852,7 @@ Last Resort
 (No Move)
 (No Move)
 31/31/31/31/31/31
-0/252/0/252/0/4
+0/252/0/0/4/252
 
 Magmortar
 83
@@ -39865,7 +39865,7 @@ Protect
 Aura Sphere
 Magma Storm
 31/0/31/31/31/31
-252/0/0/252/4/0
+252/0/0/4/0/252
 
 Purugly
 83
@@ -39878,7 +39878,7 @@ Play Rough
 Knock Off
 Hone Claws
 31/31/31/31/31/31
-0/252/0/248/0/8
+0/252/0/0/8/248
 
 
 1061
@@ -39897,7 +39897,7 @@ Dragon Pulse
 Water Spout
 Flash Cannon
 31/31/31/31/31/31
-252/0/4/0/252/0
+252/0/4/252/0/0
 
 Houndoom
 83
@@ -39910,7 +39910,7 @@ Flamethrower
 Sludge Bomb
 Sucker Punch
 31/31/31/31/31/31
-0/4/0/252/252/0
+0/0/0/252/4/252
 
 Heracross
 84
@@ -39923,7 +39923,7 @@ Megahorn
 Rock Blast
 Protect
 31/31/31/31/31/31
-4/252/0/252/0/0
+4/252/0/0/0/252
 
 Sunflora
 84
@@ -39936,7 +39936,7 @@ Leech Seed
 Earth Power
 Energy Ball
 31/31/31/31/31/31
-4/0/252/0/252/0
+4/0/252/252/0/0
 
 Leafeon
 84
@@ -39949,7 +39949,7 @@ Leaf Blade
 Night Slash
 Psycho Cut
 31/31/31/31/31/31
-0/252/0/252/0/4
+0/252/0/0/4/252
 
 Skuntank
 85
@@ -39962,7 +39962,7 @@ Poison Jab
 Flamethrower
 Sucker Punch
 31/31/31/31/31/31
-4/0/0/252/252/0
+4/0/0/252/0/252
 
 
 431
@@ -40714,7 +40714,7 @@ Earthquake
 Body Slam
 Detect
 31/31/31/31/31/31
-0/252/0/252/0/4
+0/252/0/0/4/252
 
 Clefable
 90
@@ -40766,7 +40766,7 @@ Thunder Punch
 Mach Punch
 Fling
 31/31/31/31/31/31
-4/252/0/252/0/0
+4/252/0/0/0/252
 
 
 1068
@@ -40798,7 +40798,7 @@ Earthquake
 Body Slam
 Detect
 31/31/31/31/31/31
-0/252/0/252/0/4
+0/252/0/0/4/252
 
 Clefable
 90
@@ -40882,7 +40882,7 @@ Earthquake
 Body Slam
 Detect
 31/31/31/31/31/31
-0/252/0/252/0/4
+0/252/0/0/4/252
 
 Clefable
 90
@@ -40921,7 +40921,7 @@ Ice Beam
 Toxic
 Wish
 31/0/31/31/31/31
-252/0/0/0/4/252
+252/0/0/4/252/0
 
 Torterra
 90
@@ -40966,7 +40966,7 @@ Earthquake
 Body Slam
 Detect
 31/31/31/31/31/31
-0/252/0/252/0/4
+0/252/0/0/4/252
 
 Granbull
 90
@@ -41050,7 +41050,7 @@ Earthquake
 Body Slam
 Detect
 31/31/31/31/31/31
-0/252/0/252/0/4
+0/252/0/0/4/252
 
 Granbull
 90
@@ -41134,7 +41134,7 @@ Earthquake
 Body Slam
 Detect
 31/31/31/31/31/31
-0/252/0/252/0/4
+0/252/0/0/4/252
 
 Granbull
 90
@@ -41173,7 +41173,7 @@ Ice Beam
 Toxic
 Wish
 31/0/31/31/31/31
-252/0/0/0/4/252
+252/0/0/4/252/0
 
 Torterra
 90
