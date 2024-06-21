@@ -113,9 +113,9 @@ jobs:
         API_TOKEN_GITHUB: ${{ secrets.DENMARK_LUMIBOT_TOKEN }}
       with:
         source_file: 'Python_tasks/output/Mapper_Trainer_Output.json'
-        destination_branch: 'master'
-        destination_repo: 'TeamLumi/LumiPlat_NuzlockeTracker'
-        destination_folder: './src/constants/generated_files'
+        destination_branch: 'main'
+        destination_repo: 'TeamLumi/luminescent-team'
+        destination_folder: './__gamedata'
         user_email: '<support+actions@github.com>'
         user_name: 'github-actions-bot'
         commit_message: 'Updating 2.0 Trainer files'
@@ -176,9 +176,9 @@ jobs:
         API_TOKEN_GITHUB: ${{ secrets.DENMARK_LUMIBOT_TOKEN }}
       with:
         source_file: 'Python_tasks/output/Mapper_Trainer_Output.json'
-        destination_branch: 'master'
-        destination_repo: 'TeamLumi/LumiPlat_NuzlockeTracker'
-        destination_folder: './src/constants/generated_files'
+        destination_branch: 'main'
+        destination_repo: 'TeamLumi/luminescent-team-dev'
+        destination_folder: './__gamedata'
         user_email: '<support+actions@github.com>'
         user_name: 'github-actions-bot'
         commit_message: 'Updating 2.0 Trainer files'
