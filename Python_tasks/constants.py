@@ -573,6 +573,7 @@ EXCLUSIVE_ZONE_IDS = [
     211, # Mt. Coronet 6F
     216, # Spear Pillar
     624, # Distortion Room
+    218, # Hall of Origin
     354, # Route 201
     422, # Twinleaf Town
     323, # Lake Verity
