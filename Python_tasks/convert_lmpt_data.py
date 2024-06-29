@@ -380,6 +380,9 @@ def get_standard_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, m
 
     if any(str(zoneID) in route for route in name_routes.values()):
         zoneName = get_zone_name(zoneID)
+        newZoneID = zoneID
+        if zoneID == 297:
+            newZoneID = 380
         new_method = check_for_incense(new_method, method_index)
         rate = get_route_rate(new_method, method_index, route_rates)
         encounter_list_order = {
@@ -390,7 +393,7 @@ def get_standard_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, m
             "minLevel": minlevel,
             "maxLevel": maxlevel,
             "encounterTypeIndex": method_index,
-            "zoneId": zoneID
+            "zoneId": newZoneID
         }
 
         if mons_no_or_zoneId == "mons_no":
@@ -401,10 +404,10 @@ def get_standard_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, m
             elif "Incense" not in new_method:
                 print("Something missing here?", method_index, monsNo, encounter_list_order)
         elif mons_no_or_zoneId == "zoneId":
-            if str(zoneID) not in encounters:
-                encounters[str(zoneID)] = [encounter_list_order]
-            elif encounter_list_order not in encounters[str(zoneID)]:
-                encounters[str(zoneID)].append(encounter_list_order)
+            if str(newZoneID) not in encounters:
+                encounters[str(newZoneID)] = [encounter_list_order]
+            elif encounter_list_order not in encounters[str(newZoneID)]:
+                encounters[str(newZoneID)].append(encounter_list_order)
             elif "Incense" not in new_method:
                 print("Something missing here?", method_index, monsNo, encounter_list_order)
 
@@ -429,6 +432,9 @@ def get_diff_form_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, 
 
     if any(str(zoneID) in route for route in name_routes.values()):
         zoneName = get_zone_name(zoneID)
+        newZoneID = zoneID
+        if zoneID == 297:
+            newZoneID = 380
         new_method = check_for_incense(new_method, method_index)
         rate = get_route_rate(new_method, method_index, route_rates)
         encounter_list_order = {
@@ -439,7 +445,7 @@ def get_diff_form_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, 
             "minLevel": minlevel,
             "maxLevel": maxlevel,
             "encounterTypeIndex": method_index,
-            "zoneId": zoneID
+            "zoneId": newZoneID
         }
 
         tracker_route = get_tracker_route(zoneID)
@@ -457,10 +463,10 @@ def get_diff_form_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, 
             elif "Incense" not in new_method:
                 print("Something missing here?", method_index, pokemon_id, encounter_list_order)
         elif mons_no_or_zoneId == "zoneId":
-            if str(zoneID) not in encounters:
-                encounters[str(zoneID)] = [encounter_list_order]
-            elif encounter_list_order not in encounters[str(zoneID)]:
-                encounters[str(zoneID)].append(encounter_list_order)
+            if str(newZoneID) not in encounters:
+                encounters[str(newZoneID)] = [encounter_list_order]
+            elif encounter_list_order not in encounters[str(newZoneID)]:
+                encounters[str(newZoneID)].append(encounter_list_order)
             elif "Incense" not in new_method:
                 print("Something missing here?", method_index, pokemon_id, encounter_list_order)
 
@@ -567,8 +573,8 @@ def get_trophy_garden_encounter_rates(trophy_garden_encounters, rates_list, mons
     This is for adding the trophy garden encounter rates for each route
     '''
     for mon in trophy_garden_encounters:
-        zoneId = 297
-        zoneName = get_zone_name(zoneId) # This is the zoneID for Trophy Garden
+        zoneId = 380
+        zoneName = get_zone_name(zoneId) # This is the zoneID for Trophy Garden / Pokemon Mansion
         method = constants.TROPHY_GARDEN
         rate = constants.TROPHY_GARDEN_RATE
         minlevel = constants.TROPHY_GARDEN_LEVEL
