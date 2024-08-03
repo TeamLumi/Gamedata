@@ -86,14 +86,12 @@
     "Galarian Corsola",
     "Galarian Ponyta",
     "Goldeen",
-    "Golduck",
     "Gyarados",
     "Ledyba",
     "Magikarp",
     "Marill",
     "Oddish",
     "Pikachu",
-    "Psyduck",
     "Ralts",
     "Roselia",
     "Seaking",
@@ -269,7 +267,6 @@
     "Alolan Geodude",
     "Alolan Grimer",
     "Alolan Ninetales",
-    "Alolan Sandshrew",
     "Alolan Sandslash",
     "Barboach",
     "Beldum",
@@ -375,7 +372,6 @@
     "Aipom",
     "Drowzee",
     "Exeggcute",
-    "Exeggutor",
     "Hypno",
     "Kadabra",
     "Kakuna",
@@ -411,7 +407,6 @@
   ],
   "lmpt-35": [
     "Alolan Diglett",
-    "Alolan Dugtrio",
     "Diglett",
     "Ditto",
     "Dugtrio",
@@ -432,11 +427,11 @@
   "lmpt-37": [
     "Absol",
     "Chatot",
+    "East Sea Gastrodon",
     "Farfetch\u2019d",
     "Floatzel",
     "Galarian Corsola",
     "Galarian Linoone",
-    "Gastrodon East Sea",
     "Gyarados",
     "Magikarp",
     "Noctowl",
@@ -593,7 +588,6 @@
     "Luvdisc",
     "Mantine",
     "Mantyke",
-    "Obstagoon",
     "Pelipper",
     "Seadra",
     "Wingull"
@@ -825,6 +819,7 @@
   ],
   "lmpt-62": [
     "Carvanha",
+    "East Sea Shellos",
     "Gastrodon",
     "Gyarados",
     "Hisuian Qwilfish",
@@ -832,7 +827,6 @@
     "Poliwag",
     "Poliwhirl",
     "Sharpedo",
-    "Shellos East Sea",
     "Tentacool",
     "Tentacruel"
   ],
@@ -842,6 +836,7 @@
     "Barboach",
     "Cherrim",
     "Croagunk",
+    "East Sea Shellos",
     "Ekans",
     "Exeggcute",
     "Farfetch\u2019d",
@@ -864,7 +859,6 @@
     "Roselia",
     "Scyther",
     "Seaking",
-    "Shellos East Sea",
     "Shroomish",
     "Smeargle",
     "Staravia",
@@ -883,7 +877,7 @@
     "Lickitung",
     "Magikarp",
     "Masquerain",
-    "Sirfetch'd",
+    "Sirfetch\u2019d",
     "Staravia",
     "Surskit",
     "Wobbuffet"
@@ -942,8 +936,8 @@
     "Chatot",
     "Corsola",
     "Dustox",
+    "East Sea Gastrodon",
     "Galarian Slowbro",
-    "Gastrodon East Sea",
     "Gloom",
     "Gyarados",
     "Hisuian Electrode",
@@ -1046,9 +1040,9 @@
   ],
   "lmpt-77": [
     "Corsola",
+    "East Sea Gastrodon",
     "Floatzel",
     "Galarian Slowking",
-    "Gastrodon East Sea",
     "Golduck",
     "Gyarados",
     "Magikarp",
@@ -1065,8 +1059,7 @@
     "Zangoose"
   ],
   "lmpt-80": [
-    "Magikarp",
-    "Overqwil"
+    "Magikarp"
   ],
   "lmpt-81": [
     "Alolan Marowak",
@@ -1094,7 +1087,6 @@
     "Haunter",
     "Hisuian Typhlosion",
     "Lunatone",
-    "Solrock",
-    "Typhlosion"
+    "Solrock"
   ]
 }

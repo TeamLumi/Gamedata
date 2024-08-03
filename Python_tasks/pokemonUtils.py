@@ -54,7 +54,7 @@ def convert_lumi_formula_mon(lumi_mons_no):
     pokemonId = get_pokemon_id_from_mons_no_and_form(lumi_formula_mon, form_no)
     return pokemonId
 
-def get_pokemon_name(mons_no = 0, form_mode = False):
+def get_pokemon_name(pokemon_id = 0, form_mode = False):
     '''
     Trys 3 different ways of getting the pokemon name
     Replaces any trouble characters into workable characters
@@ -62,27 +62,29 @@ def get_pokemon_name(mons_no = 0, form_mode = False):
     form_namedata = full_data['form_namedata']
     try:
         pokemon_name = ""
-        if mons_no < len(name_data["labelDataArray"]):
-            mons_name = name_data["labelDataArray"][mons_no]["wordDataArray"][0]["str"]
-            form_name = form_namedata["labelDataArray"][mons_no]["wordDataArray"][0]["str"]
+        ## This first one checks if the pokemon_id is contained in the name_data
+        if pokemon_id < len(name_data["labelDataArray"]):
+            mons_name = name_data["labelDataArray"][pokemon_id]["wordDataArray"][0]["str"]
+            form_name = form_namedata["labelDataArray"][pokemon_id]["wordDataArray"][0]["str"]
+
             if len(form_name) > 0 and mons_name not in form_name and form_mode == True:
                 pokemon_name = f"{mons_name} {form_name}"
             elif len(form_name) > 0 and mons_name in form_name and form_mode == True:
                 pokemon_name = form_name
             else:
                 pokemon_name = mons_name
-        elif mons_no > 2**16:
-            pokemon_id = convert_lumi_formula_mon(mons_no)
+        elif pokemon_id > 2**16:
+            pokemon_id = convert_lumi_formula_mon(pokemon_id)
             pokemon_name = get_form_name(pokemon_id)
         else:
-            pokemon_name = get_form_name(mons_no)
+            pokemon_name = get_form_name(pokemon_id)
 
         pokemon_name = pokemon_name.replace('♀', '-F')
         pokemon_name = pokemon_name.replace('♂', '-M')
         pokemon_name = pokemon_name.replace('’', '\u2019')
         return pokemon_name
     except Exception as e:
-        print(mons_no, e)
+        print(pokemon_id, e)
 
 def get_form_name(id):
     '''

@@ -88,7 +88,7 @@ def write_new_names_to_item_images():
 def get_all_encounters_and_evolutions():
   pokemon_list = []
   locations_path = os.path.join(debug_file_path, "pokemon_locations.json")
-  statics_path = os.path.join(debug_file_path, "static_area_locations.json")
+  statics_path = os.path.join(input_file_path, "static_area_locations.json")
   evolutions_path = os.path.join(input_file_path, "evolution.json")
 
   with open(locations_path, mode="r", encoding="utf-8") as pokemon_locations_file, \
