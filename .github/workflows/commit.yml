@@ -134,7 +134,7 @@ jobs:
       env:
         API_TOKEN_GITHUB: ${{ secrets.DENMARK_LUMIBOT_TOKEN }}
       with:
-        source_file: '3.0input/.'
+        source_file: '3.0Input/.'
         destination_branch: 'main'
         destination_repo: 'TeamLumi/luminescent-team'
         destination_folder: './__gamedata'
@@ -194,7 +194,7 @@ jobs:
       env:
         API_TOKEN_GITHUB: ${{ secrets.DENMARK_LUMIBOT_TOKEN }}
       with:
-        source_file: '3.0input/.'
+        source_file: '3.0Input/.'
         destination_branch: 'main'
         destination_repo: 'TeamLumi/luminescent-team'
         destination_folder: './__gamedata'
