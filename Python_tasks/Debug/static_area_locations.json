@@ -882,7 +882,7 @@
       "maxLevel": 30,
       "encounterTypeIndex": 0,
       "zoneId": 999,
-      "pokemonName": "Tentracruel"
+      "pokemonName": "Tentacruel"
     },
     {
       "routeName": "Underground",
@@ -1042,7 +1042,7 @@
       "maxLevel": 30,
       "encounterTypeIndex": 0,
       "zoneId": 999,
-      "pokemonName": "Meditie"
+      "pokemonName": "Meditite"
     },
     {
       "routeName": "Underground",
@@ -1183,6 +1183,18 @@
       "zoneId": 298,
       "link": "https://luminescent.team/docs/special-events/gifts#riolu-egg",
       "pokemonName": "Riolu"
+    }
+  ],
+  "8": [
+    {
+      "routeName": "Jubilife City (TV Station)",
+      "encounterType": "Gifts",
+      "encounterRate": "100%",
+      "minLevel": 5,
+      "maxLevel": 5,
+      "encounterTypeIndex": 0,
+      "zoneId": 8,
+      "pokemonName": "Wobbuffet"
     }
   ],
   "38": [
