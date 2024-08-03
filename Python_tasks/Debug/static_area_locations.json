@@ -872,7 +872,7 @@
       "maxLevel": 30,
       "encounterTypeIndex": 0,
       "zoneId": 999,
-      "pokemonName": "Tentracruel"
+      "pokemonName": "Tentacruel"
     },
     {
       "routeName": "Underground",
@@ -1032,7 +1032,7 @@
       "maxLevel": 30,
       "encounterTypeIndex": 0,
       "zoneId": 999,
-      "pokemonName": "Meditie"
+      "pokemonName": "Meditite"
     },
     {
       "routeName": "Underground",
@@ -1184,7 +1184,7 @@
       "maxLevel": 5,
       "encounterTypeIndex": 0,
       "zoneId": 8,
-      "pokemonName": "Wobuffett"
+      "pokemonName": "Wobbuffet"
     }
   ],
   "38": [

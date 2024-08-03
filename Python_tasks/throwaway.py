@@ -3,12 +3,13 @@ import os
 import copy
 import constants
 
-from pokemonUtils import get_item_string
+from pokemonUtils import get_item_string, get_pokemon_name, get_pokemon_id_from_name
 
 parent_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 input_file_path = os.path.join(parent_file_path, "input")
 input_file_path3 = os.path.join(parent_file_path, "3.0Input")
 output_file_path = os.path.join(parent_file_path, "Python_tasks", constants.OUTPUT_NAME)
+debug_file_path = os.path.join(parent_file_path, "Python_tasks", constants.DEBUG_NAME)
 
 personal_data_path = os.path.join(input_file_path, 'PersonalTable.json')
 personal_data_path3 = os.path.join(input_file_path3, 'PersonalTable.json')
@@ -84,5 +85,49 @@ def write_new_names_to_item_images():
     if old_filepath != new_filepath:
       os.rename(old_filepath, new_filepath)
 
+def get_all_encounters_and_evolutions():
+  pokemon_list = []
+  locations_path = os.path.join(debug_file_path, "pokemon_locations.json")
+  statics_path = os.path.join(debug_file_path, "static_area_locations.json")
+  evolutions_path = os.path.join(input_file_path, "evolution.json")
+
+  with open(locations_path, mode="r", encoding="utf-8") as pokemon_locations_file, \
+      open(statics_path, mode="r", encoding="utf-8") as statics_locations_file, \
+      open(evolutions_path, mode="r", encoding="utf-8") as evolutions_file:
+
+    pokemon_locations = json.load(pokemon_locations_file)
+    static_locations = json.load(statics_locations_file)
+    evolutions = json.load(evolutions_file)
+
+    for mons_no in pokemon_locations:
+      for encounter in pokemon_locations[mons_no]:
+        base_mon_name = encounter["pokemonName"]
+        if base_mon_name not in pokemon_list:
+          pokemon_list.append(base_mon_name)
+        pokemon_id = get_pokemon_id_from_name(base_mon_name)
+        mon_evolutions = evolutions[str(pokemon_id)]["path"]
+        if base_mon_name.split()[0] == "Mothim":
+          print(base_mon_name)
+          print(mon_evolutions)
+        for evo in mon_evolutions:
+          evo_mon_name = get_pokemon_name(evo)
+          if evo_mon_name not in pokemon_list:
+            pokemon_list.append(evo_mon_name)
+    for route in static_locations:
+      for encounter in static_locations[route]:
+        pokemon_name = encounter["pokemonName"]
+        if pokemon_name not in pokemon_list:
+          pokemon_list.append(pokemon_name)
+
+        pokemon_id = get_pokemon_id_from_name(pokemon_name)
+        static_evolutions = evolutions[str(pokemon_id)]["path"]
+        for static_evo in static_evolutions:
+          static_evo_name = get_pokemon_name(static_evo)
+          if static_evo_name not in pokemon_list:
+            pokemon_list.append(static_evo_name)
+
+
+  # print(len(pokemon_list), pokemon_list)
+
 if __name__ == "__main__":
-  write_new_names_to_item_images()
+  get_all_encounters_and_evolutions()
