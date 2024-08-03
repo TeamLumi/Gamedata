@@ -547,9 +547,9 @@ def get_honey_tree_encounter_rates(rates_list, mons_no_or_zoneId = "mons_no"):
             monsName = constants.RIGHT_FARFETCHD if mon == constants.WRONG_FARFETCHD.capitalize() else mon
             if constants.GAME_MODE == "3.0":
                 if monsName == "Wormadam" or monsName == "Burmy":
-                    monsName = f"{monsName} Plant Cloak"
+                    monsName = f"Plant Cloak {monsName}"
                 if monsName == "Cherrim":
-                    monsName = "Cherrim Overcast Form"
+                    monsName = "Overcast Form Cherrim"
             monsNo = get_pokemon_id_from_name(monsName)
             zoneName = mons_data[0]
 
@@ -653,10 +653,10 @@ def getEncounterData(mons_no_or_zoneId = "mons_no"):
     sorted_encounters = {i: encounter_list[i] for i in my_keys}
     sorted_rates = sort_dict_by_keys(rates_list)
     if mons_no_or_zoneId == "mons_no":
-        with open(os.path.join(debug_file_path, 'pokemon_locations.json'), 'w') as output:
+        with open(os.path.join(input_file_path, 'pokemon_locations.json'), 'w') as output:
             output.write(json.dumps(sorted_rates, indent=2))
     elif mons_no_or_zoneId == "zoneId":
-        with open(os.path.join(debug_file_path, 'encounter_locations.json'), 'w') as output:
+        with open(os.path.join(input_file_path, 'encounter_locations.json'), 'w') as output:
             output.write(json.dumps(sorted_rates, indent=2))
     with open(os.path.join(debug_file_path, 'bad_encounters.json'), 'w') as output:
         output.write(json.dumps(bad_encounters, default=tuple, indent=2))
@@ -753,7 +753,6 @@ if __name__ == "__main__":
     getEncounterData("zoneId")
     writeEncounterDocData()
 
-    sort_static_locations_by_route_name()
     end_time = time.time()
     execution_time = end_time - start_time
     print("Execution time:", execution_time, "seconds")
