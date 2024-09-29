@@ -4658,8 +4658,7 @@
       "Covet": 343,
       "Charm": 204,
       "Amnesia": 133,
-      "Foul Play": 492,
-      "Odor Sleuth": 316
+      "Foul Play": 492
     },
     "tutorLearnset": {
       "Snore": 173,
@@ -5239,7 +5238,6 @@
       "Bite": 1,
       "Howl": 1,
       "Ember": 7,
-      "Odor Sleuth": 10,
       "Helping Hand": 13,
       "Fire Fang": 15,
       "Reversal": 18,
@@ -5330,7 +5328,6 @@
       "Bite": 1,
       "Howl": 1,
       "Ember": 5,
-      "Odor Sleuth": 10,
       "Flame Wheel": 15,
       "Helping Hand": 20,
       "Agility": 25,
@@ -5775,7 +5772,6 @@
       "Psybeam": 16,
       "Disable": 19,
       "Night Shade": 22,
-      "Miracle Eye": 25,
       "Reflect": 28,
       "Light Screen": 28,
       "Psyshock": 30,
@@ -5877,7 +5873,6 @@
       "Psybeam": 16,
       "Disable": 19,
       "Night Shade": 22,
-      "Miracle Eye": 25,
       "Reflect": 28,
       "Light Screen": 28,
       "Psyshock": 30,
@@ -11071,8 +11066,8 @@
     "dexNum": 118,
     "form": 0,
     "eggGroups": [
-      "Water 3",
-      "Water 3"
+      "Water 2",
+      "Water 2"
     ]
   },
   {
@@ -11150,8 +11145,8 @@
     "dexNum": 119,
     "form": 0,
     "eggGroups": [
-      "Water 3",
-      "Water 3"
+      "Water 2",
+      "Water 2"
     ]
   },
   {
@@ -12088,7 +12083,7 @@
     "dexNum": 129,
     "form": 0,
     "eggGroups": [
-      "Water 3",
+      "Water 2",
       "Dragon"
     ]
   },
@@ -12189,7 +12184,7 @@
     "dexNum": 130,
     "form": 0,
     "eggGroups": [
-      "Water 3",
+      "Water 2",
       "Dragon"
     ]
   },
@@ -13309,7 +13304,6 @@
       "Tackle": 1,
       "Last Resort": 1,
       "Flail": 1,
-      "Odor Sleuth": 1,
       "Metronome": 1,
       "Screech": 1,
       "Swallow": 1,
@@ -14021,7 +14015,6 @@
       "Psycho Cut": 22,
       "Power Swap": 26,
       "Guard Swap": 26,
-      "Miracle Eye": 29,
       "Recover": 30,
       "Amnesia": 34,
       "Psychic": 38,
@@ -16130,8 +16123,8 @@
     "dexNum": 170,
     "form": 0,
     "eggGroups": [
-      "Water 3",
-      "Water 3"
+      "Water 2",
+      "Water 2"
     ]
   },
   {
@@ -16216,8 +16209,8 @@
     "dexNum": 171,
     "form": 0,
     "eggGroups": [
-      "Water 3",
-      "Water 3"
+      "Water 2",
+      "Water 2"
     ]
   },
   {
@@ -16757,7 +16750,6 @@
       "Confuse Ray": 22,
       "Wish": 25,
       "Psychic": 28,
-      "Miracle Eye": 31,
       "Psycho Shift": 34,
       "Future Sight": 37,
       "Power Swap": 40,
@@ -16860,7 +16852,6 @@
       "Confuse Ray": 22,
       "Wish": 26,
       "Psychic": 30,
-      "Miracle Eye": 34,
       "Psycho Shift": 38,
       "Future Sight": 42,
       "Power Swap": 46,
@@ -16995,8 +16986,7 @@
       "After You": 495,
       "Agility": 97,
       "Eerie Impulse": 598,
-      "Electric Terrain": 604,
-      "Odor Sleuth": 316
+      "Electric Terrain": 604
     },
     "tutorLearnset": {
       "Snore": 173,
@@ -19137,7 +19127,6 @@
       "Guard Swap": 1,
       "Power Swap": 1,
       "Confusion": 1,
-      "Odor Sleuth": 3,
       "Assurance": 9,
       "Stomp": 12,
       "Psybeam": 15,
@@ -20001,9 +19990,9 @@
       "Aqua Jet": 15,
       "Rollout": 18,
       "Toxic Spikes": 21,
-      "Brine": 24,
-      "Stockpile": 24,
       "Spit Up": 24,
+      "Stockpile": 24,
+      "Brine": 24,
       "Poison Jab": 27,
       "Revenge": 30,
       "Aqua Tail": 33,
@@ -20076,8 +20065,8 @@
     "dexNum": 211,
     "form": 0,
     "eggGroups": [
-      "Water 3",
-      "Water 3"
+      "Water 2",
+      "Water 2"
     ]
   },
   {
@@ -20456,7 +20445,8 @@
       "Icicle Crash": 556,
       "Crush Claw": 306,
       "Ice Punch": 8,
-      "Throat Chop": 675
+      "Throat Chop": 675,
+      "Icicle Spear": 333
     },
     "tutorLearnset": {
       "Snore": 173,
@@ -20912,7 +20902,6 @@
     "learnset": {
       "Tackle": 1,
       "Icy Wind": 1,
-      "Odor Sleuth": 1,
       "Mud-Slap": 4,
       "Powder Snow": 10,
       "Ice Shard": 13,
@@ -21005,7 +20994,6 @@
       "Tackle": 1,
       "Ancient Power": 1,
       "Icy Wind": 1,
-      "Odor Sleuth": 1,
       "Peck": 1,
       "Mud-Slap": 4,
       "Powder Snow": 10,
@@ -21279,7 +21267,7 @@
     "form": 0,
     "eggGroups": [
       "Water 1",
-      "Water 3"
+      "Water 2"
     ]
   },
   {
@@ -21371,7 +21359,7 @@
     "form": 0,
     "eggGroups": [
       "Water 1",
-      "Water 3"
+      "Water 2"
     ]
   },
   {
@@ -21716,7 +21704,6 @@
       "Thunder Fang": 16,
       "Fire Fang": 16,
       "Taunt": 20,
-      "Odor Sleuth": 20,
       "Beat Up": 22,
       "Crunch": 28,
       "Flamethrower": 31,
@@ -21815,7 +21802,6 @@
       "Fire Fang": 16,
       "Thunder Fang": 16,
       "Taunt": 20,
-      "Odor Sleuth": 20,
       "Beat Up": 22,
       "Crunch": 30,
       "Flamethrower": 34,
@@ -21983,7 +21969,6 @@
       "Defense Curl": 1,
       "Growl": 1,
       "Tackle": 1,
-      "Odor Sleuth": 1,
       "Mud-Slap": 4,
       "Headbutt": 7,
       "Rollout": 10,
@@ -22078,7 +22063,6 @@
       "Take Down": 1,
       "Flail": 1,
       "Tackle": 1,
-      "Odor Sleuth": 1,
       "Defense Curl": 1,
       "Growl": 1,
       "Horn Attack": 1,
@@ -22624,8 +22608,7 @@
       "Wish": 273,
       "Role Play": 272,
       "Ice Punch": 8,
-      "Meditate": 96,
-      "Miracle Eye": 357
+      "Meditate": 96
     },
     "tutorLearnset": {
       "Snore": 173,
@@ -24944,7 +24927,6 @@
       "Sand Attack": 1,
       "Bite": 7,
       "Mud-Slap": 13,
-      "Odor Sleuth": 13,
       "Assurance": 13,
       "Roar": 16,
       "Swagger": 19,
@@ -25036,7 +25018,6 @@
       "Sucker Punch": 51,
       "Bite": 7,
       "Mud-Slap": 13,
-      "Odor Sleuth": 13,
       "Assurance": 13,
       "Roar": 16,
       "Swagger": 19,
@@ -25115,7 +25096,6 @@
       "Sand Attack": 1,
       "Covet": 7,
       "Headbutt": 13,
-      "Odor Sleuth": 13,
       "Baby-Doll Eyes": 15,
       "Pin Missile": 16,
       "Flail": 22,
@@ -25216,7 +25196,6 @@
       "Play Rough": 1,
       "Covet": 7,
       "Headbutt": 13,
-      "Odor Sleuth": 13,
       "Hone Claws": 15,
       "Fury Swipes": 16,
       "Take Down": 27,
@@ -29371,7 +29350,6 @@
       "Tackle": 1,
       "Leer": 1,
       "Howl": 4,
-      "Odor Sleuth": 7,
       "Quick Attack": 10,
       "Spark": 13,
       "Shock Wave": 16,
@@ -29464,7 +29442,6 @@
       "Tackle": 1,
       "Thunder Wave": 1,
       "Howl": 4,
-      "Odor Sleuth": 7,
       "Quick Attack": 10,
       "Spark": 13,
       "Shock Wave": 16,
@@ -30279,8 +30256,8 @@
     "dexNum": 318,
     "form": 0,
     "eggGroups": [
-      "Water 3",
-      "Water 3"
+      "Water 2",
+      "Water 2"
     ]
   },
   {
@@ -30375,8 +30352,8 @@
     "dexNum": 319,
     "form": 0,
     "eggGroups": [
-      "Water 3",
-      "Water 3"
+      "Water 2",
+      "Water 2"
     ]
   },
   {
@@ -30472,7 +30449,7 @@
     "form": 0,
     "eggGroups": [
       "Field",
-      "Water 3"
+      "Water 2"
     ]
   },
   {
@@ -30561,7 +30538,7 @@
     "form": 0,
     "eggGroups": [
       "Field",
-      "Water 3"
+      "Water 2"
     ]
   },
   {
@@ -30856,7 +30833,6 @@
       "Splash": 1,
       "Confusion": 7,
       "Growl": 10,
-      "Odor Sleuth": 10,
       "Psybeam": 10,
       "Psych Up": 13,
       "Confuse Ray": 16,
@@ -30958,7 +30934,6 @@
       "Belch": 1,
       "Confusion": 7,
       "Growl": 10,
-      "Odor Sleuth": 10,
       "Psybeam": 10,
       "Psych Up": 13,
       "Confuse Ray": 16,
@@ -32321,8 +32296,8 @@
       "Amnesia": 13,
       "Water Pulse": 16,
       "Magnitude": 20,
-      "Rest": 22,
       "Snore": 22,
+      "Rest": 22,
       "Aqua Tail": 25,
       "Earth Power": 28,
       "Muddy Water": 31,
@@ -32384,8 +32359,8 @@
     "dexNum": 339,
     "form": 0,
     "eggGroups": [
-      "Water 3",
-      "Water 3"
+      "Water 2",
+      "Water 2"
     ]
   },
   {
@@ -32468,8 +32443,8 @@
     "dexNum": 340,
     "form": 0,
     "eggGroups": [
-      "Water 3",
-      "Water 3"
+      "Water 2",
+      "Water 2"
     ]
   },
   {
@@ -35149,7 +35124,7 @@
     "form": 0,
     "eggGroups": [
       "Water 1",
-      "Water 3"
+      "Water 2"
     ]
   },
   {
@@ -35171,8 +35146,8 @@
       "Tearful Look": 13,
       "Water Pulse": 16,
       "Draining Kiss": 19,
-      "Brine": 22,
       "Attract": 22,
+      "Brine": 22,
       "Flail": 25,
       "Sweet Kiss": 28,
       "Take Down": 31,
@@ -35229,8 +35204,8 @@
     "dexNum": 370,
     "form": 0,
     "eggGroups": [
-      "Water 3",
-      "Water 3"
+      "Water 2",
+      "Water 2"
     ]
   },
   {
@@ -35552,7 +35527,6 @@
       "Iron Head": 1,
       "Magnet Rise": 1,
       "Bullet Punch": 26,
-      "Miracle Eye": 29,
       "Flash Cannon": 32,
       "Scary Face": 35,
       "Psychic": 38,
@@ -35653,7 +35627,6 @@
       "Magnet Rise": 1,
       "Take Down": 1,
       "Bullet Punch": 26,
-      "Miracle Eye": 29,
       "Flash Cannon": 32,
       "Scary Face": 35,
       "Psychic": 38,
@@ -37977,8 +37950,7 @@
       "Defense Curl": 111,
       "Rollout": 205,
       "Aqua Tail": 401,
-      "Skull Bash": 130,
-      "Odor Sleuth": 316
+      "Skull Bash": 130
     },
     "tutorLearnset": {
       "Snore": 173,
@@ -39580,7 +39552,6 @@
       "Switcheroo": 415,
       "Soak": 487,
       "Helping Hand": 270,
-      "Odor Sleuth": 316,
       "Double Slap": 3
     },
     "tutorLearnset": {
@@ -42232,7 +42203,6 @@
       "Tackle": 1,
       "Metronome": 1,
       "Defense Curl": 1,
-      "Odor Sleuth": 1,
       "Amnesia": 9,
       "Covet": 12,
       "Lick": 12,
@@ -43360,8 +43330,8 @@
     "dexNum": 456,
     "form": 0,
     "eggGroups": [
-      "Water 3",
-      "Water 3"
+      "Water 2",
+      "Water 2"
     ]
   },
   {
@@ -43383,8 +43353,8 @@
       "Icy Wind": 1,
       "Attract": 9,
       "Rain Dance": 12,
-      "Water Pulse": 18,
       "Silver Wind": 18,
+      "Water Pulse": 18,
       "Psybeam": 21,
       "Flail": 26,
       "Safeguard": 27,
@@ -43447,8 +43417,8 @@
     "dexNum": 457,
     "form": 0,
     "eggGroups": [
-      "Water 3",
-      "Water 3"
+      "Water 2",
+      "Water 2"
     ]
   },
   {
@@ -45008,7 +44978,6 @@
       "Ice Fang": 13,
       "Fury Attack": 1,
       "Peck": 1,
-      "Odor Sleuth": 1,
       "Mud-Slap": 4,
       "Powder Snow": 10,
       "Ice Shard": 15,
@@ -47669,7 +47638,6 @@
       "Parting Shot": 1,
       "Lick": 7,
       "Snarl": 9,
-      "Odor Sleuth": 13,
       "Headbutt": 13,
       "Baby-Doll Eyes": 15,
       "Pin Missile": 16,
@@ -48453,6 +48421,7 @@
       "Brutal Swing": 21,
       "Brine": 24,
       "Night Slash": 26,
+      "Venoshock": 27,
       "Poison Jab": 34,
       "Aqua Tail": 38,
       "Destiny Bond": 42,
@@ -48502,8 +48471,8 @@
     "dexNum": 904,
     "form": 0,
     "eggGroups": [
-      "Water 3",
-      "Water 3"
+      "Water 2",
+      "Water 2"
     ]
   },
   {
@@ -48722,17 +48691,17 @@
     ],
     "learnset": {
       "Petal Blizzard": 0,
+      "Growth": 35,
       "Vine Whip": 5,
+      "Growl": 1,
       "Tackle": 1,
       "Petal Dance": 32,
-      "Earth Power": 1,
-      "Growth": 35,
-      "Growl": 1,
       "Power Whip": 1,
+      "Earth Power": 1,
       "Leech Seed": 8,
       "Razor Leaf": 11,
-      "Poison Powder": 14,
       "Sleep Powder": 14,
+      "Poison Powder": 14,
       "Magical Leaf": 16,
       "Sludge": 18,
       "Seed Bomb": 20,
@@ -48804,13 +48773,13 @@
     "learnset": {
       "Air Slash": 36,
       "Dragon Claw": 1,
-      "Wing Attack": 1,
+      "Shadow Claw": 1,
       "Growl": 1,
       "Scratch": 1,
-      "Smokescreen": 1,
       "Heat Wave": 1,
+      "Wing Attack": 1,
       "Ember": 5,
-      "Shadow Claw": 8,
+      "Smokescreen": 8,
       "Metal Claw": 11,
       "Bite": 14,
       "Dragon Breath": 16,
@@ -48892,21 +48861,26 @@
       "Drizzle"
     ],
     "learnset": {
-      "Flash Cannon": 1,
-      "Tackle": 1,
+      "Flash Cannon": 0,
+      "Withdraw": 8,
+      "Water Gun": 5,
       "Tail Whip": 1,
-      "Water Gun": 1,
-      "Withdraw": 1,
-      "Rapid Spin": 9,
-      "Bite": 12,
-      "Water Pulse": 15,
-      "Protect": 20,
-      "Rain Dance": 25,
-      "Aqua Tail": 30,
+      "Tackle": 1,
+      "Bubble Beam": 11,
+      "Bite": 14,
+      "Yawn": 16,
+      "Rapid Spin": 18,
+      "Water Pulse": 22,
+      "Protect": 26,
+      "Muddy Water": 30,
+      "Iron Defense": 34,
       "Shell Smash": 35,
-      "Iron Defense": 42,
-      "Hydro Pump": 49,
-      "Skull Bash": 56
+      "Aura Sphere": 36,
+      "Skull Bash": 39,
+      "Aqua Tail": 44,
+      "Rain Dance": 49,
+      "Hydro Pump": 54,
+      "Water Spout": 59
     },
     "tmLearnset": {
       "Focus Punch": 264,
@@ -49031,10 +49005,8 @@
       "Counter": 68,
       "Final Gambit": 515,
       "Fury Swipes": 154,
-      "Me First": 382,
       "Revenge": 279,
       "Reversal": 179,
-      "Snatch": 289,
       "Stockpile": 254,
       "Swallow": 256,
       "Switcheroo": 415,
@@ -49316,7 +49288,7 @@
   },
   {
     "value": 1028,
-    "text": "Pikachu Rock Star",
+    "text": "Cosplay Rock Star Pikachu",
     "type": "Electric",
     "abilities": [
       "Static",
@@ -49463,7 +49435,7 @@
   },
   {
     "value": 1029,
-    "text": "Pikachu Belle",
+    "text": "Cosplay Belle Pikachu",
     "type": "Electric",
     "abilities": [
       "Static",
@@ -49610,7 +49582,7 @@
   },
   {
     "value": 1030,
-    "text": "Pikachu Pop Star",
+    "text": "Cosplay Pop Star Pikachu",
     "type": "Electric",
     "abilities": [
       "Static",
@@ -49757,7 +49729,7 @@
   },
   {
     "value": 1031,
-    "text": "Pikachu, Ph.D",
+    "text": "Cosplay Ph.D Pikachu",
     "type": "Electric",
     "abilities": [
       "Static",
@@ -49904,7 +49876,7 @@
   },
   {
     "value": 1032,
-    "text": "Pikachu Libre",
+    "text": "Cosplay Libre Pikachu",
     "type": "Electric",
     "abilities": [
       "Static",
@@ -50872,8 +50844,7 @@
       "Covet": 343,
       "Charm": 204,
       "Amnesia": 133,
-      "Foul Play": 492,
-      "Odor Sleuth": 316
+      "Foul Play": 492
     },
     "tutorLearnset": {
       "Snore": 173,
@@ -52464,7 +52435,7 @@
     "form": 1,
     "eggGroups": [
       "Mineral",
-      "Water 3"
+      "Mineral"
     ]
   },
   {
@@ -53185,7 +53156,7 @@
   },
   {
     "value": 1100,
-    "text": "MK2 Armored Mewtwo",
+    "text": "Mk II Armored Mewtwo",
     "type": "Psychic",
     "abilities": [
       "Pressure",
@@ -53206,7 +53177,6 @@
       "Psycho Cut": 16,
       "Guard Swap": 26,
       "Power Swap": 26,
-      "Miracle Eye": 29,
       "Recover": 30,
       "Amnesia": 34,
       "Psychic": 38,
@@ -53295,7 +53265,7 @@
   },
   {
     "value": 1101,
-    "text": "MK2 Armored Mewtwo",
+    "text": "Mk I Armored Mewtwo",
     "type": "Psychic",
     "abilities": [
       "Pressure",
@@ -53316,7 +53286,6 @@
       "Psycho Cut": 22,
       "Power Swap": 26,
       "Guard Swap": 26,
-      "Miracle Eye": 29,
       "Recover": 30,
       "Amnesia": 34,
       "Psychic": 38,
@@ -53512,7 +53481,7 @@
   },
   {
     "value": 1103,
-    "text": "Spiky-eared Pichu",
+    "text": "Spiky-Eared Pichu",
     "type": "Electric",
     "abilities": [
       "Static",
@@ -53522,11 +53491,13 @@
     "learnset": {
       "Tail Whip": 1,
       "Thunder Shock": 1,
+      "Disarming Voice": 15,
       "Play Nice": 4,
-      "Sweet Kiss": 8,
+      "Charm": 4,
+      "Sweet Kiss": 7,
+      "Thunder Wave": 11,
       "Nuzzle": 12,
-      "Nasty Plot": 16,
-      "Charm": 20
+      "Nasty Plot": 13
     },
     "tmLearnset": {
       "Focus Punch": 264,
@@ -53734,7 +53705,7 @@
   },
   {
     "value": 1107,
-    "text": "Unown One form",
+    "text": "Unown B Form",
     "type": "Psychic",
     "abilities": [
       "Levitate",
@@ -53768,7 +53739,7 @@
   },
   {
     "value": 1108,
-    "text": "Unown One form",
+    "text": "Unown C Form",
     "type": "Psychic",
     "abilities": [
       "Levitate",
@@ -53802,7 +53773,7 @@
   },
   {
     "value": 1109,
-    "text": "Unown One form",
+    "text": "Unown D Form",
     "type": "Psychic",
     "abilities": [
       "Levitate",
@@ -53836,7 +53807,7 @@
   },
   {
     "value": 1110,
-    "text": "Unown One form",
+    "text": "Unown E Form",
     "type": "Psychic",
     "abilities": [
       "Levitate",
@@ -53870,7 +53841,7 @@
   },
   {
     "value": 1111,
-    "text": "Unown One form",
+    "text": "Unown F Form",
     "type": "Psychic",
     "abilities": [
       "Levitate",
@@ -53904,7 +53875,7 @@
   },
   {
     "value": 1112,
-    "text": "Unown One form",
+    "text": "Unown G Form",
     "type": "Psychic",
     "abilities": [
       "Levitate",
@@ -53938,7 +53909,7 @@
   },
   {
     "value": 1113,
-    "text": "Unown One form",
+    "text": "Unown H Form",
     "type": "Psychic",
     "abilities": [
       "Levitate",
@@ -53972,7 +53943,7 @@
   },
   {
     "value": 1114,
-    "text": "Unown One form",
+    "text": "Unown I Form",
     "type": "Psychic",
     "abilities": [
       "Levitate",
@@ -54006,7 +53977,7 @@
   },
   {
     "value": 1115,
-    "text": "Unown One form",
+    "text": "Unown J Form",
     "type": "Psychic",
     "abilities": [
       "Levitate",
@@ -54040,7 +54011,7 @@
   },
   {
     "value": 1116,
-    "text": "Unown One form",
+    "text": "Unown K Form",
     "type": "Psychic",
     "abilities": [
       "Levitate",
@@ -54074,7 +54045,7 @@
   },
   {
     "value": 1117,
-    "text": "Unown One form",
+    "text": "Unown L Form",
     "type": "Psychic",
     "abilities": [
       "Levitate",
@@ -54108,7 +54079,7 @@
   },
   {
     "value": 1118,
-    "text": "Unown One form",
+    "text": "Unown M Form",
     "type": "Psychic",
     "abilities": [
       "Levitate",
@@ -54142,7 +54113,7 @@
   },
   {
     "value": 1119,
-    "text": "Unown One form",
+    "text": "Unown N Form",
     "type": "Psychic",
     "abilities": [
       "Levitate",
@@ -54176,7 +54147,7 @@
   },
   {
     "value": 1120,
-    "text": "Unown One form",
+    "text": "Unown O Form",
     "type": "Psychic",
     "abilities": [
       "Levitate",
@@ -54210,7 +54181,7 @@
   },
   {
     "value": 1121,
-    "text": "Unown One form",
+    "text": "Unown P Form",
     "type": "Psychic",
     "abilities": [
       "Levitate",
@@ -54244,7 +54215,7 @@
   },
   {
     "value": 1122,
-    "text": "Unown One form",
+    "text": "Unown Q Form",
     "type": "Psychic",
     "abilities": [
       "Levitate",
@@ -54278,7 +54249,7 @@
   },
   {
     "value": 1123,
-    "text": "Unown One form",
+    "text": "Unown R Form",
     "type": "Psychic",
     "abilities": [
       "Levitate",
@@ -54312,7 +54283,7 @@
   },
   {
     "value": 1124,
-    "text": "Unown One form",
+    "text": "Unown S Form",
     "type": "Psychic",
     "abilities": [
       "Levitate",
@@ -54346,7 +54317,7 @@
   },
   {
     "value": 1125,
-    "text": "Unown One form",
+    "text": "Unown T Form",
     "type": "Psychic",
     "abilities": [
       "Levitate",
@@ -54380,7 +54351,7 @@
   },
   {
     "value": 1126,
-    "text": "Unown One form",
+    "text": "Unown U Form",
     "type": "Psychic",
     "abilities": [
       "Levitate",
@@ -54414,7 +54385,7 @@
   },
   {
     "value": 1127,
-    "text": "Unown One form",
+    "text": "Unown V Form",
     "type": "Psychic",
     "abilities": [
       "Levitate",
@@ -54448,7 +54419,7 @@
   },
   {
     "value": 1128,
-    "text": "Unown One form",
+    "text": "Unown W Form",
     "type": "Psychic",
     "abilities": [
       "Levitate",
@@ -54482,7 +54453,7 @@
   },
   {
     "value": 1129,
-    "text": "Unown One form",
+    "text": "Unown X Form",
     "type": "Psychic",
     "abilities": [
       "Levitate",
@@ -54516,7 +54487,7 @@
   },
   {
     "value": 1130,
-    "text": "Unown One form",
+    "text": "Unown Y Form",
     "type": "Psychic",
     "abilities": [
       "Levitate",
@@ -54550,7 +54521,7 @@
   },
   {
     "value": 1131,
-    "text": "Unown One form",
+    "text": "Unown Z Form",
     "type": "Psychic",
     "abilities": [
       "Levitate",
@@ -54584,7 +54555,7 @@
   },
   {
     "value": 1132,
-    "text": "Unown One form",
+    "text": "Unown ! Form",
     "type": "Psychic",
     "abilities": [
       "Levitate",
@@ -54618,7 +54589,7 @@
   },
   {
     "value": 1133,
-    "text": "Unown One form",
+    "text": "Unown ? Form",
     "type": "Psychic",
     "abilities": [
       "Levitate",
@@ -54749,8 +54720,8 @@
     "dexNum": 211,
     "form": 1,
     "eggGroups": [
-      "Water 3",
-      "Water 3"
+      "Water 2",
+      "Water 2"
     ]
   },
   {
@@ -54827,7 +54798,8 @@
       "Crush Claw": 306,
       "Ice Punch": 8,
       "Throat Chop": 675,
-      "Sucker Punch": 389
+      "Sucker Punch": 389,
+      "Icicle Spear": 333
     },
     "tutorLearnset": {
       "Snore": 173,
@@ -54986,7 +54958,6 @@
       "Lick": 7,
       "Snarl": 9,
       "Headbutt": 13,
-      "Odor Sleuth": 13,
       "Baby-Doll Eyes": 15,
       "Pin Missile": 16,
       "Scary Face": 22,
@@ -55084,7 +55055,6 @@
       "Lick": 7,
       "Snarl": 9,
       "Headbutt": 13,
-      "Odor Sleuth": 13,
       "Baby-Doll Eyes": 15,
       "Pin Missile": 16,
       "Night Slash": 22,
@@ -55213,15 +55183,25 @@
       "Thunder Wave": 86,
       "Psych Up": 244
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Future Sight": 248,
+      "Disable": 50,
+      "Amnesia": 133,
+      "Hex": 506,
+      "Clear Smog": 499,
+      "Reflect Type": 513,
+      "Guard Swap": 385,
+      "Cosmic Power": 322,
+      "Ominous Wind": 466
+    },
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 70,
-      "atk": 70,
-      "def": 70,
-      "spa": 70,
+      "hp": 60,
+      "atk": 60,
+      "def": 60,
+      "spa": 105,
       "spd": 70,
-      "spe": 70
+      "spe": 95
     },
     "dexNum": 351,
     "form": 1,
@@ -55284,15 +55264,25 @@
       "Thunder Wave": 86,
       "Psych Up": 244
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Future Sight": 248,
+      "Disable": 50,
+      "Amnesia": 133,
+      "Hex": 506,
+      "Clear Smog": 499,
+      "Reflect Type": 513,
+      "Guard Swap": 385,
+      "Cosmic Power": 322,
+      "Ominous Wind": 466
+    },
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 70,
-      "atk": 70,
-      "def": 70,
-      "spa": 70,
+      "hp": 60,
+      "atk": 60,
+      "def": 60,
+      "spa": 105,
       "spd": 70,
-      "spe": 70
+      "spe": 95
     },
     "dexNum": 351,
     "form": 2,
@@ -55355,15 +55345,25 @@
       "Thunder Wave": 86,
       "Psych Up": 244
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Future Sight": 248,
+      "Disable": 50,
+      "Amnesia": 133,
+      "Hex": 506,
+      "Clear Smog": 499,
+      "Reflect Type": 513,
+      "Guard Swap": 385,
+      "Cosmic Power": 322,
+      "Ominous Wind": 466
+    },
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 70,
-      "atk": 70,
-      "def": 70,
-      "spa": 70,
+      "hp": 60,
+      "atk": 60,
+      "def": 60,
+      "spa": 105,
       "spd": 70,
-      "spe": 70
+      "spe": 95
     },
     "dexNum": 351,
     "form": 3,
@@ -55664,14 +55664,15 @@
     "text": "Burmy Sandy Cloak",
     "type": "Bug",
     "abilities": [
-      "Shed Skin",
+      "Battle Armor",
       "Shed Skin",
       "Overcoat"
     ],
     "learnset": {
+      "Tackle": 1,
+      "Bug Bite": 1,
+      "Hidden Power": 1,
       "Protect": 1,
-      "Tackle": 10,
-      "Bug Bite": 15,
       "String Shot": 20
     },
     "tmLearnset": {
@@ -55681,11 +55682,11 @@
     "tutorLearnset": {},
     "baseStats": {
       "hp": 40,
-      "atk": 29,
+      "atk": 20,
       "def": 45,
-      "spa": 29,
+      "spa": 45,
       "spd": 45,
-      "spe": 36
+      "spe": 30
     },
     "dexNum": 412,
     "form": 1,
@@ -55699,14 +55700,15 @@
     "text": "Burmy Trash Cloak",
     "type": "Bug",
     "abilities": [
-      "Shed Skin",
+      "Battle Armor",
       "Shed Skin",
       "Overcoat"
     ],
     "learnset": {
+      "Tackle": 1,
+      "Bug Bite": 1,
+      "Hidden Power": 1,
       "Protect": 1,
-      "Tackle": 10,
-      "Bug Bite": 15,
       "String Shot": 20
     },
     "tmLearnset": {
@@ -55716,11 +55718,11 @@
     "tutorLearnset": {},
     "baseStats": {
       "hp": 40,
-      "atk": 29,
+      "atk": 20,
       "def": 45,
-      "spa": 29,
+      "spa": 45,
       "spd": 45,
-      "spe": 36
+      "spe": 30
     },
     "dexNum": 412,
     "form": 2,
@@ -55735,7 +55737,7 @@
     "type": "Bug",
     "dualtype": "Ground",
     "abilities": [
-      "Anticipation",
+      "Battle Armor",
       "Anticipation",
       "Overcoat"
     ],
@@ -55809,7 +55811,7 @@
     "type": "Bug",
     "dualtype": "Steel",
     "abilities": [
-      "Anticipation",
+      "Battle Armor",
       "Anticipation",
       "Overcoat"
     ],
@@ -55886,20 +55888,24 @@
       "Flower Gift"
     ],
     "learnset": {
-      "Sunny Day": 1,
-      "Flower Shield": 1,
-      "Growth": 1,
+      "Sunny Day": 22,
       "Leafage": 1,
-      "Morning Sun": 1,
       "Tackle": 1,
-      "Helping Hand": 15,
-      "Magical Leaf": 20,
-      "Leech Seed": 28,
-      "Take Down": 34,
-      "Petal Blizzard": 41,
-      "Worry Seed": 48,
-      "Solar Beam": 55,
-      "Petal Dance": 62
+      "Morning Sun": 1,
+      "Flower Shield": 1,
+      "Weather Ball": 1,
+      "Growth": 7,
+      "Leech Seed": 10,
+      "Helping Hand": 13,
+      "Magical Leaf": 16,
+      "Worry Seed": 19,
+      "Petal Dance": 25,
+      "Giga Drain": 26,
+      "Take Down": 30,
+      "Petal Blizzard": 38,
+      "Energy Ball": 41,
+      "Healing Wish": 46,
+      "Solar Beam": 50
     },
     "tmLearnset": {
       "Bullet Seed": 331,
@@ -55950,14 +55956,22 @@
     "learnset": {
       "Mud-Slap": 1,
       "Water Gun": 1,
-      "Harden": 5,
-      "Recover": 10,
-      "Water Pulse": 15,
+      "Harden": 7,
+      "Water Pulse": 10,
+      "Mud Bomb": 13,
+      "Hidden Power": 16,
+      "Sludge": 20,
       "Ancient Power": 20,
-      "Body Slam": 25,
+      "Whirlpool": 22,
+      "Rain Dance": 25,
+      "Earth Power": 28,
       "Muddy Water": 31,
-      "Earth Power": 35,
-      "Rain Dance": 40,
+      "Body Slam": 34,
+      "Counter": 37,
+      "Mirror Coat": 37,
+      "Amnesia": 40,
+      "Acid Armor": 40,
+      "Recover": 43,
       "Memento": 45
     },
     "tmLearnset": {
@@ -56019,16 +56033,25 @@
       "Sand Force"
     ],
     "learnset": {
-      "Harden": 1,
+      "Recover": 48,
+      "Harden": 7,
       "Mud-Slap": 1,
-      "Recover": 1,
       "Water Gun": 1,
-      "Water Pulse": 15,
+      "Water Pulse": 10,
+      "Mud Bomb": 13,
+      "Hidden Power": 16,
+      "Sludge": 19,
       "Ancient Power": 20,
-      "Body Slam": 25,
-      "Muddy Water": 33,
-      "Earth Power": 39,
-      "Rain Dance": 46,
+      "Whirlpool": 22,
+      "Rain Dance": 25,
+      "Earth Power": 28,
+      "Sludge Bomb": 30,
+      "Muddy Water": 32,
+      "Body Slam": 36,
+      "Counter": 40,
+      "Mirror Coat": 40,
+      "Amnesia": 44,
+      "Acid Armor": 44,
       "Memento": 53
     },
     "tmLearnset": {
@@ -56562,7 +56585,7 @@
   },
   {
     "value": 1193,
-    "text": "Arceus",
+    "text": "Fist Plate Arceus",
     "type": "Fighting",
     "abilities": [
       "Multitype",
@@ -56682,7 +56705,7 @@
   },
   {
     "value": 1194,
-    "text": "Arceus",
+    "text": "Sky Plate Arceus",
     "type": "Flying",
     "abilities": [
       "Multitype",
@@ -56802,7 +56825,7 @@
   },
   {
     "value": 1195,
-    "text": "Arceus",
+    "text": "Toxic Plate Arceus",
     "type": "Poison",
     "abilities": [
       "Multitype",
@@ -56922,7 +56945,7 @@
   },
   {
     "value": 1196,
-    "text": "Arceus",
+    "text": "Earth Plate Arceus",
     "type": "Ground",
     "abilities": [
       "Multitype",
@@ -57042,7 +57065,7 @@
   },
   {
     "value": 1197,
-    "text": "Arceus",
+    "text": "Stone Plate Arceus",
     "type": "Rock",
     "abilities": [
       "Multitype",
@@ -57162,7 +57185,7 @@
   },
   {
     "value": 1198,
-    "text": "Arceus",
+    "text": "Insect Plate Arceus",
     "type": "Bug",
     "abilities": [
       "Multitype",
@@ -57282,7 +57305,7 @@
   },
   {
     "value": 1199,
-    "text": "Arceus",
+    "text": "Spooky Plate Arceus",
     "type": "Ghost",
     "abilities": [
       "Multitype",
@@ -57402,7 +57425,7 @@
   },
   {
     "value": 1200,
-    "text": "Arceus",
+    "text": "Iron Plate Arceus",
     "type": "Steel",
     "abilities": [
       "Multitype",
@@ -57522,7 +57545,7 @@
   },
   {
     "value": 1201,
-    "text": "Arceus",
+    "text": "Flame Plate Arceus",
     "type": "Fire",
     "abilities": [
       "Multitype",
@@ -57642,7 +57665,7 @@
   },
   {
     "value": 1202,
-    "text": "Arceus",
+    "text": "Splash Plate Arceus",
     "type": "Water",
     "abilities": [
       "Multitype",
@@ -57762,7 +57785,7 @@
   },
   {
     "value": 1203,
-    "text": "Arceus",
+    "text": "Meadow Plate Arceus",
     "type": "Grass",
     "abilities": [
       "Multitype",
@@ -57882,7 +57905,7 @@
   },
   {
     "value": 1204,
-    "text": "Arceus",
+    "text": "Zap Plate Arceus",
     "type": "Electric",
     "abilities": [
       "Multitype",
@@ -58002,7 +58025,7 @@
   },
   {
     "value": 1205,
-    "text": "Arceus",
+    "text": "Mind Plate Arceus",
     "type": "Psychic",
     "abilities": [
       "Multitype",
@@ -58122,7 +58145,7 @@
   },
   {
     "value": 1206,
-    "text": "Arceus",
+    "text": "Icicle Plate Arceus",
     "type": "Ice",
     "abilities": [
       "Multitype",
@@ -58242,7 +58265,7 @@
   },
   {
     "value": 1207,
-    "text": "Arceus",
+    "text": "Draco Plate Arceus",
     "type": "Dragon",
     "abilities": [
       "Multitype",
@@ -58362,7 +58385,7 @@
   },
   {
     "value": 1208,
-    "text": "Arceus",
+    "text": "Dread Plate Arceus",
     "type": "Dark",
     "abilities": [
       "Multitype",
@@ -58482,7 +58505,7 @@
   },
   {
     "value": 1209,
-    "text": "Arceus",
+    "text": "Pixie Plate Arceus",
     "type": "Fairy",
     "abilities": [
       "Multitype",

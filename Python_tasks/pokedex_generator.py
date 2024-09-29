@@ -355,6 +355,8 @@ def getPokedexInfo():
     evolutions = evolution_pathfinding()
 
     for pokemon in evolutions.keys():
+        if pokemon == 0:
+            continue
         if pokemon > constants.NAT_DEX_LENGTH:
             continue
         is_valid = is_valid_pokemon(pokemon)
