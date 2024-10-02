@@ -305,7 +305,7 @@ def get_trainer_doc_data():
     '''
     This gets the trainer documentation for Solarnce's Trainer Docs in the Google Sheets
     '''
-    trainer_info = process_files(os.path.join(repo_file_path, "scriptdata"), parse_ev_script_file)
+    trainer_info = process_files(os.path.join(repo_file_path, constants.SCRIPT_DATA), parse_ev_script_file)
     print("Start trainer sorting by level")
     sorted_trainers = sort_trainers_by_level(trainer_info)
     print("Trainers have been sorted")
@@ -319,7 +319,7 @@ def get_tracker_trainer_data():
     gym_leader_data = full_data['gym_leaders']
 
     original_teams = getTrainerData(gym_leader_data)
-    trainer_info = process_files(os.path.join(repo_file_path, "scriptdata"), parse_ev_script_file)
+    trainer_info = process_files(os.path.join(repo_file_path, constants.SCRIPT_DATA), parse_ev_script_file)
 
     print("Start sorting trainers by zone")
     sorted_tracker_trainers = sort_trainers_by_route(trainer_info)

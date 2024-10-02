@@ -23,6 +23,7 @@ if INPUT_NAME == "vanilla_input":
     POKEDEX_LENGTH = 493
     NAT_DEX_LENGTH = 493
     TROUBLE_MONS_NAMES = {}
+    SCRIPT_DATA = "vanillaScripts"
 if INPUT_NAME == "input":
     GAME_MODE = "2.0"
     DEBUG_NAME = "Debug"
@@ -38,6 +39,7 @@ if INPUT_NAME == "input":
         1456: 'Oinkologne-F',
         1067: "Galarian Farfetch'd"
     }
+    SCRIPT_DATA = "scriptdata"
 elif INPUT_NAME == "3.0Input":
     GAME_MODE = "3.0"
     DEBUG_NAME = "3.0Debug"

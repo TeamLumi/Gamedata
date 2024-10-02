@@ -60,7 +60,8 @@ def get_trainer_id_from_partial(label_name):
     for e in label_data_array:
         if e['labelName'].endswith(str(label_name.strip("'"))):
             return e['labelIndex']
-    return None
+    
+    return special_trainer_names[label_name]
 
 def get_trainer_label(label_name):
     label_data_array = trainer_labels['labelDataArray']
@@ -432,9 +433,11 @@ def get_named_trainer_data(zoneID, trainerID1, trainerID2, args):
     Inside of each of these is a check for any trainerID above 651.
     If it is above 651, it pulls the trainer name from the trainer enum obtained from @Sma
     '''
+    trainerID1 = trainerID1.strip("'")
     trainers = []
     special_trainer_names = full_data['special_trainer_names']
     if len(trainerID2) > 0:
+        trainerID2 = trainerID2.strip("'")
         temp_trainerID1 = get_trainer_id_from_partial(trainerID1)
         temp_trainerID2 = get_trainer_id_from_partial(trainerID2)
         if temp_trainerID1 > 651 or temp_trainerID2 > 651:
@@ -587,6 +590,7 @@ def get_all_trainer_data(file_path, args, substring):
         return trainers
     # This last section is for the trainers that are called by name in the scripts like BATTLEG_01 or something like that.
     elif not trainerID1.isnumeric():
+        print(zoneID, trainerID1, trainerID2, args)
         trainers.extend(get_named_trainer_data(zoneID, trainerID1, trainerID2, args))
         return trainers
     else:
@@ -721,3 +725,4 @@ if __name__ != "__main__":
     zone_dict, reverse_zone_dict = create_zone_id_map()
     trainer_labels = full_data['trainer_labels']
     trainer_names = full_data['trainer_names']
+    special_trainer_names = full_data['special_trainer_names']

@@ -507,15 +507,15 @@ c01_support_male_10:
 	_SUPPORT_NAME(0)
 	_PLAYER_NAME(1)
 	_TALK_KEYWAIT('dp_scenario1%27-msg_c01_heroine_05', 1)
-	_JUMP('c01_01_support_common_10')
+	_JUMP('pos_c01_gingakanbu')
 	_END()
 c01_support_female_10:
 	_SUPPORT_NAME(0)
 	_PLAYER_NAME(1)
 	_TALK_KEYWAIT('dp_scenario1%27-msg_c01_hero_05', 1)
-	_JUMP('c01_01_support_common_10')
+	_JUMP('pos_c01_gingakanbu')
 	_END()
-c01_01_support_common_10:
+pos_c01_gingakanbu:
 	_TALK_CLOSE()
 	_CHARA_LOOK_RELEASE('C01_SUPPORT')
 	_CHARA_LOOK_RELEASE('HERO')
