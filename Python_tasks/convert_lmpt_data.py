@@ -629,9 +629,9 @@ def getEncounterData(mons_no_or_zoneId = "mons_no"):
                 monsNo = mon['monsNo']
                 check_mon_route_list.append([monsNo, method, method_index, zoneID])
                 update_routes_with_mons(monsNo, zoneID, encounter_list)
-        check = check_mons_list(check_mon_route_list, zoneID, final_list)
+        check, unique_list = check_mons_list(check_mon_route_list, zoneID, final_list)
         if check != -1:
-            final_list[zoneID] = check
+            final_list[zoneID] = unique_list
     ##This is for adding the Trophy Garden daily mons
     for mon in encounter_data[constants.TROPHY_GARDEN_NAME]:
         monsNo = mon['monsNo']
@@ -664,10 +664,10 @@ def getEncounterData(mons_no_or_zoneId = "mons_no"):
         output.write(json.dumps(sorted_encounters, indent=2))
 
 def writeEncounterDocData():
-    with open(os.path.join(debug_file_path, 'pokemon_locations.json')) as f:
+    with open(os.path.join(input_file_path, 'pokemon_locations.json')) as f:
         data = json.load(f)
     largest_number = ["", 0]
-    with open(os.path.join(debug_file_path, 'pokemon_locations.txt'), 'w') as output:
+    with open(os.path.join(input_file_path, 'pokemon_locations.txt'), 'w') as output:
         for monsNo in data.keys():
             monsName = get_pokemon_name(int(monsNo))
             enc_dict = defaultdict(list)

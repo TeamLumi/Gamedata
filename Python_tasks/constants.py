@@ -10,9 +10,19 @@ if len(sys.argv) > 1:
     elif sys.argv[1] == "2.0":
         INPUT_NAME = "input"
         print("Running in 2.0F mode")
+    elif sys.argv[1] == "vanilla":
+        INPUT_NAME = "vanilla_input"
+        print("Running in Vanilla Mode")
 else:
     INPUT_NAME = "input"
 
+if INPUT_NAME == "vanilla_input":
+    GAME_MODE = "vanilla"
+    DEBUG_NAME = "DebugVanilla"
+    OUTPUT_NAME = "outputVanilla"
+    POKEDEX_LENGTH = 493
+    NAT_DEX_LENGTH = 493
+    TROUBLE_MONS_NAMES = {}
 if INPUT_NAME == "input":
     GAME_MODE = "2.0"
     DEBUG_NAME = "Debug"

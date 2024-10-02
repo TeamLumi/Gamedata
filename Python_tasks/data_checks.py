@@ -81,6 +81,9 @@ def check_mons_list(pokemon_list, zoneID, final_list):
     incense_count = 0
     radar_list = {zoneID: []}
 
+    # if constants.GAME_MODE == "vanilla":
+        # We need to do something else...
+
     for mon in pokemon_list:
         if mon[1] in constants.REGULAR_ENC_LIST:
             original_list.append(mon[0])
@@ -108,11 +111,11 @@ def check_mons_list(pokemon_list, zoneID, final_list):
 
     unique_radar_list = list(set(radar_list[zoneID]))
     if len(unique_radar_list) > 1:
-        print(radar_list)
+        print("This route would have pokemon missing", radar_list)
     unique_list = list(set(missing_list))
     if len(unique_list) > 0:
-        return unique_list
-    return -1
+        return (1, unique_list)
+    return (-1, unique_list)
 
 if __name__ != "__main__":
     full_data = load_data()
