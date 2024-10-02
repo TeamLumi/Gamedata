@@ -1,0 +1,28 @@
+ev_d03_flag_change:
+	_ARRIVE_FLAG_SET($FLAG_ARRIVE_D03)
+	_END()
+ev_d03_woman1:
+	_TALK_OBJ_START()
+	_IF_FLAGON_JUMP(#FE_D03_ACCE_GET, 'ev_d03_woman1_02')
+	_LDVAL(@SCWK_TEMP0, 'IMC_ACCE_TREE00')
+	_ACCE_NAME(0, @SCWK_TEMP0)
+	_TALK_KEYWAIT('dp_scenario1%105-msg_d03_woman1_01')
+	_LDVAL(@SCWK_TEMP0, 69)
+	_LDVAL(@SCWK_TEMP1, 3)
+	_CALL('ev_exec_item_seal_get')
+	_FLAG_SET(#FE_D03_ACCE_GET)
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_d03_woman1_02:
+	_TALK_KEYWAIT('dp_scenario1%105-msg_d03_woman1_02')
+	_LAST_KEYWAIT()
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_d03_sign1_01:
+	_EASY_BOARD_MSG('dp_scenario1%105-msg_d03_sign1_01', 'BOARD_TYPE_POST', 0)
+	_END()
+ev_d03_sign2_01:
+	_EASY_INFOBOARD_MSG('dp_scenario1%105-msg_d03_sign2_01', 'BOARD_TYPE_INFO', 0)
+	_END()

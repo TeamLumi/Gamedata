@@ -1,0 +1,41 @@
+ev_r211b_man3:
+	_TALK_OBJ_START_TURN_NOT()
+	_IF_FLAGON_JUMP(#FE_WAZAMASIN77_GET, 'ev_r211b_man3_02')
+	_TALK_KEYWAIT('dp_scenario2%89-msg_r211b_man3_01')
+	_TALK_CLOSE()
+	_TURN_HERO_SITE()
+	_OBJ_ANIME(@SCWK_TARGET_OBJID, 'anm_r211b_man3_01')
+	_OBJ_ANIME_WAIT()
+	_TALK_KEYWAIT('dp_scenario2%89-msg_r211b_man3_02')
+	_LDVAL(@SCWK_TEMP0, 404)
+	_LDVAL(@SCWK_TEMP1, 3)
+	_ADD_ITEM_CHK(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_ANSWER)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_r211b_man3_item_event_fail')
+	_CHG_COMMON_SCR('ev_item_event_keywait')
+	_FLAG_SET(#FE_WAZAMASIN77_GET)
+	_JUMP('ev_r211b_man3_02')
+	_JUMP('ev_r211b_man3_02')
+ev_r211b_man3_02:
+	_TURN_HERO_SITE()
+	_TALKMSG('dp_scenario2%89-msg_r211b_man3_03')
+	_LAST_KEYWAIT()
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_r211b_man3_item_event_fail:
+	_CHG_COMMON_SCR('ev_item_event_fail')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+anm_r211b_man3_01:
+	_AC_MARK_GYOE(1)
+	_ACMD_END()
+ev_r211b_sign1:
+	_EASY_BOARD_MSG('dp_scenario2%89-msg_r211b_sign1_01', 'BOARD_TYPE_ROAD', 0, 2)
+	_END()
+ev_r211b_sign2:
+	_EASY_INFOBOARD_MSG('dp_scenario2%89-msg_r211b_sign2_01', 'BOARD_TYPE_INFO', 0)
+	_END()
+ev_r211b_sign3:
+	_EASY_BOARD_MSG('dp_scenario2%89-msg_r211b_sign3_01', 'BOARD_TYPE_ROAD', 0, 1)
+	_END()

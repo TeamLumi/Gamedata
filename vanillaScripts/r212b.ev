@@ -1,0 +1,46 @@
+ev_r212b_flag_change:
+	_GET_TIME_ZONE(@LOCALWORK0)
+	_IFVAL_JUMP(@LOCALWORK0, 'EQ', 0, 'ev_r212b_fc_morning')
+	_IFVAL_JUMP(@LOCALWORK0, 'EQ', 1, 'ev_r212b_fc_noon')
+	_IFVAL_JUMP(@LOCALWORK0, 'EQ', 2, 'ev_r212b_fc_evening')
+	_IFVAL_JUMP(@LOCALWORK0, 'EQ', 3, 'ev_r212b_fc_night')
+	_IFVAL_JUMP(@LOCALWORK0, 'EQ', 4, 'ev_r212b_fc_midnight')
+	_END()
+ev_r212b_fc_morning:
+	_JUMP('ev_r212b_fc_evening')
+ev_r212b_fc_noon:
+	_JUMP('ev_r212b_fc_evening')
+ev_r212b_fc_evening:
+	_FLAG_RESET(#FV_R212B_POLICE5_NPC)
+	_FLAG_SET(#FV_R212B_POLICE5_TR)
+	_OBJ_DEL('TR_POLICE_05')
+	_END()
+ev_r212b_fc_night:
+	_JUMP('ev_r212b_fc_midnight')
+ev_r212b_fc_midnight:
+	_FLAG_RESET(#FV_R212B_POLICE5_TR)
+	_FLAG_SET(#FV_R212B_POLICE5_NPC)
+	_OBJ_DEL('R212B_POLICE5')
+	_END()
+ev_r212b_boy1:
+	_EASY_OBJ_MSG('dp_scenario2%142-msg_r212b_boy1_01')
+	_END()
+ev_r212b_gorggeousw:
+	_EASY_OBJ_MSG('dp_scenario2%142-msg_r212b_gorggeousw_01')
+	_END()
+ev_r212b_bigman:
+	_EASY_OBJ_MSG('dp_scenario2%142-msg_r212b_bigman_01')
+	_END()
+ev_r212b_sign1:
+	_EASY_BOARD_MSG('dp_scenario2%142-msg_r212b_sign1_01', 'BOARD_TYPE_ROAD', 0, 1)
+	_END()
+ev_r212b_sign2:
+	_EASY_BOARD_MSG('dp_scenario2%142-msg_r212b_sign2_01', 'BOARD_TYPE_POST', 0)
+	_END()
+ev_r212b_sign3:
+	_EASY_INFOBOARD_MSG('dp_scenario2%142-msg_r212b_sign3_01_1', 'BOARD_TYPE_INFO', 0)
+	_EASY_INFOBOARD_MSG('dp_scenario2%142-msg_r212b_sign3_01_2', 'BOARD_TYPE_INFO', 0)
+	_END()
+ev_r212b_police5:
+	_EASY_OBJ_MSG('dp_scenario2%142-msg_r212b_police_05_01')
+	_END()

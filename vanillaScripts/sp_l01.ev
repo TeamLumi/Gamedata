@@ -1,0 +1,12 @@
+SP_L01_INIT:
+	_JUMP('ev_l01_init_change')
+	_SP_EVENT_DATA_END()
+SP_L01_FLAG:
+	_JUMP('ev_l01_flag_change')
+	_SP_EVENT_DATA_END()
+SP_L01_SCENE:
+	_JUMP('sp_l01_tbl')
+	_SP_EVENT_DATA_END()
+sp_l01_tbl:
+	_SCENE_CHANGE_DATA(@WK_SCENE_L01, 2, 'ev_l01_rival_return')
+	_SCENE_CHANGE_END()

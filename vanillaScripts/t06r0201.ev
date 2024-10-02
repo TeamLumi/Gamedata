@@ -1,0 +1,23 @@
+ev_t06r0201_fighter:
+	_TALK_OBJ_START()
+	_IF_FLAGON_JUMP(#FE_WAZAMASIN42_GET, 'ev_t06r0201_fighter_02')
+	_TALK_KEYWAIT('dp_scenario3%60-msg_t06r0201_fighter_01')
+	_LDVAL(@SCWK_TEMP0, 369)
+	_LDVAL(@SCWK_TEMP1, 3)
+	_ADD_ITEM_CHK(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_ANSWER)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_t06r0201_fighter_item_event_fail')
+	_CHG_COMMON_SCR('ev_item_event_keywait')
+	_FLAG_SET(#FE_WAZAMASIN42_GET)
+	_JUMP('ev_t06r0201_fighter_02')
+	_JUMP('ev_t06r0201_fighter_02')
+ev_t06r0201_fighter_02:
+	_TALKMSG('dp_scenario3%60-msg_t06r0201_fighter_02')
+	_LAST_KEYWAIT()
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_t06r0201_fighter_item_event_fail:
+	_CHG_COMMON_SCR('ev_item_event_fail')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
