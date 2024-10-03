@@ -20,6 +20,7 @@ if INPUT_NAME == "vanilla_input":
     GAME_MODE = "vanilla"
     DEBUG_NAME = "DebugVanilla"
     OUTPUT_NAME = "outputVanilla"
+    TRAINER_DOC_PATH = "trainer_docs_vanilla"
     POKEDEX_LENGTH = 493
     NAT_DEX_LENGTH = 493
     TROUBLE_MONS_NAMES = {}
@@ -28,6 +29,7 @@ if INPUT_NAME == "input":
     GAME_MODE = "2.0"
     DEBUG_NAME = "Debug"
     OUTPUT_NAME = "output"
+    TRAINER_DOC_PATH = "trainer_docs"
     POKEDEX_LENGTH = 1010
     NAT_DEX_LENGTH = 1455
     TROUBLE_MONS_NAMES = { 
@@ -44,6 +46,7 @@ elif INPUT_NAME == "3.0Input":
     GAME_MODE = "3.0"
     DEBUG_NAME = "3.0Debug"
     OUTPUT_NAME = "3.0Output"
+    TRAINER_DOC_PATH = "trainer_docs_3.0"    
     POKEDEX_LENGTH = 1025
     NAT_DEX_LENGTH = 1528
     TROUBLE_MONS_NAMES = { 

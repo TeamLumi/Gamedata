@@ -590,7 +590,6 @@ def get_all_trainer_data(file_path, args, substring):
         return trainers
     # This last section is for the trainers that are called by name in the scripts like BATTLEG_01 or something like that.
     elif not trainerID1.isnumeric():
-        print(zoneID, trainerID1, trainerID2, args)
         trainers.extend(get_named_trainer_data(zoneID, trainerID1, trainerID2, args))
         return trainers
     else:

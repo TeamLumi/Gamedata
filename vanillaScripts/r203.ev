@@ -77,15 +77,15 @@ pos_r203_rival_01_common:
 	_JUMP('ev_r203_rival_01')
 	_END()
 ev_r203_rival_01:
-	_TRAINER_BTL_SET('RIVAL_01')
+	_TRAINER_BTL_SET('RIVAL_01', 0)
 	_JUMP('ev_r203_rival_btl_coomon')
 	_END()
 ev_r203_rival_02:
-	_TRAINER_BTL_SET('RIVAL_02')
+	_TRAINER_BTL_SET('RIVAL_02', 0)
 	_JUMP('ev_r203_rival_btl_coomon')
 	_END()
 ev_r203_rival_03:
-	_TRAINER_BTL_SET('RIVAL_03')
+	_TRAINER_BTL_SET('RIVAL_03', 0)
 	_JUMP('ev_r203_rival_btl_coomon')
 	_END()
 ev_r203_rival_btl_coomon:
