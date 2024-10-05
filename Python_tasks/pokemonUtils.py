@@ -221,22 +221,22 @@ def get_height(monsno=0):
     pkmn_height_data = full_data['pkmn_height_data']
 
     monsno = int(monsno)
-    if monsno != 0:
-        height_string = pkmn_height_data['labelDataArray'][monsno]['wordDataArray'][0]['str'] or '0'
-        if "'" in height_string:
-            feet_string, inches_string = height_string.split("'")
-        else:
-            feet_string = '0'
-            inches_string = height_string
-
-        inches = float(inches_string[:-1] or '0')
-        feet = int(feet_string)
-
-        feet_in_centimeters = feet * 30.48
-        inches_in_centimeters = inches * 2.54
-        return round((feet_in_centimeters + inches_in_centimeters) / 100, 2)
-    else:
+    if monsno == 0:
         return 0
+
+    height_string = pkmn_height_data['labelDataArray'][monsno]['wordDataArray'][0]['str'] or '0'
+    if "'" in height_string:
+        feet_string, inches_string = height_string.split("'")
+    else:
+        feet_string = '0'
+        inches_string = height_string
+
+    inches = float(inches_string[:-1] or '0')
+    feet = int(feet_string)
+
+    feet_in_centimeters = feet * 30.48
+    inches_in_centimeters = inches * 2.54
+    return round((feet_in_centimeters + inches_in_centimeters) / 100, 2)
 
 def slugify(value, pokeapi=False):
     """
