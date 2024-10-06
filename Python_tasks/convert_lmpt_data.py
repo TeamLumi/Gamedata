@@ -632,18 +632,23 @@ def getEncounterData(mons_no_or_zoneId = "mons_no"):
         check, unique_list = check_mons_list(check_mon_route_list, zoneID, final_list)
         if check != -1:
             final_list[zoneID] = unique_list
-    ##This is for adding the Trophy Garden daily mons
-    for mon in encounter_data[constants.TROPHY_GARDEN_NAME]:
-        monsNo = mon['monsNo']
-        encounter_list[constants.TROPHY_GARDEN_TRACKER_VAR].append(get_pokemon_name(monsNo))
 
-    get_trophy_garden_encounter_rates(encounter_data[constants.TROPHY_GARDEN_NAME], rates_list, mons_no_or_zoneId)
+    if constants.GAME_MODE == constants.GAME_MODE_2:
+        print
+        ##This is for adding the Trophy Garden daily mons
+        for mon in encounter_data[constants.TROPHY_GARDEN_NAME]:
+            monsNo = mon['monsNo']
+            encounter_list[constants.TROPHY_GARDEN_TRACKER_VAR].append(get_pokemon_name(monsNo))
 
-    ## Add Marsh Random Encounters percent chance is 10%
+        get_trophy_garden_encounter_rates(encounter_data[constants.TROPHY_GARDEN_NAME], rates_list, mons_no_or_zoneId)
 
-    ##This is for adding all of the Honey Tree encounters to the list
-    get_honey_tree_mons(encounter_list)
-    get_honey_tree_encounter_rates(rates_list, mons_no_or_zoneId)
+        ## Add Marsh Random Encounters percent chance is 10%
+
+        ##This is for adding all of the Honey Tree encounters to the list
+        get_honey_tree_mons(encounter_list)
+        get_honey_tree_encounter_rates(rates_list, mons_no_or_zoneId)
+    else:
+        print("This mode has not handled the Trophy Garden, Marsh or Honey Trees. Mode:", constants.GAME_MODE)
 
     for key in encounter_list:
         encounter_list[key] = sorted(list(set(encounter_list[key])))

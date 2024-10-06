@@ -16,8 +16,12 @@ if len(sys.argv) > 1:
 else:
     INPUT_NAME = "input"
 
+GAME_MODE_VANILLA = "vanilla"
+GAME_MODE_2 = "2.0"
+GAME_MODE_3 = "3.0"
+
 if INPUT_NAME == "vanilla_input":
-    GAME_MODE = "vanilla"
+    GAME_MODE = GAME_MODE_VANILLA
     DEBUG_NAME = "DebugVanilla"
     OUTPUT_NAME = "outputVanilla"
     TRAINER_DOC_PATH = "trainer_docs_vanilla"
@@ -26,7 +30,7 @@ if INPUT_NAME == "vanilla_input":
     TROUBLE_MONS_NAMES = {}
     SCRIPT_DATA = "vanillaScripts"
 if INPUT_NAME == "input":
-    GAME_MODE = "2.0"
+    GAME_MODE = GAME_MODE_2
     DEBUG_NAME = "Debug"
     OUTPUT_NAME = "output"
     TRAINER_DOC_PATH = "trainer_docs"
@@ -43,7 +47,7 @@ if INPUT_NAME == "input":
     }
     SCRIPT_DATA = "scriptdata"
 elif INPUT_NAME == "3.0Input":
-    GAME_MODE = "3.0"
+    GAME_MODE = GAME_MODE_3
     DEBUG_NAME = "3.0Debug"
     OUTPUT_NAME = "3.0Output"
     TRAINER_DOC_PATH = "trainer_docs_3.0"    

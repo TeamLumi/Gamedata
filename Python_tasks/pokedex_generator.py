@@ -272,19 +272,21 @@ def get_mon_dex_info(pokemonId, evolution_paths):
     This is for the pokedex that is used in the Tracker.
     It initializes every pokemon for the pokedex and formats them
     The format is:
-    {"value": pokemonID,
-     "text": pokemon Name,
-     "type": First type,
-     "dualtype": second type,
-     "evolve": evolution path for the pokemon,
-     "generation": Always 8 for this game,
-     "abilities": [
-        ability1,
-        ability2,
-        hiddenAbility
-     ],
-     "dexNum": monsNo,
-     "form": formNo}
+    {
+        "value": pokemonID,
+        "text": pokemon Name,
+        "type": First type,
+        "dualtype": second type,
+        "evolve": evolution path for the pokemon,
+        "generation": Always 8 for this game,
+        "abilities": [
+            ability1,
+            ability2,
+            hiddenAbility
+        ],
+        "dexNum": monsNo,
+        "form": formNo
+    }
     '''
     poke_info = get_pokemon_info(pokemonId)
     poke_name = get_pokemon_name(pokemonId)
