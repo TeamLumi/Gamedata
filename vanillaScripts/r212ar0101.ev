@@ -1,0 +1,55 @@
+ev_r212ar0101_flag_change:
+	_ARRIVE_FLAG_SET($FLAG_ARRIVE_R212AR0101)
+	_END()
+ev_r212ar0101_rich:
+	_END()
+ev_r212ar0101_butler:
+	_END()
+ev_r212ar0101_maid1:
+	_TALK_OBJ_START()
+	_TALKMSG('dp_scenario2%139-msg_r212ar0101_maid1_01')
+	_LAST_KEYWAIT()
+	_TALK_CLOSE()
+	_OBJ_ANIME('R212AR0101_MAID_01', 'anm_r212ar0101_maid_01_turn')
+	_OBJ_ANIME_WAIT()
+	_TALK_OBJ_END()
+	_END()
+ev_r212ar0101_maid2:
+	_TALK_OBJ_START()
+	_TALKMSG('dp_scenario2%139-msg_r212ar0101_maid2_01')
+	_LAST_KEYWAIT()
+	_TALK_CLOSE()
+	_OBJ_ANIME('R212AR0101_MAID_02', 'anm_r212ar0101_maid_02_turn')
+	_OBJ_ANIME_WAIT()
+	_TALK_OBJ_END()
+	_END()
+ev_r212ar0101_maid3:
+	_TALK_OBJ_START()
+	_TALKMSG('dp_scenario2%139-msg_r212ar0101_maid3_01')
+	_LAST_KEYWAIT()
+	_TALK_CLOSE()
+	_OBJ_ANIME('R212AR0101_MAID_03', 'anm_r212ar0101_maid_03_turn')
+	_OBJ_ANIME_WAIT()
+	_TALK_OBJ_END()
+	_END()
+ev_r212ar0101_maid4:
+	_TALK_OBJ_START()
+	_TALKMSG('dp_scenario2%139-msg_r212ar0101_maid4_01')
+	_LAST_KEYWAIT()
+	_TALK_CLOSE()
+	_OBJ_ANIME('R212AR0101_MAID_04', 'anm_r212ar0101_maid_04_turn')
+	_OBJ_ANIME_WAIT()
+	_TALK_OBJ_END()
+	_END()
+anm_r212ar0101_maid_01_turn:
+	_AC_DIR_D(8)
+	_ACMD_END()
+anm_r212ar0101_maid_02_turn:
+	_AC_DIR_D(8)
+	_ACMD_END()
+anm_r212ar0101_maid_03_turn:
+	_AC_DIR_R(8)
+	_ACMD_END()
+anm_r212ar0101_maid_04_turn:
+	_AC_DIR_L(8)
+	_ACMD_END()

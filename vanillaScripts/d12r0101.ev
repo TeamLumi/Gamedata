@@ -1,0 +1,5 @@
+ev_d12r0101_flag_change:
+	_ARRIVE_FLAG_SET($FLAG_ARRIVE_D12R0101)
+	_END()
+ev_d12r0101:
+	_END()

@@ -1,0 +1,464 @@
+{
+  "Unown1": [
+    494,
+    "Unown One form",
+    "unown-one-form",
+    "201",
+    1
+  ],
+  "Unown2": [
+    495,
+    "Unown One form",
+    "unown-one-form",
+    "201",
+    2
+  ],
+  "Unown3": [
+    496,
+    "Unown One form",
+    "unown-one-form",
+    "201",
+    3
+  ],
+  "Unown4": [
+    497,
+    "Unown One form",
+    "unown-one-form",
+    "201",
+    4
+  ],
+  "Unown5": [
+    498,
+    "Unown One form",
+    "unown-one-form",
+    "201",
+    5
+  ],
+  "Unown6": [
+    499,
+    "Unown One form",
+    "unown-one-form",
+    "201",
+    6
+  ],
+  "Unown7": [
+    500,
+    "Unown One form",
+    "unown-one-form",
+    "201",
+    7
+  ],
+  "Unown8": [
+    501,
+    "Unown One form",
+    "unown-one-form",
+    "201",
+    8
+  ],
+  "Unown9": [
+    502,
+    "Unown One form",
+    "unown-one-form",
+    "201",
+    9
+  ],
+  "Unown10": [
+    503,
+    "Unown One form",
+    "unown-one-form",
+    "201",
+    10
+  ],
+  "Unown11": [
+    504,
+    "Unown One form",
+    "unown-one-form",
+    "201",
+    11
+  ],
+  "Unown12": [
+    505,
+    "Unown One form",
+    "unown-one-form",
+    "201",
+    12
+  ],
+  "Unown13": [
+    506,
+    "Unown One form",
+    "unown-one-form",
+    "201",
+    13
+  ],
+  "Unown14": [
+    507,
+    "Unown One form",
+    "unown-one-form",
+    "201",
+    14
+  ],
+  "Unown15": [
+    508,
+    "Unown One form",
+    "unown-one-form",
+    "201",
+    15
+  ],
+  "Unown16": [
+    509,
+    "Unown One form",
+    "unown-one-form",
+    "201",
+    16
+  ],
+  "Unown17": [
+    510,
+    "Unown One form",
+    "unown-one-form",
+    "201",
+    17
+  ],
+  "Unown18": [
+    511,
+    "Unown One form",
+    "unown-one-form",
+    "201",
+    18
+  ],
+  "Unown19": [
+    512,
+    "Unown One form",
+    "unown-one-form",
+    "201",
+    19
+  ],
+  "Unown20": [
+    513,
+    "Unown One form",
+    "unown-one-form",
+    "201",
+    20
+  ],
+  "Unown21": [
+    514,
+    "Unown One form",
+    "unown-one-form",
+    "201",
+    21
+  ],
+  "Unown22": [
+    515,
+    "Unown One form",
+    "unown-one-form",
+    "201",
+    22
+  ],
+  "Unown23": [
+    516,
+    "Unown One form",
+    "unown-one-form",
+    "201",
+    23
+  ],
+  "Unown24": [
+    517,
+    "Unown One form",
+    "unown-one-form",
+    "201",
+    24
+  ],
+  "Unown25": [
+    518,
+    "Unown One form",
+    "unown-one-form",
+    "201",
+    25
+  ],
+  "Unown26": [
+    519,
+    "Unown One form",
+    "unown-one-form",
+    "201",
+    26
+  ],
+  "Unown27": [
+    520,
+    "Unown One form",
+    "unown-one-form",
+    "201",
+    27
+  ],
+  "Castform1": [
+    521,
+    "Castform Sunny Form",
+    "castform-sunny-form",
+    "351",
+    1
+  ],
+  "Castform2": [
+    522,
+    "Castform Rainy Form",
+    "castform-rainy-form",
+    "351",
+    2
+  ],
+  "Castform3": [
+    523,
+    "Castform Snowy Form",
+    "castform-snowy-form",
+    "351",
+    3
+  ],
+  "Deoxys1": [
+    524,
+    "Deoxys Attack Forme",
+    "deoxys-attack-forme",
+    "386",
+    1
+  ],
+  "Deoxys2": [
+    525,
+    "Deoxys Defense Forme",
+    "deoxys-defense-forme",
+    "386",
+    2
+  ],
+  "Deoxys3": [
+    526,
+    "Deoxys Speed Forme",
+    "deoxys-speed-forme",
+    "386",
+    3
+  ],
+  "Burmy1": [
+    527,
+    "Burmy Sandy Cloak",
+    "burmy-sandy-cloak",
+    "412",
+    1
+  ],
+  "Burmy2": [
+    528,
+    "Burmy Trash Cloak",
+    "burmy-trash-cloak",
+    "412",
+    2
+  ],
+  "Wormadam1": [
+    529,
+    "Wormadam Sandy Cloak",
+    "wormadam-sandy-cloak",
+    "413",
+    1
+  ],
+  "Wormadam2": [
+    530,
+    "Wormadam Trash Cloak",
+    "wormadam-trash-cloak",
+    "413",
+    2
+  ],
+  "Mothim1": [
+    531,
+    "Mothim ",
+    "mothim",
+    "414",
+    1
+  ],
+  "Mothim2": [
+    532,
+    "Mothim ",
+    "mothim",
+    "414",
+    2
+  ],
+  "Cherrim1": [
+    533,
+    "Cherrim Sunshine Form",
+    "cherrim-sunshine-form",
+    "421",
+    1
+  ],
+  "Shellos1": [
+    534,
+    "Shellos East Sea",
+    "shellos-east-sea",
+    "422",
+    1
+  ],
+  "Gastrodon1": [
+    535,
+    "Gastrodon East Sea",
+    "gastrodon-east-sea",
+    "423",
+    1
+  ],
+  "Rotom1": [
+    536,
+    "Heat Rotom",
+    "heat-rotom",
+    "479",
+    1
+  ],
+  "Rotom2": [
+    537,
+    "Wash Rotom",
+    "wash-rotom",
+    "479",
+    2
+  ],
+  "Rotom3": [
+    538,
+    "Frost Rotom",
+    "frost-rotom",
+    "479",
+    3
+  ],
+  "Rotom4": [
+    539,
+    "Fan Rotom",
+    "fan-rotom",
+    "479",
+    4
+  ],
+  "Rotom5": [
+    540,
+    "Mow Rotom",
+    "mow-rotom",
+    "479",
+    5
+  ],
+  "Giratina1": [
+    541,
+    "Giratina Origin Forme",
+    "giratina-origin-forme",
+    "487",
+    1
+  ],
+  "Shaymin1": [
+    542,
+    "Shaymin Sky Forme",
+    "shaymin-sky-forme",
+    "492",
+    1
+  ],
+  "Arceus1": [
+    543,
+    "Arceus",
+    "arceus",
+    "493",
+    1
+  ],
+  "Arceus2": [
+    544,
+    "Arceus",
+    "arceus",
+    "493",
+    2
+  ],
+  "Arceus3": [
+    545,
+    "Arceus",
+    "arceus",
+    "493",
+    3
+  ],
+  "Arceus4": [
+    546,
+    "Arceus",
+    "arceus",
+    "493",
+    4
+  ],
+  "Arceus5": [
+    547,
+    "Arceus",
+    "arceus",
+    "493",
+    5
+  ],
+  "Arceus6": [
+    548,
+    "Arceus",
+    "arceus",
+    "493",
+    6
+  ],
+  "Arceus7": [
+    549,
+    "Arceus",
+    "arceus",
+    "493",
+    7
+  ],
+  "Arceus8": [
+    550,
+    "Arceus",
+    "arceus",
+    "493",
+    8
+  ],
+  "Arceus9": [
+    551,
+    "Arceus",
+    "arceus",
+    "493",
+    9
+  ],
+  "Arceus10": [
+    552,
+    "Arceus",
+    "arceus",
+    "493",
+    10
+  ],
+  "Arceus11": [
+    553,
+    "Arceus",
+    "arceus",
+    "493",
+    11
+  ],
+  "Arceus12": [
+    554,
+    "Arceus",
+    "arceus",
+    "493",
+    12
+  ],
+  "Arceus13": [
+    555,
+    "Arceus",
+    "arceus",
+    "493",
+    13
+  ],
+  "Arceus14": [
+    556,
+    "Arceus",
+    "arceus",
+    "493",
+    14
+  ],
+  "Arceus15": [
+    557,
+    "Arceus",
+    "arceus",
+    "493",
+    15
+  ],
+  "Arceus16": [
+    558,
+    "Arceus",
+    "arceus",
+    "493",
+    16
+  ],
+  "Arceus17": [
+    559,
+    "Arceus",
+    "arceus",
+    "493",
+    17
+  ]
+}

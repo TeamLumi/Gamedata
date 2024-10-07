@@ -10,13 +10,30 @@ if len(sys.argv) > 1:
     elif sys.argv[1] == "2.0":
         INPUT_NAME = "input"
         print("Running in 2.0F mode")
+    elif sys.argv[1] == "vanilla":
+        INPUT_NAME = "vanilla_input"
+        print("Running in Vanilla Mode")
 else:
     INPUT_NAME = "input"
 
+GAME_MODE_VANILLA = "vanilla"
+GAME_MODE_2 = "2.0"
+GAME_MODE_3 = "3.0"
+
+if INPUT_NAME == "vanilla_input":
+    GAME_MODE = GAME_MODE_VANILLA
+    DEBUG_NAME = "DebugVanilla"
+    OUTPUT_NAME = "outputVanilla"
+    TRAINER_DOC_PATH = "trainer_docs_vanilla"
+    POKEDEX_LENGTH = 493
+    NAT_DEX_LENGTH = 493
+    TROUBLE_MONS_NAMES = {}
+    SCRIPT_DATA = "vanillaScripts"
 if INPUT_NAME == "input":
-    GAME_MODE = "2.0"
+    GAME_MODE = GAME_MODE_2
     DEBUG_NAME = "Debug"
     OUTPUT_NAME = "output"
+    TRAINER_DOC_PATH = "trainer_docs"
     POKEDEX_LENGTH = 1010
     NAT_DEX_LENGTH = 1455
     TROUBLE_MONS_NAMES = { 
@@ -28,10 +45,12 @@ if INPUT_NAME == "input":
         1456: 'Oinkologne-F',
         1067: "Galarian Farfetch'd"
     }
+    SCRIPT_DATA = "scriptdata"
 elif INPUT_NAME == "3.0Input":
-    GAME_MODE = "3.0"
+    GAME_MODE = GAME_MODE_3
     DEBUG_NAME = "3.0Debug"
     OUTPUT_NAME = "3.0Output"
+    TRAINER_DOC_PATH = "trainer_docs_3.0"    
     POKEDEX_LENGTH = 1025
     NAT_DEX_LENGTH = 1528
     TROUBLE_MONS_NAMES = { 

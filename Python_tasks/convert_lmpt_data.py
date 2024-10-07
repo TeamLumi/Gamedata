@@ -629,21 +629,26 @@ def getEncounterData(mons_no_or_zoneId = "mons_no"):
                 monsNo = mon['monsNo']
                 check_mon_route_list.append([monsNo, method, method_index, zoneID])
                 update_routes_with_mons(monsNo, zoneID, encounter_list)
-        check = check_mons_list(check_mon_route_list, zoneID, final_list)
+        check, unique_list = check_mons_list(check_mon_route_list, zoneID, final_list)
         if check != -1:
-            final_list[zoneID] = check
-    ##This is for adding the Trophy Garden daily mons
-    for mon in encounter_data[constants.TROPHY_GARDEN_NAME]:
-        monsNo = mon['monsNo']
-        encounter_list[constants.TROPHY_GARDEN_TRACKER_VAR].append(get_pokemon_name(monsNo))
+            final_list[zoneID] = unique_list
 
-    get_trophy_garden_encounter_rates(encounter_data[constants.TROPHY_GARDEN_NAME], rates_list, mons_no_or_zoneId)
+    if constants.GAME_MODE == constants.GAME_MODE_2:
+        print
+        ##This is for adding the Trophy Garden daily mons
+        for mon in encounter_data[constants.TROPHY_GARDEN_NAME]:
+            monsNo = mon['monsNo']
+            encounter_list[constants.TROPHY_GARDEN_TRACKER_VAR].append(get_pokemon_name(monsNo))
 
-    ## Add Marsh Random Encounters percent chance is 10%
+        get_trophy_garden_encounter_rates(encounter_data[constants.TROPHY_GARDEN_NAME], rates_list, mons_no_or_zoneId)
 
-    ##This is for adding all of the Honey Tree encounters to the list
-    get_honey_tree_mons(encounter_list)
-    get_honey_tree_encounter_rates(rates_list, mons_no_or_zoneId)
+        ## Add Marsh Random Encounters percent chance is 10%
+
+        ##This is for adding all of the Honey Tree encounters to the list
+        get_honey_tree_mons(encounter_list)
+        get_honey_tree_encounter_rates(rates_list, mons_no_or_zoneId)
+    else:
+        print("This mode has not handled the Trophy Garden, Marsh or Honey Trees. Mode:", constants.GAME_MODE)
 
     for key in encounter_list:
         encounter_list[key] = sorted(list(set(encounter_list[key])))
@@ -664,10 +669,10 @@ def getEncounterData(mons_no_or_zoneId = "mons_no"):
         output.write(json.dumps(sorted_encounters, indent=2))
 
 def writeEncounterDocData():
-    with open(os.path.join(debug_file_path, 'pokemon_locations.json')) as f:
+    with open(os.path.join(input_file_path, 'pokemon_locations.json')) as f:
         data = json.load(f)
     largest_number = ["", 0]
-    with open(os.path.join(debug_file_path, 'pokemon_locations.txt'), 'w') as output:
+    with open(os.path.join(input_file_path, 'pokemon_locations.txt'), 'w') as output:
         for monsNo in data.keys():
             monsName = get_pokemon_name(int(monsNo))
             enc_dict = defaultdict(list)

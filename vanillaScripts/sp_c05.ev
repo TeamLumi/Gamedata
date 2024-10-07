@@ -1,0 +1,9 @@
+SP_C05_SCENE:
+	_JUMP('sp_c05_tbl')
+	_SP_EVENT_DATA_END()
+SP_C05_FLAG:
+	_JUMP('ev_c05_flag_change')
+	_SP_EVENT_DATA_END()
+sp_c05_tbl:
+	_SCENE_CHANGE_DATA(@WK_SCENE_C05_MAIN, 1, 'ev_c05_champ')
+	_SCENE_CHANGE_END()

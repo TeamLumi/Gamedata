@@ -1,0 +1,9 @@
+ev_d05r0102_flag_change:
+	_IF_FLAGOFF_JUMP(#FV_D05R0102_STOPPER, 'ev_d05r0102_flag_change_wall')
+	_END()
+ev_d05r0102_flag_change_wall:
+	_SXY_EXIT_POS_CHANGE(4, 50, 50)
+	_END()
+ev_d05r0102_wall:
+	_EASY_OBJ_MSG('dp_scenario2%26-msg_d05r0102_wall_01')
+	_END()

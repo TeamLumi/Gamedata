@@ -1,0 +1,32 @@
+ev_r213r0301_flag_change:
+	_END()
+ev_r213r0301_policeman:
+	_TALK_OBJ_START()
+	_JUMP('ev_r213r0301_policeman_main')
+ev_r213r0301_policeman_main:
+	_TALK_KEYWAIT('dp_scenario2%147-msg_r213r0301_policeman_01')
+	_TALK_CLOSE()
+	_BLACK_OUT('SCR_WIPE_DIV', 'SCR_WIPE_SYNC')
+	_WIPE_FADE_END_CHECK()
+	_ME_PLAY('M_FI002')
+	_ME_WAIT()
+	_PC_KAIFUKU()
+	_BLACK_IN('SCR_WIPE_DIV', 'SCR_WIPE_SYNC')
+	_WIPE_FADE_END_CHECK()
+	_TALKMSG('dp_scenario2%147-msg_r213r0301_policeman_02')
+	_LAST_KEYWAIT()
+	_TALK_CLOSE()
+	_TALK_END()
+	_END()
+ev_r213r0301_policeman_s:
+	_TALK_OBJ_START()
+	_OBJ_ANIME('R213R0301_POLICEMAN', 'anm_r213_policemen_trun')
+	_OBJ_ANIME_WAIT()
+	_JUMP('ev_r213r0301_policeman_main')
+	_END()
+anm_r213_policemen_trun:
+	_AC_DIR_D(4)
+	_ACMD_END()
+ev_r213r0301_woman3:
+	_EASY_OBJ_MSG('dp_scenario2%147-msg_r213r0301_woman3_01')
+	_END()

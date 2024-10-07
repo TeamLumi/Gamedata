@@ -1,0 +1,36 @@
+ev_r208_sign1:
+	_EASY_BOARD_MSG('dp_scenario2%31-msg_r208_sign1_01', 'BOARD_TYPE_ROAD', 0, 2)
+	_END()
+ev_r208_sign2:
+	_EASY_BOARD_MSG('dp_scenario2%31-msg_r208_sign2_01', 'BOARD_TYPE_ROAD', 0, 1)
+	_END()
+ev_r208_sign3:
+	_EASY_BOARD_MSG('dp_scenario2%31-msg_r208_sign3_01', 'BOARD_TYPE_POST', 0)
+	_END()
+ev_r208_sign4:
+	_EASY_INFOBOARD_MSG('dp_scenario2%31-msg_r208_sign4_01', 'BOARD_TYPE_INFO', 0)
+	_END()
+ev_r208_fighter:
+	_TALK_OBJ_START()
+	_IF_FLAGON_JUMP(#FE_R208_ITEM_GET, 'ev_r208_event_end')
+	_TALK_KEYWAIT('dp_scenario2%31-msg_r208_fighter_01')
+	_LDVAL(@SCWK_TEMP0, 111)
+	_LDVAL(@SCWK_TEMP1, 1)
+	_ADD_ITEM_CHK(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_ANSWER)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_r208_item_event_fail')
+	_FLAG_SET(#FE_R208_ITEM_GET)
+	_CHG_COMMON_SCR('ev_item_event')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_r208_event_end:
+	_TALKMSG('dp_scenario2%31-msg_r208_fighter_02')
+	_LAST_KEYWAIT()
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_r208_item_event_fail:
+	_CHG_COMMON_SCR('ev_item_event_fail')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()

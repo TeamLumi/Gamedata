@@ -1,0 +1,26 @@
+ev_r214_init_change:
+	_END()
+ev_r214_door_exit_move_2:
+	_SXY_EXIT_POS_CHANGE(4, 710, 670)
+	_SXY_EXIT_POS_CHANGE(5, 710, 670)
+	_END()
+ev_r214_door_exit_move_1:
+	_SXY_EXIT_POS_CHANGE(4, 710, 670)
+	_SXY_EXIT_POS_CHANGE(6, 710, 670)
+	_END()
+ev_r214_door_exit_move_0:
+	_SXY_EXIT_POS_CHANGE(5, 710, 670)
+	_SXY_EXIT_POS_CHANGE(6, 710, 670)
+	_END()
+ev_r214_flag_change:
+	_ANOON_SEE_NUM(@LOCALWORK0)
+	_IFVAL_JUMP(@LOCALWORK0, 'GE', 26, 'ev_r214_door_exit_move_2')
+	_IFVAL_JUMP(@LOCALWORK0, 'GE', 10, 'ev_r214_door_exit_move_1')
+	_IFVAL_JUMP(@LOCALWORK0, 'LT', 10, 'ev_r214_door_exit_move_0')
+	_END()
+ev_r214_sign1:
+	_EASY_BOARD_MSG('dp_scenario2%109-msg_r214_sign1_01', 'BOARD_TYPE_ROAD', 0, 3)
+	_END()
+ev_r214_sign2:
+	_EASY_BOARD_MSG('dp_scenario2%109-msg_r214_sign2_01', 'BOARD_TYPE_ROAD', 0, 4)
+	_END()

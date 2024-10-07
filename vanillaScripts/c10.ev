@@ -1,0 +1,43 @@
+ev_c10_flag_change:
+	_LDVAL(@HIDEMAP_ID_C10, 1)
+	_NONE_USE_NUMBER()
+	_IFVAL_JUMP(@LOCALWORK0, 'NE', 0, 'ev_c10_townmapreset1')
+	_JUMP('ev_c10_flag_change_townmapnon')
+	_END()
+ev_c10_townmapreset1:
+	_IF_FLAGON_JUMP(#FE_C10R0101_REACH, 'ev_c10_flag_change_townmap_on')
+	_JUMP('ev_c10_flag_change_townmapnon')
+	_END()
+ev_c10_flag_change_townmapnon:
+	_RESET_SYS_FLAG($FLAG_ARRIVE_C10)
+	_END()
+ev_c10_flag_change_townmap_on:
+	_SET_SYS_FLAG($FLAG_ARRIVE_C10)
+	_END()
+ev_c10_sign1:
+	_EASY_BOARD_MSG('dp_scenario3%17-msg_c10_sign1_01', 'BOARD_TYPE_ROAD', 0, 3)
+	_END()
+ev_c10_sign2:
+	_EASY_BOARD_MSG('dp_scenario3%17-msg_c10_sign2_01', 'BOARD_TYPE_POST', 0)
+	_END()
+ev_c10_statue_01:
+	_EASY_OBJ_MSG('dp_scenario3%17-msg_c10_statue_01')
+	_END()
+pos_c10_checkin:
+	_EVENT_START()
+	_BLACK_OUT('SCR_WIPE_DIV', 3)
+	_FADE_WAIT()
+	_OBJ_INVISIBLE('HERO')
+	_EVENT_CAMERA_INDEX(249)
+	_BLACK_IN('SCR_WIPE_DIV', 3)
+	_FADE_WAIT()
+	_EVENT_CAMERA_END_WAIT()
+	_EVENT_CAMERA_INDEX(82)
+	_EVENT_CAMERA_END_WAIT()
+	_LDVAL(@WK_SCENE_C10, 1)
+	_BLACK_OUT('SCR_WIPE_DIV', 3)
+	_FADE_WAIT()
+	_MAP_CHANGE('C10R0101', 1)
+	_EVENT_CAMERA_INDEX(99)
+	_OBJ_VISIBLE('HERO')
+	_END()

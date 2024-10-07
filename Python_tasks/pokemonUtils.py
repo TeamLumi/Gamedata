@@ -85,6 +85,7 @@ def get_pokemon_name(pokemon_id = 0, form_mode = False):
         return pokemon_name
     except Exception as e:
         print(pokemon_id, e)
+        raise Exception(e)
 
 def get_form_name(id):
     '''
@@ -220,17 +221,22 @@ def get_height(monsno=0):
     pkmn_height_data = full_data['pkmn_height_data']
 
     monsno = int(monsno)
-    if monsno != 0:
-        height_string = pkmn_height_data['labelDataArray'][monsno]['wordDataArray'][0]['str'] or '0'
-        feet_string, inches_string = height_string.split("'")
-        inches = float(inches_string[:-1])
-        feet = int(feet_string)
-
-        feet_in_centimeters = feet * 30.48
-        inches_in_centimeters = inches * 2.54
-        return round((feet_in_centimeters + inches_in_centimeters) / 100, 2)
-    else:
+    if monsno == 0:
         return 0
+
+    height_string = pkmn_height_data['labelDataArray'][monsno]['wordDataArray'][0]['str'] or '0'
+    if "'" in height_string:
+        feet_string, inches_string = height_string.split("'")
+    else:
+        feet_string = '0'
+        inches_string = height_string
+
+    inches = float(inches_string[:-1] or '0')
+    feet = int(feet_string)
+
+    feet_in_centimeters = feet * 30.48
+    inches_in_centimeters = inches * 2.54
+    return round((feet_in_centimeters + inches_in_centimeters) / 100, 2)
 
 def slugify(value, pokeapi=False):
     """
@@ -293,7 +299,6 @@ def create_diff_forms_dictionary(form_dict, mode = "2.0"):
                     pokemon_id = forms[form_format]
                 if isSpecialPokemon(current_pokemon_name):
                     pokemon_id = int(mons_no)
-
                 diff_forms[current_pokemon_name + (str(idx or 1)) ] = [pokemon_id, mon, slugify(mon), mons_no, idx or 1]
                 NAME_MAP[mon] = pokemon_id
             else:
@@ -309,7 +314,7 @@ def get_pokemon_name_dictionary(mode = "2.0"):
             continue
         if(not str(p["monsno"]) in pokemon):
             pokemon[str(p["monsno"])] = []
-        pokemon[str(p["monsno"])].append(get_pokemon_name(p["id"], mode != "2.0"))
+        pokemon[str(p["monsno"])].append(get_pokemon_name(p["id"], mode == "3.0"))
     return pokemon
 
 def get_diff_form_dictionary(mode = "2.0"):

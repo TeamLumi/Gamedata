@@ -1,0 +1,36 @@
+ev_c05r1201_explore:
+	_TALK_OBJ_START()
+	_TALKMSG('dp_scenario2%57-msg_c05r1201_explore_01_1')
+	_TALKMSG('dp_scenario2%57-msg_c05r1201_explore_01_2')
+	_LAST_KEYWAIT()
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_c05r1201_oldman2:
+	_EASY_OBJ_MSG('dp_scenario2%57-msg_c05r1201_oldman2_01')
+	_END()
+ev_c05r1201_babyboy1:
+	_EASY_OBJ_MSG('dp_scenario2%57-msg_c05r1201_babyboy1_01')
+	_END()
+ev_c05r1201_oldwoman2:
+	_TALK_OBJ_START_TURN_NOT()
+	_TALKMSG('dp_scenario2%57-msg_c05r1201_oldwoman2_01_1')
+	_TALKMSG('dp_scenario2%57-msg_c05r1201_oldwoman2_01_2')
+	_LAST_KEYWAIT()
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_c05r1201_woman3:
+	_TALK_OBJ_START_TURN_NOT()
+	_TALKMSG('dp_scenario2%57-msg_c05r1201_woman3_01')
+	_LAST_KEYWAIT()
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_c05r1201_middlewoman1:
+	_TALK_OBJ_START_TURN_NOT()
+	_TALKMSG('dp_scenario2%57-msg_c05r1201_middlewoman1_01')
+	_LAST_KEYWAIT()
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()

@@ -13,7 +13,7 @@ from trainerUtils import parse_ev_script_file, process_files, get_map_info, get_
 
 repo_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 output_file_path = os.path.join(repo_file_path, "Python_tasks", constants.OUTPUT_NAME)
-trainer_doc_data_file_path = os.path.join(repo_file_path, "trainer_docs", "trainer_doc_output.txt")
+trainer_doc_data_file_path = os.path.join(repo_file_path, constants.TRAINER_DOC_PATH, "trainer_doc_output.txt")
 
 first_excecution_time_list = []
 second_execution_time_list = []
@@ -188,11 +188,17 @@ def generate_repeat_trainer_name(trainer, index_dict):
         index_dict['Grunt'] += 1
         return get_trainer_name(name, zone_name, index_dict['Grunt'])
     elif constants.REPEAT_TRAINERS_LIST[1] in name:
-        STARTER_INDEX = constants.STARTERS[index_dict['Lucas']].capitalize()
+        if index_dict['Lucas'] < 3:
+            STARTER_INDEX = constants.STARTERS[index_dict['Lucas']].capitalize()
+        else:
+            STARTER_INDEX = f"End Game {constants.STARTERS[index_dict['Lucas'] - 3].capitalize()}"
         index_dict['Lucas'] += 1
         return get_trainer_name(name, zone_name, STARTER_INDEX)
     elif constants.REPEAT_TRAINERS_LIST[2] in name:
-        STARTER_INDEX = constants.STARTERS[index_dict['Dawn']].capitalize()
+        if index_dict['Dawn'] < 3:
+            STARTER_INDEX = constants.STARTERS[index_dict['Dawn']].capitalize()
+        else:
+            STARTER_INDEX = f"End Game {constants.STARTERS[index_dict['Dawn'] - 3].capitalize()}"
         index_dict['Dawn'] += 1
         return get_trainer_name(name, zone_name, STARTER_INDEX)
     elif constants.REPEAT_TRAINERS_LIST[3] in name:
@@ -305,7 +311,7 @@ def get_trainer_doc_data():
     '''
     This gets the trainer documentation for Solarnce's Trainer Docs in the Google Sheets
     '''
-    trainer_info = process_files(os.path.join(repo_file_path, "scriptdata"), parse_ev_script_file)
+    trainer_info = process_files(os.path.join(repo_file_path, constants.SCRIPT_DATA), parse_ev_script_file)
     print("Start trainer sorting by level")
     sorted_trainers = sort_trainers_by_level(trainer_info)
     print("Trainers have been sorted")
@@ -319,7 +325,7 @@ def get_tracker_trainer_data():
     gym_leader_data = full_data['gym_leaders']
 
     original_teams = getTrainerData(gym_leader_data)
-    trainer_info = process_files(os.path.join(repo_file_path, "scriptdata"), parse_ev_script_file)
+    trainer_info = process_files(os.path.join(repo_file_path, constants.SCRIPT_DATA), parse_ev_script_file)
 
     print("Start sorting trainers by zone")
     sorted_tracker_trainers = sort_trainers_by_route(trainer_info)

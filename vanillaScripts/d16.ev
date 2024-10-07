@@ -1,0 +1,6 @@
+ev_d16_flag_change:
+	_ARRIVE_FLAG_SET($FLAG_ARRIVE_D16)
+	_END()
+ev_d16_sign1:
+	_EASY_BOARD_MSG('dp_scenario3%64-msg_d16_sign1_01', 'BOARD_TYPE_POST', 0)
+	_END()

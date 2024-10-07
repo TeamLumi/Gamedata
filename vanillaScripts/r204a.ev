@@ -1,0 +1,9 @@
+ev_r204a_boy2:
+	_EASY_OBJ_MSG('dp_scenario1%89-msg_r204a_boy2_01')
+	_END()
+ev_r204a_sign1:
+	_EASY_BOARD_MSG('dp_scenario1%89-msg_r204a_sign1_01', 'BOARD_TYPE_ROAD', 0, 4)
+	_END()
+ev_r204a_sign2:
+	_EASY_BOARD_MSG('dp_scenario1%89-msg_r204a_sign2_01', 'BOARD_TYPE_POST', 0)
+	_END()
