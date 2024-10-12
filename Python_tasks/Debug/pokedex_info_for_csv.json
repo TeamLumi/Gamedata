@@ -174,7 +174,22 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Skull Bash": 130,
+      "Petal Dance": 80,
+      "Curse": 174,
+      "Ingrain": 275,
+      "Nature Power": 267,
+      "Charm": 204,
+      "Magical Leaf": 345,
+      "Amnesia": 133,
+      "Leaf Storm": 437,
+      "Power Whip": 438,
+      "Sludge": 124,
+      "Grassy Terrain": 580,
+      "Grass Whistle": 320,
+      "Razor Wind": 13
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bind": 20,
@@ -264,7 +279,22 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Skull Bash": 130,
+      "Petal Dance": 80,
+      "Curse": 174,
+      "Ingrain": 275,
+      "Nature Power": 267,
+      "Charm": 204,
+      "Magical Leaf": 345,
+      "Amnesia": 133,
+      "Leaf Storm": 437,
+      "Power Whip": 438,
+      "Sludge": 124,
+      "Grassy Terrain": 580,
+      "Grass Whistle": 320,
+      "Razor Wind": 13
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bind": 20,
@@ -452,7 +482,22 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Belly Drum": 187,
+      "Ancient Power": 246,
+      "Bite": 44,
+      "Dragon Rush": 407,
+      "Metal Claw": 232,
+      "Counter": 68,
+      "Wing Attack": 17,
+      "Dragon Tail": 525,
+      "Outrage": 200,
+      "Beat Up": 251,
+      "Dragon Dance": 349,
+      "Crunch": 242,
+      "Flare Blitz": 394,
+      "Air Cutter": 314
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -555,7 +600,22 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Belly Drum": 187,
+      "Ancient Power": 246,
+      "Bite": 44,
+      "Dragon Rush": 407,
+      "Metal Claw": 232,
+      "Counter": 68,
+      "Wing Attack": 17,
+      "Dragon Tail": 525,
+      "Outrage": 200,
+      "Beat Up": 251,
+      "Dragon Dance": 349,
+      "Crunch": 242,
+      "Flare Blitz": 394,
+      "Air Cutter": 314
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -745,7 +805,20 @@
       "Rock Smash": 249,
       "Waterfall": 127
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Mirror Coat": 243,
+      "Haze": 114,
+      "Mist": 54,
+      "Flail": 175,
+      "Yawn": 281,
+      "Fake Out": 252,
+      "Aqua Ring": 392,
+      "Aqua Jet": 453,
+      "Water Spout": 323,
+      "Life Dew": 791,
+      "Muddy Water": 330,
+      "Aura Sphere": 396
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -846,7 +919,20 @@
       "Waterfall": 127,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Mirror Coat": 243,
+      "Haze": 114,
+      "Mist": 54,
+      "Flail": 175,
+      "Yawn": 281,
+      "Fake Out": 252,
+      "Aqua Ring": 392,
+      "Aqua Jet": 453,
+      "Water Spout": 323,
+      "Life Dew": 791,
+      "Muddy Water": 330,
+      "Aura Sphere": 396
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -1339,7 +1425,13 @@
       "Fly": 19,
       "Defog": 432
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Air Cutter": 314,
+      "Air Slash": 403,
+      "Brave Bird": 413,
+      "Uproar": 253,
+      "Feint Attack": 185
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Air Cutter": 314,
@@ -1422,7 +1514,13 @@
       "Fly": 19,
       "Defog": 432
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Air Cutter": 314,
+      "Air Slash": 403,
+      "Brave Bird": 413,
+      "Uproar": 253,
+      "Feint Attack": 185
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Air Cutter": 314,
@@ -1614,7 +1712,18 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Screech": 103,
+      "Flame Wheel": 172,
+      "Fury Swipes": 154,
+      "Bite": 44,
+      "Counter": 68,
+      "Reversal": 179,
+      "Uproar": 253,
+      "Last Resort": 387,
+      "Revenge": 279,
+      "Final Gambit": 515
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Covet": 343,
@@ -1784,7 +1893,18 @@
       "Fly": 19,
       "Defog": 432
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Scary Face": 184,
+      "Quick Attack": 98,
+      "Tri Attack": 161,
+      "Astonish": 310,
+      "Sky Attack": 143,
+      "Whirlwind": 18,
+      "Uproar": 253,
+      "Feather Dance": 297,
+      "Razor Wind": 13,
+      "Feint Attack": 185
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Air Cutter": 314,
@@ -1966,7 +2086,17 @@
       "Poison Jab": 398,
       "Strength": 70
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Slam": 21,
+      "Spite": 180,
+      "Beat Up": 251,
+      "Poison Fang": 305,
+      "Scary Face": 184,
+      "Poison Tail": 342,
+      "Disable": 50,
+      "Switcheroo": 415,
+      "Sucker Punch": 389
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bind": 20,
@@ -2054,7 +2184,20 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Present": 217,
+      "Wish": 273,
+      "Charge": 268,
+      "Fake Out": 252,
+      "Tickle": 321,
+      "Flail": 175,
+      "Disarming Voice": 574,
+      "Reversal": 179,
+      "Encore": 227,
+      "Thunder Punch": 9,
+      "Electric Terrain": 604,
+      "Double Slap": 3
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -2157,7 +2300,20 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Present": 217,
+      "Wish": 273,
+      "Charge": 268,
+      "Fake Out": 252,
+      "Tickle": 321,
+      "Flail": 175,
+      "Disarming Voice": 574,
+      "Reversal": 179,
+      "Encore": 227,
+      "Thunder Punch": 9,
+      "Electric Terrain": 604,
+      "Double Slap": 3
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -2366,7 +2522,17 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Counter": 68,
+      "Flail": 175,
+      "Mud-Slap": 189,
+      "Night Slash": 400,
+      "Metal Claw": 232,
+      "Hone Claws": 468,
+      "Rapid Spin": 229,
+      "Crush Claw": 306,
+      "Mud Shot": 341
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Covet": 343,
@@ -2539,7 +2705,19 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Counter": 68,
+      "Disable": 50,
+      "Poison Tail": 342,
+      "Skull Bash": 130,
+      "Supersonic": 48,
+      "Take Down": 36,
+      "Poison Fang": 305,
+      "Focus Energy": 116,
+      "Charm": 204,
+      "Beat Up": 251,
+      "Venom Drench": 599
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -2645,7 +2823,19 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Counter": 68,
+      "Disable": 50,
+      "Poison Tail": 342,
+      "Skull Bash": 130,
+      "Supersonic": 48,
+      "Take Down": 36,
+      "Poison Fang": 305,
+      "Focus Energy": 116,
+      "Charm": 204,
+      "Beat Up": 251,
+      "Venom Drench": 599
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -2824,7 +3014,21 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Confusion": 93,
+      "Counter": 68,
+      "Disable": 50,
+      "Head Smash": 457,
+      "Poison Tail": 342,
+      "Sucker Punch": 389,
+      "Supersonic": 48,
+      "Take Down": 36,
+      "Horn Drill": 32,
+      "Thrash": 37,
+      "Amnesia": 133,
+      "Beat Up": 251,
+      "Venom Drench": 599
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -2929,7 +3133,21 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Confusion": 93,
+      "Counter": 68,
+      "Disable": 50,
+      "Head Smash": 457,
+      "Poison Tail": 342,
+      "Sucker Punch": 389,
+      "Supersonic": 48,
+      "Take Down": 36,
+      "Horn Drill": 32,
+      "Thrash": 37,
+      "Amnesia": 133,
+      "Beat Up": 251,
+      "Venom Drench": 599
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -3048,7 +3266,22 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Present": 217,
+      "Wish": 273,
+      "Aromatherapy": 312,
+      "Tickle": 321,
+      "Heal Pulse": 505,
+      "Metronome": 118,
+      "Amnesia": 133,
+      "Belly Drum": 187,
+      "Splash": 150,
+      "Mimic": 102,
+      "Fake Tears": 313,
+      "Covet": 343,
+      "Stored Power": 500,
+      "Misty Terrain": 581
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -3176,7 +3409,22 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Present": 217,
+      "Wish": 273,
+      "Aromatherapy": 312,
+      "Tickle": 321,
+      "Heal Pulse": 505,
+      "Metronome": 118,
+      "Amnesia": 133,
+      "Belly Drum": 187,
+      "Splash": 150,
+      "Mimic": 102,
+      "Fake Tears": 313,
+      "Covet": 343,
+      "Stored Power": 500,
+      "Misty Terrain": 581
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -3379,7 +3627,22 @@
       "Dark Pulse": 399,
       "Dazzling Gleam": 605
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Hypnosis": 95,
+      "Flail": 175,
+      "Howl": 336,
+      "Memento": 262,
+      "Baby-Doll Eyes": 608,
+      "Flame Charge": 488,
+      "Spite": 180,
+      "Disable": 50,
+      "Heat Wave": 257,
+      "Flare Blitz": 394,
+      "Extrasensory": 326,
+      "Power Swap": 384,
+      "Hex": 506,
+      "Feint Attack": 185
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Covet": 343,
@@ -3491,7 +3754,19 @@
       "Grass Knot": 447,
       "Strength": 70
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Covet": 343,
+      "Gravity": 356,
+      "Heal Pulse": 505,
+      "Last Resort": 387,
+      "Perish Song": 195,
+      "Present": 217,
+      "Wish": 273,
+      "Rollout": 205,
+      "Fake Tears": 313,
+      "Misty Terrain": 581,
+      "Feint Attack": 185
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -3613,7 +3888,19 @@
       "Grass Knot": 447,
       "Strength": 70
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Covet": 343,
+      "Gravity": 356,
+      "Heal Pulse": 505,
+      "Last Resort": 387,
+      "Perish Song": 195,
+      "Present": 217,
+      "Wish": 273,
+      "Rollout": 205,
+      "Fake Tears": 313,
+      "Misty Terrain": 581,
+      "Feint Attack": 185
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -3809,7 +4096,18 @@
       "Fly": 19,
       "Defog": 432
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Curse": 174,
+      "Gust": 16,
+      "Hypnosis": 95,
+      "Quick Attack": 98,
+      "Whirlwind": 18,
+      "Wing Attack": 17,
+      "Zen Headbutt": 428,
+      "Brave Bird": 413,
+      "Venom Drench": 599,
+      "Feint Attack": 185
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Air Cutter": 314,
@@ -3966,7 +4264,19 @@
       "Grass Knot": 447,
       "Cut": 15
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Razor Leaf": 75,
+      "Flail": 175,
+      "Synthesis": 235,
+      "Ingrain": 275,
+      "Tickle": 321,
+      "Teeter Dance": 298,
+      "Nature Power": 267,
+      "After You": 495,
+      "Strength Sap": 668,
+      "Leech Seed": 73,
+      "Charm": 204
+    },
     "tutorLearnset": {
       "Snore": 173,
       "After You": 495,
@@ -4048,7 +4358,19 @@
       "Grass Knot": 447,
       "Cut": 15
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Razor Leaf": 75,
+      "Flail": 175,
+      "Synthesis": 235,
+      "Ingrain": 275,
+      "Tickle": 321,
+      "Teeter Dance": 298,
+      "Nature Power": 267,
+      "After You": 495,
+      "Strength Sap": 668,
+      "Leech Seed": 73,
+      "Charm": 204
+    },
     "tutorLearnset": {
       "Snore": 173,
       "After You": 495,
@@ -4226,7 +4548,21 @@
       "Cut": 15,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Screech": 103,
+      "Counter": 68,
+      "Psybeam": 60,
+      "Flail": 175,
+      "Sweet Scent": 230,
+      "Metal Claw": 232,
+      "Bug Bite": 450,
+      "Cross Poison": 440,
+      "Agility": 97,
+      "Leech Seed": 73,
+      "Wide Guard": 469,
+      "Fell Stinger": 565,
+      "Grassy Terrain": 580
+    },
     "tutorLearnset": {
       "Snore": 173,
       "After You": 495,
@@ -4389,7 +4725,16 @@
       "Fly": 19,
       "Defog": 432
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Baton Pass": 226,
+      "Screech": 103,
+      "Agility": 97,
+      "Morning Sun": 234,
+      "Toxic Spikes": 390,
+      "Bug Bite": 450,
+      "Rage Powder": 476,
+      "Signal Beam": 324
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Air Cutter": 314,
@@ -4562,7 +4907,20 @@
       "Cut": 15,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Ancient Power": 246,
+      "Headbutt": 29,
+      "Final Gambit": 515,
+      "Memento": 262,
+      "Hone Claws": 468,
+      "Screech": 103,
+      "Beat Up": 251,
+      "Uproar": 253,
+      "Astonish": 310,
+      "Reversal": 179,
+      "Mud Bomb": 426,
+      "Feint Attack": 185
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bulldoze": 523,
@@ -4756,7 +5114,17 @@
       "U-turn": 369,
       "Cut": 15
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Spite": 180,
+      "Hypnosis": 95,
+      "Last Resort": 387,
+      "Flail": 175,
+      "Tail Whip": 39,
+      "Covet": 343,
+      "Charm": 204,
+      "Amnesia": 133,
+      "Foul Play": 492
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Covet": 343,
@@ -4960,7 +5328,18 @@
       "Waterfall": 127,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Clear Smog": 499,
+      "Confuse Ray": 109,
+      "Cross Chop": 238,
+      "Hypnosis": 95,
+      "Psybeam": 60,
+      "Simple Beam": 493,
+      "Yawn": 281,
+      "Future Sight": 248,
+      "Encore": 227,
+      "Mud Bomb": 426
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Worry Seed": 388,
@@ -5183,7 +5562,16 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Counter": 68,
+      "Reversal": 179,
+      "Beat Up": 251,
+      "Revenge": 279,
+      "Close Combat": 370,
+      "Encore": 227,
+      "Night Slash": 400,
+      "Meditate": 96
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -5371,7 +5759,21 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Thrash": 37,
+      "Double-Edge": 38,
+      "Morning Sun": 234,
+      "Covet": 343,
+      "Double Kick": 24,
+      "Body Slam": 34,
+      "Crunch": 242,
+      "Fire Spin": 83,
+      "Howl": 336,
+      "Heat Wave": 257,
+      "Flare Blitz": 394,
+      "Close Combat": 370,
+      "Burn Up": 682
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -5529,7 +5931,16 @@
       "Rock Smash": 249,
       "Waterfall": 127
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Endeavor": 283,
+      "Haze": 114,
+      "Mist": 54,
+      "Mind Reader": 170,
+      "Splash": 150,
+      "Bubble Beam": 61,
+      "Mud Shot": 341,
+      "Encore": 227
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -5630,7 +6041,16 @@
       "Waterfall": 127,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Endeavor": 283,
+      "Haze": 114,
+      "Mist": 54,
+      "Mind Reader": 170,
+      "Splash": 150,
+      "Bubble Beam": 61,
+      "Mud Shot": 341,
+      "Encore": 227
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -5817,7 +6237,20 @@
       "Grass Knot": 447,
       "Trick Room": 433
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Confusion": 93,
+      "Guard Split": 470,
+      "Magic Coat": 277,
+      "Encore": 227,
+      "Knock Off": 282,
+      "Fire Punch": 7,
+      "Thunder Punch": 9,
+      "Ice Punch": 8,
+      "Power Trick": 379,
+      "Guard Swap": 385,
+      "Psycho Shift": 375,
+      "Ally Switch": 502
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Ally Switch": 502,
@@ -5923,7 +6356,20 @@
       "Grass Knot": 447,
       "Trick Room": 433
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Confusion": 93,
+      "Guard Split": 470,
+      "Magic Coat": 277,
+      "Encore": 227,
+      "Knock Off": 282,
+      "Fire Punch": 7,
+      "Thunder Punch": 9,
+      "Ice Punch": 8,
+      "Power Trick": 379,
+      "Guard Swap": 385,
+      "Psycho Shift": 375,
+      "Ally Switch": 502
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Ally Switch": 502,
@@ -6133,7 +6579,23 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Counter": 68,
+      "Bullet Punch": 418,
+      "Tickle": 321,
+      "Quick Guard": 501,
+      "Submission": 66,
+      "Encore": 227,
+      "Close Combat": 370,
+      "Fire Punch": 7,
+      "Thunder Punch": 9,
+      "Ice Punch": 8,
+      "Power Trick": 379,
+      "Heavy Slam": 484,
+      "Knock Off": 282,
+      "Rolling Kick": 27,
+      "Meditate": 96
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -6234,7 +6696,23 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Counter": 68,
+      "Bullet Punch": 418,
+      "Tickle": 321,
+      "Quick Guard": 501,
+      "Submission": 66,
+      "Encore": 227,
+      "Close Combat": 370,
+      "Fire Punch": 7,
+      "Thunder Punch": 9,
+      "Ice Punch": 8,
+      "Power Trick": 379,
+      "Heavy Slam": 484,
+      "Knock Off": 282,
+      "Rolling Kick": 27,
+      "Meditate": 96
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -6402,7 +6880,21 @@
       "Grass Knot": 447,
       "Cut": 15
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Encore": 227,
+      "Synthesis": 235,
+      "Leech Life": 141,
+      "Ingrain": 275,
+      "Magical Leaf": 345,
+      "Worry Seed": 388,
+      "Tickle": 321,
+      "Weather Ball": 311,
+      "Clear Smog": 499,
+      "Power Whip": 438,
+      "Acid Spray": 491,
+      "Belch": 562,
+      "Strength Sap": 668
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bind": 20,
@@ -6486,7 +6978,21 @@
       "Grass Knot": 447,
       "Cut": 15
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Encore": 227,
+      "Synthesis": 235,
+      "Leech Life": 141,
+      "Ingrain": 275,
+      "Magical Leaf": 345,
+      "Worry Seed": 388,
+      "Tickle": 321,
+      "Weather Ball": 311,
+      "Clear Smog": 499,
+      "Power Whip": 438,
+      "Acid Spray": 491,
+      "Belch": 562,
+      "Strength Sap": 668
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bind": 20,
@@ -6666,7 +7172,19 @@
       "Surf": 57,
       "Waterfall": 127
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Acupressure": 367,
+      "Aqua Ring": 392,
+      "Aurora Beam": 62,
+      "Confuse Ray": 109,
+      "Haze": 114,
+      "Knock Off": 282,
+      "Mirror Coat": 243,
+      "Rapid Spin": 229,
+      "Tickle": 321,
+      "Muddy Water": 330,
+      "Bubble": 145
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bind": 20,
@@ -6847,7 +7365,15 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Mega Punch": 5,
+      "Block": 335,
+      "Hammer Arm": 359,
+      "Flail": 175,
+      "Curse": 174,
+      "Autotomize": 475,
+      "Wide Guard": 469
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bulldoze": 523,
@@ -6949,7 +7475,15 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Mega Punch": 5,
+      "Block": 335,
+      "Hammer Arm": 359,
+      "Flail": 175,
+      "Curse": 174,
+      "Autotomize": 475,
+      "Wide Guard": 469
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bulldoze": 523,
@@ -7121,7 +7655,19 @@
       "Poison Jab": 398,
       "Strength": 70
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Thrash": 37,
+      "Double Kick": 24,
+      "Hypnosis": 95,
+      "Double-Edge": 38,
+      "Horn Drill": 32,
+      "Morning Sun": 234,
+      "Flame Wheel": 172,
+      "Charm": 204,
+      "Low Kick": 67,
+      "Ally Switch": 502,
+      "High Horsepower": 667
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Ally Switch": 502,
@@ -7339,7 +7885,16 @@
       "Rock Smash": 249,
       "Waterfall": 127
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Belch": 562,
+      "Belly Drum": 187,
+      "Block": 335,
+      "Stomp": 23,
+      "Future Sight": 248,
+      "Snore": 173,
+      "Zen Headbutt": 428,
+      "Wonder Room": 472
+    },
     "tutorLearnset": {
       "Snore": 173,
       "After You": 495,
@@ -7787,7 +8342,16 @@
       "Swords Dance": 14,
       "Fly": 19
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Quick Attack": 98,
+      "Supersonic": 48,
+      "Haze": 114,
+      "Flail": 175,
+      "Endeavor": 283,
+      "Brave Bird": 413,
+      "Assurance": 372,
+      "Feint Attack": 185
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Air Cutter": 314,
@@ -7962,7 +8526,22 @@
       "Surf": 57,
       "Waterfall": 127
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Lick": 122,
+      "Perish Song": 195,
+      "Disable": 50,
+      "Horn Drill": 32,
+      "Slam": 21,
+      "Encore": 227,
+      "Fake Out": 252,
+      "Icicle Spear": 333,
+      "Stockpile": 254,
+      "Swallow": 256,
+      "Spit Up": 255,
+      "Belch": 562,
+      "Entrainment": 494,
+      "Signal Beam": 324
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -8159,7 +8738,21 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Haze": 114,
+      "Mean Look": 212,
+      "Lick": 122,
+      "Imprison": 286,
+      "Curse": 174,
+      "Shadow Punch": 325,
+      "Shadow Sneak": 425,
+      "Stockpile": 254,
+      "Swallow": 256,
+      "Spit Up": 255,
+      "Scary Face": 184,
+      "Acid Spray": 491,
+      "Power-Up Punch": 612
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -8330,7 +8923,18 @@
       "Surf": 57,
       "Waterfall": 127
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Bubble Beam": 61,
+      "Aqua Ring": 392,
+      "Life Dew": 791,
+      "Take Down": 36,
+      "Rapid Spin": 229,
+      "Screech": 103,
+      "Icicle Spear": 333,
+      "Mud Shot": 341,
+      "Rock Blast": 350,
+      "Twineedle": 41
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Spikes": 191,
@@ -8520,7 +9124,20 @@
       "Dazzling Gleam": 605,
       "Trick Room": 433
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Perish Song": 195,
+      "Haze": 114,
+      "Astonish": 310,
+      "Grudge": 288,
+      "Disable": 50,
+      "Clear Smog": 499,
+      "Smog": 123,
+      "Reflect Type": 513,
+      "Fire Punch": 7,
+      "Ice Punch": 8,
+      "Thunder Punch": 9,
+      "Scary Face": 184
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Ally Switch": 502,
@@ -8627,7 +9244,20 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Perish Song": 195,
+      "Haze": 114,
+      "Astonish": 310,
+      "Grudge": 288,
+      "Disable": 50,
+      "Clear Smog": 499,
+      "Smog": 123,
+      "Reflect Type": 513,
+      "Fire Punch": 7,
+      "Ice Punch": 8,
+      "Thunder Punch": 9,
+      "Scary Face": 184
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Ally Switch": 502,
@@ -8944,7 +9574,17 @@
       "Grass Knot": 447,
       "Trick Room": 433
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Role Play": 272,
+      "Fire Punch": 7,
+      "Thunder Punch": 9,
+      "Ice Punch": 8,
+      "Flatter": 260,
+      "Psycho Cut": 427,
+      "Guard Swap": 385,
+      "Power Split": 471,
+      "Switcheroo": 415
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Ally Switch": 502,
@@ -9143,7 +9783,20 @@
       "Rock Smash": 249,
       "Waterfall": 127
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Knock Off": 282,
+      "Ancient Power": 246,
+      "Hammer Arm": 359,
+      "Slash": 163,
+      "Night Slash": 400,
+      "Haze": 114,
+      "Amnesia": 133,
+      "Flail": 175,
+      "Slam": 21,
+      "Tickle": 321,
+      "Agility": 97,
+      "Ally Switch": 502
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Ally Switch": 502,
@@ -9499,7 +10152,21 @@
       "Trick Room": 433,
       "Strength": 70
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Ancient Power": 246,
+      "Block": 335,
+      "Curse": 174,
+      "Ingrain": 275,
+      "Moonlight": 236,
+      "Sleep Powder": 79,
+      "Stun Spore": 78,
+      "Poison Powder": 77,
+      "Synthesis": 235,
+      "Nature Power": 267,
+      "Leaf Storm": 437,
+      "Power Swap": 384,
+      "Grassy Terrain": 580
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bulldoze": 523,
@@ -9704,7 +10371,18 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Ancient Power": 246,
+      "Belly Drum": 187,
+      "Detect": 197,
+      "Double Kick": 24,
+      "Perish Song": 195,
+      "Skull Bash": 130,
+      "Curse": 174,
+      "Leer": 43,
+      "Screech": 103,
+      "Iron Head": 442
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bulldoze": 523,
@@ -9799,7 +10477,17 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Rapid Spin": 229,
+      "High Jump Kick": 136,
+      "Mach Punch": 183,
+      "Mind Reader": 170,
+      "Counter": 68,
+      "Vacuum Wave": 410,
+      "Bullet Punch": 418,
+      "Feint": 364,
+      "Helping Hand": 270
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -9898,7 +10586,17 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Rapid Spin": 229,
+      "High Jump Kick": 136,
+      "Mach Punch": 183,
+      "Mind Reader": 170,
+      "Counter": 68,
+      "Vacuum Wave": 410,
+      "Bullet Punch": 418,
+      "Feint": 364,
+      "Helping Hand": 270
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -10204,7 +10902,20 @@
       "Snarl": 555,
       "Dark Pulse": 399
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Psybeam": 60,
+      "Pain Split": 220,
+      "Grudge": 288,
+      "Spite": 180,
+      "Curse": 174,
+      "Stockpile": 254,
+      "Swallow": 256,
+      "Spit Up": 255,
+      "Screech": 103,
+      "Destiny Bond": 194,
+      "Toxic Spikes": 390,
+      "Venom Drench": 599
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Rollout": 205,
@@ -10421,7 +11132,21 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Counter": 68,
+      "Curse": 174,
+      "Dragon Rush": 407,
+      "Skull Bash": 130,
+      "Metal Burst": 368,
+      "Guard Split": 470,
+      "Crunch": 242,
+      "Reversal": 179,
+      "Crush Claw": 306,
+      "Ice Fang": 423,
+      "Fire Fang": 424,
+      "Thunder Fang": 422,
+      "Magnitude": 222
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -10563,6 +11288,7 @@
       "Heal Bell": 215,
       "Counter": 68,
       "Helping Hand": 270,
+      "Last Resort": 387,
       "Mud Bomb": 426
     },
     "tutorLearnset": {
@@ -10955,7 +11681,19 @@
       "Surf": 57,
       "Waterfall": 127
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Aurora Beam": 62,
+      "Clear Smog": 499,
+      "Disable": 50,
+      "Flail": 175,
+      "Octazooka": 190,
+      "Splash": 150,
+      "Dragon Breath": 225,
+      "Muddy Water": 330,
+      "Outrage": 200,
+      "Razor Wind": 13,
+      "Signal Beam": 324
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Laser Focus": 673,
@@ -11120,7 +11858,18 @@
       "Surf": 57,
       "Waterfall": 127
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Psybeam": 60,
+      "Haze": 114,
+      "Aqua Tail": 401,
+      "Acupressure": 367,
+      "Mud-Slap": 189,
+      "Hydro Pump": 56,
+      "Body Slam": 34,
+      "Mud Shot": 341,
+      "Skull Bash": 130,
+      "Signal Beam": 324
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Mud-Slap": 189,
@@ -11422,6 +12171,8 @@
       "Mimic": 102,
       "Trick": 271,
       "Teeter Dance": 298,
+      "Healing Wish": 361,
+      "Charm": 204,
       "Magic Room": 478,
       "Icy Wind": 196
     },
@@ -11634,7 +12385,13 @@
       "Grass Knot": 447,
       "Trick Room": 433
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Fake Out": 252,
+      "Wish": 273,
+      "Role Play": 272,
+      "Ice Punch": 8,
+      "Meditate": 96
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -11730,7 +12487,17 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Cross Chop": 238,
+      "Dynamic Punch": 223,
+      "Hammer Arm": 359,
+      "Feint": 364,
+      "Fire Punch": 7,
+      "Ice Punch": 8,
+      "Rolling Kick": 27,
+      "Meditate": 96,
+      "Karate Chop": 2
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -11824,7 +12591,20 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Belch": 562,
+      "Dynamic Punch": 223,
+      "Mach Punch": 183,
+      "Cross Chop": 238,
+      "Mega Punch": 5,
+      "Screech": 103,
+      "Thunder Punch": 9,
+      "Flare Blitz": 394,
+      "Belly Drum": 187,
+      "Focus Energy": 116,
+      "Power Swap": 384,
+      "Karate Chop": 2
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -12474,7 +13254,20 @@
       "Rock Smash": 249,
       "Waterfall": 127
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Flail": 175,
+      "Curse": 174,
+      "Tickle": 321,
+      "Yawn": 281,
+      "Detect": 197,
+      "Double Kick": 24,
+      "Mud-Slap": 189,
+      "Wish": 273,
+      "Charm": 204,
+      "Fake Tears": 313,
+      "Covet": 343,
+      "Stored Power": 500
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -12570,7 +13363,20 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Flail": 175,
+      "Curse": 174,
+      "Tickle": 321,
+      "Yawn": 281,
+      "Detect": 197,
+      "Double Kick": 24,
+      "Mud-Slap": 189,
+      "Wish": 273,
+      "Charm": 204,
+      "Fake Tears": 313,
+      "Covet": 343,
+      "Stored Power": 500
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -12662,7 +13468,20 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Flail": 175,
+      "Curse": 174,
+      "Tickle": 321,
+      "Yawn": 281,
+      "Detect": 197,
+      "Double Kick": 24,
+      "Mud-Slap": 189,
+      "Wish": 273,
+      "Charm": 204,
+      "Fake Tears": 313,
+      "Covet": 343,
+      "Stored Power": 500
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -12950,7 +13769,21 @@
       "Waterfall": 127,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Aurora Beam": 62,
+      "Bubble Beam": 61,
+      "Haze": 114,
+      "Knock Off": 282,
+      "Reflect Type": 513,
+      "Slam": 21,
+      "Supersonic": 48,
+      "Bite": 44,
+      "Tickle": 321,
+      "Spikes": 191,
+      "Toxic Spikes": 390,
+      "Muddy Water": 330,
+      "Whirlpool": 250
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bind": 20,
@@ -13146,7 +13979,19 @@
       "Waterfall": 127,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Aurora Beam": 62,
+      "Bubble Beam": 61,
+      "Confuse Ray": 109,
+      "Flail": 175,
+      "Knock Off": 282,
+      "Rapid Spin": 229,
+      "Take Down": 36,
+      "Mega Drain": 72,
+      "Mud Shot": 341,
+      "Icy Wind": 196,
+      "Screech": 103
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Rollout": 205,
@@ -13376,13 +14221,13 @@
       "Curse": 174,
       "Fissure": 90,
       "Counter": 68,
-      "Gastro Acid": 380,
+      "Belch": 562,
       "Lick": 122,
       "Charm": 204,
       "Whirlwind": 18,
+      "Zen Headbutt": 428,
       "After You": 495,
-      "Belch": 562,
-      "Power-Up Punch": 612
+      "Self-Destruct": 120
     },
     "tutorLearnset": {
       "Snore": 173,
@@ -13841,7 +14686,16 @@
       "Surf": 57,
       "Waterfall": 127
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Aqua Jet": 453,
+      "Dragon Breath": 225,
+      "Extreme Speed": 245,
+      "Mist": 54,
+      "Supersonic": 48,
+      "Haze": 114,
+      "Dragon Dance": 349,
+      "Dragon Rush": 407
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bind": 20,
@@ -13950,7 +14804,16 @@
       "Rock Smash": 249,
       "Waterfall": 127
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Aqua Jet": 453,
+      "Dragon Breath": 225,
+      "Extreme Speed": 245,
+      "Mist": 54,
+      "Supersonic": 48,
+      "Haze": 114,
+      "Dragon Dance": 349,
+      "Dragon Rush": 407
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bind": 20,
@@ -14484,7 +15347,21 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Vine Whip": 22,
+      "Leech Seed": 73,
+      "Counter": 68,
+      "Ancient Power": 246,
+      "Flail": 175,
+      "Nature Power": 267,
+      "Ingrain": 275,
+      "Leaf Storm": 437,
+      "Aromatherapy": 312,
+      "Body Slam": 34,
+      "Heal Pulse": 505,
+      "Grassy Terrain": 580,
+      "Grass Whistle": 320
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Worry Seed": 388,
@@ -14572,7 +15449,21 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Vine Whip": 22,
+      "Leech Seed": 73,
+      "Counter": 68,
+      "Ancient Power": 246,
+      "Flail": 175,
+      "Nature Power": 267,
+      "Ingrain": 275,
+      "Leaf Storm": 437,
+      "Aromatherapy": 312,
+      "Body Slam": 34,
+      "Heal Pulse": 505,
+      "Grassy Terrain": 580,
+      "Grass Whistle": 320
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bulldoze": 523,
@@ -14739,7 +15630,20 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Fury Swipes": 154,
+      "Quick Attack": 98,
+      "Reversal": 179,
+      "Thrash": 37,
+      "Covet": 343,
+      "Howl": 336,
+      "Crush Claw": 306,
+      "Double-Edge": 38,
+      "Double Kick": 24,
+      "Flare Blitz": 394,
+      "Extrasensory": 326,
+      "Nature Power": 267
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Covet": 343,
@@ -14833,7 +15737,20 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Fury Swipes": 154,
+      "Quick Attack": 98,
+      "Reversal": 179,
+      "Thrash": 37,
+      "Covet": 343,
+      "Howl": 336,
+      "Crush Claw": 306,
+      "Double-Edge": 38,
+      "Double Kick": 24,
+      "Flare Blitz": 394,
+      "Extrasensory": 326,
+      "Nature Power": 267
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Covet": 343,
@@ -15035,7 +15952,20 @@
       "Rock Smash": 249,
       "Waterfall": 127
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Crunch": 242,
+      "Thrash": 37,
+      "Hydro Pump": 56,
+      "Ancient Power": 246,
+      "Ice Punch": 8,
+      "Metal Claw": 232,
+      "Dragon Dance": 349,
+      "Aqua Jet": 453,
+      "Fake Tears": 313,
+      "Block": 335,
+      "Flatter": 260,
+      "Razor Wind": 13
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Mud-Slap": 189,
@@ -15142,7 +16072,20 @@
       "Waterfall": 127,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Crunch": 242,
+      "Thrash": 37,
+      "Hydro Pump": 56,
+      "Ancient Power": 246,
+      "Ice Punch": 8,
+      "Metal Claw": 232,
+      "Dragon Dance": 349,
+      "Aqua Jet": 453,
+      "Fake Tears": 313,
+      "Block": 335,
+      "Flatter": 260,
+      "Razor Wind": 13
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bulldoze": 523,
@@ -15348,7 +16291,17 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Double-Edge": 38,
+      "Slash": 163,
+      "Focus Energy": 116,
+      "Reversal": 179,
+      "Trick": 271,
+      "Last Resort": 387,
+      "Charm": 204,
+      "Covet": 343,
+      "Baby-Doll Eyes": 608
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Covet": 343,
@@ -15545,7 +16498,18 @@
       "Fly": 19,
       "Defog": 432
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Supersonic": 48,
+      "Wing Attack": 17,
+      "Whirlwind": 18,
+      "Feather Dance": 297,
+      "Night Shade": 101,
+      "Sky Attack": 143,
+      "Agility": 97,
+      "Mean Look": 212,
+      "Hurricane": 542,
+      "Feint Attack": 185
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Air Cutter": 314,
@@ -15741,7 +16705,17 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Psybeam": 60,
+      "Screech": 103,
+      "Encore": 227,
+      "Knock Off": 282,
+      "Bug Bite": 450,
+      "Tailwind": 366,
+      "Counter": 68,
+      "Dizzy Punch": 146,
+      "Silver Wind": 318
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Air Cutter": 314,
@@ -15918,7 +16892,18 @@
       "X-Scissor": 404,
       "Poison Jab": 398
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Psybeam": 60,
+      "Disable": 50,
+      "Baton Pass": 226,
+      "Toxic Spikes": 390,
+      "Rage Powder": 476,
+      "Night Slash": 400,
+      "Megahorn": 224,
+      "Lunge": 679,
+      "Twineedle": 41,
+      "Signal Beam": 324
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Electroweb": 527,
@@ -16008,7 +16993,18 @@
       "Fly": 19,
       "Defog": 432
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Curse": 174,
+      "Gust": 16,
+      "Hypnosis": 95,
+      "Quick Attack": 98,
+      "Whirlwind": 18,
+      "Wing Attack": 17,
+      "Zen Headbutt": 428,
+      "Brave Bird": 413,
+      "Venom Drench": 599,
+      "Feint Attack": 185
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Air Cutter": 314,
@@ -16186,7 +17182,16 @@
       "Surf": 57,
       "Waterfall": 127
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Psybeam": 60,
+      "Mist": 54,
+      "Soak": 487,
+      "Flail": 175,
+      "Screech": 103,
+      "Amnesia": 133,
+      "Whirlpool": 250,
+      "Agility": 97
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Heal Bell": 215,
@@ -16684,7 +17689,15 @@
       "Defog": 432,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Present": 217,
+      "Peck": 64,
+      "Psycho Shift": 375,
+      "Extrasensory": 326,
+      "Morning Sun": 234,
+      "Future Sight": 248,
+      "Stored Power": 500
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -16892,7 +17905,17 @@
       "Fly": 19,
       "Defog": 432
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Drill Peck": 65,
+      "Quick Attack": 98,
+      "Feather Dance": 297,
+      "Sucker Punch": 389,
+      "Simple Beam": 493,
+      "Haze": 114,
+      "Zen Headbutt": 428,
+      "Ally Switch": 502,
+      "Feint Attack": 185
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Ally Switch": 502,
@@ -17066,7 +18089,18 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Take Down": 36,
+      "Body Slam": 34,
+      "Screech": 103,
+      "Charge": 268,
+      "Flatter": 260,
+      "Sand Attack": 28,
+      "After You": 495,
+      "Agility": 97,
+      "Eerie Impulse": 598,
+      "Electric Terrain": 604
+    },
     "tutorLearnset": {
       "Snore": 173,
       "After You": 495,
@@ -17164,7 +18198,18 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Take Down": 36,
+      "Body Slam": 34,
+      "Screech": 103,
+      "Charge": 268,
+      "Flatter": 260,
+      "Sand Attack": 28,
+      "After You": 495,
+      "Agility": 97,
+      "Eerie Impulse": 598,
+      "Electric Terrain": 604
+    },
     "tutorLearnset": {
       "Snore": 173,
       "After You": 495,
@@ -17251,7 +18296,19 @@
       "Grass Knot": 447,
       "Cut": 15
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Razor Leaf": 75,
+      "Flail": 175,
+      "Synthesis": 235,
+      "Ingrain": 275,
+      "Tickle": 321,
+      "Teeter Dance": 298,
+      "Nature Power": 267,
+      "After You": 495,
+      "Strength Sap": 668,
+      "Leech Seed": 73,
+      "Charm": 204
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -17346,9 +18403,9 @@
       "Soak": 487,
       "Supersonic": 48,
       "Tickle": 321,
-      "Amnesia": 133,
-      "Future Sight": 248,
-      "Superpower": 276,
+      "Encore": 227,
+      "Slam": 21,
+      "Fake Tears": 313,
       "Body Slam": 34,
       "Muddy Water": 330
     },
@@ -17450,7 +18507,22 @@
       "Rock Smash": 249,
       "Waterfall": 127
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Aqua Jet": 453,
+      "Belly Drum": 187,
+      "Copycat": 383,
+      "Perish Song": 195,
+      "Present": 217,
+      "Sing": 47,
+      "Soak": 487,
+      "Supersonic": 48,
+      "Tickle": 321,
+      "Encore": 227,
+      "Slam": 21,
+      "Fake Tears": 313,
+      "Body Slam": 34,
+      "Muddy Water": 330
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -17652,7 +18724,16 @@
       "Rock Smash": 249,
       "Waterfall": 127
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Endeavor": 283,
+      "Haze": 114,
+      "Mist": 54,
+      "Mind Reader": 170,
+      "Splash": 150,
+      "Bubble Beam": 61,
+      "Mud Shot": 341,
+      "Encore": 227
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -17826,7 +18907,19 @@
       "Grass Knot": 447,
       "U-turn": 369
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Confusion": 93,
+      "Encore": 227,
+      "Double-Edge": 38,
+      "Amnesia": 133,
+      "Helping Hand": 270,
+      "Aromatherapy": 312,
+      "Worry Seed": 388,
+      "Cotton Guard": 538,
+      "Seed Bomb": 402,
+      "Grassy Terrain": 580,
+      "Strength Sap": 668
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Worry Seed": 388,
@@ -17910,7 +19003,19 @@
       "U-turn": 369,
       "Fly": 19
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Confusion": 93,
+      "Encore": 227,
+      "Double-Edge": 38,
+      "Amnesia": 133,
+      "Helping Hand": 270,
+      "Aromatherapy": 312,
+      "Worry Seed": 388,
+      "Cotton Guard": 538,
+      "Seed Bomb": 402,
+      "Grassy Terrain": 580,
+      "Strength Sap": 668
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Worry Seed": 388,
@@ -18191,7 +19296,17 @@
       "Grass Knot": 447,
       "Cut": 15
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Encore": 227,
+      "Leech Seed": 73,
+      "Nature Power": 267,
+      "Curse": 174,
+      "Helping Hand": 270,
+      "Ingrain": 275,
+      "Sweet Scent": 230,
+      "Morning Sun": 234,
+      "Grassy Terrain": 580
+    },
     "tutorLearnset": {
       "Snore": 173,
       "After You": 495,
@@ -18472,7 +19587,23 @@
       "Rock Smash": 249,
       "Waterfall": 127
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Ancient Power": 246,
+      "Curse": 174,
+      "Stockpile": 254,
+      "Swallow": 256,
+      "Spit Up": 255,
+      "Counter": 68,
+      "Double Kick": 24,
+      "Recover": 105,
+      "After You": 495,
+      "Acid Spray": 491,
+      "Power-Up Punch": 612,
+      "Body Slam": 34,
+      "Encore": 227,
+      "Guard Swap": 385,
+      "Eerie Impulse": 598
+    },
     "tutorLearnset": {
       "Snore": 173,
       "After You": 495,
@@ -18568,7 +19699,20 @@
       "Trick Room": 433,
       "Cut": 15
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Flail": 175,
+      "Curse": 174,
+      "Tickle": 321,
+      "Yawn": 281,
+      "Detect": 197,
+      "Double Kick": 24,
+      "Mud-Slap": 189,
+      "Wish": 273,
+      "Charm": 204,
+      "Fake Tears": 313,
+      "Covet": 343,
+      "Stored Power": 500
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -18669,7 +19813,20 @@
       "Grass Knot": 447,
       "Cut": 15
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Flail": 175,
+      "Curse": 174,
+      "Tickle": 321,
+      "Yawn": 281,
+      "Detect": 197,
+      "Double Kick": 24,
+      "Mud-Slap": 189,
+      "Wish": 273,
+      "Charm": 204,
+      "Fake Tears": 313,
+      "Covet": 343,
+      "Stored Power": 500
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -18890,7 +20047,16 @@
       "Rock Smash": 249,
       "Waterfall": 127
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Belch": 562,
+      "Belly Drum": 187,
+      "Block": 335,
+      "Stomp": 23,
+      "Future Sight": 248,
+      "Snore": 173,
+      "Zen Headbutt": 428,
+      "Wonder Room": 472
+    },
     "tutorLearnset": {
       "Snore": 173,
       "After You": 495,
@@ -19371,7 +20537,17 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Pin Missile": 42,
+      "Flail": 175,
+      "Swift": 129,
+      "Counter": 68,
+      "Sand Tomb": 328,
+      "Revenge": 279,
+      "Double-Edge": 38,
+      "Toxic Spikes": 390,
+      "Power Trick": 379
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bulldoze": 523,
@@ -19706,7 +20882,18 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Flail": 175,
+      "Block": 335,
+      "Defense Curl": 111,
+      "Wide Guard": 469,
+      "Rollout": 205,
+      "Dragon Tail": 525,
+      "Head Smash": 457,
+      "Rock Blast": 350,
+      "Heavy Slam": 484,
+      "Sharpen": 159
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bind": 20,
@@ -19933,7 +21120,21 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Metronome": 118,
+      "Present": 217,
+      "Crunch": 242,
+      "Heal Bell": 215,
+      "Snore": 173,
+      "Close Combat": 370,
+      "Ice Fang": 423,
+      "Fire Fang": 424,
+      "Thunder Fang": 422,
+      "Double-Edge": 38,
+      "Mimic": 102,
+      "Fake Tears": 313,
+      "Feint Attack": 185
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Covet": 343,
@@ -20135,7 +21336,16 @@
       "Defog": 432,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Counter": 68,
+      "Night Slash": 400,
+      "Feint": 364,
+      "Quick Guard": 501,
+      "Baton Pass": 226,
+      "Reversal": 179,
+      "Razor Wind": 13,
+      "Silver Wind": 318
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Dual Wingbeat": 814,
@@ -20668,7 +21878,21 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Crunch": 242,
+      "Take Down": 36,
+      "Seismic Toss": 69,
+      "Counter": 68,
+      "Metal Claw": 232,
+      "Fake Tears": 313,
+      "Yawn": 281,
+      "Cross Chop": 238,
+      "Double-Edge": 38,
+      "Close Combat": 370,
+      "Night Slash": 400,
+      "Belly Drum": 187,
+      "Play Rough": 583
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Covet": 343,
@@ -20858,7 +22082,20 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Acid Armor": 151,
+      "Heat Wave": 257,
+      "Curse": 174,
+      "Smokescreen": 108,
+      "Memento": 262,
+      "Stockpile": 254,
+      "Spit Up": 255,
+      "Swallow": 256,
+      "Rollout": 205,
+      "Inferno": 517,
+      "Earth Power": 414,
+      "Guard Swap": 385
+    },
     "tutorLearnset": {
       "Snore": 173,
       "After You": 495,
@@ -21037,7 +22274,19 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Bite": 44,
+      "Ancient Power": 246,
+      "Double-Edge": 38,
+      "Fissure": 90,
+      "Curse": 174,
+      "Icicle Crash": 556,
+      "Freeze-Dry": 573,
+      "Take Down": 36,
+      "Body Slam": 34,
+      "Mud Shot": 341,
+      "Icicle Spear": 333
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bulldoze": 523,
@@ -21332,7 +22581,21 @@
       "Surf": 57,
       "Waterfall": 127
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Octazooka": 190,
+      "Supersonic": 48,
+      "Haze": 114,
+      "Flail": 175,
+      "Water Spout": 323,
+      "Acid Spray": 491,
+      "Aurora Beam": 62,
+      "Screech": 103,
+      "Rock Blast": 350,
+      "Snore": 173,
+      "Mud Shot": 341,
+      "Swift": 129,
+      "Entrainment": 494
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bind": 20,
@@ -21537,7 +22800,8 @@
       "Confuse Ray": 109,
       "Hydro Pump": 56,
       "Wide Guard": 469,
-      "Amnesia": 133
+      "Amnesia": 133,
+      "Signal Beam": 324
     },
     "tutorLearnset": {
       "Snore": 173,
@@ -21842,7 +23106,18 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Fire Spin": 83,
+      "Counter": 68,
+      "Spite": 180,
+      "Reversal": 179,
+      "Beat Up": 251,
+      "Fire Fang": 424,
+      "Thunder Fang": 422,
+      "Feint": 364,
+      "Sucker Punch": 389,
+      "Destiny Bond": 194
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Mud-Slap": 189,
@@ -21927,7 +23202,19 @@
       "Surf": 57,
       "Waterfall": 127
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Aurora Beam": 62,
+      "Clear Smog": 499,
+      "Disable": 50,
+      "Flail": 175,
+      "Octazooka": 190,
+      "Splash": 150,
+      "Dragon Breath": 225,
+      "Muddy Water": 330,
+      "Outrage": 200,
+      "Razor Wind": 13,
+      "Signal Beam": 324
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Laser Focus": 673,
@@ -22108,7 +23395,21 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Focus Energy": 116,
+      "Body Slam": 34,
+      "Ancient Power": 246,
+      "Snore": 173,
+      "Counter": 68,
+      "Fissure": 90,
+      "Endeavor": 283,
+      "Ice Shard": 420,
+      "Head Smash": 457,
+      "Mud-Slap": 189,
+      "Heavy Slam": 484,
+      "Play Rough": 583,
+      "High Horsepower": 667
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bulldoze": 523,
@@ -22506,7 +23807,17 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Rapid Spin": 229,
+      "High Jump Kick": 136,
+      "Mach Punch": 183,
+      "Mind Reader": 170,
+      "Counter": 68,
+      "Vacuum Wave": 410,
+      "Bullet Punch": 418,
+      "Feint": 364,
+      "Helping Hand": 270
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -23034,7 +24345,18 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Aromatherapy": 312,
+      "Gravity": 356,
+      "Present": 217,
+      "Seismic Toss": 69,
+      "Metronome": 118,
+      "Heal Bell": 215,
+      "Counter": 68,
+      "Helping Hand": 270,
+      "Last Resort": 387,
+      "Mud Bomb": 426
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -23508,7 +24830,17 @@
       "Hyper Voice": 304,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Stomp": 23,
+      "Ancient Power": 246,
+      "Curse": 174,
+      "Outrage": 200,
+      "Focus Energy": 116,
+      "Dragon Dance": 349,
+      "Iron Defense": 334,
+      "Assurance": 372,
+      "Iron Head": 442
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bulldoze": 523,
@@ -23624,7 +24956,17 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Stomp": 23,
+      "Ancient Power": 246,
+      "Curse": 174,
+      "Outrage": 200,
+      "Focus Energy": 116,
+      "Dragon Dance": 349,
+      "Iron Defense": 334,
+      "Assurance": 372,
+      "Iron Head": 442
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bulldoze": 523,
@@ -24164,7 +25506,24 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Absorb": 71,
+      "Slash": 163,
+      "Night Slash": 400,
+      "Double Kick": 24,
+      "Dragon Breath": 225,
+      "Leech Seed": 73,
+      "Worry Seed": 388,
+      "Synthesis": 235,
+      "Crunch": 242,
+      "Endeavor": 283,
+      "Crush Claw": 306,
+      "Magical Leaf": 345,
+      "Leaf Storm": 437,
+      "Grassy Terrain": 580,
+      "Grass Whistle": 320,
+      "Razor Wind": 13
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Worry Seed": 388,
@@ -24274,7 +25633,24 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Absorb": 71,
+      "Slash": 163,
+      "Night Slash": 400,
+      "Double Kick": 24,
+      "Dragon Breath": 225,
+      "Leech Seed": 73,
+      "Worry Seed": 388,
+      "Synthesis": 235,
+      "Crunch": 242,
+      "Endeavor": 283,
+      "Crush Claw": 306,
+      "Magical Leaf": 345,
+      "Leaf Storm": 437,
+      "Grassy Terrain": 580,
+      "Grass Whistle": 320,
+      "Razor Wind": 13
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bulldoze": 523,
@@ -24465,7 +25841,20 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Peck": 64,
+      "Crush Claw": 306,
+      "Curse": 174,
+      "Counter": 68,
+      "Feint": 364,
+      "Last Resort": 387,
+      "Night Slash": 400,
+      "Reversal": 179,
+      "Baton Pass": 226,
+      "Agility": 97,
+      "Feather Dance": 297,
+      "Low Kick": 67
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -24574,7 +25963,20 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Peck": 64,
+      "Crush Claw": 306,
+      "Curse": 174,
+      "Counter": 68,
+      "Feint": 364,
+      "Last Resort": 387,
+      "Night Slash": 400,
+      "Reversal": 179,
+      "Baton Pass": 226,
+      "Agility": 97,
+      "Feather Dance": 297,
+      "Low Kick": 67
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -24772,7 +26174,22 @@
       "Rock Smash": 249,
       "Waterfall": 127
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Mud-Slap": 189,
+      "Bite": 44,
+      "Ancient Power": 246,
+      "Counter": 68,
+      "Curse": 174,
+      "Double-Edge": 38,
+      "Mirror Coat": 243,
+      "Sludge": 124,
+      "Stomp": 23,
+      "Wide Guard": 469,
+      "Yawn": 281,
+      "Uproar": 253,
+      "Whirlpool": 250,
+      "Mud Bomb": 426
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bulldoze": 523,
@@ -24876,7 +26293,22 @@
       "Waterfall": 127,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Mud-Slap": 189,
+      "Bite": 44,
+      "Ancient Power": 246,
+      "Counter": 68,
+      "Curse": 174,
+      "Double-Edge": 38,
+      "Mirror Coat": 243,
+      "Sludge": 124,
+      "Stomp": 23,
+      "Wide Guard": 469,
+      "Yawn": 281,
+      "Uproar": 253,
+      "Whirlpool": 250,
+      "Mud Bomb": 426
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bulldoze": 523,
@@ -25053,7 +26485,18 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Astonish": 310,
+      "Poison Fang": 305,
+      "Covet": 343,
+      "Leer": 43,
+      "Yawn": 281,
+      "Sucker Punch": 389,
+      "Ice Fang": 423,
+      "Fire Fang": 424,
+      "Thunder Fang": 422,
+      "Play Rough": 583
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Covet": 343,
@@ -25242,7 +26685,15 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Tickle": 321,
+      "Simple Beam": 493,
+      "Extreme Speed": 245,
+      "Charm": 204,
+      "Trick": 271,
+      "Helping Hand": 270,
+      "Mud-Slap": 189
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -25701,7 +27152,17 @@
       "Rock Smash": 249,
       "Waterfall": 127
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Synthesis": 235,
+      "Razor Leaf": 75,
+      "Sweet Scent": 230,
+      "Leech Seed": 73,
+      "Tickle": 321,
+      "Counter": 68,
+      "Teeter Dance": 298,
+      "Flail": 175,
+      "Water Gun": 55
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Mud-Slap": 189,
@@ -25799,7 +27260,17 @@
       "Waterfall": 127,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Synthesis": 235,
+      "Razor Leaf": 75,
+      "Sweet Scent": 230,
+      "Leech Seed": 73,
+      "Tickle": 321,
+      "Counter": 68,
+      "Teeter Dance": 298,
+      "Flail": 175,
+      "Water Gun": 55
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Mud-Slap": 189,
@@ -25983,7 +27454,19 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Leech Seed": 73,
+      "Quick Attack": 98,
+      "Take Down": 36,
+      "Worry Seed": 388,
+      "Night Slash": 400,
+      "Amnesia": 133,
+      "Power Swap": 384,
+      "Foul Play": 492,
+      "Beat Up": 251,
+      "Grassy Terrain": 580,
+      "Razor Wind": 13
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Rollout": 205,
@@ -26091,7 +27574,19 @@
       "Defog": 432,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Leech Seed": 73,
+      "Quick Attack": 98,
+      "Take Down": 36,
+      "Worry Seed": 388,
+      "Night Slash": 400,
+      "Amnesia": 133,
+      "Power Swap": 384,
+      "Foul Play": 492,
+      "Beat Up": 251,
+      "Grassy Terrain": 580,
+      "Razor Wind": 13
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Air Cutter": 314,
@@ -26260,7 +27755,14 @@
       "Fly": 19,
       "Defog": 432
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Supersonic": 48,
+      "Sky Attack": 143,
+      "Whirlwind": 18,
+      "Brave Bird": 413,
+      "Boomburst": 586,
+      "Hurricane": 542
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Air Cutter": 314,
@@ -26442,7 +27944,17 @@
       "Surf": 57,
       "Defog": 432
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Twister": 239,
+      "Gust": 16,
+      "Aqua Ring": 392,
+      "Knock Off": 282,
+      "Soak": 487,
+      "Wide Guard": 469,
+      "Air Cutter": 314,
+      "Mist": 54,
+      "Agility": 97
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Air Cutter": 314,
@@ -26643,7 +28155,19 @@
       "Grass Knot": 447,
       "Trick Room": 433
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Disable": 50,
+      "Mean Look": 212,
+      "Memento": 262,
+      "Destiny Bond": 194,
+      "Grudge": 288,
+      "Shadow Sneak": 425,
+      "Confuse Ray": 109,
+      "Knock Off": 282,
+      "Encore": 227,
+      "Misty Terrain": 581,
+      "Ally Switch": 502
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -26747,7 +28271,19 @@
       "Grass Knot": 447,
       "Trick Room": 433
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Disable": 50,
+      "Mean Look": 212,
+      "Memento": 262,
+      "Destiny Bond": 194,
+      "Grudge": 288,
+      "Shadow Sneak": 425,
+      "Confuse Ray": 109,
+      "Knock Off": 282,
+      "Encore": 227,
+      "Misty Terrain": 581,
+      "Ally Switch": 502
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -26936,7 +28472,18 @@
       "Defog": 432,
       "Waterfall": 127
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Mud Shot": 341,
+      "Psybeam": 60,
+      "Hydro Pump": 56,
+      "Mind Reader": 170,
+      "Bug Bite": 450,
+      "Aqua Jet": 453,
+      "Fell Stinger": 565,
+      "Power Split": 471,
+      "Lunge": 679,
+      "Signal Beam": 324
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Air Cutter": 314,
@@ -27105,7 +28652,13 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Fake Tears": 313,
+      "Charm": 204,
+      "Helping Hand": 270,
+      "Worry Seed": 388,
+      "Seed Bomb": 402
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Worry Seed": 388,
@@ -27301,7 +28854,17 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Slash": 163,
+      "Body Slam": 34,
+      "Snore": 173,
+      "Crush Claw": 306,
+      "Curse": 174,
+      "Hammer Arm": 359,
+      "Night Slash": 400,
+      "After You": 495,
+      "Tickle": 321
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Covet": 343,
@@ -27409,7 +28972,17 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Slash": 163,
+      "Body Slam": 34,
+      "Snore": 173,
+      "Crush Claw": 306,
+      "Curse": 174,
+      "Hammer Arm": 359,
+      "Night Slash": 400,
+      "After You": 495,
+      "Tickle": 321
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Covet": 343,
@@ -27577,7 +29150,15 @@
       "Cut": 15,
       "Defog": 432
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Gust": 16,
+      "Night Slash": 400,
+      "Bug Bite": 450,
+      "Final Gambit": 515,
+      "Flail": 175,
+      "Feint Attack": 185,
+      "Silver Wind": 318
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Air Cutter": 314,
@@ -27835,7 +29416,18 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Circle Throw": 509,
+      "Disarming Voice": 574,
+      "Endeavor": 283,
+      "Extrasensory": 326,
+      "Hammer Arm": 359,
+      "Smokescreen": 108,
+      "Take Down": 36,
+      "Whirlwind": 18,
+      "Snore": 173,
+      "Fake Tears": 313
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bulldoze": 523,
@@ -27939,7 +29531,18 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Circle Throw": 509,
+      "Disarming Voice": 574,
+      "Endeavor": 283,
+      "Extrasensory": 326,
+      "Hammer Arm": 359,
+      "Smokescreen": 108,
+      "Take Down": 36,
+      "Whirlwind": 18,
+      "Snore": 173,
+      "Fake Tears": 313
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bulldoze": 523,
@@ -28134,7 +29737,18 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Detect": 197,
+      "Helping Hand": 270,
+      "Cross Chop": 238,
+      "Revenge": 279,
+      "Dynamic Punch": 223,
+      "Counter": 68,
+      "Bullet Punch": 418,
+      "Feint": 364,
+      "Wide Guard": 469,
+      "Feint Attack": 185
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bulldoze": 523,
@@ -28523,7 +30137,21 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Helping Hand": 270,
+      "Uproar": 253,
+      "Fake Tears": 313,
+      "Wish": 273,
+      "Baton Pass": 226,
+      "Tickle": 321,
+      "Last Resort": 387,
+      "Fake Out": 252,
+      "Zen Headbutt": 428,
+      "Sucker Punch": 389,
+      "Simple Beam": 493,
+      "Cosmic Power": 322,
+      "Mud Bomb": 426
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Covet": 343,
@@ -28960,7 +30588,19 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Curse": 174,
+      "Dragon Rush": 407,
+      "Endeavor": 283,
+      "Head Smash": 457,
+      "Stomp": 23,
+      "Mud-Slap": 189,
+      "Body Slam": 34,
+      "Screech": 103,
+      "Iron Head": 442,
+      "Superpower": 276,
+      "Reversal": 179
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bulldoze": 523,
@@ -29075,7 +30715,19 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Curse": 174,
+      "Dragon Rush": 407,
+      "Endeavor": 283,
+      "Head Smash": 457,
+      "Stomp": 23,
+      "Mud-Slap": 189,
+      "Body Slam": 34,
+      "Screech": 103,
+      "Iron Head": 442,
+      "Superpower": 276,
+      "Reversal": 179
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bulldoze": 523,
@@ -29301,7 +30953,19 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Fire Punch": 7,
+      "Thunder Punch": 9,
+      "Ice Punch": 8,
+      "Fake Out": 252,
+      "Baton Pass": 226,
+      "Dynamic Punch": 223,
+      "Power Swap": 384,
+      "Guard Swap": 385,
+      "Psycho Cut": 427,
+      "Bullet Punch": 418,
+      "Quick Guard": 501
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Mud-Slap": 189,
@@ -29486,7 +31150,21 @@
       "Snarl": 555,
       "Strength": 70
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Headbutt": 29,
+      "Curse": 174,
+      "Switcheroo": 415,
+      "Spark": 209,
+      "Crunch": 242,
+      "Uproar": 253,
+      "Swift": 129,
+      "Discharge": 435,
+      "Ice Fang": 423,
+      "Fire Fang": 424,
+      "Thunder Fang": 422,
+      "Electro Ball": 486,
+      "Eerie Impulse": 598
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Mud-Slap": 189,
@@ -29962,7 +31640,7 @@
     "eggLearnset": {
       "Cotton Spore": 178,
       "Sleep Powder": 79,
-      "Razor Leaf": 75,
+      "Razor Wind": 13,
       "Extrasensory": 326,
       "Life Dew": 791,
       "Spikes": 191,
@@ -29971,7 +31649,8 @@
       "Mind Reader": 170,
       "Leaf Storm": 437,
       "Seed Bomb": 402,
-      "Power Whip": 438
+      "Power Whip": 438,
+      "Grass Whistle": 320
     },
     "tutorLearnset": {
       "Snore": 173,
@@ -30141,7 +31820,16 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Acid Armor": 151,
+      "Smog": 123,
+      "Pain Split": 220,
+      "Curse": 174,
+      "Destiny Bond": 194,
+      "Mud-Slap": 189,
+      "Gunk Shot": 441,
+      "Venom Drench": 599
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bulldoze": 523,
@@ -30324,7 +32012,14 @@
       "Rock Smash": 249,
       "Waterfall": 127
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Ancient Power": 246,
+      "Destiny Bond": 194,
+      "Double-Edge": 38,
+      "Thrash": 37,
+      "Hydro Pump": 56,
+      "Swift": 129
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bulldoze": 523,
@@ -30512,7 +32207,21 @@
       "Rock Smash": 249,
       "Waterfall": 127
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Double-Edge": 38,
+      "Thrash": 37,
+      "Curse": 174,
+      "Fissure": 90,
+      "Tickle": 321,
+      "Defense Curl": 111,
+      "Rollout": 205,
+      "Aqua Ring": 392,
+      "Soak": 487,
+      "Snore": 173,
+      "Body Slam": 34,
+      "Zen Headbutt": 428,
+      "Clear Smog": 499
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bulldoze": 523,
@@ -30694,7 +32403,24 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Howl": 336,
+      "Scary Face": 184,
+      "Body Slam": 34,
+      "Rollout": 205,
+      "Defense Curl": 111,
+      "Stomp": 23,
+      "Yawn": 281,
+      "Ancient Power": 246,
+      "Heat Wave": 257,
+      "Stockpile": 254,
+      "Swallow": 256,
+      "Spit Up": 255,
+      "Iron Head": 442,
+      "Growth": 74,
+      "Heavy Slam": 484,
+      "Mud Bomb": 426
+    },
     "tutorLearnset": {
       "Snore": 173,
       "After You": 495,
@@ -30991,7 +32717,16 @@
       "Grass Knot": 447,
       "Trick Room": 433
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Future Sight": 248,
+      "Extrasensory": 326,
+      "Trick": 271,
+      "Zen Headbutt": 428,
+      "Amnesia": 133,
+      "Mirror Coat": 243,
+      "Whirlwind": 18,
+      "Simple Beam": 493
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Covet": 343,
@@ -31296,7 +33031,18 @@
       "Defog": 432,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Quick Attack": 98,
+      "Gust": 16,
+      "Flail": 175,
+      "Fury Cutter": 210,
+      "Bug Bite": 450,
+      "Feint": 364,
+      "Focus Energy": 116,
+      "Mud Shot": 341,
+      "Earth Power": 414,
+      "Signal Beam": 324
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bulldoze": 523,
@@ -31408,7 +33154,18 @@
       "Defog": 432,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Quick Attack": 98,
+      "Gust": 16,
+      "Flail": 175,
+      "Fury Cutter": 210,
+      "Bug Bite": 450,
+      "Feint": 364,
+      "Focus Energy": 116,
+      "Mud Shot": 341,
+      "Earth Power": 414,
+      "Signal Beam": 324
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bulldoze": 523,
@@ -31618,7 +33375,23 @@
       "Cut": 15,
       "Strength": 70
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Acid": 51,
+      "Teeter Dance": 298,
+      "Dynamic Punch": 223,
+      "Counter": 68,
+      "Low Kick": 67,
+      "Magical Leaf": 345,
+      "Seed Bomb": 402,
+      "Disable": 50,
+      "Block": 335,
+      "Worry Seed": 388,
+      "Switcheroo": 415,
+      "Fell Stinger": 565,
+      "Belch": 562,
+      "Power-Up Punch": 612,
+      "Grass Whistle": 320
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Worry Seed": 388,
@@ -31816,7 +33589,17 @@
       "Fly": 19,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Dragon Rush": 407,
+      "Feather Dance": 297,
+      "Haze": 114,
+      "Tailwind": 366,
+      "Astonish": 310,
+      "Agility": 97,
+      "Power Swap": 384,
+      "Hyper Voice": 304,
+      "Play Rough": 583
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bulldoze": 523,
@@ -32419,7 +34202,18 @@
       "Rock Smash": 249,
       "Waterfall": 127
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Thrash": 37,
+      "Spark": 209,
+      "Flail": 175,
+      "Take Down": 36,
+      "Whirlpool": 250,
+      "Hydro Pump": 56,
+      "Dragon Dance": 349,
+      "Earth Power": 414,
+      "Mud Shot": 341,
+      "Muddy Water": 330
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bulldoze": 523,
@@ -32619,7 +34413,19 @@
       "Rock Smash": 249,
       "Waterfall": 127
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Ancient Power": 246,
+      "Metal Claw": 232,
+      "Double-Edge": 38,
+      "Aqua Jet": 453,
+      "Switcheroo": 415,
+      "Slash": 163,
+      "Endeavor": 283,
+      "Body Slam": 34,
+      "Knock Off": 282,
+      "Superpower": 276,
+      "Dragon Dance": 349
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Mud-Slap": 189,
@@ -33007,7 +34813,14 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Recover": 105,
+      "Mirror Coat": 243,
+      "Tickle": 321,
+      "Bind": 20,
+      "Curse": 174,
+      "Mega Drain": 72
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bind": 20,
@@ -33188,7 +35001,16 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Knock Off": 282,
+      "Curse": 174,
+      "Rapid Spin": 229,
+      "Sand Attack": 28,
+      "Aqua Jet": 453,
+      "Screech": 103,
+      "Cross Poison": 440,
+      "Iron Defense": 334
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bulldoze": 523,
@@ -33347,7 +35169,15 @@
       "Surf": 57,
       "Waterfall": 127
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Mirror Coat": 243,
+      "Dragon Breath": 225,
+      "Hypnosis": 95,
+      "Confuse Ray": 109,
+      "Mist": 54,
+      "Haze": 114,
+      "Tickle": 321
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bind": 20,
@@ -33761,7 +35591,17 @@
       "Dazzling Gleam": 605,
       "Trick Room": 433
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Disable": 50,
+      "Destiny Bond": 194,
+      "Astonish": 310,
+      "Imprison": 286,
+      "Shadow Sneak": 425,
+      "Confuse Ray": 109,
+      "Gunk Shot": 441,
+      "Phantom Force": 566,
+      "Ominous Wind": 466
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Ally Switch": 502,
@@ -33951,7 +35791,16 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Pain Split": 220,
+      "Grudge": 288,
+      "Memento": 262,
+      "Haze": 114,
+      "Imprison": 286,
+      "Destiny Bond": 194,
+      "Feint Attack": 185,
+      "Ominous Wind": 466
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -34166,8 +36015,7 @@
       "Future Sight": 248,
       "Recover": 105,
       "Stored Power": 500,
-      "Cosmic Power": 322,
-      "Perish Song": 195
+      "Cosmic Power": 322
     },
     "tutorLearnset": {
       "Snore": 173,
@@ -34515,7 +36363,17 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Block": 335,
+      "Disable": 50,
+      "Switcheroo": 415,
+      "Rollout": 205,
+      "Icicle Crash": 556,
+      "Spikes": 191,
+      "Weather Ball": 311,
+      "Hex": 506,
+      "Fake Tears": 313
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bulldoze": 523,
@@ -34689,7 +36547,18 @@
       "Rock Smash": 249,
       "Waterfall": 127
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Curse": 174,
+      "Fissure": 90,
+      "Stockpile": 254,
+      "Swallow": 256,
+      "Spit Up": 255,
+      "Yawn": 281,
+      "Aqua Ring": 392,
+      "Belly Drum": 187,
+      "Rollout": 205,
+      "Signal Beam": 324
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bulldoze": 523,
@@ -34776,7 +36645,18 @@
       "Rock Smash": 249,
       "Waterfall": 127
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Curse": 174,
+      "Fissure": 90,
+      "Stockpile": 254,
+      "Swallow": 256,
+      "Spit Up": 255,
+      "Yawn": 281,
+      "Aqua Ring": 392,
+      "Belly Drum": 187,
+      "Rollout": 205,
+      "Signal Beam": 324
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bulldoze": 523,
@@ -34919,7 +36799,13 @@
       "Surf": 57,
       "Waterfall": 127
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Body Slam": 34,
+      "Supersonic": 48,
+      "Confuse Ray": 109,
+      "Aqua Ring": 392,
+      "Muddy Water": 330
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bind": 20,
@@ -35000,7 +36886,13 @@
       "Surf": 57,
       "Waterfall": 127
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Body Slam": 34,
+      "Supersonic": 48,
+      "Confuse Ray": 109,
+      "Aqua Ring": 392,
+      "Muddy Water": 330
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bind": 20,
@@ -35340,7 +37232,15 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Defense Curl": 111,
+      "Dragon Rush": 407,
+      "Thrash": 37,
+      "Twister": 239,
+      "Hydro Pump": 56,
+      "Dragon Dance": 349,
+      "Fire Fang": 424
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Rollout": 205,
@@ -35434,7 +37334,15 @@
       "Defog": 432,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Defense Curl": 111,
+      "Dragon Rush": 407,
+      "Thrash": 37,
+      "Twister": 239,
+      "Hydro Pump": 56,
+      "Dragon Dance": 349,
+      "Fire Fang": 424
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bulldoze": 523,
@@ -36914,7 +38822,25 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Worry Seed": 388,
+      "Growth": 74,
+      "Tickle": 321,
+      "Body Slam": 34,
+      "Double-Edge": 38,
+      "Sand Tomb": 328,
+      "Seed Bomb": 402,
+      "Thrash": 37,
+      "Amnesia": 133,
+      "Superpower": 276,
+      "Stockpile": 254,
+      "Swallow": 256,
+      "Spit Up": 255,
+      "Earth Power": 414,
+      "Wide Guard": 469,
+      "Grassy Terrain": 580,
+      "Heavy Slam": 484
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Worry Seed": 388,
@@ -37009,7 +38935,25 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Worry Seed": 388,
+      "Growth": 74,
+      "Tickle": 321,
+      "Body Slam": 34,
+      "Double-Edge": 38,
+      "Sand Tomb": 328,
+      "Seed Bomb": 402,
+      "Thrash": 37,
+      "Amnesia": 133,
+      "Superpower": 276,
+      "Stockpile": 254,
+      "Swallow": 256,
+      "Spit Up": 255,
+      "Earth Power": 414,
+      "Wide Guard": 469,
+      "Grassy Terrain": 580,
+      "Heavy Slam": 484
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bulldoze": 523,
@@ -37217,7 +39161,21 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Fire Punch": 7,
+      "Thunder Punch": 9,
+      "Double Kick": 24,
+      "Encore": 227,
+      "Heat Wave": 257,
+      "Focus Energy": 116,
+      "Helping Hand": 270,
+      "Fake Out": 252,
+      "Blaze Kick": 299,
+      "Counter": 68,
+      "Quick Guard": 501,
+      "Submission": 66,
+      "Power-Up Punch": 612
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Covet": 343,
@@ -37334,7 +39292,21 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Fire Punch": 7,
+      "Thunder Punch": 9,
+      "Double Kick": 24,
+      "Encore": 227,
+      "Heat Wave": 257,
+      "Focus Energy": 116,
+      "Helping Hand": 270,
+      "Fake Out": 252,
+      "Blaze Kick": 299,
+      "Counter": 68,
+      "Quick Guard": 501,
+      "Submission": 66,
+      "Power-Up Punch": 612
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Covet": 343,
@@ -37521,7 +39493,19 @@
       "Rock Smash": 249,
       "Waterfall": 127
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Double Hit": 458,
+      "Supersonic": 48,
+      "Yawn": 281,
+      "Mud-Slap": 189,
+      "Snore": 173,
+      "Flail": 175,
+      "Agility": 97,
+      "Aqua Ring": 392,
+      "Hydro Pump": 56,
+      "Feather Dance": 297,
+      "Icy Wind": 196
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Covet": 343,
@@ -37622,7 +39606,19 @@
       "Waterfall": 127,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Double Hit": 458,
+      "Supersonic": 48,
+      "Yawn": 281,
+      "Mud-Slap": 189,
+      "Snore": 173,
+      "Flail": 175,
+      "Agility": 97,
+      "Aqua Ring": 392,
+      "Hydro Pump": 56,
+      "Feather Dance": 297,
+      "Icy Wind": 196
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Covet": 343,
@@ -37780,7 +39776,16 @@
       "Fly": 19,
       "Defog": 432
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Feather Dance": 297,
+      "Fury Attack": 31,
+      "Astonish": 310,
+      "Sand Attack": 28,
+      "Double-Edge": 38,
+      "Uproar": 253,
+      "Detect": 197,
+      "Revenge": 279
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Air Cutter": 314,
@@ -37857,7 +39862,16 @@
       "Fly": 19,
       "Defog": 432
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Feather Dance": 297,
+      "Fury Attack": 31,
+      "Astonish": 310,
+      "Sand Attack": 28,
+      "Double-Edge": 38,
+      "Uproar": 253,
+      "Detect": 197,
+      "Revenge": 279
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Air Cutter": 314,
@@ -38048,7 +40062,15 @@
       "Waterfall": 127,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Quick Attack": 98,
+      "Double-Edge": 38,
+      "Fury Swipes": 154,
+      "Defense Curl": 111,
+      "Rollout": 205,
+      "Aqua Tail": 401,
+      "Skull Bash": 130
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Covet": 343,
@@ -38351,7 +40373,22 @@
       "Snarl": 555,
       "Strength": 70
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Baby-Doll Eyes": 608,
+      "Take Down": 36,
+      "Double Kick": 24,
+      "Howl": 336,
+      "Night Slash": 400,
+      "Quick Attack": 98,
+      "Ice Fang": 423,
+      "Fire Fang": 424,
+      "Thunder Fang": 422,
+      "Swift": 129,
+      "Helping Hand": 270,
+      "Eerie Impulse": 598,
+      "Fake Tears": 313,
+      "Signal Beam": 324
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -38436,7 +40473,22 @@
       "Dark Pulse": 399,
       "Strength": 70
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Baby-Doll Eyes": 608,
+      "Take Down": 36,
+      "Double Kick": 24,
+      "Howl": 336,
+      "Night Slash": 400,
+      "Quick Attack": 98,
+      "Ice Fang": 423,
+      "Fire Fang": 424,
+      "Thunder Fang": 422,
+      "Swift": 129,
+      "Helping Hand": 270,
+      "Eerie Impulse": 598,
+      "Fake Tears": 313,
+      "Signal Beam": 324
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -38603,7 +40655,21 @@
       "Grass Knot": 447,
       "Cut": 15
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Cotton Spore": 178,
+      "Sleep Powder": 79,
+      "Razor Wind": 13,
+      "Extrasensory": 326,
+      "Life Dew": 791,
+      "Spikes": 191,
+      "Synthesis": 235,
+      "Pin Missile": 42,
+      "Mind Reader": 170,
+      "Leaf Storm": 437,
+      "Seed Bomb": 402,
+      "Power Whip": 438,
+      "Grass Whistle": 320
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Covet": 343,
@@ -38810,7 +40876,18 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Crunch": 242,
+      "Thrash": 37,
+      "Double-Edge": 38,
+      "Leer": 43,
+      "Slam": 21,
+      "Stomp": 23,
+      "Whirlwind": 18,
+      "Hammer Arm": 359,
+      "Curse": 174,
+      "Iron Head": 442
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bulldoze": 523,
@@ -39014,7 +41091,20 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Headbutt": 29,
+      "Scary Face": 184,
+      "Focus Energy": 116,
+      "Double-Edge": 38,
+      "Rock Blast": 350,
+      "Body Slam": 34,
+      "Screech": 103,
+      "Curse": 174,
+      "Fissure": 90,
+      "Counter": 68,
+      "Wide Guard": 469,
+      "Guard Split": 470
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bulldoze": 523,
@@ -39638,7 +41728,20 @@
       "Rock Smash": 249,
       "Waterfall": 127
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Mud-Slap": 189,
+      "Headbutt": 29,
+      "Fury Swipes": 154,
+      "Slash": 163,
+      "Fury Cutter": 210,
+      "Baton Pass": 226,
+      "Aqua Tail": 401,
+      "Aqua Ring": 392,
+      "Switcheroo": 415,
+      "Soak": 487,
+      "Helping Hand": 270,
+      "Double Slap": 3
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Mud-Slap": 189,
@@ -39795,7 +41898,22 @@
       "Swords Dance": 14,
       "Grass Knot": 447
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Razor Leaf": 75,
+      "Sweet Scent": 230,
+      "Tickle": 321,
+      "Nature Power": 267,
+      "Aromatherapy": 312,
+      "Heal Pulse": 505,
+      "Healing Wish": 361,
+      "Defense Curl": 111,
+      "Flower Shield": 579,
+      "Rollout": 205,
+      "Weather Ball": 311,
+      "Seed Bomb": 402,
+      "Grassy Terrain": 580,
+      "Grass Whistle": 320
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -39964,7 +42082,22 @@
       "Rock Smash": 249,
       "Waterfall": 127
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Counter": 68,
+      "Mirror Coat": 243,
+      "Stockpile": 254,
+      "Swallow": 256,
+      "Spit Up": 255,
+      "Yawn": 281,
+      "Curse": 174,
+      "Sludge": 124,
+      "Clear Smog": 499,
+      "Mist": 54,
+      "Acid Armor": 151,
+      "Memento": 262,
+      "Amnesia": 133,
+      "Fissure": 90
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bulldoze": 523,
@@ -40059,7 +42192,21 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Counter": 68,
+      "Screech": 103,
+      "Agility": 97,
+      "Spite": 180,
+      "Slam": 21,
+      "Beat Up": 251,
+      "Fake Out": 252,
+      "Covet": 343,
+      "Bounce": 340,
+      "Revenge": 279,
+      "Switcheroo": 415,
+      "Quick Guard": 501,
+      "Double Slap": 3
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Covet": 343,
@@ -40282,7 +42429,17 @@
       "Fly": 19,
       "Defog": 432
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Memento": 262,
+      "Disable": 50,
+      "Haze": 114,
+      "Hypnosis": 95,
+      "Clear Smog": 499,
+      "Body Slam": 34,
+      "Destiny Bond": 194,
+      "Weather Ball": 311,
+      "Tailwind": 366
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bind": 20,
@@ -40509,7 +42666,25 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Circle Throw": 509,
+      "Copycat": 383,
+      "Double Hit": 458,
+      "Fake Out": 252,
+      "Flail": 175,
+      "Sweet Kiss": 186,
+      "Switcheroo": 415,
+      "Teeter Dance": 298,
+      "Fake Tears": 313,
+      "Encore": 227,
+      "Low Kick": 67,
+      "Thunder Punch": 9,
+      "Ice Punch": 8,
+      "Fire Punch": 7,
+      "Cosmic Power": 322,
+      "Power-Up Punch": 612,
+      "Sky Uppercut": 327
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -40613,7 +42788,18 @@
       "Dazzling Gleam": 605,
       "Trick Room": 433
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Screech": 103,
+      "Destiny Bond": 194,
+      "Imprison": 286,
+      "Memento": 262,
+      "Sucker Punch": 389,
+      "Shadow Sneak": 425,
+      "Curse": 174,
+      "Spite": 180,
+      "Wonder Room": 472,
+      "Ominous Wind": 466
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Ally Switch": 502,
@@ -40709,7 +42895,21 @@
       "Fly": 19,
       "Defog": 432
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Whirlwind": 18,
+      "Drill Peck": 65,
+      "Wing Attack": 17,
+      "Sky Attack": 143,
+      "Confuse Ray": 109,
+      "Feather Dance": 297,
+      "Perish Song": 195,
+      "Psycho Shift": 375,
+      "Screech": 103,
+      "Brave Bird": 413,
+      "Assurance": 372,
+      "Flatter": 260,
+      "Feint Attack": 185
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Air Cutter": 314,
@@ -40902,7 +43102,16 @@
       "U-turn": 369,
       "Cut": 15
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Bite": 44,
+      "Tail Whip": 39,
+      "Quick Attack": 98,
+      "Sand Attack": 28,
+      "Fake Tears": 313,
+      "Assurance": 372,
+      "Flail": 175,
+      "Last Resort": 387
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Covet": 343,
@@ -41192,7 +43401,18 @@
       "Defog": 432,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Leer": 43,
+      "Smog": 123,
+      "Double-Edge": 38,
+      "Astonish": 310,
+      "Haze": 114,
+      "Slash": 163,
+      "Crunch": 242,
+      "Scary Face": 184,
+      "Foul Play": 492,
+      "Play Rough": 583
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Mud-Slap": 189,
@@ -42055,7 +44275,19 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Thrash": 37,
+      "Metal Claw": 232,
+      "Double-Edge": 38,
+      "Twister": 239,
+      "Dragon Breath": 225,
+      "Outrage": 200,
+      "Scary Face": 184,
+      "Sand Tomb": 328,
+      "Body Slam": 34,
+      "Iron Head": 442,
+      "Mud Shot": 341
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bulldoze": 523,
@@ -42157,7 +44389,19 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Thrash": 37,
+      "Metal Claw": 232,
+      "Double-Edge": 38,
+      "Twister": 239,
+      "Dragon Breath": 225,
+      "Outrage": 200,
+      "Scary Face": 184,
+      "Sand Tomb": 328,
+      "Body Slam": 34,
+      "Iron Head": 442,
+      "Mud Shot": 341
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bulldoze": 523,
@@ -42505,7 +44749,25 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Cross Chop": 238,
+      "Detect": 197,
+      "Bite": 44,
+      "Mind Reader": 170,
+      "High Jump Kick": 136,
+      "Vacuum Wave": 410,
+      "Bullet Punch": 418,
+      "Circle Throw": 509,
+      "Howl": 336,
+      "Agility": 97,
+      "Crunch": 242,
+      "Low Kick": 67,
+      "Iron Defense": 334,
+      "Blaze Kick": 299,
+      "Follow Me": 266,
+      "Meteor Mash": 309,
+      "Sky Uppercut": 327
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -42684,7 +44946,17 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Stockpile": 254,
+      "Swallow": 256,
+      "Spit Up": 255,
+      "Curse": 174,
+      "Whirlwind": 18,
+      "Slack Off": 303,
+      "Body Slam": 34,
+      "Sand Tomb": 328,
+      "Revenge": 279
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bulldoze": 523,
@@ -42880,7 +45152,18 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Sand Attack": 28,
+      "Slash": 163,
+      "Confuse Ray": 109,
+      "Whirlwind": 18,
+      "Screech": 103,
+      "Agility": 97,
+      "Night Slash": 400,
+      "Poison Tail": 342,
+      "Twineedle": 41,
+      "Feint Attack": 185
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bulldoze": 523,
@@ -43098,7 +45381,19 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Feint": 364,
+      "Dynamic Punch": 223,
+      "Headbutt": 29,
+      "Vacuum Wave": 410,
+      "Fake Out": 252,
+      "Cross Chop": 238,
+      "Bullet Punch": 418,
+      "Counter": 68,
+      "Quick Guard": 501,
+      "Acupressure": 367,
+      "Meditate": 96
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -43392,7 +45687,19 @@
       "Defog": 432,
       "Waterfall": 127
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Sweet Kiss": 186,
+      "Charm": 204,
+      "Flail": 175,
+      "Aqua Tail": 401,
+      "Splash": 150,
+      "Psybeam": 60,
+      "Tickle": 321,
+      "Agility": 97,
+      "Aurora Beam": 62,
+      "Confuse Ray": 109,
+      "Signal Beam": 324
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Air Cutter": 314,
@@ -43668,7 +45975,16 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Leech Seed": 73,
+      "Growth": 74,
+      "Double-Edge": 38,
+      "Stomp": 23,
+      "Skull Bash": 130,
+      "Magical Leaf": 345,
+      "Seed Bomb": 402,
+      "Mist": 54
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bulldoze": 523,
@@ -43778,7 +46094,20 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Counter": 68,
+      "Spite": 180,
+      "Bite": 44,
+      "Fake Out": 252,
+      "Double Hit": 458,
+      "Ice Shard": 420,
+      "Feint": 364,
+      "Icicle Crash": 556,
+      "Crush Claw": 306,
+      "Ice Punch": 8,
+      "Throat Chop": 675,
+      "Icicle Spear": 333
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Mud-Slap": 189,
@@ -43972,7 +46301,20 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Belch": 562,
+      "Curse": 174,
+      "Hammer Arm": 359,
+      "Thrash": 37,
+      "Belly Drum": 187,
+      "Body Slam": 34,
+      "Snore": 173,
+      "Amnesia": 133,
+      "Muddy Water": 330,
+      "Zen Headbutt": 428,
+      "Double Slap": 3,
+      "Magnitude": 222
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bind": 20,
@@ -44088,7 +46430,21 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Counter": 68,
+      "Curse": 174,
+      "Dragon Rush": 407,
+      "Skull Bash": 130,
+      "Metal Burst": 368,
+      "Guard Split": 470,
+      "Crunch": 242,
+      "Reversal": 179,
+      "Crush Claw": 306,
+      "Ice Fang": 423,
+      "Fire Fang": 424,
+      "Thunder Fang": 422,
+      "Magnitude": 222
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -44197,7 +46553,18 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Confusion": 93,
+      "Endeavor": 283,
+      "Flail": 175,
+      "Leech Seed": 73,
+      "Nature Power": 267,
+      "Rage Powder": 476,
+      "Mega Drain": 72,
+      "Amnesia": 133,
+      "Leaf Storm": 437,
+      "Power Swap": 384
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bind": 20,
@@ -44300,7 +46667,17 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Cross Chop": 238,
+      "Dynamic Punch": 223,
+      "Hammer Arm": 359,
+      "Feint": 364,
+      "Fire Punch": 7,
+      "Ice Punch": 8,
+      "Rolling Kick": 27,
+      "Meditate": 96,
+      "Karate Chop": 2
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -44407,7 +46784,20 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Belch": 562,
+      "Dynamic Punch": 223,
+      "Mach Punch": 183,
+      "Cross Chop": 238,
+      "Mega Punch": 5,
+      "Screech": 103,
+      "Thunder Punch": 9,
+      "Flare Blitz": 394,
+      "Belly Drum": 187,
+      "Focus Energy": 116,
+      "Power Swap": 384,
+      "Karate Chop": 2
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -44522,7 +46912,15 @@
       "Defog": 432,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Present": 217,
+      "Peck": 64,
+      "Psycho Shift": 375,
+      "Extrasensory": 326,
+      "Morning Sun": 234,
+      "Future Sight": 248,
+      "Stored Power": 500
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -44628,7 +47026,16 @@
       "Fly": 19,
       "Defog": 432
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Whirlwind": 18,
+      "Reversal": 179,
+      "Leech Life": 141,
+      "Feint": 364,
+      "Double-Edge": 38,
+      "Feint Attack": 185,
+      "Signal Beam": 324,
+      "Silver Wind": 318
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Air Cutter": 314,
@@ -44725,7 +47132,20 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Flail": 175,
+      "Curse": 174,
+      "Tickle": 321,
+      "Yawn": 281,
+      "Detect": 197,
+      "Double Kick": 24,
+      "Mud-Slap": 189,
+      "Wish": 273,
+      "Charm": 204,
+      "Fake Tears": 313,
+      "Covet": 343,
+      "Stored Power": 500
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -44821,7 +47241,20 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Flail": 175,
+      "Curse": 174,
+      "Tickle": 321,
+      "Yawn": 281,
+      "Detect": 197,
+      "Double Kick": 24,
+      "Mud-Slap": 189,
+      "Wish": 273,
+      "Charm": 204,
+      "Fake Tears": 313,
+      "Covet": 343,
+      "Stored Power": 500
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -44932,7 +47365,21 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Metal Claw": 232,
+      "Wing Attack": 17,
+      "Counter": 68,
+      "Sand Tomb": 328,
+      "Agility": 97,
+      "Baton Pass": 226,
+      "Double-Edge": 38,
+      "Feint": 364,
+      "Night Slash": 400,
+      "Cross Poison": 440,
+      "Power Trick": 379,
+      "Poison Tail": 342,
+      "Razor Wind": 13
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bulldoze": 523,
@@ -45022,7 +47469,19 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Bite": 44,
+      "Ancient Power": 246,
+      "Double-Edge": 38,
+      "Fissure": 90,
+      "Curse": 174,
+      "Icicle Crash": 556,
+      "Freeze-Dry": 573,
+      "Take Down": 36,
+      "Body Slam": 34,
+      "Mud Shot": 341,
+      "Icicle Spear": 333
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bulldoze": 523,
@@ -45249,7 +47708,19 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Disable": 50,
+      "Mean Look": 212,
+      "Memento": 262,
+      "Destiny Bond": 194,
+      "Grudge": 288,
+      "Shadow Sneak": 425,
+      "Confuse Ray": 109,
+      "Knock Off": 282,
+      "Encore": 227,
+      "Misty Terrain": 581,
+      "Ally Switch": 502
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -45358,7 +47829,13 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Rollout": 205,
+      "Double-Edge": 38,
+      "Block": 335,
+      "Wide Guard": 469,
+      "Magnitude": 222
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bulldoze": 523,
@@ -45465,7 +47942,16 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Pain Split": 220,
+      "Grudge": 288,
+      "Memento": 262,
+      "Haze": 114,
+      "Imprison": 286,
+      "Destiny Bond": 194,
+      "Feint Attack": 185,
+      "Ominous Wind": 466
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bind": 20,
@@ -45572,7 +48058,17 @@
       "Psych Up": 244,
       "Dazzling Gleam": 605
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Block": 335,
+      "Disable": 50,
+      "Switcheroo": 415,
+      "Rollout": 205,
+      "Icicle Crash": 556,
+      "Spikes": 191,
+      "Weather Ball": 311,
+      "Hex": 506,
+      "Fake Tears": 313
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Ally Switch": 502,
@@ -47232,14 +49728,14 @@
       "Trick Room": 433
     },
     "eggLearnset": {
-      "Acid": 51,
-      "Acid Armor": 151,
-      "Captivate": 445,
-      "Clear Smog": 499,
-      "Endure": 203,
       "Haze": 114,
+      "Acid Armor": 151,
+      "Power Split": 471,
+      "Clear Smog": 499,
+      "Captivate": 445,
+      "Endure": 203,
       "Heat Wave": 257,
-      "Power Split": 471
+      "Acid": 51
     },
     "tutorLearnset": {},
     "baseStats": {
@@ -47313,11 +49809,12 @@
     "eggLearnset": {
       "Haze": 114,
       "Acid Armor": 151,
-      "Captivate": 445,
+      "Power Split": 471,
       "Clear Smog": 499,
+      "Captivate": 445,
       "Endure": 203,
       "Heat Wave": 257,
-      "Power Split": 471
+      "Acid": 51
     },
     "tutorLearnset": {},
     "baseStats": {
@@ -47394,7 +49891,20 @@
       "Psych Up": 244,
       "Cut": 15
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Flail": 175,
+      "Curse": 174,
+      "Tickle": 321,
+      "Yawn": 281,
+      "Detect": 197,
+      "Double Kick": 24,
+      "Mud-Slap": 189,
+      "Wish": 273,
+      "Charm": 204,
+      "Fake Tears": 313,
+      "Covet": 343,
+      "Stored Power": 500
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -47532,7 +50042,11 @@
       "Defog": 432,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Mirror Move": 119,
+      "Brave Bird": 413,
+      "Boomburst": 586
+    },
     "tutorLearnset": {},
     "baseStats": {
       "hp": 55,
@@ -47598,7 +50112,11 @@
       "Defog": 432,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Mirror Move": 119,
+      "Brave Bird": 413,
+      "Boomburst": 586
+    },
     "tutorLearnset": {},
     "baseStats": {
       "hp": 80,
@@ -47682,7 +50200,11 @@
       "Surf": 57,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Knock Off": 282,
+      "Parting Shot": 575,
+      "Quick Guard": 501
+    },
     "tutorLearnset": {},
     "baseStats": {
       "hp": 93,
@@ -47766,7 +50288,15 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Covet": 343,
+      "Curse": 174,
+      "Double-Edge": 38,
+      "Flail": 175,
+      "Night Slash": 400,
+      "Spite": 180,
+      "Gunk Shot": 441
+    },
     "tutorLearnset": {},
     "baseStats": {
       "hp": 85,
@@ -47850,7 +50380,20 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Mist": 54,
+      "Confuse Ray": 109,
+      "Nature Power": 267,
+      "Curse": 174,
+      "Head Smash": 457,
+      "Screech": 103,
+      "Amnesia": 133,
+      "Ingrain": 275,
+      "Icicle Spear": 333,
+      "Aqua Ring": 392,
+      "Liquidation": 710,
+      "Heal Bell": 215
+    },
     "tutorLearnset": {},
     "baseStats": {
       "hp": 60,
@@ -47869,7 +50412,7 @@
   },
   {
     "value": 865,
-    "text": "Sirfetch'd",
+    "text": "Sirfetch’d",
     "type": "Fighting",
     "abilities": [
       "Steadfast",
@@ -47928,7 +50471,19 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Counter": 68,
+      "Covet": 343,
+      "Curse": 174,
+      "Double-Edge": 38,
+      "Feint": 364,
+      "Flail": 175,
+      "Night Slash": 400,
+      "Quick Attack": 98,
+      "Quick Guard": 501,
+      "Simple Beam": 493,
+      "Sky Attack": 143
+    },
     "tutorLearnset": {},
     "baseStats": {
       "hp": 62,
@@ -48031,7 +50586,21 @@
       "Grass Knot": 447,
       "Trick Room": 433
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Hypnosis": 95,
+      "Fake Out": 252,
+      "Confuse Ray": 109,
+      "Power Split": 471,
+      "Tickle": 321,
+      "Future Sight": 248,
+      "Mimic": 102,
+      "Trick": 271,
+      "Teeter Dance": 298,
+      "Healing Wish": 361,
+      "Charm": 204,
+      "Magic Room": 478,
+      "Icy Wind": 196
+    },
     "tutorLearnset": {},
     "baseStats": {
       "hp": 80,
@@ -48115,7 +50684,16 @@
       "Hyper Voice": 304,
       "Trick Room": 433
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Spite": 180,
+      "Disable": 50,
+      "Bite": 44,
+      "Extrasensory": 326,
+      "Thrash": 37,
+      "Double Kick": 24,
+      "Zen Headbutt": 428,
+      "Megahorn": 224
+    },
     "tutorLearnset": {},
     "baseStats": {
       "hp": 103,
@@ -48203,7 +50781,16 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Counter": 68,
+      "Night Slash": 400,
+      "Feint": 364,
+      "Quick Guard": 501,
+      "Baton Pass": 226,
+      "Reversal": 179,
+      "Razor Wind": 13,
+      "Silver Wind": 318
+    },
     "tutorLearnset": {},
     "baseStats": {
       "hp": 70,
@@ -48295,7 +50882,21 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Crunch": 242,
+      "Take Down": 36,
+      "Seismic Toss": 69,
+      "Counter": 68,
+      "Metal Claw": 232,
+      "Fake Tears": 313,
+      "Yawn": 281,
+      "Cross Chop": 238,
+      "Double-Edge": 38,
+      "Close Combat": 370,
+      "Night Slash": 400,
+      "Belly Drum": 187,
+      "Play Rough": 583
+    },
     "tutorLearnset": {},
     "baseStats": {
       "hp": 130,
@@ -48382,7 +50983,17 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Counter": 68,
+      "Spite": 180,
+      "Fake Out": 252,
+      "Double Hit": 458,
+      "Crush Claw": 306,
+      "Ice Punch": 8,
+      "Throat Chop": 675,
+      "Sucker Punch": 389,
+      "Icicle Spear": 333
+    },
     "tutorLearnset": {},
     "baseStats": {
       "hp": 80,
@@ -48458,7 +51069,21 @@
       "Surf": 57,
       "Waterfall": 127
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Flail": 175,
+      "Haze": 114,
+      "Bubble Beam": 61,
+      "Supersonic": 48,
+      "Astonish": 310,
+      "Aqua Jet": 453,
+      "Acid Spray": 491,
+      "Liquidation": 710,
+      "Signal Beam": 324,
+      "Ice Ball": 301,
+      "Icy Wind": 196,
+      "Spikes": 191,
+      "Swift": 129
+    },
     "tutorLearnset": {},
     "baseStats": {
       "hp": 85,
@@ -49108,7 +51733,17 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Counter": 68,
+      "Final Gambit": 515,
+      "Fury Swipes": 154,
+      "Revenge": 279,
+      "Reversal": 179,
+      "Stockpile": 254,
+      "Swallow": 256,
+      "Switcheroo": 415,
+      "Uproar": 253
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Covet": 343,
@@ -50165,7 +52800,20 @@
       "Strength": 70,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Present": 217,
+      "Wish": 273,
+      "Charge": 268,
+      "Fake Out": 252,
+      "Tickle": 321,
+      "Flail": 175,
+      "Disarming Voice": 574,
+      "Reversal": 179,
+      "Encore": 227,
+      "Thunder Punch": 9,
+      "Electric Terrain": 604,
+      "Double Slap": 3
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -50383,7 +53031,22 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Amnesia": 133,
+      "Chip Away": 498,
+      "Counter": 68,
+      "Crush Claw": 306,
+      "Curse": 174,
+      "Endure": 203,
+      "Flail": 175,
+      "Hone Claws": 468,
+      "Icicle Crash": 556,
+      "Icicle Spear": 333,
+      "Metal Claw": 232,
+      "Night Slash": 400,
+      "Aurora Veil": 694,
+      "Bulldoze": 523
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Covet": 343,
@@ -50568,7 +53231,22 @@
       "Psych Up": 244,
       "Dark Pulse": 399
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Agility": 97,
+      "Charm": 204,
+      "Disable": 50,
+      "Encore": 227,
+      "Extrasensory": 326,
+      "Flail": 175,
+      "Freeze-Dry": 573,
+      "Howl": 336,
+      "Hypnosis": 95,
+      "Moonblast": 585,
+      "Power Swap": 384,
+      "Secret Power": 290,
+      "Spite": 180,
+      "Tail Slap": 541
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Covet": 343,
@@ -50747,7 +53425,20 @@
       "Cut": 15,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Ancient Power": 246,
+      "Headbutt": 29,
+      "Final Gambit": 515,
+      "Memento": 262,
+      "Hone Claws": 468,
+      "Screech": 103,
+      "Beat Up": 251,
+      "Uproar": 253,
+      "Astonish": 310,
+      "Reversal": 179,
+      "Mud Bomb": 426,
+      "Feint Attack": 185
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bulldoze": 523,
@@ -51039,7 +53730,17 @@
       "Dark Pulse": 399,
       "Cut": 15
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Spite": 180,
+      "Hypnosis": 95,
+      "Last Resort": 387,
+      "Flail": 175,
+      "Tail Whip": 39,
+      "Covet": 343,
+      "Charm": 204,
+      "Amnesia": 133,
+      "Foul Play": 492
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Covet": 343,
@@ -51226,7 +53927,23 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Thrash": 37,
+      "Double-Edge": 38,
+      "Morning Sun": 234,
+      "Covet": 343,
+      "Double Kick": 24,
+      "Body Slam": 34,
+      "Crunch": 242,
+      "Fire Spin": 83,
+      "Howl": 336,
+      "Heat Wave": 257,
+      "Flare Blitz": 394,
+      "Close Combat": 370,
+      "Burn Up": 682,
+      "Rock Slide": 157,
+      "Swift": 129
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -51427,7 +54144,17 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Mega Punch": 5,
+      "Block": 335,
+      "Hammer Arm": 359,
+      "Flail": 175,
+      "Curse": 174,
+      "Autotomize": 475,
+      "Wide Guard": 469,
+      "Counter": 68,
+      "Magnet Rise": 393
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bulldoze": 523,
@@ -51528,7 +54255,17 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Mega Punch": 5,
+      "Block": 335,
+      "Hammer Arm": 359,
+      "Flail": 175,
+      "Curse": 174,
+      "Autotomize": 475,
+      "Wide Guard": 469,
+      "Counter": 68,
+      "Magnet Rise": 393
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bulldoze": 523,
@@ -51694,7 +54431,15 @@
       "Trick Room": 433,
       "Strength": 70
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Double Kick": 24,
+      "Double-Edge": 38,
+      "Horn Drill": 32,
+      "Hypnosis": 95,
+      "Morning Sun": 234,
+      "Thrash": 37,
+      "High Horsepower": 667
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Ally Switch": 502,
@@ -51900,7 +54645,12 @@
       "Surf": 57,
       "Strength": 70
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Belch": 562,
+      "Belly Drum": 187,
+      "Block": 335,
+      "Stomp": 23
+    },
     "tutorLearnset": {
       "Snore": 173,
       "After You": 495,
@@ -52211,7 +54961,22 @@
       "Poison Jab": 398,
       "Strength": 70
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Haze": 114,
+      "Mean Look": 212,
+      "Lick": 122,
+      "Imprison": 286,
+      "Curse": 174,
+      "Shadow Punch": 325,
+      "Shadow Sneak": 425,
+      "Stockpile": 254,
+      "Swallow": 256,
+      "Spit Up": 255,
+      "Scary Face": 184,
+      "Acid Spray": 491,
+      "Power-Up Punch": 612,
+      "Assurance": 372
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -52668,7 +55433,21 @@
       "Trick Room": 433,
       "Strength": 70
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Ancient Power": 246,
+      "Block": 335,
+      "Curse": 174,
+      "Ingrain": 275,
+      "Moonlight": 236,
+      "Sleep Powder": 79,
+      "Stun Spore": 78,
+      "Poison Powder": 77,
+      "Synthesis": 235,
+      "Nature Power": 267,
+      "Leaf Storm": 437,
+      "Power Swap": 384,
+      "Grassy Terrain": 580
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bulldoze": 523,
@@ -52773,7 +55552,18 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Ancient Power": 246,
+      "Belly Drum": 187,
+      "Detect": 197,
+      "Double Kick": 24,
+      "Perish Song": 195,
+      "Skull Bash": 130,
+      "Curse": 174,
+      "Leer": 43,
+      "Screech": 103,
+      "Iron Head": 442
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Bulldoze": 523,
@@ -52881,7 +55671,20 @@
       "Snarl": 555,
       "Dark Pulse": 399
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Psybeam": 60,
+      "Pain Split": 220,
+      "Grudge": 288,
+      "Spite": 180,
+      "Curse": 174,
+      "Stockpile": 254,
+      "Swallow": 256,
+      "Spit Up": 255,
+      "Screech": 103,
+      "Destiny Bond": 194,
+      "Toxic Spikes": 390,
+      "Venom Drench": 599
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Rollout": 205,
@@ -52991,7 +55794,21 @@
       "Grass Knot": 447,
       "Trick Room": 433
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Hypnosis": 95,
+      "Fake Out": 252,
+      "Confuse Ray": 109,
+      "Power Split": 471,
+      "Tickle": 321,
+      "Future Sight": 248,
+      "Mimic": 102,
+      "Trick": 271,
+      "Teeter Dance": 298,
+      "Healing Wish": 361,
+      "Charm": 204,
+      "Magic Room": 478,
+      "Icy Wind": 196
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -53445,7 +56262,20 @@
       "Rock Smash": 249,
       "Rock Climb": 431
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Fury Swipes": 154,
+      "Quick Attack": 98,
+      "Reversal": 179,
+      "Thrash": 37,
+      "Covet": 343,
+      "Howl": 336,
+      "Crush Claw": 306,
+      "Double-Edge": 38,
+      "Double Kick": 24,
+      "Flare Blitz": 394,
+      "Extrasensory": 326,
+      "Nature Power": 267
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Covet": 343,
@@ -53686,7 +56516,12 @@
       "Surf": 57,
       "Strength": 70
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Belch": 562,
+      "Belly Drum": 187,
+      "Block": 335,
+      "Stomp": 23
+    },
     "tutorLearnset": {},
     "baseStats": {
       "hp": 95,
@@ -55097,7 +57932,11 @@
       "Surf": 57,
       "Rock Smash": 249
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Knock Off": 282,
+      "Parting Shot": 575,
+      "Quick Guard": 501
+    },
     "tutorLearnset": {
       "Snore": 173,
       "Helping Hand": 270,
@@ -56084,7 +58923,22 @@
       "Rock Smash": 249,
       "Waterfall": 127
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Acid Armor": 151,
+      "Amnesia": 133,
+      "Clear Smog": 499,
+      "Counter": 68,
+      "Curse": 174,
+      "Fissure": 90,
+      "Memento": 262,
+      "Mirror Coat": 243,
+      "Mist": 54,
+      "Sludge": 124,
+      "Spit Up": 255,
+      "Stockpile": 254,
+      "Swallow": 256,
+      "Yawn": 281
+    },
     "tutorLearnset": {},
     "baseStats": {
       "hp": 111,

@@ -62,6 +62,7 @@ def load_data():
         'tutor_moves': 'tutorMoves.json',
         'smogon_moves': 'moves.json',
         'static_encounters': 'static_pokemon_locations.json',
+        'evolution_dex': 'evolution.json',
     }
     resource_file_paths = {
         # Custom files created from various scripts
@@ -71,6 +72,7 @@ def load_data():
         'routes': 'Routes.json',
         'special_trainer_names': 'SpecialTrainerNames.json',
         'name_routes': 'NameRoutes.json',
+        'full_learnset': 'fullLearnset.json',
     }
     for name, filename in input_file_paths.items():
         file_path = os.path.join(input_file_path, filename)
