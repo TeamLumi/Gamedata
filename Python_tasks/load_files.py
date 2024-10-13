@@ -72,7 +72,6 @@ def load_data():
         'routes': 'Routes.json',
         'special_trainer_names': 'SpecialTrainerNames.json',
         'name_routes': 'NameRoutes.json',
-        'full_learnset': 'fullLearnset.json',
     }
     for name, filename in input_file_paths.items():
         file_path = os.path.join(input_file_path, filename)

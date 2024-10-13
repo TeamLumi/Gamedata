@@ -151,7 +151,7 @@ def get_pokemon_id_from_name(pokemon_name):
         pokemonId = NAME_MAP[pokemon_name]
         return pokemonId
     except KeyError as e:
-        print("This pokemon is not in the FORM_MAP:", e)
+        raise Exception("This pokemon is not in the FORM_MAP:", e)
     except SyntaxError as e:
         print("This monsName is not formatted correctly to get a correct monsNo:", e)
 
@@ -314,11 +314,12 @@ def create_diff_forms_dictionary(form_dict, mode = "2.0"):
 def get_pokemon_name_dictionary(mode = "2.0"):
     pokemon = {}
     for (idx, p) in enumerate(personal_data["Personal"]):
+        monsNo = str(p["monsno"])
         if(idx == 0):
             continue
-        if(not str(p["monsno"]) in pokemon):
-            pokemon[str(p["monsno"])] = []
-        pokemon[str(p["monsno"])].append(get_pokemon_name(p["id"], mode == "3.0"))
+        if(not monsNo in pokemon):
+            pokemon[monsNo] = []
+        pokemon[monsNo].append(get_pokemon_name(p["id"], mode == "3.0"))
     return pokemon
 
 def get_diff_form_dictionary(mode = "2.0"):

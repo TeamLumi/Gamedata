@@ -189,7 +189,7 @@ def check_for_all_egg_moves(egg_move_paths):
 def find_egg_moveset_path(pokemonID, move):
     if pokemonID == 235:
         return {'Pokemon': "Smeargle", 'Method': "Sketch that Bitch", 'Path': []}
-    pokemon_name = get_pokemon_name(pokemonID)
+    pokemon_name = get_pokemon_name(pokemonID, constants.GAME_MODE == constants.GAME_MODE_3)
     baby_mon_id = evolution_dex[str(pokemonID)]['path'][0]
     baby_mon_egg_set = get_egg_moves_list(baby_mon_id)
     pokemon_learnset = get_mon_full_learnset(pokemonID)
