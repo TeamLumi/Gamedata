@@ -6,9 +6,11 @@ import constants
 from load_files import load_data, get_lumi_data
 from pokemonUtils import (get_form_name, get_form_pokemon_personal_id,
                           get_pokemon_name, get_pokemon_name, get_diff_form_dictionary,
-                          get_pokemon_id_from_name, get_mon_full_learnset)
+                          get_pokemon_id_from_name, get_mon_full_learnset,
+                          get_pokemon_info)
 from moveUtils import get_move_string, get_egg_moves_list
 from eggGroups import getEggGroupViaPokemonId, getPokemonIdsInEggGroup, pokemonIdsByEggGroup, getEggGroupNameById
+from trainerUtils import get_trainer_name, get_trainer_label
 
 def get_average_time(execution_times_list):
     '''Do I really need to explain this one?'''
@@ -277,9 +279,28 @@ def check_egg_moveset(pokemonID):
 
     return egg_move_path
 
+def check_for_valid_ability(poke_num, ability, trainerID):
+    poke_info = get_pokemon_info(poke_num)
+    abilities = [
+        poke_info['ability1'],
+        poke_info['ability2'],
+        poke_info['abilityH'],
+    ]
+    pokemon_name = get_pokemon_name(poke_num)
+    trainer_data = TRAINER_TABLE['TrainerData'][trainerID]
+    trainer_name = get_trainer_name(trainer_data['NameLabel'])
+    trainer_type = TRAINER_TABLE['TrainerType'][trainer_data['TypeID']]
+    trainer_label = trainer_label = get_trainer_label(trainer_type['LabelTrType'])
+    if ability not in abilities:
+        print(
+            f"This trainer: {trainer_label} {trainer_name} ({trainerID}), has a pokemon with an invalid ability."
+            f"\n   Pokemon: {pokemon_name} ({poke_num}), Current Ability: '{ability}', Valid Abilities: {abilities}\n"
+        )
+    pass
 
 if __name__ != "__main__":
     full_data = load_data()
     personal_table = full_data['personal_table']['Personal']
     diff_forms, NAME_MAP = get_diff_form_dictionary()
-    evolution_dex = full_data['evolution_dex']    
+    evolution_dex = full_data['evolution_dex']
+    TRAINER_TABLE = full_data['raw_trainer_data']
