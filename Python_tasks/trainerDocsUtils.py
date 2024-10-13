@@ -6,7 +6,7 @@ import time
 
 import constants
 from convert_lmpt_data import getTrainerData, find_zone_id
-from data_checks import get_average_time
+from data_checks import get_average_time, check_for_valid_ability
 from load_files import load_data
 from pokemonUtils import get_pokemon_from_trainer_info, get_pokemon_name
 from trainerUtils import parse_ev_script_file, process_files, get_map_info, get_area_display_name
@@ -32,7 +32,7 @@ def get_trainer_pokemon(trainerId, output_format):
         if t["ID"] == trainerId:
             trainer = t
             break
-    pokemon_list = get_pokemon_from_trainer_info(trainer, output_format)
+    pokemon_list = get_pokemon_from_trainer_info(trainer, output_format, check_for_valid_ability)
 
     return pokemon_list
 
