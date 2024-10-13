@@ -4,7 +4,7 @@ import time
 import csv
 
 import constants
-from data_checks import get_average_time, check_bad_dex_mon, is_valid_pokemon
+from data_checks import get_average_time, check_bad_dex_mon, is_valid_pokemon, check_egg_moveset
 from load_files import load_data
 from pokemonUtils import generate_form_name_to_pokemon_id, get_pokemon_info, get_pokemon_name, get_diff_form_dictionary, get_mons_no_and_form_no, get_form_pokemon_personal_id
 
@@ -355,19 +355,27 @@ def getPokedexInfo():
     '''
     pokedex = []
     evolutions = evolution_pathfinding()
+    egg_move_dict = {}
 
     for pokemon in evolutions.keys():
         if pokemon == 0:
             continue
         if pokemon > constants.NAT_DEX_LENGTH:
             continue
+        pokemon_name = get_pokemon_name(pokemon)
         is_valid = is_valid_pokemon(pokemon)
+        egg_move_info = []
+        if is_valid:
+            egg_move_info = check_egg_moveset(pokemon)
         evolution_path = evolutions[pokemon]["path"]
         dex_info = get_mon_dex_info(pokemon, evolution_path)
         pokedex.append(dex_info)
+        egg_move_dict[pokemon_name] = egg_move_info
 
     with open(os.path.join(output_file_path, "pokedex_info.json"), "w", encoding="utf-8") as output:
         json.dump(pokedex, output, ensure_ascii=False, indent=2)
+    with open(os.path.join(debug_file_path, "egg_move_paths.json"), "w", encoding="utf-8") as output:
+        json.dump(egg_move_dict, output, ensure_ascii=False, indent=2)
     return pokedex
 
 def export_csv():
@@ -482,7 +490,6 @@ def export_csv():
     return pokedex
 
 if __name__ == "__main__":
-
     diff_forms, NAME_MAP = get_diff_form_dictionary()
     full_data = load_data()
     forms = generate_form_name_to_pokemon_id()

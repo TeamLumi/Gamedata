@@ -155,6 +155,10 @@ EGG_GROUPS = {
     15: "No Eggs",
 }
 
+SMEARGLE_NO_SKETCH_LIST = [ 0, 119, 165, 166, 214, 448 ]
+
+HIGHEST_EGG_GROUP_ID = 15
+
 BAD_ENCOUNTER_LIST = ["Gigantamax", "Eternamax", "Mega ", "Totem "]
 STARTERS = ["piplup", "turtwig", "chimchar"]
 MASTER_TRAINER_TYPES = ["fire", "water", "electric", "grass", "ice", "fighting", "poison", "ground", "flying", "psychic", "bug", "rock", "ghost", "dragon", "dark", "steel", "fairy"]

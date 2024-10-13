@@ -7,6 +7,7 @@ from collections import defaultdict
 import constants
 from load_files import load_data
 from pokemonTypes import get_type_name
+from evolutionUtils import get_first_evo_pokemon_id
 
 parent_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 input_file_path = os.path.join(parent_file_path, constants.INPUT_NAME)
@@ -206,7 +207,12 @@ def get_pokemon_learnset(monsno=0):
     Returns a list of moves per ID
     """
     learnset = learnset_data['WazaOboe'][monsno]['ar']
-    move_list = [{'level': learnset[i], 'moveId': learnset[i + 1]} for i in range(0, len(learnset), 2)]
+    move_list = []
+    for i in range(0, len(learnset), 2):
+        move_object = {}
+        move_object['level'] = learnset[i]
+        move_object['moveId'] = learnset[i + 1]
+        move_list.append(move_object)
 
     pokemon_learnset = {}
     for e in move_list:
@@ -218,6 +224,13 @@ def get_pokemon_learnset(monsno=0):
         pokemon_learnset[name] = level
 
     return pokemon_learnset
+
+def get_level_learnset(pokemonId):
+    learnset = learnset_data['WazaOboe'][pokemonId]['ar']
+    move_list = []
+    for i in range(0, len(learnset), 2):
+        move_list.append(learnset[i + 1])
+    return move_list
 
 def get_moves(m1, m2, m3, m4, monsno, level, output_format):
     """
@@ -303,11 +316,18 @@ def get_egg_moves(dex_id=0):
     """
     Requires the ID of a Pokemon, not the MonsNo, this is how we must handle Forms.
     """
-    egg_learnset = full_data['egg_learnset']
-    monsno = personal_data['Personal'][dex_id]['monsno']
-    form_no = get_pokemon_form_id(monsno, dex_id)
-    egg_moves = [e['wazaNo'] for e in egg_learnset['Data'] if e['no'] == monsno and e['formNo'] == form_no]
+    baby_pokemon_id = get_first_evo_pokemon_id(dex_id)
+    egg_learnset = full_data['egg_learnset']['Data']
+
+    egg_moves = egg_learnset[baby_pokemon_id]['wazaNo']
     return [{'level': 'egg', 'moveId': move_id} for move_id in egg_moves]
+
+def get_egg_moves_list(pokemonId):
+    '''Returns the list of move Ids that a pokemon can get through egg moves'''
+    baby_pokemon_id = get_first_evo_pokemon_id(pokemonId)
+    egg_learnset = full_data['egg_learnset']['Data']
+    egg_moves = egg_learnset[baby_pokemon_id]['wazaNo']
+    return egg_moves
 
 def get_grass_knot_power(weightkg):
     """
@@ -364,6 +384,19 @@ def get_tutor_moves(monsno=0, formno=0):
     tutor_set = [{'moveLevel': 0, 'move': get_move_properties(move_id), 'moveId': move_id} for move_id in moveset]
 
     return tutor_set
+
+def get_tutor_moves_list(monsno=0, formno=0):
+    tutor_moves = full_data['tutor_moves']
+    monsNo = str(monsno)
+    formNo = str(formno)
+    if monsno == 0:
+        return []
+    if monsNo not in tutor_moves.keys():
+        return []
+    if formNo not in tutor_moves[monsNo].keys():
+        return []
+
+    return tutor_moves[monsNo][formNo]
 
 if __name__ != "__main__":
     full_data = load_data()

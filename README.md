@@ -1,5 +1,11 @@
 Gamedata repo
 
+Adds the verification for all egg moves if they are attainable and how they would be attainable. To run the script, open the terminal and navigate to the gamedata repo. From there c/p this line into the terminal and press enter: 
+
+```python
+python3 Python_tasks/pokedex_generator.py
+```
+
 - Added PokeApi searches to base Nat Dex Mons off of.
 
 In order to use this, you need to have `python 3.11.4` installed. Then you will need to install [pokebase](https://github.com/PokeAPI/pokebase) with `pip install pokebase`.

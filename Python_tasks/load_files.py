@@ -62,6 +62,7 @@ def load_data():
         'tutor_moves': 'tutorMoves.json',
         'smogon_moves': 'moves.json',
         'static_encounters': 'static_pokemon_locations.json',
+        'evolution_dex': 'evolution.json',
     }
     resource_file_paths = {
         # Custom files created from various scripts

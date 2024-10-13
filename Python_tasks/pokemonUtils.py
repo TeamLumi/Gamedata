@@ -14,6 +14,10 @@ from moveUtils import (
     get_grass_knot_power,
     get_tutor_moves,
     get_move_string,
+    get_level_learnset,
+    get_tm_compatibility,
+    get_egg_moves_list,
+    get_tutor_moves_list,
     )
 from pokemonTypes import get_type_name
 
@@ -147,7 +151,7 @@ def get_pokemon_id_from_name(pokemon_name):
         pokemonId = NAME_MAP[pokemon_name]
         return pokemonId
     except KeyError as e:
-        print("This pokemon is not in the FORM_MAP:", e)
+        raise Exception("This pokemon is not in the FORM_MAP:", e)
     except SyntaxError as e:
         print("This monsName is not formatted correctly to get a correct monsNo:", e)
 
@@ -310,11 +314,12 @@ def create_diff_forms_dictionary(form_dict, mode = "2.0"):
 def get_pokemon_name_dictionary(mode = "2.0"):
     pokemon = {}
     for (idx, p) in enumerate(personal_data["Personal"]):
+        monsNo = str(p["monsno"])
         if(idx == 0):
             continue
-        if(not str(p["monsno"]) in pokemon):
-            pokemon[str(p["monsno"])] = []
-        pokemon[str(p["monsno"])].append(get_pokemon_name(p["id"], mode == "3.0"))
+        if(not monsNo in pokemon):
+            pokemon[monsNo] = []
+        pokemon[monsNo].append(get_pokemon_name(p["id"], mode == "3.0"))
     return pokemon
 
 def get_diff_form_dictionary(mode = "2.0"):
@@ -337,8 +342,9 @@ def get_pokemon_info(personalId=0):
     for tm in tms:
         tmLearnset[get_move_string(tm['moveId'])] = tm['moveId']
 
-    for egg in eggs[0]['moveId']:
-        eggLearnset[get_move_string(egg)] = egg
+    for eggMoveDict in eggs:
+        egg_move_id = eggMoveDict['moveId']
+        eggLearnset[get_move_string(egg_move_id)] = egg_move_id
 
     for tutor in tutors:
         tutorLearnset[tutor["move"]["name"]] = tutor["moveId"]
@@ -438,6 +444,35 @@ def get_pokemon_from_trainer_info(trainer, output_format):
         }
         pokemon_list.append(pokemon)
     return pokemon_list
+
+def get_mon_full_learnset(pokemonId=0):
+    '''
+    Returns the full learnset and egg learnsets of a pokemon
+    '''
+    full_learnset = {
+        "level": [],
+        "tm": [],
+        "egg": [],
+        "tutor": [],
+    }
+    monsNo, formNo = get_mons_no_and_form_no(pokemonId)
+
+    level_moves = get_level_learnset(pokemonId)
+    if len(level_moves) > 0:
+        full_learnset['level'] = level_moves
+
+    tm_moves = get_tm_compatibility(pokemonId)
+    if len(tm_moves) > 0:
+        full_learnset['tm'] = tm_moves
+
+    egg_moves = get_egg_moves_list(pokemonId)
+    if (len(egg_moves)) > 0:
+        full_learnset['egg'] = egg_moves
+
+    tutor_moves = get_tutor_moves_list(monsNo, formNo)
+    if len(tutor_moves) > 0:
+        full_learnset['tutor'] = tutor_moves
+    return full_learnset
 
 if __name__ != '__main__':
     full_data = load_data()
