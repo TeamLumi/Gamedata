@@ -25,6 +25,11 @@
     "eggGroups": [
       "None",
       "None"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -119,6 +124,11 @@
     "eggGroups": [
       "Monster",
       "Grass"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -214,6 +224,11 @@
     "eggGroups": [
       "Monster",
       "Grass"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -324,6 +339,11 @@
     "eggGroups": [
       "Monster",
       "Grass"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -424,6 +444,11 @@
     "eggGroups": [
       "Monster",
       "Dragon"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -524,6 +549,11 @@
     "eggGroups": [
       "Monster",
       "Dragon"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -649,6 +679,11 @@
     "eggGroups": [
       "Dragon",
       "Monster"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -748,6 +783,11 @@
     "eggGroups": [
       "Monster",
       "Water 1"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -847,6 +887,11 @@
     "eggGroups": [
       "Monster",
       "Water 1"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -965,6 +1010,11 @@
     "eggGroups": [
       "Monster",
       "Water 1"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -999,6 +1049,11 @@
     "eggGroups": [
       "Bug",
       "Bug"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -1033,6 +1088,11 @@
     "eggGroups": [
       "Bug",
       "Bug"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -1125,6 +1185,11 @@
     "eggGroups": [
       "Bug",
       "Bug"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Silver Powder"
     ]
   },
   {
@@ -1160,6 +1225,11 @@
     "eggGroups": [
       "Bug",
       "Bug"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -1195,6 +1265,11 @@
     "eggGroups": [
       "Bug",
       "Bug"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -1288,6 +1363,11 @@
     "eggGroups": [
       "Bug",
       "Bug"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Poison Barb"
     ]
   },
   {
@@ -1373,6 +1453,11 @@
     "eggGroups": [
       "Flying",
       "Flying"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -1458,6 +1543,11 @@
     "eggGroups": [
       "Flying",
       "Flying"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -1548,6 +1638,11 @@
     "eggGroups": [
       "Flying",
       "Flying"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -1645,6 +1740,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -1751,6 +1851,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -1840,6 +1945,11 @@
     "eggGroups": [
       "Flying",
       "Flying"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Sharp Beak"
     ]
   },
   {
@@ -1933,6 +2043,11 @@
     "eggGroups": [
       "Flying",
       "Flying"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Sharp Beak"
     ]
   },
   {
@@ -2023,6 +2138,11 @@
     "eggGroups": [
       "Field",
       "Dragon"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -2120,6 +2240,11 @@
     "eggGroups": [
       "Field",
       "Dragon"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -2228,6 +2353,11 @@
     "eggGroups": [
       "Field",
       "Fairy"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Light Ball"
     ]
   },
   {
@@ -2344,6 +2474,11 @@
     "eggGroups": [
       "Field",
       "Fairy"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -2450,6 +2585,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Grip Claw"
     ]
   },
   {
@@ -2564,6 +2704,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Grip Claw"
     ]
   },
   {
@@ -2651,6 +2796,11 @@
     "eggGroups": [
       "Monster",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -2739,6 +2889,11 @@
     "eggGroups": [
       "Monster",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -2872,6 +3027,11 @@
     "eggGroups": [
       "Monster",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -2961,6 +3121,11 @@
     "eggGroups": [
       "Monster",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -3051,6 +3216,11 @@
     "eggGroups": [
       "Monster",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -3184,6 +3354,11 @@
     "eggGroups": [
       "Monster",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -3324,6 +3499,11 @@
     "eggGroups": [
       "Fairy",
       "Fairy"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Moon Stone"
     ]
   },
   {
@@ -3468,6 +3648,11 @@
     "eggGroups": [
       "Fairy",
       "Fairy"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Moon Stone"
     ]
   },
   {
@@ -3564,6 +3749,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Charcoal"
     ]
   },
   {
@@ -3672,6 +3862,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Charcoal"
     ]
   },
   {
@@ -3804,6 +3999,11 @@
     "eggGroups": [
       "Fairy",
       "Fairy"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Moon Stone"
     ]
   },
   {
@@ -3940,6 +4140,11 @@
     "eggGroups": [
       "Fairy",
       "Fairy"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Moon Stone"
     ]
   },
   {
@@ -4035,6 +4240,11 @@
     "eggGroups": [
       "Flying",
       "Flying"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -4134,6 +4344,11 @@
     "eggGroups": [
       "Flying",
       "Flying"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -4215,6 +4430,11 @@
     "eggGroups": [
       "Grass",
       "Grass"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -4298,6 +4518,11 @@
     "eggGroups": [
       "Grass",
       "Grass"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -4392,6 +4617,11 @@
     "eggGroups": [
       "Grass",
       "Grass"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -4487,6 +4717,11 @@
     "eggGroups": [
       "Bug",
       "Grass"
+    ],
+    "heldItems": [
+      "Tiny Mushroom",
+      "None",
+      "Big Mushroom"
     ]
   },
   {
@@ -4586,6 +4821,11 @@
     "eggGroups": [
       "Bug",
       "Grass"
+    ],
+    "heldItems": [
+      "Tiny Mushroom",
+      "None",
+      "Big Mushroom"
     ]
   },
   {
@@ -4663,6 +4903,11 @@
     "eggGroups": [
       "Bug",
       "Bug"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -4759,6 +5004,11 @@
     "eggGroups": [
       "Bug",
       "Bug"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Shed Shell"
     ]
   },
   {
@@ -4849,6 +5099,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Soft Sand"
     ]
   },
   {
@@ -4945,6 +5200,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Soft Sand"
     ]
   },
   {
@@ -5046,6 +5306,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "Big Nugget",
+      "Big Nugget",
+      "Big Nugget"
     ]
   },
   {
@@ -5153,6 +5418,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Quick Claw"
     ]
   },
   {
@@ -5256,6 +5526,11 @@
     "eggGroups": [
       "Water 1",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -5373,6 +5648,11 @@
     "eggGroups": [
       "Water 1",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -5488,6 +5768,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -5609,6 +5894,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -5698,6 +5988,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -5800,6 +6095,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -5878,6 +6178,11 @@
     "eggGroups": [
       "Water 1",
       "Water 1"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -5966,6 +6271,11 @@
     "eggGroups": [
       "Water 1",
       "Water 1"
+    ],
+    "heldItems": [
+      "Pearl String",
+      "Pearl String",
+      "Pearl String"
     ]
   },
   {
@@ -6078,6 +6388,11 @@
     "eggGroups": [
       "Water 1",
       "Water 1"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "King’s Rock"
     ]
   },
   {
@@ -6172,6 +6487,11 @@
     "eggGroups": [
       "Human-Like",
       "Human-Like"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Twisted Spoon"
     ]
   },
   {
@@ -6284,6 +6604,11 @@
     "eggGroups": [
       "Human-Like",
       "Human-Like"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Twisted Spoon"
     ]
   },
   {
@@ -6404,6 +6729,11 @@
     "eggGroups": [
       "Human-Like",
       "Human-Like"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Twisted Spoon"
     ]
   },
   {
@@ -6515,6 +6845,11 @@
     "eggGroups": [
       "Human-Like",
       "Human-Like"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Focus Band"
     ]
   },
   {
@@ -6627,6 +6962,11 @@
     "eggGroups": [
       "Human-Like",
       "Human-Like"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Focus Band"
     ]
   },
   {
@@ -6744,6 +7084,11 @@
     "eggGroups": [
       "Human-Like",
       "Human-Like"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Focus Band"
     ]
   },
   {
@@ -6831,6 +7176,11 @@
     "eggGroups": [
       "Grass",
       "Grass"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -6918,6 +7268,11 @@
     "eggGroups": [
       "Grass",
       "Grass"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -7016,6 +7371,11 @@
     "eggGroups": [
       "Grass",
       "Grass"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -7109,6 +7469,11 @@
     "eggGroups": [
       "Water 3",
       "Water 3"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Poison Barb"
     ]
   },
   {
@@ -7206,6 +7571,11 @@
     "eggGroups": [
       "Water 3",
       "Water 3"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Poison Barb"
     ]
   },
   {
@@ -7305,6 +7675,11 @@
     "eggGroups": [
       "Mineral",
       "Mineral"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Everstone"
     ]
   },
   {
@@ -7406,6 +7781,11 @@
     "eggGroups": [
       "Mineral",
       "Mineral"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Everstone"
     ]
   },
   {
@@ -7519,6 +7899,11 @@
     "eggGroups": [
       "Mineral",
       "Mineral"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Everstone"
     ]
   },
   {
@@ -7599,6 +7984,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -7691,6 +8081,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -7802,6 +8197,11 @@
     "eggGroups": [
       "Monster",
       "Water 1"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Lagging Tail"
     ]
   },
   {
@@ -7930,6 +8330,11 @@
     "eggGroups": [
       "Monster",
       "Water 1"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "King’s Rock"
     ]
   },
   {
@@ -8013,6 +8418,11 @@
     "eggGroups": [
       "Mineral",
       "Mineral"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Metal Coat"
     ]
   },
   {
@@ -8100,6 +8510,11 @@
     "eggGroups": [
       "Mineral",
       "Mineral"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Metal Coat"
     ]
   },
   {
@@ -8210,6 +8625,11 @@
     "eggGroups": [
       "Flying",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Leek"
     ]
   },
   {
@@ -8289,6 +8709,11 @@
     "eggGroups": [
       "Flying",
       "Flying"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Sharp Beak"
     ]
   },
   {
@@ -8376,6 +8801,11 @@
     "eggGroups": [
       "Flying",
       "Flying"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Sharp Beak"
     ]
   },
   {
@@ -8466,6 +8896,11 @@
     "eggGroups": [
       "Water 1",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -8565,6 +9000,11 @@
     "eggGroups": [
       "Water 1",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -8667,6 +9107,11 @@
     "eggGroups": [
       "Amorphous",
       "Amorphous"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Black Sludge"
     ]
   },
   {
@@ -8780,6 +9225,11 @@
     "eggGroups": [
       "Amorphous",
       "Amorphous"
+    ],
+    "heldItems": [
+      "Black Sludge",
+      "None",
+      "None"
     ]
   },
   {
@@ -8862,6 +9312,11 @@
     "eggGroups": [
       "Water 3",
       "Water 3"
+    ],
+    "heldItems": [
+      "Pearl",
+      "None",
+      "Big Pearl"
     ]
   },
   {
@@ -8959,6 +9414,11 @@
     "eggGroups": [
       "Water 3",
       "Water 3"
+    ],
+    "heldItems": [
+      "Pearl",
+      "None",
+      "Big Pearl"
     ]
   },
   {
@@ -9063,6 +9523,11 @@
     "eggGroups": [
       "Amorphous",
       "Amorphous"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -9170,6 +9635,11 @@
     "eggGroups": [
       "Amorphous",
       "Amorphous"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -9294,6 +9764,11 @@
     "eggGroups": [
       "Amorphous",
       "Amorphous"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -9397,6 +9872,11 @@
     "eggGroups": [
       "Mineral",
       "Mineral"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -9502,6 +9982,11 @@
     "eggGroups": [
       "Human-Like",
       "Human-Like"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -9616,6 +10101,11 @@
     "eggGroups": [
       "Human-Like",
       "Human-Like"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -9716,6 +10206,11 @@
     "eggGroups": [
       "Water 3",
       "Water 3"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -9824,6 +10319,11 @@
     "eggGroups": [
       "Water 3",
       "Water 3"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -9903,6 +10403,11 @@
     "eggGroups": [
       "Mineral",
       "Mineral"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -9987,6 +10492,11 @@
     "eggGroups": [
       "Mineral",
       "Mineral"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -10087,6 +10597,11 @@
     "eggGroups": [
       "Grass",
       "Grass"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -10196,6 +10711,11 @@
     "eggGroups": [
       "Grass",
       "Grass"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -10303,6 +10823,11 @@
     "eggGroups": [
       "Monster",
       "Monster"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Thick Club"
     ]
   },
   {
@@ -10418,6 +10943,11 @@
     "eggGroups": [
       "Monster",
       "Monster"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Thick Club"
     ]
   },
   {
@@ -10522,6 +11052,11 @@
     "eggGroups": [
       "Human-Like",
       "Human-Like"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -10629,6 +11164,11 @@
     "eggGroups": [
       "Human-Like",
       "Human-Like"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -10744,6 +11284,11 @@
     "eggGroups": [
       "Monster",
       "Monster"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Lagging Tail"
     ]
   },
   {
@@ -10839,6 +11384,11 @@
     "eggGroups": [
       "Amorphous",
       "Amorphous"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Smoke Ball"
     ]
   },
   {
@@ -10938,6 +11488,11 @@
     "eggGroups": [
       "Amorphous",
       "Amorphous"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Smoke Ball"
     ]
   },
   {
@@ -11052,6 +11607,11 @@
     "eggGroups": [
       "Monster",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -11187,6 +11747,11 @@
     "eggGroups": [
       "Monster",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -11328,6 +11893,11 @@
     "eggGroups": [
       "Fairy",
       "Fairy"
+    ],
+    "heldItems": [
+      "Lucky Punch",
+      "None",
+      "None"
     ]
   },
   {
@@ -11419,6 +11989,11 @@
     "eggGroups": [
       "Grass",
       "Grass"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -11546,6 +12121,11 @@
     "eggGroups": [
       "Monster",
       "Monster"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -11630,6 +12210,11 @@
     "eggGroups": [
       "Water 1",
       "Dragon"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Dragon Scale"
     ]
   },
   {
@@ -11718,6 +12303,11 @@
     "eggGroups": [
       "Water 1",
       "Dragon"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Dragon Scale"
     ]
   },
   {
@@ -11806,6 +12396,11 @@
     "eggGroups": [
       "Water 2",
       "Water 2"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Mystic Water"
     ]
   },
   {
@@ -11896,6 +12491,11 @@
     "eggGroups": [
       "Water 2",
       "Water 2"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Mystic Water"
     ]
   },
   {
@@ -11981,6 +12581,11 @@
     "eggGroups": [
       "Water 3",
       "Water 3"
+    ],
+    "heldItems": [
+      "Stardust",
+      "None",
+      "Star Piece"
     ]
   },
   {
@@ -12077,6 +12682,11 @@
     "eggGroups": [
       "Water 3",
       "Water 3"
+    ],
+    "heldItems": [
+      "Stardust",
+      "None",
+      "Star Piece"
     ]
   },
   {
@@ -12213,6 +12823,11 @@
     "eggGroups": [
       "Human-Like",
       "Human-Like"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -12307,6 +12922,11 @@
     "eggGroups": [
       "Bug",
       "Bug"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -12425,6 +13045,11 @@
     "eggGroups": [
       "Human-Like",
       "Human-Like"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -12530,6 +13155,11 @@
     "eggGroups": [
       "Human-Like",
       "Human-Like"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Electirizer"
     ]
   },
   {
@@ -12633,6 +13263,11 @@
     "eggGroups": [
       "Human-Like",
       "Human-Like"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Magmarizer"
     ]
   },
   {
@@ -12735,6 +13370,11 @@
     "eggGroups": [
       "Bug",
       "Bug"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -12830,6 +13470,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -12865,6 +13510,11 @@
     "eggGroups": [
       "Water 2",
       "Dragon"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -12966,6 +13616,11 @@
     "eggGroups": [
       "Water 2",
       "Dragon"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -13074,6 +13729,11 @@
     "eggGroups": [
       "Monster",
       "Water 1"
+    ],
+    "heldItems": [
+      "Mystic Water",
+      "Mystic Water",
+      "Mystic Water"
     ]
   },
   {
@@ -13104,6 +13764,11 @@
     "eggGroups": [
       "Ditto",
       "Ditto"
+    ],
+    "heldItems": [
+      "Quick Powder",
+      "None",
+      "Metal Powder"
     ]
   },
   {
@@ -13187,6 +13852,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -13295,6 +13965,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -13403,6 +14078,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -13508,6 +14188,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -13602,6 +14287,11 @@
     "eggGroups": [
       "Mineral",
       "Mineral"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -13701,6 +14391,11 @@
     "eggGroups": [
       "Water 1",
       "Water 3"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -13810,6 +14505,11 @@
     "eggGroups": [
       "Water 1",
       "Water 3"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -13908,6 +14608,11 @@
     "eggGroups": [
       "Water 1",
       "Water 3"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -14023,6 +14728,11 @@
     "eggGroups": [
       "Water 1",
       "Water 3"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -14133,6 +14843,11 @@
     "eggGroups": [
       "Flying",
       "Flying"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -14268,6 +14983,11 @@
     "eggGroups": [
       "Monster",
       "Monster"
+    ],
+    "heldItems": [
+      "Leftovers",
+      "Leftovers",
+      "Leftovers"
     ]
   },
   {
@@ -14355,6 +15075,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -14446,6 +15171,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -14537,6 +15267,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -14628,6 +15363,11 @@
     "eggGroups": [
       "Water 1",
       "Dragon"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Dragon Scale"
     ]
   },
   {
@@ -14720,6 +15460,11 @@
     "eggGroups": [
       "Water 1",
       "Dragon"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Dragon Scale"
     ]
   },
   {
@@ -14853,6 +15598,11 @@
     "eggGroups": [
       "Water 1",
       "Dragon"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Dragon Scale"
     ]
   },
   {
@@ -14988,6 +15738,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -15203,6 +15958,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "Lum Berry",
+      "Lum Berry",
+      "Lum Berry"
     ]
   },
   {
@@ -15293,6 +16053,11 @@
     "eggGroups": [
       "Monster",
       "Grass"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -15386,6 +16151,11 @@
     "eggGroups": [
       "Monster",
       "Grass"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -15491,6 +16261,11 @@
     "eggGroups": [
       "Monster",
       "Grass"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -15575,6 +16350,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -15667,6 +16447,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -15782,6 +16567,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -15886,6 +16676,11 @@
     "eggGroups": [
       "Monster",
       "Water 1"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -15996,6 +16791,11 @@
     "eggGroups": [
       "Monster",
       "Water 1"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -16119,6 +16919,11 @@
     "eggGroups": [
       "Monster",
       "Water 1"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -16222,6 +17027,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -16334,6 +17144,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -16434,6 +17249,11 @@
     "eggGroups": [
       "Flying",
       "Flying"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -16539,6 +17359,11 @@
     "eggGroups": [
       "Flying",
       "Flying"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -16637,6 +17462,11 @@
     "eggGroups": [
       "Bug",
       "Bug"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -16743,6 +17573,11 @@
     "eggGroups": [
       "Bug",
       "Bug"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -16831,6 +17666,11 @@
     "eggGroups": [
       "Bug",
       "Bug"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -16927,6 +17767,11 @@
     "eggGroups": [
       "Bug",
       "Bug"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -17033,6 +17878,11 @@
     "eggGroups": [
       "Flying",
       "Flying"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -17121,6 +17971,11 @@
     "eggGroups": [
       "Water 2",
       "Water 2"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Deep Sea Scale"
     ]
   },
   {
@@ -17216,6 +18071,11 @@
     "eggGroups": [
       "Water 2",
       "Water 2"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Deep Sea Scale"
     ]
   },
   {
@@ -17303,6 +18163,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -17405,6 +18270,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Moon Stone"
     ]
   },
   {
@@ -17502,6 +18372,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -17609,6 +18484,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -17739,6 +18619,11 @@
     "eggGroups": [
       "Flying",
       "Fairy"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -17839,6 +18724,11 @@
     "eggGroups": [
       "Flying",
       "Flying"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -17950,6 +18840,11 @@
     "eggGroups": [
       "Flying",
       "Flying"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -18034,6 +18929,11 @@
     "eggGroups": [
       "Monster",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -18128,6 +19028,11 @@
     "eggGroups": [
       "Monster",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -18240,6 +19145,11 @@
     "eggGroups": [
       "Monster",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -18333,6 +19243,11 @@
     "eggGroups": [
       "Grass",
       "Grass"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -18440,6 +19355,11 @@
     "eggGroups": [
       "Water 1",
       "Fairy"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -18556,6 +19476,11 @@
     "eggGroups": [
       "Water 1",
       "Fairy"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -18663,6 +19588,11 @@
     "eggGroups": [
       "Mineral",
       "Mineral"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -18760,6 +19690,11 @@
     "eggGroups": [
       "Water 1",
       "Water 1"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "King’s Rock"
     ]
   },
   {
@@ -18850,6 +19785,11 @@
     "eggGroups": [
       "Fairy",
       "Grass"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -18940,6 +19880,11 @@
     "eggGroups": [
       "Fairy",
       "Grass"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -19036,6 +19981,11 @@
     "eggGroups": [
       "Fairy",
       "Grass"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -19153,6 +20103,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -19237,6 +20192,11 @@
     "eggGroups": [
       "Grass",
       "Grass"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -19330,6 +20290,11 @@
     "eggGroups": [
       "Grass",
       "Grass"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -19420,6 +20385,11 @@
     "eggGroups": [
       "Bug",
       "Bug"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Wide Lens"
     ]
   },
   {
@@ -19520,6 +20490,11 @@
     "eggGroups": [
       "Water 1",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -19633,6 +20608,11 @@
     "eggGroups": [
       "Water 1",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -19743,6 +20723,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -19855,6 +20840,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -19961,6 +20951,11 @@
     "eggGroups": [
       "Flying",
       "Flying"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -20094,6 +21089,11 @@
     "eggGroups": [
       "Monster",
       "Water 1"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "King’s Rock"
     ]
   },
   {
@@ -20201,6 +21201,11 @@
     "eggGroups": [
       "Amorphous",
       "Amorphous"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -20235,6 +21240,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -20274,6 +21284,11 @@
     "eggGroups": [
       "Amorphous",
       "Amorphous"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -20385,6 +21400,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -20473,6 +21493,11 @@
     "eggGroups": [
       "Bug",
       "Bug"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -20577,6 +21602,11 @@
     "eggGroups": [
       "Bug",
       "Bug"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -20696,6 +21726,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -20810,6 +21845,11 @@
     "eggGroups": [
       "Bug",
       "Bug"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -20924,6 +21964,11 @@
     "eggGroups": [
       "Mineral",
       "Mineral"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Metal Coat"
     ]
   },
   {
@@ -21040,6 +22085,11 @@
     "eggGroups": [
       "Field",
       "Fairy"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -21167,6 +22217,11 @@
     "eggGroups": [
       "Field",
       "Fairy"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -21268,6 +22323,11 @@
     "eggGroups": [
       "Water 2",
       "Water 2"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Poison Barb"
     ]
   },
   {
@@ -21372,6 +22432,11 @@
     "eggGroups": [
       "Bug",
       "Bug"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -21472,6 +22537,11 @@
     "eggGroups": [
       "Bug",
       "Bug"
+    ],
+    "heldItems": [
+      "Berry Juice",
+      "Berry Juice",
+      "Berry Juice"
     ]
   },
   {
@@ -21576,6 +22646,11 @@
     "eggGroups": [
       "Bug",
       "Bug"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -21685,6 +22760,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Quick Claw"
     ]
   },
   {
@@ -21800,6 +22880,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -21929,6 +23014,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -22019,6 +23109,11 @@
     "eggGroups": [
       "Amorphous",
       "Amorphous"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -22124,6 +23219,11 @@
     "eggGroups": [
       "Amorphous",
       "Amorphous"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -22213,6 +23313,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -22311,6 +23416,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -22422,6 +23532,11 @@
     "eggGroups": [
       "Water 1",
       "Water 3"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Hard Stone"
     ]
   },
   {
@@ -22517,6 +23632,11 @@
     "eggGroups": [
       "Water 1",
       "Water 2"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -22623,6 +23743,11 @@
     "eggGroups": [
       "Water 1",
       "Water 2"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -22726,6 +23851,11 @@
     "eggGroups": [
       "Water 1",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -22835,6 +23965,11 @@
     "eggGroups": [
       "Water 1",
       "Water 1"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -22945,6 +24080,11 @@
     "eggGroups": [
       "Flying",
       "Flying"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Metal Coat"
     ]
   },
   {
@@ -23043,6 +24183,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -23145,6 +24290,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -23241,6 +24391,11 @@
     "eggGroups": [
       "Water 1",
       "Dragon"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Dragon Scale"
     ]
   },
   {
@@ -23331,6 +24486,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -23442,6 +24602,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -23536,6 +24701,11 @@
     "eggGroups": [
       "Mineral",
       "Mineral"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -23639,6 +24809,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -23669,6 +24844,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -23746,6 +24926,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -23851,6 +25036,11 @@
     "eggGroups": [
       "Human-Like",
       "Human-Like"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -23952,6 +25142,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -24048,6 +25243,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Electirizer"
     ]
   },
   {
@@ -24142,6 +25342,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Magmarizer"
     ]
   },
   {
@@ -24251,6 +25456,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "Moomoo Milk",
+      "Moomoo Milk",
+      "Moomoo Milk"
     ]
   },
   {
@@ -24394,6 +25604,11 @@
     "eggGroups": [
       "Fairy",
       "Fairy"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Lucky Egg"
     ]
   },
   {
@@ -24485,6 +25700,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -24576,6 +25796,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -24671,6 +25896,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -24769,6 +25999,11 @@
     "eggGroups": [
       "Monster",
       "Monster"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -24868,6 +26103,11 @@
     "eggGroups": [
       "Monster",
       "Monster"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -25004,6 +26244,11 @@
     "eggGroups": [
       "Monster",
       "Monster"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -25121,6 +26366,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -25230,6 +26480,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "Sacred Ash",
+      "Sacred Ash",
+      "Sacred Ash"
     ]
   },
   {
@@ -25334,6 +26589,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "Lum Berry",
+      "Lum Berry",
+      "Lum Berry"
     ]
   },
   {
@@ -25440,6 +26700,11 @@
     "eggGroups": [
       "Monster",
       "Dragon"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -25551,6 +26816,11 @@
     "eggGroups": [
       "Monster",
       "Dragon"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -25683,6 +26953,11 @@
     "eggGroups": [
       "Monster",
       "Dragon"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -25776,6 +27051,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -25885,6 +27165,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -26013,6 +27298,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -26111,6 +27401,11 @@
     "eggGroups": [
       "Monster",
       "Water 1"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -26221,6 +27516,11 @@
     "eggGroups": [
       "Monster",
       "Water 1"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -26342,6 +27642,11 @@
     "eggGroups": [
       "Monster",
       "Water 1"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -26427,6 +27732,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -26521,6 +27831,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -26616,6 +27931,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "Potion",
+      "None",
+      "Revive"
     ]
   },
   {
@@ -26726,6 +28046,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "Potion",
+      "None",
+      "Max Revive"
     ]
   },
   {
@@ -26761,6 +28086,11 @@
     "eggGroups": [
       "Bug",
       "Bug"
+    ],
+    "heldItems": [
+      "Pecha Berry",
+      "None",
+      "Bright Powder"
     ]
   },
   {
@@ -26795,6 +28125,11 @@
     "eggGroups": [
       "Bug",
       "Bug"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -26884,6 +28219,11 @@
     "eggGroups": [
       "Bug",
       "Bug"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Shed Shell"
     ]
   },
   {
@@ -26918,6 +28258,11 @@
     "eggGroups": [
       "Bug",
       "Bug"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -27007,6 +28352,11 @@
     "eggGroups": [
       "Bug",
       "Bug"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Shed Shell"
     ]
   },
   {
@@ -27089,6 +28439,11 @@
     "eggGroups": [
       "Water 1",
       "Grass"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Mental Herb"
     ]
   },
   {
@@ -27191,6 +28546,11 @@
     "eggGroups": [
       "Water 1",
       "Grass"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Mental Herb"
     ]
   },
   {
@@ -27300,6 +28660,11 @@
     "eggGroups": [
       "Water 1",
       "Grass"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Mental Herb"
     ]
   },
   {
@@ -27384,6 +28749,11 @@
     "eggGroups": [
       "Field",
       "Grass"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Power Herb"
     ]
   },
   {
@@ -27495,6 +28865,11 @@
     "eggGroups": [
       "Field",
       "Grass"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Power Herb"
     ]
   },
   {
@@ -27623,6 +28998,11 @@
     "eggGroups": [
       "Field",
       "Grass"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Power Herb"
     ]
   },
   {
@@ -27704,6 +29084,11 @@
     "eggGroups": [
       "Flying",
       "Flying"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -27790,6 +29175,11 @@
     "eggGroups": [
       "Flying",
       "Flying"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -27881,6 +29271,11 @@
     "eggGroups": [
       "Water 1",
       "Flying"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -27985,6 +29380,11 @@
     "eggGroups": [
       "Water 1",
       "Flying"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Lucky Egg"
     ]
   },
   {
@@ -28092,6 +29492,11 @@
     "eggGroups": [
       "Human-Like",
       "Amorphous"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -28199,6 +29604,11 @@
     "eggGroups": [
       "Human-Like",
       "Amorphous"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -28317,6 +29727,11 @@
     "eggGroups": [
       "Human-Like",
       "Amorphous"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -28401,6 +29816,11 @@
     "eggGroups": [
       "Water 1",
       "Bug"
+    ],
+    "heldItems": [
+      "Honey",
+      "None",
+      "None"
     ]
   },
   {
@@ -28510,6 +29930,11 @@
     "eggGroups": [
       "Water 1",
       "Bug"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Silver Powder"
     ]
   },
   {
@@ -28583,6 +30008,11 @@
     "eggGroups": [
       "Fairy",
       "Grass"
+    ],
+    "heldItems": [
+      "Tiny Mushroom",
+      "None",
+      "Big Mushroom"
     ]
   },
   {
@@ -28686,6 +30116,11 @@
     "eggGroups": [
       "Fairy",
       "Grass"
+    ],
+    "heldItems": [
+      "Tiny Mushroom",
+      "None",
+      "Big Mushroom"
     ]
   },
   {
@@ -28783,6 +30218,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -28896,6 +30336,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -29016,6 +30461,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -29089,6 +30539,11 @@
     "eggGroups": [
       "Bug",
       "Bug"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Soft Sand"
     ]
   },
   {
@@ -29186,6 +30641,11 @@
     "eggGroups": [
       "Bug",
       "Bug"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -29266,6 +30726,11 @@
     "eggGroups": [
       "Mineral",
       "Mineral"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -29355,6 +30820,11 @@
     "eggGroups": [
       "Monster",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -29458,6 +30928,11 @@
     "eggGroups": [
       "Monster",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -29574,6 +31049,11 @@
     "eggGroups": [
       "Monster",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -29673,6 +31153,11 @@
     "eggGroups": [
       "Human-Like",
       "Human-Like"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Black Belt"
     ]
   },
   {
@@ -29778,6 +31263,11 @@
     "eggGroups": [
       "Human-Like",
       "Human-Like"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "King’s Rock"
     ]
   },
   {
@@ -29861,6 +31351,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -29959,6 +31454,11 @@
     "eggGroups": [
       "Mineral",
       "Amorphous"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Magnet"
     ]
   },
   {
@@ -30066,6 +31566,11 @@
     "eggGroups": [
       "Field",
       "Fairy"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -30180,6 +31685,11 @@
     "eggGroups": [
       "Field",
       "Fairy"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -30306,6 +31816,11 @@
     "eggGroups": [
       "Human-Like",
       "Human-Like"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Wide Lens"
     ]
   },
   {
@@ -30427,6 +31942,11 @@
     "eggGroups": [
       "Field",
       "Fairy"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Iron Ball"
     ]
   },
   {
@@ -30528,6 +32048,11 @@
     "eggGroups": [
       "Monster",
       "Monster"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Hard Stone"
     ]
   },
   {
@@ -30631,6 +32156,11 @@
     "eggGroups": [
       "Monster",
       "Monster"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Hard Stone"
     ]
   },
   {
@@ -30768,6 +32298,11 @@
     "eggGroups": [
       "Monster",
       "Monster"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Hard Stone"
     ]
   },
   {
@@ -30880,6 +32415,11 @@
     "eggGroups": [
       "Human-Like",
       "Human-Like"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -30999,6 +32539,11 @@
     "eggGroups": [
       "Human-Like",
       "Human-Like"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -31090,6 +32635,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -31188,6 +32738,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -31282,6 +32837,11 @@
     "eggGroups": [
       "Fairy",
       "Fairy"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -31374,6 +32934,11 @@
     "eggGroups": [
       "Fairy",
       "Fairy"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -31477,6 +33042,11 @@
     "eggGroups": [
       "Bug",
       "Human-Like"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Bright Powder"
     ]
   },
   {
@@ -31579,6 +33149,11 @@
     "eggGroups": [
       "Bug",
       "Human-Like"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Bright Powder"
     ]
   },
   {
@@ -31676,6 +33251,11 @@
     "eggGroups": [
       "Fairy",
       "Grass"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Poison Barb"
     ]
   },
   {
@@ -31763,6 +33343,11 @@
     "eggGroups": [
       "Amorphous",
       "Amorphous"
+    ],
+    "heldItems": [
+      "Oran Berry",
+      "None",
+      "Sitrus Berry"
     ]
   },
   {
@@ -31859,6 +33444,11 @@
     "eggGroups": [
       "Amorphous",
       "Amorphous"
+    ],
+    "heldItems": [
+      "Oran Berry",
+      "None",
+      "Sitrus Berry"
     ]
   },
   {
@@ -31946,6 +33536,11 @@
     "eggGroups": [
       "Water 2",
       "Water 2"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Deep Sea Tooth"
     ]
   },
   {
@@ -32049,6 +33644,11 @@
     "eggGroups": [
       "Water 2",
       "Water 2"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Deep Sea Tooth"
     ]
   },
   {
@@ -32145,6 +33745,11 @@
     "eggGroups": [
       "Field",
       "Water 2"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -32248,6 +33853,11 @@
     "eggGroups": [
       "Field",
       "Water 2"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -32341,6 +33951,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -32447,6 +34062,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -32544,6 +34164,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Charcoal"
     ]
   },
   {
@@ -32643,6 +34268,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -32762,6 +34392,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -32879,6 +34514,11 @@
     "eggGroups": [
       "Field",
       "Human-Like"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -32965,6 +34605,11 @@
     "eggGroups": [
       "Bug",
       "Dragon"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Soft Sand"
     ]
   },
   {
@@ -33076,6 +34721,11 @@
     "eggGroups": [
       "Bug",
       "Dragon"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -33203,6 +34853,11 @@
     "eggGroups": [
       "Bug",
       "Dragon"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -33309,6 +34964,11 @@
     "eggGroups": [
       "Grass",
       "Human-Like"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Sticky Barb"
     ]
   },
   {
@@ -33425,6 +35085,11 @@
     "eggGroups": [
       "Grass",
       "Human-Like"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Sticky Barb"
     ]
   },
   {
@@ -33520,6 +35185,11 @@
     "eggGroups": [
       "Flying",
       "Dragon"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -33631,6 +35301,11 @@
     "eggGroups": [
       "Flying",
       "Dragon"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -33753,6 +35428,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Quick Claw"
     ]
   },
   {
@@ -33847,6 +35527,11 @@
     "eggGroups": [
       "Field",
       "Dragon"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Shed Shell"
     ]
   },
   {
@@ -33952,6 +35637,11 @@
     "eggGroups": [
       "Mineral",
       "Mineral"
+    ],
+    "heldItems": [
+      "Stardust",
+      "None",
+      "Moon Stone"
     ]
   },
   {
@@ -34060,6 +35750,11 @@
     "eggGroups": [
       "Mineral",
       "Mineral"
+    ],
+    "heldItems": [
+      "Stardust",
+      "None",
+      "Sun Stone"
     ]
   },
   {
@@ -34144,6 +35839,11 @@
     "eggGroups": [
       "Water 2",
       "Water 2"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -34239,6 +35939,11 @@
     "eggGroups": [
       "Water 2",
       "Water 2"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -34341,6 +36046,11 @@
     "eggGroups": [
       "Water 1",
       "Water 3"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -34453,6 +36163,11 @@
     "eggGroups": [
       "Water 1",
       "Water 3"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -34552,6 +36267,11 @@
     "eggGroups": [
       "Mineral",
       "Mineral"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Light Clay"
     ]
   },
   {
@@ -34660,6 +36380,11 @@
     "eggGroups": [
       "Mineral",
       "Mineral"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Light Clay"
     ]
   },
   {
@@ -34748,6 +36473,11 @@
     "eggGroups": [
       "Water 3",
       "Water 3"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Big Root"
     ]
   },
   {
@@ -34848,6 +36578,11 @@
     "eggGroups": [
       "Water 3",
       "Water 3"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Big Root"
     ]
   },
   {
@@ -34935,6 +36670,11 @@
     "eggGroups": [
       "Water 3",
       "Water 3"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -35041,6 +36781,11 @@
     "eggGroups": [
       "Water 3",
       "Water 3"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -35104,6 +36849,11 @@
     "eggGroups": [
       "Water 1",
       "Dragon"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Prism Scale"
     ]
   },
   {
@@ -35206,6 +36956,11 @@
     "eggGroups": [
       "Water 1",
       "Dragon"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Prism Scale"
     ]
   },
   {
@@ -35294,6 +37049,11 @@
     "eggGroups": [
       "Fairy",
       "Amorphous"
+    ],
+    "heldItems": [
+      "Mystic Water",
+      "Mystic Water",
+      "Mystic Water"
     ]
   },
   {
@@ -35421,6 +37181,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -35522,6 +37287,11 @@
     "eggGroups": [
       "Amorphous",
       "Amorphous"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Spell Tag"
     ]
   },
   {
@@ -35632,6 +37402,11 @@
     "eggGroups": [
       "Amorphous",
       "Amorphous"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Spell Tag"
     ]
   },
   {
@@ -35722,6 +37497,11 @@
     "eggGroups": [
       "Amorphous",
       "Amorphous"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Spell Tag"
     ]
   },
   {
@@ -35836,6 +37616,11 @@
     "eggGroups": [
       "Amorphous",
       "Amorphous"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Spell Tag"
     ]
   },
   {
@@ -35945,6 +37730,11 @@
     "eggGroups": [
       "Monster",
       "Grass"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -36049,6 +37839,11 @@
     "eggGroups": [
       "Amorphous",
       "Amorphous"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Cleanse Tag"
     ]
   },
   {
@@ -36175,6 +37970,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Life Orb"
     ]
   },
   {
@@ -36214,6 +38014,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -36293,6 +38098,11 @@
     "eggGroups": [
       "Fairy",
       "Mineral"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Ice Stone"
     ]
   },
   {
@@ -36401,6 +38211,11 @@
     "eggGroups": [
       "Fairy",
       "Mineral"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Ice Stone"
     ]
   },
   {
@@ -36491,6 +38306,11 @@
     "eggGroups": [
       "Water 1",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -36583,6 +38403,11 @@
     "eggGroups": [
       "Water 1",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -36685,6 +38510,11 @@
     "eggGroups": [
       "Water 1",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -36746,6 +38576,11 @@
     "eggGroups": [
       "Water 1",
       "Water 1"
+    ],
+    "heldItems": [
+      "Pearl",
+      "Pearl",
+      "Big Pearl"
     ]
   },
   {
@@ -36832,6 +38667,11 @@
     "eggGroups": [
       "Water 1",
       "Water 1"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Deep Sea Tooth"
     ]
   },
   {
@@ -36918,6 +38758,11 @@
     "eggGroups": [
       "Water 1",
       "Water 1"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Deep Sea Scale"
     ]
   },
   {
@@ -37017,6 +38862,11 @@
     "eggGroups": [
       "Water 1",
       "Water 2"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Deep Sea Scale"
     ]
   },
   {
@@ -37098,6 +38948,11 @@
     "eggGroups": [
       "Water 2",
       "Water 2"
+    ],
+    "heldItems": [
+      "Heart Scale",
+      "Heart Scale",
+      "Heart Scale"
     ]
   },
   {
@@ -37180,6 +39035,11 @@
     "eggGroups": [
       "Dragon",
       "Dragon"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Dragon Fang"
     ]
   },
   {
@@ -37265,6 +39125,11 @@
     "eggGroups": [
       "Dragon",
       "Dragon"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Dragon Fang"
     ]
   },
   {
@@ -37375,6 +39240,11 @@
     "eggGroups": [
       "Dragon",
       "Dragon"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Dragon Fang"
     ]
   },
   {
@@ -37414,6 +39284,11 @@
     "eggGroups": [
       "Mineral",
       "Mineral"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Metal Coat"
     ]
   },
   {
@@ -37511,6 +39386,11 @@
     "eggGroups": [
       "Mineral",
       "Mineral"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Metal Coat"
     ]
   },
   {
@@ -37615,6 +39495,11 @@
     "eggGroups": [
       "Mineral",
       "Mineral"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Metal Coat"
     ]
   },
   {
@@ -37715,6 +39600,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -37812,6 +39702,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -37912,6 +39807,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -38028,6 +39928,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -38142,6 +40047,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -38230,6 +40140,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -38332,6 +40247,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -38444,6 +40364,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -38550,6 +40475,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "Star Piece",
+      "Star Piece",
+      "Star Piece"
     ]
   },
   {
@@ -38670,6 +40600,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -38766,6 +40701,11 @@
     "eggGroups": [
       "Monster",
       "Grass"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -38863,6 +40803,11 @@
     "eggGroups": [
       "Monster",
       "Grass"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -38981,6 +40926,11 @@
     "eggGroups": [
       "Monster",
       "Grass"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -39091,6 +41041,11 @@
     "eggGroups": [
       "Field",
       "Human-Like"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -39209,6 +41164,11 @@
     "eggGroups": [
       "Field",
       "Human-Like"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -39342,6 +41302,11 @@
     "eggGroups": [
       "Field",
       "Human-Like"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -39432,6 +41397,11 @@
     "eggGroups": [
       "Water 1",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -39527,6 +41497,11 @@
     "eggGroups": [
       "Water 1",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -39646,6 +41621,11 @@
     "eggGroups": [
       "Water 1",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -39729,6 +41709,11 @@
     "eggGroups": [
       "Flying",
       "Flying"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -39812,6 +41797,11 @@
     "eggGroups": [
       "Flying",
       "Flying"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -39901,6 +41891,11 @@
     "eggGroups": [
       "Flying",
       "Flying"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -39992,6 +41987,11 @@
     "eggGroups": [
       "Water 1",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -40102,6 +42102,11 @@
     "eggGroups": [
       "Water 1",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -40140,6 +42145,11 @@
     "eggGroups": [
       "Bug",
       "Bug"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Metronome"
     ]
   },
   {
@@ -40224,6 +42234,11 @@
     "eggGroups": [
       "Bug",
       "Bug"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Metronome"
     ]
   },
   {
@@ -40318,6 +42333,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -40412,6 +42432,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -40514,6 +42539,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -40594,6 +42624,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Poison Barb"
     ]
   },
   {
@@ -40695,6 +42730,11 @@
     "eggGroups": [
       "Fairy",
       "Grass"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Poison Barb"
     ]
   },
   {
@@ -40802,6 +42842,11 @@
     "eggGroups": [
       "Monster",
       "Monster"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -40923,6 +42968,11 @@
     "eggGroups": [
       "Monster",
       "Monster"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -41024,6 +43074,11 @@
     "eggGroups": [
       "Monster",
       "Monster"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -41134,6 +43189,11 @@
     "eggGroups": [
       "Monster",
       "Monster"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -41172,6 +43232,11 @@
     "eggGroups": [
       "Bug",
       "Bug"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -41262,6 +43327,11 @@
     "eggGroups": [
       "Bug",
       "Bug"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Silver Powder"
     ]
   },
   {
@@ -41349,6 +43419,11 @@
     "eggGroups": [
       "Bug",
       "Bug"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Silver Powder"
     ]
   },
   {
@@ -41394,6 +43469,11 @@
     "eggGroups": [
       "Bug",
       "Bug"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Honey"
     ]
   },
   {
@@ -41482,6 +43562,11 @@
     "eggGroups": [
       "Bug",
       "Bug"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Poison Barb"
     ]
   },
   {
@@ -41579,6 +43664,11 @@
     "eggGroups": [
       "Field",
       "Fairy"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -41668,6 +43758,11 @@
     "eggGroups": [
       "Water 1",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -41768,6 +43863,11 @@
     "eggGroups": [
       "Water 1",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -41849,6 +43949,11 @@
     "eggGroups": [
       "Fairy",
       "Grass"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Miracle Seed"
     ]
   },
   {
@@ -41936,6 +44041,11 @@
     "eggGroups": [
       "Fairy",
       "Grass"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Miracle Seed"
     ]
   },
   {
@@ -42020,6 +44130,11 @@
     "eggGroups": [
       "Water 1",
       "Amorphous"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -42123,6 +44238,11 @@
     "eggGroups": [
       "Water 1",
       "Amorphous"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -42244,6 +44364,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -42356,6 +44481,11 @@
     "eggGroups": [
       "Amorphous",
       "Amorphous"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -42473,6 +44603,11 @@
     "eggGroups": [
       "Amorphous",
       "Amorphous"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -42589,6 +44724,11 @@
     "eggGroups": [
       "Field",
       "Human-Like"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -42720,6 +44860,11 @@
     "eggGroups": [
       "Field",
       "Human-Like"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -42831,6 +44976,11 @@
     "eggGroups": [
       "Amorphous",
       "Amorphous"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -42941,6 +45091,11 @@
     "eggGroups": [
       "Flying",
       "Flying"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -43036,6 +45191,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -43140,6 +45300,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -43232,6 +45397,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Cleanse Tag"
     ]
   },
   {
@@ -43331,6 +45501,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -43434,6 +45609,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -43525,6 +45705,11 @@
     "eggGroups": [
       "Mineral",
       "Mineral"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Metal Coat"
     ]
   },
   {
@@ -43627,6 +45812,11 @@
     "eggGroups": [
       "Mineral",
       "Mineral"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Metal Coat"
     ]
   },
   {
@@ -43714,6 +45904,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -43834,6 +46029,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -43925,6 +46125,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "Oval Stone",
+      "None",
+      "None"
     ]
   },
   {
@@ -44016,6 +46221,11 @@
     "eggGroups": [
       "Flying",
       "Flying"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Metronome"
     ]
   },
   {
@@ -44115,6 +46325,11 @@
     "eggGroups": [
       "Amorphous",
       "Amorphous"
+    ],
+    "heldItems": [
+      "Smoke Ball",
+      "Smoke Ball",
+      "Smoke Ball"
     ]
   },
   {
@@ -44214,6 +46429,11 @@
     "eggGroups": [
       "Monster",
       "Dragon"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -44316,6 +46536,11 @@
     "eggGroups": [
       "Monster",
       "Dragon"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -44432,6 +46657,11 @@
     "eggGroups": [
       "Monster",
       "Dragon"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -44547,6 +46777,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "Leftovers",
+      "Leftovers",
+      "Leftovers"
     ]
   },
   {
@@ -44662,6 +46897,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -44801,6 +47041,11 @@
     "eggGroups": [
       "Field",
       "Human-Like"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -44887,6 +47132,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -44980,6 +47230,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -45076,6 +47331,11 @@
     "eggGroups": [
       "Bug",
       "Water 3"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Poison Barb"
     ]
   },
   {
@@ -45187,6 +47447,11 @@
     "eggGroups": [
       "Bug",
       "Water 3"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Poison Barb"
     ]
   },
   {
@@ -45306,6 +47571,11 @@
     "eggGroups": [
       "Human-Like",
       "Human-Like"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Black Sludge"
     ]
   },
   {
@@ -45431,6 +47701,11 @@
     "eggGroups": [
       "Human-Like",
       "Human-Like"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Black Sludge"
     ]
   },
   {
@@ -45531,6 +47806,11 @@
     "eggGroups": [
       "Grass",
       "Grass"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -45627,6 +47907,11 @@
     "eggGroups": [
       "Water 2",
       "Water 2"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -45726,6 +48011,11 @@
     "eggGroups": [
       "Water 2",
       "Water 2"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -45816,6 +48106,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -45905,6 +48200,11 @@
     "eggGroups": [
       "Monster",
       "Grass"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Never-Melt Ice"
     ]
   },
   {
@@ -46013,6 +48313,11 @@
     "eggGroups": [
       "Monster",
       "Grass"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Never-Melt Ice"
     ]
   },
   {
@@ -46135,6 +48440,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Quick Claw"
     ]
   },
   {
@@ -46227,6 +48537,11 @@
     "eggGroups": [
       "Mineral",
       "Mineral"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Metal Coat"
     ]
   },
   {
@@ -46348,6 +48663,11 @@
     "eggGroups": [
       "Monster",
       "Monster"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Lagging Tail"
     ]
   },
   {
@@ -46486,6 +48806,11 @@
     "eggGroups": [
       "Monster",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -46593,6 +48918,11 @@
     "eggGroups": [
       "Grass",
       "Grass"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -46712,6 +49042,11 @@
     "eggGroups": [
       "Human-Like",
       "Human-Like"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Electirizer"
     ]
   },
   {
@@ -46829,6 +49164,11 @@
     "eggGroups": [
       "Human-Like",
       "Human-Like"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Magmarizer"
     ]
   },
   {
@@ -46963,6 +49303,11 @@
     "eggGroups": [
       "Flying",
       "Fairy"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -47062,6 +49407,11 @@
     "eggGroups": [
       "Bug",
       "Bug"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Wide Lens"
     ]
   },
   {
@@ -47175,6 +49525,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -47282,6 +49637,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -47405,6 +49765,11 @@
     "eggGroups": [
       "Bug",
       "Bug"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -47510,6 +49875,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -47610,6 +49980,11 @@
     "eggGroups": [
       "Mineral",
       "Mineral"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -47760,6 +50135,11 @@
     "eggGroups": [
       "Human-Like",
       "Amorphous"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -47871,6 +50251,11 @@
     "eggGroups": [
       "Mineral",
       "Mineral"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Magnet"
     ]
   },
   {
@@ -47988,6 +50373,11 @@
     "eggGroups": [
       "Amorphous",
       "Amorphous"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Spell Tag"
     ]
   },
   {
@@ -48099,6 +50489,11 @@
     "eggGroups": [
       "Fairy",
       "Mineral"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Spell Tag"
     ]
   },
   {
@@ -48188,6 +50583,11 @@
     "eggGroups": [
       "Amorphous",
       "Amorphous"
+    ],
+    "heldItems": [
+      "Old Gateau",
+      "Old Gateau",
+      "Old Gateau"
     ]
   },
   {
@@ -48293,6 +50693,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -48395,6 +50800,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -48504,6 +50914,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -48605,6 +51020,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -48710,6 +51130,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -48799,6 +51224,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -48902,6 +51332,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -49010,6 +51445,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -49097,6 +51537,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -49174,6 +51619,11 @@
     "eggGroups": [
       "Water 1",
       "Fairy"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -49263,6 +51713,11 @@
     "eggGroups": [
       "Water 1",
       "Fairy"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -49371,6 +51826,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -49448,6 +51908,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "Lum Berry",
+      "Lum Berry",
+      "Lum Berry"
     ]
   },
   {
@@ -49597,6 +52062,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -49674,6 +52144,11 @@
     "eggGroups": [
       "Amorphous",
       "Amorphous"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -49751,6 +52226,11 @@
     "eggGroups": [
       "Amorphous",
       "Amorphous"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -49830,6 +52310,11 @@
     "eggGroups": [
       "Amorphous",
       "Amorphous"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -49930,6 +52415,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -49995,6 +52485,11 @@
     "eggGroups": [
       "Flying",
       "Flying"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Oran Berry"
     ]
   },
   {
@@ -50061,6 +52556,11 @@
     "eggGroups": [
       "Flying",
       "Flying"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Sitrus Berry"
     ]
   },
   {
@@ -50131,6 +52631,11 @@
     "eggGroups": [
       "Flying",
       "Flying"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Rawst Berry"
     ]
   },
   {
@@ -50219,6 +52724,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -50311,6 +52821,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -50408,6 +52923,11 @@
     "eggGroups": [
       "Water 1",
       "Water 3"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -50498,6 +53018,11 @@
     "eggGroups": [
       "Field",
       "Flying"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Leek"
     ]
   },
   {
@@ -50615,6 +53140,11 @@
     "eggGroups": [
       "Human-Like",
       "Human-Like"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -50708,6 +53238,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -50805,6 +53340,11 @@
     "eggGroups": [
       "Bug",
       "Bug"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -50911,6 +53451,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -51008,6 +53553,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Quick Claw"
     ]
   },
   {
@@ -51098,6 +53648,11 @@
     "eggGroups": [
       "Water 2",
       "Water 2"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Poison Barb"
     ]
   },
   {
@@ -51164,6 +53719,11 @@
     "eggGroups": [
       "Fairy",
       "Fairy"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -51231,6 +53791,11 @@
     "eggGroups": [
       "Fairy",
       "Fairy"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -51302,6 +53867,11 @@
     "eggGroups": [
       "Fairy",
       "Fairy"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -51383,6 +53953,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -51473,6 +54048,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -51560,6 +54140,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -51663,6 +54248,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Pecha Berry"
     ]
   },
   {
@@ -51772,6 +54362,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Pecha Berry"
     ]
   },
   {
@@ -51919,6 +54514,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Light Ball"
     ]
   },
   {
@@ -52066,6 +54666,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Light Ball"
     ]
   },
   {
@@ -52213,6 +54818,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Light Ball"
     ]
   },
   {
@@ -52360,6 +54970,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Light Ball"
     ]
   },
   {
@@ -52507,6 +55122,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Light Ball"
     ]
   },
   {
@@ -52654,6 +55274,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Light Ball"
     ]
   },
   {
@@ -52733,6 +55358,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Light Ball"
     ]
   },
   {
@@ -52847,6 +55477,11 @@
     "eggGroups": [
       "Fairy",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -52961,6 +55596,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Grip Claw"
     ]
   },
   {
@@ -53079,6 +55719,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Grip Claw"
     ]
   },
   {
@@ -53175,6 +55820,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -53276,6 +55926,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -53369,6 +56024,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Soft Sand"
     ]
   },
   {
@@ -53465,6 +56125,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Soft Sand"
     ]
   },
   {
@@ -53565,6 +56230,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Quick Claw"
     ]
   },
   {
@@ -53665,6 +56335,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -53769,6 +56444,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Quick Claw"
     ]
   },
   {
@@ -53866,6 +56546,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -53971,6 +56656,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -54079,6 +56769,11 @@
     "eggGroups": [
       "Mineral",
       "Mineral"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Everstone"
     ]
   },
   {
@@ -54190,6 +56885,11 @@
     "eggGroups": [
       "Mineral",
       "Mineral"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Everstone"
     ]
   },
   {
@@ -54304,6 +57004,11 @@
     "eggGroups": [
       "Mineral",
       "Mineral"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Everstone"
     ]
   },
   {
@@ -54375,6 +57080,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -54466,6 +57176,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -54573,6 +57288,11 @@
     "eggGroups": [
       "Monster",
       "Water 1"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -54687,6 +57407,11 @@
     "eggGroups": [
       "Monster",
       "Water 1"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -54790,6 +57515,11 @@
     "eggGroups": [
       "Field",
       "Flying"
+    ],
+    "heldItems": [
+      "Leek",
+      "None",
+      "None"
     ]
   },
   {
@@ -54897,6 +57627,11 @@
     "eggGroups": [
       "Amorphous",
       "Amorphous"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Black Sludge"
     ]
   },
   {
@@ -55007,6 +57742,11 @@
     "eggGroups": [
       "Amorphous",
       "Amorphous"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -55096,6 +57836,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -55201,6 +57946,11 @@
     "eggGroups": [
       "Mineral",
       "Mineral"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -55285,6 +58035,11 @@
     "eggGroups": [
       "Mineral",
       "Mineral"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -55367,6 +58122,11 @@
     "eggGroups": [
       "Mineral",
       "Mineral"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -55481,6 +58241,11 @@
     "eggGroups": [
       "Grass",
       "Grass"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -55603,6 +58368,11 @@
     "eggGroups": [
       "Monster",
       "Monster"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Thick Club"
     ]
   },
   {
@@ -55708,6 +58478,11 @@
     "eggGroups": [
       "Amorphous",
       "Amorphous"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -55847,6 +58622,11 @@
     "eggGroups": [
       "Human-Like",
       "Human-Like"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -55908,6 +58688,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -55969,6 +58754,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -56078,6 +58868,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -56187,6 +58982,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -56307,6 +59107,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -56443,6 +59248,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -56536,6 +59346,11 @@
     "eggGroups": [
       "Monster",
       "Water 1"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -56570,6 +59385,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -56604,6 +59424,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -56638,6 +59463,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -56672,6 +59502,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -56706,6 +59541,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -56740,6 +59580,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -56774,6 +59619,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -56808,6 +59658,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -56842,6 +59697,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -56876,6 +59736,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -56910,6 +59775,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -56944,6 +59814,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -56978,6 +59853,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -57012,6 +59892,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -57046,6 +59931,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -57080,6 +59970,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -57114,6 +60009,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -57148,6 +60048,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -57182,6 +60087,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -57216,6 +60126,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -57250,6 +60165,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -57284,6 +60204,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -57318,6 +60243,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -57352,6 +60282,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -57386,6 +60321,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -57420,6 +60360,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -57454,6 +60399,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -57557,6 +60507,11 @@
     "eggGroups": [
       "Water 2",
       "Water 2"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Poison Barb"
     ]
   },
   {
@@ -57666,6 +60621,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Quick Claw"
     ]
   },
   {
@@ -57773,6 +60733,11 @@
     "eggGroups": [
       "Water 1",
       "Water 3"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -57869,6 +60834,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -57966,6 +60936,11 @@
     "eggGroups": [
       "Field",
       "Field"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -58047,6 +61022,11 @@
     "eggGroups": [
       "Fairy",
       "Amorphous"
+    ],
+    "heldItems": [
+      "Mystic Water",
+      "Mystic Water",
+      "Mystic Water"
     ]
   },
   {
@@ -58128,6 +61108,11 @@
     "eggGroups": [
       "Fairy",
       "Amorphous"
+    ],
+    "heldItems": [
+      "Mystic Water",
+      "Mystic Water",
+      "Mystic Water"
     ]
   },
   {
@@ -58209,6 +61194,11 @@
     "eggGroups": [
       "Fairy",
       "Amorphous"
+    ],
+    "heldItems": [
+      "Mystic Water",
+      "Mystic Water",
+      "Mystic Water"
     ]
   },
   {
@@ -58304,6 +61294,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -58401,6 +61396,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -58496,6 +61496,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -58532,6 +61537,11 @@
     "eggGroups": [
       "Bug",
       "Bug"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -58568,6 +61578,11 @@
     "eggGroups": [
       "Bug",
       "Bug"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -58642,6 +61657,11 @@
     "eggGroups": [
       "Bug",
       "Bug"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Silver Powder"
     ]
   },
   {
@@ -58714,6 +61734,11 @@
     "eggGroups": [
       "Bug",
       "Bug"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Silver Powder"
     ]
   },
   {
@@ -58781,6 +61806,11 @@
     "eggGroups": [
       "Fairy",
       "Grass"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "Miracle Seed"
     ]
   },
   {
@@ -58859,6 +61889,11 @@
     "eggGroups": [
       "Water 1",
       "Amorphous"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -58953,6 +61988,11 @@
     "eggGroups": [
       "Water 1",
       "Amorphous"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -59020,6 +62060,11 @@
     "eggGroups": [
       "Amorphous",
       "Amorphous"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -59087,6 +62132,11 @@
     "eggGroups": [
       "Amorphous",
       "Amorphous"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -59154,6 +62204,11 @@
     "eggGroups": [
       "Amorphous",
       "Amorphous"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -59221,6 +62276,11 @@
     "eggGroups": [
       "Amorphous",
       "Amorphous"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -59288,6 +62348,11 @@
     "eggGroups": [
       "Amorphous",
       "Amorphous"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -59373,6 +62438,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -59435,6 +62505,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "Lum Berry",
+      "None",
+      "Lum Berry"
     ]
   },
   {
@@ -59555,6 +62630,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -59675,6 +62755,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -59795,6 +62880,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -59915,6 +63005,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -60035,6 +63130,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -60155,6 +63255,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -60275,6 +63380,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -60395,6 +63505,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -60515,6 +63630,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -60635,6 +63755,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -60755,6 +63880,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -60875,6 +64005,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -60995,6 +64130,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -61115,6 +64255,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -61235,6 +64380,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -61355,6 +64505,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   },
   {
@@ -61475,6 +64630,11 @@
     "eggGroups": [
       "No Eggs",
       "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
     ]
   }
 ]
