@@ -282,4 +282,4 @@ if __name__ != "__main__":
     full_data = load_data()
     personal_table = full_data['personal_table']['Personal']
     diff_forms, NAME_MAP = get_diff_form_dictionary()
-    evolution_dex = full_data['evolution_dex']    
+    evolution_dex = full_data['evolution_dex']
