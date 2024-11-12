@@ -3,7 +3,7 @@ name: Send updates to dependent repo
 on:
   push:
     branches: 
-      - main
+      - Coronet_Tracker
 
 jobs:
   update-tracker:
@@ -36,7 +36,7 @@ jobs:
         API_TOKEN_GITHUB: ${{ secrets.DENMARK_GAMEDATA_AUTOMATION_TOKEN }}
       with:
         source_file: 'input/.'
-        destination_branch: 'master'
+        destination_branch: 'Coronet_Tracker'
         destination_repo: 'TeamLumi/LumiPlat_NuzlockeTracker'
         destination_folder: './src/lumi-calc/input'
         user_email: '<support+actions@github.com>'
@@ -49,7 +49,7 @@ jobs:
         API_TOKEN_GITHUB: ${{ secrets.DENMARK_GAMEDATA_AUTOMATION_TOKEN }}
       with:
         source_file: 'Python_tasks/output/.'
-        destination_branch: 'master'
+        destination_branch: 'Coronet_Tracker'
         destination_repo: 'TeamLumi/LumiPlat_NuzlockeTracker'
         destination_folder: './src/constants/generated_files'
         user_email: '<support+actions@github.com>'
@@ -62,7 +62,7 @@ jobs:
         API_TOKEN_GITHUB: ${{ secrets.DENMARK_GAMEDATA_AUTOMATION_TOKEN }}
       with:
         source_file: 'coronet_input/.'
-        destination_branch: 'master'
+        destination_branch: 'Coronet_Tracker'
         destination_repo: 'TeamLumi/LumiPlat_NuzlockeTracker'
         destination_folder: './src/lumi-calc/coronet_input'
         user_email: '<support+actions@github.com>'
@@ -75,7 +75,7 @@ jobs:
         API_TOKEN_GITHUB: ${{ secrets.DENMARK_GAMEDATA_AUTOMATION_TOKEN }}
       with:
         source_file: 'Python_tasks/coronet_output/.'
-        destination_branch: 'master'
+        destination_branch: 'Coronet_Tracker'
         destination_repo: 'TeamLumi/LumiPlat_NuzlockeTracker'
         destination_folder: './src/constants/coronet_generated_files'
         user_email: '<support+actions@github.com>'
