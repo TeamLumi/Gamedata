@@ -3,25 +3,30 @@ import sys
 ## All that needs to change to change modes is this INPUT_NAME
 ## If you are using 3.0 files, change it to "3.0Input"
 ## Otherwise just set it to "input"
-if len(sys.argv) > 1:
-    if sys.argv[1] == "3.0":
-        INPUT_NAME = "3.0Input"
-        print("Running in 3.0 mode")
-    elif sys.argv[1] == "2.0":
-        INPUT_NAME = "input"
-        print("Running in 2.0F mode")
-    elif sys.argv[1] == "vanilla":
-        INPUT_NAME = "vanilla_input"
-        print("Running in Vanilla Mode")
-else:
-    INPUT_NAME = "input"
 
+GAME_MODE_CORONET = "coronet"
 GAME_MODE_VANILLA = "vanilla"
 GAME_MODE_2 = "2.0"
 GAME_MODE_3 = "3.0"
 
-if INPUT_NAME == "vanilla_input":
-    GAME_MODE = GAME_MODE_VANILLA
+if len(sys.argv) > 1:
+    if sys.argv[1] == GAME_MODE_3:
+        GAME_MODE = GAME_MODE_3
+        print("Running in 3.0 mode")
+    elif sys.argv[1] == GAME_MODE_2:
+        GAME_MODE = GAME_MODE_2
+        print("Running in 2.0F mode")
+    elif sys.argv[1] == GAME_MODE_VANILLA:
+        GAME_MODE = GAME_MODE_VANILLA
+        print("Running in Vanilla Mode")
+    elif sys.argv[1] == GAME_MODE_CORONET:
+        GAME_MODE = GAME_MODE_CORONET
+        print("Running in Coronet Mode")
+else:
+    GAME_MODE = GAME_MODE_2
+
+if GAME_MODE == GAME_MODE_VANILLA:
+    INPUT_NAME = "vanilla_input"
     DEBUG_NAME = "DebugVanilla"
     OUTPUT_NAME = "outputVanilla"
     TRAINER_DOC_PATH = "trainer_docs_vanilla"
@@ -29,8 +34,25 @@ if INPUT_NAME == "vanilla_input":
     NAT_DEX_LENGTH = 493
     TROUBLE_MONS_NAMES = {}
     SCRIPT_DATA = "vanillaScripts"
-if INPUT_NAME == "input":
-    GAME_MODE = GAME_MODE_2
+if GAME_MODE == GAME_MODE_CORONET:
+    INPUT_NAME = "coronet_input"
+    DEBUG_NAME = "coronet_debug"
+    OUTPUT_NAME = "coronet_output"
+    TRAINER_DOC_PATH = "trainer_docs_coronet"
+    POKEDEX_LENGTH = 1010
+    NAT_DEX_LENGTH = 1455
+    TROUBLE_MONS_NAMES = { 
+        1242: 'Ash-Greninja',
+        1285: 'Meowstic-F',
+        1310: 'Rockruff Own-Tempo',
+        1441: 'Indeedee-F',
+        1454: 'Basculegion-F',
+        1456: 'Oinkologne-F',
+        1067: "Galarian Farfetch'd"
+    }
+    SCRIPT_DATA = "scriptdata"
+if GAME_MODE == GAME_MODE_2:
+    INPUT_NAME = "input"
     DEBUG_NAME = "Debug"
     OUTPUT_NAME = "output"
     TRAINER_DOC_PATH = "trainer_docs"
@@ -46,8 +68,8 @@ if INPUT_NAME == "input":
         1067: "Galarian Farfetch'd"
     }
     SCRIPT_DATA = "scriptdata"
-elif INPUT_NAME == "3.0Input":
-    GAME_MODE = GAME_MODE_3
+elif GAME_MODE == GAME_MODE_3:
+    INPUT_NAME = "3.0Input"
     DEBUG_NAME = "3.0Debug"
     OUTPUT_NAME = "3.0Output"
     TRAINER_DOC_PATH = "trainer_docs_3.0"    
