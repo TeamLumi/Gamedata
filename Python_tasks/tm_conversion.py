@@ -5,7 +5,6 @@ import constants
 from moveUtils import (
   get_tech_machine_learnset,
   create_tm_learnset,
-  convert_int_to_bit,
   convert_list_to_binary_array,
   create_move_id_learnset,
 )
@@ -35,9 +34,6 @@ def create_converted_tm_list():
       print(f"This pokemon's TMs are not available through PokeApi: {get_pokemon_name(pokemonID)} ({pokemonID})")
       continue
 
-    # These functions need to be worked on to get the right data.
-    # LearnedList = get_tech_machine_learnset(pokemonID, True)
-    # convertedInts = convert_int_to_bit(LearnedList)
     convertedInts = create_tm_learnset(LearnedList)
 
     outputObj = {

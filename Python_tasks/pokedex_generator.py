@@ -417,7 +417,7 @@ def export_csv():
         for i in range(99):
             firstRow.append("")
         firstRow.append("TM Learnset")
-        for i in range(109):
+        for i in range(154):
             firstRow.append("")
         firstRow.append("Egg Learnset")
         for i in range(99):
@@ -477,8 +477,8 @@ def export_csv():
                     row.append("")
             for move in tmlearnset:
                 row.append(move)
-            if len(tmlearnset) < 110:
-                for i in range(110 - len(tmlearnset)):
+            if len(tmlearnset) < 155:
+                for i in range(155 - len(tmlearnset)):
                     row.append("")
             for move in egglearnset:
                 row.append(move)

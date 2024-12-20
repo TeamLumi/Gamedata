@@ -7,6 +7,7 @@ from json_cache import JsonCache
 import constants
 repo_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 input_file_path = os.path.join(repo_file_path, constants.INPUT_NAME)
+tm_file_path = os.path.join(repo_file_path, "TMLearnset")
 resource_file_path = os.path.join(repo_file_path, "Python_tasks", "Resources")
 output_file_path = os.path.join(repo_file_path, "Python_tasks", constants.OUTPUT_NAME)
 
@@ -80,5 +81,14 @@ def load_data():
     for name, filename in resource_file_paths.items():
         file_path = os.path.join(resource_file_path, filename)
         data[name] = json_cache.get_json(file_path)
-   
+
+    tms = {}
+    for filename in os.listdir(tm_file_path):
+        file_path = os.path.join(tm_file_path, filename)
+        if filename.endswith(".meta"):
+            continue
+
+        tms[filename.split(".json")[0]] = json_cache.get_json(file_path)
+
+    data["tm_learnsets"] = tms
     return data
