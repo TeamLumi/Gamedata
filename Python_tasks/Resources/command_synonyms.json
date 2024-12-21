@@ -1,0 +1,2645 @@
+{
+    "7102C5BDA4": [
+		"_END",
+        "_NOP",
+		"_SP_EVENT_DATA_END",
+        "_SCENE_CHANGE_END"
+    ],
+    "7102C60154 -- DUMMY": [
+        "_DUMMY",
+        "_LD_REG_VAL",
+        "_LD_REG_WDATA",
+        "_LD_REG_ADR",
+        "_LD_ADR_VAL",
+        "_LD_ADR_REG",
+        "_LD_REG_REG",
+        "_LD_ADR_ADR",
+        "_CP_REG_REG",
+        "_CP_REG_VAL",
+        "_CP_REG_ADR",
+        "_CP_ADR_REG",
+        "_CP_ADR_VAL",
+        "_CP_ADR_ADR",
+        "_CMPVAL",
+        "_DEBUG_WATCH_WORK",
+        "_VM_ADD",
+        "_OBJ_ID_JUMP",
+        "_BG_ID_JUMP",
+        "_PLAYER_DIR_JUMP",
+        "_ADD_WAITICON",
+        "_DEL_WAITICON",
+        "_TALKMSG_ALLPUT",
+        "_TALKMSG_ALLPUT_ARC",
+        "_TALKMSG_ARC",
+        "_TALKMSG_ALLPUT_PMS",
+        "_TALKMSG_PMS",
+        "_TALKMSG_NG_POKE_NAME",
+        "_TALKMSG_SP_AUTO",
+        "_TALKMSG_NOSKIP",
+        "_TALKMSG_CON_SIO",
+        "_TALKMSG_AUTOGET",
+        "_LAST_KEYWAIT",
+        "_NEXT_ANM_LAST_KEYWAIT",
+        "_MENU_REQ",
+        "_BG_SCROLL",
+        "_GUINNESS_WIN",
+        "_BMPMENU_INIT",
+        "_BMPMENU_INIT_EX",
+        "_BMPMENU_MAKE_LIST",
+        "_BMPMENU_MAKE_LIST16",
+        "_BMPMENU_START",
+        "_SEL_WIN_JUMP",
+        "_BMPLIST_INIT",
+        "_BMPLIST_INIT_EX",
+        "_BMPLIST_MAKE_LIST",
+        "_BMPLIST_START",
+        "_BMPMENU_HV_START",
+        "_SND_INITIAL_VOL_SET",
+        "_BGM_PLAY_CHECK",
+        "_BGM_SPECIAL_CLR",
+        "_BGM_FADEOUT",
+        "_BGM_FADEOUT_PLAY",
+        "_BGM_FADEIN",
+        "_BGM_PLAYER_PAUSE",
+        "_PERAP_DATA_CHECK",
+        "_PERAP_REC_START",
+        "_PERAP_REC_STOP",
+        "_PERAP_SAVE",
+        "_SND_CLIMAX_DATA_LOAD",
+        "_OBJ_ANIME_POS",
+        "_ANIME_LABEL",
+        "_ANIME_DATA",
+        "_TALK_OBJ_PAUSE_ALL",
+        "_OBJ_PAUSE_CLEAR_ALL",
+        "_VANISH_DUMMY_OBJ_ADD",
+        "_VANISH_DUMMY_OBJ_DEL",
+        "_PLAYER_POS_OFFSET_SET",
+        "_NOT_ZONE_DEL_SET",
+        "_MOVE_CODE_GET",
+        "_EVENT_DATA",
+        "_EVENT_DATA_END",
+        "_GOLD_WIN_WRITE",
+        "_GOLD_WIN_DEL",
+        "_GOLD_WRITE",
+        "_COIN_WIN_WRITE",
+        "_COIN_WIN_DEL",
+        "_COIN_WRITE",
+        "_GET_COIN_NUM",
+        "_ADD_COIN",
+        "_SUB_COIN",
+        "_HIDE_ITEM_EVENT",
+        "_ADD_BOX_ITEM",
+        "_CHK_BOX_ITEM",
+        "_ADD_GOODS",
+        "_SUB_GOODS",
+        "_ADD_GOODS_CHK",
+        "_GOODS_CHK",
+        "_ADD_TRAP",
+        "_SUB_TRAP",
+        "_ADD_TRAP_CHK",
+        "_TRAP_CHK",
+        "_ADD_TREASURE",
+        "_SUB_TREASURE",
+        "_ADD_TREASURE_CHK",
+        "_TREASURE_CHK",
+        "_ADD_TAMA",
+        "_SUB_TAMA",
+        "_ADD_TAMA_CHK",
+        "_TAMA_CHK",
+        "_CB_SEAL_KIND_NUM_GET",
+        "_CHG_POKE_WAZA",
+        "_APPROVE_POISON_DEAD",
+        "_INIT_WEATHER",
+        "_SET_WEATHER",
+        "_UPDATE_WEATHER",
+        "_GET_MAP_POS",
+        "_GET_TEMOTI_POKE_NUM",
+        "_SET_MAP_PROC",
+        "_WIFI_AUTO_REG",
+        "_WIFI_P2P_MATCH_EVENT_CALL",
+        "_WIFI_P2P_MATCH_SET_DEL",
+        "_COMM_GET_CURRENT_ID",
+        "_POKE_WINDOW_PUT_PP",
+        "_POKE_WINDOW_DEL",
+        "_POKE_WINDOW_ANM",
+        "_POKE_WINDOW_ANM_WAIT",
+        "_BTL_SEARCHER_DIR_MV_SET",
+        "_MSG_BOY_EVENT",
+        "_IMAGE_CLIP_SET_PROC",
+        "_IMAGE_CLIP_VIEW_TV_SET_PROC",
+        "_OEKAKI_BOARD_SET_PROC",
+        "_TR_CARD_SET_PROC",
+        "_TRADE_LIST_SET_PROC",
+        "_RECORD_CORNER_SET_PROC",
+        "_WORLDTRADE_SET_PROC",
+        "_DPW_INIT_PROC",
+        "_FIRST_POKE_SELECT_SET_AND_DEL",
+        "_BAG_SET_PROC_NORMAL",
+        "_NPC_TRADE_POKELIST_SET_PROC",
+        "_UNION_POKELIST_SET_PROC",
+        "_CON_POKELIST_SET_PROC",
+        "_CON_POKELIST_GET_RESULT",
+        "_CON_POKESTATUS_SET_PROC",
+        "_POKESTATUS_GET_RESULT",
+        "_NAMEIN",
+        "_WIPE_FADE_START",
+        "_WIPE_FADE_END_CHECK",
+        "_COLOSSEUM_MAP_CHANGE_OUT",
+        "_CYCLING_ROAD_SET",
+        "_PLAYER_FORM_GET",
+        "_CON_HERO_CHANGE",
+        "_MY_TR_TYPE_NAME",
+        "_GOODS_NAME",
+        "_TRAP_NAME",
+        "_TAMA_NAME",
+        "_TRAINER_TYPE_GET",
+        "_TRAINER_LOSE",
+        "_TRAINER_LOSE_CHECK",
+        "_NORMAL_LOSE",
+        "_LOSE_CHECK",
+        "_HAIFU_POKE_RETRY_CHECK",
+        "_DEBUG_BTL_SET",
+        "_DEBUG_TRAINER_FLAG_SET",
+        "_DEBUG_TRAINER_FLAG_ON_JUMP",
+        "_DEBUG_TR_TALK_BTL",
+        "_SEL_PARENT_WIN",
+        "_SEL_CHILD_WIN",
+        "_DEBUG_PARENT_WIN",
+        "_DEBUG_CHILD_WIN",
+        "_DEBUG_SIO_ENCOUNT",
+        "_DEBUG_SIO_CONTEST",
+        "_CONSIO_TIMING_SEND",
+        "_CONSIO_TIMING_CHECK",
+        "_CON_SYSTEM_CREATE",
+        "_CON_SYSTEM_EXIT",
+        "_CON_JUDGE_NAME_GET",
+        "_CON_BREEDER_NAME_GET",
+        "_CON_NICK_NAME_GET",
+        "_CON_NUM_TAG_SET",
+        "_CON_SIO_PARAM_INIT_SET",
+        "_CON_RANK_NAME_GET",
+        "_CON_TYPE_NAME_GET",
+        "_CON_VICTORY_BREEDER_NAME_GET",
+        "_CON_VICTORY_ITEM_NO_GET",
+        "_CON_VICTORY_NICK_NAME_GET",
+        "_CON_RANKING_CHECK",
+        "_CON_VICTORY_ENTRY_NO_GET",
+        "_CON_MY_ENTRY_NO_GET",
+        "_CON_OBJ_CODE_GET",
+        "_CON_POPULARITY_GET",
+        "_CON_DESK_MODE_GET",
+        "_CON_RIBBON_NAME_GET",
+        "_CON_ACCE_NO_GET",
+        "_CON_ENTRY_PARAM_GET",
+        "_CON_CAMERA_FLASH_SET",
+        "_CON_CAMERA_FLASH_CHECK",
+        "_CON_HBLANK_STOP",
+        "_CON_HBLANK_START",
+        "_CON_ENDING_SKIP_CHECK",
+        "_CON_MSGPRINT_FLAG_SET",
+        "_CON_MSGPRINT_FLAG_RESET",
+        "_SP_LOCATION_SET",
+        "_ELEVATOR_FLOOR_GET",
+        "_ELEVATOR_FLOOR_WRITE",
+        "_CHK_ZENKOKU_ZUKAN",
+        "_GET_HYOUKA_MSGID",
+        "_HONEY_TREE_AFTER_SET",
+        "_TSIGN_SET_PROC",
+        "_REPORT_WIN_OPEN",
+        "_REPORT_WIN_CLOSE",
+        "_CLIP_TVSAVEDATA_CHECK",
+        "_CLIP_CONSAVEDATA_CHECK",
+        "_CLIP_TV_TITLE_SAVE",
+        "_COMM_SYNCHRONIZE",
+        "_COMM_RESET",
+        "_UNION_PARENT_CARD_TALK_NO",
+        "_UNION_GET_INFO_TALK_NO",
+        "_UNION_BEACON_CHANGE",
+        "_UNION_CONNECT_TALK_DENIED",
+        "_UNION_CONNECT_TALK_OK",
+        "_UNION_TRAINER_NAME_REGIST",
+        "_UNION_RETURN_SETUP",
+        "_UNION_CONNECT_CUT_RESTART",
+        "_UNION_GET_TALK_NUMBER",
+        "_UNION_ID_SET",
+        "_UNION_RESULT_GET",
+        "_UNION_OBJ_ALL_VANISH",
+        "_UNION_SCRIPT_RESULT_SET",
+        "_UNION_PARENT_START_COMMAND_SET",
+        "_UNION_CHILD_SELECT_COMMAND_SET",
+        "_UNION_CONNECT_START",
+        "_UNION_MAP_CHANGE",
+        "_UNION_VIEW_TR_SEL_SET",
+        "_UNION_VIEW_TR_TYPE_MSG_GET",
+        "_UNION_VIEW_TR_TYPE_NO_GET",
+        "_UNION_VIEW_MY_STATUS_SET",
+        "_SHOP_CALL",
+        "_FIX_SHOP_CALL",
+        "_FIX_GOODS_CALL",
+        "_FIX_SEAL_CALL",
+        "_ACCE_SHOP_CALL",
+        "_PLAYER_REPORT_DRAW_SET",
+        "_PLAYER_REPORT_DRAW_DEL",
+        "_GAME_OVER_CALL",
+        "_UG_MAN_SHOP_NPC_RAND_PLACE",
+        "_COMM_DIRECT_END",
+        "_COMM_DIRECT_END_TIMING",
+        "_COMM_DIRECT_ENTER_BTL_ROOM",
+        "_COMM_PLAYER_SET_DIR",
+        "_SET_UP_DOOR_ANIME",
+        "_PMS_INPUT_SINGLE",
+        "_PMS_INPUT_DOUBLE",
+        "_PMS_BUF",
+        "_GET_SEED_COMPOST",
+        "_GET_SEED_GROUND",
+        "_SET_SEED_COMPOST",
+        "_SXY_BG_POS_CHANGE",
+        "_MSGEXPANDBUF",
+        "_GET_SODATE_NAME",
+        "_INIT_WATER_GYM",
+        "_INIT_STEEL_GYM",
+        "_INIT_ELEC_GYM",
+        "_GET_TAMAGO_COUNT",
+        "_UG_SHOP_TALK_START",
+        "_UG_SHOP_TALK_END",
+        "_UG_SHOP_ITEM_NAME",
+        "_UG_SHOP_TRAP_NAME",
+        "_DEL_SODATEYA_EGG",
+        "_GET_SODATEYA_EGG",
+        "_MSG_SODATEYA_AISHOU",
+        "_MSG_AZUKE_SET",
+        "_SET_SODATEYA_POKE",
+        "_SODATEYA_POKELIST",
+        "_HIKITORI_LIST",
+        "_SODATE_POKE_LEVEL_STR",
+        "_HIKITORI_RYOUKIN",
+        "_HIKITORI_POKE",
+        "_TEMOTI_POKE_SEX_GET",
+        "_MAILBOX",
+        "_GET_MAILBOX_DATANUM",
+        "_SUB_NATSUKI",
+        "_HIKITORI_LIST_NAME_SET",
+        "_GET_SODATEYA_AISHOU",
+        "_SODATEYA_TAMAGO_CHK",
+        "_WAZALIST_SET_PROC",
+        "_WAZALIST_GET_RESULT",
+        "_TEMOTI_WAZANO",
+        "_FNOTE_START_SET",
+        "_FNOTE_DATA_MAKE",
+        "_FNOTE_DATA_SAVE",
+        "_IMC_ACCE_ADD_ITEM",
+        "_IMC_ACCE_ADD_ITEM_CHK",
+        "_IMC_ACCE_ITEM_CHK",
+        "_IMC_BG_ADD_ITEM",
+        "_IMC_BG_ITEM_CHK",
+        "_NUTMIXER_PLAY_CHECK",
+        "_POKE_MAIL_CHK",
+        "_PAPERPLANE_SET",
+        "_POKE_MAIL_DEL",
+        "_ITEMLIST_SET_PROC",
+        "_ITEMLIST_GET_RESULT",
+        "_BTOWER_WORK_CLEAR",
+        "_BTOWER_WORK_INIT",
+        "_BTOWER_WORK_RELEASE",
+        "_BTOWER_TOOLS",
+        "_BTOWER_SEVEN_POKE_GET",
+        "_BTOWER_PRIZE_GET",
+        "_BTOWER_PRIZEMAN_SET",
+        "_BTOWER_SEND_BUF",
+        "_BTOWER_RECV_BUF",
+        "_BTOWER_GET_LEADER_ROOMID",
+        "_BTOWER_IS_LEADER_EXIST",
+        "_RECORD_GET",
+        "_RECORD_ADD",
+        "_RECORD_SET",
+        "_RECORD_SETIFLARGE",
+        "_CLIMAX_DEMO",
+        "_INIT_SAFARI_TRAIN",
+        "_UNDERGROUND_TALK_COUNT",
+        "_NATURAL_PARK_WALK_COUNT_GET",
+        "_NATURAL_PARK_ACCESSORY_NO_GET",
+        "_NEWS_COUNT_SET",
+        "_NEWS_COUNT_CHK",
+        "_OSHIE_WAZA_COUNT",
+        "_OSHIE_WAZALIST_SET_PROC",
+        "_REMAIND_WAZALIST_SET_PROC",
+        "_OSHIE_WAZALIST_GET_RESULT",
+        "_REMAIND_WAZALIST_GET_RESULT",
+        "_NORMAL_WAZALIST_SET_PROC",
+        "_NORMAL_WAZALIST_GET_RESULT",
+        "_FLD_TRADE_ALLOC",
+        "_FLD_TRADE_MONSNO",
+        "_FLD_TRADE_CHG_MONSNO",
+        "_FLD_TRADE_EVENT",
+        "_FLD_TRADE_DEL",
+        "_ZUKAN_TEXT_VER_UP",
+        "_ZUKAN_SEX_VER_UP",
+        "_CHK_RIBBON_COUNT",
+        "_REGULATION_LIST_CALL",
+        "_DEBUG_PRINT_WORK",
+        "_DEBUG_PRINT_FLAG",
+        "_DEBUG_PRINT_WORK_STATIONED",
+        "_DEBUG_PRINT_FLAG_STATIONED",
+        "_AIKOTOBA_KABEGAMI_SET",
+        "_GET_UG_HATA_NUM",
+        "_SETUP_PASO_ANM",
+        "_START_PASO_ON_ANM",
+        "_START_PASO_OFF_ANM",
+        "_NICK_NAME_PC",
+        "_POKEPARK_CONTROL",
+        "_POKEPARK_DEPOSIT_COUNT",
+        "_POKEPARK_TRANS_MONS",
+        "_POKEPARK_GET_SCORE",
+        "_DENDOU_BALL_ANM",
+        "_SETUP_RAH_CYL",
+        "_START_RAH_CYL",
+        "_ADD_SCORE",
+        "_ACCE_NAME",
+        "_POKETCH_HOOK_SET",
+        "_POKETCH_HOOK_RESET",
+        "_SLOT_MACHINE",
+        "_FLDOBJ_SHAKE_ANM",
+        "_FLDOBJ_BLINK_ANM",
+        "_DRESSING_IMC_ACCE_CHECK",
+        "_AGB_CARTRIDGE_VER_GET",
+        "_UNDERGROUND_TALK_COUNT_CLEAR",
+        "_HIDEMAP_STATE_CHG",
+        "_IMC_BG_NAME",
+        "_COMP_COIN",
+        "_SLOT_RENTYAN_CHK",
+        "_ADD_COIN_CHK",
+        "_IMC_ACCE_SUB_ITEM",
+        "_NEW_NANKAI_WORD_SET",
+        "_NEW_NANKAI_WORD_COMPLETE_CHECK",
+        "_D17SYSTEM_MAP_SELECT",
+        "_UNDERGROUND_TOOL_GIVE_COUNT",
+        "_UNDERGROUND_KASEKI_DIG_COUNT",
+        "_UNDERGROUND_TRAP_HIT_COUNT",
+        "_POFIN_ADD",
+        "_SODATEYA_POKELIST_SET_PROC",
+        "_SODATEYA_POKELIST_GET_RESULT",
+        "_UNDERGROUND_TALK_COUNT2",
+        "_ZISHIN",
+        "_BTL_POINT_WIN_WRITE",
+        "_BTL_POINT_WIN_DEL",
+        "_BTL_POINT_WRITE",
+        "_GET_BTL_POINT",
+        "_BTL_POINT_ADD",
+        "_BTL_POINT_SUB",
+        "_COMP_BTL_POINT",
+        "_GET_BP_GIFT",
+        "_UG_BALLITEM_CHECK",
+        "_CHECK_MY_GSID",
+        "_FRIEND_DATA_NUM",
+        "_GET_COIN_GIFT",
+        "_SUB_WK_COIN",
+        "_COMP_WK_COIN",
+        "_AIKOTOBA_OKURIMONO_CHK",
+        "_WIFI_HUSIGINAOKURIMONO_OPEN_FLAG_SET",
+        "_UNION_GET_CARD_TALK_NO",
+        "_WIRELESS_ICON_EASY",
+        "_WIRELESS_ICON_EASY_END",
+        "_SAVE_FIELD_OBJ",
+        "_SET_ESCAPE_LOCATION",
+        "_FIELDOBJ_BITSET_FELLOWHIT",
+        "_UNION_BMPMENU_START",
+        "_UNION_BATTLE_START_CHECK",
+        "_FLD_SCOPE_MODE_ON",
+        "_FLD_SCOPE_MODE_OFF",
+        "_EVENT_CAMERA_MODE",
+        "_SET_EVENT_CAMERA_PARAM",
+        "_EVENT_CAMERA_WAIT",
+        "_EVENT_CAMERA_FRAME",
+        "_FADE_BALL",
+        "_FADE_DEFAULT",
+        "_TV_ENTRY_PARKINFO_INIT",
+        "_TV_ENTRY_PARKINFO_ITEM",
+        "_TV_ENTRY_PARKINFO_ACCE",
+        "_MYSTERY_POSTMAN_INIT",
+        "_MYSTERY_PRESENT_CHECK",
+        "_MYSTERY_GET_PRESENT_ID",
+        "_MYSTERY_RECEIVE_CHECK",
+        "_MYSTERY_RECEIVE_PRESENT",
+        "_MYSTERY_DISABLE_MSG",
+        "_MYSTERY_ENABLE_MSG",
+        "_MYSTERY_POSTMAN_END",
+        "_MYSTERY_POSTMAN_SAVE_END",
+        "_UNKNOWN_MSG",
+        "_TV_INTERVIEW_MSG",
+        "_TV_SET_ENDFLAG",
+        "_TV_MAKE_MSG",
+        "_TV_GET_DATA_TOTAL",
+        "_CAMERA_COS_ANGLE_WAIT",
+        "_OFFSET_WAIT",
+        "_CON_RANK_SET",
+        "_BTWR_TOOL_CHK_ENTRY_POKE_NUM",
+        "_BTWR_TOOL_GET_WIFI_RANK",
+        "_BTWR_SUB_CHK_ENTRY_POKE",
+        "_BTWR_SUB_CHOICE_BTL_PARTNER",
+        "_BTWR_SUB_SET_LEADER_CLEAR_FLAG",
+        "_BTWR_SUB_GET_LEADER_CLEAR_FLAG",
+        "_BTWR_SUB_GET_MINE_OBJ",
+        "_BTWR_DEB_IS_WORK_NULL",
+        "_BTWR_SUB_BTL_TRAINER_SET",
+        "_TUREARUKI_ITEM_TIMER_SET",
+        "_FUREAI_TALK_END"
+    ],
+    "7102C5FD18": [
+        "_TIME_WAIT"
+    ],
+    "7102C5BBA0": [
+        "_CMPWK"
+    ],
+    "7102C5B364": [
+		"_CALL",
+        "_CHG_COMMON_SCR"
+    ],
+    "7102C5BA5C": [
+		"_RET",
+        "_CHG_LOCAL_SCR"
+    ],
+    "7102C5B550": [
+        "_JUMP",
+		"_SCENE_CHANGE_LABEL",
+        "_FLAG_CHANGE_LABEL",
+        "_OBJ_CHANGE_LABEL",
+        "_INIT_CHANGE_LABEL"
+    ],
+    "7102C5B628": [
+        "_IF_JUMP"
+    ],
+    "7102C5C988": [
+        "_IF_CALL"
+    ],
+    "7102C5B32C": [
+        "_IFVAL_JUMP",
+        "_IFWK_JUMP"
+    ],
+    "7102C5B4D4": [
+        "_IFVAL_CALL",
+        "_IFWK_CALL"
+    ],
+    "7102C5FD40": [
+        "_SWITCH"
+    ],
+    "7102C5E4B0": [
+        "_CASE_JUMP"
+    ],
+    "7102C5FD60": [
+        "_CASE_CANCEL"
+    ],
+    "7102C5BFB4": [
+        "_FLAG_SET"
+    ],
+    "7102C5EFE0": [
+        "_ARRIVE_FLAG_SET"
+    ],
+    "7102C5FCAC": [
+        "_FLAG_RESET"
+    ],
+    "7102C5BABC": [
+        "_FLAG_CHECK"
+    ],
+    "7102C5F6B4": [
+        "_IF_FLAGON_JUMP"
+    ],
+    "7102C5B950": [
+        "_IF_FLAGOFF_JUMP"
+    ],
+    "7102C5FD30": [
+        "_IF_FLAGON_CALL"
+    ],
+    "7102C5FC9C": [
+        "_IF_FLAGOFF_CALL"
+    ],
+    "7102C5B6F0": [
+        "_FLAG_CHECK_WK"
+    ],
+    "7102C5F66C": [
+        "_FLAG_SET_WK"
+    ],
+    "7102C5E9AC": [
+        "_TRAINER_FLAG_SET"
+    ],
+    "7102C5FC14": [
+        "_TRAINER_FLAG_RESET"
+    ],
+    "7102C5F5C4": [
+        "_TRAINER_FLAG_CHECK"
+    ],
+    "7102C5FD08": [
+        "_IF_TR_FLAGON_JUMP"
+    ],
+    "7102C5FAEC": [
+        "_IF_TR_FLAGOFF_JUMP"
+    ],
+    "7102C5B9B8": [
+        "_IF_TR_FLAGON_CALL"
+    ],
+    "7102C5C024": [
+        "_IF_TR_FLAGOFF_CALL"
+    ],
+    "7102C5B700": [
+        "_ADD_WK"
+    ],
+    "7102C5F618": [
+        "_SUB_WK"
+    ],
+    "7102C5B4E4": [
+        "_LDVAL",
+		"_LDWK",
+		"_LDWKVAL"
+    ],
+    "7102C5C138": [
+        "_TALKMSG_BTOWER_APPEAR"
+    ],
+    "7102C5B354": [
+        "_TALKMSG",
+        "_TALK_KEYWAIT"
+    ],
+    "7102C5F780": [
+        "_TALKMSG_SP"
+    ],
+    "7102C5B5BC": [
+        "_AB_KEYWAIT"
+    ],
+    "7102C5EBFC": [
+        "_AB_KEY_TIME_WAIT"
+    ],
+    "7102C5C77C": [
+        "_TALK_OPEN"
+    ],
+    "7102C5B448": [
+        "_TALK_CLOSE",
+        "_TALK_CLOSE_NO_CLEAR"
+    ],
+    "7102C5FC84": [
+        "_EASY_OBJ_MSG"
+    ],
+    "7102C5BC7C": [
+        "_EASY_MSG"
+    ],
+    "7102C5B830": [
+        "_BOARD_MAKE"
+    ],
+    "7102C5F03C": [
+        "_INFOBOARD_MAKE"
+    ],
+    "7102C5F8C4": [
+        "_BOARD_REQ"
+    ],
+    "7102C5DFF0": [
+        "_BOARD_REQ_WAIT"
+    ],
+    "7102C5B42C": [
+        "_BOARD_MSG",
+        "_BOARD_END_WAIT"
+    ],
+    "7102C5DC5C": [
+        "_EASY_BOARD_MSG"
+    ],
+    "7102C5E8B8": [
+        "_EASY_INFOBOARD_MSG"
+    ],
+    "7102C5EBE0": [
+        "_YES_NO_WIN"
+    ],
+    "7102C5B478": [
+        "_SE_PLAY",
+        "_ME_PLAY"
+    ],
+    "7102C5B4F4": [
+        "_SE_STOP"
+    ],
+    "7102C5CD14": [
+        "_SE_WAIT"
+    ],
+    "7102C5B760": [
+        "_VOICE_PLAY"
+    ],
+    "7102C5B710": [
+        "_VOICE_WAIT"
+    ],
+    "7102C5D3DC": [
+        "_EASY_VOICE_MSG"
+    ],
+    "7102C5BB38": [
+        "_ME_WAIT"
+    ],
+    "7102C5DD14": [
+        "_BGM_PLAY"
+    ],
+    "7102C5BD1C": [
+        "_BGM_STOP"
+    ],
+    "7102C5F6D4": [
+        "_BGM_NOW_MAP_PLAY"
+    ],
+    "7102C5F8EC": [
+        "_BGM_SPECIAL_SET"
+    ],
+    "7102C5E094": [
+        "_PLAYER_FIELD_DEMO_BGM_PLAY"
+    ],
+    "7102C5B638": [
+        "_CTRL_BGM_FLAG_SET"
+    ],
+    "7102C5CF0C": [
+        "_CTRL_BGM_FLAG_RESET"
+    ],
+    "7102C5F938": [
+        "_OBJ_ANIME"
+    ],
+    "7102C5B5D4": [
+        "_OBJ_ANIME_WAIT"
+    ],
+    "7102C5BF5C": [
+        "_OBJ_PAUSE_ALL"
+    ],
+    "7102C5F718": [
+        "_OBJ_PAUSE"
+    ],
+    "7102C5BA70": [
+        "_OBJ_PAUSE_CLEAR"
+    ],
+    "7102C5FCE8": [
+        "_OBJ_ADD"
+    ],
+    "7102C5B5AC": [
+        "_OBJ_DEL"
+    ],
+    "7102C5C454": [
+        "_TURN_HERO_SITE"
+    ],
+    "7102C5B858": [
+        "_TALK_OBJ_START"
+    ],
+    "7102C5C998": [
+        "_TALK_OBJ_START_TURN_NOT"
+    ],
+    "7102C5B9D8": [
+        "_TALK_OBJ_END"
+    ],
+    "7102C5ED98": [
+        "_TALK_START"
+    ],
+    "7102C5F748": [
+        "_EVENT_START"
+    ],
+    "7102C5BA3C": [
+        "_TALK_END",
+        "_EVENT_END"
+    ],
+    "7102C5EC54": [
+        "_PLAYER_POS_GET"
+    ],
+    "7102C5B618": [
+        "_OBJ_POS_GET"
+    ],
+    "7102C5D058": [
+        "_PLAYER_DIR_GET"
+    ],
+    "7102C5FCD8": [
+        "_MOVE_CODE_CHANGE"
+    ],
+    "7102C5ED88": [
+        "_PAIR_OBJID_SET"
+    ],
+    "7102C5B7D4": [
+        "_SCENE_CHANGE_DATA"
+    ],
+    "7102C5D424": [
+        "_ADD_GOLD"
+    ],
+    "7102C5EC64": [
+        "_SUB_GOLD"
+    ],
+    "7102C5EA78": [
+        "_COMP_GOLD"
+    ],
+    "7102C5E0E4": [
+        "_FLD_ITEM_EVENT"
+    ],
+    "7102C5CC48": [
+        "_ADD_ITEM"
+    ],
+    "7102C5CD80": [
+        "_SUB_ITEM"
+    ],
+    "7102C5EC9C": [
+        "_ADD_ITEM_CHK"
+    ],
+    "7102C5FCF8": [
+        "_ITEM_CHK"
+    ],
+    "7102C5F728": [
+        "_WAZA_ITEM_CHK"
+    ],
+    "7102C5F9CC": [
+        "_GET_POCKET_NO"
+    ],
+    "7102C5C0FC": [
+        "_CHECK_POCKET"
+    ],
+    "7102C5C960": [
+        "_CB_ITEM_NUM_GET"
+    ],
+    "7102C5B7C4": [
+        "_CB_ITEM_NUM_ADD"
+    ],
+    "7102C5E0F4": [
+        "_UNKNOWN_FORM_GET"
+    ],
+    "7102C5F1C0": [
+        "_ADD_POKEMON"
+    ],
+    "7102C5F758": [
+        "_ADD_TAMAGO"
+    ],
+    "7102C5F0F0": [
+        "_CHK_POKE_WAZA"
+    ],
+    "7102C5EE54": [
+        "_CHK_POKE_WAZA_GROUP"
+    ],
+    "7102C5F738": [
+        "_REVENGE_TRAINER_SEARCH"
+    ],
+    "7102C5FC04": [
+        "_FINISH_MAP_PROC"
+    ],
+    "7102C5CE28": [
+        "_DENDOU_NUM_GET"
+    ],
+    "7102C5BF0C": [
+        "_POKE_WINDOW_PUT"
+    ],
+    "7102C5E6A4": [
+        "_BTL_SEARCHER_EVENT_CALL"
+    ],
+    "7102C5C160": [
+        "_IMAGE_CLIP_VIEW_CON_SET_PROC"
+    ],
+    "7102C5F6E0": [
+        "_CUSTOM_BALL_EVENT_CALL"
+    ],
+    "7102C5F884": [
+        "_TMAP_BG_SET_PROC"
+    ],
+    "7102C5E66C": [
+        "_BOX_SET_PROC"
+    ],
+    "7102C5BB04": [
+        "_DENDOU_SET_PROC"
+    ],
+    "7102C5FA20": [
+        "_PC_DENDOU_SET_PROC"
+    ],
+    "7102C5C970": [
+        "_FIRST_POKE_SELECT_PROC"
+    ],
+    "7102C5B840": [
+        "_BAG_SET_PROC_KINOMI"
+    ],
+    "7102C5B6D4": [
+        "_BAG_GET_RESULT"
+    ],
+    "7102C5BCA0": [
+        "_POKELIST_SET_PROC"
+    ],
+    "7102C5FA98": [
+        "_POKELIST_GET_RESULT"
+    ],
+    "7102C5FB6C": [
+        "_WIFI_EARTH_SET_PROC"
+    ],
+    "7102C5D228": [
+        "_EYE_TRAINER_MOVE_SET"
+    ],
+    "7102C5F6F0": [
+        "_EYE_TRAINER_MOVE_CHECK"
+    ],
+    "7102C5F190": [
+        "_EYE_TRAINER_TYPE_GET"
+    ],
+    "7102C5D910": [
+        "_EYE_TRAINER_ID_GET"
+    ],
+    "7102C5BBD0": [
+        "_NAMEIN_POKE"
+    ],
+    "7102C5FC50": [
+        "_WHITE_OUT"
+    ],
+    "7102C5FA64": [
+        "_WHITE_IN"
+    ],
+    "7102C5FB88": [
+        "_BLACK_OUT"
+    ],
+    "7102C5BC94": [
+        "_BLACK_IN"
+    ],
+    "7102C5B418": [
+        "_MAP_CHANGE",
+        "_MAP_CHANGE_NONE_FADE"
+    ],
+    "7102C5B7A8": [
+        "_COLOSSEUM_MAP_CHANGE_IN"
+    ],
+    "7102C5EAFC": [
+        "_GET_BEFORE_ZONE_ID"
+    ],
+    "7102C5FBB8": [
+        "_GET_NOW_ZONE_ID"
+    ],
+    "7102C5B7E4": [
+        "_KABENOBORI"
+    ],
+    "7102C5BEB4": [
+        "_NAMINORI"
+    ],
+    "7102C5E3E0": [
+        "_BICYCLE_CHECK"
+    ],
+    "7102C5FC74": [
+        "_BICYCLE_REQ"
+    ],
+    "7102C5F6C4": [
+        "_BICYCLE_REQ_NON_BGM"
+    ],
+    "7102C5FA30": [
+        "_PLAYER_REQ_BIT_ON"
+    ],
+    "7102C5CE84": [
+        "_PLAYER_REQ_START"
+    ],
+    "7102C5F018": [
+        "_TAKINOBORI"
+    ],
+    "7102C5E7B0": [
+        "_SORAWOTOBU"
+    ],
+    "7102C5BFC4": [
+        "_HIDEN_FLASH"
+    ],
+    "7102C5FBC8": [
+        "_HIDEN_KIRIBARAI"
+    ],
+    "7102C5E788": [
+        "_CUTIN"
+    ],
+    "7102C5C2A8": [
+        "_PLAYER_NAME"
+    ],
+    "7102C5C43C": [
+        "_RIVAL_NAME"
+    ],
+    "7102C5F6A4": [
+        "_SUPPORT_NAME"
+    ],
+    "7102C5E22C": [
+        "_POKEMON_NAME"
+    ],
+    "7102C5FB78": [
+        "_ITEM_NAME"
+    ],
+    "7102C5FBD4": [
+        "_POCKET_NAME"
+    ],
+    "7102C5F8B4": [
+        "_ITEM_WAZA_NAME"
+    ],
+    "7102C5DEBC": [
+        "_WAZA_NAME"
+    ],
+    "7102C5BCE8": [
+        "_NUMBER_NAME"
+    ],
+    "7102C5B8D4": [
+        "_NUMBER_NAME_EX"
+    ],
+    "7102C5BCC8": [
+        "_BIRTH_DAY_CHECK"
+    ],
+    "7102C5F628": [
+        "_ANOON_SEE_NUM"
+    ],
+    "7102C5F04C": [
+        "_NICK_NAME"
+    ],
+    "7102C5BBB0": [
+        "_POKETCH_NAME"
+    ],
+    "7102C5D068": [
+        "_TR_TYPE_NAME"
+    ],
+    "7102C5E3B0": [
+        "_POKEMON_NAME_EXTRA"
+    ],
+    "7102C5E6CC": [
+        "_FIRST_POKEMON_NAME"
+    ],
+    "7102C5F05C": [
+        "_RIVAL_POKEMON_NAME"
+    ],
+    "7102C5FBE4": [
+        "_SUPPORT_POKEMON_NAME"
+    ],
+    "7102C5E694": [
+        "_FIRST_POKE_NO_GET"
+    ],
+    "7102C5EAA8": [
+        "_NUTS_NAME"
+    ],
+    "7102C5BBE8": [
+        "_SEIKAKU_NAME"
+    ],
+    "7102C5DECC": [
+        "_ZONE_NAME"
+    ],
+    "7102C5EBD0": [
+        "_GENERATE_INFO_GET"
+    ],
+    "7102C5EF08": [
+        "_TRAINER_ID_GET"
+    ],
+    "7102C5F858": [
+        "_TRAINER_BTL_SET"
+    ],
+    "7102C5B80C": [
+        "_TRAINER_MULTI_BTL_SET"
+    ],
+    "7102C5F554": [
+        "_TRAINER_MSG_SET"
+    ],
+    "7102C5F958": [
+        "_TRAINER_TALK_TYPE_GET"
+    ],
+    "7102C5D960": [
+        "_REVENGE_TRAINER_TALK_TYPE_GET"
+    ],
+    "7102C5FB28": [
+        "_TRAINER_BGM_SET"
+    ],
+    "7102C5B988": [
+        "_SEACRET_POKE_RETRY_CHECK"
+    ],
+    "7102C5C8F8": [
+        "_2VS2_BATTLE_CHECK"
+    ],
+    "7102C5F818": [
+        "_CONTEST_PROC"
+    ],
+    "7102C5C818": [
+        "_CON_HAVE_RIBBON_CHECK"
+    ],
+    "7102C5CB74": [
+        "_CON_RECORD_DISP"
+    ],
+    "7102C5FBF4": [
+        "_SHINOU_ZUKAN_SEE_NUM"
+    ],
+    "7102C5BC34": [
+        "_SHINOU_ZUKAN_GET_NUM"
+    ],
+    "7102C5BF6C": [
+        "_ZENKOKU_ZUKAN_SEE_NUM"
+    ],
+    "7102C5BFD0": [
+        "_ZENKOKU_ZUKAN_GET_NUM"
+    ],
+    "7102C5C76C": [
+        "_WILD_BTL_SET"
+    ],
+    "7102C5F524": [
+        "_SP_WILD_BTL_SET"
+    ],
+    "7102C5D1AC": [
+        "_FIRST_BTL_SET"
+    ],
+    "7102C5F534": [
+        "_CAPTURE_BTL_SET"
+    ],
+    "7102C5F030": [
+        "_HONEY_TREE"
+    ],
+    "7102C5CE94": [
+        "_GET_HONEY_TREE_STATE"
+    ],
+    "7102C5BBC0": [
+        "_HONEY_TREE_BTL_SET"
+    ],
+    "7102C5B7FC": [
+        "_REPORT_SAVE_CHECK"
+    ],
+    "7102C5BC54": [
+        "_REPORT_SAVE"
+    ],
+    "7102C5F86C": [
+        "_GET_POKETCH"
+    ],
+    "7102C5FB94": [
+        "_GET_POKETCH_FLAG"
+    ],
+    "7102C5F9BC": [
+        "_POKETCH_ADD"
+    ],
+    "7102C5EBA8": [
+        "_POKETCH_CHECK"
+    ],
+    "7102C5CFF0": [
+        "_SYS_FLAG_ZUKAN_GET"
+    ],
+    "7102C5D600": [
+        "_SYS_FLAG_ZUKAN_SET"
+    ],
+    "7102C5FAA8": [
+        "_SYS_FLAG_SHOES_GET"
+    ],
+    "7102C5F92C": [
+        "_SYS_FLAG_SHOES_SET"
+    ],
+    "7102C5CCD0": [
+        "_SYS_FLAG_BADGE_GET"
+    ],
+    "7102C5FAC4": [
+        "_SYS_FLAG_BADGE_SET"
+    ],
+    "7102C5C690": [
+        "_SYS_FLAG_BADGE_COUNT"
+    ],
+    "7102C5B770": [
+        "_SYS_FLAG_BAG_GET"
+    ],
+    "7102C5B7B8": [
+        "_SYS_FLAG_BAG_SET"
+    ],
+    "7102C5E260": [
+        "_SYS_FLAG_PAIR_GET"
+    ],
+    "7102C5F208": [
+        "_SYS_FLAG_PAIR_SET"
+    ],
+    "7102C5F7A0": [
+        "_SYS_FLAG_PAIR_RESET"
+    ],
+    "7102C5F978": [
+        "_SYS_FLAG_ONE_STEP_GET"
+    ],
+    "7102C5B914": [
+        "_SYS_FLAG_ONE_STEP_SET"
+    ],
+    "7102C5F4B0": [
+        "_SYS_FLAG_ONE_STEP_RESET"
+    ],
+    "7102C5FAFC": [
+        "_SYS_FLAG_GAME_CLEAR_GET"
+    ],
+    "7102C5F914": [
+        "_SYS_FLAG_GAME_CLEAR_SET"
+    ],
+    "7102C5EAB8": [
+        "_SYS_FLAG_KAIRIKI_SET"
+    ],
+    "7102C5DD24": [
+        "_SYS_FLAG_KAIRIKI_RESET"
+    ],
+    "7102C5ED4C": [
+        "_SYS_FLAG_KAIRIKI_GET"
+    ],
+    "7102C5BE0C": [
+        "_SYS_FLAG_FLASH_SET"
+    ],
+    "7102C5D098": [
+        "_SYS_FLAG_FLASH_RESET"
+    ],
+    "7102C5D6BC": [
+        "_SYS_FLAG_FLASH_GET"
+    ],
+    "7102C5E144": [
+        "_SYS_FLAG_KIRIBARAI_SET"
+    ],
+    "7102C5F324": [
+        "_SYS_FLAG_KIRIBARAI_RESET"
+    ],
+    "7102C5C42C": [
+        "_SYS_FLAG_KIRIBARAI_GET"
+    ],
+    "7102C5DD2C": [
+        "_SET_WARP_ID"
+    ],
+    "7102C5CDD8": [
+        "_GET_MY_SEX"
+    ],
+    "7102C5C200": [
+        "_PC_KAIFUKU"
+    ],
+    "7102C5C4C0": [
+        "_WAIT_3D_ANIME"
+    ],
+    "7102C5F440": [
+        "_FREE_3D_ANIME"
+    ],
+    "7102C5EE94": [
+        "_SEQ_OPEN_DOOR"
+    ],
+    "7102C5C5D4": [
+        "_SEQ_CLOSE_DOOR"
+    ],
+    "7102C5B750": [
+        "_GET_SEED_STATUS"
+    ],
+    "7102C5F808": [
+        "_GET_SEED_TYPE"
+    ],
+    "7102C5FB18": [
+        "_GET_SEED_COUNT"
+    ],
+    "7102C5ECDC": [
+        "_SET_SEED_NUTS"
+    ],
+    "7102C5BAEC": [
+        "_SET_SEED_WATER"
+    ],
+    "7102C5E9D8": [
+        "_TAKE_SEED"
+    ],
+    "7102C5C150": [
+        "_SXY_POS_CHANGE"
+    ],
+    "7102C5C7AC": [
+        "_OBJ_POS_CHANGE"
+    ],
+    "7102C5B940": [
+        "_SXY_MV_CHANGE"
+    ],
+    "7102C5B468": [
+		"_OBJ_DIR_CHANGE",
+        "_SXY_DIR_CHANGE"
+    ],
+    "7102C5BC10": [
+        "_SXY_EXIT_POS_CHANGE"
+    ],
+    "7102C5E800": [
+        "_RETURN_SCRIPT_WK_SET"
+    ],
+    "7102C5F164": [
+        "_GET_SODATEYA_ZIISAN"
+    ],
+    "7102C5F8FC": [
+        "_PUSH_WATER_GYM_BUTTON"
+    ],
+    "7102C5BA90": [
+        "_INIT_GHOST_GYM"
+    ],
+    "7102C5B33C": [
+		"_MOVE_FLD_LIFT",
+        "_MOVE_GHOST_GYM_LIFT"
+    ],
+    "7102C5CA9C": [
+        "_INIT_COMBAT_GYM"
+    ],
+    "7102C5F458": [
+        "_ROTATE_ELEC_GYM_GEAR"
+    ],
+    "7102C5D1BC": [
+        "_GET_POKE_COUNT"
+    ],
+    "7102C5F470": [
+        "_GET_POKE_COUNT2"
+    ],
+    "7102C5FA10": [
+        "_GET_POKE_COUNT3"
+    ],
+    "7102C5B9A8": [
+        "_GET_POKE_COUNT4"
+    ],
+    "7102C5EC44": [
+        "_UG_SHOP_MENU_INIT"
+    ],
+    "7102C5F37C": [
+        "_TAMAGO_DEMO"
+    ],
+    "7102C5EF68": [
+        "_TEMOTI_MONSNO"
+    ],
+    "7102C5F094": [
+        "_MONS_OWN_CHK"
+    ],
+    "7102C5B8E4": [
+        "_CHK_TEMOTI_POKERUS"
+    ],
+    "7102C5FB38": [
+        "_SUB_MY_GOLD"
+    ],
+    "7102C5F1E8": [
+        "_COMP_MY_GOLD"
+    ],
+    "7102C5EA88": [
+        "_OBJ_VISIBLE"
+    ],
+    "7102C5F968": [
+        "_OBJ_INVISIBLE"
+    ],
+    "7102C5F234": [
+        "_RANKING_VIEW"
+    ],
+    "7102C5E27C": [
+        "_GET_TIME_ZONE"
+    ],
+    "7102C5B408": [
+        "_GET_RND",
+        "_GET_RND_NEXT"
+    ],
+    "7102C5B820": [
+        "_GET_NATSUKI"
+    ],
+    "7102C5BAAC": [
+        "_ADD_NATSUKI"
+    ],
+    "7102C5D6F4": [
+        "_TEMOTI_POKE_CHK"
+    ],
+    "7102C5CD90": [
+        "_OOKISA_RECORD_CHK"
+    ],
+    "7102C5BD80": [
+        "_OOKISA_RECORD_SET"
+    ],
+    "7102C5BA80": [
+        "_OOKISA_TEMOTI_SET_BUF"
+    ],
+    "7102C5CC04": [
+        "_OOKISA_KIROKU_SET_BUF"
+    ],
+    "7102C5CE68": [
+        "_OOKISA_KURABE_INIT"
+    ],
+    "7102C5D130": [
+        "_WAZA_COUNT"
+    ],
+    "7102C5F394": [
+        "_WAZA_DEL"
+    ],
+    "7102C5EDF4": [
+        "_TEMOTI_WAZA_NAME"
+    ],
+    "7102C5D704": [
+        "_NUTMIXER_CALL"
+    ],
+    "7102C5DCBC": [
+        "_ZUKAN_CHK_SHINOU"
+    ],
+    "7102C5B8F4": [
+        "_ZUKAN_CHK_NATIONAL"
+    ],
+    "7102C5C848": [
+        "_ZUKAN_RECONGNIZE_SHINOU"
+    ],
+    "7102C5F894": [
+        "_ZUKAN_RECONGNIZE_NATIONAL"
+    ],
+    "7102C5F3A4": [
+        "_URAYAMA_ENCOUNT_SET"
+    ],
+    "7102C5D3F4": [
+        "_URAYAMA_ENCOUNT_NO_CHK"
+    ],
+    "7102C5C074": [
+        "_KASEKI_COUNT"
+    ],
+    "7102C5CEEC": [
+        "_ITEMNO_TO_MONSNO"
+    ],
+    "7102C5C858": [
+        "_KASEKI_ITEMNO"
+    ],
+    "7102C5C8A4": [
+        "_POKE_LEVEL_CHK"
+    ],
+    "7102C5F3B8": [
+        "_BTOWER_APP_CALL"
+    ],
+    "7102C5F9DC": [
+        "_RECORD_INC"
+    ],
+    "7102C5BBF8": [
+        "_SAFARI_START"
+    ],
+    "7102C5F4C8": [
+        "_SAFARI_END"
+    ],
+    "7102C5BDDC": [
+        "_CALL_SAFARI_SCOPE"
+    ],
+    "7102C5EF40": [
+        "_MOVE_SAFARI_TRAIN"
+    ],
+    "7102C5EE44": [
+        "_CHECK_SAFARI_TRAIN"
+    ],
+    "7102C5DCCC": [
+        "_PLAYER_HEGIHT_VALID"
+    ],
+    "7102C5D718": [
+        "_GET_POKE_SEIKAKU"
+    ],
+    "7102C5B904": [
+        "_CHK_POKE_SEIKAKU_ALL"
+    ],
+    "7102C5D078": [
+        "_NATURAL_PARK_WALK_COUNT_CLEAR"
+    ],
+    "7102C5BCB8": [
+        "_GET_NEWS_POKE_NO"
+    ],
+    "7102C5DD3C": [
+        "_START_GENERATE"
+    ],
+    "7102C5F8DC": [
+        "_ADD_MOVE_POKE"
+    ],
+    "7102C5EA98": [
+        "_REMAIND_WAZA_COUNT"
+    ],
+    "7102C5BEFC": [
+        "_ZENKOKU_ZUKAN_FLAG"
+    ],
+    "7102C5F948": [
+        "_CHK_RIBBON_COUNT_ALL"
+    ],
+    "7102C5BEA4": [
+        "_CHK_RIBBON"
+    ],
+    "7102C5CC58": [
+        "_SET_RIBBON"
+    ],
+    "7102C5FA88": [
+        "_RIBBON_NAME"
+    ],
+    "7102C5C2C8": [
+        "_CHK_PRMEXP"
+    ],
+    "7102C5F110": [
+        "_CHK_WEEK"
+    ],
+    "7102C5F2DC": [
+        "_TV_ENTRY_WATCH_HIDE_ITEM"
+    ],
+    "7102C5F214": [
+        "_TV_ENTRY_WATCH_CHANGE_NAME"
+    ],
+    "7102C5BDBC": [
+        "_ASHIATO_CHK"
+    ],
+    "7102C5C8C4": [
+        "_PC_RECOVER_ANM"
+    ],
+    "7102C5F24C": [
+        "_ELEVATOR_ANM"
+    ],
+    "7102C5F8A4": [
+        "_CALL_SHIP_DEMO"
+    ],
+    "7102C5BA4C": [
+        "_PM_VERSION_GET"
+    ],
+    "7102C5F100": [
+        "_FRONT_POKEMON"
+    ],
+    "7102C5CFA8": [
+        "_TEMOTI_POKE_TYPE"
+    ],
+    "7102C5E104": [
+        "_GET_KUJI_ATARI_NUM"
+    ],
+    "7102C5D500": [
+        "_KUJI_ATARI_CHK"
+    ],
+    "7102C5F0E0": [
+        "_KUJI_ATARI_INIT"
+    ],
+    "7102C5F224": [
+        "_TV_INTERVIEWER_CHECK"
+    ],
+    "7102C5BB78": [
+        "_COUNT_MONSBOX_SPACE"
+    ],
+    "7102C5BB2C": [
+        "_INIT_FLD_LIFT"
+    ],
+    "7102C5C128": [
+        "_CHECK_FLD_LIFT"
+    ],
+    "7102C5BB1C": [
+        "_PARTY_MONSNO_CHECK"
+    ],
+    "7102C5B998": [
+        "_PARTY_DEOKISISUFORM_CHANGE"
+    ],
+    "7102C5E7C8": [
+        "_CHECKMINOMUCHICOMP"
+    ],
+    "7102C5C464": [
+        "_GET_NOW_HOUR"
+    ],
+    "7102C5E7A0": [
+        "_D20R0106_LEGEND_IS_UNSEAL"
+    ],
+    "7102C5B960": [
+        "_NAMEIN_MONUMENT"
+    ],
+    "7102C5BA9C": [
+        "_MONUMENT_NAME"
+    ],
+    "7102C5BFF0": [
+        "_LEVEL_JIJII_NO"
+    ],
+    "7102C5B930": [
+        "_POKE_LEVEL_GET"
+    ],
+    "7102C5F9AC": [
+        "_C08R0801SCOPECAMERASET"
+    ],
+    "7102C5E6DC": [
+        "_LEVEL_JIJII_INIT"
+    ],
+    "7102C5D48C": [
+        "_REGULAR_CHECK"
+    ],
+    "7102C5BC24": [
+        "_TEMOTI_POKE_CONTEST_STATUS_GET"
+    ],
+    "7102C5B3E0": [
+		"_CHECK_POFIN",
+        "_POFIN_ADD_CHK"
+    ],
+    "7102C5F4D4": [
+        "_IS_HAIHU_EVENT_ENABLE"
+    ],
+    "7102C5B978": [
+        "_GET_RANDOM_HIT"
+    ],
+    "7102C5BEDC": [
+        "_HIDENEFF_START"
+    ],
+    "7102C5F770": [
+        "_AUSU_ITEM_CHECK"
+    ],
+    "7102C5E93C": [
+        "_SEAL_NAME"
+    ],
+    "7102C5BC44": [
+        "_DAME_TAMAGO_CHK_ALL"
+    ],
+    "7102C5F544": [
+        "_GET_TRCARD_RANK"
+    ],
+    "7102C5CC78": [
+        "_SET_TURN_HERO_FRAME"
+    ],
+    "7102C5D00C": [
+        "_SET_TURN_OBJ_FRAME"
+    ],
+    "7102C5DDEC": [
+        "_DEBUG_PRINT"
+    ],
+    "7102C5C1B8": [
+        "_FADE_WAIT"
+    ],
+    "7102C5C264": [
+        "_HERO_MOVE_GRID_CENTER"
+    ],
+    "7102C5BF7C": [
+        "_SET_POS_HERO_MATCH_X"
+    ],
+    "7102C5E5E0": [
+        "_SET_POS_HERO_MATCH_Z"
+    ],
+    "7102C5BFE0": [
+        "_GET_LANGUAGE"
+    ],
+    "7102C5E2F8": [
+        "_GET_REL_POS_HERO"
+    ],
+    "7102C5CAA8": [
+        "_CAMERA_TARGET_HERO"
+    ],
+    "7102C5C558": [
+        "_CAMERA_TARGET_DUMMY"
+    ],
+    "7102C5B9C8": [
+        "_DUMMY_ANIME"
+    ],
+    "7102C5BCF8": [
+        "_DUMMY_ANIME_WAIT"
+    ],
+    "7102C5C940": [
+        "_DUMMY_SET_POS"
+    ],
+    "7102C5CAB4": [
+        "_DUMMY_SET_POS_HERO"
+    ],
+    "7102C5F7AC": [
+        "_SET_CUSTUM_WIN_MSBT"
+    ],
+    "7102C5E444": [
+        "_ADD_CUSTUM_WIN_LABEL"
+    ],
+    "7102C5BFA4": [
+        "_OPEN_CUSTUM_WIN"
+    ],
+    "7102C5C7DC": [
+        "_VISIBLE_OBJ_PROP"
+    ],
+    "7102C5F638": [
+        "_INVISIBLE_OBJ_PROP"
+    ],
+    "7102C5CE08": [
+        "_HIT_DOOR_ANIME"
+    ],
+    "7102C5F06C": [
+        "_HIT_DOOR_ANIME_WAIT"
+    ],
+    "7102C5E99C": [
+        "_SET_DOOR_OBJ"
+    ],
+    "7102C5F64C": [
+        "_ROTOMU_FORM_CHECK"
+    ],
+    "7102C5BCD8": [
+        "_TEMOTI_ROTOMU_FORM_WAZA_CHG"
+    ],
+    "7102C5C034": [
+        "_EVENT_GET_TEMOTI_POKE_CHK_GET_POS"
+    ],
+    "7102C5F65C": [
+        "_TURN_HERO_TALK_OBJ"
+    ],
+    "7102C5F824": [
+        "_FADE_SPEED"
+    ],
+    "7102C5C118": [
+        "_DOOR_FORCE_ANIME_END"
+    ],
+    "7102C5D59C": [
+        "_LDVAL_VERSION"
+    ],
+    "7102C5E424": [
+        "_LDVAL_SEX"
+    ],
+    "7102C5C75C": [
+        "_GROUP_EXIST_CHECK"
+    ],
+    "7102C5E0C4": [
+        "_GROUP_ENTRY_CHECK"
+    ],
+    "7102C5BC6C": [
+        "_GROUP_NAME"
+    ],
+    "7102C5F008": [
+        "_GROUP_LEADER_NAME"
+    ],
+    "7102C5DF24": [
+        "_GROUP_NAME_IN"
+    ],
+    "7102C5C094": [
+        "_GROUP_ENTRY"
+    ],
+    "7102C5E850": [
+        "_GROUP_MAKE"
+    ],
+    "7102C5F084": [
+        "_TV_INTERVIEW_ENTRY"
+    ],
+    "7102C5DF3C": [
+        "_TV_START"
+    ],
+    "7102C5EF30": [
+        "_TV_END"
+    ],
+    "7102C5D2B8": [
+        "_TV_START_NUMBER"
+    ],
+    "7102C5DAC0": [
+        "_DEBUG_RESET_WORK"
+    ],
+    "7102C5F58C": [
+        "_SET_SYS_FLAG"
+    ],
+    "7102C5DEDC": [
+        "_RESET_SYS_FLAG"
+    ],
+    "7102C5CE74": [
+        "_CAMERA_SET_COS_ANGLE"
+    ],
+    "7102C5E128": [
+        "_HERO_MOVE_GRID_CENTER_FRONT"
+    ],
+    "7102C5F5B4": [
+        "_WARP_ENABLE_SET"
+    ],
+    "7102C5D1CC": [
+        "_DOOR_ENABLE_SET"
+    ],
+    "7102C5C41C": [
+        "_AC_ANIM_LOCK"
+    ],
+    "7102C5C930": [
+        "_AC_ANIM_RELEASE"
+    ],
+    "7102C5ED68": [
+        "_SET_OFFSET"
+    ],
+    "7102C5D970": [
+        "_NAMINORI_END"
+    ],
+    "7102C5EBB8": [
+        "_TAKIKUDARI"
+    ],
+    "7102C5CEB0": [
+        "_KABENOBORI_CHECK"
+    ],
+    "7102C5ED2C": [
+        "_TALK_POKE_GET_TEMOTI_INDEX"
+    ],
+    "7102C5EE70": [
+        "_NATURAL_PARK_GET_MONOHIROI_ITEM_NO"
+    ],
+    "7102C5E8A8": [
+        "_CON_OPEN_POKE_SELECT_MENU"
+    ],
+    "7102C5D664": [
+        "_CON_OPEN_CAPSULE_SELECT_MENU"
+    ],
+    "7102C5D1DC": [
+        "_CON_OPEN_BOUTIQUE_SELECT_MENU"
+    ],
+    "7102C5E994": [
+        "_CON_WAIT_CONTEST_MENU"
+    ],
+    "7102C5CB44": [
+        "_CON_MY_ENTRY_NO_WORD_SET"
+    ],
+    "7102C5EB0C": [
+        "_CON_BEST_PERFORMER_CHECK"
+    ],
+    "7102C5F514": [
+        "_CON_CATEGORY_RIBBON_NAME_SET"
+    ],
+    "7102C5C0A4": [
+        "_CON_HAVE_CONTEST_STAR_CHECK"
+    ],
+    "7102C5ECAC": [
+        "_CON_CONTEST_STAR_NAME_SET"
+    ],
+    "7102C5F154": [
+        "_CON_REWARD_NAME_SET"
+    ],
+    "7102C5F0C0": [
+        "_OBJ_ANIME_FUREAI"
+    ],
+    "7102C5F480": [
+        "_CON_CATEGORY_AND_RANK_SET"
+    ],
+    "7102C5CCA8": [
+        "_NATURAL_PARK_POKE_CREATE"
+    ],
+    "7102C5E548": [
+        "_NATURAL_PARK_POKE_KAISAN"
+    ],
+    "7102C5F3C8": [
+        "_NATURAL_PARK_POKE_SYUUGOU"
+    ],
+    "7102C5E4C0": [
+        "_CON_CHECK_ENTRY_POKE"
+    ],
+    "7102C5BF4C": [
+        "_NATURAL_PARK_POKE_SELECT_MENU"
+    ],
+    "7102C5ED78": [
+        "_CON_RESET_PARAMETER"
+    ],
+    "7102C5BC04": [
+        "_CON_SELECT_SINGLE_MODE"
+    ],
+    "7102C5C390": [
+        "_CON_SELECT_MULTI_MODE"
+    ],
+    "7102C5F490": [
+        "_DPR_SHOP_OPEN"
+    ],
+    "7102C5D574": [
+        "_DPR_SHOP_OPEN_WAIT"
+    ],
+    "7102C5D140": [
+        "_DOOR_TRANSITION_ZONE_SET"
+    ],
+    "7102C5C538": [
+        "_IMAGE_CLIP_VIEW_CON_CHECK_PROC"
+    ],
+    "7102C5D77C": [
+        "_MOVE_COMBAT_GYM_WALL"
+    ],
+    "7102C5E85C": [
+        "_EV_ENTITY_PLAYER_MOVE_START"
+    ],
+    "7102C5C868": [
+        "_EV_ENTITY_PLAYER_MOVE_END"
+    ],
+    "7102C5BDCC": [
+        "_EV_ENTITY_PLAYER_MOVE_RESET"
+    ],
+    "7102C5D414": [
+        "_CHECK_CAN_SEED_WATER"
+    ],
+    "7102C5C170": [
+        "_SHOP_OPEN_FIXED"
+    ],
+    "7102C5EF58": [
+        "_SHOP_OPEN_SEAL"
+    ],
+    "7102C5BF8C": [
+        "_SHOP_OPEN_BATTLE"
+    ],
+    "7102C5E740": [
+        "_SHOP_OPEN_FLOWER"
+    ],
+    "7102C5C3EC": [
+        "_SHOP_OPEN_OTENKI"
+    ],
+    "7102C5E1B4": [
+        "_SHOP_OPEN_SELL"
+    ],
+    "7102C5CD70": [
+        "_GET_COSTUME"
+    ],
+    "7102C5DE04": [
+        "_SHOP_OPEN_BOUTIQUE_BUY"
+    ],
+    "7102C5ECCC": [
+        "_SHOP_OPEN_BOUTIQUE_CHANGE"
+    ],
+    "7102C5F4A0": [
+        "_CON_REWARD_SHOWMASTER_NAME_SET"
+    ],
+    "7102C5F1A0": [
+        "_CON_TWINKLE_STAR_NAME_SET"
+    ],
+    "7102C5E28C": [
+        "_ANAWOHORU"
+    ],
+    "7102C5EF78": [
+        "_ANANUKENOHIMO"
+    ],
+    "7102C5E5F0": [
+        "_TELEPORT"
+    ],
+    "7102C5F1F8": [
+        "_AMAIKAORI"
+    ],
+    "7102C5BF24": [
+        "_AMAIMITU"
+    ],
+    "7102C5F2EC": [
+        "_WARP_START_ANIMATION"
+    ],
+    "7102C5D728": [
+        "_WARP_END_ANIMATION"
+    ],
+    "7102C5EE14": [
+        "_SAFARI_SCOPE_SEQUENCE"
+    ],
+    "7102C5BEEC": [
+        "_EVENT_CAMERA_INDEX"
+    ],
+    "7102C5C9CC": [
+        "_EVENT_CAMERA_END_WAIT"
+    ],
+    "7102C5F1B0": [
+        "_SHOP_OPEN_PALPARK"
+    ],
+    "7102C5BF9C": [
+        "_BTOWER_APP_WAIT"
+    ],
+    "7102C5F304": [
+        "_FLOOR_OPEN"
+    ],
+    "7102C5F264": [
+        "_FLOOR_CLOSE"
+    ],
+    "7102C5CDE8": [
+        "_MONEY_OPEN"
+    ],
+    "7102C5E4D0": [
+        "_MONEY_CLOSE"
+    ],
+    "7102C5C044": [
+        "_AZUKARIYA_EXIST_EGG"
+    ],
+    "7102C5C298": [
+        "_AZUKARIYA_STORED_COUNT"
+    ],
+    "7102C5CEFC": [
+        "_AZUKARIYA_SET_STORED_NAME"
+    ],
+    "7102C5C79C": [
+        "_AZUKARIYA_STORE"
+    ],
+    "7102C5CC68": [
+        "_AZUKARIYA_RESTORE"
+    ],
+    "7102C5C5C4": [
+        "_AZUKARIYA_LOVE_LEVEL"
+    ],
+    "7102C5E1C4": [
+        "_AZUKARIYA_GET_STORED_MONSNO"
+    ],
+    "7102C5F1D0": [
+        "_AZUKARIYA_GET_EGG"
+    ],
+    "7102C5C32C": [
+        "_AZUKARIYA_DISCARD_EGG"
+    ],
+    "7102C5F314": [
+        "_AZUKARIYA_SET_STORED_INFO_STR"
+    ],
+    "7102C5C1F0": [
+        "_AZUKARIYA_GET_STORED_SEX"
+    ],
+    "7102C5DCDC": [
+        "_AZUKARIYA_OLDMAN_INIT"
+    ],
+    "7102C5BDFC": [
+        "_ADD_CUSTUM_WIN_LABEL_WORD_SET"
+    ],
+    "7102C5D674": [
+        "_OPEN_CUSTUM_WIN_WORD_SET"
+    ],
+    "7102C5BECC": [
+        "_BTL_ENCSEQ_LOAD"
+    ],
+    "7102C5DD9C": [
+        "_USE_SPRAY"
+    ],
+    "7102C5C280": [
+        "_BIRTH_MOUNTH_INPUT"
+    ],
+    "7102C5BF34": [
+        "_BIRTH_DAY_INPUT"
+    ],
+    "7102C5C6A0": [
+        "_SPEAKERS_NAME"
+    ],
+    "7102C5C10C": [
+        "_GET_PLAYER_CAP"
+    ],
+    "7102C5ECFC": [
+        "_CAMERA_SHAKE"
+    ],
+    "7102C5E9F8": [
+        "_EVENT_ENTITY_CLIP_PLAY"
+    ],
+    "7102C5C7F0": [
+        "_EVENT_ENTITY_CLIP_WAIT"
+    ],
+    "7102C5ED0C": [
+        "_FACE_INDEX"
+    ],
+    "7102C5EE80": [
+        "_TEMOTI_BALL_LOAD"
+    ],
+    "7102C5F174": [
+        "_TEMOTI_BALL_LOAD_WAIT"
+    ],
+    "7102C5EA08": [
+        "_POKECEN_PUT_BALL"
+    ],
+    "7102C5EE2C": [
+        "_POKECEN_CLEAR_BALL"
+    ],
+    "7102C5C014": [
+        "_CHARA_LOOK_LOCK"
+    ],
+    "7102C5C054": [
+        "_CHARA_LOOK_RELEASE"
+    ],
+    "7102C5E8E0": [
+        "_TALK_OBJ_START_LOOK_NONE"
+    ],
+    "7102C5C064": [
+        "_BOUKENNOOTO_TIPS_OPEN"
+    ],
+    "7102C5F0D0": [
+        "_HIDENEFF_WAIT"
+    ],
+    "7102C5D510": [
+        "_GET_URAYAMA_ENCOUNT_INDEX"
+    ],
+    "7102C5EAC4": [
+        "_CUSTOM_BALL_NUM_ADD"
+    ],
+    "7102C5C0E4": [
+        "_CHANGE_FASHION_REQ"
+    ],
+    "7102C5D988": [
+        "_WARP_PANEL_START"
+    ],
+    "7102C5DDAC": [
+        "_WARP_PANEL_END"
+    ],
+    "7102C5D794": [
+        "_CON_OPEN_MATCHING_MENU"
+    ],
+    "7102C5EFD0": [
+        "_OPEN_PASSWORD_SWKEYBOARD"
+    ],
+    "7102C5CC14": [
+        "_DENDOU_NUM_SET"
+    ],
+    "7102C5D150": [
+        "_TEMOTI_BOX_POKE_CHK"
+    ],
+    "7102C5EE04": [
+        "_TEMOTI_BOX_MONSNO"
+    ],
+    "7102C5DDC4": [
+        "_CALL_WAZA_OMOIDASHI_UI"
+    ],
+    "7102C5C87C": [
+        "_CALL_WAZA_WASURE_UI"
+    ],
+    "7102C5C180": [
+        "_CALL_WAZA_OSHIE_UI"
+    ],
+    "7102C5C084": [
+        "_CHECK_WAZA_OSHIE"
+    ],
+    "7102C5C8B4": [
+        "_CHECK_WAZA_OSHIE_ALL"
+    ],
+    "7102C5C198": [
+        "_TEMOTI_BOX_POKEMON_NAME"
+    ],
+    "7102C5EB34": [
+        "_BTWR_TOOL_CLEAR_PLAY_DATA"
+    ],
+    "7102C5EE38": [
+        "_BTWR_TOOL_PUSH_NOW_LOCATION"
+    ],
+    "7102C5EE64": [
+        "_BTWR_TOOL_POP_NOW_LOCATION"
+    ],
+    "7102C5D7A4": [
+        "_BTWR_TOOL_SET_PLAY_MODE"
+    ],
+    "7102C5D160": [
+        "_BTWR_TOOL_SET_NOW_WIN"
+    ],
+    "7102C5DDDC": [
+        "_BTWR_TOOL_SET_RANK"
+    ],
+    "7102C5EAD4": [
+        "_BTWR_SUB_GET_NOW_ROUND"
+    ],
+    "7102C5CCEC": [
+        "_BTWR_SUB_INC_ROUND"
+    ],
+    "7102C5CCC0": [
+        "_BTWR_SUB_IS_CLEAR"
+    ],
+    "7102C5C380": [
+        "_BTWR_SUB_GET_RENSHOU_CNT"
+    ],
+    "7102C5C2D8": [
+        "_BTWR_SUB_SET_SCORE"
+    ],
+    "7102C5ECEC": [
+        "_BTWR_SUB_LOCAL_BTL_CALL"
+    ],
+    "7102C5C3FC": [
+        "_BTWR_SUB_GET_PLAY_MODE"
+    ],
+    "7102C5E414": [
+        "_BTWR_SUB_ADD_BATTLE_POINT"
+    ],
+    "7102C5D04C": [
+        "_BTWR_SUB_RENSHOU_RIBBON_SET"
+    ],
+    "7102C5D5AC": [
+        "_BTWR_SUB_UPDATE_RANDOM"
+    ],
+    "7102C5C44C": [
+        "_BOUKENNOOTO_TIPS_WAIT"
+    ],
+    "7102C5E5D0": [
+        "_SAVE_RENDOU_ENABLE"
+    ],
+    "7102C5E460": [
+        "_RETURN_LOOP"
+    ],
+    "7102C5E86C": [
+        "_INPUT_JUMP"
+    ],
+    "7102C5E7D8": [
+        "_BTWR_SUB_GET_RANK"
+    ],
+    "7102C5E250": [
+        "_BTWR_SUB_RANK_DOWN_LOSE"
+    ],
+    "7102C5D8C8": [
+        "_BTWR_SUB_RANK_DOWN_LOSE_RESET"
+    ],
+    "7102C5E730": [
+        "_BTWR_SUB_ADD_LOSE"
+    ],
+    "7102C5E6BC": [
+        "_SET_VISIBILITY"
+    ],
+    "7102C5C548": [
+        "_LOAD_CAMERA_CONTROLLER"
+    ],
+    "7102C5EA28": [
+        "_LOAD_WAIT_CAMERA_CONTROLLER"
+    ],
+    "7102C5E8D0": [
+        "_CAMERA_CONTROLLER_PLAY"
+    ],
+    "7102C5C648": [
+        "_CAMERA_CONTROLLER_END"
+    ],
+    "7102C5CFB8": [
+        "_TEMOTI_ROTOMU_FORM_CHG_CHECK"
+    ],
+    "7102C5C1A8": [
+        "_TEMOTI_POKE_CHK_NUM"
+    ],
+    "7102C5EA18": [
+        "_TEMOTI_ROTOMU_FORM_GET"
+    ],
+    "7102C5EAE4": [
+        "_POKELIST_FORM_CHANGE_SET_PROC"
+    ],
+    "7102C5C9B0": [
+        "_POKELIST_FORM_CHANGE_GET_RESULT"
+    ],
+    "7102C5D7B4": [
+        "_TUREARUKI_POKEMON_TALK"
+    ],
+    "7102C5C894": [
+        "_TUREARUKI_POKEMON_INDEX"
+    ],
+    "7102C5CAC4": [
+        "_TUREARUKI_TAKE_ITEM"
+    ],
+    "7102C5E94C": [
+        "_RELEASE_CAMERA_CONTROLLER"
+    ],
+    "7102C5C7BC": [
+        "_FIND_BG_ENABLE"
+    ],
+    "7102C5C2B8": [
+        "_FIND_BG_DISABLE"
+    ],
+    "7102C5C8D0": [
+        "_CALL_EFFECT"
+    ],
+    "7102C5E9E8": [
+        "_STOP_EFFECT"
+    ],
+    "7102C5CFE0": [
+        "_RELEASE_EFFECT"
+    ],
+    "7102C5D564": [
+        "_CASSET_VERSION_GET"
+    ],
+    "7102C5C6CC": [
+        "_BOX_OPEN_NORMAL"
+    ],
+    "7102C5E2B4": [
+        "_BOX_OPEN_SELECT"
+    ],
+    "7102C5DE14": [
+        "_CALL_EFFECT_OBJ"
+    ],
+    "7102C5E7E8": [
+        "_SORAWOTOBU_END"
+    ],
+    "7102C5DE2C": [
+        "_CON_OPEN_RESUME_MATCHING_MENU"
+    ],
+    "7102C5D194": [
+        "_BOX_SEAL_UI_WAIT"
+    ],
+    "7102C5CA28": [
+        "_OBJ_POS_CHANGE_WORLD"
+    ],
+    "7102C5CE48": [
+        "_OPEN_SPECIAL_WIN_LABEL"
+    ],
+    "7102C5CB54": [
+        "_WAIT_SPECIAL_WIN_LABEL"
+    ],
+    "7102C5C40C": [
+        "_AK_LISNER_TRA"
+    ],
+    "7102C5ED3C": [
+        "_AK_LISNER_POS"
+    ],
+    "7102C5EB88": [
+        "_AK_LISNER_ROT"
+    ],
+    "7102C5ED1C": [
+        "_UNION_PROC"
+    ],
+    "7102C5E838": [
+        "_CAMERA_CONTROLLER_WAIT"
+    ],
+    "7102C5D19C": [
+        "_SET_TV_INT"
+    ],
+    "7102C5CAD4": [
+        "_SET_TV_PLAYER_NAME"
+    ],
+    "7102C5CCF8": [
+        "_SET_TV_POKE_NICK_NAME"
+    ],
+    "7102C5ECBC": [
+        "_TV_TPIC_ENABLE"
+    ],
+    "7102C5C7CC": [
+        "_TV_TPIC_BRANCH"
+    ],
+    "7102C5CD08": [
+        "_TUREARUKI_POKE_CREATE"
+    ],
+    "7102C5CE58": [
+        "_TUREARUKI_POKE_DELETE"
+    ],
+    "7102C5E454": [
+        "_AUTO_TANKEN_SET"
+    ],
+    "7102C5D920": [
+        "_SET_MATCHING_GROUP"
+    ],
+    "7102C5CEC0": [
+        "_AUTO_TANKEN_SET_WAIT"
+    ],
+    "7102C5D1EC": [
+        "_USE_TANKENSET"
+    ],
+    "7102C5D930": [
+        "_TALK_UNION_NPC"
+    ],
+    "7102C5C8E8": [
+        "_CHECK_ONLINE_ACCOUNT"
+    ],
+    "7102C5D458": [
+        "_WAIT_CHECK_ONLINE_ACCOUNT"
+    ],
+    "7102C5C908": [
+        "_LOCALKOUKAN_APPLY"
+    ],
+    "7102C5E750": [
+        "_ZUKAN_TOUROKU"
+    ],
+    "7102C5E1E4": [
+        "_ZUKAN_TOUROKU_WAIT"
+    ],
+    "7102C5DE3C": [
+        "_CHK_ZUKAN_TOUROKU"
+    ],
+    "7102C5D1FC": [
+        "_AUTO_SAVE"
+    ],
+    "7102C5E30C": [
+        "_ENDING_DEMO"
+    ],
+    "7102C5E67C": [
+        "_AZUKARIYA_TAKE_OVER_POKE"
+    ],
+    "7102C5EB98": [
+        "_POKETORE_GET_CHARGE"
+    ],
+    "7102C5D404": [
+        "_POKETORE_START"
+    ],
+    "7102C5C950": [
+        "_BICYCLE_COLOR_SET"
+    ],
+    "7102C5CB64": [
+        "_BICYCLE_COLOR_GET"
+    ],
+    "7102C5E204": [
+        "_PARK_ITEM_NAME"
+    ],
+    "7102C5D4B8": [
+        "_LOAD_UMA_ANIME"
+    ],
+    "7102C5E63C": [
+        "_RELEASE_UMA_ANIME"
+    ],
+    "7102C5E87C": [
+        "_LOAD_UMA_ANIME_WAIT"
+    ],
+    "7102C5C808": [
+        "_UMA_ANIME_PLAY"
+    ],
+    "7102C5C74C": [
+        "_UMA_ANIME_ATTACH"
+    ],
+    "7102C5D4C8": [
+        "_UMA_PLAY_WAIT"
+    ],
+    "7102C5D694": [
+        "_OBJ_ANIME_SPEED"
+    ],
+    "7102C5DE6C": [
+        "_OBJ_SCALE"
+    ],
+    "7102C5D7CC": [
+        "_BADGE_GET"
+    ],
+    "7102C5DE4C": [
+        "_ADD_UG_ITEM"
+    ],
+    "7102C5D944": [
+        "_TOBARI_4F_SHOP_OPEN"
+    ],
+    "7102C5E2C0": [
+        "_DOF_FAR_DEPTH"
+    ],
+    "7102C5C78C": [
+        "_DISPLAY_MESSAGE"
+    ],
+    "7102C5CA38": [
+        "_DISPLAY_MESSAGE_CLOSE"
+    ],
+    "7102C5D6CC": [
+        "_CUSTOM_BALL_TRAINER_PAGE"
+    ],
+    "7102C5CDA0": [
+        "_CUSTOM_BALL_TRAINER_COPY_OPEN"
+    ],
+    "7102C5DF04": [
+        "_RECONGNIZE_TOKIKAKE"
+    ],
+    "7102C5DF4C": [
+        "_RECONGNIZE_OPEN_WAIT"
+    ],
+    "7102C5D57C": [
+        "_UG_ITEM_NAME"
+    ],
+    "7102C5E0A4": [
+        "_FUREAI_TALK_START"
+    ],
+    "7102C5DE7C": [
+        "_PLAY_FUREAI_VOICE_NAKAYOSHIRANK"
+    ],
+    "7102C5D214": [
+        "_CREATE_HYOUTA"
+    ],
+    "7102C5D240": [
+        "_CALL_SHIP_DEMO_SEA_MAP"
+    ],
+    "7102C5DF14": [
+        "_SETUP_SHIP"
+    ],
+    "7102C5E214": [
+        "_PC_DENDOU_SET_PROC_OPEN_WAIT"
+    ],
+    "7102C5C920": [
+        "_GET_POKETCH_APP_ID"
+    ],
+    "7102C5CAE4": [
+        "_FADE_DUNGEON_OUT"
+    ],
+    "7102C5D258": [
+        "_FADE_DUNGEON_IN"
+    ],
+    "7102C5D318": [
+        "_FADE_BUILDING_OUT"
+    ],
+    "7102C5CBA4": [
+        "_FADE_BUILDING_IN"
+    ],
+    "7102C5CDF8": [
+        "_FADE_AREA_OUT"
+    ],
+    "7102C5E3C0": [
+        "_FADE_AREA_IN"
+    ],
+    "7102C5E3F0": [
+        "_CUSTOM_BALL_TRAINER_PAGE_WAIT"
+    ],
+    "7102C5D170": [
+        "_C08R0801SCOPECAMERA_SEQUENCE"
+    ],
+    "7102C5E404": [
+        "_EMBANKMENT"
+    ],
+    "7102C5E5C0": [
+        "_ENTRY_UWASA_ZUKAN"
+    ],
+    "7102C5E894": [
+        "_TALK_UG_NPC"
+    ],
+    "7102C5DB14": [
+        "_TRAINING_OPEN"
+    ],
+    "7102C5E760": [
+        "_TRAINING_OPEN_WAIT"
+    ],
+    "7102C5CDB0": [
+        "_CAMERA_CONTROLLER_IS_NULL"
+    ],
+    "7102C5E4A0": [
+        "_UMA_IS_NULL"
+    ],
+    "7102C5DBA0": [
+        "_GET_IS_HAVE_SECRETBASE"
+    ],
+    "7102C5CEDC": [
+        "_GET_UG_NPC_TALK_COUNT"
+    ],
+    "7102C5DB24": [
+        "_RESET_UG_NPC_TALK_COUNT"
+    ],
+    "7102C5CB84": [
+        "_TEMOTI_POKE_CHK_GET_POS"
+    ],
+    "7102C5E64C": [
+        "_SET_FORCE_BLINK"
+    ],
+    "7102C5E65C": [
+        "_CHECK_SECRET_BASE_EXPANTION"
+    ],
+    "7102C5D03C": [
+        "_TV_TOPIC_BRANCH_GET"
+    ],
+    "7102C5E32C": [
+        "_TV_TOPIC_INT_GET"
+    ],
+    "7102C5DE8C": [
+        "_TV_TOPIC_STR_WORD_SET"
+    ],
+    "7102C5DE9C": [
+        "_OOKISA_VALUE_SET_BUF"
+    ],
+    "7102C5CA8C": [
+        "_SET_LIGHTINTENSITY"
+    ],
+    "7102C5CB94": [
+        "_SET_LIGHTINTENSITY_CHARCTER"
+    ],
+    "7102C5D6DC": [
+        "_SET_LIGHTINTENSITY_POKE"
+    ],
+    "7102C5D740": [
+        "_END_LIGHTINTENSITY"
+    ],
+    "7102C5D2C8": [
+        "_END_LIGHTINTENSITY_CHARCTER"
+    ],
+    "7102C5CDC0": [
+        "_END_LIGHTINTENSITY_POKE"
+    ],
+    "7102C5E3F8": [
+        "_TV_RED_GYARADOS_ON"
+    ],
+    "7102C5CEA4": [
+        "_TV_RED_GYARADOS_OFF"
+    ],
+    "7102C5DBB0": [
+        "_PARTNER_NAME_SET"
+    ],
+    "7102C5D378": [
+        "_TV_MONITOR_SET"
+    ],
+    "7102C5E33C": [
+        "_TV_MONITOR_RESET"
+    ],
+    "7102C5E31C": [
+        "_EFF_SCALE"
+    ],
+    "7102C5E21C": [
+        "_GET_ITEM_COUNT"
+    ],
+    "7102C5D2E0": [
+        "_PLAY_EMO_SE"
+    ],
+    "7102C5CE18": [
+        "_AUTO_MSG"
+    ],
+    "7102C5D460": [
+        "_AUTO_MSG_STOP"
+    ],
+    "7102C5E434": [
+        "_GET_TAG_PATNER_ID"
+    ],
+    "7102C5D4E0": [
+        "_ADD_WAZA"
+    ],
+    "7102C5D2F0": [
+        "_NICKNAME_PLACEMENT"
+    ],
+    "7102C5DBC0": [
+        "_UNIQUE_POKE_TEMP"
+    ],
+    "7102C5D7DC": [
+        "_UNIQUE_POKE_FIX"
+    ],
+    "7102C5D9A0": [
+        "_GET_FORM"
+    ],
+    "7102C5DBF4": [
+        "_NICK_NAME_ALL"
+    ],
+    "7102C5DC04": [
+        "_DOF_CHANGE_TARGET_POS"
+    ],
+    "7102C5D7EC": [
+        "_DOF_RESET_TARGET_POS"
+    ],
+    "7102C5DF5C": [
+        "_ADD_MAROYAKA_POFFIN"
+    ],
+    "7102C5D6AC": [
+        "_ALL_MONSNO"
+    ],
+    "7102C5DF68": [
+        "_ALL_MONS_OWN_CHK"
+    ],
+    "7102C5D388": [
+        "_CON_CATEGORY_NAME"
+    ],
+    "7102C5E240": [
+        "_CON_RANK_NAME"
+    ],
+    "7102C5E1D4": [
+        "_POKE_TYPE_NAME"
+    ],
+    "7102C5D398": [
+        "_POFFIN_NAME"
+    ],
+    "7102C5E2D0": [
+        "_DRESS_NAME"
+    ],
+    "7102C5E3D0": [
+        "_EVENT_ENTITY_VISIBLE"
+    ],
+    "7102C5CFC8": [
+        "_UG_LEAVE_HOYUTA"
+    ],
+    "7102C5D754": [
+        "_AZUKARIYA_STORE_UI"
+    ],
+    "7102C5D58C": [
+        "_SET_TELEPORT_ID"
+    ],
+    "7102C5D3A8": [
+        "_POKE_LVUP_HOW_MANY"
+    ],
+    "7102C5E2E0": [
+        "_USE_SPECIAL_ITEM"
+    ],
+    "7102C5DE5C": [
+        "_GET_BP"
+    ],
+    "7102C5D538": [
+        "_FOV_OFFSET_RATE"
+    ],
+    "7102C5D088": [
+        "_OBJ_DIR_CHANGE_WORLD"
+    ],
+    "7102C5DF78": [
+        "_OBJ_POS_CHANGE_WORLD_FIND"
+    ],
+    "7102C5DC14": [
+        "_ZONE_NAME2"
+    ],
+    "7102C5D84C": [
+        "_TALK_COLISEUM_NPC"
+    ],
+    "7102C5DF88": [
+        "_USE_SUB_ATTRIBUTE"
+    ],
+    "7102C5E0D4": [
+        "_ADD_CUSTUM_WIN_LABEL_TWO_WINDOW"
+    ],
+    "7102C5D308": [
+        "_POKE_LEVEL_GET_ALL"
+    ],
+    "7102C5D3D0": [
+        "_RESET_SAVEBGM"
+    ],
+    "7102C5D3B8": [
+        "_BTWR_SUB_SELECT_POKE"
+    ],
+    "7102C5D46C": [
+        "_BTWR_SUB_GET_ENTRY_POKE"
+    ],
+    "7102C5D548": [
+        "_SET_GLOBALWATERFIELD"
+    ],
+    "7102C5DCEC": [
+        "_TV_INTERVIEW_STR_WORD_SET"
+    ],
+    "7102C5DB78": [
+        "_ZONE_NAME_LABEL"
+    ],
+    "7102C5DCFC": [
+        "_AUTO_SAVE_BACK_UP_ON"
+    ],
+    "7102C5E0B4": [
+        "_GET_STATUE_NUM"
+    ],
+    "7102C5E054": [
+        "_BTWR_PLAYER_WIN_CHECK"
+    ],
+    "7102C5D47C": [
+        "_GET_GOLD"
+    ],
+    "7102C5E19C": [
+        "_AG_TRANSITION_HOYUTA"
+    ],
+    "7102C5D8D8": [
+        "_ADD_POKEMON_UI"
+    ],
+    "7102C5D8F0": [
+        "_GET_FUREAI_SELECT_POKE_TEMOTI_NO"
+    ],
+    "7102C5E084": [
+        "_TV_TOPIC_STR_GENDER_WORD_SET"
+    ],
+    "7102C5DEAC": [
+        "_EVENT_ENTITY_CLIP_ATTACH_PLAYER"
+    ],
+    "7102C5DC24": [
+        "_GET_POKE_COUNT5"
+    ],
+    "7102C5DC34": [
+        "_ADD_UNIQUE_POKEMON_UI"
+    ],
+    "7102C5DFE0": [
+        "_BTWR_SUB_ADD_BATTLE_POINT_MANUAL"
+    ],
+    "7102C5DC6C": [
+        "_POKE_TARENT_POW_MAX"
+    ],
+    "7102C5DB88": [
+        "_OPEN_BATTLE_WIN"
+    ],
+    "7102C5D4F0": [
+        "_OJIGI"
+    ],
+    "7102C5D954": [
+        "_DARKNESS_TEMPORARILY_OFF"
+    ],
+    "7102C5D558": [
+        "_DARKNESS_TEMPORARILY_ON"
+    ],
+    "7102C5DC7C": [
+        "_SAVE_PLAYREPORT"
+    ],
+    "7102C5D860": [
+        "_SET_STOP_EYE_ENCOUNT"
+    ],
+    "7102C5D6EC": [
+        "_RESET_STOP_EYE_ENCOUNT"
+    ],
+    "7102C5DC8C": [
+        "_OPEN_CUSTUM_WIN_FIXED"
+    ],
+    "7102C5D868": [
+        "_PLAY_REPORT_TRAINING"
+    ],
+    "7102C5DCA4": [
+        "_PLAY_REPORT_BTLTOWER_WIN"
+    ],
+    "7102C5D9B0": [
+        "_GET_WATER_GYM_WATER_LEVEL"
+    ],
+    "7102C5DCB0": [
+        "_REGET_WATER_GYM_WATER_LEVEL"
+    ],
+    "7102C5DC4C": [
+        "_GET_RECORD_TOWOR_WIN"
+    ],
+    "7102C5D76C": [
+        "_TEMOTI_PER_RND"
+    ],
+    "7102C5D9C0": [
+        "_ADD_BTLTWR_CHALLENGE"
+    ],
+    "7102C5D900": [
+        "_CHECK_GMS_ONLINE_ACCOUNT"
+    ],
+    "7102C5DA14": [
+        "_BTLTWR_CONTINUE_ROUND"
+    ],
+    "7102C5DA68": [
+        "_GMS_END"
+    ]
+}

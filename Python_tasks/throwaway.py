@@ -2,6 +2,7 @@ import json
 import os
 import copy
 import constants
+import re
 
 from pokemonUtils import get_item_string, get_pokemon_name, get_pokemon_id_from_name
 
@@ -10,6 +11,7 @@ input_file_path = os.path.join(parent_file_path, "input")
 input_file_path3 = os.path.join(parent_file_path, "3.0Input")
 output_file_path = os.path.join(parent_file_path, "Python_tasks", constants.OUTPUT_NAME)
 debug_file_path = os.path.join(parent_file_path, "Python_tasks", constants.DEBUG_NAME)
+resources_file_path = os.path.join(parent_file_path, "Python_tasks", "Resources")
 
 personal_data_path = os.path.join(input_file_path, 'PersonalTable.json')
 personal_data_path3 = os.path.join(input_file_path3, 'PersonalTable.json')
@@ -129,5 +131,35 @@ def get_all_encounters_and_evolutions():
 
   # print(len(pokemon_list), pokemon_list)
 
+def dummy_out_commands():
+  scripts_directory = os.path.join(parent_file_path, "old_scripts")
+  synonyms_file = os.path.join(resources_file_path, "command_synonyms.json")
+  with open(synonyms_file, 'r', encoding="utf-8") as f:
+    synonyms = json.load(f)
+
+  new_synonyms = {}
+  for synonym_key in synonyms:
+    if not len(synonyms[synonym_key]) > 1:
+      continue
+    for command_name in synonyms[synonym_key]:
+      new_synonyms[command_name] = synonyms[synonym_key][0]
+
+  for filename in os.listdir(scripts_directory):
+    file_path = os.path.join(scripts_directory, filename)
+    new_file_path = os.path.join(parent_file_path, "new_scripts", filename)
+    new_substrings = []
+    with open(file_path, 'r', encoding="utf-8") as old_script:
+      for line in old_script:
+        command_name = re.match(r'^(?:\t| {1,4})(\w+)\(', line)
+        if command_name is None:
+          new_substrings.append(line)
+        elif not command_name.group(1) in new_synonyms.keys():
+          new_substrings.append(line)
+        else:
+          new_line = line.replace(command_name.group(1), new_synonyms[command_name.group(1)])
+          new_substrings.append(new_line)
+    with open(new_file_path, 'w', encoding="utf-8") as new_script:
+      new_script.writelines(new_substrings)
+
 if __name__ == "__main__":
-  get_all_encounters_and_evolutions()
+  dummy_out_commands()
