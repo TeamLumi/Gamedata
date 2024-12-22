@@ -284,7 +284,7 @@ def write_tm_101_to_150_learnsets():
 
     official_tm_learnset_path = os.path.join(official_tm_learnset_folder_path, file)
     with open(official_tm_learnset_path, "w") as output:
-      json.dump(pokemon_learnset, output, ensure_ascii=False, indent=4)
+      json.dump(pokemon_learnset, output, ensure_ascii=False, indent=2)
 
 def full_run():
   # get_pokemon_tm_learnsets()
