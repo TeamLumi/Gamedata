@@ -1,0 +1,27 @@
+{
+  "name": "camerupt",
+  "id": 323,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Charm",
+    "Scary Face",
+    "Heavy Slam",
+    "Body Press",
+    "Flame Charge",
+    "Heat Crash",
+    "Trailblaze",
+    "High Horsepower"
+  ],
+  "tm_bitfields": {
+    "set01": 2317435952,
+    "set02": 2449611380,
+    "set03": 2252769368,
+    "set04": 1073791106,
+    "set05": 19394,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

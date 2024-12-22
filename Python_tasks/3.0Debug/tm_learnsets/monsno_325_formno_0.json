@@ -1,0 +1,25 @@
+{
+  "name": "spoink",
+  "id": 325,
+  "tm_learnset": [
+    "Hidden Power",
+    "Psychic Terrain",
+    "Frustration",
+    "Return",
+    "Imprison",
+    "Trailblaze",
+    "Power Gem",
+    "Psyshock",
+    "Lunge"
+  ],
+  "tm_bitfields": {
+    "set01": 2957216808,
+    "set02": 318814979,
+    "set03": 175247654,
+    "set04": 53376,
+    "set05": 1378312,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

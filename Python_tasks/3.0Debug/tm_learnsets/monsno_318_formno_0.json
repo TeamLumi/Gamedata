@@ -1,0 +1,26 @@
+{
+  "name": "carvanha",
+  "id": 318,
+  "tm_learnset": [
+    "Hidden Power",
+    "Whirlpool",
+    "Frustration",
+    "Return",
+    "Psychic Fangs",
+    "Ice Fang",
+    "Crunch",
+    "Flip Turn",
+    "Screech",
+    "Scary Face"
+  ],
+  "tm_bitfields": {
+    "set01": 2147694692,
+    "set02": 37829376,
+    "set03": 1111646210,
+    "set04": 2283389316,
+    "set05": 2,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

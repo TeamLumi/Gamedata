@@ -1,0 +1,23 @@
+{
+  "name": "uxie",
+  "id": 480,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Psycho Cut",
+    "Imprison",
+    "Play Rough",
+    "Psyshock"
+  ],
+  "tm_bitfields": {
+    "set01": 2986329132,
+    "set02": 1267763731,
+    "set03": 192026924,
+    "set04": 33603712,
+    "set05": 266248,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

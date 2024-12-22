@@ -1,0 +1,26 @@
+{
+  "name": "nidoking",
+  "id": 34,
+  "tm_learnset": [
+    "Hidden Power",
+    "Whirlpool",
+    "Frustration",
+    "Return",
+    "Smart Strike",
+    "Rock Blast",
+    "Body Press",
+    "Hex",
+    "High Horsepower",
+    "Venoshock"
+  ],
+  "tm_bitfields": {
+    "set01": 3955457077,
+    "set02": 109591422,
+    "set03": 3528362185,
+    "set04": 2146698,
+    "set05": 148640,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

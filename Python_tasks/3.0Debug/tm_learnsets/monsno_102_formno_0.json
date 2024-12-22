@@ -1,0 +1,23 @@
+{
+  "name": "exeggcute",
+  "id": 102,
+  "tm_learnset": [
+    "Hidden Power",
+    "Grassy Terrain",
+    "Frustration",
+    "Return",
+    "Imprison",
+    "Psyshock",
+    "Infestation"
+  ],
+  "tm_bitfields": {
+    "set01": 2418378016,
+    "set02": 2182134281,
+    "set03": 2322732064,
+    "set04": 51328,
+    "set05": 786440,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

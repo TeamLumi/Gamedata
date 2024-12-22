@@ -1,0 +1,23 @@
+{
+  "name": "honchkrow",
+  "id": 430,
+  "tm_learnset": [
+    "Hurricane",
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Air Slash",
+    "Scary Face",
+    "Hex"
+  ],
+  "tm_bitfields": {
+    "set01": 2953006120,
+    "set02": 1107590016,
+    "set03": 584216842,
+    "set04": 8437953,
+    "set05": 1026,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "ledian",
+  "id": 166,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Air Slash",
+    "Infestation",
+    "Struggle Bug"
+  ],
+  "tm_bitfields": {
+    "set01": 3358442529,
+    "set02": 713833089,
+    "set03": 2739012648,
+    "set04": 8437890,
+    "set05": 2621440,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

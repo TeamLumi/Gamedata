@@ -1,0 +1,27 @@
+{
+  "name": "clefable",
+  "id": 36,
+  "tm_learnset": [
+    "Hyper Voice",
+    "Hidden Power",
+    "Misty Terrain",
+    "Frustration",
+    "Return",
+    "Charm",
+    "Fake Tears",
+    "Imprison",
+    "Play Rough",
+    "Mystical Fire",
+    "Psyshock"
+  ],
+  "tm_bitfields": {
+    "set01": 4194039341,
+    "set02": 193468967,
+    "set03": 2188515628,
+    "set04": 1073792162,
+    "set05": 274441,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "name": "arcanine",
+  "id": 59,
+  "tm_learnset": [
+    "Wild Charge",
+    "Hyper Voice",
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Psychic Fangs",
+    "Thunder Fang",
+    "Fire Fang",
+    "Crunch",
+    "Close Combat",
+    "Charm",
+    "Scary Face",
+    "Flame Charge",
+    "Heat Crash",
+    "Play Rough"
+  ],
+  "tm_bitfields": {
+    "set01": 2288600112,
+    "set02": 369244836,
+    "set03": 2185633800,
+    "set04": 1343733946,
+    "set05": 4866,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "grimer",
+  "id": 88,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Screech",
+    "Scary Face",
+    "Imprison",
+    "Hex",
+    "Venoshock",
+    "Infestation"
+  ],
+  "tm_bitfields": {
+    "set01": 2844199968,
+    "set02": 2189441902,
+    "set03": 2185920514,
+    "set04": 2147532928,
+    "set05": 656394,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

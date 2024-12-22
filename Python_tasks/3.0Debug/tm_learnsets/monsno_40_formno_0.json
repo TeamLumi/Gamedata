@@ -1,0 +1,29 @@
+{
+  "name": "wigglytuff",
+  "id": 40,
+  "tm_learnset": [
+    "Wild Charge",
+    "Hyper Voice",
+    "Hidden Power",
+    "Misty Terrain",
+    "Frustration",
+    "Return",
+    "Charm",
+    "Screech",
+    "Fake Tears",
+    "Body Press",
+    "Trailblaze",
+    "Play Rough",
+    "Psyshock"
+  ],
+  "tm_bitfields": {
+    "set01": 4189845029,
+    "set02": 193468967,
+    "set03": 2188516140,
+    "set04": 3221275824,
+    "set05": 268417,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "drifloon",
+  "id": 425,
+  "tm_learnset": [
+    "Hidden Power",
+    "Weather Ball",
+    "Frustration",
+    "Return",
+    "Imprison",
+    "Hex",
+    "Mystical Fire"
+  ],
+  "tm_bitfields": {
+    "set01": 2978153512,
+    "set02": 2466298370,
+    "set03": 315757350,
+    "set04": 57537,
+    "set05": 9224,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "kabuto",
+  "id": 140,
+  "tm_learnset": [
+    "Hidden Power",
+    "Whirlpool",
+    "Frustration",
+    "Return",
+    "Screech",
+    "Rock Blast"
+  ],
+  "tm_bitfields": {
+    "set01": 2282172516,
+    "set02": 37829328,
+    "set03": 1111656528,
+    "set04": 2147533190,
+    "set05": 32,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

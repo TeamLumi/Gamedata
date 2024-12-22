@@ -1,0 +1,22 @@
+{
+  "name": "dustox",
+  "id": 269,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Venoshock",
+    "Infestation",
+    "Struggle Bug"
+  ],
+  "tm_bitfields": {
+    "set01": 2955265056,
+    "set02": 571751049,
+    "set03": 599916584,
+    "set04": 49345,
+    "set05": 2752512,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

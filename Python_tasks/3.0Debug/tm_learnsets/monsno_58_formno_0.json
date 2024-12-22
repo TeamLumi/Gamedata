@@ -1,0 +1,29 @@
+{
+  "name": "growlithe",
+  "id": 58,
+  "tm_learnset": [
+    "Wild Charge",
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Psychic Fangs",
+    "Thunder Fang",
+    "Fire Fang",
+    "Crunch",
+    "Close Combat",
+    "Charm",
+    "Scary Face",
+    "Flame Charge",
+    "Play Rough"
+  ],
+  "tm_bitfields": {
+    "set01": 2286486576,
+    "set02": 302135972,
+    "set03": 2185371648,
+    "set04": 1343733906,
+    "set05": 4354,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

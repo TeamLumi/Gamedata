@@ -1,0 +1,28 @@
+{
+  "name": "salamence",
+  "id": 373,
+  "tm_learnset": [
+    "Hyper Voice",
+    "Hurricane",
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Psychic Fangs",
+    "Thunder Fang",
+    "Fire Fang",
+    "Crunch",
+    "Air Slash",
+    "Dragon Dance",
+    "Scary Face"
+  ],
+  "tm_bitfields": {
+    "set01": 3259188274,
+    "set02": 100948708,
+    "set03": 2999353417,
+    "set04": 546816227,
+    "set05": 2,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

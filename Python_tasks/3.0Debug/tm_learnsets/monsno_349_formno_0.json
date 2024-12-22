@@ -1,0 +1,20 @@
+{
+  "name": "feebas",
+  "id": 349,
+  "tm_learnset": [
+    "Hidden Power",
+    "Whirlpool",
+    "Frustration",
+    "Return"
+  ],
+  "tm_bitfields": {
+    "set01": 2151919716,
+    "set02": 104929792,
+    "set03": 1111621632,
+    "set04": 49540,
+    "set05": 0,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

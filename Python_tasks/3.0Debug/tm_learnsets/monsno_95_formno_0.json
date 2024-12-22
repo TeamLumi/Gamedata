@@ -1,0 +1,26 @@
+{
+  "name": "onix",
+  "id": 95,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Dragon Dance",
+    "Screech",
+    "Scary Face",
+    "Rock Blast",
+    "Heavy Slam",
+    "Body Press",
+    "High Horsepower"
+  ],
+  "tm_bitfields": {
+    "set01": 2319518768,
+    "set02": 2248153936,
+    "set03": 2252773970,
+    "set04": 2684403850,
+    "set05": 16610,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

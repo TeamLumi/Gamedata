@@ -1,0 +1,25 @@
+{
+  "name": "walrein",
+  "id": 365,
+  "tm_learnset": [
+    "Hidden Power",
+    "Whirlpool",
+    "Frustration",
+    "Return",
+    "Ice Fang",
+    "Crunch",
+    "Heavy Slam",
+    "Body Press",
+    "Icicle Spear"
+  ],
+  "tm_bitfields": {
+    "set01": 2185457780,
+    "set02": 37755456,
+    "set03": 3259401352,
+    "set04": 1622406,
+    "set05": 32960,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

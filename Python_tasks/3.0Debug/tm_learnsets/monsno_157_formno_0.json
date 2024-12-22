@@ -1,0 +1,24 @@
+{
+  "name": "typhlosion",
+  "id": 157,
+  "tm_learnset": [
+    "Wild Charge",
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Fire Fang",
+    "Flame Charge",
+    "Hex",
+    "Play Rough"
+  ],
+  "tm_bitfields": {
+    "set01": 3391178289,
+    "set02": 311040740,
+    "set03": 2454094345,
+    "set04": 311450,
+    "set05": 5376,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

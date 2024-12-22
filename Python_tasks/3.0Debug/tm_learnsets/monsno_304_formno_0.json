@@ -1,0 +1,22 @@
+{
+  "name": "aron",
+  "id": 304,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Screech",
+    "Heavy Slam",
+    "Body Press"
+  ],
+  "tm_bitfields": {
+    "set01": 2319647796,
+    "set02": 35658450,
+    "set03": 2454095889,
+    "set04": 2147532930,
+    "set05": 192,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

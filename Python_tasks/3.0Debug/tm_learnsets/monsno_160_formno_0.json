@@ -1,0 +1,29 @@
+{
+  "name": "feraligatr",
+  "id": 160,
+  "tm_learnset": [
+    "Hidden Power",
+    "Whirlpool",
+    "Frustration",
+    "Return",
+    "Psychic Fangs",
+    "Ice Fang",
+    "Crunch",
+    "Flip Turn",
+    "Dragon Dance",
+    "Screech",
+    "Fake Tears",
+    "Scary Face",
+    "Trailblaze"
+  ],
+  "tm_bitfields": {
+    "set01": 3393417847,
+    "set02": 245963456,
+    "set03": 3527853193,
+    "set04": 2820260238,
+    "set05": 2051,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

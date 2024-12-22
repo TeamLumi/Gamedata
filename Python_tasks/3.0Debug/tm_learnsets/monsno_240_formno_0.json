@@ -1,0 +1,22 @@
+{
+  "name": "magby",
+  "id": 240,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Screech",
+    "Scary Face",
+    "Flame Charge"
+  ],
+  "tm_bitfields": {
+    "set01": 3493921825,
+    "set02": 310589988,
+    "set03": 37896192,
+    "set04": 2147532930,
+    "set05": 258,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

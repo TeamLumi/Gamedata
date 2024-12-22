@@ -1,0 +1,23 @@
+{
+  "name": "electrode",
+  "id": 101,
+  "tm_learnset": [
+    "Wild Charge",
+    "Hidden Power",
+    "Electric Terrain",
+    "Frustration",
+    "Return",
+    "Screech",
+    "Scary Face"
+  ],
+  "tm_bitfields": {
+    "set01": 2172897312,
+    "set02": 2735746819,
+    "set03": 37880616,
+    "set04": 2147533456,
+    "set05": 2,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

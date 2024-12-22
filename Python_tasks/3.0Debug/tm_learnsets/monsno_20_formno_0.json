@@ -1,0 +1,22 @@
+{
+  "name": "raticate",
+  "id": 20,
+  "tm_learnset": [
+    "Wild Charge",
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Crunch",
+    "Scary Face"
+  ],
+  "tm_bitfields": {
+    "set01": 2848161328,
+    "set02": 52443786,
+    "set03": 2472674568,
+    "set04": 1097874,
+    "set05": 2,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

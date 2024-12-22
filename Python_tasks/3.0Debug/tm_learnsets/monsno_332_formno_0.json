@@ -1,0 +1,24 @@
+{
+  "name": "cacturne",
+  "id": 332,
+  "tm_learnset": [
+    "Hidden Power",
+    "Grassy Terrain",
+    "Frustration",
+    "Return",
+    "Scary Face",
+    "Trailblaze",
+    "Venoshock",
+    "Lunge"
+  ],
+  "tm_bitfields": {
+    "set01": 3223668001,
+    "set02": 1251482128,
+    "set03": 2456437802,
+    "set04": 51328,
+    "set05": 1181698,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

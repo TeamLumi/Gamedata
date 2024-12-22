@@ -1,0 +1,31 @@
+{
+  "name": "donphan",
+  "id": 232,
+  "tm_learnset": [
+    "Hyper Voice",
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Thunder Fang",
+    "Fire Fang",
+    "Ice Fang",
+    "Smart Strike",
+    "Charm",
+    "Scary Face",
+    "Heavy Slam",
+    "Body Press",
+    "Trailblaze",
+    "Play Rough",
+    "High Horsepower"
+  ],
+  "tm_bitfields": {
+    "set01": 2185315376,
+    "set02": 33561168,
+    "set03": 2186185304,
+    "set04": 1076805794,
+    "set05": 22722,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

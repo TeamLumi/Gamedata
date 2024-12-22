@@ -1,0 +1,22 @@
+{
+  "name": "sunflora",
+  "id": 192,
+  "tm_learnset": [
+    "Hidden Power",
+    "Grassy Terrain",
+    "Weather Ball",
+    "Frustration",
+    "Return",
+    "Trailblaze"
+  ],
+  "tm_bitfields": {
+    "set01": 2150483232,
+    "set02": 34609672,
+    "set03": 308413480,
+    "set04": 59520,
+    "set05": 2048,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

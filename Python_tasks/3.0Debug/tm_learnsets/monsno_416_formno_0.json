@@ -1,0 +1,31 @@
+{
+  "name": "vespiquen",
+  "id": 416,
+  "tm_learnset": [
+    "Hurricane",
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Air Slash",
+    "Cross Poison",
+    "Screech",
+    "Scary Face",
+    "Pollen Puff",
+    "Hex",
+    "Power Gem",
+    "Venoshock",
+    "Infestation",
+    "Lunge",
+    "Struggle Bug"
+  ],
+  "tm_bitfields": {
+    "set01": 2147697696,
+    "set02": 579091080,
+    "set03": 868417576,
+    "set04": 2172698817,
+    "set05": 3867666,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

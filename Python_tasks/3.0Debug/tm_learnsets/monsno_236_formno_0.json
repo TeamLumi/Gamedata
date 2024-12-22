@@ -1,0 +1,19 @@
+{
+  "name": "tyrogue",
+  "id": 236,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return"
+  ],
+  "tm_bitfields": {
+    "set01": 3322087072,
+    "set02": 33569280,
+    "set03": 2185658368,
+    "set04": 49282,
+    "set05": 0,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

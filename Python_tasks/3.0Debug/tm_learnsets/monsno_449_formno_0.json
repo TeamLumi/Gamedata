@@ -1,0 +1,26 @@
+{
+  "name": "hippopotas",
+  "id": 449,
+  "tm_learnset": [
+    "Hidden Power",
+    "Weather Ball",
+    "Frustration",
+    "Return",
+    "Thunder Fang",
+    "Fire Fang",
+    "Ice Fang",
+    "Crunch",
+    "Body Press",
+    "High Horsepower"
+  ],
+  "tm_bitfields": {
+    "set01": 2319516724,
+    "set02": 33561168,
+    "set03": 2185660416,
+    "set04": 2023554,
+    "set05": 16512,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

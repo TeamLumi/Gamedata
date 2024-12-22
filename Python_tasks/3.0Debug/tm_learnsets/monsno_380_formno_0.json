@@ -1,0 +1,27 @@
+{
+  "name": "latias",
+  "id": 380,
+  "tm_learnset": [
+    "Hidden Power",
+    "Whirlpool",
+    "Weather Ball",
+    "Frustration",
+    "Return",
+    "Air Slash",
+    "Psycho Cut",
+    "Dragon Dance",
+    "Charm",
+    "Mystical Fire",
+    "Psyshock"
+  ],
+  "tm_bitfields": {
+    "set01": 3014382654,
+    "set02": 118774419,
+    "set03": 1920340265,
+    "set04": 1652613509,
+    "set05": 270336,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

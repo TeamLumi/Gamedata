@@ -1,0 +1,22 @@
+{
+  "name": "regice",
+  "id": 378,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Heavy Slam",
+    "Body Press",
+    "Icicle Spear"
+  ],
+  "tm_bitfields": {
+    "set01": 3280695393,
+    "set02": 2206730818,
+    "set03": 2252771736,
+    "set04": 49290,
+    "set05": 32960,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

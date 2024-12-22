@@ -1,0 +1,26 @@
+{
+  "name": "dragonite",
+  "id": 149,
+  "tm_learnset": [
+    "Hurricane",
+    "Hidden Power",
+    "Whirlpool",
+    "Weather Ball",
+    "Frustration",
+    "Return",
+    "Air Slash",
+    "Dragon Dance",
+    "Scary Face",
+    "Body Press"
+  ],
+  "tm_bitfields": {
+    "set01": 3284923511,
+    "set02": 109861622,
+    "set03": 4073095496,
+    "set04": 545317319,
+    "set05": 130,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

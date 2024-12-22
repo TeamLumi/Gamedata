@@ -1,0 +1,23 @@
+{
+  "name": "pineco",
+  "id": 204,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Rock Blast",
+    "Venoshock",
+    "Lunge",
+    "Struggle Bug"
+  ],
+  "tm_bitfields": {
+    "set01": 2317714464,
+    "set02": 2717915729,
+    "set03": 2185658882,
+    "set04": 49282,
+    "set05": 3276832,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

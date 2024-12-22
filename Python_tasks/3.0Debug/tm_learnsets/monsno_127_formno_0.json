@@ -1,0 +1,22 @@
+{
+  "name": "pinsir",
+  "id": 127,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Close Combat",
+    "High Horsepower",
+    "Struggle Bug"
+  ],
+  "tm_bitfields": {
+    "set01": 3389211809,
+    "set02": 581450304,
+    "set03": 2470939720,
+    "set04": 268484746,
+    "set05": 2113536,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "primeape",
+  "id": 57,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Close Combat",
+    "Screech",
+    "Scary Face"
+  ],
+  "tm_bitfields": {
+    "set01": 3485683361,
+    "set02": 42613440,
+    "set03": 2202959946,
+    "set04": 2415968394,
+    "set05": 2,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

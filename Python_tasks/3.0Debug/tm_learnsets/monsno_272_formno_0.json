@@ -1,0 +1,24 @@
+{
+  "name": "ludicolo",
+  "id": 272,
+  "tm_learnset": [
+    "Hyper Voice",
+    "Hidden Power",
+    "Whirlpool",
+    "Grassy Terrain",
+    "Weather Ball",
+    "Frustration",
+    "Return",
+    "Trailblaze"
+  ],
+  "tm_bitfields": {
+    "set01": 3223811429,
+    "set02": 177814016,
+    "set03": 3261203496,
+    "set04": 59822,
+    "set05": 2048,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

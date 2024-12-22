@@ -1,0 +1,23 @@
+{
+  "name": "lumineon",
+  "id": 457,
+  "tm_learnset": [
+    "Hidden Power",
+    "Whirlpool",
+    "Frustration",
+    "Return",
+    "Air Slash",
+    "Flip Turn",
+    "Charm"
+  ],
+  "tm_bitfields": {
+    "set01": 2149281892,
+    "set02": 37820928,
+    "set03": 1136791594,
+    "set04": 1216397797,
+    "set05": 0,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

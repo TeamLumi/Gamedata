@@ -1,0 +1,23 @@
+{
+  "name": "regirock",
+  "id": 377,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Rock Blast",
+    "Heavy Slam",
+    "Body Press",
+    "Power Gem"
+  ],
+  "tm_bitfields": {
+    "set01": 3414770721,
+    "set02": 2340948562,
+    "set03": 2252773720,
+    "set04": 49290,
+    "set05": 65760,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

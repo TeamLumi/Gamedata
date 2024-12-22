@@ -1,0 +1,23 @@
+{
+  "name": "treecko",
+  "id": 252,
+  "tm_learnset": [
+    "Hidden Power",
+    "Grassy Terrain",
+    "Frustration",
+    "Return",
+    "Crunch",
+    "Screech",
+    "Trailblaze"
+  ],
+  "tm_bitfields": {
+    "set01": 3362588449,
+    "set02": 179313344,
+    "set03": 2455929888,
+    "set04": 2148583554,
+    "set05": 2048,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

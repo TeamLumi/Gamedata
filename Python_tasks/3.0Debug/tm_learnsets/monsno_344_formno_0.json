@@ -1,0 +1,24 @@
+{
+  "name": "claydol",
+  "id": 344,
+  "tm_learnset": [
+    "Hidden Power",
+    "Psychic Terrain",
+    "Frustration",
+    "Return",
+    "Imprison",
+    "Body Press",
+    "Hex",
+    "Psyshock"
+  ],
+  "tm_bitfields": {
+    "set01": 3124483112,
+    "set02": 3271592529,
+    "set03": 2859899516,
+    "set04": 53378,
+    "set05": 263304,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

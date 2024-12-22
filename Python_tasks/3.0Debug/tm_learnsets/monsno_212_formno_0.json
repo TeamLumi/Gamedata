@@ -1,0 +1,28 @@
+{
+  "name": "scizor",
+  "id": 212,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Air Slash",
+    "Cross Poison",
+    "Psycho Cut",
+    "Close Combat",
+    "Scary Face",
+    "Trailblaze",
+    "Venoshock",
+    "Lunge",
+    "Struggle Bug"
+  ],
+  "tm_bitfields": {
+    "set01": 3221996576,
+    "set02": 581204624,
+    "set03": 2537751560,
+    "set04": 327204995,
+    "set05": 3278850,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

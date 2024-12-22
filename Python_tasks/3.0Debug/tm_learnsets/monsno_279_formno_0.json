@@ -1,0 +1,23 @@
+{
+  "name": "pelipper",
+  "id": 279,
+  "tm_learnset": [
+    "Hurricane",
+    "Hidden Power",
+    "Whirlpool",
+    "Weather Ball",
+    "Frustration",
+    "Return",
+    "Air Slash"
+  ],
+  "tm_bitfields": {
+    "set01": 2147709028,
+    "set02": 46496386,
+    "set03": 1673658378,
+    "set04": 8446401,
+    "set05": 0,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

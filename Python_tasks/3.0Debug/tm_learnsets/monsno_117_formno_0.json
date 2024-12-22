@@ -1,0 +1,24 @@
+{
+  "name": "seadra",
+  "id": 117,
+  "tm_learnset": [
+    "Hidden Power",
+    "Whirlpool",
+    "Weather Ball",
+    "Frustration",
+    "Return",
+    "Flip Turn",
+    "Dragon Dance",
+    "Scary Face"
+  ],
+  "tm_bitfields": {
+    "set01": 2147709028,
+    "set02": 104929792,
+    "set03": 1178730504,
+    "set04": 671146372,
+    "set05": 2,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

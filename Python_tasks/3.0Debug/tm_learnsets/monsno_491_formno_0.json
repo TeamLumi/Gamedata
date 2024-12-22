@@ -1,0 +1,22 @@
+{
+  "name": "darkrai",
+  "id": 491,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Scary Face",
+    "Hex",
+    "Psyshock"
+  ],
+  "tm_bitfields": {
+    "set01": 4051926057,
+    "set02": 1535650762,
+    "set03": 2455500075,
+    "set04": 49290,
+    "set05": 263170,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

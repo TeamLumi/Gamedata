@@ -1,0 +1,26 @@
+{
+  "name": "tropius",
+  "id": 357,
+  "tm_learnset": [
+    "Hurricane",
+    "Hidden Power",
+    "Grassy Terrain",
+    "Frustration",
+    "Return",
+    "Leaf Blade",
+    "Air Slash",
+    "Dragon Dance",
+    "Body Press",
+    "Trailblaze"
+  ],
+  "tm_bitfields": {
+    "set01": 2184004912,
+    "set02": 101997184,
+    "set03": 3001418792,
+    "set04": 549505219,
+    "set05": 2176,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "ninetales",
+  "id": 38,
+  "tm_learnset": [
+    "Hidden Power",
+    "Weather Ball",
+    "Frustration",
+    "Return",
+    "Charm",
+    "Fake Tears",
+    "Imprison",
+    "Flame Charge",
+    "Hex",
+    "Mystical Fire",
+    "Psyshock"
+  ],
+  "tm_bitfields": {
+    "set01": 3094955064,
+    "set02": 1376918052,
+    "set03": 38948874,
+    "set04": 1073799296,
+    "set05": 271625,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

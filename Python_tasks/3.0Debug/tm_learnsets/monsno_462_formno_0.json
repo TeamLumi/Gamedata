@@ -1,0 +1,24 @@
+{
+  "name": "magnezone",
+  "id": 462,
+  "tm_learnset": [
+    "Wild Charge",
+    "Hidden Power",
+    "Electric Terrain",
+    "Frustration",
+    "Return",
+    "Screech",
+    "Heavy Slam",
+    "Body Press"
+  ],
+  "tm_bitfields": {
+    "set01": 2172896288,
+    "set02": 2734689795,
+    "set03": 104993580,
+    "set04": 2147533456,
+    "set05": 192,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

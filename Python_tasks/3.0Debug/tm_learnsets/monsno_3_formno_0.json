@@ -1,0 +1,25 @@
+{
+  "name": "venusaur",
+  "id": 3,
+  "tm_learnset": [
+    "Hidden Power",
+    "Grassy Terrain",
+    "Weather Ball",
+    "Frustration",
+    "Return",
+    "Charm",
+    "Scary Face",
+    "Trailblaze",
+    "Venoshock"
+  ],
+  "tm_bitfields": {
+    "set01": 2184038192,
+    "set02": 36706824,
+    "set03": 2456159272,
+    "set04": 1073801354,
+    "set05": 133122,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

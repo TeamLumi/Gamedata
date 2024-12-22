@@ -1,0 +1,26 @@
+{
+  "name": "weavile",
+  "id": 461,
+  "tm_learnset": [
+    "Hidden Power",
+    "Whirlpool",
+    "Frustration",
+    "Return",
+    "Psycho Cut",
+    "Screech",
+    "Fake Tears",
+    "Scary Face",
+    "Trailblaze",
+    "Icicle Spear"
+  ],
+  "tm_bitfields": {
+    "set01": 3963845737,
+    "set02": 1118321537,
+    "set03": 3529208971,
+    "set04": 2181087618,
+    "set05": 34819,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

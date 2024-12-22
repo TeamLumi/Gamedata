@@ -1,0 +1,23 @@
+{
+  "name": "lotad",
+  "id": 270,
+  "tm_learnset": [
+    "Hidden Power",
+    "Whirlpool",
+    "Grassy Terrain",
+    "Weather Ball",
+    "Frustration",
+    "Return",
+    "Trailblaze"
+  ],
+  "tm_bitfields": {
+    "set01": 2150053220,
+    "set02": 34683392,
+    "set03": 1113719840,
+    "set04": 59776,
+    "set05": 2048,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

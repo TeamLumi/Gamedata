@@ -1,0 +1,26 @@
+{
+  "name": "rapidash",
+  "id": 78,
+  "tm_learnset": [
+    "Wild Charge",
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Smart Strike",
+    "Charm",
+    "Flame Charge",
+    "Play Rough",
+    "Mystical Fire",
+    "High Horsepower"
+  ],
+  "tm_bitfields": {
+    "set01": 2153858080,
+    "set02": 302127652,
+    "set03": 2185888776,
+    "set04": 1075888272,
+    "set05": 28928,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

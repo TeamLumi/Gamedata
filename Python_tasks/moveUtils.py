@@ -138,12 +138,12 @@ def convert_list_to_binary_array(decimal_list):
     return binary_array
 
 def convert_to_32_bit_integers(binary_array):
-    if len(binary_array) != 128:
-        raise ValueError("Input array must have a length of 128")
+    if len(binary_array) != 256:
+        raise ValueError("Input array must have a length of 256")
 
     integers = []
 
-    for i in range(0, 128, 32):
+    for i in range(0, 256, 32):
         integer_slice = binary_array[i:i+32]
         reversed_slice = integer_slice[::-1]
         integer_value = 0
@@ -189,7 +189,7 @@ def find_waza_no_by_machine_no(machineNo):
     return None
 
 def create_tm_learnset(move_ids):
-    tm_bitfield = [0] * 128
+    tm_bitfield = [0] * 256
 
     for move_id in move_ids:
         tm_no = find_machine_no_by_waza_no(move_id)
@@ -197,7 +197,7 @@ def create_tm_learnset(move_ids):
             continue
 
         bit_index = tm_no - 1
-        if bit_index > 128:
+        if bit_index > 256:
             continue
 
         tm_bitfield[bit_index] = 1

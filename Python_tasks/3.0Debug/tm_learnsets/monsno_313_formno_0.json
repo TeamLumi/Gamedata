@@ -1,0 +1,25 @@
+{
+  "name": "volbeat",
+  "id": 313,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Air Slash",
+    "Trailblaze",
+    "Play Rough",
+    "Infestation",
+    "Lunge",
+    "Struggle Bug"
+  ],
+  "tm_bitfields": {
+    "set01": 3786900517,
+    "set02": 595869314,
+    "set03": 54661408,
+    "set04": 8437888,
+    "set05": 3676160,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "ekans",
+  "id": 23,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Psychic Fangs",
+    "Fire Fang",
+    "Crunch",
+    "Screech",
+    "Scary Face",
+    "Trailblaze",
+    "Venoshock",
+    "Infestation"
+  ],
+  "tm_bitfields": {
+    "set01": 2319909920,
+    "set02": 33569608,
+    "set03": 2186199042,
+    "set04": 2148909184,
+    "set05": 657410,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

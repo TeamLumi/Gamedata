@@ -1,0 +1,24 @@
+{
+  "name": "abomasnow",
+  "id": 460,
+  "tm_learnset": [
+    "Hidden Power",
+    "Weather Ball",
+    "Frustration",
+    "Return",
+    "Scary Face",
+    "Body Press",
+    "Trailblaze",
+    "Icicle Spear"
+  ],
+  "tm_bitfields": {
+    "set01": 3798987109,
+    "set02": 43522624,
+    "set03": 2187756712,
+    "set04": 57482,
+    "set05": 34946,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

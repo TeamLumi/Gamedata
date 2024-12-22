@@ -1,0 +1,28 @@
+{
+  "name": "mismagius",
+  "id": 429,
+  "tm_learnset": [
+    "Hyper Voice",
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Charm",
+    "Fake Tears",
+    "Scary Face",
+    "Imprison",
+    "Hex",
+    "Mystical Fire",
+    "Power Gem",
+    "Psyshock"
+  ],
+  "tm_bitfields": {
+    "set01": 2979220520,
+    "set02": 1393605506,
+    "set03": 173166890,
+    "set04": 1073791136,
+    "set05": 336907,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

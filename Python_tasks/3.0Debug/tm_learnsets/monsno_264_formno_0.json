@@ -1,0 +1,23 @@
+{
+  "name": "linoone",
+  "id": 264,
+  "tm_learnset": [
+    "Hyper Voice",
+    "Hidden Power",
+    "Whirlpool",
+    "Frustration",
+    "Return",
+    "Charm",
+    "Play Rough"
+  ],
+  "tm_bitfields": {
+    "set01": 2848159284,
+    "set02": 60832258,
+    "set03": 3546415369,
+    "set04": 1073791402,
+    "set05": 4096,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

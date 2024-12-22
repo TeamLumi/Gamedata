@@ -1,0 +1,22 @@
+{
+  "name": "dodrio",
+  "id": 85,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Scary Face",
+    "Trailblaze",
+    "Lunge"
+  ],
+  "tm_bitfields": {
+    "set01": 2147569184,
+    "set02": 33848192,
+    "set03": 574751754,
+    "set04": 49280,
+    "set05": 1050626,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

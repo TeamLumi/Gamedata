@@ -1,0 +1,24 @@
+{
+  "name": "chimecho",
+  "id": 358,
+  "tm_learnset": [
+    "Hyper Voice",
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Charm",
+    "Fake Tears",
+    "Imprison",
+    "Psyshock"
+  ],
+  "tm_bitfields": {
+    "set01": 2954595368,
+    "set02": 51419907,
+    "set03": 175247652,
+    "set04": 1073791136,
+    "set05": 262153,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

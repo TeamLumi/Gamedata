@@ -1,0 +1,28 @@
+{
+  "name": "manectric",
+  "id": 310,
+  "tm_learnset": [
+    "Wild Charge",
+    "Hyper Voice",
+    "Hidden Power",
+    "Electric Terrain",
+    "Frustration",
+    "Return",
+    "Psychic Fangs",
+    "Thunder Fang",
+    "Fire Fang",
+    "Ice Fang",
+    "Crunch",
+    "Scary Face"
+  ],
+  "tm_bitfields": {
+    "set01": 2177089584,
+    "set02": 50478598,
+    "set03": 2185371944,
+    "set04": 2081456,
+    "set05": 2,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

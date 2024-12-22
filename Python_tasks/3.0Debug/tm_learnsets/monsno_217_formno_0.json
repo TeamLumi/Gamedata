@@ -1,0 +1,28 @@
+{
+  "name": "ursaring",
+  "id": 217,
+  "tm_learnset": [
+    "Hyper Voice",
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Crunch",
+    "Close Combat",
+    "Charm",
+    "Fake Tears",
+    "Scary Face",
+    "Trailblaze",
+    "Play Rough",
+    "High Horsepower"
+  ],
+  "tm_bitfields": {
+    "set01": 3389214385,
+    "set02": 42482624,
+    "set03": 2454097099,
+    "set04": 1343275178,
+    "set05": 22531,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

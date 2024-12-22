@@ -1,0 +1,24 @@
+{
+  "name": "lucario",
+  "id": 448,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Crunch",
+    "Close Combat",
+    "Screech",
+    "Scary Face",
+    "Trailblaze"
+  ],
+  "tm_bitfields": {
+    "set01": 4265821885,
+    "set02": 1317542464,
+    "set03": 2253309003,
+    "set04": 2417016970,
+    "set05": 2050,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

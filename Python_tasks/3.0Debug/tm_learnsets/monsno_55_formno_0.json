@@ -1,0 +1,25 @@
+{
+  "name": "golduck",
+  "id": 55,
+  "tm_learnset": [
+    "Hidden Power",
+    "Whirlpool",
+    "Frustration",
+    "Return",
+    "Flip Turn",
+    "Screech",
+    "Trailblaze",
+    "Power Gem",
+    "Psyshock"
+  ],
+  "tm_bitfields": {
+    "set01": 3696488557,
+    "set02": 46733952,
+    "set03": 3259109417,
+    "set04": 2281750926,
+    "set05": 329728,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

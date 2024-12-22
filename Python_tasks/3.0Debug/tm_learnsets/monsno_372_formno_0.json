@@ -1,0 +1,25 @@
+{
+  "name": "shelgon",
+  "id": 372,
+  "tm_learnset": [
+    "Hyper Voice",
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Thunder Fang",
+    "Fire Fang",
+    "Crunch",
+    "Dragon Dance",
+    "Scary Face"
+  ],
+  "tm_bitfields": {
+    "set01": 3221423154,
+    "set02": 100670180,
+    "set03": 2453831681,
+    "set04": 538362018,
+    "set05": 2,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

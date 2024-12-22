@@ -1,0 +1,22 @@
+{
+  "name": "geodude",
+  "id": 74,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Scary Face",
+    "Rock Blast",
+    "High Horsepower"
+  ],
+  "tm_bitfields": {
+    "set01": 3389064225,
+    "set02": 2189433460,
+    "set03": 2185661008,
+    "set04": 49290,
+    "set05": 16418,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

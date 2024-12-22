@@ -1,0 +1,22 @@
+{
+  "name": "swalot",
+  "id": 317,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Body Press",
+    "Venoshock",
+    "Infestation"
+  ],
+  "tm_bitfields": {
+    "set01": 2720224548,
+    "set02": 2181044746,
+    "set03": 2186674184,
+    "set04": 49282,
+    "set05": 655488,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

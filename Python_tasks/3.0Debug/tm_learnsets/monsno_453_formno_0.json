@@ -1,0 +1,23 @@
+{
+  "name": "croagunk",
+  "id": 453,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Close Combat",
+    "Screech",
+    "Scary Face",
+    "Venoshock"
+  ],
+  "tm_bitfields": {
+    "set01": 3993177761,
+    "set02": 1250442056,
+    "set03": 2186264578,
+    "set04": 2415968394,
+    "set05": 131074,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

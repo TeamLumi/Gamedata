@@ -1,0 +1,26 @@
+{
+  "name": "raikou",
+  "id": 243,
+  "tm_learnset": [
+    "Wild Charge",
+    "Hidden Power",
+    "Electric Terrain",
+    "Weather Ball",
+    "Frustration",
+    "Return",
+    "Thunder Fang",
+    "Crunch",
+    "Scary Face",
+    "Trailblaze"
+  ],
+  "tm_bitfields": {
+    "set01": 2848179256,
+    "set02": 50400787,
+    "set03": 2454073640,
+    "set04": 1237658,
+    "set05": 2050,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

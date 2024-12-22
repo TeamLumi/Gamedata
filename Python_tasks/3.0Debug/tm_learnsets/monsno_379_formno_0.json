@@ -1,0 +1,21 @@
+{
+  "name": "registeel",
+  "id": 379,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Heavy Slam",
+    "Body Press"
+  ],
+  "tm_bitfields": {
+    "set01": 3280684065,
+    "set02": 2206730962,
+    "set03": 2252773657,
+    "set04": 49290,
+    "set05": 192,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

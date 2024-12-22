@@ -1,0 +1,24 @@
+{
+  "name": "poliwrath",
+  "id": 62,
+  "tm_learnset": [
+    "Hidden Power",
+    "Whirlpool",
+    "Weather Ball",
+    "Frustration",
+    "Return",
+    "Close Combat",
+    "Scary Face",
+    "High Horsepower"
+  ],
+  "tm_bitfields": {
+    "set01": 3724767973,
+    "set02": 176765504,
+    "set03": 3259924490,
+    "set04": 268493198,
+    "set05": 16386,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "vulpix",
+  "id": 37,
+  "tm_learnset": [
+    "Hidden Power",
+    "Weather Ball",
+    "Frustration",
+    "Return",
+    "Charm",
+    "Imprison",
+    "Flame Charge",
+    "Hex",
+    "Mystical Fire"
+  ],
+  "tm_bitfields": {
+    "set01": 2286486576,
+    "set02": 303176228,
+    "set03": 37900290,
+    "set04": 1073799296,
+    "set05": 9480,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

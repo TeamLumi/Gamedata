@@ -1,0 +1,24 @@
+{
+  "name": "jirachi",
+  "id": 385,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Charm",
+    "Fake Tears",
+    "Imprison",
+    "Play Rough",
+    "Psyshock"
+  ],
+  "tm_bitfields": {
+    "set01": 2979775532,
+    "set02": 194022035,
+    "set03": 259135788,
+    "set04": 1073791104,
+    "set05": 266249,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "nidorina",
+  "id": 30,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Crunch",
+    "Charm",
+    "Venoshock"
+  ],
+  "tm_bitfields": {
+    "set01": 2311271460,
+    "set02": 33569418,
+    "set03": 2454323201,
+    "set04": 1074839682,
+    "set05": 131072,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

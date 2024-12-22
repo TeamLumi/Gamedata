@@ -1,0 +1,22 @@
+{
+  "name": "castform",
+  "id": 351,
+  "tm_learnset": [
+    "Hurricane",
+    "Hidden Power",
+    "Weather Ball",
+    "Frustration",
+    "Return",
+    "Hex"
+  ],
+  "tm_bitfields": {
+    "set01": 2711828068,
+    "set02": 34683446,
+    "set03": 46272928,
+    "set04": 57536,
+    "set05": 1024,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

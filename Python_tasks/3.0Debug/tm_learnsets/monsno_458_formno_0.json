@@ -1,0 +1,21 @@
+{
+  "name": "mantyke",
+  "id": 458,
+  "tm_learnset": [
+    "Hidden Power",
+    "Whirlpool",
+    "Frustration",
+    "Return",
+    "Air Slash"
+  ],
+  "tm_bitfields": {
+    "set01": 2181247076,
+    "set02": 33626752,
+    "set03": 1128693760,
+    "set04": 8438148,
+    "set05": 0,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

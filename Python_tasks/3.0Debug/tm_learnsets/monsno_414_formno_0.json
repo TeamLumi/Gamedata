@@ -1,0 +1,24 @@
+{
+  "name": "mothim",
+  "id": 414,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Air Slash",
+    "Venoshock",
+    "Infestation",
+    "Lunge",
+    "Struggle Bug"
+  ],
+  "tm_bitfields": {
+    "set01": 2955887648,
+    "set02": 571783808,
+    "set03": 64098344,
+    "set04": 8437953,
+    "set05": 3801088,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

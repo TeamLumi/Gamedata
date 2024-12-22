@@ -1,0 +1,27 @@
+{
+  "name": "slaking",
+  "id": 289,
+  "tm_learnset": [
+    "Wild Charge",
+    "Hyper Voice",
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Scary Face",
+    "Heavy Slam",
+    "Body Press",
+    "Trailblaze",
+    "Play Rough",
+    "High Horsepower"
+  ],
+  "tm_bitfields": {
+    "set01": 3886251701,
+    "set02": 42474214,
+    "set03": 2454093833,
+    "set04": 49338,
+    "set05": 22722,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

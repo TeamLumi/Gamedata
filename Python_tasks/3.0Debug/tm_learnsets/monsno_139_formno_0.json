@@ -1,0 +1,22 @@
+{
+  "name": "omastar",
+  "id": 139,
+  "tm_learnset": [
+    "Hidden Power",
+    "Whirlpool",
+    "Frustration",
+    "Return",
+    "Crunch",
+    "Rock Blast"
+  ],
+  "tm_bitfields": {
+    "set01": 2147709028,
+    "set02": 37829200,
+    "set03": 1111657048,
+    "set04": 1098126,
+    "set05": 32,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

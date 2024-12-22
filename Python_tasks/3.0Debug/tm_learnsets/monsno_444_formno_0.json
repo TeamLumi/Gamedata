@@ -1,0 +1,24 @@
+{
+  "name": "gabite",
+  "id": 444,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Thunder Fang",
+    "Fire Fang",
+    "Crunch",
+    "Scary Face",
+    "Power Gem"
+  ],
+  "tm_bitfields": {
+    "set01": 2319647794,
+    "set02": 100670196,
+    "set03": 2454095937,
+    "set04": 1491082,
+    "set05": 65538,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

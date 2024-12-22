@@ -1,0 +1,23 @@
+{
+  "name": "staraptor",
+  "id": 398,
+  "tm_learnset": [
+    "Hurricane",
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Air Slash",
+    "Close Combat",
+    "Struggle Bug"
+  ],
+  "tm_bitfields": {
+    "set01": 2147698208,
+    "set02": 33847936,
+    "set03": 599916552,
+    "set04": 276873409,
+    "set05": 2097152,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

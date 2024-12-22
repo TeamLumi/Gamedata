@@ -1,0 +1,23 @@
+{
+  "name": "shuppet",
+  "id": 353,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Screech",
+    "Scary Face",
+    "Imprison",
+    "Hex"
+  ],
+  "tm_bitfields": {
+    "set01": 2979204136,
+    "set02": 318814978,
+    "set03": 173166882,
+    "set04": 2147532928,
+    "set05": 1034,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

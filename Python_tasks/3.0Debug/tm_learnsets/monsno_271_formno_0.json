@@ -1,0 +1,24 @@
+{
+  "name": "lombre",
+  "id": 271,
+  "tm_learnset": [
+    "Hyper Voice",
+    "Hidden Power",
+    "Whirlpool",
+    "Grassy Terrain",
+    "Weather Ball",
+    "Frustration",
+    "Return",
+    "Trailblaze"
+  ],
+  "tm_bitfields": {
+    "set01": 3223795044,
+    "set02": 177289728,
+    "set03": 3261203488,
+    "set04": 59814,
+    "set05": 2048,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

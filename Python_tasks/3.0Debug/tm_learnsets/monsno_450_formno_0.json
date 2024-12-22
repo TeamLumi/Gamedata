@@ -1,0 +1,28 @@
+{
+  "name": "hippowdon",
+  "id": 450,
+  "tm_learnset": [
+    "Hyper Voice",
+    "Hidden Power",
+    "Weather Ball",
+    "Frustration",
+    "Return",
+    "Thunder Fang",
+    "Fire Fang",
+    "Ice Fang",
+    "Crunch",
+    "Heavy Slam",
+    "Body Press",
+    "High Horsepower"
+  ],
+  "tm_bitfields": {
+    "set01": 2319533108,
+    "set02": 33561168,
+    "set03": 2185660488,
+    "set04": 2023586,
+    "set05": 16576,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

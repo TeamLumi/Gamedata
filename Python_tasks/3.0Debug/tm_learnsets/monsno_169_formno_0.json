@@ -1,0 +1,26 @@
+{
+  "name": "crobat",
+  "id": 169,
+  "tm_learnset": [
+    "Hurricane",
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Crunch",
+    "Air Slash",
+    "Cross Poison",
+    "Screech",
+    "Hex",
+    "Venoshock"
+  ],
+  "tm_bitfields": {
+    "set01": 2684832800,
+    "set02": 1107590024,
+    "set03": 599998474,
+    "set04": 2173747393,
+    "set05": 132096,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

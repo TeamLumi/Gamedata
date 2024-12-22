@@ -1,0 +1,29 @@
+{
+  "name": "heatran",
+  "id": 485,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Fire Fang",
+    "Crunch",
+    "Scary Face",
+    "Rock Blast",
+    "Heavy Slam",
+    "Body Press",
+    "Flame Charge",
+    "Heat Crash",
+    "Power Gem",
+    "Lunge"
+  ],
+  "tm_bitfields": {
+    "set01": 2317438000,
+    "set02": 2516720484,
+    "set03": 2252785738,
+    "set04": 1360010,
+    "set05": 1115106,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

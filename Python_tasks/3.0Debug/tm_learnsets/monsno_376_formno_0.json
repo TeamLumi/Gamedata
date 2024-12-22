@@ -1,0 +1,26 @@
+{
+  "name": "metagross",
+  "id": 376,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Psychic Fangs",
+    "Psycho Cut",
+    "Scary Face",
+    "Heavy Slam",
+    "Body Press",
+    "Trailblaze",
+    "Psyshock"
+  ],
+  "tm_bitfields": {
+    "set01": 4060333088,
+    "set02": 2181040857,
+    "set03": 3060177464,
+    "set04": 33669250,
+    "set05": 264386,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

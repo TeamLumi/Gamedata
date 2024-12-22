@@ -1,0 +1,22 @@
+{
+  "name": "duskull",
+  "id": 355,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Imprison",
+    "Hex",
+    "Infestation"
+  ],
+  "tm_bitfields": {
+    "set01": 2953002024,
+    "set02": 327203584,
+    "set03": 173166626,
+    "set04": 49280,
+    "set05": 525320,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "gengar",
+  "id": 94,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Scary Face",
+    "Imprison",
+    "Hex",
+    "Venoshock",
+    "Infestation"
+  ],
+  "tm_bitfields": {
+    "set01": 4053224481,
+    "set02": 3667442440,
+    "set03": 2321174539,
+    "set04": 49282,
+    "set05": 656394,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

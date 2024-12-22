@@ -1,0 +1,25 @@
+{
+  "name": "entei",
+  "id": 244,
+  "tm_learnset": [
+    "Hidden Power",
+    "Weather Ball",
+    "Frustration",
+    "Return",
+    "Fire Fang",
+    "Crunch",
+    "Scary Face",
+    "Flame Charge",
+    "Trailblaze"
+  ],
+  "tm_bitfields": {
+    "set01": 2825077816,
+    "set02": 302123573,
+    "set03": 2454073448,
+    "set04": 1368202,
+    "set05": 2306,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "froslass",
+  "id": 478,
+  "tm_learnset": [
+    "Hidden Power",
+    "Weather Ball",
+    "Frustration",
+    "Return",
+    "Ice Fang",
+    "Crunch",
+    "Charm",
+    "Fake Tears",
+    "Scary Face",
+    "Imprison",
+    "Hex",
+    "Icicle Spear"
+  ],
+  "tm_bitfields": {
+    "set01": 2978740324,
+    "set02": 310385411,
+    "set03": 38932906,
+    "set04": 1075372160,
+    "set05": 33803,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

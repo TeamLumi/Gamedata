@@ -1,0 +1,26 @@
+{
+  "name": "muk",
+  "id": 89,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Screech",
+    "Scary Face",
+    "Imprison",
+    "Hex",
+    "Venoshock",
+    "Infestation",
+    "Lunge"
+  ],
+  "tm_bitfields": {
+    "set01": 3917958177,
+    "set02": 2189966190,
+    "set03": 2185936906,
+    "set04": 2147532930,
+    "set05": 1704970,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

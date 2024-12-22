@@ -1,0 +1,24 @@
+{
+  "name": "raichu",
+  "id": 26,
+  "tm_learnset": [
+    "Wild Charge",
+    "Hidden Power",
+    "Electric Terrain",
+    "Frustration",
+    "Return",
+    "Charm",
+    "Trailblaze",
+    "Play Rough"
+  ],
+  "tm_bitfields": {
+    "set01": 3654008865,
+    "set02": 1133002243,
+    "set03": 3261202728,
+    "set04": 1073791666,
+    "set05": 6144,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

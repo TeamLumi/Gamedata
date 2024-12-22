@@ -1,0 +1,29 @@
+{
+  "name": "arbok",
+  "id": 24,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Psychic Fangs",
+    "Thunder Fang",
+    "Fire Fang",
+    "Ice Fang",
+    "Crunch",
+    "Screech",
+    "Scary Face",
+    "Trailblaze",
+    "Venoshock",
+    "Infestation"
+  ],
+  "tm_bitfields": {
+    "set01": 2319926304,
+    "set02": 33569608,
+    "set03": 2186199050,
+    "set04": 2149564544,
+    "set05": 657410,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

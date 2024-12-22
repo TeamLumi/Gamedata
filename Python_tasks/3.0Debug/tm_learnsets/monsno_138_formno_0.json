@@ -1,0 +1,21 @@
+{
+  "name": "omanyte",
+  "id": 138,
+  "tm_learnset": [
+    "Hidden Power",
+    "Whirlpool",
+    "Frustration",
+    "Return",
+    "Rock Blast"
+  ],
+  "tm_bitfields": {
+    "set01": 2147692644,
+    "set02": 37829200,
+    "set03": 1111656976,
+    "set04": 49542,
+    "set05": 32,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

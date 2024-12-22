@@ -1,0 +1,25 @@
+{
+  "name": "charmander",
+  "id": 4,
+  "tm_learnset": [
+    "Hidden Power",
+    "Weather Ball",
+    "Frustration",
+    "Return",
+    "Fire Fang",
+    "Crunch",
+    "Dragon Dance",
+    "Scary Face",
+    "Flame Charge"
+  ],
+  "tm_bitfields": {
+    "set01": 3359704611,
+    "set02": 379722468,
+    "set03": 2453832705,
+    "set04": 538239106,
+    "set05": 258,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

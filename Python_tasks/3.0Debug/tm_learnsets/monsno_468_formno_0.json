@@ -1,0 +1,27 @@
+{
+  "name": "togekiss",
+  "id": 468,
+  "tm_learnset": [
+    "Hyper Voice",
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Smart Strike",
+    "Air Slash",
+    "Charm",
+    "Imprison",
+    "Play Rough",
+    "Mystical Fire",
+    "Psyshock"
+  ],
+  "tm_bitfields": {
+    "set01": 4030449189,
+    "set02": 1250187943,
+    "set03": 586289448,
+    "set04": 1084276963,
+    "set05": 274440,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

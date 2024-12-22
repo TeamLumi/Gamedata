@@ -1,0 +1,23 @@
+{
+  "name": "lairon",
+  "id": 305,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Screech",
+    "Rock Blast",
+    "Heavy Slam",
+    "Body Press"
+  ],
+  "tm_bitfields": {
+    "set01": 2319647796,
+    "set02": 35658450,
+    "set03": 2454095953,
+    "set04": 2147532930,
+    "set05": 224,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

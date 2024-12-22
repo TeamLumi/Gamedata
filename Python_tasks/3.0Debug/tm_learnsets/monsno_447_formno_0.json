@@ -1,0 +1,23 @@
+{
+  "name": "riolu",
+  "id": 447,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Crunch",
+    "Close Combat",
+    "Screech",
+    "Trailblaze"
+  ],
+  "tm_bitfields": {
+    "set01": 3460499121,
+    "set02": 1250433600,
+    "set03": 2186183683,
+    "set04": 2417016962,
+    "set05": 2048,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

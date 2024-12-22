@@ -1,0 +1,24 @@
+{
+  "name": "metang",
+  "id": 375,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Psycho Cut",
+    "Scary Face",
+    "Heavy Slam",
+    "Trailblaze",
+    "Psyshock"
+  ],
+  "tm_bitfields": {
+    "set01": 4060333088,
+    "set02": 2181040857,
+    "set03": 3060177456,
+    "set04": 33603714,
+    "set05": 264258,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "lanturn",
+  "id": 171,
+  "tm_learnset": [
+    "Wild Charge",
+    "Hidden Power",
+    "Whirlpool",
+    "Electric Terrain",
+    "Frustration",
+    "Return",
+    "Flip Turn",
+    "Screech"
+  ],
+  "tm_bitfields": {
+    "set01": 2173923428,
+    "set02": 54599170,
+    "set03": 1111621928,
+    "set04": 2281751444,
+    "set05": 0,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

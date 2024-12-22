@@ -1,0 +1,24 @@
+{
+  "name": "flygon",
+  "id": 330,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Crunch",
+    "Air Slash",
+    "Dragon Dance",
+    "Screech",
+    "Struggle Bug"
+  ],
+  "tm_bitfields": {
+    "set01": 2321892386,
+    "set02": 637817076,
+    "set03": 2701230152,
+    "set04": 2693841123,
+    "set05": 2097152,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

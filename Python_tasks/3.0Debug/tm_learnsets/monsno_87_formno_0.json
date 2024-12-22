@@ -1,0 +1,26 @@
+{
+  "name": "dewgong",
+  "id": 87,
+  "tm_learnset": [
+    "Hidden Power",
+    "Whirlpool",
+    "Weather Ball",
+    "Frustration",
+    "Return",
+    "Smart Strike",
+    "Flip Turn",
+    "Charm",
+    "Play Rough",
+    "Icicle Spear"
+  ],
+  "tm_bitfields": {
+    "set01": 2152427620,
+    "set02": 46152192,
+    "set03": 1111621768,
+    "set04": 1210114436,
+    "set05": 36864,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

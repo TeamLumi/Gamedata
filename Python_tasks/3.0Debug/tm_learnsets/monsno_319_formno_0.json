@@ -1,0 +1,27 @@
+{
+  "name": "sharpedo",
+  "id": 319,
+  "tm_learnset": [
+    "Hidden Power",
+    "Whirlpool",
+    "Frustration",
+    "Return",
+    "Psychic Fangs",
+    "Ice Fang",
+    "Crunch",
+    "Flip Turn",
+    "Close Combat",
+    "Screech",
+    "Scary Face"
+  ],
+  "tm_bitfields": {
+    "set01": 2181265524,
+    "set02": 37829440,
+    "set03": 3259916426,
+    "set04": 2551824774,
+    "set05": 2,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

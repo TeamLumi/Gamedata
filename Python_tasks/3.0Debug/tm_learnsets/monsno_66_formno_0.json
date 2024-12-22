@@ -1,0 +1,22 @@
+{
+  "name": "machop",
+  "id": 66,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Close Combat",
+    "Scary Face",
+    "Heavy Slam"
+  ],
+  "tm_bitfields": {
+    "set01": 3456337569,
+    "set02": 176700004,
+    "set03": 2186182658,
+    "set04": 268484746,
+    "set05": 66,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

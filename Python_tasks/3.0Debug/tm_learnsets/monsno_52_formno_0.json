@@ -1,0 +1,26 @@
+{
+  "name": "meowth",
+  "id": 52,
+  "tm_learnset": [
+    "Hyper Voice",
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Charm",
+    "Screech",
+    "Fake Tears",
+    "Trailblaze",
+    "Play Rough",
+    "Power Gem"
+  ],
+  "tm_bitfields": {
+    "set01": 2848132644,
+    "set02": 1109408642,
+    "set03": 324162595,
+    "set04": 3221274784,
+    "set05": 71681,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "qwilfish",
+  "id": 211,
+  "tm_learnset": [
+    "Hidden Power",
+    "Whirlpool",
+    "Frustration",
+    "Return",
+    "Crunch",
+    "Flip Turn",
+    "Scary Face",
+    "Hex",
+    "Venoshock"
+  ],
+  "tm_bitfields": {
+    "set01": 2684565604,
+    "set02": 2185304586,
+    "set03": 1112147714,
+    "set04": 135315844,
+    "set05": 132098,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

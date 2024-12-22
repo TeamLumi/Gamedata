@@ -1,0 +1,27 @@
+{
+  "name": "mawile",
+  "id": 303,
+  "tm_learnset": [
+    "Hidden Power",
+    "Misty Terrain",
+    "Frustration",
+    "Return",
+    "Psychic Fangs",
+    "Thunder Fang",
+    "Fire Fang",
+    "Ice Fang",
+    "Crunch",
+    "Fake Tears",
+    "Play Rough"
+  ],
+  "tm_bitfields": {
+    "set01": 3760413729,
+    "set02": 61348732,
+    "set03": 2254621770,
+    "set04": 2081922,
+    "set05": 4097,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "articuno",
+  "id": 144,
+  "tm_learnset": [
+    "Hurricane",
+    "Hidden Power",
+    "Weather Ball",
+    "Frustration",
+    "Return",
+    "Air Slash",
+    "Icicle Spear"
+  ],
+  "tm_bitfields": {
+    "set01": 2147710068,
+    "set02": 33835665,
+    "set03": 599916680,
+    "set04": 8446147,
+    "set05": 32768,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

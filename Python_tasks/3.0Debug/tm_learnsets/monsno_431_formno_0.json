@@ -1,0 +1,23 @@
+{
+  "name": "glameow",
+  "id": 431,
+  "tm_learnset": [
+    "Hyper Voice",
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Charm",
+    "Fake Tears",
+    "Play Rough"
+  ],
+  "tm_bitfields": {
+    "set01": 2848132644,
+    "set02": 33569666,
+    "set03": 324145187,
+    "set04": 1073791136,
+    "set05": 4097,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

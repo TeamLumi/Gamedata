@@ -1,0 +1,22 @@
+{
+  "name": "seaking",
+  "id": 119,
+  "tm_learnset": [
+    "Hidden Power",
+    "Whirlpool",
+    "Frustration",
+    "Return",
+    "Smart Strike",
+    "Flip Turn"
+  ],
+  "tm_bitfields": {
+    "set01": 2156097636,
+    "set02": 33626624,
+    "set03": 1112146952,
+    "set04": 136364420,
+    "set05": 0,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

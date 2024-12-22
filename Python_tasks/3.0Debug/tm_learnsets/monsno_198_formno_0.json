@@ -1,0 +1,24 @@
+{
+  "name": "murkrow",
+  "id": 198,
+  "tm_learnset": [
+    "Hurricane",
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Air Slash",
+    "Screech",
+    "Scary Face",
+    "Hex"
+  ],
+  "tm_bitfields": {
+    "set01": 2952989736,
+    "set02": 33848192,
+    "set03": 584216834,
+    "set04": 2155921601,
+    "set05": 1026,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

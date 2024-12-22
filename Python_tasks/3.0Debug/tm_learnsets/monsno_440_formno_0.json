@@ -1,0 +1,21 @@
+{
+  "name": "happiny",
+  "id": 440,
+  "tm_learnset": [
+    "Hyper Voice",
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Charm"
+  ],
+  "tm_bitfields": {
+    "set01": 2955642468,
+    "set02": 176167462,
+    "set03": 41029924,
+    "set04": 1073791136,
+    "set05": 0,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

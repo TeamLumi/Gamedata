@@ -1,0 +1,27 @@
+{
+  "name": "lugia",
+  "id": 249,
+  "tm_learnset": [
+    "Hyper Voice",
+    "Hurricane",
+    "Hidden Power",
+    "Whirlpool",
+    "Weather Ball",
+    "Frustration",
+    "Return",
+    "Air Slash",
+    "Scary Face",
+    "Imprison",
+    "Psyshock"
+  ],
+  "tm_bitfields": {
+    "set01": 3016750204,
+    "set02": 121948819,
+    "set03": 3805680040,
+    "set04": 8446439,
+    "set05": 262154,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "skorupi",
+  "id": 451,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Crunch",
+    "Cross Poison",
+    "Screech",
+    "Scary Face",
+    "Venoshock",
+    "Infestation",
+    "Struggle Bug"
+  ],
+  "tm_bitfields": {
+    "set01": 3896708128,
+    "set02": 580926408,
+    "set03": 2454406178,
+    "set04": 2165358722,
+    "set05": 2752514,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

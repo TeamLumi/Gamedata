@@ -1,0 +1,23 @@
+{
+  "name": "prinplup",
+  "id": 394,
+  "tm_learnset": [
+    "Hidden Power",
+    "Whirlpool",
+    "Weather Ball",
+    "Frustration",
+    "Return",
+    "Flip Turn",
+    "Charm"
+  ],
+  "tm_bitfields": {
+    "set01": 3355652708,
+    "set02": 48306880,
+    "set03": 3529639937,
+    "set04": 1208017287,
+    "set05": 0,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

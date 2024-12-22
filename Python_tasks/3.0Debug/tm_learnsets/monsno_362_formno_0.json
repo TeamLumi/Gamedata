@@ -1,0 +1,27 @@
+{
+  "name": "glalie",
+  "id": 362,
+  "tm_learnset": [
+    "Hidden Power",
+    "Weather Ball",
+    "Frustration",
+    "Return",
+    "Ice Fang",
+    "Crunch",
+    "Fake Tears",
+    "Scary Face",
+    "Hex",
+    "Trailblaze",
+    "Icicle Spear"
+  ],
+  "tm_bitfields": {
+    "set01": 2718693476,
+    "set02": 2181045056,
+    "set03": 38193914,
+    "set04": 1630346,
+    "set05": 35843,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "name": "hypno",
+  "id": 97,
+  "tm_learnset": [
+    "Hidden Power",
+    "Psychic Terrain",
+    "Frustration",
+    "Return",
+    "Scary Face",
+    "Imprison",
+    "Body Press",
+    "Hex",
+    "Trailblaze",
+    "Psyshock"
+  ],
+  "tm_bitfields": {
+    "set01": 4095462441,
+    "set02": 1250441985,
+    "set03": 175247660,
+    "set04": 53376,
+    "set05": 265354,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

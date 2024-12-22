@@ -1,0 +1,24 @@
+{
+  "name": "chansey",
+  "id": 113,
+  "tm_learnset": [
+    "Wild Charge",
+    "Hyper Voice",
+    "Hidden Power",
+    "Electric Terrain",
+    "Frustration",
+    "Return",
+    "Charm",
+    "Trailblaze"
+  ],
+  "tm_bitfields": {
+    "set01": 4093376109,
+    "set02": 192977526,
+    "set03": 2188810540,
+    "set04": 1073791674,
+    "set05": 2048,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

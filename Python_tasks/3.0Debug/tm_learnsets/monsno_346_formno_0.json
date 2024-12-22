@@ -1,0 +1,22 @@
+{
+  "name": "cradily",
+  "id": 346,
+  "tm_learnset": [
+    "Hidden Power",
+    "Grassy Terrain",
+    "Frustration",
+    "Return",
+    "Rock Blast",
+    "Infestation"
+  ],
+  "tm_bitfields": {
+    "set01": 2317698336,
+    "set02": 38804056,
+    "set03": 2187758712,
+    "set04": 51330,
+    "set05": 524320,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

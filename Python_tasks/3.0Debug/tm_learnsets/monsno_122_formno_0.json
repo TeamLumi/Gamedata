@@ -1,0 +1,25 @@
+{
+  "name": "mr-mime",
+  "id": 122,
+  "tm_learnset": [
+    "Hidden Power",
+    "Misty Terrain",
+    "Psychic Terrain",
+    "Frustration",
+    "Return",
+    "Charm",
+    "Mystical Fire",
+    "Psyshock",
+    "Infestation"
+  ],
+  "tm_bitfields": {
+    "set01": 4055616553,
+    "set02": 1268300675,
+    "set03": 175247662,
+    "set04": 1073796224,
+    "set05": 794624,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

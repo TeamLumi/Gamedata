@@ -1,0 +1,23 @@
+{
+  "name": "vigoroth",
+  "id": 288,
+  "tm_learnset": [
+    "Hyper Voice",
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Scary Face",
+    "Trailblaze",
+    "Play Rough"
+  ],
+  "tm_bitfields": {
+    "set01": 3886235317,
+    "set02": 42474214,
+    "set03": 2454093825,
+    "set04": 49322,
+    "set05": 6146,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

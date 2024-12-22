@@ -1,0 +1,31 @@
+{
+  "name": "gallade",
+  "id": 475,
+  "tm_learnset": [
+    "Hyper Voice",
+    "Hidden Power",
+    "Misty Terrain",
+    "Psychic Terrain",
+    "Frustration",
+    "Return",
+    "Leaf Blade",
+    "Air Slash",
+    "Psycho Cut",
+    "Aqua Cutter",
+    "Close Combat",
+    "Charm",
+    "Imprison",
+    "Hex",
+    "Psyshock"
+  ],
+  "tm_bitfields": {
+    "set01": 4137406121,
+    "set02": 465091523,
+    "set03": 2592052588,
+    "set04": 1455477922,
+    "set05": 263176,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

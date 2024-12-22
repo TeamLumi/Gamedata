@@ -1,0 +1,31 @@
+{
+  "name": "gligar",
+  "id": 207,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Psychic Fangs",
+    "Thunder Fang",
+    "Fire Fang",
+    "Ice Fang",
+    "Crunch",
+    "Cross Poison",
+    "Screech",
+    "Scary Face",
+    "High Horsepower",
+    "Venoshock",
+    "Lunge",
+    "Struggle Bug"
+  ],
+  "tm_bitfields": {
+    "set01": 3393391648,
+    "set02": 581204952,
+    "set03": 2471480402,
+    "set04": 2166341771,
+    "set05": 3293186,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

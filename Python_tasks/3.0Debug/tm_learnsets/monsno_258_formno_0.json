@@ -1,0 +1,21 @@
+{
+  "name": "mudkip",
+  "id": 258,
+  "tm_learnset": [
+    "Hidden Power",
+    "Whirlpool",
+    "Frustration",
+    "Return",
+    "Screech"
+  ],
+  "tm_bitfields": {
+    "set01": 2286105188,
+    "set02": 33626688,
+    "set03": 3259138176,
+    "set04": 2147533190,
+    "set05": 0,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "shuckle",
+  "id": 213,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Rock Blast",
+    "Venoshock",
+    "Infestation",
+    "Struggle Bug"
+  ],
+  "tm_bitfields": {
+    "set01": 2315846688,
+    "set02": 570432088,
+    "set03": 2185661040,
+    "set04": 49282,
+    "set05": 2752544,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

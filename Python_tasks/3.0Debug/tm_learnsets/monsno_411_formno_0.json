@@ -1,0 +1,26 @@
+{
+  "name": "bastiodon",
+  "id": 411,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Screech",
+    "Scary Face",
+    "Rock Blast",
+    "Heavy Slam",
+    "Body Press",
+    "Trailblaze",
+    "Power Gem"
+  ],
+  "tm_bitfields": {
+    "set01": 2344844336,
+    "set02": 33561462,
+    "set03": 2252769496,
+    "set04": 2147532930,
+    "set05": 67810,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

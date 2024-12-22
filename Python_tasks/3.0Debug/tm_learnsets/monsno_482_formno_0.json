@@ -1,0 +1,23 @@
+{
+  "name": "azelf",
+  "id": 482,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Psycho Cut",
+    "Imprison",
+    "Play Rough",
+    "Psyshock"
+  ],
+  "tm_bitfields": {
+    "set01": 2983971884,
+    "set02": 3415247671,
+    "set03": 192026926,
+    "set04": 33603712,
+    "set05": 266248,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

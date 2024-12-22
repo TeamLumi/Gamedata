@@ -1,0 +1,25 @@
+{
+  "name": "venomoth",
+  "id": 49,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Air Slash",
+    "Screech",
+    "Venoshock",
+    "Infestation",
+    "Lunge",
+    "Struggle Bug"
+  ],
+  "tm_bitfields": {
+    "set01": 2418361376,
+    "set02": 571783816,
+    "set03": 599916584,
+    "set04": 2155921601,
+    "set05": 3801088,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

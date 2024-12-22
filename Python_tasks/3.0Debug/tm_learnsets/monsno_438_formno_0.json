@@ -1,0 +1,23 @@
+{
+  "name": "bonsly",
+  "id": 438,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Fake Tears",
+    "Rock Blast",
+    "Trailblaze",
+    "Power Gem"
+  ],
+  "tm_bitfields": {
+    "set01": 3355509800,
+    "set02": 2181053008,
+    "set03": 37918736,
+    "set04": 49280,
+    "set05": 67617,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

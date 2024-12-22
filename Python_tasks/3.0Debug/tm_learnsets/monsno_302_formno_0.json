@@ -1,0 +1,22 @@
+{
+  "name": "sableye",
+  "id": 302,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Imprison",
+    "Hex",
+    "Power Gem"
+  ],
+  "tm_bitfields": {
+    "set01": 4229106733,
+    "set02": 1518353346,
+    "set03": 307917347,
+    "set04": 49282,
+    "set05": 66568,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

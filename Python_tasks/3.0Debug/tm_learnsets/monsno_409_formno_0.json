@@ -1,0 +1,27 @@
+{
+  "name": "rampardos",
+  "id": 409,
+  "tm_learnset": [
+    "Hidden Power",
+    "Whirlpool",
+    "Frustration",
+    "Return",
+    "Crunch",
+    "Screech",
+    "Scary Face",
+    "Rock Blast",
+    "Heavy Slam",
+    "Body Press",
+    "Trailblaze"
+  ],
+  "tm_bitfields": {
+    "set01": 3418584113,
+    "set02": 109591158,
+    "set03": 3527838938,
+    "set04": 2148581770,
+    "set05": 2274,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

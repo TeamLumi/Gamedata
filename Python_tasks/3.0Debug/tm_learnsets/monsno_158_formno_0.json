@@ -1,0 +1,28 @@
+{
+  "name": "totodile",
+  "id": 158,
+  "tm_learnset": [
+    "Hidden Power",
+    "Whirlpool",
+    "Frustration",
+    "Return",
+    "Ice Fang",
+    "Crunch",
+    "Flip Turn",
+    "Dragon Dance",
+    "Screech",
+    "Fake Tears",
+    "Scary Face",
+    "Trailblaze"
+  ],
+  "tm_bitfields": {
+    "set01": 3359847015,
+    "set02": 178330304,
+    "set03": 1380107265,
+    "set04": 2820194692,
+    "set05": 2051,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

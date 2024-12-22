@@ -1,0 +1,24 @@
+{
+  "name": "mantine",
+  "id": 226,
+  "tm_learnset": [
+    "Hurricane",
+    "Hidden Power",
+    "Whirlpool",
+    "Frustration",
+    "Return",
+    "Air Slash",
+    "Rock Blast",
+    "Body Press"
+  ],
+  "tm_bitfields": {
+    "set01": 2181263716,
+    "set02": 38083264,
+    "set03": 1673953288,
+    "set04": 8438213,
+    "set05": 160,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

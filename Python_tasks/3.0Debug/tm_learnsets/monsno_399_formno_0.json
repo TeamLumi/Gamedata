@@ -1,0 +1,20 @@
+{
+  "name": "bidoof",
+  "id": 399,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Crunch"
+  ],
+  "tm_bitfields": {
+    "set01": 2848144928,
+    "set02": 50346498,
+    "set03": 308415744,
+    "set04": 1097858,
+    "set05": 0,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

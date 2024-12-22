@@ -1,0 +1,23 @@
+{
+  "name": "baltoy",
+  "id": 343,
+  "tm_learnset": [
+    "Hidden Power",
+    "Psychic Terrain",
+    "Frustration",
+    "Return",
+    "Imprison",
+    "Hex",
+    "Psyshock"
+  ],
+  "tm_bitfields": {
+    "set01": 3124466728,
+    "set02": 2197850705,
+    "set03": 175544884,
+    "set04": 53376,
+    "set05": 263176,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

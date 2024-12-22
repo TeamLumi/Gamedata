@@ -1,0 +1,29 @@
+{
+  "name": "ariados",
+  "id": 168,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Smart Strike",
+    "Cross Poison",
+    "Screech",
+    "Scary Face",
+    "Hex",
+    "Trailblaze",
+    "Venoshock",
+    "Infestation",
+    "Lunge",
+    "Struggle Bug"
+  ],
+  "tm_bitfields": {
+    "set01": 2552579104,
+    "set02": 572537352,
+    "set03": 38470696,
+    "set04": 2166407296,
+    "set05": 3804162,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

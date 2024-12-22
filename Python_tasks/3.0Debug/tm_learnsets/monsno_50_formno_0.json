@@ -1,0 +1,22 @@
+{
+  "name": "diglett",
+  "id": 50,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Charm",
+    "Screech",
+    "Rock Blast"
+  ],
+  "tm_bitfields": {
+    "set01": 2315322912,
+    "set02": 35666648,
+    "set03": 306612225,
+    "set04": 3221274754,
+    "set05": 32,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

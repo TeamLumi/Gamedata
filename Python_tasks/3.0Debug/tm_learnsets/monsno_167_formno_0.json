@@ -1,0 +1,28 @@
+{
+  "name": "spinarak",
+  "id": 167,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Cross Poison",
+    "Screech",
+    "Scary Face",
+    "Hex",
+    "Trailblaze",
+    "Venoshock",
+    "Infestation",
+    "Lunge",
+    "Struggle Bug"
+  ],
+  "tm_bitfields": {
+    "set01": 2552562720,
+    "set02": 572537352,
+    "set03": 38469664,
+    "set04": 2164310144,
+    "set05": 3804162,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

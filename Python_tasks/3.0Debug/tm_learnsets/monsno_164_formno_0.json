@@ -1,0 +1,25 @@
+{
+  "name": "noctowl",
+  "id": 164,
+  "tm_learnset": [
+    "Hyper Voice",
+    "Hurricane",
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Air Slash",
+    "Screech",
+    "Scary Face",
+    "Imprison"
+  ],
+  "tm_bitfields": {
+    "set01": 2953004584,
+    "set02": 1107589761,
+    "set03": 584192044,
+    "set04": 2155921633,
+    "set05": 10,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "parasect",
+  "id": 47,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Cross Poison",
+    "Screech",
+    "Venoshock",
+    "Struggle Bug"
+  ],
+  "tm_bitfields": {
+    "set01": 3357918496,
+    "set02": 573586056,
+    "set03": 325256232,
+    "set04": 2164310146,
+    "set05": 2228224,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

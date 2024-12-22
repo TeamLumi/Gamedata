@@ -1,0 +1,24 @@
+{
+  "name": "magcargo",
+  "id": 219,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Rock Blast",
+    "Flame Charge",
+    "Heat Crash",
+    "Power Gem",
+    "Infestation"
+  ],
+  "tm_bitfields": {
+    "set01": 2183250976,
+    "set02": 2449611381,
+    "set03": 2185661016,
+    "set04": 49282,
+    "set05": 590624,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

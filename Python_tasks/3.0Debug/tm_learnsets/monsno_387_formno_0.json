@@ -1,0 +1,24 @@
+{
+  "name": "turtwig",
+  "id": 387,
+  "tm_learnset": [
+    "Hidden Power",
+    "Grassy Terrain",
+    "Frustration",
+    "Return",
+    "Crunch",
+    "Leaf Blade",
+    "Heavy Slam",
+    "Trailblaze"
+  ],
+  "tm_bitfields": {
+    "set01": 2154661664,
+    "set02": 36706817,
+    "set03": 2455899168,
+    "set04": 5294218,
+    "set05": 2112,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

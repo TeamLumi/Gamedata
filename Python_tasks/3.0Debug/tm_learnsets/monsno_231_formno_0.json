@@ -1,0 +1,25 @@
+{
+  "name": "phanpy",
+  "id": 231,
+  "tm_learnset": [
+    "Hyper Voice",
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Charm",
+    "Heavy Slam",
+    "Trailblaze",
+    "Play Rough",
+    "High Horsepower"
+  ],
+  "tm_bitfields": {
+    "set01": 2185298992,
+    "set02": 33561168,
+    "set03": 2185660416,
+    "set04": 1073791138,
+    "set05": 22592,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

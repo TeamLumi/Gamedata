@@ -1,0 +1,24 @@
+{
+  "name": "absol",
+  "id": 359,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Air Slash",
+    "Psycho Cut",
+    "Close Combat",
+    "Hex",
+    "Play Rough"
+  ],
+  "tm_bitfields": {
+    "set01": 2713943148,
+    "set02": 320879606,
+    "set03": 2454975851,
+    "set04": 310427778,
+    "set05": 5120,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "leafeon",
+  "id": 470,
+  "tm_learnset": [
+    "Hyper Voice",
+    "Hidden Power",
+    "Weather Ball",
+    "Frustration",
+    "Return",
+    "Leaf Blade",
+    "Charm",
+    "Fake Tears",
+    "Trailblaze"
+  ],
+  "tm_bitfields": {
+    "set01": 2825340720,
+    "set02": 34609792,
+    "set03": 2455962664,
+    "set04": 1077993634,
+    "set05": 2049,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

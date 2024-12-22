@@ -1,0 +1,24 @@
+{
+  "name": "manaphy",
+  "id": 490,
+  "tm_learnset": [
+    "Hidden Power",
+    "Whirlpool",
+    "Weather Ball",
+    "Frustration",
+    "Return",
+    "Flip Turn",
+    "Charm",
+    "Fake Tears"
+  ],
+  "tm_bitfields": {
+    "set01": 2954621036,
+    "set02": 47286785,
+    "set03": 1130500136,
+    "set04": 1208017284,
+    "set05": 1,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "regigigas",
+  "id": 486,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Heavy Slam",
+    "Body Press",
+    "Heat Crash",
+    "High Horsepower"
+  ],
+  "tm_bitfields": {
+    "set01": 3280684065,
+    "set02": 176687810,
+    "set03": 2185662938,
+    "set04": 49290,
+    "set05": 17088,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

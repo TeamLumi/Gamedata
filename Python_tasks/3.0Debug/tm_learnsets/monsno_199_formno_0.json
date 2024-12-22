@@ -1,0 +1,25 @@
+{
+  "name": "slowking",
+  "id": 199,
+  "tm_learnset": [
+    "Hidden Power",
+    "Whirlpool",
+    "Psychic Terrain",
+    "Weather Ball",
+    "Frustration",
+    "Return",
+    "Imprison",
+    "Power Gem",
+    "Psyshock"
+  ],
+  "tm_bitfields": {
+    "set01": 4199281773,
+    "set02": 1254726180,
+    "set03": 3396735404,
+    "set04": 61830,
+    "set05": 327688,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "bellossom",
+  "id": 182,
+  "tm_learnset": [
+    "Hidden Power",
+    "Grassy Terrain",
+    "Weather Ball",
+    "Frustration",
+    "Return",
+    "Leaf Blade",
+    "Charm",
+    "Pollen Puff",
+    "Trailblaze",
+    "Play Rough",
+    "Venoshock",
+    "Infestation"
+  ],
+  "tm_bitfields": {
+    "set01": 2151499040,
+    "set02": 177216008,
+    "set03": 308413480,
+    "set04": 1077995648,
+    "set05": 661520,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

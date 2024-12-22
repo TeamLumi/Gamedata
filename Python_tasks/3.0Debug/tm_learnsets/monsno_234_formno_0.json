@@ -1,0 +1,25 @@
+{
+  "name": "stantler",
+  "id": 234,
+  "tm_learnset": [
+    "Wild Charge",
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Scary Face",
+    "Imprison",
+    "Trailblaze",
+    "Psyshock",
+    "Lunge"
+  ],
+  "tm_bitfields": {
+    "set01": 3018032696,
+    "set02": 51427843,
+    "set03": 173412648,
+    "set04": 49296,
+    "set05": 1312778,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

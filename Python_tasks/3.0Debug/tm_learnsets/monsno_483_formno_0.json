@@ -1,0 +1,24 @@
+{
+  "name": "dialga",
+  "id": 483,
+  "tm_learnset": [
+    "Hyper Voice",
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Scary Face",
+    "Heavy Slam",
+    "Body Press",
+    "Power Gem"
+  ],
+  "tm_bitfields": {
+    "set01": 3284890802,
+    "set02": 100797174,
+    "set03": 2655426921,
+    "set04": 49314,
+    "set05": 65730,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

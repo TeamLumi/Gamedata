@@ -1,0 +1,20 @@
+{
+  "name": "spheal",
+  "id": 363,
+  "tm_learnset": [
+    "Hidden Power",
+    "Whirlpool",
+    "Frustration",
+    "Return"
+  ],
+  "tm_bitfields": {
+    "set01": 2185441380,
+    "set02": 37755456,
+    "set03": 3259400192,
+    "set04": 49542,
+    "set05": 0,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

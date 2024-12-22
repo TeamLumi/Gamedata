@@ -1,0 +1,29 @@
+{
+  "name": "espeon",
+  "id": 196,
+  "tm_learnset": [
+    "Hyper Voice",
+    "Hidden Power",
+    "Psychic Terrain",
+    "Weather Ball",
+    "Frustration",
+    "Return",
+    "Psychic Fangs",
+    "Charm",
+    "Fake Tears",
+    "Imprison",
+    "Trailblaze",
+    "Power Gem",
+    "Psyshock"
+  ],
+  "tm_bitfields": {
+    "set01": 3092497960,
+    "set02": 33593857,
+    "set03": 443682856,
+    "set04": 1073868960,
+    "set05": 329737,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

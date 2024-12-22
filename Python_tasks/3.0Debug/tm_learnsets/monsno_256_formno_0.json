@@ -1,0 +1,21 @@
+{
+  "name": "combusken",
+  "id": 256,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Close Combat",
+    "Flame Charge"
+  ],
+  "tm_bitfields": {
+    "set01": 3422619297,
+    "set02": 311040740,
+    "set03": 2454356993,
+    "set04": 268484738,
+    "set05": 256,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

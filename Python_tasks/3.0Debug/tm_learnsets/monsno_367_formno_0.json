@@ -1,0 +1,25 @@
+{
+  "name": "huntail",
+  "id": 367,
+  "tm_learnset": [
+    "Hidden Power",
+    "Whirlpool",
+    "Frustration",
+    "Return",
+    "Ice Fang",
+    "Crunch",
+    "Screech",
+    "Scary Face",
+    "Infestation"
+  ],
+  "tm_bitfields": {
+    "set01": 2147709028,
+    "set02": 37820992,
+    "set03": 1111621640,
+    "set04": 2149106052,
+    "set05": 524290,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

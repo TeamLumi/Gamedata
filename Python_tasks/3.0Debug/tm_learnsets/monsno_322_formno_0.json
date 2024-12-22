@@ -1,0 +1,27 @@
+{
+  "name": "numel",
+  "id": 322,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Charm",
+    "Scary Face",
+    "Heavy Slam",
+    "Body Press",
+    "Flame Charge",
+    "Heat Crash",
+    "Trailblaze",
+    "High Horsepower"
+  ],
+  "tm_bitfields": {
+    "set01": 2315322400,
+    "set02": 302127732,
+    "set03": 2185660416,
+    "set04": 1073791106,
+    "set05": 19394,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

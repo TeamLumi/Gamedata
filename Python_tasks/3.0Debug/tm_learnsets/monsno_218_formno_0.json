@@ -1,0 +1,25 @@
+{
+  "name": "slugma",
+  "id": 218,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Rock Blast",
+    "Flame Charge",
+    "Heat Crash",
+    "High Horsepower",
+    "Power Gem",
+    "Infestation"
+  ],
+  "tm_bitfields": {
+    "set01": 2147583008,
+    "set02": 302127733,
+    "set03": 37912576,
+    "set04": 49282,
+    "set05": 607008,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

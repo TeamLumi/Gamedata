@@ -1,0 +1,27 @@
+{
+  "name": "jynx",
+  "id": 124,
+  "tm_learnset": [
+    "Hyper Voice",
+    "Hidden Power",
+    "Psychic Terrain",
+    "Frustration",
+    "Return",
+    "Psycho Cut",
+    "Charm",
+    "Screech",
+    "Fake Tears",
+    "Icicle Spear",
+    "Psyshock"
+  ],
+  "tm_bitfields": {
+    "set01": 4027840621,
+    "set02": 1251523329,
+    "set03": 175247534,
+    "set04": 3254833312,
+    "set05": 294913,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

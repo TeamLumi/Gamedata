@@ -1,0 +1,24 @@
+{
+  "name": "hoothoot",
+  "id": 163,
+  "tm_learnset": [
+    "Hyper Voice",
+    "Hurricane",
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Air Slash",
+    "Screech",
+    "Imprison"
+  ],
+  "tm_bitfields": {
+    "set01": 2952988200,
+    "set02": 1107589761,
+    "set03": 584192036,
+    "set04": 2155921633,
+    "set05": 8,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

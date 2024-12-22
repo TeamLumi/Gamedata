@@ -1,0 +1,23 @@
+{
+  "name": "phione",
+  "id": 489,
+  "tm_learnset": [
+    "Hidden Power",
+    "Whirlpool",
+    "Weather Ball",
+    "Frustration",
+    "Return",
+    "Flip Turn",
+    "Charm"
+  ],
+  "tm_bitfields": {
+    "set01": 2149265508,
+    "set02": 46205440,
+    "set03": 1130500096,
+    "set04": 1208017284,
+    "set05": 0,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

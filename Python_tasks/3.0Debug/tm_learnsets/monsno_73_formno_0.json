@@ -1,0 +1,28 @@
+{
+  "name": "tentacruel",
+  "id": 73,
+  "tm_learnset": [
+    "Hidden Power",
+    "Whirlpool",
+    "Weather Ball",
+    "Frustration",
+    "Return",
+    "Cross Poison",
+    "Flip Turn",
+    "Screech",
+    "Scary Face",
+    "Hex",
+    "Venoshock",
+    "Infestation"
+  ],
+  "tm_bitfields": {
+    "set01": 2149544036,
+    "set02": 37829128,
+    "set03": 1380582410,
+    "set04": 2298536324,
+    "set05": 656386,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "skiploom",
+  "id": 188,
+  "tm_learnset": [
+    "Hidden Power",
+    "Grassy Terrain",
+    "Frustration",
+    "Return",
+    "Charm",
+    "Pollen Puff",
+    "Trailblaze",
+    "Infestation",
+    "Lunge"
+  ],
+  "tm_bitfields": {
+    "set01": 2150958368,
+    "set02": 34609793,
+    "set03": 56759328,
+    "set04": 1073793152,
+    "set05": 1574928,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "zubat",
+  "id": 41,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Crunch",
+    "Air Slash",
+    "Cross Poison",
+    "Venoshock"
+  ],
+  "tm_bitfields": {
+    "set01": 2684816416,
+    "set02": 1107590024,
+    "set03": 599916546,
+    "set04": 26263745,
+    "set05": 131072,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

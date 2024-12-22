@@ -1,0 +1,22 @@
+{
+  "name": "wartortle",
+  "id": 8,
+  "tm_learnset": [
+    "Hidden Power",
+    "Whirlpool",
+    "Weather Ball",
+    "Frustration",
+    "Return",
+    "Flip Turn"
+  ],
+  "tm_bitfields": {
+    "set01": 3359846981,
+    "set02": 115415616,
+    "set03": 3259105792,
+    "set04": 134275462,
+    "set05": 0,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "name": "grumpig",
+  "id": 326,
+  "tm_learnset": [
+    "Hyper Voice",
+    "Hidden Power",
+    "Psychic Terrain",
+    "Frustration",
+    "Return",
+    "Imprison",
+    "Body Press",
+    "Trailblaze",
+    "Power Gem",
+    "Psyshock",
+    "Lunge"
+  ],
+  "tm_bitfields": {
+    "set01": 4030975017,
+    "set02": 1536736003,
+    "set03": 175509806,
+    "set04": 53408,
+    "set05": 1378440,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

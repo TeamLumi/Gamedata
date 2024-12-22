@@ -1,0 +1,24 @@
+{
+  "name": "lopunny",
+  "id": 428,
+  "tm_learnset": [
+    "Hyper Voice",
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Close Combat",
+    "Charm",
+    "Fake Tears",
+    "Play Rough"
+  ],
+  "tm_bitfields": {
+    "set01": 2917365285,
+    "set02": 193468930,
+    "set03": 2472673546,
+    "set04": 1342226594,
+    "set05": 4097,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

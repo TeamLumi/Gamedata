@@ -1,0 +1,20 @@
+{
+  "name": "porygon-z",
+  "id": 474,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Psyshock"
+  ],
+  "tm_bitfields": {
+    "set01": 2984473632,
+    "set02": 1124084390,
+    "set03": 173166892,
+    "set04": 49280,
+    "set05": 262144,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

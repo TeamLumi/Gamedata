@@ -1,0 +1,25 @@
+{
+  "name": "machamp",
+  "id": 68,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Cross Poison",
+    "Close Combat",
+    "Scary Face",
+    "Rock Blast",
+    "Heavy Slam",
+    "High Horsepower"
+  ],
+  "tm_bitfields": {
+    "set01": 3456353953,
+    "set02": 176700004,
+    "set03": 2186182730,
+    "set04": 285261962,
+    "set05": 16482,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

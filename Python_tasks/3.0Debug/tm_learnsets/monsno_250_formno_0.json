@@ -1,0 +1,26 @@
+{
+  "name": "ho-oh",
+  "id": 250,
+  "tm_learnset": [
+    "Hyper Voice",
+    "Hurricane",
+    "Hidden Power",
+    "Weather Ball",
+    "Frustration",
+    "Return",
+    "Air Slash",
+    "Imprison",
+    "Flame Charge",
+    "Mystical Fire"
+  ],
+  "tm_bitfields": {
+    "set01": 3014640696,
+    "set02": 319179447,
+    "set03": 2731938088,
+    "set04": 8446179,
+    "set05": 8456,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

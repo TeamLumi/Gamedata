@@ -1,0 +1,24 @@
+{
+  "name": "electivire",
+  "id": 466,
+  "tm_learnset": [
+    "Wild Charge",
+    "Hidden Power",
+    "Electric Terrain",
+    "Weather Ball",
+    "Frustration",
+    "Return",
+    "Screech",
+    "Trailblaze"
+  ],
+  "tm_bitfields": {
+    "set01": 3754149921,
+    "set02": 193478470,
+    "set03": 2185658664,
+    "set04": 2147541658,
+    "set05": 2048,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

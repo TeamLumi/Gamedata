@@ -1,0 +1,25 @@
+{
+  "name": "blastoise",
+  "id": 9,
+  "tm_learnset": [
+    "Hidden Power",
+    "Whirlpool",
+    "Weather Ball",
+    "Frustration",
+    "Return",
+    "Crunch",
+    "Flip Turn",
+    "Scary Face",
+    "Body Press"
+  ],
+  "tm_bitfields": {
+    "set01": 3393417845,
+    "set02": 115939904,
+    "set03": 3326526088,
+    "set04": 135324046,
+    "set05": 130,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

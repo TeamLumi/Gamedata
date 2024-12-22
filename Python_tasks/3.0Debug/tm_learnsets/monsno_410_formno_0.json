@@ -1,0 +1,25 @@
+{
+  "name": "shieldon",
+  "id": 410,
+  "tm_learnset": [
+    "Hidden Power",
+    "Frustration",
+    "Return",
+    "Screech",
+    "Scary Face",
+    "Rock Blast",
+    "Heavy Slam",
+    "Trailblaze",
+    "Power Gem"
+  ],
+  "tm_bitfields": {
+    "set01": 2344827952,
+    "set02": 33561462,
+    "set03": 2252769360,
+    "set04": 2147532930,
+    "set05": 67682,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

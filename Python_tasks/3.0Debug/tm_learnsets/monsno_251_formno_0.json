@@ -1,0 +1,26 @@
+{
+  "name": "celebi",
+  "id": 251,
+  "tm_learnset": [
+    "Hidden Power",
+    "Grassy Terrain",
+    "Psychic Terrain",
+    "Weather Ball",
+    "Frustration",
+    "Return",
+    "Leaf Blade",
+    "Psycho Cut",
+    "Imprison",
+    "Pollen Puff"
+  ],
+  "tm_bitfields": {
+    "set01": 2956969004,
+    "set02": 1133546131,
+    "set03": 460463400,
+    "set04": 37812352,
+    "set05": 24,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

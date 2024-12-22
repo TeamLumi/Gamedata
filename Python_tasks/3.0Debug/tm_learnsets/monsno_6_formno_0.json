@@ -1,0 +1,29 @@
+{
+  "name": "charizard",
+  "id": 6,
+  "tm_learnset": [
+    "Hurricane",
+    "Hidden Power",
+    "Weather Ball",
+    "Frustration",
+    "Return",
+    "Fire Fang",
+    "Crunch",
+    "Air Slash",
+    "Dragon Dance",
+    "Scary Face",
+    "Flame Charge",
+    "Heat Crash",
+    "Mystical Fire"
+  ],
+  "tm_bitfields": {
+    "set01": 3395372595,
+    "set02": 380525284,
+    "set03": 2999354377,
+    "set04": 546627778,
+    "set05": 8962,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

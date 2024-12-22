@@ -1,0 +1,22 @@
+{
+  "name": "cherubi",
+  "id": 420,
+  "tm_learnset": [
+    "Hidden Power",
+    "Grassy Terrain",
+    "Weather Ball",
+    "Frustration",
+    "Return",
+    "Pollen Puff"
+  ],
+  "tm_bitfields": {
+    "set01": 2151482656,
+    "set02": 34609664,
+    "set03": 39978016,
+    "set04": 59520,
+    "set05": 16,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}
