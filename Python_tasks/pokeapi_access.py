@@ -16,6 +16,7 @@ input_file_path = os.path.join(repo_file_path, constants.INPUT_NAME)
 stats_file_path = os.path.join(repo_file_path, "Python_tasks", "pokemon_stats")
 debug_file_path = os.path.join(repo_file_path, "Python_tasks", constants.DEBUG_NAME)
 tm_learnset_path = os.path.join(debug_file_path, "tm_learnsets")
+official_tm_learnset_folder_path = os.path.join(os.path.join(repo_file_path, "TMLearnset"))
 
 def log_error(message):
   with open(os.path.join(debug_file_path, "error.txt"), "a", encoding="utf-8") as error_file:
@@ -275,11 +276,22 @@ def get_all_api_mon_data():
     mons_name = slugify(get_pokemon_name(pokemonId), True)
     get_pokemon_stats(mons_name, pokemonId, mon["monsno"])
 
+def write_tm_101_to_150_learnsets():
+  for file in os.listdir(tm_learnset_path):
+    file_path = os.path.join(tm_learnset_path, file)
+    with open(file_path, "r") as input:
+      pokemon_learnset = json.load(input)["tm_bitfields"]
+
+    official_tm_learnset_path = os.path.join(official_tm_learnset_folder_path, file)
+    with open(official_tm_learnset_path, "w") as output:
+      json.dump(pokemon_learnset, output, ensure_ascii=False, indent=4)
+
 def full_run():
   # get_pokemon_tm_learnsets()
-  clear_logs()
-  get_all_api_mon_data()
+  # clear_logs()
+  # get_all_api_mon_data()
   # write_pokeapi_data_to_file()
+  write_tm_101_to_150_learnsets()
 
 if __name__ == "__main__":
   full_data = load_data()
