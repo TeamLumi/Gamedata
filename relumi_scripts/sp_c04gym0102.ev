@@ -1,0 +1,14 @@
+SP_C04GYM0102_INIT:
+	_JUMP('ev_c04gym0102_init_change')
+	_END()
+SP_C04GYM0102_OBJ:
+	_END()
+SP_C04GYM0102_SCENE:
+	_JUMP('sp_c04gym0102_tbl')
+	_END()
+SP_C04GYM0102_FLAG:
+	_JUMP('ev_c04gym0102_flag_change')
+	_END()
+sp_c04gym0102_tbl:
+	_JUMP('ev_c04gym0102_gym_first')
+	_END()

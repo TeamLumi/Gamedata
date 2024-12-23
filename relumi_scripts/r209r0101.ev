@@ -1,0 +1,31 @@
+ev_r209r0101_flag_change:
+	_ARRIVE_FLAG_SET($FLAG_ARRIVE_R209R0101)
+	_SET_SYS_FLAG($SYS_FLAG_MAP_INFO_STOP)
+	_END()
+ev_r209r0101:
+	_END()
+ev_r209r0101_woman1:; Script 2
+	_MACRO_EASY_OBJ_MSG('dp_scenario3', '00_msg_r209r0101_woman1', 'This is where spirits rest.\nPlease be quiet and respectful.')
+	_END()
+ev_r209r0101_woman2:; Script 3
+	_MACRO_EASY_OBJ_MSG('dp_scenario3', '00_msg_r209r0101_woman2', 'This is the Lost Tower.\rThere is a persistent fog that thickens\nthe higher you climb.\rOr, at least, there was.\nStrangely, it just vanished recently.')
+	_END()
+ev_r209r0101_scientistw:; Script 4
+	_TALK_OBJ_START()
+	_IF_FLAGON_JUMP(#2597, 'ev_r209r0101_scientistw_finished')
+	_MACRO_TALKMSG('dp_scenario3', '00_msg_r209r0101_scientistw_1', 'Oh, hello!\nWelcome to the Lost Tower.\rAre you interested in hearing about\nGhost-type Pokémon?\rDid you know--there’s an old folk tale\nthat tells of a nefarious Ghost-type\fPokémon that was somehow able to\ftravel across time.\rHe was famous for his deeds, but\nwas secretly cunning and dangerous.\rThat’s said to be in another universe...\nBut Ghost-types do sound scary, huh?\rAnyway, this cloth is said to be\na memoir of that nefarious Pokémon.\rIf that is the case, it certainly is\na mystery how it got here!\rBut as thanks for listening,\nI’d like to make it a gift to you!')
+	_LDVAL(@SCWK_TEMP0, 325); Reaper Cloth
+	_LDVAL(@SCWK_TEMP1, 1); Quantity 1
+	_CALL('ev_item_event')
+	_FLAG_SET(#2597)
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_r209r0101_scientistw_finished:
+	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_r209r0101_scientistw_2', 'Ghost-types can be strong allies like\nany other type of Pokémon.\rBut there’s always a sinister feeling\nabout them, wouldn’t you agree?')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_r209r0101_psychicm:; Script 5
+	_MACRO_EASY_OBJ_MSG('dp_scenario3', '00_msg_r209r0101_psychicm', '')
+	_END()

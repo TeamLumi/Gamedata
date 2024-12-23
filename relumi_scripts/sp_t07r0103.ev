@@ -1,0 +1,3 @@
+SP_T07R0103_FLAG:
+	_JUMP('ev_t07r0103_flag_change')
+	_END()

@@ -1,0 +1,91 @@
+ev_ugspace10_ranger_pokedex_quest:
+	_TALK_OBJ_START()
+	_IF_FLAGON_JUMP(#2020, 'ev_ugspace10_ranger_quest_completed')
+	_IF_FLAGON_JUMP(#2019, 'ev_ugspace10_ranger_gift_again')
+	_IF_FLAGON_JUMP(#2018, 'ev_ugspace10_ranger_pokedex_check')
+	_MACRO_TALKMSG('dp_scenario3', 'msg_ugspace10_ranger_pokedex_start', 'Hi, I was told that we might be getting some\nhelp from a talented young trainer down here in the\rGrand Underground.\rThat must be you, right?\rI’ve been tasked with collecting data on\na variety of species but I’m coming up a bit short.\rMaybe with that nifty Pokédex of yours,\nwe’d be able to speed things up.\rIf you can encounter and collect data on\n180 different species of Pokémon,\rthat should be enough to make up my numbers.\rCould you do that for me?')
+	_FLAG_SET(#2018); UGSPACE10 Ranger has been talked to once
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+ev_ugspace10_ranger_pokedex_check:
+	_MACRO_TALKMSG('dp_scenario3', 'msg_ugspace10_ranger_pokedex_cont', 'Oh hello again.\rLet’s take a look to see how many\nspecies you’ve seen.')
+	_TALK_CLOSE()
+	_ZENKOKU_ZUKAN_SEE_NUM(@SCWK_PARAM0); This is to check how many pokemon you've seen in the pokedex.
+	_IFVAL_JUMP(@SCWK_PARAM0, 'LT', 180, 'ev_ugspace10_ranger_pokedex_no'); You must have seen at least 180 pokemon to complete this quest
+	_MACRO_TALKMSG('dp_scenario3', 'msg_ugspace10_ranger_pokedex_success', 'Fantastic!\nThis data will help us immensely in our research.\rThanks a ton for your help.')
+	_JUMP('ev_ugspace10_ranger_pokedex_success')
+	_END()
+ev_ugspace10_ranger_pokedex_no:
+	_MACRO_TALKMSG('dp_scenario3', 'msg_ugspace10_ranger_pokedex_no', 'You’re getting there but we still\ndon’t have quite enough.\rI need data for 180 Pokémon registered as seen\nin your Pokédex.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_ugspace10_ranger_pokedex_success:
+	_LDVAL(@SCWK_TEMP3, 0)
+	_IF_FLAGOFF_CALL(#2021, 'ev_ugspace10_ranger_gift_add_bulbasaur')
+	_IF_FLAGOFF_CALL(#2022, 'ev_ugspace10_ranger_gift_add_charmander')
+	_IF_FLAGOFF_CALL(#2023, 'ev_ugspace10_ranger_gift_add_squirtle')
+	_IF_FLAGOFF_CALL(#2019, 'ev_ugspace10_ranger_thank_you_message'); Only add these messages if the player didn't say no to the gift in the first place
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_Cancel', 'Not right now', 2)
+	_OPEN_CUSTUM_WIN(@SCWK_TEMP0); SCWK_TEMP0 will have the MonsNo of the pokemon chosen
+	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', 2, 'ev_ugspace10_ranger_no_gift_give')
+	_POKEMON_NAME_EXTRA(0, @SCWK_TEMP0, 0, 0)
+    _ME_PLAY('M_FI013')
+	_TALKMSG('dp_scenario2%msg_t03_receive_starter')
+    _ME_WAIT()
+	_ADD_POKEMON_UI(@SCWK_TEMP0, 5, 0, @SCWK_ANSWER, 3)
+	_SWITCH(@SCWK_TEMP0); Check which pokemon was selected by their dexNum
+	_CASE_JUMP(1, 'ev_ugspace10_ranger_pokedex_bulbasaur_flag_set')
+	_CASE_JUMP(4, 'ev_ugspace10_ranger_pokedex_charmander_flag_set')
+	_CASE_JUMP(7, 'ev_ugspace10_ranger_pokedex_squirtle_flag_set')
+	_END()
+ev_ugspace10_ranger_gift_add_bulbasaur:
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_Bulbasaur', 'Bulbasaur', 1)
+	_ADD_WK(@SCWK_TEMP3, 1)
+	_RET()
+ev_ugspace10_ranger_gift_add_charmander:
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_Charmander', 'Charmander', 4)
+	_ADD_WK(@SCWK_TEMP3, 1)
+	_RET()
+ev_ugspace10_ranger_gift_add_squirtle:
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_Squirtle', 'Squirtle', 7)
+	_ADD_WK(@SCWK_TEMP3, 1)
+	_RET()
+ev_ugspace10_ranger_thank_you_message:
+	_IFVAL_CALL(@SCWK_TEMP3, 'EQ', 1, 'ev_ugspace10_ranger_gift_singular')
+	_IFVAL_CALL(@SCWK_TEMP3, 'GT', 1, 'ev_ugspace10_ranger_gift_multiple')
+	_RET()
+ev_ugspace10_ranger_gift_singular:
+	_MACRO_TALKMSG('dp_scenario3', 'msg_ugspace10_pokedex_ranger_single_pokemon_gift', 'To thank you for your hard work I’d like to offer\nyou this rare species of Pokémon for\ryou to take with you on your journey.')
+	_RET()
+ev_ugspace10_ranger_gift_multiple:
+	_MACRO_TALKMSG('dp_scenario3', 'msg_ugspace10_pokedex_ranger_multiple_pokemon_gift', 'To thank you for your hard work I’d like to offer\nyou one of these rare species of Pokémon\rfor you to take with you on your journey.')
+	_RET()
+ev_ugspace10_ranger_gift_again:
+	_FLAG_RESET(#2019); Resets if the player has said no to Ranger Starter gift.
+	_MACRO_TALKMSG('dp_scenario3', 'msg_ugspace10_ranger_gift_again', 'Oh, hello again. Ready to take this Pokémon?')
+	_JUMP('ev_ugspace10_ranger_pokedex_success')
+ev_ugspace10_ranger_no_gift_give:
+	_FLAG_SET(#2019); Player said no to Drifloon Ranger Starter Gift
+	_MACRO_TALKMSG('dp_scenario3', 'msg_ugspace10_ranger_no_gift_give', 'Oh, you can’t take it now? Not a problem.\rI’ll hang onto it until you’re ready to take it.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+ev_ugspace10_ranger_pokedex_bulbasaur_flag_set:
+	_FLAG_SET(#2021); Ranger Bulbasaur
+	_JUMP('ev_ugspace10_ranger_quest_finish')
+ev_ugspace10_ranger_pokedex_charmander_flag_set:
+	_FLAG_SET(#2022); Ranger Charmander
+	_JUMP('ev_ugspace10_ranger_quest_finish')
+ev_ugspace10_ranger_pokedex_squirtle_flag_set:
+	_FLAG_SET(#2023); Ranger Squirtle
+	_JUMP('ev_ugspace10_ranger_quest_finish')
+ev_ugspace10_ranger_quest_finish:
+	_MACRO_TALKMSG('dp_scenario3', 'msg_ugspace10_ranger_quest_finish', 'Pokémon are such fascinating creatures.\nI hope that you’ll take a look at what the\rPokédex has to tell you about your new partner.\rOf course there’s a lot to learn beyond what\ngadgets and gizmos can teach you.\rYou’re bound to learn a lot by battling and\nworking together too.\rThanks again for your help.\nI’ll be sure to tell my Ranger pals about you.\rI’m sure they’d appreciate your help as well!')
+	_FLAG_SET(#2020); UGSpace10 (2nd Fountain Spring Cave in warp list right next to initial dropdown in the UG) Ranger Quest completed.
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+ev_ugspace10_ranger_quest_completed:
+	_MACRO_TALKMSG('dp_scenario3', 'msg_ugspace10_ranger_quest_completed', 'Thanks again for your help.\nI’ll be sure to tell my Ranger pals about you.\rI’m sure they’d appreciate your help as well!')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+

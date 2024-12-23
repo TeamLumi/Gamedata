@@ -1,0 +1,9 @@
+SP_UNION02_INIT:
+	_END()
+SP_UNION02_OBJ:
+	_END()
+SP_UNION02_SCENE:
+	_END()
+SP_UNION02_FLAG:
+	_JUMP('ev_union02_flag_change')
+	_END()

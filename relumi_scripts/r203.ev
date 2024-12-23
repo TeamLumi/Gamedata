@@ -1,0 +1,423 @@
+ev_r203_girl2:
+	_EASY_OBJ_MSG('dp_scenario1%65-msg_r203_girl2_01')
+	_END()
+ev_r203_sign1:
+	_EASY_BOARD_MSG('dp_scenario1%65-msg_r203_sign1_01', 'BOARD_TYPE_ROAD', 0, 2)
+	_END()
+ev_r203_sign2:
+	_EASY_BOARD_MSG('dp_scenario1%65-msg_r203_sign2_01', 'BOARD_TYPE_ROAD', 0, 1)
+	_END()
+ev_r203_sign3:
+	_EASY_INFOBOARD_MSG('dp_scenario1%65-msg_r203_sign3_01', 'BOARD_TYPE_INFO', 0)
+	_END()
+ev_r203_sign4:
+	_EASY_INFOBOARD_MSG('dp_scenario1%65-msg_r203_sign4_01', 'BOARD_TYPE_INFO', 0)
+	_END()
+ev_r203_shroomish_mew:
+	_TALK_OBJ_START()
+	_VOICE_PLAY(285, 0, 0)
+	_TALKMSG('dp_scenario2%18-msg_mew_01')
+	_TALKMSG('dp_scenario2%18-msg_mew_02')
+	_YES_NO_WIN(@SCWK_ANSWER)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_r203_shroomish_no')
+	_JUMP('ev_r203_shroomish_item_check')
+	_END()
+ev_r203_shroomish_no:
+	_TALKMSG('dp_scenario2%18-msg_mew_07')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_r203_shroomish_item_check:
+	_ITEM_CHK(155, 1, @SCWK_ANSWER)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_r203_shroomish_no_berry')
+	_JUMP('ev_r203_shroomish_berry')
+ev_r203_shroomish_no_berry:
+	_TALKMSG('dp_scenario2%18-msg_mew_06')
+	_TALK_CLOSE()
+	_TALKMSG('dp_scenario2%18-msg_mew_07')
+	_TALK_CLOSE()
+	_END()
+ev_r203_shroomish_berry:
+	_SUB_ITEM(155, 1, @SCWK_ANSWER)
+	_VOICE_PLAY(285, 0, 0)
+	_TALKMSG('dp_scenario2%18-msg_mew_03')
+	_TALK_CLOSE()
+	_OBJ_ANIME('R203_SHROOMISH_MEW', 'anm_r203_shroomish_mew')
+	_OBJ_ANIME_WAIT()
+	_OBJ_ANIME('HERO', 'anm_r203_mew_hero')
+	_OBJ_ANIME_WAIT()
+	_CALL_EFFECT(0, 0, -211, 1, 747)
+	_OBJ_DEL('R203_SHROOMISH_MEW')
+	_FLAG_SET(#2300)
+	_OBJ_ADD('R203_MEW')
+	_FLAG_RESET(#2816)
+	_CHARA_LOOK_LOCK('R203_MEW', 'HERO')
+	_STOP_EFFECT(0)
+	_RELEASE_EFFECT(0)
+	_VOICE_PLAY(151, 0, 0)
+	_OBJ_ANIME('HERO', 'anm_r203_mew_hero_g')
+	_OBJ_ANIME_WAIT()
+	_TALKMSG('dp_scenario2%18-msg_mew_04')
+	_TALK_CLOSE()
+	_WHITE_OUT('SCR_WIPE_DIV', 'SCR_WIPE_SYNC*3')
+	_CHARA_LOOK_RELEASE('R203_MEW')
+	_TIME_WAIT(10, @SCWK_ANSWER)
+	_FLAG_SET(#2816)
+	_OBJ_DEL('R203_MEW')
+	_WHITE_IN('SCR_WIPE_DIV', 'SCR_WIPE_SYNC*3')
+	_TALKMSG('dp_scenario2%18-msg_mew_05')
+	_TALK_CLOSE()
+	_FLAG_RESET(#2817)
+	_TALK_OBJ_END()
+	_END()
+ev_r203_ranger_catch_quest:
+	_TALK_OBJ_START()
+	_IF_FLAGON_JUMP(#2008, 'ev_r203_ranger_quest_completed')
+	_IF_FLAGON_JUMP(#2007, 'ev_r203_ranger_gift_again')
+	_IF_FLAGON_JUMP(#2006, 'ev_r203_ranger_catch_check')
+	_MACRO_TALKMSG('dp_scenario2', 'msg_r203_ranger_catch_start', 'Hi there, I’m doing a nature survey\non rare species of Pokémon in the area\rI’ve heard there’s specific scents that\nhelp draw out newer transplants,\rbut I don’t know where to get them...\r... Hm?\rHey, is that what your Incense Burner is for?\nCould you do me a favor?\rCould you show me any strange Pokémon\nthat those scents draw out?\rI’ll have a neat reward for you if you do!')
+	_FLAG_SET(#2006); R203 Ranger has been talked to once
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+ev_r203_ranger_catch_check:
+	_MACRO_TALKMSG('dp_scenario2', 'msg_r203_ranger_catch_cont', 'Oh hey, you’re back.\rSo, did you manage to find any rare Pokémon?')
+	_TALK_CLOSE()
+	_CALL('ev_r203_ranger_pokemon_check'); Loads SCWK_PARAM1 as MonsNo and SCWK_PARAM2 as FormNo
+	_IFVAL_CALL(@SCWK_PARAM1, 'EQ', 263, 'ev_r204_ranger_check_zigzagoon_form')
+	_IFVAL_CALL(@SCWK_PARAM1, 'EQ', 550, 'ev_r204_ranger_check_basculin_form')
+	_MACRO_TALKMSG('dp_scenario2', 'msg_r203_ranger_catch_success', 'You did it! That’s a species of Pokémon\nthat isn’t usually found around these parts.\rFor some reason, it found itself drawn to the scent\nof the flower that you put in your Incense Burner.\rThanks, kid. you helped me out big time!\rAs promised, here is your reward.\nPick whichever one you like!')
+	_JUMP('ev_r203_ranger_catch_success')
+	_END()
+ev_r203_ranger_pokemon_check:
+    _POKELIST_SET_PROC(5); This should restrict it to the specific list detailed in UIDatabase.BoxOpenParam
+  	_POKELIST_GET_RESULT(@SCWK_PARAM0, @SCWK_PARAM3); Argument 1 is the bag/box position, Argument 2 is the box number (0 = Bag)
+	_IFVAL_JUMP(@SCWK_PARAM0, 'EQ', -1, 'ev_r203_ranger_catch_no'); If SCK_PARAM0 is -1, it means you chose nothing.
+    _TEMOTI_BOX_MONSNO(@SCWK_PARAM0, @SCWK_PARAM3, @SCWK_PARAM1); Get the MonsNo of the selected Pokemon, SCWK_PARAM1
+    _TEMOTI_BOX_FORMNO(@SCWK_PARAM0, @SCWK_PARAM3, @SCWK_PARAM2); Get the FormNo of the selected Pokemon, SCWK_PARAM2
+	_SWITCH(@SCWK_PARAM1)
+	_CASE_JUMP(234, 'ev_r203_ranger_correct_pokemon'); Stantler
+	_CASE_JUMP(263, 'ev_r203_ranger_correct_pokemon'); Zigzagoon
+	_CASE_JUMP(515, 'ev_r203_ranger_correct_pokemon'); Panpour
+	_CASE_JUMP(527, 'ev_r203_ranger_correct_pokemon'); Woobat
+	_CASE_JUMP(535, 'ev_r203_ranger_correct_pokemon'); Tympole
+	_CASE_JUMP(550, 'ev_r203_ranger_correct_pokemon'); Basculin
+	_CASE_JUMP(656, 'ev_r203_ranger_correct_pokemon'); Froakie
+	_CASE_JUMP(692, 'ev_r203_ranger_correct_pokemon'); Clauncher
+	_CASE_JUMP(704, 'ev_r203_ranger_correct_pokemon'); Goomy
+	_CASE_JUMP(751, 'ev_r203_ranger_correct_pokemon'); Dewpider
+	_CASE_JUMP(840, 'ev_r203_ranger_correct_pokemon'); Applin
+	_CASE_JUMP(846, 'ev_r203_ranger_correct_pokemon'); Arrokuda
+	_CASE_JUMP(0, 'ev_r203_ranger_catch_invalid'); Egg
+	_JUMP('ev_r203_ranger_catch_invalid'); Everything else
+    _END()
+ev_r203_ranger_catch_no:
+	_MACRO_TALKMSG('dp_scenario2', 'msg_r203_ranger_catch_no', 'Not yet?\nDon’t worry, kid.\rKeep at it and I’m sure you’ll\nfind one eventually.\rJust make sure you’ve got a flower burning\nin your Incense Burner, okay?')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_r203_ranger_catch_invalid:
+	_MACRO_TALKMSG('dp_scenario2', 'msg_r203_ranger_catch_invalid', 'I think this one is actually pretty common.\rAre you sure you’re burning that incense?')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_r203_ranger_correct_pokemon:
+	_RET(); Returns back to ev_r203_ranger_catch_check
+ev_r204_ranger_check_zigzagoon_form:
+	_IFVAL_JUMP(@SCWK_PARAM2, 'NE', 1, 'ev_r203_ranger_catch_invalid_form'); Galarian Zigzagoon specifically
+	_RET()
+ev_r204_ranger_check_basculin_form:
+	_IFVAL_JUMP(@SCWK_PARAM2, 'NE', 2, 'ev_r203_ranger_catch_invalid_form'); White Striped Basculin specifically
+	_RET()
+ev_r203_ranger_catch_invalid_form:
+	_MACRO_TALKMSG('dp_scenario2', 'msg_r203_ranger_catch_invalid_form', 'Hmm... something about it is off.\rDid you know some Pokémon look different\ndepending on their environment?')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_r203_ranger_catch_success:
+	_FIRST_POKE_NO_GET(@SCWK_ANSWER)
+	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 0, 'ev_r203_ranger_gift_not_turtwig'); You have Turtwig
+	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 1, 'ev_r203_ranger_gift_not_chimchar'); You have Chimchar
+	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 2, 'ev_r203_ranger_gift_not_piplup'); You have Piplup
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_Cancel', 'Not right now', 2)
+	_OPEN_CUSTUM_WIN(@SCWK_TEMP0); SCWK_TEMP0 will have the MonsNo of the pokemon chosen
+	_TALK_CLOSE()
+	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', 2, 'ev_r203_ranger_no_gift_give')
+	_POKEMON_NAME_EXTRA(0, @SCWK_TEMP0, 0, 0)
+    _ME_PLAY('M_FI013')
+	_TALKMSG('dp_scenario2%msg_r203_receive_starter')
+    _ME_WAIT()
+	_ADD_POKEMON_UI(@SCWK_TEMP0, 5, 0, @SCWK_ANSWER, 3)
+	_SWITCH(@SCWK_TEMP0)
+	_CASE_JUMP(387, 'ev_r203_ranger_catch_turtwig_flag_set')
+	_CASE_JUMP(390, 'ev_r203_ranger_catch_chimchar_flag_set')
+	_CASE_JUMP(393, 'ev_r203_ranger_catch_piplup_flag_set')
+	_END()
+ev_r203_ranger_gift_not_piplup:
+	_IF_FLAGOFF_CALL(#2293, 'ev_r203_ranger_gift_add_turtwig')
+	_IF_FLAGOFF_CALL(#2294, 'ev_r203_ranger_gift_add_chimchar')
+	_RET()
+ev_r203_ranger_gift_not_turtwig:
+	_IF_FLAGOFF_CALL(#2294, 'ev_r203_ranger_gift_add_chimchar')
+	_IF_FLAGOFF_CALL(#2295, 'ev_r203_ranger_gift_add_piplup')
+	_RET()
+ev_r203_ranger_gift_not_chimchar:
+	_IF_FLAGOFF_CALL(#2293, 'ev_r203_ranger_gift_add_turtwig')
+	_IF_FLAGOFF_CALL(#2295, 'ev_r203_ranger_gift_add_piplup')
+	_RET()
+ev_r203_ranger_gift_add_turtwig:
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_Turtwig', 'Turtwig', 387)
+	_RET()
+ev_r203_ranger_gift_add_chimchar:
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_Chimchar', 'Chimchar', 390)
+	_RET()
+ev_r203_ranger_gift_add_piplup:
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_Piplup', 'Piplup', 393)
+	_RET()
+ev_r203_ranger_gift_again:
+	_FLAG_RESET(#2007); Resets if the player has said no to Ranger Starter gift.
+	_MACRO_TALKMSG('dp_scenario2', 'msg_r203_ranger_gift_again', 'You’ve come back! Would you like to\nreceive your reward now?')
+	_JUMP('ev_r203_ranger_catch_success')
+ev_r203_ranger_no_gift_give:
+	_FLAG_SET(#2007); Player said no to Ranger Starter Gift
+	_MACRO_TALKMSG('dp_scenario2', 'msg_r203_ranger_no_gift_give', 'I see, you’re not ready to take it along\nyet. I’ll be here whenever that changes.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+ev_r203_ranger_catch_turtwig_flag_set:
+	_FLAG_SET(#2293); Ranger Turtwig
+	_JUMP('ev_r203_ranger_quest_finish')
+ev_r203_ranger_catch_chimchar_flag_set:
+	_FLAG_SET(#2294); Ranger Chimchar
+	_JUMP('ev_r203_ranger_quest_finish')
+ev_r203_ranger_catch_piplup_flag_set:
+	_FLAG_SET(#2295); Ranger Piplup
+	_JUMP('ev_r203_ranger_quest_finish')
+ev_r203_ranger_quest_finish:
+	_MACRO_TALKMSG('dp_scenario2', 'msg_r203_ranger_quest_finish', 'The Pokémon that you just chose\nis another rare species.\rTake care of it and raise it well.\rI’ve gotta get on with my survey work, but\nif you’re on your way to Eterna City,\ryou should speak to my colleague there.')
+	_FLAG_SET(#2008); Route 203 Ranger Catch Quest completed.
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+ev_r203_ranger_quest_completed:
+	_MACRO_TALKMSG('dp_scenario2', 'msg_r203_ranger_quest_completed', 'If you’re on your way to Eterna City,\nyou should speak to my colleague there.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+pos_r203_rival:
+	_EVENT_START()
+	_OBJ_ANIME('HERO', 'anm_r203_support_0_hero')
+	_PLAYER_POS_GET(@SCWK_TEMP0, @SCWK_TEMP1)
+	_IFVAL_JUMP(@SCWK_TEMP1, 'EQ', 757, 'pos_r203_rival_01_01')
+	_IFVAL_JUMP(@SCWK_TEMP1, 'EQ', 758, 'pos_r203_rival_01_02')
+	_IFVAL_JUMP(@SCWK_TEMP1, 'EQ', 759, 'pos_r203_rival_01_03')
+	_IFVAL_JUMP(@SCWK_TEMP1, 'EQ', 760, 'pos_r203_rival_01_04')
+	_END()
+anm_r203_support_0_hero:
+	_AC_DIR_R(8)
+	_ACMD_END()
+anm_r203_mew_hero:
+	_AC_DIR_D(8)
+	_ACMD_END()
+anm_r203_mew_hero_g:
+	_AC_MARK_GYOE()
+	_ACMD_END()
+anm_r203_shroomish_mew:
+	_AC_DIR_D(8)
+	_AC_DOWN(3, 4)
+	_ACMD_END()
+pos_r203_rival_01_01:
+	_OBJ_ANIME('R203_RIVAL', 'anm_01_r203_rival_01a')
+	_TIME_WAIT(10, @SCWK_ANSWER)
+	_CALL('ev_the_rival_play')
+	_TIME_WAIT(20, @SCWK_ANSWER)
+	_EVENT_CAMERA_INDEX(18)
+	_OBJ_ANIME_WAIT()
+	_JUMP('pos_r203_rival_01_common')
+	_END()
+pos_r203_rival_01_02:
+	_OBJ_ANIME('R203_RIVAL', 'anm_01_r203_rival_01b')
+	_TIME_WAIT(10, @SCWK_ANSWER)
+	_CALL('ev_the_rival_play')
+	_TIME_WAIT(20, @SCWK_ANSWER)
+	_EVENT_CAMERA_INDEX(18)
+	_OBJ_ANIME_WAIT()
+	_JUMP('pos_r203_rival_01_common')
+	_END()
+pos_r203_rival_01_03:
+	_OBJ_ANIME('R203_RIVAL', 'anm_01_r203_rival_01c')
+	_TIME_WAIT(10, @SCWK_ANSWER)
+	_CALL('ev_the_rival_play')
+	_TIME_WAIT(20, @SCWK_ANSWER)
+	_EVENT_CAMERA_INDEX(18)
+	_OBJ_ANIME_WAIT()
+	_JUMP('pos_r203_rival_01_common')
+	_END()
+pos_r203_rival_01_04:
+	_OBJ_ANIME('R203_RIVAL', 'anm_01_r203_rival_01d')
+	_TIME_WAIT(10, @SCWK_ANSWER)
+	_CALL('ev_the_rival_play')
+	_TIME_WAIT(20, @SCWK_ANSWER)
+	_EVENT_CAMERA_INDEX(18)
+	_OBJ_ANIME_WAIT()
+	_JUMP('pos_r203_rival_01_common')
+	_END()
+pos_r203_rival_01_common:
+	_EVENT_CAMERA_END_WAIT()
+	_RIVAL_NAME(0)
+	_PLAYER_NAME(1)
+	_TALKMSG('dp_scenario1%65-msg_r203_rival_01')
+	_TALK_CLOSE()
+	_LDVAL(@TOWNMAP_GUIDE_SEQUENCE, 2700)
+	_EVENT_CAMERA_INDEX(50)
+	_LDVAL(@WK_PLAY_REPO_NO, 0)
+	_FLAG_SET(#FE_PLAY_REPO)
+	_RIVAL_POKE_NO_GET(@SCWK_ANSWER)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_r203_rival_02')
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 2, 'ev_r203_rival_03')
+	_JUMP('ev_r203_rival_01')
+	_END()
+ev_r203_randomteam_barry_piplup:
+	_GET_RND(@SCWK_ANSWER, 4)
+	_LDVAL(@SCWK_TEMP3, 753)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_random_team_end')
+	_LDVAL(@SCWK_TEMP3, 754)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_random_team_end')
+	_LDVAL(@SCWK_TEMP3, 755)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 2, 'ev_random_team_end')
+	_LDVAL(@SCWK_TEMP3, 756)
+	_RET()
+ev_r203_randomteam_barry_turtwig:
+	_GET_RND(@SCWK_ANSWER, 4)
+	_LDVAL(@SCWK_TEMP3, 745)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_random_team_end')
+	_LDVAL(@SCWK_TEMP3, 746)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_random_team_end')
+	_LDVAL(@SCWK_TEMP3, 747)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 2, 'ev_random_team_end')
+	_LDVAL(@SCWK_TEMP3, 748)
+	_RET()
+ev_r203_randomteam_barry_chimchar:
+	_GET_RND(@SCWK_ANSWER, 4)
+	_LDVAL(@SCWK_TEMP3, 749)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_random_team_end')
+	_LDVAL(@SCWK_TEMP3, 750)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_random_team_end')
+	_LDVAL(@SCWK_TEMP3, 751)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 2, 'ev_random_team_end')
+	_LDVAL(@SCWK_TEMP3, 752)
+	_RET()
+ev_r203_rival_01:
+	_CALL('ev_r203_randomteam_barry_piplup')
+	_CALL('ev_set_trainer_id_for_current_gamemode_scripted_battle')
+	_TRAINER_BTL_SET(@SCWK_TEMP3, 0)
+	_JUMP('ev_r203_rival_btl_coomon')
+	_END()
+ev_r203_rival_02:
+	_CALL('ev_r203_randomteam_barry_turtwig')
+	_CALL('ev_set_trainer_id_for_current_gamemode_scripted_battle')
+	_TRAINER_BTL_SET(@SCWK_TEMP3, 0)
+	_JUMP('ev_r203_rival_btl_coomon')
+	_END()
+ev_r203_rival_03:
+	_CALL('ev_r203_randomteam_barry_chimchar')
+	_CALL('ev_set_trainer_id_for_current_gamemode_scripted_battle')
+	_TRAINER_BTL_SET(@SCWK_TEMP3, 0)
+	_JUMP('ev_r203_rival_btl_coomon')
+	_END()
+ev_r203_rival_btl_coomon:
+	_IF_FLAGON_CALL(#FE_PLAY_REPO, 'ev_to_write_play_repo')
+	_RIVAL_NAME(0)
+	_PLAYER_NAME(1)
+	_TALKMSG('dp_scenario1%65-msg_r203_rival_02_1')
+	_TALKMSG('dp_scenario1%65-msg_r203_rival_02_2', 1)
+	_TALKMSG('dp_scenario1%65-msg_r203_rival_02_3', 1)
+	_TALK_CLOSE()
+	_PLAYER_POS_GET(@SCWK_TEMP0, @SCWK_TEMP1)
+	_IFVAL_JUMP(@SCWK_TEMP1, 'EQ', 757, 'pos_r203_rival_01_11')
+	_IFVAL_JUMP(@SCWK_TEMP1, 'EQ', 758, 'pos_r203_rival_01_12')
+	_IFVAL_JUMP(@SCWK_TEMP1, 'EQ', 759, 'pos_r203_rival_01_13')
+	_IFVAL_JUMP(@SCWK_TEMP1, 'EQ', 760, 'pos_r203_rival_01_14')
+	_END()
+pos_r203_rival_01_11:
+	_OBJ_ANIME('R203_RIVAL', 'anm_01_r203_rival_02a')
+	_TIME_WAIT(15, @SCWK_ANSWER)
+	_EVENT_CAMERA_INDEX(19)
+	_OBJ_ANIME_WAIT()
+	_JUMP('pos_r203_rival_11_common')
+	_END()
+pos_r203_rival_01_12:
+	_OBJ_ANIME('R203_RIVAL', 'anm_01_r203_rival_02b')
+	_TIME_WAIT(15, @SCWK_ANSWER)
+	_EVENT_CAMERA_INDEX(19)
+	_OBJ_ANIME_WAIT()
+	_JUMP('pos_r203_rival_11_common')
+	_END()
+pos_r203_rival_01_13:
+	_OBJ_ANIME('R203_RIVAL', 'anm_01_r203_rival_02c')
+	_TIME_WAIT(15, @SCWK_ANSWER)
+	_EVENT_CAMERA_INDEX(19)
+	_OBJ_ANIME_WAIT()
+	_JUMP('pos_r203_rival_11_common')
+	_END()
+pos_r203_rival_01_14:
+	_OBJ_ANIME('R203_RIVAL', 'anm_01_r203_rival_02d')
+	_TIME_WAIT(15, @SCWK_ANSWER)
+	_EVENT_CAMERA_INDEX(19)
+	_OBJ_ANIME_WAIT()
+	_JUMP('pos_r203_rival_11_common')
+	_END()
+pos_r203_rival_11_common:
+	_OBJ_DEL('R203_RIVAL')
+	_LDVAL(@WK_SCENE_R203, 1)
+	_LDVAL(@TOWNMAP_GUIDE_SEQUENCE, 2800)
+	_EVENT_CAMERA_END_WAIT()
+	_TALK_END()
+	_END()
+ev_r203_rival_battle_lose:
+	_TALK_END()
+	_END()
+anm_01_r203_rival_02a:
+	_AC_DIR_R(4)
+	_AC_RIGHT(5, 4)
+	_AC_DIR_D(4)
+	_AC_DOWN(1, 4)
+	_AC_DIR_R(4)
+	_AC_RIGHT(5, 4)
+	_ACMD_END()
+anm_01_r203_rival_02b:
+	_AC_DIR_R(4)
+	_AC_RIGHT(10, 4)
+	_ACMD_END()
+anm_01_r203_rival_02c:
+	_AC_DIR_R(4)
+	_AC_RIGHT(10, 4)
+	_ACMD_END()
+anm_01_r203_rival_02d:
+	_AC_DIR_R(4)
+	_AC_RIGHT(10, 4)
+	_ACMD_END()
+anm_01_r203_rival_01a:
+	_AC_MARK_GYOE(1)
+	_AC_LEFT(4, 4)
+	_ACMD_END()
+anm_01_r203_rival_01b:
+	_AC_MARK_GYOE(1)
+	_AC_LEFT(2, 4)
+	_AC_DIR_D(4)
+	_AC_HERO_MATCH_Z(4)
+	_AC_DIR_L(4)
+	_AC_LEFT(2, 4)
+	_ACMD_END()
+anm_01_r203_rival_01c:
+	_AC_MARK_GYOE(1)
+	_AC_LEFT(2, 4)
+	_AC_DIR_D(4)
+	_AC_HERO_MATCH_Z(4)
+	_AC_DIR_L(4)
+	_AC_LEFT(2, 4)
+	_ACMD_END()
+anm_01_r203_rival_01d:
+	_AC_MARK_GYOE(1)
+	_AC_LEFT(2, 4)
+	_AC_DIR_D(4)
+	_AC_HERO_MATCH_Z(4)
+	_AC_DIR_L(4)
+	_AC_LEFT(2, 4)
+	_ACMD_END()

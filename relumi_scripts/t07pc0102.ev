@@ -1,0 +1,22 @@
+ev_t07pc0102:
+	_END()
+ev_t07pc0102_nurse:
+	_TALK_OBJ_START()
+	_IF_FLAGON_JUMP(#2593, 'ev_t07pc0102_nurse_no_mewtwo')
+	_TEMOTI_POKE_CHK(@SCWK_ANSWER, 150) ; Mewtwo
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_t07pc0102_nurse_no_mewtwo')
+	_MACRO_TALKMSG('dp_scenario3', '00_msg_t07pc0102_hotfix_00', 'Hello trainer.\rI’m told I have you to thank for\nsaving me.\rPlease take this,\nI found it when I woke up.')
+	_TALK_CLOSE()
+	_LDVAL(@SCWK_TEMP0, 1304); Old Mewtwo Armor
+	_LDVAL(@SCWK_TEMP1, 1); Quantity 1
+	_CALL('ev_item_event')
+	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_t07pc0102_hotfix_02', 'It’s time I get back to work\nGoodbye trainer.')
+	_TALK_CLOSE()
+	_FLAG_SET(#2593); Mewtwo Hotfix
+	_TALK_OBJ_END()
+	_END()
+ev_t07pc0102_nurse_no_mewtwo:
+	_MACRO_TALKMSG('dp_scenario3', '00_msg_t07pc0102_hotfix_01' , 'What?\nNurses are allowed breaks too you know!')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()

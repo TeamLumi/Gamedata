@@ -1,0 +1,106 @@
+ev_t04r0101_flag_change:
+	_IF_FLAGON_CALL(#FE_SODATEYA_AZUKE, 'ev_t04r0101_flag_change_02')
+	_END()
+ev_t04r0101_flag_change_02:
+	_FLAG_RESET(#FV_T04R0101_SUNGLASSES)
+	_RET()
+ev_t04r0101_sunglasses:
+	_TALK_OBJ_START_TURN_NOT()
+	_POKETCH_CHECK(7, @SCWK_ANSWER)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_t04r0101_sunglasses_02')
+	_TALKMSG('dp_scenario2%66-msg_t04r0101_sunglasses_01_1')
+	_TALKMSG('dp_scenario2%66-msg_t04r0101_sunglasses_01_2')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_t04r0101_sunglasses_02:
+	_TALKMSG('dp_scenario2%66-msg_t04r0101_sunglasses_02')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_t04r0101_poster:
+	_EASY_OBJ_MSG('dp_scenario2%66-msg_t04r0101_poster_01')
+	_END()
+ev_t04r0101_ditto_npc:
+	_TALK_OBJ_START()
+	_IF_FLAGON_JUMP(#2596, 'ev_t04r0101_ditto_npc_finished')
+	_MACRO_TALKMSG('dp_scenario3', '00_msg_t04r0101_ditto_1', 'Hey kid, want a Ditto?\nIt’s got 6x31 IVs, perfect specimen.\rForeign too.\nGreat for making eggs all quick-like.')
+	_YES_NO_WIN(@SCWK_ANSWER)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0 ,'ev_t04r0101_ditto_npc_yes')
+	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_t04r0101_ditto_1_0', 'Hmph.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_t04r0101_ditto_npc_yes:
+	_MACRO_TALKMSG('dp_scenario3', '00_msg_t04r0101_ditto_5', 'Great, then give me your starter.\nA baby is fine.')
+	_TALK_CLOSE()
+	_FIRST_MONSNO_FORMNO(@SCWK_TEMP0, @SCWK_TEMP1); 1st param is monsNo, 2nd is formNo
+	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', 387, 'ev_t04r0101_ditto_npc_yes_trade'); Checks if any of the starters are vanilla
+	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', 390, 'ev_t04r0101_ditto_npc_yes_trade')
+	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', 393, 'ev_t04r0101_ditto_npc_yes_trade')
+	_JUMP('ev_t04r0101_ditto_npc_yes_trade_randomized'); If they aren't vanilla, then it asks for any of the sinnoh starters.
+ev_t04r0101_ditto_npc_yes_trade:
+	_POKELIST_SET_PROC(2)
+	_POKELIST_GET_RESULT(@SCWK_TEMP2, @SCWK_TEMP3)
+	_IFVAL_JUMP(@SCWK_TEMP2, 'EQ', -1, 'ev_t04r0101_ditto_npc_invalid')
+	_TEMOTI_BOX_MONSNO(@SCWK_TEMP2, @SCWK_TEMP3, @SCWK_ANSWER)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'NE', @SCWK_TEMP0, 'ev_t04r0101_ditto_npc_invalid'); This will weed out any non starters if it somehow gets into here
+	; In theory the ev_t04r0101_ditto_npc_yes_trade_randomized will handle the non vanilla starters but it pays to be careful
+	_TALK_CLOSE()
+	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 387, 'ev_t04r0101_ditto_npc_turtwig_trade'); Checks if SCWK_ANSWER (monsNo) is one of the starters
+	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 390, 'ev_t04r0101_ditto_npc_chimchar_trade')
+	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 393, 'ev_t04r0101_ditto_npc_piplup_trade')
+	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_t04r0101_ditto_2', 'Good, now scram.')
+	_TALK_CLOSE()
+	_FLAG_SET(#2596); Masuda Ditto
+	_TALK_OBJ_END()
+	_END()
+ev_t04r0101_ditto_npc_turtwig_trade:
+	_LOCALKOUKAN_APPLY(4, @SCWK_TEMP3, @SCWK_TEMP2)
+	_RET()
+ev_t04r0101_ditto_npc_chimchar_trade:
+	_LOCALKOUKAN_APPLY(5, @SCWK_TEMP3, @SCWK_TEMP2)
+	_RET()
+ev_t04r0101_ditto_npc_piplup_trade:
+	_LOCALKOUKAN_APPLY(6, @SCWK_TEMP3, @SCWK_TEMP2)
+	_RET()
+ev_t04r0101_ditto_npc_invalid:
+	_POKEMON_NAME_EXTRA(0, @SCWK_TEMP0, 0, 0)
+	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_t04r0101_ditto_4', 'Wrong Pokémon, kid.\nI want a {0}.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_t04r0101_ditto_npc_yes_trade_randomized:
+	_POKELIST_SET_PROC(2)
+	_POKELIST_GET_RESULT(@SCWK_TEMP2, @SCWK_TEMP3)
+	_IFVAL_JUMP(@SCWK_TEMP2, 'EQ', -1, 'ev_t04r0101_ditto_npc_invalid_randomized')
+	_TEMOTI_BOX_MONSNO(@SCWK_TEMP2, @SCWK_TEMP3, @SCWK_ANSWER)
+	_TALK_CLOSE()
+	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 387, 'ev_t04r0101_ditto_npc_turtwig_trade'); Checks if SCWK_ANSWER (monsNo) is one of the starters
+	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 390, 'ev_t04r0101_ditto_npc_chimchar_trade')
+	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 393, 'ev_t04r0101_ditto_npc_piplup_trade')
+	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_t04r0101_ditto_2', 'Good, now scram.')
+	_TALK_CLOSE()
+	_FLAG_SET(#2596); Masuda Ditto
+	_TALK_OBJ_END()
+	_END()
+ev_t04r0101_ditto_npc_invalid:
+	_POKEMON_NAME_EXTRA(0, @SCWK_TEMP0, 0, 0)
+	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_t04r0101_ditto_4', 'Wrong Pokémon, kid.\nI want a {0}.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_t04r0101_ditto_npc_invalid_randomized:
+	_POKEMON_NAME_EXTRA(0, 387, 0, 0)
+	_POKEMON_NAME_EXTRA(0, 390, 1, 0)
+	_POKEMON_NAME_EXTRA(0, 393, 2, 0)
+	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_t04r0101_ditto_4_randomized', 'Wrong Pokémon, kid.\nI want either a {0}, {1}, or {2}.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_t04r0101_ditto_npc_finished:
+	_MACRO_TALKMSG('dp_scenario3', '00_msg_t04r0101_ditto_3', 'We never met.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+

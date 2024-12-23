@@ -1,0 +1,9 @@
+SP_D06R0101_INIT:
+	_END()
+SP_D06R0101_OBJ:
+	_END()
+SP_D06R0101_SCENE:
+	_END()
+SP_D06R0101_FLAG:
+	_JUMP('ev_safari_flag_change')
+	_END()

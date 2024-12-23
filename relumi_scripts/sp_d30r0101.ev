@@ -1,0 +1,10 @@
+SP_D30R0101_INIT:
+	_JUMP('ev_d30r0101_init_change')
+	_END()
+SP_D30R0101_OBJ:
+	_END()
+SP_D30R0101_SCENE:
+	_END()
+SP_D30R0101_FLAG:
+	_JUMP('ev_d30r0101_flag_change')
+	_END()

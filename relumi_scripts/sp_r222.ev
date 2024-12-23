@@ -1,0 +1,9 @@
+SP_R222_INIT:
+	_END()
+SP_R222_OBJ:
+	_END()
+SP_R222_SCENE:
+	_END()
+SP_R222_FLAG:
+	_JUMP('ev_r222_flag_change')
+	_END()

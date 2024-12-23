@@ -1,0 +1,8 @@
+; Leaving something in this file just in case ev_as doesn't like it
+ev_haitatu_flag_change:
+	_IFVAL_JUMP(@WK_SCENE_POSTMAN, 'EQ', 0, 'ev_haitatu_flag_off')
+	_FLAG_RESET(#FV_MYSTERY_POSTMAN)
+	_END()
+ev_haitatu_flag_off:
+	_FLAG_SET(#FV_MYSTERY_POSTMAN)
+	_END()

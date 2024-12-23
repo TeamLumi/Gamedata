@@ -1,0 +1,13 @@
+sp_c09_tbl:
+	_END()
+	_JUMP('SP_C09_INIT')
+SP_C09_INIT:
+	_END()
+SP_C09_OBJ:
+	_END()
+SP_C09_SCENE:
+	_JUMP('ev_c09_scene_change')
+	_END()
+SP_C09_FLAG:
+	_JUMP('ev_c09_flag_change')
+	_END()
