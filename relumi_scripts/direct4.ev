@@ -1,0 +1,4 @@
+ev_direct4_flag_change:
+	_END()
+ev_direct4:
+	_END()

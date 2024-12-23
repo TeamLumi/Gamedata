@@ -1,0 +1,13 @@
+SP_C11_INIT:
+	_END()
+SP_C11_OBJ:
+	_END()
+SP_C11_SCENE:
+	_JUMP('sp_c11_tbl')
+	_END()
+SP_C11_FLAG:
+	_JUMP('ev_c11_flag_change')
+	_END()
+sp_c11_tbl:
+	_SCENE_CHANGE_DATA(@WK_SCENE_C11, 1, 'ev_c11_rival')
+	_END()

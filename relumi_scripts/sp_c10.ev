@@ -1,0 +1,9 @@
+SP_C10_INIT:
+	_END()
+SP_C10_OBJ:
+	_END()
+SP_C10_SCENE:
+	_END()
+SP_C10_FLAG:
+	_JUMP('ev_c10_flag_change')
+	_END()

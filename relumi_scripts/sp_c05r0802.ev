@@ -1,0 +1,10 @@
+SP_C05R0802_INIT:
+	_END()
+SP_C05R0802_OBJ:
+	_END()
+SP_C05R0802_SCENE:
+	_JUMP('ev_c05r0801_door_exit')
+	_END()
+SP_C05R0802_FLAG:
+	_JUMP('ev_c05r0802_flag_change')
+	_END()

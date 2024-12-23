@@ -1,0 +1,8 @@
+SP_C05_SCENE:
+	_JUMP('sp_c05_tbl')
+	_END()
+SP_C05_FLAG:
+	_JUMP('ev_c05_flag_change')
+	_END()
+sp_c05_tbl:
+	_END()

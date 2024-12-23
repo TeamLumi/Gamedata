@@ -1,0 +1,9 @@
+SP_C10R0109_SCENE:
+	_JUMP('sp_c10r0109_tbl')
+	_END()
+SP_C10R0109_FLAG:
+	_JUMP('ev_c10r0109_flag_change')
+	_END()
+sp_c10r0109_tbl:
+	_SCENE_CHANGE_DATA(@WK_SCENE_CL_DOOR, 0, 'ev_c10r0109_room_in')
+	_END()

@@ -1,0 +1,997 @@
+ev_t01_flag_change:
+	_IFVAL_CALL(@WK_SCENE_DENDOU, 'EQ', 1, 'ev_t01_game_clear_first')
+	_IFVAL_JUMP(@WK_SCENE_T01R0201, 'EQ', 4, 'ev_t01_bag_get_after')
+	_IFVAL_CALL(@WK_SCENE_T01_RIVAL, 'EQ', 0, 'ev_t01_door');_IFVAL_JUMP(@480, 'EQ', 1, 'pos_ev_t01_oak_letter_event')
+	_IF_FLAGOFF_JUMP(#FH_11, 'ev_t01_mama_stand')
+	_END()
+ev_t01_game_clear_first:
+	_LDVAL(@WK_SCENE_DENDOU, 2)
+	_RET()
+ev_t01_boukennooto_get_after:
+	_LDVAL(@WK_SCENE_T01R0201, 7)
+	_RET()
+ev_t01_bag_get_after:
+	_LDVAL(@WK_SCENE_T01R0201, 5)
+	_RESET_SYS_FLAG($SYS_FLAG_AUTOSAVE_STOP)
+	_CALL('ev_t01_save_on')
+	_RET()
+ev_t01_door:
+	_DOOR_ENABLE_SET('T01R0101_D01', 0)
+	_RET()
+ev_t01_mama_stand:
+	_IFVAL_CALL(@WK_SCENE_T01R0201, 'EQ', 7, 'pos_ev_t01_mama_kitaku')
+	_RET()
+ev_t01_save_on:
+	_AUTO_SAVE_BACK_UP_ON()
+	_END()
+ev_t01_stop:
+	_TALK_OBJ_START()
+	_IF_FLAGON_JUMP(#FE_ZUKAN_GET, 'ev_t01_stop_05')
+	_IFVAL_JUMP(@WK_SCENE_D27R0101, 'GE', 1, 'ev_t01_stop_poke_get')
+	_IF_FLAGON_JUMP(#FE_T01R0102_RIVAL_TALK, 'ev_t01_stop_rival_go')
+	_PLAYER_NAME(0)
+	_RIVAL_NAME(1)
+	_TALKMSG('dp_scenario1%20-msg_t01_stop_04')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_t01_stop_05:
+	_TALKMSG('dp_scenario1%20-msg_t01_stop_05')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_t01_stop_poke_get:
+	_RIVAL_NAME(0)
+	_TALKMSG('dp_scenario1%20-msg_t01_stop_03')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_t01_stop_rival_go:
+	_PLAYER_NAME(0)
+	_RIVAL_NAME(1)
+	_TALKMSG('dp_scenario1%20-msg_t01_stop_02')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+pos_t01_stop:
+	_EVENT_START()
+	_OBJ_ANIME('T01_STOP', 'anm_t01_stop_00')
+	_OBJ_ANIME_WAIT()
+	_OBJ_ANIME('T01_STOP', 'anm_t01_stop_00_g')
+	_OBJ_ANIME_WAIT()
+	_PLAYER_POS_GET(@SCWK_TEMP0, @SCWK_TEMP1)
+	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', 108, 'pos_t01_stop_a1')
+	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', 109, 'pos_t01_stop_b1')
+	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', 110, 'pos_t01_stop_c1')
+	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', 111, 'pos_t01_stop_d1')
+	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', 112, 'pos_t01_stop_e1')
+	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', 113, 'pos_t01_stop_f1')
+	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', 114, 'pos_t01_stop_g1')
+	_JUMP('pos_t01_stop_h1')
+	_PLAYER_NAME(0)
+	_RIVAL_NAME(1)
+	_TALKMSG('dp_scenario1%20-msg_t01_stop_04')
+	_TALK_CLOSE()
+	_JUMP('common_pos_t01_stop')
+	_TALK_END()
+	_END()
+pos_t01_stop_a1:
+	_OBJ_ANIME('HERO', 'anm_t01_stop_player_01')
+	_OBJ_ANIME('T01_STOP', 'anm_t01_stop_01')
+	_OBJ_ANIME_WAIT()
+	_JUMP('pos_t01_stop_a1_01')
+	_JUMP('common_pos_t01_stop_02')
+pos_t01_stop_b1:
+	_OBJ_ANIME('HERO', 'anm_t01_stop_player_02')
+	_OBJ_ANIME('T01_STOP', 'anm_t01_stop_02')
+	_OBJ_ANIME_WAIT()
+	_JUMP('common_pos_t01_stop')
+	_JUMP('common_pos_t01_stop_02')
+pos_t01_stop_c1:
+	_OBJ_ANIME('HERO', 'anm_t01_stop_player_03')
+	_OBJ_ANIME('T01_STOP', 'anm_t01_stop_02')
+	_OBJ_ANIME_WAIT()
+	_JUMP('common_pos_t01_stop')
+	_JUMP('common_pos_t01_stop_02')
+pos_t01_stop_d1:
+	_OBJ_ANIME('HERO', 'anm_t01_stop_player_04')
+	_OBJ_ANIME('T01_STOP', 'anm_t01_stop_02')
+	_OBJ_ANIME_WAIT()
+	_JUMP('common_pos_t01_stop')
+	_JUMP('common_pos_t01_stop_02')
+pos_t01_stop_e1:
+	_OBJ_ANIME('HERO', 'anm_t01_stop_player_05')
+	_OBJ_ANIME('T01_STOP', 'anm_t01_stop_02')
+	_OBJ_ANIME_WAIT()
+	_JUMP('common_pos_t01_stop')
+	_JUMP('common_pos_t01_stop_02')
+pos_t01_stop_f1:
+	_OBJ_ANIME('HERO', 'anm_t01_stop_player_06')
+	_OBJ_ANIME('T01_STOP', 'anm_t01_stop_02')
+	_OBJ_ANIME_WAIT()
+	_JUMP('common_pos_t01_stop')
+	_JUMP('common_pos_t01_stop_02')
+pos_t01_stop_g1:
+	_OBJ_ANIME('HERO', 'anm_t01_stop_player_07')
+	_OBJ_ANIME('T01_STOP', 'anm_t01_stop_02')
+	_OBJ_ANIME_WAIT()
+	_JUMP('common_pos_t01_stop')
+	_JUMP('common_pos_t01_stop_02')
+pos_t01_stop_h1:
+	_OBJ_ANIME('HERO', 'anm_t01_stop_player_08')
+	_OBJ_ANIME('T01_STOP', 'anm_t01_stop_02')
+	_OBJ_ANIME_WAIT()
+	_JUMP('common_pos_t01_stop')
+	_JUMP('common_pos_t01_stop_02')
+pos_t01_stop_a1_01:
+	_PLAYER_NAME(0)
+	_RIVAL_NAME(1)
+	_TALKMSG('dp_scenario1%20-msg_t01_stop_01')
+	_TALK_CLOSE()
+	_JUMP('common_pos_t01_stop_02')
+common_pos_t01_stop:
+	_PLAYER_NAME(0)
+	_RIVAL_NAME(1)
+	_TALKMSG('dp_scenario1%20-msg_t01_stop_01')
+	_TALK_CLOSE()
+	_PLAYER_POS_GET(@SCWK_TEMP0, @SCWK_TEMP1)
+	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', 108, 'pos_t01_stop_11')
+	_JUMP('pos_t01_stop_18')
+	_JUMP('common_pos_t01_stop_02')
+pos_t01_stop_11:
+	_OBJ_ANIME('T01_STOP', 'anm_t01_stop_11')
+	_OBJ_ANIME_WAIT()
+	_JUMP('common_pos_t01_stop_02')
+	_JUMP('common_pos_t01_stop_02')
+pos_t01_stop_18:
+	_OBJ_ANIME('T01_STOP', 'anm_t01_stop_12')
+	_OBJ_ANIME_WAIT()
+	_JUMP('common_pos_t01_stop_02')
+	_JUMP('common_pos_t01_stop_02')
+common_pos_t01_stop_02:
+	_TALK_END()
+	_END()
+anm_t01_stop_player_01:
+	_AC_WAIT(40)
+	_AC_DOWN(2, 8)
+	_AC_DIR_U(4)
+	_ACMD_END()
+anm_t01_stop_player_02:
+	_AC_WAIT(28)
+	_AC_DOWN(1, 8)
+	_AC_DIR_U(4)
+	_ACMD_END()
+anm_t01_stop_player_03:
+	_AC_WAIT(32)
+	_AC_DOWN(1, 8)
+	_AC_DIR_U(4)
+	_ACMD_END()
+anm_t01_stop_player_04:
+	_AC_WAIT(36)
+	_AC_DOWN(1, 8)
+	_AC_DIR_U(4)
+	_ACMD_END()
+anm_t01_stop_player_05:
+	_AC_WAIT(40)
+	_AC_DOWN(1, 8)
+	_AC_DIR_U(4)
+	_ACMD_END()
+anm_t01_stop_player_06:
+	_AC_WAIT(44)
+	_AC_DOWN(1, 8)
+	_AC_DIR_U(4)
+	_ACMD_END()
+anm_t01_stop_player_07:
+	_AC_WAIT(48)
+	_AC_DOWN(1, 8)
+	_AC_DIR_U(4)
+	_ACMD_END()
+anm_t01_stop_player_08:
+	_AC_WAIT(52)
+	_AC_DOWN(1, 8)
+	_AC_DIR_U(4)
+	_ACMD_END()
+anm_t01_stop_00:
+	_AC_DIR_U(4)
+	_ACMD_END()
+anm_t01_stop_00_g:
+	_AC_MARK_GYOE(1)
+	_AC_WAIT(12)
+	_ACMD_END()
+anm_t01_stop_01:
+	_AC_DIR_R(4)
+	_AC_RIGHT(1, 4)
+	_AC_DIR_U(4)
+	_AC_WORLD_Z(866, 4)
+	_AC_DIR_L(4)
+	_AC_HERO_MATCH_X(4)
+	_AC_DIR_D(4)
+	_AC_DOWN(2, 8)
+	_ACMD_END()
+anm_t01_stop_02:
+	_AC_WORLD_Z(866, 4)
+	_AC_DIR_R(4)
+	_AC_HERO_MATCH_X(4)
+	_AC_DIR_D(4)
+	_AC_DOWN(1, 8)
+	_ACMD_END()
+anm_t01_stop_03:
+	_ACMD_END()
+anm_t01_stop_04:
+	_ACMD_END()
+anm_t01_stop_05:
+	_ACMD_END()
+anm_t01_stop_06:
+	_ACMD_END()
+anm_t01_stop_07:
+	_ACMD_END()
+anm_t01_stop_08:
+	_ACMD_END()
+anm_t01_stop_11:
+	_AC_DIR_R(8)
+	_AC_RIGHT(1, 8)
+	_AC_DIR_D(8)
+	_AC_WORLD_Z(868, 4)
+	_AC_DIR_L(8)
+	_AC_WORLD_X(108, 8)
+	_ACMD_END()
+anm_t01_stop_12:
+	_AC_DIR_L(8)
+	_AC_WORLD_X(108, 8)
+	_AC_DIR_D(8)
+	_AC_WORLD_Z(868, 4)
+	_ACMD_END()
+anm_t01_stop_13:
+	_ACMD_END()
+anm_t01_stop_14:
+	_ACMD_END()
+anm_t01_stop_15:
+	_ACMD_END()
+anm_t01_stop_16:
+	_ACMD_END()
+anm_t01_stop_17:
+	_ACMD_END()
+anm_t01_stop_18:
+	_ACMD_END()
+ev_t01_rival:
+	_EVENT_START()
+	_OBJ_ANIME('HERO', 'anm_01_t01_player_00')
+	_SET_DOOR_OBJ('T01R0101_D01')
+	_HIT_DOOR_ANIME(0)
+	_SE_PLAY('S_FI012')
+	_SET_GLOBALWATERFIELD(0)
+	_HIT_DOOR_ANIME_WAIT()
+	_EVENT_CAMERA_INDEX(28)
+	_SXY_POS_CHANGE('HERO', 105, 876)
+	_FLAG_RESET(#FV_T01_RIVAL)
+	_OBJ_ADD('T01_RIVAL')
+	_OBJ_ANIME('T01_RIVAL', 'anm_t01_rival_01_a1')
+	_TIME_WAIT(6, @SCWK_ANSWER)
+	_EVENT_CAMERA_INDEX(36)
+	_OBJ_ANIME('HERO', 'anm_t01_player_01')
+	_OBJ_ANIME_WAIT()
+	_SET_FORCE_BLINK('T01_RIVAL', 1)
+	_TIME_WAIT(1, @SCWK_ANSWER)
+	_SET_FORCE_BLINK('T01_RIVAL', 0)
+	_SE_PLAY('S_FI003')
+	_TALKMSG('dp_scenario1%20-msg_t01_rival_01')
+	_TIME_WAIT(5, @SCWK_ANSWER)
+	_CALL('ev_the_rival_play')
+	_TIME_WAIT(5, @SCWK_ANSWER)
+	_OBJ_ANIME('T01_RIVAL', 'anm_t01_rival_01_10')
+	_OBJ_ANIME_WAIT()
+	_RIVAL_NAME(0)
+	_PLAYER_NAME(1)
+	_TALKMSG('dp_scenario1%20-msg_t01_rival_02')
+	_TALK_CLOSE()
+	_EVENT_CAMERA_INDEX(30)
+	_OBJ_ANIME('HERO', 'anm_01_t01_player_01')
+	_OBJ_ANIME('T01_RIVAL', 'anm_t01_rival_01_a2')
+	_OBJ_ANIME_WAIT()
+	_OBJ_ANIME('T01_RIVAL', 'anm_t01_rival_01_a2_g')
+	_OBJ_ANIME_WAIT()
+	_EVENT_CAMERA_END_WAIT()
+	_EVENT_CAMERA_INDEX(31)
+	_OBJ_ANIME('HERO', 'anm_01_t01_player_01_a')
+	_OBJ_ANIME('T01_RIVAL', 'anm_t01_rival_01_a3')
+	_OBJ_ANIME_WAIT()
+	_EVENT_CAMERA_END_WAIT()
+	_TIME_WAIT(15, @SCWK_ANSWER)
+	_OBJ_ANIME('T01_RIVAL', 'anm_t01_rival_20_a')
+	_OBJ_ANIME_WAIT()
+	_RIVAL_NAME(0)
+	_TALKMSG('dp_scenario1%20-msg_t01_rival_03', 1)
+	_TALK_CLOSE()
+	_OBJ_ANIME('T01_RIVAL', 'anm_t01_rival_20_b')
+	_OBJ_ANIME_WAIT()
+	_OBJ_ANIME('T01_RIVAL', 'anm_t01_rival_20')
+	_OBJ_ANIME_WAIT()
+	_HIT_DOOR_ANIME(1)
+	_TIME_WAIT(15, @SCWK_ANSWER)
+	_SE_PLAY('s_fi013')
+	_HIT_DOOR_ANIME_WAIT()
+	_OBJ_DEL('T01_RIVAL')
+	_CALL('ev_character_theme_stop')
+	_SET_GLOBALWATERFIELD(1)
+	_EVENT_CAMERA_INDEX(29)
+	_EVENT_CAMERA_END_WAIT()
+	_LDVAL(@WK_SCENE_T01, 1)
+	_LDVAL(@WK_SCENE_T01_RIVAL, 1)
+	_LDVAL(@TOWNMAP_GUIDE_SEQUENCE, 600)
+	_DOOR_ENABLE_SET('T01R0101_D01', 1)
+	_TALK_END()
+	_END()
+ev_t01_rival_map_jump:
+	_MAP_CHANGE('T01R0101', 'hoge', 1, 1, 1)
+	_TALK_END()
+	_END()
+anm_01_t01_player_00:
+	_AC_DIR_U(8)
+	_ACMD_END()
+anm_01_t01_player_01:
+	_AC_WAIT(2)
+	_AC_DIR_R(8)
+	_AC_WAIT(68)
+	_ACMD_END()
+anm_01_t01_player_01_a:
+	_AC_DIR_U(8)
+	_ACMD_END()
+anm_t01_player_01:
+	_AC_OFFSET(0, 0, 0.200000)
+	_AC_DIR_U(4)
+	_AC_DOWN(1, 8)
+	_ACMD_END()
+anm_t01_rival_01_10:
+	_AC_FACE_INDEX(5)
+	_AC_MARK_GYOE(1)
+	_AC_FACE_INDEX(0)
+	_ACMD_END()
+anm_t01_rival_01_a1:
+	_AC_DOWN(3, 4)
+	_ACMD_END()
+anm_t01_rival_01_a2:
+	_AC_DIR_R(4)
+	_AC_RIGHT(4, 4)
+	_ACMD_END()
+anm_t01_rival_01_a2_g:
+	_AC_MARK_GYOE()
+	_AC_WAIT(8)
+	_ACMD_END()
+anm_t01_rival_01_a3:
+	_AC_DIR_L(4)
+	_AC_LEFT(4, 4)
+	_AC_DIR_D(4)
+	_ACMD_END()
+anm_t01_rival_20_a:
+	_AC_FACE_INDEX(2)
+	_ACMD_END()
+anm_t01_rival_20_b:
+	_AC_FACE_INDEX(0)
+	_ACMD_END()
+anm_t01_rival_20:
+	_AC_DIR_U(4)
+	_AC_UP(3, 8)
+	_AC_VANISH_ON(1)
+	_ACMD_END()
+ev_t01_bigman:
+	_EASY_OBJ_MSG('dp_scenario1%20-msg_t01_bigman_01')
+	_END()
+ev_t01_woman1:
+	_TALK_OBJ_START()
+	_IF_FLAGON_JUMP(#FE_ZUKAN_GET, 'ev_t01_woman1_zukan')
+	_IFVAL_JUMP(@WK_SCENE_D27R0101, 'GE', 1, 'ev_t01_woman1_poke_get')
+	_TALKMSG('dp_scenario1%20-msg_t01_woman1_01')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_t01_woman1_zukan:
+	_TALKMSG('dp_scenario1%20-msg_t01_woman1_03')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_t01_woman1_poke_get:
+	_TALKMSG('dp_scenario1%20-msg_t01_woman1_02')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_t01_sign1:
+	_EASY_BOARD_MSG('dp_scenario1%20-msg_t01_sign1_01', 'BOARD_TYPE_TOWN', 0)
+	_END()
+ev_t01_sign2:
+	_PLAYER_NAME(0)
+	_EASY_BOARD_MSG('dp_scenario1%20-msg_t01_sign2_01', 'BOARD_TYPE_POST', 0)
+	_END()
+ev_t01_sign3:
+	_RIVAL_NAME(0)
+	_EASY_BOARD_MSG('dp_scenario1%20-msg_t01_sign3_01', 'BOARD_TYPE_POST', 0)
+	_END()
+ev_mama_cap:
+	_EVENT_START()
+	_EVENT_CAMERA_INDEX(105)
+	_OBJ_ANIME('HERO', 'anm_t01_mama_player_00')
+	_SET_DOOR_OBJ('T01R0201_D01')
+	_HIT_DOOR_ANIME(0)
+	_HIT_DOOR_ANIME_WAIT()
+	_OBJ_ANIME('HERO', 'anm_t01_mama_player_01')
+	_OBJ_ANIME_WAIT()
+	_SET_DOOR_OBJ('T01R0201_D01')
+	_HIT_DOOR_ANIME(1)
+	_EVENT_CAMERA_INDEX(107)
+	_AC_ANIM_LOCK('HERO')
+	_OBJ_ANIME('HERO', 'anm_t01_mama_player_02')
+	_SE_PLAY('M_FI013')
+	_TIME_WAIT(45, @SCWK_ANSWER)
+	_EVENT_CAMERA_INDEX(108)
+	_TIME_WAIT(45, @SCWK_ANSWER)
+	_EVENT_CAMERA_INDEX(109)
+	_OBJ_ANIME_WAIT()
+	_AC_ANIM_RELEASE('HERO')
+	_ME_WAIT()
+	_TIME_WAIT(25, @SCWK_ANSWER)
+	_FLAG_RESET(#FV_T01_MAMA)
+	_OBJ_ADD('T01_MAMA')
+	_OBJ_ANIME('HERO', 'anm_t01_mama_player_03')
+	_TIME_WAIT(2, @246)
+	_SET_DOOR_OBJ('T01R0201_D01')
+	_HIT_DOOR_ANIME(0)
+	_OBJ_ANIME('T01_MAMA', 'anm_t01_mama_mama_01')
+	_OBJ_ANIME_WAIT()
+	_HIT_DOOR_ANIME_WAIT()
+	_HIT_DOOR_ANIME(1)
+	_PLAYER_NAME(0)
+	_TALKMSG('dp_scenario1%23-msg_t01r0201_mama_29')
+	_TALK_CLOSE()
+	_HIT_DOOR_ANIME_WAIT()
+	_EVENT_CAMERA_INDEX(106)
+	_OBJ_ANIME('HERO', 'anm_t01_mama_player_04')
+	_OBJ_ANIME_WAIT()
+	_CALL('ev_block_doc_end')
+	_EVENT_CAMERA_END_WAIT()
+	_FLAG_SET(#FH_11)
+	_LDVAL(@WK_SCENE_T01R0201, 7)
+	_SET_SYS_FLAG($SYS_TRAINER_CARD_OPEN)
+	_TALK_END()
+	_END()
+anm_t01_mama_player_00:
+	_AC_UP(2, 1)
+	_ACMD_END()
+anm_t01_mama_player_01:
+	_AC_DOWN(2, 8)
+	_ACMD_END()
+anm_t01_mama_player_02:
+	_AC_INDEX_ANIME(0)
+	_AC_WAIT(95)
+	_ACMD_END()
+anm_t01_mama_player_03:
+	_AC_DIR_L(4)
+	_AC_LEFT(1, 8)
+	_AC_WAIT(4)
+	_AC_DIR_R(8)
+	_ACMD_END()
+anm_t01_mama_mama_01:
+	_AC_DOWN(3, 8)
+	_AC_DIR_L(8)
+	_ACMD_END()
+anm_t01_mama_mama_02:
+	_AC_DIR_U(4)
+	_ACMD_END()
+anm_t01_mama_mama_03:
+	_AC_UP(3, 8)
+	_ACMD_END()
+anm_t01_mama_player_04:
+	_AC_DIR_D(8)
+	_ACMD_END()
+ev_t01_mama_miokuri:
+	_PLAYER_NAME(0)
+	_EASY_OBJ_MSG('dp_scenario1%23-msg_t01r0201_mama_26')
+	_END()
+pos_ev_t01_mama_kitaku:
+	_OBJ_DEL('T01_MAMA')
+	_FLAG_SET(#FV_T01_MAMA)
+	_LDVAL(@WK_SCENE_T01R0201, 8)
+	_END()
+anm_t01_oak_1:
+	_AC_DIR_D(4)
+	_AC_DOWN(7, 8)
+	_AC_DIR_R(4)
+	_AC_MARK_GYOE()
+	_AC_RIGHT(4, 8)
+	_AC_DIR_U(4)
+	_ACMD_END()
+anm_t01_oak_2:
+	_AC_MARK_EMO(9)
+	_AC_WAIT(8)
+	_ACMD_END()
+anm_t01_oak_3:
+	_AC_DIR_L(4)
+	_AC_LEFT(1, 8)
+	_AC_DIR_R(4)
+	_AC_RIGHT(2, 8)
+	_AC_WAIT(8)
+	_AC_DIR_L(4)
+	_AC_LEFT(1, 8)
+	_AC_DIR_U(4)
+	_ACMD_END()
+anm_t01_oak_4:
+	_AC_DIR_L(4)
+	_AC_LEFT(5, 8)
+	_AC_DIR_U(4)
+	_AC_UP(10, 8)
+	_ACMD_END()
+pos_ev_t01_oak_letter_event:
+	_EVENT_START()
+	_CALL('ev_another_out')
+	_FLAG_RESET(#2872)
+	_OBJ_ADD('T01_OAK')
+	_OBJ_ANIME('T01_OAK', 'anm_t01_oak_1')
+	_OBJ_ANIME_WAIT()
+	_PLAYER_NAME(0)
+	_MACRO_TALKMSG('dp_scenario3', '00_msg_t01_oak_1', '{0}! There you are!\nI’ve been looking everywhere for you.')
+	_MACRO_TALKMSG('dp_scenario3', '00_msg_t01_oak_2', 'I was wondering if you could assist me\n in my research.\rYou see, there have been mysterious sightings\nof a grass covered Pokémon around Sinnoh.\r')
+	_TALK_CLOSE()
+	_POKE_WINDOW_PUT(492)
+	_OBJ_ANIME('T01_OAK', 'anm_t01_oak_2')
+	_OBJ_ANIME_WAIT()
+	_MACRO_TALKMSG('dp_scenario3', '00_msg_t01_oak_3', 'Oh? You’ve seen this Pokémon around?\rAnd it helped you through your journey?\rHow fascinating.')
+	_TALK_CLOSE()
+	_OBJ_ANIME('T01_OAK', 'anm_t01_oak_3')
+	_OBJ_ANIME_WAIT()
+	_MACRO_TALKMSG('dp_scenario3', '00_msg_t01_oak_4', 'I may have some intel as to where we\ncould find this Pokémon.\rIt seems you may have quite a bond with it.\rHow about it?\nSo you can pay it a thanks for helping you out.\rCome to the location in this letter.')
+	_LDVAL(@238, 452)
+	_LDVAL(@239, 1)
+	_CALL('ev_item_event')
+	_TALK_CLOSE()
+	_LDVAL(@464, 1)
+	_LDVAL(@480, 2)
+	_OBJ_ANIME('T01_OAK', 'anm_t01_oak_4')
+	_OBJ_ANIME_WAIT()
+	_OBJ_DEL('T01_OAK')
+	_FLAG_SET(#2872)
+	_CALL('ev_another_out_end')
+	_CALL('ev_block_doc_end')
+	_TALK_END()
+	_END()
+ev_t01_kurt:
+	_TALK_OBJ_START()
+	_IF_FLAGOFF_CALL(#FE_T01_KURT_INTRODUCTION, 'ev_t01_kurt_introduction'); Prepend the introduction if talking for the first time
+	_MACRO_TALKMSG('dp_scenario3', 'kurt_dialogue1', 'What do you wish to do?')
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_options_KURT_TRADE', 'Trade', 0)
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_options_KURT_TALK', 'Talk', 1)
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_options_KURT_CANCEL', 'Cancel', 2)
+	_OPEN_CUSTUM_WIN(@SCWK_ANSWER)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_t01_kurt_trade')
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_t01_kurt_talk')
+	_JUMP('ev_t01_kurt_end')
+ev_t01_kurt_introduction:
+	_CALL('ev_t01_kurt_debug_apricorns')
+	_PLAYER_NAME(0)
+	_MACRO_TALKMSG('dp_scenario3', 'kurt_introduction_???', 'Hello {0},\nmy name is Kurt.')
+	_MACRO_TALKMSG('dp_scenario3', 'kurt_introduction', 'I make Balls from Apricorns.\rCollect them from trees and bring ’em to me.\nI’ll make Balls out of them.')
+	_FLAG_SET(#FE_T01_KURT_INTRODUCTION)
+	_RET()
+ev_t01_kurt_debug_apricorns:
+	_LDVAL(@SCWK_TEMP0, 485); Red Apricorn
+	_LDVAL(@SCWK_TEMP1, 50)
+	_CALL('ev_t01_kurt_debug_item')
+	_LDVAL(@SCWK_TEMP0, 486); Blue Apricorn
+	_LDVAL(@SCWK_TEMP1, 50)
+	_CALL('ev_t01_kurt_debug_item')
+	_LDVAL(@SCWK_TEMP0, 487); Yellow Apricorn
+	_LDVAL(@SCWK_TEMP1, 50)
+	_CALL('ev_t01_kurt_debug_item')
+	_LDVAL(@SCWK_TEMP0, 488); Green Apricorn
+	_LDVAL(@SCWK_TEMP1, 50)
+	_CALL('ev_t01_kurt_debug_item')
+	_LDVAL(@SCWK_TEMP0, 489); Pink Apricorn
+	_LDVAL(@SCWK_TEMP1, 50)
+	_CALL('ev_t01_kurt_debug_item')
+	_LDVAL(@SCWK_TEMP0, 490); White Apricorn
+	_LDVAL(@SCWK_TEMP1, 50)
+	_CALL('ev_t01_kurt_debug_item')
+	_LDVAL(@SCWK_TEMP0, 491); Black Apricorn
+	_LDVAL(@SCWK_TEMP1, 50)
+	_CALL('ev_t01_kurt_debug_item')
+	_RET()
+ev_t01_kurt_debug_item:
+	_CALL('ev_item_event')
+	_TALK_CLOSE()
+	_RET()
+ev_t01_kurt_trade:
+	_MACRO_TALKMSG('dp_scenario3', 'kurt_trade_offer', 'You have Apricorns for me? Fine! I’ll turn them into a Ball.')
+	_JUMP('ev_t01_kurt_trade_page1')
+ev_t01_kurt_trade_page1:
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_options_KURT_HEAVY_BALL', 'Heavy Ball', 0)
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_options_KURT_LURE_BALL', 'Lure Ball', 1)
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_options_KURT_FRIEND_BALL', 'Friend Ball', 2)
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_options_KURT_LOVE_BALL', 'Love Ball', 3)
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_options_KURT_LEVEL_BALL', 'Level Ball', 4)
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_options_KURT_FAST_BALL', 'Fast Ball', 5)
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_options_KURT_MOON_BALL', 'Moon Ball', 6)
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_options_KURT_NET_BALL', 'Net Ball', 7)
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_options_KURT_DIVE_BALL', 'Dive Ball', 8)
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_options_KURT_NEST_BALL', 'Nest Ball', 9)
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_options_KURT_SHOW_NEXT_PAGE', 'More', 10)
+	_OPEN_CUSTUM_WIN(@SCWK_ANSWER)
+	_SWITCH(@SCWK_ANSWER)
+	_CASE_JUMP(10, 'ev_t01_kurt_trade_page2')
+	_CASE_JUMP(0, 'ev_t01_kurt_heavy_ball')
+	_CASE_JUMP(1, 'ev_t01_kurt_lure_ball')
+	_CASE_JUMP(2, 'ev_t01_kurt_friend_ball')
+	_CASE_JUMP(3, 'ev_t01_kurt_love_ball')
+	_CASE_JUMP(4, 'ev_t01_kurt_level_ball')
+	_CASE_JUMP(5, 'ev_t01_kurt_fast_ball')
+	_CASE_JUMP(6, 'ev_t01_kurt_moon_ball')
+	_CASE_JUMP(7, 'ev_t01_kurt_net_ball')
+	_CASE_JUMP(8, 'ev_t01_kurt_dive_ball')
+	_CASE_JUMP(9, 'ev_t01_kurt_nest_ball')
+	_JUMP('ev_t01_kurt_end')
+ev_t01_kurt_trade_page2:
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_options_KURT_REPEAT_BALL', 'Repeat Ball', 11)
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_options_KURT_TIMER_BALL', 'Timer Ball', 12)
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_options_KURT_LUXURY_BALL', 'Luxury Ball', 13)
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_options_KURT_DUSK_BALL', 'Dusk Ball', 14)
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_options_KURT_HEAL_BALL', 'Heal Ball', 15)
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_options_KURT_QUICK_BALL', 'Quick Ball', 16)
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_options_KURT_CHERISH_BALL', 'Cherish Ball', 17)
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_options_KURT_DREAM_BALL', 'Dream Ball', 18)
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_options_KURT_BEAST_BALL', 'Beast Ball', 19)
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_options_KURT_SHOW_NEXT_PAGE', 'More', 20)
+	_OPEN_CUSTUM_WIN(@SCWK_ANSWER)
+	_SWITCH(@SCWK_ANSWER)
+	_CASE_JUMP(20, 'ev_t01_kurt_trade_page3')
+	_CASE_JUMP(11, 'ev_t01_kurt_repeat_ball')
+	_CASE_JUMP(12, 'ev_t01_kurt_timer_ball')
+	_CASE_JUMP(13, 'ev_t01_kurt_luxury_ball')
+	_CASE_JUMP(14, 'ev_t01_kurt_dusk_ball')
+	_CASE_JUMP(15, 'ev_t01_kurt_heal_ball')
+	_CASE_JUMP(16, 'ev_t01_kurt_quick_ball')
+	_CASE_JUMP(17, 'ev_t01_kurt_cherish_ball')
+	_CASE_JUMP(18, 'ev_t01_kurt_dream_ball')
+	_CASE_JUMP(19, 'ev_t01_kurt_beast_ball')
+	_JUMP('ev_t01_kurt_end')
+ev_t01_kurt_trade_page3:
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_options_KURT_HISUIAN_POKEBALL', 'Hisuian Poké Ball', 21)
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_options_KURT_HISUIAN_GREAT_BALL', 'Hisuian Great Ball', 22)
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_options_KURT_HISUIAN_ULTRA_BALL', 'Hisuian Ultra Ball', 23)
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_options_KURT_HISUIAN_FEATHER_BALL', 'Hisuian Feather Ball', 24)
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_options_KURT_HISUIAN_WING_BALL', 'Hisuian Wing Ball', 25)
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_options_KURT_HISUIAN_JET_BALL', 'Hisuian Jet Ball', 26)
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_options_KURT_HISUIAN_HEAVY_BALL', 'Hisuian Heavy Ball', 27)
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_options_KURT_LEADEN_BALL', 'Leaden Ball', 28)
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_options_KURT_ORIGIN_BALL', 'Origin Ball', 29)
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_options_KURT_CANCEL', 'Cancel', 30)
+	_OPEN_CUSTUM_WIN(@SCWK_ANSWER)
+	_SWITCH(@SCWK_ANSWER)
+	_CASE_JUMP(21, 'ev_t01_kurt_hisuian_pokeball')
+	_CASE_JUMP(22, 'ev_t01_kurt_hisuian_great_ball')
+	_CASE_JUMP(23, 'ev_t01_kurt_hisuian_ultra_ball')
+	_CASE_JUMP(24, 'ev_t01_kurt_hisuian_feather_ball')
+	_CASE_JUMP(25, 'ev_t01_kurt_hisuian_wing_ball')
+	_CASE_JUMP(26, 'ev_t01_kurt_hisuian_jet_ball')
+	_CASE_JUMP(27, 'ev_t01_kurt_hisuian_heavy_ball')
+	_CASE_JUMP(28, 'ev_t01_kurt_leaden_ball')
+	_CASE_JUMP(29, 'ev_t01_kurt_origin_ball')
+	_JUMP('ev_t01_kurt_end')
+ev_t01_kurt_heavy_ball:
+	_LDVAL(@SCWK_TEMP0, 495); Heavy Ball
+	_LDVAL(@SCWK_TEMP1, 1); Amount of Balls
+	_LDVAL(@SCWK_PARAM0, 491); Black Apricorn
+	_LDVAL(@SCWK_PARAM1, 1); Crafting items needed
+	_JUMP('ev_t01_kurt_trade_offer_1x1')
+ev_t01_kurt_lure_ball:
+	_LDVAL(@SCWK_TEMP0, 494); Lure Ball
+	_LDVAL(@SCWK_TEMP1, 1); Amount of Balls
+	_LDVAL(@SCWK_PARAM0, 486); Blue Apricorn
+	_LDVAL(@SCWK_PARAM1, 1); Crafting items needed
+	_JUMP('ev_t01_kurt_trade_offer_1x1')
+ev_t01_kurt_friend_ball:
+	_LDVAL(@SCWK_TEMP0, 497); Friend Ball
+	_LDVAL(@SCWK_TEMP1, 1); Amount of Balls
+	_LDVAL(@SCWK_PARAM0, 488); Green Apricorn
+	_LDVAL(@SCWK_PARAM1, 1); Crafting items needed
+	_JUMP('ev_t01_kurt_trade_offer_1x1')
+ev_t01_kurt_love_ball:
+	_LDVAL(@SCWK_TEMP0, 496); Love Ball
+	_LDVAL(@SCWK_TEMP1, 1); Amount of Balls
+	_LDVAL(@SCWK_PARAM0, 489); Pink Apricorn
+	_LDVAL(@SCWK_PARAM1, 1); Crafting items needed
+	_JUMP('ev_t01_kurt_trade_offer_1x1')
+ev_t01_kurt_level_ball:
+	_LDVAL(@SCWK_TEMP0, 493); Level Ball
+	_LDVAL(@SCWK_TEMP1, 1); Amount of Balls
+	_LDVAL(@SCWK_PARAM0, 485); Red Apricorn
+	_LDVAL(@SCWK_PARAM1, 1); Crafting items needed
+	_JUMP('ev_t01_kurt_trade_offer_1x1')
+ev_t01_kurt_fast_ball:
+	_LDVAL(@SCWK_TEMP0, 492); Fast Ball
+	_LDVAL(@SCWK_TEMP1, 1); Amount of Balls
+	_LDVAL(@SCWK_PARAM0, 490); White Apricorn
+	_LDVAL(@SCWK_PARAM1, 1); Crafting items needed
+	_JUMP('ev_t01_kurt_trade_offer_1x1')
+ev_t01_kurt_moon_ball:
+	_LDVAL(@SCWK_TEMP0, 498); Moon Ball
+	_LDVAL(@SCWK_TEMP1, 1); Amount of Balls
+	_LDVAL(@SCWK_PARAM0, 487); Yellow Apricorn
+	_LDVAL(@SCWK_PARAM1, 1); Crafting items needed
+	_JUMP('ev_t01_kurt_trade_offer_1x1')
+ev_t01_kurt_net_ball:
+	_LDVAL(@SCWK_TEMP0, 6); Net Ball
+	_LDVAL(@SCWK_TEMP1, 1); Amount of Balls
+	_LDVAL(@SCWK_PARAM0, 488); Green Apricorn
+	_LDVAL(@SCWK_PARAM1, 1); Crafting items needed
+	_LDVAL(@SCWK_PARAM2, 486); Blue Apricorn
+	_LDVAL(@SCWK_PARAM3, 1); Crafting items needed
+	_JUMP('ev_t01_kurt_trade_offer_2x1')
+ev_t01_kurt_dive_ball:
+	_LDVAL(@SCWK_TEMP0, 7); Dive Ball
+	_LDVAL(@SCWK_TEMP1, 1); Amount of Balls
+	_LDVAL(@SCWK_PARAM0, 486); Blue Apricorn
+	_LDVAL(@SCWK_PARAM1, 1); Crafting items needed
+	_LDVAL(@SCWK_PARAM2, 490); White Apricorn
+	_LDVAL(@SCWK_PARAM3, 1); Crafting items needed
+	_JUMP('ev_t01_kurt_trade_offer_2x1')
+ev_t01_kurt_nest_ball:
+	_LDVAL(@SCWK_TEMP0, 8); Nest Ball
+	_LDVAL(@SCWK_TEMP1, 1); Amount of Balls
+	_LDVAL(@SCWK_PARAM0, 488); Green Apricorn
+	_LDVAL(@SCWK_PARAM1, 1); Crafting items needed
+	_LDVAL(@SCWK_PARAM2, 487); Yellow Apricorn
+	_LDVAL(@SCWK_PARAM3, 1); Crafting items needed
+	_JUMP('ev_t01_kurt_trade_offer_2x1')
+ev_t01_kurt_repeat_ball:
+	_LDVAL(@SCWK_TEMP0, 9); Repeat Ball
+	_LDVAL(@SCWK_TEMP1, 1); Amount of Balls
+	_LDVAL(@SCWK_PARAM0, 485); Red Apricorn
+	_LDVAL(@SCWK_PARAM1, 1); Crafting items needed
+	_LDVAL(@SCWK_PARAM2, 487); Yellow Apricorn
+	_LDVAL(@SCWK_PARAM3, 1); Crafting items needed
+	_JUMP('ev_t01_kurt_trade_offer_2x1')
+ev_t01_kurt_timer_ball:
+	_LDVAL(@SCWK_TEMP0, 10); Timer Ball
+	_LDVAL(@SCWK_TEMP1, 1); Amount of Balls
+	_LDVAL(@SCWK_PARAM0, 485); Red Apricorn
+	_LDVAL(@SCWK_PARAM1, 1); Crafting items needed
+	_LDVAL(@SCWK_PARAM2, 490); White Apricorn
+	_LDVAL(@SCWK_PARAM3, 1); Crafting items needed
+	_JUMP('ev_t01_kurt_trade_offer_2x1')
+ev_t01_kurt_luxury_ball:
+	_LDVAL(@SCWK_TEMP0, 11); Luxury Ball
+	_LDVAL(@SCWK_TEMP1, 1); Amount of Balls
+	_LDVAL(@SCWK_PARAM0, 491); Black Apricorn
+	_LDVAL(@SCWK_PARAM1, 1); Crafting items needed
+	_LDVAL(@SCWK_PARAM2, 485); Red Apricorn
+	_LDVAL(@SCWK_PARAM3, 1); Crafting items needed
+	_JUMP('ev_t01_kurt_trade_offer_2x1')
+ev_t01_kurt_dusk_ball:
+	_LDVAL(@SCWK_TEMP0, 13); Dusk Ball
+	_LDVAL(@SCWK_TEMP1, 1); Amount of Balls
+	_LDVAL(@SCWK_PARAM0, 488); Green Apricorn
+	_LDVAL(@SCWK_PARAM1, 1); Crafting items needed
+	_LDVAL(@SCWK_PARAM2, 491); Black Apricorn
+	_LDVAL(@SCWK_PARAM3, 1); Crafting items needed
+	_JUMP('ev_t01_kurt_trade_offer_2x1')
+ev_t01_kurt_heal_ball:
+	_LDVAL(@SCWK_TEMP0, 14); Heal Ball
+	_LDVAL(@SCWK_TEMP1, 1); Amount of Balls
+	_LDVAL(@SCWK_PARAM0, 489); Pink Apricorn
+	_LDVAL(@SCWK_PARAM1, 1); Crafting items needed
+	_LDVAL(@SCWK_PARAM2, 490); White Apricorn
+	_LDVAL(@SCWK_PARAM3, 1); Crafting items needed
+	_JUMP('ev_t01_kurt_trade_offer_2x1')
+ev_t01_kurt_quick_ball:
+	_LDVAL(@SCWK_TEMP0, 15); Quick Ball
+	_LDVAL(@SCWK_TEMP1, 1); Amount of Balls
+	_LDVAL(@SCWK_PARAM0, 486); Blue Apricorn
+	_LDVAL(@SCWK_PARAM1, 1); Crafting items needed
+	_LDVAL(@SCWK_PARAM2, 487); Yellow Apricorn
+	_LDVAL(@SCWK_PARAM3, 1); Crafting items needed
+	_JUMP('ev_t01_kurt_trade_offer_2x1')
+ev_t01_kurt_cherish_ball:
+	_LDVAL(@SCWK_TEMP0, 16); Cherish Ball
+	_LDVAL(@SCWK_TEMP1, 1); Amount of Balls
+	_LDVAL(@SCWK_PARAM0, 485); Red Apricorn
+	_LDVAL(@SCWK_PARAM1, 2); Crafting items needed
+	_JUMP('ev_t01_kurt_trade_offer_1x1')
+ev_t01_kurt_dream_ball:
+	_LDVAL(@SCWK_TEMP0, 576); Dream Ball
+	_LDVAL(@SCWK_TEMP1, 1); Amount of Balls
+	_LDVAL(@SCWK_PARAM0, 489); Pink Apricorn
+	_LDVAL(@SCWK_PARAM1, 5); Crafting items needed
+	_JUMP('ev_t01_kurt_trade_offer_1x1')
+ev_t01_kurt_beast_ball:
+	_LDVAL(@SCWK_TEMP0, 851); Beast Ball
+	_LDVAL(@SCWK_TEMP1, 1); Amount of Balls
+	_LDVAL(@SCWK_PARAM0, 486); Blue Apricorn
+	_LDVAL(@SCWK_PARAM1, 5); Crafting items needed
+	_LDVAL(@SCWK_PARAM2, 490); White Apricorn
+	_LDVAL(@SCWK_PARAM3, 5); Crafting items needed
+	_JUMP('ev_t01_kurt_trade_offer_2x1')
+ev_t01_kurt_hisuian_pokeball:
+	_LDVAL(@SCWK_TEMP0, 1); Hisuian Pokeball (Master Ball 1)
+	_LDVAL(@SCWK_TEMP1, 1); Amount of Balls
+	_LDVAL(@SCWK_PARAM0, 485); Red Apricorn
+	_LDVAL(@SCWK_PARAM1, 1); Crafting items needed
+	_LDVAL(@SCWK_PARAM2, 155); Tumblestone (Oran Berry 155)
+	_LDVAL(@SCWK_PARAM3, 1); Crafting items needed
+	_JUMP('ev_t01_kurt_trade_offer_2x1')
+ev_t01_kurt_hisuian_great_ball:
+	_LDVAL(@SCWK_TEMP0, 1); Hisuian Great Ball (Master Ball 1)
+	_LDVAL(@SCWK_TEMP1, 1); Amount of Balls
+	_LDVAL(@SCWK_PARAM0, 486); Blue Apricorn
+	_LDVAL(@SCWK_PARAM1, 1); Crafting items needed
+	_LDVAL(@SCWK_PARAM2, 155); Tumblestone (Oran Berry 155)
+	_LDVAL(@SCWK_PARAM3, 1); Crafting items needed
+	_JUMP('ev_t01_kurt_trade_offer_2x1')
+ev_t01_kurt_hisuian_ultra_ball:
+	_LDVAL(@SCWK_TEMP0, 1); Hisuian Ultra Ball (Master Ball 1)
+	_LDVAL(@SCWK_TEMP1, 1); Amount of Balls
+	_LDVAL(@SCWK_PARAM0, 491); Black Apricorn
+	_LDVAL(@SCWK_PARAM1, 1); Crafting items needed
+	_LDVAL(@SCWK_PARAM2, 487); Yellow Apricorn
+	_LDVAL(@SCWK_PARAM3, 1); Crafting items needed
+	_LDVAL(@SCWK_TEMP2, 155); Tumblestone (Oran Berry 155)
+	_LDVAL(@SCWK_TEMP3, 1); Crafting items needed
+	_JUMP('ev_t01_kurt_trade_offer_3x1')
+ev_t01_kurt_hisuian_feather_ball:
+	_LDVAL(@SCWK_TEMP0, 1); Hisuian Feather Ball (Master Ball 1)
+	_LDVAL(@SCWK_TEMP1, 1); Amount of Balls
+	_LDVAL(@SCWK_PARAM0, 486); Blue Apricorn
+	_LDVAL(@SCWK_PARAM1, 1); Crafting items needed
+	_LDVAL(@SCWK_PARAM2, 490); White Apricorn
+	_LDVAL(@SCWK_PARAM3, 1); Crafting items needed
+	_LDVAL(@SCWK_TEMP2, 155); Tumblestone (Oran Berry 155)
+	_LDVAL(@SCWK_TEMP3, 1); Crafting items needed
+	_JUMP('ev_t01_kurt_trade_offer_3x1')
+ev_t01_kurt_hisuian_wing_ball:
+	_LDVAL(@SCWK_TEMP0, 1); Hisuian Wing Ball (Master Ball 1)
+	_LDVAL(@SCWK_TEMP1, 1); Amount of Balls
+	_LDVAL(@SCWK_PARAM0, 486); Blue Apricorn
+	_LDVAL(@SCWK_PARAM1, 1); Crafting items needed
+	_LDVAL(@SCWK_PARAM2, 490); White Apricorn
+	_LDVAL(@SCWK_PARAM3, 1); Crafting items needed
+	_LDVAL(@SCWK_TEMP2, 155); Tumblestone (Oran Berry 155)
+	_LDVAL(@SCWK_TEMP3, 2); Crafting items needed
+	_JUMP('ev_t01_kurt_trade_offer_3x1')
+ev_t01_kurt_hisuian_jet_ball:
+	_LDVAL(@SCWK_TEMP0, 1); Hisuian Jet Ball (Master Ball 1)
+	_LDVAL(@SCWK_TEMP1, 1); Amount of Balls
+	_LDVAL(@SCWK_PARAM0, 486); Blue Apricorn
+	_LDVAL(@SCWK_PARAM1, 1); Crafting items needed
+	_LDVAL(@SCWK_PARAM2, 490); White Apricorn
+	_LDVAL(@SCWK_PARAM3, 1); Crafting items needed
+	_LDVAL(@SCWK_TEMP2, 155); Tumblestone (Oran Berry 155)
+	_LDVAL(@SCWK_TEMP3, 3); Crafting items needed
+	_JUMP('ev_t01_kurt_trade_offer_3x1')
+ev_t01_kurt_hisuian_heavy_ball:
+	_LDVAL(@SCWK_TEMP0, 1); Hisuian Heavy Ball (Master Ball 1)
+	_LDVAL(@SCWK_TEMP1, 1); Amount of Balls
+	_LDVAL(@SCWK_PARAM0, 491); Black Apricorn
+	_LDVAL(@SCWK_PARAM1, 2); Crafting items needed
+	_LDVAL(@SCWK_PARAM2, 155); Tumblestone (Oran Berry 155)
+	_LDVAL(@SCWK_PARAM3, 1); Crafting items needed
+	_JUMP('ev_t01_kurt_trade_offer_2x1')
+ev_t01_kurt_leaden_ball:
+	_LDVAL(@SCWK_TEMP0, 1); Leaden Ball (Master Ball 1)
+	_LDVAL(@SCWK_TEMP1, 1); Amount of Balls
+	_LDVAL(@SCWK_PARAM0, 491); Black Apricorn
+	_LDVAL(@SCWK_PARAM1, 2); Crafting items needed
+	_LDVAL(@SCWK_PARAM2, 249); Charcoal
+	_LDVAL(@SCWK_PARAM3, 1); Crafting items needed
+	_LDVAL(@SCWK_TEMP2, 155); Tumblestone (Oran Berry 155)
+	_LDVAL(@SCWK_TEMP3, 1); Crafting items needed
+	_JUMP('ev_t01_kurt_trade_offer_3x1')
+ev_t01_kurt_origin_ball:
+	_LDVAL(@SCWK_TEMP0, 1); Origin Ball (Master Ball 1)
+	_LDVAL(@SCWK_TEMP1, 1); Amount of Balls
+	_LDVAL(@SCWK_PARAM0, 485); Red Apricorn
+	_LDVAL(@SCWK_PARAM1, 2); Crafting items needed
+	_LDVAL(@SCWK_PARAM2, 155); Tumblestone (Oran Berry 155)
+	_LDVAL(@SCWK_PARAM3, 1); Crafting items needed
+	_JUMP('ev_t01_kurt_trade_offer_2x1')
+ev_t01_kurt_trade_offer_1x1:
+	_NUMBER_NAME(0, @SCWK_PARAM1)
+	_ITEM_NAME(1, @SCWK_PARAM0, @SCWK_PARAM1)
+	_TALKMSG('dp_scenario3%kurt_trade_yes_no_1x1')
+	_YES_NO_WIN(@SCWK_ANSWER)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_t01_kurt_end')
+	_ITEM_CHK(@SCWK_PARAM0, @SCWK_PARAM1, @SCWK_ANSWER)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_t01_kurt_not_enough_items')
+	_PLAYER_NAME(0)
+	_MACRO_TALKMSG('dp_scenario3', 'kurt_ball_finished', 'Ah, {0}!\nI just finished your Ball. Here!')
+	_CALL('ev_item_event')
+	_TALK_CLOSE()
+	_SUB_ITEM(@SCWK_PARAM0, @SCWK_PARAM1, @SCWK_ANSWER)
+	_TALK_OBJ_END()
+	_END()
+ev_t01_kurt_trade_offer_2x1:
+	_NUMBER_NAME(0, @SCWK_PARAM1)
+	_ITEM_NAME(1, @SCWK_PARAM0, @SCWK_PARAM1)
+	_NUMBER_NAME(2, @SCWK_PARAM3)
+	_ITEM_NAME(3, @SCWK_PARAM2, @SCWK_PARAM3)
+	_TALKMSG('dp_scenario3%kurt_trade_yes_no_2x1')
+	_YES_NO_WIN(@SCWK_ANSWER)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_t01_kurt_end')
+	_ITEM_CHK(@SCWK_PARAM0, @SCWK_PARAM1, @SCWK_ANSWER)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_t01_kurt_not_enough_items')
+	_ITEM_CHK(@SCWK_PARAM2, @SCWK_PARAM3, @SCWK_ANSWER)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_t01_kurt_not_enough_items')
+	_PLAYER_NAME(0)
+	_MACRO_EASY_OBJ_MSG('dp_scenario3', 'kurt_ball_finished', 'Ah, {0}!\nI just finished your Ball. Here!')
+	_CALL('ev_item_event')
+	_TALK_CLOSE()
+	_SUB_ITEM(@SCWK_PARAM0, @SCWK_PARAM1, @SCWK_ANSWER)
+	_SUB_ITEM(@SCWK_PARAM2, @SCWK_PARAM3, @SCWK_ANSWER)
+	_TALK_OBJ_END()
+	_END()
+ev_t01_kurt_trade_offer_3x1:
+	_NUMBER_NAME(0, @SCWK_PARAM1)
+	_ITEM_NAME(1, @SCWK_PARAM0, @SCWK_PARAM1)
+	_NUMBER_NAME(2, @SCWK_PARAM3)
+	_ITEM_NAME(3, @SCWK_PARAM2, @SCWK_PARAM3)
+	_NUMBER_NAME(4, @SCWK_TEMP3)
+	_ITEM_NAME(5, @SCWK_TEMP2, @SCWK_TEMP3)
+	_TALKMSG('dp_scenario3%kurt_trade_yes_no_3x1')
+	_YES_NO_WIN(@SCWK_ANSWER)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_t01_kurt_end')
+	_ITEM_CHK(@SCWK_PARAM0, @SCWK_PARAM1, @SCWK_ANSWER)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_t01_kurt_not_enough_items')
+	_ITEM_CHK(@SCWK_PARAM2, @SCWK_PARAM3, @SCWK_ANSWER)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_t01_kurt_not_enough_items')
+	_ITEM_CHK(@SCWK_TEMP2, @SCWK_TEMP3, @SCWK_ANSWER)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_t01_kurt_not_enough_items')
+	_PLAYER_NAME(0)
+	_MACRO_EASY_OBJ_MSG('dp_scenario3', 'kurt_ball_finished', 'Ah, {0}!\nI just finished your Ball. Here!')
+	_CALL('ev_item_event')
+	_TALK_CLOSE()
+	_SUB_ITEM(@SCWK_PARAM0, @SCWK_PARAM1, @SCWK_ANSWER)
+	_SUB_ITEM(@SCWK_PARAM2, @SCWK_PARAM3, @SCWK_ANSWER)
+	_SUB_ITEM(@SCWK_TEMP2, @SCWK_TEMP3, @SCWK_ANSWER)
+	_TALK_OBJ_END()
+	_END()
+ev_t01_kurt_not_enough_items:
+	_MACRO_TALKMSG('dp_scenario3', 'kurt_not_enough_items', 'Looks like you’re missing some items.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_t01_kurt_bag_full:; TODO: Implement
+	_MACRO_TALKMSG('dp_scenario3', 'kurt_bag_full', 'Looks like your bag is full.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_t01_kurt_talk:
+	_GET_RND(@SCWK_TEMP0, 4)
+	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', 0, 'ev_t01_kurt_talk_1')
+	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', 1, 'ev_t01_kurt_talk_2')
+	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', 2, 'ev_t01_kurt_talk_3')
+	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', 3, 'ev_t01_kurt_talk_4')
+	_JUMP('ev_t01_kurt_talk_5')
+ev_t01_kurt_talk_1:
+	_MACRO_TALKMSG('dp_scenario3', 'kurt_talk_1', 'I am from Johto. I came here to improve my\ncrafting skills.\rHisui had a lot of advanced crafting\ntechniques I am looking into.\rI can craft you quite a few Poké Balls from\nHisui if you also have some Tumblestones.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_t01_kurt_talk_2:
+	_MACRO_TALKMSG('dp_scenario3', 'kurt_talk_2', 'Have you heard about the Slowpoke Well?\nYou should visit it if you ever happen to visit Johto.\rIn fact I live in Azalea Town, which is located\nright next to the Slowpoke Well.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_t01_kurt_talk_3:
+	_MACRO_TALKMSG('dp_scenario3', 'kurt_talk_3', 'There are Apricorn Trees all over the place in Johto.\nThey look tasty, but unfortunately you can’t eat them.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_t01_kurt_talk_4:
+	_MACRO_TALKMSG('dp_scenario3', 'kurt_talk_4', 'Next to my hometown in Johto there is a forest.\rIt’s said that the mythical Pokémon Celebi\nappeared there in the past.\rI heard rumors of it being spotted here\nin Sinnoh too recently.\rYou may find it if you’re lucky!')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_t01_kurt_talk_5:
+	_MACRO_TALKMSG('dp_scenario3', 'kurt_talk_5', 'The crafting of Poké Balls requires a lot of skill.\nNowadays there are not a lot of people who can do that.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_t01_kurt_end:
+	_MACRO_TALKMSG('dp_scenario3', 'kurt_end', 'Don’t bother me!')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()

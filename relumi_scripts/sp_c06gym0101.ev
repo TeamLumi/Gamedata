@@ -1,0 +1,14 @@
+SP_C06GYM0101_INIT:
+	_END()
+SP_C06GYM0101_OBJ:
+	_END()
+SP_C06GYM0101_SCENE:
+	_JUMP('sp_c06gym0101_tbl')
+	_END()
+SP_C06GYM0101_FLAG:
+	_JUMP('ev_c06gym0101_flag_change')
+	_END()
+sp_c06gym0101_tbl:
+	_SCENE_CHANGE_DATA(@WK_SCENE_C06GYM0101, 0, 'ev_c06gym0101_gym_first')
+	_SCENE_CHANGE_DATA(@WK_SCENE_C06GYM0101, 1, 'ev_c06gym0101_gym_first_end')
+	_END()

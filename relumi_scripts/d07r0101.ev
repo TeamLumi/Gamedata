@@ -1,0 +1,6 @@
+ev_d07r0101_board:
+	_TALK_OBJ_START()
+	_TALKMSG('dp_scenario2%71-msg_d07r0101_01')
+	_TALK_CLOSE()
+	_TALK_END()
+	_END()
