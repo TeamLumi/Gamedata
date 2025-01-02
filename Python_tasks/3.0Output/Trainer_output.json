@@ -30620,7 +30620,7 @@
         "type": "Trainer",
         "route": "Route 212 (North) Trainers",
         "zoneId": 379,
-        "trainerType": "Double Battle"
+        "trainerType": "Single Battle"
       },
       {
         "content": [
@@ -30682,7 +30682,7 @@
         "type": "Trainer",
         "route": "Route 212 (North) Trainers",
         "zoneId": 379,
-        "trainerType": "Single Battle"
+        "trainerType": "Double Battle"
       },
       {
         "content": [
@@ -63196,7 +63196,7 @@
         "type": "Trainer",
         "route": "Snowpoint City Trainers",
         "zoneId": 159,
-        "trainerType": "Double Battle"
+        "trainerType": "Single Battle"
       },
       {
         "content": [
@@ -63284,94 +63284,6 @@
         "type": "Trainer",
         "route": "Snowpoint City Trainers",
         "zoneId": 159,
-        "trainerType": "Single Battle"
-      },
-      {
-        "content": [
-          {
-            "ability": "Natural Cure",
-            "gender": "FEMALE",
-            "id": 242,
-            "item": null,
-            "level": 54,
-            "moves": [
-              113,
-              135,
-              304,
-              605
-            ],
-            "nature": "Bold",
-            "ivatk": 31,
-            "ivdef": 31,
-            "ivhp": 31,
-            "ivspatk": 31,
-            "ivspdef": 31,
-            "ivspeed": 31,
-            "evhp": 252,
-            "evatk": 0,
-            "evdef": 252,
-            "evspatk": 0,
-            "evspdef": 0,
-            "evspeed": 0
-          },
-          {
-            "ability": "Leaf Guard",
-            "gender": "FEMALE",
-            "id": 154,
-            "item": null,
-            "level": 54,
-            "moves": [
-              80,
-              414,
-              79,
-              115
-            ],
-            "nature": "Calm",
-            "ivatk": 31,
-            "ivdef": 31,
-            "ivhp": 31,
-            "ivspatk": 31,
-            "ivspdef": 31,
-            "ivspeed": 31,
-            "evhp": 252,
-            "evatk": 0,
-            "evdef": 0,
-            "evspatk": 0,
-            "evspdef": 252,
-            "evspeed": 0
-          },
-          {
-            "ability": "Sheer Force",
-            "gender": "FEMALE",
-            "id": 160,
-            "item": null,
-            "level": 54,
-            "moves": [
-              401,
-              453,
-              242,
-              97
-            ],
-            "nature": "Jolly",
-            "ivatk": 31,
-            "ivdef": 31,
-            "ivhp": 31,
-            "ivspatk": 31,
-            "ivspdef": 31,
-            "ivspeed": 31,
-            "evhp": 0,
-            "evatk": 252,
-            "evdef": 0,
-            "evspatk": 0,
-            "evspdef": 0,
-            "evspeed": 252
-          }
-        ],
-        "game": "Ace Trainer Nephenee (Snowpoint City Trainers)",
-        "name": "Ace Trainer Nephenee",
-        "type": "Trainer",
-        "route": "Snowpoint City Trainers",
-        "zoneId": 159,
         "trainerType": "Double Battle"
       },
       {
@@ -63461,6 +63373,94 @@
         "route": "Snowpoint City Trainers",
         "zoneId": 159,
         "trainerType": "Single Battle"
+      },
+      {
+        "content": [
+          {
+            "ability": "Natural Cure",
+            "gender": "FEMALE",
+            "id": 242,
+            "item": null,
+            "level": 54,
+            "moves": [
+              113,
+              135,
+              304,
+              605
+            ],
+            "nature": "Bold",
+            "ivatk": 31,
+            "ivdef": 31,
+            "ivhp": 31,
+            "ivspatk": 31,
+            "ivspdef": 31,
+            "ivspeed": 31,
+            "evhp": 252,
+            "evatk": 0,
+            "evdef": 252,
+            "evspatk": 0,
+            "evspdef": 0,
+            "evspeed": 0
+          },
+          {
+            "ability": "Leaf Guard",
+            "gender": "FEMALE",
+            "id": 154,
+            "item": null,
+            "level": 54,
+            "moves": [
+              80,
+              414,
+              79,
+              115
+            ],
+            "nature": "Calm",
+            "ivatk": 31,
+            "ivdef": 31,
+            "ivhp": 31,
+            "ivspatk": 31,
+            "ivspdef": 31,
+            "ivspeed": 31,
+            "evhp": 252,
+            "evatk": 0,
+            "evdef": 0,
+            "evspatk": 0,
+            "evspdef": 252,
+            "evspeed": 0
+          },
+          {
+            "ability": "Sheer Force",
+            "gender": "FEMALE",
+            "id": 160,
+            "item": null,
+            "level": 54,
+            "moves": [
+              401,
+              453,
+              242,
+              97
+            ],
+            "nature": "Jolly",
+            "ivatk": 31,
+            "ivdef": 31,
+            "ivhp": 31,
+            "ivspatk": 31,
+            "ivspdef": 31,
+            "ivspeed": 31,
+            "evhp": 0,
+            "evatk": 252,
+            "evdef": 0,
+            "evspatk": 0,
+            "evspdef": 0,
+            "evspeed": 252
+          }
+        ],
+        "game": "Ace Trainer Nephenee (Snowpoint City Trainers)",
+        "name": "Ace Trainer Nephenee",
+        "type": "Trainer",
+        "route": "Snowpoint City Trainers",
+        "zoneId": 159,
+        "trainerType": "Double Battle"
       },
       {
         "content": [

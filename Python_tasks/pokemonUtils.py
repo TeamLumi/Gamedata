@@ -26,18 +26,10 @@ input_file_path = os.path.join(parent_file_path, constants.INPUT_NAME)
 debug_file_path = os.path.join(parent_file_path, "Python_tasks", constants.DEBUG_NAME)
 personal_data_path = os.path.join(input_file_path, 'PersonalTable.json')
 
-personal_data = 0
 FORM_MAP = {}
 GENDER = {"0": "MALE", "1": "FEMALE", "2": "NEUTRAL"}
 
 # Load all the JSON Data
-
-with open(personal_data_path, mode='r', encoding="utf-8") as f:
-    personal_data = json.load(f)
-    for curr in personal_data['Personal']:
-        if curr['monsno'] not in FORM_MAP:
-            FORM_MAP[curr['monsno']] = []
-        FORM_MAP[curr['monsno']].append(curr['id'])
 
 def get_lumi_data(raw_data, callback):
     data = {}
@@ -475,11 +467,18 @@ def get_mon_full_learnset(pokemonId=0):
     return full_learnset
 
 if __name__ != '__main__':
+    with open(personal_data_path, mode='r', encoding="utf-8") as f:
+        personal_data = json.load(f)
+        for curr in personal_data['Personal']:
+            if curr['monsno'] not in FORM_MAP:
+                FORM_MAP[curr['monsno']] = []
+            FORM_MAP[curr['monsno']].append(curr['id'])
+
     full_data = load_data()
+    personal_table = full_data['personal_table']
+    name_data = full_data['raw_pokedex']
     forms = generate_form_name_to_pokemon_id()
     reversed_forms = {v: k for k, v in forms.items()}
-    name_data = full_data['raw_pokedex']
-    personal_table = full_data['personal_table'];
     pokedex = get_lumi_data(name_data, get_pokemon_name)
     diff_forms, NAME_MAP = get_diff_form_dictionary(constants.GAME_MODE)
 

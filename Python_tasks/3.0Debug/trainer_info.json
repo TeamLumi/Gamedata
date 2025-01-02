@@ -2204,8 +2204,8 @@
     "name": "Aran",
     "type": "Ace Trainer",
     "method": "Scripted",
-    "format": "Double Battle",
-    "link": "736"
+    "format": "Single Battle",
+    "link": ""
   },
   {
     "areaName": "lmpt-68",
@@ -2214,6 +2214,18 @@
     "trainerId": 735,
     "rematch": 0,
     "name": "Aran",
+    "type": "Ace Trainer",
+    "method": "Scripted",
+    "format": "Double Battle",
+    "link": "736"
+  },
+  {
+    "areaName": "lmpt-68",
+    "zoneName": "Snowpoint City",
+    "zoneId": 159,
+    "trainerId": 736,
+    "rematch": 0,
+    "name": "Nephenee",
     "type": "Ace Trainer",
     "method": "Scripted",
     "format": "Single Battle",
@@ -2230,18 +2242,6 @@
     "method": "Scripted",
     "format": "Double Battle",
     "link": "735"
-  },
-  {
-    "areaName": "lmpt-68",
-    "zoneName": "Snowpoint City",
-    "zoneId": 159,
-    "trainerId": 736,
-    "rematch": 0,
-    "name": "Nephenee",
-    "type": "Ace Trainer",
-    "method": "Scripted",
-    "format": "Single Battle",
-    "link": ""
   },
   {
     "areaName": "lmpt-68",
@@ -7460,8 +7460,8 @@
     "name": "Grunt",
     "type": "Team Galactic",
     "method": "Scripted",
-    "format": "Double Battle",
-    "link": "964"
+    "format": "Single Battle",
+    "link": ""
   },
   {
     "areaName": "lmpt-64",
@@ -7472,8 +7472,8 @@
     "name": "Grunt",
     "type": "Team Galactic",
     "method": "Scripted",
-    "format": "Single Battle",
-    "link": ""
+    "format": "Double Battle",
+    "link": "964"
   },
   {
     "areaName": "lmpt-64",

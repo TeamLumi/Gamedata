@@ -290,10 +290,11 @@ def write_mapper_docs(trainers_list):
                 "name": trainer_name,
                 "route": zone_name,
                 "zoneId": zone_id,
-                "trainerType": trainer_type
+                "trainerType": trainer_type,
+                "trainer_id": trainer["trainerId"]
             }
             if zone_id not in constants.EXCLUSIVE_ZONE_IDS:
-                areaName, area_display_name = get_map_info(zone_id)
+                areaName, _ = get_map_info(zone_id)
                 generalized_zone_id = find_zone_id(areaName)
                 if generalized_zone_id not in all_trainers.keys():
                     all_trainers[generalized_zone_id] = [zone_trainer]
