@@ -1,0 +1,3 @@
+SP_R227_FLAG:
+	_JUMP('ev_r227_flag_change')
+	_END()

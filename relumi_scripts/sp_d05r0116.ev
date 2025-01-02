@@ -1,0 +1,13 @@
+SP_D05R0116_INIT:
+	_END()
+SP_D05R0116_OBJ:
+	_END()
+SP_D05R0116_SCENE:
+	_JUMP('sp_d05r0116_tbl')
+	_END()
+SP_D05R0116_FLAG:
+	_JUMP('ev_d05r0116_flag_change')
+	_END()
+sp_d05r0116_tbl:
+	_SCENE_CHANGE_DATA(@WK_SCENE_WILDCARD_001, 0, 'ev_d05r0116_scene_change')
+	_END()

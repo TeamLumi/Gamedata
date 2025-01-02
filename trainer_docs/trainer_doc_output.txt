@@ -12,8 +12,8 @@ Overgrow
 None
 Tackle
 Withdraw
-(No Move)
-(No Move)
+———
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -31,8 +31,8 @@ Blaze
 None
 Scratch
 Leer
-(No Move)
-(No Move)
+———
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -50,8 +50,8 @@ Torrent
 None
 Pound
 Growl
-(No Move)
-(No Move)
+———
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -1933,8 +1933,8 @@ Magic Guard
 Focus Sash
 Teleport
 Hidden Power
-(No Move)
-(No Move)
+———
+———
 25/25/25/25/25/25
 0/0/0/0/0/0
 
@@ -5023,8 +5023,8 @@ Rough Skin
 Choice Band
 Outrage
 Earthquake
-(No Move)
-(No Move)
+———
+———
 31/31/31/31/31/31
 4/252/0/0/0/252
 
@@ -5062,7 +5062,7 @@ Choice Band
 Close Combat
 Blaze Kick
 Earthquake
-(No Move)
+———
 31/31/31/31/31/31
 0/252/0/0/4/252
 
@@ -9564,7 +9564,7 @@ None
 Payback
 Sucker Punch
 Confuse Ray
-(No Move)
+———
 25/25/25/25/25/25
 0/0/0/0/0/0
 
@@ -9577,7 +9577,7 @@ None
 Sucker Punch
 Night Shade
 Confuse Ray
-(No Move)
+———
 25/25/25/25/25/25
 0/0/0/0/0/0
 
@@ -9590,7 +9590,7 @@ None
 Night Shade
 Payback
 Confuse Ray
-(No Move)
+———
 25/25/25/25/25/25
 0/0/0/0/0/0
 
@@ -9673,7 +9673,7 @@ None
 Spit Up
 Swallow
 Stockpile
-(No Move)
+———
 25/25/25/25/25/25
 0/0/0/0/0/0
 
@@ -9686,7 +9686,7 @@ None
 Psybeam
 Astonish
 Confuse Ray
-(No Move)
+———
 25/25/25/25/25/25
 0/0/0/0/0/0
 
@@ -12099,9 +12099,9 @@ Chlorophyll
 
 None
 Vine Whip
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 25/25/25/25/25/25
 1/0/0/0/0/0
 
@@ -12112,9 +12112,9 @@ Chlorophyll
 
 None
 Vine Whip
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 25/25/25/25/25/25
 1/0/0/0/0/0
 
@@ -12125,9 +12125,9 @@ Chlorophyll
 
 None
 Vine Whip
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 0/0/0/0/0/0
 1/0/0/0/0/0
 
@@ -12138,9 +12138,9 @@ Chlorophyll
 
 None
 Vine Whip
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 0/0/0/0/0/0
 1/0/0/0/0/0
 
@@ -12151,9 +12151,9 @@ Chlorophyll
 
 None
 Vine Whip
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 0/0/0/0/0/0
 1/0/0/0/0/0
 
@@ -12164,9 +12164,9 @@ Chlorophyll
 
 None
 Vine Whip
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 0/0/0/0/0/0
 1/0/0/0/0/0
 
@@ -12183,9 +12183,9 @@ Chlorophyll
 
 None
 Vine Whip
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 25/25/25/25/25/25
 1/0/0/0/0/0
 
@@ -12196,9 +12196,9 @@ Chlorophyll
 
 None
 Vine Whip
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 25/25/25/25/25/25
 1/0/0/0/0/0
 
@@ -12209,9 +12209,9 @@ Chlorophyll
 
 None
 Vine Whip
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 0/0/0/0/0/0
 1/0/0/0/0/0
 
@@ -12222,9 +12222,9 @@ Chlorophyll
 
 None
 Vine Whip
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 0/0/0/0/0/0
 1/0/0/0/0/0
 
@@ -12235,9 +12235,9 @@ Chlorophyll
 
 None
 Vine Whip
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 0/0/0/0/0/0
 1/0/0/0/0/0
 
@@ -12248,9 +12248,9 @@ Chlorophyll
 
 None
 Vine Whip
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 0/0/0/0/0/0
 1/0/0/0/0/0
 
@@ -12267,9 +12267,9 @@ Chlorophyll
 
 None
 Vine Whip
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 25/25/25/25/25/25
 1/0/0/0/0/0
 
@@ -12280,9 +12280,9 @@ Chlorophyll
 
 None
 Vine Whip
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 25/25/25/25/25/25
 1/0/0/0/0/0
 
@@ -12293,9 +12293,9 @@ Chlorophyll
 
 None
 Vine Whip
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 0/0/0/0/0/0
 1/0/0/0/0/0
 
@@ -12306,9 +12306,9 @@ Chlorophyll
 
 None
 Vine Whip
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 0/0/0/0/0/0
 1/0/0/0/0/0
 
@@ -12319,9 +12319,9 @@ Chlorophyll
 
 None
 Vine Whip
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 0/0/0/0/0/0
 1/0/0/0/0/0
 
@@ -12332,9 +12332,9 @@ Chlorophyll
 
 None
 Vine Whip
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 0/0/0/0/0/0
 1/0/0/0/0/0
 
@@ -12351,9 +12351,9 @@ Clear Body
 
 None
 Tackle
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 25/25/25/25/25/25
 1/0/0/0/0/0
 
@@ -12364,9 +12364,9 @@ Clear Body
 
 None
 Tackle
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 25/25/25/25/25/25
 1/0/0/0/0/0
 
@@ -12377,9 +12377,9 @@ Clear Body
 
 None
 Tackle
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 25/25/25/25/25/25
 1/0/0/0/0/0
 
@@ -12390,9 +12390,9 @@ Clear Body
 
 None
 Tackle
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 0/0/0/0/0/0
 1/0/0/0/0/0
 
@@ -12403,9 +12403,9 @@ Clear Body
 
 None
 Tackle
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 0/0/0/0/0/0
 1/0/0/0/0/0
 
@@ -12416,9 +12416,9 @@ Clear Body
 
 None
 Tackle
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 0/0/0/0/0/0
 1/0/0/0/0/0
 
@@ -12435,9 +12435,9 @@ Clear Body
 
 None
 Tackle
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 25/25/25/25/25/25
 1/0/0/0/0/0
 
@@ -12448,9 +12448,9 @@ Clear Body
 
 None
 Tackle
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 25/25/25/25/25/25
 1/0/0/0/0/0
 
@@ -12461,9 +12461,9 @@ Clear Body
 
 None
 Tackle
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 25/25/25/25/25/25
 1/0/0/0/0/0
 
@@ -12474,9 +12474,9 @@ Clear Body
 
 None
 Tackle
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 0/0/0/0/0/0
 1/0/0/0/0/0
 
@@ -12487,9 +12487,9 @@ Clear Body
 
 None
 Tackle
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 0/0/0/0/0/0
 1/0/0/0/0/0
 
@@ -12500,9 +12500,9 @@ Clear Body
 
 None
 Tackle
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 0/0/0/0/0/0
 1/0/0/0/0/0
 
@@ -12519,9 +12519,9 @@ Clear Body
 
 None
 Tackle
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 25/25/25/25/25/25
 1/0/0/0/0/0
 
@@ -12532,9 +12532,9 @@ Clear Body
 
 None
 Tackle
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 25/25/25/25/25/25
 1/0/0/0/0/0
 
@@ -12545,9 +12545,9 @@ Clear Body
 
 None
 Tackle
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 25/25/25/25/25/25
 1/0/0/0/0/0
 
@@ -12558,9 +12558,9 @@ Clear Body
 
 None
 Tackle
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 0/0/0/0/0/0
 1/0/0/0/0/0
 
@@ -12571,9 +12571,9 @@ Clear Body
 
 None
 Tackle
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 0/0/0/0/0/0
 1/0/0/0/0/0
 
@@ -12584,9 +12584,9 @@ Clear Body
 
 None
 Tackle
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 0/0/0/0/0/0
 1/0/0/0/0/0
 
@@ -12603,9 +12603,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -12616,9 +12616,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -12629,9 +12629,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -12642,9 +12642,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -12655,9 +12655,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -12668,9 +12668,9 @@ Serene Grace
 
 Toxic Orb
 Tail Whip
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -12687,9 +12687,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -12700,9 +12700,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -12713,9 +12713,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -12726,9 +12726,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -12739,9 +12739,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -12752,9 +12752,9 @@ Serene Grace
 
 Toxic Orb
 Tail Whip
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -12771,9 +12771,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -12784,9 +12784,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -12797,9 +12797,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -12810,9 +12810,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -12823,9 +12823,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -12836,9 +12836,9 @@ Serene Grace
 
 Toxic Orb
 Tail Whip
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -12855,9 +12855,9 @@ Chlorophyll
 
 None
 Absorb
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -12868,9 +12868,9 @@ Chlorophyll
 
 None
 Absorb
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -12881,9 +12881,9 @@ Chlorophyll
 
 None
 Absorb
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -12894,9 +12894,9 @@ Chlorophyll
 
 None
 Absorb
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -12907,9 +12907,9 @@ Chlorophyll
 
 None
 Absorb
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -12920,9 +12920,9 @@ Chlorophyll
 
 None
 Absorb
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -12939,9 +12939,9 @@ Chlorophyll
 
 None
 Absorb
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -12952,9 +12952,9 @@ Chlorophyll
 
 None
 Absorb
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -12965,9 +12965,9 @@ Chlorophyll
 
 None
 Absorb
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -12978,9 +12978,9 @@ Chlorophyll
 
 None
 Absorb
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -12991,9 +12991,9 @@ Chlorophyll
 
 None
 Absorb
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -13004,9 +13004,9 @@ Chlorophyll
 
 None
 Absorb
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -13023,9 +13023,9 @@ Chlorophyll
 
 None
 Absorb
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -13036,9 +13036,9 @@ Chlorophyll
 
 None
 Absorb
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -13049,9 +13049,9 @@ Chlorophyll
 
 None
 Absorb
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -13062,9 +13062,9 @@ Chlorophyll
 
 None
 Absorb
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -13075,9 +13075,9 @@ Chlorophyll
 
 None
 Absorb
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -13088,9 +13088,9 @@ Chlorophyll
 
 None
 Absorb
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -13107,9 +13107,9 @@ Inner Focus
 
 None
 Bite
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 25/25/25/25/25/25
 1/0/0/0/0/0
 
@@ -13120,9 +13120,9 @@ Inner Focus
 
 None
 Bite
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 25/25/25/25/25/25
 1/0/0/0/0/0
 
@@ -13133,9 +13133,9 @@ Inner Focus
 
 None
 Bite
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 25/25/25/25/25/25
 1/0/0/0/0/0
 
@@ -13146,9 +13146,9 @@ Inner Focus
 
 None
 Bite
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 25/25/25/25/25/25
 1/0/0/0/0/0
 
@@ -13159,9 +13159,9 @@ Inner Focus
 
 None
 Bite
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 25/25/25/25/25/25
 1/0/0/0/0/0
 
@@ -13172,9 +13172,9 @@ Inner Focus
 
 None
 Bite
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 25/25/25/25/25/25
 1/0/0/0/0/0
 
@@ -13191,9 +13191,9 @@ Inner Focus
 
 None
 Bite
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 25/25/25/25/25/25
 1/0/0/0/0/0
 
@@ -13204,9 +13204,9 @@ Inner Focus
 
 None
 Bite
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 25/25/25/25/25/25
 1/0/0/0/0/0
 
@@ -13217,9 +13217,9 @@ Inner Focus
 
 None
 Bite
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 25/25/25/25/25/25
 1/0/0/0/0/0
 
@@ -13230,9 +13230,9 @@ Inner Focus
 
 None
 Bite
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 25/25/25/25/25/25
 1/0/0/0/0/0
 
@@ -13243,9 +13243,9 @@ Inner Focus
 
 None
 Bite
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 25/25/25/25/25/25
 1/0/0/0/0/0
 
@@ -13256,9 +13256,9 @@ Inner Focus
 
 None
 Bite
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 25/25/25/25/25/25
 1/0/0/0/0/0
 
@@ -13275,9 +13275,9 @@ Inner Focus
 
 None
 Bite
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 25/25/25/25/25/25
 1/0/0/0/0/0
 
@@ -13288,9 +13288,9 @@ Inner Focus
 
 None
 Bite
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 25/25/25/25/25/25
 1/0/0/0/0/0
 
@@ -13301,9 +13301,9 @@ Inner Focus
 
 None
 Bite
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 25/25/25/25/25/25
 1/0/0/0/0/0
 
@@ -13314,9 +13314,9 @@ Inner Focus
 
 None
 Bite
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 0/0/0/0/0/0
 1/0/0/0/0/0
 
@@ -13327,9 +13327,9 @@ Inner Focus
 
 None
 Bite
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 0/0/0/0/0/0
 1/0/0/0/0/0
 
@@ -13340,9 +13340,9 @@ Inner Focus
 
 None
 Bite
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 0/0/0/0/0/0
 1/0/0/0/0/0
 
@@ -13359,9 +13359,9 @@ Swift Swim
 
 None
 Absorb
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -13372,9 +13372,9 @@ Swift Swim
 
 None
 Absorb
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -13385,9 +13385,9 @@ Swift Swim
 
 None
 Absorb
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -13398,9 +13398,9 @@ Swift Swim
 
 None
 Absorb
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -13411,9 +13411,9 @@ Swift Swim
 
 None
 Absorb
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -13424,9 +13424,9 @@ Swift Swim
 
 None
 Absorb
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -13443,9 +13443,9 @@ Swift Swim
 
 None
 Absorb
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -13456,9 +13456,9 @@ Swift Swim
 
 None
 Absorb
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -13469,9 +13469,9 @@ Swift Swim
 
 None
 Absorb
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -13482,9 +13482,9 @@ Swift Swim
 
 None
 Absorb
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -13495,9 +13495,9 @@ Swift Swim
 
 None
 Absorb
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -13508,9 +13508,9 @@ Swift Swim
 
 None
 Absorb
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -13566,9 +13566,9 @@ Swift Swim
 
 None
 Absorb
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -13579,9 +13579,9 @@ Swift Swim
 
 None
 Absorb
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -13592,9 +13592,9 @@ Swift Swim
 
 None
 Absorb
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -13611,9 +13611,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 252/0/252/0/4/0
 
@@ -13624,9 +13624,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 252/0/252/0/4/0
 
@@ -13637,9 +13637,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 252/0/252/0/4/0
 
@@ -13650,9 +13650,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 252/0/252/0/4/0
 
@@ -13663,9 +13663,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 252/0/252/0/4/0
 
@@ -13676,9 +13676,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 252/0/252/0/4/0
 
@@ -13695,9 +13695,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -13708,9 +13708,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -13721,9 +13721,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -13734,9 +13734,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -13747,9 +13747,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -13760,9 +13760,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -13863,9 +13863,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -13876,9 +13876,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -13889,9 +13889,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -13902,9 +13902,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -13915,9 +13915,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -13928,9 +13928,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -13947,9 +13947,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -13960,9 +13960,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -13973,9 +13973,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -13986,9 +13986,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -13999,9 +13999,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -14012,9 +14012,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -14031,9 +14031,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -14044,9 +14044,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -14057,9 +14057,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -14070,9 +14070,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -14083,9 +14083,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -14096,9 +14096,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -14115,9 +14115,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -14128,9 +14128,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -14141,9 +14141,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -14154,9 +14154,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -14167,9 +14167,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -14180,9 +14180,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -14199,9 +14199,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -14212,9 +14212,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -14225,9 +14225,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -14238,9 +14238,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -14251,9 +14251,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -14264,9 +14264,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/0/31/31/31/31
 1/0/0/0/0/0
 
@@ -14283,9 +14283,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/31/31/31/31/31
 1/0/0/0/0/0
 
@@ -14296,9 +14296,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/31/31/31/31/31
 1/0/0/0/0/0
 
@@ -14309,9 +14309,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/31/31/31/31/31
 1/0/0/0/0/0
 
@@ -14322,9 +14322,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/31/31/31/31/31
 1/0/0/0/0/0
 
@@ -14335,9 +14335,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/31/31/31/31/31
 1/0/0/0/0/0
 
@@ -14348,9 +14348,9 @@ Serene Grace
 
 Toxic Orb
 Healing Wish
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/31/31/31/31/31
 1/0/0/0/0/0
 
@@ -19834,7 +19834,7 @@ None
 Megahorn
 Close Combat
 Knock Off
-(No Move)
+———
 25/25/25/25/25/25
 0/252/252/0/0/4
 
@@ -24652,8 +24652,8 @@ Heatproof
 Eviolite
 Trick Room
 Memento
-(No Move)
-(No Move)
+———
+———
 31/0/31/31/31/31
 252/0/252/0/0/4
 
@@ -26288,7 +26288,7 @@ None
 Blizzard
 Earthquake
 Ice Shard
-(No Move)
+———
 25/25/25/25/25/25
 116/196/0/0/0/196
 
@@ -26301,7 +26301,7 @@ None
 Ice Fang
 Earthquake
 Ice Shard
-(No Move)
+———
 25/25/25/25/25/25
 252/252/4/0/0/0
 
@@ -26333,7 +26333,7 @@ None
 Aqua Tail
 Ice Beam
 Hail
-(No Move)
+———
 25/25/25/25/25/25
 236/0/236/0/36/0
 
@@ -26346,7 +26346,7 @@ None
 Psychic
 Lovely Kiss
 Ice Beam
-(No Move)
+———
 25/25/25/25/25/25
 0/0/4/252/0/252
 
@@ -26422,8 +26422,8 @@ Inner Focus
 None
 Blizzard
 Crunch
-(No Move)
-(No Move)
+———
+———
 25/25/25/25/25/25
 40/0/36/200/0/0
 
@@ -26436,7 +26436,7 @@ None
 Blizzard
 Crunch
 Explosion
-(No Move)
+———
 25/25/25/25/25/25
 4/252/252/0/0/0
 
@@ -26449,7 +26449,7 @@ None
 Blizzard
 Head Smash
 Crunch
-(No Move)
+———
 25/25/25/25/25/25
 4/252/252/0/0/0
 
@@ -26481,7 +26481,7 @@ None
 Hydro Pump
 Icicle Spear
 Rock Blast
-(No Move)
+———
 25/25/25/25/25/25
 0/252/0/0/4/252
 
@@ -26513,7 +26513,7 @@ None
 Energy Ball
 Blizzard
 Sheer Cold
-(No Move)
+———
 25/25/25/25/25/25
 4/252/0/252/0/0
 
@@ -26526,7 +26526,7 @@ None
 Hurricane
 Ice Beam
 Future Sight
-(No Move)
+———
 25/25/25/25/25/25
 0/0/0/252/4/252
 
@@ -30029,8 +30029,8 @@ Electric Surge
 Terrain Extender
 Volt Switch
 Explosion
-(No Move)
-(No Move)
+———
+———
 31/31/31/31/31/31
 0/4/0/252/0/252
 
@@ -39849,8 +39849,8 @@ Scrappy
 Silk Scarf
 Fake Out
 Last Resort
-(No Move)
-(No Move)
+———
+———
 31/31/31/31/31/31
 0/252/0/0/4/252
 

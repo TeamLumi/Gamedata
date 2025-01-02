@@ -1,0 +1,13 @@
+SP_T07R0102_INIT:
+	_END()
+SP_T07R0102_OBJ:
+	_END()
+SP_T07R0102_SCENE:
+	_JUMP('sp_t07r0102_tbl')
+	_END()
+SP_T07R0102_FLAG:
+	_JUMP('ev_T07R0102_flag_change')
+	_END()
+sp_t07r0102_tbl:
+	_SCENE_CHANGE_DATA('WK_SCENE_t07r0102', 0, 'ev_t07r0102_kaiin_check')
+	_END()

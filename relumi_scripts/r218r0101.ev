@@ -1,0 +1,49 @@
+ev_r218r0101_policeman:
+	_EASY_OBJ_MSG('dp_scenario1%63-msg_r218r0101_policeman_01')
+	_END()
+ev_r218r0101_fishing:
+	_TALK_OBJ_START()
+	_LDVAL(@SCWK_TEMP0, 445)
+	_ITEM_NAME(0, @SCWK_TEMP0, 1)
+	_IF_FLAGON_JUMP(#FE_BORONOTURIZAO_GET, 'ev_r218r0101_fishing_flag_on')
+	_TALKMSG('dp_scenario1%63-msg_r218r0101_fishing_01')
+	_YES_NO_WIN(@SCWK_ANSWER)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_r218r0101_fishing_yes')
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_r218r0101_fishing_no')
+	_END()
+ev_r218r0101_fishing_flag_on:
+	_ITEM_NAME(0, @SCWK_TEMP0, 1)
+	_TALKMSG('dp_scenario1%63-msg_r218r0101_fishing_03')
+	_YES_NO_WIN(@SCWK_ANSWER)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_r218r0101_fishing_05')
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_r218r0101_fishing_06')
+	_END()
+ev_r218r0101_fishing_05:
+	_TALKMSG('dp_scenario1%63-msg_r218r0101_fishing_05')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_r218r0101_fishing_06:
+	_TALKMSG('dp_scenario1%63-msg_r218r0101_fishing_06')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_r218r0101_fishing_no:
+	_TALKMSG('dp_scenario1%63-msg_r218r0101_fishing_04')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_r218r0101_fishing_yes:
+	_ITEM_NAME(0, @SCWK_TEMP0, 1)
+	_TALKMSG('dp_scenario1%63-msg_r218r0101_fishing_02')
+	_LDVAL(@SCWK_TEMP1, 1)
+	_CALL('ev_item_event')
+	_FLAG_SET(#FE_BORONOTURIZAO_GET)
+	_FLAG_SET(#FE_TURIZAO_GET)
+	_LDVAL(@SCWK_TEMP0, 7); Dive balls
+	_LDVAL(@SCWK_TEMP1, 10); 10
+	_TALKMSG('dp_scenario3%00_msg_oldrod_diveballs')
+	_CALL('ev_item_event')
+	_LDVAL(@SCWK_TEMP0, 445); Fix for dialogue
+	_JUMP('ev_r218r0101_fishing_flag_on')
+	_END()

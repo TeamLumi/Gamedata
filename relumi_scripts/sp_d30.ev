@@ -1,0 +1,9 @@
+SP_D30_INIT:
+	_END()
+SP_D30_OBJ:
+	_END()
+SP_D30_SCENE:
+	_END()
+SP_D30_FLAG:
+	_JUMP('ev_d30_flag_change')
+	_END()

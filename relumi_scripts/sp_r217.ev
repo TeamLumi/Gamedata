@@ -1,0 +1,10 @@
+SP_R217_INIT:
+	_END()
+SP_R217_OBJ:
+	_END()
+SP_R217_SCENE:
+	_END()
+SP_R217_FLAG:
+	_IF_FLAGON_JUMP(#107, 'ev_r221_flag_change')
+	_JUMP('ev_r217_flag_change')
+	_END()

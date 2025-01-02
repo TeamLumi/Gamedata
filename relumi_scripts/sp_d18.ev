@@ -1,0 +1,9 @@
+SP_D18_INIT:
+	_END()
+SP_D18_OBJ:
+	_END()
+SP_D18_SCENE:
+	_END()
+SP_D18_FLAG:
+	_JUMP('ev_d18_flag_change')
+	_END()

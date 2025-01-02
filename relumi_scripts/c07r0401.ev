@@ -1,0 +1,6 @@
+ev_c07r0401_shopwoman1:
+	_EASY_OBJ_MSG('dp_scenario2%103-msg_c07r0401_shopwoman1_01')
+	_END()
+ev_c07r0401_shopwoman2:
+	_EASY_OBJ_MSG('dp_scenario2%103-msg_c07r0401_shopwoman2_01')
+	_END()

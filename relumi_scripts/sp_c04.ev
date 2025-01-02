@@ -1,0 +1,14 @@
+SP_C04_FLAG:
+	_JUMP('ev_c04_flag_change')
+	_END()
+SP_C04_INIT:
+	_END()
+SP_C04_OBJ:
+	_END()
+SP_C04_SCENE:
+	_JUMP('sp_c04_tbl')
+	_END()
+sp_c04_tbl:
+	_SCENE_CHANGE_DATA(@WK_SCENE_C08R0401, 99, 'ev_c04_anahori')
+	_SCENE_CHANGE_DATA(@WK_SCENE_C04R0101, 1, 'ev_c04_byclce_raid')
+	_END()

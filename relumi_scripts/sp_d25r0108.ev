@@ -1,0 +1,13 @@
+SP_D25R0108_INIT:
+	_END()
+SP_D25R0108_OBJ:
+	_END()
+SP_D25R0108_SCENE:
+	_JUMP('sp_d25r0108_tbl')
+	_END()
+SP_D25R0108_FLAG:
+	_JUMP('ev_d25r0108_flag_change')
+	_END()
+sp_d25r0108_tbl:
+	_SCENE_CHANGE_DATA(@WK_SCENE_D25R0108, 1, 'ev_d25r0108_ghost_event_01')
+	_END()
