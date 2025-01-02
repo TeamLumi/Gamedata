@@ -243,10 +243,10 @@ def get_moves(m1, m2, m3, m4, monsno, level, output_format):
         return [m1, m2, m3, m4]
 
     moves = [
-        move_enum[m1],
-        move_enum[m2],
-        move_enum[m3],
-        move_enum[m4]
+        get_move_string(m1),
+        get_move_string(m2),
+        get_move_string(m3),
+        get_move_string(m4)
     ]
 
     if moves[0] is None:

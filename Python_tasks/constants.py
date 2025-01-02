@@ -29,6 +29,12 @@ if INPUT_NAME == "vanilla_input":
     NAT_DEX_LENGTH = 493
     TROUBLE_MONS_NAMES = {}
     SCRIPT_DATA = "vanillaScripts"
+    TRAINER_BATTLE = '_TRAINER_BTL_SET'
+    MULTI_TRAINER_BATTLE = '_TRAINER_MULTI_BTL_SET'
+    TRAINER_BATTLE_SUBSTRINGS = [
+        TRAINER_BATTLE,
+        MULTI_TRAINER_BATTLE
+    ]
 if INPUT_NAME == "input":
     GAME_MODE = GAME_MODE_2
     DEBUG_NAME = "Debug"
@@ -46,6 +52,12 @@ if INPUT_NAME == "input":
         1067: "Galarian Farfetch'd"
     }
     SCRIPT_DATA = "scriptdata"
+    TRAINER_BATTLE = '_TRAINER_BTL_SET'
+    MULTI_TRAINER_BATTLE = '_TRAINER_MULTI_BTL_SET'
+    TRAINER_BATTLE_SUBSTRINGS = [
+        TRAINER_BATTLE,
+        MULTI_TRAINER_BATTLE
+    ]
 elif INPUT_NAME == "3.0Input":
     GAME_MODE = GAME_MODE_3
     DEBUG_NAME = "3.0Debug"
@@ -62,9 +74,18 @@ elif INPUT_NAME == "3.0Input":
         1483: 'Oinkologne-F',
         1083: "Galarian Farfetch'd"
     }
+    SCRIPT_DATA = "relumi_scripts"
+    ## The names of these can be found at the end of the trainer.ev file
+    TRAINER_BATTLE_SINGLES_SCRIPT = "ev_set_trainer_id_for_current_gamemode_scripted_battle"
+    TRAINER_BATTLE_DOUBLES_SCRIPT = "ev_set_trainer_id_for_current_gamemode_scripted_double_battle"
+    TRAINER_BATTLE_MULTI_SCRIPT = "ev_set_trainer_id_for_current_gamemode_scripted_multi_battle"
+    TRAINER_BATTLE_MULTI_SUPPORT_SCRIPT = "ev_set_trainer_id_for_current_gamemode_partner_id"
+    TRAINER_BATTLE_SUBSTRINGS = [
+        TRAINER_BATTLE_SINGLES_SCRIPT,
+        TRAINER_BATTLE_DOUBLES_SCRIPT,
+        TRAINER_BATTLE_MULTI_SCRIPT
+    ]
 
-TRAINER_BATTLE = '_TRAINER_BTL_SET'
-MULTI_TRAINER_BATTLE = '_TRAINER_MULTI_BTL_SET'
 GYM_AREA_NAME = "GYM"
 E4_AREA_NAME = "C10"
 ROOM_AREA_NAME = "R0101"
@@ -72,7 +93,7 @@ PEARL_SPEAR_PILLAR = "d05r0115"
 EVE_AREA_NAME = "SODATEYA"
 MORIMOTO = "MORIMOTO_01"
 SUPPORT_AREA_NAME = "SUPPORT"
-SHINING_PEARL_FILE_PREFIX = "SP_"
+MAP_FILE_PREFIX = "SP_"
 
 # Gym Leader lookup based on the file name
 GYM_LEADER_LOOKUP = {
@@ -161,7 +182,25 @@ HIGHEST_EGG_GROUP_ID = 15
 
 BAD_ENCOUNTER_LIST = ["Gigantamax", "Eternamax", "Mega ", "Totem "]
 STARTERS = ["piplup", "turtwig", "chimchar"]
-MASTER_TRAINER_TYPES = ["fire", "water", "electric", "grass", "ice", "fighting", "poison", "ground", "flying", "psychic", "bug", "rock", "ghost", "dragon", "dark", "steel", "fairy"]
+MASTER_TRAINER_TYPES = [
+    "fire",
+    "water",
+    "electric",
+    "grass",
+    "ice",
+    "fighting",
+    "poison",
+    "ground",
+    "flying",
+    "psychic",
+    "bug",
+    "rock",
+    "ghost",
+    "dragon",
+    "dark",
+    "steel",
+    "fairy"
+]
 CELEBI = "Celebi"
 AMPHAROS_PLACE_HOLDER = "AMPHAROS"
 WRONG_FARFETCHD = "FARFETCHD"
@@ -186,6 +225,11 @@ R224_BAD_SUPPORT_LOOKUP1 = "ev_r224_support_dawn_battle_party"
 R224_BAD_SUPPORT_LOOKUP2 = "ev_r224_support_lucas_battle_party"
 R210B_BAD_SUPPORT_LOOKUP1 = "ev_r210b_support_set_dawn_party_1"
 R210B_BAD_SUPPORT_LOOKUP2 = "ev_r210b_support_set_lucas_party_1"
+MULTI_PARTNER_BATTLE = "MultiPartner"
+MULTI_BATTLE = "MultiBattle"
+DOUBLE_BATTLE = "DoubleBattle"
+SINGLE_BATTLE_CALLBACK = "SingleCallback"
+SINGLE_BATTLE = "SingleBattle"
 
 SUPPORT_LINK = "Support"
 CITY_TRAINER = 'City'
@@ -207,6 +251,7 @@ TEAM_REGEX = "Team \d+"
 LDVAL_PATTERN = r"_LDVAL\(@(.*),\s?([1-9][0-9]*)\)"
 TRAINER_PATTERN = r"_TRAINER_BTL_SET\s*\(\s*('?[^']+'?|@\w+|\d+)\s*,\s*('?[^']+'?|@\w+|\d+)\s*\)"
 MULTI_TRAINER_PATTERN = r"_TRAINER_MULTI_BTL_SET\s*\(\s*((?:'[^']*'|@\w+|\d+)\s*(?:,\s*(?:'[^']*'|@\w+|\d+)\s*)*)\)"
+CALL_PATTERN = r"_CALL\('([^']*)'\)" # Returns the string that is contained within the single quotes of a CALL function
 HONEY_TREE_MATCH_REGEX = r"\[(.*?)\]\s*=\s*\{(.*?)\}"
 HONEY_TREE_CONST_REGEX = r"const\s+int32_t\s+HONEY_TREES\[\s*NUM_ZONE_ID\s*\]\[\s*10\s*\]\s*=\s*\{\s*([\s\S]*?)\};"
 HONEY_TREE = "Honey Tree"
@@ -357,6 +402,7 @@ ZONE_ORDER = [
     "Stark Mountain (Outside)",
     "Stark Mountain (Entrance)",
     "Stark Mountain (Interior)",
+    "Sandgem",
     "Sandgem Town",
 ]
 
@@ -468,6 +514,7 @@ DOCS_ZONE_ORDER = [
     "Ruin Maniac Cave - Large",
     "Maniac Tunnel",
     "Valor Lakefront",
+    "Valor Lakefront - House 2 (NW)",
     "Route 213",
     "Pastoria City",
     "Great Marsh - Area 1",
@@ -580,6 +627,7 @@ DOCS_ZONE_ORDER = [
     "Stark Mountain (Overworld)",
     "Stark Mountain - Entrance",
     "Stark Mountain - Interior",
+    "Sandgem",
     "Sandgem Town",
 ]
 

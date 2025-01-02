@@ -29,7 +29,7 @@
     "zoneId": 0,
     "trainerId": 487,
     "rematch": 0,
-    "name": "Lucas",
+    "name": "Lucas Team 1",
     "type": "Pok\u00e9mon Trainer",
     "method": "Scripted",
     "format": "Multi Battle Partner",
@@ -41,7 +41,7 @@
     "zoneId": 0,
     "trainerId": 488,
     "rematch": 0,
-    "name": "Lucas",
+    "name": "Lucas Team 2",
     "type": "Pok\u00e9mon Trainer",
     "method": "Scripted",
     "format": "Multi Battle Partner",
@@ -53,7 +53,7 @@
     "zoneId": 0,
     "trainerId": 489,
     "rematch": 0,
-    "name": "Lucas",
+    "name": "Lucas Team 3",
     "type": "Pok\u00e9mon Trainer",
     "method": "Scripted",
     "format": "Multi Battle Partner",
@@ -65,7 +65,7 @@
     "zoneId": 0,
     "trainerId": 490,
     "rematch": 0,
-    "name": "Dawn",
+    "name": "Dawn Team 4",
     "type": "Pok\u00e9mon Trainer",
     "method": "Scripted",
     "format": "Multi Battle Partner",
@@ -77,7 +77,7 @@
     "zoneId": 0,
     "trainerId": 491,
     "rematch": 0,
-    "name": "Dawn",
+    "name": "Dawn Team 5",
     "type": "Pok\u00e9mon Trainer",
     "method": "Scripted",
     "format": "Multi Battle Partner",
@@ -89,7 +89,7 @@
     "zoneId": 0,
     "trainerId": 492,
     "rematch": 0,
-    "name": "Dawn",
+    "name": "Dawn Team 6",
     "type": "Pok\u00e9mon Trainer",
     "method": "Scripted",
     "format": "Multi Battle Partner",
@@ -843,18 +843,6 @@
     "areaName": "lmpt-19",
     "zoneName": "Eterna - Gym Main Room",
     "zoneId": 57,
-    "trainerId": 269,
-    "rematch": 0,
-    "name": "Lindsay",
-    "type": "Beauty",
-    "method": "Scripted",
-    "format": "Single Battle",
-    "link": ""
-  },
-  {
-    "areaName": "lmpt-19",
-    "zoneName": "Eterna - Gym Main Room",
-    "zoneId": 57,
     "trainerId": 827,
     "rematch": 0,
     "name": "Gardenia Team 1",
@@ -1227,6 +1215,18 @@
     "areaName": "lmpt-27",
     "zoneName": "Hearthome City",
     "zoneId": 98,
+    "trainerId": 943,
+    "rematch": 0,
+    "name": "Aaron",
+    "type": "Elite Four",
+    "method": "Scripted",
+    "format": "Single Battle",
+    "link": ""
+  },
+  {
+    "areaName": "lmpt-27",
+    "zoneName": "Hearthome City",
+    "zoneId": 99,
     "trainerId": 757,
     "rematch": 0,
     "name": "Cedric Turtwig Team 1",
@@ -1238,7 +1238,7 @@
   {
     "areaName": "lmpt-27",
     "zoneName": "Hearthome City",
-    "zoneId": 98,
+    "zoneId": 99,
     "trainerId": 758,
     "rematch": 0,
     "name": "Cedric Turtwig Team 2",
@@ -1250,7 +1250,7 @@
   {
     "areaName": "lmpt-27",
     "zoneName": "Hearthome City",
-    "zoneId": 98,
+    "zoneId": 99,
     "trainerId": 759,
     "rematch": 0,
     "name": "Cedric Turtwig Team 3",
@@ -1262,7 +1262,7 @@
   {
     "areaName": "lmpt-27",
     "zoneName": "Hearthome City",
-    "zoneId": 98,
+    "zoneId": 99,
     "trainerId": 760,
     "rematch": 0,
     "name": "Cedric Turtwig Team 4",
@@ -1274,7 +1274,7 @@
   {
     "areaName": "lmpt-27",
     "zoneName": "Hearthome City",
-    "zoneId": 98,
+    "zoneId": 99,
     "trainerId": 761,
     "rematch": 0,
     "name": "Cedric Chimchar Team 1",
@@ -1286,7 +1286,7 @@
   {
     "areaName": "lmpt-27",
     "zoneName": "Hearthome City",
-    "zoneId": 98,
+    "zoneId": 99,
     "trainerId": 762,
     "rematch": 0,
     "name": "Cedric Chimchar Team 2",
@@ -1298,7 +1298,7 @@
   {
     "areaName": "lmpt-27",
     "zoneName": "Hearthome City",
-    "zoneId": 98,
+    "zoneId": 99,
     "trainerId": 763,
     "rematch": 0,
     "name": "Cedric Chimchar Team 3",
@@ -1310,7 +1310,7 @@
   {
     "areaName": "lmpt-27",
     "zoneName": "Hearthome City",
-    "zoneId": 98,
+    "zoneId": 99,
     "trainerId": 764,
     "rematch": 0,
     "name": "Cedric Chimchar Team 4",
@@ -1322,7 +1322,7 @@
   {
     "areaName": "lmpt-27",
     "zoneName": "Hearthome City",
-    "zoneId": 98,
+    "zoneId": 99,
     "trainerId": 765,
     "rematch": 0,
     "name": "Cedric Piplup Team 1",
@@ -1334,7 +1334,7 @@
   {
     "areaName": "lmpt-27",
     "zoneName": "Hearthome City",
-    "zoneId": 98,
+    "zoneId": 99,
     "trainerId": 766,
     "rematch": 0,
     "name": "Cedric Piplup Team 2",
@@ -1346,7 +1346,7 @@
   {
     "areaName": "lmpt-27",
     "zoneName": "Hearthome City",
-    "zoneId": 98,
+    "zoneId": 99,
     "trainerId": 767,
     "rematch": 0,
     "name": "Cedric Piplup Team 3",
@@ -1358,23 +1358,11 @@
   {
     "areaName": "lmpt-27",
     "zoneName": "Hearthome City",
-    "zoneId": 98,
+    "zoneId": 99,
     "trainerId": 768,
     "rematch": 0,
     "name": "Cedric Piplup Team 4",
     "type": "Pok\u00e9mon Trainer",
-    "method": "Scripted",
-    "format": "Single Battle",
-    "link": ""
-  },
-  {
-    "areaName": "lmpt-27",
-    "zoneName": "Hearthome City",
-    "zoneId": 98,
-    "trainerId": 943,
-    "rematch": 0,
-    "name": "Aaron",
-    "type": "Elite Four",
     "method": "Scripted",
     "format": "Single Battle",
     "link": ""
@@ -1733,7 +1721,7 @@
     "zoneId": 123,
     "trainerId": 495,
     "rematch": 0,
-    "name": "Lucas",
+    "name": "Lucas Team 6",
     "type": "Pok\u00e9mon Trainer",
     "method": "Scripted",
     "format": "Multi Battle Partner",
@@ -1745,7 +1733,7 @@
     "zoneId": 123,
     "trainerId": 496,
     "rematch": 0,
-    "name": "Lucas",
+    "name": "Lucas Team 4",
     "type": "Pok\u00e9mon Trainer",
     "method": "Scripted",
     "format": "Multi Battle Partner",
@@ -1757,7 +1745,7 @@
     "zoneId": 123,
     "trainerId": 497,
     "rematch": 0,
-    "name": "Lucas",
+    "name": "Lucas Team 5",
     "type": "Pok\u00e9mon Trainer",
     "method": "Scripted",
     "format": "Multi Battle Partner",
@@ -1769,7 +1757,7 @@
     "zoneId": 123,
     "trainerId": 498,
     "rematch": 0,
-    "name": "Dawn",
+    "name": "Dawn Team 3",
     "type": "Pok\u00e9mon Trainer",
     "method": "Scripted",
     "format": "Multi Battle Partner",
@@ -1781,7 +1769,7 @@
     "zoneId": 123,
     "trainerId": 499,
     "rematch": 0,
-    "name": "Dawn",
+    "name": "Dawn Team 1",
     "type": "Pok\u00e9mon Trainer",
     "method": "Scripted",
     "format": "Multi Battle Partner",
@@ -1793,7 +1781,7 @@
     "zoneId": 123,
     "trainerId": 500,
     "rematch": 0,
-    "name": "Dawn",
+    "name": "Dawn Team 2",
     "type": "Pok\u00e9mon Trainer",
     "method": "Scripted",
     "format": "Multi Battle Partner",
@@ -2218,6 +2206,30 @@
     "method": "Scripted",
     "format": "Double Battle",
     "link": "736"
+  },
+  {
+    "areaName": "lmpt-68",
+    "zoneName": "Snowpoint City",
+    "zoneId": 159,
+    "trainerId": 735,
+    "rematch": 0,
+    "name": "Aran",
+    "type": "Ace Trainer",
+    "method": "Scripted",
+    "format": "Single Battle",
+    "link": ""
+  },
+  {
+    "areaName": "lmpt-68",
+    "zoneName": "Snowpoint City",
+    "zoneId": 159,
+    "trainerId": 736,
+    "rematch": 0,
+    "name": "Nephenee",
+    "type": "Ace Trainer",
+    "method": "Scripted",
+    "format": "Single Battle",
+    "link": ""
   },
   {
     "areaName": "lmpt-68",
@@ -3041,7 +3053,7 @@
     "zoneId": 186,
     "trainerId": 666,
     "rematch": 0,
-    "name": "Cedric",
+    "name": "Cedric Team 2",
     "type": "Pok\u00e9mon Trainer",
     "method": "Scripted",
     "format": "Multi Battle Partner",
@@ -3053,7 +3065,7 @@
     "zoneId": 186,
     "trainerId": 667,
     "rematch": 0,
-    "name": "Cedric",
+    "name": "Cedric Team 1",
     "type": "Pok\u00e9mon Trainer",
     "method": "Scripted",
     "format": "Multi Battle Partner",
@@ -3065,7 +3077,7 @@
     "zoneId": 186,
     "trainerId": 668,
     "rematch": 0,
-    "name": "Cedric",
+    "name": "Cedric Team 3",
     "type": "Pok\u00e9mon Trainer",
     "method": "Scripted",
     "format": "Multi Battle Partner",
@@ -3581,7 +3593,7 @@
     "zoneId": 200,
     "trainerId": 727,
     "rematch": 0,
-    "name": "Falkner",
+    "name": "Falkner Team 1",
     "type": "Bird Keeper",
     "method": "Scripted",
     "format": "Single Battle",
@@ -3593,7 +3605,7 @@
     "zoneId": 200,
     "trainerId": 728,
     "rematch": 0,
-    "name": "Bugsy",
+    "name": "Bugsy Team 2",
     "type": "Bug Catcher",
     "method": "Scripted",
     "format": "Single Battle",
@@ -3605,7 +3617,7 @@
     "zoneId": 200,
     "trainerId": 729,
     "rematch": 0,
-    "name": "Whitney",
+    "name": "Whitney Team 3",
     "type": "Idol",
     "method": "Scripted",
     "format": "Single Battle",
@@ -3617,7 +3629,7 @@
     "zoneId": 200,
     "trainerId": 730,
     "rematch": 0,
-    "name": "Morty",
+    "name": "Morty Team 4",
     "type": "Ninja Boy",
     "method": "Scripted",
     "format": "Single Battle",
@@ -3629,7 +3641,7 @@
     "zoneId": 200,
     "trainerId": 731,
     "rematch": 0,
-    "name": "Chuck",
+    "name": "Chuck Team 5",
     "type": "Black Belt",
     "method": "Scripted",
     "format": "Single Battle",
@@ -3641,7 +3653,7 @@
     "zoneId": 200,
     "trainerId": 732,
     "rematch": 0,
-    "name": "Jasmine",
+    "name": "Jasmine Team 6",
     "type": "Lass",
     "method": "Scripted",
     "format": "Single Battle",
@@ -3653,7 +3665,7 @@
     "zoneId": 200,
     "trainerId": 733,
     "rematch": 0,
-    "name": "Pryce",
+    "name": "Pryce Team 7",
     "type": "Veteran",
     "method": "Scripted",
     "format": "Single Battle",
@@ -3665,7 +3677,7 @@
     "zoneId": 200,
     "trainerId": 734,
     "rematch": 0,
-    "name": "Claire",
+    "name": "Claire Team 8",
     "type": "Ace Trainer",
     "method": "Scripted",
     "format": "Single Battle",
@@ -3855,6 +3867,30 @@
     "areaName": "lmpt-56",
     "zoneName": "Spear Pillar",
     "zoneId": 216,
+    "trainerId": 394,
+    "rematch": 0,
+    "name": "Grunt",
+    "type": "Team Galactic",
+    "method": "Scripted",
+    "format": "Single Battle",
+    "link": ""
+  },
+  {
+    "areaName": "lmpt-56",
+    "zoneName": "Spear Pillar",
+    "zoneId": 216,
+    "trainerId": 400,
+    "rematch": 0,
+    "name": "Grunt",
+    "type": "Team Galactic",
+    "method": "Scripted",
+    "format": "Single Battle",
+    "link": ""
+  },
+  {
+    "areaName": "lmpt-56",
+    "zoneName": "Spear Pillar",
+    "zoneId": 216,
     "trainerId": 400,
     "rematch": 0,
     "name": "Grunt",
@@ -3869,7 +3905,7 @@
     "zoneId": 216,
     "trainerId": 796,
     "rematch": 0,
-    "name": "Cedric",
+    "name": "Cedric Team 1",
     "type": "Pok\u00e9mon Trainer",
     "method": "Scripted",
     "format": "Multi Battle Partner",
@@ -3881,7 +3917,7 @@
     "zoneId": 216,
     "trainerId": 797,
     "rematch": 0,
-    "name": "Cedric",
+    "name": "Cedric Team 2",
     "type": "Pok\u00e9mon Trainer",
     "method": "Scripted",
     "format": "Multi Battle Partner",
@@ -3893,7 +3929,7 @@
     "zoneId": 216,
     "trainerId": 798,
     "rematch": 0,
-    "name": "Cedric",
+    "name": "Cedric Team 3",
     "type": "Pok\u00e9mon Trainer",
     "method": "Scripted",
     "format": "Multi Battle Partner",
@@ -4317,7 +4353,19 @@
     "type": "Team Galactic",
     "method": "Scripted",
     "format": "Double Battle",
-    "link": 222
+    "link": "222"
+  },
+  {
+    "areaName": "lmpt-15",
+    "zoneName": "Floaroma Meadow",
+    "zoneId": 253,
+    "trainerId": 221,
+    "rematch": 0,
+    "name": "Grunt",
+    "type": "Team Galactic",
+    "method": "Scripted",
+    "format": "Single Battle",
+    "link": ""
   },
   {
     "areaName": "lmpt-15",
@@ -4329,7 +4377,19 @@
     "type": "Team Galactic",
     "method": "Scripted",
     "format": "Double Battle",
-    "link": 221
+    "link": "221"
+  },
+  {
+    "areaName": "lmpt-15",
+    "zoneName": "Floaroma Meadow",
+    "zoneId": 253,
+    "trainerId": 222,
+    "rematch": 0,
+    "name": "Grunt",
+    "type": "Team Galactic",
+    "method": "Scripted",
+    "format": "Single Battle",
+    "link": ""
   },
   {
     "areaName": "lmpt-9",
@@ -4893,7 +4953,7 @@
     "type": "Team Galactic",
     "method": "Scripted",
     "format": "Double Battle",
-    "link": 662
+    "link": "662"
   },
   {
     "areaName": "lmpt-48",
@@ -4905,7 +4965,7 @@
     "type": "Team Galactic",
     "method": "Scripted",
     "format": "Double Battle",
-    "link": 661
+    "link": "661"
   },
   {
     "areaName": "lmpt-33",
@@ -5217,7 +5277,7 @@
     "type": "Aroma Lady",
     "method": "Scripted",
     "format": "Double Battle",
-    "link": 414
+    "link": "414"
   },
   {
     "areaName": "lmpt-36",
@@ -5241,7 +5301,7 @@
     "type": "Artist",
     "method": "Scripted",
     "format": "Double Battle",
-    "link": 426
+    "link": "426"
   },
   {
     "areaName": "lmpt-36",
@@ -5265,7 +5325,7 @@
     "type": "Pok\u00e9mon Breeder",
     "method": "Scripted",
     "format": "Double Battle",
-    "link": 424
+    "link": "424"
   },
   {
     "areaName": "lmpt-36",
@@ -5289,7 +5349,7 @@
     "type": "Cameraman",
     "method": "Scripted",
     "format": "Double Battle",
-    "link": 422
+    "link": "422"
   },
   {
     "areaName": "lmpt-36",
@@ -5313,7 +5373,7 @@
     "type": "Collector",
     "method": "Scripted",
     "format": "Double Battle",
-    "link": 410
+    "link": "410"
   },
   {
     "areaName": "lmpt-36",
@@ -5337,7 +5397,7 @@
     "type": "Pok\u00e9 Fan",
     "method": "Scripted",
     "format": "Double Battle",
-    "link": 423
+    "link": "423"
   },
   {
     "areaName": "lmpt-36",
@@ -5361,7 +5421,7 @@
     "type": "PI",
     "method": "Scripted",
     "format": "Double Battle",
-    "link": 425
+    "link": "425"
   },
   {
     "areaName": "lmpt-36",
@@ -5385,7 +5445,7 @@
     "type": "Gentleman",
     "method": "Scripted",
     "format": "Double Battle",
-    "link": 418
+    "link": "418"
   },
   {
     "areaName": "lmpt-36",
@@ -5409,7 +5469,7 @@
     "type": "Madame",
     "method": "Scripted",
     "format": "Double Battle",
-    "link": 417
+    "link": "417"
   },
   {
     "areaName": "lmpt-36",
@@ -5433,7 +5493,7 @@
     "type": "Lass",
     "method": "Scripted",
     "format": "Double Battle",
-    "link": 427
+    "link": "427"
   },
   {
     "areaName": "lmpt-36",
@@ -5457,7 +5517,7 @@
     "type": "Rich Boy",
     "method": "Scripted",
     "format": "Double Battle",
-    "link": 421
+    "link": "421"
   },
   {
     "areaName": "lmpt-36",
@@ -5481,7 +5541,7 @@
     "type": "Lady",
     "method": "Scripted",
     "format": "Double Battle",
-    "link": 420
+    "link": "420"
   },
   {
     "areaName": "lmpt-36",
@@ -5505,7 +5565,7 @@
     "type": "Reporter",
     "method": "Scripted",
     "format": "Double Battle",
-    "link": 413
+    "link": "413"
   },
   {
     "areaName": "lmpt-36",
@@ -5529,7 +5589,7 @@
     "type": "School Kid",
     "method": "Scripted",
     "format": "Double Battle",
-    "link": 415
+    "link": "415"
   },
   {
     "areaName": "lmpt-36",
@@ -5553,7 +5613,7 @@
     "type": "Scientist",
     "method": "Scripted",
     "format": "Double Battle",
-    "link": 412
+    "link": "412"
   },
   {
     "areaName": "lmpt-36",
@@ -5577,7 +5637,7 @@
     "type": "Beauty",
     "method": "Scripted",
     "format": "Double Battle",
-    "link": 416
+    "link": "416"
   },
   {
     "areaName": "lmpt-36",
@@ -5601,7 +5661,7 @@
     "type": "Beauty",
     "method": "Scripted",
     "format": "Double Battle",
-    "link": 411
+    "link": "411"
   },
   {
     "areaName": "lmpt-36",
@@ -5625,7 +5685,19 @@
     "type": "Veteran",
     "method": "Scripted",
     "format": "Double Battle",
-    "link": 419
+    "link": "419"
+  },
+  {
+    "areaName": "lmpt-36",
+    "zoneName": "Valor Lakefront - House 2 (NW)",
+    "zoneId": 350,
+    "trainerId": 949,
+    "rematch": 0,
+    "name": "Drayano",
+    "type": "Ace Trainer",
+    "method": "Scripted",
+    "format": "Single Battle",
+    "link": ""
   },
   {
     "areaName": "lmpt-2",
@@ -5669,7 +5741,7 @@
     "zoneId": 354,
     "trainerId": 663,
     "rematch": 0,
-    "name": "Cedric",
+    "name": "Cedric Team 1",
     "type": "Pok\u00e9mon Trainer",
     "method": "Scripted",
     "format": "Single Battle",
@@ -5681,7 +5753,7 @@
     "zoneId": 354,
     "trainerId": 664,
     "rematch": 0,
-    "name": "Cedric",
+    "name": "Cedric Team 2",
     "type": "Pok\u00e9mon Trainer",
     "method": "Scripted",
     "format": "Single Battle",
@@ -5693,7 +5765,7 @@
     "zoneId": 354,
     "trainerId": 665,
     "rematch": 0,
-    "name": "Cedric",
+    "name": "Cedric Team 3",
     "type": "Pok\u00e9mon Trainer",
     "method": "Scripted",
     "format": "Single Battle",
@@ -5705,7 +5777,7 @@
     "zoneId": 355,
     "trainerId": 684,
     "rematch": 0,
-    "name": "Lucas",
+    "name": "Lucas Team 6",
     "type": "Pok\u00e9mon Trainer",
     "method": "Scripted",
     "format": "Single Battle",
@@ -5717,7 +5789,7 @@
     "zoneId": 355,
     "trainerId": 685,
     "rematch": 0,
-    "name": "Lucas",
+    "name": "Lucas Team 4",
     "type": "Pok\u00e9mon Trainer",
     "method": "Scripted",
     "format": "Single Battle",
@@ -5729,7 +5801,7 @@
     "zoneId": 355,
     "trainerId": 686,
     "rematch": 0,
-    "name": "Lucas",
+    "name": "Lucas Team 5",
     "type": "Pok\u00e9mon Trainer",
     "method": "Scripted",
     "format": "Single Battle",
@@ -5741,7 +5813,7 @@
     "zoneId": 355,
     "trainerId": 690,
     "rematch": 0,
-    "name": "Dawn",
+    "name": "Dawn Team 3",
     "type": "Pok\u00e9mon Trainer",
     "method": "Scripted",
     "format": "Single Battle",
@@ -5753,7 +5825,7 @@
     "zoneId": 355,
     "trainerId": 691,
     "rematch": 0,
-    "name": "Dawn",
+    "name": "Dawn Team 1",
     "type": "Pok\u00e9mon Trainer",
     "method": "Scripted",
     "format": "Single Battle",
@@ -5765,7 +5837,7 @@
     "zoneId": 355,
     "trainerId": 692,
     "rematch": 0,
-    "name": "Dawn",
+    "name": "Dawn Team 2",
     "type": "Pok\u00e9mon Trainer",
     "method": "Scripted",
     "format": "Single Battle",
@@ -5864,6 +5936,150 @@
     "name": "Sebastian",
     "type": "Youngster",
     "method": "Place Data",
+    "format": "Single Battle",
+    "link": ""
+  },
+  {
+    "areaName": "lmpt-8",
+    "zoneName": "Route 203",
+    "zoneId": 356,
+    "trainerId": 745,
+    "rematch": 0,
+    "name": "Cedric Turtwig Team 1",
+    "type": "Pok\u00e9mon Trainer",
+    "method": "Scripted",
+    "format": "Single Battle",
+    "link": ""
+  },
+  {
+    "areaName": "lmpt-8",
+    "zoneName": "Route 203",
+    "zoneId": 356,
+    "trainerId": 746,
+    "rematch": 0,
+    "name": "Cedric Turtwig Team 2",
+    "type": "Pok\u00e9mon Trainer",
+    "method": "Scripted",
+    "format": "Single Battle",
+    "link": ""
+  },
+  {
+    "areaName": "lmpt-8",
+    "zoneName": "Route 203",
+    "zoneId": 356,
+    "trainerId": 747,
+    "rematch": 0,
+    "name": "Cedric Turtwig Team 3",
+    "type": "Pok\u00e9mon Trainer",
+    "method": "Scripted",
+    "format": "Single Battle",
+    "link": ""
+  },
+  {
+    "areaName": "lmpt-8",
+    "zoneName": "Route 203",
+    "zoneId": 356,
+    "trainerId": 748,
+    "rematch": 0,
+    "name": "Cedric Turtwig Team 4",
+    "type": "Pok\u00e9mon Trainer",
+    "method": "Scripted",
+    "format": "Single Battle",
+    "link": ""
+  },
+  {
+    "areaName": "lmpt-8",
+    "zoneName": "Route 203",
+    "zoneId": 356,
+    "trainerId": 749,
+    "rematch": 0,
+    "name": "Cedric Chimchar Team 1",
+    "type": "Pok\u00e9mon Trainer",
+    "method": "Scripted",
+    "format": "Single Battle",
+    "link": ""
+  },
+  {
+    "areaName": "lmpt-8",
+    "zoneName": "Route 203",
+    "zoneId": 356,
+    "trainerId": 750,
+    "rematch": 0,
+    "name": "Cedric Chimchar Team 2",
+    "type": "Pok\u00e9mon Trainer",
+    "method": "Scripted",
+    "format": "Single Battle",
+    "link": ""
+  },
+  {
+    "areaName": "lmpt-8",
+    "zoneName": "Route 203",
+    "zoneId": 356,
+    "trainerId": 751,
+    "rematch": 0,
+    "name": "Cedric Chimchar Team 3",
+    "type": "Pok\u00e9mon Trainer",
+    "method": "Scripted",
+    "format": "Single Battle",
+    "link": ""
+  },
+  {
+    "areaName": "lmpt-8",
+    "zoneName": "Route 203",
+    "zoneId": 356,
+    "trainerId": 752,
+    "rematch": 0,
+    "name": "Cedric Chimchar Team 4",
+    "type": "Pok\u00e9mon Trainer",
+    "method": "Scripted",
+    "format": "Single Battle",
+    "link": ""
+  },
+  {
+    "areaName": "lmpt-8",
+    "zoneName": "Route 203",
+    "zoneId": 356,
+    "trainerId": 753,
+    "rematch": 0,
+    "name": "Cedric Piplup Team 1",
+    "type": "Pok\u00e9mon Trainer",
+    "method": "Scripted",
+    "format": "Single Battle",
+    "link": ""
+  },
+  {
+    "areaName": "lmpt-8",
+    "zoneName": "Route 203",
+    "zoneId": 356,
+    "trainerId": 754,
+    "rematch": 0,
+    "name": "Cedric Piplup Team 2",
+    "type": "Pok\u00e9mon Trainer",
+    "method": "Scripted",
+    "format": "Single Battle",
+    "link": ""
+  },
+  {
+    "areaName": "lmpt-8",
+    "zoneName": "Route 203",
+    "zoneId": 356,
+    "trainerId": 755,
+    "rematch": 0,
+    "name": "Cedric Piplup Team 3",
+    "type": "Pok\u00e9mon Trainer",
+    "method": "Scripted",
+    "format": "Single Battle",
+    "link": ""
+  },
+  {
+    "areaName": "lmpt-8",
+    "zoneName": "Route 203",
+    "zoneId": 356,
+    "trainerId": 756,
+    "rematch": 0,
+    "name": "Cedric Piplup Team 4",
+    "type": "Pok\u00e9mon Trainer",
+    "method": "Scripted",
     "format": "Single Battle",
     "link": ""
   },
@@ -6233,7 +6449,7 @@
     "zoneId": 364,
     "trainerId": 739,
     "rematch": 0,
-    "name": "Dawn",
+    "name": "Dawn Team 1",
     "type": "Pok\u00e9mon Trainer",
     "method": "Scripted",
     "format": "Single Battle",
@@ -6245,7 +6461,7 @@
     "zoneId": 364,
     "trainerId": 740,
     "rematch": 0,
-    "name": "Dawn",
+    "name": "Dawn Team 2",
     "type": "Pok\u00e9mon Trainer",
     "method": "Scripted",
     "format": "Single Battle",
@@ -6257,7 +6473,7 @@
     "zoneId": 364,
     "trainerId": 741,
     "rematch": 0,
-    "name": "Dawn",
+    "name": "Dawn Team 3",
     "type": "Pok\u00e9mon Trainer",
     "method": "Scripted",
     "format": "Single Battle",
@@ -6269,7 +6485,7 @@
     "zoneId": 364,
     "trainerId": 742,
     "rematch": 0,
-    "name": "Lucas",
+    "name": "Lucas Team 4",
     "type": "Pok\u00e9mon Trainer",
     "method": "Scripted",
     "format": "Single Battle",
@@ -6281,7 +6497,7 @@
     "zoneId": 364,
     "trainerId": 743,
     "rematch": 0,
-    "name": "Lucas",
+    "name": "Lucas Team 5",
     "type": "Pok\u00e9mon Trainer",
     "method": "Scripted",
     "format": "Single Battle",
@@ -6293,7 +6509,7 @@
     "zoneId": 364,
     "trainerId": 744,
     "rematch": 0,
-    "name": "Lucas",
+    "name": "Lucas Team 6",
     "type": "Pok\u00e9mon Trainer",
     "method": "Scripted",
     "format": "Single Battle",
@@ -6917,11 +7133,11 @@
     "zoneId": 375,
     "trainerId": 951,
     "rematch": 0,
-    "name": "Dawn",
+    "name": "Dawn Team 4",
     "type": "Pok\u00e9mon Trainer",
     "method": "Scripted",
-    "format": "Multi Battle Partner",
-    "link": "Support"
+    "format": "Single Battle",
+    "link": ""
   },
   {
     "areaName": "lmpt-40",
@@ -6929,11 +7145,11 @@
     "zoneId": 375,
     "trainerId": 952,
     "rematch": 0,
-    "name": "Dawn",
+    "name": "Dawn Team 5",
     "type": "Pok\u00e9mon Trainer",
     "method": "Scripted",
-    "format": "Multi Battle Partner",
-    "link": "Support"
+    "format": "Single Battle",
+    "link": ""
   },
   {
     "areaName": "lmpt-40",
@@ -6941,11 +7157,11 @@
     "zoneId": 375,
     "trainerId": 953,
     "rematch": 0,
-    "name": "Dawn",
+    "name": "Dawn Team 6",
     "type": "Pok\u00e9mon Trainer",
     "method": "Scripted",
-    "format": "Multi Battle Partner",
-    "link": "Support"
+    "format": "Single Battle",
+    "link": ""
   },
   {
     "areaName": "lmpt-40",
@@ -6953,11 +7169,11 @@
     "zoneId": 375,
     "trainerId": 954,
     "rematch": 0,
-    "name": "Lucas",
+    "name": "Lucas Team 1",
     "type": "Pok\u00e9mon Trainer",
     "method": "Scripted",
-    "format": "Multi Battle Partner",
-    "link": "Support"
+    "format": "Single Battle",
+    "link": ""
   },
   {
     "areaName": "lmpt-40",
@@ -6965,11 +7181,11 @@
     "zoneId": 375,
     "trainerId": 955,
     "rematch": 0,
-    "name": "Lucas",
+    "name": "Lucas Team 2",
     "type": "Pok\u00e9mon Trainer",
     "method": "Scripted",
-    "format": "Multi Battle Partner",
-    "link": "Support"
+    "format": "Single Battle",
+    "link": ""
   },
   {
     "areaName": "lmpt-40",
@@ -6977,11 +7193,11 @@
     "zoneId": 375,
     "trainerId": 956,
     "rematch": 0,
-    "name": "Lucas",
+    "name": "Lucas Team 3",
     "type": "Pok\u00e9mon Trainer",
     "method": "Scripted",
-    "format": "Multi Battle Partner",
-    "link": "Support"
+    "format": "Single Battle",
+    "link": ""
   },
   {
     "areaName": "lmpt-50",
@@ -7220,6 +7436,18 @@
     "name": "Grunt",
     "type": "Team Galactic",
     "method": "Scripted",
+    "format": "Single Battle",
+    "link": ""
+  },
+  {
+    "areaName": "lmpt-64",
+    "zoneName": "Route 212 (North)",
+    "zoneId": 379,
+    "trainerId": 964,
+    "rematch": 0,
+    "name": "Grunt",
+    "type": "Team Galactic",
+    "method": "Scripted",
     "format": "Double Battle",
     "link": "965"
   },
@@ -7237,35 +7465,47 @@
   },
   {
     "areaName": "lmpt-64",
+    "zoneName": "Route 212 (North)",
+    "zoneId": 379,
+    "trainerId": 965,
+    "rematch": 0,
+    "name": "Grunt",
+    "type": "Team Galactic",
+    "method": "Scripted",
+    "format": "Single Battle",
+    "link": ""
+  },
+  {
+    "areaName": "lmpt-64",
+    "zoneName": "Pok\u00e9mon Mansion - Lobby",
+    "zoneId": 380,
+    "trainerId": 764,
+    "rematch": 0,
+    "name": "Cedric Team 3",
+    "type": "Pok\u00e9mon Trainer",
+    "method": "Scripted",
+    "format": "Multi Battle Partner",
+    "link": "Support"
+  },
+  {
+    "areaName": "lmpt-64",
+    "zoneName": "Pok\u00e9mon Mansion - Lobby",
+    "zoneId": 380,
+    "trainerId": 765,
+    "rematch": 0,
+    "name": "Cedric Team 1",
+    "type": "Pok\u00e9mon Trainer",
+    "method": "Scripted",
+    "format": "Multi Battle Partner",
+    "link": "Support"
+  },
+  {
+    "areaName": "lmpt-64",
     "zoneName": "Pok\u00e9mon Mansion - Lobby",
     "zoneId": 380,
     "trainerId": 769,
     "rematch": 0,
-    "name": "Cedric",
-    "type": "Pok\u00e9mon Trainer",
-    "method": "Scripted",
-    "format": "Multi Battle Partner",
-    "link": "Support"
-  },
-  {
-    "areaName": "lmpt-64",
-    "zoneName": "Pok\u00e9mon Mansion - Lobby",
-    "zoneId": 380,
-    "trainerId": 770,
-    "rematch": 0,
-    "name": "Cedric",
-    "type": "Pok\u00e9mon Trainer",
-    "method": "Scripted",
-    "format": "Multi Battle Partner",
-    "link": "Support"
-  },
-  {
-    "areaName": "lmpt-64",
-    "zoneName": "Pok\u00e9mon Mansion - Lobby",
-    "zoneId": 380,
-    "trainerId": 771,
-    "rematch": 0,
-    "name": "Cedric",
+    "name": "Cedric Team 2",
     "type": "Pok\u00e9mon Trainer",
     "method": "Scripted",
     "format": "Multi Battle Partner",
@@ -8453,11 +8693,11 @@
     "zoneId": 411,
     "trainerId": 971,
     "rematch": 0,
-    "name": "Dawn",
+    "name": "Dawn Team 4",
     "type": "Pok\u00e9mon Trainer",
     "method": "Scripted",
-    "format": "Multi Battle Partner",
-    "link": "Support"
+    "format": "Single Battle",
+    "link": ""
   },
   {
     "areaName": "lmpt-71",
@@ -8465,11 +8705,11 @@
     "zoneId": 411,
     "trainerId": 972,
     "rematch": 0,
-    "name": "Dawn",
+    "name": "Dawn Team 5",
     "type": "Pok\u00e9mon Trainer",
     "method": "Scripted",
-    "format": "Multi Battle Partner",
-    "link": "Support"
+    "format": "Single Battle",
+    "link": ""
   },
   {
     "areaName": "lmpt-71",
@@ -8477,11 +8717,11 @@
     "zoneId": 411,
     "trainerId": 973,
     "rematch": 0,
-    "name": "Dawn",
+    "name": "Dawn Team 6",
     "type": "Pok\u00e9mon Trainer",
     "method": "Scripted",
-    "format": "Multi Battle Partner",
-    "link": "Support"
+    "format": "Single Battle",
+    "link": ""
   },
   {
     "areaName": "lmpt-71",
@@ -8489,11 +8729,11 @@
     "zoneId": 411,
     "trainerId": 974,
     "rematch": 0,
-    "name": "Lucas",
+    "name": "Lucas Team 1",
     "type": "Pok\u00e9mon Trainer",
     "method": "Scripted",
-    "format": "Multi Battle Partner",
-    "link": "Support"
+    "format": "Single Battle",
+    "link": ""
   },
   {
     "areaName": "lmpt-71",
@@ -8501,11 +8741,11 @@
     "zoneId": 411,
     "trainerId": 975,
     "rematch": 0,
-    "name": "Lucas",
+    "name": "Lucas Team 2",
     "type": "Pok\u00e9mon Trainer",
     "method": "Scripted",
-    "format": "Multi Battle Partner",
-    "link": "Support"
+    "format": "Single Battle",
+    "link": ""
   },
   {
     "areaName": "lmpt-71",
@@ -8513,11 +8753,11 @@
     "zoneId": 411,
     "trainerId": 976,
     "rematch": 0,
-    "name": "Lucas",
+    "name": "Lucas Team 3",
     "type": "Pok\u00e9mon Trainer",
     "method": "Scripted",
-    "format": "Multi Battle Partner",
-    "link": "Support"
+    "format": "Single Battle",
+    "link": ""
   },
   {
     "areaName": "lmpt-72",
@@ -8816,6 +9056,78 @@
     "name": "Deshawn",
     "type": "Pok\u00e9mon Ranger",
     "method": "Place Data",
+    "format": "Single Battle",
+    "link": ""
+  },
+  {
+    "areaName": "lmpt-5",
+    "zoneName": "Sandgem",
+    "zoneId": 429,
+    "trainerId": 1067,
+    "rematch": 0,
+    "name": "Dawn",
+    "type": "Pok\u00e9mon Trainer",
+    "method": "Scripted",
+    "format": "Single Battle",
+    "link": ""
+  },
+  {
+    "areaName": "lmpt-5",
+    "zoneName": "Sandgem",
+    "zoneId": 429,
+    "trainerId": 1068,
+    "rematch": 0,
+    "name": "Dawn",
+    "type": "Pok\u00e9mon Trainer",
+    "method": "Scripted",
+    "format": "Single Battle",
+    "link": ""
+  },
+  {
+    "areaName": "lmpt-5",
+    "zoneName": "Sandgem",
+    "zoneId": 429,
+    "trainerId": 1069,
+    "rematch": 0,
+    "name": "Dawn",
+    "type": "Pok\u00e9mon Trainer",
+    "method": "Scripted",
+    "format": "Single Battle",
+    "link": ""
+  },
+  {
+    "areaName": "lmpt-5",
+    "zoneName": "Sandgem",
+    "zoneId": 429,
+    "trainerId": 1070,
+    "rematch": 0,
+    "name": "Lucas",
+    "type": "Pok\u00e9mon Trainer",
+    "method": "Scripted",
+    "format": "Single Battle",
+    "link": ""
+  },
+  {
+    "areaName": "lmpt-5",
+    "zoneName": "Sandgem",
+    "zoneId": 429,
+    "trainerId": 1071,
+    "rematch": 0,
+    "name": "Lucas",
+    "type": "Pok\u00e9mon Trainer",
+    "method": "Scripted",
+    "format": "Single Battle",
+    "link": ""
+  },
+  {
+    "areaName": "lmpt-5",
+    "zoneName": "Sandgem",
+    "zoneId": 429,
+    "trainerId": 1072,
+    "rematch": 0,
+    "name": "Lucas",
+    "type": "Pok\u00e9mon Trainer",
+    "method": "Scripted",
     "format": "Single Battle",
     "link": ""
   },
@@ -9548,18 +9860,6 @@
     "name": "Mallory",
     "type": "Swimmer",
     "method": "Place Data",
-    "format": "Single Battle",
-    "link": ""
-  },
-  {
-    "areaName": "Genome Room",
-    "zoneName": "Ramanas Park",
-    "zoneId": 505,
-    "trainerId": 950,
-    "rematch": 0,
-    "name": "Aitwo",
-    "type": "Lass",
-    "method": "Scripted",
     "format": "Single Battle",
     "link": ""
   },

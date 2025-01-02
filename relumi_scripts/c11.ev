@@ -245,7 +245,7 @@ ev_c11_rivalfight_yes:
 	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_c11_flintduo_2', 'I don’t know how I managed to\nget myself into this, but...\rShow me the skills that got you through\nthe Pokémon League!')
 	_TALK_CLOSE()
 	_LDVAL(@SCWK_TEMP1, 703)
-	_LDVAL(@SCWK_TEMP2, 704)
+	_LDVAL(@SCWK_TEMP2, 708)
 	_CALL('c11_rival_support')
 	_CALL('ev_set_trainer_id_for_current_gamemode_scripted_multi_battle')
 	_TRAINER_MULTI_BTL_SET(@SCWK_TEMP3, @SCWK_TEMP1, @SCWK_TEMP2)
