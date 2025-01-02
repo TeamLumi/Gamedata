@@ -649,8 +649,6 @@ pos_d05r0114_gingakanbu:
 	_OBJ_ANIME('D05R0114_GINGAKANBU_01', 'anm_d05r0114_face_back')
 	_OBJ_ANIME('D05R0114_RIVAL', 'anm_d05r0114_face_back')
 	_OBJ_ANIME_WAIT()
-	_CALL('d05r0114_rival_support')
-	_CALL('ev_get_trainer_id_for_current_gamemode_talk'); Script heavy area, leaving the ID in SCWK_TEMP0 as SCWK_TEMP3 is likely in use.
 	_LDVAL(@WK_PLAY_REPO_NO, 17)
 	_FLAG_SET(#FE_PLAY_REPO)
 	_LDVAL(@SCWK_TEMP1, 884)

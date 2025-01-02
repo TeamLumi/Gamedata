@@ -44,6 +44,34 @@ class SupportTrainerError(Exception):
 with open(areas_file_path, encoding="utf-8") as f:
     areas = [line.strip().split(',') for line in f.readlines()]
 
+def check_substrings(main_string, substrings, mode='any'):
+    """
+    Checks if substrings are present in the main string.
+
+    Args:
+        main_string (str): The string to search within.
+        substrings (list of str): List of substrings to check.
+        mode (str): 'any' to check if at least one matches, 
+                    'all' to check if all match.
+
+    Returns:
+        bool: True if the condition is met, False otherwise.
+    """
+    if mode == 'any':
+        # Check if any substring is in the main string
+        for sub in substrings:
+            if sub in main_string:
+                return True
+        return False
+    elif mode == 'all':
+        # Check if all substrings are in the main string
+        for sub in substrings:
+            if sub not in main_string:
+                return False
+        return True
+    else:
+        raise ValueError("Mode must be 'any' or 'all'")
+
 def get_trainer_name(label_name):
     '''
     This takes the label of a trainer, matches it to the labelName in the trainer_names files and returns the trainerType
@@ -288,7 +316,7 @@ def get_trainer_data(zoneID, trainerID, method, is_gym_rematch=0):
     }
     return trainer
 
-def parse_randomized_teams(file_path, lookup, count, type):
+def parse_randomized_teams(file_path, lookup, count, lookup_type):
     '''
     count will be how many trainers are expected to be found
     lookup will be the randomteam that you are trying to find.
@@ -305,25 +333,24 @@ def parse_randomized_teams(file_path, lookup, count, type):
         constants.EVIL_TYPE: constants.EVIL_LOOKUP,
         None: constants.LDVAL_LOOKUP,
     }
-    regex_lookup = regex_lookup_dict.get(type)
+    regex_lookup = regex_lookup_dict.get(lookup_type)
     trainers = []
     found_lookup = False
     with open(file_path, 'r', encoding="utf-8") as f:
         for line in f:
-            substrings = line.split('\n')
-            for substring in substrings:
-                is_rematch = True if constants.REMATCH_SUBSTRING in lookup and constants.REMATCH_SUBSTRING in substring else False
-                if found_lookup and regex_lookup in substring:
-                    match = re.split(constants.LDVAL_PATTERN, substring)[2]
-                    if match:
-                        trainer_id = match.strip("'")
-                        trainers.append(trainer_id)
-                        if len(trainers) == count:
-                            return trainers
-                elif not found_lookup and substring.startswith(lookup):
-                    found_lookup = True
-                elif not found_lookup and substring.startswith(lookup) and is_rematch:
-                    found_lookup = True
+            substring = line.split('\n')[0]
+            is_rematch = True if constants.REMATCH_SUBSTRING in lookup and constants.REMATCH_SUBSTRING in substring else False
+            if found_lookup and regex_lookup in substring:
+                match = re.split(constants.LDVAL_PATTERN, substring)[2]
+                if match:
+                    trainer_id = match.strip("'")
+                    trainers.append(trainer_id)
+                    if len(trainers) == count:
+                        return trainers
+            elif not found_lookup and substring.startswith(lookup):
+                found_lookup = True
+            elif not found_lookup and substring.startswith(lookup) and is_rematch:
+                found_lookup = True
     return trainers
 
 def get_support_trainers_data(file_path, area_name, support_name, zoneID):
@@ -354,12 +381,14 @@ def get_support_trainers_data(file_path, area_name, support_name, zoneID):
         temp_support_IDs == [] 
         and support_name == constants.FEMALE 
         and area_name == constants.ROUTE_210
+        and constants.GAME_MODE != constants.GAME_MODE_3
         ):
         temp_support_IDs = parse_randomized_teams(file_path, constants.R210B_BAD_SUPPORT_LOOKUP1, 3, None)
     elif (
         temp_support_IDs == [] 
         and support_name == constants.MALE 
         and area_name == constants.ROUTE_210
+        and constants.GAME_MODE != constants.GAME_MODE_3
         ):
         temp_support_IDs = parse_randomized_teams(file_path, constants.R210B_BAD_SUPPORT_LOOKUP2, 3, None)        
     if (
@@ -377,8 +406,7 @@ def get_support_trainers_data(file_path, area_name, support_name, zoneID):
     if temp_support_IDs == []:
         temp_support_IDs = parse_randomized_teams(file_path, rival_multi_lookup, 3, None)
     if temp_support_IDs == []:
-        print("Support Trainers still needs more work", area_name, zoneID)
-        raise SupportTrainerError
+        raise SupportTrainerError("Support Trainers still needs more work", area_name, zoneID)
     for ID in temp_support_IDs:
         trainer = get_trainer_data(zoneID, int(ID), constants.SCRIPTED_METHOD)
         trainer["method"] = constants.SCRIPTED_METHOD
@@ -407,7 +435,7 @@ def diff_trainer_data(event, zoneID, trainerID, is_gym_rematch=0):
         trainer['method'] = constants.SCRIPTED_METHOD
         return trainer
 
-def get_multi_trainers(trainerID1, trainerID2, zoneID, format):
+def get_multi_trainers(trainerID1, trainerID2, zoneID, battle_format):
     '''
     format can either be "Multi" or "Double" depending on which you choose
     '''
@@ -416,7 +444,7 @@ def get_multi_trainers(trainerID1, trainerID2, zoneID, format):
 
     for trainerID in [trainerID1, trainerID2]:
         trainer = diff_trainer_data(None, zoneID, int(trainerID))
-        trainer["format"] = format
+        trainer["format"] = battle_format
         if trainerID2_used == False or not trainerID2:
             trainer["link"] = trainerID2
             trainerID2_used = True
@@ -511,6 +539,63 @@ def get_multi_trainer_data(file_path, trainerID1, trainerID2, trainerID3, substr
         print("Unable to get enough trainers for Multi Trainers here:", areaName, substring)
         raise MultiTrainerError
 
+def get_single_battle_callback_teams(file_path, trainer_callback):
+    trainers = []
+    zoneID, areaName = get_zone_info(file_path)
+    if "pokemaster" in trainer_callback:
+        master_teams = get_random_team_data(file_path, None, None, trainer_callback, len(constants.MASTER_TRAINER_TYPES))
+        for index, master_team in enumerate(master_teams):
+            ref_trainer = diff_trainer_data(None, zoneID, master_team["trainerId"], 0)
+            master_team["name"] = f"{constants.MASTER_TRAINER_TYPES[index].capitalize()} Master Trainer {ref_trainer['name']}"
+
+        if master_teams:
+            trainers.extend(master_teams)
+    elif "celebi" in trainer_callback:
+        celebi_teams = get_random_team_data(file_path, None, None, trainer_callback, 8)
+        if celebi_teams:
+            trainers.extend(celebi_teams)
+    elif "rival_support" in trainer_callback or "ev_r201_barry_battle" in trainer_callback:
+        rival_support_teams = get_random_team_data(file_path, None, None, trainer_callback, 3)
+        if rival_support_teams:
+            trainers.extend(rival_support_teams)
+    elif "support_battle" in trainer_callback:
+        support_teams = get_random_team_data(file_path, None, None, trainer_callback, 6)
+        if support_teams:
+            trainers.extend(support_teams)
+    else:
+        randomized_trainers = get_random_team_data(file_path, None, None, trainer_callback, 4)
+        trainers.extend(randomized_trainers)
+    return trainers
+
+def get_multi_battle_callback_teams(file_path, args):
+    zoneID, areaName = get_zone_info(file_path)
+    trainers = []
+    trainerId1 = args[0]
+    trainerId2 = args[1]
+    trainer_callback = args[2]
+    enemy_trainer1 = diff_trainer_data(None, zoneID, int(trainerId1))
+    enemy_trainer1["format"] = constants.MULTI_FORMAT
+    enemy_trainer1["link"] = trainerId2
+
+    enemy_trainer2 = diff_trainer_data(None, zoneID, int(trainerId2))
+    enemy_trainer2["format"] = constants.MULTI_FORMAT
+    enemy_trainer2["link"] = trainerId1
+
+    trainers.extend([enemy_trainer1, enemy_trainer2])
+
+    if "rival" in trainer_callback:
+        support_teams = get_random_team_data(file_path, None, None, trainer_callback, 3)
+    else:
+        support_teams = get_random_team_data(file_path, None, None, trainer_callback, 6)
+
+    for team in support_teams:
+        team["format"] = constants.MULTI_PARTNER_FORMAT
+        team["link"] = "Support"
+    if support_teams:
+        trainers.extend(support_teams)
+
+    return trainers
+
 def get_temp_var_trainer_data(file_path, trainerID1, trainerID2, args):
     '''
     This is when the trainerID starts with @.
@@ -596,11 +681,71 @@ def get_all_trainer_data(file_path, args, substring):
         print("There is Missing Data here:", areaName, trainerID1, trainerID2)
         raise MissingData
 
-def parse_trainer_btl_set(substring):
+def get_all_relumi_trainers(file_path, args, substring):
+    trainers = []
+    trainer_mode = args.pop(0)
+    zoneID, areaName = get_zone_info(file_path)
+
+    if trainer_mode in [constants.MULTI_PARTNER_BATTLE, constants.SINGLE_BATTLE_CALLBACK]:
+        ## Find the callback function and read the values from that function
+        if trainer_mode == constants.MULTI_PARTNER_BATTLE:
+            trainers.extend(get_multi_battle_callback_teams(file_path, args))
+        else:
+            trainers.extend(get_single_battle_callback_teams(file_path, args[0]))
+    else:
+        for index, trainerId in enumerate(args):
+            trainer = diff_trainer_data(None, zoneID, int(trainerId))
+            if len(args) == 3:
+                trainer["format"] = constants.MULTI_FORMAT
+                if index == 0:
+                    trainer["link"] = args[1]
+                if index == 1:
+                    trainer["link"] = args[0]
+                else:
+                    trainer["link"] = "Support"
+            elif len(args) == 2:
+                trainer["format"] = constants.DOUBLE_FORMAT
+                if index == 0:
+                    trainer["link"] = args[1]
+                if index == 1:
+                    trainer["link"] = args[0]
+            else:
+                trainer["format"] = constants.SINGLE_FORMAT
+                trainer["link"] = ""
+            trainers.append(trainer)
+    return trainers
+
+def parse_trainer_btl_set(substring, previous_strings = []):
     '''
     This is the regex function that splits the _TRAINER_BTL_SET or _TRAINER_MULTI_BTL_SET into it's separate parts
     2 or 3 parts respectively
     '''
+    if constants.GAME_MODE == constants.GAME_MODE_3:
+        ## This is the relumi trainer scripts
+        if constants.TRAINER_BATTLE_MULTI_SUPPORT_SCRIPT in substring:
+            ## This is for the EV trainers like Buck and Marley
+            enemy_trainer1 = re.split(constants.LDVAL_PATTERN, previous_strings[1])[2]
+            enemy_trainer2 = re.split(constants.LDVAL_PATTERN, previous_strings[2])[2]
+            partner_callback = re.split(constants.CALL_PATTERN, previous_strings[0])[1]
+            return [constants.MULTI_PARTNER_BATTLE, enemy_trainer1, enemy_trainer2, partner_callback]
+        elif constants.TRAINER_BATTLE_MULTI_SCRIPT in substring:
+            enemy_trainer1 = re.split(constants.LDVAL_PATTERN, previous_strings[1])[2]
+            enemy_trainer2 = re.split(constants.LDVAL_PATTERN, previous_strings[2])[2]
+            partner_callback = re.split(constants.CALL_PATTERN, previous_strings[0])[1]
+            return [constants.MULTI_PARTNER_BATTLE, enemy_trainer1, enemy_trainer2, partner_callback]
+        elif constants.TRAINER_BATTLE_DOUBLES_SCRIPT in substring:
+            enemy_trainer1 = re.split(constants.LDVAL_PATTERN, previous_strings[0])[2]
+            enemy_trainer2 = re.split(constants.LDVAL_PATTERN, previous_strings[1])[2]
+            return [constants.DOUBLE_BATTLE, enemy_trainer1, enemy_trainer2]
+        elif constants.TRAINER_BATTLE_SINGLES_SCRIPT in substring:
+            if re.match(constants.CALL_PATTERN, previous_strings[0]):
+                trainer_callback = re.split(constants.CALL_PATTERN, previous_strings[0])[1]
+                return [constants.SINGLE_BATTLE_CALLBACK, trainer_callback]
+            enemy_trainer = re.split(constants.LDVAL_PATTERN, previous_strings[0])[2]
+            return [constants.SINGLE_BATTLE, enemy_trainer]
+        else:
+            print("SOMETHING IS WRONG")
+
     match = re.search(constants.TRAINER_PATTERN, substring)
     match2 = re.split(constants.MULTI_TRAINER_PATTERN, substring)
     if match:
@@ -664,21 +809,48 @@ def parse_ev_script_file(file_path):
 
     if zoneID < 0:
         raise UnsupportedTrainer
-    if areaName.startswith(constants.SHINING_PEARL_FILE_PREFIX):
+    if areaName.startswith(constants.MAP_FILE_PREFIX):
         raise UnsupportedTrainer
     with open(file_path, 'r', encoding="utf-8") as f:
-        for line in f:
-            substrings = line.split('\n')
-            for substring in substrings:
-                if constants.TRAINER_BATTLE in substring or constants.MULTI_TRAINER_BATTLE in substring:
-                    args = parse_trainer_btl_set(substring.strip())
-                else:
-                    continue
+        file_lines = f.readlines()
+        for index, line in enumerate(file_lines):
+            substring = line.split('\n')[0]
+            ## Check if any of the lines set up a trainer battle
+            ## For relumi this will be a bit different
+            ## It will check for the gamemode script
+            if check_substrings(substring, constants.TRAINER_BATTLE_SUBSTRINGS, mode='any'):
+                if constants.GAME_MODE == constants.GAME_MODE_3:
+                    previous_strings = []
+                    if index == 2:
+                        ## Error check for if the single battle is as high in the file as possible
+                        previous_strings.append(file_lines[index - 1].strip())
+                    elif index == 3:
+                        ## Error check if a double battle is as high in the file as possible
+                        previous_strings.extend([
+                            file_lines[index - 1].strip(),
+                            file_lines[index - 2].strip()
+                        ])
+                    elif index > 3:
+                        previous_strings.extend([
+                            file_lines[index - 1].strip(),
+                            file_lines[index - 2].strip(),
+                            file_lines[index - 3].strip(),
+                        ])
 
-                if substring in args:
-                    print("There is something wrong with the args from this area", zoneID, areaName, args[0])
-                    raise InvalidArg
-                if zoneID != -1:
+                    args = parse_trainer_btl_set(substring, previous_strings)
+                else:
+                    args = parse_trainer_btl_set(substring.strip(), [])
+            else:
+                continue
+
+            if substring in args:
+                print("There is something wrong with the args from this area", zoneID, areaName, args[0])
+                raise InvalidArg
+            if zoneID != -1:
+                if constants.GAME_MODE == constants.GAME_MODE_3:
+                    new_trainers = get_all_relumi_trainers(file_path, args, substring)
+                    trainers.extend(new_trainers)
+                else:
                     trainers.extend(get_all_trainer_data(file_path, args, substring))
 
     return trainers
@@ -702,8 +874,8 @@ def process_files(folder_path, callback):
         except (FileNotFoundError, IsADirectoryError):
             print(f"{file_path} is not a valid file path or does not exist")
             return
-        except (MissingData, SupportTrainerError):
-            print(file_path)
+        except (MissingData, SupportTrainerError) as e:
+            print(file_path, e)
             return
         except UnsupportedTrainer:
             continue

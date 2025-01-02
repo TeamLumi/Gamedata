@@ -305,7 +305,7 @@ pos_r207_support_battle:
 	_GET_MY_SEX(@SCWK_ANSWER)
 	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 0, 'ev_r207_dawn_start_battle_dialogue')
 	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 1, 'ev_r207_lucas_start_battle_dialogue')
-	_CALL('ev_r207_support_battle')
+	_CALL('ev_r207_start_support_battle')
 	_CALL('ev_set_trainer_id_for_current_gamemode_scripted_battle')
 	_TRAINER_BTL_SET(@SCWK_TEMP3, 0)
 	_JUMP('ev_r207_support_battle_over')
@@ -335,7 +335,7 @@ ev_r207_reset_support:
 	_FLAG_RESET(#401); Reset the R207 support
 	_OBJ_ADD('R207_SUPPORT')
 	_RET()
-ev_r207_support_battle:
+ev_r207_start_support_battle:
 	_GET_MY_SEX(@SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_r207_dawn_battle')
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_r207_lucas_battle')

@@ -12,8 +12,8 @@ Unaware
 None
 Tackle
 Growl
-(No Move)
-(No Move)
+———
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -25,8 +25,8 @@ Unaware
 None
 Tackle
 Growl
-(No Move)
-(No Move)
+———
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -45,7 +45,7 @@ None
 Tackle
 Growl
 Quick Attack
-(No Move)
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -64,7 +64,7 @@ None
 Tackle
 Leer
 Thunder Shock
-(No Move)
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -81,9 +81,9 @@ Synchronize
 
 None
 Charge Beam
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -100,9 +100,9 @@ Synchronize
 
 None
 Charge Beam
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -121,7 +121,7 @@ None
 Absorb
 Supersonic
 Astonish
-(No Move)
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 Paired with 318
@@ -140,7 +140,7 @@ None
 Tackle
 String Shot
 Poison Sting
-(No Move)
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 Paired with 317
@@ -197,7 +197,7 @@ None
 Pound
 Growl
 Water Gun
-(No Move)
+———
 31/0/31/0/31/0
 0/0/0/0/0/0
 Paired with Support
@@ -254,7 +254,7 @@ None
 Pound
 Growl
 Water Gun
-(No Move)
+———
 31/0/31/0/31/0
 0/0/0/0/0/0
 Paired with Support
@@ -654,8 +654,8 @@ Unaware
 None
 Tackle
 Growl
-(No Move)
-(No Move)
+———
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -680,8 +680,8 @@ Keen Eye
 None
 Tackle
 Growl
-(No Move)
-(No Move)
+———
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -700,7 +700,7 @@ None
 Tackle
 Growl
 Defense Curl
-(No Move)
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -713,7 +713,7 @@ None
 Absorb
 Supersonic
 Astonish
-(No Move)
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -730,9 +730,9 @@ Swift Swim
 
 None
 Splash
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -745,7 +745,7 @@ None
 Tackle
 Growl
 Quick Attack
-(No Move)
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -764,7 +764,7 @@ None
 Tackle
 Growl
 Quick Attack
-(No Move)
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -777,7 +777,7 @@ None
 Tackle
 Growl
 Defense Curl
-(No Move)
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -815,7 +815,7 @@ None
 Tackle
 Growl
 Defense Curl
-(No Move)
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -834,7 +834,7 @@ None
 Growl
 Pound
 Struggle Bug
-(No Move)
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -853,7 +853,7 @@ None
 Low Kick
 Leer
 Focus Energy
-(No Move)
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -872,7 +872,7 @@ None
 Tackle
 Quick Attack
 Growl
-(No Move)
+———
 5/5/5/5/5/5
 0/0/0/0/0/0
 
@@ -884,8 +884,8 @@ Overgrow
 None
 Tackle
 Withdraw
-(No Move)
-(No Move)
+———
+———
 11/11/11/11/11/11
 0/0/0/0/0/0
 
@@ -904,7 +904,7 @@ None
 Tackle
 Quick Attack
 Growl
-(No Move)
+———
 5/5/5/5/5/5
 0/0/0/0/0/0
 
@@ -916,8 +916,8 @@ Blaze
 None
 Scratch
 Leer
-(No Move)
-(No Move)
+———
+———
 11/11/11/11/11/11
 0/0/0/0/0/0
 
@@ -936,7 +936,7 @@ None
 Tackle
 Quick Attack
 Growl
-(No Move)
+———
 5/5/5/5/5/5
 0/0/0/0/0/0
 
@@ -948,8 +948,8 @@ Torrent
 None
 Pound
 Growl
-(No Move)
-(No Move)
+———
+———
 11/11/11/11/11/11
 0/0/0/0/0/0
 
@@ -981,7 +981,7 @@ None
 Scratch
 Tail Whip
 Water Gun
-(No Move)
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -1000,7 +1000,7 @@ None
 Tackle
 Leer
 Thunder Shock
-(No Move)
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -1114,8 +1114,8 @@ Rock Head
 None
 Tackle
 Defense Curl
-(No Move)
-(No Move)
+———
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -1147,7 +1147,7 @@ None
 Tackle
 Defense Curl
 Rollout
-(No Move)
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -1166,7 +1166,7 @@ None
 Stealth Rock
 Defense Curl
 Rollout
-(No Move)
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -1179,7 +1179,7 @@ None
 Stealth Rock
 Rock Throw
 Bind
-(No Move)
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -1192,7 +1192,7 @@ None
 Headbutt
 Bulldoze
 Leer
-(No Move)
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -1256,7 +1256,7 @@ None
 Growl
 Pound
 Struggle Bug
-(No Move)
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -1269,7 +1269,7 @@ None
 Tackle
 String Shot
 Poison Sting
-(No Move)
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -1301,7 +1301,7 @@ None
 Morning Sun
 Tackle
 Leafage
-(No Move)
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -1358,7 +1358,7 @@ None
 Fake Out
 Scratch
 Growl
-(No Move)
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -1377,7 +1377,7 @@ None
 Tackle
 String Shot
 Poison Sting
-(No Move)
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -1388,9 +1388,9 @@ Shed Skin
 
 None
 Harden
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -1428,7 +1428,7 @@ None
 Tackle
 String Shot
 Poison Sting
-(No Move)
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -1441,7 +1441,7 @@ None
 Fake Out
 Scratch
 Growl
-(No Move)
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -1458,9 +1458,9 @@ Shed Skin
 
 None
 Harden
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -1715,7 +1715,7 @@ None
 Tackle
 String Shot
 Poison Sting
-(No Move)
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -1726,9 +1726,9 @@ Shed Skin
 
 None
 Harden
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -1740,8 +1740,8 @@ Swarm
 None
 Gust
 Absorb
-(No Move)
-(No Move)
+———
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -1760,7 +1760,7 @@ None
 Tackle
 String Shot
 Poison Sting
-(No Move)
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -1771,9 +1771,9 @@ Shed Skin
 
 None
 Harden
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -1785,8 +1785,8 @@ Shield Dust
 None
 Gust
 Confusion
-(No Move)
-(No Move)
+———
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -1804,8 +1804,8 @@ Shed Skin
 None
 Protect
 Tackle
-(No Move)
-(No Move)
+———
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -1818,7 +1818,7 @@ None
 Fury Cutter
 Growl
 Pound
-(No Move)
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -1854,9 +1854,9 @@ Synchronize
 
 None
 Energy Ball
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -1873,9 +1873,9 @@ Synchronize
 
 None
 Energy Ball
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -1930,9 +1930,9 @@ Swift Swim
 
 None
 Splash
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -1943,9 +1943,9 @@ Swift Swim
 
 None
 Splash
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -1956,9 +1956,9 @@ Swift Swim
 
 None
 Splash
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -1969,9 +1969,9 @@ Swift Swim
 
 None
 Splash
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -1982,9 +1982,9 @@ Swift Swim
 
 None
 Splash
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -1995,9 +1995,9 @@ Swift Swim
 
 None
 Splash
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -2014,9 +2014,9 @@ Swift Swim
 
 None
 Splash
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -2040,9 +2040,9 @@ Swift Swim
 
 None
 Splash
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -2349,7 +2349,7 @@ None
 Tackle
 Poison Sting
 Harden
-(No Move)
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -2778,7 +2778,7 @@ None
 Stun Spore
 Mega Drain
 Leech Seed
-(No Move)
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -2797,7 +2797,7 @@ None
 Tackle
 Iron Tail
 Bullet Seed
-(No Move)
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -2816,7 +2816,7 @@ None
 Toxic
 Leech Seed
 Mega Drain
-(No Move)
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -2925,7 +2925,7 @@ None
 Tackle
 String Shot
 Poison Sting
-(No Move)
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -2989,7 +2989,7 @@ None
 Tackle
 String Shot
 Poison Sting
-(No Move)
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -3040,7 +3040,7 @@ None
 Tackle
 String Shot
 Poison Sting
-(No Move)
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -7151,8 +7151,8 @@ Swift Swim
 None
 Splash
 Tackle
-(No Move)
-(No Move)
+———
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -7832,8 +7832,8 @@ Inner Focus
 None
 Teleport
 Energy Ball
-(No Move)
-(No Move)
+———
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -9017,7 +9017,7 @@ None
 Splash
 Tackle
 Flail
-(No Move)
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -9235,7 +9235,7 @@ None
 Splash
 Tackle
 Flail
-(No Move)
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -9248,7 +9248,7 @@ None
 Splash
 Tackle
 Flail
-(No Move)
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -9261,7 +9261,7 @@ None
 Splash
 Tackle
 Flail
-(No Move)
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -9287,7 +9287,7 @@ None
 Splash
 Tackle
 Flail
-(No Move)
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -10439,9 +10439,9 @@ Rock Head
 
 Choice Scarf
 Head Smash
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/31/31/31/31/31
 6/252/0/0/0/252
 
@@ -11629,7 +11629,7 @@ None
 Tackle
 Poison Sting
 Harden
-(No Move)
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -12566,7 +12566,7 @@ None
 Tackle
 Poison Sting
 Harden
-(No Move)
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -13593,7 +13593,7 @@ None
 Splash
 Tackle
 Flail
-(No Move)
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -13619,7 +13619,7 @@ None
 Splash
 Tackle
 Flail
-(No Move)
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -13638,7 +13638,7 @@ None
 Splash
 Tackle
 Flail
-(No Move)
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -13741,7 +13741,7 @@ None
 Splash
 Tackle
 Flail
-(No Move)
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -13786,7 +13786,7 @@ None
 Splash
 Tackle
 Flail
-(No Move)
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -20505,9 +20505,9 @@ Flash Fire
 
 Choice Scarf
 Eruption
-(No Move)
-(No Move)
-(No Move)
+———
+———
+———
 31/31/31/31/31/31
 6/0/0/252/0/252
 

@@ -1078,10 +1078,10 @@ ev_c06_rival_fight:
 	_TALKMSG('dp_scenario2%118-msg_c06_rival_01_2')
 	_TALK_CLOSE()
 	_RIVAL_POKE_NO_GET(@SCWK_ANSWER)
-	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 0, 'ev_c06_rival_fight_piplup')
-	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 1, 'ev_c06_rival_fight_turtwig')
-	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 2, 'ev_c06_rival_fight_chimchar')
-	_CALL('ev_c06_rival_trainer_battle')
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_c06_rival_fight_piplup_setup')
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_c06_rival_fight_turtwig_setup')
+	_JUMP('ev_c06_rival_fight_chimchar_setup')
+ev_c06_rival_fight_defeated:
 	_OBJ_ANIME('HERO', 'anm_c06_player_face_rival_fight_2')
 	_OBJ_ANIME_WAIT()
 	_RIVAL_NAME(0)
@@ -1094,13 +1094,22 @@ ev_c06_rival_fight:
 	_FLAG_SET(#2868); Hide barry trigger
 	_TALK_OBJ_END()
 	_END()
-ev_c06_rival_fight_turtwig:
-	_JUMP('ev_c06_randomteam_rival_turtwig')
-ev_c06_rival_fight_chimchar:
-	_JUMP('ev_c06_randomteam_rival_chimchar')
-ev_c06_rival_fight_piplup:
-	_JUMP('ev_c06_randomteam_rival_piplup')
-ev_c06_randomteam_rival_turtwig:
+ev_c06_rival_fight_piplup_setup:
+	_CALL('ev_c06_randomteam_barry_piplup')
+	_CALL('ev_set_trainer_id_for_current_gamemode_scripted_battle')
+	_TRAINER_BTL_SET(@SCWK_TEMP3, 0)
+	_JUMP('ev_c06_rival_fight_defeated')
+ev_c06_rival_fight_turtwig_setup:
+	_CALL('ev_c06_randomteam_barry_turtwig')
+	_CALL('ev_set_trainer_id_for_current_gamemode_scripted_battle')
+	_TRAINER_BTL_SET(@SCWK_TEMP3, 0)
+	_JUMP('ev_c06_rival_fight_defeated')
+ev_c06_rival_fight_chimchar_setup:
+	_CALL('ev_c06_randomteam_barry_chimchar')
+	_CALL('ev_set_trainer_id_for_current_gamemode_scripted_battle')
+	_TRAINER_BTL_SET(@SCWK_TEMP3, 0)
+	_JUMP('ev_c06_rival_fight_defeated')
+ev_c06_randomteam_barry_turtwig:
 	_GET_RND(@SCWK_ANSWER, 4)
 	_LDVAL(@SCWK_TEMP3, 773)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_random_team_end')
@@ -1110,7 +1119,7 @@ ev_c06_randomteam_rival_turtwig:
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 2, 'ev_random_team_end')
 	_LDVAL(@SCWK_TEMP3, 772)
 	_RET()
-ev_c06_randomteam_rival_chimchar:
+ev_c06_randomteam_barry_chimchar:
 	_GET_RND(@SCWK_ANSWER, 4)
 	_LDVAL(@SCWK_TEMP3, 776)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_random_team_end')
@@ -1120,7 +1129,7 @@ ev_c06_randomteam_rival_chimchar:
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 2, 'ev_random_team_end')
 	_LDVAL(@SCWK_TEMP3, 779)
 	_RET()
-ev_c06_randomteam_rival_piplup:
+ev_c06_randomteam_barry_piplup:
 	_GET_RND(@SCWK_ANSWER, 4)
 	_LDVAL(@SCWK_TEMP3, 780)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_random_team_end')
@@ -1130,18 +1139,18 @@ ev_c06_randomteam_rival_piplup:
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 2, 'ev_random_team_end')
 	_LDVAL(@SCWK_TEMP3, 783)
 	_RET()
-ev_c06_rival_fight_piplup_setup:
-	_CALL('ev_c06_randomteam_rival_piplup')
+ev_c06_rival_fight_talk_piplup_setup:
+	_CALL('ev_c06_randomteam_barry_piplup')
 	_CALL('ev_set_trainer_id_for_current_gamemode_scripted_battle')
 	_TRAINER_BTL_SET(@SCWK_TEMP3, 0)
 	_JUMP('ev_c06_rival_fight_talk_defeated')
-ev_c06_rival_fight_turtwig_setup:
-	_CALL('ev_c06_randomteam_rival_turtwig')
+ev_c06_rival_fight_talk_turtwig_setup:
+	_CALL('ev_c06_randomteam_barry_turtwig')
 	_CALL('ev_set_trainer_id_for_current_gamemode_scripted_battle')
 	_TRAINER_BTL_SET(@SCWK_TEMP3, 0)
 	_JUMP('ev_c06_rival_fight_talk_defeated')
-ev_c06_rival_fight_chimchar_setup:
-	_CALL('ev_c06_randomteam_rival_chimchar')
+ev_c06_rival_fight_talk_chimchar_setup:
+	_CALL('ev_c06_randomteam_barry_chimchar')
 	_CALL('ev_set_trainer_id_for_current_gamemode_scripted_battle')
 	_TRAINER_BTL_SET(@SCWK_TEMP3, 0)
 	_JUMP('ev_c06_rival_fight_talk_defeated')
@@ -1154,8 +1163,8 @@ ev_c06_rival_fight_talk:
 	_TALK_CLOSE()
 	_FLAG_RESET(#2912); Show Pastoria Barry Lose
 	_RIVAL_POKE_NO_GET(@SCWK_ANSWER)
-	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_c06_rival_fight_piplup_setup')
-	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_c06_rival_fight_turtwig_setup')
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_c06_rival_fight_talk_piplup_setup')
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_c06_rival_fight_talk_turtwig_setup')
 	_JUMP('ev_c06_rival_fight_chimchar_setup')
 ev_c06_rival_fight_talk_defeated:
 	_OBJ_ANIME('HERO', 'anm_c06_player_face_rival_left_fight_2')
