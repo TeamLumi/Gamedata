@@ -201,8 +201,14 @@ jobs:
     - name: Run 2.0 Trainer Data Script
       run: python3 Python_tasks/trainerDocsUtils.py 2.0
 
+    - name: Run 3.0 Pokedex Script
+      run: python3 Python_tasks/pokedex_generator.py 3.0
+
     - name: Run 3.0 Trainer Data Script
       run: python3 Python_tasks/trainerDocsUtils.py 3.0
+
+    - name: Run 3.0 Pokemon Location Script
+      run: python3 Python_tasks/convert_lmpt_data.py 3.0
 
     - name: Update Vanilla gamedata files
       uses: TeamLumi/Gamedata@main
@@ -256,6 +262,19 @@ jobs:
         user_name: 'github-actions-bot'
         commit_message: 'Updating 2.0 Trainer files'
 
+    - name: Update 3.0 gamedata files
+      uses: TeamLumi/Gamedata@main
+      env:
+        API_TOKEN_GITHUB: ${{ secrets.DENMARK_LUMIBOT_TOKEN }}
+      with:
+        source_file: '3.0Input/.'
+        destination_branch: 'main'
+        destination_repo: 'TeamLumi/luminescent-team'
+        destination_folder: './__gamedata/gamedata3.0'
+        user_email: '<support+actions@github.com>'
+        user_name: 'github-actions-bot'
+        commit_message: 'Updating 3.0 gamedata files'
+  
     - name: Update 3.0 Trainer Files
       uses: TeamLumi/Gamedata@main
       env:
