@@ -45925,7 +45925,7 @@
       "name": "Team Galactic Grunt 1",
       "route": "Spear Pillar",
       "zoneId": 216,
-      "trainerType": "Double Battle"
+      "trainerType": "Single Battle"
     },
     {
       "team": [
@@ -46012,7 +46012,7 @@
       "name": "Team Galactic Grunt 2",
       "route": "Spear Pillar",
       "zoneId": 216,
-      "trainerType": "Single Battle"
+      "trainerType": "Double Battle"
     },
     {
       "team": [
@@ -54219,7 +54219,7 @@
       "name": "Ace Trainer Nephenee",
       "route": "Snowpoint City",
       "zoneId": 159,
-      "trainerType": "Single Battle"
+      "trainerType": "Double Battle"
     },
     {
       "team": [
@@ -54306,7 +54306,7 @@
       "name": "Ace Trainer Nephenee",
       "route": "Snowpoint City",
       "zoneId": 159,
-      "trainerType": "Double Battle"
+      "trainerType": "Single Battle"
     },
     {
       "team": [

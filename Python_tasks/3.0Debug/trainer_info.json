@@ -2228,8 +2228,8 @@
     "name": "Nephenee",
     "type": "Ace Trainer",
     "method": "Scripted",
-    "format": "Single Battle",
-    "link": ""
+    "format": "Double Battle",
+    "link": "735"
   },
   {
     "areaName": "lmpt-68",
@@ -2240,8 +2240,8 @@
     "name": "Nephenee",
     "type": "Ace Trainer",
     "method": "Scripted",
-    "format": "Double Battle",
-    "link": "735"
+    "format": "Single Battle",
+    "link": ""
   },
   {
     "areaName": "lmpt-68",
@@ -3860,8 +3860,8 @@
     "name": "Grunt",
     "type": "Team Galactic",
     "method": "Scripted",
-    "format": "Double Battle",
-    "link": "400"
+    "format": "Single Battle",
+    "link": ""
   },
   {
     "areaName": "lmpt-56",
@@ -3872,8 +3872,8 @@
     "name": "Grunt",
     "type": "Team Galactic",
     "method": "Scripted",
-    "format": "Single Battle",
-    "link": ""
+    "format": "Double Battle",
+    "link": "400"
   },
   {
     "areaName": "lmpt-56",

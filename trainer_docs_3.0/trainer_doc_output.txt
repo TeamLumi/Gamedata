@@ -26373,51 +26373,6 @@ Lovely Kiss
 736
 Ace Trainer Nephenee
 Level Cap:
-Format: Single Battle
-
-Blissey
-54
-Bold
-Natural Cure
-
-None
-Light Screen
-Soft-Boiled
-Hyper Voice
-Dazzling Gleam
-31/31/31/31/31/31
-252/0/252/0/0/0
-
-Meganium
-54
-Calm
-Leaf Guard
-
-None
-Petal Dance
-Earth Power
-Sleep Powder
-Reflect
-31/31/31/31/31/31
-252/0/0/0/252/0
-
-Feraligatr
-54
-Jolly
-Sheer Force
-
-None
-Aqua Tail
-Aqua Jet
-Crunch
-Agility
-31/31/31/31/31/31
-0/252/0/0/0/252
-
-
-736
-Ace Trainer Nephenee
-Level Cap:
 Format: Double Battle
 
 Blissey
@@ -26459,6 +26414,51 @@ Agility
 31/31/31/31/31/31
 0/252/0/0/0/252
 Paired with 735
+
+736
+Ace Trainer Nephenee
+Level Cap:
+Format: Single Battle
+
+Blissey
+54
+Bold
+Natural Cure
+
+None
+Light Screen
+Soft-Boiled
+Hyper Voice
+Dazzling Gleam
+31/31/31/31/31/31
+252/0/252/0/0/0
+
+Meganium
+54
+Calm
+Leaf Guard
+
+None
+Petal Dance
+Earth Power
+Sleep Powder
+Reflect
+31/31/31/31/31/31
+252/0/0/0/252/0
+
+Feraligatr
+54
+Jolly
+Sheer Force
+
+None
+Aqua Tail
+Aqua Jet
+Crunch
+Agility
+31/31/31/31/31/31
+0/252/0/0/0/252
+
 
 192
 Ace Trainer Sergio
@@ -28324,51 +28324,6 @@ Guillotine
 394
 Team Galactic Grunt
 Level Cap:
-Format: Double Battle
-
-Toxicroak
-56
-Bashful
-Anticipation
-
-None
-Sludge Bomb
-Flatter
-Belch
-Gunk Shot
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Venomoth
-56
-Docile
-Shield Dust
-
-None
-Baton Pass
-Psychic
-Morning Sun
-Bug Buzz
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Golbat
-56
-Hardy
-Inner Focus
-
-None
-Zen Headbutt
-Nasty Plot
-Venoshock
-Brave Bird
-25/25/25/25/25/25
-0/0/0/0/0/0
-Paired with 400
-
-394
-Team Galactic Grunt
-Level Cap:
 Format: Single Battle
 
 Toxicroak
@@ -28410,6 +28365,51 @@ Brave Bird
 25/25/25/25/25/25
 0/0/0/0/0/0
 
+
+394
+Team Galactic Grunt
+Level Cap:
+Format: Double Battle
+
+Toxicroak
+56
+Bashful
+Anticipation
+
+None
+Sludge Bomb
+Flatter
+Belch
+Gunk Shot
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Venomoth
+56
+Docile
+Shield Dust
+
+None
+Baton Pass
+Psychic
+Morning Sun
+Bug Buzz
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Golbat
+56
+Hardy
+Inner Focus
+
+None
+Zen Headbutt
+Nasty Plot
+Venoshock
+Brave Bird
+25/25/25/25/25/25
+0/0/0/0/0/0
+Paired with 400
 
 400
 Team Galactic Grunt
