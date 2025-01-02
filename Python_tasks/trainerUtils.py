@@ -113,7 +113,7 @@ def get_map_info(label_name):
     map_info = full_data['map_info']
     zone_data = map_info['ZoneData']
     match = next((e for e in zone_data if e['ZoneID'] == label_name), None)
-    if match and len(match['MSLabel'] > 0):
+    if match and len(match['MSLabel']) > 0:
         area_name = get_area_display_name(match['MSLabel'])
     else:
         area_name = get_area_name(match['PokePlaceName'])
