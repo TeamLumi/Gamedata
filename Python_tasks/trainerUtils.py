@@ -1,4 +1,3 @@
-# pylint: disable=C0103
 import json
 import os
 import re
@@ -42,18 +41,19 @@ class MultiTrainerError(Exception):
 class SupportTrainerError(Exception):
     pass
 
+
 with open(areas_file_path, encoding="utf-8") as f:
     AREAS = [line.strip().split(',') for line in f.readlines()]
 
 def check_substrings(main_string, substrings, mode='any'):
     """
-    Checks if substrings are present in the main string.
+    Check if substrings are present in the main string.
 
     Args:
         main_string (str): The string to search within.
         substrings (list of str): List of substrings to check.
-        mode (str): 'any' to check if at least one matches, 
-                    'all' to check if all match.
+        mode (str): 'any' to check if at least one matches,
+                    'all' to check if all match
 
     Returns:
         bool: True if the condition is met, False otherwise.
@@ -127,8 +127,8 @@ def get_trainer_data_from_place_datas():
     trainers = []
     for bdsp_location_file in bdsp_location_files:
         with open(os.path.join(repo_file_path, 'placedatas', bdsp_location_file), 'r') as t_file:
-            data = json.load(t_file)
-        for event in data['Data']:
+            trainer_data = json.load(t_file)
+        for event in trainer_data['Data']:
             trainerID = event['TrainerID']
             zoneID = event['zoneID']
             if trainerID > 0 and trainerID < 10000 and zoneID != -1:
@@ -153,7 +153,7 @@ def generate_trainer_name(raw_trainer_name, pokemon1_level):
 
     trainer_substring = raw_trainer_name[:i1-1] + raw_trainer_name[i2+1:]
     if level == 100:
-        return trainer_substring + ' Rematch'
+        return f"{trainer_substring} Rematch"
     return trainer_substring
 def get_random_team_data(file_path, trainerID1, trainerID2, lookup, team_num):
     '''
@@ -167,7 +167,7 @@ def get_random_team_data(file_path, trainerID1, trainerID2, lookup, team_num):
     trainers = []
     zoneID, _ = get_zone_info(file_path)
 
-    def add_trainers(zoneID, trainer_ids, team_types=None, is_gym_rematch = 0):
+    def add_trainers(zoneID, trainer_ids, team_types=None, is_gym_rematch=0):
         for trainer_id, team_type in zip(trainer_ids, team_types or []):
             trainer = get_single_trainer(zoneID, trainer_id, trainer_ids, team_type, is_gym_rematch)
             trainers.append(trainer)
@@ -408,7 +408,7 @@ def get_support_trainers_data(file_path, area_name, support_name, zoneID):
     temp_support_IDs = []
     rival_multi_lookup = f"{area_name.lower()}_rival_support"
 
-    ### This is for Lucas and Dawn in C01 and C07. Is this the most optimal? Maybe?
+    # This is for Lucas and Dawn in C01 and C07. Is this the most optimal? Maybe?
     current_support_lookup = f"{area_name.lower()}_{support_name}_100"
 
     temp_support_IDs = parse_randomized_teams(file_path, current_support_lookup, 3, None)
@@ -419,7 +419,7 @@ def get_support_trainers_data(file_path, area_name, support_name, zoneID):
         and support_name == constants.FEMALE
         and area_name == constants.ROUTE_210
         and constants.GAME_MODE != constants.GAME_MODE_3
-        ):
+    ):
         temp_support_IDs = parse_randomized_teams(
             file_path,
             constants.R210B_BAD_SUPPORT_LOOKUP1,
@@ -431,7 +431,7 @@ def get_support_trainers_data(file_path, area_name, support_name, zoneID):
         and support_name == constants.MALE
         and area_name == constants.ROUTE_210
         and constants.GAME_MODE != constants.GAME_MODE_3
-        ):
+    ):
         temp_support_IDs = parse_randomized_teams(
             file_path,
             constants.R210B_BAD_SUPPORT_LOOKUP2,
@@ -453,7 +453,7 @@ def get_support_trainers_data(file_path, area_name, support_name, zoneID):
         not temp_support_IDs
         and support_name == constants.FEMALE
         and area_name == constants.ROUTE_224
-        ):
+    ):
         temp_support_IDs = parse_randomized_teams(
             file_path,
             constants.R224_BAD_SUPPORT_LOOKUP1,
@@ -815,7 +815,7 @@ def get_all_relumi_trainers(file_path, args, substring):
             trainers.append(trainer)
     return trainers
 
-def parse_trainer_btl_set(substring, previous_strings = None):
+def parse_trainer_btl_set(substring, previous_strings=None):
     '''
     This is the regex function that splits the _TRAINER_BTL_SET or _TRAINER_MULTI_BTL_SET
     into 2 or 3 parts respectively
@@ -866,7 +866,7 @@ def parse_trainer_btl_set(substring, previous_strings = None):
         if len(arg2) > 1:
             args = [arg1.strip("'"), arg2.strip("'")]
             return args
-        return[arg1]
+        return [arg1]
     elif constants.MORIMOTO in substring:
         return [constants.MORIMOTO]
     elif match2:
@@ -1008,6 +1008,7 @@ def process_files(folder_path, callback):
     ) as trainer_info_file:
         json.dump(sorted_data, trainer_info_file, indent=2)
     return sorted_data
+
 
 if __name__ != "__main__":
     full_data = load_data()

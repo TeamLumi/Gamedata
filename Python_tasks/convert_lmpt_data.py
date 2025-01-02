@@ -381,8 +381,8 @@ def get_standard_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, m
     if any(str(zoneID) in route for route in name_routes.values()):
         zoneName = get_zone_name(zoneID)
         newZoneID = zoneID
-        if zoneID == 297:
-            newZoneID = 380
+        if zoneID == constants.TROPHY_GARDEN_ZONE_ID:
+            newZoneID = constants.POKEMON_MANSION_ZONE_ID
         new_method = check_for_incense(new_method, method_index)
         rate = get_route_rate(new_method, method_index, route_rates)
         encounter_list_order = {
@@ -433,8 +433,8 @@ def get_diff_form_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, 
     if any(str(zoneID) in route for route in name_routes.values()):
         zoneName = get_zone_name(zoneID)
         newZoneID = zoneID
-        if zoneID == 297:
-            newZoneID = 380
+        if zoneID == constants.TROPHY_GARDEN_ZONE_ID:
+            newZoneID = constants.POKEMON_MANSION_ZONE_ID
         new_method = check_for_incense(new_method, method_index)
         rate = get_route_rate(new_method, method_index, route_rates)
         encounter_list_order = {
@@ -478,7 +478,7 @@ def update_mons_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, me
     '''
     if monsNo == 0:
         return
-    if monsNo < 2000:
+    if monsNo < constants.ENCOUNTER_TABLE_MAX_BUFFER:
         get_standard_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, method_index, mons_no_or_zoneId)
     else:
         get_diff_form_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, method_index, mons_no_or_zoneId)

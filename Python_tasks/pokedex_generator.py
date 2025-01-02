@@ -129,7 +129,7 @@ def get_second_pathfind_targets(evolution_paths, previous_mon, current_mon, grap
     previous_mon_array = graph[previous_mon]["ar"]
     monsNo = current_mon
     formNo = 0
-    if monsNo > 1010:
+    if monsNo > constants.POKEDEX_LENGTH:
         monsNo, formNo = get_mons_no_and_form_no(current_mon)
     form_check = f"{monsNo}, {formNo}"
     if form_check not in str(previous_mon_array):
