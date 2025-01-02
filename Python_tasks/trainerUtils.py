@@ -308,7 +308,7 @@ def get_trainer_data(zoneID, trainerID, method, is_gym_rematch=0):
     name_routes = full_data['name_routes']
 
     if not trainer_label:
-        print("This trainer doesn't have a label in game:", trainer_type['LabelTrType'], trainerID)        
+        print("This trainer doesn't have a label in game:", trainer_type['LabelTrType'], trainerID)
     trainer_name = get_trainer_name(trainer_data['NameLabel'])
     if not trainer_name:
         trainer_name = trainer_data['NameLabel'].split("_")[-1].capitalize()

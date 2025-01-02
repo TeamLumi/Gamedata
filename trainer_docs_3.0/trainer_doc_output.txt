@@ -10719,38 +10719,6 @@ Paired with 965
 965
 Team Galactic Grunt
 Level Cap:
-Format: Double Battle
-
-Solrock
-29
-Naive
-Levitate
-
-None
-Rock Slide
-Embargo
-Zen Headbutt
-Cosmic Power
-31/31/31/31/31/31
-252/4/252/0/0/0
-
-Lunatone
-29
-Hardy
-Levitate
-
-None
-Embargo
-Psyshock
-Psychic
-Cosmic Power
-31/31/31/31/31/31
-0/0/0/252/252/4
-Paired with 964
-
-965
-Team Galactic Grunt
-Level Cap:
 Format: Single Battle
 
 Solrock
@@ -10779,6 +10747,38 @@ Cosmic Power
 31/31/31/31/31/31
 0/0/0/252/252/4
 
+
+965
+Team Galactic Grunt
+Level Cap:
+Format: Double Battle
+
+Solrock
+29
+Naive
+Levitate
+
+None
+Rock Slide
+Embargo
+Zen Headbutt
+Cosmic Power
+31/31/31/31/31/31
+252/4/252/0/0/0
+
+Lunatone
+29
+Hardy
+Levitate
+
+None
+Embargo
+Psyshock
+Psychic
+Cosmic Power
+31/31/31/31/31/31
+0/0/0/252/252/4
+Paired with 964
 
 69
 Rich Boy Jason
@@ -26283,6 +26283,51 @@ Last Resort
 735
 Ace Trainer Aran
 Level Cap:
+Format: Single Battle
+
+Heracross
+54
+Jolly
+Guts
+
+None
+Megahorn
+Close Combat
+Rock Slide
+Protect
+31/31/31/31/31/31
+0/252/0/0/0/252
+
+Typhlosion
+54
+Timid
+Flash Fire
+
+None
+Lava Plume
+Earth Power
+Extrasensory
+Protect
+31/31/31/31/31/31
+0/0/0/252/0/252
+
+Tyranitar
+54
+Adamant
+Sand Stream
+
+None
+Rock Slide
+Crunch
+Fire Blast
+Lovely Kiss
+31/31/31/31/31/31
+132/252/0/0/0/124
+
+
+735
+Ace Trainer Aran
+Level Cap:
 Format: Double Battle
 
 Heracross
@@ -26325,49 +26370,49 @@ Lovely Kiss
 132/252/0/0/0/124
 Paired with 736
 
-735
-Ace Trainer Aran
+736
+Ace Trainer Nephenee
 Level Cap:
 Format: Single Battle
 
-Heracross
+Blissey
+54
+Bold
+Natural Cure
+
+None
+Light Screen
+Soft-Boiled
+Hyper Voice
+Dazzling Gleam
+31/31/31/31/31/31
+252/0/252/0/0/0
+
+Meganium
+54
+Calm
+Leaf Guard
+
+None
+Petal Dance
+Earth Power
+Sleep Powder
+Reflect
+31/31/31/31/31/31
+252/0/0/0/252/0
+
+Feraligatr
 54
 Jolly
-Guts
+Sheer Force
 
 None
-Megahorn
-Close Combat
-Rock Slide
-Protect
+Aqua Tail
+Aqua Jet
+Crunch
+Agility
 31/31/31/31/31/31
 0/252/0/0/0/252
-
-Typhlosion
-54
-Timid
-Flash Fire
-
-None
-Lava Plume
-Earth Power
-Extrasensory
-Protect
-31/31/31/31/31/31
-0/0/0/252/0/252
-
-Tyranitar
-54
-Adamant
-Sand Stream
-
-None
-Rock Slide
-Crunch
-Fire Blast
-Lovely Kiss
-31/31/31/31/31/31
-132/252/0/0/0/124
 
 
 736
@@ -26414,51 +26459,6 @@ Agility
 31/31/31/31/31/31
 0/252/0/0/0/252
 Paired with 735
-
-736
-Ace Trainer Nephenee
-Level Cap:
-Format: Single Battle
-
-Blissey
-54
-Bold
-Natural Cure
-
-None
-Light Screen
-Soft-Boiled
-Hyper Voice
-Dazzling Gleam
-31/31/31/31/31/31
-252/0/252/0/0/0
-
-Meganium
-54
-Calm
-Leaf Guard
-
-None
-Petal Dance
-Earth Power
-Sleep Powder
-Reflect
-31/31/31/31/31/31
-252/0/0/0/252/0
-
-Feraligatr
-54
-Jolly
-Sheer Force
-
-None
-Aqua Tail
-Aqua Jet
-Crunch
-Agility
-31/31/31/31/31/31
-0/252/0/0/0/252
-
 
 192
 Ace Trainer Sergio
