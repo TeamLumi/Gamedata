@@ -55008,7 +55008,7 @@
         "type": "Trainer",
         "route": "Spear Pillar Trainers",
         "zoneId": 216,
-        "trainerType": "Double Battle"
+        "trainerType": "Single Battle"
       },
       {
         "content": [
@@ -55096,7 +55096,7 @@
         "type": "Trainer",
         "route": "Spear Pillar Trainers",
         "zoneId": 216,
-        "trainerType": "Single Battle"
+        "trainerType": "Double Battle"
       },
       {
         "content": [
@@ -63372,7 +63372,7 @@
         "type": "Trainer",
         "route": "Snowpoint City Trainers",
         "zoneId": 159,
-        "trainerType": "Single Battle"
+        "trainerType": "Double Battle"
       },
       {
         "content": [
@@ -63460,7 +63460,7 @@
         "type": "Trainer",
         "route": "Snowpoint City Trainers",
         "zoneId": 159,
-        "trainerType": "Double Battle"
+        "trainerType": "Single Battle"
       },
       {
         "content": [
