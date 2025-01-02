@@ -155,6 +155,23 @@ def convert_to_32_bit_integers(binary_array):
 
     return integers
 
+def convert_int_to_bit(integer_list):
+    MachineList = {"machine1": 0, "machine2": 0, "machine3": 0, "machine4": 0}
+    for i in integer_list:
+        if i > 0 and i < 33:
+            MachineList["machine1"] = MachineList["machine1"] | (1<<(i - 1))
+            pass
+        elif i > 32 and i < 65:
+            MachineList["machine2"] = MachineList["machine2"] | (1<<(i - 33))
+            pass
+        elif i > 64 and i < 97:
+            MachineList["machine3"] = MachineList["machine3"] | (1<<(i - 65))
+            pass
+        elif i > 96 and i < 129:
+            MachineList["machine4"] = MachineList["machine4"] | (1<<(i - 97))
+            pass
+    return MachineList
+
 def get_tech_machine_learnset(pokemon_id=0):
     learnset = get_tm_compatibility(pokemon_id)
     MAX_TM_COUNT = 104
@@ -348,18 +365,18 @@ def get_grass_knot_power(weightkg):
     Allows you to display Grass Knot's Power on a certain Pokemon, because let's be real,
     no one really knows how much this move is going to do otherwise.
     """
-    if weightkg >= 200:
-        return 120
-    elif weightkg >= 100:
-        return 100
-    elif weightkg >= 50:
-        return 80
-    elif weightkg >= 25:
-        return 60
-    elif weightkg >= 10:
-        return 40
+    if weightkg >= constants.MAX_GRASS_KNOT_WEIGHT:
+        return constants.MAX_GRASS_KNOT_POWER
+    elif weightkg >= constants.STAGE_4_GRASS_KNOT_WEIGHT:
+        return constants.STAGE_4_GRASS_KNOT_POWER
+    elif weightkg >= constants.STAGE_3_GRASS_KNOT_WEIGHT:
+        return constants.STAGE_3_GRASS_KNOT_POWER
+    elif weightkg >= constants.STAGE_2_GRASS_KNOT_WEIGHT:
+        return constants.STAGE_2_GRASS_KNOT_POWER
+    elif weightkg >= constants.STAGE_1_GRASS_KNOT_WEIGHT:
+        return constants.STAGE_1_GRASS_KNOT_POWER
     else:
-        return 20
+        return constants.MIN_GRASS_KNOT_POWER
 
 def get_list_of_moves_by_type():
     '''

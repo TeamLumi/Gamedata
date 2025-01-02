@@ -60,7 +60,7 @@ def get_pokemon_name(pokemon_id = 0, form_mode = False):
     form_namedata = full_data['form_namedata']
     try:
         pokemon_name = ""
-        ## This first one checks if the pokemon_id is contained in the name_data
+        # This first one checks if the pokemon_id is contained in the name_data
         if pokemon_id < len(name_data["labelDataArray"]):
             mons_name = name_data["labelDataArray"][pokemon_id]["wordDataArray"][0]["str"]
             form_name = form_namedata["labelDataArray"][pokemon_id]["wordDataArray"][0]["str"]
@@ -169,11 +169,11 @@ def get_item_id_from_item_name(item_name):
     return -1
 
 def get_gender(sex):
-    if sex == 0:
+    if sex == constants.MALE_GENDER_CONSTANT:
         return 'M'
-    elif sex == 254:
+    elif sex == constants.FEMALE_GENDER_CONSTANT:
         return 'F'
-    elif sex == 255:
+    elif sex == constants.GENDERLESS_CONSTANT:
         return 'N'
     return None
 
@@ -207,7 +207,7 @@ def get_weight(monsno=0):
         poundsString = poundsString.strip()
         pounds = float(poundsString)
 
-        poundsInKilogram = pounds * 0.453592
+        poundsInKilogram = pounds * constants.KG_TO_LBS_CONSTANT
         return round(poundsInKilogram, 2)
     else:
         return 0
@@ -232,8 +232,8 @@ def get_height(monsno=0):
     inches = float(inches_string[:-1] or '0')
     feet = int(feet_string)
 
-    feet_in_centimeters = feet * 30.48
-    inches_in_centimeters = inches * 2.54
+    feet_in_centimeters = feet * constants.FT_TO_CM_CONSTANT
+    inches_in_centimeters = inches * constants.IN_TO_CM_CONSTANT
     return round((feet_in_centimeters + inches_in_centimeters) / 100, 2)
 
 def slugify(value, pokeapi=False):

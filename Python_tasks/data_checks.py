@@ -134,8 +134,8 @@ def bfs_egg_moves(pokemonList, move, current_path, original_pokemon, visited):
         mon_egg_group = getEggGroupViaPokemonId(pokemonID)
         for group in mon_egg_group:
             if group == int(5) and move not in constants.SMEARGLE_NO_SKETCH_LIST:
-                current_path.append(235) # This is Smeargle
-                egg_move_dict = find_egg_moveset_path(235, move)
+                current_path.append(constants.SMEARGLE) # This is Smeargle
+                egg_move_dict = find_egg_moveset_path(constants.SMEARGLE, move)
                 egg_move_dict['Path'] = current_path
                 new_egg_move_path[move_name].append(egg_move_dict)
                 return new_egg_move_path[move_name]
@@ -187,7 +187,7 @@ def check_for_all_egg_moves(egg_move_paths):
         return [0, non_egg_pokemon]
 
 def find_egg_moveset_path(pokemonID, move):
-    if pokemonID == 235:
+    if pokemonID == constants.SMEARGLE:
         return {'Pokemon': "Smeargle", 'Method': "Sketch that Bitch", 'Path': []}
     pokemon_name = get_pokemon_name(pokemonID, constants.GAME_MODE == constants.GAME_MODE_3)
     baby_mon_id = evolution_dex[str(pokemonID)]['path'][0]
@@ -247,7 +247,7 @@ def check_egg_moveset(pokemonID):
     for move in egg_set:
         move_name = get_move_string(move)
         if 5 in mon_egg_group and move not in constants.SMEARGLE_NO_SKETCH_LIST:
-            egg_move_dict = find_egg_moveset_path(235, move)
+            egg_move_dict = find_egg_moveset_path(constants.SMEARGLE, move)
             egg_move_path[move_name].append(egg_move_dict)
             continue
         for mon in egg_groups_list:
