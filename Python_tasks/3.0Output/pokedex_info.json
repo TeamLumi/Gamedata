@@ -2667,7 +2667,7 @@
     "abilities": [
       "Swift Swim",
       "Battle Armor",
-      "Weak Armor"
+      "Sharpness"
     ],
     "dexNum": 141,
     "form": 0
@@ -4272,9 +4272,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Keen Eye",
+      "Iron Barbs",
       "Sturdy",
-      "Mirror Armor"
+      "Sharpness"
     ],
     "dexNum": 227,
     "form": 0
@@ -4718,8 +4718,8 @@
     "generation": 8,
     "abilities": [
       "Unburden",
-      "Technician",
-      "Suction Cups"
+      "Suction Cups",
+      "Sharpness"
     ],
     "dexNum": 252,
     "form": 0
@@ -4737,8 +4737,8 @@
     "generation": 8,
     "abilities": [
       "Unburden",
-      "Technician",
-      "Suction Cups"
+      "Suction Cups",
+      "Sharpness"
     ],
     "dexNum": 253,
     "form": 0
@@ -4757,8 +4757,8 @@
     "generation": 8,
     "abilities": [
       "Unburden",
-      "Technician",
-      "Lightning Rod"
+      "Lightning Rod",
+      "Sharpness"
     ],
     "dexNum": 254,
     "form": 0
@@ -6122,8 +6122,8 @@
     "generation": 8,
     "abilities": [
       "Compound Eyes",
-      "Levitate",
-      "Overcoat"
+      "Overcoat",
+      "Tinted Lens"
     ],
     "dexNum": 329,
     "form": 0
@@ -6141,8 +6141,8 @@
     "generation": 8,
     "abilities": [
       "Compound Eyes",
-      "Levitate",
-      "Overcoat"
+      "Overcoat",
+      "Tinted Lens"
     ],
     "dexNum": 330,
     "form": 0
@@ -6654,7 +6654,7 @@
     "generation": 8,
     "abilities": [
       "Super Luck",
-      "Justified",
+      "Sharpness",
       "Magic Bounce"
     ],
     "dexNum": 359,
@@ -6949,7 +6949,7 @@
     ],
     "generation": 8,
     "abilities": [
-      "Iron Fist",
+      "Tough Claws",
       "Clear Body",
       "Light Metal"
     ],
@@ -6969,7 +6969,7 @@
     ],
     "generation": 8,
     "abilities": [
-      "Iron Fist",
+      "Tough Claws",
       "Clear Body",
       "Light Metal"
     ],
@@ -9121,7 +9121,7 @@
     "generation": 8,
     "abilities": [
       "Overgrow",
-      "Overgrow",
+      "Shed Skin",
       "Contrary"
     ],
     "dexNum": 495,
@@ -9139,7 +9139,7 @@
     "generation": 8,
     "abilities": [
       "Overgrow",
-      "Overgrow",
+      "Shed Skin",
       "Contrary"
     ],
     "dexNum": 496,
@@ -9157,7 +9157,7 @@
     "generation": 8,
     "abilities": [
       "Overgrow",
-      "Overgrow",
+      "Shed Skin",
       "Contrary"
     ],
     "dexNum": 497,
@@ -9303,7 +9303,7 @@
     ],
     "generation": 8,
     "abilities": [
-      "Illuminate",
+      "No Guard",
       "Keen Eye",
       "Analytic"
     ],
@@ -9339,8 +9339,8 @@
     ],
     "generation": 8,
     "abilities": [
-      "Intimidate",
-      "Sand Rush",
+      "Fluffy",
+      "Slush Rush",
       "Scrappy"
     ],
     "dexNum": 507,
@@ -9357,8 +9357,8 @@
     ],
     "generation": 8,
     "abilities": [
-      "Intimidate",
-      "Sand Rush",
+      "Fluffy",
+      "Slush Rush",
       "Scrappy"
     ],
     "dexNum": 508,
@@ -9409,8 +9409,8 @@
     "generation": 8,
     "abilities": [
       "Gluttony",
-      "Gluttony",
-      "Overgrow"
+      "Overgrow",
+      "Adaptability"
     ],
     "dexNum": 511,
     "form": 0
@@ -9426,8 +9426,8 @@
     "generation": 8,
     "abilities": [
       "Gluttony",
-      "Gluttony",
-      "Overgrow"
+      "Overgrow",
+      "Adaptability"
     ],
     "dexNum": 512,
     "form": 0
@@ -9443,8 +9443,8 @@
     "generation": 8,
     "abilities": [
       "Gluttony",
-      "Gluttony",
-      "Blaze"
+      "Blaze",
+      "Adaptability"
     ],
     "dexNum": 513,
     "form": 0
@@ -9460,8 +9460,8 @@
     "generation": 8,
     "abilities": [
       "Gluttony",
-      "Gluttony",
-      "Blaze"
+      "Blaze",
+      "Adaptability"
     ],
     "dexNum": 514,
     "form": 0
@@ -9477,8 +9477,8 @@
     "generation": 8,
     "abilities": [
       "Gluttony",
-      "Gluttony",
-      "Torrent"
+      "Torrent",
+      "Adaptability"
     ],
     "dexNum": 515,
     "form": 0
@@ -9494,8 +9494,8 @@
     "generation": 8,
     "abilities": [
       "Gluttony",
-      "Gluttony",
-      "Torrent"
+      "Torrent",
+      "Adaptability"
     ],
     "dexNum": 516,
     "form": 0
@@ -9527,7 +9527,7 @@
     ],
     "generation": 8,
     "abilities": [
-      "Forewarn",
+      "Comatose",
       "Synchronize",
       "Telepathy"
     ],
@@ -9537,7 +9537,7 @@
   {
     "value": 519,
     "text": "Pidove",
-    "type": "NORMAL",
+    "type": "FAIRY",
     "dualtype": "FLYING",
     "evolve": [
       519,
@@ -9548,7 +9548,7 @@
     "abilities": [
       "Big Pecks",
       "Super Luck",
-      "Rivalry"
+      "Pixilate"
     ],
     "dexNum": 519,
     "form": 0
@@ -9556,7 +9556,7 @@
   {
     "value": 520,
     "text": "Tranquill",
-    "type": "NORMAL",
+    "type": "FAIRY",
     "dualtype": "FLYING",
     "evolve": [
       519,
@@ -9567,7 +9567,7 @@
     "abilities": [
       "Big Pecks",
       "Super Luck",
-      "Rivalry"
+      "Pixilate"
     ],
     "dexNum": 520,
     "form": 0
@@ -9575,7 +9575,7 @@
   {
     "value": 521,
     "text": "Unfezant",
-    "type": "NORMAL",
+    "type": "FAIRY",
     "dualtype": "FLYING",
     "evolve": [
       519,
@@ -9586,7 +9586,7 @@
     "abilities": [
       "Big Pecks",
       "Super Luck",
-      "Rivalry"
+      "Pixilate"
     ],
     "dexNum": 521,
     "form": 0
@@ -9601,7 +9601,7 @@
     ],
     "generation": 8,
     "abilities": [
-      "Lightning Rod",
+      "Flash Fire",
       "Motor Drive",
       "Sap Sipper"
     ],
@@ -9618,7 +9618,7 @@
     ],
     "generation": 8,
     "abilities": [
-      "Lightning Rod",
+      "Flash Fire",
       "Motor Drive",
       "Sap Sipper"
     ],
@@ -9636,7 +9636,7 @@
     ],
     "generation": 8,
     "abilities": [
-      "Sturdy",
+      "Solar Power",
       "Weak Armor",
       "Sand Force"
     ],
@@ -9654,7 +9654,7 @@
     ],
     "generation": 8,
     "abilities": [
-      "Sturdy",
+      "Solar Power",
       "Weak Armor",
       "Sand Force"
     ],
@@ -9672,7 +9672,7 @@
     ],
     "generation": 8,
     "abilities": [
-      "Sturdy",
+      "Solar Power",
       "Sand Stream",
       "Sand Force"
     ],
@@ -9691,7 +9691,7 @@
     "generation": 8,
     "abilities": [
       "Unaware",
-      "Klutz",
+      "Aerilate",
       "Simple"
     ],
     "dexNum": 527,
@@ -9709,7 +9709,7 @@
     "generation": 8,
     "abilities": [
       "Unaware",
-      "Klutz",
+      "Aerilate",
       "Simple"
     ],
     "dexNum": 528,
@@ -9888,7 +9888,7 @@
     "generation": 8,
     "abilities": [
       "Guts",
-      "Inner Focus",
+      "Analytic",
       "Mold Breaker"
     ],
     "dexNum": 538,
@@ -10037,7 +10037,7 @@
     "abilities": [
       "Prankster",
       "Infiltrator",
-      "Chlorophyll"
+      "Fluffy"
     ],
     "dexNum": 546,
     "form": 0
@@ -10055,7 +10055,7 @@
     "abilities": [
       "Prankster",
       "Infiltrator",
-      "Chlorophyll"
+      "Fluffy"
     ],
     "dexNum": 547,
     "form": 0
@@ -10128,8 +10128,8 @@
     "generation": 8,
     "abilities": [
       "Intimidate",
-      "Moxie",
-      "Anger Point"
+      "Strong Jaw",
+      "Moxie"
     ],
     "dexNum": 551,
     "form": 0
@@ -10147,8 +10147,8 @@
     "generation": 8,
     "abilities": [
       "Intimidate",
-      "Moxie",
-      "Anger Point"
+      "Strong Jaw",
+      "Moxie"
     ],
     "dexNum": 552,
     "form": 0
@@ -10166,8 +10166,8 @@
     "generation": 8,
     "abilities": [
       "Intimidate",
-      "Moxie",
-      "Anger Point"
+      "Strong Jaw",
+      "Moxie"
     ],
     "dexNum": 553,
     "form": 0
@@ -10328,7 +10328,7 @@
     "abilities": [
       "Mummy",
       "Mummy",
-      "Mummy"
+      "Cursed Body"
     ],
     "dexNum": 562,
     "form": 0
@@ -10345,7 +10345,7 @@
     "abilities": [
       "Mummy",
       "Mummy",
-      "Mummy"
+      "Cursed Body"
     ],
     "dexNum": 563,
     "form": 0
@@ -10361,8 +10361,8 @@
     ],
     "generation": 8,
     "abilities": [
-      "Solid Rock",
       "Sturdy",
+      "Sheer Force",
       "Swift Swim"
     ],
     "dexNum": 564,
@@ -10379,8 +10379,8 @@
     ],
     "generation": 8,
     "abilities": [
-      "Solid Rock",
       "Sturdy",
+      "Sheer Force",
       "Swift Swim"
     ],
     "dexNum": 565,
@@ -10434,7 +10434,7 @@
     "generation": 8,
     "abilities": [
       "Stench",
-      "Sticky Hold",
+      "Gluttony",
       "Aftermath"
     ],
     "dexNum": 568,
@@ -10452,7 +10452,7 @@
     "generation": 8,
     "abilities": [
       "Stench",
-      "Weak Armor",
+      "Gluttony",
       "Aftermath"
     ],
     "dexNum": 569,
@@ -10646,7 +10646,7 @@
     "generation": 8,
     "abilities": [
       "Keen Eye",
-      "Big Pecks",
+      "Serene Grace",
       "Hydration"
     ],
     "dexNum": 580,
@@ -10664,7 +10664,7 @@
     "generation": 8,
     "abilities": [
       "Keen Eye",
-      "Big Pecks",
+      "Serene Grace",
       "Hydration"
     ],
     "dexNum": 581,
@@ -10770,8 +10770,8 @@
     ],
     "generation": 8,
     "abilities": [
-      "Static",
-      "Static",
+      "Volt Absorb",
+      "Lightning Rod",
       "Motor Drive"
     ],
     "dexNum": 587,
@@ -10983,9 +10983,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Plus",
-      "Minus",
-      "Clear Body"
+      "Motor Drive",
+      "Clear Body",
+      "Levitate"
     ],
     "dexNum": 599,
     "form": 0
@@ -11001,9 +11001,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Plus",
-      "Minus",
-      "Clear Body"
+      "Motor Drive",
+      "Clear Body",
+      "Levitate"
     ],
     "dexNum": 600,
     "form": 0
@@ -11019,9 +11019,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Plus",
-      "Minus",
-      "Clear Body"
+      "Motor Drive",
+      "Clear Body",
+      "Levitate"
     ],
     "dexNum": 601,
     "form": 0
@@ -11038,8 +11038,8 @@
     "generation": 8,
     "abilities": [
       "Levitate",
-      "Levitate",
-      "Levitate"
+      "Surge Surfer",
+      "Defiant"
     ],
     "dexNum": 602,
     "form": 0
@@ -11056,8 +11056,8 @@
     "generation": 8,
     "abilities": [
       "Levitate",
-      "Levitate",
-      "Levitate"
+      "Surge Surfer",
+      "Defiant"
     ],
     "dexNum": 603,
     "form": 0
@@ -11074,8 +11074,8 @@
     "generation": 8,
     "abilities": [
       "Levitate",
-      "Levitate",
-      "Levitate"
+      "Surge Surfer",
+      "Defiant"
     ],
     "dexNum": 604,
     "form": 0
@@ -11146,7 +11146,7 @@
     "generation": 8,
     "abilities": [
       "Flash Fire",
-      "Flame Body",
+      "Levitate",
       "Infiltrator"
     ],
     "dexNum": 608,
@@ -11165,7 +11165,7 @@
     "generation": 8,
     "abilities": [
       "Flash Fire",
-      "Flame Body",
+      "Levitate",
       "Infiltrator"
     ],
     "dexNum": 609,
@@ -11270,7 +11270,7 @@
     "abilities": [
       "Levitate",
       "Levitate",
-      "Levitate"
+      "Dazzling"
     ],
     "dexNum": 615,
     "form": 0
@@ -11390,7 +11390,7 @@
     "generation": 8,
     "abilities": [
       "Iron Fist",
-      "Klutz",
+      "Unburden",
       "No Guard"
     ],
     "dexNum": 622,
@@ -11408,7 +11408,7 @@
     "generation": 8,
     "abilities": [
       "Iron Fist",
-      "Klutz",
+      "Unburden",
       "No Guard"
     ],
     "dexNum": 623,
@@ -11428,7 +11428,7 @@
     "abilities": [
       "Defiant",
       "Inner Focus",
-      "Pressure"
+      "Sharpness"
     ],
     "dexNum": 624,
     "form": 0
@@ -11447,7 +11447,7 @@
     "abilities": [
       "Defiant",
       "Inner Focus",
-      "Pressure"
+      "Sharpness"
     ],
     "dexNum": 625,
     "form": 0
@@ -11463,7 +11463,7 @@
     "abilities": [
       "Reckless",
       "Sap Sipper",
-      "Soundproof"
+      "Fluffy"
     ],
     "dexNum": 626,
     "form": 0
@@ -11481,7 +11481,7 @@
     "generation": 8,
     "abilities": [
       "Keen Eye",
-      "Sheer Force",
+      "Klutz",
       "Hustle"
     ],
     "dexNum": 627,
@@ -11500,7 +11500,7 @@
     "generation": 8,
     "abilities": [
       "Keen Eye",
-      "Sheer Force",
+      "Justified",
       "Defiant"
     ],
     "dexNum": 628,
@@ -11537,7 +11537,7 @@
     "abilities": [
       "Big Pecks",
       "Overcoat",
-      "Weak Armor"
+      "Battle Armor"
     ],
     "dexNum": 630,
     "form": 0
@@ -11713,7 +11713,7 @@
     "generation": 8,
     "abilities": [
       "Justified",
-      "Wind Rider",
+      "Leaf Guard",
       "Sharpness"
     ],
     "dexNum": 640,
@@ -12493,9 +12493,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "No Guard",
-      "No Guard",
-      "No Guard"
+      "Sharpness",
+      "Sharpness",
+      "Sharpness"
     ],
     "dexNum": 679,
     "form": 0
@@ -12513,9 +12513,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "No Guard",
-      "No Guard",
-      "No Guard"
+      "Sharpness",
+      "Sharpness",
+      "Sharpness"
     ],
     "dexNum": 680,
     "form": 0
@@ -12762,7 +12762,7 @@
     "generation": 8,
     "abilities": [
       "Dry Skin",
-      "Sand Veil",
+      "Sand Force",
       "Solar Power"
     ],
     "dexNum": 694,
@@ -12780,7 +12780,7 @@
     "generation": 8,
     "abilities": [
       "Dry Skin",
-      "Sand Veil",
+      "Sand Force",
       "Solar Power"
     ],
     "dexNum": 695,
@@ -15925,7 +15925,7 @@
     "generation": 8,
     "abilities": [
       "Steadfast",
-      "Steadfast",
+      "Super Luck",
       "Scrappy"
     ],
     "dexNum": 865,
@@ -15963,7 +15963,7 @@
     "abilities": [
       "Wandering Spirit",
       "Wandering Spirit",
-      "Wandering Spirit"
+      "Cursed Body"
     ],
     "dexNum": 867,
     "form": 0
@@ -16727,8 +16727,8 @@
     "generation": 8,
     "abilities": [
       "Pressure",
-      "Unburden",
-      "Poison Touch"
+      "Poison Touch",
+      "Technician"
     ],
     "dexNum": 903,
     "form": 0
@@ -19221,9 +19221,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Gluttony",
-      "Hustle",
-      "Thick Fat"
+      "Run Away",
+      "Guts",
+      "Hustle"
     ],
     "dexNum": 19,
     "form": 1
@@ -19239,9 +19239,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Gluttony",
-      "Hustle",
-      "Thick Fat"
+      "Run Away",
+      "Guts",
+      "Hustle"
     ],
     "dexNum": 20,
     "form": 1
@@ -19943,7 +19943,7 @@
     "generation": 8,
     "abilities": [
       "Snow Cloak",
-      "Snow Cloak",
+      "Tough Claws",
       "Slush Rush"
     ],
     "dexNum": 27,
@@ -19961,7 +19961,7 @@
     "generation": 8,
     "abilities": [
       "Snow Cloak",
-      "Snow Cloak",
+      "Tough Claws",
       "Slush Rush"
     ],
     "dexNum": 28,
@@ -20013,8 +20013,8 @@
     ],
     "generation": 8,
     "abilities": [
-      "Sand Veil",
       "Tangling Hair",
+      "Technician",
       "Sand Force"
     ],
     "dexNum": 50,
@@ -20031,8 +20031,8 @@
     ],
     "generation": 8,
     "abilities": [
-      "Sand Veil",
       "Tangling Hair",
+      "Technician",
       "Sand Force"
     ],
     "dexNum": 51,
@@ -20050,7 +20050,7 @@
     "abilities": [
       "Pickup",
       "Technician",
-      "Rattled"
+      "Prankster"
     ],
     "dexNum": 52,
     "form": 1
@@ -20102,7 +20102,7 @@
     "abilities": [
       "Fur Coat",
       "Technician",
-      "Rattled"
+      "Prankster"
     ],
     "dexNum": 53,
     "form": 1
@@ -20269,7 +20269,7 @@
     "abilities": [
       "Run Away",
       "Pastel Veil",
-      "Anticipation"
+      "Magic Guard"
     ],
     "dexNum": 77,
     "form": 1
@@ -20287,7 +20287,7 @@
     "abilities": [
       "Run Away",
       "Pastel Veil",
-      "Anticipation"
+      "Magic Guard"
     ],
     "dexNum": 78,
     "form": 1
@@ -20359,7 +20359,7 @@
     "generation": 8,
     "abilities": [
       "Steadfast",
-      "Steadfast",
+      "Super Luck",
       "Scrappy"
     ],
     "dexNum": 83,
@@ -20496,9 +20496,9 @@
     ],
     "generation": 8,
     "abilities": [
+      "Levitate",
       "Cursed Body",
-      "Cursed Body",
-      "Cursed Body"
+      "Merciless"
     ],
     "dexNum": 94,
     "form": 3
@@ -20551,7 +20551,7 @@
     "generation": 8,
     "abilities": [
       "Soundproof",
-      "Aftermath",
+      "Static",
       "Grassy Surge"
     ],
     "dexNum": 100,
@@ -20569,7 +20569,7 @@
     "generation": 8,
     "abilities": [
       "Soundproof",
-      "Aftermath",
+      "Static",
       "Grassy Surge"
     ],
     "dexNum": 101,
@@ -20605,8 +20605,8 @@
     "generation": 8,
     "abilities": [
       "Frisk",
-      "Frisk",
-      "Harvest"
+      "Harvest",
+      "Rock Head"
     ],
     "dexNum": 103,
     "form": 1
@@ -20735,7 +20735,7 @@
     "generation": 8,
     "abilities": [
       "Intimidate",
-      "Anger Point",
+      "Reckless",
       "Cud Chew"
     ],
     "dexNum": 128,
@@ -20755,7 +20755,7 @@
     "generation": 8,
     "abilities": [
       "Intimidate",
-      "Anger Point",
+      "Reckless",
       "Cud Chew"
     ],
     "dexNum": 128,
@@ -20775,7 +20775,7 @@
     "generation": 8,
     "abilities": [
       "Intimidate",
-      "Anger Point",
+      "Reckless",
       "Cud Chew"
     ],
     "dexNum": 128,
@@ -20912,8 +20912,8 @@
     "generation": 8,
     "abilities": [
       "Swift Swim",
-      "Battle Armor",
-      "Weak Armor"
+      "Weak Armor",
+      "Sharpness"
     ],
     "dexNum": 141,
     "form": 1
@@ -21146,9 +21146,9 @@
     ],
     "generation": 8,
     "abilities": [
+      "Cursed Body",
       "Blaze",
-      "Blaze",
-      "Frisk"
+      "Flash Fire"
     ],
     "dexNum": 157,
     "form": 1
@@ -22494,8 +22494,8 @@
     "generation": 8,
     "abilities": [
       "Inner Focus",
-      "Keen Eye",
-      "Pickpocket"
+      "Poison Touch",
+      "Technician"
     ],
     "dexNum": 215,
     "form": 1
@@ -22510,8 +22510,8 @@
     ],
     "generation": 8,
     "abilities": [
-      "Weak Armor",
-      "Weak Armor",
+      "Sticky Hold",
+      "Sticky Hold",
       "Cursed Body"
     ],
     "dexNum": 222,
@@ -22928,7 +22928,7 @@
     "generation": 8,
     "abilities": [
       "Magic Bounce",
-      "Magic Bounce",
+      "Sharpness",
       "Magic Bounce"
     ],
     "dexNum": 359,
@@ -24364,7 +24364,7 @@
     "abilities": [
       "Wandering Spirit",
       "Wandering Spirit",
-      "Wandering Spirit"
+      "Cursed Body"
     ],
     "dexNum": 562,
     "form": 1
@@ -24543,7 +24543,7 @@
     "generation": 8,
     "abilities": [
       "Mimicry",
-      "Earth Eater",
+      "Sand Veil",
       "Iron Barbs"
     ],
     "dexNum": 618,
@@ -26183,8 +26183,8 @@
     "generation": 8,
     "abilities": [
       "Overgrow",
-      "Overgrow",
-      "Scrappy"
+      "Scrappy",
+      "No Guard"
     ],
     "dexNum": 724,
     "form": 1

@@ -3884,8 +3884,8 @@
     "name": "Grunt",
     "type": "Team Galactic",
     "method": "Scripted",
-    "format": "Single Battle",
-    "link": ""
+    "format": "Double Battle",
+    "link": "394"
   },
   {
     "areaName": "lmpt-56",
@@ -3896,8 +3896,8 @@
     "name": "Grunt",
     "type": "Team Galactic",
     "method": "Scripted",
-    "format": "Double Battle",
-    "link": "394"
+    "format": "Single Battle",
+    "link": ""
   },
   {
     "areaName": "lmpt-56",
@@ -4376,8 +4376,8 @@
     "name": "Grunt",
     "type": "Team Galactic",
     "method": "Scripted",
-    "format": "Double Battle",
-    "link": "221"
+    "format": "Single Battle",
+    "link": ""
   },
   {
     "areaName": "lmpt-15",
@@ -4388,8 +4388,8 @@
     "name": "Grunt",
     "type": "Team Galactic",
     "method": "Scripted",
-    "format": "Single Battle",
-    "link": ""
+    "format": "Double Battle",
+    "link": "221"
   },
   {
     "areaName": "lmpt-9",
@@ -7436,8 +7436,8 @@
     "name": "Grunt",
     "type": "Team Galactic",
     "method": "Scripted",
-    "format": "Single Battle",
-    "link": ""
+    "format": "Double Battle",
+    "link": "965"
   },
   {
     "areaName": "lmpt-64",
@@ -7448,8 +7448,8 @@
     "name": "Grunt",
     "type": "Team Galactic",
     "method": "Scripted",
-    "format": "Double Battle",
-    "link": "965"
+    "format": "Single Battle",
+    "link": ""
   },
   {
     "areaName": "lmpt-64",
@@ -7530,7 +7530,7 @@
     "trainerId": 878,
     "rematch": 0,
     "name": "Mr. Backlot",
-    "type": "Gentleman",
+    "type": null,
     "method": "Scripted",
     "format": "Multi Battle Enemy",
     "link": "877"
