@@ -290,13 +290,21 @@ def check_for_valid_ability(poke_num, ability, trainerID):
     trainer_data = TRAINER_TABLE['TrainerData'][trainerID]
     trainer_name = get_trainer_name(trainer_data['NameLabel'])
     trainer_type = TRAINER_TABLE['TrainerType'][trainer_data['TypeID']]
-    trainer_label = trainer_label = get_trainer_label(trainer_type['LabelTrType'])
-    if ability not in abilities:
-        print(
-            f"This trainer: {trainer_label} {trainer_name} ({trainerID}), has a pokemon with an invalid ability."
-            f"\n   Pokemon: {pokemon_name} ({poke_num}), Current Ability: '{ability}', Valid Abilities: {abilities}\n"
-        )
-    pass
+    trainer_label = get_trainer_label(trainer_type['LabelTrType'])
+    if trainerID not in constants.INVALID_TRAINER_ABILITIES.keys():
+        constants.INVALID_TRAINER_ABILITIES[trainerID] = [poke_num]
+        if ability not in abilities:
+            print(
+                f"This trainer: {trainer_label} {trainer_name} ({trainerID}), has a pokemon with an invalid ability."
+                f"\n  Pokemon: {pokemon_name} ({poke_num}), Current Ability: '{ability}', Valid Abilities: {abilities}\n"
+            )
+    elif poke_num not in constants.INVALID_TRAINER_ABILITIES[trainerID]:
+        constants.INVALID_TRAINER_ABILITIES[trainerID].append(poke_num)
+        if ability not in abilities:
+            print(
+                f"This trainer: {trainer_label} {trainer_name} ({trainerID}), has a pokemon with an invalid ability."
+                f"\n  Pokemon: {pokemon_name} ({poke_num}), Current Ability: '{ability}', Valid Abilities: {abilities}\n"
+            )
 
 if __name__ != "__main__":
     full_data = load_data()
