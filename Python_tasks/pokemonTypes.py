@@ -8,7 +8,10 @@ def get_types(e):
 
 def get_type_name(typeId):
     type_namedata = full_data['type_namedata']
-    return type_namedata["labelDataArray"][typeId]["wordDataArray"][0]["str"]
+    try:
+        return type_namedata["labelDataArray"][typeId]["wordDataArray"][0]["str"]
+    except:
+        return type_namedata["labelDataArray"][11]["wordDataArray"][0]["str"]
 
 def get_type_id(type_name):
     type_namedata = full_data['type_namedata']

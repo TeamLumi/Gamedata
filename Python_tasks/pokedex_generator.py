@@ -249,9 +249,8 @@ def evolution_pathfinding():
     This initializes everything needed for the pathfinding and starts the process
     All of the pathfinding is output to the evolution.json without any alternate forms
     '''
-    with open(os.path.join(input_file_path, 'EvolveTable.json'), "r", encoding="utf-8") as f:
-        graphing = json.load(f)
-    graph = graphing["Evolve"]
+    evolveTable = full_data['evolveTable']
+    graph = evolveTable["Evolve"]
     evolution_paths = {}
     for node in graph:
         if (is_valid_pokemon(node["id"])):
