@@ -20,9 +20,6 @@ GAME_MODE_VANILLA = "vanilla"
 GAME_MODE_2 = "2.0"
 GAME_MODE_3 = "3.0"
 
-### This is a temporary constant to keep track of trainers that have been tracked
-INVALID_TRAINER_ABILITIES = {}
-
 if INPUT_NAME == "vanilla_input":
     GAME_MODE = GAME_MODE_VANILLA
     DEBUG_NAME = "DebugVanilla"

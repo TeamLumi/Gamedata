@@ -6,6 +6,7 @@ import time
 
 import constants
 from load_files import load_data
+from data_checks import get_average_time
 
 repo_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 parent_file_path = os.path.abspath(os.path.dirname(__file__))
@@ -87,10 +88,7 @@ def get_trainer_id_from_partial(label_name):
     '''
     label_data_array = TRAINER_NAMES['labelDataArray']
     for e in label_data_array:
-        trainer_name = str(label_name.strip("'"))
-        if e['labelName'].endswith(trainer_name):
-            return e['labelIndex']
-        elif trainer_name.split("_")[0] in e['labelName']:
+        if e['labelName'].endswith(str(label_name.strip("'"))):
             return e['labelIndex']
     return special_trainer_names[label_name]
 
@@ -466,9 +464,6 @@ def get_support_trainers_data(file_path, area_name, support_name, zoneID):
         temp_support_IDs = parse_randomized_teams(file_path, rival_multi_lookup, 3, None)
     if not temp_support_IDs:
         raise SupportTrainerError("Support Trainers still needs more work", area_name, zoneID)
-    if temp_support_IDs == []:
-        print("Support Trainers still needs more work", support_name, area_name, zoneID)
-        raise SupportTrainerError
     for ID in temp_support_IDs:
         trainer = get_trainer_data(zoneID, int(ID), constants.SCRIPTED_METHOD)
         trainer["method"] = constants.SCRIPTED_METHOD
@@ -751,9 +746,9 @@ def get_all_trainer_data(file_path, args, substring):
     trainers = []
     trainerID1 = args[0]
     trainerID2, trainerID3 = "", ""
-    if len(args) >= 2 and type(args) == list:
+    if len(args) >= 2:
         trainerID2 = args[1].strip()
-    if len(args) > 2 and type(args) == list:
+    if len(args) > 2:
         trainerID3 = args[2].strip()
     zoneID, areaName = get_zone_info(file_path)
 
