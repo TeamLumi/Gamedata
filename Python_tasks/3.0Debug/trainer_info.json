@@ -2228,8 +2228,8 @@
     "name": "Nephenee",
     "type": "Ace Trainer",
     "method": "Scripted",
-    "format": "Single Battle",
-    "link": ""
+    "format": "Double Battle",
+    "link": "735"
   },
   {
     "areaName": "lmpt-68",
@@ -2240,8 +2240,8 @@
     "name": "Nephenee",
     "type": "Ace Trainer",
     "method": "Scripted",
-    "format": "Double Battle",
-    "link": "735"
+    "format": "Single Battle",
+    "link": ""
   },
   {
     "areaName": "lmpt-68",
@@ -3884,8 +3884,8 @@
     "name": "Grunt",
     "type": "Team Galactic",
     "method": "Scripted",
-    "format": "Single Battle",
-    "link": ""
+    "format": "Double Battle",
+    "link": "394"
   },
   {
     "areaName": "lmpt-56",
@@ -3896,8 +3896,8 @@
     "name": "Grunt",
     "type": "Team Galactic",
     "method": "Scripted",
-    "format": "Double Battle",
-    "link": "394"
+    "format": "Single Battle",
+    "link": ""
   },
   {
     "areaName": "lmpt-56",
@@ -4352,6 +4352,18 @@
     "name": "Grunt",
     "type": "Team Galactic",
     "method": "Scripted",
+    "format": "Single Battle",
+    "link": ""
+  },
+  {
+    "areaName": "lmpt-15",
+    "zoneName": "Floaroma Meadow",
+    "zoneId": 253,
+    "trainerId": 221,
+    "rematch": 0,
+    "name": "Grunt",
+    "type": "Team Galactic",
+    "method": "Scripted",
     "format": "Double Battle",
     "link": "222"
   },
@@ -4359,7 +4371,7 @@
     "areaName": "lmpt-15",
     "zoneName": "Floaroma Meadow",
     "zoneId": 253,
-    "trainerId": 221,
+    "trainerId": 222,
     "rematch": 0,
     "name": "Grunt",
     "type": "Team Galactic",
@@ -4378,18 +4390,6 @@
     "method": "Scripted",
     "format": "Double Battle",
     "link": "221"
-  },
-  {
-    "areaName": "lmpt-15",
-    "zoneName": "Floaroma Meadow",
-    "zoneId": 253,
-    "trainerId": 222,
-    "rematch": 0,
-    "name": "Grunt",
-    "type": "Team Galactic",
-    "method": "Scripted",
-    "format": "Single Battle",
-    "link": ""
   },
   {
     "areaName": "lmpt-9",
@@ -7529,8 +7529,8 @@
     "zoneId": 380,
     "trainerId": 878,
     "rematch": 0,
-    "name": "Mr. Backlot",
-    "type": "Gentleman",
+    "name": "Backlot",
+    "type": "Mr.",
     "method": "Scripted",
     "format": "Multi Battle Enemy",
     "link": "877"

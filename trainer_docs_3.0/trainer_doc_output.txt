@@ -3263,6 +3263,38 @@ Smog
 221
 Team Galactic Grunt
 Level Cap:
+Format: Single Battle
+
+Zubat
+15
+Serious
+Inner Focus
+
+None
+Bite
+Wing Attack
+Poison Fang
+Confuse Ray
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Spinarak
+15
+Bashful
+Swarm
+
+None
+Bug Bite
+Scary Face
+Poison Fang
+Night Shade
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+221
+Team Galactic Grunt
+Level Cap:
 Format: Double Battle
 
 Zubat
@@ -3292,34 +3324,34 @@ Night Shade
 0/0/0/0/0/0
 Paired with 222
 
-221
+222
 Team Galactic Grunt
 Level Cap:
 Format: Single Battle
 
-Zubat
+Croagunk
 15
-Serious
-Inner Focus
+Bashful
+Anticipation
 
 None
-Bite
-Wing Attack
-Poison Fang
-Confuse Ray
+Fake Out
+Mud-Slap
+Poison Sting
+Torment
 25/25/25/25/25/25
 0/0/0/0/0/0
 
-Spinarak
+Ledyba
 15
-Bashful
-Swarm
+Serious
+Iron Fist
 
 None
-Bug Bite
-Scary Face
-Poison Fang
-Night Shade
+Reflect
+Safeguard
+Mach Punch
+Aerial Ace
 25/25/25/25/25/25
 0/0/0/0/0/0
 
@@ -3355,38 +3387,6 @@ Aerial Ace
 25/25/25/25/25/25
 0/0/0/0/0/0
 Paired with 221
-
-222
-Team Galactic Grunt
-Level Cap:
-Format: Single Battle
-
-Croagunk
-15
-Bashful
-Anticipation
-
-None
-Fake Out
-Mud-Slap
-Poison Sting
-Torment
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Ledyba
-15
-Serious
-Iron Fist
-
-None
-Reflect
-Safeguard
-Mach Punch
-Aerial Ace
-25/25/25/25/25/25
-0/0/0/0/0/0
-
 
 224
 Team Galactic Grunt
@@ -6974,10 +6974,10 @@ Quirky
 Iron Fist
 
 None
-Iron Head
+Zen Headbutt
 Magnet Rise
 Metal Claw
-Confusion
+Iron Head
 25/25/25/25/25/25
 0/0/0/0/0/0
 
@@ -11428,7 +11428,7 @@ Fake Out
 Paired with Support
 
 878
-Gentleman Mr. Backlot
+Mr. Backlot
 Level Cap:
 Format: Multi Battle Enemy
 
@@ -20056,8 +20056,8 @@ Hardy
 Flash Fire
 
 None
-Confuse Ray
 Feint Attack
+Confuse Ray
 Will-O-Wisp
 Extrasensory
 25/25/25/25/25/25
@@ -26373,51 +26373,6 @@ Paired with 736
 736
 Ace Trainer Nephenee
 Level Cap:
-Format: Single Battle
-
-Blissey
-54
-Bold
-Natural Cure
-
-None
-Light Screen
-Soft-Boiled
-Hyper Voice
-Dazzling Gleam
-31/31/31/31/31/31
-252/0/252/0/0/0
-
-Meganium
-54
-Calm
-Leaf Guard
-
-None
-Petal Dance
-Earth Power
-Sleep Powder
-Reflect
-31/31/31/31/31/31
-252/0/0/0/252/0
-
-Feraligatr
-54
-Jolly
-Sheer Force
-
-None
-Aqua Tail
-Aqua Jet
-Crunch
-Agility
-31/31/31/31/31/31
-0/252/0/0/0/252
-
-
-736
-Ace Trainer Nephenee
-Level Cap:
 Format: Double Battle
 
 Blissey
@@ -26459,6 +26414,51 @@ Agility
 31/31/31/31/31/31
 0/252/0/0/0/252
 Paired with 735
+
+736
+Ace Trainer Nephenee
+Level Cap:
+Format: Single Battle
+
+Blissey
+54
+Bold
+Natural Cure
+
+None
+Light Screen
+Soft-Boiled
+Hyper Voice
+Dazzling Gleam
+31/31/31/31/31/31
+252/0/252/0/0/0
+
+Meganium
+54
+Calm
+Leaf Guard
+
+None
+Petal Dance
+Earth Power
+Sleep Powder
+Reflect
+31/31/31/31/31/31
+252/0/0/0/252/0
+
+Feraligatr
+54
+Jolly
+Sheer Force
+
+None
+Aqua Tail
+Aqua Jet
+Crunch
+Agility
+31/31/31/31/31/31
+0/252/0/0/0/252
+
 
 192
 Ace Trainer Sergio
@@ -28414,51 +28414,6 @@ Paired with 400
 400
 Team Galactic Grunt
 Level Cap:
-Format: Single Battle
-
-Persian
-56
-Hardy
-Limber
-
-None
-Nasty Plot
-Play Rough
-Feint
-Double-Edge
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Beautifly
-56
-Hardy
-Swarm
-
-None
-Protect
-Quiver Dance
-Whirlwind
-Hurricane
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Hypno
-56
-Quirky
-Insomnia
-
-None
-Nasty Plot
-Guard Swap
-Future Sight
-Zap Cannon
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-400
-Team Galactic Grunt
-Level Cap:
 Format: Double Battle
 
 Persian
@@ -28500,6 +28455,51 @@ Zap Cannon
 25/25/25/25/25/25
 0/0/0/0/0/0
 Paired with 394
+
+400
+Team Galactic Grunt
+Level Cap:
+Format: Single Battle
+
+Persian
+56
+Hardy
+Limber
+
+None
+Nasty Plot
+Play Rough
+Feint
+Double-Edge
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Beautifly
+56
+Hardy
+Swarm
+
+None
+Protect
+Quiver Dance
+Whirlwind
+Hurricane
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Hypno
+56
+Quirky
+Insomnia
+
+None
+Nasty Plot
+Guard Swap
+Future Sight
+Zap Cannon
+25/25/25/25/25/25
+0/0/0/0/0/0
+
 
 884
 Commander Mars
@@ -32054,9 +32054,9 @@ Quirky
 Flash Fire
 
 None
-Imprison
 Fire Spin
 Safeguard
+Moonblast
 Inferno
 25/25/25/25/25/25
 0/0/0/252/4/252
@@ -39436,10 +39436,10 @@ Hardy
 Compound Eyes
 
 None
-Hyper Beam
+Uproar
+Megahorn
 Dragon Rush
 Quiver Dance
-Boomburst
 25/25/25/25/25/25
 0/0/0/0/0/0
 
@@ -39526,10 +39526,10 @@ Bashful
 Levitate
 
 None
-Sandstorm
 Imprison
 Trick Room
 Explosion
+Expanding Force
 25/25/25/25/25/25
 252/0/120/0/0/136
 
@@ -39654,9 +39654,9 @@ Serious
 Static
 
 None
+Agility
 Discharge
-Wild Charge
-Wild Charge
+Volt Tackle
 Light Screen
 25/25/25/25/25/25
 0/0/4/252/0/252
@@ -40355,10 +40355,10 @@ Quirky
 Compound Eyes
 
 None
-Hyper Beam
+Uproar
+Megahorn
 Dragon Rush
 Quiver Dance
-Boomburst
 25/25/25/25/25/25
 0/0/0/0/0/0
 
@@ -40773,10 +40773,10 @@ Docile
 Levitate
 
 None
-Sandstorm
 Imprison
 Trick Room
 Explosion
+Expanding Force
 25/25/25/25/25/25
 0/0/0/0/0/0
 

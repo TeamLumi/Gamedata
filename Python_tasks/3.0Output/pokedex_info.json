@@ -2667,7 +2667,7 @@
     "abilities": [
       "Swift Swim",
       "Battle Armor",
-      "Weak Armor"
+      "Sharpness"
     ],
     "dexNum": 141,
     "form": 0
@@ -4272,9 +4272,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Keen Eye",
+      "Iron Barbs",
       "Sturdy",
-      "Mirror Armor"
+      "Sharpness"
     ],
     "dexNum": 227,
     "form": 0
@@ -6654,7 +6654,7 @@
     "generation": 8,
     "abilities": [
       "Super Luck",
-      "Justified",
+      "Sharpness",
       "Magic Bounce"
     ],
     "dexNum": 359,
@@ -9744,7 +9744,7 @@
     "generation": 8,
     "abilities": [
       "Sand Rush",
-      "Sand Force",
+      "Sturdy",
       "Mold Breaker"
     ],
     "dexNum": 530,
@@ -9872,7 +9872,7 @@
     "generation": 8,
     "abilities": [
       "Swift Swim",
-      "Poison Touch",
+      "Poison Heal",
       "Water Absorb"
     ],
     "dexNum": 537,
@@ -10185,7 +10185,7 @@
     "generation": 8,
     "abilities": [
       "Hustle",
-      "Hustle",
+      "Mold Breaker",
       "Inner Focus"
     ],
     "dexNum": 554,
@@ -10204,7 +10204,7 @@
     "generation": 8,
     "abilities": [
       "Sheer Force",
-      "Sheer Force",
+      "Mold Breaker",
       "Zen Mode"
     ],
     "dexNum": 555,
@@ -11551,7 +11551,7 @@
     ],
     "generation": 8,
     "abilities": [
-      "Gluttony",
+      "Tough Claws",
       "Flash Fire",
       "White Smoke"
     ],
@@ -11568,7 +11568,7 @@
     ],
     "generation": 8,
     "abilities": [
-      "Swarm",
+      "Heatproof",
       "Hustle",
       "Truant"
     ],
@@ -11713,7 +11713,7 @@
     "generation": 8,
     "abilities": [
       "Justified",
-      "Wind Rider",
+      "Leaf Guard",
       "Sharpness"
     ],
     "dexNum": 640,
@@ -11894,7 +11894,7 @@
     "generation": 8,
     "abilities": [
       "Overgrow",
-      "Overgrow",
+      "Rough Skin",
       "Bulletproof"
     ],
     "dexNum": 650,
@@ -11912,7 +11912,7 @@
     "generation": 8,
     "abilities": [
       "Overgrow",
-      "Overgrow",
+      "Rough Skin",
       "Bulletproof"
     ],
     "dexNum": 651,
@@ -11931,7 +11931,7 @@
     "generation": 8,
     "abilities": [
       "Overgrow",
-      "Overgrow",
+      "Rough Skin",
       "Bulletproof"
     ],
     "dexNum": 652,
@@ -12006,7 +12006,7 @@
     "generation": 8,
     "abilities": [
       "Torrent",
-      "Torrent",
+      "Technician",
       "Protean"
     ],
     "dexNum": 656,
@@ -12026,7 +12026,7 @@
     "generation": 8,
     "abilities": [
       "Torrent",
-      "Torrent",
+      "Technician",
       "Protean"
     ],
     "dexNum": 657,
@@ -12047,7 +12047,7 @@
     "generation": 8,
     "abilities": [
       "Torrent",
-      "Torrent",
+      "Technician",
       "Protean"
     ],
     "dexNum": 658,
@@ -12335,6 +12335,7 @@
     "value": 671,
     "text": "Florges",
     "type": "FAIRY",
+    "dualtype": "GRASS",
     "evolve": [
       669,
       670,
@@ -12361,8 +12362,8 @@
     "generation": 8,
     "abilities": [
       "Sap Sipper",
-      "Sap Sipper",
-      "Grass Pelt"
+      "Grass Pelt",
+      "Rock Head"
     ],
     "dexNum": 672,
     "form": 0
@@ -12378,8 +12379,8 @@
     "generation": 8,
     "abilities": [
       "Sap Sipper",
-      "Sap Sipper",
-      "Grass Pelt"
+      "Grass Pelt",
+      "Rock Head"
     ],
     "dexNum": 673,
     "form": 0
@@ -12544,6 +12545,7 @@
     "value": 682,
     "text": "Spritzee",
     "type": "FAIRY",
+    "dualtype": "POISON",
     "evolve": [
       682,
       683
@@ -12872,7 +12874,7 @@
     "generation": 8,
     "abilities": [
       "Cute Charm",
-      "Cute Charm",
+      "Long Reach",
       "Pixilate"
     ],
     "dexNum": 700,
@@ -13055,7 +13057,7 @@
     "abilities": [
       "Pickup",
       "Frisk",
-      "Insomnia"
+      "Flare Boost"
     ],
     "dexNum": 710,
     "form": 0
@@ -13073,7 +13075,7 @@
     "abilities": [
       "Pickup",
       "Frisk",
-      "Insomnia"
+      "Flare Boost"
     ],
     "dexNum": 711,
     "form": 0
@@ -13482,7 +13484,7 @@
     "abilities": [
       "Keen Eye",
       "Skill Link",
-      "Sheer Force"
+      "Heatproof"
     ],
     "dexNum": 733,
     "form": 0
@@ -14318,7 +14320,7 @@
     "generation": 8,
     "abilities": [
       "Iron Barbs",
-      "Lightning Rod",
+      "Motor Drive",
       "Sturdy"
     ],
     "dexNum": 777,
@@ -16172,7 +16174,7 @@
     "generation": 8,
     "abilities": [
       "Shield Dust",
-      "Shield Dust",
+      "Snow Cloak",
       "Ice Scales"
     ],
     "dexNum": 872,
@@ -16190,7 +16192,7 @@
     "generation": 8,
     "abilities": [
       "Shield Dust",
-      "Shield Dust",
+      "Snow Cloak",
       "Ice Scales"
     ],
     "dexNum": 873,
@@ -20912,8 +20914,8 @@
     "generation": 8,
     "abilities": [
       "Swift Swim",
-      "Battle Armor",
-      "Weak Armor"
+      "Weak Armor",
+      "Sharpness"
     ],
     "dexNum": 141,
     "form": 1
@@ -22928,7 +22930,7 @@
     "generation": 8,
     "abilities": [
       "Magic Bounce",
-      "Magic Bounce",
+      "Sharpness",
       "Magic Bounce"
     ],
     "dexNum": 359,
@@ -24227,6 +24229,7 @@
     "value": 1238,
     "text": "Frenzied Lady of the Ridge Hisuian Lilligant",
     "type": "GRASS",
+    "dualtype": "FIGHTING",
     "evolve": [
       548,
       549,
@@ -24236,7 +24239,7 @@
     "generation": 8,
     "abilities": [
       "Chlorophyll",
-      "Own Tempo",
+      "Hustle",
       "Leaf Guard"
     ],
     "dexNum": 549,
@@ -24288,7 +24291,7 @@
     "generation": 8,
     "abilities": [
       "Hustle",
-      "Hustle",
+      "Slush Rush",
       "Inner Focus"
     ],
     "dexNum": 554,
@@ -24308,7 +24311,7 @@
     "generation": 8,
     "abilities": [
       "Sheer Force",
-      "Sheer Force",
+      "Mold Breaker",
       "Zen Mode"
     ],
     "dexNum": 555,
@@ -24325,7 +24328,7 @@
     "generation": 8,
     "abilities": [
       "Gorilla Tactics",
-      "Gorilla Tactics",
+      "Slush Rush",
       "Zen Mode"
     ],
     "dexNum": 555,
@@ -24345,7 +24348,7 @@
     "generation": 8,
     "abilities": [
       "Gorilla Tactics",
-      "Gorilla Tactics",
+      "Slush Rush",
       "Zen Mode"
     ],
     "dexNum": 555,
@@ -24543,7 +24546,7 @@
     "generation": 8,
     "abilities": [
       "Mimicry",
-      "Earth Eater",
+      "Sand Veil",
       "Iron Barbs"
     ],
     "dexNum": 618,
@@ -24670,8 +24673,8 @@
     "generation": 8,
     "abilities": [
       "Justified",
-      "Justified",
-      "Justified"
+      "Water Veil",
+      "Sharpness"
     ],
     "dexNum": 647,
     "form": 1
@@ -25519,6 +25522,7 @@
     "value": 1298,
     "text": "Yellow Flower Florges",
     "type": "FAIRY",
+    "dualtype": "GRASS",
     "evolve": [
       1289,
       1293,
@@ -25537,6 +25541,7 @@
     "value": 1299,
     "text": "Orange Flower Florges",
     "type": "FAIRY",
+    "dualtype": "GRASS",
     "evolve": [
       1290,
       1294,
@@ -25555,6 +25560,7 @@
     "value": 1300,
     "text": "Blue Flower Florges",
     "type": "FAIRY",
+    "dualtype": "GRASS",
     "evolve": [
       1291,
       1295,
@@ -25573,6 +25579,7 @@
     "value": 1301,
     "text": "White Flower Florges",
     "type": "FAIRY",
+    "dualtype": "GRASS",
     "evolve": [
       1292,
       1296,
@@ -25900,7 +25907,7 @@
     "abilities": [
       "Pickup",
       "Frisk",
-      "Insomnia"
+      "Flare Boost"
     ],
     "dexNum": 710,
     "form": 1
@@ -25918,7 +25925,7 @@
     "abilities": [
       "Pickup",
       "Frisk",
-      "Insomnia"
+      "Flare Boost"
     ],
     "dexNum": 710,
     "form": 2
@@ -25936,7 +25943,7 @@
     "abilities": [
       "Pickup",
       "Frisk",
-      "Insomnia"
+      "Flare Boost"
     ],
     "dexNum": 710,
     "form": 3
@@ -25954,7 +25961,7 @@
     "abilities": [
       "Pickup",
       "Frisk",
-      "Insomnia"
+      "Flare Boost"
     ],
     "dexNum": 711,
     "form": 1
@@ -25972,7 +25979,7 @@
     "abilities": [
       "Pickup",
       "Frisk",
-      "Insomnia"
+      "Flare Boost"
     ],
     "dexNum": 711,
     "form": 2
@@ -25990,7 +25997,7 @@
     "abilities": [
       "Pickup",
       "Frisk",
-      "Insomnia"
+      "Flare Boost"
     ],
     "dexNum": 711,
     "form": 3
@@ -27450,7 +27457,7 @@
     "generation": 8,
     "abilities": [
       "Iron Barbs",
-      "Lightning Rod",
+      "Motor Drive",
       "Sturdy"
     ],
     "dexNum": 777,

@@ -15292,7 +15292,7 @@
         "type": "Trainer",
         "route": "Floaroma Meadow Trainers",
         "zoneId": 253,
-        "trainerType": "Double Battle"
+        "trainerType": "Single Battle"
       },
       {
         "content": [
@@ -15354,7 +15354,7 @@
         "type": "Trainer",
         "route": "Floaroma Meadow Trainers",
         "zoneId": 253,
-        "trainerType": "Single Battle"
+        "trainerType": "Double Battle"
       },
       {
         "content": [
@@ -15416,7 +15416,7 @@
         "type": "Trainer",
         "route": "Floaroma Meadow Trainers",
         "zoneId": 253,
-        "trainerType": "Double Battle"
+        "trainerType": "Single Battle"
       },
       {
         "content": [
@@ -15478,7 +15478,7 @@
         "type": "Trainer",
         "route": "Floaroma Meadow Trainers",
         "zoneId": 253,
-        "trainerType": "Single Battle"
+        "trainerType": "Double Battle"
       }
     ],
     [
@@ -20959,10 +20959,10 @@
             "item": null,
             "level": 24,
             "moves": [
-              442,
+              428,
               393,
               232,
-              93
+              442
             ],
             "nature": "Quirky",
             "ivatk": 25,
@@ -31351,8 +31351,8 @@
             "evspeed": 4
           }
         ],
-        "game": "Gentleman Mr. Backlot (Pok\u00e9mon Mansion - Lobby Trainers)",
-        "name": "Gentleman Mr. Backlot",
+        "game": "Mr. Backlot (Pok\u00e9mon Mansion - Lobby Trainers)",
+        "name": "Mr. Backlot",
         "type": "Trainer",
         "route": "Pok\u00e9mon Mansion - Lobby Trainers",
         "zoneId": 380,
@@ -39733,8 +39733,8 @@
             "item": null,
             "level": 41,
             "moves": [
-              109,
               185,
+              109,
               261,
               326
             ],
@@ -55184,7 +55184,7 @@
         "type": "Trainer",
         "route": "Spear Pillar Trainers",
         "zoneId": 216,
-        "trainerType": "Single Battle"
+        "trainerType": "Double Battle"
       },
       {
         "content": [
@@ -55272,7 +55272,7 @@
         "type": "Trainer",
         "route": "Spear Pillar Trainers",
         "zoneId": 216,
-        "trainerType": "Double Battle"
+        "trainerType": "Single Battle"
       },
       {
         "content": [
@@ -63372,7 +63372,7 @@
         "type": "Trainer",
         "route": "Snowpoint City Trainers",
         "zoneId": 159,
-        "trainerType": "Single Battle"
+        "trainerType": "Double Battle"
       },
       {
         "content": [
@@ -63460,7 +63460,7 @@
         "type": "Trainer",
         "route": "Snowpoint City Trainers",
         "zoneId": 159,
-        "trainerType": "Double Battle"
+        "trainerType": "Single Battle"
       },
       {
         "content": [
@@ -71695,9 +71695,9 @@
             "item": null,
             "level": 64,
             "moves": [
-              286,
               83,
               219,
+              585,
               517
             ],
             "nature": "Quirky",
@@ -85817,10 +85817,10 @@
             "item": null,
             "level": 76,
             "moves": [
-              63,
+              253,
+              224,
               407,
-              483,
-              586
+              483
             ],
             "nature": "Hardy",
             "ivatk": 25,
@@ -85993,10 +85993,10 @@
             "item": null,
             "level": 76,
             "moves": [
-              201,
               286,
               433,
-              153
+              153,
+              797
             ],
             "nature": "Bashful",
             "ivatk": 25,
@@ -86569,9 +86569,9 @@
             "item": null,
             "level": 74,
             "moves": [
+              97,
               435,
-              528,
-              528,
+              344,
               113
             ],
             "nature": "Serious",
@@ -87795,10 +87795,10 @@
             "item": null,
             "level": 78,
             "moves": [
-              63,
+              253,
+              224,
               407,
-              483,
-              586
+              483
             ],
             "nature": "Quirky",
             "ivatk": 25,
@@ -88613,10 +88613,10 @@
             "item": null,
             "level": 78,
             "moves": [
-              201,
               286,
               433,
-              153
+              153,
+              797
             ],
             "nature": "Docile",
             "ivatk": 25,
