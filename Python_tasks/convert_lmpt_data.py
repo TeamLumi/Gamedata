@@ -309,7 +309,10 @@ def get_diff_form_mons(monsno, zoneID, encounters):
     routeNames = full_data["routes"]
     formNo = monsno//(2**16)
     reverse_lumi_formula_mon = monsno - (formNo * (2**16))
-    pokemonId = get_form_pokemon_personal_id(reverse_lumi_formula_mon, formNo)
+    if formNo == constants.ENCOUNTER_VARIANT_JSON_HANDLER:
+        pokemonId = get_form_pokemon_personal_id(reverse_lumi_formula_mon, 0)
+    else:
+        pokemonId = get_form_pokemon_personal_id(reverse_lumi_formula_mon, formNo)
     for tracker_route, route in routeNames.items():
 
         if str(zoneID) not in route:
@@ -423,7 +426,10 @@ def get_diff_form_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, 
 
     formNo = monsNo//(2**16)
     reverse_lumi_formula_mon = monsNo - (formNo * (2**16))
-    pokemon_id = get_form_pokemon_personal_id(reverse_lumi_formula_mon, formNo)
+    if formNo == constants.ENCOUNTER_VARIANT_JSON_HANDLER:
+        pokemon_id = get_form_pokemon_personal_id(reverse_lumi_formula_mon, 0)
+    else:
+        pokemon_id = get_form_pokemon_personal_id(reverse_lumi_formula_mon, formNo)
     monsName = get_pokemon_name(monsNo)
 
     temp_form_no = formNo
@@ -634,7 +640,6 @@ def getEncounterData(mons_no_or_zoneId = "mons_no"):
             final_list[zoneID] = unique_list
 
     if constants.GAME_MODE == constants.GAME_MODE_2:
-        print
         ##This is for adding the Trophy Garden daily mons
         for mon in encounter_data[constants.TROPHY_GARDEN_NAME]:
             monsNo = mon['monsNo']

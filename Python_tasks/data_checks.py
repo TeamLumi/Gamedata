@@ -37,6 +37,8 @@ def check_bad_encounter(encounters, tracker_route, lumi_formula_mon, temp_form_n
     name_routes = full_data['name_routes']
 
     bad_encounters = []
+    if temp_form_no == constants.ENCOUNTER_VARIANT_JSON_HANDLER:
+        temp_form_no = 0
     pokemonPersonalId = get_form_pokemon_personal_id(lumi_formula_mon, temp_form_no)
     is_valid = is_valid_pokemon(pokemonPersonalId)
 
