@@ -442,12 +442,10 @@ def export_csv():
             egg_groups = dex_info['eggGroups']
             held_items = dex_info['heldItems']
 
-            learnsetKeys = list(dex_info['learnset'].keys())
-            learnsetValues = list(dex_info['learnset'].values())
             actualLearnset = []
-            for i in range(len(learnsetKeys)):
-                actualLearnset.append(learnsetValues[i])
-                actualLearnset.append(learnsetKeys[i])
+            for move_object in dex_info['learnset']:
+                actualLearnset.append(move_object['level'])
+                actualLearnset.append(move_object['name'])
 
             tmlearnset = list(dex_info['tmLearnset'].keys())
             egglearnset = list(dex_info['eggLearnset'].keys())
