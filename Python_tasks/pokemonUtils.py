@@ -200,32 +200,50 @@ def get_weight(monsno=0):
     """
     Returns the weight per the metric system
     """
-    pkmn_weight_data = full_data['pkmn_weight_data']
-
-    monsno = int(monsno)
-    if monsno != 0:
-        weightString = pkmn_weight_data['labelDataArray'][monsno]['wordDataArray'][0]['str'] if (pkmn_weight_data['labelDataArray'][monsno]['wordDataArray'][0] is not None) else '0'
-        weightString = weightString.replace(u'\xa0', u' ')
-        poundsString = weightString.split(u" ")[0]
-        poundsString = poundsString.strip()
-        pounds = float(poundsString)
-
-        poundsInKilogram = pounds * constants.KG_TO_LBS_CONSTANT
-        return round(poundsInKilogram, 2)
-    else:
-        return 0
-
-def get_height(monsno=0):
-    """
-    Returns the Pokemon's height per the metric sytem.
-    """
-    pkmn_height_data = full_data['pkmn_height_data']
+    pkmn_weight_data = full_data['pkmn_weight_data']['labelDataArray']
 
     monsno = int(monsno)
     if monsno == 0:
         return 0
 
-    height_string = pkmn_height_data['labelDataArray'][monsno]['wordDataArray'][0]['str'] or '0'
+    for pokemon in pkmn_weight_data:
+        if pokemon['labelIndex'] == monsno:
+            pkmn_weight_str = pokemon['wordDataArray'][0]["str"]
+        else:
+            pkmn_weight_str = None
+
+    if pkmn_weight_str is None:
+        weightString = '0'
+    else:
+        weightString = pkmn_weight_str
+    weightString = weightString.replace(u'\xa0', u' ')
+    poundsString = weightString.split(u" ")[0]
+    poundsString = poundsString.strip()
+    pounds = float(poundsString)
+
+    poundsInKilogram = pounds * constants.KG_TO_LBS_CONSTANT
+    return round(poundsInKilogram, 2)
+
+def get_height(monsno=0):
+    """
+    Returns the Pokemon's height per the metric sytem.
+    """
+    pkmn_height_data = full_data['pkmn_height_data']['labelDataArray']
+
+    monsno = int(monsno)
+    if monsno == 0:
+        return 0
+
+    for pokemon in pkmn_height_data:
+        if pokemon['labelIndex'] == monsno:
+            pkmn_height_str = pokemon['wordDataArray'][0]["str"]
+        else:
+            pkmn_height_str = None
+
+    if pkmn_height_str is None:
+        height_string = '0'
+    else:
+        height_string = pkmn_height_str
     if "'" in height_string:
         feet_string, inches_string = height_string.split("'")
     else:
