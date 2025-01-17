@@ -7,14 +7,16 @@ import copy
 import constants
 import poke_api_constants
 from load_files import load_data
-from pokemonUtils import get_pokemon_name, slugify, get_item_id_from_item_name
-from moveUtils import create_tm_learnset
+from pokemonUtils import get_pokemon_name, slugify, get_item_id_from_item_name, get_mons_no_and_form_no
+from moveUtils import get_relumi_tm_compatibility, get_move_string, create_tm_learnset
 from pokemonTypes import get_type_id
 
 repo_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 input_file_path = os.path.join(repo_file_path, constants.INPUT_NAME)
 stats_file_path = os.path.join(repo_file_path, "Python_tasks", "pokemon_stats")
 debug_file_path = os.path.join(repo_file_path, "Python_tasks", constants.DEBUG_NAME)
+tm_learnset_path = os.path.join(debug_file_path, "tm_learnsets")
+official_tm_learnset_folder_path = os.path.join(os.path.join(repo_file_path, "TMLearnset"))
 
 def log_error(message):
   with open(os.path.join(debug_file_path, "error.txt"), "a", encoding="utf-8") as error_file:
@@ -47,7 +49,7 @@ def get_pokemon_tm_learnsets():
   pokemon_tm_learnsets = {}
   print("Gathering TM Learnsets from PokeApi...")
   for index, tm in enumerate(tm_moves):
-    if index > 104:
+    if index > 150:
       break
     tm_move_no = tm["wazaNo"]
     pokemon_list = None
@@ -78,8 +80,6 @@ def get_pokemon_stats(pokemon_name, pokemonId, monsno, counter=0):
   species = None
   form_name = pokemon_name
   species_name = pokemon_name
-  with open(os.path.join(debug_file_path, "pokemon_api_learnsets.json"), "r") as json_file:
-    pokemon_tm_learnsets = json.load(json_file)
   try:
     # Use pokebase to get Pokemon information
     if counter < 2:
@@ -103,50 +103,81 @@ def get_pokemon_stats(pokemon_name, pokemonId, monsno, counter=0):
     log_error(f"Error: This pokemon is currently unavailable in PokeApi: {pokemon_name} ({pokemonId})")
     return
 
+  name_in_learnsets = 0
+  if form:
+    if form.name in list(pokemon_tm_learnsets.keys()):
+      name_in_learnsets += 1
+  if pokemon.name in list(pokemon_tm_learnsets.keys()):
+    name_in_learnsets += 1
+  if species:
+    if species.name in list(pokemon_tm_learnsets.keys()):
+      name_in_learnsets += 1
+  if name_in_learnsets == 0:
+    print(f"{pokemon_name} doesn't learn new moves")
+    return
+
   try:
-    # Create a dictionary with Pokemon stats
+    monsNo, formNo = get_mons_no_and_form_no(pokemonId)
+    original_tm_learnset = get_relumi_tm_compatibility(monsNo, formNo)    # Create a dictionary with Pokemon stats
     tm_learnset = pokemon_tm_learnsets.get(form.name if form else pokemon.name, None)
     if tm_learnset == None:
       tm_learnset = pokemon_tm_learnsets.get(species.name if species else pokemon.name)
     if tm_learnset == None and counter == 2:
       tm_learnset = []
 
+    original_tm_learnset.extend(tm_learnset)
+    reencoded_tm_learnset = create_tm_learnset(original_tm_learnset, 256)
+
+    tm_learnset_names = []
+    for tm in tm_learnset:
+      tm_learnset_names.append(get_move_string(tm))
+
     pokemon_stats = {
       "name": form.name if form else pokemon.name,
       "id": pokemon.id,
-      "abilities": [int(ability.ability.url.split("/")[-2]) for ability in pokemon.abilities],
-      "types": [type_.type.name for type_ in (form.types if form else pokemon.types)],
-      "height": pokemon.height,
-      "weight": pokemon.weight,
-      "stats": {
-        stat.stat.name: stat.base_stat
-        for stat in pokemon.stats
-      },
-      "gender_ratio": poke_api_constants.GENDER_RATIOS[species.gender_rate],
-      "held_items": [
-          {
-              "held_item_no": get_item_id_from_item_name(item.item.name),
-              "held_item_name": item.item.name,
-              "rarity": item.version_details[-1].rarity
-          }
-          for item in pokemon.held_items
-          if item.version_details[-1].rarity != 1
-      ],
-      "egg_groups": [
-        poke_api_constants.EGG_GROUPS[egg_group.name]
-        for egg_group in species.egg_groups
-      ],
-      "tm_learnset": tm_learnset,
-      "tm_bitfields": create_tm_learnset(tm_learnset)
+      # "abilities": [int(ability.ability.url.split("/")[-2]) for ability in pokemon.abilities],
+      # "types": [type_.type.name for type_ in (form.types if form else pokemon.types)],
+      # "height": pokemon.height,
+      # "weight": pokemon.weight,
+      # "stats": {
+      #   stat.stat.name: stat.base_stat
+      #   for stat in pokemon.stats
+      # },
+      # "gender_ratio": poke_api_constants.GENDER_RATIOS[species.gender_rate],
+      # "held_items": [
+      #     {
+      #         "held_item_no": get_item_id_from_item_name(item.item.name),
+      #         "held_item_name": item.item.name,
+      #         "rarity": item.version_details[-1].rarity
+      #     }
+      #     for item in pokemon.held_items
+      #     if item.version_details[-1].rarity != 1
+      # ],
+      # "egg_groups": [
+      #   poke_api_constants.EGG_GROUPS[egg_group.name]
+      #   for egg_group in species.egg_groups
+      # ],
+      "tm_learnset": tm_learnset_names,
+      "tm_bitfields": {
+        "set01" : reencoded_tm_learnset[0],
+        "set02" : reencoded_tm_learnset[1],
+        "set03" : reencoded_tm_learnset[2],
+        "set04" : reencoded_tm_learnset[3],
+        "set05" : reencoded_tm_learnset[4],
+        "set06" : reencoded_tm_learnset[5],
+        "set07" : reencoded_tm_learnset[6],
+        "set08" : reencoded_tm_learnset[7],
+      }
     }
 
     # Write the dictionary to a JSON file
-    file_name = f"{pokemonId}_stats.json"
-    with open(os.path.join(stats_file_path, file_name), "w", encoding="utf-8") as json_file:
+    file_name = f"monsno_{monsNo}_formno_{formNo}.json"
+    with open(os.path.join(tm_learnset_path, file_name), "w", encoding="utf-8") as json_file:
       json.dump(pokemon_stats, json_file, ensure_ascii=False, indent=2)
 
     log_success(f"Stats for {form.name if form else pokemon.name} written to {file_name}")
   except TypeError as e:
+    print(f"An error has occurred {e}")
     if counter == 2:
       log_error(f"Error: Could not find this pokemon in move lists: {pokemon_name} ({pokemonId})")
       return
@@ -239,18 +270,31 @@ def write_pokeapi_data_to_file():
 def get_all_api_mon_data():
   print("Gathering all Pokemon data via PokeApi...")
   for pokemonId, mon in enumerate(personal_table):
-    if mon["monsno"] <= 493:
+    if mon["monsno"] > 493:
       continue
     mons_name = slugify(get_pokemon_name(pokemonId), True)
     get_pokemon_stats(mons_name, pokemonId, mon["monsno"])
 
+def write_tm_101_to_150_learnsets():
+  for file in os.listdir(tm_learnset_path):
+    file_path = os.path.join(tm_learnset_path, file)
+    with open(file_path, "r") as input:
+      pokemon_learnset = json.load(input)["tm_bitfields"]
+
+    official_tm_learnset_path = os.path.join(official_tm_learnset_folder_path, file)
+    with open(official_tm_learnset_path, "w") as output:
+      json.dump(pokemon_learnset, output, ensure_ascii=False, indent=2)
+
 def full_run():
   # get_pokemon_tm_learnsets()
   # clear_logs()
-  # get_all_api_mon_data()
-  write_pokeapi_data_to_file()
+  get_all_api_mon_data()
+  # write_pokeapi_data_to_file()
+  # write_tm_101_to_150_learnsets()
 
 if __name__ == "__main__":
   full_data = load_data()
   personal_table = full_data['personal_table']["Personal"]
+  with open(os.path.join(debug_file_path, "pokemon_api_learnsets.json"), "r") as json_file:
+    pokemon_tm_learnsets = json.load(json_file)
   full_run()
