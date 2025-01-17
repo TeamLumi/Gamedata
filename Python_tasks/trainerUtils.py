@@ -6,7 +6,6 @@ import time
 
 import constants
 from load_files import load_data
-from data_checks import get_average_time
 
 repo_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 parent_file_path = os.path.abspath(os.path.dirname(__file__))
@@ -88,7 +87,10 @@ def get_trainer_id_from_partial(label_name):
     '''
     label_data_array = TRAINER_NAMES['labelDataArray']
     for e in label_data_array:
-        if e['labelName'].endswith(str(label_name.strip("'"))):
+        trainer_name = str(label_name.strip("'"))
+        if e['labelName'].endswith(trainer_name):
+            return e['labelIndex']
+        elif trainer_name.split("_")[0] in e['labelName']:
             return e['labelIndex']
     return special_trainer_names[label_name]
 
@@ -746,9 +748,9 @@ def get_all_trainer_data(file_path, args, substring):
     trainers = []
     trainerID1 = args[0]
     trainerID2, trainerID3 = "", ""
-    if len(args) >= 2:
+    if len(args) >= 2 and type(args) == list:
         trainerID2 = args[1].strip()
-    if len(args) > 2:
+    if len(args) > 2 and type(args) == list:
         trainerID3 = args[2].strip()
     zoneID, areaName = get_zone_info(file_path)
 
