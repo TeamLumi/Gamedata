@@ -273,7 +273,7 @@ def get_all_api_mon_data():
     if mon["monsno"] < 284:
       continue
     if mon["monsno"] > 493:
-      continue
+      break
     mons_name = slugify(get_pokemon_name(pokemonId), True)
     get_pokemon_stats(mons_name, pokemonId, mon["monsno"])
 

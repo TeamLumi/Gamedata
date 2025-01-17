@@ -24,31 +24,32 @@ def load_data():
     data = {}
     input_file_paths = {
         # romfs/Data/StreamingAssets/AssetAssistant/Message/english
-        'ability_namedata': 'english_ss_tokusei.json',
-        'area_display_names': 'english_dp_fld_areaname_display.json',
         'area_names': 'english_dp_fld_areaname.json',
+        'area_display_names': 'english_dp_fld_areaname_display.json',
+        'trainer_names': 'english_dp_trainers_name.json',
+        'trainer_labels': 'english_dp_trainers_type.json',
+        'raw_items': 'english_ss_itemname.json', # found in the common_msbt for 3.0
+        'nature_namedata': 'english_ss_seikaku.json',
+        'ability_namedata': 'english_ss_tokusei.json', # found in common_msbt for 3.0
+        'type_namedata': 'english_ss_typename.json',
         'move_info': 'english_ss_wazainfo.json',
         'moves_namedata': 'english_ss_wazaname.json',
-        'nature_namedata': 'english_ss_seikaku.json',
-        'raw_items': 'english_ss_itemname.json',
-        'trainer_labels': 'english_dp_trainers_type.json',
-        'trainer_names': 'english_dp_trainers_name.json',
-        'type_namedata': 'english_ss_typename.json',
 
 
         # romfs/Data/StreamingAssets/AssetAssistant/Pml/personal_masterdatas
-        'egg_learnset': 'TamagoWazaTable.json',
+        'evolveTable': 'EvolveTable.json',
         'item_table': 'ItemTable.json',
+        'personal_table': 'PersonalTable.json',
+        'egg_learnset': 'TamagoWazaTable.json',
         'learnset_data': 'WazaOboeTable.json',
         'moves_table': 'WazaTable.json',
-        'personal_table': 'PersonalTable.json',
 
 
         # romfs/Data/StreamingAssets/AssetAssistant/Message/common_msbt
+        'raw_pokedex': 'english_ss_monsname.json',
         'form_namedata': 'english_ss_zkn_form.json',
         'pkmn_height_data': 'english_ss_zkn_height.json',
         'pkmn_weight_data': 'english_ss_zkn_weight.json',
-        'raw_pokedex': 'english_ss_monsname.json',
 
 
         # romfs/Data/StreamingAssets/AssetAssistant/Dpr/scriptableobjects/gamesettings

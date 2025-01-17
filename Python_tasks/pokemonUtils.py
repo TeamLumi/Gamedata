@@ -49,7 +49,10 @@ def convert_lumi_formula_mon(lumi_mons_no):
     # converts anything more than 2^16 (65,536) to it's correct PID
     form_no = lumi_mons_no//(2**16)
     lumi_formula_mon = lumi_mons_no - (form_no * (2**16))
-    pokemonId = get_pokemon_id_from_mons_no_and_form(lumi_formula_mon, form_no)
+    if form_no == constants.ENCOUNTER_VARIANT_JSON_HANDLER:
+        pokemonId = get_pokemon_id_from_mons_no_and_form(lumi_formula_mon, 0)
+    else:
+        pokemonId = get_pokemon_id_from_mons_no_and_form(lumi_formula_mon, form_no)
     return pokemonId
 
 def get_pokemon_name(pokemon_id = 0, form_mode = False):
@@ -400,7 +403,7 @@ def get_mons_no_and_form_no(pokemon_id):
     form_no = int(form_format[-1].lstrip("0"))
     return mons_no, form_no
 
-def get_pokemon_from_trainer_info(trainer, output_format):
+def get_pokemon_from_trainer_info(trainer, output_format, check_for_valid_ability = None):
     pokemon_list = []
     for poke_num in range(1,7):
         level = trainer[f"P{poke_num}Level"]
@@ -418,6 +421,8 @@ def get_pokemon_from_trainer_info(trainer, output_format):
         pokemonId = get_pokemon_id_from_mons_no_and_form(monsno, form)
         trainer_item = trainer[f"P{poke_num}Item"]
         item = get_item_string(trainer_item) if trainer_item != 0 else None
+        if check_for_valid_ability != None:
+            check_for_valid_ability(pokemonId, ability, trainer['ID'])
         pokemon = {
             "ability": ability,
             "gender": gender,
