@@ -1,0 +1,43 @@
+{
+  "name": "quilava",
+  "id": 156,
+  "tm_learnset": [
+    "Focus Punch",
+    "Roar",
+    "Toxic",
+    "Hidden Power",
+    "Sunny Day",
+    "Protect",
+    "Iron Tail",
+    "Dig",
+    "Brick Break",
+    "Double Team",
+    "Flamethrower",
+    "Fire Blast",
+    "Aerial Ace",
+    "Facade",
+    "Rest",
+    "Attract",
+    "Overheat",
+    "Wild Charge",
+    "Endure",
+    "Will-O-Wisp",
+    "Sleep Talk",
+    "Swagger",
+    "Substitute",
+    "Cut",
+    "Strength",
+    "Rock Smash",
+    "Work Up"
+  ],
+  "tm_bitfields": {
+    "set01": 3359704625,
+    "set02": 302127780,
+    "set03": 2453798912,
+    "set04": 146,
+    "set05": 0,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "fearow",
+  "id": 22,
+  "tm_learnset": [
+    "Toxic",
+    "Hidden Power",
+    "Sunny Day",
+    "Hyper Beam",
+    "Protect",
+    "Rain Dance",
+    "Double Team",
+    "Aerial Ace",
+    "Facade",
+    "Rest",
+    "Attract",
+    "Thief",
+    "Steel Wing",
+    "Roost",
+    "False Swipe",
+    "Endure",
+    "Giga Impact",
+    "Sleep Talk",
+    "Swagger",
+    "U-turn",
+    "Substitute",
+    "Fly",
+    "Defog",
+    "Pluck",
+    "Work Up"
+  ],
+  "tm_bitfields": {
+    "set01": 2147698208,
+    "set02": 35945088,
+    "set03": 599916552,
+    "set04": 193,
+    "set05": 0,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

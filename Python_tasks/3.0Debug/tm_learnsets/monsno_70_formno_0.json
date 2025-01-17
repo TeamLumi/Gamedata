@@ -1,0 +1,40 @@
+{
+  "name": "weepinbell",
+  "id": 70,
+  "tm_learnset": [
+    "Toxic",
+    "Bullet Seed",
+    "Hidden Power",
+    "Sunny Day",
+    "Protect",
+    "Giga Drain",
+    "Solar Beam",
+    "Double Team",
+    "Reflect",
+    "Sludge Bomb",
+    "Facade",
+    "Rest",
+    "Attract",
+    "Thief",
+    "Energy Ball",
+    "Endure",
+    "Flash",
+    "Swords Dance",
+    "Sleep Talk",
+    "Poison Jab",
+    "Grass Knot",
+    "Swagger",
+    "Substitute",
+    "Cut"
+  ],
+  "tm_bitfields": {
+    "set01": 2149909792,
+    "set02": 34617865,
+    "set03": 308937760,
+    "set04": 128,
+    "set05": 0,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

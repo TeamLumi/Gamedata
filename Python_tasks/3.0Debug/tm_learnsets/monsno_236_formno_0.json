@@ -1,0 +1,39 @@
+{
+  "name": "tyrogue",
+  "id": 236,
+  "tm_learnset": [
+    "Toxic",
+    "Bulk Up",
+    "Hidden Power",
+    "Sunny Day",
+    "Protect",
+    "Rain Dance",
+    "Earthquake",
+    "Low Sweep",
+    "Brick Break",
+    "Double Team",
+    "Facade",
+    "Rest",
+    "Attract",
+    "Thief",
+    "Endure",
+    "Rock Slide",
+    "Sleep Talk",
+    "Swagger",
+    "Substitute",
+    "Strength",
+    "Rock Smash",
+    "Bulldoze",
+    "Work Up"
+  ],
+  "tm_bitfields": {
+    "set01": 3322087072,
+    "set02": 33569280,
+    "set03": 2185658368,
+    "set04": 130,
+    "set05": 0,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "name": "ariados",
+  "id": 168,
+  "tm_learnset": [
+    "Toxic",
+    "Hidden Power",
+    "Sunny Day",
+    "Hyper Beam",
+    "Protect",
+    "Giga Drain",
+    "Solar Beam",
+    "Dig",
+    "Psychic",
+    "Double Team",
+    "Sludge Bomb",
+    "Facade",
+    "Rest",
+    "Attract",
+    "Thief",
+    "Endure",
+    "Bug Buzz",
+    "Giga Impact",
+    "Flash",
+    "Swords Dance",
+    "X-Scissor",
+    "Sleep Talk",
+    "Poison Jab",
+    "Swagger",
+    "Substitute"
+  ],
+  "tm_bitfields": {
+    "set01": 2552579104,
+    "set02": 572537352,
+    "set03": 38470696,
+    "set04": 128,
+    "set05": 0,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

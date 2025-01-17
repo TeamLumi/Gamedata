@@ -1,0 +1,43 @@
+{
+  "name": "skiploom",
+  "id": 188,
+  "tm_learnset": [
+    "Toxic",
+    "Bullet Seed",
+    "Hidden Power",
+    "Sunny Day",
+    "Light Screen",
+    "Protect",
+    "Giga Drain",
+    "Solar Beam",
+    "Double Team",
+    "Reflect",
+    "Aerial Ace",
+    "Facade",
+    "Rest",
+    "Attract",
+    "Thief",
+    "Energy Ball",
+    "Fling",
+    "Endure",
+    "Flash",
+    "Swords Dance",
+    "Psych Up",
+    "Sleep Talk",
+    "Dazzling Gleam",
+    "Grass Knot",
+    "Swagger",
+    "U-turn",
+    "Substitute"
+  ],
+  "tm_bitfields": {
+    "set01": 2150991136,
+    "set02": 43006593,
+    "set03": 56759328,
+    "set04": 128,
+    "set05": 0,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

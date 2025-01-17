@@ -1,0 +1,38 @@
+{
+  "name": "doduo",
+  "id": 84,
+  "tm_learnset": [
+    "Toxic",
+    "Hidden Power",
+    "Sunny Day",
+    "Protect",
+    "Rain Dance",
+    "Double Team",
+    "Reflect",
+    "Aerial Ace",
+    "Facade",
+    "Rest",
+    "Attract",
+    "Thief",
+    "Steel Wing",
+    "Roost",
+    "Endure",
+    "Swords Dance",
+    "Sleep Talk",
+    "Swagger",
+    "Substitute",
+    "Fly",
+    "Pluck",
+    "Work Up"
+  ],
+  "tm_bitfields": {
+    "set01": 2147681824,
+    "set02": 33847937,
+    "set03": 583140352,
+    "set04": 128,
+    "set05": 0,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

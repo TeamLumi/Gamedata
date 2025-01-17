@@ -1,0 +1,39 @@
+{
+  "name": "cyndaquil",
+  "id": 155,
+  "tm_learnset": [
+    "Roar",
+    "Toxic",
+    "Hidden Power",
+    "Sunny Day",
+    "Protect",
+    "Iron Tail",
+    "Dig",
+    "Double Team",
+    "Flamethrower",
+    "Fire Blast",
+    "Aerial Ace",
+    "Facade",
+    "Rest",
+    "Attract",
+    "Overheat",
+    "Wild Charge",
+    "Endure",
+    "Will-O-Wisp",
+    "Sleep Talk",
+    "Swagger",
+    "Substitute",
+    "Cut",
+    "Work Up"
+  ],
+  "tm_bitfields": {
+    "set01": 2285962800,
+    "set02": 302127780,
+    "set03": 306315264,
+    "set04": 144,
+    "set05": 0,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

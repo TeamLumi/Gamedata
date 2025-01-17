@@ -1,0 +1,43 @@
+{
+  "name": "poochyena",
+  "id": 261,
+  "tm_learnset": [
+    "Roar",
+    "Toxic",
+    "Hidden Power",
+    "Sunny Day",
+    "Taunt",
+    "Protect",
+    "Rain Dance",
+    "Iron Tail",
+    "Dig",
+    "Shadow Ball",
+    "Double Team",
+    "Torment",
+    "Facade",
+    "Rest",
+    "Attract",
+    "Thief",
+    "Endure",
+    "Nasty Plot",
+    "Payback",
+    "Psych Up",
+    "Snarl",
+    "Dark Pulse",
+    "Sleep Talk",
+    "Hyper Voice",
+    "Swagger",
+    "Substitute",
+    "Rock Smash"
+  ],
+  "tm_bitfields": {
+    "set01": 2822966320,
+    "set02": 1107311360,
+    "set03": 37908482,
+    "set04": 162,
+    "set05": 0,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

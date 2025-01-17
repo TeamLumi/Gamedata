@@ -1,0 +1,40 @@
+{
+  "name": "shellder",
+  "id": 90,
+  "tm_learnset": [
+    "Water Pulse",
+    "Toxic",
+    "Hail",
+    "Hidden Power",
+    "Ice Beam",
+    "Blizzard",
+    "Protect",
+    "Rain Dance",
+    "Double Team",
+    "Reflect",
+    "Facade",
+    "Rest",
+    "Attract",
+    "Brine",
+    "Endure",
+    "Explosion",
+    "Payback",
+    "Avalanche",
+    "Sleep Talk",
+    "Swagger",
+    "Substitute",
+    "Surf",
+    "Waterfall",
+    "Surf"
+  ],
+  "tm_bitfields": {
+    "set01": 2147692644,
+    "set02": 2185239041,
+    "set03": 1111621762,
+    "set04": 132,
+    "set05": 0,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

@@ -270,6 +270,8 @@ def write_pokeapi_data_to_file():
 def get_all_api_mon_data():
   print("Gathering all Pokemon data via PokeApi...")
   for pokemonId, mon in enumerate(personal_table):
+    if mon["monsno"] < 284:
+      continue
     if mon["monsno"] > 493:
       continue
     mons_name = slugify(get_pokemon_name(pokemonId), True)

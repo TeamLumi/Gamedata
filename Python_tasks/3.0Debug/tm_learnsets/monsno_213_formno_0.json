@@ -1,0 +1,43 @@
+{
+  "name": "shuckle",
+  "id": 213,
+  "tm_learnset": [
+    "Toxic",
+    "Hidden Power",
+    "Sunny Day",
+    "Protect",
+    "Safeguard",
+    "Earthquake",
+    "Dig",
+    "Double Team",
+    "Sludge Bomb",
+    "Sandstorm",
+    "Rock Tomb",
+    "Facade",
+    "Rest",
+    "Attract",
+    "Endure",
+    "Rock Polish",
+    "Flash",
+    "Stone Edge",
+    "Gyro Ball",
+    "Stealth Rock",
+    "Rock Slide",
+    "Sleep Talk",
+    "Swagger",
+    "Substitute",
+    "Strength",
+    "Rock Smash",
+    "Bulldoze"
+  ],
+  "tm_bitfields": {
+    "set01": 2315846688,
+    "set02": 570432088,
+    "set03": 2185661040,
+    "set04": 130,
+    "set05": 0,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}
