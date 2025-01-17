@@ -8,7 +8,7 @@ import unicodedata
 from collections import defaultdict
 
 import constants
-from data_checks import check_bad_encounter, check_mons_list, get_average_time
+from data_checks import check_bad_encounter, check_mons_list, get_average_time, check_for_valid_ability
 from load_files import get_lumi_data, load_data
 from pokedex_generator import getPokedexInfo
 from pokemonUtils import (get_diff_form_dictionary,
@@ -171,7 +171,7 @@ def getTrainerData(gymLeaderList):
                     fights = {}
                     trainer = next((t for t in trainer_data["TrainerPoke"] if t["ID"] == trainer_id), None)
                     if trainer:
-                        pokemon_list = get_pokemon_from_trainer_info(trainer, constants.TRACKER_METHOD)
+                        pokemon_list = get_pokemon_from_trainer_info(trainer, constants.TRACKER_METHOD, check_for_valid_ability)
                         fights["content"] = pokemon_list
                         fights["game"] = f"{gym_leader} Team {str(trainer_ids.index(trainer_id) + 1)}"
                         fights["name"] = gym_leader.split("(")[0].strip()
