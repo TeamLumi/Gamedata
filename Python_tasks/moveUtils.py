@@ -231,14 +231,17 @@ def get_pokemon_learnset(monsno=0):
         move_object['moveId'] = learnset[i + 1]
         move_list.append(move_object)
 
-    pokemon_learnset = {}
+    pokemon_learnset = []
     for e in move_list:
+        learnset_object = {}
         level = e['level']
         move_id = e['moveId']
         if move_id not in _move_properties_cache:
             _move_properties_cache[move_id] = get_move_properties(move_id)
         name = _move_properties_cache[move_id]['name']
-        pokemon_learnset[name] = level
+        learnset_object['name'] = name
+        learnset_object['level'] = level
+        pokemon_learnset.append(learnset_object)
 
     return pokemon_learnset
 
