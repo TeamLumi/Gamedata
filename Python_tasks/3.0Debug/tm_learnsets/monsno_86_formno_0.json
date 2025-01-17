@@ -1,0 +1,42 @@
+{
+  "name": "seel",
+  "id": 86,
+  "tm_learnset": [
+    "Water Pulse",
+    "Toxic",
+    "Hail",
+    "Hidden Power",
+    "Ice Beam",
+    "Blizzard",
+    "Protect",
+    "Rain Dance",
+    "Safeguard",
+    "Iron Tail",
+    "Double Team",
+    "Facade",
+    "Rest",
+    "Attract",
+    "Thief",
+    "Brine",
+    "Fling",
+    "Endure",
+    "Avalanche",
+    "Sleep Talk",
+    "Swagger",
+    "Substitute",
+    "Surf",
+    "Strength",
+    "Waterfall",
+    "Surf"
+  ],
+  "tm_bitfields": {
+    "set01": 2152411236,
+    "set02": 46152192,
+    "set03": 3259105408,
+    "set04": 132,
+    "set05": 0,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

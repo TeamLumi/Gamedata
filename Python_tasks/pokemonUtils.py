@@ -10,12 +10,14 @@ from moveUtils import (
     get_moves,
     get_pokemon_learnset,
     get_tech_machine_learnset,
+    get_relumi_tm_learnset,    
     get_egg_moves,
     get_grass_knot_power,
     get_tutor_moves,
     get_move_string,
     get_level_learnset,
     get_tm_compatibility,
+    get_relumi_tm_compatibility,
     get_egg_moves_list,
     get_tutor_moves_list,
     )
@@ -326,8 +328,11 @@ def get_pokemon_info(personalId=0):
     tutorLearnset = {}
 
     p = personal_data['Personal'][int(personalId)]
-    _, formNo = get_mons_no_and_form_no(personalId)
-    tms = get_tech_machine_learnset(personalId)
+    monsNo, formNo = get_mons_no_and_form_no(personalId)
+    if constants.GAME_MODE == constants.GAME_MODE_3:
+        tms = get_relumi_tm_learnset(monsNo, formNo)
+    else:
+        tms = get_tech_machine_learnset(personalId)
     eggs = get_egg_moves(int(personalId))
     tutors = get_tutor_moves(p['monsno'], formNo)
 
@@ -453,7 +458,10 @@ def get_mon_full_learnset(pokemonId=0):
     if len(level_moves) > 0:
         full_learnset['level'] = level_moves
 
-    tm_moves = get_tm_compatibility(pokemonId)
+    if constants.GAME_MODE == constants.GAME_MODE_3:
+        tm_moves = get_relumi_tm_compatibility(monsNo, formNo)
+    else:
+        tm_moves = get_tm_compatibility(pokemonId)
     if len(tm_moves) > 0:
         full_learnset['tm'] = tm_moves
 

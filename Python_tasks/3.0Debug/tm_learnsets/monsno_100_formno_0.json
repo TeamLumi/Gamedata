@@ -1,0 +1,43 @@
+{
+  "name": "voltorb",
+  "id": 100,
+  "tm_learnset": [
+    "Toxic",
+    "Hidden Power",
+    "Taunt",
+    "Light Screen",
+    "Protect",
+    "Rain Dance",
+    "Thunderbolt",
+    "Thunder",
+    "Double Team",
+    "Reflect",
+    "Shock Wave",
+    "Torment",
+    "Facade",
+    "Volt Switch",
+    "Rest",
+    "Thief",
+    "Wild Charge",
+    "Endure",
+    "Explosion",
+    "Recycle",
+    "Flash",
+    "Thunder Wave",
+    "Gyro Ball",
+    "Sleep Talk",
+    "Swagger",
+    "Substitute",
+    "Charge Beam"
+  ],
+  "tm_bitfields": {
+    "set01": 2172880928,
+    "set02": 2734698243,
+    "set03": 37880612,
+    "set04": 144,
+    "set05": 0,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

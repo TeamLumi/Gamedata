@@ -1,0 +1,43 @@
+{
+  "name": "mareep",
+  "id": 179,
+  "tm_learnset": [
+    "Toxic",
+    "Hidden Power",
+    "Sunny Day",
+    "Light Screen",
+    "Protect",
+    "Rain Dance",
+    "Safeguard",
+    "Iron Tail",
+    "Thunderbolt",
+    "Thunder",
+    "Dig",
+    "Double Team",
+    "Reflect",
+    "Shock Wave",
+    "Facade",
+    "Volt Switch",
+    "Rest",
+    "Attract",
+    "Wild Charge",
+    "Endure",
+    "Flash",
+    "Thunder Wave",
+    "Sleep Talk",
+    "Dazzling Gleam",
+    "Swagger",
+    "Substitute",
+    "Charge Beam"
+  ],
+  "tm_bitfields": {
+    "set01": 2312864800,
+    "set02": 50339331,
+    "set03": 37880096,
+    "set04": 144,
+    "set05": 0,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

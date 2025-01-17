@@ -1,0 +1,43 @@
+{
+  "name": "dodrio",
+  "id": 85,
+  "tm_learnset": [
+    "Toxic",
+    "Hidden Power",
+    "Sunny Day",
+    "Taunt",
+    "Hyper Beam",
+    "Protect",
+    "Rain Dance",
+    "Double Team",
+    "Reflect",
+    "Aerial Ace",
+    "Torment",
+    "Facade",
+    "Rest",
+    "Attract",
+    "Thief",
+    "Steel Wing",
+    "Roost",
+    "Endure",
+    "Payback",
+    "Giga Impact",
+    "Swords Dance",
+    "Sleep Talk",
+    "Swagger",
+    "Substitute",
+    "Fly",
+    "Pluck",
+    "Work Up"
+  ],
+  "tm_bitfields": {
+    "set01": 2147700256,
+    "set02": 33848193,
+    "set03": 583140362,
+    "set04": 128,
+    "set05": 0,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

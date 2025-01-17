@@ -1,0 +1,38 @@
+{
+  "name": "venonat",
+  "id": 48,
+  "tm_learnset": [
+    "Toxic",
+    "Hidden Power",
+    "Sunny Day",
+    "Protect",
+    "Giga Drain",
+    "Solar Beam",
+    "Psychic",
+    "Double Team",
+    "Reflect",
+    "Sludge Bomb",
+    "Facade",
+    "Rest",
+    "Attract",
+    "Thief",
+    "Skill Swap",
+    "Energy Ball",
+    "Endure",
+    "Bug Buzz",
+    "Flash",
+    "Sleep Talk",
+    "Swagger",
+    "Substitute"
+  ],
+  "tm_bitfields": {
+    "set01": 2418344992,
+    "set02": 571521545,
+    "set03": 37879840,
+    "set04": 128,
+    "set05": 0,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

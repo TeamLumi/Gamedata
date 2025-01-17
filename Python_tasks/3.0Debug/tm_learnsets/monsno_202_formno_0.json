@@ -1,0 +1,17 @@
+{
+  "name": "wobbuffet",
+  "id": 202,
+  "tm_learnset": [
+    "Safeguard"
+  ],
+  "tm_bitfields": {
+    "set01": 524288,
+    "set02": 0,
+    "set03": 0,
+    "set04": 0,
+    "set05": 0,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

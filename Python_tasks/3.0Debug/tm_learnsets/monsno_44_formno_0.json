@@ -1,0 +1,41 @@
+{
+  "name": "gloom",
+  "id": 44,
+  "tm_learnset": [
+    "Toxic",
+    "Bullet Seed",
+    "Hidden Power",
+    "Sunny Day",
+    "Protect",
+    "Giga Drain",
+    "Solar Beam",
+    "Double Team",
+    "Reflect",
+    "Sludge Bomb",
+    "Facade",
+    "Rest",
+    "Attract",
+    "Energy Ball",
+    "Fling",
+    "Endure",
+    "Drain Punch",
+    "Flash",
+    "Swords Dance",
+    "Sleep Talk",
+    "Dazzling Gleam",
+    "Grass Knot",
+    "Swagger",
+    "Substitute",
+    "Cut"
+  ],
+  "tm_bitfields": {
+    "set01": 2150958368,
+    "set02": 177216009,
+    "set03": 308413472,
+    "set04": 128,
+    "set05": 0,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

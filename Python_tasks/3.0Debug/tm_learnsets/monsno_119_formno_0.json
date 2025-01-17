@@ -1,0 +1,40 @@
+{
+  "name": "seaking",
+  "id": 119,
+  "tm_learnset": [
+    "Water Pulse",
+    "Toxic",
+    "Hail",
+    "Hidden Power",
+    "Ice Beam",
+    "Blizzard",
+    "Hyper Beam",
+    "Protect",
+    "Rain Dance",
+    "Double Team",
+    "Facade",
+    "Rest",
+    "Attract",
+    "Scald",
+    "Endure",
+    "Giga Impact",
+    "Swords Dance",
+    "Sleep Talk",
+    "Poison Jab",
+    "Swagger",
+    "Substitute",
+    "Surf",
+    "Waterfall",
+    "Surf"
+  ],
+  "tm_bitfields": {
+    "set01": 2156097636,
+    "set02": 33626624,
+    "set03": 1112146952,
+    "set04": 132,
+    "set05": 0,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

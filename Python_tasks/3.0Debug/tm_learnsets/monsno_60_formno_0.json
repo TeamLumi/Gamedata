@@ -1,0 +1,41 @@
+{
+  "name": "poliwag",
+  "id": 60,
+  "tm_learnset": [
+    "Focus Punch",
+    "Water Pulse",
+    "Toxic",
+    "Hail",
+    "Hidden Power",
+    "Ice Beam",
+    "Blizzard",
+    "Protect",
+    "Rain Dance",
+    "Dig",
+    "Psychic",
+    "Double Team",
+    "Facade",
+    "Rest",
+    "Attract",
+    "Thief",
+    "Scald",
+    "Endure",
+    "Sleep Talk",
+    "Swagger",
+    "Substitute",
+    "Surf",
+    "Waterfall",
+    "Bulldoze",
+    "Surf"
+  ],
+  "tm_bitfields": {
+    "set01": 2550345829,
+    "set02": 33634816,
+    "set03": 1111883776,
+    "set04": 132,
+    "set05": 0,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

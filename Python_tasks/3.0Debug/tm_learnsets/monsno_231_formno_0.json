@@ -1,0 +1,43 @@
+{
+  "name": "phanpy",
+  "id": 231,
+  "tm_learnset": [
+    "Roar",
+    "Toxic",
+    "Hidden Power",
+    "Sunny Day",
+    "Protect",
+    "Rain Dance",
+    "Iron Tail",
+    "Earthquake",
+    "Dig",
+    "Double Team",
+    "Sandstorm",
+    "Rock Tomb",
+    "Facade",
+    "Rest",
+    "Attract",
+    "Thief",
+    "Endure",
+    "Stone Edge",
+    "Stealth Rock",
+    "Rock Slide",
+    "Sleep Talk",
+    "Hyper Voice",
+    "Swagger",
+    "Substitute",
+    "Strength",
+    "Rock Smash",
+    "Bulldoze"
+  ],
+  "tm_bitfields": {
+    "set01": 2319647792,
+    "set02": 33569360,
+    "set03": 2185660480,
+    "set04": 162,
+    "set05": 0,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

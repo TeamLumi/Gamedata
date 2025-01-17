@@ -87,6 +87,27 @@ def get_tm_compatibility(pokemon_id=0):
 
     return tm_compatibility
 
+def get_relumi_tm_compatibility(monsNo, formNo):
+    ## This function is to get 3.0 datasets
+    ## It needs to be a separate function becuase in this file you can't swap from monsNo and formNo to pokemonId
+    if monsNo == 0:
+        return None
+    tm_data = full_data['tm_learnsets'][f"monsno_{monsNo}_formno_{formNo}"]
+    machine_nos = [
+        tm_data['set01'],
+        tm_data['set02'],
+        tm_data['set03'],
+        tm_data['set04'],
+        tm_data['set05'],
+        tm_data['set06'],
+        tm_data['set07'],
+        tm_data['set08']
+    ]
+    tm_binary_list = convert_list_to_binary_array(machine_nos)
+    tm_compatibility = create_move_id_learnset(tm_binary_list)
+
+    return tm_compatibility
+
 def decimal_to_binary_array(decimal_number):
     if not isinstance(decimal_number, int) or decimal_number < 0:
         raise ValueError("Input must be a non-negative integer")
@@ -100,8 +121,8 @@ def decimal_to_binary_array(decimal_number):
     return binary_array[::-1]
 
 def convert_list_to_binary_array(decimal_list):
-    if len(decimal_list) != 4:
-        raise ValueError("Input list must have exactly 4 elements")
+    if len(decimal_list) != 4 and len(decimal_list) != 8:
+        raise ValueError("Input list must have exactly 4 or 8 elements")
 
     binary_array = []
 
@@ -116,13 +137,13 @@ def convert_list_to_binary_array(decimal_list):
 
     return binary_array
 
-def convert_to_32_bit_integers(binary_array):
-    if len(binary_array) != 128:
-        raise ValueError("Input array must have a length of 128")
+def convert_to_32_bit_integers(binary_array, length = 128):
+    if len(binary_array) != length:
+        raise ValueError("Input array must have a length of 128 or 256")
 
     integers = []
 
-    for i in range(0, 128, 32):
+    for i in range(0, length, 32):
         integer_slice = binary_array[i:i+32]
         reversed_slice = integer_slice[::-1]
         integer_value = 0
@@ -134,26 +155,19 @@ def convert_to_32_bit_integers(binary_array):
 
     return integers
 
-def convert_int_to_bit(integer_list):
-    MachineList = {"machine1": 0, "machine2": 0, "machine3": 0, "machine4": 0}
-    for i in integer_list:
-        if i > 0 and i < 33:
-            MachineList["machine1"] = MachineList["machine1"] | (1<<(i - 1))
-            pass
-        elif i > 32 and i < 65:
-            MachineList["machine2"] = MachineList["machine2"] | (1<<(i - 33))
-            pass
-        elif i > 64 and i < 97:
-            MachineList["machine3"] = MachineList["machine3"] | (1<<(i - 65))
-            pass
-        elif i > 96 and i < 129:
-            MachineList["machine4"] = MachineList["machine4"] | (1<<(i - 97))
-            pass
-    return MachineList
-
 def get_tech_machine_learnset(pokemon_id=0):
     learnset = get_tm_compatibility(pokemon_id)
     MAX_TM_COUNT = 104
+    if learnset == None:
+        return []
+    can_learn = []
+    for move in learnset:
+        can_learn.append({'level': 'tm', 'moveId': move})
+
+    return can_learn
+
+def get_relumi_tm_learnset(monsNo=0, formNo=0):
+    learnset = get_relumi_tm_compatibility(monsNo, formNo)
     if learnset == None:
         return []
     can_learn = []
@@ -174,8 +188,11 @@ def find_waza_no_by_machine_no(machineNo):
             return waza_machine['wazaNo']
     return None
 
-def create_tm_learnset(move_ids):
-    tm_bitfield = [0] * 128
+def create_tm_learnset(move_ids, length=128):
+    if length != 128 and length != 256:
+        raise ValueError("length must have a value of 128 or 256")
+
+    tm_bitfield = [0] * length
 
     for move_id in move_ids:
         tm_no = find_machine_no_by_waza_no(move_id)
@@ -183,11 +200,11 @@ def create_tm_learnset(move_ids):
             continue
 
         bit_index = tm_no - 1
-        if bit_index > 128:
+        if bit_index > length:
             continue
 
         tm_bitfield[bit_index] = 1
-    return convert_to_32_bit_integers(tm_bitfield)
+    return convert_to_32_bit_integers(tm_bitfield, length)
 
 def create_move_id_learnset(binary_array):
     tm_array = []

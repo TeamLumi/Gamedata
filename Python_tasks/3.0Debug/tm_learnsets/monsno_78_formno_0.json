@@ -1,0 +1,41 @@
+{
+  "name": "rapidash",
+  "id": 78,
+  "tm_learnset": [
+    "Toxic",
+    "Hidden Power",
+    "Sunny Day",
+    "Hyper Beam",
+    "Protect",
+    "Solar Beam",
+    "Iron Tail",
+    "Double Team",
+    "Reflect",
+    "Flamethrower",
+    "Fire Blast",
+    "Facade",
+    "Rest",
+    "Attract",
+    "Overheat",
+    "Wild Charge",
+    "Endure",
+    "Will-O-Wisp",
+    "Giga Impact",
+    "Swords Dance",
+    "Sleep Talk",
+    "Poison Jab",
+    "Swagger",
+    "Substitute",
+    "Strength"
+  ],
+  "tm_bitfields": {
+    "set01": 2153858080,
+    "set02": 302127653,
+    "set03": 2185888776,
+    "set04": 144,
+    "set05": 0,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

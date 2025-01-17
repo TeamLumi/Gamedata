@@ -1,0 +1,41 @@
+{
+  "name": "shroomish",
+  "id": 285,
+  "tm_learnset": [
+    "Focus Punch",
+    "Toxic",
+    "Bullet Seed",
+    "Hidden Power",
+    "Sunny Day",
+    "Protect",
+    "Rain Dance",
+    "Giga Drain",
+    "Safeguard",
+    "Solar Beam",
+    "Double Team",
+    "Sludge Bomb",
+    "Facade",
+    "Rest",
+    "Attract",
+    "Energy Ball",
+    "False Swipe",
+    "Endure",
+    "Drain Punch",
+    "Flash",
+    "Swords Dance",
+    "Sleep Talk",
+    "Grass Knot",
+    "Swagger",
+    "Substitute"
+  ],
+  "tm_bitfields": {
+    "set01": 2150565153,
+    "set02": 170924552,
+    "set03": 39978016,
+    "set04": 128,
+    "set05": 0,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}

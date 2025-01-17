@@ -1,0 +1,38 @@
+{
+  "name": "spinarak",
+  "id": 167,
+  "tm_learnset": [
+    "Toxic",
+    "Hidden Power",
+    "Sunny Day",
+    "Protect",
+    "Giga Drain",
+    "Solar Beam",
+    "Dig",
+    "Psychic",
+    "Double Team",
+    "Sludge Bomb",
+    "Facade",
+    "Rest",
+    "Attract",
+    "Thief",
+    "Endure",
+    "Bug Buzz",
+    "Flash",
+    "X-Scissor",
+    "Sleep Talk",
+    "Poison Jab",
+    "Swagger",
+    "Substitute"
+  ],
+  "tm_bitfields": {
+    "set01": 2552562720,
+    "set02": 572537352,
+    "set03": 38469664,
+    "set04": 128,
+    "set05": 0,
+    "set06": 0,
+    "set07": 0,
+    "set08": 0
+  }
+}
