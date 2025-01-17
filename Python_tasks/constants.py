@@ -277,6 +277,11 @@ CALL_PATTERN = r"_CALL\('([^']*)'\)" # Returns the string that is contained with
 HONEY_TREE_MATCH_REGEX = r"\[(.*?)\]\s*=\s*\{(.*?)\}"
 HONEY_TREE_CONST_REGEX = r"const\s+int32_t\s+HONEY_TREES\[\s*NUM_ZONE_ID\s*\]\[\s*10\s*\]\s*=\s*\{\s*([\s\S]*?)\};"
 HONEY_TREE = "Honey Tree"
+
+# Format for getting Fixed Shop items
+FIXED_SHOP = "_SHOP_OPEN_FIXED"
+FIXED_SHOP_PATTERN = r"_SHOP_OPEN_FIXED\((\d{1,2})\)"
+
 TROPHY_GARDEN = "Daily Trophy Garden"
 TROPHY_GARDEN_RATE = "5%"
 TROPHY_GARDEN_LEVEL = 26

@@ -970,7 +970,7 @@ def parse_ev_script_file(file_path):
 
     return trainers
 
-def process_files(folder_path, callback):
+def process_files(folder_path, callback, trainer_mode=True):
     """
     Calls the provided callback function on every file in the specified folder.
     
@@ -995,19 +995,20 @@ def process_files(folder_path, callback):
             return
         except UnsupportedTrainer:
             continue
-        trainers_set.update([frozenset(d.items()) for d in trainers])
-    trainers_list = [dict(s) for s in trainers_set]
+        if trainer_mode:
+            trainers_set.update([frozenset(d.items()) for d in trainers])
 
-    trainer_data = get_trainer_data_from_place_datas()
-    for battle in trainers_list:
-        ordered_battle = {key: battle[key] for key in constants.DESIRED_ORDER}
-        trainer_data.append(ordered_battle)
-    sorted_data = sorted(trainer_data, key=itemgetter('zoneId', 'trainerId'))
-    with open(
-        os.path.join(debug_file_path, 'trainer_info.json'), 'w', encoding='utf-8'
-    ) as trainer_info_file:
-        json.dump(sorted_data, trainer_info_file, indent=2)
-    return sorted_data
+    if trainer_mode:
+        trainers_list = [dict(s) for s in trainers_set]
+
+        trainer_data = get_trainer_data_from_place_datas()
+        for battle in trainers_list:
+            ordered_battle = {key: battle[key] for key in constants.DESIRED_ORDER}
+            trainer_data.append(ordered_battle)
+        sorted_data = sorted(trainer_data, key=itemgetter('zoneId', 'trainerId'))
+        with open(os.path.join(debug_file_path, 'trainer_info.json'), 'w', encoding='utf-8') as f:
+            json.dump(sorted_data, f, indent=2)
+        return sorted_data
 
 
 if __name__ != "__main__":
