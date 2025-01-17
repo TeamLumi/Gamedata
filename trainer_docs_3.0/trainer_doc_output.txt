@@ -2008,7 +2008,7 @@ Serious
 Scrappy
 
 None
-Disarming Voice
+Howl
 Echoed Voice
 Astonish
 Uproar
@@ -2227,7 +2227,7 @@ Docile
 Scrappy
 
 None
-Disarming Voice
+Howl
 Echoed Voice
 Astonish
 Uproar
@@ -3263,6 +3263,38 @@ Smog
 221
 Team Galactic Grunt
 Level Cap:
+Format: Single Battle
+
+Zubat
+15
+Serious
+Inner Focus
+
+None
+Bite
+Wing Attack
+Poison Fang
+Confuse Ray
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Spinarak
+15
+Bashful
+Swarm
+
+None
+Bug Bite
+Scary Face
+Poison Fang
+Night Shade
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+221
+Team Galactic Grunt
+Level Cap:
 Format: Double Battle
 
 Zubat
@@ -3291,70 +3323,6 @@ Night Shade
 25/25/25/25/25/25
 0/0/0/0/0/0
 Paired with 222
-
-221
-Team Galactic Grunt
-Level Cap:
-Format: Single Battle
-
-Zubat
-15
-Serious
-Inner Focus
-
-None
-Bite
-Wing Attack
-Poison Fang
-Confuse Ray
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Spinarak
-15
-Bashful
-Swarm
-
-None
-Bug Bite
-Scary Face
-Poison Fang
-Night Shade
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
-222
-Team Galactic Grunt
-Level Cap:
-Format: Single Battle
-
-Croagunk
-15
-Bashful
-Anticipation
-
-None
-Fake Out
-Mud-Slap
-Poison Sting
-Torment
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Ledyba
-15
-Serious
-Iron Fist
-
-None
-Reflect
-Safeguard
-Mach Punch
-Aerial Ace
-25/25/25/25/25/25
-0/0/0/0/0/0
-
 
 222
 Team Galactic Grunt
@@ -3387,6 +3355,38 @@ Aerial Ace
 25/25/25/25/25/25
 0/0/0/0/0/0
 Paired with 221
+
+222
+Team Galactic Grunt
+Level Cap:
+Format: Single Battle
+
+Croagunk
+15
+Bashful
+Anticipation
+
+None
+Fake Out
+Mud-Slap
+Poison Sting
+Torment
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Ledyba
+15
+Serious
+Iron Fist
+
+None
+Reflect
+Safeguard
+Mach Punch
+Aerial Ace
+25/25/25/25/25/25
+0/0/0/0/0/0
+
 
 224
 Team Galactic Grunt
@@ -11428,7 +11428,7 @@ Fake Out
 Paired with Support
 
 878
-None Mr. Backlot
+Mr. Backlot
 Level Cap:
 Format: Multi Battle Enemy
 
@@ -11594,9 +11594,9 @@ Technician
 
 None
 Psybeam
-Recycle
 Light Screen
 Reflect
+Recycle
 25/25/25/25/25/25
 0/0/0/0/0/0
 
@@ -18549,8 +18549,8 @@ Bashful
 Shell Armor
 
 None
-Water Gun
 Clamp
+Bide
 Water Pulse
 Muddy Water
 25/25/25/25/25/25
@@ -26283,51 +26283,6 @@ Last Resort
 735
 Ace Trainer Aran
 Level Cap:
-Format: Single Battle
-
-Heracross
-54
-Jolly
-Guts
-
-None
-Megahorn
-Close Combat
-Rock Slide
-Protect
-31/31/31/31/31/31
-0/252/0/0/0/252
-
-Typhlosion
-54
-Timid
-Flash Fire
-
-None
-Lava Plume
-Earth Power
-Extrasensory
-Protect
-31/31/31/31/31/31
-0/0/0/252/0/252
-
-Tyranitar
-54
-Adamant
-Sand Stream
-
-None
-Rock Slide
-Crunch
-Fire Blast
-Lovely Kiss
-31/31/31/31/31/31
-132/252/0/0/0/124
-
-
-735
-Ace Trainer Aran
-Level Cap:
 Format: Double Battle
 
 Heracross
@@ -26369,6 +26324,51 @@ Lovely Kiss
 31/31/31/31/31/31
 132/252/0/0/0/124
 Paired with 736
+
+735
+Ace Trainer Aran
+Level Cap:
+Format: Single Battle
+
+Heracross
+54
+Jolly
+Guts
+
+None
+Megahorn
+Close Combat
+Rock Slide
+Protect
+31/31/31/31/31/31
+0/252/0/0/0/252
+
+Typhlosion
+54
+Timid
+Flash Fire
+
+None
+Lava Plume
+Earth Power
+Extrasensory
+Protect
+31/31/31/31/31/31
+0/0/0/252/0/252
+
+Tyranitar
+54
+Adamant
+Sand Stream
+
+None
+Rock Slide
+Crunch
+Fire Blast
+Lovely Kiss
+31/31/31/31/31/31
+132/252/0/0/0/124
+
 
 736
 Ace Trainer Nephenee
@@ -28324,6 +28324,51 @@ Guillotine
 394
 Team Galactic Grunt
 Level Cap:
+Format: Double Battle
+
+Toxicroak
+56
+Bashful
+Anticipation
+
+None
+Sludge Bomb
+Flatter
+Belch
+Gunk Shot
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Venomoth
+56
+Docile
+Shield Dust
+
+None
+Baton Pass
+Psychic
+Morning Sun
+Bug Buzz
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Golbat
+56
+Hardy
+Inner Focus
+
+None
+Zen Headbutt
+Nasty Plot
+Venoshock
+Brave Bird
+25/25/25/25/25/25
+0/0/0/0/0/0
+Paired with 400
+
+394
+Team Galactic Grunt
+Level Cap:
 Format: Single Battle
 
 Toxicroak
@@ -28366,50 +28411,50 @@ Brave Bird
 0/0/0/0/0/0
 
 
-394
+400
 Team Galactic Grunt
 Level Cap:
-Format: Double Battle
+Format: Single Battle
 
-Toxicroak
-56
-Bashful
-Anticipation
-
-None
-Sludge Bomb
-Flatter
-Belch
-Gunk Shot
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Venomoth
-56
-Docile
-Shield Dust
-
-None
-Baton Pass
-Psychic
-Morning Sun
-Bug Buzz
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Golbat
+Persian
 56
 Hardy
-Inner Focus
+Limber
 
 None
-Zen Headbutt
 Nasty Plot
-Venoshock
-Brave Bird
+Play Rough
+Feint
+Double-Edge
 25/25/25/25/25/25
 0/0/0/0/0/0
-Paired with 400
+
+Beautifly
+56
+Hardy
+Swarm
+
+None
+Protect
+Quiver Dance
+Whirlwind
+Hurricane
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Hypno
+56
+Quirky
+Insomnia
+
+None
+Nasty Plot
+Guard Swap
+Future Sight
+Zap Cannon
+25/25/25/25/25/25
+0/0/0/0/0/0
+
 
 400
 Team Galactic Grunt
@@ -28455,51 +28500,6 @@ Zap Cannon
 25/25/25/25/25/25
 0/0/0/0/0/0
 Paired with 394
-
-400
-Team Galactic Grunt
-Level Cap:
-Format: Single Battle
-
-Persian
-56
-Hardy
-Limber
-
-None
-Nasty Plot
-Play Rough
-Feint
-Double-Edge
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Beautifly
-56
-Hardy
-Swarm
-
-None
-Protect
-Quiver Dance
-Whirlwind
-Hurricane
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Hypno
-56
-Quirky
-Insomnia
-
-None
-Nasty Plot
-Guard Swap
-Future Sight
-Zap Cannon
-25/25/25/25/25/25
-0/0/0/0/0/0
-
 
 884
 Commander Mars

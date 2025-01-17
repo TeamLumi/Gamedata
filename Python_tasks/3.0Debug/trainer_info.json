@@ -2204,8 +2204,8 @@
     "name": "Aran",
     "type": "Ace Trainer",
     "method": "Scripted",
-    "format": "Single Battle",
-    "link": ""
+    "format": "Double Battle",
+    "link": "736"
   },
   {
     "areaName": "lmpt-68",
@@ -2216,8 +2216,8 @@
     "name": "Aran",
     "type": "Ace Trainer",
     "method": "Scripted",
-    "format": "Double Battle",
-    "link": "736"
+    "format": "Single Battle",
+    "link": ""
   },
   {
     "areaName": "lmpt-68",
@@ -3860,8 +3860,8 @@
     "name": "Grunt",
     "type": "Team Galactic",
     "method": "Scripted",
-    "format": "Single Battle",
-    "link": ""
+    "format": "Double Battle",
+    "link": "400"
   },
   {
     "areaName": "lmpt-56",
@@ -3872,8 +3872,20 @@
     "name": "Grunt",
     "type": "Team Galactic",
     "method": "Scripted",
-    "format": "Double Battle",
-    "link": "400"
+    "format": "Single Battle",
+    "link": ""
+  },
+  {
+    "areaName": "lmpt-56",
+    "zoneName": "Spear Pillar",
+    "zoneId": 216,
+    "trainerId": 400,
+    "rematch": 0,
+    "name": "Grunt",
+    "type": "Team Galactic",
+    "method": "Scripted",
+    "format": "Single Battle",
+    "link": ""
   },
   {
     "areaName": "lmpt-56",
@@ -3886,18 +3898,6 @@
     "method": "Scripted",
     "format": "Double Battle",
     "link": "394"
-  },
-  {
-    "areaName": "lmpt-56",
-    "zoneName": "Spear Pillar",
-    "zoneId": 216,
-    "trainerId": 400,
-    "rematch": 0,
-    "name": "Grunt",
-    "type": "Team Galactic",
-    "method": "Scripted",
-    "format": "Single Battle",
-    "link": ""
   },
   {
     "areaName": "lmpt-56",
@@ -4352,8 +4352,8 @@
     "name": "Grunt",
     "type": "Team Galactic",
     "method": "Scripted",
-    "format": "Double Battle",
-    "link": "222"
+    "format": "Single Battle",
+    "link": ""
   },
   {
     "areaName": "lmpt-15",
@@ -4364,20 +4364,8 @@
     "name": "Grunt",
     "type": "Team Galactic",
     "method": "Scripted",
-    "format": "Single Battle",
-    "link": ""
-  },
-  {
-    "areaName": "lmpt-15",
-    "zoneName": "Floaroma Meadow",
-    "zoneId": 253,
-    "trainerId": 222,
-    "rematch": 0,
-    "name": "Grunt",
-    "type": "Team Galactic",
-    "method": "Scripted",
-    "format": "Single Battle",
-    "link": ""
+    "format": "Double Battle",
+    "link": "222"
   },
   {
     "areaName": "lmpt-15",
@@ -4390,6 +4378,18 @@
     "method": "Scripted",
     "format": "Double Battle",
     "link": "221"
+  },
+  {
+    "areaName": "lmpt-15",
+    "zoneName": "Floaroma Meadow",
+    "zoneId": 253,
+    "trainerId": 222,
+    "rematch": 0,
+    "name": "Grunt",
+    "type": "Team Galactic",
+    "method": "Scripted",
+    "format": "Single Battle",
+    "link": ""
   },
   {
     "areaName": "lmpt-9",
@@ -7529,8 +7529,8 @@
     "zoneId": 380,
     "trainerId": 878,
     "rematch": 0,
-    "name": "Mr. Backlot",
-    "type": null,
+    "name": "Backlot",
+    "type": "Mr.",
     "method": "Scripted",
     "format": "Multi Battle Enemy",
     "link": "877"

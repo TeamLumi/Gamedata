@@ -69,44 +69,6 @@ Thunder Shock
 0/0/0/0/0/0
 
 
-264
-School Kid Harrison
-Level Cap:
-Format: Single Battle
-
-Abra
-6
-Hasty
-Synchronize
-
-None
-Charge Beam
-———
-———
-———
-0/0/0/0/0/0
-0/0/0/0/0/0
-
-
-267
-School Kid Christine
-Level Cap:
-Format: Single Battle
-
-Abra
-6
-Timid
-Synchronize
-
-None
-Charge Beam
-———
-———
-———
-0/0/0/0/0/0
-0/0/0/0/0/0
-
-
 317
 Team Galactic Grunt
 Level Cap:
@@ -355,70 +317,6 @@ Electro Ball
 0/0/0/0/0/0
 
 
-350
-Poké Kid Ariel
-Level Cap:
-Format: Single Battle
-
-Pikachu
-15
-Jolly
-Static
-
-None
-Nuzzle
-Charm
-Thunder Shock
-Quick Attack
-0/0/0/0/0/0
-0/0/0/0/0/0
-
-Pikachu
-15
-Timid
-Static
-
-None
-Nasty Plot
-Thunder Shock
-Double Team
-Electro Ball
-0/0/0/0/0/0
-0/0/0/0/0/0
-
-
-332
-Guitarist Arturo
-Level Cap:
-Format: Single Battle
-
-Zubat
-16
-Sassy
-Inner Focus
-
-None
-Absorb
-Supersonic
-Mean Look
-Poison Fang
-0/0/0/0/0/0
-0/0/0/0/0/0
-
-Zubat
-16
-Sassy
-Inner Focus
-
-None
-Absorb
-Supersonic
-Mean Look
-Poison Fang
-0/0/0/0/0/0
-0/0/0/0/0/0
-
-
 332
 Guitarist Arturo
 Level Cap:
@@ -637,6 +535,95 @@ Power Swap
 Pound
 Encore
 Confusion
+0/0/0/0/0/0
+0/0/0/0/0/0
+
+
+46
+Poké Kid Danielle
+Level Cap:
+Format: Single Battle
+
+Pikachu
+19
+Hasty
+Static
+
+None
+Sweet Kiss
+Charm
+Quick Attack
+Electro Ball
+0/0/0/0/0/0
+0/0/0/0/0/0
+
+
+265
+School Kid Mackenzie
+Level Cap:
+Format: Single Battle
+
+Drifloon
+28
+Calm
+Aftermath
+
+None
+Gust
+Stockpile
+Swallow
+Spit Up
+0/0/0/0/0/0
+0/0/0/0/0/0
+
+Drifloon
+28
+Timid
+Flare Boost
+
+None
+Minimize
+Focus Energy
+Payback
+Shadow Ball
+0/0/0/0/0/0
+0/0/0/0/0/0
+
+
+262
+School Kid Chance
+Level Cap:
+Format: Single Battle
+
+Haunter
+30
+Modest
+Levitate
+
+None
+Confuse Ray
+Sucker Punch
+Shadow Ball
+Dark Pulse
+0/0/0/0/0/0
+0/0/0/0/0/0
+
+
+225
+Guitarist Tony
+Level Cap:
+Format: Single Battle
+
+Luxio
+31
+Jolly
+Intimidate
+
+None
+Leer
+Bite
+Spark
+Roar
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -890,70 +877,6 @@ Withdraw
 0/0/0/0/0/0
 
 
-177
-Pokémon Trainer Cedric
-Level Cap:
-Format: Single Battle
-
-Starly
-7
-Jolly
-Keen Eye
-
-None
-Tackle
-Quick Attack
-Growl
-———
-5/5/5/5/5/5
-0/0/0/0/0/0
-
-Chimchar
-9
-Jolly
-Blaze
-
-None
-Scratch
-Leer
-———
-———
-11/11/11/11/11/11
-0/0/0/0/0/0
-
-
-178
-Pokémon Trainer Cedric
-Level Cap:
-Format: Single Battle
-
-Starly
-7
-Jolly
-Keen Eye
-
-None
-Tackle
-Quick Attack
-Growl
-———
-5/5/5/5/5/5
-0/0/0/0/0/0
-
-Piplup
-9
-Timid
-Torrent
-
-None
-Pound
-Growl
-———
-———
-11/11/11/11/11/11
-0/0/0/0/0/0
-
-
 253
 Picnicker Diana
 Level Cap:
@@ -1197,51 +1120,6 @@ Leer
 0/0/0/0/0/0
 
 
-310
-Commander Mars
-Level Cap:
-Format: Single Battle
-
-Golbat
-37
-Jolly
-Inner Focus
-
-None
-Astonish
-Poison Fang
-Bite
-U-turn
-15/0/15/0/15/0
-68/0/68/0/68/0
-
-Bronzor
-37
-Sassy
-Levitate
-
-None
-Confuse Ray
-Payback
-Gyro Ball
-Iron Defense
-15/0/15/0/15/0
-68/0/68/0/68/0
-
-Purugly
-39
-Jolly
-Thick Fat
-
-Sitrus Berry
-Growl
-Aerial Ace
-Slash
-U-turn
-15/0/15/0/15/0
-68/0/68/0/68/0
-
-
 8
 Bug Catcher Brandon
 Level Cap:
@@ -1344,20 +1222,33 @@ Charm
 0/0/0/0/0/0
 
 
-669
+221
 Team Galactic Grunt
 Level Cap:
 Format: Single Battle
 
-Glameow
-11
-Bashful
-Limber
+Wurmple
+9
+Serious
+Shield Dust
 
 None
-Fake Out
-Scratch
-Growl
+Tackle
+String Shot
+Poison Sting
+———
+0/0/0/0/0/0
+0/0/0/0/0/0
+
+Silcoon
+9
+Bashful
+Shed Skin
+
+None
+Harden
+———
+———
 ———
 0/0/0/0/0/0
 0/0/0/0/0/0
@@ -1391,25 +1282,6 @@ Harden
 ———
 ———
 ———
-0/0/0/0/0/0
-0/0/0/0/0/0
-
-
-222
-Team Galactic Grunt
-Level Cap:
-Format: Single Battle
-
-Zubat
-11
-Quirky
-Inner Focus
-
-None
-Absorb
-Supersonic
-Astonish
-Mean Look
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -2706,116 +2578,65 @@ Dual Chop
 0/0/0/0/0/0
 
 
-183
-Aroma Lady Jenna
+3
+Lass Natalie
 Level Cap:
 Format: Single Battle
 
-Budew
-14
-Bold
-Poison Point
-
-None
-Absorb
-Stun Spore
-Rest
-Sleep Talk
-0/0/0/0/0/0
-0/0/0/0/0/0
-
-Budew
-13
-Bold
-Poison Point
-
-None
-Absorb
-Stun Spore
-Rest
-Sleep Talk
-0/0/0/0/0/0
-0/0/0/0/0/0
-
-Budew
-15
-Bold
-Poison Point
-
-None
-Absorb
-Stun Spore
-Rest
-Sleep Talk
-0/0/0/0/0/0
-0/0/0/0/0/0
-
-
-248
-Lass Caroline
-Level Cap:
-Format: Single Battle
-
-Cherubi
-15
-Impish
-Chlorophyll
-
-None
-Sunny Day
-Morning Sun
-Growth
-Leafage
-0/0/0/0/0/0
-0/0/0/0/0/0
-
-Roselia
-15
-Timid
-Leaf Guard
-
-None
-Stun Spore
-Mega Drain
-Leech Seed
-———
-0/0/0/0/0/0
-0/0/0/0/0/0
-
-
-184
-Aroma Lady Angela
-Level Cap:
-Format: Single Battle
-
-Turtwig
-17
-Adamant
-Overgrow
+Bidoof
+3
+Jolly
+Unaware
 
 None
 Tackle
-Iron Tail
-Bullet Seed
+Growl
+———
+———
+0/0/0/0/0/0
+0/0/0/0/0/0
+
+Bidoof
+3
+Jolly
+Unaware
+
+None
+Tackle
+Growl
+———
 ———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
 
-269
-Beauty Lindsay
+9
+Aroma Lady Teighler
 Level Cap:
 Format: Single Battle
 
-Roselia
-17
+Budew
+7
 Timid
 Poison Point
 
 None
-Toxic
-Leech Seed
-Mega Drain
+Absorb
+Growth
+Stun Spore
+Worry Seed
+0/0/0/0/0/0
+0/0/0/0/0/0
+
+Cherubi
+7
+Timid
+Chlorophyll
+
+None
+Morning Sun
+Tackle
+Leafage
 ———
 0/0/0/0/0/0
 0/0/0/0/0/0
@@ -2866,49 +2687,23 @@ Stun Spore
 0/36/0/36/0/36
 
 
-312
-Commander Jupiter
+268
+Beauty Cyndy
 Level Cap:
 Format: Single Battle
 
-Bronzor
-41
-Relaxed
-Levitate
+Glameow
+23
+Jolly
+Own Tempo
 
 None
-Confuse Ray
-Payback
-Extrasensory
-Light Screen
-15/0/15/0/15/0
-68/0/68/0/68/0
-
-Golbat
-41
-Modest
-Inner Focus
-
-None
-Air Cutter
-Haze
-Giga Drain
-Sludge Bomb
-15/0/15/0/15/0
-68/0/68/0/68/0
-
-Skuntank
-46
-Modest
-Aftermath
-
-Sitrus Berry
-Flamethrower
-Poison Gas
-Belch
-Snarl
-15/0/15/0/15/0
-68/0/68/0/68/0
+Scratch
+Growl
+Aerial Ace
+Fury Swipes
+0/0/0/0/0/0
+0/0/0/0/0/0
 
 
 315
@@ -4023,178 +3818,36 @@ Crunch
 0/0/0/0/0/0
 
 
-351
+176
 Pokémon Trainer Cedric
 Level Cap:
 Format: Single Battle
 
 Starly
-19
+7
 Jolly
 Keen Eye
 
 None
-Quick Attack
-Double Team
-Endeavor
-Pluck
-5/5/5/5/5/5
-12/28/4/0/4/12
-
-Buizel
-20
-Jolly
-Swift Swim
-
-None
-Tail Whip
-Quick Attack
-Water Gun
-Bite
-6/6/6/6/6/6
-0/28/4/0/4/12
-
-Ponyta
-20
-Jolly
-Flash Fire
-
-None
 Tackle
-Tail Whip
-Flame Charge
-Agility
-7/7/7/7/7/7
-0/28/4/0/4/12
+Quick Attack
+Growl
+———
+5/5/5/5/5/5
+0/0/0/0/0/0
 
-Grotle
-21
+Turtwig
+9
 Careful
 Overgrow
 
 None
-Absorb
-Razor Leaf
-Curse
-Stealth Rock
-11/11/11/11/11/11
-36/4/12/4/36/0
-
-
-352
-Pokémon Trainer Cedric
-Level Cap:
-Format: Single Battle
-
-Starly
-19
-Jolly
-Keen Eye
-
-None
-Quick Attack
-Double Team
-Endeavor
-Pluck
-5/5/5/5/5/5
-12/28/4/0/4/12
-
-Buizel
-20
-Jolly
-Swift Swim
-
-None
-Tail Whip
-Quick Attack
-Water Gun
-Bite
-6/6/6/6/6/6
-0/28/4/0/4/12
-
-Roselia
-20
-Timid
-Poison Point
-
-None
-Poison Sting
-Mega Drain
-Leech Seed
-Grass Knot
-7/7/7/7/7/7
-0/0/4/28/4/12
-
-Monferno
-21
-Jolly
-Blaze
-
-None
-Mach Punch
-Leer
-Flame Wheel
-Stealth Rock
-11/11/11/11/11/11
-12/36/4/0/4/36
-
-
-353
-Pokémon Trainer Cedric
-Level Cap:
-Format: Single Battle
-
-Starly
-19
-Jolly
-Keen Eye
-
-None
-Quick Attack
-Double Team
-Endeavor
-Pluck
-5/5/5/5/5/5
-12/28/4/0/4/12
-
-Roselia
-20
-Timid
-Natural Cure
-
-None
-Growth
-Stun Spore
-Leech Seed
-Magical Leaf
-6/6/6/6/6/6
-0/0/4/28/4/12
-
-Ponyta
-20
-Jolly
-Flash Fire
-
-None
 Tackle
-Growl
-Flame Charge
-Agility
-7/7/7/7/7/7
-0/28/4/0/4/12
-
-Prinplup
-21
-Timid
-Torrent
-
-None
-Metal Claw
-Bubble Beam
-Stealth Rock
-Grass Knot
+Withdraw
+———
+———
 11/11/11/11/11/11
-12/0/4/36/4/36
+0/0/0/0/0/0
 
 
 190
@@ -4496,90 +4149,6 @@ Magical Leaf
 Dazzling Gleam
 19/0/5/19/5/19
 44/0/4/92/4/68
-
-
-680
-Gym Leader Fantina
-Level Cap:
-Format: Single Battle
-
-Drifblim
-68
-Modest
-Flare Boost
-
-Flame Orb
-Shadow Ball
-Thunderbolt
-Psychic
-Strength Sap
-31/31/31/31/31/31
-6/0/0/252/0/252
-
-Banette
-65
-Adamant
-Cursed Body
-
-Iron Ball
-Shadow Sneak
-Sucker Punch
-Payback
-Trick
-31/31/31/31/31/31
-244/252/0/0/0/12
-
-Dusknoir
-70
-Adamant
-Pressure
-
-Sitrus Berry
-Shadow Sneak
-Earthquake
-Will-O-Wisp
-Confuse Ray
-31/31/31/31/31/31
-248/252/4/0/4/0
-
-Mismagius
-70
-Timid
-Levitate
-
-Expert Belt
-Shadow Ball
-Energy Ball
-Mystical Fire
-Dazzling Gleam
-31/31/31/31/31/31
-6/0/0/252/0/252
-
-Froslass
-72
-Timid
-Cursed Body
-
-Focus Sash
-Hex
-Frost Breath
-Will-O-Wisp
-Destiny Bond
-31/31/31/31/31/31
-6/0/0/252/0/252
-
-Gengar
-72
-Timid
-Cursed Body
-
-Life Orb
-Hex
-Sludge Bomb
-Focus Blast
-Toxic
-31/31/31/31/31/31
-6/0/0/252/0/252
 
 
 73
@@ -6316,90 +5885,6 @@ Bulk Up
 0/68/68/0/0/68
 
 
-679
-Gym Leader Maylene
-Level Cap:
-Format: Single Battle
-
-Hitmontop
-64
-Adamant
-Intimidate
-
-Expert Belt
-Close Combat
-Stone Edge
-Sucker Punch
-Brick Break
-31/31/31/31/31/31
-252/252/0/0/0/6
-
-Breloom
-66
-Adamant
-Technician
-
-Life Orb
-Bullet Seed
-Mach Punch
-Rock Tomb
-Force Palm
-31/31/31/31/31/31
-6/252/0/0/0/252
-
-Heracross
-68
-Jolly
-Guts
-
-Flame Orb
-Megahorn
-Close Combat
-Facade
-Stone Edge
-31/31/31/31/31/31
-6/252/0/0/0/252
-
-Infernape
-70
-Lonely
-Blaze
-
-White Herb
-Flare Blitz
-Close Combat
-Acrobatics
-Overheat
-31/31/31/31/31/31
-0/252/0/252/0/6
-
-Medicham
-72
-Adamant
-Pure Power
-
-Choice Band
-High Jump Kick
-Zen Headbutt
-Fire Punch
-Thunder Punch
-31/31/31/31/31/31
-6/252/0/0/0/252
-
-Lucario
-74
-Modest
-Justified
-
-Focus Sash
-Aura Sphere
-Flash Cannon
-Water Pulse
-Vacuum Wave
-31/31/31/31/31/31
-6/0/0/252/0/252
-
-
 674
 Team Galactic Grunt
 Level Cap:
@@ -7074,21 +6559,34 @@ Iron Defense
 0/0/0/0/0/0
 
 
-673
+221
 Team Galactic Grunt
 Level Cap:
 Format: Single Battle
 
-Glameow
-25
-Quirky
-Limber
+Wurmple
+9
+Serious
+Shield Dust
 
 None
-Hypnosis
-Aerial Ace
-Fury Swipes
-Charm
+Tackle
+String Shot
+Poison Sting
+———
+0/0/0/0/0/0
+0/0/0/0/0/0
+
+Silcoon
+9
+Bashful
+Shed Skin
+
+None
+Harden
+———
+———
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -7478,178 +6976,36 @@ Will-O-Wisp
 6/252/0/0/0/252
 
 
-354
+176
 Pokémon Trainer Cedric
 Level Cap:
 Format: Single Battle
 
 Starly
-26
+7
 Jolly
 Keen Eye
 
-Quick Claw
-Quick Attack
-Double Team
-Endeavor
-Pluck
-5/5/5/5/5/5
-28/52/12/0/12/52
-
-Buizel
-26
-Jolly
-Swift Swim
-
-Sea Incense
-Tail Whip
-Bite
-Swift
-Aqua Jet
-6/6/6/6/6/6
-0/44/12/0/12/36
-
-Ponyta
-27
-Jolly
-Flash Fire
-
-Shell Bell
+None
 Tackle
-Tail Whip
-Agility
-Flame Wheel
-7/7/7/7/7/7
-4/44/12/0/12/12
+Quick Attack
+Growl
+———
+5/5/5/5/5/5
+0/0/0/0/0/0
 
-Grotle
-31
+Turtwig
+9
 Careful
 Overgrow
 
-Miracle Seed
-Razor Leaf
-Bite
-Mega Drain
-Stealth Rock
-11/11/11/11/11/11
-52/4/12/4/52/0
-
-
-355
-Pokémon Trainer Cedric
-Level Cap:
-Format: Single Battle
-
-Starly
-26
-Jolly
-Keen Eye
-
-Quick Claw
-Quick Attack
-Double Team
-Endeavor
-Pluck
-5/5/5/5/5/5
-28/52/12/0/12/52
-
-Buizel
-26
-Jolly
-Swift Swim
-
-Sea Incense
-Tail Whip
-Bite
-Swift
-Aqua Jet
-6/6/6/6/6/6
-0/44/12/0/12/36
-
-Roselia
-27
-Timid
-Poison Point
-
-Miracle Seed
-Poison Sting
-Mega Drain
-Sweet Scent
-Grass Knot
-7/7/7/7/7/7
-4/0/12/44/12/12
-
-Monferno
-31
-Jolly
-Blaze
-
-Shell Bell
-Mach Punch
-Leer
-Power-Up Punch
-Flame Wheel
-11/11/11/11/11/11
-36/52/12/0/12/52
-
-
-356
-Pokémon Trainer Cedric
-Level Cap:
-Format: Single Battle
-
-Starly
-26
-Jolly
-Keen Eye
-
-Quick Claw
-Quick Attack
-Double Team
-Endeavor
-Pluck
-5/5/5/5/5/5
-28/52/12/0/12/52
-
-Roselia
-26
-Timid
-Natural Cure
-
-Miracle Seed
-Growth
-Stun Spore
-Leech Seed
-Magical Leaf
-6/6/6/6/6/6
-0/0/12/44/12/36
-
-Ponyta
-27
-Jolly
-Flash Fire
-
-Shell Bell
+None
 Tackle
-Growl
-Agility
-Flame Wheel
-7/7/7/7/7/7
-4/44/12/0/12/12
-
-Prinplup
-31
-Timid
-Torrent
-
-Sea Incense
-Metal Claw
-Charm
-Bubble Beam
-Grass Knot
+Withdraw
+———
+———
 11/11/11/11/11/11
-36/0/12/52/12/52
+0/0/0/0/0/0
 
 
 78
@@ -8273,51 +7629,6 @@ Aqua Jet
 0/84/0/20/0/84
 
 
-314
-Commander Saturn
-Level Cap:
-Format: Single Battle
-
-Kadabra
-38
-Timid
-Inner Focus
-
-Damp Rock
-Kinesis
-Reflect
-Psychic
-Rain Dance
-15/0/15/0/15/0
-68/0/68/0/68/0
-
-Bronzor
-38
-Relaxed
-Levitate
-
-None
-Confuse Ray
-Payback
-Gyro Ball
-Extrasensory
-15/0/15/0/15/0
-68/0/68/0/68/0
-
-Toxicroak
-40
-Jolly
-Dry Skin
-
-None
-Mud-Slap
-Toxic
-Thief
-Brick Break
-15/0/15/0/15/0
-68/0/68/0/68/0
-
-
 57
 Ninja Boy Joel
 Level Cap:
@@ -8657,34 +7968,34 @@ Dragon Claw
 0/0/0/0/0/0
 
 
-319
+221
 Team Galactic Grunt
 Level Cap:
 Format: Single Battle
 
-Beautifly
-25
-Hardy
-Swarm
+Wurmple
+9
+Serious
+Shield Dust
 
 None
-Gust
-Stun Spore
-Air Cutter
-Leech Life
+Tackle
+String Shot
+Poison Sting
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
-Croagunk
-27
-Docile
-Anticipation
+Silcoon
+9
+Bashful
+Shed Skin
 
 None
-Mud-Slap
-Taunt
-Revenge
-Sucker Punch
+Harden
+———
+———
+———
 0/0/0/0/0/0
 0/0/0/0/0/0
 
@@ -9445,217 +8756,36 @@ Flame Wheel
 0/0/0/0/0/0
 
 
-357
+176
 Pokémon Trainer Cedric
 Level Cap:
 Format: Single Battle
 
-Staravia
-32
+Starly
+7
 Jolly
-Intimidate
-
-Quick Claw
-Quick Attack
-Double Team
-Endeavor
-Pluck
-5/5/5/5/5/5
-40/72/16/0/16/56
-
-Buizel
-33
-Jolly
-Swift Swim
-
-Sea Incense
-Tail Whip
-Bite
-Swift
-Brine
-6/6/6/6/6/6
-16/48/24/0/24/56
-
-Heracross
-32
-Jolly
-Swarm
+Keen Eye
 
 None
-Leer
-Aerial Ace
-Brick Break
-Thief
-9/9/9/9/9/9
-16/64/24/0/24/32
+Tackle
+Quick Attack
+Growl
+———
+5/5/5/5/5/5
+0/0/0/0/0/0
 
-Ponyta
-34
-Jolly
-Flash Fire
-
-Shell Bell
-Tail Whip
-Agility
-Flame Wheel
-Stomp
-7/7/7/7/7/7
-40/64/16/0/16/64
-
-Grotle
-37
+Turtwig
+9
 Careful
 Overgrow
 
-Big Root
-Razor Leaf
-Bite
-Leech Seed
-Stealth Rock
-11/11/11/11/11/11
-80/24/48/24/80/0
-
-
-358
-Pokémon Trainer Cedric
-Level Cap:
-Format: Single Battle
-
-Staravia
-32
-Jolly
-Intimidate
-
-Quick Claw
-Quick Attack
-Double Team
-Endeavor
-Pluck
-5/5/5/5/5/5
-40/72/16/0/16/56
-
-Buizel
-33
-Jolly
-Swift Swim
-
-Sea Incense
-Tail Whip
-Bite
-Swift
-Brine
-6/6/6/6/6/6
-16/48/24/0/24/56
-
-Heracross
-32
-Jolly
-Swarm
-
 None
-Leer
-Aerial Ace
-Brick Break
-Thief
-9/9/9/9/9/9
-16/64/24/0/24/32
-
-Roselia
-34
-Timid
-Poison Point
-
-Big Root
-Poison Sting
-Sweet Scent
-Giga Drain
-Grass Knot
-7/7/7/7/7/7
-40/0/16/64/16/64
-
-Monferno
-37
-Jolly
-Blaze
-
-Shell Bell
-Mach Punch
-Power-Up Punch
-Flame Wheel
-Shadow Claw
+Tackle
+Withdraw
+———
+———
 11/11/11/11/11/11
-48/80/24/0/24/80
-
-
-359
-Pokémon Trainer Cedric
-Level Cap:
-Format: Single Battle
-
-Staravia
-32
-Jolly
-Intimidate
-
-Quick Claw
-Quick Attack
-Double Team
-Endeavor
-Pluck
-5/5/5/5/5/5
-40/72/16/0/16/56
-
-Roselia
-33
-Timid
-Natural Cure
-
-Big Root
-Growth
-Stun Spore
-Leech Seed
-Giga Drain
-6/6/6/6/6/6
-16/0/24/48/24/56
-
-Heracross
-32
-Jolly
-Swarm
-
-None
-Leer
-Aerial Ace
-Brick Break
-Thief
-9/9/9/9/9/9
-16/64/24/0/24/32
-
-Ponyta
-34
-Jolly
-Flash Fire
-
-Shell Bell
-Growl
-Agility
-Flame Wheel
-Stomp
-7/7/7/7/7/7
-40/64/16/0/16/64
-
-Prinplup
-37
-Timid
-Torrent
-
-Sea Incense
-Metal Claw
-Charm
-Grass Knot
-Brine
-11/11/11/11/11/11
-48/0/24/80/24/80
+0/0/0/0/0/0
 
 
 288
@@ -9721,6 +8851,38 @@ Leech Seed
 0/0/0/0/0/0
 0/0/0/0/0/0
 
+
+221
+Team Galactic Grunt
+Level Cap:
+Format: Double Battle
+
+Wurmple
+9
+Serious
+Shield Dust
+
+None
+Tackle
+String Shot
+Poison Sting
+———
+0/0/0/0/0/0
+0/0/0/0/0/0
+
+Silcoon
+9
+Bashful
+Shed Skin
+
+None
+Harden
+———
+———
+———
+0/0/0/0/0/0
+0/0/0/0/0/0
+Paired with 221
 
 341
 Hiker Damon
@@ -9920,96 +9082,6 @@ Aqua Jet
 0/0/0/0/0/0
 0/0/0/0/0/0
 
-
-661
-Team Galactic Grunt
-Level Cap:
-Format: Double Battle
-
-Zubat
-31
-Serious
-Inner Focus
-
-None
-Supersonic
-Poison Fang
-Air Cutter
-Bite
-0/0/0/0/0/0
-0/0/0/0/0/0
-
-Zubat
-31
-Bashful
-Inner Focus
-
-None
-Poison Fang
-Quick Guard
-Air Cutter
-Bite
-0/0/0/0/0/0
-0/0/0/0/0/0
-
-Golbat
-34
-Quirky
-Inner Focus
-
-None
-Screech
-Poison Fang
-Air Cutter
-Bite
-0/0/0/0/0/0
-0/0/0/0/0/0
-Paired with 662
-
-662
-Team Galactic Grunt
-Level Cap:
-Format: Double Battle
-
-Glameow
-32
-Hardy
-Limber
-
-None
-Growl
-Aerial Ace
-Fury Swipes
-Retaliate
-0/0/0/0/0/0
-0/0/0/0/0/0
-
-Stunky
-32
-Serious
-Aftermath
-
-None
-Poison Gas
-Bite
-Venoshock
-Toxic
-0/0/0/0/0/0
-0/0/0/0/0/0
-
-Croagunk
-32
-Docile
-Anticipation
-
-None
-Taunt
-Venoshock
-Sucker Punch
-Poison Jab
-0/0/0/0/0/0
-0/0/0/0/0/0
-Paired with 661
 
 298
 Ace Trainer Brenda
@@ -10375,89 +9447,279 @@ Flash Cannon
 0/0/68/100/68/0
 
 
-682
-Gym Leader Byron
+3
+Lass Natalie
 Level Cap:
-Format: Single Battle
+Format: Double Battle
 
-Skarmory
-69
-Impish
-Sturdy
+Bidoof
+3
+Jolly
+Unaware
 
-Leftovers
-Steel Wing
-Stealth Rock
-Iron Defense
-Taunt
-31/31/31/31/31/31
-252/0/252/0/0/6
+None
+Tackle
+Growl
+———
+———
+0/0/0/0/0/0
+0/0/0/0/0/0
 
-Steelix
-69
-Adamant
-Sheer Force
+Bidoof
+3
+Jolly
+Unaware
 
-Life Orb
-Iron Tail
-Earthquake
-Ice Fang
-Crunch
-31/31/31/31/31/31
-76/252/0/0/180/0
+None
+Tackle
+Growl
+———
+———
+0/0/0/0/0/0
+0/0/0/0/0/0
+Paired with 55
 
-Magnezone
-70
-Quiet
-Analytic
+9
+Aroma Lady Teighler
+Level Cap:
+Format: Double Battle
 
-Focus Sash
-Thunderbolt
-Flash Cannon
-Light Screen
-Magnet Rise
-31/31/31/31/31/0
-248/0/0/252/8/0
+Budew
+7
+Timid
+Poison Point
 
-Empoleon
-70
-Modest
-Torrent
+None
+Absorb
+Growth
+Stun Spore
+Worry Seed
+0/0/0/0/0/0
+0/0/0/0/0/0
 
-Expert Belt
-Hydro Pump
-Flash Cannon
-Ice Beam
-Roar
-31/31/31/31/31/31
-244/0/0/252/12/0
+Cherubi
+7
+Timid
+Chlorophyll
 
-Aggron
-71
+None
+Morning Sun
+Tackle
+Leafage
+———
+0/0/0/0/0/0
+0/0/0/0/0/0
+Paired with 196
+
+43
+Pokémon Breeder Jennifer
+Level Cap:
+Format: Double Battle
+
+Mime Jr.
+16
+Timid
+Filter
+
+None
+Pound
+Copycat
+Encore
+Confusion
+0/0/0/0/0/0
+0/0/0/0/0/0
+
+Budew
+15
+Hasty
+Poison Point
+
+None
+Absorb
+Growth
+Stun Spore
+Worry Seed
+0/0/0/0/0/0
+0/0/0/0/0/0
+
+Cleffa
+17
+Hasty
+Cute Charm
+
+None
+Pound
+Sing
+Sweet Kiss
+Disarming Voice
+0/0/0/0/0/0
+0/0/0/0/0/0
+Paired with 82
+
+41
+Artist William
+Level Cap:
+Format: Double Battle
+
+Mime Jr.
+17
+Bold
+Filter
+
+None
+Copycat
+Encore
+Confusion
+Role Play
+0/0/0/0/0/0
+0/0/0/0/0/0
+
+Bonsly
+17
 Jolly
 Rock Head
 
-Choice Scarf
-Head Smash
-———
-———
-———
-31/31/31/31/31/31
-6/252/0/0/0/252
+None
+Fake Tears
+Copycat
+Flail
+Mimic
+0/0/0/0/0/0
+0/0/0/0/0/0
+Paired with 268
 
-Bastiodon
+282
+Cameraman Tevin
+Level Cap:
+Format: Double Battle
+
+Pachirisu
+17
+Sassy
+Pickup
+
+None
+Charm
+Quick Attack
+Spark
+Endure
+0/0/0/0/0/0
+0/0/0/0/0/0
+Paired with 283
+
+283
+Reporter Kinsey
+Level Cap:
+Format: Double Battle
+
+Chatot
+17
+Bold
+Keen Eye
+
+None
+Hyper Voice
+Taunt
+Growl
+Sing
+0/0/0/0/0/0
+0/0/0/0/0/0
+Paired with 282
+
+69
+Rich Boy Jason
+Level Cap:
+Format: Double Battle
+
+Luxio
+19
+Docile
+Intimidate
+
+None
+Leer
+Charge
+Bite
+Spark
+0/0/0/0/0/0
+0/0/0/0/0/0
+Paired with 70
+
+70
+Lady Melissa
+Level Cap:
+Format: Double Battle
+
+Buneary
+19
+Jolly
+Klutz
+
+None
+Pound
+Defense Curl
+Baby-Doll Eyes
+Quick Attack
+0/0/0/0/0/0
+0/0/0/0/0/0
+Paired with 69
+
+71
+Gentleman Jeremy
+Level Cap:
+Format: Double Battle
+
+Chatot
+19
+Timid
+Tangled Feet
+
+None
+Hyper Voice
+Chatter
+Confide
+Growl
+0/0/0/0/0/0
+0/0/0/0/0/0
+Paired with 72
+
 72
-Brave
+Madame Reina
+Level Cap:
+Format: Double Battle
+
+Roselia
+19
+Timid
+Poison Point
+
+None
+Poison Sting
+Mega Drain
+Leech Seed
+Magical Leaf
+0/0/0/0/0/0
+0/0/0/0/0/0
+Paired with 71
+
+404
+Poké Fan Rebekah
+Level Cap:
+Format: Double Battle
+
+Bonsly
+19
+Impish
 Sturdy
 
-Lum Berry
-Heavy Slam
-Metal Burst
-Roar
-Stealth Rock
-31/31/31/31/31/31
-252/0/16/0/240/0
-
+None
+Fake Tears
+Copycat
+Flail
+Rock Throw
+0/0/0/0/0/0
+0/0/0/0/0/0
+Paired with 262
 
 414
 Collector Eugene
@@ -10504,50 +9766,24 @@ Life Dew
 0/0/0/0/0/0
 
 
-414
-Collector Eugene
+82
+Scientist Stefano
 Level Cap:
 Format: Double Battle
 
-Clefairy
-20
+Kadabra
+21
 Sassy
-Magic Guard
+Synchronize
 
 None
-Disarming Voice
-Encore
-Growl
-Minimize
+Kinesis
+Psybeam
+Reflect
+Psycho Cut
 0/0/0/0/0/0
 0/0/0/0/0/0
-
-Clefairy
-20
-Sassy
-Magic Guard
-
-None
-Disarming Voice
-Growl
-Minimize
-Life Dew
-0/0/0/0/0/0
-0/0/0/0/0/0
-
-Clefairy
-20
-Sassy
-Magic Guard
-
-None
-Disarming Voice
-Growl
-Minimize
-Life Dew
-0/0/0/0/0/0
-0/0/0/0/0/0
-Paired with 410
+Paired with 43
 
 412
 Pokémon Breeder Kaylee
@@ -10581,853 +9817,605 @@ Swift
 0/0/0/0/0/0
 
 
-412
-Pokémon Breeder Kaylee
+413
+Cameraman Darryl
+Level Cap:
+Format: Single Battle
+
+Luxio
+21
+Hardy
+Intimidate
+
+None
+Leer
+Charge
+Bite
+Spark
+0/0/0/0/0/0
+0/0/0/0/0/0
+
+Pikachu
+21
+Sassy
+Static
+
+None
+Nuzzle
+Tail Whip
+Growl
+Spark
+0/0/0/0/0/0
+0/0/0/0/0/0
+
+
+415
+Poké Fan Meredith
+Level Cap:
+Format: Single Battle
+
+Marill
+21
+Bashful
+Thick Fat
+
+None
+Tail Whip
+Helping Hand
+Aqua Tail
+Play Rough
+0/0/0/0/0/0
+0/0/0/0/0/0
+
+Aipom
+21
+Bashful
+Pickup
+
+None
+Tail Whip
+Sand Attack
+Tickle
+Fury Swipes
+0/0/0/0/0/0
+0/0/0/0/0/0
+
+
+417
+Gentleman Leonardo
+Level Cap:
+Format: Single Battle
+
+Starly
+21
+Hardy
+Keen Eye
+
+None
+Growl
+Quick Attack
+Wing Attack
+Endeavor
+0/0/0/0/0/0
+0/0/0/0/0/0
+
+Hoothoot
+21
+Sassy
+Insomnia
+
+None
+Reflect
+Psycho Shift
+Air Slash
+Extrasensory
+0/0/0/0/0/0
+0/0/0/0/0/0
+
+
+418
+Madame Rebecca
+Level Cap:
+Format: Single Battle
+
+Lopunny
+22
+Careful
+Cute Charm
+
+None
+Mirror Coat
+Magic Coat
+Baby-Doll Eyes
+Quick Attack
+0/0/0/0/0/0
+0/0/0/0/0/0
+
+Glameow
+20
+Impish
+Limber
+
+None
+Fake Out
+Growl
+Aerial Ace
+Fury Swipes
+0/0/0/0/0/0
+0/0/0/0/0/0
+
+
+419
+Lass Blythe
+Level Cap:
+Format: Single Battle
+
+Bidoof
+21
+Jolly
+Unaware
+
+None
+Growl
+Headbutt
+Taunt
+Yawn
+0/0/0/0/0/0
+0/0/0/0/0/0
+
+Bidoof
+21
+Jolly
+Unaware
+
+None
+Growl
+Headbutt
+Taunt
+Yawn
+0/0/0/0/0/0
+0/0/0/0/0/0
+
+
+421
+Lady Kylie
+Level Cap:
+Format: Single Battle
+
+Bonsly
+21
+Jolly
+Sturdy
+
+None
+Copycat
+Flail
+Rock Throw
+Rock Tomb
+0/0/0/0/0/0
+0/0/0/0/0/0
+
+Pichu
+21
+Jolly
+Static
+
+None
+Thunder Shock
+Tail Whip
+Nuzzle
+Charm
+0/0/0/0/0/0
+0/0/0/0/0/0
+
+
+196
+Collector Douglas
 Level Cap:
 Format: Double Battle
 
-Stunky
-21
-Impish
-Stench
+Roselia
+20
+Calm
+Poison Point
 
 None
-Poison Gas
-Acid Spray
+Mega Drain
+Leech Seed
+Magical Leaf
+Toxic Spikes
+0/0/0/0/0/0
+0/0/0/0/0/0
+
+Roselia
+22
+Calm
+Poison Point
+
+None
+Poison Sting
+Mega Drain
+Leech Seed
+Magical Leaf
+0/0/0/0/0/0
+0/0/0/0/0/0
+
+Roselia
+24
+Calm
+Poison Point
+
+None
+Poison Sting
+Mega Drain
+Leech Seed
+Magical Leaf
+0/0/0/0/0/0
+0/0/0/0/0/0
+Paired with 9
+
+416
+PI Kendrick
+Level Cap:
+Format: Single Battle
+
+Goldeen
+22
+Relaxed
+Swift Swim
+
+None
+Peck
+Tail Whip
+Water Pulse
+Horn Attack
+0/0/0/0/0/0
+0/0/0/0/0/0
+
+Goldeen
+22
+Relaxed
+Swift Swim
+
+None
+Peck
+Tail Whip
+Water Pulse
+Horn Attack
+0/0/0/0/0/0
+0/0/0/0/0/0
+
+
+96
+PI Carlos
+Level Cap:
+Format: Double Battle
+
+Goldeen
+23
+Timid
+Water Veil
+
+None
+Peck
+Tail Whip
+Supersonic
+Water Pulse
+0/0/0/0/0/0
+0/0/0/0/0/0
+
+Goldeen
+23
+Jolly
+Water Veil
+
+None
+Peck
+Supersonic
+Water Pulse
+Horn Attack
+0/0/0/0/0/0
+0/0/0/0/0/0
+
+Goldeen
+23
+Jolly
+Water Veil
+
+None
+Peck
+Water Pulse
+Horn Attack
+Agility
+0/0/0/0/0/0
+0/0/0/0/0/0
+Paired with 268
+
+268
+Beauty Cyndy
+Level Cap:
+Format: Double Battle
+
+Glameow
+23
+Jolly
+Own Tempo
+
+None
+Scratch
+Growl
+Aerial Ace
 Fury Swipes
-Bite
 0/0/0/0/0/0
 0/0/0/0/0/0
+Paired with 41
+
+268
+Beauty Cyndy
+Level Cap:
+Format: Double Battle
+
+Glameow
+23
+Jolly
+Own Tempo
+
+None
+Scratch
+Growl
+Aerial Ace
+Fury Swipes
+0/0/0/0/0/0
+0/0/0/0/0/0
+Paired with 96
+
+410
+Aroma Lady Alison
+Level Cap:
+Format: Single Battle
+
+Roselia
+23
+Calm
+Poison Point
+
+None
+Poison Sting
+Mega Drain
+Leech Seed
+Magical Leaf
+0/0/0/0/0/0
+0/0/0/0/0/0
+
+
+411
+Artist Ismael
+Level Cap:
+Format: Single Battle
+
+Mr. Mime
+23
+Sassy
+Soundproof
+
+None
+Wide Guard
+Power Swap
+Encore
+Confusion
+0/0/0/0/0/0
+0/0/0/0/0/0
+
+
+420
+Rich Boy Roman
+Level Cap:
+Format: Single Battle
+
+Sudowoodo
+23
+Naive
+Sturdy
+
+None
+Stone Edge
+Hammer Arm
+Wood Hammer
+Flail
+0/0/0/0/0/0
+0/0/0/0/0/0
+
+
+422
+Reporter Valerie
+Level Cap:
+Format: Single Battle
+
+Murkrow
+23
+Bashful
+Insomnia
+
+None
+Astonish
+Gust
+Wing Attack
+Night Shade
+0/0/0/0/0/0
+0/0/0/0/0/0
+
+
+423
+School Kid Esteban
+Level Cap:
+Format: Single Battle
+
+Wooper
+23
+Naive
+Damp
+
+None
+Tail Whip
+Mud Shot
+Slam
+Yawn
+0/0/0/0/0/0
+0/0/0/0/0/0
+
+
+424
+Scientist Emilio
+Level Cap:
+Format: Single Battle
+
+Kadabra
+23
+Sassy
+Synchronize
+
+None
+Kinesis
+Psybeam
+Reflect
+Ally Switch
+0/0/0/0/0/0
+0/0/0/0/0/0
+
+
+425
+Beauty Gabriella
+Level Cap:
+Format: Single Battle
+
+Finneon
+23
+Bashful
+Swift Swim
+
+None
+Attract
+Rain Dance
+Gust
+Water Pulse
+0/0/0/0/0/0
+0/0/0/0/0/0
+
+
+426
+Beauty Harley
+Level Cap:
+Format: Single Battle
+
+Psyduck
+23
+Calm
+Damp
+
+None
+Tail Whip
+Fury Swipes
+Water Pulse
+Zen Headbutt
+0/0/0/0/0/0
+0/0/0/0/0/0
+
+
+427
+Veteran Emanuel
+Level Cap:
+Format: Single Battle
+
+Machop
+23
+Relaxed
+No Guard
+
+None
+Leer
+Revenge
+Low Sweep
+Knock Off
+0/0/0/0/0/0
+0/0/0/0/0/0
+
+Bronzor
+23
+Hardy
+Levitate
+
+None
+Tackle
+Confuse Ray
+Payback
+Gyro Ball
+0/0/0/0/0/0
+0/0/0/0/0/0
+
+
+55
+Veteran Brian
+Level Cap:
+Format: Double Battle
 
 Buizel
-21
-Impish
+26
+Jolly
 Swift Swim
 
 None
 Growl
-Water Gun
+Tail Whip
 Bite
-Swift
+Aqua Jet
 0/0/0/0/0/0
 0/0/0/0/0/0
-Paired with 424
 
-413
-Cameraman Darryl
-Level Cap:
-Format: Single Battle
-
-Luxio
-21
-Hardy
-Intimidate
-
-None
-Leer
-Charge
-Bite
-Spark
-0/0/0/0/0/0
-0/0/0/0/0/0
-
-Pikachu
-21
-Sassy
-Static
-
-None
-Nuzzle
-Tail Whip
-Growl
-Spark
-0/0/0/0/0/0
-0/0/0/0/0/0
-
-
-413
-Cameraman Darryl
-Level Cap:
-Format: Double Battle
-
-Luxio
-21
-Hardy
-Intimidate
-
-None
-Leer
-Charge
-Bite
-Spark
-0/0/0/0/0/0
-0/0/0/0/0/0
-
-Pikachu
-21
-Sassy
-Static
-
-None
-Nuzzle
-Tail Whip
-Growl
-Spark
-0/0/0/0/0/0
-0/0/0/0/0/0
-Paired with 422
-
-415
-Poké Fan Meredith
-Level Cap:
-Format: Single Battle
-
-Marill
-21
-Bashful
-Thick Fat
-
-None
-Tail Whip
-Helping Hand
-Aqua Tail
-Play Rough
-0/0/0/0/0/0
-0/0/0/0/0/0
-
-Aipom
-21
-Bashful
-Pickup
-
-None
-Tail Whip
-Sand Attack
-Tickle
-Fury Swipes
-0/0/0/0/0/0
-0/0/0/0/0/0
-
-
-415
-Poké Fan Meredith
-Level Cap:
-Format: Double Battle
-
-Marill
-21
-Bashful
-Thick Fat
-
-None
-Tail Whip
-Helping Hand
-Aqua Tail
-Play Rough
-0/0/0/0/0/0
-0/0/0/0/0/0
-
-Aipom
-21
-Bashful
-Pickup
-
-None
-Tail Whip
-Sand Attack
-Tickle
-Fury Swipes
-0/0/0/0/0/0
-0/0/0/0/0/0
-Paired with 423
-
-417
-Gentleman Leonardo
-Level Cap:
-Format: Single Battle
-
-Starly
-21
-Hardy
-Keen Eye
-
-None
-Growl
-Quick Attack
-Wing Attack
-Endeavor
-0/0/0/0/0/0
-0/0/0/0/0/0
-
-Hoothoot
-21
-Sassy
-Insomnia
-
-None
-Reflect
-Psycho Shift
-Air Slash
-Extrasensory
-0/0/0/0/0/0
-0/0/0/0/0/0
-
-
-417
-Gentleman Leonardo
-Level Cap:
-Format: Double Battle
-
-Starly
-21
-Hardy
-Keen Eye
-
-None
-Growl
-Quick Attack
-Wing Attack
-Endeavor
-0/0/0/0/0/0
-0/0/0/0/0/0
-
-Hoothoot
-21
-Sassy
-Insomnia
-
-None
-Reflect
-Psycho Shift
-Air Slash
-Extrasensory
-0/0/0/0/0/0
-0/0/0/0/0/0
-Paired with 418
-
-418
-Madame Rebecca
-Level Cap:
-Format: Single Battle
-
-Lopunny
-22
-Careful
-Cute Charm
-
-None
-Mirror Coat
-Magic Coat
-Baby-Doll Eyes
-Quick Attack
-0/0/0/0/0/0
-0/0/0/0/0/0
-
-Glameow
-20
-Impish
-Limber
-
-None
-Fake Out
-Growl
-Aerial Ace
-Fury Swipes
-0/0/0/0/0/0
-0/0/0/0/0/0
-
-
-418
-Madame Rebecca
-Level Cap:
-Format: Double Battle
-
-Lopunny
-22
-Careful
-Cute Charm
-
-None
-Mirror Coat
-Magic Coat
-Baby-Doll Eyes
-Quick Attack
-0/0/0/0/0/0
-0/0/0/0/0/0
-
-Glameow
-20
-Impish
-Limber
-
-None
-Fake Out
-Growl
-Aerial Ace
-Fury Swipes
-0/0/0/0/0/0
-0/0/0/0/0/0
-Paired with 417
-
-419
-Lass Blythe
-Level Cap:
-Format: Single Battle
-
-Bidoof
-21
-Jolly
-Unaware
-
-None
-Growl
-Headbutt
-Taunt
-Yawn
-0/0/0/0/0/0
-0/0/0/0/0/0
-
-Bidoof
-21
-Jolly
-Unaware
-
-None
-Growl
-Headbutt
-Taunt
-Yawn
-0/0/0/0/0/0
-0/0/0/0/0/0
-
-
-419
-Lass Blythe
-Level Cap:
-Format: Double Battle
-
-Bidoof
-21
-Jolly
-Unaware
-
-None
-Growl
-Headbutt
-Taunt
-Yawn
-0/0/0/0/0/0
-0/0/0/0/0/0
-
-Bidoof
-21
-Jolly
-Unaware
-
-None
-Growl
-Headbutt
-Taunt
-Yawn
-0/0/0/0/0/0
-0/0/0/0/0/0
-Paired with 427
-
-421
-Lady Kylie
-Level Cap:
-Format: Single Battle
-
-Bonsly
-21
-Jolly
-Sturdy
-
-None
-Copycat
-Flail
-Rock Throw
-Rock Tomb
-0/0/0/0/0/0
-0/0/0/0/0/0
-
-Pichu
-21
-Jolly
-Static
-
-None
-Thunder Shock
-Tail Whip
-Nuzzle
-Charm
-0/0/0/0/0/0
-0/0/0/0/0/0
-
-
-421
-Lady Kylie
-Level Cap:
-Format: Double Battle
-
-Bonsly
-21
-Jolly
-Sturdy
-
-None
-Copycat
-Flail
-Rock Throw
-Rock Tomb
-0/0/0/0/0/0
-0/0/0/0/0/0
-
-Pichu
-21
-Jolly
-Static
-
-None
-Thunder Shock
-Tail Whip
-Nuzzle
-Charm
-0/0/0/0/0/0
-0/0/0/0/0/0
-Paired with 420
-
-416
-PI Kendrick
-Level Cap:
-Format: Single Battle
-
-Goldeen
-22
-Relaxed
-Swift Swim
-
-None
-Peck
-Tail Whip
-Water Pulse
-Horn Attack
-0/0/0/0/0/0
-0/0/0/0/0/0
-
-Goldeen
-22
-Relaxed
-Swift Swim
-
-None
-Peck
-Tail Whip
-Water Pulse
-Horn Attack
-0/0/0/0/0/0
-0/0/0/0/0/0
-
-
-416
-PI Kendrick
-Level Cap:
-Format: Double Battle
-
-Goldeen
-22
-Relaxed
-Swift Swim
-
-None
-Peck
-Tail Whip
-Water Pulse
-Horn Attack
-0/0/0/0/0/0
-0/0/0/0/0/0
-
-Goldeen
-22
-Relaxed
-Swift Swim
-
-None
-Peck
-Tail Whip
-Water Pulse
-Horn Attack
-0/0/0/0/0/0
-0/0/0/0/0/0
-Paired with 425
-
-410
-Aroma Lady Alison
-Level Cap:
-Format: Single Battle
-
-Roselia
-23
-Calm
-Poison Point
-
-None
-Poison Sting
-Mega Drain
-Leech Seed
-Magical Leaf
-0/0/0/0/0/0
-0/0/0/0/0/0
-
-
-410
-Aroma Lady Alison
-Level Cap:
-Format: Double Battle
-
-Roselia
-23
-Calm
-Poison Point
-
-None
-Poison Sting
-Mega Drain
-Leech Seed
-Magical Leaf
-0/0/0/0/0/0
-0/0/0/0/0/0
-Paired with 414
-
-411
-Artist Ismael
-Level Cap:
-Format: Single Battle
-
-Mr. Mime
-23
-Sassy
-Soundproof
-
-None
-Wide Guard
-Power Swap
-Encore
-Confusion
-0/0/0/0/0/0
-0/0/0/0/0/0
-
-
-411
-Artist Ismael
-Level Cap:
-Format: Double Battle
-
-Mr. Mime
-23
-Sassy
-Soundproof
-
-None
-Wide Guard
-Power Swap
-Encore
-Confusion
-0/0/0/0/0/0
-0/0/0/0/0/0
-Paired with 426
-
-420
-Rich Boy Roman
-Level Cap:
-Format: Single Battle
-
-Sudowoodo
-23
-Naive
-Sturdy
-
-None
-Stone Edge
-Hammer Arm
-Wood Hammer
-Flail
-0/0/0/0/0/0
-0/0/0/0/0/0
-
-
-420
-Rich Boy Roman
-Level Cap:
-Format: Double Battle
-
-Sudowoodo
-23
-Naive
-Sturdy
-
-None
-Stone Edge
-Hammer Arm
-Wood Hammer
-Flail
-0/0/0/0/0/0
-0/0/0/0/0/0
-Paired with 421
-
-422
-Reporter Valerie
-Level Cap:
-Format: Single Battle
-
-Murkrow
-23
-Bashful
-Insomnia
+Girafarig
+26
+Timid
+Inner Focus
 
 None
 Astonish
-Gust
-Wing Attack
-Night Shade
-0/0/0/0/0/0
-0/0/0/0/0/0
-
-
-422
-Reporter Valerie
-Level Cap:
-Format: Double Battle
-
-Murkrow
-23
-Bashful
-Insomnia
-
-None
-Astonish
-Gust
-Wing Attack
-Night Shade
-0/0/0/0/0/0
-0/0/0/0/0/0
-Paired with 413
-
-423
-School Kid Esteban
-Level Cap:
-Format: Single Battle
-
-Wooper
-23
-Naive
-Damp
-
-None
-Tail Whip
-Mud Shot
-Slam
-Yawn
-0/0/0/0/0/0
-0/0/0/0/0/0
-
-
-423
-School Kid Esteban
-Level Cap:
-Format: Double Battle
-
-Wooper
-23
-Naive
-Damp
-
-None
-Tail Whip
-Mud Shot
-Slam
-Yawn
-0/0/0/0/0/0
-0/0/0/0/0/0
-Paired with 415
-
-424
-Scientist Emilio
-Level Cap:
-Format: Single Battle
-
-Kadabra
-23
-Sassy
-Synchronize
-
-None
-Kinesis
+Assurance
+Stomp
 Psybeam
-Reflect
-Ally Switch
 0/0/0/0/0/0
 0/0/0/0/0/0
 
-
-424
-Scientist Emilio
-Level Cap:
-Format: Double Battle
-
-Kadabra
-23
-Sassy
-Synchronize
+Machoke
+26
+Jolly
+Guts
 
 None
-Kinesis
-Psybeam
-Reflect
-Ally Switch
-0/0/0/0/0/0
-0/0/0/0/0/0
-Paired with 412
-
-425
-Beauty Gabriella
-Level Cap:
-Format: Single Battle
-
-Finneon
-23
-Bashful
-Swift Swim
-
-None
-Attract
-Rain Dance
-Gust
-Water Pulse
-0/0/0/0/0/0
-0/0/0/0/0/0
-
-
-425
-Beauty Gabriella
-Level Cap:
-Format: Double Battle
-
-Finneon
-23
-Bashful
-Swift Swim
-
-None
-Attract
-Rain Dance
-Gust
-Water Pulse
-0/0/0/0/0/0
-0/0/0/0/0/0
-Paired with 416
-
-426
-Beauty Harley
-Level Cap:
-Format: Single Battle
-
-Psyduck
-23
-Calm
-Damp
-
-None
-Tail Whip
-Fury Swipes
-Water Pulse
-Zen Headbutt
-0/0/0/0/0/0
-0/0/0/0/0/0
-
-
-426
-Beauty Harley
-Level Cap:
-Format: Double Battle
-
-Psyduck
-23
-Calm
-Damp
-
-None
-Tail Whip
-Fury Swipes
-Water Pulse
-Zen Headbutt
-0/0/0/0/0/0
-0/0/0/0/0/0
-Paired with 411
-
-427
-Veteran Emanuel
-Level Cap:
-Format: Single Battle
-
-Machop
-23
-Relaxed
-No Guard
-
-None
-Leer
+Focus Energy
 Revenge
 Low Sweep
 Knock Off
 0/0/0/0/0/0
 0/0/0/0/0/0
+Paired with 3
 
-Bronzor
-23
-Hardy
-Levitate
-
-None
-Tackle
-Confuse Ray
-Payback
-Gyro Ball
-0/0/0/0/0/0
-0/0/0/0/0/0
-
-
-427
-Veteran Emanuel
+262
+School Kid Chance
 Level Cap:
 Format: Double Battle
 
-Machop
-23
-Relaxed
-No Guard
-
-None
-Leer
-Revenge
-Low Sweep
-Knock Off
-0/0/0/0/0/0
-0/0/0/0/0/0
-
-Bronzor
-23
-Hardy
+Haunter
+30
+Modest
 Levitate
 
 None
-Tackle
 Confuse Ray
-Payback
-Gyro Ball
+Sucker Punch
+Shadow Ball
+Dark Pulse
 0/0/0/0/0/0
 0/0/0/0/0/0
-Paired with 419
+Paired with 404
 
 321
 Team Galactic Grunt
@@ -11583,6 +10571,38 @@ Thief
 68/0/68/0/68/0
 
 
+220
+Commander Mars
+Level Cap:
+Format: Single Battle
+
+Zubat
+14
+Jolly
+Inner Focus
+
+None
+Absorb
+Supersonic
+Astonish
+U-turn
+15/0/15/0/15/0
+0/0/0/0/0/0
+
+Purugly
+16
+Jolly
+Thick Fat
+
+Oran Berry
+Fake Out
+Scratch
+Growl
+Thief
+15/0/15/0/15/0
+0/0/0/0/0/0
+
+
 323
 Team Galactic Grunt
 Level Cap:
@@ -11735,51 +10755,6 @@ Fury Swipes
 Retaliate
 0/0/0/0/0/0
 0/0/0/0/0/0
-
-
-310
-Commander Mars
-Level Cap:
-Format: Single Battle
-
-Golbat
-37
-Jolly
-Inner Focus
-
-None
-Astonish
-Poison Fang
-Bite
-U-turn
-15/0/15/0/15/0
-68/0/68/0/68/0
-
-Bronzor
-37
-Sassy
-Levitate
-
-None
-Confuse Ray
-Payback
-Gyro Ball
-Iron Defense
-15/0/15/0/15/0
-68/0/68/0/68/0
-
-Purugly
-39
-Jolly
-Thick Fat
-
-Sitrus Berry
-Growl
-Aerial Ace
-Slash
-U-turn
-15/0/15/0/15/0
-68/0/68/0/68/0
 
 
 111
@@ -12359,90 +11334,6 @@ Blizzard
 124/60/0/164/0/0
 
 
-681
-Gym Leader Candice
-Level Cap:
-Format: Single Battle
-
-Abomasnow
-68
-Brave
-Snow Warning
-
-Icy Rock
-Wood Hammer
-Ice Punch
-Earthquake
-Aurora Veil
-31/31/31/31/31/0
-240/252/12/0/4/0
-
-Jynx
-70
-Modest
-Dry Skin
-
-Focus Sash
-Blizzard
-Focus Blast
-Sweet Kiss
-Lovely Kiss
-31/31/31/31/31/31
-6/0/0/252/0/252
-
-Mamoswine
-68
-Adamant
-Snow Cloak
-
-Expert Belt
-Ice Shard
-Earthquake
-Stone Edge
-Double Team
-31/31/31/31/31/31
-6/252/0/0/0/252
-
-Froslass
-70
-Modest
-Snow Cloak
-
-Sitrus Berry
-Blizzard
-Shadow Ball
-Double Team
-Aurora Veil
-31/31/31/31/31/31
-6/0/0/252/0/252
-
-Glaceon
-70
-Modest
-Ice Body
-
-Leftovers
-Blizzard
-Freeze-Dry
-Baby-Doll Eyes
-Double Team
-31/31/31/31/31/31
-252/0/0/252/0/6
-
-Weavile
-72
-Adamant
-Pressure
-
-Life Orb
-Ice Shard
-Night Slash
-Brick Break
-X-Scissor
-31/31/31/31/31/31
-6/252/0/0/0/252
-
-
 656
 Scientist Fredrick
 Level Cap:
@@ -12846,13 +11737,13 @@ Bite
 0/0/0/0/0/0
 
 
-314
+313
 Commander Saturn
 Level Cap:
 Format: Single Battle
 
 Kadabra
-38
+35
 Timid
 Inner Focus
 
@@ -12865,7 +11756,7 @@ Rain Dance
 68/0/68/0/68/0
 
 Bronzor
-38
+35
 Relaxed
 Levitate
 
@@ -12878,15 +11769,15 @@ Extrasensory
 68/0/68/0/68/0
 
 Toxicroak
-40
+37
 Jolly
 Dry Skin
 
 None
 Mud-Slap
+Revenge
 Toxic
 Thief
-Brick Break
 15/0/15/0/15/0
 68/0/68/0/68/0
 
@@ -14249,90 +13140,6 @@ Crunch
 Iron Tail
 15/28/15/0/0/30
 28/160/28/0/0/200
-
-
-683
-Gym Leader Volkner
-Level Cap:
-Format: Single Battle
-
-Pelipper
-70
-Modest
-Drizzle
-
-Damp Rock
-Hydro Pump
-Hurricane
-Ice Beam
-U-turn
-31/31/31/31/31/31
-220/0/0/252/36/0
-
-Raichu
-70
-Timid
-Lightning Rod
-
-Choice Scarf
-Thunder
-Surf
-Focus Blast
-Volt Switch
-31/31/31/31/31/31
-6/0/0/252/0/252
-
-Luxray
-70
-Adamant
-Intimidate
-
-Focus Sash
-Ice Fang
-Play Rough
-Volt Switch
-Electric Terrain
-31/31/31/31/31/31
-6/252/0/0/0/252
-
-Lanturn
-66
-Modest
-Volt Absorb
-
-Expert Belt
-Thunder
-Surf
-Ice Beam
-Volt Switch
-31/31/31/31/31/31
-252/0/0/252/0/6
-
-Jolteon
-68
-Modest
-Quick Feet
-
-Toxic Orb
-Thunder
-Reflect
-Shadow Ball
-Volt Switch
-31/31/31/31/31/31
-6/0/0/252/0/252
-
-Electivire
-75
-Mild
-Motor Drive
-
-Life Orb
-Thunder
-Flamethrower
-Cross Chop
-Earthquake
-31/31/31/31/31/31
-6/252/0/252/0/0
 
 
 139
@@ -15711,256 +14518,36 @@ Crunch
 0/0/0/0/0/0
 
 
-360
+176
 Pokémon Trainer Cedric
 Level Cap:
 Format: Single Battle
 
-Staraptor
-49
+Starly
+7
 Jolly
-Intimidate
+Keen Eye
 
-Focus Sash
-Close Combat
-Pluck
-Sunny Day
-U-turn
+None
+Tackle
+Quick Attack
+Growl
+———
 5/5/5/5/5/5
-56/148/36/0/36/148
+0/0/0/0/0/0
 
-Floatzel
-49
-Jolly
-Swift Swim
-
-Quick Claw
-Ice Fang
-Crunch
-Swift
-Brine
-6/6/6/6/6/6
-40/104/40/0/40/160
-
-Heracross
-51
-Jolly
-Swarm
-
-None
-Pin Missile
-Swords Dance
-Rock Slide
-Thief
-9/9/9/9/9/9
-44/104/44/0/44/156
-
-Rapidash
-49
-Jolly
-Flash Fire
-
-Expert Belt
-Smart Strike
-Megahorn
-Poison Jab
-Flame Wheel
-7/7/7/7/7/7
-48/116/48/0/48/172
-
-Snorlax
-52
-Adamant
-Thick Fat
-
-None
-Covet
-Yawn
-Crunch
-High Horsepower
-9/9/9/9/9/9
-96/120/96/0/88/0
-
-Torterra
-55
+Turtwig
+9
 Careful
 Overgrow
 
-Leftovers
-Earthquake
-Wood Hammer
-Roar
-Stealth Rock
+None
+Tackle
+Withdraw
+———
+———
 11/11/11/11/11/11
-164/92/52/52/124/0
-
-
-361
-Pokémon Trainer Cedric
-Level Cap:
-Format: Single Battle
-
-Staraptor
-49
-Jolly
-Intimidate
-
-Focus Sash
-Close Combat
-Pluck
-Steel Wing
-U-turn
-5/5/5/5/5/5
-56/148/36/0/36/148
-
-Floatzel
-49
-Jolly
-Swift Swim
-
-Quick Claw
-Ice Fang
-Crunch
-Swift
-Brine
-6/6/6/6/6/6
-40/104/40/0/40/160
-
-Heracross
-51
-Jolly
-Swarm
-
-None
-Pin Missile
-Swords Dance
-Rock Slide
-Thief
-9/9/9/9/9/9
-44/104/44/0/44/156
-
-Roserade
-49
-Timid
-Poison Point
-
-Big Root
-Grassy Terrain
-Giga Drain
-Toxic
-Grass Knot
-7/7/7/7/7/7
-48/0/48/116/48/172
-
-Snorlax
-52
-Adamant
-Thick Fat
-
-None
-Covet
-Yawn
-Crunch
-Hammer Arm
-9/9/9/9/9/9
-96/120/96/0/88/0
-
-Infernape
-55
-Jolly
-Blaze
-
-Expert Belt
-Close Combat
-Flame Wheel
-U-turn
-Shadow Claw
-11/11/11/11/11/11
-52/156/52/0/52/164
-
-
-362
-Pokémon Trainer Cedric
-Level Cap:
-Format: Single Battle
-
-Staraptor
-49
-Jolly
-Intimidate
-
-Focus Sash
-Close Combat
-Pluck
-Rain Dance
-U-turn
-5/5/5/5/5/5
-56/148/36/0/36/148
-
-Roserade
-49
-Timid
-Natural Cure
-
-Black Sludge
-Grassy Terrain
-Petal Blizzard
-Stun Spore
-Shadow Ball
-6/6/6/6/6/6
-40/0/40/104/40/160
-
-Heracross
-51
-Jolly
-Swarm
-
-None
-Pin Missile
-Swords Dance
-Rock Slide
-Thief
-9/9/9/9/9/9
-44/104/44/0/44/156
-
-Rapidash
-49
-Jolly
-Flash Fire
-
-Expert Belt
-Smart Strike
-Megahorn
-Poison Jab
-Flame Wheel
-7/7/7/7/7/7
-48/116/48/0/48/172
-
-Snorlax
-52
-Adamant
-Thick Fat
-
-None
-Covet
-Yawn
-Crunch
-High Horsepower
-9/9/9/9/9/9
-96/120/96/0/88/0
-
-Empoleon
-55
-Timid
-Torrent
-
-Quick Claw
-Charm
-Grass Knot
-Brine
-Flash Cannon
-11/11/11/11/11/11
-52/0/52/156/52/164
+0/0/0/0/0/0
 
 
 185
@@ -16331,1296 +14918,36 @@ Poison Jab
 52/252/0/0/0/204
 
 
-696
-Elite Four Aaron
+176
+Pokémon Trainer Cedric
 Level Cap:
 Format: Single Battle
 
-Yanmega
-65
-Timid
-Speed Boost
-
-Wise Glasses
-Bug Buzz
-Air Slash
-Detect
-Ancient Power
-31/0/31/31/31/31
-52/0/0/252/0/204
-
-Scizor
-65
-Adamant
-Technician
-
-Occa Berry
-Bullet Punch
-X-Scissor
-Night Slash
-Swords Dance
-31/31/31/0/31/31
-252/252/0/0/0/0
-
-Vespiquen
-66
-Adamant
-Unnerve
-
-Sitrus Berry
-Power Gem
-Attack Order
-Aerial Ace
-Defend Order
-31/31/31/0/31/31
-252/252/0/0/0/0
-
-Heracross
-67
+Starly
+7
 Jolly
-Guts
+Keen Eye
 
-Flame Orb
-Earthquake
-Rock Slide
-Facade
-Close Combat
-31/31/31/0/31/31
-52/252/0/0/0/204
-
-Drapion
-69
-Jolly
-Sniper
-
-Scope Lens
-Cross Poison
-Night Slash
-Earthquake
-X-Scissor
-31/31/31/0/31/31
-52/252/0/0/0/204
-
-
-697
-Elite Four Bertha
-Level Cap:
-Format: Single Battle
-
-Whiscash
-66
-Brave
-Hydration
-
-Rindo Berry
-Earthquake
-Ice Beam
-Scald
-Zen Headbutt
-31/31/31/31/31/0
-0/252/0/252/0/0
-
-Gliscor
-69
-Adamant
-Hyper Cutter
-
-Sitrus Berry
-Earthquake
-Thunder Fang
-Guillotine
-X-Scissor
-31/31/31/0/31/31
-252/252/0/0/0/0
-
-Golem
-68
-Jolly
-Sturdy
-
-Soft Sand
-Rock Polish
-Heavy Slam
-Earthquake
-Stone Edge
-31/31/31/0/31/31
-52/252/0/0/0/204
-
-Hippowdon
-68
-Adamant
-Sand Stream
-
-Chesto Berry
-Ice Fang
-Earthquake
-Crunch
-Rest
-31/31/31/0/31/31
-252/252/0/0/0/0
-
-Rhyperior
-71
-Adamant
-Solid Rock
-
-Muscle Band
-Earthquake
-Rock Wrecker
-Megahorn
-Thunder Fang
-31/31/31/0/31/31
-252/252/0/0/0/0
-
-
-698
-Elite Four Flint
-Level Cap:
-Format: Single Battle
-
-Houndoom
-68
-Modest
-Unnerve
-
-Wise Glasses
-Flamethrower
-Dark Pulse
-Destiny Bond
-Nasty Plot
-31/0/31/31/31/31
-52/0/0/252/0/204
-
-Flareon
-71
-Adamant
-Flash Fire
-
-Sitrus Berry
-Flare Blitz
-Flail
-Will-O-Wisp
+None
+Tackle
 Quick Attack
-31/31/31/0/31/31
-252/252/0/0/0/0
-
-Rapidash
-69
-Jolly
-Flame Body
-
-Wide Lens
-Flare Blitz
-Iron Tail
-Poison Jab
-Hypnosis
-31/31/31/0/31/31
-52/252/0/0/0/204
-
-Infernape
-71
-Jolly
-Iron Fist
-
-Focus Sash
-Fire Punch
-Thunder Punch
-Close Combat
-Mach Punch
-31/31/31/0/31/31
-52/252/0/0/0/204
-
-Magmortar
-73
-Modest
-Flame Body
-
-Lum Berry
-Fire Blast
-Thunderbolt
-Focus Blast
-Psychic
-31/0/31/31/31/31
-52/0/0/252/0/204
-
-
-699
-Elite Four Lucian
-Level Cap:
-Format: Single Battle
-
-Mr. Mime
-69
-Bold
-Filter
-
-Light Clay
-Light Screen
-Reflect
-Psychic
-Dazzling Gleam
-31/0/31/31/31/31
-252/0/0/52/0/204
-
-Espeon
-71
-Timid
-Magic Bounce
-
-Mental Herb
-Psychic
-Dazzling Gleam
-Shadow Ball
-Light Screen
-31/0/31/31/31/31
-52/0/0/252/0/204
-
-Bronzong
-70
-Brave
-Levitate
-
-Muscle Band
-Gyro Ball
-Earthquake
-Payback
-Rock Slide
-31/31/31/0/31/0
-252/252/0/0/0/0
-
-Alakazam
-72
-Timid
-Magic Guard
-
-Life Orb
-Nasty Plot
-Psychic
-Dazzling Gleam
-Shock Wave
-31/0/31/31/31/31
-52/0/0/252/0/204
-
-Gallade
-75
-Jolly
-Justified
-
-Sitrus Berry
-Close Combat
-Psycho Cut
-Poison Jab
-Shadow Sneak
-31/31/31/0/31/31
-52/252/0/0/0/204
-
-
-700
-Champion Cynthia
-Level Cap:
-Format: Single Battle
-
-Spiritomb
-74
-Quiet
-Pressure
-
-Sitrus Berry
-Shadow Ball
-Dark Pulse
-Will-O-Wisp
-Sucker Punch
-31/31/31/31/31/31
-252/6/0/252/0/0
-
-Roserade
-74
-Timid
-Poison Point
-
-Expert Belt
-Dazzling Gleam
-Shadow Ball
-Sludge Bomb
-Energy Ball
-31/0/31/31/31/31
-52/0/0/252/0/204
-
-Togekiss
-76
-Timid
-Serene Grace
-
-Leftovers
-Air Slash
-Dazzling Gleam
-Aura Sphere
-Thunder Wave
-31/0/31/31/31/31
-52/0/0/252/0/204
-
-Lucario
-76
-Timid
-Inner Focus
-
-Wise Glasses
-Aura Sphere
-Dragon Pulse
-Flash Cannon
-Psychic
-31/0/31/31/31/31
-52/0/0/252/0/204
-
-Milotic
-74
-Bold
-Marvel Scale
-
-Flame Orb
-Recover
-Mirror Coat
-Ice Beam
-Scald
-31/0/31/31/31/31
-252/0/252/6/0/0
-
-Garchomp
-78
-Jolly
-Rough Skin
-
-Yache Berry
-Dragon Claw
-Earthquake
-Swords Dance
-Poison Jab
-31/31/31/0/31/31
-52/252/0/0/0/204
-
-
-701
-Elite Four Aaron
-Level Cap:
-Format: Single Battle
-
-Yanmega
-75
-Timid
-Speed Boost
-
-Wise Glasses
-Bug Buzz
-Air Slash
-Detect
-Ancient Power
-31/0/31/31/31/31
-0/0/0/252/0/252
-
-Scizor
-75
-Adamant
-Technician
-
-Occa Berry
-Bullet Punch
-X-Scissor
-Night Slash
-Swords Dance
-31/31/31/0/31/31
-252/252/0/0/0/0
-
-Vespiquen
-77
-Adamant
-Unnerve
-
-Sitrus Berry
-Power Gem
-Attack Order
-Aerial Ace
-Defend Order
-31/31/31/0/31/31
-252/252/0/0/0/0
-
-Heracross
-77
-Jolly
-Guts
-
-Flame Orb
-Earthquake
-Rock Slide
-Facade
-Close Combat
-31/31/31/0/31/31
-0/252/0/0/0/252
-
-Flygon
-75
-Modest
-Levitate
-
-Wise Glasses
-Dragon Pulse
-Earth Power
-Boomburst
-Bug Buzz
-31/0/31/31/31/31
-6/0/0/252/0/252
-
-Drapion
-79
-Jolly
-Sniper
-
-Scope Lens
-Cross Poison
-Night Slash
-Earthquake
-X-Scissor
-31/31/31/0/31/31
-6/252/0/0/0/252
-
-
-702
-Elite Four Bertha
-Level Cap:
-Format: Single Battle
-
-Whiscash
-76
-Brave
-Hydration
-
-Rindo Berry
-Earthquake
-Ice Beam
-Scald
-Zen Headbutt
-31/31/31/31/31/0
-0/252/0/252/0/0
-
-Gliscor
-79
-Adamant
-Hyper Cutter
-
-Sitrus Berry
-Earthquake
-Thunder Fang
-Guillotine
-X-Scissor
-31/31/31/0/31/31
-252/252/0/0/0/0
-
-Nidoking
-78
-Modest
-Sheer Force
-
-Life Orb
-Sludge Bomb
-Earth Power
-Thunderbolt
-Ice Beam
-31/0/31/31/31/31
-252/0/0/252/4/0
-
-Hippowdon
-78
-Adamant
-Sand Stream
-
-Chesto Berry
-Ice Fang
-Earthquake
-Crunch
-Rest
-31/31/31/0/31/31
-252/252/0/0/0/0
-
-Mamoswine
-78
-Adamant
-Thick Fat
-
-Never-Melt Ice
-Earthquake
-Icicle Spear
-Ice Shard
-Double-Edge
-31/31/31/0/31/31
-6/252/0/0/0/252
-
-Rhyperior
-81
-Adamant
-Solid Rock
-
-Muscle Band
-Earthquake
-Rock Wrecker
-Megahorn
-Thunder Fang
-31/31/31/0/31/31
-252/252/6/0/0/0
-
-
-703
-Elite Four Flint
-Level Cap:
-Format: Single Battle
-
-Ninetales
-78
-Timid
-Drought
-
-Heat Rock
-Flamethrower
-Solar Beam
-Hypnosis
-Nasty Plot
-31/0/31/31/31/31
-0/0/0/252/0/252
-
-Houndoom
-78
-Modest
-Unnerve
-
-Wise Glasses
-Flamethrower
-Dark Pulse
-Destiny Bond
-Nasty Plot
-31/0/31/31/31/31
-0/0/0/252/0/252
-
-Rapidash
-79
-Jolly
-Flame Body
-
-Wide Lens
-Flare Blitz
-Iron Tail
-Poison Jab
-Hypnosis
-31/31/31/0/31/31
-0/252/0/0/0/252
-
-Infernape
-81
-Jolly
-Iron Fist
-
-Focus Sash
-Fire Punch
-Thunder Punch
-Close Combat
-Mach Punch
-31/31/31/0/31/31
-0/252/0/0/0/252
-
-Arcanine
-81
-Jolly
-Intimidate
-
-Shuca Berry
-Flare Blitz
-Play Rough
-Close Combat
-Extreme Speed
-31/31/31/0/31/31
-6/252/0/0/0/252
-
-Magmortar
-83
-Modest
-Flame Body
-
-Sitrus Berry
-Fire Blast
-Thunderbolt
-Focus Blast
-Psychic
-31/0/31/31/31/31
-0/0/0/252/0/252
-
-
-704
-Elite Four Lucian
-Level Cap:
-Format: Single Battle
-
-Mr. Mime
-79
-Bold
-Filter
-
-Light Clay
-Light Screen
-Reflect
-Psychic
-Dazzling Gleam
-31/0/31/31/31/31
-252/0/0/0/0/252
-
-Espeon
-81
-Timid
-Magic Bounce
-
-Mental Herb
-Psychic
-Dazzling Gleam
-Shadow Ball
-Light Screen
-31/0/31/31/31/31
-0/0/0/252/0/252
-
-Bronzong
-80
-Brave
-Levitate
-
-Muscle Band
-Gyro Ball
-Earthquake
-Payback
-Rock Slide
-31/31/31/0/31/0
-252/252/0/0/0/0
-
-Alakazam
-82
-Timid
-Magic Guard
-
-Life Orb
-Nasty Plot
-Psychic
-Dazzling Gleam
-Shock Wave
-31/0/31/31/31/31
-0/0/0/252/0/252
-
-Slowbro
-82
-Bold
-Regenerator
-
-Leftovers
-Scald
-Psychic
-Flamethrower
-Slack Off
-31/0/31/31/31/0
-252/0/252/6/0/0
-
-Gallade
-85
-Jolly
-Justified
-
-Sitrus Berry
-Close Combat
-Psycho Cut
-Poison Jab
-Shadow Sneak
-31/31/31/0/31/31
-6/252/0/0/0/252
-
-
-705
-Champion Cynthia
-Level Cap:
-Format: Single Battle
-
-Spiritomb
-84
-Quiet
-Pressure
-
-Sitrus Berry
-Shadow Ball
-Dark Pulse
-Will-O-Wisp
-Sucker Punch
-31/31/31/31/31/31
-252/6/0/252/0/0
-
-Porygon-Z
-85
-Timid
-Adaptability
-
-Expert Belt
-Hyper Beam
-Shadow Ball
-Ice Beam
-Thunderbolt
-31/0/31/31/31/31
-6/0/0/252/0/252
-
-Togekiss
-86
-Timid
-Serene Grace
-
-Leftovers
-Air Slash
-Dazzling Gleam
-Aura Sphere
-Thunder Wave
-31/0/31/31/31/31
-6/0/0/252/0/252
-
-Lucario
-86
-Jolly
-Inner Focus
-
-Focus Sash
-Close Combat
-Meteor Mash
-Earthquake
-Extreme Speed
-31/31/31/0/31/31
-6/252/0/0/0/252
-
-Milotic
-84
-Bold
-Marvel Scale
-
-Flame Orb
-Recover
-Mirror Coat
-Ice Beam
-Scald
-31/0/31/31/31/31
-252/0/252/6/0/0
-
-Garchomp
-88
-Jolly
-Rough Skin
-
-Yache Berry
-Dragon Claw
-Earthquake
-Swords Dance
-Poison Jab
-31/31/31/0/31/31
-6/252/0/0/0/252
-
-
-663
-Pokémon Trainer Cedric
-Level Cap:
-Format: Single Battle
-
-Staraptor
-58
-Jolly
-Intimidate
-
-Focus Sash
-Close Combat
-Pluck
-Sunny Day
-U-turn
+Growl
+———
 5/5/5/5/5/5
-60/132/36/0/36/244
+0/0/0/0/0/0
 
-Floatzel
-59
-Jolly
-Swift Swim
-
-Quick Claw
-Ice Fang
-Crunch
-Swift
-Waterfall
-6/6/6/6/6/6
-40/136/40/0/40/248
-
-Heracross
-60
-Jolly
-Swarm
-
-None
-Megahorn
-Swords Dance
-Rock Slide
-Close Combat
-9/9/9/9/9/9
-44/124/44/0/44/252
-
-Rapidash
-59
-Jolly
-Flash Fire
-
-Expert Belt
-Smart Strike
-Megahorn
-Poison Jab
-Flame Wheel
-7/7/7/7/7/7
-60/132/52/0/52/212
-
-Snorlax
-60
-Adamant
-Thick Fat
-
-None
-Covet
-Yawn
-Crunch
-High Horsepower
-9/9/9/9/9/9
-100/156/160/0/92/0
-
-Torterra
-64
+Turtwig
+9
 Careful
 Overgrow
 
-Leftovers
-Earthquake
-Wood Hammer
-Roar
-Stealth Rock
+None
+Tackle
+Withdraw
+———
+———
 11/11/11/11/11/11
-164/116/52/52/124/0
-
-
-664
-Pokémon Trainer Cedric
-Level Cap:
-Format: Single Battle
-
-Staraptor
-58
-Jolly
-Intimidate
-
-Focus Sash
-Close Combat
-Pluck
-Steel Wing
-U-turn
-5/5/5/5/5/5
-60/132/36/0/36/244
-
-Floatzel
-59
-Jolly
-Swift Swim
-
-Quick Claw
-Ice Fang
-Crunch
-Swift
-Waterfall
-6/6/6/6/6/6
-40/136/40/0/40/248
-
-Heracross
-60
-Jolly
-Swarm
-
-None
-Megahorn
-Swords Dance
-Rock Slide
-Close Combat
-9/9/9/9/9/9
-44/124/44/0/44/252
-
-Roserade
-59
-Timid
-Poison Point
-
-Black Sludge
-Grassy Terrain
-Giga Drain
-Toxic
-Sludge Bomb
-7/7/7/7/7/7
-60/0/52/132/52/212
-
-Snorlax
-60
-Adamant
-Thick Fat
-
-None
-Covet
-Yawn
-Crunch
-Hammer Arm
-9/9/9/9/9/9
-100/156/160/0/92/0
-
-Infernape
-64
-Jolly
-Blaze
-
-Expert Belt
-Close Combat
-Flare Blitz
-U-turn
-Shadow Claw
-11/11/11/11/11/11
-52/188/52/0/52/164
-
-
-665
-Pokémon Trainer Cedric
-Level Cap:
-Format: Single Battle
-
-Staraptor
-58
-Jolly
-Intimidate
-
-Focus Sash
-Close Combat
-Pluck
-Rain Dance
-U-turn
-5/5/5/5/5/5
-60/132/36/0/36/244
-
-Roserade
-59
-Timid
-Natural Cure
-
-Black Sludge
-Sludge Bomb
-Giga Drain
-Stun Spore
-Shadow Ball
-6/6/6/6/6/6
-40/0/40/136/40/248
-
-Heracross
-60
-Jolly
-Swarm
-
-None
-Megahorn
-Swords Dance
-Rock Slide
-Close Combat
-9/9/9/9/9/9
-44/124/44/0/44/252
-
-Rapidash
-59
-Jolly
-Flash Fire
-
-Expert Belt
-Smart Strike
-Megahorn
-Poison Jab
-Flame Wheel
-7/7/7/7/7/7
-60/132/52/0/52/212
-
-Snorlax
-60
-Adamant
-Thick Fat
-
-None
-Covet
-Yawn
-Crunch
-High Horsepower
-9/9/9/9/9/9
-100/156/160/0/92/0
-
-Empoleon
-64
-Timid
-Torrent
-
-Quick Claw
-Charm
-Grass Knot
-Surf
-Flash Cannon
-11/11/11/11/11/11
-52/0/52/188/52/164
-
-
-666
-Pokémon Trainer Cedric
-Level Cap:
-Format: Single Battle
-
-Staraptor
-68
-Jolly
-Intimidate
-
-Focus Sash
-Close Combat
-Pluck
-Sunny Day
-U-turn
-5/5/5/5/5/5
-60/132/36/0/36/244
-
-Floatzel
-69
-Jolly
-Swift Swim
-
-Quick Claw
-Ice Fang
-Crunch
-Swift
-Waterfall
-6/6/6/6/6/6
-40/136/40/0/40/248
-
-Heracross
-70
-Jolly
-Swarm
-
-None
-Megahorn
-Swords Dance
-Rock Slide
-Close Combat
-9/9/9/9/9/9
-44/124/44/0/44/252
-
-Rapidash
-69
-Jolly
-Flash Fire
-
-Expert Belt
-Smart Strike
-Megahorn
-Poison Jab
-Flare Blitz
-7/7/7/7/7/7
-60/132/52/0/52/212
-
-Snorlax
-70
-Adamant
-Thick Fat
-
-None
-Covet
-Yawn
-Crunch
-High Horsepower
-9/9/9/9/9/9
-100/156/160/0/92/0
-
-Torterra
-74
-Careful
-Overgrow
-
-Leftovers
-Earthquake
-Wood Hammer
-Roar
-Stealth Rock
-11/11/11/11/11/11
-164/116/52/52/124/0
-
-
-667
-Pokémon Trainer Cedric
-Level Cap:
-Format: Single Battle
-
-Staraptor
-68
-Jolly
-Intimidate
-
-Focus Sash
-Close Combat
-Pluck
-Steel Wing
-U-turn
-5/5/5/5/5/5
-60/132/36/0/36/244
-
-Floatzel
-69
-Jolly
-Swift Swim
-
-Quick Claw
-Ice Fang
-Crunch
-Swift
-Waterfall
-6/6/6/6/6/6
-40/136/40/0/40/248
-
-Heracross
-70
-Jolly
-Swarm
-
-None
-Megahorn
-Swords Dance
-Rock Slide
-Close Combat
-9/9/9/9/9/9
-44/124/44/0/44/252
-
-Roserade
-69
-Timid
-Poison Point
-
-Black Sludge
-Grassy Terrain
-Giga Drain
-Toxic
-Sludge Bomb
-7/7/7/7/7/7
-60/0/52/132/52/212
-
-Snorlax
-70
-Adamant
-Thick Fat
-
-None
-Covet
-Yawn
-Crunch
-Hammer Arm
-9/9/9/9/9/9
-100/156/160/0/92/0
-
-Infernape
-74
-Jolly
-Blaze
-
-Expert Belt
-Close Combat
-Flare Blitz
-U-turn
-Shadow Claw
-11/11/11/11/11/11
-52/188/52/0/52/164
-
-
-668
-Pokémon Trainer Cedric
-Level Cap:
-Format: Single Battle
-
-Staraptor
-68
-Jolly
-Intimidate
-
-Focus Sash
-Close Combat
-Pluck
-Rain Dance
-U-turn
-5/5/5/5/5/5
-60/132/36/0/36/244
-
-Roserade
-69
-Timid
-Natural Cure
-
-Black Sludge
-Sludge Bomb
-Giga Drain
-Stun Spore
-Shadow Ball
-6/6/6/6/6/6
-40/0/40/136/40/248
-
-Heracross
-70
-Jolly
-Swarm
-
-None
-Megahorn
-Swords Dance
-Rock Slide
-Close Combat
-9/9/9/9/9/9
-44/124/44/0/44/252
-
-Rapidash
-69
-Jolly
-Flash Fire
-
-Expert Belt
-Smart Strike
-Megahorn
-Poison Jab
-Flare Blitz
-7/7/7/7/7/7
-60/132/52/0/52/212
-
-Snorlax
-70
-Adamant
-Thick Fat
-
-None
-Covet
-Yawn
-Crunch
-High Horsepower
-9/9/9/9/9/9
-100/156/160/0/92/0
-
-Empoleon
-74
-Timid
-Torrent
-
-Quick Claw
-Aqua Jet
-Grass Knot
-Surf
-Flash Cannon
-11/11/11/11/11/11
-52/0/52/188/52/164
+0/0/0/0/0/0
 
 
 212
@@ -19530,1011 +16857,41 @@ Focus Energy
 0/0/0/0/0/0
 
 
-690
-Pokémon Trainer Dawn
+487
+Pokémon Trainer Lucas
 Level Cap:
 Format: Single Battle
 
-Wormadam Trash Cloak
-58
-Relaxed
-Anticipation
-
-Leftovers
-Gyro Ball
-Sucker Punch
-Metal Burst
-Stealth Rock
-31/31/31/31/31/31
-252/0/128/0/128/0
-
-Magmortar
-59
-Modest
-Vital Spirit
-
-Expert Belt
-Fire Blast
-Focus Blast
-Thunderbolt
-Will-O-Wisp
-31/31/31/31/31/31
-252/0/0/252/0/6
-
-Froslass
-60
-Timid
-Cursed Body
-
-Focus Sash
-Hex
-Frost Breath
-Thunderbolt
-Will-O-Wisp
-31/31/31/31/31/31
-6/0/0/252/0/252
-
-Milotic
-59
-Modest
-Competitive
-
-Life Orb
-Hydro Pump
-Ice Beam
-Hyper Beam
-Recover
-31/31/31/31/31/31
-6/0/0/252/0/252
-
-Clefable
-60
-Timid
-Unaware
-
-Sitrus Berry
-Moonblast
-Calm Mind
-Moonlight
-Minimize
-31/31/31/31/31/31
-6/0/0/252/0/252
-
-Torterra
-64
+Turtwig
+13
 Brave
 Overgrow
 
-Yache Berry
-Wood Hammer
-Earthquake
-Stone Edge
-Curse
-31/31/31/31/31/31
-128/252/128/0/0/0
+None
+Tackle
+Withdraw
+Absorb
+Razor Leaf
+31/0/31/0/31/0
+0/0/0/0/0/0
 
 
-691
+490
 Pokémon Trainer Dawn
 Level Cap:
 Format: Single Battle
 
-Wormadam Sandy Cloak
-58
-Adamant
-Anticipation
-
-Leftovers
-Bug Bite
-Fissure
-Earthquake
-Double Team
-31/31/31/31/31/31
-252/252/0/0/0/6
-
-Milotic
-59
-Modest
-Competitive
-
-Life Orb
-Hydro Pump
-Ice Beam
-Hyper Beam
-Recover
-31/31/31/31/31/31
-6/0/0/252/0/252
-
-Froslass
-60
-Timid
-Cursed Body
-
-Focus Sash
-Hex
-Frost Breath
-Thunderbolt
-Will-O-Wisp
-31/31/31/31/31/31
-6/0/0/252/0/252
-
-Tangrowth
-59
-Modest
-Regenerator
-
-Choice Specs
-Energy Ball
-Sludge Bomb
-Focus Blast
-Hyper Beam
-31/31/31/31/31/31
-252/0/0/252/0/6
-
-Clefable
-60
-Timid
-Unaware
-
-Sitrus Berry
-Moonblast
-Calm Mind
-Moonlight
-Minimize
-31/31/31/31/31/31
-6/0/0/252/0/252
-
-Infernape
-64
-Jolly
-Blaze
-
-Expert Belt
-Flare Blitz
-Close Combat
-Earthquake
-U-turn
-31/31/31/31/31/31
-6/252/0/0/0/252
-
-
-692
-Pokémon Trainer Dawn
-Level Cap:
-Format: Single Battle
-
-Wormadam
-58
-Modest
-Overcoat
-
-White Herb
-Leaf Storm
-Bug Buzz
-Psychic
-Quiver Dance
-31/31/31/31/31/31
-252/0/0/252/0/6
-
-Tangrowth
-59
-Modest
-Regenerator
-
-Choice Specs
-Energy Ball
-Sludge Bomb
-Focus Blast
-Hyper Beam
-31/31/31/31/31/31
-252/0/0/252/0/6
-
-Froslass
-60
-Timid
-Cursed Body
-
-Focus Sash
-Hex
-Frost Breath
-Thunderbolt
-Will-O-Wisp
-31/31/31/31/31/31
-6/0/0/252/0/252
-
-Magmortar
-59
-Modest
-Vital Spirit
-
-Expert Belt
-Fire Blast
-Focus Blast
-Thunderbolt
-Will-O-Wisp
-31/31/31/31/31/31
-252/0/0/252/0/6
-
-Clefable
-60
-Timid
-Unaware
-
-Sitrus Berry
-Moonblast
-Calm Mind
-Moonlight
-Minimize
-31/31/31/31/31/31
-6/0/0/252/0/252
-
-Empoleon
-64
-Hardy
-Torrent
-
-Leftovers
-Hydro Pump
-Flash Cannon
-Ice Beam
-Grass Knot
-31/31/31/31/31/31
-252/0/0/252/0/6
-
-
-684
-Pokémon Trainer Lucas
-Level Cap:
-Format: Single Battle
-
-Mothim
-58
-Timid
-Tinted Lens
-
-Focus Sash
-Bug Buzz
-Air Slash
-Energy Ball
-Quiver Dance
-31/31/31/31/31/31
-6/0/0/252/0/252
-
-Milotic
-59
-Modest
-Marvel Scale
-
-Flame Orb
-Scald
-Substitute
-Calm Mind
-Recover
-31/31/31/31/31/31
-252/0/128/0/128/6
-
-Gallade
-63
-Adamant
-Justified
-
-Life Orb
-Psycho Cut
-Close Combat
-Stone Edge
-Swords Dance
-31/31/31/31/31/31
-6/252/0/0/0/252
-
-Magmortar
-59
-Modest
-Vital Spirit
-
-Expert Belt
-Fire Blast
-Thunderbolt
-Focus Blast
-Will-O-Wisp
-31/31/31/31/31/31
-6/0/0/252/0/252
-
-Clefable
-60
-Timid
-Unaware
-
-Sitrus Berry
-Moonblast
-Calm Mind
-Moonlight
-Minimize
-31/31/31/31/31/31
-6/0/0/252/0/252
-
-Torterra
-64
+Turtwig
+13
 Brave
 Overgrow
 
-Leftovers
-Earthquake
-Synthesis
-Leech Seed
-Curse
-31/31/31/31/31/0
-252/252/0/0/6/0
-
-
-685
-Pokémon Trainer Lucas
-Level Cap:
-Format: Single Battle
-
-Mothim
-58
-Timid
-Tinted Lens
-
-Focus Sash
-Bug Buzz
-Air Slash
-Energy Ball
-Quiver Dance
-31/31/31/31/31/31
-6/0/0/252/0/252
-
-Tangrowth
-59
-Adamant
-Regenerator
-
-Lum Berry
-Power Whip
-Earthquake
-Rock Slide
-Brick Break
-31/31/31/31/31/31
-252/252/0/0/0/6
-
-Gallade
-63
-Adamant
-Justified
-
-Life Orb
-Psycho Cut
-Close Combat
-Stone Edge
-Swords Dance
-31/31/31/31/31/31
-6/252/0/0/0/252
-
-Milotic
-59
-Modest
-Marvel Scale
-
-Flame Orb
-Scald
-Substitute
-Calm Mind
-Recover
-31/31/31/31/31/31
-252/0/128/0/128/6
-
-Clefable
-60
-Timid
-Unaware
-
-Sitrus Berry
-Moonblast
-Calm Mind
-Moonlight
-Minimize
-31/31/31/31/31/31
-6/0/0/252/0/252
-
-Infernape
-64
-Jolly
-Blaze
-
-White Herb
-Earthquake
-Close Combat
-Flare Blitz
-Acrobatics
-31/31/31/31/31/31
-6/252/0/0/0/252
-
-
-686
-Pokémon Trainer Lucas
-Level Cap:
-Format: Single Battle
-
-Mothim
-58
-Timid
-Tinted Lens
-
-Focus Sash
-Bug Buzz
-Air Slash
-Energy Ball
-Quiver Dance
-31/31/31/31/31/31
-6/0/0/252/0/252
-
-Magmortar
-59
-Modest
-Vital Spirit
-
-Expert Belt
-Fire Blast
-Thunderbolt
-Focus Blast
-Will-O-Wisp
-31/31/31/31/31/31
-6/0/0/252/0/252
-
-Gallade
-63
-Adamant
-Justified
-
-Life Orb
-Psycho Cut
-Close Combat
-Stone Edge
-Swords Dance
-31/31/31/31/31/31
-6/252/0/0/0/252
-
-Tangrowth
-59
-Adamant
-Regenerator
-
-Lum Berry
-Power Whip
-Earthquake
-Rock Slide
-Brick Break
-31/31/31/31/31/31
-252/252/0/0/0/6
-
-Clefable
-60
-Timid
-Unaware
-
-Sitrus Berry
-Moonblast
-Calm Mind
-Moonlight
-Minimize
-31/31/31/31/31/31
-6/0/0/252/0/252
-
-Empoleon
-64
-Hardy
-Torrent
-
-Choice Band
-Aqua Jet
-Waterfall
-Steel Wing
-Earthquake
-31/31/31/31/31/31
-252/252/6/0/0/0
-
-
-687
-Pokémon Trainer Lucas
-Level Cap:
-Format: Single Battle
-
-Dusknoir
-68
-Brave
-Pressure
-
-Lum Berry
-Brick Break
-Earthquake
-Trick Room
-Will-O-Wisp
-31/31/31/31/31/0
-252/252/6/0/0/0
-
-Flareon
-69
-Adamant
-Guts
-
-Toxic Orb
-Flare Blitz
-Facade
-Iron Tail
-Will-O-Wisp
-31/31/31/31/31/0
-252/252/6/0/0/0
-
-Rampardos
-70
-Adamant
-Mold Breaker
-
-Focus Sash
-Head Smash
-Earthquake
-Iron Tail
-Zen Headbutt
-31/31/31/31/31/0
-252/252/6/0/0/0
-
-Wash Rotom
-69
-Modest
-Levitate
-
-Choice Specs
-Hydro Pump
-Thunderbolt
-Volt Switch
-Hex
-31/31/31/31/31/31
-252/0/0/252/0/6
-
-Dunsparce
-70
-Jolly
-Serene Grace
-
-King’s Rock
-Rock Slide
-Roost
-Coil
-Glare
-31/31/31/31/31/31
-252/0/252/0/6/0
-
-Torterra
-74
-Brave
-Overgrow
-
-Leftovers
-Earthquake
-Synthesis
-Leech Seed
-Curse
-31/31/31/31/31/0
-252/252/0/0/6/0
-
-
-688
-Pokémon Trainer Lucas
-Level Cap:
-Format: Single Battle
-
-Absol
-68
-Jolly
-Super Luck
-
-Razor Claw
-Megahorn
-Psycho Cut
-Stone Edge
-Night Slash
-31/31/31/31/31/31
-6/252/0/0/0/252
-
-Kabutops
-69
-Adamant
-Weak Armor
-
-Focus Sash
-Rock Slide
-Liquidation
-Leech Life
-Swords Dance
-31/31/31/31/31/31
-6/252/0/0/0/252
-
-Espeon
-70
-Modest
-Magic Bounce
-
-Life Orb
-Psychic
-Psyshock
-Grass Knot
-Dazzling Gleam
-31/31/31/31/31/31
-6/0/0/252/0/252
-
-Mow Rotom
-69
-Modest
-Levitate
-
-Choice Specs
-Leaf Storm
-Thunderbolt
-Volt Switch
-Hex
-31/31/31/31/31/31
-6/0/0/252/0/252
-
-Porygon-Z
-70
-Modest
-Adaptability
-
-Silk Scarf
-Tri Attack
-Hyper Beam
-Thunder Wave
-Dark Pulse
-31/31/31/31/31/31
-6/252/0/0/0/252
-
-Infernape
-74
-Jolly
-Blaze
-
-White Herb
-Earthquake
-Close Combat
-Flare Blitz
-Acrobatics
-31/31/31/31/31/31
-6/252/0/0/0/252
-
-
-689
-Pokémon Trainer Lucas
-Level Cap:
-Format: Single Battle
-
-Gliscor
-68
-Impish
-Poison Heal
-
-Toxic Orb
-Earthquake
-Acrobatics
-Fling
-Roost
-31/31/31/31/31/31
-252/0/6/0/252/0
-
-Cradily
-69
-Bold
-Storm Drain
-
-Big Root
-Giga Drain
-Leech Seed
-Ingrain
-Stockpile
-31/31/31/31/31/31
-252/0/128/0/128/0
-
-Glaceon
-70
-Modest
-Ice Body
-
-Leftovers
-Freeze-Dry
-Blizzard
-Hail
-Water Pulse
-31/31/31/31/31/31
-252/0/0/252/0/6
-
-Heat Rotom
-69
-Modest
-Levitate
-
-Choice Specs
-Overheat
-Thunderbolt
-Volt Switch
-Hex
-31/31/31/31/31/31
-252/0/0/252/0/6
-
-Tauros
-70
-Modest
-Intimidate
-
-Life Orb
-Hyper Beam
-Blizzard
-Fire Blast
-Thunder
-31/31/31/31/31/31
-6/0/0/252/0/252
-
-Empoleon
-74
-Hardy
-Torrent
-
-Choice Band
-Aqua Jet
-Waterfall
-Steel Wing
-Earthquake
-31/31/31/31/31/31
-252/252/6/0/0/0
-
-
-693
-Pokémon Trainer Dawn
-Level Cap:
-Format: Single Battle
-
-Crobat
-68
-Jolly
-Inner Focus
-
-Sitrus Berry
-Cross Poison
-U-turn
-Super Fang
-Tailwind
-31/31/31/31/31/31
-128/0/128/0/0/252
-
-Arcanine
-69
-Adamant
-Intimidate
-
-Life Orb
-Flare Blitz
-Play Rough
-Extreme Speed
-Reversal
-31/31/31/31/31/31
-6/252/0/0/0/252
-
-Mr. Mime
-70
-Timid
-Filter
-
-Leftovers
-Psychic
-Power Whip
-Reflect
-Light Screen
-31/0/31/31/31/31
-252/0/6/0/0/252
-
-Blastoise
-69
-Modest
-Torrent
-
-Focus Sash
-Hydro Pump
-Ice Beam
-Focus Blast
-Shell Smash
-31/31/31/31/31/31
-6/0/0/252/0/252
-
-Lickilicky
-70
-Modest
-Own Tempo
-
-Expert Belt
-Focus Blast
-Ice Beam
-Fire Blast
-Shadow Ball
-31/31/31/31/31/31
-252/0/0/252/0/6
-
-Torterra
-74
-Brave
-Overgrow
-
-Yache Berry
-Wood Hammer
-Earthquake
-Stone Edge
-Curse
-31/31/31/31/31/31
-128/252/128/0/0/0
-
-
-694
-Pokémon Trainer Dawn
-Level Cap:
-Format: Single Battle
-
-Honchkrow
-68
-Jolly
-Super Luck
-
-Scope Lens
-Sucker Punch
-Night Slash
-Taunt
-Roost
-31/31/31/31/31/31
-6/252/0/0/0/252
-
-Gorebyss
-69
-Modest
-Swift Swim
-
-Wiki Berry
-Hydro Pump
-Ice Beam
-Baton Pass
-Shell Smash
-31/31/31/31/31/31
-252/0/0/252/0/6
-
-Froslass
-70
-Timid
-Cursed Body
-
-Focus Sash
-Hex
-Frost Breath
-Thunderbolt
-Will-O-Wisp
-31/31/31/31/31/31
-6/0/0/252/0/252
-
-Sceptile
-69
-Lonely
-Unburden
-
-White Herb
-Leaf Blade
-Earthquake
-Leaf Storm
-Brick Break
-31/31/31/31/31/31
-252/252/0/0/0/6
-
-Ambipom
-70
-Jolly
-Technician
-
-Life Orb
-Double Hit
-Fake Out
-Dual Chop
-U-turn
-31/31/31/31/31/31
-6/252/0/0/0/252
-
-Infernape
-74
-Jolly
-Blaze
-
-Expert Belt
-Flare Blitz
-Close Combat
-Earthquake
-U-turn
-31/31/31/31/31/31
-6/252/0/0/0/252
-
-
-695
-Pokémon Trainer Dawn
-Level Cap:
-Format: Single Battle
-
-Togekiss
-68
-Timid
-Serene Grace
-
-Lum Berry
-Dazzling Gleam
-Air Slash
-Aura Sphere
-Thunder Wave
-31/31/31/31/31/31
-6/0/0/252/0/252
-
-Bellossom
-69
-Modest
-Chlorophyll
-
-Persim Berry
-Moonblast
-Petal Dance
-Toxic
-Quiver Dance
-31/31/31/31/31/31
-6/0/0/252/0/252
-
-Mamoswine
-70
-Adamant
-Thick Fat
-
-Life Orb
-Ice Shard
-Earthquake
-Stone Edge
-Avalanche
-31/31/31/31/31/31
-128/252/128/0/0/0
-
-Typhlosion
-69
-Timid
-Flash Fire
-
-Choice Scarf
-Eruption
-———
-———
-———
-31/31/31/31/31/31
-6/0/0/252/0/252
-
-Lopunny
-70
-Careful
-Klutz
-
-Lagging Tail
-High Jump Kick
-Thunder Wave
-Sweet Kiss
-Switcheroo
-31/31/31/31/31/31
-252/252/6/0/0/0
-
-Empoleon
-74
-Hardy
-Torrent
-
-Leftovers
-Hydro Pump
-Flash Cannon
-Ice Beam
-Grass Knot
-31/31/31/31/31/31
-252/0/0/252/0/6
+None
+Tackle
+Withdraw
+Absorb
+Razor Leaf
+31/0/31/0/31/0
+0/0/0/0/0/0
 
 

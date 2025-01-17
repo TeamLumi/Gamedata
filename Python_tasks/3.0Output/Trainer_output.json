@@ -12483,7 +12483,7 @@
             "item": null,
             "level": 10,
             "moves": [
-              574,
+              336,
               497,
               310,
               253
@@ -14421,7 +14421,7 @@
             "item": null,
             "level": 12,
             "moves": [
-              574,
+              336,
               497,
               310,
               253
@@ -15292,7 +15292,7 @@
         "type": "Trainer",
         "route": "Floaroma Meadow Trainers",
         "zoneId": 253,
-        "trainerType": "Double Battle"
+        "trainerType": "Single Battle"
       },
       {
         "content": [
@@ -15354,7 +15354,7 @@
         "type": "Trainer",
         "route": "Floaroma Meadow Trainers",
         "zoneId": 253,
-        "trainerType": "Single Battle"
+        "trainerType": "Double Battle"
       },
       {
         "content": [
@@ -15416,7 +15416,7 @@
         "type": "Trainer",
         "route": "Floaroma Meadow Trainers",
         "zoneId": 253,
-        "trainerType": "Single Battle"
+        "trainerType": "Double Battle"
       },
       {
         "content": [
@@ -15478,7 +15478,7 @@
         "type": "Trainer",
         "route": "Floaroma Meadow Trainers",
         "zoneId": 253,
-        "trainerType": "Double Battle"
+        "trainerType": "Single Battle"
       }
     ],
     [
@@ -31351,8 +31351,8 @@
             "evspeed": 4
           }
         ],
-        "game": "None Mr. Backlot (Pok\u00e9mon Mansion - Lobby Trainers)",
-        "name": "None Mr. Backlot",
+        "game": "Mr. Backlot (Pok\u00e9mon Mansion - Lobby Trainers)",
+        "name": "Mr. Backlot",
         "type": "Trainer",
         "route": "Pok\u00e9mon Mansion - Lobby Trainers",
         "zoneId": 380,
@@ -31775,8 +31775,8 @@
             "item": null,
             "level": 36,
             "moves": [
-              55,
               128,
+              117,
               352,
               330
             ],
@@ -32782,9 +32782,9 @@
             "level": 26,
             "moves": [
               60,
-              278,
               113,
-              115
+              115,
+              278
             ],
             "nature": "Bashful",
             "ivatk": 25,
@@ -55008,7 +55008,7 @@
         "type": "Trainer",
         "route": "Spear Pillar Trainers",
         "zoneId": 216,
-        "trainerType": "Single Battle"
+        "trainerType": "Double Battle"
       },
       {
         "content": [
@@ -55096,7 +55096,7 @@
         "type": "Trainer",
         "route": "Spear Pillar Trainers",
         "zoneId": 216,
-        "trainerType": "Double Battle"
+        "trainerType": "Single Battle"
       },
       {
         "content": [
@@ -55184,7 +55184,7 @@
         "type": "Trainer",
         "route": "Spear Pillar Trainers",
         "zoneId": 216,
-        "trainerType": "Double Battle"
+        "trainerType": "Single Battle"
       },
       {
         "content": [
@@ -55272,7 +55272,7 @@
         "type": "Trainer",
         "route": "Spear Pillar Trainers",
         "zoneId": 216,
-        "trainerType": "Single Battle"
+        "trainerType": "Double Battle"
       },
       {
         "content": [
@@ -63196,7 +63196,7 @@
         "type": "Trainer",
         "route": "Snowpoint City Trainers",
         "zoneId": 159,
-        "trainerType": "Single Battle"
+        "trainerType": "Double Battle"
       },
       {
         "content": [
@@ -63284,7 +63284,7 @@
         "type": "Trainer",
         "route": "Snowpoint City Trainers",
         "zoneId": 159,
-        "trainerType": "Double Battle"
+        "trainerType": "Single Battle"
       },
       {
         "content": [
