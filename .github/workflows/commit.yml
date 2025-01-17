@@ -269,12 +269,12 @@ jobs:
       with:
         source_file: '3.0Input/.'
         destination_branch: 'main'
-        destination_repo: 'TeamLumi/luminescent-team'
+        destination_repo: 'TeamLumi/luminescent-team-dev'
         destination_folder: './__gamedata/gamedata3.0'
         user_email: '<support+actions@github.com>'
         user_name: 'github-actions-bot'
         commit_message: 'Updating 3.0 gamedata files'
-  
+
     - name: Update 3.0 Trainer Files
       uses: TeamLumi/Gamedata@main
       env:
