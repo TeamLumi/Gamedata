@@ -8758,7 +8758,7 @@
     "generation": 8,
     "abilities": [
       "Steadfast",
-      "Justified",
+      "Sharpness",
       "Inner Focus"
     ],
     "dexNum": 475,
@@ -12563,6 +12563,7 @@
     "value": 683,
     "text": "Aromatisse",
     "type": "FAIRY",
+    "dualtype": "POISON",
     "evolve": [
       682,
       683
@@ -12587,7 +12588,7 @@
     "generation": 8,
     "abilities": [
       "Sweet Veil",
-      "Sweet Veil",
+      "Oblivious",
       "Unburden"
     ],
     "dexNum": 684,
@@ -12604,7 +12605,7 @@
     "generation": 8,
     "abilities": [
       "Sweet Veil",
-      "Sweet Veil",
+      "Oblivious",
       "Unburden"
     ],
     "dexNum": 685,
@@ -12694,7 +12695,7 @@
     "generation": 8,
     "abilities": [
       "Poison Point",
-      "Poison Touch",
+      "Corrosion",
       "Adaptability"
     ],
     "dexNum": 690,
@@ -12712,7 +12713,7 @@
     "generation": 8,
     "abilities": [
       "Poison Point",
-      "Poison Touch",
+      "Corrosion",
       "Adaptability"
     ],
     "dexNum": 691,
@@ -12800,7 +12801,7 @@
     "generation": 8,
     "abilities": [
       "Strong Jaw",
-      "Strong Jaw",
+      "Reckless",
       "Sturdy"
     ],
     "dexNum": 696,
@@ -12818,7 +12819,7 @@
     "generation": 8,
     "abilities": [
       "Strong Jaw",
-      "Strong Jaw",
+      "Reckless",
       "Rock Head"
     ],
     "dexNum": 697,
@@ -12836,7 +12837,7 @@
     "generation": 8,
     "abilities": [
       "Refrigerate",
-      "Refrigerate",
+      "Solid Rock",
       "Snow Warning"
     ],
     "dexNum": 698,
@@ -12854,7 +12855,7 @@
     "generation": 8,
     "abilities": [
       "Refrigerate",
-      "Refrigerate",
+      "Solid Rock",
       "Snow Warning"
     ],
     "dexNum": 699,
@@ -12925,8 +12926,8 @@
     "generation": 8,
     "abilities": [
       "Clear Body",
-      "Clear Body",
-      "Sturdy"
+      "Sturdy",
+      "Filter"
     ],
     "dexNum": 703,
     "form": 0
@@ -13002,7 +13003,7 @@
     "generation": 8,
     "abilities": [
       "Prankster",
-      "Prankster",
+      "Pickpocket",
       "Magician"
     ],
     "dexNum": 707,
@@ -13221,8 +13222,8 @@
     "generation": 8,
     "abilities": [
       "Clear Body",
-      "Clear Body",
-      "Clear Body"
+      "Sturdy",
+      "Filter"
     ],
     "dexNum": 719,
     "form": 0
@@ -13334,7 +13335,7 @@
     "generation": 8,
     "abilities": [
       "Blaze",
-      "Blaze",
+      "Tough Claws",
       "Intimidate"
     ],
     "dexNum": 725,
@@ -13352,7 +13353,7 @@
     "generation": 8,
     "abilities": [
       "Blaze",
-      "Blaze",
+      "Tough Claws",
       "Intimidate"
     ],
     "dexNum": 726,
@@ -13371,7 +13372,7 @@
     "generation": 8,
     "abilities": [
       "Blaze",
-      "Blaze",
+      "Tough Claws",
       "Intimidate"
     ],
     "dexNum": 727,
@@ -13389,7 +13390,7 @@
     "generation": 8,
     "abilities": [
       "Torrent",
-      "Torrent",
+      "Ball Fetch",
       "Liquid Voice"
     ],
     "dexNum": 728,
@@ -13407,7 +13408,7 @@
     "generation": 8,
     "abilities": [
       "Torrent",
-      "Torrent",
+      "Ball Fetch",
       "Liquid Voice"
     ],
     "dexNum": 729,
@@ -13426,7 +13427,7 @@
     "generation": 8,
     "abilities": [
       "Torrent",
-      "Torrent",
+      "Ball Fetch",
       "Liquid Voice"
     ],
     "dexNum": 730,
@@ -13538,8 +13539,8 @@
     "generation": 8,
     "abilities": [
       "Swarm",
-      "Swarm",
-      "Swarm"
+      "Hustle",
+      "Hyper Cutter"
     ],
     "dexNum": 736,
     "form": 0
@@ -13558,8 +13559,8 @@
     "generation": 8,
     "abilities": [
       "Battery",
-      "Battery",
-      "Battery"
+      "Hustle",
+      "Static"
     ],
     "dexNum": 737,
     "form": 0
@@ -13578,8 +13579,8 @@
     "generation": 8,
     "abilities": [
       "Levitate",
-      "Levitate",
-      "Levitate"
+      "Hustle",
+      "Speed Boost"
     ],
     "dexNum": 738,
     "form": 0
@@ -13795,7 +13796,7 @@
     ],
     "generation": 8,
     "abilities": [
-      "Own Tempo",
+      "Tangling Hair",
       "Stamina",
       "Inner Focus"
     ],
@@ -13852,7 +13853,7 @@
     "generation": 8,
     "abilities": [
       "Leaf Guard",
-      "Leaf Guard",
+      "Long Reach",
       "Contrary"
     ],
     "dexNum": 753,
@@ -13870,7 +13871,7 @@
     "generation": 8,
     "abilities": [
       "Leaf Guard",
-      "Leaf Guard",
+      "Long Reach",
       "Contrary"
     ],
     "dexNum": 754,
@@ -13925,8 +13926,8 @@
     "generation": 8,
     "abilities": [
       "Corrosion",
-      "Corrosion",
-      "Oblivious"
+      "Oblivious",
+      "Merciless"
     ],
     "dexNum": 757,
     "form": 0
@@ -13944,8 +13945,8 @@
     "generation": 8,
     "abilities": [
       "Corrosion",
-      "Corrosion",
-      "Oblivious"
+      "Oblivious",
+      "Merciless"
     ],
     "dexNum": 758,
     "form": 0
@@ -13981,7 +13982,7 @@
     "abilities": [
       "Fluffy",
       "Klutz",
-      "Unnerve"
+      "Iron Fist"
     ],
     "dexNum": 760,
     "form": 0
@@ -14066,7 +14067,7 @@
     ],
     "generation": 8,
     "abilities": [
-      "Inner Focus",
+      "Trace",
       "Telepathy",
       "Symbiosis"
     ],
@@ -14083,7 +14084,7 @@
     "generation": 8,
     "abilities": [
       "Receiver",
-      "Receiver",
+      "Infiltrator",
       "Defiant"
     ],
     "dexNum": 766,
@@ -14137,8 +14138,8 @@
     "generation": 8,
     "abilities": [
       "Water Compaction",
-      "Water Compaction",
-      "Sand Veil"
+      "Sand Force",
+      "Storm Drain"
     ],
     "dexNum": 769,
     "form": 0
@@ -14155,8 +14156,8 @@
     "generation": 8,
     "abilities": [
       "Water Compaction",
-      "Water Compaction",
-      "Sand Veil"
+      "Sand Force",
+      "Storm Drain"
     ],
     "dexNum": 770,
     "form": 0
@@ -14302,8 +14303,8 @@
     "generation": 8,
     "abilities": [
       "Shell Armor",
-      "Shell Armor",
-      "Shell Armor"
+      "Rough Skin",
+      "Aftermath"
     ],
     "dexNum": 776,
     "form": 0
@@ -14565,8 +14566,8 @@
   {
     "value": 791,
     "text": "Solgaleo",
-    "type": "PSYCHIC",
-    "dualtype": "STEEL",
+    "type": "STEEL",
+    "dualtype": "FIRE",
     "evolve": [
       789,
       790,
@@ -14584,8 +14585,8 @@
   {
     "value": 792,
     "text": "Lunala",
-    "type": "PSYCHIC",
-    "dualtype": "GHOST",
+    "type": "GHOST",
+    "dualtype": "FAIRY",
     "evolve": [
       789,
       790,
@@ -14845,6 +14846,7 @@
     "value": 807,
     "text": "Zeraora",
     "type": "ELECTRIC",
+    "dualtype": "FIGHTING",
     "evolve": [
       807
     ],
@@ -26452,7 +26454,7 @@
     "generation": 8,
     "abilities": [
       "Leaf Guard",
-      "Leaf Guard",
+      "Long Reach",
       "Contrary"
     ],
     "dexNum": 754,
@@ -27547,7 +27549,7 @@
     "value": 1381,
     "text": "Dusk Mane Necrozma",
     "type": "PSYCHIC",
-    "dualtype": "STEEL",
+    "dualtype": "FIRE",
     "evolve": [
       800,
       1381,

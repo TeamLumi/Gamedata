@@ -62579,31 +62579,7 @@
         "level": 0
       },
       {
-        "name": "Shadow Sneak",
-        "level": 1
-      },
-      {
-        "name": "Leer",
-        "level": 1
-      },
-      {
-        "name": "Bind",
-        "level": 1
-      },
-      {
-        "name": "Gravity",
-        "level": 1
-      },
-      {
-        "name": "Thunder Punch",
-        "level": 1
-      },
-      {
-        "name": "Ice Punch",
-        "level": 1
-      },
-      {
-        "name": "Fire Punch",
+        "name": "Night Shade",
         "level": 1
       },
       {
@@ -62611,7 +62587,35 @@
         "level": 1
       },
       {
-        "name": "Night Shade",
+        "name": "Fire Punch",
+        "level": 1
+      },
+      {
+        "name": "Ice Punch",
+        "level": 1
+      },
+      {
+        "name": "Parting Shot",
+        "level": 1
+      },
+      {
+        "name": "Gravity",
+        "level": 1
+      },
+      {
+        "name": "Bind",
+        "level": 1
+      },
+      {
+        "name": "Leer",
+        "level": 1
+      },
+      {
+        "name": "Shadow Sneak",
+        "level": 1
+      },
+      {
+        "name": "Thunder Punch",
         "level": 1
       },
       {
@@ -74881,10 +74885,6 @@
       {
         "name": "Quash",
         "level": 65
-      },
-      {
-        "name": "Quash",
-        "level": 65
       }
     ],
     "tmLearnset": {
@@ -83159,7 +83159,7 @@
     "dualtype": "Fighting",
     "abilities": [
       "Steadfast",
-      "Justified",
+      "Sharpness",
       "Inner Focus"
     ],
     "learnset": [
@@ -83168,51 +83168,11 @@
         "level": 0
       },
       {
-        "name": "Confusion",
+        "name": "Aqua Cutter",
         "level": 1
       },
       {
-        "name": "Leer",
-        "level": 1
-      },
-      {
-        "name": "Future Sight",
-        "level": 1
-      },
-      {
-        "name": "Charm",
-        "level": 1
-      },
-      {
-        "name": "Life Dew",
-        "level": 1
-      },
-      {
-        "name": "Psybeam",
-        "level": 1
-      },
-      {
-        "name": "Imprison",
-        "level": 1
-      },
-      {
-        "name": "Draining Kiss",
-        "level": 1
-      },
-      {
-        "name": "Hypnosis",
-        "level": 1
-      },
-      {
-        "name": "Disarming Voice",
-        "level": 1
-      },
-      {
-        "name": "Growl",
-        "level": 1
-      },
-      {
-        "name": "Slash",
+        "name": "Leaf Blade",
         "level": 1
       },
       {
@@ -83220,7 +83180,55 @@
         "level": 1
       },
       {
-        "name": "Leaf Blade",
+        "name": "Slash",
+        "level": 1
+      },
+      {
+        "name": "Growl",
+        "level": 1
+      },
+      {
+        "name": "Disarming Voice",
+        "level": 1
+      },
+      {
+        "name": "Hypnosis",
+        "level": 1
+      },
+      {
+        "name": "Sacred Sword",
+        "level": 1
+      },
+      {
+        "name": "Imprison",
+        "level": 1
+      },
+      {
+        "name": "Psybeam",
+        "level": 1
+      },
+      {
+        "name": "Life Dew",
+        "level": 1
+      },
+      {
+        "name": "Charm",
+        "level": 1
+      },
+      {
+        "name": "Future Sight",
+        "level": 1
+      },
+      {
+        "name": "Leer",
+        "level": 1
+      },
+      {
+        "name": "Confusion",
+        "level": 1
+      },
+      {
+        "name": "Draining Kiss",
         "level": 1
       },
       {
@@ -83629,19 +83637,7 @@
         "level": 1
       },
       {
-        "name": "Bind",
-        "level": 1
-      },
-      {
-        "name": "Gravity",
-        "level": 1
-      },
-      {
-        "name": "Thunder Punch",
-        "level": 1
-      },
-      {
-        "name": "Ice Punch",
+        "name": "Night Shade",
         "level": 1
       },
       {
@@ -83649,7 +83645,23 @@
         "level": 1
       },
       {
-        "name": "Night Shade",
+        "name": "Ice Punch",
+        "level": 1
+      },
+      {
+        "name": "Parting Shot",
+        "level": 1
+      },
+      {
+        "name": "Gravity",
+        "level": 1
+      },
+      {
+        "name": "Bind",
+        "level": 1
+      },
+      {
+        "name": "Thunder Punch",
         "level": 1
       },
       {
@@ -111394,13 +111406,13 @@
       "Hidden Power": 237
     },
     "eggLearnset": {
-      "Seismic Toss": 69,
-      "Storm Throw": 480,
-      "Quick Guard": 501,
-      "Quash": 511,
-      "Power Trip": 681,
       "Foul Play": 492,
-      "Me First": 382
+      "Me First": 382,
+      "Power Trip": 681,
+      "Quash": 511,
+      "Quick Guard": 501,
+      "Storm Throw": 480,
+      "Seismic Toss": 69
     },
     "tutorLearnset": {},
     "baseStats": {
@@ -111556,13 +111568,13 @@
       "Hidden Power": 237
     },
     "eggLearnset": {
-      "Seismic Toss": 69,
-      "Storm Throw": 480,
-      "Quick Guard": 501,
-      "Quash": 511,
-      "Power Trip": 681,
       "Foul Play": 492,
-      "Me First": 382
+      "Me First": 382,
+      "Power Trip": 681,
+      "Quash": 511,
+      "Quick Guard": 501,
+      "Storm Throw": 480,
+      "Seismic Toss": 69
     },
     "tutorLearnset": {},
     "baseStats": {
@@ -112127,6 +112139,10 @@
         "level": 1
       },
       {
+        "name": "Smart Strike",
+        "level": 1
+      },
+      {
         "name": "Aerial Ace",
         "level": 12
       },
@@ -112338,9 +112354,9 @@
     "baseStats": {
       "hp": 60,
       "atk": 50,
-      "def": 150,
+      "def": 140,
       "spa": 50,
-      "spd": 150,
+      "spd": 140,
       "spe": 60
     },
     "dexNum": 681,
@@ -112492,6 +112508,7 @@
     "value": 683,
     "text": "Aromatisse",
     "type": "Fairy",
+    "dualtype": "Poison",
     "abilities": [
       "Healer",
       "Healer",
@@ -112646,7 +112663,7 @@
     "type": "Fairy",
     "abilities": [
       "Sweet Veil",
-      "Sweet Veil",
+      "Oblivious",
       "Unburden"
     ],
     "learnset": [
@@ -112740,10 +112757,11 @@
       "Hidden Power": 237
     },
     "eggLearnset": {
-      "Yawn": 281,
-      "Copycat": 383,
       "After You": 495,
-      "Sticky Web": 564
+      "Belly Drum": 187,
+      "Copycat": 383,
+      "Sticky Web": 564,
+      "Yawn": 281
     },
     "tutorLearnset": {},
     "baseStats": {
@@ -112772,7 +112790,7 @@
     "type": "Fairy",
     "abilities": [
       "Sweet Veil",
-      "Sweet Veil",
+      "Oblivious",
       "Unburden"
     ],
     "learnset": [
@@ -112874,17 +112892,18 @@
       "Hidden Power": 237
     },
     "eggLearnset": {
-      "Yawn": 281,
-      "Copycat": 383,
       "After You": 495,
-      "Sticky Web": 564
+      "Belly Drum": 187,
+      "Copycat": 383,
+      "Sticky Web": 564,
+      "Yawn": 281
     },
     "tutorLearnset": {},
     "baseStats": {
       "hp": 82,
-      "atk": 80,
+      "atk": 90,
       "def": 86,
-      "spa": 85,
+      "spa": 75,
       "spd": 75,
       "spe": 72
     },
@@ -113009,9 +113028,12 @@
       "Hidden Power": 237
     },
     "eggLearnset": {
-      "Disable": 50,
+      "Camouflage": 293,
       "Destiny Bond": 194,
-      "Acupressure": 367
+      "Flatter": 260,
+      "Guard Swap": 385,
+      "Power Split": 471,
+      "Simple Beam": 493
     },
     "tutorLearnset": {},
     "baseStats": {
@@ -113108,6 +113130,10 @@
       {
         "name": "Superpower",
         "level": 47
+      },
+      {
+        "name": "Flip Turn",
+        "level": 52
       }
     ],
     "tmLearnset": {
@@ -113131,6 +113157,7 @@
       "Attract": 213,
       "Thief": 168,
       "Skill Swap": 285,
+      "Scald": 503,
       "Fling": 374,
       "Endure": 203,
       "Nasty Plot": 417,
@@ -113146,12 +113173,16 @@
       "Substitute": 164,
       "Trick Room": 433,
       "Cut": 15,
+      "Surf": 57,
       "Hidden Power": 237
     },
     "eggLearnset": {
-      "Disable": 50,
+      "Camouflage": 293,
       "Destiny Bond": 194,
-      "Acupressure": 367
+      "Flatter": 260,
+      "Guard Swap": 385,
+      "Power Split": 471,
+      "Simple Beam": 493
     },
     "tutorLearnset": {},
     "baseStats": {
@@ -113159,7 +113190,7 @@
       "atk": 92,
       "def": 88,
       "spa": 68,
-      "spd": 75,
+      "spd": 95,
       "spe": 73
     },
     "dexNum": 687,
@@ -113198,7 +113229,7 @@
         "level": 4
       },
       {
-        "name": "Water Gun",
+        "name": "Aqua Jet",
         "level": 8
       },
       {
@@ -113287,7 +113318,10 @@
     "eggLearnset": {
       "Sand Attack": 28,
       "Night Slash": 400,
-      "Switcheroo": 415
+      "Switcheroo": 415,
+      "Helping Hand": 270,
+      "Tickle": 321,
+      "Water Sport": 346
     },
     "tutorLearnset": {},
     "baseStats": {
@@ -113322,11 +113356,19 @@
     ],
     "learnset": [
       {
+        "name": "Accelerock",
+        "level": 0
+      },
+      {
         "name": "Mud-Slap",
         "level": 1
       },
       {
-        "name": "Scratch",
+        "name": "Withdraw",
+        "level": 1
+      },
+      {
+        "name": "Accelerock",
         "level": 1
       },
       {
@@ -113334,11 +113376,11 @@
         "level": 1
       },
       {
-        "name": "Water Gun",
+        "name": "Scratch",
         "level": 1
       },
       {
-        "name": "Withdraw",
+        "name": "Aqua Jet",
         "level": 1
       },
       {
@@ -113431,12 +113473,16 @@
       "Surf": 57,
       "Strength": 70,
       "Rock Smash": 249,
+      "Rock Climb": 431,
       "Hidden Power": 237
     },
     "eggLearnset": {
       "Sand Attack": 28,
       "Night Slash": 400,
-      "Switcheroo": 415
+      "Switcheroo": 415,
+      "Helping Hand": 270,
+      "Tickle": 321,
+      "Water Sport": 346
     },
     "tutorLearnset": {},
     "baseStats": {
@@ -113466,7 +113512,7 @@
     "dualtype": "Water",
     "abilities": [
       "Poison Point",
-      "Poison Touch",
+      "Corrosion",
       "Adaptability"
     ],
     "learnset": [
@@ -113550,10 +113596,12 @@
       "Hidden Power": 237
     },
     "eggLearnset": {
-      "Haze": 114,
       "Acid Armor": 151,
-      "Twister": 239,
-      "Dragon Tail": 525
+      "Haze": 114,
+      "Play Rough": 583,
+      "Toxic Spikes": 390,
+      "Venom Drench": 599,
+      "Recover": 105
     },
     "tutorLearnset": {},
     "baseStats": {
@@ -113583,7 +113631,7 @@
     "dualtype": "Dragon",
     "abilities": [
       "Poison Point",
-      "Poison Touch",
+      "Corrosion",
       "Adaptability"
     ],
     "learnset": [
@@ -113675,10 +113723,12 @@
       "Hidden Power": 237
     },
     "eggLearnset": {
-      "Haze": 114,
       "Acid Armor": 151,
-      "Twister": 239,
-      "Dragon Tail": 525
+      "Haze": 114,
+      "Play Rough": 583,
+      "Toxic Spikes": 390,
+      "Venom Drench": 599,
+      "Recover": 105
     },
     "tutorLearnset": {},
     "baseStats": {
@@ -113795,9 +113845,11 @@
       "Hidden Power": 237
     },
     "eggLearnset": {
-      "Bubble Beam": 61,
-      "Aqua Tail": 401,
-      "Entrainment": 494
+      "Aqua Jet": 453,
+      "Crabhammer": 152,
+      "Endure": 203,
+      "Entrainment": 494,
+      "Helping Hand": 270
     },
     "tutorLearnset": {},
     "baseStats": {
@@ -113930,18 +113982,20 @@
       "Hidden Power": 237
     },
     "eggLearnset": {
-      "Bubble Beam": 61,
-      "Aqua Tail": 401,
-      "Entrainment": 494
+      "Aqua Jet": 453,
+      "Crabhammer": 152,
+      "Endure": 203,
+      "Entrainment": 494,
+      "Helping Hand": 270
     },
     "tutorLearnset": {},
     "baseStats": {
       "hp": 71,
-      "atk": 73,
+      "atk": 59,
       "def": 88,
       "spa": 120,
       "spd": 89,
-      "spe": 59
+      "spe": 73
     },
     "dexNum": 693,
     "form": 0,
@@ -114239,7 +114293,7 @@
     "dualtype": "Dragon",
     "abilities": [
       "Strong Jaw",
-      "Strong Jaw",
+      "Reckless",
       "Sturdy"
     ],
     "learnset": [
@@ -114336,8 +114390,12 @@
     "eggLearnset": {
       "Rock Throw": 88,
       "Curse": 174,
+      "Dragon Dance": 349,
+      "Fire Fang": 424,
+      "Ice Fang": 423,
       "Poison Fang": 305,
-      "Rock Polish": 397
+      "Rock Polish": 397,
+      "Thunder Fang": 422
     },
     "tutorLearnset": {},
     "baseStats": {
@@ -114367,7 +114425,7 @@
     "dualtype": "Dragon",
     "abilities": [
       "Strong Jaw",
-      "Strong Jaw",
+      "Reckless",
       "Rock Head"
     ],
     "learnset": [
@@ -114428,7 +114486,7 @@
         "level": 54
       },
       {
-        "name": "Giga Impact",
+        "name": "Dragon Hammer",
         "level": 60
       },
       {
@@ -114474,8 +114532,12 @@
     "eggLearnset": {
       "Rock Throw": 88,
       "Curse": 174,
+      "Dragon Dance": 349,
+      "Fire Fang": 424,
+      "Ice Fang": 423,
       "Poison Fang": 305,
-      "Rock Polish": 397
+      "Rock Polish": 397,
+      "Thunder Fang": 422
     },
     "tutorLearnset": {},
     "baseStats": {
@@ -114505,7 +114567,7 @@
     "dualtype": "Ice",
     "abilities": [
       "Refrigerate",
-      "Refrigerate",
+      "Solid Rock",
       "Snow Warning"
     ],
     "learnset": [
@@ -114570,7 +114632,7 @@
         "level": 52
       },
       {
-        "name": "Hyper Beam",
+        "name": "Meteor Beam",
         "level": 56
       }
     ],
@@ -114620,9 +114682,11 @@
     "eggLearnset": {
       "Take Down": 36,
       "Rock Throw": 88,
-      "Haze": 114,
-      "Mirror Coat": 243,
+      "Barrier": 112,
       "Discharge": 435,
+      "Haze": 114,
+      "Magnet Rise": 393,
+      "Mirror Coat": 243,
       "Aurora Veil": 694
     },
     "tutorLearnset": {},
@@ -114653,12 +114717,24 @@
     "dualtype": "Ice",
     "abilities": [
       "Refrigerate",
-      "Refrigerate",
+      "Solid Rock",
       "Snow Warning"
     ],
     "learnset": [
       {
+        "name": "Power Gem",
+        "level": 0
+      },
+      {
         "name": "Ancient Power",
+        "level": 1
+      },
+      {
+        "name": "Powder Snow",
+        "level": 1
+      },
+      {
+        "name": "Power Gem",
         "level": 1
       },
       {
@@ -114667,10 +114743,6 @@
       },
       {
         "name": "Growl",
-        "level": 1
-      },
-      {
-        "name": "Powder Snow",
         "level": 1
       },
       {
@@ -114718,8 +114790,12 @@
         "level": 60
       },
       {
-        "name": "Hyper Beam",
+        "name": "Meteor Beam",
         "level": 66
+      },
+      {
+        "name": "Boomburst",
+        "level": 70
       }
     ],
     "tmLearnset": {
@@ -114772,9 +114848,11 @@
     "eggLearnset": {
       "Take Down": 36,
       "Rock Throw": 88,
-      "Haze": 114,
-      "Mirror Coat": 243,
+      "Barrier": 112,
       "Discharge": 435,
+      "Haze": 114,
+      "Magnet Rise": 393,
+      "Mirror Coat": 243,
       "Aurora Veil": 694
     },
     "tutorLearnset": {},
@@ -114883,6 +114961,10 @@
       {
         "name": "Swift",
         "level": 19
+      },
+      {
+        "name": "Sweet Kiss",
+        "level": 22
       },
       {
         "name": "Light Screen",
@@ -115130,10 +115212,10 @@
     "tutorLearnset": {},
     "baseStats": {
       "hp": 78,
-      "atk": 92,
-      "def": 75,
-      "spa": 74,
-      "spd": 63,
+      "atk": 98,
+      "def": 78,
+      "spa": 64,
+      "spd": 64,
       "spe": 118
     },
     "dexNum": 701,
@@ -115292,8 +115374,8 @@
     "dualtype": "Fairy",
     "abilities": [
       "Clear Body",
-      "Clear Body",
-      "Sturdy"
+      "Sturdy",
+      "Filter"
     ],
     "learnset": [
       {
@@ -115323,6 +115405,10 @@
       {
         "name": "Rock Polish",
         "level": 25
+      },
+      {
+        "name": "Recover",
+        "level": 28
       },
       {
         "name": "Light Screen",
@@ -115815,7 +115901,7 @@
     "dualtype": "Fairy",
     "abilities": [
       "Prankster",
-      "Prankster",
+      "Pickpocket",
       "Magician"
     ],
     "learnset": [
@@ -115918,8 +116004,11 @@
       "Hidden Power": 237
     },
     "eggLearnset": {
-      "Magnet Rise": 393,
-      "Switcheroo": 415
+      "Iron Defense": 334,
+      "Lock-On": 199,
+      "Switcheroo": 415,
+      "Thief": 168,
+      "Recover": 105
     },
     "tutorLearnset": {},
     "baseStats": {
@@ -116053,11 +116142,11 @@
       "Hidden Power": 237
     },
     "eggLearnset": {
-      "Venom Drench": 599,
-      "Grudge": 288,
-      "Power-Up Punch": 612,
       "Bestow": 516,
+      "Grudge": 288,
       "Imprison": 286,
+      "Power-Up Punch": 612,
+      "Venom Drench": 599,
       "Disable": 50,
       "Sucker Punch": 389
     },
@@ -116216,11 +116305,11 @@
       "Hidden Power": 237
     },
     "eggLearnset": {
-      "Venom Drench": 599,
-      "Grudge": 288,
-      "Power-Up Punch": 612,
       "Bestow": 516,
+      "Grudge": 288,
       "Imprison": 286,
+      "Power-Up Punch": 612,
+      "Venom Drench": 599,
       "Disable": 50,
       "Sucker Punch": 389
     },
@@ -116277,23 +116366,15 @@
         "level": 12
       },
       {
-        "name": "Trick-or-Treat",
-        "level": 12
-      },
-      {
         "name": "Leech Seed",
         "level": 16
       },
       {
-        "name": "Bullet Seed",
+        "name": "Mega Drain",
         "level": 20
       },
       {
         "name": "Scary Face",
-        "level": 24
-      },
-      {
-        "name": "Trick-or-Treat",
         "level": 24
       },
       {
@@ -116306,10 +116387,6 @@
       },
       {
         "name": "Shadow Ball",
-        "level": 36
-      },
-      {
-        "name": "Trick-or-Treat",
         "level": 36
       },
       {
@@ -116427,23 +116504,15 @@
         "level": 12
       },
       {
-        "name": "Trick-or-Treat",
-        "level": 12
-      },
-      {
         "name": "Leech Seed",
         "level": 16
       },
       {
-        "name": "Bullet Seed",
+        "name": "Mega Drain",
         "level": 20
       },
       {
         "name": "Scary Face",
-        "level": 24
-      },
-      {
-        "name": "Trick-or-Treat",
         "level": 24
       },
       {
@@ -116456,10 +116525,6 @@
       },
       {
         "name": "Shadow Ball",
-        "level": 36
-      },
-      {
-        "name": "Trick-or-Treat",
         "level": 36
       },
       {
@@ -116949,8 +117014,8 @@
       "Hidden Power": 237
     },
     "eggLearnset": {
-      "Dragon Rush": 407,
       "Defog": 432,
+      "Dragon Rush": 407,
       "Outrage": 200,
       "Snatch": 289,
       "Switcheroo": 415,
@@ -117109,8 +117174,8 @@
       "Hidden Power": 237
     },
     "eggLearnset": {
-      "Dragon Rush": 407,
       "Defog": 432,
+      "Dragon Rush": 407,
       "Outrage": 200,
       "Snatch": 289,
       "Switcheroo": 415,
@@ -117574,8 +117639,8 @@
     "dualtype": "Fairy",
     "abilities": [
       "Clear Body",
-      "Clear Body",
-      "Clear Body"
+      "Sturdy",
+      "Filter"
     ],
     "learnset": [
       {
@@ -117605,6 +117670,10 @@
       {
         "name": "Rock Polish",
         "level": 35
+      },
+      {
+        "name": "Recover",
+        "level": 38
       },
       {
         "name": "Light Screen",
@@ -117840,11 +117909,11 @@
     "tutorLearnset": {},
     "baseStats": {
       "hp": 80,
-      "atk": 110,
+      "atk": 90,
       "def": 60,
       "spa": 150,
       "spd": 130,
-      "spe": 70
+      "spe": 90
     },
     "dexNum": 720,
     "form": 0,
@@ -117926,20 +117995,24 @@
         "level": 66
       },
       {
-        "name": "Steam Eruption",
+        "name": "Strange Steam",
         "level": 72
       },
       {
-        "name": "Flare Blitz",
+        "name": "Steam Eruption",
         "level": 78
       },
       {
-        "name": "Overheat",
+        "name": "Flare Blitz",
         "level": 84
       },
       {
-        "name": "Explosion",
+        "name": "Overheat",
         "level": 90
+      },
+      {
+        "name": "Explosion",
+        "level": 96
       }
     ],
     "tmLearnset": {
@@ -118280,31 +118353,11 @@
     ],
     "learnset": [
       {
-        "name": "Tackle",
-        "level": 1
-      },
-      {
-        "name": "Leafage",
-        "level": 1
-      },
-      {
-        "name": "Astonish",
-        "level": 1
-      },
-      {
-        "name": "Growl",
-        "level": 1
-      },
-      {
-        "name": "Leaf Storm",
-        "level": 1
-      },
-      {
-        "name": "Phantom Force",
-        "level": 1
-      },
-      {
         "name": "Spirit Shackle",
+        "level": 0
+      },
+      {
+        "name": "U-turn",
         "level": 1
       },
       {
@@ -118312,7 +118365,31 @@
         "level": 1
       },
       {
-        "name": "U-turn",
+        "name": "Spirit Shackle",
+        "level": 1
+      },
+      {
+        "name": "Tackle",
+        "level": 1
+      },
+      {
+        "name": "Leaf Storm",
+        "level": 1
+      },
+      {
+        "name": "Growl",
+        "level": 1
+      },
+      {
+        "name": "Astonish",
+        "level": 1
+      },
+      {
+        "name": "Leafage",
+        "level": 1
+      },
+      {
+        "name": "Phantom Force",
         "level": 1
       },
       {
@@ -118425,7 +118502,7 @@
     "type": "Fire",
     "abilities": [
       "Blaze",
-      "Blaze",
+      "Tough Claws",
       "Intimidate"
     ],
     "learnset": [
@@ -118514,9 +118591,14 @@
       "Hidden Power": 237
     },
     "eggLearnset": {
+      "Body Slam": 34,
+      "Crunch": 242,
       "Fake Out": 252,
-      "Parting Shot": 575,
-      "Power Trip": 681
+      "Heat Wave": 257,
+      "Nasty Plot": 417,
+      "Power Trip": 681,
+      "Revenge": 279,
+      "Parting Shot": 575
     },
     "tutorLearnset": {},
     "baseStats": {
@@ -118545,7 +118627,7 @@
     "type": "Fire",
     "abilities": [
       "Blaze",
-      "Blaze",
+      "Tough Claws",
       "Intimidate"
     ],
     "learnset": [
@@ -118634,9 +118716,14 @@
       "Hidden Power": 237
     },
     "eggLearnset": {
+      "Body Slam": 34,
+      "Crunch": 242,
       "Fake Out": 252,
-      "Parting Shot": 575,
-      "Power Trip": 681
+      "Heat Wave": 257,
+      "Nasty Plot": 417,
+      "Power Trip": 681,
+      "Revenge": 279,
+      "Parting Shot": 575
     },
     "tutorLearnset": {},
     "baseStats": {
@@ -118666,7 +118753,7 @@
     "dualtype": "Dark",
     "abilities": [
       "Blaze",
-      "Blaze",
+      "Tough Claws",
       "Intimidate"
     ],
     "learnset": [
@@ -118789,16 +118876,21 @@
       "Hidden Power": 237
     },
     "eggLearnset": {
+      "Body Slam": 34,
+      "Crunch": 242,
       "Fake Out": 252,
-      "Parting Shot": 575,
-      "Power Trip": 681
+      "Heat Wave": 257,
+      "Nasty Plot": 417,
+      "Power Trip": 681,
+      "Revenge": 279,
+      "Parting Shot": 575
     },
     "tutorLearnset": {},
     "baseStats": {
       "hp": 95,
       "atk": 115,
       "def": 90,
-      "spa": 80,
+      "spa": 85,
       "spd": 90,
       "spe": 60
     },
@@ -118820,7 +118912,7 @@
     "type": "Water",
     "abilities": [
       "Torrent",
-      "Torrent",
+      "Ball Fetch",
       "Liquid Voice"
     ],
     "learnset": [
@@ -118907,9 +118999,13 @@
       "Hidden Power": 237
     },
     "eggLearnset": {
-      "Perish Song": 195,
+      "Amnesia": 133,
       "Aqua Ring": 392,
-      "Life Dew": 791
+      "Aromatic Mist": 597,
+      "Charm": 204,
+      "Life Dew": 791,
+      "Perish Song": 195,
+      "Wonder Room": 472
     },
     "tutorLearnset": {},
     "baseStats": {
@@ -118938,7 +119034,7 @@
     "type": "Water",
     "abilities": [
       "Torrent",
-      "Torrent",
+      "Ball Fetch",
       "Liquid Voice"
     ],
     "learnset": [
@@ -119025,9 +119121,13 @@
       "Hidden Power": 237
     },
     "eggLearnset": {
-      "Perish Song": 195,
+      "Amnesia": 133,
       "Aqua Ring": 392,
-      "Life Dew": 791
+      "Aromatic Mist": 597,
+      "Charm": 204,
+      "Life Dew": 791,
+      "Perish Song": 195,
+      "Wonder Room": 472
     },
     "tutorLearnset": {},
     "baseStats": {
@@ -119057,7 +119157,7 @@
     "dualtype": "Fairy",
     "abilities": [
       "Torrent",
-      "Torrent",
+      "Ball Fetch",
       "Liquid Voice"
     ],
     "learnset": [
@@ -119124,6 +119224,10 @@
       {
         "name": "Hydro Pump",
         "level": 58
+      },
+      {
+        "name": "Boomburst",
+        "level": 65
       }
     ],
     "tmLearnset": {
@@ -119162,13 +119266,17 @@
       "Hidden Power": 237
     },
     "eggLearnset": {
-      "Perish Song": 195,
+      "Amnesia": 133,
       "Aqua Ring": 392,
-      "Life Dew": 791
+      "Aromatic Mist": 597,
+      "Charm": 204,
+      "Life Dew": 791,
+      "Perish Song": 195,
+      "Wonder Room": 472
     },
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 80,
+      "hp": 85,
       "atk": 74,
       "def": 74,
       "spa": 126,
@@ -119862,12 +119970,12 @@
     },
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 88,
+      "hp": 98,
       "atk": 110,
-      "def": 60,
-      "spa": 55,
-      "spd": 60,
-      "spe": 45
+      "def": 70,
+      "spa": 45,
+      "spd": 70,
+      "spe": 55
     },
     "dexNum": 735,
     "form": 0,
@@ -119887,8 +119995,8 @@
     "type": "Bug",
     "abilities": [
       "Swarm",
-      "Swarm",
-      "Swarm"
+      "Hustle",
+      "Hyper Cutter"
     ],
     "learnset": [
       {
@@ -119988,8 +120096,8 @@
     "dualtype": "Electric",
     "abilities": [
       "Battery",
-      "Battery",
-      "Battery"
+      "Hustle",
+      "Static"
     ],
     "learnset": [
       {
@@ -120106,8 +120214,8 @@
     "dualtype": "Electric",
     "abilities": [
       "Levitate",
-      "Levitate",
-      "Levitate"
+      "Hustle",
+      "Speed Boost"
     ],
     "learnset": [
       {
@@ -120115,11 +120223,11 @@
         "level": 0
       },
       {
-        "name": "X-Scissor",
+        "name": "Bug Bite",
         "level": 1
       },
       {
-        "name": "Vise Grip",
+        "name": "Charge",
         "level": 1
       },
       {
@@ -120131,11 +120239,11 @@
         "level": 1
       },
       {
-        "name": "Iron Defense",
+        "name": "Discharge",
         "level": 1
       },
       {
-        "name": "Thunderbolt",
+        "name": "Iron Defense",
         "level": 1
       },
       {
@@ -120147,15 +120255,15 @@
         "level": 1
       },
       {
-        "name": "Charge",
+        "name": "Thunderbolt",
         "level": 1
       },
       {
-        "name": "Bug Bite",
+        "name": "Vise Grip",
         "level": 1
       },
       {
-        "name": "Discharge",
+        "name": "X-Scissor",
         "level": 1
       },
       {
@@ -120223,6 +120331,7 @@
       "Flash Cannon": 430,
       "Fly": 19,
       "Wild Charge": 528,
+      "Hurricane": 542,
       "Hidden Power": 237
     },
     "eggLearnset": {
@@ -120347,6 +120456,7 @@
     },
     "eggLearnset": {
       "Amnesia": 133,
+      "Crabhammer": 152,
       "Wide Guard": 469
     },
     "tutorLearnset": {},
@@ -120386,19 +120496,11 @@
         "level": 0
       },
       {
-        "name": "Rock Smash",
+        "name": "Mach Punch",
         "level": 1
       },
       {
-        "name": "Pursuit",
-        "level": 1
-      },
-      {
-        "name": "Hammer Arm",
-        "level": 1
-      },
-      {
-        "name": "Ice Punch",
+        "name": "Leer",
         "level": 1
       },
       {
@@ -120406,7 +120508,23 @@
         "level": 1
       },
       {
-        "name": "Leer",
+        "name": "Ice Shard",
+        "level": 1
+      },
+      {
+        "name": "Hammer Arm",
+        "level": 1
+      },
+      {
+        "name": "Pursuit",
+        "level": 1
+      },
+      {
+        "name": "Rock Smash",
+        "level": 1
+      },
+      {
+        "name": "Ice Punch",
         "level": 1
       },
       {
@@ -120498,6 +120616,7 @@
     },
     "eggLearnset": {
       "Amnesia": 133,
+      "Crabhammer": 152,
       "Wide Guard": 469
     },
     "tutorLearnset": {},
@@ -120595,6 +120714,10 @@
       {
         "name": "Hurricane",
         "level": 50
+      },
+      {
+        "name": "Quiver Dance",
+        "level": 53
       }
     ],
     "tmLearnset": {
@@ -120628,16 +120751,18 @@
       "Hidden Power": 237
     },
     "eggLearnset": {
+      "Captivate": 445,
       "Pluck": 365,
-      "Captivate": 445
+      "Safeguard": 219,
+      "Tailwind": 366
     },
     "tutorLearnset": {},
     "baseStats": {
       "hp": 75,
       "atk": 70,
-      "def": 70,
-      "spa": 98,
-      "spd": 70,
+      "def": 77,
+      "spa": 108,
+      "spd": 77,
       "spe": 93
     },
     "dexNum": 741,
@@ -120696,7 +120821,7 @@
         "level": 36
       },
       {
-        "name": "Dazzling Gleam",
+        "name": "Moonblast",
         "level": 42
       },
       {
@@ -120825,7 +120950,7 @@
         "level": 40
       },
       {
-        "name": "Dazzling Gleam",
+        "name": "Moonblast",
         "level": 48
       },
       {
@@ -120880,9 +121005,9 @@
     "baseStats": {
       "hp": 60,
       "atk": 55,
-      "def": 60,
-      "spa": 95,
-      "spd": 70,
+      "def": 62,
+      "spa": 101,
+      "spd": 72,
       "spe": 124
     },
     "dexNum": 743,
@@ -121264,13 +121389,16 @@
       "Hidden Power": 237
     },
     "eggLearnset": {
-      "Take Down": 36,
       "Mist": 54,
-      "Water Pulse": 352
+      "Take Down": 36,
+      "Muddy Water": 330,
+      "Water Pulse": 352,
+      "Water Sport": 346,
+      "Whirlpool": 250
     },
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 45,
+      "hp": 70,
       "atk": 20,
       "def": 20,
       "spa": 25,
@@ -121587,6 +121715,10 @@
       {
         "name": "Superpower",
         "level": 44
+      },
+      {
+        "name": "Slack Off",
+        "level": 48
       }
     ],
     "tmLearnset": {
@@ -121647,7 +121779,7 @@
     "text": "Mudsdale",
     "type": "Ground",
     "abilities": [
-      "Own Tempo",
+      "Tangling Hair",
       "Stamina",
       "Inner Focus"
     ],
@@ -121703,6 +121835,10 @@
       {
         "name": "Superpower",
         "level": 52
+      },
+      {
+        "name": "Slack Off",
+        "level": 58
       }
     ],
     "tmLearnset": {
@@ -121827,6 +121963,10 @@
       {
         "name": "Mirror Coat",
         "level": 48
+      },
+      {
+        "name": "Wave Crash",
+        "level": 52
       }
     ],
     "tmLearnset": {
@@ -121950,6 +122090,10 @@
       {
         "name": "Mirror Coat",
         "level": 62
+      },
+      {
+        "name": "Wave Crash",
+        "level": 68
       }
     ],
     "tmLearnset": {
@@ -122013,7 +122157,7 @@
     "type": "Grass",
     "abilities": [
       "Leaf Guard",
-      "Leaf Guard",
+      "Long Reach",
       "Contrary"
     ],
     "learnset": [
@@ -122095,8 +122239,11 @@
     },
     "eggLearnset": {
       "Aromatherapy": 312,
-      "Worry Seed": 388,
-      "Defog": 432
+      "Defog": 432,
+      "Giga Drain": 202,
+      "Leaf Storm": 437,
+      "Weather Ball": 311,
+      "Worry Seed": 388
     },
     "tutorLearnset": {},
     "baseStats": {
@@ -122125,7 +122272,7 @@
     "type": "Grass",
     "abilities": [
       "Leaf Guard",
-      "Leaf Guard",
+      "Long Reach",
       "Contrary"
     ],
     "learnset": [
@@ -122134,23 +122281,7 @@
         "level": 0
       },
       {
-        "name": "Petal Blizzard",
-        "level": 1
-      },
-      {
-        "name": "Night Slash",
-        "level": 1
-      },
-      {
-        "name": "Leafage",
-        "level": 1
-      },
-      {
-        "name": "Solar Beam",
-        "level": 1
-      },
-      {
-        "name": "Growth",
+        "name": "Dual Chop",
         "level": 1
       },
       {
@@ -122158,11 +122289,27 @@
         "level": 1
       },
       {
-        "name": "Dual Chop",
+        "name": "Growth",
         "level": 1
       },
       {
         "name": "Ingrain",
+        "level": 1
+      },
+      {
+        "name": "Leafage",
+        "level": 1
+      },
+      {
+        "name": "Night Slash",
+        "level": 1
+      },
+      {
+        "name": "Petal Blizzard",
+        "level": 1
+      },
+      {
+        "name": "Solar Beam",
         "level": 1
       },
       {
@@ -122233,15 +122380,18 @@
     },
     "eggLearnset": {
       "Aromatherapy": 312,
-      "Worry Seed": 388,
-      "Defog": 432
+      "Defog": 432,
+      "Giga Drain": 202,
+      "Leaf Storm": 437,
+      "Weather Ball": 311,
+      "Worry Seed": 388
     },
     "tutorLearnset": {},
     "baseStats": {
       "hp": 70,
-      "atk": 105,
+      "atk": 120,
       "def": 90,
-      "spa": 80,
+      "spa": 105,
       "spd": 90,
       "spe": 45
     },
@@ -122348,10 +122498,13 @@
       "Hidden Power": 237
     },
     "eggLearnset": {
-      "Leech Seed": 73,
+      "Amnesia": 133,
       "Growth": 74,
+      "Leech Seed": 73,
       "Poison Powder": 77,
-      "Stun Spore": 78
+      "Stun Spore": 78,
+      "Weather Ball": 311,
+      "Spore": 147
     },
     "tutorLearnset": {},
     "baseStats": {
@@ -122470,10 +122623,13 @@
       "Hidden Power": 237
     },
     "eggLearnset": {
-      "Leech Seed": 73,
+      "Amnesia": 133,
       "Growth": 74,
+      "Leech Seed": 73,
       "Poison Powder": 77,
-      "Stun Spore": 78
+      "Stun Spore": 78,
+      "Weather Ball": 311,
+      "Spore": 147
     },
     "tutorLearnset": {},
     "baseStats": {
@@ -122503,8 +122659,8 @@
     "dualtype": "Fire",
     "abilities": [
       "Corrosion",
-      "Corrosion",
-      "Oblivious"
+      "Oblivious",
+      "Merciless"
     ],
     "learnset": [
       {
@@ -122596,17 +122752,19 @@
       "Hidden Power": 237
     },
     "eggLearnset": {
-      "Sand Attack": 28,
-      "Mud-Slap": 189,
+      "Belch": 562,
       "Fake Out": 252,
-      "Belch": 562
+      "Knock Off": 282,
+      "Mud Bomb": 426,
+      "Sand Attack": 28,
+      "Snatch": 289
     },
     "tutorLearnset": {},
     "baseStats": {
       "hp": 48,
       "atk": 44,
       "def": 40,
-      "spa": 71,
+      "spa": 76,
       "spd": 40,
       "spe": 77
     },
@@ -122629,8 +122787,8 @@
     "dualtype": "Fire",
     "abilities": [
       "Corrosion",
-      "Corrosion",
-      "Oblivious"
+      "Oblivious",
+      "Merciless"
     ],
     "learnset": [
       {
@@ -122638,39 +122796,7 @@
         "level": 0
       },
       {
-        "name": "Torment",
-        "level": 1
-      },
-      {
-        "name": "Swagger",
-        "level": 1
-      },
-      {
-        "name": "Scratch",
-        "level": 1
-      },
-      {
-        "name": "Pound",
-        "level": 1
-      },
-      {
-        "name": "Poison Gas",
-        "level": 1
-      },
-      {
-        "name": "Smog",
-        "level": 1
-      },
-      {
-        "name": "Fire Lash",
-        "level": 1
-      },
-      {
-        "name": "Endeavor",
-        "level": 1
-      },
-      {
-        "name": "Encore",
+        "name": "Disable",
         "level": 1
       },
       {
@@ -122678,11 +122804,43 @@
         "level": 1
       },
       {
-        "name": "Disable",
+        "name": "Encore",
+        "level": 1
+      },
+      {
+        "name": "Endeavor",
+        "level": 1
+      },
+      {
+        "name": "Fire Lash",
         "level": 1
       },
       {
         "name": "Knock Off",
+        "level": 1
+      },
+      {
+        "name": "Poison Gas",
+        "level": 1
+      },
+      {
+        "name": "Pound",
+        "level": 1
+      },
+      {
+        "name": "Scratch",
+        "level": 1
+      },
+      {
+        "name": "Smog",
+        "level": 1
+      },
+      {
+        "name": "Swagger",
+        "level": 1
+      },
+      {
+        "name": "Torment",
         "level": 1
       },
       {
@@ -122757,17 +122915,19 @@
       "Hidden Power": 237
     },
     "eggLearnset": {
-      "Sand Attack": 28,
-      "Mud-Slap": 189,
+      "Belch": 562,
       "Fake Out": 252,
-      "Belch": 562
+      "Knock Off": 282,
+      "Mud Bomb": 426,
+      "Sand Attack": 28,
+      "Snatch": 289
     },
     "tutorLearnset": {},
     "baseStats": {
       "hp": 68,
       "atk": 64,
       "def": 60,
-      "spa": 111,
+      "spa": 116,
       "spd": 60,
       "spe": 117
     },
@@ -122916,11 +123076,11 @@
     "abilities": [
       "Fluffy",
       "Klutz",
-      "Unnerve"
+      "Iron Fist"
     ],
     "learnset": [
       {
-        "name": "Bind",
+        "name": "Mega Punch",
         "level": 0
       },
       {
@@ -122928,7 +123088,7 @@
         "level": 1
       },
       {
-        "name": "Bind",
+        "name": "Mega Punch",
         "level": 1
       },
       {
@@ -123123,7 +123283,9 @@
     "eggLearnset": {
       "Synthesis": 235,
       "Endeavor": 283,
-      "Acupressure": 367
+      "Acupressure": 367,
+      "Growth": 74,
+      "Power Whip": 438
     },
     "tutorLearnset": {},
     "baseStats": {
@@ -123234,7 +123396,9 @@
     "eggLearnset": {
       "Synthesis": 235,
       "Endeavor": 283,
-      "Acupressure": 367
+      "Acupressure": 367,
+      "Growth": 74,
+      "Power Whip": 438
     },
     "tutorLearnset": {},
     "baseStats": {
@@ -123272,23 +123436,7 @@
         "level": 0
       },
       {
-        "name": "Swagger",
-        "level": 1
-      },
-      {
-        "name": "Splash",
-        "level": 1
-      },
-      {
-        "name": "Razor Leaf",
-        "level": 1
-      },
-      {
-        "name": "Trop Kick",
-        "level": 1
-      },
-      {
-        "name": "Power Whip",
+        "name": "Flail",
         "level": 1
       },
       {
@@ -123296,11 +123444,27 @@
         "level": 1
       },
       {
-        "name": "Flail",
+        "name": "Power Whip",
         "level": 1
       },
       {
         "name": "Rapid Spin",
+        "level": 1
+      },
+      {
+        "name": "Razor Leaf",
+        "level": 1
+      },
+      {
+        "name": "Splash",
+        "level": 1
+      },
+      {
+        "name": "Swagger",
+        "level": 1
+      },
+      {
+        "name": "Trop Kick",
         "level": 1
       },
       {
@@ -123328,12 +123492,16 @@
         "level": 46
       },
       {
-        "name": "Leaf Storm",
+        "name": "Triple Axel",
         "level": 52
       },
       {
-        "name": "High Jump Kick",
+        "name": "Leaf Storm",
         "level": 58
+      },
+      {
+        "name": "High Jump Kick",
+        "level": 64
       }
     ],
     "tmLearnset": {
@@ -123369,16 +123537,18 @@
     "eggLearnset": {
       "Synthesis": 235,
       "Endeavor": 283,
-      "Acupressure": 367
+      "Acupressure": 367,
+      "Growth": 74,
+      "Power Whip": 438
     },
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 72,
+      "hp": 77,
       "atk": 120,
       "def": 98,
       "spa": 50,
       "spd": 98,
-      "spe": 72
+      "spe": 77
     },
     "dexNum": 763,
     "form": 0,
@@ -123427,56 +123597,60 @@
         "level": 9
       },
       {
-        "name": "Flower Shield",
+        "name": "Bestow",
         "level": 12
       },
       {
-        "name": "Magical Leaf",
+        "name": "Flower Shield",
         "level": 15
       },
       {
-        "name": "Synthesis",
+        "name": "Magical Leaf",
         "level": 18
       },
       {
-        "name": "Leech Seed",
+        "name": "Synthesis",
         "level": 21
       },
       {
-        "name": "Grass Knot",
+        "name": "Leech Seed",
         "level": 24
       },
       {
-        "name": "Sweet Kiss",
+        "name": "Grass Knot",
         "level": 27
       },
       {
-        "name": "Floral Healing",
+        "name": "Sweet Kiss",
         "level": 30
       },
       {
-        "name": "Petal Blizzard",
+        "name": "Floral Healing",
         "level": 33
       },
       {
-        "name": "Aromatherapy",
+        "name": "Petal Blizzard",
         "level": 36
       },
       {
-        "name": "Play Rough",
+        "name": "Aromatherapy",
         "level": 39
       },
       {
-        "name": "Sweet Scent",
+        "name": "Play Rough",
         "level": 42
       },
       {
-        "name": "Petal Dance",
+        "name": "Sweet Scent",
         "level": 45
       },
       {
-        "name": "Grassy Terrain",
+        "name": "Petal Dance",
         "level": 48
+      },
+      {
+        "name": "Grassy Terrain",
+        "level": 51
       }
     ],
     "tmLearnset": {
@@ -123492,6 +123666,7 @@
       "Safeguard": 219,
       "Dazzling Gleam": 605,
       "Solar Beam": 76,
+      "Psychic": 94,
       "Double Team": 104,
       "Facade": 263,
       "Rest": 156,
@@ -123518,11 +123693,11 @@
     "tutorLearnset": {},
     "baseStats": {
       "hp": 51,
-      "atk": 52,
-      "def": 90,
-      "spa": 82,
+      "atk": 51,
+      "def": 100,
+      "spa": 90,
       "spd": 110,
-      "spe": 100
+      "spe": 90
     },
     "dexNum": 764,
     "form": 0,
@@ -123542,7 +123717,7 @@
     "type": "Normal",
     "dualtype": "Psychic",
     "abilities": [
-      "Inner Focus",
+      "Trace",
       "Telepathy",
       "Symbiosis"
     ],
@@ -123564,44 +123739,48 @@
         "level": 10
       },
       {
-        "name": "Stored Power",
+        "name": "Teleport",
         "level": 15
       },
       {
-        "name": "Psych Up",
+        "name": "Stored Power",
         "level": 20
       },
       {
-        "name": "Quash",
+        "name": "Psych Up",
         "level": 25
       },
       {
-        "name": "Nasty Plot",
+        "name": "Quash",
         "level": 30
       },
       {
-        "name": "Zen Headbutt",
+        "name": "Nasty Plot",
         "level": 35
       },
       {
-        "name": "Trick Room",
+        "name": "Zen Headbutt",
         "level": 40
       },
       {
-        "name": "Psychic",
+        "name": "Trick Room",
         "level": 45
       },
       {
-        "name": "Instruct",
+        "name": "Psychic",
         "level": 50
       },
       {
-        "name": "Foul Play",
+        "name": "Instruct",
         "level": 55
       },
       {
-        "name": "Future Sight",
+        "name": "Foul Play",
         "level": 60
+      },
+      {
+        "name": "Future Sight",
+        "level": 65
       }
     ],
     "tmLearnset": {
@@ -123654,10 +123833,10 @@
     },
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 90,
-      "atk": 60,
-      "def": 80,
-      "spa": 90,
+      "hp": 100,
+      "atk": 30,
+      "def": 90,
+      "spa": 100,
       "spd": 110,
       "spe": 60
     },
@@ -123679,7 +123858,7 @@
     "type": "Fighting",
     "abilities": [
       "Receiver",
-      "Receiver",
+      "Infiltrator",
       "Defiant"
     ],
     "learnset": [
@@ -123788,15 +123967,16 @@
       "Vital Throw": 233,
       "Knock Off": 282,
       "Feint": 364,
-      "Quick Guard": 501
+      "Quick Guard": 501,
+      "Court Change": 756
     },
     "tutorLearnset": {},
     "baseStats": {
       "hp": 100,
-      "atk": 120,
+      "atk": 110,
       "def": 90,
-      "spa": 40,
-      "spd": 60,
+      "spa": 30,
+      "spd": 80,
       "spe": 80
     },
     "dexNum": 766,
@@ -123856,10 +124036,10 @@
       "Hidden Power": 237
     },
     "eggLearnset": {
-      "Harden": 106,
-      "Spikes": 191,
-      "Metal Claw": 232,
       "Aqua Jet": 453,
+      "Harden": 106,
+      "Metal Claw": 232,
+      "Spikes": 191,
       "Wide Guard": 469
     },
     "tutorLearnset": {},
@@ -124008,10 +124188,10 @@
       "Hidden Power": 237
     },
     "eggLearnset": {
-      "Harden": 106,
-      "Spikes": 191,
-      "Metal Claw": 232,
       "Aqua Jet": 453,
+      "Harden": 106,
+      "Metal Claw": 232,
+      "Spikes": 191,
       "Wide Guard": 469
     },
     "tutorLearnset": {},
@@ -124042,8 +124222,8 @@
     "dualtype": "Ground",
     "abilities": [
       "Water Compaction",
-      "Water Compaction",
-      "Sand Veil"
+      "Sand Force",
+      "Storm Drain"
     ],
     "learnset": [
       {
@@ -124051,56 +124231,60 @@
         "level": 1
       },
       {
-        "name": "Harden",
+        "name": "Astonish",
         "level": 1
       },
       {
-        "name": "Astonish",
-        "level": 5
+        "name": "Harden",
+        "level": 4
       },
       {
         "name": "Sand Tomb",
-        "level": 10
+        "level": 8
       },
       {
         "name": "Mega Drain",
-        "level": 15
+        "level": 12
       },
       {
         "name": "Sand Attack",
-        "level": 20
+        "level": 16
       },
       {
         "name": "Bulldoze",
-        "level": 25
+        "level": 20
       },
       {
         "name": "Hypnosis",
-        "level": 30
+        "level": 24
+      },
+      {
+        "name": "Scorching Sands",
+        "level": 28
       },
       {
         "name": "Giga Drain",
-        "level": 35
+        "level": 32
       },
       {
         "name": "Iron Defense",
-        "level": 40
+        "level": 36
       },
       {
         "name": "Shadow Ball",
-        "level": 45
+        "level": 40
       },
       {
         "name": "Earth Power",
-        "level": 50
+        "level": 44
       },
       {
         "name": "Shore Up",
-        "level": 55
+        "level": 48
       },
       {
         "name": "Sandstorm",
-        "level": 60
+        "level": 52
       }
     ],
     "tmLearnset": {
@@ -124150,7 +124334,7 @@
       "atk": 55,
       "def": 80,
       "spa": 70,
-      "spd": 45,
+      "spd": 55,
       "spe": 15
     },
     "dexNum": 769,
@@ -124172,8 +124356,8 @@
     "dualtype": "Ground",
     "abilities": [
       "Water Compaction",
-      "Water Compaction",
-      "Sand Veil"
+      "Sand Force",
+      "Storm Drain"
     ],
     "learnset": [
       {
@@ -124194,43 +124378,47 @@
       },
       {
         "name": "Mega Drain",
-        "level": 15
+        "level": 12
       },
       {
         "name": "Sand Attack",
-        "level": 20
+        "level": 16
       },
       {
         "name": "Bulldoze",
-        "level": 25
+        "level": 20
       },
       {
         "name": "Hypnosis",
-        "level": 30
+        "level": 24
+      },
+      {
+        "name": "Scorching Sands",
+        "level": 28
       },
       {
         "name": "Giga Drain",
-        "level": 35
+        "level": 33
       },
       {
         "name": "Iron Defense",
-        "level": 40
+        "level": 38
       },
       {
         "name": "Shadow Ball",
-        "level": 47
+        "level": 42
       },
       {
         "name": "Earth Power",
-        "level": 54
+        "level": 47
       },
       {
         "name": "Shore Up",
-        "level": 61
+        "level": 52
       },
       {
         "name": "Sandstorm",
-        "level": 68
+        "level": 57
       }
     ],
     "tmLearnset": {
@@ -124282,7 +124470,7 @@
       "atk": 75,
       "def": 110,
       "spa": 100,
-      "spd": 75,
+      "spd": 85,
       "spe": 35
     },
     "dexNum": 770,
@@ -124308,6 +124496,10 @@
     ],
     "learnset": [
       {
+        "name": "Bide",
+        "level": 1
+      },
+      {
         "name": "Baton Pass",
         "level": 1
       },
@@ -124316,11 +124508,7 @@
         "level": 1
       },
       {
-        "name": "Refresh",
-        "level": 1
-      },
-      {
-        "name": "Helping Hand",
+        "name": "Water Sport",
         "level": 5
       },
       {
@@ -124340,11 +124528,11 @@
         "level": 25
       },
       {
-        "name": "Curse",
+        "name": "Mirror Coat",
         "level": 30
       },
       {
-        "name": "Gastro Acid",
+        "name": "Toxic",
         "level": 35
       },
       {
@@ -124352,20 +124540,24 @@
         "level": 40
       },
       {
-        "name": "Recover",
+        "name": "Venom Drench",
         "level": 45
       },
       {
-        "name": "Soak",
+        "name": "Recover",
         "level": 50
       },
       {
-        "name": "Toxic",
+        "name": "Soak",
         "level": 55
       },
       {
-        "name": "Memento",
+        "name": "Refresh",
         "level": 60
+      },
+      {
+        "name": "Memento",
+        "level": 65
       }
     ],
     "tmLearnset": {
@@ -124390,16 +124582,17 @@
     "eggLearnset": {
       "Spite": 180,
       "Swagger": 207,
-      "Mirror Coat": 243,
-      "Tickle": 321
+      "Tickle": 321,
+      "Mud Sport": 300,
+      "Curse": 174
     },
     "tutorLearnset": {},
     "baseStats": {
       "hp": 55,
-      "atk": 60,
-      "def": 130,
+      "atk": 40,
+      "def": 140,
       "spa": 30,
-      "spd": 130,
+      "spd": 140,
       "spe": 5
     },
     "dexNum": 771,
@@ -124478,23 +124671,34 @@
       }
     ],
     "tmLearnset": {
-      "Water Pulse": 352,
+      "Dragon Claw": 337,
+      "Roar": 46,
       "Toxic": 92,
       "Hail": 258,
-      "Bulk Up": 339,
+      "Work Up": 526,
       "Sunny Day": 241,
-      "Taunt": 269,
-      "Light Screen": 113,
+      "Hyper Beam": 63,
+      "Protect": 182,
       "Rain Dance": 240,
-      "Giga Drain": 202,
-      "Reflect": 115,
-      "Fire Blast": 126,
+      "Double Team": 104,
+      "Sandstorm": 201,
+      "Aerial Ace": 332,
+      "Facade": 263,
+      "Rest": 156,
+      "Endure": 203,
+      "Shadow Claw": 421,
       "Payback": 371,
-      "Recycle": 278,
-      "Rock Polish": 397,
-      "Gyro Ball": 360,
-      "Stealth Rock": 446,
-      "X-Scissor": 404
+      "Giga Impact": 416,
+      "Stone Edge": 444,
+      "Thunder Wave": 86,
+      "Swords Dance": 14,
+      "Rock Slide": 157,
+      "X-Scissor": 404,
+      "Sleep Talk": 214,
+      "Swagger": 207,
+      "U-turn": 369,
+      "Substitute": 164,
+      "Hidden Power": 237
     },
     "eggLearnset": {},
     "tutorLearnset": {},
@@ -124533,39 +124737,7 @@
         "level": 0
       },
       {
-        "name": "Thunder Fang",
-        "level": 1
-      },
-      {
-        "name": "Scary Face",
-        "level": 1
-      },
-      {
-        "name": "Poison Fang",
-        "level": 1
-      },
-      {
-        "name": "Multi-Attack",
-        "level": 1
-      },
-      {
-        "name": "Iron Head",
-        "level": 1
-      },
-      {
-        "name": "Tackle",
-        "level": 1
-      },
-      {
-        "name": "Ice Fang",
-        "level": 1
-      },
-      {
-        "name": "Fire Fang",
-        "level": 1
-      },
-      {
-        "name": "Explosion",
+        "name": "Imprison",
         "level": 1
       },
       {
@@ -124573,11 +124745,43 @@
         "level": 1
       },
       {
+        "name": "Explosion",
+        "level": 1
+      },
+      {
+        "name": "Fire Fang",
+        "level": 1
+      },
+      {
+        "name": "Ice Fang",
+        "level": 1
+      },
+      {
         "name": "Aerial Ace",
         "level": 1
       },
       {
-        "name": "Imprison",
+        "name": "Iron Head",
+        "level": 1
+      },
+      {
+        "name": "Multi-Attack",
+        "level": 1
+      },
+      {
+        "name": "Poison Fang",
+        "level": 1
+      },
+      {
+        "name": "Scary Face",
+        "level": 1
+      },
+      {
+        "name": "Tackle",
+        "level": 1
+      },
+      {
+        "name": "Thunder Fang",
         "level": 1
       },
       {
@@ -124619,6 +124823,10 @@
       {
         "name": "Parting Shot",
         "level": 60
+      },
+      {
+        "name": "Extreme Speed",
+        "level": 65
       }
     ],
     "tmLearnset": {
@@ -124641,6 +124849,7 @@
       "Facade": 263,
       "Rest": 156,
       "Steel Wing": 211,
+      "Roost": 355,
       "Endure": 203,
       "Explosion": 153,
       "Shadow Claw": 421,
@@ -124664,12 +124873,12 @@
     "eggLearnset": {},
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 95,
-      "atk": 95,
-      "def": 95,
-      "spa": 95,
-      "spd": 95,
-      "spe": 95
+      "hp": 100,
+      "atk": 100,
+      "def": 100,
+      "spa": 100,
+      "spd": 100,
+      "spe": 100
     },
     "dexNum": 773,
     "form": 0,
@@ -124751,8 +124960,12 @@
         "level": 45
       },
       {
-        "name": "Explosion",
+        "name": "Meteor Beam",
         "level": 50
+      },
+      {
+        "name": "Explosion",
+        "level": 55
       }
     ],
     "tmLearnset": {
@@ -124873,6 +125086,10 @@
       {
         "name": "Thrash",
         "level": 46
+      },
+      {
+        "name": "Slack Off",
+        "level": 51
       }
     ],
     "tmLearnset": {
@@ -124915,10 +125132,10 @@
     },
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 65,
+      "hp": 95,
       "atk": 115,
       "def": 65,
-      "spa": 75,
+      "spa": 65,
       "spd": 95,
       "spe": 65
     },
@@ -124941,8 +125158,8 @@
     "dualtype": "Dragon",
     "abilities": [
       "Shell Armor",
-      "Shell Armor",
-      "Shell Armor"
+      "Rough Skin",
+      "Aftermath"
     ],
     "learnset": [
       {
@@ -125054,12 +125271,12 @@
     },
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 60,
-      "atk": 78,
+      "hp": 65,
+      "atk": 75,
       "def": 135,
-      "spa": 91,
+      "spa": 90,
       "spd": 85,
-      "spe": 36
+      "spe": 35
     },
     "dexNum": 776,
     "form": 0,
@@ -125509,15 +125726,15 @@
         "level": 1
       },
       {
-        "name": "Twister",
+        "name": "Dragon Rage",
         "level": 5
       },
       {
-        "name": "Protect",
+        "name": "Glare",
         "level": 10
       },
       {
-        "name": "Glare",
+        "name": "Twister",
         "level": 15
       },
       {
@@ -125533,24 +125750,28 @@
         "level": 30
       },
       {
-        "name": "Dragon Pulse",
+        "name": "Wide Guard",
         "level": 35
       },
       {
-        "name": "Light Screen",
+        "name": "Dragon Pulse",
         "level": 40
       },
       {
-        "name": "Fly",
+        "name": "Light Screen",
         "level": 45
       },
       {
-        "name": "Hyper Voice",
+        "name": "Fly",
         "level": 50
       },
       {
-        "name": "Outrage",
+        "name": "Hyper Voice",
         "level": 55
+      },
+      {
+        "name": "Outrage",
+        "level": 60
       }
     ],
     "tmLearnset": {
@@ -125611,8 +125832,8 @@
     },
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 78,
-      "atk": 60,
+      "hp": 98,
+      "atk": 50,
       "def": 85,
       "spa": 135,
       "spd": 91,
@@ -126853,8 +127074,8 @@
   {
     "value": 791,
     "text": "Solgaleo",
-    "type": "Psychic",
-    "dualtype": "Steel",
+    "type": "Steel",
+    "dualtype": "Fire",
     "abilities": [
       "Full Metal Body",
       "Full Metal Body",
@@ -126886,7 +127107,7 @@
         "level": 1
       },
       {
-        "name": "Iron Head",
+        "name": "Flame Charge",
         "level": 7
       },
       {
@@ -126914,7 +127135,7 @@
         "level": 49
       },
       {
-        "name": "Wild Charge",
+        "name": "Heat Crash",
         "level": 56
       },
       {
@@ -126960,6 +127181,7 @@
       "Rest": 156,
       "Focus Blast": 411,
       "Endure": 203,
+      "Will-O-Wisp": 261,
       "Giga Impact": 416,
       "Stone Edge": 444,
       "Thunder Wave": 86,
@@ -127002,8 +127224,8 @@
   {
     "value": 792,
     "text": "Lunala",
-    "type": "Psychic",
-    "dualtype": "Ghost",
+    "type": "Ghost",
+    "dualtype": "Fairy",
     "abilities": [
       "Shadow Shield",
       "Shadow Shield",
@@ -127059,7 +127281,7 @@
         "level": 42
       },
       {
-        "name": "Magic Coat",
+        "name": "Misty Terrain",
         "level": 49
       },
       {
@@ -127184,31 +127406,27 @@
         "level": 20
       },
       {
-        "name": "Guard Split",
-        "level": 25
-      },
-      {
-        "name": "Power Split",
-        "level": 25
-      },
-      {
         "name": "Venoshock",
-        "level": 30
+        "level": 25
       },
       {
         "name": "Headbutt",
-        "level": 35
+        "level": 30
       },
       {
         "name": "Toxic Spikes",
-        "level": 40
+        "level": 35
       },
       {
         "name": "Venom Drench",
-        "level": 45
+        "level": 40
       },
       {
         "name": "Power Gem",
+        "level": 45
+      },
+      {
+        "name": "Sludge Wave",
         "level": 50
       },
       {
@@ -127220,7 +127438,7 @@
         "level": 60
       },
       {
-        "name": "Wonder Room",
+        "name": "Meteor Beam",
         "level": 65
       },
       {
@@ -127549,6 +127767,10 @@
         "level": 1
       },
       {
+        "name": "Tail Glow",
+        "level": 1
+      },
+      {
         "name": "Wrap",
         "level": 1
       },
@@ -127644,11 +127866,11 @@
     "tutorLearnset": {},
     "baseStats": {
       "hp": 83,
-      "atk": 89,
+      "atk": 83,
       "def": 71,
       "spa": 173,
       "spd": 71,
-      "spe": 83
+      "spe": 89
     },
     "dexNum": 796,
     "form": 0,
@@ -127968,7 +128190,7 @@
         "level": 45
       },
       {
-        "name": "Heavy Slam",
+        "name": "Curse",
         "level": 50
       },
       {
@@ -127984,7 +128206,7 @@
         "level": 65
       },
       {
-        "name": "Giga Impact",
+        "name": "Recover",
         "level": 70
       }
     ],
@@ -128028,9 +128250,9 @@
     "baseStats": {
       "hp": 223,
       "atk": 101,
-      "def": 53,
-      "spa": 97,
-      "spd": 53,
+      "def": 71,
+      "spa": 59,
+      "spd": 71,
       "spe": 43
     },
     "dexNum": 799,
@@ -128971,6 +129193,7 @@
     "value": 807,
     "text": "Zeraora",
     "type": "Electric",
+    "dualtype": "Fighting",
     "abilities": [
       "Volt Absorb",
       "Volt Absorb",
@@ -186771,7 +186994,7 @@
         "level": 44
       },
       {
-        "name": "Axe Kick",
+        "name": "High Jump Kick",
         "level": 49
       },
       {
@@ -186932,7 +187155,7 @@
         "level": 44
       },
       {
-        "name": "Axe Kick",
+        "name": "High Jump Kick",
         "level": 49
       },
       {
@@ -197225,6 +197448,10 @@
         "level": 1
       },
       {
+        "name": "Gyro Ball",
+        "level": 1
+      },
+      {
         "name": "Protect",
         "level": 15
       },
@@ -197316,39 +197543,11 @@
     ],
     "learnset": [
       {
-        "name": "Gyro Ball",
+        "name": "Shelter",
         "level": 0
       },
       {
-        "name": "Water Gun",
-        "level": 1
-      },
-      {
-        "name": "Tearful Look",
-        "level": 1
-      },
-      {
-        "name": "Tackle",
-        "level": 1
-      },
-      {
-        "name": "Poison Tail",
-        "level": 1
-      },
-      {
-        "name": "Iron Tail",
-        "level": 1
-      },
-      {
-        "name": "Dragon Breath",
-        "level": 1
-      },
-      {
-        "name": "Aqua Tail",
-        "level": 1
-      },
-      {
-        "name": "Acid Spray",
+        "name": "Feint",
         "level": 1
       },
       {
@@ -197356,7 +197555,39 @@
         "level": 1
       },
       {
-        "name": "Feint",
+        "name": "Acid Spray",
+        "level": 1
+      },
+      {
+        "name": "Aqua Tail",
+        "level": 1
+      },
+      {
+        "name": "Dragon Breath",
+        "level": 1
+      },
+      {
+        "name": "Shelter",
+        "level": 1
+      },
+      {
+        "name": "Poison Tail",
+        "level": 1
+      },
+      {
+        "name": "Tackle",
+        "level": 1
+      },
+      {
+        "name": "Tearful Look",
+        "level": 1
+      },
+      {
+        "name": "Water Gun",
+        "level": 1
+      },
+      {
+        "name": "Iron Tail",
         "level": 1
       },
       {
@@ -197494,23 +197725,15 @@
         "level": 12
       },
       {
-        "name": "Trick-or-Treat",
-        "level": 12
-      },
-      {
         "name": "Leech Seed",
         "level": 16
       },
       {
-        "name": "Bullet Seed",
+        "name": "Mega Drain",
         "level": 20
       },
       {
         "name": "Scary Face",
-        "level": 24
-      },
-      {
-        "name": "Trick-or-Treat",
         "level": 24
       },
       {
@@ -197523,10 +197746,6 @@
       },
       {
         "name": "Shadow Ball",
-        "level": 36
-      },
-      {
-        "name": "Trick-or-Treat",
         "level": 36
       },
       {
@@ -197636,23 +197855,15 @@
         "level": 12
       },
       {
-        "name": "Trick-or-Treat",
-        "level": 12
-      },
-      {
         "name": "Leech Seed",
         "level": 16
       },
       {
-        "name": "Bullet Seed",
+        "name": "Mega Drain",
         "level": 20
       },
       {
         "name": "Scary Face",
-        "level": 24
-      },
-      {
-        "name": "Trick-or-Treat",
         "level": 24
       },
       {
@@ -197665,10 +197876,6 @@
       },
       {
         "name": "Shadow Ball",
-        "level": 36
-      },
-      {
-        "name": "Trick-or-Treat",
         "level": 36
       },
       {
@@ -197778,23 +197985,15 @@
         "level": 12
       },
       {
-        "name": "Trick-or-Treat",
-        "level": 12
-      },
-      {
         "name": "Leech Seed",
         "level": 16
       },
       {
-        "name": "Bullet Seed",
+        "name": "Mega Drain",
         "level": 20
       },
       {
         "name": "Scary Face",
-        "level": 24
-      },
-      {
-        "name": "Trick-or-Treat",
         "level": 24
       },
       {
@@ -197807,10 +198006,6 @@
       },
       {
         "name": "Shadow Ball",
-        "level": 36
-      },
-      {
-        "name": "Trick-or-Treat",
         "level": 36
       },
       {
@@ -197928,23 +198123,15 @@
         "level": 12
       },
       {
-        "name": "Trick-or-Treat",
-        "level": 12
-      },
-      {
         "name": "Leech Seed",
         "level": 16
       },
       {
-        "name": "Bullet Seed",
+        "name": "Mega Drain",
         "level": 20
       },
       {
         "name": "Scary Face",
-        "level": 24
-      },
-      {
-        "name": "Trick-or-Treat",
         "level": 24
       },
       {
@@ -197957,10 +198144,6 @@
       },
       {
         "name": "Shadow Ball",
-        "level": 36
-      },
-      {
-        "name": "Trick-or-Treat",
         "level": 36
       },
       {
@@ -198090,23 +198273,15 @@
         "level": 12
       },
       {
-        "name": "Trick-or-Treat",
-        "level": 12
-      },
-      {
         "name": "Leech Seed",
         "level": 16
       },
       {
-        "name": "Bullet Seed",
+        "name": "Mega Drain",
         "level": 20
       },
       {
         "name": "Scary Face",
-        "level": 24
-      },
-      {
-        "name": "Trick-or-Treat",
         "level": 24
       },
       {
@@ -198119,10 +198294,6 @@
       },
       {
         "name": "Shadow Ball",
-        "level": 36
-      },
-      {
-        "name": "Trick-or-Treat",
         "level": 36
       },
       {
@@ -198252,23 +198423,15 @@
         "level": 12
       },
       {
-        "name": "Trick-or-Treat",
-        "level": 12
-      },
-      {
         "name": "Leech Seed",
         "level": 16
       },
       {
-        "name": "Bullet Seed",
+        "name": "Mega Drain",
         "level": 20
       },
       {
         "name": "Scary Face",
-        "level": 24
-      },
-      {
-        "name": "Trick-or-Treat",
         "level": 24
       },
       {
@@ -198281,10 +198444,6 @@
       },
       {
         "name": "Shadow Ball",
-        "level": 36
-      },
-      {
-        "name": "Trick-or-Treat",
         "level": 36
       },
       {
@@ -198930,6 +199089,8 @@
       "Grass Knot": 447,
       "Swagger": 207,
       "Substitute": 164,
+      "Strength": 70,
+      "Rock Smash": 249,
       "Hyper Voice": 304,
       "Hidden Power": 237
     },
@@ -199066,6 +199227,8 @@
       "Grass Knot": 447,
       "Swagger": 207,
       "Substitute": 164,
+      "Strength": 70,
+      "Rock Smash": 249,
       "Hyper Voice": 304,
       "Hidden Power": 237
     },
@@ -199340,6 +199503,8 @@
       "Grass Knot": 447,
       "Swagger": 207,
       "Substitute": 164,
+      "Strength": 70,
+      "Rock Smash": 249,
       "Hyper Voice": 304,
       "Hidden Power": 237
     },
@@ -199664,31 +199829,7 @@
         "level": 0
       },
       {
-        "name": "Astonish",
-        "level": 1
-      },
-      {
-        "name": "Growl",
-        "level": 1
-      },
-      {
-        "name": "Leaf Storm",
-        "level": 1
-      },
-      {
-        "name": "Leafage",
-        "level": 1
-      },
-      {
-        "name": "Phantom Force",
-        "level": 1
-      },
-      {
-        "name": "Low Kick",
-        "level": 1
-      },
-      {
-        "name": "Spite",
+        "name": "U-turn",
         "level": 1
       },
       {
@@ -199696,7 +199837,35 @@
         "level": 1
       },
       {
-        "name": "U-turn",
+        "name": "Spite",
+        "level": 1
+      },
+      {
+        "name": "Low Kick",
+        "level": 1
+      },
+      {
+        "name": "Triple Arrows",
+        "level": 1
+      },
+      {
+        "name": "Leafage",
+        "level": 1
+      },
+      {
+        "name": "Leaf Storm",
+        "level": 1
+      },
+      {
+        "name": "Growl",
+        "level": 1
+      },
+      {
+        "name": "Astonish",
+        "level": 1
+      },
+      {
+        "name": "Phantom Force",
         "level": 1
       },
       {
@@ -199742,6 +199911,7 @@
     ],
     "tmLearnset": {
       "Focus Punch": 264,
+      "Toxic": 92,
       "Bulk Up": 339,
       "Bullet Seed": 331,
       "Sunny Day": 241,
@@ -199769,7 +199939,10 @@
       "Grass Knot": 447,
       "Pluck": 365,
       "U-turn": 369,
-      "Substitute": 164
+      "Substitute": 164,
+      "Rock Smash": 249,
+      "Hurricane": 542,
+      "Hidden Power": 237
     },
     "eggLearnset": {
       "Baton Pass": 226,
@@ -199887,13 +200060,19 @@
       }
     ],
     "tmLearnset": {
+      "Focus Punch": 264,
       "Roar": 46,
       "Toxic": 92,
       "Work Up": 526,
+      "Sunny Day": 241,
       "Taunt": 269,
+      "Hyper Beam": 63,
       "Protect": 182,
+      "Rain Dance": 240,
       "Iron Tail": 231,
       "Earthquake": 89,
+      "Low Sweep": 490,
+      "Dig": 91,
       "Double Team": 104,
       "Shock Wave": 351,
       "Sandstorm": 201,
@@ -199904,12 +200083,15 @@
       "Attract": 213,
       "Thief": 168,
       "Fling": 374,
+      "Endure": 203,
       "Payback": 371,
+      "Giga Impact": 416,
       "Sleep Talk": 214,
       "Bulldoze": 523,
       "Swagger": 207,
       "U-turn": 369,
       "Substitute": 164,
+      "Wild Charge": 528,
       "Hidden Power": 237
     },
     "eggLearnset": {},
@@ -200045,16 +200227,20 @@
       "Roost": 355,
       "Energy Ball": 412,
       "Charge Beam": 451,
+      "Endure": 203,
       "Bug Buzz": 405,
       "Giga Impact": 416,
       "Thunder Wave": 86,
       "X-Scissor": 404,
       "Sleep Talk": 214,
+      "Bulldoze": 523,
       "Poison Jab": 398,
       "Swagger": 207,
       "Substitute": 164,
       "Flash Cannon": 430,
+      "Fly": 19,
       "Wild Charge": 528,
+      "Hurricane": 542,
       "Hidden Power": 237
     },
     "eggLearnset": {},
@@ -200153,6 +200339,10 @@
       {
         "name": "Hurricane",
         "level": 50
+      },
+      {
+        "name": "Quiver Dance",
+        "level": 53
       }
     ],
     "tmLearnset": {
@@ -200195,9 +200385,9 @@
     "baseStats": {
       "hp": 75,
       "atk": 70,
-      "def": 70,
-      "spa": 98,
-      "spd": 70,
+      "def": 77,
+      "spa": 108,
+      "spd": 77,
       "spe": 93
     },
     "dexNum": 741,
@@ -200286,6 +200476,10 @@
       {
         "name": "Hurricane",
         "level": 50
+      },
+      {
+        "name": "Quiver Dance",
+        "level": 53
       }
     ],
     "tmLearnset": {
@@ -200328,9 +200522,9 @@
     "baseStats": {
       "hp": 75,
       "atk": 70,
-      "def": 70,
-      "spa": 98,
-      "spd": 70,
+      "def": 77,
+      "spa": 108,
+      "spd": 77,
       "spe": 93
     },
     "dexNum": 741,
@@ -200419,6 +200613,10 @@
       {
         "name": "Hurricane",
         "level": 50
+      },
+      {
+        "name": "Quiver Dance",
+        "level": 53
       }
     ],
     "tmLearnset": {
@@ -200461,9 +200659,9 @@
     "baseStats": {
       "hp": 75,
       "atk": 70,
-      "def": 70,
-      "spa": 98,
-      "spd": 70,
+      "def": 77,
+      "spa": 108,
+      "spd": 77,
       "spe": 93
     },
     "dexNum": 741,
@@ -200534,7 +200732,7 @@
         "level": 40
       },
       {
-        "name": "Dazzling Gleam",
+        "name": "Moonblast",
         "level": 48
       },
       {
@@ -200576,14 +200774,18 @@
       "Defog": 432,
       "Hidden Power": 237
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Sticky Web": 564,
+      "Moonblast": 585,
+      "Aromatic Mist": 597
+    },
     "tutorLearnset": {},
     "baseStats": {
       "hp": 60,
       "atk": 55,
-      "def": 60,
-      "spa": 95,
-      "spd": 70,
+      "def": 62,
+      "spa": 101,
+      "spd": 72,
       "spe": 124
     },
     "dexNum": 743,
@@ -201146,14 +201348,21 @@
       "Waterfall": 127,
       "Hidden Power": 237
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Mist": 54,
+      "Take Down": 36,
+      "Muddy Water": 330,
+      "Water Pulse": 352,
+      "Water Sport": 346,
+      "Whirlpool": 250
+    },
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 45,
-      "atk": 140,
-      "def": 130,
+      "hp": 70,
+      "atk": 135,
+      "def": 120,
       "spa": 140,
-      "spd": 135,
+      "spd": 125,
       "spe": 30
     },
     "dexNum": 746,
@@ -201261,13 +201470,16 @@
       "Hidden Power": 237
     },
     "eggLearnset": {
-      "Take Down": 36,
       "Mist": 54,
-      "Water Pulse": 352
+      "Take Down": 36,
+      "Muddy Water": 330,
+      "Water Pulse": 352,
+      "Water Sport": 346,
+      "Whirlpool": 250
     },
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 45,
+      "hp": 70,
       "atk": 20,
       "def": 20,
       "spa": 25,
@@ -201378,14 +201590,21 @@
       "Waterfall": 127,
       "Hidden Power": 237
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Mist": 54,
+      "Take Down": 36,
+      "Muddy Water": 330,
+      "Water Pulse": 352,
+      "Water Sport": 346,
+      "Whirlpool": 250
+    },
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 45,
-      "atk": 140,
-      "def": 130,
+      "hp": 70,
+      "atk": 135,
+      "def": 120,
       "spa": 140,
-      "spd": 135,
+      "spd": 125,
       "spe": 30
     },
     "dexNum": 746,
@@ -201470,6 +201689,10 @@
       {
         "name": "Mirror Coat",
         "level": 62
+      },
+      {
+        "name": "Wave Crash",
+        "level": 68
       }
     ],
     "tmLearnset": {
@@ -201496,7 +201719,12 @@
       "Waterfall": 127,
       "Hidden Power": 237
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Stockpile": 254,
+      "Spit Up": 255,
+      "Power Split": 471,
+      "Sticky Web": 564
+    },
     "tutorLearnset": {},
     "baseStats": {
       "hp": 68,
@@ -201524,7 +201752,7 @@
     "type": "Grass",
     "abilities": [
       "Leaf Guard",
-      "Leaf Guard",
+      "Long Reach",
       "Contrary"
     ],
     "learnset": [
@@ -201533,23 +201761,7 @@
         "level": 0
       },
       {
-        "name": "Petal Blizzard",
-        "level": 1
-      },
-      {
-        "name": "Night Slash",
-        "level": 1
-      },
-      {
-        "name": "Leafage",
-        "level": 1
-      },
-      {
-        "name": "Solar Beam",
-        "level": 1
-      },
-      {
-        "name": "Growth",
+        "name": "Dual Chop",
         "level": 1
       },
       {
@@ -201557,11 +201769,27 @@
         "level": 1
       },
       {
-        "name": "Dual Chop",
+        "name": "Growth",
         "level": 1
       },
       {
         "name": "Ingrain",
+        "level": 1
+      },
+      {
+        "name": "Leafage",
+        "level": 1
+      },
+      {
+        "name": "Night Slash",
+        "level": 1
+      },
+      {
+        "name": "Petal Blizzard",
+        "level": 1
+      },
+      {
+        "name": "Solar Beam",
         "level": 1
       },
       {
@@ -201627,13 +201855,20 @@
       "Defog": 432,
       "Hidden Power": 237
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Aromatherapy": 312,
+      "Defog": 432,
+      "Giga Drain": 202,
+      "Leaf Storm": 437,
+      "Weather Ball": 311,
+      "Worry Seed": 388
+    },
     "tutorLearnset": {},
     "baseStats": {
       "hp": 70,
-      "atk": 105,
+      "atk": 120,
       "def": 90,
-      "spa": 80,
+      "spa": 105,
       "spd": 90,
       "spe": 45
     },
@@ -201665,39 +201900,7 @@
         "level": 0
       },
       {
-        "name": "Torment",
-        "level": 1
-      },
-      {
-        "name": "Swagger",
-        "level": 1
-      },
-      {
-        "name": "Scratch",
-        "level": 1
-      },
-      {
-        "name": "Pound",
-        "level": 1
-      },
-      {
-        "name": "Poison Gas",
-        "level": 1
-      },
-      {
-        "name": "Smog",
-        "level": 1
-      },
-      {
-        "name": "Fire Lash",
-        "level": 1
-      },
-      {
-        "name": "Endeavor",
-        "level": 1
-      },
-      {
-        "name": "Encore",
+        "name": "Disable",
         "level": 1
       },
       {
@@ -201705,11 +201908,43 @@
         "level": 1
       },
       {
-        "name": "Disable",
+        "name": "Encore",
+        "level": 1
+      },
+      {
+        "name": "Endeavor",
+        "level": 1
+      },
+      {
+        "name": "Fire Lash",
         "level": 1
       },
       {
         "name": "Knock Off",
+        "level": 1
+      },
+      {
+        "name": "Poison Gas",
+        "level": 1
+      },
+      {
+        "name": "Pound",
+        "level": 1
+      },
+      {
+        "name": "Scratch",
+        "level": 1
+      },
+      {
+        "name": "Smog",
+        "level": 1
+      },
+      {
+        "name": "Swagger",
+        "level": 1
+      },
+      {
+        "name": "Torment",
         "level": 1
       },
       {
@@ -201777,13 +202012,20 @@
       "Substitute": 164,
       "Hidden Power": 237
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Belch": 562,
+      "Fake Out": 252,
+      "Knock Off": 282,
+      "Mud Bomb": 426,
+      "Sand Attack": 28,
+      "Snatch": 289
+    },
     "tutorLearnset": {},
     "baseStats": {
       "hp": 68,
       "atk": 64,
       "def": 60,
-      "spa": 111,
+      "spa": 116,
       "spd": 60,
       "spe": 117
     },
@@ -201814,39 +202056,7 @@
         "level": 0
       },
       {
-        "name": "Thunder Fang",
-        "level": 1
-      },
-      {
-        "name": "Scary Face",
-        "level": 1
-      },
-      {
-        "name": "Poison Fang",
-        "level": 1
-      },
-      {
-        "name": "Multi-Attack",
-        "level": 1
-      },
-      {
-        "name": "Iron Head",
-        "level": 1
-      },
-      {
-        "name": "Tackle",
-        "level": 1
-      },
-      {
-        "name": "Ice Fang",
-        "level": 1
-      },
-      {
-        "name": "Fire Fang",
-        "level": 1
-      },
-      {
-        "name": "Explosion",
+        "name": "Imprison",
         "level": 1
       },
       {
@@ -201854,11 +202064,43 @@
         "level": 1
       },
       {
+        "name": "Explosion",
+        "level": 1
+      },
+      {
+        "name": "Fire Fang",
+        "level": 1
+      },
+      {
+        "name": "Ice Fang",
+        "level": 1
+      },
+      {
         "name": "Aerial Ace",
         "level": 1
       },
       {
-        "name": "Imprison",
+        "name": "Iron Head",
+        "level": 1
+      },
+      {
+        "name": "Multi-Attack",
+        "level": 1
+      },
+      {
+        "name": "Poison Fang",
+        "level": 1
+      },
+      {
+        "name": "Scary Face",
+        "level": 1
+      },
+      {
+        "name": "Thunder Fang",
+        "level": 1
+      },
+      {
+        "name": "Tackle",
         "level": 1
       },
       {
@@ -201922,6 +202164,7 @@
       "Facade": 263,
       "Rest": 156,
       "Steel Wing": 211,
+      "Roost": 355,
       "Endure": 203,
       "Explosion": 153,
       "Shadow Claw": 421,
@@ -201945,12 +202188,12 @@
     "eggLearnset": {},
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 95,
-      "atk": 95,
-      "def": 95,
-      "spa": 95,
-      "spd": 95,
-      "spe": 95
+      "hp": 100,
+      "atk": 100,
+      "def": 100,
+      "spa": 100,
+      "spd": 100,
+      "spe": 100
     },
     "dexNum": 773,
     "form": 1,
@@ -201979,39 +202222,7 @@
         "level": 0
       },
       {
-        "name": "Thunder Fang",
-        "level": 1
-      },
-      {
-        "name": "Scary Face",
-        "level": 1
-      },
-      {
-        "name": "Poison Fang",
-        "level": 1
-      },
-      {
-        "name": "Multi-Attack",
-        "level": 1
-      },
-      {
-        "name": "Iron Head",
-        "level": 1
-      },
-      {
-        "name": "Tackle",
-        "level": 1
-      },
-      {
-        "name": "Ice Fang",
-        "level": 1
-      },
-      {
-        "name": "Fire Fang",
-        "level": 1
-      },
-      {
-        "name": "Explosion",
+        "name": "Imprison",
         "level": 1
       },
       {
@@ -202019,11 +202230,43 @@
         "level": 1
       },
       {
+        "name": "Explosion",
+        "level": 1
+      },
+      {
+        "name": "Fire Fang",
+        "level": 1
+      },
+      {
+        "name": "Ice Fang",
+        "level": 1
+      },
+      {
         "name": "Aerial Ace",
         "level": 1
       },
       {
-        "name": "Imprison",
+        "name": "Iron Head",
+        "level": 1
+      },
+      {
+        "name": "Multi-Attack",
+        "level": 1
+      },
+      {
+        "name": "Poison Fang",
+        "level": 1
+      },
+      {
+        "name": "Scary Face",
+        "level": 1
+      },
+      {
+        "name": "Thunder Fang",
+        "level": 1
+      },
+      {
+        "name": "Tackle",
         "level": 1
       },
       {
@@ -202087,6 +202330,7 @@
       "Facade": 263,
       "Rest": 156,
       "Steel Wing": 211,
+      "Roost": 355,
       "Endure": 203,
       "Explosion": 153,
       "Shadow Claw": 421,
@@ -202110,12 +202354,12 @@
     "eggLearnset": {},
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 95,
-      "atk": 95,
-      "def": 95,
-      "spa": 95,
-      "spd": 95,
-      "spe": 95
+      "hp": 100,
+      "atk": 100,
+      "def": 100,
+      "spa": 100,
+      "spd": 100,
+      "spe": 100
     },
     "dexNum": 773,
     "form": 2,
@@ -202144,39 +202388,7 @@
         "level": 0
       },
       {
-        "name": "Thunder Fang",
-        "level": 1
-      },
-      {
-        "name": "Scary Face",
-        "level": 1
-      },
-      {
-        "name": "Poison Fang",
-        "level": 1
-      },
-      {
-        "name": "Multi-Attack",
-        "level": 1
-      },
-      {
-        "name": "Iron Head",
-        "level": 1
-      },
-      {
-        "name": "Tackle",
-        "level": 1
-      },
-      {
-        "name": "Ice Fang",
-        "level": 1
-      },
-      {
-        "name": "Fire Fang",
-        "level": 1
-      },
-      {
-        "name": "Explosion",
+        "name": "Imprison",
         "level": 1
       },
       {
@@ -202184,11 +202396,43 @@
         "level": 1
       },
       {
+        "name": "Explosion",
+        "level": 1
+      },
+      {
+        "name": "Fire Fang",
+        "level": 1
+      },
+      {
+        "name": "Ice Fang",
+        "level": 1
+      },
+      {
         "name": "Aerial Ace",
         "level": 1
       },
       {
-        "name": "Imprison",
+        "name": "Iron Head",
+        "level": 1
+      },
+      {
+        "name": "Multi-Attack",
+        "level": 1
+      },
+      {
+        "name": "Poison Fang",
+        "level": 1
+      },
+      {
+        "name": "Scary Face",
+        "level": 1
+      },
+      {
+        "name": "Thunder Fang",
+        "level": 1
+      },
+      {
+        "name": "Tackle",
         "level": 1
       },
       {
@@ -202252,6 +202496,7 @@
       "Facade": 263,
       "Rest": 156,
       "Steel Wing": 211,
+      "Roost": 355,
       "Endure": 203,
       "Explosion": 153,
       "Shadow Claw": 421,
@@ -202275,12 +202520,12 @@
     "eggLearnset": {},
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 95,
-      "atk": 95,
-      "def": 95,
-      "spa": 95,
-      "spd": 95,
-      "spe": 95
+      "hp": 100,
+      "atk": 100,
+      "def": 100,
+      "spa": 100,
+      "spd": 100,
+      "spe": 100
     },
     "dexNum": 773,
     "form": 3,
@@ -202309,39 +202554,7 @@
         "level": 0
       },
       {
-        "name": "Thunder Fang",
-        "level": 1
-      },
-      {
-        "name": "Scary Face",
-        "level": 1
-      },
-      {
-        "name": "Poison Fang",
-        "level": 1
-      },
-      {
-        "name": "Multi-Attack",
-        "level": 1
-      },
-      {
-        "name": "Iron Head",
-        "level": 1
-      },
-      {
-        "name": "Tackle",
-        "level": 1
-      },
-      {
-        "name": "Ice Fang",
-        "level": 1
-      },
-      {
-        "name": "Fire Fang",
-        "level": 1
-      },
-      {
-        "name": "Explosion",
+        "name": "Imprison",
         "level": 1
       },
       {
@@ -202349,11 +202562,43 @@
         "level": 1
       },
       {
+        "name": "Explosion",
+        "level": 1
+      },
+      {
+        "name": "Fire Fang",
+        "level": 1
+      },
+      {
+        "name": "Ice Fang",
+        "level": 1
+      },
+      {
         "name": "Aerial Ace",
         "level": 1
       },
       {
-        "name": "Imprison",
+        "name": "Iron Head",
+        "level": 1
+      },
+      {
+        "name": "Multi-Attack",
+        "level": 1
+      },
+      {
+        "name": "Poison Fang",
+        "level": 1
+      },
+      {
+        "name": "Scary Face",
+        "level": 1
+      },
+      {
+        "name": "Thunder Fang",
+        "level": 1
+      },
+      {
+        "name": "Tackle",
         "level": 1
       },
       {
@@ -202417,6 +202662,7 @@
       "Facade": 263,
       "Rest": 156,
       "Steel Wing": 211,
+      "Roost": 355,
       "Endure": 203,
       "Explosion": 153,
       "Shadow Claw": 421,
@@ -202440,12 +202686,12 @@
     "eggLearnset": {},
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 95,
-      "atk": 95,
-      "def": 95,
-      "spa": 95,
-      "spd": 95,
-      "spe": 95
+      "hp": 100,
+      "atk": 100,
+      "def": 100,
+      "spa": 100,
+      "spd": 100,
+      "spe": 100
     },
     "dexNum": 773,
     "form": 4,
@@ -202474,39 +202720,7 @@
         "level": 0
       },
       {
-        "name": "Thunder Fang",
-        "level": 1
-      },
-      {
-        "name": "Scary Face",
-        "level": 1
-      },
-      {
-        "name": "Poison Fang",
-        "level": 1
-      },
-      {
-        "name": "Multi-Attack",
-        "level": 1
-      },
-      {
-        "name": "Iron Head",
-        "level": 1
-      },
-      {
-        "name": "Tackle",
-        "level": 1
-      },
-      {
-        "name": "Ice Fang",
-        "level": 1
-      },
-      {
-        "name": "Fire Fang",
-        "level": 1
-      },
-      {
-        "name": "Explosion",
+        "name": "Imprison",
         "level": 1
       },
       {
@@ -202514,11 +202728,43 @@
         "level": 1
       },
       {
+        "name": "Explosion",
+        "level": 1
+      },
+      {
+        "name": "Fire Fang",
+        "level": 1
+      },
+      {
+        "name": "Ice Fang",
+        "level": 1
+      },
+      {
         "name": "Aerial Ace",
         "level": 1
       },
       {
-        "name": "Imprison",
+        "name": "Iron Head",
+        "level": 1
+      },
+      {
+        "name": "Multi-Attack",
+        "level": 1
+      },
+      {
+        "name": "Poison Fang",
+        "level": 1
+      },
+      {
+        "name": "Scary Face",
+        "level": 1
+      },
+      {
+        "name": "Thunder Fang",
+        "level": 1
+      },
+      {
+        "name": "Tackle",
         "level": 1
       },
       {
@@ -202582,6 +202828,7 @@
       "Facade": 263,
       "Rest": 156,
       "Steel Wing": 211,
+      "Roost": 355,
       "Endure": 203,
       "Explosion": 153,
       "Shadow Claw": 421,
@@ -202605,12 +202852,12 @@
     "eggLearnset": {},
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 95,
-      "atk": 95,
-      "def": 95,
-      "spa": 95,
-      "spd": 95,
-      "spe": 95
+      "hp": 100,
+      "atk": 100,
+      "def": 100,
+      "spa": 100,
+      "spd": 100,
+      "spe": 100
     },
     "dexNum": 773,
     "form": 5,
@@ -202639,39 +202886,7 @@
         "level": 0
       },
       {
-        "name": "Thunder Fang",
-        "level": 1
-      },
-      {
-        "name": "Scary Face",
-        "level": 1
-      },
-      {
-        "name": "Poison Fang",
-        "level": 1
-      },
-      {
-        "name": "Multi-Attack",
-        "level": 1
-      },
-      {
-        "name": "Iron Head",
-        "level": 1
-      },
-      {
-        "name": "Tackle",
-        "level": 1
-      },
-      {
-        "name": "Ice Fang",
-        "level": 1
-      },
-      {
-        "name": "Fire Fang",
-        "level": 1
-      },
-      {
-        "name": "Explosion",
+        "name": "Imprison",
         "level": 1
       },
       {
@@ -202679,11 +202894,43 @@
         "level": 1
       },
       {
+        "name": "Explosion",
+        "level": 1
+      },
+      {
+        "name": "Fire Fang",
+        "level": 1
+      },
+      {
+        "name": "Ice Fang",
+        "level": 1
+      },
+      {
         "name": "Aerial Ace",
         "level": 1
       },
       {
-        "name": "Imprison",
+        "name": "Iron Head",
+        "level": 1
+      },
+      {
+        "name": "Multi-Attack",
+        "level": 1
+      },
+      {
+        "name": "Poison Fang",
+        "level": 1
+      },
+      {
+        "name": "Scary Face",
+        "level": 1
+      },
+      {
+        "name": "Thunder Fang",
+        "level": 1
+      },
+      {
+        "name": "Tackle",
         "level": 1
       },
       {
@@ -202747,6 +202994,7 @@
       "Facade": 263,
       "Rest": 156,
       "Steel Wing": 211,
+      "Roost": 355,
       "Endure": 203,
       "Explosion": 153,
       "Shadow Claw": 421,
@@ -202770,12 +203018,12 @@
     "eggLearnset": {},
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 95,
-      "atk": 95,
-      "def": 95,
-      "spa": 95,
-      "spd": 95,
-      "spe": 95
+      "hp": 100,
+      "atk": 100,
+      "def": 100,
+      "spa": 100,
+      "spd": 100,
+      "spe": 100
     },
     "dexNum": 773,
     "form": 6,
@@ -202804,39 +203052,7 @@
         "level": 0
       },
       {
-        "name": "Thunder Fang",
-        "level": 1
-      },
-      {
-        "name": "Scary Face",
-        "level": 1
-      },
-      {
-        "name": "Poison Fang",
-        "level": 1
-      },
-      {
-        "name": "Multi-Attack",
-        "level": 1
-      },
-      {
-        "name": "Iron Head",
-        "level": 1
-      },
-      {
-        "name": "Tackle",
-        "level": 1
-      },
-      {
-        "name": "Ice Fang",
-        "level": 1
-      },
-      {
-        "name": "Fire Fang",
-        "level": 1
-      },
-      {
-        "name": "Explosion",
+        "name": "Imprison",
         "level": 1
       },
       {
@@ -202844,11 +203060,43 @@
         "level": 1
       },
       {
+        "name": "Explosion",
+        "level": 1
+      },
+      {
+        "name": "Fire Fang",
+        "level": 1
+      },
+      {
+        "name": "Ice Fang",
+        "level": 1
+      },
+      {
         "name": "Aerial Ace",
         "level": 1
       },
       {
-        "name": "Imprison",
+        "name": "Iron Head",
+        "level": 1
+      },
+      {
+        "name": "Multi-Attack",
+        "level": 1
+      },
+      {
+        "name": "Poison Fang",
+        "level": 1
+      },
+      {
+        "name": "Scary Face",
+        "level": 1
+      },
+      {
+        "name": "Thunder Fang",
+        "level": 1
+      },
+      {
+        "name": "Tackle",
         "level": 1
       },
       {
@@ -202912,6 +203160,7 @@
       "Facade": 263,
       "Rest": 156,
       "Steel Wing": 211,
+      "Roost": 355,
       "Endure": 203,
       "Explosion": 153,
       "Shadow Claw": 421,
@@ -202935,12 +203184,12 @@
     "eggLearnset": {},
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 95,
-      "atk": 95,
-      "def": 95,
-      "spa": 95,
-      "spd": 95,
-      "spe": 95
+      "hp": 100,
+      "atk": 100,
+      "def": 100,
+      "spa": 100,
+      "spd": 100,
+      "spe": 100
     },
     "dexNum": 773,
     "form": 7,
@@ -202969,39 +203218,7 @@
         "level": 0
       },
       {
-        "name": "Thunder Fang",
-        "level": 1
-      },
-      {
-        "name": "Scary Face",
-        "level": 1
-      },
-      {
-        "name": "Poison Fang",
-        "level": 1
-      },
-      {
-        "name": "Multi-Attack",
-        "level": 1
-      },
-      {
-        "name": "Iron Head",
-        "level": 1
-      },
-      {
-        "name": "Tackle",
-        "level": 1
-      },
-      {
-        "name": "Ice Fang",
-        "level": 1
-      },
-      {
-        "name": "Fire Fang",
-        "level": 1
-      },
-      {
-        "name": "Explosion",
+        "name": "Imprison",
         "level": 1
       },
       {
@@ -203009,11 +203226,43 @@
         "level": 1
       },
       {
+        "name": "Explosion",
+        "level": 1
+      },
+      {
+        "name": "Fire Fang",
+        "level": 1
+      },
+      {
+        "name": "Ice Fang",
+        "level": 1
+      },
+      {
         "name": "Aerial Ace",
         "level": 1
       },
       {
-        "name": "Imprison",
+        "name": "Iron Head",
+        "level": 1
+      },
+      {
+        "name": "Multi-Attack",
+        "level": 1
+      },
+      {
+        "name": "Poison Fang",
+        "level": 1
+      },
+      {
+        "name": "Scary Face",
+        "level": 1
+      },
+      {
+        "name": "Thunder Fang",
+        "level": 1
+      },
+      {
+        "name": "Tackle",
         "level": 1
       },
       {
@@ -203077,6 +203326,7 @@
       "Facade": 263,
       "Rest": 156,
       "Steel Wing": 211,
+      "Roost": 355,
       "Endure": 203,
       "Explosion": 153,
       "Shadow Claw": 421,
@@ -203100,12 +203350,12 @@
     "eggLearnset": {},
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 95,
-      "atk": 95,
-      "def": 95,
-      "spa": 95,
-      "spd": 95,
-      "spe": 95
+      "hp": 100,
+      "atk": 100,
+      "def": 100,
+      "spa": 100,
+      "spd": 100,
+      "spe": 100
     },
     "dexNum": 773,
     "form": 8,
@@ -203134,39 +203384,7 @@
         "level": 0
       },
       {
-        "name": "Thunder Fang",
-        "level": 1
-      },
-      {
-        "name": "Scary Face",
-        "level": 1
-      },
-      {
-        "name": "Poison Fang",
-        "level": 1
-      },
-      {
-        "name": "Multi-Attack",
-        "level": 1
-      },
-      {
-        "name": "Iron Head",
-        "level": 1
-      },
-      {
-        "name": "Tackle",
-        "level": 1
-      },
-      {
-        "name": "Ice Fang",
-        "level": 1
-      },
-      {
-        "name": "Fire Fang",
-        "level": 1
-      },
-      {
-        "name": "Explosion",
+        "name": "Imprison",
         "level": 1
       },
       {
@@ -203174,11 +203392,43 @@
         "level": 1
       },
       {
+        "name": "Explosion",
+        "level": 1
+      },
+      {
+        "name": "Fire Fang",
+        "level": 1
+      },
+      {
+        "name": "Ice Fang",
+        "level": 1
+      },
+      {
         "name": "Aerial Ace",
         "level": 1
       },
       {
-        "name": "Imprison",
+        "name": "Iron Head",
+        "level": 1
+      },
+      {
+        "name": "Multi-Attack",
+        "level": 1
+      },
+      {
+        "name": "Poison Fang",
+        "level": 1
+      },
+      {
+        "name": "Scary Face",
+        "level": 1
+      },
+      {
+        "name": "Thunder Fang",
+        "level": 1
+      },
+      {
+        "name": "Tackle",
         "level": 1
       },
       {
@@ -203242,6 +203492,7 @@
       "Facade": 263,
       "Rest": 156,
       "Steel Wing": 211,
+      "Roost": 355,
       "Endure": 203,
       "Explosion": 153,
       "Shadow Claw": 421,
@@ -203265,12 +203516,12 @@
     "eggLearnset": {},
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 95,
-      "atk": 95,
-      "def": 95,
-      "spa": 95,
-      "spd": 95,
-      "spe": 95
+      "hp": 100,
+      "atk": 100,
+      "def": 100,
+      "spa": 100,
+      "spd": 100,
+      "spe": 100
     },
     "dexNum": 773,
     "form": 9,
@@ -203299,39 +203550,7 @@
         "level": 0
       },
       {
-        "name": "Thunder Fang",
-        "level": 1
-      },
-      {
-        "name": "Scary Face",
-        "level": 1
-      },
-      {
-        "name": "Poison Fang",
-        "level": 1
-      },
-      {
-        "name": "Multi-Attack",
-        "level": 1
-      },
-      {
-        "name": "Iron Head",
-        "level": 1
-      },
-      {
-        "name": "Tackle",
-        "level": 1
-      },
-      {
-        "name": "Ice Fang",
-        "level": 1
-      },
-      {
-        "name": "Fire Fang",
-        "level": 1
-      },
-      {
-        "name": "Explosion",
+        "name": "Imprison",
         "level": 1
       },
       {
@@ -203339,11 +203558,43 @@
         "level": 1
       },
       {
+        "name": "Explosion",
+        "level": 1
+      },
+      {
+        "name": "Fire Fang",
+        "level": 1
+      },
+      {
+        "name": "Ice Fang",
+        "level": 1
+      },
+      {
         "name": "Aerial Ace",
         "level": 1
       },
       {
-        "name": "Imprison",
+        "name": "Iron Head",
+        "level": 1
+      },
+      {
+        "name": "Multi-Attack",
+        "level": 1
+      },
+      {
+        "name": "Poison Fang",
+        "level": 1
+      },
+      {
+        "name": "Scary Face",
+        "level": 1
+      },
+      {
+        "name": "Thunder Fang",
+        "level": 1
+      },
+      {
+        "name": "Tackle",
         "level": 1
       },
       {
@@ -203407,6 +203658,7 @@
       "Facade": 263,
       "Rest": 156,
       "Steel Wing": 211,
+      "Roost": 355,
       "Endure": 203,
       "Explosion": 153,
       "Shadow Claw": 421,
@@ -203430,12 +203682,12 @@
     "eggLearnset": {},
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 95,
-      "atk": 95,
-      "def": 95,
-      "spa": 95,
-      "spd": 95,
-      "spe": 95
+      "hp": 100,
+      "atk": 100,
+      "def": 100,
+      "spa": 100,
+      "spd": 100,
+      "spe": 100
     },
     "dexNum": 773,
     "form": 10,
@@ -203464,39 +203716,7 @@
         "level": 0
       },
       {
-        "name": "Thunder Fang",
-        "level": 1
-      },
-      {
-        "name": "Scary Face",
-        "level": 1
-      },
-      {
-        "name": "Poison Fang",
-        "level": 1
-      },
-      {
-        "name": "Multi-Attack",
-        "level": 1
-      },
-      {
-        "name": "Iron Head",
-        "level": 1
-      },
-      {
-        "name": "Tackle",
-        "level": 1
-      },
-      {
-        "name": "Ice Fang",
-        "level": 1
-      },
-      {
-        "name": "Fire Fang",
-        "level": 1
-      },
-      {
-        "name": "Explosion",
+        "name": "Imprison",
         "level": 1
       },
       {
@@ -203504,11 +203724,43 @@
         "level": 1
       },
       {
+        "name": "Explosion",
+        "level": 1
+      },
+      {
+        "name": "Fire Fang",
+        "level": 1
+      },
+      {
+        "name": "Ice Fang",
+        "level": 1
+      },
+      {
         "name": "Aerial Ace",
         "level": 1
       },
       {
-        "name": "Imprison",
+        "name": "Iron Head",
+        "level": 1
+      },
+      {
+        "name": "Multi-Attack",
+        "level": 1
+      },
+      {
+        "name": "Poison Fang",
+        "level": 1
+      },
+      {
+        "name": "Scary Face",
+        "level": 1
+      },
+      {
+        "name": "Thunder Fang",
+        "level": 1
+      },
+      {
+        "name": "Tackle",
         "level": 1
       },
       {
@@ -203572,6 +203824,7 @@
       "Facade": 263,
       "Rest": 156,
       "Steel Wing": 211,
+      "Roost": 355,
       "Endure": 203,
       "Explosion": 153,
       "Shadow Claw": 421,
@@ -203595,12 +203848,12 @@
     "eggLearnset": {},
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 95,
-      "atk": 95,
-      "def": 95,
-      "spa": 95,
-      "spd": 95,
-      "spe": 95
+      "hp": 100,
+      "atk": 100,
+      "def": 100,
+      "spa": 100,
+      "spd": 100,
+      "spe": 100
     },
     "dexNum": 773,
     "form": 11,
@@ -203629,39 +203882,7 @@
         "level": 0
       },
       {
-        "name": "Thunder Fang",
-        "level": 1
-      },
-      {
-        "name": "Scary Face",
-        "level": 1
-      },
-      {
-        "name": "Poison Fang",
-        "level": 1
-      },
-      {
-        "name": "Multi-Attack",
-        "level": 1
-      },
-      {
-        "name": "Iron Head",
-        "level": 1
-      },
-      {
-        "name": "Tackle",
-        "level": 1
-      },
-      {
-        "name": "Ice Fang",
-        "level": 1
-      },
-      {
-        "name": "Fire Fang",
-        "level": 1
-      },
-      {
-        "name": "Explosion",
+        "name": "Imprison",
         "level": 1
       },
       {
@@ -203669,11 +203890,43 @@
         "level": 1
       },
       {
+        "name": "Explosion",
+        "level": 1
+      },
+      {
+        "name": "Fire Fang",
+        "level": 1
+      },
+      {
+        "name": "Ice Fang",
+        "level": 1
+      },
+      {
         "name": "Aerial Ace",
         "level": 1
       },
       {
-        "name": "Imprison",
+        "name": "Iron Head",
+        "level": 1
+      },
+      {
+        "name": "Multi-Attack",
+        "level": 1
+      },
+      {
+        "name": "Poison Fang",
+        "level": 1
+      },
+      {
+        "name": "Scary Face",
+        "level": 1
+      },
+      {
+        "name": "Thunder Fang",
+        "level": 1
+      },
+      {
+        "name": "Tackle",
         "level": 1
       },
       {
@@ -203737,6 +203990,7 @@
       "Facade": 263,
       "Rest": 156,
       "Steel Wing": 211,
+      "Roost": 355,
       "Endure": 203,
       "Explosion": 153,
       "Shadow Claw": 421,
@@ -203760,12 +204014,12 @@
     "eggLearnset": {},
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 95,
-      "atk": 95,
-      "def": 95,
-      "spa": 95,
-      "spd": 95,
-      "spe": 95
+      "hp": 100,
+      "atk": 100,
+      "def": 100,
+      "spa": 100,
+      "spd": 100,
+      "spe": 100
     },
     "dexNum": 773,
     "form": 12,
@@ -203794,39 +204048,7 @@
         "level": 0
       },
       {
-        "name": "Thunder Fang",
-        "level": 1
-      },
-      {
-        "name": "Scary Face",
-        "level": 1
-      },
-      {
-        "name": "Poison Fang",
-        "level": 1
-      },
-      {
-        "name": "Multi-Attack",
-        "level": 1
-      },
-      {
-        "name": "Iron Head",
-        "level": 1
-      },
-      {
-        "name": "Tackle",
-        "level": 1
-      },
-      {
-        "name": "Ice Fang",
-        "level": 1
-      },
-      {
-        "name": "Fire Fang",
-        "level": 1
-      },
-      {
-        "name": "Explosion",
+        "name": "Imprison",
         "level": 1
       },
       {
@@ -203834,11 +204056,43 @@
         "level": 1
       },
       {
+        "name": "Explosion",
+        "level": 1
+      },
+      {
+        "name": "Fire Fang",
+        "level": 1
+      },
+      {
+        "name": "Ice Fang",
+        "level": 1
+      },
+      {
         "name": "Aerial Ace",
         "level": 1
       },
       {
-        "name": "Imprison",
+        "name": "Iron Head",
+        "level": 1
+      },
+      {
+        "name": "Multi-Attack",
+        "level": 1
+      },
+      {
+        "name": "Poison Fang",
+        "level": 1
+      },
+      {
+        "name": "Scary Face",
+        "level": 1
+      },
+      {
+        "name": "Thunder Fang",
+        "level": 1
+      },
+      {
+        "name": "Tackle",
         "level": 1
       },
       {
@@ -203902,6 +204156,7 @@
       "Facade": 263,
       "Rest": 156,
       "Steel Wing": 211,
+      "Roost": 355,
       "Endure": 203,
       "Explosion": 153,
       "Shadow Claw": 421,
@@ -203925,12 +204180,12 @@
     "eggLearnset": {},
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 95,
-      "atk": 95,
-      "def": 95,
-      "spa": 95,
-      "spd": 95,
-      "spe": 95
+      "hp": 100,
+      "atk": 100,
+      "def": 100,
+      "spa": 100,
+      "spd": 100,
+      "spe": 100
     },
     "dexNum": 773,
     "form": 13,
@@ -203959,39 +204214,7 @@
         "level": 0
       },
       {
-        "name": "Thunder Fang",
-        "level": 1
-      },
-      {
-        "name": "Scary Face",
-        "level": 1
-      },
-      {
-        "name": "Poison Fang",
-        "level": 1
-      },
-      {
-        "name": "Multi-Attack",
-        "level": 1
-      },
-      {
-        "name": "Iron Head",
-        "level": 1
-      },
-      {
-        "name": "Tackle",
-        "level": 1
-      },
-      {
-        "name": "Ice Fang",
-        "level": 1
-      },
-      {
-        "name": "Fire Fang",
-        "level": 1
-      },
-      {
-        "name": "Explosion",
+        "name": "Imprison",
         "level": 1
       },
       {
@@ -203999,11 +204222,43 @@
         "level": 1
       },
       {
+        "name": "Explosion",
+        "level": 1
+      },
+      {
+        "name": "Fire Fang",
+        "level": 1
+      },
+      {
+        "name": "Ice Fang",
+        "level": 1
+      },
+      {
         "name": "Aerial Ace",
         "level": 1
       },
       {
-        "name": "Imprison",
+        "name": "Iron Head",
+        "level": 1
+      },
+      {
+        "name": "Multi-Attack",
+        "level": 1
+      },
+      {
+        "name": "Poison Fang",
+        "level": 1
+      },
+      {
+        "name": "Scary Face",
+        "level": 1
+      },
+      {
+        "name": "Thunder Fang",
+        "level": 1
+      },
+      {
+        "name": "Tackle",
         "level": 1
       },
       {
@@ -204067,6 +204322,7 @@
       "Facade": 263,
       "Rest": 156,
       "Steel Wing": 211,
+      "Roost": 355,
       "Endure": 203,
       "Explosion": 153,
       "Shadow Claw": 421,
@@ -204090,12 +204346,12 @@
     "eggLearnset": {},
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 95,
-      "atk": 95,
-      "def": 95,
-      "spa": 95,
-      "spd": 95,
-      "spe": 95
+      "hp": 100,
+      "atk": 100,
+      "def": 100,
+      "spa": 100,
+      "spd": 100,
+      "spe": 100
     },
     "dexNum": 773,
     "form": 14,
@@ -204124,39 +204380,7 @@
         "level": 0
       },
       {
-        "name": "Thunder Fang",
-        "level": 1
-      },
-      {
-        "name": "Scary Face",
-        "level": 1
-      },
-      {
-        "name": "Poison Fang",
-        "level": 1
-      },
-      {
-        "name": "Multi-Attack",
-        "level": 1
-      },
-      {
-        "name": "Iron Head",
-        "level": 1
-      },
-      {
-        "name": "Tackle",
-        "level": 1
-      },
-      {
-        "name": "Ice Fang",
-        "level": 1
-      },
-      {
-        "name": "Fire Fang",
-        "level": 1
-      },
-      {
-        "name": "Explosion",
+        "name": "Imprison",
         "level": 1
       },
       {
@@ -204164,11 +204388,43 @@
         "level": 1
       },
       {
+        "name": "Explosion",
+        "level": 1
+      },
+      {
+        "name": "Fire Fang",
+        "level": 1
+      },
+      {
+        "name": "Ice Fang",
+        "level": 1
+      },
+      {
         "name": "Aerial Ace",
         "level": 1
       },
       {
-        "name": "Imprison",
+        "name": "Iron Head",
+        "level": 1
+      },
+      {
+        "name": "Multi-Attack",
+        "level": 1
+      },
+      {
+        "name": "Poison Fang",
+        "level": 1
+      },
+      {
+        "name": "Scary Face",
+        "level": 1
+      },
+      {
+        "name": "Thunder Fang",
+        "level": 1
+      },
+      {
+        "name": "Tackle",
         "level": 1
       },
       {
@@ -204232,6 +204488,7 @@
       "Facade": 263,
       "Rest": 156,
       "Steel Wing": 211,
+      "Roost": 355,
       "Endure": 203,
       "Explosion": 153,
       "Shadow Claw": 421,
@@ -204255,12 +204512,12 @@
     "eggLearnset": {},
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 95,
-      "atk": 95,
-      "def": 95,
-      "spa": 95,
-      "spd": 95,
-      "spe": 95
+      "hp": 100,
+      "atk": 100,
+      "def": 100,
+      "spa": 100,
+      "spd": 100,
+      "spe": 100
     },
     "dexNum": 773,
     "form": 15,
@@ -204289,39 +204546,7 @@
         "level": 0
       },
       {
-        "name": "Thunder Fang",
-        "level": 1
-      },
-      {
-        "name": "Scary Face",
-        "level": 1
-      },
-      {
-        "name": "Poison Fang",
-        "level": 1
-      },
-      {
-        "name": "Multi-Attack",
-        "level": 1
-      },
-      {
-        "name": "Iron Head",
-        "level": 1
-      },
-      {
-        "name": "Tackle",
-        "level": 1
-      },
-      {
-        "name": "Ice Fang",
-        "level": 1
-      },
-      {
-        "name": "Fire Fang",
-        "level": 1
-      },
-      {
-        "name": "Explosion",
+        "name": "Imprison",
         "level": 1
       },
       {
@@ -204329,11 +204554,43 @@
         "level": 1
       },
       {
+        "name": "Explosion",
+        "level": 1
+      },
+      {
+        "name": "Fire Fang",
+        "level": 1
+      },
+      {
+        "name": "Ice Fang",
+        "level": 1
+      },
+      {
         "name": "Aerial Ace",
         "level": 1
       },
       {
-        "name": "Imprison",
+        "name": "Iron Head",
+        "level": 1
+      },
+      {
+        "name": "Multi-Attack",
+        "level": 1
+      },
+      {
+        "name": "Poison Fang",
+        "level": 1
+      },
+      {
+        "name": "Scary Face",
+        "level": 1
+      },
+      {
+        "name": "Thunder Fang",
+        "level": 1
+      },
+      {
+        "name": "Tackle",
         "level": 1
       },
       {
@@ -204397,6 +204654,7 @@
       "Facade": 263,
       "Rest": 156,
       "Steel Wing": 211,
+      "Roost": 355,
       "Endure": 203,
       "Explosion": 153,
       "Shadow Claw": 421,
@@ -204420,12 +204678,12 @@
     "eggLearnset": {},
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 95,
-      "atk": 95,
-      "def": 95,
-      "spa": 95,
-      "spd": 95,
-      "spe": 95
+      "hp": 100,
+      "atk": 100,
+      "def": 100,
+      "spa": 100,
+      "spd": 100,
+      "spe": 100
     },
     "dexNum": 773,
     "form": 16,
@@ -204454,39 +204712,7 @@
         "level": 0
       },
       {
-        "name": "Thunder Fang",
-        "level": 1
-      },
-      {
-        "name": "Scary Face",
-        "level": 1
-      },
-      {
-        "name": "Poison Fang",
-        "level": 1
-      },
-      {
-        "name": "Multi-Attack",
-        "level": 1
-      },
-      {
-        "name": "Iron Head",
-        "level": 1
-      },
-      {
-        "name": "Tackle",
-        "level": 1
-      },
-      {
-        "name": "Ice Fang",
-        "level": 1
-      },
-      {
-        "name": "Fire Fang",
-        "level": 1
-      },
-      {
-        "name": "Explosion",
+        "name": "Imprison",
         "level": 1
       },
       {
@@ -204494,11 +204720,43 @@
         "level": 1
       },
       {
+        "name": "Explosion",
+        "level": 1
+      },
+      {
+        "name": "Fire Fang",
+        "level": 1
+      },
+      {
+        "name": "Ice Fang",
+        "level": 1
+      },
+      {
         "name": "Aerial Ace",
         "level": 1
       },
       {
-        "name": "Imprison",
+        "name": "Iron Head",
+        "level": 1
+      },
+      {
+        "name": "Multi-Attack",
+        "level": 1
+      },
+      {
+        "name": "Poison Fang",
+        "level": 1
+      },
+      {
+        "name": "Scary Face",
+        "level": 1
+      },
+      {
+        "name": "Thunder Fang",
+        "level": 1
+      },
+      {
+        "name": "Tackle",
         "level": 1
       },
       {
@@ -204562,6 +204820,7 @@
       "Facade": 263,
       "Rest": 156,
       "Steel Wing": 211,
+      "Roost": 355,
       "Endure": 203,
       "Explosion": 153,
       "Shadow Claw": 421,
@@ -204585,12 +204844,12 @@
     "eggLearnset": {},
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 95,
-      "atk": 95,
-      "def": 95,
-      "spa": 95,
-      "spd": 95,
-      "spe": 95
+      "hp": 100,
+      "atk": 100,
+      "def": 100,
+      "spa": 100,
+      "spd": 100,
+      "spe": 100
     },
     "dexNum": 773,
     "form": 17,
@@ -204672,8 +204931,12 @@
         "level": 45
       },
       {
-        "name": "Explosion",
+        "name": "Meteor Beam",
         "level": 50
+      },
+      {
+        "name": "Explosion",
+        "level": 55
       }
     ],
     "tmLearnset": {
@@ -204801,8 +205064,12 @@
         "level": 45
       },
       {
-        "name": "Explosion",
+        "name": "Meteor Beam",
         "level": 50
+      },
+      {
+        "name": "Explosion",
+        "level": 55
       }
     ],
     "tmLearnset": {
@@ -204930,8 +205197,12 @@
         "level": 45
       },
       {
-        "name": "Explosion",
+        "name": "Meteor Beam",
         "level": 50
+      },
+      {
+        "name": "Explosion",
+        "level": 55
       }
     ],
     "tmLearnset": {
@@ -205059,8 +205330,12 @@
         "level": 45
       },
       {
-        "name": "Explosion",
+        "name": "Meteor Beam",
         "level": 50
+      },
+      {
+        "name": "Explosion",
+        "level": 55
       }
     ],
     "tmLearnset": {
@@ -205188,8 +205463,12 @@
         "level": 45
       },
       {
-        "name": "Explosion",
+        "name": "Meteor Beam",
         "level": 50
+      },
+      {
+        "name": "Explosion",
+        "level": 55
       }
     ],
     "tmLearnset": {
@@ -205317,8 +205596,12 @@
         "level": 45
       },
       {
-        "name": "Explosion",
+        "name": "Meteor Beam",
         "level": 50
+      },
+      {
+        "name": "Explosion",
+        "level": 55
       }
     ],
     "tmLearnset": {
@@ -205446,8 +205729,12 @@
         "level": 45
       },
       {
-        "name": "Explosion",
+        "name": "Meteor Beam",
         "level": 50
+      },
+      {
+        "name": "Explosion",
+        "level": 55
       }
     ],
     "tmLearnset": {
@@ -205575,8 +205862,12 @@
         "level": 45
       },
       {
-        "name": "Explosion",
+        "name": "Meteor Beam",
         "level": 50
+      },
+      {
+        "name": "Explosion",
+        "level": 55
       }
     ],
     "tmLearnset": {
@@ -205704,8 +205995,12 @@
         "level": 45
       },
       {
-        "name": "Explosion",
+        "name": "Meteor Beam",
         "level": 50
+      },
+      {
+        "name": "Explosion",
+        "level": 55
       }
     ],
     "tmLearnset": {
@@ -205833,8 +206128,12 @@
         "level": 45
       },
       {
-        "name": "Explosion",
+        "name": "Meteor Beam",
         "level": 50
+      },
+      {
+        "name": "Explosion",
+        "level": 55
       }
     ],
     "tmLearnset": {
@@ -205962,8 +206261,12 @@
         "level": 45
       },
       {
-        "name": "Explosion",
+        "name": "Meteor Beam",
         "level": 50
+      },
+      {
+        "name": "Explosion",
+        "level": 55
       }
     ],
     "tmLearnset": {
@@ -206091,8 +206394,12 @@
         "level": 45
       },
       {
-        "name": "Explosion",
+        "name": "Meteor Beam",
         "level": 50
+      },
+      {
+        "name": "Explosion",
+        "level": 55
       }
     ],
     "tmLearnset": {
@@ -206220,8 +206527,12 @@
         "level": 45
       },
       {
-        "name": "Explosion",
+        "name": "Meteor Beam",
         "level": 50
+      },
+      {
+        "name": "Explosion",
+        "level": 55
       }
     ],
     "tmLearnset": {
@@ -206934,9 +207245,11 @@
       "Toxic": 92,
       "Bulk Up": 339,
       "Work Up": 526,
+      "Sunny Day": 241,
       "Taunt": 269,
       "Hyper Beam": 63,
       "Protect": 182,
+      "Rain Dance": 240,
       "Safeguard": 219,
       "Iron Tail": 231,
       "Earthquake": 89,
@@ -206953,6 +207266,7 @@
       "Focus Blast": 411,
       "False Swipe": 206,
       "Fling": 374,
+      "Endure": 203,
       "Dragon Pulse": 406,
       "Drain Punch": 409,
       "Shadow Claw": 421,
@@ -206998,7 +207312,7 @@
     "value": 1381,
     "text": "Dusk Mane Necrozma",
     "type": "Psychic",
-    "dualtype": "Steel",
+    "dualtype": "Fire",
     "abilities": [
       "Prism Armor",
       "Prism Armor",
@@ -207371,6 +207685,7 @@
     "tmLearnset": {
       "Calm Mind": 347,
       "Toxic": 92,
+      "Sunny Day": 241,
       "Hyper Beam": 63,
       "Light Screen": 113,
       "Protect": 182,
@@ -207381,6 +207696,7 @@
       "Double Team": 104,
       "Reflect": 115,
       "Shock Wave": 351,
+      "Sandstorm": 201,
       "Rock Tomb": 317,
       "Aerial Ace": 332,
       "Facade": 263,
@@ -207388,6 +207704,7 @@
       "Thief": 168,
       "Fling": 374,
       "Charge Beam": 451,
+      "Endure": 203,
       "Dragon Pulse": 406,
       "Shadow Claw": 421,
       "Recycle": 278,
