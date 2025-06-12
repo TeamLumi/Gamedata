@@ -65797,7 +65797,7 @@
       },
       {
         "name": "Water Gun",
-        "level": 6
+        "level": 5
       },
       {
         "name": "Bubble",
@@ -65955,7 +65955,7 @@
       },
       {
         "name": "Water Gun",
-        "level": 6
+        "level": 5
       },
       {
         "name": "Bubble",
@@ -66137,7 +66137,7 @@
       },
       {
         "name": "Water Gun",
-        "level": 6
+        "level": 5
       },
       {
         "name": "Bubble",
@@ -92260,7 +92260,7 @@
     "abilities": [
       "Soundproof",
       "Static",
-      "Aftermath"
+      "Grassy Surge"
     ],
     "learnset": [
       {
@@ -94163,8 +94163,8 @@
     "type": "Electric",
     "abilities": [
       "Static",
-      "Static",
-      "Lightning Rod"
+      "Lightning Rod",
+      "Galvanize"
     ],
     "learnset": [
       {
@@ -94209,103 +94209,26 @@
       }
     ],
     "tmLearnset": {
-      "Focus Punch": 264,
-      "Dragon Claw": 337,
-      "Water Pulse": 352,
-      "Calm Mind": 347,
-      "Roar": 46,
       "Toxic": 92,
-      "Hail": 258,
-      "Bulk Up": 339,
-      "Bullet Seed": 331,
-      "Hidden Power": 237,
-      "Sunny Day": 241,
-      "Taunt": 269,
-      "Ice Beam": 58,
-      "Blizzard": 59,
-      "Hyper Beam": 63,
       "Light Screen": 113,
       "Protect": 182,
       "Rain Dance": 240,
-      "Giga Drain": 202,
-      "Safeguard": 219,
-      "Dream Eater": 138,
-      "Solar Beam": 76,
       "Iron Tail": 231,
       "Thunderbolt": 85,
       "Thunder": 87,
-      "Earthquake": 89,
-      "Low Sweep": 490,
-      "Dig": 91,
-      "Psychic": 94,
-      "Shadow Ball": 247,
-      "Brick Break": 280,
       "Double Team": 104,
       "Reflect": 115,
       "Shock Wave": 351,
-      "Flamethrower": 53,
-      "Sludge Bomb": 188,
-      "Sandstorm": 201,
-      "Fire Blast": 126,
-      "Rock Tomb": 317,
-      "Aerial Ace": 332,
-      "Torment": 259,
       "Facade": 263,
       "Volt Switch": 521,
-      "Rest": 156,
       "Attract": 213,
-      "Thief": 168,
-      "Steel Wing": 211,
-      "Skill Swap": 285,
-      "Brine": 362,
-      "Overheat": 315,
-      "Roost": 355,
-      "Focus Blast": 411,
-      "Energy Ball": 412,
-      "False Swipe": 206,
-      "Scald": 503,
       "Fling": 374,
       "Wild Charge": 528,
-      "Endure": 203,
-      "Dragon Pulse": 406,
-      "Drain Punch": 409,
-      "Will-O-Wisp": 261,
-      "Bug Buzz": 405,
       "Nasty Plot": 417,
-      "Explosion": 153,
-      "Shadow Claw": 421,
-      "Payback": 371,
-      "Recycle": 278,
-      "Giga Impact": 416,
-      "Rock Polish": 397,
       "Flash": 148,
-      "Stone Edge": 444,
-      "Avalanche": 419,
       "Thunder Wave": 86,
-      "Gyro Ball": 360,
-      "Swords Dance": 14,
-      "Stealth Rock": 446,
-      "Psych Up": 244,
-      "Snarl": 555,
-      "Dark Pulse": 399,
-      "Rock Slide": 157,
-      "X-Scissor": 404,
-      "Hyper Voice": 304,
-      "Poison Jab": 398,
-      "Dazzling Gleam": 605,
       "Grass Knot": 447,
-      "Hurricane": 542,
-      "U-turn": 369,
-      "Flash Cannon": 430,
-      "Trick Room": 433,
-      "Cut": 15,
-      "Fly": 19,
-      "Surf": 57,
-      "Strength": 70,
-      "Defog": 432,
-      "Rock Smash": 249,
-      "Waterfall": 127,
-      "Rock Climb": 431
+      "Surf": 57
     },
     "eggLearnset": {},
     "tutorLearnset": {},

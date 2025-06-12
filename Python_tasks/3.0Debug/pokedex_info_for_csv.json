@@ -9990,7 +9990,7 @@
         "level": 35
       },
       {
-        "name": "Burn Up",
+        "name": "Outrage",
         "level": 40
       },
       {
@@ -10006,7 +10006,7 @@
         "level": 55
       },
       {
-        "name": "Outrage",
+        "name": "Play Rough",
         "level": 60
       },
       {
@@ -10014,15 +10014,15 @@
         "level": 60
       },
       {
-        "name": "Play Rough",
-        "level": 65
-      },
-      {
         "name": "Heat Wave",
-        "level": 70
+        "level": 63
       },
       {
         "name": "Flare Blitz",
+        "level": 65
+      },
+      {
+        "name": "Burn Up",
         "level": 75
       }
     ],
@@ -16723,10 +16723,6 @@
       {
         "name": "Psyshock",
         "level": 57
-      },
-      {
-        "name": "Psycho Boost",
-        "level": 63
       }
     ],
     "tmLearnset": {
@@ -19237,7 +19233,7 @@
         "level": 31
       },
       {
-        "name": "Poison Jab",
+        "name": "Double-Edge",
         "level": 34
       },
       {
@@ -19249,7 +19245,7 @@
         "level": 40
       },
       {
-        "name": "Stone Edge",
+        "name": "Head Smash",
         "level": 43
       },
       {
@@ -19304,6 +19300,7 @@
       "Strength": 70,
       "Rock Smash": 249,
       "Rock Climb": 431,
+      "Wild Charge": 528,
       "Hidden Power": 237
     },
     "eggLearnset": {
@@ -19435,7 +19432,7 @@
         "level": 31
       },
       {
-        "name": "Poison Jab",
+        "name": "Double-Edge",
         "level": 34
       },
       {
@@ -19451,7 +19448,7 @@
         "level": 42
       },
       {
-        "name": "Stone Edge",
+        "name": "Head Smash",
         "level": 46
       },
       {
@@ -19516,6 +19513,7 @@
       "Strength": 70,
       "Rock Smash": 249,
       "Rock Climb": 431,
+      "Wild Charge": 528,
       "Hidden Power": 237
     },
     "eggLearnset": {
@@ -35597,6 +35595,10 @@
         "level": 30
       },
       {
+        "name": "Twin Beam",
+        "level": 32
+      },
+      {
         "name": "Crunch",
         "level": 33
       },
@@ -35615,10 +35617,6 @@
       {
         "name": "Nasty Plot",
         "level": 45
-      },
-      {
-        "name": "Psycho Boost",
-        "level": 48
       }
     ],
     "tmLearnset": {
@@ -57476,11 +57474,11 @@
         "level": 22
       },
       {
-        "name": "Body Slam",
+        "name": "Dizzy Punch",
         "level": 23
       },
       {
-        "name": "Dizzy Punch",
+        "name": "Body Slam",
         "level": 23
       },
       {
@@ -57526,10 +57524,6 @@
       {
         "name": "Close Combat",
         "level": 55
-      },
-      {
-        "name": "Psycho Boost",
-        "level": 60
       }
     ],
     "tmLearnset": {
@@ -61374,6 +61368,7 @@
       "Cut": 15,
       "Strength": 70,
       "Rock Smash": 249,
+      "Rock Climb": 431,
       "Hidden Power": 237
     },
     "eggLearnset": {
@@ -70337,7 +70332,7 @@
         "level": 18
       },
       {
-        "name": "Thunder Fang",
+        "name": "Fire Fang",
         "level": 21
       },
       {
@@ -70345,7 +70340,7 @@
         "level": 21
       },
       {
-        "name": "Fire Fang",
+        "name": "Thunder Fang",
         "level": 21
       },
       {
@@ -70369,7 +70364,7 @@
         "level": 32
       },
       {
-        "name": "Wild Charge",
+        "name": "Zing Zap",
         "level": 33
       },
       {
@@ -70377,7 +70372,7 @@
         "level": 36
       },
       {
-        "name": "Discharge",
+        "name": "Volt Tackle",
         "level": 39
       },
       {
@@ -70463,6 +70458,7 @@
     "value": 404,
     "text": "Luxio",
     "type": "Electric",
+    "dualtype": "Dark",
     "abilities": [
       "Intimidate",
       "Guts",
@@ -70506,7 +70502,7 @@
         "level": 20
       },
       {
-        "name": "Thunder Fang",
+        "name": "Fire Fang",
         "level": 24
       },
       {
@@ -70514,7 +70510,7 @@
         "level": 24
       },
       {
-        "name": "Fire Fang",
+        "name": "Thunder Fang",
         "level": 24
       },
       {
@@ -70534,7 +70530,7 @@
         "level": 36
       },
       {
-        "name": "Wild Charge",
+        "name": "Zing Zap",
         "level": 40
       },
       {
@@ -70546,7 +70542,7 @@
         "level": 44
       },
       {
-        "name": "Discharge",
+        "name": "Volt Tackle",
         "level": 48
       },
       {
@@ -70684,15 +70680,15 @@
         "level": 20
       },
       {
+        "name": "Fire Fang",
+        "level": 24
+      },
+      {
         "name": "Thunder Fang",
         "level": 24
       },
       {
         "name": "Ice Fang",
-        "level": 24
-      },
-      {
-        "name": "Fire Fang",
         "level": 24
       },
       {
@@ -70712,7 +70708,7 @@
         "level": 38
       },
       {
-        "name": "Wild Charge",
+        "name": "Zing Zap",
         "level": 43
       },
       {
@@ -70724,7 +70720,7 @@
         "level": 48
       },
       {
-        "name": "Discharge",
+        "name": "Volt Tackle",
         "level": 53
       },
       {
@@ -70795,9 +70791,9 @@
       "hp": 80,
       "atk": 120,
       "def": 79,
-      "spa": 95,
+      "spa": 70,
       "spd": 79,
-      "spe": 70
+      "spe": 95
     },
     "dexNum": 405,
     "form": 0,
@@ -80968,7 +80964,7 @@
         "level": 31
       },
       {
-        "name": "Poison Jab",
+        "name": "Double-Edge",
         "level": 34
       },
       {
@@ -80984,7 +80980,7 @@
         "level": 42
       },
       {
-        "name": "Stone Edge",
+        "name": "Head Smash",
         "level": 46
       },
       {
@@ -81054,6 +81050,7 @@
       "Strength": 70,
       "Rock Smash": 249,
       "Rock Climb": 431,
+      "Wild Charge": 528,
       "Hidden Power": 237
     },
     "eggLearnset": {
@@ -129546,38 +129543,51 @@
       },
       {
         "name": "Taunt",
-        "level": 8
+        "level": 10
+      },
+      {
+        "name": "Echoed Voice",
+        "level": 14
       },
       {
         "name": "Razor Leaf",
-        "level": 12
-      },
-      {
-        "name": "Screech",
         "level": 17
       },
       {
-        "name": "Knock Off",
+        "name": "Assurance",
         "level": 20
       },
       {
+        "name": "Screech",
+        "level": 23
+      },
+      {
+        "name": "Nature Power",
+        "level": 26
+      },
+      {
+        "name": "Knock Off",
+        "level": 29
+      },
+      {
         "name": "Slam",
-        "level": 24
-      },
-      {
-        "name": "Uproar",
-        "level": 28
-      },
-      {
-        "name": "Wood Hammer",
         "level": 32
       },
       {
-        "name": "Endeavor",
-        "level": 36
+        "name": "Hammer Arm",
+        "level": 35
+      },
+      {
+        "name": "Uproar",
+        "level": 38
+      },
+      {
+        "name": "Wood Hammer",
+        "level": 41
       }
     ],
     "tmLearnset": {
+      "Toxic": 92,
       "Bullet Seed": 331,
       "Work Up": 526,
       "Sunny Day": 241,
@@ -129599,16 +129609,14 @@
       "Grass Knot": 447,
       "U-turn": 369,
       "Substitute": 164,
-      "Strength": 70
+      "Strength": 70,
+      "Hidden Power": 237
     },
     "eggLearnset": {
       "Strength": 70,
       "Leech Seed": 73,
       "Growth": 74,
-      "Fake Out": 252,
-      "Nature Power": 267,
-      "Hammer Arm": 359,
-      "Worry Seed": 388
+      "Fake Out": 252
     },
     "tutorLearnset": {},
     "baseStats": {
@@ -129637,7 +129645,7 @@
     "type": "Grass",
     "abilities": [
       "Overgrow",
-      "Overgrow",
+      "Soundproof",
       "Grassy Surge"
     ],
     "learnset": [
@@ -129666,35 +129674,48 @@
         "level": 1
       },
       {
+        "name": "Echoed Voice",
+        "level": 14
+      },
+      {
         "name": "Razor Leaf",
-        "level": 12
+        "level": 18
+      },
+      {
+        "name": "Assurance",
+        "level": 22
       },
       {
         "name": "Screech",
-        "level": 19
+        "level": 26
       },
       {
-        "name": "Knock Off",
-        "level": 24
-      },
-      {
-        "name": "Slam",
+        "name": "Nature Power",
         "level": 30
       },
       {
-        "name": "Uproar",
+        "name": "Knock Off",
+        "level": 34
+      },
+      {
+        "name": "Slam",
         "level": 36
       },
       {
-        "name": "Wood Hammer",
-        "level": 42
+        "name": "Hammer Arm",
+        "level": 40
       },
       {
-        "name": "Endeavor",
+        "name": "Uproar",
+        "level": 44
+      },
+      {
+        "name": "Wood Hammer",
         "level": 48
       }
     ],
     "tmLearnset": {
+      "Toxic": 92,
       "Bullet Seed": 331,
       "Work Up": 526,
       "Sunny Day": 241,
@@ -129716,16 +129737,14 @@
       "Grass Knot": 447,
       "U-turn": 369,
       "Substitute": 164,
-      "Strength": 70
+      "Strength": 70,
+      "Hidden Power": 237
     },
     "eggLearnset": {
       "Strength": 70,
       "Leech Seed": 73,
       "Growth": 74,
-      "Fake Out": 252,
-      "Nature Power": 267,
-      "Hammer Arm": 359,
-      "Worry Seed": 388
+      "Fake Out": 252
     },
     "tutorLearnset": {},
     "baseStats": {
@@ -129754,7 +129773,7 @@
     "type": "Grass",
     "abilities": [
       "Overgrow",
-      "Overgrow",
+      "Soundproof",
       "Grassy Surge"
     ],
     "learnset": [
@@ -129763,23 +129782,7 @@
         "level": 0
       },
       {
-        "name": "Scratch",
-        "level": 1
-      },
-      {
-        "name": "Noble Roar",
-        "level": 1
-      },
-      {
-        "name": "Growl",
-        "level": 1
-      },
-      {
-        "name": "Taunt",
-        "level": 1
-      },
-      {
-        "name": "Drum Beating",
+        "name": "Branch Poke",
         "level": 1
       },
       {
@@ -129787,7 +129790,7 @@
         "level": 1
       },
       {
-        "name": "Branch Poke",
+        "name": "Drum Beating",
         "level": 1
       },
       {
@@ -129795,40 +129798,69 @@
         "level": 1
       },
       {
+        "name": "Growl",
+        "level": 1
+      },
+      {
+        "name": "Noble Roar",
+        "level": 1
+      },
+      {
+        "name": "Scratch",
+        "level": 1
+      },
+      {
+        "name": "Taunt",
+        "level": 1
+      },
+      {
+        "name": "Echoed Voice",
+        "level": 14
+      },
+      {
         "name": "Razor Leaf",
-        "level": 12
+        "level": 18
+      },
+      {
+        "name": "Assurance",
+        "level": 22
       },
       {
         "name": "Screech",
-        "level": 19
+        "level": 26
       },
       {
-        "name": "Knock Off",
-        "level": 24
-      },
-      {
-        "name": "Slam",
+        "name": "Nature Power",
         "level": 30
       },
       {
+        "name": "Knock Off",
+        "level": 34
+      },
+      {
+        "name": "Slam",
+        "level": 37
+      },
+      {
+        "name": "Hammer Arm",
+        "level": 43
+      },
+      {
         "name": "Uproar",
-        "level": 38
+        "level": 49
       },
       {
         "name": "Wood Hammer",
-        "level": 46
-      },
-      {
-        "name": "Endeavor",
         "level": 54
       },
       {
         "name": "Boomburst",
-        "level": 62
+        "level": 61
       }
     ],
     "tmLearnset": {
       "Focus Punch": 264,
+      "Toxic": 92,
       "Bulk Up": 339,
       "Bullet Seed": 331,
       "Work Up": 526,
@@ -129856,27 +129888,24 @@
       "Snarl": 555,
       "Sleep Talk": 214,
       "Bulldoze": 523,
-      "Grass Knot": 447,
       "U-turn": 369,
       "Substitute": 164,
       "Strength": 70,
-      "Hyper Voice": 304
+      "Hyper Voice": 304,
+      "Hidden Power": 237
     },
     "eggLearnset": {
       "Strength": 70,
       "Leech Seed": 73,
       "Growth": 74,
-      "Fake Out": 252,
-      "Nature Power": 267,
-      "Hammer Arm": 359,
-      "Worry Seed": 388
+      "Fake Out": 252
     },
     "tutorLearnset": {},
     "baseStats": {
       "hp": 100,
       "atk": 125,
       "def": 90,
-      "spa": 60,
+      "spa": 65,
       "spd": 70,
       "spe": 85
     },
@@ -129898,7 +129927,7 @@
     "type": "Fire",
     "abilities": [
       "Blaze",
-      "Blaze",
+      "Quick Feet",
       "Libero"
     ],
     "learnset": [
@@ -129912,7 +129941,7 @@
       },
       {
         "name": "Ember",
-        "level": 6
+        "level": 5
       },
       {
         "name": "Quick Attack",
@@ -129923,6 +129952,10 @@
         "level": 12
       },
       {
+        "name": "Work Up",
+        "level": 15
+      },
+      {
         "name": "Flame Charge",
         "level": 17
       },
@@ -129931,8 +129964,16 @@
         "level": 20
       },
       {
+        "name": "Low Sweep",
+        "level": 22
+      },
+      {
         "name": "Headbutt",
         "level": 24
+      },
+      {
+        "name": "Blaze Kick",
+        "level": 26
       },
       {
         "name": "Counter",
@@ -129940,11 +129981,19 @@
       },
       {
         "name": "Bounce",
-        "level": 32
+        "level": 31
+      },
+      {
+        "name": "High Jump Kick",
+        "level": 35
       },
       {
         "name": "Double-Edge",
-        "level": 36
+        "level": 39
+      },
+      {
+        "name": "Sucker Punch",
+        "level": 44
       }
     ],
     "tmLearnset": {
@@ -129968,7 +130017,20 @@
       "Sand Attack": 28,
       "High Jump Kick": 136,
       "Super Fang": 162,
-      "Sucker Punch": 389
+      "Sucker Punch": 389,
+      "Snore": 173,
+      "Gunk Shot": 441,
+      "Swift": 129,
+      "Mud Shot": 341,
+      "Acrobatics": 512,
+      "Round": 496,
+      "Low Kick": 67,
+      "Focus Energy": 116,
+      "Baton Pass": 226,
+      "Heat Wave": 257,
+      "Electro Ball": 486,
+      "Ally Switch": 502,
+      "Reversal": 179
     },
     "tutorLearnset": {},
     "baseStats": {
@@ -129997,20 +130059,12 @@
     "type": "Fire",
     "abilities": [
       "Blaze",
-      "Blaze",
+      "Quick Feet",
       "Libero"
     ],
     "learnset": [
       {
-        "name": "Ember",
-        "level": 1
-      },
-      {
         "name": "Growl",
-        "level": 1
-      },
-      {
-        "name": "Quick Attack",
         "level": 1
       },
       {
@@ -130018,8 +130072,32 @@
         "level": 1
       },
       {
+        "name": "Acrobatics",
+        "level": 1
+      },
+      {
+        "name": "Electro Ball",
+        "level": 1
+      },
+      {
+        "name": "Ally Switch",
+        "level": 1
+      },
+      {
+        "name": "Ember",
+        "level": 5
+      },
+      {
+        "name": "Quick Attack",
+        "level": 8
+      },
+      {
         "name": "Double Kick",
         "level": 12
+      },
+      {
+        "name": "Work Up",
+        "level": 15
       },
       {
         "name": "Flame Charge",
@@ -130027,49 +130105,87 @@
       },
       {
         "name": "Agility",
-        "level": 24
+        "level": 21
+      },
+      {
+        "name": "Low Sweep",
+        "level": 23
       },
       {
         "name": "Headbutt",
-        "level": 30
+        "level": 27
+      },
+      {
+        "name": "Blaze Kick",
+        "level": 29
       },
       {
         "name": "Counter",
-        "level": 36
+        "level": 31
       },
       {
         "name": "Bounce",
-        "level": 42
+        "level": 34
+      },
+      {
+        "name": "High Jump Kick",
+        "level": 39
       },
       {
         "name": "Double-Edge",
+        "level": 43
+      },
+      {
+        "name": "Sucker Punch",
         "level": 48
       }
     ],
     "tmLearnset": {
+      "Toxic": 92,
       "Bulk Up": 339,
-      "Work Up": 526,
       "Sunny Day": 241,
       "Taunt": 269,
       "Protect": 182,
       "Low Sweep": 490,
+      "Dig": 91,
+      "Brick Break": 280,
+      "Double Team": 104,
       "Flamethrower": 53,
       "Fire Blast": 126,
+      "Aerial Ace": 332,
       "Facade": 263,
       "Rest": 156,
       "Attract": 213,
+      "Thief": 168,
       "Overheat": 315,
       "Endure": 203,
-      "Swords Dance": 14,
+      "Giga Impact": 416,
       "Sleep Talk": 214,
+      "Swagger": 207,
       "U-turn": 369,
-      "Substitute": 164
+      "Substitute": 164,
+      "Strength": 70,
+      "Rock Smash": 249,
+      "Rock Climb": 431
     },
     "eggLearnset": {
       "Sand Attack": 28,
       "High Jump Kick": 136,
       "Super Fang": 162,
-      "Sucker Punch": 389
+      "Sucker Punch": 389,
+      "Snore": 173,
+      "Gunk Shot": 441,
+      "Swift": 129,
+      "Mud Shot": 341,
+      "Acrobatics": 512,
+      "Round": 496,
+      "Low Kick": 67,
+      "Focus Energy": 116,
+      "Baton Pass": 226,
+      "Heat Wave": 257,
+      "Electro Ball": 486,
+      "Ally Switch": 502,
+      "Reversal": 179
     },
     "tutorLearnset": {},
     "baseStats": {
@@ -130098,7 +130214,7 @@
     "type": "Fire",
     "abilities": [
       "Blaze",
-      "Blaze",
+      "Quick Feet",
       "Libero"
     ],
     "learnset": [
@@ -130107,23 +130223,19 @@
         "level": 0
       },
       {
-        "name": "Ember",
+        "name": "Electro Ball",
         "level": 1
       },
       {
-        "name": "Feint",
+        "name": "Acrobatics",
         "level": 1
       },
       {
-        "name": "Growl",
+        "name": "Helping Hand",
         "level": 1
       },
       {
-        "name": "Pyro Ball",
-        "level": 1
-      },
-      {
-        "name": "Quick Attack",
+        "name": "Ally Switch",
         "level": 1
       },
       {
@@ -130131,8 +130243,36 @@
         "level": 1
       },
       {
+        "name": "Baton Pass",
+        "level": 1
+      },
+      {
+        "name": "Pyro Ball",
+        "level": 1
+      },
+      {
+        "name": "Growl",
+        "level": 1
+      },
+      {
+        "name": "Feint",
+        "level": 1
+      },
+      {
+        "name": "Ember",
+        "level": 5
+      },
+      {
+        "name": "Quick Attack",
+        "level": 8
+      },
+      {
         "name": "Double Kick",
         "level": 12
+      },
+      {
+        "name": "Work Up",
+        "level": 15
       },
       {
         "name": "Flame Charge",
@@ -130140,67 +130280,111 @@
       },
       {
         "name": "Agility",
-        "level": 24
+        "level": 21
+      },
+      {
+        "name": "Low Sweep",
+        "level": 23
       },
       {
         "name": "Headbutt",
-        "level": 30
+        "level": 27
+      },
+      {
+        "name": "Blaze Kick",
+        "level": 29
       },
       {
         "name": "Counter",
-        "level": 38
+        "level": 31
       },
       {
         "name": "Bounce",
-        "level": 46
+        "level": 36
+      },
+      {
+        "name": "High Jump Kick",
+        "level": 41
       },
       {
         "name": "Double-Edge",
-        "level": 54
+        "level": 45
+      },
+      {
+        "name": "Mega Kick",
+        "level": 48
+      },
+      {
+        "name": "Sucker Punch",
+        "level": 50
+      },
+      {
+        "name": "Gunk Shot",
+        "level": 56
       },
       {
         "name": "Court Change",
-        "level": 62
+        "level": 60
       }
     ],
     "tmLearnset": {
+      "Focus Punch": 264,
+      "Toxic": 92,
       "Bulk Up": 339,
-      "Work Up": 526,
       "Sunny Day": 241,
       "Taunt": 269,
       "Hyper Beam": 63,
       "Protect": 182,
       "Low Sweep": 490,
-      "Shadow Ball": 247,
+      "Dig": 91,
+      "Brick Break": 280,
+      "Double Team": 104,
       "Flamethrower": 53,
       "Fire Blast": 126,
+      "Aerial Ace": 332,
       "Facade": 263,
       "Rest": 156,
       "Attract": 213,
+      "Thief": 168,
       "Overheat": 315,
       "Focus Blast": 411,
-      "Fling": 374,
       "Endure": 203,
-      "Will-O-Wisp": 261,
       "Giga Impact": 416,
-      "Swords Dance": 14,
       "Snarl": 555,
       "Sleep Talk": 214,
+      "Swagger": 207,
       "U-turn": 369,
-      "Substitute": 164
+      "Substitute": 164,
+      "Strength": 70,
+      "Rock Smash": 249,
+      "Rock Climb": 431,
+      "Hidden Power": 237
     },
     "eggLearnset": {
       "Sand Attack": 28,
       "High Jump Kick": 136,
       "Super Fang": 162,
-      "Sucker Punch": 389
+      "Sucker Punch": 389,
+      "Snore": 173,
+      "Gunk Shot": 441,
+      "Swift": 129,
+      "Mud Shot": 341,
+      "Acrobatics": 512,
+      "Round": 496,
+      "Low Kick": 67,
+      "Focus Energy": 116,
+      "Baton Pass": 226,
+      "Heat Wave": 257,
+      "Electro Ball": 486,
+      "Ally Switch": 502,
+      "Reversal": 179
     },
     "tutorLearnset": {},
     "baseStats": {
       "hp": 80,
       "atk": 116,
       "def": 75,
-      "spa": 65,
+      "spa": 70,
       "spd": 75,
       "spe": 119
     },
@@ -130222,7 +130406,7 @@
     "type": "Water",
     "abilities": [
       "Torrent",
-      "Torrent",
+      "Limber",
       "Sniper"
     ],
     "learnset": [
@@ -130235,12 +130419,16 @@
         "level": 1
       },
       {
+        "name": "Bind",
+        "level": 1
+      },
+      {
         "name": "Water Gun",
         "level": 6
       },
       {
-        "name": "Bind",
-        "level": 8
+        "name": "Foresight",
+        "level": 9
       },
       {
         "name": "Water Pulse",
@@ -130251,24 +130439,44 @@
         "level": 17
       },
       {
+        "name": "Attract",
+        "level": 19
+      },
+      {
+        "name": "Camouflage",
+        "level": 23
+      },
+      {
         "name": "Sucker Punch",
-        "level": 20
+        "level": 26
       },
       {
-        "name": "U-turn",
-        "level": 24
+        "name": "Taunt",
+        "level": 29
       },
       {
-        "name": "Liquidation",
-        "level": 28
-      },
-      {
-        "name": "Soak",
+        "name": "Take Down",
         "level": 32
       },
       {
+        "name": "U-turn",
+        "level": 35
+      },
+      {
+        "name": "Whirlpool",
+        "level": 39
+      },
+      {
+        "name": "Liquidation",
+        "level": 42
+      },
+      {
+        "name": "Soak",
+        "level": 46
+      },
+      {
         "name": "Rain Dance",
-        "level": 36
+        "level": 48
       }
     ],
     "tmLearnset": {
@@ -130326,7 +130534,7 @@
     "type": "Water",
     "abilities": [
       "Torrent",
-      "Torrent",
+      "Limber",
       "Sniper"
     ],
     "learnset": [
@@ -130347,36 +130555,65 @@
         "level": 1
       },
       {
+        "name": "Foresight",
+        "level": 9
+      },
+      {
         "name": "Water Pulse",
         "level": 12
+      },
+      {
+        "name": "Shadow Sneak",
+        "level": 15
       },
       {
         "name": "Tearful Look",
         "level": 19
       },
       {
+        "name": "Attract",
+        "level": 22
+      },
+      {
+        "name": "Camouflage",
+        "level": 26
+      },
+      {
         "name": "Sucker Punch",
-        "level": 24
+        "level": 29
+      },
+      {
+        "name": "Taunt",
+        "level": 31
+      },
+      {
+        "name": "Take Down",
+        "level": 34
       },
       {
         "name": "U-turn",
-        "level": 30
-      },
-      {
-        "name": "Liquidation",
         "level": 36
       },
       {
+        "name": "Whirlpool",
+        "level": 40
+      },
+      {
+        "name": "Liquidation",
+        "level": 44
+      },
+      {
         "name": "Soak",
-        "level": 42
+        "level": 47
       },
       {
         "name": "Rain Dance",
-        "level": 48
+        "level": 49
       }
     ],
     "tmLearnset": {
       "Water Pulse": 352,
+      "Toxic": 92,
       "Work Up": 526,
       "Light Screen": 113,
       "Protect": 182,
@@ -130393,7 +130630,8 @@
       "U-turn": 369,
       "Substitute": 164,
       "Surf": 57,
-      "Waterfall": 127
+      "Waterfall": 127,
+      "Hidden Power": 237
     },
     "eggLearnset": {
       "Mist": 54,
@@ -130431,7 +130669,7 @@
     "type": "Water",
     "abilities": [
       "Torrent",
-      "Torrent",
+      "Limber",
       "Sniper"
     ],
     "learnset": [
@@ -130464,28 +130702,56 @@
         "level": 1
       },
       {
+        "name": "Foresight",
+        "level": 9
+      },
+      {
         "name": "Water Pulse",
         "level": 12
+      },
+      {
+        "name": "Shadow Sneak",
+        "level": 15
       },
       {
         "name": "Tearful Look",
         "level": 19
       },
       {
+        "name": "Attract",
+        "level": 22
+      },
+      {
+        "name": "Camouflage",
+        "level": 26
+      },
+      {
         "name": "Sucker Punch",
-        "level": 24
+        "level": 29
+      },
+      {
+        "name": "Taunt",
+        "level": 31
+      },
+      {
+        "name": "Take Down",
+        "level": 36
       },
       {
         "name": "U-turn",
-        "level": 30
-      },
-      {
-        "name": "Liquidation",
         "level": 38
       },
       {
+        "name": "Whirlpool",
+        "level": 42
+      },
+      {
+        "name": "Liquidation",
+        "level": 45
+      },
+      {
         "name": "Soak",
-        "level": 46
+        "level": 49
       },
       {
         "name": "Rain Dance",
@@ -130493,11 +130759,12 @@
       },
       {
         "name": "Hydro Pump",
-        "level": 62
+        "level": 60
       }
     ],
     "tmLearnset": {
       "Water Pulse": 352,
+      "Toxic": 92,
       "Work Up": 526,
       "Taunt": 269,
       "Ice Beam": 58,
@@ -130524,7 +130791,8 @@
       "U-turn": 369,
       "Substitute": 164,
       "Surf": 57,
-      "Waterfall": 127
+      "Waterfall": 127,
+      "Hidden Power": 237
     },
     "eggLearnset": {
       "Mist": 54,
@@ -130537,7 +130805,7 @@
     },
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 70,
+      "hp": 75,
       "atk": 85,
       "def": 65,
       "spa": 125,
@@ -130562,8 +130830,8 @@
     "type": "Normal",
     "abilities": [
       "Cheek Pouch",
-      "Cheek Pouch",
-      "Gluttony"
+      "Gluttony",
+      "Truant"
     ],
     "learnset": [
       {
@@ -130572,6 +130840,10 @@
       },
       {
         "name": "Tail Whip",
+        "level": 1
+      },
+      {
+        "name": "Covet",
         "level": 1
       },
       {
@@ -130615,11 +130887,16 @@
         "level": 40
       },
       {
-        "name": "Belch",
+        "name": "Double-Edge",
         "level": 45
+      },
+      {
+        "name": "Belch",
+        "level": 50
       }
     ],
     "tmLearnset": {
+      "Toxic": 92,
       "Bullet Seed": 331,
       "Protect": 182,
       "Iron Tail": 231,
@@ -130634,7 +130911,8 @@
       "Gyro Ball": 360,
       "Sleep Talk": 214,
       "Substitute": 164,
-      "Hyper Voice": 304
+      "Hyper Voice": 304,
+      "Hidden Power": 237
     },
     "eggLearnset": {
       "Defense Curl": 111,
@@ -130647,9 +130925,9 @@
       "hp": 70,
       "atk": 55,
       "def": 55,
-      "spa": 35,
+      "spa": 25,
       "spd": 35,
-      "spe": 25
+      "spe": 35
     },
     "dexNum": 819,
     "form": 0,
@@ -130669,12 +130947,12 @@
     "type": "Normal",
     "abilities": [
       "Cheek Pouch",
-      "Cheek Pouch",
-      "Gluttony"
+      "Gluttony",
+      "Truant"
     ],
     "learnset": [
       {
-        "name": "Covet",
+        "name": "Recycle",
         "level": 0
       },
       {
@@ -130698,7 +130976,11 @@
         "level": 1
       },
       {
-        "name": "Spit Up",
+        "name": "Recycle",
+        "level": 1
+      },
+      {
+        "name": "Swallow",
         "level": 15
       },
       {
@@ -130706,7 +130988,7 @@
         "level": 15
       },
       {
-        "name": "Swallow",
+        "name": "Spit Up",
         "level": 15
       },
       {
@@ -130730,11 +131012,16 @@
         "level": 48
       },
       {
-        "name": "Belch",
+        "name": "Double-Edge",
         "level": 55
+      },
+      {
+        "name": "Belch",
+        "level": 62
       }
     ],
     "tmLearnset": {
+      "Toxic": 92,
       "Bullet Seed": 331,
       "Sunny Day": 241,
       "Hyper Beam": 63,
@@ -130757,7 +131044,8 @@
       "Bulldoze": 523,
       "Substitute": 164,
       "Wild Charge": 528,
-      "Hyper Voice": 304
+      "Hyper Voice": 304,
+      "Hidden Power": 237
     },
     "eggLearnset": {
       "Defense Curl": 111,
@@ -130768,11 +131056,11 @@
     "tutorLearnset": {},
     "baseStats": {
       "hp": 120,
-      "atk": 95,
+      "atk": 105,
       "def": 95,
-      "spa": 55,
-      "spd": 75,
-      "spe": 20
+      "spa": 20,
+      "spd": 85,
+      "spe": 55
     },
     "dexNum": 820,
     "form": 0,
@@ -131148,7 +131436,6 @@
     "tmLearnset": {},
     "eggLearnset": {
       "Supersonic": 48,
-      "Recover": 105,
       "Sticky Web": 564,
       "Infestation": 611
     },
@@ -131215,6 +131502,7 @@
     ],
     "tmLearnset": {
       "Calm Mind": 347,
+      "Toxic": 92,
       "Light Screen": 113,
       "Protect": 182,
       "Safeguard": 219,
@@ -131232,11 +131520,11 @@
       "Payback": 371,
       "Sleep Talk": 214,
       "Substitute": 164,
-      "Trick Room": 433
+      "Trick Room": 433,
+      "Hidden Power": 237
     },
     "eggLearnset": {
       "Supersonic": 48,
-      "Recover": 105,
       "Sticky Web": 564,
       "Infestation": 611
     },
@@ -131269,11 +131557,23 @@
     "abilities": [
       "Swarm",
       "Frisk",
-      "Telepathy"
+      "Filter"
     ],
     "learnset": [
       {
+        "name": "Gravity",
+        "level": 0
+      },
+      {
         "name": "Confusion",
+        "level": 1
+      },
+      {
+        "name": "Reflect",
+        "level": 1
+      },
+      {
+        "name": "Gravity",
         "level": 1
       },
       {
@@ -131281,15 +131581,7 @@
         "level": 1
       },
       {
-        "name": "Cosmic Power",
-        "level": 1
-      },
-      {
         "name": "Light Screen",
-        "level": 1
-      },
-      {
-        "name": "Reflect",
         "level": 1
       },
       {
@@ -131313,11 +131605,11 @@
         "level": 20
       },
       {
-        "name": "Ally Switch",
+        "name": "Cosmic Power",
         "level": 24
       },
       {
-        "name": "Bug Buzz",
+        "name": "Signal Beam",
         "level": 28
       },
       {
@@ -131325,7 +131617,7 @@
         "level": 32
       },
       {
-        "name": "Psychic",
+        "name": "Psyshock",
         "level": 36
       },
       {
@@ -131333,16 +131625,33 @@
         "level": 40
       },
       {
-        "name": "Calm Mind",
+        "name": "Bug Buzz",
         "level": 44
       },
       {
-        "name": "Psychic Terrain",
+        "name": "Mind Reader",
         "level": 48
+      },
+      {
+        "name": "Psychic",
+        "level": 52
+      },
+      {
+        "name": "Calm Mind",
+        "level": 56
+      },
+      {
+        "name": "Psychic Terrain",
+        "level": 60
+      },
+      {
+        "name": "Recover",
+        "level": 64
       }
     ],
     "tmLearnset": {
       "Calm Mind": 347,
+      "Toxic": 92,
       "Hyper Beam": 63,
       "Light Screen": 113,
       "Protect": 182,
@@ -131351,6 +131660,7 @@
       "Solar Beam": 76,
       "Psychic": 94,
       "Shadow Ball": 247,
+      "Double Team": 104,
       "Reflect": 115,
       "Facade": 263,
       "Rest": 156,
@@ -131364,11 +131674,11 @@
       "Sleep Talk": 214,
       "U-turn": 369,
       "Substitute": 164,
-      "Trick Room": 433
+      "Trick Room": 433,
+      "Hidden Power": 237
     },
     "eggLearnset": {
       "Supersonic": 48,
-      "Recover": 105,
       "Sticky Web": 564,
       "Infestation": 611
     },
@@ -131377,7 +131687,7 @@
       "hp": 60,
       "atk": 45,
       "def": 110,
-      "spa": 80,
+      "spa": 90,
       "spd": 120,
       "spe": 90
     },
@@ -131399,7 +131709,7 @@
     "type": "Dark",
     "abilities": [
       "Run Away",
-      "Unburden",
+      "Opportunist",
       "Stakeout"
     ],
     "learnset": [
@@ -131436,19 +131746,28 @@
         "level": 24
       },
       {
-        "name": "Night Slash",
+        "name": "Switcheroo",
         "level": 28
       },
       {
-        "name": "Tail Slap",
+        "name": "Night Slash",
         "level": 32
       },
       {
-        "name": "Foul Play",
+        "name": "Knock Off",
         "level": 36
+      },
+      {
+        "name": "Tail Whip",
+        "level": 40
+      },
+      {
+        "name": "Foul Play",
+        "level": 44
       }
     ],
     "tmLearnset": {
+      "Toxic": 92,
       "Taunt": 269,
       "Protect": 182,
       "Dig": 91,
@@ -131459,24 +131778,27 @@
       "Thief": 168,
       "Endure": 203,
       "Nasty Plot": 417,
+      "Psych Up": 244,
       "Snarl": 555,
       "Sleep Talk": 214,
-      "Substitute": 164
+      "Substitute": 164,
+      "Hidden Power": 237
     },
     "eggLearnset": {
       "Torment": 259,
-      "Knock Off": 282,
+      "Encore": 227,
       "Howl": 336,
-      "Quick Guard": 501
+      "Quick Guard": 501,
+      "Pay Day": 6
     },
     "tutorLearnset": {},
     "baseStats": {
       "hp": 40,
-      "atk": 28,
-      "def": 28,
-      "spa": 47,
-      "spd": 52,
-      "spe": 50
+      "atk": 50,
+      "def": 40,
+      "spa": 40,
+      "spd": 40,
+      "spe": 65
     },
     "dexNum": 827,
     "form": 0,
@@ -131496,7 +131818,7 @@
     "type": "Dark",
     "abilities": [
       "Run Away",
-      "Unburden",
+      "Opportunist",
       "Stakeout"
     ],
     "learnset": [
@@ -131541,58 +131863,73 @@
         "level": 28
       },
       {
-        "name": "Night Slash",
+        "name": "Switcheroo",
         "level": 34
       },
       {
-        "name": "Tail Slap",
+        "name": "Night Slash",
         "level": 40
       },
       {
-        "name": "Foul Play",
+        "name": "Knock Off",
         "level": 46
       },
       {
-        "name": "Parting Shot",
+        "name": "Tail Slap",
         "level": 52
+      },
+      {
+        "name": "Foul Play",
+        "level": 58
+      },
+      {
+        "name": "Parting Shot",
+        "level": 64
       }
     ],
     "tmLearnset": {
+      "Toxic": 92,
       "Taunt": 269,
       "Hyper Beam": 63,
       "Protect": 182,
       "Dig": 91,
       "Psychic": 94,
       "Shadow Ball": 247,
+      "Sludge Bomb": 188,
       "Facade": 263,
       "Rest": 156,
       "Attract": 213,
       "Thief": 168,
+      "False Swipe": 206,
       "Endure": 203,
       "Nasty Plot": 417,
       "Shadow Claw": 421,
       "Giga Impact": 416,
+      "Thunder Wave": 86,
+      "Psych Up": 244,
       "Snarl": 555,
       "Dark Pulse": 399,
       "Sleep Talk": 214,
       "Grass Knot": 447,
       "U-turn": 369,
-      "Substitute": 164
+      "Substitute": 164,
+      "Hidden Power": 237
     },
     "eggLearnset": {
       "Torment": 259,
-      "Knock Off": 282,
+      "Encore": 227,
       "Howl": 336,
-      "Quick Guard": 501
+      "Quick Guard": 501,
+      "Pay Day": 6
     },
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 70,
-      "atk": 58,
-      "def": 58,
-      "spa": 87,
-      "spd": 92,
-      "spe": 90
+      "hp": 80,
+      "atk": 90,
+      "def": 70,
+      "spa": 90,
+      "spd": 70,
+      "spe": 95
     },
     "dexNum": 828,
     "form": 0,
@@ -131625,11 +131962,15 @@
         "level": 1
       },
       {
+        "name": "Sweet Scent",
+        "level": 1
+      },
+      {
         "name": "Rapid Spin",
         "level": 4
       },
       {
-        "name": "Sweet Scent",
+        "name": "Bestow",
         "level": 8
       },
       {
@@ -131637,31 +131978,52 @@
         "level": 12
       },
       {
-        "name": "Round",
+        "name": "Grass Whistle",
         "level": 16
       },
       {
+        "name": "Tickle",
+        "level": 19
+      },
+      {
+        "name": "Magical Leaf",
+        "level": 22
+      },
+      {
+        "name": "Encore",
+        "level": 26
+      },
+      {
         "name": "Leaf Tornado",
-        "level": 21
+        "level": 29
+      },
+      {
+        "name": "Round",
+        "level": 33
+      },
+      {
+        "name": "Lucky Chant",
+        "level": 37
       },
       {
         "name": "Synthesis",
-        "level": 24
-      },
-      {
-        "name": "Hyper Voice",
-        "level": 28
+        "level": 40
       },
       {
         "name": "Aromatherapy",
-        "level": 32
+        "level": 48
+      },
+      {
+        "name": "Hyper Voice",
+        "level": 52
       },
       {
         "name": "Leaf Storm",
-        "level": 36
+        "level": 56
       }
     ],
     "tmLearnset": {
+      "Toxic": 92,
       "Bullet Seed": 331,
       "Sunny Day": 241,
       "Light Screen": 113,
@@ -131676,7 +132038,8 @@
       "Sleep Talk": 214,
       "Grass Knot": 447,
       "Substitute": 164,
-      "Hyper Voice": 304
+      "Hyper Voice": 304,
+      "Hidden Power": 237
     },
     "eggLearnset": {
       "Leech Seed": 73,
@@ -131742,39 +132105,68 @@
         "level": 1
       },
       {
+        "name": "Bestow",
+        "level": 8
+      },
+      {
         "name": "Razor Leaf",
         "level": 12
       },
       {
-        "name": "Round",
+        "name": "Grass Whistle",
         "level": 16
       },
       {
-        "name": "Leaf Tornado",
-        "level": 23
+        "name": "Tickle",
+        "level": 19
       },
       {
-        "name": "Synthesis",
+        "name": "Magical Leaf",
+        "level": 24
+      },
+      {
+        "name": "Encore",
         "level": 28
       },
       {
-        "name": "Hyper Voice",
-        "level": 34
+        "name": "Leaf Tornado",
+        "level": 33
       },
       {
-        "name": "Aromatherapy",
-        "level": 40
+        "name": "Round",
+        "level": 37
       },
       {
-        "name": "Leaf Storm",
+        "name": "Lucky Chant",
+        "level": 41
+      },
+      {
+        "name": "Synthesis",
         "level": 46
       },
       {
+        "name": "Energy Ball",
+        "level": 50
+      },
+      {
+        "name": "Aromatherapy",
+        "level": 55
+      },
+      {
+        "name": "Hyper Voice",
+        "level": 60
+      },
+      {
         "name": "Cotton Guard",
-        "level": 52
+        "level": 64
+      },
+      {
+        "name": "Leaf Storm",
+        "level": 69
       }
     ],
     "tmLearnset": {
+      "Toxic": 92,
       "Bullet Seed": 331,
       "Sunny Day": 241,
       "Hyper Beam": 63,
@@ -131791,7 +132183,8 @@
       "Sleep Talk": 214,
       "Grass Knot": 447,
       "Substitute": 164,
-      "Hyper Voice": 304
+      "Hyper Voice": 304,
+      "Hidden Power": 237
     },
     "eggLearnset": {
       "Leech Seed": 73,
@@ -131803,12 +132196,12 @@
     },
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 60,
+      "hp": 70,
       "atk": 50,
       "def": 90,
       "spa": 80,
       "spd": 120,
-      "spe": 60
+      "spe": 80
     },
     "dexNum": 830,
     "form": 0,
@@ -132111,11 +132504,23 @@
       },
       {
         "name": "Protect",
-        "level": 14
+        "level": 10
+      },
+      {
+        "name": "Rock Polish",
+        "level": 13
+      },
+      {
+        "name": "Razor Shell",
+        "level": 17
       },
       {
         "name": "Headbutt",
         "level": 21
+      },
+      {
+        "name": "Dive",
+        "level": 24
       },
       {
         "name": "Counter",
@@ -132123,19 +132528,24 @@
       },
       {
         "name": "Jaw Lock",
-        "level": 35
+        "level": 32
       },
       {
         "name": "Liquidation",
-        "level": 42
+        "level": 36
       },
       {
         "name": "Body Slam",
-        "level": 49
+        "level": 40
+      },
+      {
+        "name": "Shell Smash",
+        "level": 44
       }
     ],
     "tmLearnset": {
       "Water Pulse": 352,
+      "Toxic": 92,
       "Protect": 182,
       "Rain Dance": 240,
       "Facade": 263,
@@ -132148,12 +132558,15 @@
       "Poison Jab": 398,
       "Substitute": 164,
       "Surf": 57,
-      "Waterfall": 127
+      "Waterfall": 127,
+      "Hidden Power": 237
     },
     "eggLearnset": {
       "Skull Bash": 130,
       "Gastro Acid": 380,
-      "Dragon Tail": 525
+      "Dragon Tail": 525,
+      "Muddy Water": 330,
+      "Sand Tomb": 328
     },
     "tutorLearnset": {},
     "baseStats": {
@@ -132228,28 +132641,49 @@
         "level": 21
       },
       {
+        "name": "Dive",
+        "level": 25
+      },
+      {
         "name": "Counter",
         "level": 30
       },
       {
         "name": "Jaw Lock",
+        "level": 34
+      },
+      {
+        "name": "Iron Defense",
         "level": 39
       },
       {
         "name": "Liquidation",
-        "level": 48
+        "level": 43
       },
       {
         "name": "Body Slam",
-        "level": 57
+        "level": 48
+      },
+      {
+        "name": "Stone Edge",
+        "level": 53
+      },
+      {
+        "name": "Shell Smash",
+        "level": 58
+      },
+      {
+        "name": "Hydro Pump",
+        "level": 63
       },
       {
         "name": "Head Smash",
-        "level": 66
+        "level": 68
       }
     ],
     "tmLearnset": {
       "Water Pulse": 352,
+      "Toxic": 92,
       "Ice Beam": 58,
       "Blizzard": 59,
       "Hyper Beam": 63,
@@ -132278,12 +132712,15 @@
       "Poison Jab": 398,
       "Substitute": 164,
       "Surf": 57,
-      "Waterfall": 127
+      "Waterfall": 127,
+      "Hidden Power": 237
     },
     "eggLearnset": {
       "Skull Bash": 130,
       "Gastro Acid": 380,
-      "Dragon Tail": 525
+      "Dragon Tail": 525,
+      "Muddy Water": 330,
+      "Sand Tomb": 328
     },
     "tutorLearnset": {},
     "baseStats": {
@@ -132291,7 +132728,7 @@
       "atk": 115,
       "def": 90,
       "spa": 48,
-      "spd": 68,
+      "spd": 78,
       "spe": 74
     },
     "dexNum": 834,
@@ -132312,8 +132749,8 @@
     "type": "Electric",
     "abilities": [
       "Ball Fetch",
-      "Ball Fetch",
-      "Rattled"
+      "Cute Charm",
+      "Competitive"
     ],
     "learnset": [
       {
@@ -132330,39 +132767,60 @@
       },
       {
         "name": "Bite",
-        "level": 10
+        "level": 9
+      },
+      {
+        "name": "Spark",
+        "level": 12
       },
       {
         "name": "Roar",
         "level": 15
       },
       {
-        "name": "Spark",
-        "level": 20
+        "name": "Thunder Fang",
+        "level": 18
       },
       {
         "name": "Charm",
-        "level": 26
+        "level": 21
+      },
+      {
+        "name": "Agility",
+        "level": 24
       },
       {
         "name": "Crunch",
-        "level": 30
+        "level": 27
       },
       {
         "name": "Charge",
-        "level": 35
+        "level": 30
       },
       {
-        "name": "Wild Charge",
-        "level": 40
+        "name": "Ice Fang",
+        "level": 33
+      },
+      {
+        "name": "Volt Tackle",
+        "level": 36
       },
       {
         "name": "Play Rough",
-        "level": 45
+        "level": 39
+      },
+      {
+        "name": "Psychic Fangs",
+        "level": 41
+      },
+      {
+        "name": "Electric Terrain",
+        "level": 44
       }
     ],
     "tmLearnset": {
       "Roar": 46,
+      "Toxic": 92,
       "Protect": 182,
       "Thunderbolt": 85,
       "Thunder": 87,
@@ -132375,8 +132833,10 @@
       "Thunder Wave": 86,
       "Snarl": 555,
       "Sleep Talk": 214,
+      "Swagger": 207,
       "Substitute": 164,
-      "Wild Charge": 528
+      "Wild Charge": 528,
+      "Hidden Power": 237
     },
     "eggLearnset": {
       "Sand Attack": 28,
@@ -132411,7 +132871,7 @@
     "text": "Boltund",
     "type": "Electric",
     "abilities": [
-      "Strong Jaw",
+      "Ball Fetch",
       "Strong Jaw",
       "Competitive"
     ],
@@ -132441,12 +132901,24 @@
         "level": 15
       },
       {
-        "name": "Spark",
+        "name": "Roar",
+        "level": 17
+      },
+      {
+        "name": "Thunder Fang",
         "level": 20
+      },
+      {
+        "name": "Fire Fang",
+        "level": 24
       },
       {
         "name": "Charm",
         "level": 28
+      },
+      {
+        "name": "Agility",
+        "level": 31
       },
       {
         "name": "Crunch",
@@ -132457,12 +132929,20 @@
         "level": 41
       },
       {
-        "name": "Wild Charge",
+        "name": "Ice Fang",
+        "level": 46
+      },
+      {
+        "name": "Volt Tackle",
         "level": 48
       },
       {
         "name": "Play Rough",
-        "level": 55
+        "level": 54
+      },
+      {
+        "name": "Psychic Fangs",
+        "level": 57
       },
       {
         "name": "Electric Terrain",
@@ -132471,6 +132951,7 @@
     ],
     "tmLearnset": {
       "Roar": 46,
+      "Toxic": 92,
       "Bulk Up": 339,
       "Hyper Beam": 63,
       "Protect": 182,
@@ -132486,9 +132967,11 @@
       "Thunder Wave": 86,
       "Snarl": 555,
       "Sleep Talk": 214,
+      "Swagger": 207,
       "Substitute": 164,
       "Wild Charge": 528,
-      "Hyper Voice": 304
+      "Hyper Voice": 304,
+      "Hidden Power": 237
     },
     "eggLearnset": {
       "Sand Attack": 28,
@@ -132500,9 +132983,9 @@
     "tutorLearnset": {},
     "baseStats": {
       "hp": 69,
-      "atk": 90,
+      "atk": 100,
       "def": 60,
-      "spa": 90,
+      "spa": 80,
       "spd": 60,
       "spe": 121
     },
@@ -132550,26 +133033,39 @@
       },
       {
         "name": "Ancient Power",
-        "level": 20
+        "level": 19
       },
       {
         "name": "Incinerate",
-        "level": 25
-      },
-      {
-        "name": "Stealth Rock",
-        "level": 30
-      },
-      {
-        "name": "Heat Crash",
-        "level": 35
+        "level": 23
       },
       {
         "name": "Rock Blast",
+        "level": 27
+      },
+      {
+        "name": "Rock Tomb",
+        "level": 31
+      },
+      {
+        "name": "Stealth Rock",
+        "level": 36
+      },
+      {
+        "name": "Heat Crash",
         "level": 40
+      },
+      {
+        "name": "Stone Edge",
+        "level": 45
+      },
+      {
+        "name": "Explosion",
+        "level": 50
       }
     ],
     "tmLearnset": {
+      "Toxic": 92,
       "Protect": 182,
       "Dig": 91,
       "Reflect": 115,
@@ -132588,19 +133084,22 @@
       "Rock Slide": 157,
       "Sleep Talk": 214,
       "Bulldoze": 523,
-      "Substitute": 164
+      "Substitute": 164,
+      "Hidden Power": 237
     },
     "eggLearnset": {
       "Explosion": 153,
       "Mud-Slap": 189,
-      "Block": 335
+      "Block": 335,
+      "Dig": 91,
+      "Curse": 174
     },
     "tutorLearnset": {},
     "baseStats": {
       "hp": 30,
-      "atk": 40,
+      "atk": 50,
       "def": 50,
-      "spa": 40,
+      "spa": 30,
       "spd": 50,
       "spe": 30
     },
@@ -132661,26 +133160,47 @@
       },
       {
         "name": "Incinerate",
-        "level": 27
-      },
-      {
-        "name": "Stealth Rock",
-        "level": 35
-      },
-      {
-        "name": "Heat Crash",
-        "level": 41
+        "level": 25
       },
       {
         "name": "Rock Blast",
+        "level": 30
+      },
+      {
+        "name": "Scald",
+        "level": 35
+      },
+      {
+        "name": "Rock Throw",
+        "level": 39
+      },
+      {
+        "name": "Stealth Rock",
+        "level": 44
+      },
+      {
+        "name": "Heat Crash",
         "level": 48
       },
       {
+        "name": "Stone Edge",
+        "level": 52
+      },
+      {
+        "name": "Flare Blitz",
+        "level": 57
+      },
+      {
+        "name": "Explosion",
+        "level": 62
+      },
+      {
         "name": "Burn Up",
-        "level": 55
+        "level": 67
       }
     ],
     "tmLearnset": {
+      "Toxic": 92,
       "Sunny Day": 241,
       "Protect": 182,
       "Dig": 91,
@@ -132703,19 +133223,22 @@
       "Rock Slide": 157,
       "Sleep Talk": 214,
       "Bulldoze": 523,
-      "Substitute": 164
+      "Substitute": 164,
+      "Hidden Power": 237
     },
     "eggLearnset": {
       "Explosion": 153,
       "Mud-Slap": 189,
-      "Block": 335
+      "Block": 335,
+      "Dig": 91,
+      "Curse": 174
     },
     "tutorLearnset": {},
     "baseStats": {
       "hp": 80,
-      "atk": 60,
+      "atk": 80,
       "def": 90,
-      "spa": 60,
+      "spa": 40,
       "spd": 70,
       "spe": 50
     },
@@ -132780,26 +133303,47 @@
       },
       {
         "name": "Incinerate",
-        "level": 27
-      },
-      {
-        "name": "Stealth Rock",
-        "level": 37
-      },
-      {
-        "name": "Heat Crash",
-        "level": 45
+        "level": 25
       },
       {
         "name": "Rock Blast",
-        "level": 54
+        "level": 30
+      },
+      {
+        "name": "Scald",
+        "level": 36
+      },
+      {
+        "name": "Rock Tomb",
+        "level": 40
+      },
+      {
+        "name": "Stealth Rock",
+        "level": 45
+      },
+      {
+        "name": "Heat Crash",
+        "level": 50
+      },
+      {
+        "name": "Stone Edge",
+        "level": 55
+      },
+      {
+        "name": "Flare Blitz",
+        "level": 60
+      },
+      {
+        "name": "Explosion",
+        "level": 65
       },
       {
         "name": "Burn Up",
-        "level": 63
+        "level": 70
       }
     ],
     "tmLearnset": {
+      "Toxic": 92,
       "Sunny Day": 241,
       "Hyper Beam": 63,
       "Protect": 182,
@@ -132826,19 +133370,22 @@
       "Rock Slide": 157,
       "Sleep Talk": 214,
       "Bulldoze": 523,
-      "Substitute": 164
+      "Substitute": 164,
+      "Hidden Power": 237
     },
     "eggLearnset": {
       "Explosion": 153,
       "Mud-Slap": 189,
-      "Block": 335
+      "Block": 335,
+      "Dig": 91,
+      "Curse": 174
     },
     "tutorLearnset": {},
     "baseStats": {
       "hp": 110,
-      "atk": 80,
+      "atk": 110,
       "def": 120,
-      "spa": 80,
+      "spa": 50,
       "spd": 90,
       "spe": 30
     },
@@ -132917,7 +133464,7 @@
     ],
     "learnset": [
       {
-        "name": "Wing Attack",
+        "name": "Peck",
         "level": 0
       },
       {
@@ -132937,7 +133484,7 @@
         "level": 1
       },
       {
-        "name": "Wing Attack",
+        "name": "Peck",
         "level": 1
       },
       {
@@ -132945,11 +133492,11 @@
         "level": 1
       },
       {
-        "name": "Acid Spray",
+        "name": "Leafage",
         "level": 4
       },
       {
-        "name": "Acrobatics",
+        "name": "Wing Attack",
         "level": 8
       },
       {
@@ -132961,11 +133508,11 @@
         "level": 16
       },
       {
-        "name": "Dragon Breath",
+        "name": "Breaking Swipe",
         "level": 20
       },
       {
-        "name": "Dragon Dance",
+        "name": "Air Slash",
         "level": 24
       },
       {
@@ -132977,16 +133524,20 @@
         "level": 32
       },
       {
-        "name": "Iron Defense",
+        "name": "Dragon Dance",
         "level": 36
       },
       {
-        "name": "Fly",
+        "name": "Iron Defense",
         "level": 40
       },
       {
         "name": "Dragon Rush",
         "level": 44
+      },
+      {
+        "name": "Fly",
+        "level": 48
       }
     ],
     "tmLearnset": {
@@ -133022,9 +133573,9 @@
       "hp": 70,
       "atk": 110,
       "def": 80,
-      "spa": 95,
-      "spd": 60,
-      "spe": 70
+      "spa": 65,
+      "spd": 75,
+      "spe": 85
     },
     "dexNum": 841,
     "form": 0,
@@ -133050,7 +133601,7 @@
     ],
     "learnset": [
       {
-        "name": "Headbutt",
+        "name": "Absorb",
         "level": 0
       },
       {
@@ -133062,7 +133613,7 @@
         "level": 1
       },
       {
-        "name": "Headbutt",
+        "name": "Absorb",
         "level": 1
       },
       {
@@ -133082,7 +133633,7 @@
         "level": 4
       },
       {
-        "name": "Stomp",
+        "name": "Acid Spray",
         "level": 8
       },
       {
@@ -133094,35 +133645,40 @@
         "level": 16
       },
       {
-        "name": "Bullet Seed",
+        "name": "Mega Drain",
         "level": 20
       },
       {
-        "name": "Recover",
+        "name": "Body Slam",
         "level": 24
       },
       {
-        "name": "Apple Acid",
+        "name": "Dragon Pulse",
         "level": 28
       },
       {
-        "name": "Body Slam",
+        "name": "Apple Acid",
         "level": 32
       },
       {
-        "name": "Iron Defense",
+        "name": "Recover",
         "level": 36
       },
       {
-        "name": "Dragon Pulse",
+        "name": "Iron Defense",
         "level": 40
       },
       {
-        "name": "Energy Ball",
+        "name": "Stomping Tantrum",
         "level": 44
+      },
+      {
+        "name": "Solar Beam",
+        "level": 48
       }
     ],
     "tmLearnset": {
+      "Toxic": 92,
       "Bullet Seed": 331,
       "Sunny Day": 241,
       "Hyper Beam": 63,
@@ -133147,7 +133703,8 @@
       "Sleep Talk": 214,
       "Bulldoze": 523,
       "Grass Knot": 447,
-      "Substitute": 164
+      "Substitute": 164,
+      "Hidden Power": 237
     },
     "eggLearnset": {
       "Defense Curl": 111,
@@ -133158,10 +133715,10 @@
     "tutorLearnset": {},
     "baseStats": {
       "hp": 110,
-      "atk": 85,
-      "def": 80,
-      "spa": 100,
-      "spd": 80,
+      "atk": 65,
+      "def": 85,
+      "spa": 110,
+      "spd": 85,
       "spe": 30
     },
     "dexNum": 842,
@@ -133196,46 +133753,51 @@
       },
       {
         "name": "Minimize",
-        "level": 5
+        "level": 6
       },
       {
         "name": "Brutal Swing",
-        "level": 10
+        "level": 9
       },
       {
-        "name": "Bulldoze",
-        "level": 15
+        "name": "Mud Shot",
+        "level": 12
       },
       {
         "name": "Headbutt",
-        "level": 20
+        "level": 16
       },
       {
         "name": "Glare",
-        "level": 25
-      },
-      {
-        "name": "Dig",
-        "level": 30
-      },
-      {
-        "name": "Sandstorm",
-        "level": 35
-      },
-      {
-        "name": "Slam",
-        "level": 40
-      },
-      {
-        "name": "Coil",
-        "level": 45
+        "level": 20
       },
       {
         "name": "Sand Tomb",
-        "level": 50
+        "level": 24
+      },
+      {
+        "name": "Dig",
+        "level": 28
+      },
+      {
+        "name": "Slam",
+        "level": 32
+      },
+      {
+        "name": "Coil",
+        "level": 36
+      },
+      {
+        "name": "Sandstorm",
+        "level": 40
+      },
+      {
+        "name": "Earth Power",
+        "level": 44
       }
     ],
     "tmLearnset": {
+      "Toxic": 92,
       "Protect": 182,
       "Earthquake": 89,
       "Dig": 91,
@@ -133250,7 +133812,8 @@
       "Rock Slide": 157,
       "Sleep Talk": 214,
       "Bulldoze": 523,
-      "Substitute": 164
+      "Substitute": 164,
+      "Hidden Power": 237
     },
     "eggLearnset": {
       "Mud-Slap": 189,
@@ -133262,9 +133825,9 @@
     "tutorLearnset": {},
     "baseStats": {
       "hp": 52,
-      "atk": 57,
+      "atk": 35,
       "def": 75,
-      "spa": 35,
+      "spa": 57,
       "spd": 50,
       "spe": 46
     },
@@ -133311,39 +133874,52 @@
         "level": 1
       },
       {
-        "name": "Bulldoze",
-        "level": 15
+        "name": "Mud Shot",
+        "level": 12
       },
       {
         "name": "Headbutt",
-        "level": 20
+        "level": 16
       },
       {
         "name": "Glare",
-        "level": 25
-      },
-      {
-        "name": "Dig",
-        "level": 30
-      },
-      {
-        "name": "Sandstorm",
-        "level": 35
-      },
-      {
-        "name": "Slam",
-        "level": 42
-      },
-      {
-        "name": "Coil",
-        "level": 49
+        "level": 20
       },
       {
         "name": "Sand Tomb",
+        "level": 24
+      },
+      {
+        "name": "Dig",
+        "level": 29
+      },
+      {
+        "name": "Slam",
+        "level": 34
+      },
+      {
+        "name": "Coil",
+        "level": 40
+      },
+      {
+        "name": "Sandstorm",
+        "level": 45
+      },
+      {
+        "name": "Earth Power",
         "level": 51
+      },
+      {
+        "name": "Dragon Pulse",
+        "level": 56
+      },
+      {
+        "name": "Hurricane",
+        "level": 62
       }
     ],
     "tmLearnset": {
+      "Toxic": 92,
       "Hyper Beam": 63,
       "Protect": 182,
       "Earthquake": 89,
@@ -133361,7 +133937,9 @@
       "Sleep Talk": 214,
       "Bulldoze": 523,
       "Substitute": 164,
-      "Hurricane": 542
+      "Flash Cannon": 430,
+      "Hurricane": 542,
+      "Hidden Power": 237
     },
     "eggLearnset": {
       "Mud-Slap": 189,
@@ -133372,11 +133950,11 @@
     },
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 72,
-      "atk": 107,
+      "hp": 82,
+      "atk": 55,
       "def": 125,
-      "spa": 65,
-      "spd": 70,
+      "spa": 107,
+      "spd": 80,
       "spe": 71
     },
     "dexNum": 844,
@@ -134261,10 +134839,11 @@
     "value": 852,
     "text": "Clobbopus",
     "type": "Fighting",
+    "dualtype": "Water",
     "abilities": [
+      "Suction Cups",
       "Limber",
-      "Limber",
-      "Technician"
+      "Sticky Hold"
     ],
     "learnset": [
       {
@@ -134276,6 +134855,10 @@
         "level": 1
       },
       {
+        "name": "Water Gun",
+        "level": 1
+      },
+      {
         "name": "Feint",
         "level": 5
       },
@@ -134284,35 +134867,48 @@
         "level": 10
       },
       {
-        "name": "Detect",
+        "name": "Octazooka",
         "level": 15
       },
       {
         "name": "Brick Break",
-        "level": 20
+        "level": 19
       },
       {
         "name": "Bulk Up",
-        "level": 25
+        "level": 23
       },
       {
-        "name": "Submission",
-        "level": 30
+        "name": "Aqua Jet",
+        "level": 28
       },
       {
         "name": "Taunt",
-        "level": 35
+        "level": 32
+      },
+      {
+        "name": "Whirlpool",
+        "level": 36
       },
       {
         "name": "Reversal",
         "level": 40
       },
       {
-        "name": "Superpower",
+        "name": "Liquidation",
         "level": 45
+      },
+      {
+        "name": "Submission",
+        "level": 50
+      },
+      {
+        "name": "Superpower",
+        "level": 55
       }
     ],
     "tmLearnset": {
+      "Toxic": 92,
       "Bulk Up": 339,
       "Work Up": 526,
       "Taunt": 269,
@@ -134328,12 +134924,12 @@
       "Sleep Talk": 214,
       "Substitute": 164,
       "Rock Smash": 249,
-      "Waterfall": 127
+      "Waterfall": 127,
+      "Hidden Power": 237
     },
     "eggLearnset": {
       "Seismic Toss": 69,
-      "Pain Split": 220,
-      "Sucker Punch": 389,
+      "Mach Punch": 183,
       "Soak": 487,
       "Circle Throw": 509,
       "Power-Up Punch": 612
@@ -134363,10 +134959,11 @@
     "value": 853,
     "text": "Grapploct",
     "type": "Fighting",
+    "dualtype": "Water",
     "abilities": [
+      "Suction Cups",
       "Limber",
-      "Limber",
-      "Technician"
+      "Sticky Hold"
     ],
     "learnset": [
       {
@@ -134386,10 +134983,6 @@
         "level": 1
       },
       {
-        "name": "Octazooka",
-        "level": 1
-      },
-      {
         "name": "Octolock",
         "level": 1
       },
@@ -134398,44 +134991,62 @@
         "level": 1
       },
       {
-        "name": "Detect",
+        "name": "Water Gun",
+        "level": 1
+      },
+      {
+        "name": "Octazooka",
         "level": 15
       },
       {
         "name": "Brick Break",
-        "level": 20
+        "level": 19
       },
       {
         "name": "Bulk Up",
-        "level": 25
+        "level": 23
       },
       {
-        "name": "Submission",
-        "level": 30
+        "name": "Aqua Jet",
+        "level": 28
       },
       {
         "name": "Taunt",
-        "level": 35
+        "level": 32
+      },
+      {
+        "name": "Whirlpool",
+        "level": 36
       },
       {
         "name": "Reversal",
         "level": 40
       },
       {
-        "name": "Superpower",
+        "name": "Liquidation",
         "level": 45
       },
       {
-        "name": "Topsy-Turvy",
+        "name": "Submission",
         "level": 50
+      },
+      {
+        "name": "Topsy-Turvy",
+        "level": 55
+      },
+      {
+        "name": "Superpower",
+        "level": 60
       }
     ],
     "tmLearnset": {
+      "Toxic": 92,
       "Bulk Up": 339,
       "Work Up": 526,
       "Taunt": 269,
       "Hyper Beam": 63,
       "Protect": 182,
+      "Rain Dance": 240,
       "Dig": 91,
       "Brick Break": 280,
       "Facade": 263,
@@ -134451,19 +135062,19 @@
       "Substitute": 164,
       "Surf": 57,
       "Rock Smash": 249,
-      "Waterfall": 127
+      "Waterfall": 127,
+      "Hidden Power": 237
     },
     "eggLearnset": {
       "Seismic Toss": 69,
-      "Pain Split": 220,
-      "Sucker Punch": 389,
+      "Mach Punch": 183,
       "Soak": 487,
       "Circle Throw": 509,
       "Power-Up Punch": 612
     },
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 80,
+      "hp": 90,
       "atk": 118,
       "def": 90,
       "spa": 70,
@@ -134488,7 +135099,7 @@
     "type": "Ghost",
     "abilities": [
       "Weak Armor",
-      "Weak Armor",
+      "Hospitality",
       "Cursed Body"
     ],
     "learnset": [
@@ -134505,24 +135116,48 @@
         "level": 6
       },
       {
+        "name": "Confuse Ray",
+        "level": 9
+      },
+      {
         "name": "Mega Drain",
         "level": 12
+      },
+      {
+        "name": "Hex",
+        "level": 15
       },
       {
         "name": "Protect",
         "level": 18
       },
       {
+        "name": "Psybeam",
+        "level": 21
+      },
+      {
         "name": "Sucker Punch",
         "level": 24
+      },
+      {
+        "name": "Night Shade",
+        "level": 27
       },
       {
         "name": "Aromatherapy",
         "level": 30
       },
       {
+        "name": "Imprison",
+        "level": 33
+      },
+      {
         "name": "Giga Drain",
         "level": 36
+      },
+      {
+        "name": "Foul Play",
+        "level": 39
       },
       {
         "name": "Nasty Plot",
@@ -134533,8 +135168,16 @@
         "level": 48
       },
       {
+        "name": "Calm Mind",
+        "level": 51
+      },
+      {
         "name": "Memento",
         "level": 54
+      },
+      {
+        "name": "Phantom Force",
+        "level": 57
       },
       {
         "name": "Shell Smash",
@@ -134543,8 +135186,10 @@
     ],
     "tmLearnset": {
       "Calm Mind": 347,
+      "Toxic": 92,
       "Protect": 182,
       "Giga Drain": 202,
+      "Dazzling Gleam": 605,
       "Psychic": 94,
       "Shadow Ball": 247,
       "Facade": 263,
@@ -134557,7 +135202,8 @@
       "Dark Pulse": 399,
       "Sleep Talk": 214,
       "Substitute": 164,
-      "Trick Room": 433
+      "Trick Room": 433,
+      "Hidden Power": 237
     },
     "eggLearnset": {},
     "tutorLearnset": {},
@@ -134587,7 +135233,7 @@
     "type": "Ghost",
     "abilities": [
       "Weak Armor",
-      "Weak Armor",
+      "Hospitality",
       "Cursed Body"
     ],
     "learnset": [
@@ -134596,19 +135242,7 @@
         "level": 0
       },
       {
-        "name": "Aromatic Mist",
-        "level": 1
-      },
-      {
         "name": "Astonish",
-        "level": 1
-      },
-      {
-        "name": "Mega Drain",
-        "level": 1
-      },
-      {
-        "name": "Strength Sap",
         "level": 1
       },
       {
@@ -134620,36 +135254,84 @@
         "level": 1
       },
       {
+        "name": "Aromatic Mist",
+        "level": 6
+      },
+      {
+        "name": "Confuse Ray",
+        "level": 9
+      },
+      {
+        "name": "Mega Drain",
+        "level": 12
+      },
+      {
+        "name": "Hex",
+        "level": 15
+      },
+      {
         "name": "Protect",
         "level": 18
+      },
+      {
+        "name": "Psybeam",
+        "level": 21
       },
       {
         "name": "Sucker Punch",
         "level": 24
       },
       {
+        "name": "Night Shade",
+        "level": 27
+      },
+      {
         "name": "Aromatherapy",
         "level": 30
+      },
+      {
+        "name": "Imprison",
+        "level": 33
       },
       {
         "name": "Giga Drain",
         "level": 36
       },
       {
+        "name": "Foul Play",
+        "level": 39
+      },
+      {
         "name": "Nasty Plot",
         "level": 42
+      },
+      {
+        "name": "Trick",
+        "level": 45
       },
       {
         "name": "Shadow Ball",
         "level": 48
       },
       {
+        "name": "Calm Mind",
+        "level": 51
+      },
+      {
         "name": "Memento",
         "level": 54
       },
       {
+        "name": "Phantom Force",
+        "level": 57
+      },
+      {
         "name": "Shell Smash",
         "level": 60
+      },
+      {
+        "name": "Strength Sap",
+        "level": 63
       },
       {
         "name": "Curse",
@@ -134658,10 +135340,12 @@
     ],
     "tmLearnset": {
       "Calm Mind": 347,
+      "Toxic": 92,
       "Hyper Beam": 63,
       "Light Screen": 113,
       "Protect": 182,
       "Giga Drain": 202,
+      "Dazzling Gleam": 605,
       "Psychic": 94,
       "Shadow Ball": 247,
       "Reflect": 115,
@@ -134676,7 +135360,8 @@
       "Dark Pulse": 399,
       "Sleep Talk": 214,
       "Substitute": 164,
-      "Trick Room": 433
+      "Trick Room": 433,
+      "Hidden Power": 237
     },
     "eggLearnset": {},
     "tutorLearnset": {},
@@ -134705,7 +135390,7 @@
     "text": "Hatenna",
     "type": "Psychic",
     "abilities": [
-      "Healer",
+      "Magician",
       "Anticipation",
       "Magic Bounce"
     ],
@@ -134720,7 +135405,7 @@
       },
       {
         "name": "Life Dew",
-        "level": 5
+        "level": 1
       },
       {
         "name": "Disarming Voice",
@@ -134732,31 +135417,48 @@
       },
       {
         "name": "Psybeam",
-        "level": 20
+        "level": 19
       },
       {
         "name": "Heal Pulse",
-        "level": 25
+        "level": 23
       },
       {
         "name": "Dazzling Gleam",
-        "level": 30
+        "level": 27
+      },
+      {
+        "name": "Psycho Shift",
+        "level": 31
+      },
+      {
+        "name": "Extrasensory",
+        "level": 34
       },
       {
         "name": "Calm Mind",
-        "level": 35
+        "level": 38
       },
       {
         "name": "Psychic",
-        "level": 40
+        "level": 42
+      },
+      {
+        "name": "Moonblast",
+        "level": 46
+      },
+      {
+        "name": "Barrier",
+        "level": 50
       },
       {
         "name": "Healing Wish",
-        "level": 45
+        "level": 55
       }
     ],
     "tmLearnset": {
       "Calm Mind": 347,
+      "Toxic": 92,
       "Light Screen": 113,
       "Protect": 182,
       "Giga Drain": 202,
@@ -134774,7 +135476,8 @@
       "Dark Pulse": 399,
       "Sleep Talk": 214,
       "Substitute": 164,
-      "Trick Room": 433
+      "Trick Room": 433,
+      "Hidden Power": 237
     },
     "eggLearnset": {
       "After You": 495,
@@ -134808,7 +135511,7 @@
     "text": "Hattrem",
     "type": "Psychic",
     "abilities": [
-      "Healer",
+      "Magician",
       "Anticipation",
       "Magic Bounce"
     ],
@@ -134843,31 +135546,48 @@
       },
       {
         "name": "Psybeam",
-        "level": 20
+        "level": 19
       },
       {
         "name": "Heal Pulse",
-        "level": 25
+        "level": 23
       },
       {
         "name": "Dazzling Gleam",
-        "level": 30
+        "level": 27
+      },
+      {
+        "name": "Psycho Shift",
+        "level": 31
+      },
+      {
+        "name": "Extrasensory",
+        "level": 36
       },
       {
         "name": "Calm Mind",
-        "level": 37
+        "level": 41
       },
       {
         "name": "Psychic",
         "level": 44
       },
       {
+        "name": "Moonblast",
+        "level": 49
+      },
+      {
+        "name": "Barrier",
+        "level": 53
+      },
+      {
         "name": "Healing Wish",
-        "level": 51
+        "level": 58
       }
     ],
     "tmLearnset": {
       "Calm Mind": 347,
+      "Toxic": 92,
       "Light Screen": 113,
       "Protect": 182,
       "Giga Drain": 202,
@@ -134885,7 +135605,8 @@
       "Dark Pulse": 399,
       "Sleep Talk": 214,
       "Substitute": 164,
-      "Trick Room": 433
+      "Trick Room": 433,
+      "Hidden Power": 237
     },
     "eggLearnset": {
       "After You": 495,
@@ -134920,7 +135641,7 @@
     "type": "Psychic",
     "dualtype": "Fairy",
     "abilities": [
-      "Healer",
+      "Magician",
       "Anticipation",
       "Magic Bounce"
     ],
@@ -134959,35 +135680,52 @@
       },
       {
         "name": "Psybeam",
-        "level": 20
+        "level": 19
       },
       {
         "name": "Heal Pulse",
-        "level": 25
+        "level": 23
       },
       {
         "name": "Dazzling Gleam",
-        "level": 30
+        "level": 27
+      },
+      {
+        "name": "Psycho Shift",
+        "level": 31
+      },
+      {
+        "name": "Extrasensory",
+        "level": 36
       },
       {
         "name": "Calm Mind",
-        "level": 37
+        "level": 41
       },
       {
         "name": "Psychic",
         "level": 46
       },
       {
-        "name": "Healing Wish",
+        "name": "Moonblast",
+        "level": 52
+      },
+      {
+        "name": "Barrier",
         "level": 55
       },
       {
+        "name": "Healing Wish",
+        "level": 60
+      },
+      {
         "name": "Magic Powder",
-        "level": 64
+        "level": 66
       }
     ],
     "tmLearnset": {
       "Calm Mind": 347,
+      "Toxic": 92,
       "Hyper Beam": 63,
       "Light Screen": 113,
       "Protect": 182,
@@ -135010,7 +135748,8 @@
       "Dark Pulse": 399,
       "Sleep Talk": 214,
       "Substitute": 164,
-      "Trick Room": 433
+      "Trick Room": 433,
+      "Hidden Power": 237
     },
     "eggLearnset": {
       "After You": 495,
@@ -135021,10 +135760,10 @@
     "tutorLearnset": {},
     "baseStats": {
       "hp": 57,
-      "atk": 90,
-      "def": 95,
+      "atk": 70,
+      "def": 105,
       "spa": 136,
-      "spd": 103,
+      "spd": 113,
       "spe": 29
     },
     "dexNum": 858,
@@ -135075,35 +135814,48 @@
         "level": 16
       },
       {
-        "name": "Swagger",
+        "name": "Sucker Punch",
         "level": 20
       },
       {
-        "name": "Sucker Punch",
+        "name": "Power Trip",
         "level": 24
       },
       {
-        "name": "Torment",
+        "name": "Switcheroo",
         "level": 28
       },
       {
+        "name": "Punishment",
+        "level": 31
+      },
+      {
+        "name": "Torment",
+        "level": 35
+      },
+      {
         "name": "Dark Pulse",
-        "level": 33
+        "level": 38
       },
       {
         "name": "Nasty Plot",
-        "level": 36
-      },
-      {
-        "name": "Play Rough",
-        "level": 40
+        "level": 42
       },
       {
         "name": "Foul Play",
-        "level": 44
+        "level": 46
+      },
+      {
+        "name": "Play Rough",
+        "level": 50
+      },
+      {
+        "name": "Parting Shot",
+        "level": 54
       }
     ],
     "tmLearnset": {
+      "Toxic": 92,
       "Taunt": 269,
       "Light Screen": 113,
       "Protect": 182,
@@ -135122,7 +135874,8 @@
       "Dark Pulse": 399,
       "Sleep Talk": 214,
       "Swagger": 207,
-      "Substitute": 164
+      "Substitute": 164,
+      "Hidden Power": 237
     },
     "eggLearnset": {},
     "tutorLearnset": {},
@@ -135190,35 +135943,48 @@
         "level": 16
       },
       {
-        "name": "Swagger",
+        "name": "Sucker Punch",
         "level": 20
       },
       {
-        "name": "Sucker Punch",
+        "name": "Power Trip",
         "level": 24
       },
       {
-        "name": "Torment",
+        "name": "Switcheroo",
         "level": 28
       },
       {
+        "name": "Punishment",
+        "level": 34
+      },
+      {
+        "name": "Torment",
+        "level": 37
+      },
+      {
         "name": "Dark Pulse",
-        "level": 35
+        "level": 41
       },
       {
         "name": "Nasty Plot",
-        "level": 40
-      },
-      {
-        "name": "Play Rough",
-        "level": 46
+        "level": 43
       },
       {
         "name": "Foul Play",
-        "level": 52
+        "level": 47
+      },
+      {
+        "name": "Play Rough",
+        "level": 51
+      },
+      {
+        "name": "Parting Shot",
+        "level": 55
       }
     ],
     "tmLearnset": {
+      "Toxic": 92,
       "Taunt": 269,
       "Light Screen": 113,
       "Protect": 182,
@@ -135238,7 +136004,8 @@
       "Dark Pulse": 399,
       "Sleep Talk": 214,
       "Swagger": 207,
-      "Substitute": 164
+      "Substitute": 164,
+      "Hidden Power": 237
     },
     "eggLearnset": {},
     "tutorLearnset": {},
@@ -135302,10 +136069,6 @@
         "level": 1
       },
       {
-        "name": "Power-Up Punch",
-        "level": 1
-      },
-      {
         "name": "Spirit Break",
         "level": 1
       },
@@ -135318,40 +136081,57 @@
         "level": 16
       },
       {
-        "name": "Swagger",
+        "name": "Sucker Punch",
         "level": 20
       },
       {
-        "name": "Sucker Punch",
+        "name": "Power Trip",
         "level": 24
       },
       {
-        "name": "Torment",
+        "name": "Switcheroo",
         "level": 28
       },
       {
+        "name": "Punishment",
+        "level": 34
+      },
+      {
+        "name": "Torment",
+        "level": 37
+      },
+      {
         "name": "Dark Pulse",
-        "level": 35
+        "level": 41
       },
       {
         "name": "Nasty Plot",
-        "level": 40
-      },
-      {
-        "name": "Play Rough",
-        "level": 48
+        "level": 45
       },
       {
         "name": "Foul Play",
-        "level": 56
+        "level": 50
+      },
+      {
+        "name": "Play Rough",
+        "level": 55
+      },
+      {
+        "name": "Darkest Lariat",
+        "level": 59
       },
       {
         "name": "Hammer Arm",
-        "level": 64
+        "level": 63
+      },
+      {
+        "name": "Parting Shot",
+        "level": 68
       }
     ],
     "tmLearnset": {
       "Focus Punch": 264,
+      "Toxic": 92,
       "Bulk Up": 339,
       "Taunt": 269,
       "Hyper Beam": 63,
@@ -135374,19 +136154,21 @@
       "Shadow Claw": 421,
       "Giga Impact": 416,
       "Thunder Wave": 86,
+      "Snarl": 555,
       "Dark Pulse": 399,
       "Sleep Talk": 214,
       "Swagger": 207,
-      "Substitute": 164
+      "Substitute": 164,
+      "Hidden Power": 237
     },
     "eggLearnset": {},
     "tutorLearnset": {},
     "baseStats": {
       "hp": 95,
       "atk": 120,
-      "def": 65,
-      "spa": 95,
-      "spd": 75,
+      "def": 75,
+      "spa": 75,
+      "spd": 85,
       "spe": 60
     },
     "dexNum": 861,
@@ -136730,7 +137512,7 @@
     "type": "Fighting",
     "abilities": [
       "Battle Armor",
-      "Battle Armor",
+      "Anticipation",
       "Defiant"
     ],
     "learnset": [
@@ -136759,39 +137541,44 @@
         "level": 20
       },
       {
-        "name": "Endure",
+        "name": "Rollout",
         "level": 25
       },
       {
-        "name": "Reversal",
+        "name": "Endure",
         "level": 30
       },
       {
-        "name": "First Impression",
+        "name": "Reversal",
         "level": 35
       },
       {
-        "name": "No Retreat",
-        "level": 40
-      },
-      {
-        "name": "Iron Defense",
+        "name": "First Impression",
         "level": 45
       },
       {
-        "name": "Close Combat",
+        "name": "No Retreat",
         "level": 50
       },
       {
-        "name": "Megahorn",
+        "name": "Iron Defense",
         "level": 55
       },
       {
-        "name": "Counter",
+        "name": "Close Combat",
         "level": 60
+      },
+      {
+        "name": "Megahorn",
+        "level": 65
+      },
+      {
+        "name": "Counter",
+        "level": 70
       }
     ],
     "tmLearnset": {
+      "Toxic": 92,
       "Bulk Up": 339,
       "Sunny Day": 241,
       "Hyper Beam": 63,
@@ -136812,16 +137599,17 @@
       "Sleep Talk": 214,
       "Poison Jab": 398,
       "Substitute": 164,
-      "Rock Smash": 249
+      "Rock Smash": 249,
+      "Hidden Power": 237
     },
     "eggLearnset": {},
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 65,
+      "hp": 75,
       "atk": 100,
       "def": 100,
-      "spa": 70,
-      "spd": 60,
+      "spa": 60,
+      "spd": 70,
       "spe": 75
     },
     "dexNum": 870,
@@ -136840,6 +137628,7 @@
     "value": 871,
     "text": "Pincurchin",
     "type": "Electric",
+    "dualtype": "Water",
     "abilities": [
       "Lightning Rod",
       "Lightning Rod",
@@ -136891,7 +137680,7 @@
         "level": 45
       },
       {
-        "name": "Zing Zap",
+        "name": "Rising Voltage",
         "level": 50
       },
       {
@@ -136904,26 +137693,34 @@
       }
     ],
     "tmLearnset": {
-      "Hyper Beam": 63,
+      "Water Pulse": 352,
+      "Toxic": 92,
       "Protect": 182,
       "Rain Dance": 240,
       "Thunderbolt": 85,
       "Thunder": 87,
+      "Double Team": 104,
+      "Shock Wave": 351,
       "Facade": 263,
+      "Volt Switch": 521,
       "Rest": 156,
       "Attract": 213,
       "Scald": 503,
       "Brine": 362,
       "Charge Beam": 451,
       "Endure": 203,
-      "Payback": 371,
-      "Giga Impact": 416,
+      "Explosion": 153,
+      "Flash": 148,
       "Thunder Wave": 86,
       "Sleep Talk": 214,
       "Poison Jab": 398,
+      "Grass Knot": 447,
+      "Swagger": 207,
       "Substitute": 164,
       "Surf": 57,
-      "Wild Charge": 528
+      "Waterfall": 127,
+      "Wild Charge": 528,
+      "Hidden Power": 237
     },
     "eggLearnset": {
       "Memento": 262,
@@ -137311,11 +138108,11 @@
         "level": 24
       },
       {
-        "name": "Amnesia",
+        "name": "Ice Shard",
         "level": 30
       },
       {
-        "name": "Freeze-Dry",
+        "name": "Surf",
         "level": 36
       },
       {
@@ -137323,20 +138120,29 @@
         "level": 42
       },
       {
-        "name": "Aurora Veil",
+        "name": "Freeze-Dry",
         "level": 48
       },
       {
-        "name": "Surf",
+        "name": "Aurora Veil",
         "level": 54
       },
       {
-        "name": "Blizzard",
+        "name": "Belly Drum",
         "level": 60
+      },
+      {
+        "name": "Icicle Crash",
+        "level": 66
+      },
+      {
+        "name": "Head Smash",
+        "level": 72
       }
     ],
     "tmLearnset": {
       "Water Pulse": 352,
+      "Toxic": 92,
       "Hail": 258,
       "Ice Beam": 58,
       "Blizzard": 59,
@@ -137354,22 +138160,21 @@
       "Sleep Talk": 214,
       "Substitute": 164,
       "Surf": 57,
-      "Waterfall": 127
+      "Waterfall": 127,
+      "Hidden Power": 237
     },
     "eggLearnset": {
       "Double-Edge": 38,
-      "Belly Drum": 187,
       "Aqua Ring": 392,
       "Head Smash": 457,
-      "Soak": 487,
-      "Icicle Crash": 556
+      "Soak": 487
     },
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 75,
-      "atk": 80,
+      "hp": 85,
+      "atk": 90,
       "def": 110,
-      "spa": 65,
+      "spa": 55,
       "spd": 90,
       "spe": 50
     },
@@ -137406,51 +138211,80 @@
       },
       {
         "name": "Encore",
-        "level": 5
+        "level": 1
       },
       {
         "name": "Disarming Voice",
-        "level": 10
+        "level": 5
       },
       {
         "name": "Psybeam",
-        "level": 15
+        "level": 9
       },
       {
         "name": "Helping Hand",
-        "level": 20
+        "level": 13
       },
       {
         "name": "After You",
+        "level": 17
+      },
+      {
+        "name": "Swift",
+        "level": 21
+      },
+      {
+        "name": "Draining Kiss",
         "level": 25
       },
       {
         "name": "Aromatherapy",
-        "level": 30
+        "level": 29
       },
       {
         "name": "Psychic",
-        "level": 35
+        "level": 33
+      },
+      {
+        "name": "Healing Wish",
+        "level": 37
+      },
+      {
+        "name": "Tri Attack",
+        "level": 41
       },
       {
         "name": "Calm Mind",
-        "level": 40
-      },
-      {
-        "name": "Power Split",
         "level": 45
       },
       {
+        "name": "Power Split",
+        "level": 49
+      },
+      {
+        "name": "Aura Sphere",
+        "level": 53
+      },
+      {
+        "name": "Future Sight",
+        "level": 57
+      },
+      {
         "name": "Psychic Terrain",
-        "level": 50
+        "level": 61
+      },
+      {
+        "name": "Expanding Force",
+        "level": 65
       },
       {
         "name": "Last Resort",
-        "level": 55
+        "level": 69
       }
     ],
     "tmLearnset": {
       "Calm Mind": 347,
+      "Toxic": 92,
       "Light Screen": 113,
       "Protect": 182,
       "Safeguard": 219,
@@ -137469,7 +138303,8 @@
       "Sleep Talk": 214,
       "Substitute": 164,
       "Trick Room": 433,
-      "Hyper Voice": 304
+      "Hyper Voice": 304,
+      "Hidden Power": 237
     },
     "eggLearnset": {
       "Psych Up": 244,
@@ -137481,9 +138316,9 @@
       "hp": 60,
       "atk": 65,
       "def": 55,
-      "spa": 105,
-      "spd": 95,
-      "spe": 95
+      "spa": 115,
+      "spd": 75,
+      "spe": 105
     },
     "dexNum": 876,
     "form": 0,
@@ -137549,20 +138384,28 @@
         "level": 40
       },
       {
-        "name": "Bullet Seed",
+        "name": "Zing Zap",
         "level": 45
       },
       {
-        "name": "Crunch",
+        "name": "Bullet Seed",
         "level": 50
       },
       {
-        "name": "Aura Wheel",
+        "name": "Parting Shot",
         "level": 55
       },
       {
-        "name": "Thrash",
+        "name": "Crunch",
         "level": 60
+      },
+      {
+        "name": "Aura Wheel",
+        "level": 65
+      },
+      {
+        "name": "Thrash",
+        "level": 70
       }
     ],
     "tmLearnset": {
@@ -137598,17 +138441,16 @@
       "Fake Out": 252,
       "Charge": 268,
       "Tickle": 321,
-      "Quash": 511,
-      "Parting Shot": 575
+      "Quash": 511
     },
     "tutorLearnset": {},
     "baseStats": {
       "hp": 58,
-      "atk": 95,
+      "atk": 108,
       "def": 58,
-      "spa": 70,
+      "spa": 68,
       "spd": 58,
-      "spe": 97
+      "spe": 100
     },
     "dexNum": 877,
     "form": 0,
@@ -137746,7 +138588,7 @@
     "type": "Steel",
     "abilities": [
       "Sheer Force",
-      "Sheer Force",
+      "Pressure",
       "Heavy Metal"
     ],
     "learnset": [
@@ -137809,9 +138651,14 @@
       {
         "name": "Superpower",
         "level": 65
+      },
+      {
+        "name": "Fissure",
+        "level": 72
       }
     ],
     "tmLearnset": {
+      "Toxic": 92,
       "Work Up": 526,
       "Taunt": 269,
       "Hyper Beam": 63,
@@ -137837,7 +138684,8 @@
       "Substitute": 164,
       "Flash Cannon": 430,
       "Strength": 70,
-      "Rock Smash": 249
+      "Rock Smash": 249,
+      "Hidden Power": 237
     },
     "eggLearnset": {
       "Whirlwind": 18,
@@ -137853,9 +138701,9 @@
     "baseStats": {
       "hp": 122,
       "atk": 130,
-      "def": 69,
-      "spa": 80,
-      "spd": 69,
+      "def": 79,
+      "spa": 60,
+      "spd": 79,
       "spe": 30
     },
     "dexNum": 879,
@@ -137891,51 +138739,60 @@
       },
       {
         "name": "Charge",
-        "level": 7
+        "level": 6
       },
       {
         "name": "Aerial Ace",
-        "level": 14
+        "level": 12
       },
       {
         "name": "Ancient Power",
-        "level": 21
+        "level": 18
       },
       {
         "name": "Pluck",
-        "level": 28
+        "level": 24
       },
       {
         "name": "Dragon Tail",
-        "level": 35
+        "level": 30
       },
       {
         "name": "Stomp",
-        "level": 42
+        "level": 36
       },
       {
         "name": "Slam",
-        "level": 49
+        "level": 43
       },
       {
         "name": "Discharge",
-        "level": 56
+        "level": 50
+      },
+      {
+        "name": "Focus Energy",
+        "level": 57
       },
       {
         "name": "Bolt Beak",
-        "level": 63
+        "level": 64
       },
       {
         "name": "Dragon Pulse",
-        "level": 70
+        "level": 71
       },
       {
         "name": "Dragon Rush",
-        "level": 77
+        "level": 78
+      },
+      {
+        "name": "Volt Tackle",
+        "level": 85
       }
     ],
     "tmLearnset": {
       "Dragon Claw": 337,
+      "Toxic": 92,
       "Sunny Day": 241,
       "Taunt": 269,
       "Hyper Beam": 63,
@@ -137961,7 +138818,8 @@
       "Bulldoze": 523,
       "Pluck": 365,
       "Substitute": 164,
-      "Wild Charge": 528
+      "Wild Charge": 528,
+      "Hidden Power": 237
     },
     "eggLearnset": {},
     "tutorLearnset": {},
@@ -137969,7 +138827,7 @@
       "hp": 90,
       "atk": 100,
       "def": 90,
-      "spa": 80,
+      "spa": 90,
       "spd": 70,
       "spe": 75
     },
@@ -138006,50 +138864,59 @@
       },
       {
         "name": "Charge",
-        "level": 7
+        "level": 6
       },
       {
         "name": "Echoed Voice",
-        "level": 14
+        "level": 12
       },
       {
         "name": "Ancient Power",
-        "level": 21
+        "level": 18
       },
       {
         "name": "Pluck",
-        "level": 28
+        "level": 24
       },
       {
         "name": "Avalanche",
-        "level": 35
+        "level": 30
       },
       {
         "name": "Freeze-Dry",
-        "level": 42
+        "level": 36
       },
       {
         "name": "Slam",
-        "level": 49
+        "level": 43
       },
       {
         "name": "Discharge",
-        "level": 56
+        "level": 50
+      },
+      {
+        "name": "Recover",
+        "level": 57
       },
       {
         "name": "Bolt Beak",
-        "level": 63
+        "level": 64
       },
       {
         "name": "Icicle Crash",
-        "level": 70
+        "level": 71
       },
       {
         "name": "Blizzard",
-        "level": 77
+        "level": 78
+      },
+      {
+        "name": "Volt Tackle",
+        "level": 85
       }
     ],
     "tmLearnset": {
+      "Toxic": 92,
       "Hail": 258,
       "Taunt": 269,
       "Ice Beam": 58,
@@ -138076,16 +138943,17 @@
       "Substitute": 164,
       "Surf": 57,
       "Wild Charge": 528,
-      "Hyper Voice": 304
+      "Hyper Voice": 304,
+      "Hidden Power": 237
     },
     "eggLearnset": {},
     "tutorLearnset": {},
     "baseStats": {
       "hp": 90,
       "atk": 100,
-      "def": 90,
-      "spa": 90,
-      "spd": 80,
+      "def": 110,
+      "spa": 70,
+      "spd": 90,
       "spe": 55
     },
     "dexNum": 881,
@@ -138121,50 +138989,59 @@
       },
       {
         "name": "Protect",
-        "level": 7
+        "level": 6
       },
       {
         "name": "Brutal Swing",
-        "level": 14
+        "level": 12
       },
       {
         "name": "Ancient Power",
-        "level": 21
+        "level": 18
       },
       {
         "name": "Bite",
-        "level": 28
+        "level": 24
       },
       {
         "name": "Dragon Breath",
-        "level": 35
+        "level": 30
       },
       {
         "name": "Stomp",
-        "level": 42
+        "level": 36
       },
       {
         "name": "Super Fang",
-        "level": 49
+        "level": 43
       },
       {
         "name": "Crunch",
-        "level": 56
+        "level": 50
+      },
+      {
+        "name": "Focus Energy",
+        "level": 57
       },
       {
         "name": "Fishious Rend",
-        "level": 63
+        "level": 64
       },
       {
         "name": "Dragon Pulse",
-        "level": 70
+        "level": 71
       },
       {
         "name": "Dragon Rush",
-        "level": 77
+        "level": 78
+      },
+      {
+        "name": "Wave Crash",
+        "level": 85
       }
     ],
     "tmLearnset": {
+      "Toxic": 92,
       "Hyper Beam": 63,
       "Protect": 182,
       "Rain Dance": 240,
@@ -138183,16 +139060,17 @@
       "Bulldoze": 523,
       "Substitute": 164,
       "Surf": 57,
-      "Waterfall": 127
+      "Waterfall": 127,
+      "Hidden Power": 237
     },
     "eggLearnset": {},
     "tutorLearnset": {},
     "baseStats": {
       "hp": 90,
       "atk": 90,
-      "def": 100,
-      "spa": 70,
-      "spd": 80,
+      "def": 70,
+      "spa": 100,
+      "spd": 90,
       "spe": 75
     },
     "dexNum": 882,
@@ -138214,7 +139092,7 @@
     "dualtype": "Ice",
     "abilities": [
       "Water Absorb",
-      "Ice Body",
+      "Marvel Scale",
       "Slush Rush"
     ],
     "learnset": [
@@ -138228,50 +139106,59 @@
       },
       {
         "name": "Protect",
-        "level": 7
+        "level": 6
       },
       {
         "name": "Icy Wind",
-        "level": 14
+        "level": 12
       },
       {
         "name": "Ancient Power",
-        "level": 21
+        "level": 18
       },
       {
         "name": "Bite",
-        "level": 28
+        "level": 24
       },
       {
         "name": "Aurora Veil",
-        "level": 35
+        "level": 30
       },
       {
         "name": "Freeze-Dry",
-        "level": 42
+        "level": 36
       },
       {
         "name": "Super Fang",
-        "level": 49
+        "level": 43
       },
       {
         "name": "Crunch",
-        "level": 56
+        "level": 50
+      },
+      {
+        "name": "Recover",
+        "level": 57
       },
       {
         "name": "Fishious Rend",
-        "level": 63
+        "level": 64
       },
       {
         "name": "Icicle Crash",
-        "level": 70
+        "level": 71
       },
       {
         "name": "Blizzard",
-        "level": 77
+        "level": 78
+      },
+      {
+        "name": "Wave Crash",
+        "level": 85
       }
     ],
     "tmLearnset": {
+      "Toxic": 92,
       "Hail": 258,
       "Ice Beam": 58,
       "Blizzard": 59,
@@ -138290,16 +139177,17 @@
       "Sleep Talk": 214,
       "Substitute": 164,
       "Surf": 57,
-      "Waterfall": 127
+      "Waterfall": 127,
+      "Hidden Power": 237
     },
     "eggLearnset": {},
     "tutorLearnset": {},
     "baseStats": {
       "hp": 90,
-      "atk": 90,
-      "def": 100,
-      "spa": 80,
-      "spd": 90,
+      "atk": 70,
+      "def": 90,
+      "spa": 100,
+      "spd": 110,
       "spe": 55
     },
     "dexNum": 883,
@@ -139406,7 +140294,7 @@
     "abilities": [
       "Leaf Guard",
       "Leaf Guard",
-      "Leaf Guard"
+      "Tough Claws"
     ],
     "learnset": [
       {
@@ -139481,6 +140369,7 @@
     "tmLearnset": {
       "Focus Punch": 264,
       "Roar": 46,
+      "Toxic": 92,
       "Bulk Up": 339,
       "Bullet Seed": 331,
       "Sunny Day": 241,
@@ -139493,6 +140382,7 @@
       "Low Sweep": 490,
       "Dig": 91,
       "Brick Break": 280,
+      "Double Team": 104,
       "Rock Tomb": 317,
       "Aerial Ace": 332,
       "Facade": 263,
@@ -139514,7 +140404,12 @@
       "Swagger": 207,
       "U-turn": 369,
       "Substitute": 164,
-      "Hyper Voice": 304
+      "Cut": 15,
+      "Strength": 70,
+      "Rock Smash": 249,
+      "Rock Climb": 431,
+      "Hyper Voice": 304,
+      "Hidden Power": 237
     },
     "eggLearnset": {},
     "tutorLearnset": {},
@@ -139730,6 +140625,7 @@
       "Protect": 182,
       "Earthquake": 89,
       "Reflect": 115,
+      "Flamethrower": 53,
       "Facade": 263,
       "Rest": 156,
       "Endure": 203,
@@ -139737,7 +140633,8 @@
       "Explosion": 153,
       "Giga Impact": 416,
       "Sleep Talk": 214,
-      "Substitute": 164
+      "Substitute": 164,
+      "Hidden Power": 237
     },
     "eggLearnset": {},
     "tutorLearnset": {},
@@ -140054,6 +140951,7 @@
     ],
     "tmLearnset": {
       "Calm Mind": 347,
+      "Toxic": 92,
       "Bullet Seed": 331,
       "Sunny Day": 241,
       "Hyper Beam": 63,
@@ -140075,16 +140973,17 @@
       "Sleep Talk": 214,
       "Grass Knot": 447,
       "Substitute": 164,
-      "Trick Room": 433
+      "Trick Room": 433,
+      "Hidden Power": 237
     },
     "eggLearnset": {},
     "tutorLearnset": {},
     "baseStats": {
       "hp": 100,
       "atk": 80,
-      "def": 80,
+      "def": 110,
       "spa": 80,
-      "spd": 80,
+      "spd": 150,
       "spe": 80
     },
     "dexNum": 898,
@@ -141154,7 +142053,7 @@
         "level": 50
       },
       {
-        "name": "Superpower",
+        "name": "Hammer Arm",
         "level": 55
       },
       {
@@ -141170,12 +142069,13 @@
         "level": 70
       },
       {
-        "name": "Petal Blizzard",
+        "name": "Springtide Storm",
         "level": 75
       }
     ],
     "tmLearnset": {
       "Calm Mind": 347,
+      "Toxic": 92,
       "Sunny Day": 241,
       "Taunt": 269,
       "Hyper Beam": 63,
@@ -141193,8 +142093,10 @@
       "Psych Up": 244,
       "Sleep Talk": 214,
       "Grass Knot": 447,
+      "U-turn": 369,
       "Substitute": 164,
-      "Fly": 19
+      "Fly": 19,
+      "Hidden Power": 237
     },
     "eggLearnset": {},
     "tutorLearnset": {},
@@ -149963,7 +150865,7 @@
     ],
     "learnset": [
       {
-        "name": "Happy Hour",
+        "name": "Rage Fist",
         "level": 0
       },
       {
@@ -150015,7 +150917,7 @@
         "level": 30
       },
       {
-        "name": "Happy Hour",
+        "name": "Rage Fist",
         "level": 35
       },
       {
@@ -150041,10 +150943,12 @@
     ],
     "tmLearnset": {
       "Focus Punch": 264,
+      "Toxic": 92,
       "Bulk Up": 339,
       "Sunny Day": 241,
       "Taunt": 269,
       "Hyper Beam": 63,
+      "Light Screen": 113,
       "Protect": 182,
       "Rain Dance": 240,
       "Thunderbolt": 85,
@@ -150068,12 +150972,11 @@
       "Stone Edge": 444,
       "Stealth Rock": 446,
       "Rock Slide": 157,
-      "Sleep Talk": 214,
-      "Bulldoze": 523,
       "Poison Jab": 398,
       "Swagger": 207,
       "U-turn": 369,
-      "Substitute": 164
+      "Substitute": 164,
+      "Hidden Power": 237
     },
     "eggLearnset": {
       "Counter": 68,
@@ -150091,9 +150994,9 @@
       "hp": 110,
       "atk": 115,
       "def": 80,
-      "spa": 50,
-      "spd": 90,
-      "spe": 90
+      "spa": 60,
+      "spd": 75,
+      "spe": 95
     },
     "dexNum": 979,
     "form": 0,
@@ -150378,70 +151281,99 @@
     "value": 982,
     "text": "Dudunsparce",
     "type": "Normal",
+    "dualtype": "Dragon",
     "abilities": [
       "Serene Grace",
-      "Run Away",
-      "Rattled"
+      "Rattled",
+      "Run Away"
     ],
     "learnset": [
-      {
-        "name": "Flail",
-        "level": 1
-      },
       {
         "name": "Defense Curl",
         "level": 1
       },
       {
-        "name": "Mud-Slap",
+        "name": "Rollout",
         "level": 4
       },
       {
-        "name": "Rollout",
-        "level": 8
-      },
-      {
-        "name": "Glare",
-        "level": 12
+        "name": "Spite",
+        "level": 7
       },
       {
         "name": "Screech",
-        "level": 16
+        "level": 13
       },
       {
-        "name": "Ancient Power",
-        "level": 20
-      },
-      {
-        "name": "Drill Run",
-        "level": 24
+        "name": "Mud-Slap",
+        "level": 15
       },
       {
         "name": "Yawn",
-        "level": 28
+        "level": 17
       },
       {
-        "name": "Happy Hour",
-        "level": 32
+        "name": "Ancient Power",
+        "level": 19
+      },
+      {
+        "name": "Body Slam",
+        "level": 21
+      },
+      {
+        "name": "Drill Run",
+        "level": 23
       },
       {
         "name": "Roost",
-        "level": 36
+        "level": 25
       },
       {
-        "name": "Dragon Rush",
-        "level": 40
+        "name": "Take Down",
+        "level": 27
       },
       {
-        "name": "Coil",
-        "level": 44
+        "name": "Dig",
+        "level": 29
+      },
+      {
+        "name": "Glare",
+        "level": 31
+      },
+      {
+        "name": "Hyper Drill",
+        "level": 32
       },
       {
         "name": "Double-Edge",
-        "level": 48
+        "level": 33
       },
       {
         "name": "Endeavor",
+        "level": 35
+      },
+      {
+        "name": "Air Slash",
+        "level": 37
+      },
+      {
+        "name": "Dragon Rush",
+        "level": 39
+      },
+      {
+        "name": "Endure",
+        "level": 41
+      },
+      {
+        "name": "Flail",
+        "level": 43
+      },
+      {
+        "name": "Coil",
+        "level": 48
+      },
+      {
+        "name": "Outrage",
         "level": 52
       },
       {
@@ -150450,10 +151382,11 @@
       },
       {
         "name": "Boomburst",
-        "level": 62
+        "level": 60
       }
     ],
     "tmLearnset": {
+      "Water Pulse": 352,
       "Calm Mind": 347,
       "Toxic": 92,
       "Sunny Day": 241,
@@ -150462,12 +151395,14 @@
       "Hyper Beam": 63,
       "Protect": 182,
       "Rain Dance": 240,
+      "Dazzling Gleam": 605,
       "Solar Beam": 76,
       "Thunderbolt": 85,
       "Thunder": 87,
       "Earthquake": 89,
       "Dig": 91,
       "Shadow Ball": 247,
+      "Shock Wave": 351,
       "Flamethrower": 53,
       "Sandstorm": 201,
       "Fire Blast": 126,
@@ -150477,16 +151412,18 @@
       "Thief": 168,
       "Roost": 355,
       "Endure": 203,
+      "Dragon Pulse": 406,
       "Giga Impact": 416,
       "Stone Edge": 444,
+      "Thunder Wave": 86,
       "Gyro Ball": 360,
       "Stealth Rock": 446,
-      "Psych Up": 244,
       "Rock Slide": 157,
       "Sleep Talk": 214,
-      "Bulldoze": 523,
       "Poison Jab": 398,
       "Substitute": 164,
+      "Strength": 70,
+      "Rock Smash": 249,
       "Wild Charge": 528,
       "Hyper Voice": 304,
       "Hurricane": 542
@@ -150507,10 +151444,10 @@
     "tutorLearnset": {},
     "baseStats": {
       "hp": 125,
-      "atk": 100,
-      "def": 80,
+      "atk": 110,
+      "def": 85,
       "spa": 85,
-      "spd": 75,
+      "spd": 80,
       "spe": 55
     },
     "dexNum": 982,
@@ -158597,7 +159534,7 @@
     "abilities": [
       "Static",
       "Lightning Rod",
-      "Galvanize"
+      "Cute Charm"
     ],
     "learnset": [
       {
@@ -158605,19 +159542,15 @@
         "level": 1
       },
       {
-        "name": "Tail Whip",
+        "name": "Fake Out",
         "level": 1
       },
       {
-        "name": "Thunder Shock",
+        "name": "Volt Tackle",
         "level": 1
       },
       {
-        "name": "Charm",
-        "level": 1
-      },
-      {
-        "name": "Nuzzle",
+        "name": "Play Nice",
         "level": 1
       },
       {
@@ -158625,7 +159558,23 @@
         "level": 1
       },
       {
-        "name": "Play Nice",
+        "name": "Encore",
+        "level": 1
+      },
+      {
+        "name": "Charm",
+        "level": 1
+      },
+      {
+        "name": "Thunder Shock",
+        "level": 1
+      },
+      {
+        "name": "Tail Whip",
+        "level": 1
+      },
+      {
+        "name": "Nuzzle",
         "level": 1
       },
       {
@@ -158754,11 +159703,39 @@
     "abilities": [
       "Static",
       "Lightning Rod",
-      "Galvanize"
+      "Punk Rock"
     ],
     "learnset": [
       {
+        "name": "Hyper Voice",
+        "level": 0
+      },
+      {
+        "name": "Volt Tackle",
+        "level": 1
+      },
+      {
+        "name": "Fake Out",
+        "level": 1
+      },
+      {
+        "name": "Encore",
+        "level": 1
+      },
+      {
+        "name": "Play Nice",
+        "level": 1
+      },
+      {
         "name": "Growl",
+        "level": 1
+      },
+      {
+        "name": "Nuzzle",
+        "level": 1
+      },
+      {
+        "name": "Charm",
         "level": 1
       },
       {
@@ -158770,19 +159747,7 @@
         "level": 1
       },
       {
-        "name": "Charm",
-        "level": 1
-      },
-      {
-        "name": "Nuzzle",
-        "level": 1
-      },
-      {
         "name": "Sweet Kiss",
-        "level": 1
-      },
-      {
-        "name": "Play Nice",
         "level": 1
       },
       {
@@ -158886,7 +159851,7 @@
     "tutorLearnset": {},
     "baseStats": {
       "hp": 35,
-      "atk": 55,
+      "atk": 60,
       "def": 40,
       "spa": 50,
       "spd": 50,
@@ -158911,11 +159876,15 @@
     "abilities": [
       "Static",
       "Lightning Rod",
-      "Galvanize"
+      "Serene Grace"
     ],
     "learnset": [
       {
-        "name": "Growl",
+        "name": "Icicle Crash",
+        "level": 0
+      },
+      {
+        "name": "Nuzzle",
         "level": 1
       },
       {
@@ -158931,7 +159900,7 @@
         "level": 1
       },
       {
-        "name": "Nuzzle",
+        "name": "Growl",
         "level": 1
       },
       {
@@ -158940,6 +159909,18 @@
       },
       {
         "name": "Play Nice",
+        "level": 1
+      },
+      {
+        "name": "Fake Out",
+        "level": 1
+      },
+      {
+        "name": "Encore",
+        "level": 1
+      },
+      {
+        "name": "Volt Tackle",
         "level": 1
       },
       {
@@ -159045,7 +160026,7 @@
       "hp": 35,
       "atk": 55,
       "def": 40,
-      "spa": 50,
+      "spa": 55,
       "spd": 50,
       "spe": 90
     },
@@ -159068,11 +160049,39 @@
     "abilities": [
       "Static",
       "Lightning Rod",
-      "Galvanize"
+      "Dazzling"
     ],
     "learnset": [
       {
+        "name": "Dazzling Gleam",
+        "level": 0
+      },
+      {
+        "name": "Fake Out",
+        "level": 1
+      },
+      {
+        "name": "Volt Tackle",
+        "level": 1
+      },
+      {
+        "name": "Encore",
+        "level": 1
+      },
+      {
+        "name": "Play Nice",
+        "level": 1
+      },
+      {
         "name": "Growl",
+        "level": 1
+      },
+      {
+        "name": "Nuzzle",
+        "level": 1
+      },
+      {
+        "name": "Charm",
         "level": 1
       },
       {
@@ -159084,19 +160093,7 @@
         "level": 1
       },
       {
-        "name": "Charm",
-        "level": 1
-      },
-      {
-        "name": "Nuzzle",
-        "level": 1
-      },
-      {
         "name": "Sweet Kiss",
-        "level": 1
-      },
-      {
-        "name": "Play Nice",
         "level": 1
       },
       {
@@ -159204,7 +160201,7 @@
       "def": 40,
       "spa": 50,
       "spd": 50,
-      "spe": 90
+      "spe": 95
     },
     "dexNum": 25,
     "form": 4,
@@ -159225,11 +160222,39 @@
     "abilities": [
       "Static",
       "Lightning Rod",
-      "Galvanize"
+      "Trace"
     ],
     "learnset": [
       {
+        "name": "Psychic",
+        "level": 0
+      },
+      {
         "name": "Growl",
+        "level": 1
+      },
+      {
+        "name": "Volt Tackle",
+        "level": 1
+      },
+      {
+        "name": "Encore",
+        "level": 1
+      },
+      {
+        "name": "Play Nice",
+        "level": 1
+      },
+      {
+        "name": "Fake Out",
+        "level": 1
+      },
+      {
+        "name": "Nuzzle",
+        "level": 1
+      },
+      {
+        "name": "Charm",
         "level": 1
       },
       {
@@ -159241,19 +160266,7 @@
         "level": 1
       },
       {
-        "name": "Charm",
-        "level": 1
-      },
-      {
-        "name": "Nuzzle",
-        "level": 1
-      },
-      {
         "name": "Sweet Kiss",
-        "level": 1
-      },
-      {
-        "name": "Play Nice",
         "level": 1
       },
       {
@@ -159360,7 +160373,7 @@
       "atk": 55,
       "def": 40,
       "spa": 50,
-      "spd": 50,
+      "spd": 55,
       "spe": 90
     },
     "dexNum": 25,
@@ -159382,11 +160395,39 @@
     "abilities": [
       "Static",
       "Lightning Rod",
-      "Galvanize"
+      "Moxie"
     ],
     "learnset": [
       {
+        "name": "Flying Press",
+        "level": 0
+      },
+      {
         "name": "Growl",
+        "level": 1
+      },
+      {
+        "name": "Volt Tackle",
+        "level": 1
+      },
+      {
+        "name": "Fake Out",
+        "level": 1
+      },
+      {
+        "name": "Play Nice",
+        "level": 1
+      },
+      {
+        "name": "Encore",
+        "level": 1
+      },
+      {
+        "name": "Nuzzle",
+        "level": 1
+      },
+      {
+        "name": "Charm",
         "level": 1
       },
       {
@@ -159398,19 +160439,7 @@
         "level": 1
       },
       {
-        "name": "Charm",
-        "level": 1
-      },
-      {
-        "name": "Nuzzle",
-        "level": 1
-      },
-      {
         "name": "Sweet Kiss",
-        "level": 1
-      },
-      {
-        "name": "Play Nice",
         "level": 1
       },
       {
@@ -159515,7 +160544,7 @@
     "baseStats": {
       "hp": 35,
       "atk": 55,
-      "def": 40,
+      "def": 45,
       "spa": 50,
       "spd": 50,
       "spe": 90
@@ -169601,15 +170630,7 @@
         "level": 1
       },
       {
-        "name": "Growl",
-        "level": 1
-      },
-      {
-        "name": "Tackle",
-        "level": 1
-      },
-      {
-        "name": "Helping Hand",
+        "name": "Bite",
         "level": 1
       },
       {
@@ -169617,7 +170638,15 @@
         "level": 1
       },
       {
-        "name": "Bite",
+        "name": "Tackle",
+        "level": 1
+      },
+      {
+        "name": "Growl",
+        "level": 1
+      },
+      {
+        "name": "Helping Hand",
         "level": 1
       },
       {
@@ -169639,6 +170668,10 @@
       {
         "name": "Swift",
         "level": 16
+      },
+      {
+        "name": "Veevee Volley",
+        "level": 18
       },
       {
         "name": "Wish",
@@ -169861,15 +170894,7 @@
         "level": 1
       },
       {
-        "name": "Growl",
-        "level": 1
-      },
-      {
-        "name": "Tackle",
-        "level": 1
-      },
-      {
-        "name": "Helping Hand",
+        "name": "Bite",
         "level": 1
       },
       {
@@ -169877,7 +170902,15 @@
         "level": 1
       },
       {
-        "name": "Bite",
+        "name": "Tackle",
+        "level": 1
+      },
+      {
+        "name": "Growl",
+        "level": 1
+      },
+      {
+        "name": "Helping Hand",
         "level": 1
       },
       {
@@ -169899,6 +170932,10 @@
       {
         "name": "Swift",
         "level": 16
+      },
+      {
+        "name": "Veevee Volley",
+        "level": 18
       },
       {
         "name": "Wish",
@@ -207459,7 +208496,7 @@
     "value": 1382,
     "text": "Dawn Wings Necrozma",
     "type": "Psychic",
-    "dualtype": "Ghost",
+    "dualtype": "Fairy",
     "abilities": [
       "Prism Armor",
       "Prism Armor",
@@ -208054,40 +209091,53 @@
         "level": 1
       },
       {
+        "name": "Echoed Voice",
+        "level": 14
+      },
+      {
         "name": "Razor Leaf",
-        "level": 12
+        "level": 18
+      },
+      {
+        "name": "Assurance",
+        "level": 22
       },
       {
         "name": "Screech",
-        "level": 19
+        "level": 26
       },
       {
-        "name": "Knock Off",
-        "level": 24
-      },
-      {
-        "name": "Slam",
+        "name": "Nature Power",
         "level": 30
       },
       {
+        "name": "Knock Off",
+        "level": 34
+      },
+      {
+        "name": "Slam",
+        "level": 37
+      },
+      {
+        "name": "Hammer Arm",
+        "level": 43
+      },
+      {
         "name": "Uproar",
-        "level": 38
+        "level": 49
       },
       {
         "name": "Wood Hammer",
-        "level": 46
-      },
-      {
-        "name": "Endeavor",
         "level": 54
       },
       {
         "name": "Boomburst",
-        "level": 62
+        "level": 61
       }
     ],
     "tmLearnset": {
       "Focus Punch": 264,
+      "Toxic": 92,
       "Bulk Up": 339,
       "Bullet Seed": 331,
       "Work Up": 526,
@@ -208127,7 +209177,7 @@
       "hp": 100,
       "atk": 125,
       "def": 90,
-      "spa": 60,
+      "spa": 65,
       "spd": 70,
       "spe": 85
     },
@@ -208158,23 +209208,11 @@
         "level": 0
       },
       {
-        "name": "Ember",
+        "name": "Acrobatics",
         "level": 1
       },
       {
-        "name": "Feint",
-        "level": 1
-      },
-      {
-        "name": "Growl",
-        "level": 1
-      },
-      {
-        "name": "Pyro Ball",
-        "level": 1
-      },
-      {
-        "name": "Quick Attack",
+        "name": "Electro Ball",
         "level": 1
       },
       {
@@ -208182,8 +209220,44 @@
         "level": 1
       },
       {
+        "name": "Baton Pass",
+        "level": 1
+      },
+      {
+        "name": "Ally Switch",
+        "level": 1
+      },
+      {
+        "name": "Feint",
+        "level": 1
+      },
+      {
+        "name": "Pyro Ball",
+        "level": 1
+      },
+      {
+        "name": "Helping Hand",
+        "level": 1
+      },
+      {
+        "name": "Growl",
+        "level": 1
+      },
+      {
+        "name": "Ember",
+        "level": 5
+      },
+      {
+        "name": "Quick Attack",
+        "level": 8
+      },
+      {
         "name": "Double Kick",
         "level": 12
+      },
+      {
+        "name": "Work Up",
+        "level": 15
       },
       {
         "name": "Flame Charge",
@@ -208191,54 +209265,83 @@
       },
       {
         "name": "Agility",
-        "level": 24
+        "level": 21
+      },
+      {
+        "name": "Low Sweep",
+        "level": 23
       },
       {
         "name": "Headbutt",
-        "level": 30
+        "level": 27
+      },
+      {
+        "name": "Blaze Kick",
+        "level": 29
       },
       {
         "name": "Counter",
-        "level": 38
+        "level": 31
       },
       {
         "name": "Bounce",
-        "level": 46
+        "level": 36
+      },
+      {
+        "name": "High Jump Kick",
+        "level": 41
       },
       {
         "name": "Double-Edge",
-        "level": 54
+        "level": 45
+      },
+      {
+        "name": "Mega Kick",
+        "level": 48
+      },
+      {
+        "name": "Sucker Punch",
+        "level": 50
+      },
+      {
+        "name": "Gunk Shot",
+        "level": 56
       },
       {
         "name": "Court Change",
-        "level": 62
+        "level": 60
       }
     ],
     "tmLearnset": {
       "Bulk Up": 339,
-      "Work Up": 526,
       "Sunny Day": 241,
       "Taunt": 269,
       "Hyper Beam": 63,
       "Protect": 182,
       "Low Sweep": 490,
-      "Shadow Ball": 247,
+      "Dig": 91,
+      "Brick Break": 280,
+      "Double Team": 104,
       "Flamethrower": 53,
       "Fire Blast": 126,
+      "Aerial Ace": 332,
       "Facade": 263,
       "Rest": 156,
       "Attract": 213,
+      "Thief": 168,
       "Overheat": 315,
       "Focus Blast": 411,
-      "Fling": 374,
       "Endure": 203,
-      "Will-O-Wisp": 261,
       "Giga Impact": 416,
-      "Swords Dance": 14,
       "Snarl": 555,
       "Sleep Talk": 214,
+      "Swagger": 207,
       "U-turn": 369,
-      "Substitute": 164
+      "Substitute": 164,
+      "Strength": 70,
+      "Rock Smash": 249,
+      "Rock Climb": 431,
+      "Hidden Power": 237
     },
     "eggLearnset": {},
     "tutorLearnset": {},
@@ -208246,7 +209349,7 @@
       "hp": 80,
       "atk": 116,
       "def": 75,
-      "spa": 65,
+      "spa": 70,
       "spd": 75,
       "spe": 119
     },
@@ -208301,28 +209404,56 @@
         "level": 1
       },
       {
+        "name": "Foresight",
+        "level": 9
+      },
+      {
         "name": "Water Pulse",
         "level": 12
+      },
+      {
+        "name": "Shadow Sneak",
+        "level": 15
       },
       {
         "name": "Tearful Look",
         "level": 19
       },
       {
+        "name": "Attract",
+        "level": 22
+      },
+      {
+        "name": "Camouflage",
+        "level": 26
+      },
+      {
         "name": "Sucker Punch",
-        "level": 24
+        "level": 29
+      },
+      {
+        "name": "Taunt",
+        "level": 31
+      },
+      {
+        "name": "Take Down",
+        "level": 36
       },
       {
         "name": "U-turn",
-        "level": 30
-      },
-      {
-        "name": "Liquidation",
         "level": 38
       },
       {
+        "name": "Whirlpool",
+        "level": 42
+      },
+      {
+        "name": "Liquidation",
+        "level": 45
+      },
+      {
         "name": "Soak",
-        "level": 46
+        "level": 49
       },
       {
         "name": "Rain Dance",
@@ -208330,11 +209461,12 @@
       },
       {
         "name": "Hydro Pump",
-        "level": 62
+        "level": 60
       }
     ],
     "tmLearnset": {
       "Water Pulse": 352,
+      "Toxic": 92,
       "Work Up": 526,
       "Taunt": 269,
       "Ice Beam": 58,
@@ -208361,12 +209493,13 @@
       "U-turn": 369,
       "Substitute": 164,
       "Surf": 57,
-      "Waterfall": 127
+      "Waterfall": 127,
+      "Hidden Power": 237
     },
     "eggLearnset": {},
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 70,
+      "hp": 75,
       "atk": 85,
       "def": 65,
       "spa": 125,
@@ -208516,11 +209649,23 @@
     "abilities": [
       "Swarm",
       "Frisk",
-      "Telepathy"
+      "Filter"
     ],
     "learnset": [
       {
+        "name": "Gravity",
+        "level": 0
+      },
+      {
         "name": "Confusion",
+        "level": 1
+      },
+      {
+        "name": "Struggle Bug",
+        "level": 1
+      },
+      {
+        "name": "Gravity",
         "level": 1
       },
       {
@@ -208529,10 +209674,6 @@
       },
       {
         "name": "Reflect",
-        "level": 1
-      },
-      {
-        "name": "Struggle Bug",
         "level": 1
       },
       {
@@ -208556,11 +209697,11 @@
         "level": 20
       },
       {
-        "name": "Ally Switch",
+        "name": "Cosmic Power",
         "level": 24
       },
       {
-        "name": "Bug Buzz",
+        "name": "Signal Beam",
         "level": 28
       },
       {
@@ -208568,7 +209709,7 @@
         "level": 32
       },
       {
-        "name": "Psychic",
+        "name": "Psyshock",
         "level": 36
       },
       {
@@ -208576,16 +209717,33 @@
         "level": 40
       },
       {
-        "name": "Calm Mind",
+        "name": "Bug Buzz",
         "level": 44
       },
       {
-        "name": "Psychic Terrain",
+        "name": "Mind Reader",
         "level": 48
+      },
+      {
+        "name": "Psychic",
+        "level": 52
+      },
+      {
+        "name": "Calm Mind",
+        "level": 56
+      },
+      {
+        "name": "Psychic Terrain",
+        "level": 60
+      },
+      {
+        "name": "Recover",
+        "level": 64
       }
     ],
     "tmLearnset": {
       "Calm Mind": 347,
+      "Toxic": 92,
       "Hyper Beam": 63,
       "Light Screen": 113,
       "Protect": 182,
@@ -208594,6 +209752,7 @@
       "Solar Beam": 76,
       "Psychic": 94,
       "Shadow Ball": 247,
+      "Double Team": 104,
       "Reflect": 115,
       "Facade": 263,
       "Rest": 156,
@@ -208683,28 +209842,49 @@
         "level": 21
       },
       {
+        "name": "Dive",
+        "level": 25
+      },
+      {
         "name": "Counter",
         "level": 30
       },
       {
         "name": "Jaw Lock",
+        "level": 34
+      },
+      {
+        "name": "Iron Defense",
         "level": 39
       },
       {
         "name": "Liquidation",
-        "level": 48
+        "level": 43
       },
       {
         "name": "Body Slam",
-        "level": 57
+        "level": 48
+      },
+      {
+        "name": "Stone Edge",
+        "level": 53
+      },
+      {
+        "name": "Shell Smash",
+        "level": 58
+      },
+      {
+        "name": "Hydro Pump",
+        "level": 63
       },
       {
         "name": "Head Smash",
-        "level": 66
+        "level": 68
       }
     ],
     "tmLearnset": {
       "Water Pulse": 352,
+      "Toxic": 92,
       "Ice Beam": 58,
       "Blizzard": 59,
       "Hyper Beam": 63,
@@ -208733,7 +209913,8 @@
       "Poison Jab": 398,
       "Substitute": 164,
       "Surf": 57,
-      "Waterfall": 127
+      "Waterfall": 127,
+      "Hidden Power": 237
     },
     "eggLearnset": {},
     "tutorLearnset": {},
@@ -208806,26 +209987,47 @@
       },
       {
         "name": "Incinerate",
-        "level": 27
-      },
-      {
-        "name": "Stealth Rock",
-        "level": 37
-      },
-      {
-        "name": "Heat Crash",
-        "level": 45
+        "level": 25
       },
       {
         "name": "Rock Blast",
-        "level": 54
+        "level": 30
+      },
+      {
+        "name": "Scald",
+        "level": 36
+      },
+      {
+        "name": "Rock Tomb",
+        "level": 40
+      },
+      {
+        "name": "Stealth Rock",
+        "level": 45
+      },
+      {
+        "name": "Heat Crash",
+        "level": 50
+      },
+      {
+        "name": "Stone Edge",
+        "level": 55
+      },
+      {
+        "name": "Flare Blitz",
+        "level": 60
+      },
+      {
+        "name": "Explosion",
+        "level": 65
       },
       {
         "name": "Burn Up",
-        "level": 63
+        "level": 70
       }
     ],
     "tmLearnset": {
+      "Toxic": 92,
       "Sunny Day": 241,
       "Hyper Beam": 63,
       "Protect": 182,
@@ -208852,16 +210054,17 @@
       "Rock Slide": 157,
       "Sleep Talk": 214,
       "Bulldoze": 523,
-      "Substitute": 164
+      "Substitute": 164,
+      "Hidden Power": 237
     },
     "eggLearnset": {},
     "tutorLearnset": {},
     "baseStats": {
       "hp": 110,
-      "atk": 80,
+      "atk": 110,
       "def": 120,
       "spa": 80,
-      "spd": 90,
+      "spd": 50,
       "spe": 30
     },
     "dexNum": 839,
@@ -208888,7 +210091,7 @@
     ],
     "learnset": [
       {
-        "name": "Wing Attack",
+        "name": "Peck",
         "level": 0
       },
       {
@@ -208908,7 +210111,7 @@
         "level": 1
       },
       {
-        "name": "Wing Attack",
+        "name": "Peck",
         "level": 1
       },
       {
@@ -208916,11 +210119,11 @@
         "level": 1
       },
       {
-        "name": "Acid Spray",
+        "name": "Leafage",
         "level": 4
       },
       {
-        "name": "Acrobatics",
+        "name": "Wing Attack",
         "level": 8
       },
       {
@@ -208932,11 +210135,11 @@
         "level": 16
       },
       {
-        "name": "Dragon Breath",
+        "name": "Breaking Swipe",
         "level": 20
       },
       {
-        "name": "Dragon Dance",
+        "name": "Air Slash",
         "level": 24
       },
       {
@@ -208948,16 +210151,20 @@
         "level": 32
       },
       {
-        "name": "Iron Defense",
+        "name": "Dragon Dance",
         "level": 36
       },
       {
-        "name": "Fly",
+        "name": "Iron Defense",
         "level": 40
       },
       {
         "name": "Dragon Rush",
         "level": 44
+      },
+      {
+        "name": "Fly",
+        "level": 48
       }
     ],
     "tmLearnset": {
@@ -208988,9 +210195,9 @@
       "hp": 70,
       "atk": 110,
       "def": 80,
-      "spa": 95,
-      "spd": 60,
-      "spe": 70
+      "spa": 65,
+      "spd": 75,
+      "spe": 85
     },
     "dexNum": 841,
     "form": 1,
@@ -209016,7 +210223,7 @@
     ],
     "learnset": [
       {
-        "name": "Headbutt",
+        "name": "Absorb",
         "level": 0
       },
       {
@@ -209028,7 +210235,7 @@
         "level": 1
       },
       {
-        "name": "Headbutt",
+        "name": "Absorb",
         "level": 1
       },
       {
@@ -209048,7 +210255,7 @@
         "level": 4
       },
       {
-        "name": "Stomp",
+        "name": "Acid Spray",
         "level": 8
       },
       {
@@ -209060,35 +210267,40 @@
         "level": 16
       },
       {
-        "name": "Bullet Seed",
+        "name": "Mega Drain",
         "level": 20
       },
       {
-        "name": "Recover",
+        "name": "Body Slam",
         "level": 24
       },
       {
-        "name": "Apple Acid",
+        "name": "Dragon Pulse",
         "level": 28
       },
       {
-        "name": "Body Slam",
+        "name": "Apple Acid",
         "level": 32
       },
       {
-        "name": "Iron Defense",
+        "name": "Recover",
         "level": 36
       },
       {
-        "name": "Dragon Pulse",
+        "name": "Iron Defense",
         "level": 40
       },
       {
-        "name": "Energy Ball",
+        "name": "Stomping Tantrum",
         "level": 44
+      },
+      {
+        "name": "Solar Beam",
+        "level": 48
       }
     ],
     "tmLearnset": {
+      "Toxic": 92,
       "Bullet Seed": 331,
       "Sunny Day": 241,
       "Hyper Beam": 63,
@@ -209113,16 +210325,17 @@
       "Sleep Talk": 214,
       "Bulldoze": 523,
       "Grass Knot": 447,
-      "Substitute": 164
+      "Substitute": 164,
+      "Hidden Power": 237
     },
     "eggLearnset": {},
     "tutorLearnset": {},
     "baseStats": {
       "hp": 110,
-      "atk": 85,
-      "def": 80,
-      "spa": 100,
-      "spd": 80,
+      "atk": 65,
+      "def": 85,
+      "spa": 110,
+      "spd": 85,
       "spe": 30
     },
     "dexNum": 842,
@@ -209168,39 +210381,52 @@
         "level": 1
       },
       {
-        "name": "Bulldoze",
-        "level": 15
+        "name": "Mud Shot",
+        "level": 12
       },
       {
         "name": "Headbutt",
-        "level": 20
+        "level": 16
       },
       {
         "name": "Glare",
-        "level": 25
-      },
-      {
-        "name": "Dig",
-        "level": 30
-      },
-      {
-        "name": "Sandstorm",
-        "level": 35
-      },
-      {
-        "name": "Slam",
-        "level": 42
-      },
-      {
-        "name": "Coil",
-        "level": 49
+        "level": 20
       },
       {
         "name": "Sand Tomb",
+        "level": 24
+      },
+      {
+        "name": "Dig",
+        "level": 29
+      },
+      {
+        "name": "Slam",
+        "level": 34
+      },
+      {
+        "name": "Coil",
+        "level": 40
+      },
+      {
+        "name": "Sandstorm",
+        "level": 45
+      },
+      {
+        "name": "Earth Power",
         "level": 51
+      },
+      {
+        "name": "Dragon Pulse",
+        "level": 56
+      },
+      {
+        "name": "Hurricane",
+        "level": 62
       }
     ],
     "tmLearnset": {
+      "Toxic": 92,
       "Hyper Beam": 63,
       "Protect": 182,
       "Earthquake": 89,
@@ -209218,7 +210444,9 @@
       "Sleep Talk": 214,
       "Bulldoze": 523,
       "Substitute": 164,
-      "Hurricane": 542
+      "Flash Cannon": 430,
+      "Hurricane": 542,
+      "Hidden Power": 237
     },
     "eggLearnset": {},
     "tutorLearnset": {},
@@ -210106,7 +211334,7 @@
     "type": "Ghost",
     "abilities": [
       "Weak Armor",
-      "Weak Armor",
+      "Hospitality",
       "Cursed Body"
     ],
     "learnset": [
@@ -210123,24 +211351,48 @@
         "level": 6
       },
       {
+        "name": "Confuse Ray",
+        "level": 9
+      },
+      {
         "name": "Mega Drain",
         "level": 12
+      },
+      {
+        "name": "Hex",
+        "level": 15
       },
       {
         "name": "Protect",
         "level": 18
       },
       {
+        "name": "Psybeam",
+        "level": 21
+      },
+      {
         "name": "Sucker Punch",
         "level": 24
+      },
+      {
+        "name": "Night Shade",
+        "level": 27
       },
       {
         "name": "Aromatherapy",
         "level": 30
       },
       {
+        "name": "Imprison",
+        "level": 33
+      },
+      {
         "name": "Giga Drain",
         "level": 36
+      },
+      {
+        "name": "Foul Play",
+        "level": 39
       },
       {
         "name": "Nasty Plot",
@@ -210151,8 +211403,16 @@
         "level": 48
       },
       {
+        "name": "Calm Mind",
+        "level": 51
+      },
+      {
         "name": "Memento",
         "level": 54
+      },
+      {
+        "name": "Phantom Force",
+        "level": 57
       },
       {
         "name": "Shell Smash",
@@ -210161,8 +211421,10 @@
     ],
     "tmLearnset": {
       "Calm Mind": 347,
+      "Toxic": 92,
       "Protect": 182,
       "Giga Drain": 202,
+      "Dazzling Gleam": 605,
       "Psychic": 94,
       "Shadow Ball": 247,
       "Facade": 263,
@@ -210175,7 +211437,8 @@
       "Dark Pulse": 399,
       "Sleep Talk": 214,
       "Substitute": 164,
-      "Trick Room": 433
+      "Trick Room": 433,
+      "Hidden Power": 237
     },
     "eggLearnset": {},
     "tutorLearnset": {},
@@ -210205,7 +211468,7 @@
     "type": "Ghost",
     "abilities": [
       "Weak Armor",
-      "Weak Armor",
+      "Hospitality",
       "Cursed Body"
     ],
     "learnset": [
@@ -210214,19 +211477,7 @@
         "level": 0
       },
       {
-        "name": "Aromatic Mist",
-        "level": 1
-      },
-      {
         "name": "Astonish",
-        "level": 1
-      },
-      {
-        "name": "Mega Drain",
-        "level": 1
-      },
-      {
-        "name": "Strength Sap",
         "level": 1
       },
       {
@@ -210238,36 +211489,84 @@
         "level": 1
       },
       {
+        "name": "Aromatic Mist",
+        "level": 6
+      },
+      {
+        "name": "Confuse Ray",
+        "level": 9
+      },
+      {
+        "name": "Mega Drain",
+        "level": 12
+      },
+      {
+        "name": "Hex",
+        "level": 15
+      },
+      {
         "name": "Protect",
         "level": 18
+      },
+      {
+        "name": "Psybeam",
+        "level": 21
       },
       {
         "name": "Sucker Punch",
         "level": 24
       },
       {
+        "name": "Night Shade",
+        "level": 27
+      },
+      {
         "name": "Aromatherapy",
         "level": 30
+      },
+      {
+        "name": "Imprison",
+        "level": 33
       },
       {
         "name": "Giga Drain",
         "level": 36
       },
       {
+        "name": "Foul Play",
+        "level": 39
+      },
+      {
         "name": "Nasty Plot",
         "level": 42
+      },
+      {
+        "name": "Trick",
+        "level": 45
       },
       {
         "name": "Shadow Ball",
         "level": 48
       },
       {
+        "name": "Calm Mind",
+        "level": 51
+      },
+      {
         "name": "Memento",
         "level": 54
       },
       {
+        "name": "Phantom Force",
+        "level": 57
+      },
+      {
         "name": "Shell Smash",
         "level": 60
+      },
+      {
+        "name": "Strength Sap",
+        "level": 63
       },
       {
         "name": "Curse",
@@ -210276,10 +211575,12 @@
     ],
     "tmLearnset": {
       "Calm Mind": 347,
+      "Toxic": 92,
       "Hyper Beam": 63,
       "Light Screen": 113,
       "Protect": 182,
       "Giga Drain": 202,
+      "Dazzling Gleam": 605,
       "Psychic": 94,
       "Shadow Ball": 247,
       "Reflect": 115,
@@ -210294,7 +211595,8 @@
       "Dark Pulse": 399,
       "Sleep Talk": 214,
       "Substitute": 164,
-      "Trick Room": 433
+      "Trick Room": 433,
+      "Hidden Power": 237
     },
     "eggLearnset": {},
     "tutorLearnset": {},
@@ -210324,7 +211626,7 @@
     "type": "Psychic",
     "dualtype": "Fairy",
     "abilities": [
-      "Healer",
+      "Magician",
       "Anticipation",
       "Magic Bounce"
     ],
@@ -210363,35 +211665,52 @@
       },
       {
         "name": "Psybeam",
-        "level": 20
+        "level": 19
       },
       {
         "name": "Heal Pulse",
-        "level": 25
+        "level": 23
       },
       {
         "name": "Dazzling Gleam",
-        "level": 30
+        "level": 27
+      },
+      {
+        "name": "Psycho Shift",
+        "level": 31
+      },
+      {
+        "name": "Extrasensory",
+        "level": 36
       },
       {
         "name": "Calm Mind",
-        "level": 37
+        "level": 41
       },
       {
         "name": "Psychic",
         "level": 46
       },
       {
-        "name": "Healing Wish",
+        "name": "Moonblast",
+        "level": 52
+      },
+      {
+        "name": "Barrier",
         "level": 55
       },
       {
+        "name": "Healing Wish",
+        "level": 60
+      },
+      {
         "name": "Magic Powder",
-        "level": 64
+        "level": 66
       }
     ],
     "tmLearnset": {
       "Calm Mind": 347,
+      "Toxic": 92,
       "Hyper Beam": 63,
       "Light Screen": 113,
       "Protect": 182,
@@ -210414,16 +211733,17 @@
       "Dark Pulse": 399,
       "Sleep Talk": 214,
       "Substitute": 164,
-      "Trick Room": 433
+      "Trick Room": 433,
+      "Hidden Power": 237
     },
     "eggLearnset": {},
     "tutorLearnset": {},
     "baseStats": {
       "hp": 57,
-      "atk": 90,
-      "def": 95,
+      "atk": 70,
+      "def": 105,
       "spa": 136,
-      "spd": 103,
+      "spd": 113,
       "spe": 29
     },
     "dexNum": 858,
@@ -210478,10 +211798,6 @@
         "level": 1
       },
       {
-        "name": "Power-Up Punch",
-        "level": 1
-      },
-      {
         "name": "Spirit Break",
         "level": 1
       },
@@ -210494,40 +211810,57 @@
         "level": 16
       },
       {
-        "name": "Swagger",
+        "name": "Sucker Punch",
         "level": 20
       },
       {
-        "name": "Sucker Punch",
+        "name": "Power Trip",
         "level": 24
       },
       {
-        "name": "Torment",
+        "name": "Switcheroo",
         "level": 28
       },
       {
+        "name": "Punishment",
+        "level": 34
+      },
+      {
+        "name": "Torment",
+        "level": 37
+      },
+      {
         "name": "Dark Pulse",
-        "level": 35
+        "level": 41
       },
       {
         "name": "Nasty Plot",
-        "level": 40
-      },
-      {
-        "name": "Play Rough",
-        "level": 48
+        "level": 45
       },
       {
         "name": "Foul Play",
-        "level": 56
+        "level": 50
+      },
+      {
+        "name": "Play Rough",
+        "level": 55
+      },
+      {
+        "name": "Darkest Lariat",
+        "level": 59
       },
       {
         "name": "Hammer Arm",
-        "level": 64
+        "level": 63
+      },
+      {
+        "name": "Parting Shot",
+        "level": 68
       }
     ],
     "tmLearnset": {
       "Focus Punch": 264,
+      "Toxic": 92,
       "Bulk Up": 339,
       "Taunt": 269,
       "Hyper Beam": 63,
@@ -210553,16 +211886,17 @@
       "Dark Pulse": 399,
       "Sleep Talk": 214,
       "Swagger": 207,
-      "Substitute": 164
+      "Substitute": 164,
+      "Hidden Power": 237
     },
     "eggLearnset": {},
     "tutorLearnset": {},
     "baseStats": {
       "hp": 95,
       "atk": 120,
-      "def": 65,
-      "spa": 95,
-      "spd": 75,
+      "def": 75,
+      "spa": 75,
+      "spd": 85,
       "spe": 60
     },
     "dexNum": 861,
@@ -217605,11 +218939,11 @@
         "level": 24
       },
       {
-        "name": "Amnesia",
+        "name": "Ice Shard",
         "level": 30
       },
       {
-        "name": "Freeze-Dry",
+        "name": "Surf",
         "level": 36
       },
       {
@@ -217617,20 +218951,29 @@
         "level": 42
       },
       {
-        "name": "Aurora Veil",
+        "name": "Freeze-Dry",
         "level": 48
       },
       {
-        "name": "Surf",
+        "name": "Aurora Veil",
         "level": 54
       },
       {
-        "name": "Blizzard",
+        "name": "Belly Drum",
         "level": 60
+      },
+      {
+        "name": "Icicle Crash",
+        "level": 66
+      },
+      {
+        "name": "Head Smash",
+        "level": 72
       }
     ],
     "tmLearnset": {
       "Water Pulse": 352,
+      "Toxic": 92,
       "Hail": 258,
       "Ice Beam": 58,
       "Blizzard": 59,
@@ -217648,15 +218991,21 @@
       "Sleep Talk": 214,
       "Substitute": 164,
       "Surf": 57,
-      "Waterfall": 127
+      "Waterfall": 127,
+      "Hidden Power": 237
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Double-Edge": 38,
+      "Aqua Ring": 392,
+      "Soak": 487,
+      "Amnesia": 133
+    },
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 75,
-      "atk": 80,
+      "hp": 85,
+      "atk": 90,
       "def": 70,
-      "spa": 65,
+      "spa": 55,
       "spd": 50,
       "spe": 130
     },
@@ -217693,51 +219042,80 @@
       },
       {
         "name": "Baton Pass",
-        "level": 5
+        "level": 1
       },
       {
         "name": "Disarming Voice",
-        "level": 10
+        "level": 5
       },
       {
         "name": "Psybeam",
-        "level": 15
+        "level": 9
       },
       {
         "name": "Helping Hand",
-        "level": 20
+        "level": 13
       },
       {
-        "name": "Follow Me",
+        "name": "After You",
+        "level": 17
+      },
+      {
+        "name": "Swift",
+        "level": 21
+      },
+      {
+        "name": "Draining Kiss",
         "level": 25
       },
       {
         "name": "Aromatherapy",
-        "level": 30
+        "level": 29
       },
       {
         "name": "Psychic",
-        "level": 35
-      },
-      {
-        "name": "Calm Mind",
-        "level": 40
-      },
-      {
-        "name": "Guard Split",
-        "level": 45
-      },
-      {
-        "name": "Psychic Terrain",
-        "level": 50
+        "level": 33
       },
       {
         "name": "Healing Wish",
-        "level": 55
+        "level": 37
+      },
+      {
+        "name": "Psycho Shift",
+        "level": 41
+      },
+      {
+        "name": "Calm Mind",
+        "level": 45
+      },
+      {
+        "name": "Guard Split",
+        "level": 49
+      },
+      {
+        "name": "Recover",
+        "level": 53
+      },
+      {
+        "name": "Future Sight",
+        "level": 57
+      },
+      {
+        "name": "Psychic Terrain",
+        "level": 61
+      },
+      {
+        "name": "Expanding Force",
+        "level": 65
+      },
+      {
+        "name": "Last Resort",
+        "level": 69
       }
     ],
     "tmLearnset": {
       "Calm Mind": 347,
+      "Toxic": 92,
       "Light Screen": 113,
       "Protect": 182,
       "Safeguard": 219,
@@ -217756,21 +219134,21 @@
       "Sleep Talk": 214,
       "Substitute": 164,
       "Trick Room": 433,
-      "Hyper Voice": 304
+      "Hyper Voice": 304,
+      "Hidden Power": 237
     },
     "eggLearnset": {
       "Fake Out": 252,
       "Heal Pulse": 505,
-      "Psych Up": 244,
-      "Psycho Shift": 375
+      "Psych Up": 244
     },
     "tutorLearnset": {},
     "baseStats": {
       "hp": 70,
-      "atk": 55,
-      "def": 65,
-      "spa": 95,
-      "spd": 105,
+      "atk": 45,
+      "def": 75,
+      "spa": 85,
+      "spd": 115,
       "spe": 85
     },
     "dexNum": 876,
@@ -217837,20 +219215,28 @@
         "level": 40
       },
       {
-        "name": "Bullet Seed",
+        "name": "Zing Zap",
         "level": 45
       },
       {
-        "name": "Crunch",
+        "name": "Bullet Seed",
         "level": 50
       },
       {
-        "name": "Aura Wheel",
+        "name": "Parting Shot",
         "level": 55
       },
       {
-        "name": "Thrash",
+        "name": "Crunch",
         "level": 60
+      },
+      {
+        "name": "Aura Wheel",
+        "level": 65
+      },
+      {
+        "name": "Thrash",
+        "level": 70
       }
     ],
     "tmLearnset": {
@@ -217879,15 +219265,23 @@
       "Substitute": 164,
       "Wild Charge": 528
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Super Fang": 162,
+      "Swagger": 207,
+      "Rapid Spin": 229,
+      "Fake Out": 252,
+      "Charge": 268,
+      "Tickle": 321,
+      "Quash": 511
+    },
     "tutorLearnset": {},
     "baseStats": {
       "hp": 58,
-      "atk": 95,
+      "atk": 108,
       "def": 58,
-      "spa": 70,
+      "spa": 68,
       "spd": 58,
-      "spe": 97
+      "spe": 100
     },
     "dexNum": 877,
     "form": 1,
@@ -217907,7 +219301,7 @@
     "type": "Steel",
     "abilities": [
       "Sheer Force",
-      "Sheer Force",
+      "Pressure",
       "Heavy Metal"
     ],
     "learnset": [
@@ -217970,9 +219364,14 @@
       {
         "name": "Superpower",
         "level": 65
+      },
+      {
+        "name": "Fissure",
+        "level": 72
       }
     ],
     "tmLearnset": {
+      "Toxic": 92,
       "Work Up": 526,
       "Taunt": 269,
       "Hyper Beam": 63,
@@ -217998,16 +219397,17 @@
       "Substitute": 164,
       "Flash Cannon": 430,
       "Strength": 70,
-      "Rock Smash": 249
+      "Rock Smash": 249,
+      "Hidden Power": 237
     },
     "eggLearnset": {},
     "tutorLearnset": {},
     "baseStats": {
       "hp": 122,
       "atk": 130,
-      "def": 69,
-      "spa": 80,
-      "spd": 69,
+      "def": 79,
+      "spa": 60,
+      "spd": 79,
       "spe": 30
     },
     "dexNum": 879,
@@ -218913,7 +220313,7 @@
     "abilities": [
       "Leaf Guard",
       "Leaf Guard",
-      "Leaf Guard"
+      "Tough Claws"
     ],
     "learnset": [
       {
@@ -218988,6 +220388,7 @@
     "tmLearnset": {
       "Focus Punch": 264,
       "Roar": 46,
+      "Toxic": 92,
       "Bulk Up": 339,
       "Bullet Seed": 331,
       "Sunny Day": 241,
@@ -219000,6 +220401,7 @@
       "Low Sweep": 490,
       "Dig": 91,
       "Brick Break": 280,
+      "Double Team": 104,
       "Rock Tomb": 317,
       "Aerial Ace": 332,
       "Facade": 263,
@@ -219021,7 +220423,12 @@
       "Swagger": 207,
       "U-turn": 369,
       "Substitute": 164,
-      "Hyper Voice": 304
+      "Cut": 15,
+      "Strength": 70,
+      "Rock Smash": 249,
+      "Rock Climb": 431,
+      "Hyper Voice": 304,
+      "Hidden Power": 237
     },
     "eggLearnset": {},
     "tutorLearnset": {},
@@ -219910,9 +221317,9 @@
     "type": "Fairy",
     "dualtype": "Flying",
     "abilities": [
-      "Overcoat",
-      "Overcoat",
-      "Overcoat"
+      "Natural Cure",
+      "Natural Cure",
+      "Natural Cure"
     ],
     "learnset": [
       {
@@ -219964,7 +221371,7 @@
         "level": 50
       },
       {
-        "name": "Superpower",
+        "name": "Hammer Arm",
         "level": 55
       },
       {
@@ -219980,12 +221387,13 @@
         "level": 70
       },
       {
-        "name": "Petal Blizzard",
+        "name": "Springtide Storm",
         "level": 75
       }
     ],
     "tmLearnset": {
       "Calm Mind": 347,
+      "Toxic": 92,
       "Sunny Day": 241,
       "Taunt": 269,
       "Hyper Beam": 63,
@@ -220003,8 +221411,10 @@
       "Psych Up": 244,
       "Sleep Talk": 214,
       "Grass Knot": 447,
+      "U-turn": 369,
       "Substitute": 164,
-      "Fly": 19
+      "Fly": 19,
+      "Hidden Power": 237
     },
     "eggLearnset": {},
     "tutorLearnset": {},
@@ -222734,70 +224144,99 @@
     "value": 1507,
     "text": "Three-Segment Form Dudunsparce",
     "type": "Normal",
+    "dualtype": "Dragon",
     "abilities": [
       "Serene Grace",
-      "Run Away",
-      "Rattled"
+      "Rattled",
+      "Run Away"
     ],
     "learnset": [
-      {
-        "name": "Flail",
-        "level": 1
-      },
       {
         "name": "Defense Curl",
         "level": 1
       },
       {
-        "name": "Mud-Slap",
+        "name": "Rollout",
         "level": 4
       },
       {
-        "name": "Rollout",
-        "level": 8
-      },
-      {
-        "name": "Glare",
-        "level": 12
+        "name": "Spite",
+        "level": 7
       },
       {
         "name": "Screech",
-        "level": 16
+        "level": 13
       },
       {
-        "name": "Ancient Power",
-        "level": 20
-      },
-      {
-        "name": "Drill Run",
-        "level": 24
+        "name": "Mud-Slap",
+        "level": 15
       },
       {
         "name": "Yawn",
-        "level": 28
+        "level": 17
       },
       {
-        "name": "Happy Hour",
-        "level": 32
+        "name": "Ancient Power",
+        "level": 19
+      },
+      {
+        "name": "Body Slam",
+        "level": 21
+      },
+      {
+        "name": "Drill Run",
+        "level": 23
       },
       {
         "name": "Roost",
-        "level": 36
+        "level": 25
       },
       {
-        "name": "Dragon Rush",
-        "level": 40
+        "name": "Take Down",
+        "level": 27
       },
       {
-        "name": "Coil",
-        "level": 44
+        "name": "Dig",
+        "level": 29
+      },
+      {
+        "name": "Glare",
+        "level": 31
+      },
+      {
+        "name": "Hyper Drill",
+        "level": 32
       },
       {
         "name": "Double-Edge",
-        "level": 48
+        "level": 33
       },
       {
         "name": "Endeavor",
+        "level": 35
+      },
+      {
+        "name": "Air Slash",
+        "level": 37
+      },
+      {
+        "name": "Dragon Rush",
+        "level": 39
+      },
+      {
+        "name": "Endure",
+        "level": 41
+      },
+      {
+        "name": "Flail",
+        "level": 43
+      },
+      {
+        "name": "Coil",
+        "level": 48
+      },
+      {
+        "name": "Outrage",
         "level": 52
       },
       {
@@ -222806,10 +224245,11 @@
       },
       {
         "name": "Boomburst",
-        "level": 62
+        "level": 60
       }
     ],
     "tmLearnset": {
+      "Water Pulse": 352,
       "Calm Mind": 347,
       "Toxic": 92,
       "Sunny Day": 241,
@@ -222818,12 +224258,14 @@
       "Hyper Beam": 63,
       "Protect": 182,
       "Rain Dance": 240,
+      "Dazzling Gleam": 605,
       "Solar Beam": 76,
       "Thunderbolt": 85,
       "Thunder": 87,
       "Earthquake": 89,
       "Dig": 91,
       "Shadow Ball": 247,
+      "Shock Wave": 351,
       "Flamethrower": 53,
       "Sandstorm": 201,
       "Fire Blast": 126,
@@ -222833,16 +224275,18 @@
       "Thief": 168,
       "Roost": 355,
       "Endure": 203,
+      "Dragon Pulse": 406,
       "Giga Impact": 416,
       "Stone Edge": 444,
+      "Thunder Wave": 86,
       "Gyro Ball": 360,
       "Stealth Rock": 446,
-      "Psych Up": 244,
       "Rock Slide": 157,
       "Sleep Talk": 214,
-      "Bulldoze": 523,
       "Poison Jab": 398,
       "Substitute": 164,
+      "Strength": 70,
+      "Rock Smash": 249,
       "Wild Charge": 528,
       "Hyper Voice": 304,
       "Hurricane": 542
@@ -222863,10 +224307,10 @@
     "tutorLearnset": {},
     "baseStats": {
       "hp": 125,
-      "atk": 100,
-      "def": 80,
+      "atk": 110,
+      "def": 85,
       "spa": 85,
-      "spd": 75,
+      "spd": 80,
       "spe": 55
     },
     "dexNum": 982,

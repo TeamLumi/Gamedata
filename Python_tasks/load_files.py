@@ -7,9 +7,11 @@ from json_cache import JsonCache
 import constants
 repo_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 input_file_path = os.path.join(repo_file_path, constants.INPUT_NAME)
-tm_file_path = os.path.join(repo_file_path, "TMLearnset")
 resource_file_path = os.path.join(repo_file_path, "Python_tasks", "Resources")
 output_file_path = os.path.join(repo_file_path, "Python_tasks", constants.OUTPUT_NAME)
+
+# romfs/Data/ExtraData/MonData/TMLearnset
+tm_file_path = os.path.join(repo_file_path, "TMLearnset")
 
 # Create an instance of JsonCache
 json_cache = JsonCache()

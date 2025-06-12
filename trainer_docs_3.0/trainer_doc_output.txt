@@ -5408,7 +5408,7 @@ Serious
 Guts
 
 None
-Fire Fang
+Ice Fang
 Roar
 Volt Switch
 Crunch
@@ -5961,9 +5961,9 @@ Hardy
 Inner Focus
 
 None
-Uproar
 Zen Headbutt
 Magic Coat
+Twin Beam
 Crunch
 25/25/25/25/25/25
 0/0/0/0/0/0
@@ -8511,7 +8511,7 @@ None
 Hammer Arm
 Megahorn
 Earthquake
-Stone Edge
+Head Smash
 25/25/25/25/25/25
 0/0/0/0/0/0
 
@@ -9214,7 +9214,7 @@ Reckless
 None
 Crunch
 Rock Slide
-Poison Jab
+Double-Edge
 Hammer Arm
 25/25/25/25/25/25
 0/0/0/0/0/0
@@ -11160,10 +11160,10 @@ Serious
 Guts
 
 None
-Wild Charge
+Zing Zap
 Scary Face
 Thunder Wave
-Discharge
+Volt Tackle
 25/25/25/25/25/25
 0/0/0/0/0/0
 
@@ -13879,10 +13879,10 @@ Hardy
 Insomnia
 
 None
+Guard Swap
 Future Sight
 Zap Cannon
 Psyshock
-Psycho Boost
 25/25/25/25/25/25
 0/0/0/0/0/0
 
@@ -15184,10 +15184,10 @@ Docile
 Insomnia
 
 None
+Guard Swap
 Future Sight
 Zap Cannon
 Psyshock
-Psycho Boost
 25/25/25/25/25/25
 0/0/0/0/0/0
 
@@ -15306,10 +15306,10 @@ Serious
 Intimidate
 
 None
-Outrage
-Close Combat
 Play Rough
+Close Combat
 Heat Wave
+Flare Blitz
 25/25/25/25/25/25
 0/252/4/0/0/252
 
@@ -15338,10 +15338,10 @@ Docile
 Own Tempo
 
 None
+Thrash
 Trick Room
 Hyper Voice
 Close Combat
-Psycho Boost
 25/25/25/25/25/25
 0/0/0/0/0/0
 
@@ -16175,7 +16175,7 @@ Guts
 None
 Scary Face
 Thunder Wave
-Discharge
+Volt Tackle
 Sucker Punch
 25/25/25/25/25/25
 0/252/0/0/4/252

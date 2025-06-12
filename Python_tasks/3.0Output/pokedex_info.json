@@ -7465,6 +7465,7 @@
     "value": 404,
     "text": "Luxio",
     "type": "ELECTRIC",
+    "dualtype": "DARK",
     "evolve": [
       403,
       404,
@@ -14927,7 +14928,7 @@
     "generation": 8,
     "abilities": [
       "Overgrow",
-      "Overgrow",
+      "Soundproof",
       "Grassy Surge"
     ],
     "dexNum": 811,
@@ -14946,7 +14947,7 @@
     "generation": 8,
     "abilities": [
       "Overgrow",
-      "Overgrow",
+      "Soundproof",
       "Grassy Surge"
     ],
     "dexNum": 812,
@@ -14965,7 +14966,7 @@
     "generation": 8,
     "abilities": [
       "Blaze",
-      "Blaze",
+      "Quick Feet",
       "Libero"
     ],
     "dexNum": 813,
@@ -14984,7 +14985,7 @@
     "generation": 8,
     "abilities": [
       "Blaze",
-      "Blaze",
+      "Quick Feet",
       "Libero"
     ],
     "dexNum": 814,
@@ -15003,7 +15004,7 @@
     "generation": 8,
     "abilities": [
       "Blaze",
-      "Blaze",
+      "Quick Feet",
       "Libero"
     ],
     "dexNum": 815,
@@ -15022,7 +15023,7 @@
     "generation": 8,
     "abilities": [
       "Torrent",
-      "Torrent",
+      "Limber",
       "Sniper"
     ],
     "dexNum": 816,
@@ -15041,7 +15042,7 @@
     "generation": 8,
     "abilities": [
       "Torrent",
-      "Torrent",
+      "Limber",
       "Sniper"
     ],
     "dexNum": 817,
@@ -15060,7 +15061,7 @@
     "generation": 8,
     "abilities": [
       "Torrent",
-      "Torrent",
+      "Limber",
       "Sniper"
     ],
     "dexNum": 818,
@@ -15077,8 +15078,8 @@
     "generation": 8,
     "abilities": [
       "Cheek Pouch",
-      "Cheek Pouch",
-      "Gluttony"
+      "Gluttony",
+      "Truant"
     ],
     "dexNum": 819,
     "form": 0
@@ -15094,8 +15095,8 @@
     "generation": 8,
     "abilities": [
       "Cheek Pouch",
-      "Cheek Pouch",
-      "Gluttony"
+      "Gluttony",
+      "Truant"
     ],
     "dexNum": 820,
     "form": 0
@@ -15212,7 +15213,7 @@
     "abilities": [
       "Swarm",
       "Frisk",
-      "Telepathy"
+      "Filter"
     ],
     "dexNum": 826,
     "form": 0
@@ -15228,7 +15229,7 @@
     "generation": 8,
     "abilities": [
       "Run Away",
-      "Unburden",
+      "Opportunist",
       "Stakeout"
     ],
     "dexNum": 827,
@@ -15245,7 +15246,7 @@
     "generation": 8,
     "abilities": [
       "Run Away",
-      "Unburden",
+      "Opportunist",
       "Stakeout"
     ],
     "dexNum": 828,
@@ -15367,8 +15368,8 @@
     "generation": 8,
     "abilities": [
       "Ball Fetch",
-      "Ball Fetch",
-      "Rattled"
+      "Cute Charm",
+      "Competitive"
     ],
     "dexNum": 835,
     "form": 0
@@ -15383,7 +15384,7 @@
     ],
     "generation": 8,
     "abilities": [
-      "Strong Jaw",
+      "Ball Fetch",
       "Strong Jaw",
       "Competitive"
     ],
@@ -15683,15 +15684,16 @@
     "value": 852,
     "text": "Clobbopus",
     "type": "FIGHTING",
+    "dualtype": "WATER",
     "evolve": [
       852,
       853
     ],
     "generation": 8,
     "abilities": [
+      "Suction Cups",
       "Limber",
-      "Limber",
-      "Technician"
+      "Sticky Hold"
     ],
     "dexNum": 852,
     "form": 0
@@ -15700,15 +15702,16 @@
     "value": 853,
     "text": "Grapploct",
     "type": "FIGHTING",
+    "dualtype": "WATER",
     "evolve": [
       852,
       853
     ],
     "generation": 8,
     "abilities": [
+      "Suction Cups",
       "Limber",
-      "Limber",
-      "Technician"
+      "Sticky Hold"
     ],
     "dexNum": 853,
     "form": 0
@@ -15724,7 +15727,7 @@
     "generation": 8,
     "abilities": [
       "Weak Armor",
-      "Weak Armor",
+      "Hospitality",
       "Cursed Body"
     ],
     "dexNum": 854,
@@ -15741,7 +15744,7 @@
     "generation": 8,
     "abilities": [
       "Weak Armor",
-      "Weak Armor",
+      "Hospitality",
       "Cursed Body"
     ],
     "dexNum": 855,
@@ -15759,7 +15762,7 @@
     ],
     "generation": 8,
     "abilities": [
-      "Healer",
+      "Magician",
       "Anticipation",
       "Magic Bounce"
     ],
@@ -15778,7 +15781,7 @@
     ],
     "generation": 8,
     "abilities": [
-      "Healer",
+      "Magician",
       "Anticipation",
       "Magic Bounce"
     ],
@@ -15798,7 +15801,7 @@
     ],
     "generation": 8,
     "abilities": [
-      "Healer",
+      "Magician",
       "Anticipation",
       "Magic Bounce"
     ],
@@ -16142,7 +16145,7 @@
     "generation": 8,
     "abilities": [
       "Battle Armor",
-      "Battle Armor",
+      "Anticipation",
       "Defiant"
     ],
     "dexNum": 870,
@@ -16152,6 +16155,7 @@
     "value": 871,
     "text": "Pincurchin",
     "type": "ELECTRIC",
+    "dualtype": "WATER",
     "evolve": [
       871
     ],
@@ -16299,7 +16303,7 @@
     "generation": 8,
     "abilities": [
       "Sheer Force",
-      "Sheer Force",
+      "Pressure",
       "Heavy Metal"
     ],
     "dexNum": 879,
@@ -16367,7 +16371,7 @@
     "generation": 8,
     "abilities": [
       "Water Absorb",
-      "Ice Body",
+      "Marvel Scale",
       "Slush Rush"
     ],
     "dexNum": 883,
@@ -16555,7 +16559,7 @@
     "abilities": [
       "Leaf Guard",
       "Leaf Guard",
-      "Leaf Guard"
+      "Tough Claws"
     ],
     "dexNum": 893,
     "form": 0
@@ -18148,6 +18152,7 @@
     "value": 982,
     "text": "Dudunsparce",
     "type": "NORMAL",
+    "dualtype": "DRAGON",
     "evolve": [
       206,
       982,
@@ -18156,8 +18161,8 @@
     "generation": 8,
     "abilities": [
       "Serene Grace",
-      "Run Away",
-      "Rattled"
+      "Rattled",
+      "Run Away"
     ],
     "dexNum": 982,
     "form": 0
@@ -19301,7 +19306,7 @@
     "abilities": [
       "Static",
       "Lightning Rod",
-      "Galvanize"
+      "Cute Charm"
     ],
     "dexNum": 25,
     "form": 1
@@ -19338,7 +19343,7 @@
     "abilities": [
       "Static",
       "Lightning Rod",
-      "Galvanize"
+      "Punk Rock"
     ],
     "dexNum": 25,
     "form": 2
@@ -19375,7 +19380,7 @@
     "abilities": [
       "Static",
       "Lightning Rod",
-      "Galvanize"
+      "Serene Grace"
     ],
     "dexNum": 25,
     "form": 3
@@ -19412,7 +19417,7 @@
     "abilities": [
       "Static",
       "Lightning Rod",
-      "Galvanize"
+      "Dazzling"
     ],
     "dexNum": 25,
     "form": 4
@@ -19449,7 +19454,7 @@
     "abilities": [
       "Static",
       "Lightning Rod",
-      "Galvanize"
+      "Trace"
     ],
     "dexNum": 25,
     "form": 5
@@ -19486,7 +19491,7 @@
     "abilities": [
       "Static",
       "Lightning Rod",
-      "Galvanize"
+      "Moxie"
     ],
     "dexNum": 25,
     "form": 6
@@ -27569,7 +27574,7 @@
     "value": 1382,
     "text": "Dawn Wings Necrozma",
     "type": "PSYCHIC",
-    "dualtype": "GHOST",
+    "dualtype": "FAIRY",
     "evolve": [
       800,
       1381,
@@ -27733,7 +27738,7 @@
     "abilities": [
       "Swarm",
       "Frisk",
-      "Telepathy"
+      "Filter"
     ],
     "dexNum": 826,
     "form": 1
@@ -27970,7 +27975,7 @@
     "generation": 8,
     "abilities": [
       "Weak Armor",
-      "Weak Armor",
+      "Hospitality",
       "Cursed Body"
     ],
     "dexNum": 854,
@@ -27987,7 +27992,7 @@
     "generation": 8,
     "abilities": [
       "Weak Armor",
-      "Weak Armor",
+      "Hospitality",
       "Cursed Body"
     ],
     "dexNum": 855,
@@ -28006,7 +28011,7 @@
     ],
     "generation": 8,
     "abilities": [
-      "Healer",
+      "Magician",
       "Anticipation",
       "Magic Bounce"
     ],
@@ -33138,7 +33143,7 @@
     "generation": 8,
     "abilities": [
       "Sheer Force",
-      "Sheer Force",
+      "Pressure",
       "Heavy Metal"
     ],
     "dexNum": 879,
@@ -33292,7 +33297,7 @@
     "abilities": [
       "Leaf Guard",
       "Leaf Guard",
-      "Leaf Guard"
+      "Tough Claws"
     ],
     "dexNum": 893,
     "form": 1
@@ -33405,9 +33410,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Overcoat",
-      "Overcoat",
-      "Overcoat"
+      "Natural Cure",
+      "Natural Cure",
+      "Natural Cure"
     ],
     "dexNum": 905,
     "form": 1
@@ -33822,6 +33827,7 @@
     "value": 1507,
     "text": "Three-Segment Form Dudunsparce",
     "type": "NORMAL",
+    "dualtype": "DRAGON",
     "evolve": [
       206,
       1507
@@ -33829,8 +33835,8 @@
     "generation": 8,
     "abilities": [
       "Serene Grace",
-      "Run Away",
-      "Rattled"
+      "Rattled",
+      "Run Away"
     ],
     "dexNum": 982,
     "form": 1
