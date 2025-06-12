@@ -2381,7 +2381,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Oblivious",
+          "ability": "Simple",
           "gender": "FEMALE",
           "id": 322,
           "item": null,
@@ -4589,7 +4589,7 @@
     {
       "team": [
         {
-          "ability": "Swarm",
+          "ability": "Merciless",
           "gender": "MALE",
           "id": 168,
           "item": null,
@@ -4845,7 +4845,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Hyper Cutter",
+          "ability": "Guts",
           "gender": "FEMALE",
           "id": 127,
           "item": null,
@@ -6947,7 +6947,7 @@
     {
       "team": [
         {
-          "ability": "Illuminate",
+          "ability": "Swarm",
           "gender": "NEUTRAL",
           "id": 313,
           "item": null,
@@ -7495,7 +7495,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Run Away",
+          "ability": "Hustle",
           "gender": "FEMALE",
           "id": 20,
           "item": null,
@@ -8207,7 +8207,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Insomnia",
+          "ability": "Cursed Body",
           "gender": "FEMALE",
           "id": 353,
           "item": null,
@@ -8269,7 +8269,7 @@
     {
       "team": [
         {
-          "ability": "Insomnia",
+          "ability": "Cursed Body",
           "gender": "NEUTRAL",
           "id": 353,
           "item": null,
@@ -8321,7 +8321,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Insomnia",
+          "ability": "Cursed Body",
           "gender": "MALE",
           "id": 353,
           "item": null,
@@ -8409,7 +8409,7 @@
           "evspeed": 252
         },
         {
-          "ability": "Magic Guard",
+          "ability": "Magic Bounce",
           "gender": "NEUTRAL",
           "id": 302,
           "item": null,
@@ -9467,7 +9467,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Damp",
+          "ability": "Hydration",
           "gender": "FEMALE",
           "id": 55,
           "item": null,
@@ -10457,7 +10457,7 @@
     {
       "team": [
         {
-          "ability": "Illuminate",
+          "ability": "Swarm",
           "gender": "MALE",
           "id": 313,
           "item": null,
@@ -10841,7 +10841,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Water Veil",
+          "ability": "Oblivious",
           "gender": "FEMALE",
           "id": 320,
           "item": "Sitrus Berry",
@@ -11853,7 +11853,7 @@
           "evspeed": 8
         },
         {
-          "ability": "Hyper Cutter",
+          "ability": "Guts",
           "gender": "NEUTRAL",
           "id": 127,
           "item": null,
@@ -11967,7 +11967,7 @@
           "evspeed": 252
         },
         {
-          "ability": "Illuminate",
+          "ability": "Natural Cure",
           "gender": "NEUTRAL",
           "id": 121,
           "item": null,
@@ -12081,7 +12081,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Intimidate",
+          "ability": "Strong Jaw",
           "gender": "NEUTRAL",
           "id": 160,
           "item": null,
@@ -12557,7 +12557,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Keen Eye",
+          "ability": "No Guard",
           "gender": "NEUTRAL",
           "id": 18,
           "item": null,
@@ -13045,7 +13045,7 @@
     {
       "team": [
         {
-          "ability": "Own Tempo",
+          "ability": "Oblivious",
           "gender": "MALE",
           "id": 108,
           "item": null,
@@ -13817,7 +13817,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Shield Dust",
+          "ability": "Wonder Skin",
           "gender": "NEUTRAL",
           "id": 49,
           "item": null,
@@ -13993,7 +13993,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Swarm",
+          "ability": "Merciless",
           "gender": "MALE",
           "id": 168,
           "item": null,
@@ -14129,7 +14129,7 @@
     {
       "team": [
         {
-          "ability": "Hyper Cutter",
+          "ability": "Guts",
           "gender": "NEUTRAL",
           "id": 127,
           "item": null,
@@ -15283,7 +15283,7 @@
     {
       "team": [
         {
-          "ability": "Damp",
+          "ability": "Hydration",
           "gender": "NEUTRAL",
           "id": 55,
           "item": null,
@@ -15567,7 +15567,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Hustle",
+          "ability": "Sniper",
           "gender": "NEUTRAL",
           "id": 223,
           "item": null,
@@ -15719,7 +15719,7 @@
           "evspeed": 8
         },
         {
-          "ability": "Clear Body",
+          "ability": "Liquid Ooze",
           "gender": "FEMALE",
           "id": 73,
           "item": null,
@@ -15807,7 +15807,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Intimidate",
+          "ability": "Strong Jaw",
           "gender": "NEUTRAL",
           "id": 159,
           "item": null,
@@ -15833,7 +15833,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Damp",
+          "ability": "Hydration",
           "gender": "MALE",
           "id": 55,
           "item": null,
@@ -16375,7 +16375,7 @@
     {
       "team": [
         {
-          "ability": "Suction Cups",
+          "ability": "Sniper",
           "gender": "NEUTRAL",
           "id": 224,
           "item": null,
@@ -16401,7 +16401,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Clear Body",
+          "ability": "Liquid Ooze",
           "gender": "FEMALE",
           "id": 73,
           "item": null,
@@ -16525,7 +16525,7 @@
     {
       "team": [
         {
-          "ability": "Water Veil",
+          "ability": "Oblivious",
           "gender": "NEUTRAL",
           "id": 321,
           "item": null,
@@ -16799,7 +16799,7 @@
     {
       "team": [
         {
-          "ability": "Illuminate",
+          "ability": "Natural Cure",
           "gender": "FEMALE",
           "id": 121,
           "item": null,
@@ -17101,7 +17101,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Pressure",
+          "ability": "Magic Bounce",
           "gender": "FEMALE",
           "id": 359,
           "item": null,
@@ -17705,7 +17705,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Rock Head",
+          "ability": "Sturdy",
           "gender": "NEUTRAL",
           "id": 208,
           "item": null,
@@ -18363,7 +18363,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Rock Head",
+          "ability": "Sturdy",
           "gender": "NEUTRAL",
           "id": 208,
           "item": null,
@@ -18675,7 +18675,7 @@
     {
       "team": [
         {
-          "ability": "Magma Armor",
+          "ability": "Solid Rock",
           "gender": "FEMALE",
           "id": 323,
           "item": null,
@@ -19153,7 +19153,7 @@
     {
       "team": [
         {
-          "ability": "Rock Head",
+          "ability": "Sturdy",
           "gender": "MALE",
           "id": 208,
           "item": null,
@@ -19829,7 +19829,7 @@
     {
       "team": [
         {
-          "ability": "Damp",
+          "ability": "Hydration",
           "gender": "MALE",
           "id": 55,
           "item": null,
@@ -20341,7 +20341,7 @@
           "evspeed": 252
         },
         {
-          "ability": "Overgrow",
+          "ability": "Chlorophyll",
           "gender": "FEMALE",
           "id": 3,
           "item": null,
@@ -21607,7 +21607,7 @@
     {
       "team": [
         {
-          "ability": "Suction Cups",
+          "ability": "Sniper",
           "gender": "NEUTRAL",
           "id": 224,
           "item": null,
@@ -22083,7 +22083,7 @@
     {
       "team": [
         {
-          "ability": "Hustle",
+          "ability": "Sniper",
           "gender": "FEMALE",
           "id": 223,
           "item": null,
@@ -22109,7 +22109,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Hustle",
+          "ability": "Sniper",
           "gender": "MALE",
           "id": 223,
           "item": null,
@@ -23101,7 +23101,7 @@
     {
       "team": [
         {
-          "ability": "Clear Body",
+          "ability": "Liquid Ooze",
           "gender": "FEMALE",
           "id": 73,
           "item": null,
@@ -23251,7 +23251,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Suction Cups",
+          "ability": "Sniper",
           "gender": "NEUTRAL",
           "id": 224,
           "item": null,
@@ -23277,7 +23277,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Intimidate",
+          "ability": "Strong Jaw",
           "gender": "FEMALE",
           "id": 160,
           "item": null,
@@ -23649,7 +23649,7 @@
     {
       "team": [
         {
-          "ability": "Water Veil",
+          "ability": "Oblivious",
           "gender": "FEMALE",
           "id": 321,
           "item": null,
@@ -23773,7 +23773,7 @@
     {
       "team": [
         {
-          "ability": "Damp",
+          "ability": "Hydration",
           "gender": "MALE",
           "id": 55,
           "item": null,
@@ -23825,7 +23825,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Illuminate",
+          "ability": "Natural Cure",
           "gender": "FEMALE",
           "id": 121,
           "item": null,
@@ -24449,7 +24449,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Keen Eye",
+          "ability": "No Guard",
           "gender": "NEUTRAL",
           "id": 18,
           "item": null,
@@ -24907,7 +24907,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Illuminate",
+          "ability": "Natural Cure",
           "gender": "NEUTRAL",
           "id": 121,
           "item": null,
@@ -24995,7 +24995,7 @@
     {
       "team": [
         {
-          "ability": "Own Tempo",
+          "ability": "Oblivious",
           "gender": "FEMALE",
           "id": 463,
           "item": null,
@@ -25073,7 +25073,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Hyper Cutter",
+          "ability": "Guts",
           "gender": "MALE",
           "id": 127,
           "item": null,
@@ -25161,7 +25161,7 @@
           "evspeed": 252
         },
         {
-          "ability": "Overgrow",
+          "ability": "Chlorophyll",
           "gender": "MALE",
           "id": 3,
           "item": null,
@@ -25567,7 +25567,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Pressure",
+          "ability": "Magic Bounce",
           "gender": "MALE",
           "id": 359,
           "item": null,
@@ -26283,7 +26283,7 @@
     {
       "team": [
         {
-          "ability": "Insomnia",
+          "ability": "Cursed Body",
           "gender": "MALE",
           "id": 354,
           "item": null,
@@ -26397,7 +26397,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Magic Guard",
+          "ability": "Magic Bounce",
           "gender": "NEUTRAL",
           "id": 302,
           "item": null,
@@ -27839,7 +27839,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Own Tempo",
+          "ability": "Oblivious",
           "gender": "FEMALE",
           "id": 463,
           "item": null,
@@ -27955,7 +27955,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Keen Eye",
+          "ability": "No Guard",
           "gender": "MALE",
           "id": 18,
           "item": null,
@@ -28027,7 +28027,7 @@
     {
       "team": [
         {
-          "ability": "Illuminate",
+          "ability": "Natural Cure",
           "gender": "MALE",
           "id": 121,
           "item": null,
@@ -28141,7 +28141,7 @@
     {
       "team": [
         {
-          "ability": "Hyper Cutter",
+          "ability": "Guts",
           "gender": "FEMALE",
           "id": 127,
           "item": null,
@@ -28457,7 +28457,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Damp",
+          "ability": "Hydration",
           "gender": "FEMALE",
           "id": 55,
           "item": null,
@@ -28961,7 +28961,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Water Veil",
+          "ability": "Oblivious",
           "gender": "FEMALE",
           "id": 321,
           "item": null,
@@ -29087,7 +29087,7 @@
           "evspeed": 252
         },
         {
-          "ability": "Pressure",
+          "ability": "Magic Bounce",
           "gender": "FEMALE",
           "id": 359,
           "item": null,
@@ -30205,7 +30205,7 @@
     {
       "team": [
         {
-          "ability": "Suction Cups",
+          "ability": "Sniper",
           "gender": "NEUTRAL",
           "id": 224,
           "item": null,
@@ -31011,7 +31011,7 @@
           "evspeed": 252
         },
         {
-          "ability": "Insomnia",
+          "ability": "Cursed Body",
           "gender": "NEUTRAL",
           "id": 354,
           "item": null,
@@ -31363,7 +31363,7 @@
           "evspeed": 252
         },
         {
-          "ability": "Rock Head",
+          "ability": "Sturdy",
           "gender": "MALE",
           "id": 208,
           "item": null,
@@ -31513,7 +31513,7 @@
     {
       "team": [
         {
-          "ability": "Cute Charm",
+          "ability": "Magic Guard",
           "gender": "MALE",
           "id": 40,
           "item": null,
@@ -32041,7 +32041,7 @@
     {
       "team": [
         {
-          "ability": "Run Away",
+          "ability": "Hustle",
           "gender": "FEMALE",
           "id": 20,
           "item": null,

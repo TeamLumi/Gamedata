@@ -22,9 +22,9 @@
             "ivspatk": 25,
             "ivspdef": 25,
             "ivspeed": 25,
-            "evhp": 4,
-            "evatk": 252,
-            "evdef": 252,
+            "evhp": 0,
+            "evatk": 20,
+            "evdef": 20,
             "evspatk": 0,
             "evspdef": 0,
             "evspeed": 0
@@ -49,10 +49,10 @@
             "ivspdef": 25,
             "ivspeed": 25,
             "evhp": 0,
-            "evatk": 4,
-            "evdef": 252,
+            "evatk": 0,
+            "evdef": 20,
             "evspatk": 0,
-            "evspdef": 252,
+            "evspdef": 20,
             "evspeed": 0
           },
           {
@@ -74,12 +74,12 @@
             "ivspatk": 25,
             "ivspdef": 25,
             "ivspeed": 25,
-            "evhp": 4,
-            "evatk": 252,
+            "evhp": 0,
+            "evatk": 20,
             "evdef": 0,
             "evspatk": 0,
             "evspdef": 0,
-            "evspeed": 252
+            "evspeed": 20
           },
           {
             "ability": "Intimidate",
@@ -100,11 +100,11 @@
             "ivspatk": 25,
             "ivspdef": 25,
             "ivspeed": 25,
-            "evhp": 252,
+            "evhp": 20,
             "evatk": 0,
-            "evdef": 252,
+            "evdef": 20,
             "evspatk": 0,
-            "evspdef": 4,
+            "evspdef": 0,
             "evspeed": 0
           },
           {
@@ -126,11 +126,11 @@
             "ivspatk": 25,
             "ivspdef": 25,
             "ivspeed": 25,
-            "evhp": 252,
+            "evhp": 20,
             "evatk": 0,
-            "evdef": 252,
+            "evdef": 20,
             "evspatk": 0,
-            "evspdef": 4,
+            "evspdef": 0,
             "evspeed": 0
           },
           {
@@ -153,11 +153,11 @@
             "ivspdef": 25,
             "ivspeed": 25,
             "evhp": 0,
-            "evatk": 252,
-            "evdef": 4,
+            "evatk": 20,
+            "evdef": 0,
             "evspatk": 0,
             "evspdef": 0,
-            "evspeed": 252
+            "evspeed": 20
           }
         ],
         "game": "Roark (Oreburgh City) Team 1",
@@ -187,11 +187,11 @@
             "ivspatk": 25,
             "ivspdef": 25,
             "ivspeed": 25,
-            "evhp": 4,
-            "evatk": 252,
+            "evhp": 0,
+            "evatk": 40,
             "evdef": 0,
             "evspatk": 0,
-            "evspdef": 252,
+            "evspdef": 0,
             "evspeed": 0
           },
           {
@@ -214,11 +214,11 @@
             "ivspdef": 25,
             "ivspeed": 25,
             "evhp": 0,
-            "evatk": 252,
+            "evatk": 36,
             "evdef": 0,
             "evspatk": 0,
-            "evspdef": 252,
-            "evspeed": 4
+            "evspdef": 4,
+            "evspeed": 0
           },
           {
             "ability": "Levitate",
@@ -241,9 +241,9 @@
             "ivspeed": 25,
             "evhp": 0,
             "evatk": 4,
-            "evdef": 252,
+            "evdef": 36,
             "evspatk": 0,
-            "evspdef": 252,
+            "evspdef": 0,
             "evspeed": 0
           },
           {
@@ -265,11 +265,11 @@
             "ivspatk": 25,
             "ivspdef": 25,
             "ivspeed": 25,
-            "evhp": 252,
+            "evhp": 20,
             "evatk": 0,
             "evdef": 0,
-            "evspatk": 252,
-            "evspdef": 4,
+            "evspatk": 20,
+            "evspdef": 0,
             "evspeed": 0
           },
           {
@@ -292,11 +292,11 @@
             "ivspdef": 25,
             "ivspeed": 25,
             "evhp": 0,
-            "evatk": 252,
+            "evatk": 20,
             "evdef": 0,
             "evspatk": 0,
-            "evspdef": 244,
-            "evspeed": 12
+            "evspdef": 16,
+            "evspeed": 4
           },
           {
             "ability": "Rock Head",
@@ -318,11 +318,11 @@
             "ivspdef": 25,
             "ivspeed": 25,
             "evhp": 0,
-            "evatk": 252,
-            "evdef": 4,
+            "evatk": 20,
+            "evdef": 0,
             "evspatk": 0,
             "evspdef": 0,
-            "evspeed": 252
+            "evspeed": 20
           }
         ],
         "game": "Roark (Oreburgh City) Team 2",
@@ -352,11 +352,11 @@
             "ivspatk": 25,
             "ivspdef": 25,
             "ivspeed": 25,
-            "evhp": 12,
-            "evatk": 20,
+            "evhp": 0,
+            "evatk": 0,
             "evdef": 0,
-            "evspatk": 236,
-            "evspdef": 240,
+            "evspatk": 20,
+            "evspdef": 20,
             "evspeed": 0
           },
           {
@@ -379,11 +379,11 @@
             "ivspdef": 25,
             "ivspeed": 25,
             "evhp": 0,
-            "evatk": 252,
+            "evatk": 20,
             "evdef": 0,
             "evspatk": 0,
-            "evspdef": 4,
-            "evspeed": 252
+            "evspdef": 0,
+            "evspeed": 20
           },
           {
             "ability": "Sturdy",
@@ -406,9 +406,9 @@
             "ivspeed": 25,
             "evhp": 0,
             "evatk": 0,
-            "evdef": 252,
+            "evdef": 36,
             "evspatk": 0,
-            "evspdef": 252,
+            "evspdef": 0,
             "evspeed": 4
           },
           {
@@ -430,9 +430,9 @@
             "ivspatk": 25,
             "ivspdef": 25,
             "ivspeed": 25,
-            "evhp": 252,
-            "evatk": 252,
-            "evdef": 4,
+            "evhp": 4,
+            "evatk": 36,
+            "evdef": 0,
             "evspatk": 0,
             "evspdef": 0,
             "evspeed": 0
@@ -458,10 +458,10 @@
             "ivspeed": 25,
             "evhp": 0,
             "evatk": 0,
-            "evdef": 4,
-            "evspatk": 252,
+            "evdef": 0,
+            "evspatk": 40,
             "evspdef": 0,
-            "evspeed": 252
+            "evspeed": 0
           },
           {
             "ability": "Rock Head",
@@ -483,11 +483,11 @@
             "ivspdef": 25,
             "ivspeed": 25,
             "evhp": 0,
-            "evatk": 252,
-            "evdef": 4,
+            "evatk": 20,
+            "evdef": 0,
             "evspatk": 0,
             "evspdef": 0,
-            "evspeed": 252
+            "evspeed": 20
           }
         ],
         "game": "Roark (Oreburgh City) Team 3",
@@ -518,11 +518,11 @@
             "ivspdef": 25,
             "ivspeed": 25,
             "evhp": 0,
-            "evatk": 252,
-            "evdef": 4,
+            "evatk": 20,
+            "evdef": 0,
             "evspatk": 0,
             "evspdef": 0,
-            "evspeed": 252
+            "evspeed": 20
           },
           {
             "ability": "Levitate",
@@ -544,9 +544,9 @@
             "ivspdef": 25,
             "ivspeed": 25,
             "evhp": 0,
-            "evatk": 252,
-            "evdef": 252,
-            "evspatk": 4,
+            "evatk": 20,
+            "evdef": 20,
+            "evspatk": 0,
             "evspdef": 0,
             "evspeed": 0
           },
@@ -569,11 +569,11 @@
             "ivspatk": 25,
             "ivspdef": 25,
             "ivspeed": 25,
-            "evhp": 4,
-            "evatk": 252,
+            "evhp": 0,
+            "evatk": 20,
             "evdef": 0,
             "evspatk": 0,
-            "evspdef": 252,
+            "evspdef": 20,
             "evspeed": 0
           },
           {
@@ -597,10 +597,10 @@
             "ivspeed": 25,
             "evhp": 0,
             "evatk": 0,
-            "evdef": 252,
+            "evdef": 20,
             "evspatk": 0,
-            "evspdef": 252,
-            "evspeed": 4
+            "evspdef": 20,
+            "evspeed": 0
           },
           {
             "ability": "Sturdy",
@@ -621,11 +621,11 @@
             "ivspatk": 25,
             "ivspdef": 25,
             "ivspeed": 25,
-            "evhp": 4,
-            "evatk": 252,
+            "evhp": 0,
+            "evatk": 20,
             "evdef": 0,
             "evspatk": 0,
-            "evspdef": 252,
+            "evspdef": 20,
             "evspeed": 0
           },
           {
@@ -647,11 +647,11 @@
             "ivspatk": 25,
             "ivspdef": 25,
             "ivspeed": 25,
-            "evhp": 4,
-            "evatk": 252,
+            "evhp": 0,
+            "evatk": 20,
             "evdef": 0,
             "evspatk": 0,
-            "evspdef": 252,
+            "evspdef": 20,
             "evspeed": 0
           }
         ],
@@ -687,12 +687,12 @@
             "evhp": 0,
             "evatk": 0,
             "evdef": 0,
-            "evspatk": 252,
-            "evspdef": 12,
-            "evspeed": 244
+            "evspatk": 74,
+            "evspdef": 4,
+            "evspeed": 70
           },
           {
-            "ability": "Oblivious",
+            "ability": "Effect Spore",
             "gender": "FEMALE",
             "id": 47,
             "item": "Coba Berry",
@@ -710,11 +710,11 @@
             "ivspatk": 25,
             "ivspdef": 25,
             "ivspeed": 25,
-            "evhp": 228,
-            "evatk": 28,
+            "evhp": 62,
+            "evatk": 12,
             "evdef": 4,
             "evspatk": 0,
-            "evspdef": 244,
+            "evspdef": 66,
             "evspeed": 4
           },
           {
@@ -737,11 +737,11 @@
             "ivspdef": 25,
             "ivspeed": 25,
             "evhp": 0,
-            "evatk": 252,
+            "evatk": 74,
             "evdef": 0,
             "evspatk": 0,
-            "evspdef": 12,
-            "evspeed": 244
+            "evspdef": 4,
+            "evspeed": 70
           },
           {
             "ability": "Chlorophyll",
@@ -762,11 +762,11 @@
             "ivspatk": 25,
             "ivspdef": 25,
             "ivspeed": 25,
-            "evhp": 236,
+            "evhp": 70,
             "evatk": 0,
             "evdef": 0,
-            "evspatk": 20,
-            "evspdef": 244,
+            "evspatk": 4,
+            "evspdef": 74,
             "evspeed": 0
           },
           {
@@ -788,12 +788,12 @@
             "ivspatk": 24,
             "ivspdef": 24,
             "ivspeed": 25,
-            "evhp": 248,
+            "evhp": 8,
             "evatk": 0,
             "evdef": 0,
-            "evspatk": 248,
+            "evspatk": 70,
             "evspdef": 0,
-            "evspeed": 12
+            "evspeed": 70
           },
           {
             "ability": "Technician",
@@ -815,11 +815,11 @@
             "ivspdef": 25,
             "ivspeed": 25,
             "evhp": 0,
-            "evatk": 8,
+            "evatk": 4,
             "evdef": 0,
-            "evspatk": 248,
+            "evspatk": 70,
             "evspdef": 0,
-            "evspeed": 252
+            "evspeed": 74
           }
         ],
         "game": "Gardenia (Eterna City) Team 1",
@@ -849,10 +849,10 @@
             "ivspatk": 25,
             "ivspdef": 25,
             "ivspeed": 25,
-            "evhp": 244,
+            "evhp": 70,
             "evatk": 0,
-            "evdef": 244,
-            "evspatk": 20,
+            "evdef": 70,
+            "evspatk": 8,
             "evspdef": 0,
             "evspeed": 0
           },
@@ -875,10 +875,10 @@
             "ivspatk": 25,
             "ivspdef": 25,
             "ivspeed": 25,
-            "evhp": 252,
-            "evatk": 204,
+            "evhp": 74,
+            "evatk": 66,
             "evdef": 0,
-            "evspatk": 52,
+            "evspatk": 12,
             "evspdef": 0,
             "evspeed": 0
           },
@@ -901,11 +901,11 @@
             "ivspatk": 25,
             "ivspdef": 25,
             "ivspeed": 25,
-            "evhp": 252,
-            "evatk": 204,
+            "evhp": 70,
+            "evatk": 62,
             "evdef": 0,
             "evspatk": 0,
-            "evspdef": 48,
+            "evspdef": 12,
             "evspeed": 4
           },
           {
@@ -927,12 +927,12 @@
             "ivspatk": 25,
             "ivspdef": 25,
             "ivspeed": 25,
-            "evhp": 244,
-            "evatk": 4,
+            "evhp": 4,
+            "evatk": 0,
             "evdef": 0,
-            "evspatk": 0,
+            "evspatk": 70,
             "evspdef": 0,
-            "evspeed": 252
+            "evspeed": 74
           },
           {
             "ability": "Chlorophyll",
@@ -954,11 +954,11 @@
             "ivspdef": 25,
             "ivspeed": 25,
             "evhp": 0,
-            "evatk": 244,
+            "evatk": 70,
             "evdef": 0,
             "evspatk": 0,
-            "evspdef": 12,
-            "evspeed": 252
+            "evspdef": 4,
+            "evspeed": 74
           },
           {
             "ability": "Technician",
@@ -982,9 +982,9 @@
             "evhp": 0,
             "evatk": 4,
             "evdef": 0,
-            "evspatk": 248,
+            "evspatk": 70,
             "evspdef": 4,
-            "evspeed": 252
+            "evspeed": 70
           }
         ],
         "game": "Gardenia (Eterna City) Team 2",
@@ -1014,11 +1014,11 @@
             "ivspatk": 25,
             "ivspdef": 25,
             "ivspeed": 25,
-            "evhp": 244,
-            "evatk": 12,
+            "evhp": 70,
+            "evatk": 4,
             "evdef": 0,
             "evspatk": 0,
-            "evspdef": 252,
+            "evspdef": 74,
             "evspeed": 0
           },
           {
@@ -1040,12 +1040,12 @@
             "ivspatk": 25,
             "ivspdef": 25,
             "ivspeed": 25,
-            "evhp": 228,
-            "evatk": 20,
+            "evhp": 66,
+            "evatk": 8,
             "evdef": 0,
             "evspatk": 0,
-            "evspdef": 16,
-            "evspeed": 244
+            "evspdef": 4,
+            "evspeed": 70
           },
           {
             "ability": "Regenerator",
@@ -1066,9 +1066,9 @@
             "ivspatk": 25,
             "ivspdef": 25,
             "ivspeed": 25,
-            "evhp": 252,
-            "evatk": 12,
-            "evdef": 244,
+            "evhp": 74,
+            "evatk": 4,
+            "evdef": 70,
             "evspatk": 0,
             "evspdef": 0,
             "evspeed": 0
@@ -1092,11 +1092,11 @@
             "ivspatk": 25,
             "ivspdef": 25,
             "ivspeed": 25,
-            "evhp": 244,
-            "evatk": 244,
+            "evhp": 70,
+            "evatk": 70,
             "evdef": 0,
             "evspatk": 0,
-            "evspdef": 20,
+            "evspdef": 8,
             "evspeed": 0
           },
           {
@@ -1121,9 +1121,9 @@
             "evhp": 4,
             "evatk": 4,
             "evdef": 0,
-            "evspatk": 244,
+            "evspatk": 70,
             "evspdef": 0,
-            "evspeed": 244
+            "evspeed": 70
           },
           {
             "ability": "Technician",
@@ -1147,9 +1147,9 @@
             "evhp": 0,
             "evatk": 0,
             "evdef": 0,
-            "evspatk": 248,
+            "evspatk": 74,
             "evspdef": 0,
-            "evspeed": 252
+            "evspeed": 74
           }
         ],
         "game": "Gardenia (Eterna City) Team 3",
@@ -1179,12 +1179,12 @@
             "ivspatk": 25,
             "ivspdef": 25,
             "ivspeed": 25,
-            "evhp": 244,
+            "evhp": 70,
             "evatk": 0,
-            "evdef": 12,
+            "evdef": 4,
             "evspatk": 0,
             "evspdef": 0,
-            "evspeed": 252
+            "evspeed": 74
           },
           {
             "ability": "Serene Grace",
@@ -1205,11 +1205,11 @@
             "ivspatk": 25,
             "ivspdef": 25,
             "ivspeed": 25,
-            "evhp": 228,
+            "evhp": 62,
             "evatk": 0,
             "evdef": 0,
-            "evspatk": 28,
-            "evspdef": 244,
+            "evspatk": 12,
+            "evspdef": 70,
             "evspeed": 4
           },
           {
@@ -1232,11 +1232,11 @@
             "ivspdef": 25,
             "ivspeed": 25,
             "evhp": 0,
-            "evatk": 252,
+            "evatk": 74,
             "evdef": 0,
-            "evspatk": 12,
+            "evspatk": 4,
             "evspdef": 0,
-            "evspeed": 240
+            "evspeed": 70
           },
           {
             "ability": "Battle Armor",
@@ -1260,9 +1260,9 @@
             "evhp": 4,
             "evatk": 0,
             "evdef": 0,
-            "evspatk": 252,
+            "evspatk": 74,
             "evspdef": 0,
-            "evspeed": 244
+            "evspeed": 70
           },
           {
             "ability": "Chlorophyll",
@@ -1283,12 +1283,12 @@
             "ivspatk": 25,
             "ivspdef": 25,
             "ivspeed": 25,
-            "evhp": 244,
-            "evatk": 244,
+            "evhp": 0,
+            "evatk": 70,
             "evdef": 0,
-            "evspatk": 20,
+            "evspatk": 8,
             "evspdef": 0,
-            "evspeed": 0
+            "evspeed": 70
           },
           {
             "ability": "Harvest",
@@ -1309,9 +1309,9 @@
             "ivspatk": 25,
             "ivspdef": 25,
             "ivspeed": 25,
-            "evhp": 252,
+            "evhp": 74,
             "evatk": 4,
-            "evdef": 252,
+            "evdef": 70,
             "evspatk": 0,
             "evspdef": 0,
             "evspeed": 0
@@ -1346,9 +1346,9 @@
             "ivspatk": 25,
             "ivspdef": 25,
             "ivspeed": 25,
-            "evhp": 252,
+            "evhp": 164,
             "evatk": 0,
-            "evdef": 252,
+            "evdef": 160,
             "evspatk": 0,
             "evspdef": 4,
             "evspeed": 0
@@ -1365,7 +1365,7 @@
               94,
               412
             ],
-            "nature": "Hasty",
+            "nature": "Timid",
             "ivatk": 0,
             "ivdef": 25,
             "ivhp": 25,
@@ -1375,9 +1375,9 @@
             "evhp": 0,
             "evatk": 0,
             "evdef": 0,
-            "evspatk": 252,
+            "evspatk": 164,
             "evspdef": 4,
-            "evspeed": 248
+            "evspeed": 160
           },
           {
             "ability": "Prankster",
@@ -1398,11 +1398,11 @@
             "ivspatk": 25,
             "ivspdef": 25,
             "ivspeed": 25,
-            "evhp": 252,
-            "evatk": 244,
+            "evhp": 164,
+            "evatk": 156,
             "evdef": 0,
             "evspatk": 0,
-            "evspdef": 12,
+            "evspdef": 8,
             "evspeed": 0
           },
           {
@@ -1427,9 +1427,9 @@
             "evhp": 4,
             "evatk": 0,
             "evdef": 0,
-            "evspatk": 244,
-            "evspdef": 12,
-            "evspeed": 248
+            "evspatk": 156,
+            "evspdef": 8,
+            "evspeed": 160
           },
           {
             "ability": "Flare Boost",
@@ -1450,12 +1450,12 @@
             "ivspatk": 25,
             "ivspdef": 25,
             "ivspeed": 25,
-            "evhp": 12,
+            "evhp": 8,
             "evatk": 0,
             "evdef": 0,
-            "evspatk": 248,
+            "evspatk": 160,
             "evspdef": 4,
-            "evspeed": 244
+            "evspeed": 156
           },
           {
             "ability": "Levitate",
@@ -1479,9 +1479,9 @@
             "evhp": 4,
             "evatk": 0,
             "evdef": 0,
-            "evspatk": 252,
+            "evspatk": 164,
             "evspdef": 0,
-            "evspeed": 252
+            "evspeed": 160
           }
         ],
         "game": "Fantina (Hearthome City) Team 1",
@@ -1511,11 +1511,11 @@
             "ivspatk": 25,
             "ivspdef": 25,
             "ivspeed": 25,
-            "evhp": 252,
+            "evhp": 164,
             "evatk": 4,
             "evdef": 0,
             "evspatk": 0,
-            "evspdef": 252,
+            "evspdef": 160,
             "evspeed": 0
           },
           {
@@ -1537,9 +1537,9 @@
             "ivspatk": 25,
             "ivspdef": 25,
             "ivspeed": 25,
-            "evhp": 252,
+            "evhp": 164,
             "evatk": 0,
-            "evdef": 252,
+            "evdef": 160,
             "evspatk": 0,
             "evspdef": 4,
             "evspeed": 0
@@ -1556,7 +1556,7 @@
               94,
               412
             ],
-            "nature": "Hasty",
+            "nature": "Timid",
             "ivatk": 0,
             "ivdef": 25,
             "ivhp": 25,
@@ -1566,9 +1566,9 @@
             "evhp": 0,
             "evatk": 0,
             "evdef": 0,
-            "evspatk": 252,
+            "evspatk": 164,
             "evspdef": 4,
-            "evspeed": 248
+            "evspeed": 160
           },
           {
             "ability": "Cursed Body",
@@ -1589,11 +1589,11 @@
             "ivspatk": 25,
             "ivspdef": 25,
             "ivspeed": 25,
-            "evhp": 248,
+            "evhp": 156,
             "evatk": 8,
             "evdef": 0,
             "evspatk": 0,
-            "evspdef": 252,
+            "evspdef": 164,
             "evspeed": 0
           },
           {
@@ -1615,12 +1615,12 @@
             "ivspatk": 25,
             "ivspdef": 25,
             "ivspeed": 25,
-            "evhp": 12,
+            "evhp": 8,
             "evatk": 0,
             "evdef": 0,
-            "evspatk": 248,
+            "evspatk": 160,
             "evspdef": 4,
-            "evspeed": 244
+            "evspeed": 156
           },
           {
             "ability": "Levitate",
@@ -1644,9 +1644,9 @@
             "evhp": 4,
             "evatk": 0,
             "evdef": 0,
-            "evspatk": 252,
+            "evspatk": 164,
             "evspdef": 0,
-            "evspeed": 252
+            "evspeed": 160
           }
         ],
         "game": "Fantina (Hearthome City) Team 2",
@@ -1676,9 +1676,9 @@
             "ivspatk": 25,
             "ivspdef": 25,
             "ivspeed": 25,
-            "evhp": 252,
+            "evhp": 164,
             "evatk": 0,
-            "evdef": 252,
+            "evdef": 160,
             "evspatk": 0,
             "evspdef": 4,
             "evspeed": 0
@@ -1695,7 +1695,7 @@
               94,
               412
             ],
-            "nature": "Hasty",
+            "nature": "Timid",
             "ivatk": 0,
             "ivdef": 25,
             "ivhp": 25,
@@ -1705,9 +1705,9 @@
             "evhp": 0,
             "evatk": 0,
             "evdef": 0,
-            "evspatk": 252,
+            "evspatk": 164,
             "evspdef": 4,
-            "evspeed": 248
+            "evspeed": 160
           },
           {
             "ability": "Wonder Guard",
@@ -1729,11 +1729,11 @@
             "ivspdef": 25,
             "ivspeed": 25,
             "evhp": 0,
-            "evatk": 252,
+            "evatk": 164,
             "evdef": 4,
             "evspatk": 0,
             "evspdef": 0,
-            "evspeed": 252
+            "evspeed": 160
           },
           {
             "ability": "Pressure",
@@ -1754,11 +1754,11 @@
             "ivspatk": 25,
             "ivspdef": 25,
             "ivspeed": 25,
-            "evhp": 252,
+            "evhp": 164,
             "evatk": 4,
             "evdef": 0,
             "evspatk": 0,
-            "evspdef": 252,
+            "evspdef": 160,
             "evspeed": 0
           },
           {
@@ -1780,12 +1780,12 @@
             "ivspatk": 25,
             "ivspdef": 25,
             "ivspeed": 25,
-            "evhp": 12,
+            "evhp": 8,
             "evatk": 0,
             "evdef": 0,
-            "evspatk": 248,
+            "evspatk": 160,
             "evspdef": 4,
-            "evspeed": 244
+            "evspeed": 156
           },
           {
             "ability": "Levitate",
@@ -1809,9 +1809,9 @@
             "evhp": 4,
             "evatk": 0,
             "evdef": 0,
-            "evspatk": 252,
+            "evspatk": 164,
             "evspdef": 0,
-            "evspeed": 252
+            "evspeed": 160
           }
         ],
         "game": "Fantina (Hearthome City) Team 3",
@@ -1841,12 +1841,12 @@
             "ivspatk": 25,
             "ivspdef": 25,
             "ivspeed": 25,
-            "evhp": 248,
+            "evhp": 160,
             "evatk": 0,
             "evdef": 0,
-            "evspatk": 8,
+            "evspatk": 4,
             "evspdef": 0,
-            "evspeed": 252
+            "evspeed": 164
           },
           {
             "ability": "Prankster",
@@ -1867,9 +1867,9 @@
             "ivspatk": 25,
             "ivspdef": 25,
             "ivspeed": 25,
-            "evhp": 252,
+            "evhp": 160,
             "evatk": 0,
-            "evdef": 252,
+            "evdef": 164,
             "evspatk": 0,
             "evspdef": 4,
             "evspeed": 0
@@ -1886,7 +1886,7 @@
               94,
               412
             ],
-            "nature": "Hasty",
+            "nature": "Timid",
             "ivatk": 0,
             "ivdef": 25,
             "ivhp": 25,
@@ -1896,9 +1896,9 @@
             "evhp": 0,
             "evatk": 0,
             "evdef": 0,
-            "evspatk": 252,
+            "evspatk": 164,
             "evspdef": 4,
-            "evspeed": 248
+            "evspeed": 160
           },
           {
             "ability": "Cursed Body",
@@ -1919,11 +1919,11 @@
             "ivspatk": 25,
             "ivspdef": 25,
             "ivspeed": 25,
-            "evhp": 248,
-            "evatk": 8,
+            "evhp": 160,
+            "evatk": 4,
             "evdef": 0,
             "evspatk": 0,
-            "evspdef": 252,
+            "evspdef": 164,
             "evspeed": 0
           },
           {
@@ -1945,11 +1945,11 @@
             "ivspatk": 25,
             "ivspdef": 25,
             "ivspeed": 25,
-            "evhp": 252,
-            "evatk": 244,
+            "evhp": 164,
+            "evatk": 156,
             "evdef": 0,
             "evspatk": 0,
-            "evspdef": 12,
+            "evspdef": 8,
             "evspeed": 0
           },
           {
@@ -1971,12 +1971,12 @@
             "ivspatk": 25,
             "ivspdef": 25,
             "ivspeed": 25,
-            "evhp": 12,
+            "evhp": 8,
             "evatk": 0,
             "evdef": 0,
-            "evspatk": 248,
+            "evspatk": 160,
             "evspdef": 0,
-            "evspeed": 248
+            "evspeed": 160
           }
         ],
         "game": "Fantina (Hearthome City) Team 4",
@@ -3034,7 +3034,7 @@
             "evspeed": 252
           },
           {
-            "ability": "Swift Swim",
+            "ability": "Storm Drain",
             "gender": "FEMALE",
             "id": 423,
             "item": "Leftovers",
@@ -3887,7 +3887,7 @@
             "evspeed": 252
           },
           {
-            "ability": "Sturdy",
+            "ability": "Levitate",
             "gender": "FEMALE",
             "id": 462,
             "item": "Choice Specs",
@@ -5543,7 +5543,7 @@
             "evspeed": 252
           },
           {
-            "ability": "Merciless",
+            "ability": "Adaptability",
             "gender": "FEMALE",
             "id": 15,
             "item": "Focus Sash",
@@ -7171,7 +7171,7 @@
             "evspeed": 252
           },
           {
-            "ability": "Quick Draw",
+            "ability": "Quick Feet",
             "gender": "FEMALE",
             "id": 136,
             "item": "Toxic Orb",
@@ -8469,7 +8469,7 @@
             "evspeed": 0
           },
           {
-            "ability": "Cute Charm",
+            "ability": "Wonder Skin",
             "gender": "FEMALE",
             "id": 350,
             "item": "Leftovers",
@@ -10986,7 +10986,7 @@
             "evspeed": 0
           },
           {
-            "ability": "Oblivious",
+            "ability": "Simple",
             "gender": "FEMALE",
             "id": 322,
             "item": null,
@@ -13184,7 +13184,7 @@
       {
         "content": [
           {
-            "ability": "Swarm",
+            "ability": "Merciless",
             "gender": "MALE",
             "id": 168,
             "item": null,
@@ -13438,7 +13438,7 @@
             "evspeed": 0
           },
           {
-            "ability": "Hyper Cutter",
+            "ability": "Guts",
             "gender": "FEMALE",
             "id": 127,
             "item": null,
@@ -15536,7 +15536,7 @@
       {
         "content": [
           {
-            "ability": "Illuminate",
+            "ability": "Swarm",
             "gender": "NEUTRAL",
             "id": 313,
             "item": null,
@@ -16084,7 +16084,7 @@
             "evspeed": 0
           },
           {
-            "ability": "Run Away",
+            "ability": "Hustle",
             "gender": "FEMALE",
             "id": 20,
             "item": null,
@@ -16796,7 +16796,7 @@
             "evspeed": 0
           },
           {
-            "ability": "Insomnia",
+            "ability": "Cursed Body",
             "gender": "FEMALE",
             "id": 353,
             "item": null,
@@ -16858,7 +16858,7 @@
       {
         "content": [
           {
-            "ability": "Insomnia",
+            "ability": "Cursed Body",
             "gender": "NEUTRAL",
             "id": 353,
             "item": null,
@@ -16910,7 +16910,7 @@
             "evspeed": 0
           },
           {
-            "ability": "Insomnia",
+            "ability": "Cursed Body",
             "gender": "MALE",
             "id": 353,
             "item": null,
@@ -16998,7 +16998,7 @@
             "evspeed": 252
           },
           {
-            "ability": "Magic Guard",
+            "ability": "Magic Bounce",
             "gender": "NEUTRAL",
             "id": 302,
             "item": null,
@@ -18054,7 +18054,7 @@
             "evspeed": 0
           },
           {
-            "ability": "Damp",
+            "ability": "Hydration",
             "gender": "FEMALE",
             "id": 55,
             "item": null,
@@ -19044,7 +19044,7 @@
       {
         "content": [
           {
-            "ability": "Illuminate",
+            "ability": "Swarm",
             "gender": "MALE",
             "id": 313,
             "item": null,
@@ -19428,7 +19428,7 @@
             "evspeed": 0
           },
           {
-            "ability": "Water Veil",
+            "ability": "Oblivious",
             "gender": "FEMALE",
             "id": 320,
             "item": "Sitrus Berry",
@@ -20438,7 +20438,7 @@
             "evspeed": 8
           },
           {
-            "ability": "Hyper Cutter",
+            "ability": "Guts",
             "gender": "NEUTRAL",
             "id": 127,
             "item": null,
@@ -20552,7 +20552,7 @@
             "evspeed": 252
           },
           {
-            "ability": "Illuminate",
+            "ability": "Natural Cure",
             "gender": "NEUTRAL",
             "id": 121,
             "item": null,
@@ -20666,7 +20666,7 @@
             "evspeed": 0
           },
           {
-            "ability": "Intimidate",
+            "ability": "Strong Jaw",
             "gender": "NEUTRAL",
             "id": 160,
             "item": null,
@@ -21142,7 +21142,7 @@
             "evspeed": 0
           },
           {
-            "ability": "Keen Eye",
+            "ability": "No Guard",
             "gender": "NEUTRAL",
             "id": 18,
             "item": null,
@@ -21630,7 +21630,7 @@
       {
         "content": [
           {
-            "ability": "Own Tempo",
+            "ability": "Oblivious",
             "gender": "MALE",
             "id": 108,
             "item": null,
@@ -22398,7 +22398,7 @@
             "evspeed": 0
           },
           {
-            "ability": "Shield Dust",
+            "ability": "Wonder Skin",
             "gender": "NEUTRAL",
             "id": 49,
             "item": null,
@@ -22574,7 +22574,7 @@
             "evspeed": 0
           },
           {
-            "ability": "Swarm",
+            "ability": "Merciless",
             "gender": "MALE",
             "id": 168,
             "item": null,
@@ -22708,7 +22708,7 @@
       {
         "content": [
           {
-            "ability": "Hyper Cutter",
+            "ability": "Guts",
             "gender": "NEUTRAL",
             "id": 127,
             "item": null,
@@ -23860,7 +23860,7 @@
       {
         "content": [
           {
-            "ability": "Damp",
+            "ability": "Hydration",
             "gender": "NEUTRAL",
             "id": 55,
             "item": null,
@@ -24144,7 +24144,7 @@
             "evspeed": 0
           },
           {
-            "ability": "Hustle",
+            "ability": "Sniper",
             "gender": "NEUTRAL",
             "id": 223,
             "item": null,
@@ -24296,7 +24296,7 @@
             "evspeed": 8
           },
           {
-            "ability": "Clear Body",
+            "ability": "Liquid Ooze",
             "gender": "FEMALE",
             "id": 73,
             "item": null,
@@ -24384,7 +24384,7 @@
             "evspeed": 0
           },
           {
-            "ability": "Intimidate",
+            "ability": "Strong Jaw",
             "gender": "NEUTRAL",
             "id": 159,
             "item": null,
@@ -24410,7 +24410,7 @@
             "evspeed": 0
           },
           {
-            "ability": "Damp",
+            "ability": "Hydration",
             "gender": "MALE",
             "id": 55,
             "item": null,
@@ -24952,7 +24952,7 @@
       {
         "content": [
           {
-            "ability": "Suction Cups",
+            "ability": "Sniper",
             "gender": "NEUTRAL",
             "id": 224,
             "item": null,
@@ -24978,7 +24978,7 @@
             "evspeed": 0
           },
           {
-            "ability": "Clear Body",
+            "ability": "Liquid Ooze",
             "gender": "FEMALE",
             "id": 73,
             "item": null,
@@ -25102,7 +25102,7 @@
       {
         "content": [
           {
-            "ability": "Water Veil",
+            "ability": "Oblivious",
             "gender": "NEUTRAL",
             "id": 321,
             "item": null,
@@ -25376,7 +25376,7 @@
       {
         "content": [
           {
-            "ability": "Illuminate",
+            "ability": "Natural Cure",
             "gender": "FEMALE",
             "id": 121,
             "item": null,
@@ -25678,7 +25678,7 @@
             "evspeed": 0
           },
           {
-            "ability": "Pressure",
+            "ability": "Magic Bounce",
             "gender": "FEMALE",
             "id": 359,
             "item": null,
@@ -26282,7 +26282,7 @@
             "evspeed": 0
           },
           {
-            "ability": "Rock Head",
+            "ability": "Sturdy",
             "gender": "NEUTRAL",
             "id": 208,
             "item": null,
@@ -26936,7 +26936,7 @@
             "evspeed": 0
           },
           {
-            "ability": "Rock Head",
+            "ability": "Sturdy",
             "gender": "NEUTRAL",
             "id": 208,
             "item": null,
@@ -27246,7 +27246,7 @@
       {
         "content": [
           {
-            "ability": "Magma Armor",
+            "ability": "Solid Rock",
             "gender": "FEMALE",
             "id": 323,
             "item": null,
@@ -27724,7 +27724,7 @@
       {
         "content": [
           {
-            "ability": "Rock Head",
+            "ability": "Sturdy",
             "gender": "MALE",
             "id": 208,
             "item": null,
@@ -28400,7 +28400,7 @@
       {
         "content": [
           {
-            "ability": "Damp",
+            "ability": "Hydration",
             "gender": "MALE",
             "id": 55,
             "item": null,
@@ -28912,7 +28912,7 @@
             "evspeed": 252
           },
           {
-            "ability": "Overgrow",
+            "ability": "Chlorophyll",
             "gender": "FEMALE",
             "id": 3,
             "item": null,
@@ -30178,7 +30178,7 @@
       {
         "content": [
           {
-            "ability": "Suction Cups",
+            "ability": "Sniper",
             "gender": "NEUTRAL",
             "id": 224,
             "item": null,
@@ -30654,7 +30654,7 @@
       {
         "content": [
           {
-            "ability": "Hustle",
+            "ability": "Sniper",
             "gender": "FEMALE",
             "id": 223,
             "item": null,
@@ -30680,7 +30680,7 @@
             "evspeed": 0
           },
           {
-            "ability": "Hustle",
+            "ability": "Sniper",
             "gender": "MALE",
             "id": 223,
             "item": null,
@@ -31672,7 +31672,7 @@
       {
         "content": [
           {
-            "ability": "Clear Body",
+            "ability": "Liquid Ooze",
             "gender": "FEMALE",
             "id": 73,
             "item": null,
@@ -31822,7 +31822,7 @@
             "evspeed": 0
           },
           {
-            "ability": "Suction Cups",
+            "ability": "Sniper",
             "gender": "NEUTRAL",
             "id": 224,
             "item": null,
@@ -31848,7 +31848,7 @@
             "evspeed": 0
           },
           {
-            "ability": "Intimidate",
+            "ability": "Strong Jaw",
             "gender": "FEMALE",
             "id": 160,
             "item": null,
@@ -32220,7 +32220,7 @@
       {
         "content": [
           {
-            "ability": "Water Veil",
+            "ability": "Oblivious",
             "gender": "FEMALE",
             "id": 321,
             "item": null,
@@ -32344,7 +32344,7 @@
       {
         "content": [
           {
-            "ability": "Damp",
+            "ability": "Hydration",
             "gender": "MALE",
             "id": 55,
             "item": null,
@@ -32396,7 +32396,7 @@
             "evspeed": 0
           },
           {
-            "ability": "Illuminate",
+            "ability": "Natural Cure",
             "gender": "FEMALE",
             "id": 121,
             "item": null,
@@ -33020,7 +33020,7 @@
             "evspeed": 0
           },
           {
-            "ability": "Keen Eye",
+            "ability": "No Guard",
             "gender": "NEUTRAL",
             "id": 18,
             "item": null,
@@ -33476,7 +33476,7 @@
             "evspeed": 0
           },
           {
-            "ability": "Illuminate",
+            "ability": "Natural Cure",
             "gender": "NEUTRAL",
             "id": 121,
             "item": null,
@@ -33564,7 +33564,7 @@
       {
         "content": [
           {
-            "ability": "Own Tempo",
+            "ability": "Oblivious",
             "gender": "FEMALE",
             "id": 463,
             "item": null,
@@ -33642,7 +33642,7 @@
             "evspeed": 0
           },
           {
-            "ability": "Hyper Cutter",
+            "ability": "Guts",
             "gender": "MALE",
             "id": 127,
             "item": null,
@@ -33730,7 +33730,7 @@
             "evspeed": 252
           },
           {
-            "ability": "Overgrow",
+            "ability": "Chlorophyll",
             "gender": "MALE",
             "id": 3,
             "item": null,
@@ -34134,7 +34134,7 @@
             "evspeed": 0
           },
           {
-            "ability": "Pressure",
+            "ability": "Magic Bounce",
             "gender": "MALE",
             "id": 359,
             "item": null,
@@ -34848,7 +34848,7 @@
       {
         "content": [
           {
-            "ability": "Insomnia",
+            "ability": "Cursed Body",
             "gender": "MALE",
             "id": 354,
             "item": null,
@@ -34962,7 +34962,7 @@
             "evspeed": 0
           },
           {
-            "ability": "Magic Guard",
+            "ability": "Magic Bounce",
             "gender": "NEUTRAL",
             "id": 302,
             "item": null,
@@ -36404,7 +36404,7 @@
             "evspeed": 0
           },
           {
-            "ability": "Own Tempo",
+            "ability": "Oblivious",
             "gender": "FEMALE",
             "id": 463,
             "item": null,
@@ -36520,7 +36520,7 @@
             "evspeed": 0
           },
           {
-            "ability": "Keen Eye",
+            "ability": "No Guard",
             "gender": "MALE",
             "id": 18,
             "item": null,
@@ -36592,7 +36592,7 @@
       {
         "content": [
           {
-            "ability": "Illuminate",
+            "ability": "Natural Cure",
             "gender": "MALE",
             "id": 121,
             "item": null,
@@ -36706,7 +36706,7 @@
       {
         "content": [
           {
-            "ability": "Hyper Cutter",
+            "ability": "Guts",
             "gender": "FEMALE",
             "id": 127,
             "item": null,
@@ -37022,7 +37022,7 @@
             "evspeed": 0
           },
           {
-            "ability": "Damp",
+            "ability": "Hydration",
             "gender": "FEMALE",
             "id": 55,
             "item": null,
@@ -37526,7 +37526,7 @@
             "evspeed": 0
           },
           {
-            "ability": "Water Veil",
+            "ability": "Oblivious",
             "gender": "FEMALE",
             "id": 321,
             "item": null,
@@ -37652,7 +37652,7 @@
             "evspeed": 252
           },
           {
-            "ability": "Pressure",
+            "ability": "Magic Bounce",
             "gender": "FEMALE",
             "id": 359,
             "item": null,
@@ -38770,7 +38770,7 @@
       {
         "content": [
           {
-            "ability": "Suction Cups",
+            "ability": "Sniper",
             "gender": "NEUTRAL",
             "id": 224,
             "item": null,
@@ -39574,7 +39574,7 @@
             "evspeed": 252
           },
           {
-            "ability": "Insomnia",
+            "ability": "Cursed Body",
             "gender": "NEUTRAL",
             "id": 354,
             "item": null,
@@ -39926,7 +39926,7 @@
             "evspeed": 252
           },
           {
-            "ability": "Rock Head",
+            "ability": "Sturdy",
             "gender": "MALE",
             "id": 208,
             "item": null,
@@ -40076,7 +40076,7 @@
       {
         "content": [
           {
-            "ability": "Cute Charm",
+            "ability": "Magic Guard",
             "gender": "MALE",
             "id": 40,
             "item": null,
@@ -40604,7 +40604,7 @@
       {
         "content": [
           {
-            "ability": "Run Away",
+            "ability": "Hustle",
             "gender": "FEMALE",
             "id": 20,
             "item": null,

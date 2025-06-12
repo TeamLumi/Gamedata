@@ -1206,7 +1206,7 @@ Iron Defense
 Numel
 15
 Serious
-Oblivious
+Simple
 
 None
 Ember
@@ -3333,7 +3333,7 @@ Format: Single Battle
 Volbeat
 25
 Serious
-Illuminate
+Swarm
 
 None
 Struggle Bug
@@ -3506,7 +3506,7 @@ Extrasensory
 Raticate
 25
 Quirky
-Run Away
+Hustle
 
 None
 Take Down
@@ -3890,7 +3890,7 @@ Payback
 Shuppet
 26
 Bashful
-Insomnia
+Cursed Body
 
 None
 Pain Split
@@ -3922,7 +3922,7 @@ Format: Single Battle
 Shuppet
 26
 Docile
-Insomnia
+Cursed Body
 
 None
 Pain Split
@@ -3948,7 +3948,7 @@ Payback
 Shuppet
 26
 Serious
-Insomnia
+Cursed Body
 
 None
 Pain Split
@@ -3993,7 +3993,7 @@ Confuse Ray
 Sableye
 29
 Docile
-Magic Guard
+Magic Bounce
 
 None
 Shadow Claw
@@ -4620,7 +4620,7 @@ Format: Single Battle
 Volbeat
 31
 Hardy
-Illuminate
+Swarm
 
 None
 Encore
@@ -4780,7 +4780,7 @@ Moonblast
 Wailmer
 30
 Hardy
-Water Veil
+Oblivious
 
 Sitrus Berry
 Mist
@@ -5469,7 +5469,7 @@ Format: Single Battle
 Lickitung
 35
 Docile
-Own Tempo
+Oblivious
 
 None
 Body Slam
@@ -6047,7 +6047,7 @@ Poison Fang
 Remoraid
 36
 Docile
-Hustle
+Sniper
 
 None
 Ice Beam
@@ -6194,7 +6194,7 @@ Format: Single Battle
 Golduck
 43
 Serious
-Damp
+Hydration
 
 None
 Power Gem
@@ -6566,7 +6566,7 @@ Laser Focus
 Golduck
 38
 Serious
-Damp
+Hydration
 
 None
 Aqua Tail
@@ -6797,7 +6797,7 @@ Aqua Ring
 Tentacruel
 39
 Docile
-Clear Body
+Liquid Ooze
 
 None
 Acid Armor
@@ -6842,7 +6842,7 @@ Tailwind
 Croconaw
 39
 Serious
-Intimidate
+Strong Jaw
 
 None
 Slash
@@ -6855,7 +6855,7 @@ Screech
 Golduck
 39
 Quirky
-Damp
+Hydration
 
 None
 Aqua Tail
@@ -7157,7 +7157,7 @@ Psychic
 Pinsir
 41
 Docile
-Hyper Cutter
+Guts
 
 None
 Megahorn
@@ -7292,7 +7292,7 @@ U-turn
 Starmie
 42
 Quirky
-Illuminate
+Natural Cure
 
 None
 Scald
@@ -7382,7 +7382,7 @@ Swords Dance
 Pidgeot
 42
 Bashful
-Keen Eye
+No Guard
 
 None
 Razor Wind
@@ -7530,7 +7530,7 @@ Bounce
 Feraligatr
 43
 Quirky
-Intimidate
+Strong Jaw
 
 None
 Agility
@@ -7626,7 +7626,7 @@ Format: Single Battle
 Octillery
 43
 Bashful
-Suction Cups
+Sniper
 
 None
 Ice Beam
@@ -7639,7 +7639,7 @@ Flamethrower
 Tentacruel
 43
 Docile
-Clear Body
+Liquid Ooze
 
 None
 Sludge Bomb
@@ -7825,7 +7825,7 @@ Format: Single Battle
 Starmie
 44
 Hardy
-Illuminate
+Natural Cure
 
 None
 Psybeam
@@ -7857,7 +7857,7 @@ Format: Single Battle
 Wailord
 45
 Hardy
-Water Veil
+Oblivious
 
 None
 Water Spout
@@ -7960,7 +7960,7 @@ Stun Spore
 Absol
 45
 Hardy
-Pressure
+Magic Bounce
 
 None
 Sucker Punch
@@ -8306,7 +8306,7 @@ Lock-On
 Steelix
 45
 Serious
-Rock Head
+Sturdy
 
 None
 Crunch
@@ -8486,7 +8486,7 @@ Head Smash
 Steelix
 46
 Bashful
-Rock Head
+Sturdy
 
 None
 Crunch
@@ -8800,7 +8800,7 @@ Format: Single Battle
 Camerupt
 48
 Serious
-Magma Armor
+Solid Rock
 
 None
 Flamethrower
@@ -9076,7 +9076,7 @@ Format: Single Battle
 Steelix
 51
 Quirky
-Rock Head
+Sturdy
 
 None
 Iron Tail
@@ -9399,7 +9399,7 @@ Format: Single Battle
 Golduck
 37
 Hardy
-Damp
+Hydration
 
 None
 Soak
@@ -9911,7 +9911,7 @@ Focus Blast
 Venusaur
 52
 Bashful
-Overgrow
+Chlorophyll
 
 None
 Petal Dance
@@ -10348,7 +10348,7 @@ Brave Bird
 Venomoth
 53
 Hardy
-Shield Dust
+Wonder Skin
 
 None
 Baton Pass
@@ -10406,7 +10406,7 @@ Sucker Punch
 Ariados
 53
 Hardy
-Swarm
+Merciless
 
 None
 Pin Missile
@@ -10508,7 +10508,7 @@ Format: Single Battle
 Pinsir
 54
 Docile
-Hyper Cutter
+Guts
 
 None
 Megahorn
@@ -10861,7 +10861,7 @@ Format: Single Battle
 Ariados
 55
 Bashful
-Swarm
+Merciless
 
 None
 Cross Poison
@@ -10990,7 +10990,7 @@ Gunk Shot
 Pinsir
 55
 Docile
-Hyper Cutter
+Guts
 
 None
 Megahorn
@@ -11247,7 +11247,7 @@ Format: Single Battle
 Remoraid
 57
 Docile
-Hustle
+Sniper
 
 None
 Soak
@@ -11260,7 +11260,7 @@ Water Spout
 Remoraid
 57
 Docile
-Hustle
+Sniper
 
 None
 Soak
@@ -11324,7 +11324,7 @@ Format: Single Battle
 Octillery
 58
 Bashful
-Suction Cups
+Sniper
 
 None
 Gunk Shot
@@ -11953,7 +11953,7 @@ Hurricane
 Octillery
 59
 Docile
-Suction Cups
+Sniper
 
 None
 Gunk Shot
@@ -11966,7 +11966,7 @@ Water Spout
 Feraligatr
 59
 Serious
-Intimidate
+Strong Jaw
 
 None
 Thrash
@@ -12075,7 +12075,7 @@ Format: Single Battle
 Wailord
 59
 Quirky
-Water Veil
+Oblivious
 
 None
 Bounce
@@ -12120,7 +12120,7 @@ Format: Single Battle
 Golduck
 59
 Bashful
-Damp
+Hydration
 
 None
 Wonder Room
@@ -12146,7 +12146,7 @@ Sheer Cold
 Starmie
 59
 Hardy
-Illuminate
+Natural Cure
 
 None
 Brine
@@ -12229,7 +12229,7 @@ Format: Single Battle
 Tentacruel
 61
 Serious
-Clear Body
+Liquid Ooze
 
 None
 Giga Drain
@@ -12396,7 +12396,7 @@ Leaf Blade
 Pidgeot
 63
 Bashful
-Keen Eye
+No Guard
 
 None
 Hyper Beam
@@ -12757,7 +12757,7 @@ Iron Head
 Starmie
 63
 Bashful
-Illuminate
+Natural Cure
 
 None
 Hydro Pump
@@ -12802,7 +12802,7 @@ Format: Single Battle
 Lickilicky
 64
 Hardy
-Own Tempo
+Oblivious
 
 None
 Body Slam
@@ -12841,7 +12841,7 @@ U-turn
 Pinsir
 64
 Docile
-Hyper Cutter
+Guts
 
 None
 Megahorn
@@ -12886,7 +12886,7 @@ Fissure
 Venusaur
 64
 Quirky
-Overgrow
+Chlorophyll
 
 None
 Double-Edge
@@ -13034,7 +13034,7 @@ Payback
 Absol
 63
 Quirky
-Pressure
+Magic Bounce
 
 None
 Sucker Punch
@@ -13323,7 +13323,7 @@ Format: Single Battle
 Banette
 64
 Hardy
-Insomnia
+Cursed Body
 
 None
 Shadow Claw
@@ -13381,7 +13381,7 @@ Destiny Bond
 Sableye
 64
 Bashful
-Magic Guard
+Magic Bounce
 
 None
 Mean Look
@@ -14250,7 +14250,7 @@ Sucker Punch
 Lickilicky
 68
 Serious
-Own Tempo
+Oblivious
 
 None
 Hammer Arm
@@ -14308,7 +14308,7 @@ Hurricane
 Pidgeot
 73
 Hardy
-Keen Eye
+No Guard
 
 None
 Tailwind
@@ -14327,7 +14327,7 @@ Format: Single Battle
 Starmie
 73
 Bashful
-Illuminate
+Natural Cure
 
 None
 Hydro Pump
@@ -14385,7 +14385,7 @@ Format: Single Battle
 Pinsir
 73
 Quirky
-Hyper Cutter
+Guts
 
 None
 Megahorn
@@ -14514,7 +14514,7 @@ Body Press
 Golduck
 73
 Quirky
-Damp
+Hydration
 
 None
 Wonder Room
@@ -14668,7 +14668,7 @@ Sheer Cold
 Wailord
 73
 Serious
-Water Veil
+Oblivious
 
 None
 Bounce
@@ -14912,7 +14912,7 @@ Fake Out
 Absol
 76
 Quirky
-Pressure
+Magic Bounce
 
 None
 Night Slash
@@ -15605,7 +15605,7 @@ Format: Single Battle
 Octillery
 73
 Serious
-Suction Cups
+Sniper
 
 None
 Gunk Shot
@@ -15868,7 +15868,7 @@ Close Combat
 Banette
 78
 Hardy
-Insomnia
+Cursed Body
 
 None
 Double-Edge
@@ -16048,7 +16048,7 @@ Hurricane
 Steelix
 78
 Quirky
-Rock Head
+Sturdy
 
 None
 Stone Edge
@@ -16125,7 +16125,7 @@ Format: Single Battle
 Wigglytuff
 78
 Bashful
-Cute Charm
+Magic Guard
 
 None
 Play Rough
@@ -16395,7 +16395,7 @@ Format: Single Battle
 Raticate
 78
 Hardy
-Run Away
+Hustle
 
 None
 Endeavor
