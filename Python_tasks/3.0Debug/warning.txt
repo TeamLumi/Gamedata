@@ -1,70 +1,656 @@
+Warning: nidoran-female (29) will be run again with their base form
+Warning: nidoran-female (29) will be run again with their base form
+nidoran-female doesn't learn moves
+Warning: unown (201) will be run again with their base form
+Warning: a-form-unown (201) will be run again with their base form
+a-form-unown doesn't learn moves
+Warning: deoxys (386) will be run again with their base form
+Warning: normal-forme-deoxys (386) will be run again with their base form
+normal-forme-deoxys doesn't learn moves
+Warning: burmy (412) will be run again with their base form
+Warning: plant-cloak-burmy (412) will be run again with their base form
+plant-cloak-burmy doesn't learn moves
+Warning: wormadam (413) will be run again with their base form
+Warning: plant-cloak-wormadam (413) will be run again with their base form
+plant-cloak-wormadam doesn't learn moves
+Warning: mothim (414) will be run again with their base form
+Warning: mothim (414) will be run again with their base form
+Warning: cherrim (421) will be run again with their base form
+Warning: overcast-form-cherrim (421) will be run again with their base form
+overcast-form-cherrim doesn't learn moves
+Warning: shellos (422) will be run again with their base form
+Warning: west-sea-shellos (422) will be run again with their base form
+west-sea-shellos doesn't learn moves
+Warning: gastrodon (423) will be run again with their base form
+Warning: west-sea-gastrodon (423) will be run again with their base form
+west-sea-gastrodon doesn't learn moves
+Warning: giratina (487) will be run again with their base form
+Warning: altered-forme-giratina (487) will be run again with their base form
+altered-forme-giratina doesn't learn moves
+Warning: shaymin (492) will be run again with their base form
+Warning: land-forme-shaymin (492) will be run again with their base form
+land-forme-shaymin doesn't learn moves
+Warning: arceus (493) will be run again with their base form
+Warning: blank-plate-arceus (493) will be run again with their base form
+blank-plate-arceus doesn't learn moves
+Warning: basculin (550) will be run again with their base form
+Warning: red-striped-form-basculin (550) will be run again with their base form
+red-striped-form-basculin doesn't learn moves
+Warning: darmanitan (555) will be run again with their base form
+Warning: standard-mode-darmanitan (555) will be run again with their base form
+standard-mode-darmanitan doesn't learn moves
+Warning: deerling (585) will be run again with their base form
+Warning: spring-form-deerling (585) will be run again with their base form
+spring-form-deerling doesn't learn moves
+Warning: sawsbuck (586) will be run again with their base form
+Warning: spring-form-sawsbuck (586) will be run again with their base form
+spring-form-sawsbuck doesn't learn moves
+Warning: tornadus (641) will be run again with their base form
+Warning: incarnate-forme-tornadus (641) will be run again with their base form
+incarnate-forme-tornadus doesn't learn moves
+Warning: thundurus (642) will be run again with their base form
+Warning: incarnate-forme-thundurus (642) will be run again with their base form
+incarnate-forme-thundurus doesn't learn moves
+Warning: landorus (645) will be run again with their base form
+Warning: incarnate-forme-landorus (645) will be run again with their base form
+incarnate-forme-landorus doesn't learn moves
+Warning: keldeo (647) will be run again with their base form
+Warning: ordinary-form-keldeo (647) will be run again with their base form
+ordinary-form-keldeo doesn't learn moves
+Warning: meloetta (648) will be run again with their base form
+Warning: aria-forme-meloetta (648) will be run again with their base form
+aria-forme-meloetta doesn't learn moves
 Warning: scatterbug (664) will be run again with their base form
 Warning: scatterbug (664) will be run again with their base form
 Warning: spewpa (665) will be run again with their base form
 Warning: spewpa (665) will be run again with their base form
+Warning: vivillon (666) will be run again with their base form
+Warning: icy-snow-pattern-vivillon (666) will be run again with their base form
+icy-snow-pattern-vivillon doesn't learn moves
+Warning: flabebe (669) will be run again with their base form
+Warning: red-flower-flabebe (669) will be run again with their base form
+red-flower-flabebe doesn't learn moves
+Warning: floette (670) will be run again with their base form
+Warning: red-flower-floette (670) will be run again with their base form
+red-flower-floette doesn't learn moves
+Warning: florges (671) will be run again with their base form
+Warning: red-flower-florges (671) will be run again with their base form
+red-flower-florges doesn't learn moves
+Warning: furfrou (676) will be run again with their base form
+Warning: natural-form-furfrou (676) will be run again with their base form
+natural-form-furfrou doesn't learn moves
 Warning: meowstic (678) will be run again with their base form
-Warning: meowstic (678) will be run again with their base form
+Warning: male-meowstic (678) will be run again with their base form
+male-meowstic doesn't learn moves
 Warning: aegislash (681) will be run again with their base form
-Warning: aegislash (681) will be run again with their base form
-Warning: hoopa-confined (720) will be run again with their base form
+Warning: shield-forme-aegislash (681) will be run again with their base form
+shield-forme-aegislash doesn't learn moves
+Warning: pumpkaboo (710) will be run again with their base form
+Warning: average-size-pumpkaboo (710) will be run again with their base form
+average-size-pumpkaboo doesn't learn moves
+Warning: gourgeist (711) will be run again with their base form
+Warning: average-size-gourgeist (711) will be run again with their base form
+average-size-gourgeist doesn't learn moves
+Warning: xerneas (716) will be run again with their base form
+Warning: neutral-mode-xerneas (716) will be run again with their base form
+neutral-mode-xerneas doesn't learn moves
+Warning: zygarde (718) will be run again with their base form
+Warning: oricorio (741) will be run again with their base form
+Warning: baile-style-oricorio (741) will be run again with their base form
+baile-style-oricorio doesn't learn moves
+Warning: lycanroc (745) will be run again with their base form
+Warning: midday-form-lycanroc (745) will be run again with their base form
+midday-form-lycanroc doesn't learn moves
+Warning: wishiwashi (746) will be run again with their base form
+Warning: solo-form-wishiwashi (746) will be run again with their base form
+solo-form-wishiwashi doesn't learn moves
 Warning: -null (772) will be run again with their base form
 Warning: -null (772) will be run again with their base form
-Warning: cosmog (789) does not have a tm learnset. Trying again with base form
-Warning: cosmog (789) does not have a tm learnset. Trying again with base form
-Warning: cosmoem (790) does not have a tm learnset. Trying again with base form
-Warning: cosmoem (790) does not have a tm learnset. Trying again with base form
-Warning: blipbug (824) does not have a tm learnset. Trying again with base form
-Warning: blipbug (824) does not have a tm learnset. Trying again with base form
+-null doesn't learn moves
+Warning: silvally (773) will be run again with their base form
+Warning: minior (774) will be run again with their base form
+Warning: red-meteor-form-minior (774) will be run again with their base form
+red-meteor-form-minior doesn't learn moves
+Warning: mimikyu (778) will be run again with their base form
+Warning: disguised-form-mimikyu (778) will be run again with their base form
+disguised-form-mimikyu doesn't learn moves
+Warning: toxtricity (849) will be run again with their base form
+Warning: amped-form-toxtricity (849) will be run again with their base form
+amped-form-toxtricity doesn't learn moves
+Warning: sinistea (854) will be run again with their base form
+Warning: phony-form-sinistea (854) will be run again with their base form
+phony-form-sinistea doesn't learn moves
+Warning: polteageist (855) will be run again with their base form
+Warning: phony-form-polteageist (855) will be run again with their base form
+phony-form-polteageist doesn't learn moves
+Warning: alcremie (869) will be run again with their base form
+Warning: vanilla-cream-alcremie (869) will be run again with their base form
+vanilla-cream-alcremie doesn't learn moves
+Warning: eiscue (875) will be run again with their base form
+Warning: ice-face-eiscue (875) will be run again with their base form
+ice-face-eiscue doesn't learn moves
 Warning: indeedee (876) will be run again with their base form
-Warning: indeedee (876) will be run again with their base form
-Warning: zacian-hero-of-many-battles (888) will be run again with their base form
-Warning: zamazenta-hero-of-many-battles (889) will be run again with their base form
+Warning: male-indeedee (876) will be run again with their base form
+male-indeedee doesn't learn moves
+Warning: morpeko (877) will be run again with their base form
+Warning: full-belly-mode-morpeko (877) will be run again with their base form
+full-belly-mode-morpeko doesn't learn moves
+Warning: urshifu (892) will be run again with their base form
+Warning: single-strike-style-urshifu (892) will be run again with their base form
+single-strike-style-urshifu doesn't learn moves
 Warning: basculegion (902) will be run again with their base form
-Warning: basculegion (902) will be run again with their base form
-Warning: miraidon-ultimate (1008) will be run again with their base form
+Warning: male-basculegion (902) will be run again with their base form
+male-basculegion doesn't learn moves
+Warning: enamorus (905) will be run again with their base form
+Warning: incarnate-forme-enamorus (905) will be run again with their base form
+incarnate-forme-enamorus doesn't learn moves
+Warning: oinkologne (916) will be run again with their base form
+Warning: male-oinkologne (916) will be run again with their base form
+male-oinkologne doesn't learn moves
+Warning: maushold (925) will be run again with their base form
+Warning: family-of-four-maushold (925) will be run again with their base form
+family-of-four-maushold doesn't learn moves
+Warning: squawkabilly (931) will be run again with their base form
+Warning: green-plumage-squawkabilly (931) will be run again with their base form
+green-plumage-squawkabilly doesn't learn moves
+Warning: palafin (964) will be run again with their base form
+Warning: zero-form-palafin (964) will be run again with their base form
+zero-form-palafin doesn't learn moves
+Warning: revravroom (966) will be run again with their base form
+Warning: revravroom (966) will be run again with their base form
+revravroom doesn't learn moves
+Warning: tatsugiri (978) will be run again with their base form
+Warning: curly-form-tatsugiri (978) will be run again with their base form
+curly-form-tatsugiri doesn't learn moves
+Warning: dudunsparce (982) will be run again with their base form
+Warning: two-segment-form-dudunsparce (982) will be run again with their base form
+two-segment-form-dudunsparce doesn't learn moves
+Warning: gimmighoul (999) will be run again with their base form
+Warning: chest-form-gimmighoul (999) will be run again with their base form
+chest-form-gimmighoul doesn't learn moves
+Warning: koraidon (1007) will be run again with their base form
+Warning: apex-build-koraidon (1007) will be run again with their base form
+apex-build-koraidon doesn't learn moves
 Warning: miraidon (1008) will be run again with their base form
-Warning: ogerpon-teal-mask (1017) will be run again with their base form
-Warning: terapagos-normal (1024) will be run again with their base form
-Warning: lilligant-frenzied-lady-of-the-ridge (1236) will be run again with their base form
-Warning: avalugg-frenzied-lord-of-the-tundra (1320) will be run again with their base form
-Warning: mimikyu-totem (1374) will be run again with their base form
-Warning: mimikyu-totem (1375) will be run again with their base form
-Warning: toxtricity-gmax (1395) will be run again with their base form
-Warning: toxtricity-gmax (1396) will be run again with their base form
-Warning: urshifu-gmax (1474) will be run again with their base form
-Warning: urshifu-gmax (1475) will be run again with their base form
-Warning: kleavor-frenzied-lord-of-the-woods (1479) will be run again with their base form
-Warning: ursaluna-bloodmoon-beast (1480) will be run again with their base form
-Warning: klawf-stony-cliff-titan (1488) will be run again with their base form
-Warning: bombirdier-open-sky-titan (1489) will be run again with their base form
-Warning: segin-starmobile-revavroom (1491) will be run again with their base form
-Warning: schedar-starmobile-revavroom (1492) will be run again with their base form
-Warning: navi-starmobile-revavroom (1493) will be run again with their base form
-Warning: ruchbah-starmobile-revavroom (1494) will be run again with their base form
-Warning: caph-starmobile-revavroom (1495) will be run again with their base form
-Warning: orthworm-lurking-steel-titan (1496) will be run again with their base form
-Warning: dondozo-false-dragon-titan (1497) will be run again with their base form
-Warning: tatsugiri-curly-false-dragon-titan (1500) will be run again with their base form
-Warning: tatsugiri-droopy-false-dragon-titan (1501) will be run again with their base form
-Warning: tatsugiri-stretchy-false-dragon-titan (1502) will be run again with their base form
-Warning: great-tusk-quaking-earth-titan (1504) will be run again with their base form
-Warning: iron-treads-quaking-earth-titan (1505) will be run again with their base form
-Warning: miraidon-low-power (1511) will be run again with their base form
-Warning: miraidon-ultimate (1511) will be run again with their base form
-Warning: miraidon (1512) will be run again with their base form
-Warning: miraidon-ultimate (1512) will be run again with their base form
-Warning: miraidon-aquatic (1513) will be run again with their base form
-Warning: miraidon-ultimate (1513) will be run again with their base form
-Warning: miraidon-glide (1514) will be run again with their base form
-Warning: miraidon-ultimate (1514) will be run again with their base form
-Warning: okidogi-titanic (1517) will be run again with their base form
-Warning: munkidori-titanic (1518) will be run again with their base form
-Warning: fezandipiti-titanic (1519) will be run again with their base form
-Warning: ogerpon-terastal-teal-mask (1523) will be run again with their base form
-Warning: ogerpon-teal-mask (1523) will be run again with their base form
-Warning: ogerpon-terastal-wellspring-mask (1524) will be run again with their base form
-Warning: ogerpon-teal-mask (1524) will be run again with their base form
-Warning: ogerpon-terastal-hearthflame-mask (1525) will be run again with their base form
-Warning: ogerpon-teal-mask (1525) will be run again with their base form
-Warning: ogerpon-terastal-cornerstone-mask (1526) will be run again with their base form
-Warning: ogerpon-teal-mask (1526) will be run again with their base form
+Warning: ultimate-mode-miraidon (1008) will be run again with their base form
+ultimate-mode-miraidon doesn't learn moves
+Warning: poltchageist (1012) will be run again with their base form
+Warning: counterfeit-form-poltchageist (1012) will be run again with their base form
+counterfeit-form-poltchageist doesn't learn moves
+Warning: sinistcha (1013) will be run again with their base form
+Warning: unremarkable-form-sinistcha (1013) will be run again with their base form
+unremarkable-form-sinistcha doesn't learn moves
+Warning: clone-venusaur (1028) will be run again with their base form
+Warning: mega-charizard-x (1029) will be run again with their base form
+Warning: mega-charizard-y (1030) will be run again with their base form
+Warning: clone-charizard (1032) will be run again with their base form
+Warning: clone-blastoise (1035) will be run again with their base form
+Warning: totem-alola-raticate (1041) will be run again with their base form
+Warning: cosplay-pikachu (1042) will be run again with their base form
+Warning: cosplay-rock-star-pikachu (1043) will be run again with their base form
+Warning: cosplay-belle-pikachu (1044) will be run again with their base form
+Warning: cosplay-pop-star-pikachu (1045) will be run again with their base form
+Warning: cosplay-phd-pikachu (1046) will be run again with their base form
+Warning: cosplay-libre-pikachu (1047) will be run again with their base form
+Warning: original-cap-pikachu (1048) will be run again with their base form
+Warning: hoenn-cap-pikachu (1049) will be run again with their base form
+Warning: sinnoh-cap-pikachu (1050) will be run again with their base form
+Warning: unova-cap-pikachu (1051) will be run again with their base form
+Warning: kalos-cap-pikachu (1052) will be run again with their base form
+Warning: alola-cap-pikachu (1053) will be run again with their base form
+Warning: partner-cap-pikachu (1054) will be run again with their base form
+Warning: world-cap-pikachu (1055) will be run again with their base form
+Warning: partner-pikachu (1056) will be run again with their base form
+Warning: clone-pikachu (1058) will be run again with their base form
+Warning: frenzied-lord-of-the-isles-hisui-arcanine (1072) will be run again with their base form
+Warning: dewgong-spookydevthing (1084) will be run again with their base form
+Warning: haunter-ghost (1087) will be run again with their base form
+Warning: stitched-gengar (1090) will be run again with their base form
+Warning: crystal-onix (1091) will be run again with their base form
+Warning: frenzied-lord-of-the-hollow-hisui-electrode (1095) will be run again with their base form
+Warning: totem-alola-marowak (1098) will be run again with their base form
+Warning: galar-mr-mime (1101) will be run again with their base form
+Warning: combat-breed-tauros (1103) will be run again with their base form
+Warning: blaze-breed-tauros (1104) will be run again with their base form
+Warning: aqua-breed-tauros (1105) will be run again with their base form
+Warning: partner-eevee (1108) will be run again with their base form
+Warning: bandana-partner-eevee (1110) will be run again with their base form
+Warning: kabutops-missingno (1111) will be run again with their base form
+Warning: mega-mewtwo-x (1118) will be run again with their base form
+Warning: mega-mewtwo-y (1119) will be run again with their base form
+Warning: mk-ii-armored-mewtwo (1120) will be run again with their base form
+Warning: mk-i-armored-mewtwo (1121) will be run again with their base form
+Warning: mewtwo-shadow (1122) will be run again with their base form
+Warning: spiky-eared-pichu (1124) will be run again with their base form
+Warning: b-form-unown (1128) will be run again with their base form
+Warning: unown (1128) will be run again with their base form
+Warning: c-form-unown (1129) will be run again with their base form
+Warning: unown (1129) will be run again with their base form
+Warning: d-form-unown (1130) will be run again with their base form
+Warning: unown (1130) will be run again with their base form
+Warning: e-form-unown (1131) will be run again with their base form
+Warning: unown (1131) will be run again with their base form
+Warning: f-form-unown (1132) will be run again with their base form
+Warning: unown (1132) will be run again with their base form
+Warning: g-form-unown (1133) will be run again with their base form
+Warning: unown (1133) will be run again with their base form
+Warning: h-form-unown (1134) will be run again with their base form
+Warning: unown (1134) will be run again with their base form
+Warning: i-form-unown (1135) will be run again with their base form
+Warning: unown (1135) will be run again with their base form
+Warning: j-form-unown (1136) will be run again with their base form
+Warning: unown (1136) will be run again with their base form
+Warning: k-form-unown (1137) will be run again with their base form
+Warning: unown (1137) will be run again with their base form
+Warning: l-form-unown (1138) will be run again with their base form
+Warning: unown (1138) will be run again with their base form
+Warning: m-form-unown (1139) will be run again with their base form
+Warning: unown (1139) will be run again with their base form
+Warning: n-form-unown (1140) will be run again with their base form
+Warning: unown (1140) will be run again with their base form
+Warning: o-form-unown (1141) will be run again with their base form
+Warning: unown (1141) will be run again with their base form
+Warning: p-form-unown (1142) will be run again with their base form
+Warning: unown (1142) will be run again with their base form
+Warning: q-form-unown (1143) will be run again with their base form
+Warning: unown (1143) will be run again with their base form
+Warning: r-form-unown (1144) will be run again with their base form
+Warning: unown (1144) will be run again with their base form
+Warning: s-form-unown (1145) will be run again with their base form
+Warning: unown (1145) will be run again with their base form
+Warning: t-form-unown (1146) will be run again with their base form
+Warning: unown (1146) will be run again with their base form
+Warning: u-form-unown (1147) will be run again with their base form
+Warning: unown (1147) will be run again with their base form
+Warning: v-form-unown (1148) will be run again with their base form
+Warning: unown (1148) will be run again with their base form
+Warning: w-form-unown (1149) will be run again with their base form
+Warning: unown (1149) will be run again with their base form
+Warning: x-form-unown (1150) will be run again with their base form
+Warning: unown (1150) will be run again with their base form
+Warning: y-form-unown (1151) will be run again with their base form
+Warning: unown (1151) will be run again with their base form
+Warning: z-form-unown (1152) will be run again with their base form
+Warning: unown (1152) will be run again with their base form
+Warning: form-unown (1153) will be run again with their base form
+Warning: unown (1153) will be run again with their base form
+Warning: form-unown (1154) will be run again with their base form
+Warning: unown (1154) will be run again with their base form
+Warning: lugia-shadow (1163) will be run again with their base form
+Warning: sunny-form-castform (1178) will be run again with their base form
+Warning: rainy-form-castform (1179) will be run again with their base form
+Warning: snowy-form-castform (1180) will be run again with their base form
+Warning: primal-kyogre (1188) will be run again with their base form
+Warning: primal-groudon (1189) will be run again with their base form
+Warning: meta-groudon (1190) will be run again with their base form
+Warning: boss-meta-groudon (1191) will be run again with their base form
+Warning: illusory-rayquaza (1193) will be run again with their base form
+Warning: attack-forme-deoxys (1194) will be run again with their base form
+Warning: deoxys (1194) will be run again with their base form
+Warning: defense-forme-deoxys (1195) will be run again with their base form
+Warning: deoxys (1195) will be run again with their base form
+Warning: speed-forme-deoxys (1196) will be run again with their base form
+Warning: deoxys (1196) will be run again with their base form
+Warning: sandy-cloak-burmy (1197) will be run again with their base form
+Warning: burmy (1197) will be run again with their base form
+Warning: trash-cloak-burmy (1198) will be run again with their base form
+Warning: burmy (1198) will be run again with their base form
+Warning: sandy-cloak-wormadam (1199) will be run again with their base form
+Warning: wormadam (1199) will be run again with their base form
+Warning: trash-cloak-wormadam (1200) will be run again with their base form
+Warning: wormadam (1200) will be run again with their base form
+Warning: sunshine-form-cherrim (1201) will be run again with their base form
+Warning: cherrim (1201) will be run again with their base form
+Warning: east-sea-shellos (1202) will be run again with their base form
+Warning: shellos (1202) will be run again with their base form
+Warning: east-sea-gastrodon (1203) will be run again with their base form
+Warning: gastrodon (1203) will be run again with their base form
+Warning: heat-rotom (1209) will be run again with their base form
+Warning: wash-rotom (1210) will be run again with their base form
+Warning: frost-rotom (1211) will be run again with their base form
+Warning: fan-rotom (1212) will be run again with their base form
+Warning: mow-rotom (1213) will be run again with their base form
+Warning: origin-forme-dialga (1214) will be run again with their base form
+Warning: origin-forme-palkia (1215) will be run again with their base form
+Warning: origin-forme-giratina (1216) will be run again with their base form
+Warning: giratina (1216) will be run again with their base form
+Warning: sky-forme-shaymin (1217) will be run again with their base form
+Warning: shaymin (1217) will be run again with their base form
+Warning: fist-plate-arceus (1218) will be run again with their base form
+Warning: arceus (1218) will be run again with their base form
+Warning: sky-plate-arceus (1219) will be run again with their base form
+Warning: arceus (1219) will be run again with their base form
+Warning: toxic-plate-arceus (1220) will be run again with their base form
+Warning: arceus (1220) will be run again with their base form
+Warning: earth-plate-arceus (1221) will be run again with their base form
+Warning: arceus (1221) will be run again with their base form
+Warning: stone-plate-arceus (1222) will be run again with their base form
+Warning: arceus (1222) will be run again with their base form
+Warning: insect-plate-arceus (1223) will be run again with their base form
+Warning: arceus (1223) will be run again with their base form
+Warning: spooky-plate-arceus (1224) will be run again with their base form
+Warning: arceus (1224) will be run again with their base form
+Warning: iron-plate-arceus (1225) will be run again with their base form
+Warning: arceus (1225) will be run again with their base form
+Warning: flame-plate-arceus (1226) will be run again with their base form
+Warning: arceus (1226) will be run again with their base form
+Warning: splash-plate-arceus (1227) will be run again with their base form
+Warning: arceus (1227) will be run again with their base form
+Warning: meadow-plate-arceus (1228) will be run again with their base form
+Warning: arceus (1228) will be run again with their base form
+Warning: zap-plate-arceus (1229) will be run again with their base form
+Warning: arceus (1229) will be run again with their base form
+Warning: mind-plate-arceus (1230) will be run again with their base form
+Warning: arceus (1230) will be run again with their base form
+Warning: icicle-plate-arceus (1231) will be run again with their base form
+Warning: arceus (1231) will be run again with their base form
+Warning: draco-plate-arceus (1232) will be run again with their base form
+Warning: arceus (1232) will be run again with their base form
+Warning: dread-plate-arceus (1233) will be run again with their base form
+Warning: arceus (1233) will be run again with their base form
+Warning: pixie-plate-arceus (1234) will be run again with their base form
+Warning: arceus (1234) will be run again with their base form
+Warning: frenzied-lady-of-the-ridge-hisui-lilligant (1238) will be run again with their base form
+Warning: blue-striped-form-basculin (1239) will be run again with their base form
+Warning: basculin (1239) will be run again with their base form
+basculin doesn't learn moves
+Warning: white-striped-form-basculin (1240) will be run again with their base form
+Warning: basculin (1240) will be run again with their base form
+basculin doesn't learn moves
+Warning: zen-mode-darmanitan (1242) will be run again with their base form
+Warning: darmanitan (1242) will be run again with their base form
+darmanitan doesn't learn moves
+Warning: galar-standard-mode-darmanitan (1243) will be run again with their base form
+Warning: darmanitan (1243) will be run again with their base form
+darmanitan doesn't learn moves
+Warning: galar-zen-mode-darmanitan (1244) will be run again with their base form
+Warning: darmanitan (1244) will be run again with their base form
+darmanitan doesn't learn moves
+Warning: summer-form-deerling (1249) will be run again with their base form
+Warning: deerling (1249) will be run again with their base form
+Warning: autumn-form-deerling (1250) will be run again with their base form
+Warning: deerling (1250) will be run again with their base form
+Warning: winter-form-deerling (1251) will be run again with their base form
+Warning: deerling (1251) will be run again with their base form
+Warning: summer-form-sawsbuck (1252) will be run again with their base form
+Warning: sawsbuck (1252) will be run again with their base form
+Warning: autumn-form-sawsbuck (1253) will be run again with their base form
+Warning: sawsbuck (1253) will be run again with their base form
+Warning: winter-form-sawsbuck (1254) will be run again with their base form
+Warning: sawsbuck (1254) will be run again with their base form
+Warning: therian-forme-tornadus (1257) will be run again with their base form
+Warning: tornadus (1257) will be run again with their base form
+tornadus doesn't learn moves
+Warning: therian-forme-thundurus (1258) will be run again with their base form
+Warning: thundurus (1258) will be run again with their base form
+thundurus doesn't learn moves
+Warning: therian-forme-landorus (1259) will be run again with their base form
+Warning: landorus (1259) will be run again with their base form
+landorus doesn't learn moves
+Warning: resolute-form-keldeo (1262) will be run again with their base form
+Warning: keldeo (1262) will be run again with their base form
+keldeo doesn't learn moves
+Warning: pirouette-forme-meloetta (1263) will be run again with their base form
+Warning: meloetta (1263) will be run again with their base form
+meloetta doesn't learn moves
+Warning: battle-bond-greninja (1268) will be run again with their base form
+Warning: polar-pattern-vivillon (1270) will be run again with their base form
+Warning: vivillon (1270) will be run again with their base form
+Warning: tundra-pattern-vivillon (1271) will be run again with their base form
+Warning: vivillon (1271) will be run again with their base form
+Warning: continental-pattern-vivillon (1272) will be run again with their base form
+Warning: vivillon (1272) will be run again with their base form
+Warning: garden-pattern-vivillon (1273) will be run again with their base form
+Warning: vivillon (1273) will be run again with their base form
+Warning: elegant-pattern-vivillon (1274) will be run again with their base form
+Warning: vivillon (1274) will be run again with their base form
+Warning: meadow-pattern-vivillon (1275) will be run again with their base form
+Warning: vivillon (1275) will be run again with their base form
+Warning: modern-pattern-vivillon (1276) will be run again with their base form
+Warning: vivillon (1276) will be run again with their base form
+Warning: marine-pattern-vivillon (1277) will be run again with their base form
+Warning: vivillon (1277) will be run again with their base form
+Warning: archipelago-pattern-vivillon (1278) will be run again with their base form
+Warning: vivillon (1278) will be run again with their base form
+Warning: high-plains-pattern-vivillon (1279) will be run again with their base form
+Warning: vivillon (1279) will be run again with their base form
+Warning: sandstorm-pattern-vivillon (1280) will be run again with their base form
+Warning: vivillon (1280) will be run again with their base form
+Warning: river-pattern-vivillon (1281) will be run again with their base form
+Warning: vivillon (1281) will be run again with their base form
+Warning: monsoon-pattern-vivillon (1282) will be run again with their base form
+Warning: vivillon (1282) will be run again with their base form
+Warning: savanna-pattern-vivillon (1283) will be run again with their base form
+Warning: vivillon (1283) will be run again with their base form
+Warning: sun-pattern-vivillon (1284) will be run again with their base form
+Warning: vivillon (1284) will be run again with their base form
+Warning: ocean-pattern-vivillon (1285) will be run again with their base form
+Warning: vivillon (1285) will be run again with their base form
+Warning: jungle-pattern-vivillon (1286) will be run again with their base form
+Warning: vivillon (1286) will be run again with their base form
+Warning: fancy-pattern-vivillon (1287) will be run again with their base form
+Warning: vivillon (1287) will be run again with their base form
+Warning: poke-ball-pattern-vivillon (1288) will be run again with their base form
+Warning: vivillon (1288) will be run again with their base form
+Warning: yellow-flower-flabebe (1289) will be run again with their base form
+Warning: flabebe (1289) will be run again with their base form
+Warning: orange-flower-flabebe (1290) will be run again with their base form
+Warning: flabebe (1290) will be run again with their base form
+Warning: blue-flower-flabebe (1291) will be run again with their base form
+Warning: flabebe (1291) will be run again with their base form
+Warning: white-flower-flabebe (1292) will be run again with their base form
+Warning: flabebe (1292) will be run again with their base form
+Warning: yellow-flower-floette (1293) will be run again with their base form
+Warning: floette (1293) will be run again with their base form
+Warning: orange-flower-floette (1294) will be run again with their base form
+Warning: floette (1294) will be run again with their base form
+Warning: blue-flower-floette (1295) will be run again with their base form
+Warning: floette (1295) will be run again with their base form
+Warning: white-flower-floette (1296) will be run again with their base form
+Warning: floette (1296) will be run again with their base form
+Warning: eternal-flower-floette (1297) will be run again with their base form
+Warning: floette (1297) will be run again with their base form
+Warning: yellow-flower-florges (1298) will be run again with their base form
+Warning: florges (1298) will be run again with their base form
+Warning: orange-flower-florges (1299) will be run again with their base form
+Warning: florges (1299) will be run again with their base form
+Warning: blue-flower-florges (1300) will be run again with their base form
+Warning: florges (1300) will be run again with their base form
+Warning: white-flower-florges (1301) will be run again with their base form
+Warning: florges (1301) will be run again with their base form
+Warning: heart-trim-furfrou (1302) will be run again with their base form
+Warning: furfrou (1302) will be run again with their base form
+Warning: star-trim-furfrou (1303) will be run again with their base form
+Warning: furfrou (1303) will be run again with their base form
+Warning: diamond-trim-furfrou (1304) will be run again with their base form
+Warning: furfrou (1304) will be run again with their base form
+Warning: debutante-trim-furfrou (1305) will be run again with their base form
+Warning: furfrou (1305) will be run again with their base form
+Warning: matron-trim-furfrou (1306) will be run again with their base form
+Warning: furfrou (1306) will be run again with their base form
+Warning: dandy-trim-furfrou (1307) will be run again with their base form
+Warning: furfrou (1307) will be run again with their base form
+Warning: la-reine-trim-furfrou (1308) will be run again with their base form
+Warning: furfrou (1308) will be run again with their base form
+Warning: pharaoh-trim-furfrou (1310) will be run again with their base form
+Warning: furfrou (1310) will be run again with their base form
+Warning: female-meowstic (1311) will be run again with their base form
+Warning: meowstic (1311) will be run again with their base form
+meowstic doesn't learn moves
+Warning: blade-forme-aegislash (1312) will be run again with their base form
+Warning: aegislash (1312) will be run again with their base form
+aegislash doesn't learn moves
+Warning: small-size-pumpkaboo (1315) will be run again with their base form
+Warning: pumpkaboo (1315) will be run again with their base form
+pumpkaboo doesn't learn moves
+Warning: large-size-pumpkaboo (1316) will be run again with their base form
+Warning: pumpkaboo (1316) will be run again with their base form
+pumpkaboo doesn't learn moves
+Warning: super-size-pumpkaboo (1317) will be run again with their base form
+Warning: pumpkaboo (1317) will be run again with their base form
+pumpkaboo doesn't learn moves
+Warning: small-size-gourgeist (1318) will be run again with their base form
+Warning: gourgeist (1318) will be run again with their base form
+gourgeist doesn't learn moves
+Warning: large-size-gourgeist (1319) will be run again with their base form
+Warning: gourgeist (1319) will be run again with their base form
+gourgeist doesn't learn moves
+Warning: super-size-gourgeist (1320) will be run again with their base form
+Warning: gourgeist (1320) will be run again with their base form
+gourgeist doesn't learn moves
+Warning: frenzied-lord-of-the-tundra-hisui-avalugg (1322) will be run again with their base form
+Warning: active-mode-xerneas (1323) will be run again with their base form
+Warning: xerneas (1323) will be run again with their base form
+Warning: zygarde-10-power (1325) will be run again with their base form
+Warning: zygarde (1325) will be run again with their base form
+zygarde doesn't learn moves
+Warning: zygarde-50-power (1326) will be run again with their base form
+Warning: zygarde (1326) will be run again with their base form
+zygarde doesn't learn moves
+Warning: pom-pom-style-oricorio (1333) will be run again with their base form
+Warning: oricorio (1333) will be run again with their base form
+oricorio doesn't learn moves
+Warning: pau-style-oricorio (1334) will be run again with their base form
+Warning: oricorio (1334) will be run again with their base form
+oricorio doesn't learn moves
+Warning: own-tempo-rockruff (1337) will be run again with their base form
+Warning: midnight-form-lycanroc (1338) will be run again with their base form
+Warning: lycanroc (1338) will be run again with their base form
+lycanroc doesn't learn moves
+Warning: dusk-form-lycanroc (1339) will be run again with their base form
+Warning: lycanroc (1339) will be run again with their base form
+lycanroc doesn't learn moves
+Warning: school-form-wishiwashi (1340) will be run again with their base form
+Warning: wishiwashi (1340) will be run again with their base form
+wishiwashi doesn't learn moves
+Warning: totem-solo-form-wishiwashi (1341) will be run again with their base form
+Warning: wishiwashi (1341) will be run again with their base form
+wishiwashi doesn't learn moves
+Warning: totem-school-form-wishiwashi (1342) will be run again with their base form
+Warning: wishiwashi (1342) will be run again with their base form
+wishiwashi doesn't learn moves
+Warning: orange-meteor-form-minior (1363) will be run again with their base form
+Warning: minior (1363) will be run again with their base form
+minior doesn't learn moves
+Warning: yellow-meteor-form-minior (1364) will be run again with their base form
+Warning: minior (1364) will be run again with their base form
+minior doesn't learn moves
+Warning: green-meteor-form-minior (1365) will be run again with their base form
+Warning: minior (1365) will be run again with their base form
+minior doesn't learn moves
+Warning: blue-meteor-form-minior (1366) will be run again with their base form
+Warning: minior (1366) will be run again with their base form
+minior doesn't learn moves
+Warning: indigo-meteor-form-minior (1367) will be run again with their base form
+Warning: minior (1367) will be run again with their base form
+minior doesn't learn moves
+Warning: violet-meteor-form-minior (1368) will be run again with their base form
+Warning: minior (1368) will be run again with their base form
+minior doesn't learn moves
+Warning: red-core-minior (1369) will be run again with their base form
+Warning: minior (1369) will be run again with their base form
+minior doesn't learn moves
+Warning: orange-core-minior (1370) will be run again with their base form
+Warning: minior (1370) will be run again with their base form
+minior doesn't learn moves
+Warning: yellow-core-minior (1371) will be run again with their base form
+Warning: minior (1371) will be run again with their base form
+minior doesn't learn moves
+Warning: green-core-minior (1372) will be run again with their base form
+Warning: minior (1372) will be run again with their base form
+minior doesn't learn moves
+Warning: blue-core-minior (1373) will be run again with their base form
+Warning: minior (1373) will be run again with their base form
+minior doesn't learn moves
+Warning: indigo-core-minior (1374) will be run again with their base form
+Warning: minior (1374) will be run again with their base form
+minior doesn't learn moves
+Warning: violet-core-minior (1375) will be run again with their base form
+Warning: minior (1375) will be run again with their base form
+minior doesn't learn moves
+Warning: busted-form-mimikyu (1377) will be run again with their base form
+Warning: gulping-form-cramorant (1396) will be run again with their base form
+Warning: gorging-form-cramorant (1397) will be run again with their base form
+Warning: low-key-form-toxtricity (1398) will be run again with their base form
+Warning: toxtricity (1398) will be run again with their base form
+toxtricity doesn't learn moves
+Warning: gmax-amped-form-toxtricity (1399) will be run again with their base form
+Warning: toxtricity (1399) will be run again with their base form
+toxtricity doesn't learn moves
+Warning: gmax-low-key-form-toxtricity (1400) will be run again with their base form
+Warning: toxtricity (1400) will be run again with their base form
+toxtricity doesn't learn moves
+Warning: antique-form-sinistea (1402) will be run again with their base form
+Warning: sinistea (1402) will be run again with their base form
+Warning: antique-form-polteageist (1403) will be run again with their base form
+Warning: polteageist (1403) will be run again with their base form
+Warning: vanilla-cream-alcremie (1406) will be run again with their base form
+Warning: alcremie (1406) will be run again with their base form
+Warning: vanilla-cream-alcremie (1407) will be run again with their base form
+Warning: alcremie (1407) will be run again with their base form
+Warning: vanilla-cream-alcremie (1408) will be run again with their base form
+Warning: alcremie (1408) will be run again with their base form
+Warning: vanilla-cream-alcremie (1409) will be run again with their base form
+Warning: alcremie (1409) will be run again with their base form
+Warning: vanilla-cream-alcremie (1410) will be run again with their base form
+Warning: alcremie (1410) will be run again with their base form
+Warning: vanilla-cream-alcremie (1411) will be run again with their base form
+Warning: alcremie (1411) will be run again with their base form
+Warning: ruby-cream-alcremie (1412) will be run again with their base form
+Warning: alcremie (1412) will be run again with their base form
+Warning: ruby-cream-alcremie (1413) will be run again with their base form
+Warning: alcremie (1413) will be run again with their base form
+Warning: ruby-cream-alcremie (1414) will be run again with their base form
+Warning: alcremie (1414) will be run again with their base form
+Warning: ruby-cream-alcremie (1415) will be run again with their base form
+Warning: rainbow-swirl-alcremie (1467) will be run again with their base form
+Warning: alcremie (1467) will be run again with their base form
+Warning: noice-face-eiscue (1469) will be run again with their base form
+Warning: eiscue (1469) will be run again with their base form
+eiscue doesn't learn moves
+Warning: female-indeedee (1470) will be run again with their base form
+Warning: indeedee (1470) will be run again with their base form
+indeedee doesn't learn moves
+Warning: hangry-mode-morpeko (1471) will be run again with their base form
+Warning: morpeko (1471) will be run again with their base form
+morpeko doesn't learn moves
+Warning: crowned-sword-zacian (1474) will be run again with their base form
+Warning: crowned-shield-zamazenta (1475) will be run again with their base form
+Warning: rapid-strike-style-urshifu (1477) will be run again with their base form
+Warning: urshifu (1477) will be run again with their base form
+urshifu doesn't learn moves
+Warning: gmax-single-strike-style-urshifu (1478) will be run again with their base form
+Warning: urshifu (1478) will be run again with their base form
+urshifu doesn't learn moves
+Warning: gmax-rapid-strike-style-urshifu (1479) will be run again with their base form
+Warning: urshifu (1479) will be run again with their base form
+urshifu doesn't learn moves
+Warning: bloodmoon-beast-ursaluna (1484) will be run again with their base form
+Warning: female-basculegion (1485) will be run again with their base form
+Warning: basculegion (1485) will be run again with their base form
+basculegion doesn't learn moves
+Warning: therian-forme-enamorus (1486) will be run again with their base form
+Warning: enamorus (1486) will be run again with their base form
+enamorus doesn't learn moves
+Warning: female-oinkologne (1487) will be run again with their base form
+Warning: oinkologne (1487) will be run again with their base form
+oinkologne doesn't learn moves
+Warning: family-of-three-maushold (1488) will be run again with their base form
+Warning: maushold (1488) will be run again with their base form
+maushold doesn't learn moves
+Warning: blue-plumage-squawkabilly (1489) will be run again with their base form
+Warning: squawkabilly (1489) will be run again with their base form
+squawkabilly doesn't learn moves
+Warning: yellow-plumage-squawkabilly (1490) will be run again with their base form
+Warning: squawkabilly (1490) will be run again with their base form
+squawkabilly doesn't learn moves
+Warning: white-plumage-squawkabilly (1491) will be run again with their base form
+Warning: squawkabilly (1491) will be run again with their base form
+squawkabilly doesn't learn moves
+Warning: stony-cliff-titan-klawf (1492) will be run again with their base form
+Warning: open-sky-titan-bombirdier (1493) will be run again with their base form
+Warning: nidoran-female (29) will be run again with their base form
+Warning: nidoran-female (29) will be run again with their base form
+Warning: deoxys (386) will be run again with their base form
+Warning: normal-forme-deoxys (386) will be run again with their base form
+Warning: wormadam (413) will be run again with their base form
