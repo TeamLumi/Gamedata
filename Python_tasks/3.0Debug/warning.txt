@@ -654,3 +654,8 @@ Warning: nidoran-female (29) will be run again with their base form
 Warning: deoxys (386) will be run again with their base form
 Warning: normal-forme-deoxys (386) will be run again with their base form
 Warning: wormadam (413) will be run again with their base form
+Warning: oinkologne (916) will be run again with their base form
+Warning: form-unown (1153) will be run again with their base form
+Warning: form-unown (1154) will be run again with their base form
+Warning: totem-disguised-form-mimikyu (1378) will be run again with their base form
+Warning: totem-busted-form-mimikyu (1379) will be run again with their base form

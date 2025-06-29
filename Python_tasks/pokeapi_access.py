@@ -3,11 +3,12 @@ import json
 import os
 import sys
 import copy
+import csv
 
 import constants
 import poke_api_constants
 from load_files import load_data
-from pokemonUtils import get_pokemon_name, slugify, get_item_id_from_item_name, get_mons_no_and_form_no
+from pokemonUtils import get_pokemon_name, slugify, get_item_id_from_item_name, get_mons_no_and_form_no, get_form_pokemon_personal_id
 from moveUtils import get_relumi_tm_compatibility, get_move_string, create_tm_learnset, get_tutor_moves_list
 from pokemonTypes import get_type_id
 
@@ -311,9 +312,17 @@ def get_tutor_move_assignments(pokemon_name, pokemonId, monsno, counter=0):
   if (os.path.exists(os.path.join(vanilla_tutor_moves_path, file_name))):
     # Don't start from the beginning every time
     return
+  elif check_files_exist:
+    print("This file doesn't exist yet:", file_name, "Pokemon name:", pokemon_name)
+    return
 
   print(pokemon_name)
-  form, pokemon, species = get_pokeapi_mon_info(pokemon_name, pokemonId, monsno, counter)
+  form, pokemon, species = None, None, None
+  if pokemon_name in list(poke_api_constants.API_NAME_KEY.keys()):
+    print("Grabbing alternate name", pokemon_name)
+    pokemon_name = poke_api_constants.API_NAME_KEY[pokemon_name]
+  else:
+    form, pokemon, species = get_pokeapi_mon_info(pokemon_name, pokemonId, monsno, counter)
 
   if (form == -1 or form == None) and pokemon_name not in list(pokemon_all_move_learnsets.keys()):
     # An error has occurred in the get_pokeapi_mon_info
@@ -341,7 +350,7 @@ def get_tutor_move_assignments(pokemon_name, pokemonId, monsno, counter=0):
       if moveId == 0:
         continue
       move_tutor_learnset = None
-      if form != -1:
+      if form != -1 and form != None:
         move_tutor_learnset = pokemon_all_move_learnsets.get(form.name if form else pokemon.name, None)
         if move_tutor_learnset == None:
           move_tutor_learnset = pokemon_all_move_learnsets.get(species.name if species else pokemon.name)
@@ -359,7 +368,10 @@ def get_tutor_move_assignments(pokemon_name, pokemonId, monsno, counter=0):
     with open(os.path.join(vanilla_tutor_moves_path, file_name), "w", encoding="utf-8") as json_file:
       json.dump(output_tutor_moveset, json_file, ensure_ascii=False, indent=2)
 
-    log_success(f"Tutor Moves for {form.name if form else pokemon.name} written to {vanilla_tutor_moves_path}/{file_name}")
+    if form != None and form != -1:
+      log_success(f"Tutor Moves for {form.name if form else pokemon.name} written to {vanilla_tutor_moves_path}/{file_name}")
+    else:
+      log_success(f"Tutor Moves for {pokemon_name} written to {vanilla_tutor_moves_path}/{file_name}")
   except TypeError as e:
     print(f"An error has occurred {e}")
     if counter == 2:
@@ -370,6 +382,7 @@ def get_tutor_move_assignments(pokemon_name, pokemonId, monsno, counter=0):
     new_mons_name = pokemon.species.name if pokemon else pokemon.name
     get_tutor_move_assignments(new_mons_name, pokemonId, monsno, counter)
   except AttributeError as e:
+    print(e)
     log_error(f"Error: This pokemon is currently unavailable in PokeApi: {pokemon_name} ({pokemonId})")
     return
 
@@ -378,21 +391,53 @@ def get_all_tutor_move_data():
   for pokemonId, mon in enumerate(personal_table):
     if pokemonId == 0:
       continue
-    mons_name = slugify(get_pokemon_name(pokemonId), True)
+    if mon["monsno"] > 914 and mon["monsno"] not in poke_api_constants.EXCEPTION_IDS:
+      continue
+    if mon["monsno"] > 914:
+      print(mon["monsno"])
+    if pokemonId == 772:
+      mons_name = "type-null"
+    else:
+      mons_name = slugify(get_pokemon_name(pokemonId), True)
     get_tutor_move_assignments(mons_name, pokemonId, mon["monsno"])
 
-def output_tutor_moves_to_csv():
-  csv_output = {}
-  for filename in os.listdir(vanilla_tutor_moves_path):
-    file_list = filename.split("_").split(".")
-    monsNo = file_list[1]
-    formNo = file_list[3]
-    with open(os.path.join(vanilla_tutor_moves_path, filename)) as mon_tutor_move_file:
-      mon_tutor_moves = json.load(mon_tutor_move_file)
+def output_tutor_moves_to_csv(output_csv_path="tutor_moves_output.csv"):
+  with open(os.path.join(debug_file_path, output_csv_path), mode="w", newline='') as csv_file:
+    writer = csv.writer(csv_file)
 
+    move_tutor_names = []
     for moveId in move_tutor_lists:
-      mon_path_name = filename.split(".")[0]
-      csv_output[mon_path_name][moveId] = moveId in mon_tutor_moves["moves"]
+      move_tutor_names.append(get_move_string(moveId))
+
+    # Write header row
+    header = ["mons_name", "monsNo", "formNo", "pokemonId"] + move_tutor_names
+    writer.writerow(header)
+
+    for filename in os.listdir(vanilla_tutor_moves_path):
+      if not filename.endswith(".json"):
+        continue
+
+      file_parts = filename.replace(".json", "").split("_")
+      if len(file_parts) < 4:
+        continue  # skip invalid filenames
+
+      try:
+        monsNo = int(file_parts[1])
+        formNo = int(file_parts[3])
+      except ValueError:
+        continue  # skip if conversion fails
+
+      if monsNo > 914 and monsNo not in poke_api_constants.EXCEPTION_IDS:
+        continue
+      pokemonId = get_form_pokemon_personal_id(monsNo, formNo)
+      mons_name = get_pokemon_name(pokemonId)
+
+      with open(os.path.join(vanilla_tutor_moves_path, filename)) as mon_tutor_move_file:
+        mon_tutor_moves = json.load(mon_tutor_move_file)
+
+      mon_moves = mon_tutor_moves.get("moves", [])
+      row = [mons_name, monsNo, formNo, pokemonId] + [moveId in mon_moves for moveId in move_tutor_lists]
+      writer.writerow(row)
 
 
 def full_run():
@@ -401,7 +446,8 @@ def full_run():
   # get_all_api_mon_data()
   # write_pokeapi_data_to_file()
   # write_tm_101_to_150_learnsets()
-  get_all_tutor_move_data()
+  # get_all_tutor_move_data()
+  output_tutor_moves_to_csv()
 
 if __name__ == "__main__":
   full_data = load_data()
@@ -410,6 +456,8 @@ if __name__ == "__main__":
   #   pokemon_tm_learnsets = json.load(json_file)
   with open(os.path.join(debug_file_path, "pokemon_all_moves_api_learnsets.json"), "r") as move_file:
     pokemon_all_move_learnsets = json.load(move_file)
+
+  check_files_exist = False # This is to print out a list of all the files that are still needed
 
   move_tutor_lists = []
   for filename in os.listdir(tutor_moves_list_path):

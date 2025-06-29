@@ -136,6 +136,8 @@ def get_nature_name(natureId):
     return nature_namedata["labelDataArray"][natureId]["wordDataArray"][0]["str"]
 
 def get_ability_id_from_ability_name(ability_string):
+    ability_namedata = full_data['ability_namedata']
+
     if not ability_string:
         return -1
     ability_id = next((i for i, e in enumerate(ability_namedata['labelDataArray']) if e['wordDataArray'][0]['str'] == ability_string), -1)
