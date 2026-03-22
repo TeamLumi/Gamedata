@@ -164799,7 +164799,7 @@
   },
   {
     "value": 1074,
-    "text": "Galarian Farfetch’d",
+    "text": "Galarian Farfetch'd",
     "type": "Fighting",
     "abilities": [
       "Steadfast",
@@ -166320,7 +166320,7 @@
   },
   {
     "value": 1083,
-    "text": "Galarian Farfetch'd",
+    "text": "Hisuian Electrode",
     "type": "Electric",
     "dualtype": "Grass",
     "abilities": [
@@ -191782,7 +191782,7 @@
   },
   {
     "value": 1266,
-    "text": "Ash-Greninja",
+    "text": "Meadow Pattern Vivillon",
     "type": "Bug",
     "dualtype": "Flying",
     "abilities": [
@@ -196441,7 +196441,7 @@
   },
   {
     "value": 1302,
-    "text": "Female Meowstic",
+    "text": "Meowstic-F",
     "type": "Psychic",
     "abilities": [
       "Keen Eye",
@@ -197402,7 +197402,7 @@
   },
   {
     "value": 1309,
-    "text": "Meowstic-F",
+    "text": "Small Size Gourgeist",
     "type": "Ghost",
     "dualtype": "Grass",
     "abilities": [
@@ -199648,7 +199648,7 @@
   },
   {
     "value": 1326,
-    "text": "Own Tempo Rockruff",
+    "text": "Rockruff Own-Tempo",
     "type": "Rock",
     "abilities": [
       "Own Tempo",
@@ -201055,7 +201055,7 @@
   },
   {
     "value": 1335,
-    "text": "Rockruff Own-Tempo",
+    "text": "Type: Bug Silvally",
     "type": "Bug",
     "abilities": [
       "RKS System",
@@ -209707,7 +209707,7 @@
   },
   {
     "value": 1396,
-    "text": "Female Indeedee",
+    "text": "Indeedee-F",
     "type": "Psychic",
     "dualtype": "Normal",
     "abilities": [
@@ -211696,7 +211696,7 @@
   },
   {
     "value": 1410,
-    "text": "Female Basculegion",
+    "text": "Basculegion-F",
     "type": "Water",
     "dualtype": "Ghost",
     "abilities": [
@@ -211948,7 +211948,7 @@
   },
   {
     "value": 1412,
-    "text": "Female Oinkologne",
+    "text": "Oinkologne-F",
     "type": "Normal",
     "abilities": [
       "Aroma Veil",

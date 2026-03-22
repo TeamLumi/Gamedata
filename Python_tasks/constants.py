@@ -46,13 +46,13 @@ if INPUT_NAME == "input":
     POKEDEX_LENGTH = 1010
     NAT_DEX_LENGTH = 1455
     TROUBLE_MONS_NAMES = { 
+        1067: "Galarian Farfetch'd",
         1242: 'Ash-Greninja',
         1285: 'Meowstic-F',
         1310: 'Rockruff Own-Tempo',
         1441: 'Indeedee-F',
         1454: 'Basculegion-F',
         1456: 'Oinkologne-F',
-        1067: "Galarian Farfetch'd"
     }
     SCRIPT_DATA = "scriptdata"
     TRAINER_BATTLE = '_TRAINER_BTL_SET'
@@ -69,13 +69,13 @@ elif INPUT_NAME == "3.0Input":
     POKEDEX_LENGTH = 1025
     NAT_DEX_LENGTH = 1528
     TROUBLE_MONS_NAMES = { 
-        1266: 'Ash-Greninja',
-        1309: 'Meowstic-F',
-        1335: 'Rockruff Own-Tempo',
-        1466: 'Indeedee-F',
-        1481: 'Basculegion-F',
-        1483: 'Oinkologne-F',
-        1083: "Galarian Farfetch'd"
+        1074: "Galarian Farfetch'd",
+        1260: 'Partner Greninja',
+        1302: 'Meowstic-F',
+        1326: 'Rockruff Own-Tempo',
+        1396: 'Indeedee-F',
+        1410: 'Basculegion-F',
+        1412: 'Oinkologne-F',
     }
     SCRIPT_DATA = "relumi_scripts"
     ## The names of these can be found at the end of the trainer.ev file

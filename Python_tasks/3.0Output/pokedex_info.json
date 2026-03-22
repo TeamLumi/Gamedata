@@ -19809,7 +19809,7 @@
   },
   {
     "value": 1074,
-    "text": "Galarian Farfetch’d",
+    "text": "Galarian Farfetch'd",
     "type": "FIGHTING",
     "evolve": [
       1074,
@@ -19982,7 +19982,7 @@
   },
   {
     "value": 1083,
-    "text": "Galarian Farfetch'd",
+    "text": "Hisuian Electrode",
     "type": "ELECTRIC",
     "dualtype": "GRASS",
     "evolve": [
@@ -24463,7 +24463,7 @@
   },
   {
     "value": 1266,
-    "text": "Ash-Greninja",
+    "text": "Meadow Pattern Vivillon",
     "type": "BUG",
     "dualtype": "FLYING",
     "evolve": [
@@ -25284,7 +25284,7 @@
   },
   {
     "value": 1302,
-    "text": "Female Meowstic",
+    "text": "Meowstic-F",
     "type": "PSYCHIC",
     "evolve": [
       677,
@@ -25413,7 +25413,7 @@
   },
   {
     "value": 1309,
-    "text": "Meowstic-F",
+    "text": "Small Size Gourgeist",
     "type": "GHOST",
     "dualtype": "GRASS",
     "evolve": [
@@ -25755,7 +25755,7 @@
   },
   {
     "value": 1326,
-    "text": "Own Tempo Rockruff",
+    "text": "Rockruff Own-Tempo",
     "type": "ROCK",
     "evolve": [
       1326,
@@ -25993,7 +25993,7 @@
   },
   {
     "value": 1335,
-    "text": "Rockruff Own-Tempo",
+    "text": "Type: Bug Silvally",
     "type": "BUG",
     "evolve": [
       772,
@@ -27548,7 +27548,7 @@
   },
   {
     "value": 1396,
-    "text": "Female Indeedee",
+    "text": "Indeedee-F",
     "type": "PSYCHIC",
     "dualtype": "NORMAL",
     "evolve": [
@@ -27813,7 +27813,7 @@
   },
   {
     "value": 1410,
-    "text": "Female Basculegion",
+    "text": "Basculegion-F",
     "type": "WATER",
     "dualtype": "GHOST",
     "evolve": [
@@ -27849,7 +27849,7 @@
   },
   {
     "value": 1412,
-    "text": "Female Oinkologne",
+    "text": "Oinkologne-F",
     "type": "NORMAL",
     "evolve": [
       915,
