@@ -5121,7 +5121,7 @@
     "generation": 8,
     "abilities": [
       "Chlorophyll",
-      "Pickpocket",
+      "Wind Rider",
       "Unburden"
     ],
     "dexNum": 275,
@@ -9576,9 +9576,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Flash Fire",
+      "Reckless",
       "Motor Drive",
-      "Sap Sipper"
+      "Flare Boost"
     ],
     "dexNum": 522,
     "form": 0
@@ -9593,9 +9593,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Flash Fire",
+      "Reckless",
       "Motor Drive",
-      "Sap Sipper"
+      "Flare Boost"
     ],
     "dexNum": 523,
     "form": 0
@@ -14860,7 +14860,7 @@
     "generation": 8,
     "abilities": [
       "Overgrow",
-      "Overgrow",
+      "Soundproof",
       "Grassy Surge"
     ],
     "dexNum": 810,
@@ -15528,8 +15528,8 @@
     "generation": 8,
     "abilities": [
       "Swift Swim",
-      "Swift Swim",
-      "Propeller Tail"
+      "Propeller Tail",
+      "Mold Breaker"
     ],
     "dexNum": 846,
     "form": 0
@@ -15545,8 +15545,8 @@
     "generation": 8,
     "abilities": [
       "Swift Swim",
-      "Swift Swim",
-      "Propeller Tail"
+      "Propeller Tail",
+      "Mold Breaker"
     ],
     "dexNum": 847,
     "form": 0
@@ -15946,7 +15946,7 @@
     "generation": 8,
     "abilities": [
       "Sweet Veil",
-      "Sweet Veil",
+      "Sticky Hold",
       "Aroma Veil"
     ],
     "dexNum": 868,
@@ -15972,7 +15972,7 @@
     "generation": 8,
     "abilities": [
       "Sweet Veil",
-      "Sweet Veil",
+      "Sticky Hold",
       "Aroma Veil"
     ],
     "dexNum": 869,
@@ -16128,7 +16128,7 @@
     "generation": 8,
     "abilities": [
       "Sheer Force",
-      "Sheer Force",
+      "Pickup",
       "Heavy Metal"
     ],
     "dexNum": 878,
@@ -16519,7 +16519,7 @@
     ],
     "generation": 8,
     "abilities": [
-      "Swarm",
+      "Technician",
       "Sheer Force",
       "Sharpness"
     ],
@@ -19261,7 +19261,7 @@
   },
   {
     "value": 1047,
-    "text": "Ash Pikachu",
+    "text": "Cap Partner Pikachu",
     "type": "ELECTRIC",
     "evolve": [
       172,
@@ -24267,7 +24267,7 @@
   },
   {
     "value": 1260,
-    "text": "Ash-Greninja",
+    "text": "Partner Greninja",
     "type": "WATER",
     "dualtype": "DARK",
     "evolve": [
@@ -27315,7 +27315,7 @@
     "generation": 8,
     "abilities": [
       "Sweet Veil",
-      "Sweet Veil",
+      "Sticky Hold",
       "Aroma Veil"
     ],
     "dexNum": 869,
@@ -27341,7 +27341,7 @@
     "generation": 8,
     "abilities": [
       "Sweet Veil",
-      "Sweet Veil",
+      "Sticky Hold",
       "Aroma Veil"
     ],
     "dexNum": 869,
@@ -27367,7 +27367,7 @@
     "generation": 8,
     "abilities": [
       "Sweet Veil",
-      "Sweet Veil",
+      "Sticky Hold",
       "Aroma Veil"
     ],
     "dexNum": 869,
@@ -27393,7 +27393,7 @@
     "generation": 8,
     "abilities": [
       "Sweet Veil",
-      "Sweet Veil",
+      "Sticky Hold",
       "Aroma Veil"
     ],
     "dexNum": 869,
@@ -27419,7 +27419,7 @@
     "generation": 8,
     "abilities": [
       "Sweet Veil",
-      "Sweet Veil",
+      "Sticky Hold",
       "Aroma Veil"
     ],
     "dexNum": 869,
@@ -27445,7 +27445,7 @@
     "generation": 8,
     "abilities": [
       "Sweet Veil",
-      "Sweet Veil",
+      "Sticky Hold",
       "Aroma Veil"
     ],
     "dexNum": 869,
@@ -27471,7 +27471,7 @@
     "generation": 8,
     "abilities": [
       "Sweet Veil",
-      "Sweet Veil",
+      "Sticky Hold",
       "Aroma Veil"
     ],
     "dexNum": 869,
@@ -27497,7 +27497,7 @@
     "generation": 8,
     "abilities": [
       "Sweet Veil",
-      "Sweet Veil",
+      "Sticky Hold",
       "Aroma Veil"
     ],
     "dexNum": 869,
@@ -27523,7 +27523,7 @@
     "generation": 8,
     "abilities": [
       "Sweet Veil",
-      "Sweet Veil",
+      "Sticky Hold",
       "Aroma Veil"
     ],
     "dexNum": 869,

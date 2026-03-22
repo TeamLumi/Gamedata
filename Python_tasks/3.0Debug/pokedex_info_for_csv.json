@@ -44449,10 +44449,6 @@
       {
         "name": "Leaf Storm",
         "level": 44
-      },
-      {
-        "name": "Shed Tail",
-        "level": 47
       }
     ],
     "tmLearnset": {
@@ -44640,10 +44636,6 @@
       {
         "name": "Leaf Storm",
         "level": 54
-      },
-      {
-        "name": "Shed Tail",
-        "level": 58
       }
     ],
     "tmLearnset": {
@@ -48175,7 +48167,7 @@
     "dualtype": "Dark",
     "abilities": [
       "Chlorophyll",
-      "Pickpocket",
+      "Wind Rider",
       "Unburden"
     ],
     "learnset": [
@@ -90408,9 +90400,9 @@
     "text": "Blitzle",
     "type": "Electric",
     "abilities": [
-      "Flash Fire",
+      "Reckless",
       "Motor Drive",
-      "Sap Sipper"
+      "Flare Boost"
     ],
     "learnset": [
       {
@@ -90466,7 +90458,7 @@
         "level": 43
       },
       {
-        "name": "Raging Fury",
+        "name": "Flare Blitz",
         "level": 47
       }
     ],
@@ -90533,9 +90525,9 @@
     "text": "Zebstrika",
     "type": "Electric",
     "abilities": [
-      "Flash Fire",
+      "Reckless",
       "Motor Drive",
-      "Sap Sipper"
+      "Flare Boost"
     ],
     "learnset": [
       {
@@ -90543,15 +90535,7 @@
         "level": 0
       },
       {
-        "name": "Charge",
-        "level": 1
-      },
-      {
-        "name": "Quick Attack",
-        "level": 1
-      },
-      {
-        "name": "Tail Whip",
+        "name": "Ion Deluge",
         "level": 1
       },
       {
@@ -90559,7 +90543,19 @@
         "level": 1
       },
       {
-        "name": "Ion Deluge",
+        "name": "Blaze Kick",
+        "level": 1
+      },
+      {
+        "name": "Quick Attack",
+        "level": 1
+      },
+      {
+        "name": "Charge",
+        "level": 1
+      },
+      {
+        "name": "Tail Whip",
         "level": 1
       },
       {
@@ -90611,7 +90607,7 @@
         "level": 53
       },
       {
-        "name": "Raging Fury",
+        "name": "Flare Blitz",
         "level": 55
       },
       {
@@ -90668,7 +90664,7 @@
       "hp": 75,
       "atk": 105,
       "def": 63,
-      "spa": 80,
+      "spa": 90,
       "spd": 63,
       "spe": 116
     },
@@ -90679,7 +90675,7 @@
       "Field"
     ],
     "heldItems": [
-      "Cheri Berry",
+      "None",
       "None",
       "None"
     ]
@@ -110606,7 +110602,7 @@
     "tutorLearnset": {},
     "baseStats": {
       "hp": 86,
-      "atk": 106,
+      "atk": 109,
       "def": 72,
       "spa": 68,
       "spd": 66,
@@ -128250,12 +128246,12 @@
     "eggLearnset": {},
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 223,
+      "hp": 227,
       "atk": 101,
       "def": 71,
       "spa": 59,
       "spd": 71,
-      "spe": 43
+      "spe": 41
     },
     "dexNum": 799,
     "form": 0,
@@ -129530,7 +129526,7 @@
     "type": "Grass",
     "abilities": [
       "Overgrow",
-      "Overgrow",
+      "Soundproof",
       "Grassy Surge"
     ],
     "learnset": [
@@ -134129,8 +134125,8 @@
     "type": "Water",
     "abilities": [
       "Swift Swim",
-      "Swift Swim",
-      "Propeller Tail"
+      "Propeller Tail",
+      "Mold Breaker"
     ],
     "learnset": [
       {
@@ -134142,20 +134138,36 @@
         "level": 1
       },
       {
+        "name": "Leer",
+        "level": 1
+      },
+      {
         "name": "Fury Attack",
         "level": 6
       },
       {
-        "name": "Bite",
+        "name": "Acupressure",
         "level": 12
+      },
+      {
+        "name": "Ice Fang",
+        "level": 15
       },
       {
         "name": "Agility",
         "level": 18
       },
       {
+        "name": "Throat Chop",
+        "level": 21
+      },
+      {
         "name": "Dive",
         "level": 24
+      },
+      {
+        "name": "Flip Turn",
+        "level": 27
       },
       {
         "name": "Laser Focus",
@@ -134163,15 +134175,23 @@
       },
       {
         "name": "Crunch",
-        "level": 36
+        "level": 34
       },
       {
         "name": "Liquidation",
+        "level": 38
+      },
+      {
+        "name": "Scale Shot",
         "level": 42
       },
       {
+        "name": "Drill Run",
+        "level": 46
+      },
+      {
         "name": "Double-Edge",
-        "level": 48
+        "level": 50
       }
     ],
     "tmLearnset": {
@@ -134188,12 +134208,13 @@
       "Poison Jab": 398,
       "Substitute": 164,
       "Surf": 57,
-      "Waterfall": 127
+      "Waterfall": 127,
+      "Hidden Power": 237
     },
     "eggLearnset": {
       "Thrash": 37,
       "Slash": 163,
-      "Acupressure": 367,
+      "Poison Fang": 305,
       "Night Slash": 400
     },
     "tutorLearnset": {},
@@ -134223,8 +134244,8 @@
     "type": "Water",
     "abilities": [
       "Swift Swim",
-      "Swift Swim",
-      "Propeller Tail"
+      "Propeller Tail",
+      "Mold Breaker"
     ],
     "learnset": [
       {
@@ -134244,7 +134265,15 @@
         "level": 1
       },
       {
-        "name": "Throat Chop",
+        "name": "Ice Fang",
+        "level": 1
+      },
+      {
+        "name": "Leer",
+        "level": 1
+      },
+      {
+        "name": "Acupressure",
         "level": 1
       },
       {
@@ -134252,24 +134281,48 @@
         "level": 18
       },
       {
+        "name": "Throat Chop",
+        "level": 21
+      },
+      {
         "name": "Dive",
         "level": 24
       },
       {
-        "name": "Laser Focus",
+        "name": "Scary Face",
+        "level": 28
+      },
+      {
+        "name": "Flip Turn",
         "level": 32
       },
       {
+        "name": "Laser Focus",
+        "level": 36
+      },
+      {
         "name": "Crunch",
-        "level": 40
+        "level": 41
       },
       {
         "name": "Liquidation",
-        "level": 48
+        "level": 45
+      },
+      {
+        "name": "Scale Shot",
+        "level": 50
+      },
+      {
+        "name": "Drill Run",
+        "level": 55
       },
       {
         "name": "Double-Edge",
-        "level": 56
+        "level": 60
+      },
+      {
+        "name": "Wave Crash",
+        "level": 65
       }
     ],
     "tmLearnset": {
@@ -134295,7 +134348,7 @@
     "eggLearnset": {
       "Thrash": 37,
       "Slash": 163,
-      "Acupressure": 367,
+      "Poison Fang": 305,
       "Night Slash": 400
     },
     "tutorLearnset": {},
@@ -137308,7 +137361,7 @@
     "type": "Fairy",
     "abilities": [
       "Sweet Veil",
-      "Sweet Veil",
+      "Sticky Hold",
       "Aroma Veil"
     ],
     "learnset": [
@@ -137333,32 +137386,40 @@
         "level": 15
       },
       {
-        "name": "Aromatherapy",
+        "name": "Stored Power",
         "level": 20
       },
       {
-        "name": "Attract",
+        "name": "Aromatherapy",
         "level": 25
       },
       {
-        "name": "Acid Armor",
+        "name": "Attract",
         "level": 30
       },
       {
-        "name": "Dazzling Gleam",
+        "name": "Acid Armor",
         "level": 35
       },
       {
-        "name": "Recover",
+        "name": "Dazzling Gleam",
         "level": 40
       },
       {
-        "name": "Misty Terrain",
+        "name": "Recover",
         "level": 45
       },
       {
-        "name": "Entrainment",
+        "name": "Misty Terrain",
         "level": 50
+      },
+      {
+        "name": "Entrainment",
+        "level": 55
+      },
+      {
+        "name": "Moonblast",
+        "level": 60
       }
     ],
     "tmLearnset": {
@@ -137370,7 +137431,8 @@
       "Fling": 374,
       "Endure": 203,
       "Sleep Talk": 214,
-      "Substitute": 164
+      "Substitute": 164,
+      "Hidden Power": 237
     },
     "eggLearnset": {
       "Last Resort": 387,
@@ -137378,8 +137440,8 @@
     },
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 45,
-      "atk": 40,
+      "hp": 55,
+      "atk": 30,
       "def": 40,
       "spa": 50,
       "spd": 61,
@@ -137403,7 +137465,7 @@
     "type": "Fairy",
     "abilities": [
       "Sweet Veil",
-      "Sweet Veil",
+      "Sticky Hold",
       "Aroma Veil"
     ],
     "learnset": [
@@ -137436,32 +137498,40 @@
         "level": 15
       },
       {
-        "name": "Aromatherapy",
+        "name": "Stored Power",
         "level": 20
       },
       {
-        "name": "Attract",
+        "name": "Aromatherapy",
         "level": 25
       },
       {
-        "name": "Acid Armor",
+        "name": "Attract",
         "level": 30
       },
       {
-        "name": "Dazzling Gleam",
+        "name": "Acid Armor",
         "level": 35
       },
       {
-        "name": "Recover",
+        "name": "Dazzling Gleam",
         "level": 40
       },
       {
-        "name": "Misty Terrain",
+        "name": "Recover",
         "level": 45
       },
       {
-        "name": "Entrainment",
+        "name": "Misty Terrain",
         "level": 50
+      },
+      {
+        "name": "Entrainment",
+        "level": 55
+      },
+      {
+        "name": "Moonblast",
+        "level": 60
       }
     ],
     "tmLearnset": {
@@ -137484,7 +137554,8 @@
       "Giga Impact": 416,
       "Psych Up": 244,
       "Sleep Talk": 214,
-      "Substitute": 164
+      "Substitute": 164,
+      "Hidden Power": 237
     },
     "eggLearnset": {
       "Last Resort": 387,
@@ -137492,8 +137563,8 @@
     },
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 65,
-      "atk": 60,
+      "hp": 80,
+      "atk": 45,
       "def": 75,
       "spa": 110,
       "spd": 121,
@@ -138475,7 +138546,7 @@
     "type": "Steel",
     "abilities": [
       "Sheer Force",
-      "Sheer Force",
+      "Pickup",
       "Heavy Metal"
     ],
     "learnset": [
@@ -138554,7 +138625,8 @@
       "Substitute": 164,
       "Flash Cannon": 430,
       "Strength": 70,
-      "Rock Smash": 249
+      "Rock Smash": 249,
+      "Hidden Power": 237
     },
     "eggLearnset": {
       "Whirlwind": 18,
@@ -138570,9 +138642,9 @@
     "baseStats": {
       "hp": 72,
       "atk": 80,
-      "def": 49,
-      "spa": 40,
-      "spd": 49,
+      "def": 59,
+      "spa": 20,
+      "spd": 59,
       "spe": 40
     },
     "dexNum": 878,
@@ -141180,7 +141252,7 @@
     "type": "Bug",
     "dualtype": "Rock",
     "abilities": [
-      "Swarm",
+      "Technician",
       "Sheer Force",
       "Sharpness"
     ],
@@ -141298,11 +141370,12 @@
         "level": 52
       },
       {
-        "name": "Stone Edge",
+        "name": "Stone Axe",
         "level": 56
       }
     ],
     "tmLearnset": {
+      "Toxic": 92,
       "Sunny Day": 241,
       "Hyper Beam": 63,
       "Light Screen": 113,
@@ -141326,7 +141399,13 @@
       "X-Scissor": 404,
       "Sleep Talk": 214,
       "U-turn": 369,
-      "Substitute": 164
+      "Substitute": 164,
+      "Cut": 15,
+      "Strength": 70,
+      "Defog": 432,
+      "Rock Smash": 249,
+      "Rock Climb": 431,
+      "Hidden Power": 237
     },
     "eggLearnset": {
       "Counter": 68,
@@ -141700,23 +141779,7 @@
         "level": 0
       },
       {
-        "name": "Aerial Ace",
-        "level": 1
-      },
-      {
-        "name": "Swift",
-        "level": 1
-      },
-      {
-        "name": "Fury Swipes",
-        "level": 1
-      },
-      {
-        "name": "Quick Attack",
-        "level": 1
-      },
-      {
-        "name": "Focus Energy",
+        "name": "Rock Smash",
         "level": 1
       },
       {
@@ -141724,7 +141787,27 @@
         "level": 1
       },
       {
-        "name": "Rock Smash",
+        "name": "Focus Energy",
+        "level": 1
+      },
+      {
+        "name": "Dire Claw",
+        "level": 1
+      },
+      {
+        "name": "Fury Swipes",
+        "level": 1
+      },
+      {
+        "name": "Swift",
+        "level": 1
+      },
+      {
+        "name": "Aerial Ace",
+        "level": 1
+      },
+      {
+        "name": "Quick Attack",
         "level": 1
       },
       {
@@ -160072,7 +160155,7 @@
   },
   {
     "value": 1047,
-    "text": "Ash Pikachu",
+    "text": "Cap Partner Pikachu",
     "type": "Electric",
     "abilities": [
       "Static",
@@ -161590,21 +161673,26 @@
       "Roar": 46,
       "Toxic": 92,
       "Hail": 258,
-      "Bulk Up": 339,
-      "Hyper Beam": 63,
-      "Light Screen": 113,
+      "Ice Beam": 58,
+      "Blizzard": 59,
+      "Protect": 182,
       "Rain Dance": 240,
-      "Giga Drain": 202,
+      "Safeguard": 219,
+      "Dazzling Gleam": 605,
       "Iron Tail": 231,
-      "Psychic": 94,
-      "Reflect": 115,
-      "Thief": 168,
-      "Recycle": 278,
-      "Rock Polish": 397,
-      "Thunder Wave": 86,
-      "Snarl": 555,
-      "Rock Slide": 157,
-      "Grass Knot": 447,
+      "Dig": 91,
+      "Double Team": 104,
+      "Facade": 263,
+      "Rest": 156,
+      "Attract": 213,
+      "Energy Ball": 412,
+      "Endure": 203,
+      "Payback": 371,
+      "Psych Up": 244,
+      "Dark Pulse": 399,
+      "Sleep Talk": 214,
+      "Swagger": 207,
+      "Substitute": 164,
       "Hidden Power": 237
     },
     "eggLearnset": {
@@ -162847,6 +162935,10 @@
       {
         "name": "Extreme Speed",
         "level": 0
+      },
+      {
+        "name": "Extreme Speed",
+        "level": 1
       },
       {
         "name": "Howl",
@@ -190815,7 +190907,7 @@
   },
   {
     "value": 1260,
-    "text": "Ash-Greninja",
+    "text": "Partner Greninja",
     "type": "Water",
     "dualtype": "Dark",
     "abilities": [
@@ -208395,7 +208487,7 @@
     "type": "Fairy",
     "abilities": [
       "Sweet Veil",
-      "Sweet Veil",
+      "Sticky Hold",
       "Aroma Veil"
     ],
     "learnset": [
@@ -208428,32 +208520,40 @@
         "level": 15
       },
       {
-        "name": "Aromatherapy",
+        "name": "Stored Power",
         "level": 20
       },
       {
-        "name": "Attract",
+        "name": "Aromatherapy",
         "level": 25
       },
       {
-        "name": "Acid Armor",
+        "name": "Attract",
         "level": 30
       },
       {
-        "name": "Dazzling Gleam",
+        "name": "Acid Armor",
         "level": 35
       },
       {
-        "name": "Recover",
+        "name": "Dazzling Gleam",
         "level": 40
       },
       {
-        "name": "Misty Terrain",
+        "name": "Recover",
         "level": 45
       },
       {
-        "name": "Entrainment",
+        "name": "Misty Terrain",
         "level": 50
+      },
+      {
+        "name": "Entrainment",
+        "level": 55
+      },
+      {
+        "name": "Moonblast",
+        "level": 60
       }
     ],
     "tmLearnset": {
@@ -208476,13 +208576,17 @@
       "Giga Impact": 416,
       "Psych Up": 244,
       "Sleep Talk": 214,
-      "Substitute": 164
+      "Substitute": 164,
+      "Hidden Power": 237
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Last Resort": 387,
+      "Baby-Doll Eyes": 608
+    },
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 65,
-      "atk": 60,
+      "hp": 80,
+      "atk": 45,
       "def": 75,
       "spa": 110,
       "spd": 121,
@@ -208506,7 +208610,7 @@
     "type": "Fairy",
     "abilities": [
       "Sweet Veil",
-      "Sweet Veil",
+      "Sticky Hold",
       "Aroma Veil"
     ],
     "learnset": [
@@ -208539,32 +208643,40 @@
         "level": 15
       },
       {
-        "name": "Aromatherapy",
+        "name": "Stored Power",
         "level": 20
       },
       {
-        "name": "Attract",
+        "name": "Aromatherapy",
         "level": 25
       },
       {
-        "name": "Acid Armor",
+        "name": "Attract",
         "level": 30
       },
       {
-        "name": "Dazzling Gleam",
+        "name": "Acid Armor",
         "level": 35
       },
       {
-        "name": "Recover",
+        "name": "Dazzling Gleam",
         "level": 40
       },
       {
-        "name": "Misty Terrain",
+        "name": "Recover",
         "level": 45
       },
       {
-        "name": "Entrainment",
+        "name": "Misty Terrain",
         "level": 50
+      },
+      {
+        "name": "Entrainment",
+        "level": 55
+      },
+      {
+        "name": "Moonblast",
+        "level": 60
       }
     ],
     "tmLearnset": {
@@ -208587,13 +208699,17 @@
       "Giga Impact": 416,
       "Psych Up": 244,
       "Sleep Talk": 214,
-      "Substitute": 164
+      "Substitute": 164,
+      "Hidden Power": 237
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Last Resort": 387,
+      "Baby-Doll Eyes": 608
+    },
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 65,
-      "atk": 60,
+      "hp": 80,
+      "atk": 45,
       "def": 75,
       "spa": 110,
       "spd": 121,
@@ -208617,7 +208733,7 @@
     "type": "Fairy",
     "abilities": [
       "Sweet Veil",
-      "Sweet Veil",
+      "Sticky Hold",
       "Aroma Veil"
     ],
     "learnset": [
@@ -208650,32 +208766,40 @@
         "level": 15
       },
       {
-        "name": "Aromatherapy",
+        "name": "Stored Power",
         "level": 20
       },
       {
-        "name": "Attract",
+        "name": "Aromatherapy",
         "level": 25
       },
       {
-        "name": "Acid Armor",
+        "name": "Attract",
         "level": 30
       },
       {
-        "name": "Dazzling Gleam",
+        "name": "Acid Armor",
         "level": 35
       },
       {
-        "name": "Recover",
+        "name": "Dazzling Gleam",
         "level": 40
       },
       {
-        "name": "Misty Terrain",
+        "name": "Recover",
         "level": 45
       },
       {
-        "name": "Entrainment",
+        "name": "Misty Terrain",
         "level": 50
+      },
+      {
+        "name": "Entrainment",
+        "level": 55
+      },
+      {
+        "name": "Moonblast",
+        "level": 60
       }
     ],
     "tmLearnset": {
@@ -208698,13 +208822,17 @@
       "Giga Impact": 416,
       "Psych Up": 244,
       "Sleep Talk": 214,
-      "Substitute": 164
+      "Substitute": 164,
+      "Hidden Power": 237
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Last Resort": 387,
+      "Baby-Doll Eyes": 608
+    },
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 65,
-      "atk": 60,
+      "hp": 80,
+      "atk": 45,
       "def": 75,
       "spa": 110,
       "spd": 121,
@@ -208728,7 +208856,7 @@
     "type": "Fairy",
     "abilities": [
       "Sweet Veil",
-      "Sweet Veil",
+      "Sticky Hold",
       "Aroma Veil"
     ],
     "learnset": [
@@ -208761,32 +208889,40 @@
         "level": 15
       },
       {
-        "name": "Aromatherapy",
+        "name": "Stored Power",
         "level": 20
       },
       {
-        "name": "Attract",
+        "name": "Aromatherapy",
         "level": 25
       },
       {
-        "name": "Acid Armor",
+        "name": "Attract",
         "level": 30
       },
       {
-        "name": "Dazzling Gleam",
+        "name": "Acid Armor",
         "level": 35
       },
       {
-        "name": "Recover",
+        "name": "Dazzling Gleam",
         "level": 40
       },
       {
-        "name": "Misty Terrain",
+        "name": "Recover",
         "level": 45
       },
       {
-        "name": "Entrainment",
+        "name": "Misty Terrain",
         "level": 50
+      },
+      {
+        "name": "Entrainment",
+        "level": 55
+      },
+      {
+        "name": "Moonblast",
+        "level": 60
       }
     ],
     "tmLearnset": {
@@ -208809,13 +208945,17 @@
       "Giga Impact": 416,
       "Psych Up": 244,
       "Sleep Talk": 214,
-      "Substitute": 164
+      "Substitute": 164,
+      "Hidden Power": 237
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Last Resort": 387,
+      "Baby-Doll Eyes": 608
+    },
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 65,
-      "atk": 60,
+      "hp": 80,
+      "atk": 45,
       "def": 75,
       "spa": 110,
       "spd": 121,
@@ -208839,7 +208979,7 @@
     "type": "Fairy",
     "abilities": [
       "Sweet Veil",
-      "Sweet Veil",
+      "Sticky Hold",
       "Aroma Veil"
     ],
     "learnset": [
@@ -208872,32 +209012,40 @@
         "level": 15
       },
       {
-        "name": "Aromatherapy",
+        "name": "Stored Power",
         "level": 20
       },
       {
-        "name": "Attract",
+        "name": "Aromatherapy",
         "level": 25
       },
       {
-        "name": "Acid Armor",
+        "name": "Attract",
         "level": 30
       },
       {
-        "name": "Dazzling Gleam",
+        "name": "Acid Armor",
         "level": 35
       },
       {
-        "name": "Recover",
+        "name": "Dazzling Gleam",
         "level": 40
       },
       {
-        "name": "Misty Terrain",
+        "name": "Recover",
         "level": 45
       },
       {
-        "name": "Entrainment",
+        "name": "Misty Terrain",
         "level": 50
+      },
+      {
+        "name": "Entrainment",
+        "level": 55
+      },
+      {
+        "name": "Moonblast",
+        "level": 60
       }
     ],
     "tmLearnset": {
@@ -208920,13 +209068,17 @@
       "Giga Impact": 416,
       "Psych Up": 244,
       "Sleep Talk": 214,
-      "Substitute": 164
+      "Substitute": 164,
+      "Hidden Power": 237
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Last Resort": 387,
+      "Baby-Doll Eyes": 608
+    },
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 65,
-      "atk": 60,
+      "hp": 80,
+      "atk": 45,
       "def": 75,
       "spa": 110,
       "spd": 121,
@@ -208950,7 +209102,7 @@
     "type": "Fairy",
     "abilities": [
       "Sweet Veil",
-      "Sweet Veil",
+      "Sticky Hold",
       "Aroma Veil"
     ],
     "learnset": [
@@ -208983,32 +209135,40 @@
         "level": 15
       },
       {
-        "name": "Aromatherapy",
+        "name": "Stored Power",
         "level": 20
       },
       {
-        "name": "Attract",
+        "name": "Aromatherapy",
         "level": 25
       },
       {
-        "name": "Acid Armor",
+        "name": "Attract",
         "level": 30
       },
       {
-        "name": "Dazzling Gleam",
+        "name": "Acid Armor",
         "level": 35
       },
       {
-        "name": "Recover",
+        "name": "Dazzling Gleam",
         "level": 40
       },
       {
-        "name": "Misty Terrain",
+        "name": "Recover",
         "level": 45
       },
       {
-        "name": "Entrainment",
+        "name": "Misty Terrain",
         "level": 50
+      },
+      {
+        "name": "Entrainment",
+        "level": 55
+      },
+      {
+        "name": "Moonblast",
+        "level": 60
       }
     ],
     "tmLearnset": {
@@ -209031,13 +209191,17 @@
       "Giga Impact": 416,
       "Psych Up": 244,
       "Sleep Talk": 214,
-      "Substitute": 164
+      "Substitute": 164,
+      "Hidden Power": 237
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Last Resort": 387,
+      "Baby-Doll Eyes": 608
+    },
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 65,
-      "atk": 60,
+      "hp": 80,
+      "atk": 45,
       "def": 75,
       "spa": 110,
       "spd": 121,
@@ -209061,7 +209225,7 @@
     "type": "Fairy",
     "abilities": [
       "Sweet Veil",
-      "Sweet Veil",
+      "Sticky Hold",
       "Aroma Veil"
     ],
     "learnset": [
@@ -209094,32 +209258,40 @@
         "level": 15
       },
       {
-        "name": "Aromatherapy",
+        "name": "Stored Power",
         "level": 20
       },
       {
-        "name": "Attract",
+        "name": "Aromatherapy",
         "level": 25
       },
       {
-        "name": "Acid Armor",
+        "name": "Attract",
         "level": 30
       },
       {
-        "name": "Dazzling Gleam",
+        "name": "Acid Armor",
         "level": 35
       },
       {
-        "name": "Recover",
+        "name": "Dazzling Gleam",
         "level": 40
       },
       {
-        "name": "Misty Terrain",
+        "name": "Recover",
         "level": 45
       },
       {
-        "name": "Entrainment",
+        "name": "Misty Terrain",
         "level": 50
+      },
+      {
+        "name": "Entrainment",
+        "level": 55
+      },
+      {
+        "name": "Moonblast",
+        "level": 60
       }
     ],
     "tmLearnset": {
@@ -209142,13 +209314,17 @@
       "Giga Impact": 416,
       "Psych Up": 244,
       "Sleep Talk": 214,
-      "Substitute": 164
+      "Substitute": 164,
+      "Hidden Power": 237
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Last Resort": 387,
+      "Baby-Doll Eyes": 608
+    },
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 65,
-      "atk": 60,
+      "hp": 80,
+      "atk": 45,
       "def": 75,
       "spa": 110,
       "spd": 121,
@@ -209172,7 +209348,7 @@
     "type": "Fairy",
     "abilities": [
       "Sweet Veil",
-      "Sweet Veil",
+      "Sticky Hold",
       "Aroma Veil"
     ],
     "learnset": [
@@ -209205,32 +209381,40 @@
         "level": 15
       },
       {
-        "name": "Aromatherapy",
+        "name": "Stored Power",
         "level": 20
       },
       {
-        "name": "Attract",
+        "name": "Aromatherapy",
         "level": 25
       },
       {
-        "name": "Acid Armor",
+        "name": "Attract",
         "level": 30
       },
       {
-        "name": "Dazzling Gleam",
+        "name": "Acid Armor",
         "level": 35
       },
       {
-        "name": "Recover",
+        "name": "Dazzling Gleam",
         "level": 40
       },
       {
-        "name": "Misty Terrain",
+        "name": "Recover",
         "level": 45
       },
       {
-        "name": "Entrainment",
+        "name": "Misty Terrain",
         "level": 50
+      },
+      {
+        "name": "Entrainment",
+        "level": 55
+      },
+      {
+        "name": "Moonblast",
+        "level": 60
       }
     ],
     "tmLearnset": {
@@ -209253,13 +209437,17 @@
       "Giga Impact": 416,
       "Psych Up": 244,
       "Sleep Talk": 214,
-      "Substitute": 164
+      "Substitute": 164,
+      "Hidden Power": 237
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Last Resort": 387,
+      "Baby-Doll Eyes": 608
+    },
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 65,
-      "atk": 60,
+      "hp": 80,
+      "atk": 45,
       "def": 75,
       "spa": 110,
       "spd": 121,
@@ -209283,7 +209471,7 @@
     "type": "Fairy",
     "abilities": [
       "Sweet Veil",
-      "Sweet Veil",
+      "Sticky Hold",
       "Aroma Veil"
     ],
     "learnset": [
@@ -209316,32 +209504,40 @@
         "level": 15
       },
       {
-        "name": "Aromatherapy",
+        "name": "Stored Power",
         "level": 20
       },
       {
-        "name": "Attract",
+        "name": "Aromatherapy",
         "level": 25
       },
       {
-        "name": "Acid Armor",
+        "name": "Attract",
         "level": 30
       },
       {
-        "name": "Dazzling Gleam",
+        "name": "Acid Armor",
         "level": 35
       },
       {
-        "name": "Recover",
+        "name": "Dazzling Gleam",
         "level": 40
       },
       {
-        "name": "Misty Terrain",
+        "name": "Recover",
         "level": 45
       },
       {
-        "name": "Entrainment",
+        "name": "Misty Terrain",
         "level": 50
+      },
+      {
+        "name": "Entrainment",
+        "level": 55
+      },
+      {
+        "name": "Moonblast",
+        "level": 60
       }
     ],
     "tmLearnset": {
@@ -209364,13 +209560,17 @@
       "Giga Impact": 416,
       "Psych Up": 244,
       "Sleep Talk": 214,
-      "Substitute": 164
+      "Substitute": 164,
+      "Hidden Power": 237
     },
-    "eggLearnset": {},
+    "eggLearnset": {
+      "Last Resort": 387,
+      "Baby-Doll Eyes": 608
+    },
     "tutorLearnset": {},
     "baseStats": {
-      "hp": 65,
-      "atk": 60,
+      "hp": 80,
+      "atk": 45,
       "def": 75,
       "spa": 110,
       "spd": 121,
