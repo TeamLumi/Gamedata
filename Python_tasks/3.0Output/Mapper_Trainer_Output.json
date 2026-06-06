@@ -3757,7 +3757,7 @@
         {
           "ability": "Mimicry",
           "gender": "MALE",
-          "id": 1246,
+          "id": 1248,
           "item": null,
           "level": 18,
           "moves": [
@@ -5123,8 +5123,8 @@
           "item": null,
           "level": 55,
           "moves": [
-            253,
-            130,
+            662,
+            834,
             37,
             38
           ],
@@ -5589,7 +5589,7 @@
         {
           "ability": "Chlorophyll",
           "gender": "FEMALE",
-          "id": 1242,
+          "id": 1244,
           "item": null,
           "level": 22,
           "moves": [
@@ -5765,7 +5765,7 @@
         {
           "ability": "Inner Focus",
           "gender": "MALE",
-          "id": 1232,
+          "id": 1234,
           "item": null,
           "level": 20,
           "moves": [
@@ -14411,7 +14411,7 @@
         {
           "ability": "Chlorophyll",
           "gender": "MALE",
-          "id": 1229,
+          "id": 1231,
           "item": null,
           "level": 35,
           "moves": [
@@ -17219,7 +17219,7 @@
         {
           "ability": "Adaptability",
           "gender": "FEMALE",
-          "id": 1231,
+          "id": 1233,
           "item": null,
           "level": 39,
           "moves": [
@@ -22558,7 +22558,7 @@
         {
           "ability": "Zen Mode",
           "gender": "FEMALE",
-          "id": 1234,
+          "id": 1236,
           "item": null,
           "level": 53,
           "moves": [
@@ -24130,7 +24130,7 @@
         {
           "ability": "Punk Rock",
           "gender": "FEMALE",
-          "id": 1378,
+          "id": 1380,
           "item": null,
           "level": 60,
           "moves": [
@@ -24752,7 +24752,7 @@
           "item": null,
           "level": 59,
           "moves": [
-            130,
+            834,
             37,
             38,
             457
@@ -26428,7 +26428,7 @@
         {
           "ability": "Keen Eye",
           "gender": "FEMALE",
-          "id": 1247,
+          "id": 1249,
           "item": null,
           "level": 63,
           "moves": [
@@ -27448,7 +27448,7 @@
         {
           "ability": "Gooey",
           "gender": "FEMALE",
-          "id": 1305,
+          "id": 1307,
           "item": null,
           "level": 63,
           "moves": [
@@ -28832,7 +28832,7 @@
         {
           "ability": "Torrent",
           "gender": "FEMALE",
-          "id": 1227,
+          "id": 1229,
           "item": null,
           "level": 64,
           "moves": [
@@ -30540,7 +30540,7 @@
         {
           "ability": "Friend Guard",
           "gender": "FEMALE",
-          "id": 1266,
+          "id": 1268,
           "item": null,
           "level": 73,
           "moves": [

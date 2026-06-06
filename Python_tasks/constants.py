@@ -70,12 +70,12 @@ elif INPUT_NAME == "3.0Input":
     NAT_DEX_LENGTH = 1528
     TROUBLE_MONS_NAMES = { 
         1074: "Galarian Farfetch'd",
-        1260: 'Partner Greninja',
-        1302: 'Meowstic-F',
-        1326: 'Rockruff Own-Tempo',
-        1396: 'Indeedee-F',
-        1410: 'Basculegion-F',
-        1412: 'Oinkologne-F',
+        1262: 'Partner Greninja',
+        1304: 'Meowstic-F',
+        1328: 'Rockruff Own-Tempo',
+        1398: 'Indeedee-F',
+        1412: 'Basculegion-F',
+        1414: 'Oinkologne-F',
     }
     SCRIPT_DATA = "relumi_scripts"
     ## The names of these can be found at the end of the trainer.ev file

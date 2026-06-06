@@ -30,6 +30,7 @@ personal_data_path = os.path.join(input_file_path, 'PersonalTable.json')
 
 FORM_MAP = {}
 GENDER = {"0": "MALE", "1": "FEMALE", "2": "NEUTRAL"}
+CATCH_RATES = set()
 
 # Load all the JSON Data
 
@@ -351,6 +352,7 @@ def get_pokemon_info(personalId=0):
     tutorLearnset = {}
 
     p = personal_data['Personal'][int(personalId)]
+    CATCH_RATES.add(p['get_rate'])
     monsNo, formNo = get_mons_no_and_form_no(personalId)
     if constants.GAME_MODE == constants.GAME_MODE_3:
         tms = get_relumi_tm_learnset(monsNo, formNo)
@@ -358,6 +360,7 @@ def get_pokemon_info(personalId=0):
         tms = get_tech_machine_learnset(personalId)
     eggs = get_egg_moves(int(personalId))
     tutors = get_tutor_moves(p['monsno'], formNo)
+    learn_moves = get_pokemon_learnset(int(personalId))
 
     for tm in tms:
         tmLearnset[get_move_string(tm['moveId'])] = tm['moveId']
@@ -379,7 +382,7 @@ def get_pokemon_info(personalId=0):
         'ability1': get_ability_string(p['tokusei1']),
         'ability2': get_ability_string(p['tokusei2']),
         'abilityH': get_ability_string(p['tokusei3']),
-        'learnset': get_pokemon_learnset(int(personalId)),
+        'learnset': learn_moves,
         'tmLearnset': tmLearnset,
         'eggLearnset': eggLearnset,
         'tutorLearnset': tutorLearnset,
@@ -392,6 +395,7 @@ def get_pokemon_info(personalId=0):
         'height': get_height(personalId),
         'grassKnotPower': get_grass_knot_power(get_weight(personalId)),
         'type': get_type_name(p['type1']),
+        'catchRate': p['get_rate'],
     }
 
     if p['type2'] != p['type1']:
@@ -514,4 +518,3 @@ if __name__ != '__main__':
     reversed_forms = {v: k for k, v in forms.items()}
     pokedex = get_lumi_data(name_data, get_pokemon_name)
     diff_forms, NAME_MAP = get_diff_form_dictionary(constants.GAME_MODE)
-

@@ -9619,7 +9619,7 @@
         "level": 20
       },
       {
-        "name": "Fire Punch",
+        "name": "Ice Punch",
         "level": 23
       },
       {
@@ -9627,7 +9627,7 @@
         "level": 23
       },
       {
-        "name": "Ice Punch",
+        "name": "Fire Punch",
         "level": 23
       },
       {
@@ -9645,6 +9645,10 @@
       {
         "name": "Close Combat",
         "level": 38
+      },
+      {
+        "name": "Rage Fist",
+        "level": 40
       },
       {
         "name": "Thrash",
@@ -13246,27 +13250,7 @@
         "level": 0
       },
       {
-        "name": "Poison Jab",
-        "level": 1
-      },
-      {
-        "name": "Tail Whip",
-        "level": 1
-      },
-      {
-        "name": "Growl",
-        "level": 1
-      },
-      {
-        "name": "Quick Attack",
-        "level": 1
-      },
-      {
-        "name": "Tackle",
-        "level": 1
-      },
-      {
-        "name": "Megahorn",
+        "name": "Smart Strike",
         "level": 1
       },
       {
@@ -13274,7 +13258,31 @@
         "level": 1
       },
       {
-        "name": "Smart Strike",
+        "name": "Megahorn",
+        "level": 1
+      },
+      {
+        "name": "Tackle",
+        "level": 1
+      },
+      {
+        "name": "Fire Lash",
+        "level": 1
+      },
+      {
+        "name": "Growl",
+        "level": 1
+      },
+      {
+        "name": "Tail Whip",
+        "level": 1
+      },
+      {
+        "name": "Poison Jab",
+        "level": 1
+      },
+      {
+        "name": "Quick Attack",
         "level": 1
       },
       {
@@ -13393,11 +13401,11 @@
     },
     "baseStats": {
       "hp": 65,
-      "atk": 100,
+      "atk": 105,
       "def": 70,
       "spa": 80,
       "spd": 80,
-      "spe": 105
+      "spe": 115
     },
     "dexNum": 78,
     "form": 0,
@@ -79340,11 +79348,11 @@
         "level": 24
       },
       {
-        "name": "Sleep Powder",
+        "name": "Knock Off",
         "level": 27
       },
       {
-        "name": "Knock Off",
+        "name": "Sleep Powder",
         "level": 27
       },
       {
@@ -79386,6 +79394,10 @@
       {
         "name": "Power Whip",
         "level": 45
+      },
+      {
+        "name": "Snap Trap",
+        "level": 48
       }
     ],
     "tmLearnset": {
@@ -81600,7 +81612,7 @@
         "level": 57
       },
       {
-        "name": "Burn Up",
+        "name": "Armor Cannon",
         "level": 61
       }
     ],
@@ -93117,6 +93129,7 @@
       "Dream Eater": 138,
       "Grass Knot": 447,
       "Swagger": 207,
+      "U-turn": 369,
       "Substitute": 164,
       "Cut": 15,
       "Hidden Power": 237
@@ -136606,8 +136619,8 @@
     "text": "Cursola",
     "type": "Ghost",
     "abilities": [
-      "Weak Armor",
-      "Weak Armor",
+      "Sticky Hold",
+      "Sticky Hold",
       "Perish Body"
     ],
     "learnset": [
@@ -136660,11 +136673,11 @@
         "level": 25
       },
       {
-        "name": "Amnesia",
+        "name": "Iron Defense",
         "level": 28
       },
       {
-        "name": "Iron Defense",
+        "name": "Amnesia",
         "level": 28
       },
       {
@@ -141690,7 +141703,7 @@
         "level": 24
       },
       {
-        "name": "Soak",
+        "name": "Shadow Sneak",
         "level": 28
       },
       {
@@ -141702,11 +141715,11 @@
         "level": 36
       },
       {
-        "name": "Uproar",
+        "name": "Spirit Shackle",
         "level": 40
       },
       {
-        "name": "Skull Bash",
+        "name": "Wave Crash",
         "level": 44
       },
       {
@@ -141720,27 +141733,50 @@
       {
         "name": "Head Smash",
         "level": 56
+      },
+      {
+        "name": "Hydro Pump",
+        "level": 60
       }
     ],
     "tmLearnset": {
       "Water Pulse": 352,
+      "Calm Mind": 347,
+      "Toxic": 92,
+      "Hail": 258,
       "Ice Beam": 58,
-      "Blizzard": 59,
       "Hyper Beam": 63,
       "Protect": 182,
       "Rain Dance": 240,
+      "Psychic": 94,
       "Shadow Ball": 247,
+      "Double Team": 104,
       "Facade": 263,
       "Rest": 156,
+      "Attract": 213,
+      "Scald": 503,
+      "Will-O-Wisp": 261,
       "Giga Impact": 416,
-      "Sleep Talk": 214,
+      "Swagger": 207,
+      "U-turn": 369,
       "Substitute": 164,
       "Surf": 57,
-      "Waterfall": 127
+      "Rock Smash": 249,
+      "Waterfall": 127,
+      "Hidden Power": 237
     },
     "eggLearnset": {
+      "Agility": 97,
+      "Brine": 362,
       "Bubble Beam": 61,
-      "Endeavor": 283
+      "Mud Shot": 341,
+      "Muddy Water": 330,
+      "Rage": 99,
+      "Revenge": 279,
+      "Swift": 129,
+      "Whirlpool": 250,
+      "Soak": 487,
+      "Uproar": 253
     },
     "tutorLearnset": {},
     "baseStats": {
@@ -151127,39 +151163,71 @@
       },
       {
         "name": "Mud Shot",
-        "level": 8
-      },
-      {
-        "name": "Poison Tail",
-        "level": 12
+        "level": 7
       },
       {
         "name": "Slam",
-        "level": 16
-      },
-      {
-        "name": "Yawn",
-        "level": 21
+        "level": 10
       },
       {
         "name": "Poison Jab",
-        "level": 24
+        "level": 13
       },
       {
-        "name": "Sludge Wave",
-        "level": 30
+        "name": "Curse",
+        "level": 17
       },
       {
-        "name": "Megahorn",
-        "level": 36
+        "name": "Bulldoze",
+        "level": 19
       },
       {
-        "name": "Toxic",
-        "level": 40
+        "name": "Mud Bomb",
+        "level": 19
+      },
+      {
+        "name": "Poison Tail",
+        "level": 23
+      },
+      {
+        "name": "Yawn",
+        "level": 27
+      },
+      {
+        "name": "Body Slam",
+        "level": 31
       },
       {
         "name": "Earthquake",
-        "level": 48
+        "level": 35
+      },
+      {
+        "name": "Sludge Wave",
+        "level": 39
+      },
+      {
+        "name": "Megahorn",
+        "level": 43
+      },
+      {
+        "name": "Toxic",
+        "level": 45
+      },
+      {
+        "name": "Muddy Water",
+        "level": 47
+      },
+      {
+        "name": "Mist",
+        "level": 51
+      },
+      {
+        "name": "Haze",
+        "level": 51
+      },
+      {
+        "name": "Recover",
+        "level": 55
       }
     ],
     "tmLearnset": {
@@ -151185,28 +151253,25 @@
       "Poison Jab": 398,
       "Substitute": 164,
       "Surf": 57,
-      "Waterfall": 127
+      "Waterfall": 127,
+      "Hidden Power": 237
     },
     "eggLearnset": {
       "Ancient Power": 246,
-      "Curse": 174,
       "Stockpile": 254,
       "Swallow": 256,
       "Spit Up": 255,
       "Counter": 68,
       "Double Kick": 24,
-      "Recover": 105,
       "After You": 495,
-      "Acid Spray": 491,
-      "Haze": 114,
-      "Mist": 54
+      "Acid Spray": 491
     },
     "tutorLearnset": {},
     "baseStats": {
       "hp": 130,
       "atk": 75,
       "def": 60,
-      "spa": 45,
+      "spa": 65,
       "spd": 100,
       "spe": 20
     },
@@ -151278,7 +151343,7 @@
         "level": 28
       },
       {
-        "name": "Happy Hour",
+        "name": "Twin Beam",
         "level": 32
       },
       {
@@ -151301,6 +151366,7 @@
     "tmLearnset": {
       "Calm Mind": 347,
       "Roar": 46,
+      "Toxic": 92,
       "Sunny Day": 241,
       "Hyper Beam": 63,
       "Light Screen": 113,
@@ -151327,9 +151393,9 @@
       "Sleep Talk": 214,
       "Bulldoze": 523,
       "Grass Knot": 447,
-      "Substitute": 164,
       "Trick Room": 433,
-      "Hyper Voice": 304
+      "Hyper Voice": 304,
+      "Hidden Power": 237
     },
     "eggLearnset": {
       "Take Down": 36,
@@ -151351,7 +151417,7 @@
       "def": 70,
       "spa": 110,
       "spd": 70,
-      "spe": 60
+      "spe": 85
     },
     "dexNum": 981,
     "form": 0,
@@ -151558,23 +151624,15 @@
     "abilities": [
       "Defiant",
       "Supreme Overlord",
-      "Pressure"
+      "Sharpness"
     ],
     "learnset": [
       {
-        "name": "Happy Hour",
+        "name": "Kowtow Cleave",
         "level": 0
       },
       {
-        "name": "Metal Burst",
-        "level": 1
-      },
-      {
-        "name": "Scratch",
-        "level": 1
-      },
-      {
-        "name": "Leer",
+        "name": "Metal Claw",
         "level": 1
       },
       {
@@ -151582,7 +151640,19 @@
         "level": 1
       },
       {
-        "name": "Metal Claw",
+        "name": "Kowtow Cleave",
+        "level": 1
+      },
+      {
+        "name": "Scratch",
+        "level": 1
+      },
+      {
+        "name": "Metal Burst",
+        "level": 1
+      },
+      {
+        "name": "Leer",
         "level": 1
       },
       {
@@ -151618,7 +151688,7 @@
         "level": 50
       },
       {
-        "name": "Iron Head",
+        "name": "Smart Strike",
         "level": 57
       },
       {
@@ -151631,6 +151701,7 @@
       }
     ],
     "tmLearnset": {
+      "Toxic": 92,
       "Taunt": 269,
       "Hyper Beam": 63,
       "Protect": 182,
@@ -151659,10 +151730,12 @@
       "Dark Pulse": 399,
       "X-Scissor": 404,
       "Sleep Talk": 214,
-      "Poison Jab": 398,
       "Grass Knot": 447,
       "Substitute": 164,
-      "Flash Cannon": 430
+      "Flash Cannon": 430,
+      "Cut": 15,
+      "Rock Smash": 249,
+      "Hidden Power": 237
     },
     "eggLearnset": {
       "Headbutt": 29,
@@ -164089,27 +164162,7 @@
         "level": 0
       },
       {
-        "name": "Tackle",
-        "level": 1
-      },
-      {
-        "name": "Megahorn",
-        "level": 1
-      },
-      {
-        "name": "Growl",
-        "level": 1
-      },
-      {
-        "name": "Quick Attack",
-        "level": 1
-      },
-      {
-        "name": "Tail Whip",
-        "level": 1
-      },
-      {
-        "name": "Fairy Wind",
+        "name": "Blaze Kick",
         "level": 1
       },
       {
@@ -164117,7 +164170,31 @@
         "level": 1
       },
       {
-        "name": "Blaze Kick",
+        "name": "Fairy Wind",
+        "level": 1
+      },
+      {
+        "name": "Tail Whip",
+        "level": 1
+      },
+      {
+        "name": "Fire Lash",
+        "level": 1
+      },
+      {
+        "name": "Growl",
+        "level": 1
+      },
+      {
+        "name": "Megahorn",
+        "level": 1
+      },
+      {
+        "name": "Tackle",
+        "level": 1
+      },
+      {
+        "name": "Quick Attack",
         "level": 1
       },
       {
@@ -164227,11 +164304,11 @@
     },
     "baseStats": {
       "hp": 65,
-      "atk": 90,
+      "atk": 105,
       "def": 70,
-      "spa": 90,
+      "spa": 80,
       "spd": 80,
-      "spe": 105
+      "spe": 115
     },
     "dexNum": 78,
     "form": 1,
@@ -170751,6 +170828,7 @@
     "value": 1110,
     "text": "Shadow Mewtwo",
     "type": "Psychic",
+    "dualtype": "Dark",
     "abilities": [
       "Pressure",
       "Pressure",
@@ -170878,6 +170956,7 @@
       "Torment": 259,
       "Facade": 263,
       "Rest": 156,
+      "Thief": 168,
       "Skill Swap": 285,
       "Focus Blast": 411,
       "Energy Ball": 412,
@@ -170887,6 +170966,7 @@
       "Drain Punch": 409,
       "Will-O-Wisp": 261,
       "Nasty Plot": 417,
+      "Payback": 371,
       "Recycle": 278,
       "Giga Impact": 416,
       "Flash": 148,
@@ -170894,6 +170974,7 @@
       "Avalanche": 419,
       "Thunder Wave": 86,
       "Psych Up": 244,
+      "Dark Pulse": 399,
       "Rock Slide": 157,
       "Sleep Talk": 214,
       "Bulldoze": 523,
@@ -170906,7 +170987,6 @@
       "Trick Room": 433,
       "Strength": 70,
       "Rock Smash": 249,
-      "Rock Climb": 431,
       "Hurricane": 542,
       "Hidden Power": 237
     },
@@ -170914,9 +170994,9 @@
     "tutorLearnset": {},
     "baseStats": {
       "hp": 106,
-      "atk": 110,
+      "atk": 154,
       "def": 90,
-      "spa": 154,
+      "spa": 110,
       "spd": 90,
       "spe": 130
     },
@@ -171665,48 +171745,80 @@
         "level": 1
       },
       {
-        "name": "Tail Whip",
+        "name": "Poison Sting",
         "level": 1
       },
       {
-        "name": "Tackle",
+        "name": "Toxic Spikes",
         "level": 4
       },
       {
-        "name": "Poison Tail",
-        "level": 8
-      },
-      {
-        "name": "Toxic Spikes",
-        "level": 12
+        "name": "Mud Shot",
+        "level": 7
       },
       {
         "name": "Slam",
-        "level": 16
-      },
-      {
-        "name": "Yawn",
-        "level": 21
+        "level": 10
       },
       {
         "name": "Poison Jab",
-        "level": 24
+        "level": 13
       },
       {
-        "name": "Sludge Wave",
+        "name": "Curse",
+        "level": 17
+      },
+      {
+        "name": "Bulldoze",
+        "level": 19
+      },
+      {
+        "name": "Mud Bomb",
+        "level": 19
+      },
+      {
+        "name": "Poison Tail",
+        "level": 22
+      },
+      {
+        "name": "Yawn",
+        "level": 25
+      },
+      {
+        "name": "Body Slam",
         "level": 28
       },
       {
-        "name": "Amnesia",
-        "level": 32
+        "name": "Earthquake",
+        "level": 31
       },
       {
-        "name": "Toxic",
+        "name": "Sludge",
+        "level": 34
+      },
+      {
+        "name": "Megahorn",
         "level": 36
       },
       {
-        "name": "Earthquake",
+        "name": "Toxic",
+        "level": 37
+      },
+      {
+        "name": "Muddy Water",
         "level": 40
+      },
+      {
+        "name": "Mist",
+        "level": 43
+      },
+      {
+        "name": "Haze",
+        "level": 43
+      },
+      {
+        "name": "Recover",
+        "level": 46
       }
     ],
     "tmLearnset": {
@@ -171714,19 +171826,14 @@
       "Toxic": 92,
       "Protect": 182,
       "Rain Dance": 240,
-      "Safeguard": 219,
-      "Iron Tail": 231,
       "Earthquake": 89,
       "Dig": 91,
-      "Double Team": 104,
       "Sludge Bomb": 188,
       "Sandstorm": 201,
       "Rock Tomb": 317,
       "Facade": 263,
       "Rest": 156,
-      "Attract": 213,
       "Endure": 203,
-      "Flash": 148,
       "Stone Edge": 444,
       "Stealth Rock": 446,
       "Rock Slide": 157,
@@ -171740,17 +171847,13 @@
     },
     "eggLearnset": {
       "Ancient Power": 246,
-      "Curse": 174,
       "Stockpile": 254,
       "Swallow": 256,
       "Spit Up": 255,
       "Counter": 68,
       "Double Kick": 24,
-      "Recover": 105,
       "After You": 495,
-      "Acid Spray": 491,
-      "Haze": 114,
-      "Mist": 54
+      "Acid Spray": 491
     },
     "tutorLearnset": {},
     "baseStats": {
@@ -174725,12 +174828,12 @@
   {
     "value": 1152,
     "text": "Shadow Lugia",
-    "type": "Psychic",
+    "type": "Dark",
     "dualtype": "Flying",
     "abilities": [
       "Pressure",
       "Pressure",
-      "Multiscale"
+      "Shadow Shield"
     ],
     "learnset": [
       {
@@ -174750,15 +174853,15 @@
         "level": 1
       },
       {
-        "name": "Calm Mind",
+        "name": "Nasty Plot",
         "level": 6
       },
       {
-        "name": "Mist",
+        "name": "Punishment",
         "level": 9
       },
       {
-        "name": "Extrasensory",
+        "name": "Snarl",
         "level": 10
       },
       {
@@ -174774,11 +174877,11 @@
         "level": 30
       },
       {
-        "name": "Future Sight",
+        "name": "Fiery Wrath",
         "level": 34
       },
       {
-        "name": "Hydro Pump",
+        "name": "Fire Blast",
         "level": 38
       },
       {
@@ -174795,7 +174898,6 @@
       }
     ],
     "tmLearnset": {
-      "Water Pulse": 352,
       "Calm Mind": 347,
       "Roar": 46,
       "Toxic": 92,
@@ -174818,22 +174920,30 @@
       "Double Team": 104,
       "Reflect": 115,
       "Shock Wave": 351,
+      "Flamethrower": 53,
       "Sandstorm": 201,
+      "Fire Blast": 126,
       "Aerial Ace": 332,
+      "Torment": 259,
       "Facade": 263,
       "Rest": 156,
+      "Thief": 168,
       "Steel Wing": 211,
-      "Skill Swap": 285,
+      "Overheat": 315,
       "Roost": 355,
-      "Brine": 362,
+      "Fling": 374,
       "Charge Beam": 451,
       "Endure": 203,
       "Dragon Pulse": 406,
+      "Nasty Plot": 417,
+      "Payback": 371,
       "Giga Impact": 416,
       "Flash": 148,
       "Avalanche": 419,
       "Thunder Wave": 86,
       "Psych Up": 244,
+      "Snarl": 555,
+      "Dark Pulse": 399,
       "Sleep Talk": 214,
       "Bulldoze": 523,
       "Dream Eater": 138,
@@ -174841,11 +174951,8 @@
       "Pluck": 365,
       "Substitute": 164,
       "Fly": 19,
-      "Surf": 57,
       "Strength": 70,
       "Defog": 432,
-      "Rock Smash": 249,
-      "Waterfall": 127,
       "Hyper Voice": 304,
       "Hurricane": 542,
       "Hidden Power": 237
@@ -174854,10 +174961,10 @@
     "tutorLearnset": {},
     "baseStats": {
       "hp": 106,
-      "atk": 90,
-      "def": 130,
-      "spa": 90,
-      "spd": 154,
+      "atk": 130,
+      "def": 90,
+      "spa": 154,
+      "spd": 90,
       "spe": 110
     },
     "dexNum": 249,
@@ -178707,19 +178814,20 @@
   {
     "value": 1179,
     "text": "Meta Groudon",
-    "type": "Ground",
+    "type": "Dark",
+    "dualtype": "Poison",
     "abilities": [
-      "Drought",
-      "Drought",
-      "Desolate Land"
+      "Poison Touch",
+      "Poison Touch",
+      "Berserk"
     ],
     "learnset": [
       {
-        "name": "Ancient Power",
+        "name": "Poison Sting",
         "level": 1
       },
       {
-        "name": "Mud Shot",
+        "name": "Pursuit",
         "level": 1
       },
       {
@@ -178727,11 +178835,11 @@
         "level": 6
       },
       {
-        "name": "Earth Power",
+        "name": "Punishment",
         "level": 10
       },
       {
-        "name": "Lava Plume",
+        "name": "Venoshock",
         "level": 14
       },
       {
@@ -178747,11 +178855,11 @@
         "level": 26
       },
       {
-        "name": "Earth Power",
+        "name": "Sludge Bomb",
         "level": 30
       },
       {
-        "name": "Fissure",
+        "name": "Dark Pulse",
         "level": 34
       },
       {
@@ -178763,7 +178871,7 @@
         "level": 42
       },
       {
-        "name": "Earthquake",
+        "name": "Gunk Shot",
         "level": 46
       },
       {
@@ -178771,7 +178879,7 @@
         "level": 50
       },
       {
-        "name": "Precipice Blades",
+        "name": "Ceaseless Edge",
         "level": 63
       }
     ],
@@ -178821,7 +178929,6 @@
       "Cut": 15,
       "Strength": 70,
       "Rock Smash": 249,
-      "Rock Climb": 431,
       "Hidden Power": 237
     },
     "eggLearnset": {},
@@ -179001,11 +179108,11 @@
     "value": 1181,
     "text": "Illusory Rayquaza",
     "type": "Dragon",
-    "dualtype": "Flying",
+    "dualtype": "Fairy",
     "abilities": [
-      "Air Lock",
-      "Air Lock",
-      "Delta Stream"
+      "Magic Bounce",
+      "Magic Bounce",
+      "Misty Surge"
     ],
     "learnset": [
       {
@@ -179065,7 +179172,7 @@
         "level": 46
       },
       {
-        "name": "Hyper Beam",
+        "name": "Moonblast",
         "level": 50
       },
       {
@@ -179085,6 +179192,7 @@
       "Hyper Beam": 63,
       "Protect": 182,
       "Rain Dance": 240,
+      "Dazzling Gleam": 605,
       "Solar Beam": 76,
       "Iron Tail": 231,
       "Thunderbolt": 85,
@@ -182018,6 +182126,145 @@
   },
   {
     "value": 1203,
+    "text": "Primal Dialga",
+    "type": "Steel",
+    "dualtype": "Dragon",
+    "abilities": [
+      "Pressure",
+      "Full Metal Body",
+      "Telepathy"
+    ],
+    "learnset": [
+      {
+        "name": "Scary Face",
+        "level": 1
+      },
+      {
+        "name": "Dragon Breath",
+        "level": 1
+      },
+      {
+        "name": "Metal Claw",
+        "level": 6
+      },
+      {
+        "name": "Ancient Power",
+        "level": 10
+      },
+      {
+        "name": "Slash",
+        "level": 14
+      },
+      {
+        "name": "Power Gem",
+        "level": 18
+      },
+      {
+        "name": "Metal Burst",
+        "level": 22
+      },
+      {
+        "name": "Dragon Claw",
+        "level": 26
+      },
+      {
+        "name": "Dragon Pulse",
+        "level": 30
+      },
+      {
+        "name": "Iron Tail",
+        "level": 34
+      },
+      {
+        "name": "Aura Sphere",
+        "level": 38
+      },
+      {
+        "name": "Earth Power",
+        "level": 42
+      },
+      {
+        "name": "Flash Cannon",
+        "level": 46
+      },
+      {
+        "name": "Roar of Time",
+        "level": 50
+      }
+    ],
+    "tmLearnset": {
+      "Dragon Claw": 337,
+      "Roar": 46,
+      "Toxic": 92,
+      "Bulk Up": 339,
+      "Sunny Day": 241,
+      "Ice Beam": 58,
+      "Blizzard": 59,
+      "Hyper Beam": 63,
+      "Protect": 182,
+      "Rain Dance": 240,
+      "Safeguard": 219,
+      "Iron Tail": 231,
+      "Thunderbolt": 85,
+      "Thunder": 87,
+      "Earthquake": 89,
+      "Brick Break": 280,
+      "Double Team": 104,
+      "Shock Wave": 351,
+      "Flamethrower": 53,
+      "Sandstorm": 201,
+      "Fire Blast": 126,
+      "Rock Tomb": 317,
+      "Aerial Ace": 332,
+      "Facade": 263,
+      "Rest": 156,
+      "Overheat": 315,
+      "Endure": 203,
+      "Dragon Pulse": 406,
+      "Shadow Claw": 421,
+      "Giga Impact": 416,
+      "Flash": 148,
+      "Stone Edge": 444,
+      "Thunder Wave": 86,
+      "Stealth Rock": 446,
+      "Psych Up": 244,
+      "Rock Slide": 157,
+      "Sleep Talk": 214,
+      "Bulldoze": 523,
+      "Swagger": 207,
+      "Substitute": 164,
+      "Flash Cannon": 430,
+      "Trick Room": 433,
+      "Cut": 15,
+      "Strength": 70,
+      "Rock Smash": 249,
+      "Hyper Voice": 304,
+      "Hidden Power": 237
+    },
+    "eggLearnset": {},
+    "tutorLearnset": {},
+    "baseStats": {
+      "hp": 100,
+      "atk": 120,
+      "def": 120,
+      "spa": 150,
+      "spd": 100,
+      "spe": 90
+    },
+    "dexNum": 483,
+    "form": 2,
+    "eggGroups": [
+      "No Eggs",
+      "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
+    ]
+  },
+  {
+    "value": 1204,
     "text": "Origin Forme Palkia",
     "type": "Water",
     "dualtype": "Dragon",
@@ -182155,7 +182402,149 @@
     ]
   },
   {
-    "value": 1204,
+    "value": 1205,
+    "text": "Primal Palkia",
+    "type": "Water",
+    "dualtype": "Dragon",
+    "abilities": [
+      "Pressure",
+      "Clear Body",
+      "Telepathy"
+    ],
+    "learnset": [
+      {
+        "name": "Scary Face",
+        "level": 1
+      },
+      {
+        "name": "Dragon Breath",
+        "level": 1
+      },
+      {
+        "name": "Water Pulse",
+        "level": 6
+      },
+      {
+        "name": "Ancient Power",
+        "level": 10
+      },
+      {
+        "name": "Slash",
+        "level": 14
+      },
+      {
+        "name": "Power Gem",
+        "level": 18
+      },
+      {
+        "name": "Aqua Ring",
+        "level": 22
+      },
+      {
+        "name": "Dragon Claw",
+        "level": 26
+      },
+      {
+        "name": "Dragon Pulse",
+        "level": 30
+      },
+      {
+        "name": "Aqua Tail",
+        "level": 34
+      },
+      {
+        "name": "Aura Sphere",
+        "level": 38
+      },
+      {
+        "name": "Earth Power",
+        "level": 42
+      },
+      {
+        "name": "Hydro Pump",
+        "level": 46
+      },
+      {
+        "name": "Spacial Rend",
+        "level": 50
+      }
+    ],
+    "tmLearnset": {
+      "Focus Punch": 264,
+      "Dragon Claw": 337,
+      "Water Pulse": 352,
+      "Roar": 46,
+      "Toxic": 92,
+      "Hail": 258,
+      "Bulk Up": 339,
+      "Sunny Day": 241,
+      "Ice Beam": 58,
+      "Blizzard": 59,
+      "Hyper Beam": 63,
+      "Protect": 182,
+      "Rain Dance": 240,
+      "Safeguard": 219,
+      "Thunderbolt": 85,
+      "Thunder": 87,
+      "Earthquake": 89,
+      "Brick Break": 280,
+      "Double Team": 104,
+      "Shock Wave": 351,
+      "Flamethrower": 53,
+      "Sandstorm": 201,
+      "Fire Blast": 126,
+      "Rock Tomb": 317,
+      "Aerial Ace": 332,
+      "Facade": 263,
+      "Rest": 156,
+      "Focus Blast": 411,
+      "Brine": 362,
+      "Fling": 374,
+      "Endure": 203,
+      "Dragon Pulse": 406,
+      "Shadow Claw": 421,
+      "Giga Impact": 416,
+      "Stone Edge": 444,
+      "Avalanche": 419,
+      "Thunder Wave": 86,
+      "Psych Up": 244,
+      "Rock Slide": 157,
+      "Sleep Talk": 214,
+      "Bulldoze": 523,
+      "Swagger": 207,
+      "Substitute": 164,
+      "Trick Room": 433,
+      "Cut": 15,
+      "Surf": 57,
+      "Strength": 70,
+      "Rock Smash": 249,
+      "Hyper Voice": 304,
+      "Hidden Power": 237
+    },
+    "eggLearnset": {},
+    "tutorLearnset": {},
+    "baseStats": {
+      "hp": 90,
+      "atk": 120,
+      "def": 100,
+      "spa": 150,
+      "spd": 120,
+      "spe": 100
+    },
+    "dexNum": 484,
+    "form": 2,
+    "eggGroups": [
+      "No Eggs",
+      "No Eggs"
+    ],
+    "heldItems": [
+      "None",
+      "None",
+      "None"
+    ]
+  },
+  {
+    "value": 1206,
     "text": "Origin Forme Giratina",
     "type": "Ghost",
     "dualtype": "Dragon",
@@ -182293,7 +182682,7 @@
     ]
   },
   {
-    "value": 1205,
+    "value": 1207,
     "text": "Shadow Altered Forme Giratina",
     "type": "Ghost",
     "dualtype": "Dragon",
@@ -182431,7 +182820,7 @@
     ]
   },
   {
-    "value": 1206,
+    "value": 1208,
     "text": "Shadow Origin Forme Giratina",
     "type": "Ghost",
     "dualtype": "Dragon",
@@ -182569,7 +182958,7 @@
     ]
   },
   {
-    "value": 1207,
+    "value": 1209,
     "text": "Sky Forme Shaymin",
     "type": "Grass",
     "dualtype": "Flying",
@@ -182677,7 +183066,7 @@
     ]
   },
   {
-    "value": 1208,
+    "value": 1210,
     "text": "Polluted Land Forme Shaymin",
     "type": "Grass",
     "abilities": [
@@ -182784,7 +183173,7 @@
     ]
   },
   {
-    "value": 1209,
+    "value": 1211,
     "text": "Polluted Sky Forme Shaymin",
     "type": "Grass",
     "dualtype": "Flying",
@@ -182892,7 +183281,7 @@
     ]
   },
   {
-    "value": 1210,
+    "value": 1212,
     "text": "Fist Plate Arceus",
     "type": "Fighting",
     "abilities": [
@@ -183080,7 +183469,7 @@
     ]
   },
   {
-    "value": 1211,
+    "value": 1213,
     "text": "Sky Plate Arceus",
     "type": "Flying",
     "abilities": [
@@ -183268,7 +183657,7 @@
     ]
   },
   {
-    "value": 1212,
+    "value": 1214,
     "text": "Toxic Plate Arceus",
     "type": "Poison",
     "abilities": [
@@ -183456,7 +183845,7 @@
     ]
   },
   {
-    "value": 1213,
+    "value": 1215,
     "text": "Earth Plate Arceus",
     "type": "Ground",
     "abilities": [
@@ -183644,7 +184033,7 @@
     ]
   },
   {
-    "value": 1214,
+    "value": 1216,
     "text": "Stone Plate Arceus",
     "type": "Rock",
     "abilities": [
@@ -183832,7 +184221,7 @@
     ]
   },
   {
-    "value": 1215,
+    "value": 1217,
     "text": "Insect Plate Arceus",
     "type": "Bug",
     "abilities": [
@@ -184020,7 +184409,7 @@
     ]
   },
   {
-    "value": 1216,
+    "value": 1218,
     "text": "Spooky Plate Arceus",
     "type": "Ghost",
     "abilities": [
@@ -184208,7 +184597,7 @@
     ]
   },
   {
-    "value": 1217,
+    "value": 1219,
     "text": "Iron Plate Arceus",
     "type": "Steel",
     "abilities": [
@@ -184396,7 +184785,7 @@
     ]
   },
   {
-    "value": 1218,
+    "value": 1220,
     "text": "Flame Plate Arceus",
     "type": "Fire",
     "abilities": [
@@ -184584,7 +184973,7 @@
     ]
   },
   {
-    "value": 1219,
+    "value": 1221,
     "text": "Splash Plate Arceus",
     "type": "Water",
     "abilities": [
@@ -184772,7 +185161,7 @@
     ]
   },
   {
-    "value": 1220,
+    "value": 1222,
     "text": "Meadow Plate Arceus",
     "type": "Grass",
     "abilities": [
@@ -184960,7 +185349,7 @@
     ]
   },
   {
-    "value": 1221,
+    "value": 1223,
     "text": "Zap Plate Arceus",
     "type": "Electric",
     "abilities": [
@@ -185148,7 +185537,7 @@
     ]
   },
   {
-    "value": 1222,
+    "value": 1224,
     "text": "Mind Plate Arceus",
     "type": "Psychic",
     "abilities": [
@@ -185336,7 +185725,7 @@
     ]
   },
   {
-    "value": 1223,
+    "value": 1225,
     "text": "Icicle Plate Arceus",
     "type": "Ice",
     "abilities": [
@@ -185524,7 +185913,7 @@
     ]
   },
   {
-    "value": 1224,
+    "value": 1226,
     "text": "Draco Plate Arceus",
     "type": "Dragon",
     "abilities": [
@@ -185712,7 +186101,7 @@
     ]
   },
   {
-    "value": 1225,
+    "value": 1227,
     "text": "Dread Plate Arceus",
     "type": "Dark",
     "abilities": [
@@ -185900,7 +186289,7 @@
     ]
   },
   {
-    "value": 1226,
+    "value": 1228,
     "text": "Pixie Plate Arceus",
     "type": "Fairy",
     "abilities": [
@@ -186088,7 +186477,7 @@
     ]
   },
   {
-    "value": 1227,
+    "value": 1229,
     "text": "Hisuian Samurott",
     "type": "Water",
     "dualtype": "Dark",
@@ -186250,7 +186639,7 @@
     ]
   },
   {
-    "value": 1228,
+    "value": 1230,
     "text": "Mega Audino",
     "type": "Normal",
     "dualtype": "Fairy",
@@ -186397,7 +186786,7 @@
     ]
   },
   {
-    "value": 1229,
+    "value": 1231,
     "text": "Hisuian Lilligant",
     "type": "Grass",
     "dualtype": "Fighting",
@@ -186558,7 +186947,7 @@
     ]
   },
   {
-    "value": 1230,
+    "value": 1232,
     "text": "Blue-Striped Form Basculin",
     "type": "Water",
     "abilities": [
@@ -186696,7 +187085,7 @@
     ]
   },
   {
-    "value": 1231,
+    "value": 1233,
     "text": "White-Striped Form Basculin",
     "type": "Water",
     "abilities": [
@@ -186795,8 +187184,17 @@
       "Hidden Power": 237
     },
     "eggLearnset": {
+      "Agility": 97,
+      "Brine": 362,
       "Bubble Beam": 61,
-      "Endeavor": 283
+      "Mud Shot": 341,
+      "Muddy Water": 330,
+      "Rage": 99,
+      "Revenge": 279,
+      "Swift": 129,
+      "Whirlpool": 250,
+      "Soak": 487,
+      "Uproar": 253
     },
     "tutorLearnset": {},
     "baseStats": {
@@ -186820,7 +187218,7 @@
     ]
   },
   {
-    "value": 1232,
+    "value": 1234,
     "text": "Galarian Darumaka",
     "type": "Ice",
     "abilities": [
@@ -186961,7 +187359,7 @@
     ]
   },
   {
-    "value": 1233,
+    "value": 1235,
     "text": "Zen Mode Darmanitan",
     "type": "Fire",
     "dualtype": "Psychic",
@@ -187159,7 +187557,7 @@
     ]
   },
   {
-    "value": 1234,
+    "value": 1236,
     "text": "Galarian Standard Mode Darmanitan",
     "type": "Ice",
     "abilities": [
@@ -187333,7 +187731,7 @@
     ]
   },
   {
-    "value": 1235,
+    "value": 1237,
     "text": "Galarian Zen Mode Darmanitan",
     "type": "Ice",
     "dualtype": "Fire",
@@ -187508,7 +187906,7 @@
     ]
   },
   {
-    "value": 1236,
+    "value": 1238,
     "text": "Galarian Yamask",
     "type": "Ground",
     "dualtype": "Ghost",
@@ -187651,7 +188049,7 @@
     ]
   },
   {
-    "value": 1237,
+    "value": 1239,
     "text": "Gigantamax Garbodor",
     "type": "Poison",
     "abilities": [
@@ -187791,7 +188189,7 @@
     ]
   },
   {
-    "value": 1238,
+    "value": 1240,
     "text": "Hisuian Zorua",
     "type": "Normal",
     "dualtype": "Ghost",
@@ -187914,7 +188312,7 @@
     ]
   },
   {
-    "value": 1239,
+    "value": 1241,
     "text": "Hisuian Zoroark",
     "type": "Normal",
     "dualtype": "Ghost",
@@ -188056,7 +188454,7 @@
     ]
   },
   {
-    "value": 1240,
+    "value": 1242,
     "text": "Summer Form Deerling",
     "type": "Normal",
     "dualtype": "Grass",
@@ -188190,7 +188588,7 @@
     ]
   },
   {
-    "value": 1241,
+    "value": 1243,
     "text": "Autumn Form Deerling",
     "type": "Normal",
     "dualtype": "Grass",
@@ -188324,7 +188722,7 @@
     ]
   },
   {
-    "value": 1242,
+    "value": 1244,
     "text": "Winter Form Deerling",
     "type": "Normal",
     "dualtype": "Grass",
@@ -188458,7 +188856,7 @@
     ]
   },
   {
-    "value": 1243,
+    "value": 1245,
     "text": "Summer Form Sawsbuck",
     "type": "Normal",
     "dualtype": "Grass",
@@ -188617,7 +189015,7 @@
     ]
   },
   {
-    "value": 1244,
+    "value": 1246,
     "text": "Autumn Form Sawsbuck",
     "type": "Normal",
     "dualtype": "Grass",
@@ -188776,7 +189174,7 @@
     ]
   },
   {
-    "value": 1245,
+    "value": 1247,
     "text": "Winter Form Sawsbuck",
     "type": "Normal",
     "dualtype": "Grass",
@@ -188935,7 +189333,7 @@
     ]
   },
   {
-    "value": 1246,
+    "value": 1248,
     "text": "Galarian Stunfisk",
     "type": "Ground",
     "dualtype": "Steel",
@@ -189064,7 +189462,7 @@
     ]
   },
   {
-    "value": 1247,
+    "value": 1249,
     "text": "Hisuian Braviary",
     "type": "Psychic",
     "dualtype": "Flying",
@@ -189202,7 +189600,7 @@
     ]
   },
   {
-    "value": 1248,
+    "value": 1250,
     "text": "Therian Forme Tornadus",
     "type": "Flying",
     "abilities": [
@@ -189338,7 +189736,7 @@
     ]
   },
   {
-    "value": 1249,
+    "value": 1251,
     "text": "Therian Forme Thundurus",
     "type": "Electric",
     "dualtype": "Flying",
@@ -189481,7 +189879,7 @@
     ]
   },
   {
-    "value": 1250,
+    "value": 1252,
     "text": "Therian Forme Landorus",
     "type": "Ground",
     "dualtype": "Flying",
@@ -189628,7 +190026,7 @@
     ]
   },
   {
-    "value": 1251,
+    "value": 1253,
     "text": "White Kyurem",
     "type": "Dragon",
     "dualtype": "Ice",
@@ -189766,7 +190164,7 @@
     ]
   },
   {
-    "value": 1252,
+    "value": 1254,
     "text": "Black Kyurem",
     "type": "Dragon",
     "dualtype": "Ice",
@@ -189904,7 +190302,7 @@
     ]
   },
   {
-    "value": 1253,
+    "value": 1255,
     "text": "Resolute Form Keldeo",
     "type": "Water",
     "dualtype": "Fighting",
@@ -190036,7 +190434,7 @@
     ]
   },
   {
-    "value": 1254,
+    "value": 1256,
     "text": "Pirouette Forme Meloetta",
     "type": "Normal",
     "dualtype": "Fighting",
@@ -190192,7 +190590,7 @@
     ]
   },
   {
-    "value": 1255,
+    "value": 1257,
     "text": "Douse Drive Genesect",
     "type": "Bug",
     "dualtype": "Steel",
@@ -190326,7 +190724,7 @@
     ]
   },
   {
-    "value": 1256,
+    "value": 1258,
     "text": "Shock Drive Genesect",
     "type": "Bug",
     "dualtype": "Steel",
@@ -190460,7 +190858,7 @@
     ]
   },
   {
-    "value": 1257,
+    "value": 1259,
     "text": "Burn Drive Genesect",
     "type": "Bug",
     "dualtype": "Steel",
@@ -190594,7 +190992,7 @@
     ]
   },
   {
-    "value": 1258,
+    "value": 1260,
     "text": "Chill Drive Genesect",
     "type": "Bug",
     "dualtype": "Steel",
@@ -190728,7 +191126,7 @@
     ]
   },
   {
-    "value": 1259,
+    "value": 1261,
     "text": "Battle Bond Greninja",
     "type": "Water",
     "dualtype": "Dark",
@@ -190887,11 +191285,11 @@
     "tutorLearnset": {},
     "baseStats": {
       "hp": 72,
-      "atk": 145,
+      "atk": 100,
       "def": 67,
-      "spa": 153,
+      "spa": 103,
       "spd": 71,
-      "spe": 132
+      "spe": 122
     },
     "dexNum": 658,
     "form": 1,
@@ -190906,7 +191304,7 @@
     ]
   },
   {
-    "value": 1260,
+    "value": 1262,
     "text": "Partner Greninja",
     "type": "Water",
     "dualtype": "Dark",
@@ -191081,7 +191479,7 @@
     ]
   },
   {
-    "value": 1261,
+    "value": 1263,
     "text": "Polar Pattern Vivillon",
     "type": "Bug",
     "dualtype": "Flying",
@@ -191221,7 +191619,7 @@
     ]
   },
   {
-    "value": 1262,
+    "value": 1264,
     "text": "Tundra Pattern Vivillon",
     "type": "Bug",
     "dualtype": "Flying",
@@ -191361,7 +191759,7 @@
     ]
   },
   {
-    "value": 1263,
+    "value": 1265,
     "text": "Continental Pattern Vivillon",
     "type": "Bug",
     "dualtype": "Flying",
@@ -191501,7 +191899,7 @@
     ]
   },
   {
-    "value": 1264,
+    "value": 1266,
     "text": "Garden Pattern Vivillon",
     "type": "Bug",
     "dualtype": "Flying",
@@ -191641,7 +192039,7 @@
     ]
   },
   {
-    "value": 1265,
+    "value": 1267,
     "text": "Elegant Pattern Vivillon",
     "type": "Bug",
     "dualtype": "Flying",
@@ -191781,7 +192179,7 @@
     ]
   },
   {
-    "value": 1266,
+    "value": 1268,
     "text": "Meadow Pattern Vivillon",
     "type": "Bug",
     "dualtype": "Flying",
@@ -191921,7 +192319,7 @@
     ]
   },
   {
-    "value": 1267,
+    "value": 1269,
     "text": "Modern Pattern Vivillon",
     "type": "Bug",
     "dualtype": "Flying",
@@ -192061,7 +192459,7 @@
     ]
   },
   {
-    "value": 1268,
+    "value": 1270,
     "text": "Marine Pattern Vivillon",
     "type": "Bug",
     "dualtype": "Flying",
@@ -192201,7 +192599,7 @@
     ]
   },
   {
-    "value": 1269,
+    "value": 1271,
     "text": "Archipelago Pattern Vivillon",
     "type": "Bug",
     "dualtype": "Flying",
@@ -192341,7 +192739,7 @@
     ]
   },
   {
-    "value": 1270,
+    "value": 1272,
     "text": "High Plains Pattern Vivillon",
     "type": "Bug",
     "dualtype": "Flying",
@@ -192481,7 +192879,7 @@
     ]
   },
   {
-    "value": 1271,
+    "value": 1273,
     "text": "Sandstorm Pattern Vivillon",
     "type": "Bug",
     "dualtype": "Flying",
@@ -192621,7 +193019,7 @@
     ]
   },
   {
-    "value": 1272,
+    "value": 1274,
     "text": "River Pattern Vivillon",
     "type": "Bug",
     "dualtype": "Flying",
@@ -192761,7 +193159,7 @@
     ]
   },
   {
-    "value": 1273,
+    "value": 1275,
     "text": "Monsoon Pattern Vivillon",
     "type": "Bug",
     "dualtype": "Flying",
@@ -192901,7 +193299,7 @@
     ]
   },
   {
-    "value": 1274,
+    "value": 1276,
     "text": "Savanna Pattern Vivillon",
     "type": "Bug",
     "dualtype": "Flying",
@@ -193041,7 +193439,7 @@
     ]
   },
   {
-    "value": 1275,
+    "value": 1277,
     "text": "Sun Pattern Vivillon",
     "type": "Bug",
     "dualtype": "Flying",
@@ -193181,7 +193579,7 @@
     ]
   },
   {
-    "value": 1276,
+    "value": 1278,
     "text": "Ocean Pattern Vivillon",
     "type": "Bug",
     "dualtype": "Flying",
@@ -193321,7 +193719,7 @@
     ]
   },
   {
-    "value": 1277,
+    "value": 1279,
     "text": "Jungle Pattern Vivillon",
     "type": "Bug",
     "dualtype": "Flying",
@@ -193461,7 +193859,7 @@
     ]
   },
   {
-    "value": 1278,
+    "value": 1280,
     "text": "Fancy Pattern Vivillon",
     "type": "Bug",
     "dualtype": "Flying",
@@ -193601,7 +193999,7 @@
     ]
   },
   {
-    "value": 1279,
+    "value": 1281,
     "text": "Poké Ball Pattern Vivillon",
     "type": "Bug",
     "dualtype": "Flying",
@@ -193741,7 +194139,7 @@
     ]
   },
   {
-    "value": 1280,
+    "value": 1282,
     "text": "Yellow Flower Flabébé",
     "type": "Fairy",
     "abilities": [
@@ -193860,7 +194258,7 @@
     ]
   },
   {
-    "value": 1281,
+    "value": 1283,
     "text": "Orange Flower Flabébé",
     "type": "Fairy",
     "abilities": [
@@ -193979,7 +194377,7 @@
     ]
   },
   {
-    "value": 1282,
+    "value": 1284,
     "text": "Blue Flower Flabébé",
     "type": "Fairy",
     "abilities": [
@@ -194098,7 +194496,7 @@
     ]
   },
   {
-    "value": 1283,
+    "value": 1285,
     "text": "White Flower Flabébé",
     "type": "Fairy",
     "abilities": [
@@ -194217,7 +194615,7 @@
     ]
   },
   {
-    "value": 1284,
+    "value": 1286,
     "text": "Yellow Flower Floette",
     "type": "Fairy",
     "abilities": [
@@ -194341,7 +194739,7 @@
     ]
   },
   {
-    "value": 1285,
+    "value": 1287,
     "text": "Orange Flower Floette",
     "type": "Fairy",
     "abilities": [
@@ -194465,7 +194863,7 @@
     ]
   },
   {
-    "value": 1286,
+    "value": 1288,
     "text": "Blue Flower Floette",
     "type": "Fairy",
     "abilities": [
@@ -194589,7 +194987,7 @@
     ]
   },
   {
-    "value": 1287,
+    "value": 1289,
     "text": "White Flower Floette",
     "type": "Fairy",
     "abilities": [
@@ -194713,13 +195111,13 @@
     ]
   },
   {
-    "value": 1288,
+    "value": 1290,
     "text": "Eternal Flower Floette",
     "type": "Fairy",
     "abilities": [
-      "Flower Veil",
-      "Flower Veil",
-      "Symbiosis"
+      "Adaptability",
+      "Adaptability",
+      "Adaptability"
     ],
     "learnset": [
       {
@@ -194841,7 +195239,7 @@
     ]
   },
   {
-    "value": 1289,
+    "value": 1291,
     "text": "Yellow Flower Florges",
     "type": "Fairy",
     "dualtype": "Grass",
@@ -194973,7 +195371,7 @@
     ]
   },
   {
-    "value": 1290,
+    "value": 1292,
     "text": "Orange Flower Florges",
     "type": "Fairy",
     "dualtype": "Grass",
@@ -195105,7 +195503,7 @@
     ]
   },
   {
-    "value": 1291,
+    "value": 1293,
     "text": "Blue Flower Florges",
     "type": "Fairy",
     "dualtype": "Grass",
@@ -195237,7 +195635,7 @@
     ]
   },
   {
-    "value": 1292,
+    "value": 1294,
     "text": "White Flower Florges",
     "type": "Fairy",
     "dualtype": "Grass",
@@ -195369,7 +195767,7 @@
     ]
   },
   {
-    "value": 1293,
+    "value": 1295,
     "text": "Heart Trim Furfrou",
     "type": "Normal",
     "abilities": [
@@ -195488,7 +195886,7 @@
     ]
   },
   {
-    "value": 1294,
+    "value": 1296,
     "text": "Star Trim Furfrou",
     "type": "Normal",
     "abilities": [
@@ -195607,7 +196005,7 @@
     ]
   },
   {
-    "value": 1295,
+    "value": 1297,
     "text": "Diamond Trim Furfrou",
     "type": "Normal",
     "abilities": [
@@ -195726,7 +196124,7 @@
     ]
   },
   {
-    "value": 1296,
+    "value": 1298,
     "text": "Debutante Trim Furfrou",
     "type": "Normal",
     "abilities": [
@@ -195845,7 +196243,7 @@
     ]
   },
   {
-    "value": 1297,
+    "value": 1299,
     "text": "Matron Trim Furfrou",
     "type": "Normal",
     "abilities": [
@@ -195964,7 +196362,7 @@
     ]
   },
   {
-    "value": 1298,
+    "value": 1300,
     "text": "Dandy Trim Furfrou",
     "type": "Normal",
     "abilities": [
@@ -196083,7 +196481,7 @@
     ]
   },
   {
-    "value": 1299,
+    "value": 1301,
     "text": "La Reine Trim Furfrou",
     "type": "Normal",
     "abilities": [
@@ -196202,7 +196600,7 @@
     ]
   },
   {
-    "value": 1300,
+    "value": 1302,
     "text": "Kabuki Trim Furfrou",
     "type": "Normal",
     "abilities": [
@@ -196321,7 +196719,7 @@
     ]
   },
   {
-    "value": 1301,
+    "value": 1303,
     "text": "Pharaoh Trim Furfrou",
     "type": "Normal",
     "abilities": [
@@ -196440,7 +196838,7 @@
     ]
   },
   {
-    "value": 1302,
+    "value": 1304,
     "text": "Meowstic-F",
     "type": "Psychic",
     "abilities": [
@@ -196594,7 +196992,7 @@
     ]
   },
   {
-    "value": 1303,
+    "value": 1305,
     "text": "Blade Forme Aegislash",
     "type": "Steel",
     "dualtype": "Ghost",
@@ -196726,7 +197124,7 @@
     ]
   },
   {
-    "value": 1304,
+    "value": 1306,
     "text": "Hisuian Sliggoo",
     "type": "Steel",
     "dualtype": "Dragon",
@@ -196849,7 +197247,7 @@
     ]
   },
   {
-    "value": 1305,
+    "value": 1307,
     "text": "Hisuian Goodra",
     "type": "Steel",
     "dualtype": "Dragon",
@@ -197011,7 +197409,7 @@
     ]
   },
   {
-    "value": 1306,
+    "value": 1308,
     "text": "Small Size Pumpkaboo",
     "type": "Ghost",
     "dualtype": "Grass",
@@ -197141,7 +197539,7 @@
     ]
   },
   {
-    "value": 1307,
+    "value": 1309,
     "text": "Large Size Pumpkaboo",
     "type": "Ghost",
     "dualtype": "Grass",
@@ -197271,7 +197669,7 @@
     ]
   },
   {
-    "value": 1308,
+    "value": 1310,
     "text": "Super Size Pumpkaboo",
     "type": "Ghost",
     "dualtype": "Grass",
@@ -197401,7 +197799,7 @@
     ]
   },
   {
-    "value": 1309,
+    "value": 1311,
     "text": "Small Size Gourgeist",
     "type": "Ghost",
     "dualtype": "Grass",
@@ -197551,7 +197949,7 @@
     ]
   },
   {
-    "value": 1310,
+    "value": 1312,
     "text": "Large Size Gourgeist",
     "type": "Ghost",
     "dualtype": "Grass",
@@ -197701,7 +198099,7 @@
     ]
   },
   {
-    "value": 1311,
+    "value": 1313,
     "text": "Super Size Gourgeist",
     "type": "Ghost",
     "dualtype": "Grass",
@@ -197851,7 +198249,7 @@
     ]
   },
   {
-    "value": 1312,
+    "value": 1314,
     "text": "Hisuian Avalugg",
     "type": "Ice",
     "dualtype": "Rock",
@@ -198004,7 +198402,7 @@
     ]
   },
   {
-    "value": 1313,
+    "value": 1315,
     "text": "Active Mode Xerneas",
     "type": "Fairy",
     "abilities": [
@@ -198148,7 +198546,7 @@
     ]
   },
   {
-    "value": 1314,
+    "value": 1316,
     "text": "10% Forme Zygarde",
     "type": "Dragon",
     "dualtype": "Ground",
@@ -198286,7 +198684,7 @@
     ]
   },
   {
-    "value": 1315,
+    "value": 1317,
     "text": "Power Construct 10% Forme Zygarde",
     "type": "Dragon",
     "dualtype": "Ground",
@@ -198424,7 +198822,7 @@
     ]
   },
   {
-    "value": 1316,
+    "value": 1318,
     "text": "Power Construct 50% Forme Zygarde",
     "type": "Dragon",
     "dualtype": "Ground",
@@ -198562,7 +198960,7 @@
     ]
   },
   {
-    "value": 1317,
+    "value": 1319,
     "text": "Complete Forme Zygarde",
     "type": "Dragon",
     "dualtype": "Ground",
@@ -198700,7 +199098,7 @@
     ]
   },
   {
-    "value": 1318,
+    "value": 1320,
     "text": "Core Forme Zygarde",
     "type": "Dragon",
     "dualtype": "Ground",
@@ -198747,7 +199145,7 @@
     ]
   },
   {
-    "value": 1319,
+    "value": 1321,
     "text": "Cell Forme Zygarde",
     "type": "Dragon",
     "dualtype": "Ground",
@@ -198794,7 +199192,7 @@
     ]
   },
   {
-    "value": 1320,
+    "value": 1322,
     "text": "Mega Diancie",
     "type": "Rock",
     "dualtype": "Fairy",
@@ -198925,7 +199323,7 @@
     ]
   },
   {
-    "value": 1321,
+    "value": 1323,
     "text": "Unbound Hoopa",
     "type": "Psychic",
     "dualtype": "Dark",
@@ -199077,7 +199475,7 @@
     ]
   },
   {
-    "value": 1322,
+    "value": 1324,
     "text": "Hisuian Decidueye",
     "type": "Grass",
     "dualtype": "Fighting",
@@ -199236,7 +199634,7 @@
     ]
   },
   {
-    "value": 1323,
+    "value": 1325,
     "text": "Pom-Pom Style Oricorio",
     "type": "Electric",
     "dualtype": "Flying",
@@ -199373,7 +199771,7 @@
     ]
   },
   {
-    "value": 1324,
+    "value": 1326,
     "text": "Pa’u Style Oricorio",
     "type": "Psychic",
     "dualtype": "Flying",
@@ -199510,7 +199908,7 @@
     ]
   },
   {
-    "value": 1325,
+    "value": 1327,
     "text": "Sensu Style Oricorio",
     "type": "Ghost",
     "dualtype": "Flying",
@@ -199647,7 +200045,7 @@
     ]
   },
   {
-    "value": 1326,
+    "value": 1328,
     "text": "Rockruff Own-Tempo",
     "type": "Rock",
     "abilities": [
@@ -199772,7 +200170,7 @@
     ]
   },
   {
-    "value": 1327,
+    "value": 1329,
     "text": "Midnight Form Lycanroc",
     "type": "Rock",
     "abilities": [
@@ -199934,7 +200332,7 @@
     ]
   },
   {
-    "value": 1328,
+    "value": 1330,
     "text": "Dusk Form Lycanroc",
     "type": "Rock",
     "abilities": [
@@ -200103,7 +200501,7 @@
     ]
   },
   {
-    "value": 1329,
+    "value": 1331,
     "text": "School Form Wishiwashi",
     "type": "Water",
     "abilities": [
@@ -200224,7 +200622,7 @@
     ]
   },
   {
-    "value": 1330,
+    "value": 1332,
     "text": "Type: Fighting Silvally",
     "type": "Fighting",
     "abilities": [
@@ -200390,7 +200788,7 @@
     ]
   },
   {
-    "value": 1331,
+    "value": 1333,
     "text": "Type: Flying Silvally",
     "type": "Flying",
     "abilities": [
@@ -200556,7 +200954,7 @@
     ]
   },
   {
-    "value": 1332,
+    "value": 1334,
     "text": "Type: Poison Silvally",
     "type": "Poison",
     "abilities": [
@@ -200722,7 +201120,7 @@
     ]
   },
   {
-    "value": 1333,
+    "value": 1335,
     "text": "Type: Ground Silvally",
     "type": "Ground",
     "abilities": [
@@ -200888,7 +201286,7 @@
     ]
   },
   {
-    "value": 1334,
+    "value": 1336,
     "text": "Type: Rock Silvally",
     "type": "Rock",
     "abilities": [
@@ -201054,7 +201452,7 @@
     ]
   },
   {
-    "value": 1335,
+    "value": 1337,
     "text": "Type: Bug Silvally",
     "type": "Bug",
     "abilities": [
@@ -201220,7 +201618,7 @@
     ]
   },
   {
-    "value": 1336,
+    "value": 1338,
     "text": "Type: Ghost Silvally",
     "type": "Ghost",
     "abilities": [
@@ -201386,7 +201784,7 @@
     ]
   },
   {
-    "value": 1337,
+    "value": 1339,
     "text": "Type: Steel Silvally",
     "type": "Steel",
     "abilities": [
@@ -201552,7 +201950,7 @@
     ]
   },
   {
-    "value": 1338,
+    "value": 1340,
     "text": "Type: Fire Silvally",
     "type": "Fire",
     "abilities": [
@@ -201718,7 +202116,7 @@
     ]
   },
   {
-    "value": 1339,
+    "value": 1341,
     "text": "Type: Water Silvally",
     "type": "Water",
     "abilities": [
@@ -201884,7 +202282,7 @@
     ]
   },
   {
-    "value": 1340,
+    "value": 1342,
     "text": "Type: Grass Silvally",
     "type": "Grass",
     "abilities": [
@@ -202050,7 +202448,7 @@
     ]
   },
   {
-    "value": 1341,
+    "value": 1343,
     "text": "Type: Electric Silvally",
     "type": "Electric",
     "abilities": [
@@ -202216,7 +202614,7 @@
     ]
   },
   {
-    "value": 1342,
+    "value": 1344,
     "text": "Type: Psychic Silvally",
     "type": "Psychic",
     "abilities": [
@@ -202382,7 +202780,7 @@
     ]
   },
   {
-    "value": 1343,
+    "value": 1345,
     "text": "Type: Ice Silvally",
     "type": "Ice",
     "abilities": [
@@ -202548,7 +202946,7 @@
     ]
   },
   {
-    "value": 1344,
+    "value": 1346,
     "text": "Type: Dragon Silvally",
     "type": "Dragon",
     "abilities": [
@@ -202714,7 +203112,7 @@
     ]
   },
   {
-    "value": 1345,
+    "value": 1347,
     "text": "Type: Dark Silvally",
     "type": "Dark",
     "abilities": [
@@ -202880,7 +203278,7 @@
     ]
   },
   {
-    "value": 1346,
+    "value": 1348,
     "text": "Type: Fairy Silvally",
     "type": "Fairy",
     "abilities": [
@@ -203046,7 +203444,7 @@
     ]
   },
   {
-    "value": 1347,
+    "value": 1349,
     "text": "Orange Meteor Form Minior",
     "type": "Rock",
     "dualtype": "Flying",
@@ -203179,7 +203577,7 @@
     ]
   },
   {
-    "value": 1348,
+    "value": 1350,
     "text": "Yellow Meteor Form Minior",
     "type": "Rock",
     "dualtype": "Flying",
@@ -203312,7 +203710,7 @@
     ]
   },
   {
-    "value": 1349,
+    "value": 1351,
     "text": "Green Meteor Form Minior",
     "type": "Rock",
     "dualtype": "Flying",
@@ -203445,7 +203843,7 @@
     ]
   },
   {
-    "value": 1350,
+    "value": 1352,
     "text": "Blue Meteor Form Minior",
     "type": "Rock",
     "dualtype": "Flying",
@@ -203578,7 +203976,7 @@
     ]
   },
   {
-    "value": 1351,
+    "value": 1353,
     "text": "Indigo Meteor Form Minior",
     "type": "Rock",
     "dualtype": "Flying",
@@ -203711,7 +204109,7 @@
     ]
   },
   {
-    "value": 1352,
+    "value": 1354,
     "text": "Violet Meteor Form Minior",
     "type": "Rock",
     "dualtype": "Flying",
@@ -203844,7 +204242,7 @@
     ]
   },
   {
-    "value": 1353,
+    "value": 1355,
     "text": "Red Core Minior",
     "type": "Rock",
     "dualtype": "Flying",
@@ -203977,7 +204375,7 @@
     ]
   },
   {
-    "value": 1354,
+    "value": 1356,
     "text": "Orange Core Minior",
     "type": "Rock",
     "dualtype": "Flying",
@@ -204110,7 +204508,7 @@
     ]
   },
   {
-    "value": 1355,
+    "value": 1357,
     "text": "Yellow Core Minior",
     "type": "Rock",
     "dualtype": "Flying",
@@ -204243,7 +204641,7 @@
     ]
   },
   {
-    "value": 1356,
+    "value": 1358,
     "text": "Green Core Minior",
     "type": "Rock",
     "dualtype": "Flying",
@@ -204376,7 +204774,7 @@
     ]
   },
   {
-    "value": 1357,
+    "value": 1359,
     "text": "Blue Core Minior",
     "type": "Rock",
     "dualtype": "Flying",
@@ -204509,7 +204907,7 @@
     ]
   },
   {
-    "value": 1358,
+    "value": 1360,
     "text": "Indigo Core Minior",
     "type": "Rock",
     "dualtype": "Flying",
@@ -204642,7 +205040,7 @@
     ]
   },
   {
-    "value": 1359,
+    "value": 1361,
     "text": "Violet Core Minior",
     "type": "Rock",
     "dualtype": "Flying",
@@ -204775,7 +205173,7 @@
     ]
   },
   {
-    "value": 1360,
+    "value": 1362,
     "text": "Busted Form Mimikyu",
     "type": "Ghost",
     "dualtype": "Fairy",
@@ -204916,7 +205314,7 @@
     ]
   },
   {
-    "value": 1361,
+    "value": 1363,
     "text": "Dusk Mane Necrozma",
     "type": "Psychic",
     "dualtype": "Fire",
@@ -205063,7 +205461,7 @@
     ]
   },
   {
-    "value": 1362,
+    "value": 1364,
     "text": "Dawn Wings Necrozma",
     "type": "Psychic",
     "dualtype": "Fairy",
@@ -205210,7 +205608,7 @@
     ]
   },
   {
-    "value": 1363,
+    "value": 1365,
     "text": "Ultra Necrozma",
     "type": "Psychic",
     "dualtype": "Dragon",
@@ -205357,7 +205755,7 @@
     ]
   },
   {
-    "value": 1364,
+    "value": 1366,
     "text": "Original Color Magearna",
     "type": "Steel",
     "dualtype": "Fairy",
@@ -205496,7 +205894,7 @@
     ]
   },
   {
-    "value": 1365,
+    "value": 1367,
     "text": "Gigantamax Melmetal",
     "type": "Steel",
     "abilities": [
@@ -205615,7 +206013,7 @@
     ]
   },
   {
-    "value": 1366,
+    "value": 1368,
     "text": "Gigantamax Rillaboom",
     "type": "Grass",
     "abilities": [
@@ -205764,7 +206162,7 @@
     ]
   },
   {
-    "value": 1367,
+    "value": 1369,
     "text": "Gigantamax Cinderace",
     "type": "Fire",
     "abilities": [
@@ -205936,7 +206334,7 @@
     ]
   },
   {
-    "value": 1368,
+    "value": 1370,
     "text": "Gigantamax Inteleon",
     "type": "Water",
     "abilities": [
@@ -206089,7 +206487,7 @@
     ]
   },
   {
-    "value": 1369,
+    "value": 1371,
     "text": "Gigantamax Corviknight",
     "type": "Flying",
     "dualtype": "Steel",
@@ -206212,7 +206610,7 @@
     ]
   },
   {
-    "value": 1370,
+    "value": 1372,
     "text": "Gigantamax Orbeetle",
     "type": "Bug",
     "dualtype": "Psychic",
@@ -206361,7 +206759,7 @@
     ]
   },
   {
-    "value": 1371,
+    "value": 1373,
     "text": "Gigantamax Drednaw",
     "type": "Water",
     "dualtype": "Rock",
@@ -206509,7 +206907,7 @@
     ]
   },
   {
-    "value": 1372,
+    "value": 1374,
     "text": "Gigantamax Coalossal",
     "type": "Rock",
     "dualtype": "Fire",
@@ -206650,7 +207048,7 @@
     ]
   },
   {
-    "value": 1373,
+    "value": 1375,
     "text": "Gigantamax Flapple",
     "type": "Grass",
     "dualtype": "Dragon",
@@ -206782,7 +207180,7 @@
     ]
   },
   {
-    "value": 1374,
+    "value": 1376,
     "text": "Gigantamax Appletun",
     "type": "Grass",
     "dualtype": "Dragon",
@@ -206921,7 +207319,7 @@
     ]
   },
   {
-    "value": 1375,
+    "value": 1377,
     "text": "Gigantamax Sandaconda",
     "type": "Ground",
     "abilities": [
@@ -207041,7 +207439,7 @@
     ]
   },
   {
-    "value": 1376,
+    "value": 1378,
     "text": "Gulping Form Cramorant",
     "type": "Flying",
     "dualtype": "Water",
@@ -207154,7 +207552,7 @@
     ]
   },
   {
-    "value": 1377,
+    "value": 1379,
     "text": "Gorging Form Cramorant",
     "type": "Flying",
     "dualtype": "Water",
@@ -207267,7 +207665,7 @@
     ]
   },
   {
-    "value": 1378,
+    "value": 1380,
     "text": "Low Key Form Toxtricity",
     "type": "Electric",
     "dualtype": "Poison",
@@ -207445,7 +207843,7 @@
     ]
   },
   {
-    "value": 1379,
+    "value": 1381,
     "text": "Gigantamax Amped Form Toxtricity",
     "type": "Electric",
     "dualtype": "Poison",
@@ -207615,7 +208013,7 @@
     ]
   },
   {
-    "value": 1380,
+    "value": 1382,
     "text": "Gigantamax Low Key Form Toxtricity",
     "type": "Electric",
     "dualtype": "Poison",
@@ -207785,7 +208183,7 @@
     ]
   },
   {
-    "value": 1381,
+    "value": 1383,
     "text": "Gigantamax Centiskorch",
     "type": "Fire",
     "dualtype": "Bug",
@@ -207899,7 +208297,7 @@
     ]
   },
   {
-    "value": 1382,
+    "value": 1384,
     "text": "Antique Form Sinistea",
     "type": "Ghost",
     "abilities": [
@@ -208033,7 +208431,7 @@
     ]
   },
   {
-    "value": 1383,
+    "value": 1385,
     "text": "Antique Form Polteageist",
     "type": "Ghost",
     "abilities": [
@@ -208191,7 +208589,7 @@
     ]
   },
   {
-    "value": 1384,
+    "value": 1386,
     "text": "Gigantamax Hatterene",
     "type": "Psychic",
     "dualtype": "Fairy",
@@ -208329,7 +208727,7 @@
     ]
   },
   {
-    "value": 1385,
+    "value": 1387,
     "text": "Gigantamax Grimmsnarl",
     "type": "Dark",
     "dualtype": "Fairy",
@@ -208482,7 +208880,7 @@
     ]
   },
   {
-    "value": 1386,
+    "value": 1388,
     "text": "Ruby Cream Alcremie",
     "type": "Fairy",
     "abilities": [
@@ -208605,7 +209003,7 @@
     ]
   },
   {
-    "value": 1387,
+    "value": 1389,
     "text": "Matcha Cream Alcremie",
     "type": "Fairy",
     "abilities": [
@@ -208728,7 +209126,7 @@
     ]
   },
   {
-    "value": 1388,
+    "value": 1390,
     "text": "Mint Cream Alcremie",
     "type": "Fairy",
     "abilities": [
@@ -208851,7 +209249,7 @@
     ]
   },
   {
-    "value": 1389,
+    "value": 1391,
     "text": "Lemon Cream Alcremie",
     "type": "Fairy",
     "abilities": [
@@ -208974,7 +209372,7 @@
     ]
   },
   {
-    "value": 1390,
+    "value": 1392,
     "text": "Salted Cream Alcremie",
     "type": "Fairy",
     "abilities": [
@@ -209097,7 +209495,7 @@
     ]
   },
   {
-    "value": 1391,
+    "value": 1393,
     "text": "Ruby Swirl Alcremie",
     "type": "Fairy",
     "abilities": [
@@ -209220,7 +209618,7 @@
     ]
   },
   {
-    "value": 1392,
+    "value": 1394,
     "text": "Caramel Swirl Alcremie",
     "type": "Fairy",
     "abilities": [
@@ -209343,7 +209741,7 @@
     ]
   },
   {
-    "value": 1393,
+    "value": 1395,
     "text": "Rainbow Swirl Alcremie",
     "type": "Fairy",
     "abilities": [
@@ -209466,7 +209864,7 @@
     ]
   },
   {
-    "value": 1394,
+    "value": 1396,
     "text": "Gigantamax Alcremie",
     "type": "Fairy",
     "abilities": [
@@ -209589,7 +209987,7 @@
     ]
   },
   {
-    "value": 1395,
+    "value": 1397,
     "text": "Noice Face Eiscue",
     "type": "Ice",
     "abilities": [
@@ -209706,7 +210104,7 @@
     ]
   },
   {
-    "value": 1396,
+    "value": 1398,
     "text": "Indeedee-F",
     "type": "Psychic",
     "dualtype": "Normal",
@@ -209848,7 +210246,7 @@
     ]
   },
   {
-    "value": 1397,
+    "value": 1399,
     "text": "Hangry Mode Morpeko",
     "type": "Electric",
     "dualtype": "Dark",
@@ -209980,7 +210378,7 @@
     ]
   },
   {
-    "value": 1398,
+    "value": 1400,
     "text": "Gigantamax Copperajah",
     "type": "Steel",
     "abilities": [
@@ -210107,7 +210505,7 @@
     ]
   },
   {
-    "value": 1399,
+    "value": 1401,
     "text": "Gigantamax Duraludon",
     "type": "Steel",
     "dualtype": "Dragon",
@@ -210224,7 +210622,7 @@
     ]
   },
   {
-    "value": 1400,
+    "value": 1402,
     "text": "Crowned Sword Zacian",
     "type": "Fairy",
     "dualtype": "Steel",
@@ -210337,7 +210735,7 @@
     ]
   },
   {
-    "value": 1401,
+    "value": 1403,
     "text": "Crowned Shield Zamazenta",
     "type": "Fighting",
     "dualtype": "Steel",
@@ -210457,7 +210855,7 @@
     ]
   },
   {
-    "value": 1402,
+    "value": 1404,
     "text": "Eternamax Eternatus",
     "type": "Poison",
     "dualtype": "Dragon",
@@ -210573,7 +210971,7 @@
     ]
   },
   {
-    "value": 1403,
+    "value": 1405,
     "text": "Rapid Strike Style Urshifu",
     "type": "Fighting",
     "dualtype": "Water",
@@ -210712,7 +211110,7 @@
     ]
   },
   {
-    "value": 1404,
+    "value": 1406,
     "text": "Gigantamax Single Strike Style Urshifu",
     "type": "Fighting",
     "dualtype": "Dark",
@@ -210851,7 +211249,7 @@
     ]
   },
   {
-    "value": 1405,
+    "value": 1407,
     "text": "Gigantamax Rapid Strike Style Urshifu",
     "type": "Fighting",
     "dualtype": "Dark",
@@ -210990,7 +211388,7 @@
     ]
   },
   {
-    "value": 1406,
+    "value": 1408,
     "text": "Dada Zarude",
     "type": "Dark",
     "dualtype": "Grass",
@@ -211137,7 +211535,7 @@
     ]
   },
   {
-    "value": 1407,
+    "value": 1409,
     "text": "Ice Rider Calyrex",
     "type": "Psychic",
     "dualtype": "Ice",
@@ -211324,7 +211722,7 @@
     ]
   },
   {
-    "value": 1408,
+    "value": 1410,
     "text": "Shadow Rider Calyrex",
     "type": "Psychic",
     "dualtype": "Ghost",
@@ -211509,7 +211907,7 @@
     ]
   },
   {
-    "value": 1409,
+    "value": 1411,
     "text": "Bloodmoon Beast Ursaluna",
     "type": "Ground",
     "dualtype": "Normal",
@@ -211695,7 +212093,7 @@
     ]
   },
   {
-    "value": 1410,
+    "value": 1412,
     "text": "Basculegion-F",
     "type": "Water",
     "dualtype": "Ghost",
@@ -211746,7 +212144,7 @@
         "level": 24
       },
       {
-        "name": "Soak",
+        "name": "Shadow Sneak",
         "level": 28
       },
       {
@@ -211758,11 +212156,11 @@
         "level": 36
       },
       {
-        "name": "Uproar",
+        "name": "Spirit Shackle",
         "level": 40
       },
       {
-        "name": "Skull Bash",
+        "name": "Wave Crash",
         "level": 44
       },
       {
@@ -211776,6 +212174,10 @@
       {
         "name": "Head Smash",
         "level": 56
+      },
+      {
+        "name": "Hydro Pump",
+        "level": 60
       }
     ],
     "tmLearnset": {
@@ -211795,15 +212197,24 @@
       "Waterfall": 127
     },
     "eggLearnset": {
+      "Agility": 97,
+      "Brine": 362,
       "Bubble Beam": 61,
-      "Endeavor": 283
+      "Mud Shot": 341,
+      "Muddy Water": 330,
+      "Rage": 99,
+      "Revenge": 279,
+      "Swift": 129,
+      "Whirlpool": 250,
+      "Soak": 487,
+      "Uproar": 253
     },
     "tutorLearnset": {},
     "baseStats": {
       "hp": 120,
-      "atk": 92,
+      "atk": 80,
       "def": 65,
-      "spa": 100,
+      "spa": 112,
       "spd": 75,
       "spe": 78
     },
@@ -211820,7 +212231,7 @@
     ]
   },
   {
-    "value": 1411,
+    "value": 1413,
     "text": "Therian Forme Enamorus",
     "type": "Fairy",
     "dualtype": "Flying",
@@ -211947,7 +212358,7 @@
     ]
   },
   {
-    "value": 1412,
+    "value": 1414,
     "text": "Oinkologne-F",
     "type": "Normal",
     "abilities": [
@@ -212065,7 +212476,7 @@
     ]
   },
   {
-    "value": 1413,
+    "value": 1415,
     "text": "Family of Three Maushold",
     "type": "Normal",
     "abilities": [
@@ -212192,7 +212603,7 @@
     ]
   },
   {
-    "value": 1414,
+    "value": 1416,
     "text": "Blue Plumage Squawkabilly",
     "type": "Normal",
     "dualtype": "Flying",
@@ -212316,7 +212727,7 @@
     ]
   },
   {
-    "value": 1415,
+    "value": 1417,
     "text": "Yellow Plumage Squawkabilly",
     "type": "Normal",
     "dualtype": "Flying",
@@ -212440,7 +212851,7 @@
     ]
   },
   {
-    "value": 1416,
+    "value": 1418,
     "text": "White Plumage Squawkabilly",
     "type": "Normal",
     "dualtype": "Flying",
@@ -212564,7 +212975,7 @@
     ]
   },
   {
-    "value": 1417,
+    "value": 1419,
     "text": "Hero Form Palafin",
     "type": "Water",
     "abilities": [
@@ -212696,7 +213107,7 @@
     ]
   },
   {
-    "value": 1418,
+    "value": 1420,
     "text": "Segin Starmobile Revavroom",
     "type": "Dark",
     "abilities": [
@@ -212746,7 +213157,7 @@
     ]
   },
   {
-    "value": 1419,
+    "value": 1421,
     "text": "Schedar Starmobile Revavroom",
     "type": "Fire",
     "abilities": [
@@ -212796,7 +213207,7 @@
     ]
   },
   {
-    "value": 1420,
+    "value": 1422,
     "text": "Navi Starmobile Revavroom",
     "type": "Poison",
     "abilities": [
@@ -212846,7 +213257,7 @@
     ]
   },
   {
-    "value": 1421,
+    "value": 1423,
     "text": "Ruchbah Starmobile Revavroom",
     "type": "Fairy",
     "abilities": [
@@ -212896,7 +213307,7 @@
     ]
   },
   {
-    "value": 1422,
+    "value": 1424,
     "text": "Caph Starmobile Revavroom",
     "type": "Fighting",
     "abilities": [
@@ -212946,7 +213357,7 @@
     ]
   },
   {
-    "value": 1423,
+    "value": 1425,
     "text": "Droopy Form Tatsugiri",
     "type": "Dragon",
     "dualtype": "Water",
@@ -213048,7 +213459,7 @@
     ]
   },
   {
-    "value": 1424,
+    "value": 1426,
     "text": "Stretchy Form Tatsugiri",
     "type": "Dragon",
     "dualtype": "Water",
@@ -213150,7 +213561,7 @@
     ]
   },
   {
-    "value": 1425,
+    "value": 1427,
     "text": "Three-Segment Form Dudunsparce",
     "type": "Normal",
     "dualtype": "Dragon",
@@ -213335,7 +213746,7 @@
     ]
   },
   {
-    "value": 1426,
+    "value": 1428,
     "text": "Roaming Form Gimmighoul",
     "type": "Ghost",
     "abilities": [
@@ -213388,7 +213799,7 @@
     ]
   },
   {
-    "value": 1427,
+    "value": 1429,
     "text": "Limited Build Koraidon",
     "type": "Fighting",
     "dualtype": "Dragon",
@@ -213511,7 +213922,7 @@
     ]
   },
   {
-    "value": 1428,
+    "value": 1430,
     "text": "Low-Power Mode Miraidon",
     "type": "Electric",
     "dualtype": "Dragon",
@@ -213631,7 +214042,7 @@
     ]
   },
   {
-    "value": 1429,
+    "value": 1431,
     "text": "Artisan Form Poltchageist",
     "type": "Grass",
     "dualtype": "Ghost",
@@ -213718,7 +214129,7 @@
     ]
   },
   {
-    "value": 1430,
+    "value": 1432,
     "text": "Masterpiece Form Sinistcha",
     "type": "Grass",
     "dualtype": "Ghost",
@@ -213809,7 +214220,7 @@
     ]
   },
   {
-    "value": 1431,
+    "value": 1433,
     "text": "Wellspring Mask Ogerpon",
     "type": "Grass",
     "dualtype": "Water",
@@ -213920,7 +214331,7 @@
     ]
   },
   {
-    "value": 1432,
+    "value": 1434,
     "text": "Hearthflame Mask Ogerpon",
     "type": "Grass",
     "dualtype": "Fire",
@@ -214031,7 +214442,7 @@
     ]
   },
   {
-    "value": 1433,
+    "value": 1435,
     "text": "Cornerstone Mask Ogerpon",
     "type": "Grass",
     "dualtype": "Rock",
@@ -214142,7 +214553,7 @@
     ]
   },
   {
-    "value": 1434,
+    "value": 1436,
     "text": "Terastal Teal Mask Ogerpon",
     "type": "Grass",
     "abilities": [
@@ -214252,7 +214663,7 @@
     ]
   },
   {
-    "value": 1435,
+    "value": 1437,
     "text": "Terastal Wellspring Mask Ogerpon",
     "type": "Grass",
     "dualtype": "Water",
@@ -214363,7 +214774,7 @@
     ]
   },
   {
-    "value": 1436,
+    "value": 1438,
     "text": "Terastal Hearthflame Mask Ogerpon",
     "type": "Grass",
     "dualtype": "Fire",
@@ -214474,7 +214885,7 @@
     ]
   },
   {
-    "value": 1437,
+    "value": 1439,
     "text": "Terastal Cornerstone Mask Ogerpon",
     "type": "Grass",
     "dualtype": "Rock",
@@ -214585,7 +214996,7 @@
     ]
   },
   {
-    "value": 1438,
+    "value": 1440,
     "text": "Terastal Form Terapagos",
     "type": "Normal",
     "abilities": [
@@ -214667,7 +215078,7 @@
     ]
   },
   {
-    "value": 1439,
+    "value": 1441,
     "text": "Stellar Form Terapagos",
     "type": "Normal",
     "abilities": [

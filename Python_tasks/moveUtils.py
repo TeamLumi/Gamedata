@@ -3,6 +3,7 @@ import os
 import re
 import unicodedata
 from collections import defaultdict
+from math import gcd
 
 import constants
 from load_files import load_data
@@ -17,6 +18,40 @@ personal_data_path = os.path.join(input_file_path, 'PersonalTable.json')
 move_enum = 0
 FORM_MAP = {}
 _move_properties_cache = {}  # cache for move properties
+
+
+# Map numeric damageType → string
+CATEGORY_MAP = {
+    0: "Status",
+    1: "Physical",
+    2: "Special"
+}
+
+
+MOVE_TARGETING = [
+  "Ally or Foe",
+  "Self or Ally",
+  "Ally Only",
+  "Foe Only",
+  "Allies and Foes",
+  "All Foes",
+  "Self and Allies",
+  "Self Only",
+  "Everyone",
+  "Self (random)",
+  "Everyone (field)",
+  "All Foes (field)",
+  "Self and Allies (field)",
+  "Self (autotarget)"
+]
+
+
+FLAG_MAPPING = {
+    "makesContact": 0,   # "Makes Contact"
+    "isPunch": 7,        # "Punch Move"
+    "isSound": 8,        # "Sound Move"
+}
+
 
 with open(personal_data_path, mode='r', encoding="utf-8") as f:
     personal_data = json.load(f)
@@ -418,6 +453,153 @@ def get_tutor_moves_list(monsno=0, formno=0):
 
     return tutor_moves[monsNo][formNo]
 
+
+def simplify_fraction(numerator, denominator):
+    if numerator == 0:
+        return [0, 1]
+    g = gcd(numerator, denominator)
+    return [numerator // g, denominator // g]
+
+
+def extract_flags(move):
+    flags = move.get("flags", 0)
+    result = {}
+
+    for name, bit in FLAG_MAPPING.items():
+        if bit is not None and (flags & (1 << bit)):
+            result[name] = True
+
+    return result
+
+
+def get_optional_properties(move):
+    props = {}
+
+    # multihit
+    min_hits = move.get("hitCountMin", 0)
+    max_hits = move.get("hitCountMax", 0)
+    if min_hits > 1 or max_hits > 1:
+        props["multihit"] = [min_hits, max_hits]
+
+    # target
+    target = MOVE_TARGETING[move.get("target")]
+    if target:
+        props["target"] = target
+
+    # recoil
+    recoil = move.get("damageRecoverRatio", 0)
+    if recoil < 0:
+        props["recoil"] = simplify_fraction(abs(recoil), 100)
+
+    # drain
+    if recoil > 0:
+        props["drain"] = simplify_fraction(recoil, 100)
+
+    # secondaries
+    if move.get("sickID", 0) != 0:
+        props["secondaries"] = True
+
+    # overrideBP (if different from base power behavior)
+    if move.get("power", 0) == 0 and move.get("damageType") != 0:
+        props["overrideBP"] = True
+
+    # priority
+    if move.get("priority", 0) != 0:
+        props["priority"] = move["priority"]
+
+    # willCrit (based on crit rank)
+    if move.get("criticalRank", 0) > 2:
+        props["willCrit"] = True
+
+    # e_id (effect id)
+    if move.get("sickID", 0) != 0:
+        props["e_id"] = move["sickID"]
+
+    # flags
+    props.update(extract_flags(move))
+
+    return props
+
+def get_move_core(move):
+    """Extract core comparable properties"""
+    return {
+        "type": move.get("type"),
+        "category": CATEGORY_MAP.get(move.get("damageType")),
+        "basePower": move.get("power")
+    }
+
+
+def extract_flags(move):
+    flags = move.get("flags", 0)
+    result = {}
+
+    for name, bit in FLAG_MAPPING.items():
+        if bit is not None and (flags & (1 << bit)):
+            result[name] = True
+
+    return result
+
+
+def compare_moves(vanilla_data, mod_data):
+    vanilla_moves = vanilla_data["Waza"]
+    mod_moves = mod_data["Waza"]
+    # names = vanilla_data["moves_namedata"]["labelDataArray"]
+
+    changes = {}
+
+    for move_id, vanilla_move in enumerate(vanilla_moves):
+        mod_move = mod_moves[move_id]
+
+        # Get name
+        name = get_move_string(move_id)
+
+        vanilla_core = get_move_core(vanilla_move)
+        mod_core = get_move_core(mod_move)
+
+        vanilla_optional = get_optional_properties(vanilla_move)
+        mod_optional = get_optional_properties(mod_move)
+
+        move_changes = {}
+
+        # Compare core fields
+        for key in vanilla_core:
+            if vanilla_core[key] != mod_core[key]:
+                move_changes[key] = mod_core[key]
+
+        # Compare optional fields (ONLY include if changed)
+        for key, value in mod_optional.items():
+            if vanilla_optional.get(key) != value:
+                move_changes[key] = value
+
+        if move_changes:
+            changes[name] = move_changes
+
+    return changes
+
+
+def format_output(changes):
+    """Format output like your example"""
+    lines = []
+
+    for move_name, props in changes.items():
+        lines.append(f'"{move_name}": {{')
+
+        for key, value in props.items():
+            if isinstance(value, str):
+                lines.append(f'    "{key}": "{value}",')
+            else:
+                lines.append(f'    "{key}": {value},')
+
+        # Remove trailing comma
+        if lines[-1].endswith(","):
+            lines[-1] = lines[-1][:-1]
+
+        lines.append("},\n")
+
+    return "\n".join(lines)
+
+
+
 if __name__ != "__main__":
     full_data = load_data()
     learnset_data = full_data['learnset_data']
@@ -425,5 +607,16 @@ if __name__ != "__main__":
 
 if __name__ == "__main__":
     full_data = load_data()
-    get_list_of_moves_by_type()
+    # get_list_of_moves_by_type()
+    # ===== Usage =====
+    # Load your data however you already do
+    with open(os.path.join(parent_file_path, "vanilla_input", "WazaTable.json"), "r", encoding="utf-8") as f:
+        vanilla_data = json.load(f)
 
+    with open(os.path.join(parent_file_path, "3.0Input", "WazaTable.json"), "r", encoding="utf-8") as f:
+        mod_data = json.load(f)
+
+    changes = compare_moves(vanilla_data, mod_data)
+    output = format_output(changes)
+
+    print(output)

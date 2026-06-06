@@ -3864,7 +3864,7 @@
     "evolve": [
       206,
       982,
-      1425
+      1427
     ],
     "generation": 8,
     "abilities": [
@@ -4043,7 +4043,7 @@
       216,
       217,
       901,
-      1409
+      1411
     ],
     "generation": 8,
     "abilities": [
@@ -4063,7 +4063,7 @@
       216,
       217,
       901,
-      1409
+      1411
     ],
     "generation": 8,
     "abilities": [
@@ -8869,7 +8869,8 @@
     "dualtype": "DRAGON",
     "evolve": [
       483,
-      1202
+      1202,
+      1203
     ],
     "generation": 8,
     "abilities": [
@@ -8887,7 +8888,8 @@
     "dualtype": "DRAGON",
     "evolve": [
       484,
-      1203
+      1204,
+      1205
     ],
     "generation": 8,
     "abilities": [
@@ -8938,9 +8940,9 @@
     "dualtype": "DRAGON",
     "evolve": [
       487,
-      1204,
-      1205,
-      1206
+      1206,
+      1207,
+      1208
     ],
     "generation": 8,
     "abilities": [
@@ -9021,9 +9023,9 @@
     "type": "GRASS",
     "evolve": [
       492,
-      1207,
-      1208,
-      1209
+      1209,
+      1210,
+      1211
     ],
     "generation": 8,
     "abilities": [
@@ -9040,8 +9042,6 @@
     "type": "NORMAL",
     "evolve": [
       493,
-      1210,
-      1211,
       1212,
       1213,
       1214,
@@ -9056,7 +9056,9 @@
       1223,
       1224,
       1225,
-      1226
+      1226,
+      1227,
+      1228
     ],
     "generation": 8,
     "abilities": [
@@ -9201,7 +9203,7 @@
     "evolve": [
       501,
       502,
-      1227,
+      1229,
       503
     ],
     "generation": 8,
@@ -9220,7 +9222,7 @@
     "evolve": [
       501,
       502,
-      1227,
+      1229,
       503
     ],
     "generation": 8,
@@ -9240,7 +9242,7 @@
       501,
       502,
       503,
-      1227
+      1229
     ],
     "generation": 8,
     "abilities": [
@@ -9732,7 +9734,7 @@
     "dualtype": "FAIRY",
     "evolve": [
       531,
-      1228
+      1230
     ],
     "generation": 8,
     "abilities": [
@@ -10042,7 +10044,7 @@
     "evolve": [
       548,
       549,
-      1229
+      1231
     ],
     "generation": 8,
     "abilities": [
@@ -10060,7 +10062,7 @@
     "evolve": [
       548,
       549,
-      1229
+      1231
     ],
     "generation": 8,
     "abilities": [
@@ -10077,7 +10079,7 @@
     "type": "WATER",
     "evolve": [
       550,
-      1230
+      1232
     ],
     "generation": 8,
     "abilities": [
@@ -10152,8 +10154,8 @@
     "evolve": [
       554,
       555,
-      1233,
-      1235
+      1235,
+      1237
     ],
     "generation": 8,
     "abilities": [
@@ -10171,8 +10173,8 @@
     "evolve": [
       554,
       555,
-      1233,
-      1235
+      1235,
+      1237
     ],
     "generation": 8,
     "abilities": [
@@ -10402,7 +10404,7 @@
     "evolve": [
       568,
       569,
-      1237
+      1239
     ],
     "generation": 8,
     "abilities": [
@@ -10420,7 +10422,7 @@
     "evolve": [
       568,
       569,
-      1237
+      1239
     ],
     "generation": 8,
     "abilities": [
@@ -11290,7 +11292,7 @@
     "dualtype": "ELECTRIC",
     "evolve": [
       618,
-      1246
+      1248
     ],
     "generation": 8,
     "abilities": [
@@ -11448,7 +11450,7 @@
     "dualtype": "FLYING",
     "evolve": [
       627,
-      1247,
+      1249,
       628
     ],
     "generation": 8,
@@ -11468,7 +11470,7 @@
     "evolve": [
       627,
       628,
-      1247
+      1249
     ],
     "generation": 8,
     "abilities": [
@@ -11698,7 +11700,7 @@
     "type": "FLYING",
     "evolve": [
       641,
-      1248
+      1250
     ],
     "generation": 8,
     "abilities": [
@@ -11716,7 +11718,7 @@
     "dualtype": "FLYING",
     "evolve": [
       642,
-      1249
+      1251
     ],
     "generation": 8,
     "abilities": [
@@ -11768,7 +11770,7 @@
     "dualtype": "FLYING",
     "evolve": [
       645,
-      1250
+      1252
     ],
     "generation": 8,
     "abilities": [
@@ -11786,8 +11788,8 @@
     "dualtype": "ICE",
     "evolve": [
       646,
-      1251,
-      1252
+      1253,
+      1254
     ],
     "generation": 8,
     "abilities": [
@@ -11805,7 +11807,7 @@
     "dualtype": "FIGHTING",
     "evolve": [
       647,
-      1253
+      1255
     ],
     "generation": 8,
     "abilities": [
@@ -11823,7 +11825,7 @@
     "dualtype": "PSYCHIC",
     "evolve": [
       648,
-      1254
+      1256
     ],
     "generation": 8,
     "abilities": [
@@ -11841,10 +11843,10 @@
     "dualtype": "STEEL",
     "evolve": [
       649,
-      1255,
-      1256,
       1257,
-      1258
+      1258,
+      1259,
+      1260
     ],
     "generation": 8,
     "abilities": [
@@ -11973,8 +11975,8 @@
       656,
       657,
       658,
-      1259,
-      1260
+      1261,
+      1262
     ],
     "generation": 8,
     "abilities": [
@@ -11993,8 +11995,8 @@
       656,
       657,
       658,
-      1259,
-      1260
+      1261,
+      1262
     ],
     "generation": 8,
     "abilities": [
@@ -12014,8 +12016,8 @@
       656,
       657,
       658,
-      1259,
-      1260
+      1261,
+      1262
     ],
     "generation": 8,
     "abilities": [
@@ -12126,8 +12128,6 @@
       664,
       665,
       666,
-      1261,
-      1262,
       1263,
       1264,
       1265,
@@ -12144,7 +12144,9 @@
       1276,
       1277,
       1278,
-      1279
+      1279,
+      1280,
+      1281
     ],
     "generation": 8,
     "abilities": [
@@ -12163,8 +12165,6 @@
       664,
       665,
       666,
-      1261,
-      1262,
       1263,
       1264,
       1265,
@@ -12181,7 +12181,9 @@
       1276,
       1277,
       1278,
-      1279
+      1279,
+      1280,
+      1281
     ],
     "generation": 8,
     "abilities": [
@@ -12201,8 +12203,6 @@
       664,
       665,
       666,
-      1261,
-      1262,
       1263,
       1264,
       1265,
@@ -12219,7 +12219,9 @@
       1276,
       1277,
       1278,
-      1279
+      1279,
+      1280,
+      1281
     ],
     "generation": 8,
     "abilities": [
@@ -12274,7 +12276,7 @@
       669,
       670,
       671,
-      1288
+      1290
     ],
     "generation": 8,
     "abilities": [
@@ -12293,7 +12295,7 @@
       669,
       670,
       671,
-      1288
+      1290
     ],
     "generation": 8,
     "abilities": [
@@ -12313,7 +12315,7 @@
       669,
       670,
       671,
-      1288
+      1290
     ],
     "generation": 8,
     "abilities": [
@@ -12399,15 +12401,15 @@
     "type": "NORMAL",
     "evolve": [
       676,
-      1293,
-      1294,
       1295,
       1296,
       1297,
       1298,
       1299,
       1300,
-      1301
+      1301,
+      1302,
+      1303
     ],
     "generation": 8,
     "abilities": [
@@ -12425,7 +12427,7 @@
     "evolve": [
       677,
       678,
-      1302
+      1304
     ],
     "generation": 8,
     "abilities": [
@@ -12443,7 +12445,7 @@
     "evolve": [
       677,
       678,
-      1302
+      1304
     ],
     "generation": 8,
     "abilities": [
@@ -12463,7 +12465,7 @@
       679,
       680,
       681,
-      1303
+      1305
     ],
     "generation": 8,
     "abilities": [
@@ -12483,7 +12485,7 @@
       679,
       680,
       681,
-      1303
+      1305
     ],
     "generation": 8,
     "abilities": [
@@ -12503,7 +12505,7 @@
       679,
       680,
       681,
-      1303
+      1305
     ],
     "generation": 8,
     "abilities": [
@@ -12911,10 +12913,10 @@
     "type": "DRAGON",
     "evolve": [
       704,
-      1304,
+      1306,
       705,
       706,
-      1305
+      1307
     ],
     "generation": 8,
     "abilities": [
@@ -12934,7 +12936,7 @@
       704,
       705,
       706,
-      1305
+      1307
     ],
     "generation": 8,
     "abilities": [
@@ -12954,7 +12956,7 @@
       704,
       705,
       706,
-      1305
+      1307
     ],
     "generation": 8,
     "abilities": [
@@ -13060,7 +13062,7 @@
     "type": "ICE",
     "evolve": [
       712,
-      1312,
+      1314,
       713
     ],
     "generation": 8,
@@ -13079,7 +13081,7 @@
     "evolve": [
       712,
       713,
-      1312
+      1314
     ],
     "generation": 8,
     "abilities": [
@@ -13132,7 +13134,7 @@
     "type": "FAIRY",
     "evolve": [
       716,
-      1313
+      1315
     ],
     "generation": 8,
     "abilities": [
@@ -13167,12 +13169,12 @@
     "dualtype": "GROUND",
     "evolve": [
       718,
-      1314,
-      1315,
       1316,
       1317,
       1318,
-      1319
+      1319,
+      1320,
+      1321
     ],
     "generation": 8,
     "abilities": [
@@ -13190,7 +13192,7 @@
     "dualtype": "FAIRY",
     "evolve": [
       719,
-      1320
+      1322
     ],
     "generation": 8,
     "abilities": [
@@ -13208,7 +13210,7 @@
     "dualtype": "GHOST",
     "evolve": [
       720,
-      1321
+      1323
     ],
     "generation": 8,
     "abilities": [
@@ -13244,7 +13246,7 @@
     "evolve": [
       722,
       723,
-      1322,
+      1324,
       724
     ],
     "generation": 8,
@@ -13264,7 +13266,7 @@
     "evolve": [
       722,
       723,
-      1322,
+      1324,
       724
     ],
     "generation": 8,
@@ -13285,7 +13287,7 @@
       722,
       723,
       724,
-      1322
+      1324
     ],
     "generation": 8,
     "abilities": [
@@ -13595,9 +13597,9 @@
     "dualtype": "FLYING",
     "evolve": [
       741,
-      1323,
-      1324,
-      1325
+      1325,
+      1326,
+      1327
     ],
     "generation": 8,
     "abilities": [
@@ -13651,7 +13653,7 @@
     "evolve": [
       744,
       745,
-      1327
+      1329
     ],
     "generation": 8,
     "abilities": [
@@ -13669,7 +13671,7 @@
     "evolve": [
       744,
       745,
-      1327
+      1329
     ],
     "generation": 8,
     "abilities": [
@@ -13686,7 +13688,7 @@
     "type": "WATER",
     "evolve": [
       746,
-      1329
+      1331
     ],
     "generation": 8,
     "abilities": [
@@ -14143,8 +14145,6 @@
     "evolve": [
       772,
       773,
-      1330,
-      1331,
       1332,
       1333,
       1334,
@@ -14159,7 +14159,9 @@
       1343,
       1344,
       1345,
-      1346
+      1346,
+      1347,
+      1348
     ],
     "generation": 8,
     "abilities": [
@@ -14177,8 +14179,6 @@
     "evolve": [
       772,
       773,
-      1330,
-      1331,
       1332,
       1333,
       1334,
@@ -14193,7 +14193,9 @@
       1343,
       1344,
       1345,
-      1346
+      1346,
+      1347,
+      1348
     ],
     "generation": 8,
     "abilities": [
@@ -14211,8 +14213,6 @@
     "dualtype": "FLYING",
     "evolve": [
       774,
-      1347,
-      1348,
       1349,
       1350,
       1351,
@@ -14223,7 +14223,9 @@
       1356,
       1357,
       1358,
-      1359
+      1359,
+      1360,
+      1361
     ],
     "generation": 8,
     "abilities": [
@@ -14291,7 +14293,7 @@
     "dualtype": "FAIRY",
     "evolve": [
       778,
-      1360
+      1362
     ],
     "generation": 8,
     "abilities": [
@@ -14677,9 +14679,9 @@
     "type": "PSYCHIC",
     "evolve": [
       800,
-      1361,
-      1362,
-      1363
+      1363,
+      1364,
+      1365
     ],
     "generation": 8,
     "abilities": [
@@ -14697,7 +14699,7 @@
     "dualtype": "FAIRY",
     "evolve": [
       801,
-      1364
+      1366
     ],
     "generation": 8,
     "abilities": [
@@ -14818,7 +14820,7 @@
     "evolve": [
       808,
       809,
-      1365
+      1367
     ],
     "generation": 8,
     "abilities": [
@@ -14836,7 +14838,7 @@
     "evolve": [
       808,
       809,
-      1365
+      1367
     ],
     "generation": 8,
     "abilities": [
@@ -14855,7 +14857,7 @@
       810,
       811,
       812,
-      1366
+      1368
     ],
     "generation": 8,
     "abilities": [
@@ -14874,7 +14876,7 @@
       810,
       811,
       812,
-      1366
+      1368
     ],
     "generation": 8,
     "abilities": [
@@ -14893,7 +14895,7 @@
       810,
       811,
       812,
-      1366
+      1368
     ],
     "generation": 8,
     "abilities": [
@@ -14912,7 +14914,7 @@
       813,
       814,
       815,
-      1367
+      1369
     ],
     "generation": 8,
     "abilities": [
@@ -14931,7 +14933,7 @@
       813,
       814,
       815,
-      1367
+      1369
     ],
     "generation": 8,
     "abilities": [
@@ -14950,7 +14952,7 @@
       813,
       814,
       815,
-      1367
+      1369
     ],
     "generation": 8,
     "abilities": [
@@ -14969,7 +14971,7 @@
       816,
       817,
       818,
-      1368
+      1370
     ],
     "generation": 8,
     "abilities": [
@@ -14988,7 +14990,7 @@
       816,
       817,
       818,
-      1368
+      1370
     ],
     "generation": 8,
     "abilities": [
@@ -15007,7 +15009,7 @@
       816,
       817,
       818,
-      1368
+      1370
     ],
     "generation": 8,
     "abilities": [
@@ -15060,7 +15062,7 @@
       821,
       822,
       823,
-      1369
+      1371
     ],
     "generation": 8,
     "abilities": [
@@ -15079,7 +15081,7 @@
       821,
       822,
       823,
-      1369
+      1371
     ],
     "generation": 8,
     "abilities": [
@@ -15099,7 +15101,7 @@
       821,
       822,
       823,
-      1369
+      1371
     ],
     "generation": 8,
     "abilities": [
@@ -15118,7 +15120,7 @@
       824,
       825,
       826,
-      1370
+      1372
     ],
     "generation": 8,
     "abilities": [
@@ -15138,7 +15140,7 @@
       824,
       825,
       826,
-      1370
+      1372
     ],
     "generation": 8,
     "abilities": [
@@ -15158,7 +15160,7 @@
       824,
       825,
       826,
-      1370
+      1372
     ],
     "generation": 8,
     "abilities": [
@@ -15278,7 +15280,7 @@
     "evolve": [
       833,
       834,
-      1371
+      1373
     ],
     "generation": 8,
     "abilities": [
@@ -15297,7 +15299,7 @@
     "evolve": [
       833,
       834,
-      1371
+      1373
     ],
     "generation": 8,
     "abilities": [
@@ -15350,7 +15352,7 @@
       837,
       838,
       839,
-      1372
+      1374
     ],
     "generation": 8,
     "abilities": [
@@ -15370,7 +15372,7 @@
       837,
       838,
       839,
-      1372
+      1374
     ],
     "generation": 8,
     "abilities": [
@@ -15390,7 +15392,7 @@
       837,
       838,
       839,
-      1372
+      1374
     ],
     "generation": 8,
     "abilities": [
@@ -15412,8 +15414,8 @@
       842,
       1011,
       1019,
-      1373,
-      1374
+      1375,
+      1376
     ],
     "generation": 8,
     "abilities": [
@@ -15432,7 +15434,7 @@
     "evolve": [
       840,
       841,
-      1373
+      1375
     ],
     "generation": 8,
     "abilities": [
@@ -15451,7 +15453,7 @@
     "evolve": [
       840,
       842,
-      1374
+      1376
     ],
     "generation": 8,
     "abilities": [
@@ -15469,7 +15471,7 @@
     "evolve": [
       843,
       844,
-      1375
+      1377
     ],
     "generation": 8,
     "abilities": [
@@ -15487,7 +15489,7 @@
     "evolve": [
       843,
       844,
-      1375
+      1377
     ],
     "generation": 8,
     "abilities": [
@@ -15505,8 +15507,8 @@
     "dualtype": "WATER",
     "evolve": [
       845,
-      1376,
-      1377
+      1378,
+      1379
     ],
     "generation": 8,
     "abilities": [
@@ -15559,9 +15561,9 @@
     "evolve": [
       848,
       849,
-      1378,
-      1379,
-      1380
+      1380,
+      1381,
+      1382
     ],
     "generation": 8,
     "abilities": [
@@ -15580,9 +15582,9 @@
     "evolve": [
       848,
       849,
-      1378,
-      1379,
-      1380
+      1380,
+      1381,
+      1382
     ],
     "generation": 8,
     "abilities": [
@@ -15601,7 +15603,7 @@
     "evolve": [
       850,
       851,
-      1381
+      1383
     ],
     "generation": 8,
     "abilities": [
@@ -15620,7 +15622,7 @@
     "evolve": [
       850,
       851,
-      1381
+      1383
     ],
     "generation": 8,
     "abilities": [
@@ -15709,7 +15711,7 @@
       856,
       857,
       858,
-      1384
+      1386
     ],
     "generation": 8,
     "abilities": [
@@ -15728,7 +15730,7 @@
       856,
       857,
       858,
-      1384
+      1386
     ],
     "generation": 8,
     "abilities": [
@@ -15748,7 +15750,7 @@
       856,
       857,
       858,
-      1384
+      1386
     ],
     "generation": 8,
     "abilities": [
@@ -15768,7 +15770,7 @@
       859,
       860,
       861,
-      1385
+      1387
     ],
     "generation": 8,
     "abilities": [
@@ -15788,7 +15790,7 @@
       859,
       860,
       861,
-      1385
+      1387
     ],
     "generation": 8,
     "abilities": [
@@ -15808,7 +15810,7 @@
       859,
       860,
       861,
-      1385
+      1387
     ],
     "generation": 8,
     "abilities": [
@@ -15865,8 +15867,8 @@
     ],
     "generation": 8,
     "abilities": [
-      "Weak Armor",
-      "Weak Armor",
+      "Sticky Hold",
+      "Sticky Hold",
       "Perish Body"
     ],
     "dexNum": 864,
@@ -15914,7 +15916,7 @@
     "type": "GROUND",
     "dualtype": "GHOST",
     "evolve": [
-      1236,
+      1238,
       867
     ],
     "generation": 8,
@@ -15933,15 +15935,15 @@
     "evolve": [
       868,
       869,
-      1386,
-      1387,
       1388,
       1389,
       1390,
       1391,
       1392,
       1393,
-      1394
+      1394,
+      1395,
+      1396
     ],
     "generation": 8,
     "abilities": [
@@ -15959,15 +15961,15 @@
     "evolve": [
       868,
       869,
-      1386,
-      1387,
       1388,
       1389,
       1390,
       1391,
       1392,
       1393,
-      1394
+      1394,
+      1395,
+      1396
     ],
     "generation": 8,
     "abilities": [
@@ -16069,7 +16071,7 @@
     "type": "ICE",
     "evolve": [
       875,
-      1395
+      1397
     ],
     "generation": 8,
     "abilities": [
@@ -16087,7 +16089,7 @@
     "dualtype": "NORMAL",
     "evolve": [
       876,
-      1396
+      1398
     ],
     "generation": 8,
     "abilities": [
@@ -16105,7 +16107,7 @@
     "dualtype": "DARK",
     "evolve": [
       877,
-      1397
+      1399
     ],
     "generation": 8,
     "abilities": [
@@ -16123,7 +16125,7 @@
     "evolve": [
       878,
       879,
-      1398
+      1400
     ],
     "generation": 8,
     "abilities": [
@@ -16141,7 +16143,7 @@
     "evolve": [
       878,
       879,
-      1398
+      1400
     ],
     "generation": 8,
     "abilities": [
@@ -16228,7 +16230,7 @@
     "evolve": [
       884,
       1018,
-      1399
+      1401
     ],
     "generation": 8,
     "abilities": [
@@ -16302,7 +16304,7 @@
     "type": "FAIRY",
     "evolve": [
       888,
-      1400
+      1402
     ],
     "generation": 8,
     "abilities": [
@@ -16319,7 +16321,7 @@
     "type": "FIGHTING",
     "evolve": [
       889,
-      1401
+      1403
     ],
     "generation": 8,
     "abilities": [
@@ -16337,7 +16339,7 @@
     "dualtype": "DRAGON",
     "evolve": [
       890,
-      1402
+      1404
     ],
     "generation": 8,
     "abilities": [
@@ -16355,9 +16357,9 @@
     "evolve": [
       891,
       892,
-      1403,
-      1404,
-      1405
+      1405,
+      1406,
+      1407
     ],
     "generation": 8,
     "abilities": [
@@ -16376,9 +16378,9 @@
     "evolve": [
       891,
       892,
-      1403,
-      1404,
-      1405
+      1405,
+      1406,
+      1407
     ],
     "generation": 8,
     "abilities": [
@@ -16396,7 +16398,7 @@
     "dualtype": "GRASS",
     "evolve": [
       893,
-      1406
+      1408
     ],
     "generation": 8,
     "abilities": [
@@ -16478,8 +16480,8 @@
     "dualtype": "GRASS",
     "evolve": [
       898,
-      1407,
-      1408
+      1409,
+      1410
     ],
     "generation": 8,
     "abilities": [
@@ -16535,7 +16537,7 @@
       216,
       217,
       901,
-      1409
+      1411
     ],
     "generation": 8,
     "abilities": [
@@ -16552,9 +16554,9 @@
     "type": "WATER",
     "dualtype": "GHOST",
     "evolve": [
-      1231,
+      1233,
       902,
-      1410
+      1412
     ],
     "generation": 8,
     "abilities": [
@@ -16608,7 +16610,7 @@
     "dualtype": "FLYING",
     "evolve": [
       905,
-      1411
+      1413
     ],
     "generation": 8,
     "abilities": [
@@ -16791,7 +16793,7 @@
     "evolve": [
       915,
       916,
-      1412
+      1414
     ],
     "generation": 8,
     "abilities": [
@@ -16809,7 +16811,7 @@
     "evolve": [
       915,
       916,
-      1412
+      1414
     ],
     "generation": 8,
     "abilities": [
@@ -16952,7 +16954,7 @@
     "evolve": [
       924,
       925,
-      1413
+      1415
     ],
     "generation": 8,
     "abilities": [
@@ -16970,7 +16972,7 @@
     "evolve": [
       924,
       925,
-      1413
+      1415
     ],
     "generation": 8,
     "abilities": [
@@ -17079,9 +17081,9 @@
     "dualtype": "FLYING",
     "evolve": [
       931,
-      1414,
-      1415,
-      1416
+      1416,
+      1417,
+      1418
     ],
     "generation": 8,
     "abilities": [
@@ -17647,7 +17649,7 @@
     "evolve": [
       963,
       964,
-      1417
+      1419
     ],
     "generation": 8,
     "abilities": [
@@ -17665,7 +17667,7 @@
     "evolve": [
       963,
       964,
-      1417
+      1419
     ],
     "generation": 8,
     "abilities": [
@@ -17684,11 +17686,11 @@
     "evolve": [
       965,
       966,
-      1418,
-      1419,
       1420,
       1421,
-      1422
+      1422,
+      1423,
+      1424
     ],
     "generation": 8,
     "abilities": [
@@ -17707,11 +17709,11 @@
     "evolve": [
       965,
       966,
-      1418,
-      1419,
       1420,
       1421,
-      1422
+      1422,
+      1423,
+      1424
     ],
     "generation": 8,
     "abilities": [
@@ -17916,8 +17918,8 @@
     "dualtype": "WATER",
     "evolve": [
       978,
-      1423,
-      1424
+      1425,
+      1426
     ],
     "generation": 8,
     "abilities": [
@@ -17991,7 +17993,7 @@
     "evolve": [
       206,
       982,
-      1425
+      1427
     ],
     "generation": 8,
     "abilities": [
@@ -18016,7 +18018,7 @@
     "abilities": [
       "Defiant",
       "Supreme Overlord",
-      "Pressure"
+      "Sharpness"
     ],
     "dexNum": 983,
     "form": 0
@@ -18306,7 +18308,7 @@
     "dualtype": "GHOST",
     "evolve": [
       999,
-      1426,
+      1428,
       1000
     ],
     "generation": 8,
@@ -18427,7 +18429,7 @@
     "dualtype": "DRAGON",
     "evolve": [
       1007,
-      1427
+      1429
     ],
     "generation": 8,
     "abilities": [
@@ -18445,7 +18447,7 @@
     "dualtype": "DRAGON",
     "evolve": [
       1008,
-      1428
+      1430
     ],
     "generation": 8,
     "abilities": [
@@ -18602,13 +18604,13 @@
     "type": "GRASS",
     "evolve": [
       1017,
-      1431,
-      1432,
       1433,
       1434,
       1435,
       1436,
-      1437
+      1437,
+      1438,
+      1439
     ],
     "generation": 8,
     "abilities": [
@@ -18627,7 +18629,7 @@
     "evolve": [
       884,
       1018,
-      1399
+      1401
     ],
     "generation": 8,
     "abilities": [
@@ -18731,8 +18733,8 @@
     "type": "NORMAL",
     "evolve": [
       1024,
-      1438,
-      1439
+      1440,
+      1441
     ],
     "generation": 8,
     "abilities": [
@@ -20525,6 +20527,7 @@
     "value": 1110,
     "text": "Shadow Mewtwo",
     "type": "PSYCHIC",
+    "dualtype": "DARK",
     "evolve": [
       150,
       1106,
@@ -21983,7 +21986,7 @@
   {
     "value": 1152,
     "text": "Shadow Lugia",
-    "type": "PSYCHIC",
+    "type": "DARK",
     "dualtype": "FLYING",
     "evolve": [
       249,
@@ -21993,7 +21996,7 @@
     "abilities": [
       "Pressure",
       "Pressure",
-      "Multiscale"
+      "Shadow Shield"
     ],
     "dexNum": 249,
     "form": 1
@@ -22492,7 +22495,8 @@
   {
     "value": 1179,
     "text": "Meta Groudon",
-    "type": "GROUND",
+    "type": "DARK",
+    "dualtype": "POISON",
     "evolve": [
       383,
       1178,
@@ -22500,9 +22504,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Drought",
-      "Drought",
-      "Desolate Land"
+      "Poison Touch",
+      "Poison Touch",
+      "Berserk"
     ],
     "dexNum": 383,
     "form": 2
@@ -22530,7 +22534,7 @@
     "value": 1181,
     "text": "Illusory Rayquaza",
     "type": "DRAGON",
-    "dualtype": "FLYING",
+    "dualtype": "FAIRY",
     "evolve": [
       384,
       1180,
@@ -22538,9 +22542,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Air Lock",
-      "Air Lock",
-      "Delta Stream"
+      "Magic Bounce",
+      "Magic Bounce",
+      "Misty Surge"
     ],
     "dexNum": 384,
     "form": 2
@@ -22944,7 +22948,8 @@
     "dualtype": "DRAGON",
     "evolve": [
       483,
-      1202
+      1202,
+      1203
     ],
     "generation": 8,
     "abilities": [
@@ -22957,12 +22962,32 @@
   },
   {
     "value": 1203,
+    "text": "Primal Dialga",
+    "type": "STEEL",
+    "dualtype": "DRAGON",
+    "evolve": [
+      483,
+      1202,
+      1203
+    ],
+    "generation": 8,
+    "abilities": [
+      "Pressure",
+      "Full Metal Body",
+      "Telepathy"
+    ],
+    "dexNum": 483,
+    "form": 2
+  },
+  {
+    "value": 1204,
     "text": "Origin Forme Palkia",
     "type": "WATER",
     "dualtype": "DRAGON",
     "evolve": [
       484,
-      1203
+      1204,
+      1205
     ],
     "generation": 8,
     "abilities": [
@@ -22974,15 +22999,34 @@
     "form": 1
   },
   {
-    "value": 1204,
+    "value": 1205,
+    "text": "Primal Palkia",
+    "type": "WATER",
+    "dualtype": "DRAGON",
+    "evolve": [
+      484,
+      1204,
+      1205
+    ],
+    "generation": 8,
+    "abilities": [
+      "Pressure",
+      "Clear Body",
+      "Telepathy"
+    ],
+    "dexNum": 484,
+    "form": 2
+  },
+  {
+    "value": 1206,
     "text": "Origin Forme Giratina",
     "type": "GHOST",
     "dualtype": "DRAGON",
     "evolve": [
       487,
-      1204,
-      1205,
-      1206
+      1206,
+      1207,
+      1208
     ],
     "generation": 8,
     "abilities": [
@@ -22994,15 +23038,15 @@
     "form": 1
   },
   {
-    "value": 1205,
+    "value": 1207,
     "text": "Shadow Altered Forme Giratina",
     "type": "GHOST",
     "dualtype": "DRAGON",
     "evolve": [
       487,
-      1204,
-      1205,
-      1206
+      1206,
+      1207,
+      1208
     ],
     "generation": 8,
     "abilities": [
@@ -23014,15 +23058,15 @@
     "form": 2
   },
   {
-    "value": 1206,
+    "value": 1208,
     "text": "Shadow Origin Forme Giratina",
     "type": "GHOST",
     "dualtype": "DRAGON",
     "evolve": [
       487,
-      1204,
-      1205,
-      1206
+      1206,
+      1207,
+      1208
     ],
     "generation": 8,
     "abilities": [
@@ -23034,15 +23078,15 @@
     "form": 3
   },
   {
-    "value": 1207,
+    "value": 1209,
     "text": "Sky Forme Shaymin",
     "type": "GRASS",
     "dualtype": "FLYING",
     "evolve": [
       492,
-      1207,
-      1208,
-      1209
+      1209,
+      1210,
+      1211
     ],
     "generation": 8,
     "abilities": [
@@ -23054,14 +23098,14 @@
     "form": 1
   },
   {
-    "value": 1208,
+    "value": 1210,
     "text": "Polluted Land Forme Shaymin",
     "type": "GRASS",
     "evolve": [
       492,
-      1207,
-      1208,
-      1209
+      1209,
+      1210,
+      1211
     ],
     "generation": 8,
     "abilities": [
@@ -23073,15 +23117,15 @@
     "form": 2
   },
   {
-    "value": 1209,
+    "value": 1211,
     "text": "Polluted Sky Forme Shaymin",
     "type": "GRASS",
     "dualtype": "FLYING",
     "evolve": [
       492,
-      1207,
-      1208,
-      1209
+      1209,
+      1210,
+      1211
     ],
     "generation": 8,
     "abilities": [
@@ -23093,13 +23137,11 @@
     "form": 3
   },
   {
-    "value": 1210,
+    "value": 1212,
     "text": "Fist Plate Arceus",
     "type": "FIGHTING",
     "evolve": [
       493,
-      1210,
-      1211,
       1212,
       1213,
       1214,
@@ -23114,7 +23156,9 @@
       1223,
       1224,
       1225,
-      1226
+      1226,
+      1227,
+      1228
     ],
     "generation": 8,
     "abilities": [
@@ -23126,13 +23170,11 @@
     "form": 1
   },
   {
-    "value": 1211,
+    "value": 1213,
     "text": "Sky Plate Arceus",
     "type": "FLYING",
     "evolve": [
       493,
-      1210,
-      1211,
       1212,
       1213,
       1214,
@@ -23147,7 +23189,9 @@
       1223,
       1224,
       1225,
-      1226
+      1226,
+      1227,
+      1228
     ],
     "generation": 8,
     "abilities": [
@@ -23159,13 +23203,11 @@
     "form": 2
   },
   {
-    "value": 1212,
+    "value": 1214,
     "text": "Toxic Plate Arceus",
     "type": "POISON",
     "evolve": [
       493,
-      1210,
-      1211,
       1212,
       1213,
       1214,
@@ -23180,7 +23222,9 @@
       1223,
       1224,
       1225,
-      1226
+      1226,
+      1227,
+      1228
     ],
     "generation": 8,
     "abilities": [
@@ -23192,13 +23236,11 @@
     "form": 3
   },
   {
-    "value": 1213,
+    "value": 1215,
     "text": "Earth Plate Arceus",
     "type": "GROUND",
     "evolve": [
       493,
-      1210,
-      1211,
       1212,
       1213,
       1214,
@@ -23213,7 +23255,9 @@
       1223,
       1224,
       1225,
-      1226
+      1226,
+      1227,
+      1228
     ],
     "generation": 8,
     "abilities": [
@@ -23225,13 +23269,11 @@
     "form": 4
   },
   {
-    "value": 1214,
+    "value": 1216,
     "text": "Stone Plate Arceus",
     "type": "ROCK",
     "evolve": [
       493,
-      1210,
-      1211,
       1212,
       1213,
       1214,
@@ -23246,7 +23288,9 @@
       1223,
       1224,
       1225,
-      1226
+      1226,
+      1227,
+      1228
     ],
     "generation": 8,
     "abilities": [
@@ -23258,13 +23302,11 @@
     "form": 5
   },
   {
-    "value": 1215,
+    "value": 1217,
     "text": "Insect Plate Arceus",
     "type": "BUG",
     "evolve": [
       493,
-      1210,
-      1211,
       1212,
       1213,
       1214,
@@ -23279,7 +23321,9 @@
       1223,
       1224,
       1225,
-      1226
+      1226,
+      1227,
+      1228
     ],
     "generation": 8,
     "abilities": [
@@ -23291,13 +23335,11 @@
     "form": 6
   },
   {
-    "value": 1216,
+    "value": 1218,
     "text": "Spooky Plate Arceus",
     "type": "GHOST",
     "evolve": [
       493,
-      1210,
-      1211,
       1212,
       1213,
       1214,
@@ -23312,7 +23354,9 @@
       1223,
       1224,
       1225,
-      1226
+      1226,
+      1227,
+      1228
     ],
     "generation": 8,
     "abilities": [
@@ -23324,13 +23368,11 @@
     "form": 7
   },
   {
-    "value": 1217,
+    "value": 1219,
     "text": "Iron Plate Arceus",
     "type": "STEEL",
     "evolve": [
       493,
-      1210,
-      1211,
       1212,
       1213,
       1214,
@@ -23345,7 +23387,9 @@
       1223,
       1224,
       1225,
-      1226
+      1226,
+      1227,
+      1228
     ],
     "generation": 8,
     "abilities": [
@@ -23357,13 +23401,11 @@
     "form": 8
   },
   {
-    "value": 1218,
+    "value": 1220,
     "text": "Flame Plate Arceus",
     "type": "FIRE",
     "evolve": [
       493,
-      1210,
-      1211,
       1212,
       1213,
       1214,
@@ -23378,7 +23420,9 @@
       1223,
       1224,
       1225,
-      1226
+      1226,
+      1227,
+      1228
     ],
     "generation": 8,
     "abilities": [
@@ -23390,13 +23434,11 @@
     "form": 9
   },
   {
-    "value": 1219,
+    "value": 1221,
     "text": "Splash Plate Arceus",
     "type": "WATER",
     "evolve": [
       493,
-      1210,
-      1211,
       1212,
       1213,
       1214,
@@ -23411,7 +23453,9 @@
       1223,
       1224,
       1225,
-      1226
+      1226,
+      1227,
+      1228
     ],
     "generation": 8,
     "abilities": [
@@ -23423,13 +23467,11 @@
     "form": 10
   },
   {
-    "value": 1220,
+    "value": 1222,
     "text": "Meadow Plate Arceus",
     "type": "GRASS",
     "evolve": [
       493,
-      1210,
-      1211,
       1212,
       1213,
       1214,
@@ -23444,7 +23486,9 @@
       1223,
       1224,
       1225,
-      1226
+      1226,
+      1227,
+      1228
     ],
     "generation": 8,
     "abilities": [
@@ -23456,13 +23500,11 @@
     "form": 11
   },
   {
-    "value": 1221,
+    "value": 1223,
     "text": "Zap Plate Arceus",
     "type": "ELECTRIC",
     "evolve": [
       493,
-      1210,
-      1211,
       1212,
       1213,
       1214,
@@ -23477,7 +23519,9 @@
       1223,
       1224,
       1225,
-      1226
+      1226,
+      1227,
+      1228
     ],
     "generation": 8,
     "abilities": [
@@ -23489,13 +23533,11 @@
     "form": 12
   },
   {
-    "value": 1222,
+    "value": 1224,
     "text": "Mind Plate Arceus",
     "type": "PSYCHIC",
     "evolve": [
       493,
-      1210,
-      1211,
       1212,
       1213,
       1214,
@@ -23510,7 +23552,9 @@
       1223,
       1224,
       1225,
-      1226
+      1226,
+      1227,
+      1228
     ],
     "generation": 8,
     "abilities": [
@@ -23522,13 +23566,11 @@
     "form": 13
   },
   {
-    "value": 1223,
+    "value": 1225,
     "text": "Icicle Plate Arceus",
     "type": "ICE",
     "evolve": [
       493,
-      1210,
-      1211,
       1212,
       1213,
       1214,
@@ -23543,7 +23585,9 @@
       1223,
       1224,
       1225,
-      1226
+      1226,
+      1227,
+      1228
     ],
     "generation": 8,
     "abilities": [
@@ -23555,13 +23599,11 @@
     "form": 14
   },
   {
-    "value": 1224,
+    "value": 1226,
     "text": "Draco Plate Arceus",
     "type": "DRAGON",
     "evolve": [
       493,
-      1210,
-      1211,
       1212,
       1213,
       1214,
@@ -23576,7 +23618,9 @@
       1223,
       1224,
       1225,
-      1226
+      1226,
+      1227,
+      1228
     ],
     "generation": 8,
     "abilities": [
@@ -23588,13 +23632,11 @@
     "form": 15
   },
   {
-    "value": 1225,
+    "value": 1227,
     "text": "Dread Plate Arceus",
     "type": "DARK",
     "evolve": [
       493,
-      1210,
-      1211,
       1212,
       1213,
       1214,
@@ -23609,7 +23651,9 @@
       1223,
       1224,
       1225,
-      1226
+      1226,
+      1227,
+      1228
     ],
     "generation": 8,
     "abilities": [
@@ -23621,13 +23665,11 @@
     "form": 16
   },
   {
-    "value": 1226,
+    "value": 1228,
     "text": "Pixie Plate Arceus",
     "type": "FAIRY",
     "evolve": [
       493,
-      1210,
-      1211,
       1212,
       1213,
       1214,
@@ -23642,7 +23684,9 @@
       1223,
       1224,
       1225,
-      1226
+      1226,
+      1227,
+      1228
     ],
     "generation": 8,
     "abilities": [
@@ -23654,14 +23698,14 @@
     "form": 17
   },
   {
-    "value": 1227,
+    "value": 1229,
     "text": "Hisuian Samurott",
     "type": "WATER",
     "dualtype": "DARK",
     "evolve": [
       501,
       502,
-      1227
+      1229
     ],
     "generation": 8,
     "abilities": [
@@ -23673,13 +23717,13 @@
     "form": 1
   },
   {
-    "value": 1228,
+    "value": 1230,
     "text": "Mega Audino",
     "type": "NORMAL",
     "dualtype": "FAIRY",
     "evolve": [
       531,
-      1228
+      1230
     ],
     "generation": 8,
     "abilities": [
@@ -23691,13 +23735,13 @@
     "form": 1
   },
   {
-    "value": 1229,
+    "value": 1231,
     "text": "Hisuian Lilligant",
     "type": "GRASS",
     "dualtype": "FIGHTING",
     "evolve": [
       548,
-      1229
+      1231
     ],
     "generation": 8,
     "abilities": [
@@ -23709,12 +23753,12 @@
     "form": 1
   },
   {
-    "value": 1230,
+    "value": 1232,
     "text": "Blue-Striped Form Basculin",
     "type": "WATER",
     "evolve": [
       550,
-      1230
+      1232
     ],
     "generation": 8,
     "abilities": [
@@ -23726,13 +23770,13 @@
     "form": 1
   },
   {
-    "value": 1231,
+    "value": 1233,
     "text": "White-Striped Form Basculin",
     "type": "WATER",
     "evolve": [
-      1231,
+      1233,
       902,
-      1410
+      1412
     ],
     "generation": 8,
     "abilities": [
@@ -23744,12 +23788,12 @@
     "form": 2
   },
   {
-    "value": 1232,
+    "value": 1234,
     "text": "Galarian Darumaka",
     "type": "ICE",
     "evolve": [
-      1232,
-      1234
+      1234,
+      1236
     ],
     "generation": 8,
     "abilities": [
@@ -23761,15 +23805,15 @@
     "form": 1
   },
   {
-    "value": 1233,
+    "value": 1235,
     "text": "Zen Mode Darmanitan",
     "type": "FIRE",
     "dualtype": "PSYCHIC",
     "evolve": [
       554,
       555,
-      1233,
-      1235
+      1235,
+      1237
     ],
     "generation": 8,
     "abilities": [
@@ -23781,12 +23825,12 @@
     "form": 1
   },
   {
-    "value": 1234,
+    "value": 1236,
     "text": "Galarian Standard Mode Darmanitan",
     "type": "ICE",
     "evolve": [
-      1232,
-      1234
+      1234,
+      1236
     ],
     "generation": 8,
     "abilities": [
@@ -23798,15 +23842,15 @@
     "form": 2
   },
   {
-    "value": 1235,
+    "value": 1237,
     "text": "Galarian Zen Mode Darmanitan",
     "type": "ICE",
     "dualtype": "FIRE",
     "evolve": [
       554,
       555,
-      1233,
-      1235
+      1235,
+      1237
     ],
     "generation": 8,
     "abilities": [
@@ -23818,12 +23862,12 @@
     "form": 3
   },
   {
-    "value": 1236,
+    "value": 1238,
     "text": "Galarian Yamask",
     "type": "GROUND",
     "dualtype": "GHOST",
     "evolve": [
-      1236,
+      1238,
       867
     ],
     "generation": 8,
@@ -23836,13 +23880,13 @@
     "form": 1
   },
   {
-    "value": 1237,
+    "value": 1239,
     "text": "Gigantamax Garbodor",
     "type": "POISON",
     "evolve": [
       568,
       569,
-      1237
+      1239
     ],
     "generation": 8,
     "abilities": [
@@ -23854,13 +23898,13 @@
     "form": 1
   },
   {
-    "value": 1238,
+    "value": 1240,
     "text": "Hisuian Zorua",
     "type": "NORMAL",
     "dualtype": "GHOST",
     "evolve": [
-      1238,
-      1239
+      1240,
+      1241
     ],
     "generation": 8,
     "abilities": [
@@ -23872,13 +23916,13 @@
     "form": 1
   },
   {
-    "value": 1239,
+    "value": 1241,
     "text": "Hisuian Zoroark",
     "type": "NORMAL",
     "dualtype": "GHOST",
     "evolve": [
-      1238,
-      1239
+      1240,
+      1241
     ],
     "generation": 8,
     "abilities": [
@@ -23890,13 +23934,13 @@
     "form": 1
   },
   {
-    "value": 1240,
+    "value": 1242,
     "text": "Summer Form Deerling",
     "type": "NORMAL",
     "dualtype": "GRASS",
     "evolve": [
-      1240,
-      1243
+      1242,
+      1245
     ],
     "generation": 8,
     "abilities": [
@@ -23908,13 +23952,13 @@
     "form": 1
   },
   {
-    "value": 1241,
+    "value": 1243,
     "text": "Autumn Form Deerling",
     "type": "NORMAL",
     "dualtype": "GRASS",
     "evolve": [
-      1241,
-      1244
+      1243,
+      1246
     ],
     "generation": 8,
     "abilities": [
@@ -23926,13 +23970,13 @@
     "form": 2
   },
   {
-    "value": 1242,
+    "value": 1244,
     "text": "Winter Form Deerling",
     "type": "NORMAL",
     "dualtype": "GRASS",
     "evolve": [
-      1242,
-      1245
+      1244,
+      1247
     ],
     "generation": 8,
     "abilities": [
@@ -23944,13 +23988,13 @@
     "form": 3
   },
   {
-    "value": 1243,
+    "value": 1245,
     "text": "Summer Form Sawsbuck",
     "type": "NORMAL",
     "dualtype": "GRASS",
     "evolve": [
-      1240,
-      1243
+      1242,
+      1245
     ],
     "generation": 8,
     "abilities": [
@@ -23962,13 +24006,13 @@
     "form": 1
   },
   {
-    "value": 1244,
+    "value": 1246,
     "text": "Autumn Form Sawsbuck",
     "type": "NORMAL",
     "dualtype": "GRASS",
     "evolve": [
-      1241,
-      1244
+      1243,
+      1246
     ],
     "generation": 8,
     "abilities": [
@@ -23980,13 +24024,13 @@
     "form": 2
   },
   {
-    "value": 1245,
+    "value": 1247,
     "text": "Winter Form Sawsbuck",
     "type": "NORMAL",
     "dualtype": "GRASS",
     "evolve": [
-      1242,
-      1245
+      1244,
+      1247
     ],
     "generation": 8,
     "abilities": [
@@ -23998,13 +24042,13 @@
     "form": 3
   },
   {
-    "value": 1246,
+    "value": 1248,
     "text": "Galarian Stunfisk",
     "type": "GROUND",
     "dualtype": "STEEL",
     "evolve": [
       618,
-      1246
+      1248
     ],
     "generation": 8,
     "abilities": [
@@ -24016,13 +24060,13 @@
     "form": 1
   },
   {
-    "value": 1247,
+    "value": 1249,
     "text": "Hisuian Braviary",
     "type": "PSYCHIC",
     "dualtype": "FLYING",
     "evolve": [
       627,
-      1247
+      1249
     ],
     "generation": 8,
     "abilities": [
@@ -24034,12 +24078,12 @@
     "form": 1
   },
   {
-    "value": 1248,
+    "value": 1250,
     "text": "Therian Forme Tornadus",
     "type": "FLYING",
     "evolve": [
       641,
-      1248
+      1250
     ],
     "generation": 8,
     "abilities": [
@@ -24051,13 +24095,13 @@
     "form": 1
   },
   {
-    "value": 1249,
+    "value": 1251,
     "text": "Therian Forme Thundurus",
     "type": "ELECTRIC",
     "dualtype": "FLYING",
     "evolve": [
       642,
-      1249
+      1251
     ],
     "generation": 8,
     "abilities": [
@@ -24069,13 +24113,13 @@
     "form": 1
   },
   {
-    "value": 1250,
+    "value": 1252,
     "text": "Therian Forme Landorus",
     "type": "GROUND",
     "dualtype": "FLYING",
     "evolve": [
       645,
-      1250
+      1252
     ],
     "generation": 8,
     "abilities": [
@@ -24087,14 +24131,14 @@
     "form": 1
   },
   {
-    "value": 1251,
+    "value": 1253,
     "text": "White Kyurem",
     "type": "DRAGON",
     "dualtype": "ICE",
     "evolve": [
       646,
-      1251,
-      1252
+      1253,
+      1254
     ],
     "generation": 8,
     "abilities": [
@@ -24106,14 +24150,14 @@
     "form": 1
   },
   {
-    "value": 1252,
+    "value": 1254,
     "text": "Black Kyurem",
     "type": "DRAGON",
     "dualtype": "ICE",
     "evolve": [
       646,
-      1251,
-      1252
+      1253,
+      1254
     ],
     "generation": 8,
     "abilities": [
@@ -24125,13 +24169,13 @@
     "form": 2
   },
   {
-    "value": 1253,
+    "value": 1255,
     "text": "Resolute Form Keldeo",
     "type": "WATER",
     "dualtype": "FIGHTING",
     "evolve": [
       647,
-      1253
+      1255
     ],
     "generation": 8,
     "abilities": [
@@ -24143,13 +24187,13 @@
     "form": 1
   },
   {
-    "value": 1254,
+    "value": 1256,
     "text": "Pirouette Forme Meloetta",
     "type": "NORMAL",
     "dualtype": "FIGHTING",
     "evolve": [
       648,
-      1254
+      1256
     ],
     "generation": 8,
     "abilities": [
@@ -24161,16 +24205,16 @@
     "form": 1
   },
   {
-    "value": 1255,
+    "value": 1257,
     "text": "Douse Drive Genesect",
     "type": "BUG",
     "dualtype": "STEEL",
     "evolve": [
       649,
-      1255,
-      1256,
       1257,
-      1258
+      1258,
+      1259,
+      1260
     ],
     "generation": 8,
     "abilities": [
@@ -24182,16 +24226,16 @@
     "form": 1
   },
   {
-    "value": 1256,
+    "value": 1258,
     "text": "Shock Drive Genesect",
     "type": "BUG",
     "dualtype": "STEEL",
     "evolve": [
       649,
-      1255,
-      1256,
       1257,
-      1258
+      1258,
+      1259,
+      1260
     ],
     "generation": 8,
     "abilities": [
@@ -24203,16 +24247,16 @@
     "form": 2
   },
   {
-    "value": 1257,
+    "value": 1259,
     "text": "Burn Drive Genesect",
     "type": "BUG",
     "dualtype": "STEEL",
     "evolve": [
       649,
-      1255,
-      1256,
       1257,
-      1258
+      1258,
+      1259,
+      1260
     ],
     "generation": 8,
     "abilities": [
@@ -24224,16 +24268,16 @@
     "form": 3
   },
   {
-    "value": 1258,
+    "value": 1260,
     "text": "Chill Drive Genesect",
     "type": "BUG",
     "dualtype": "STEEL",
     "evolve": [
       649,
-      1255,
-      1256,
       1257,
-      1258
+      1258,
+      1259,
+      1260
     ],
     "generation": 8,
     "abilities": [
@@ -24245,7 +24289,7 @@
     "form": 4
   },
   {
-    "value": 1259,
+    "value": 1261,
     "text": "Battle Bond Greninja",
     "type": "WATER",
     "dualtype": "DARK",
@@ -24253,8 +24297,8 @@
       656,
       657,
       658,
-      1259,
-      1260
+      1261,
+      1262
     ],
     "generation": 8,
     "abilities": [
@@ -24266,7 +24310,7 @@
     "form": 1
   },
   {
-    "value": 1260,
+    "value": 1262,
     "text": "Partner Greninja",
     "type": "WATER",
     "dualtype": "DARK",
@@ -24274,8 +24318,8 @@
       656,
       657,
       658,
-      1259,
-      1260
+      1261,
+      1262
     ],
     "generation": 8,
     "abilities": [
@@ -24287,15 +24331,13 @@
     "form": 2
   },
   {
-    "value": 1261,
+    "value": 1263,
     "text": "Polar Pattern Vivillon",
     "type": "BUG",
     "dualtype": "FLYING",
     "evolve": [
       664,
       665,
-      1261,
-      1262,
       1263,
       1264,
       1265,
@@ -24312,7 +24354,9 @@
       1276,
       1277,
       1278,
-      1279
+      1279,
+      1280,
+      1281
     ],
     "generation": 8,
     "abilities": [
@@ -24324,15 +24368,13 @@
     "form": 1
   },
   {
-    "value": 1262,
+    "value": 1264,
     "text": "Tundra Pattern Vivillon",
     "type": "BUG",
     "dualtype": "FLYING",
     "evolve": [
       664,
       665,
-      1262,
-      1263,
       1264,
       1265,
       1266,
@@ -24348,7 +24390,9 @@
       1276,
       1277,
       1278,
-      1279
+      1279,
+      1280,
+      1281
     ],
     "generation": 8,
     "abilities": [
@@ -24360,15 +24404,13 @@
     "form": 2
   },
   {
-    "value": 1263,
+    "value": 1265,
     "text": "Continental Pattern Vivillon",
     "type": "BUG",
     "dualtype": "FLYING",
     "evolve": [
       664,
       665,
-      1263,
-      1264,
       1265,
       1266,
       1267,
@@ -24383,7 +24425,9 @@
       1276,
       1277,
       1278,
-      1279
+      1279,
+      1280,
+      1281
     ],
     "generation": 8,
     "abilities": [
@@ -24395,15 +24439,13 @@
     "form": 3
   },
   {
-    "value": 1264,
+    "value": 1266,
     "text": "Garden Pattern Vivillon",
     "type": "BUG",
     "dualtype": "FLYING",
     "evolve": [
       664,
       665,
-      1264,
-      1265,
       1266,
       1267,
       1268,
@@ -24417,7 +24459,9 @@
       1276,
       1277,
       1278,
-      1279
+      1279,
+      1280,
+      1281
     ],
     "generation": 8,
     "abilities": [
@@ -24429,15 +24473,13 @@
     "form": 4
   },
   {
-    "value": 1265,
+    "value": 1267,
     "text": "Elegant Pattern Vivillon",
     "type": "BUG",
     "dualtype": "FLYING",
     "evolve": [
       664,
       665,
-      1265,
-      1266,
       1267,
       1268,
       1269,
@@ -24450,7 +24492,9 @@
       1276,
       1277,
       1278,
-      1279
+      1279,
+      1280,
+      1281
     ],
     "generation": 8,
     "abilities": [
@@ -24462,15 +24506,13 @@
     "form": 5
   },
   {
-    "value": 1266,
+    "value": 1268,
     "text": "Meadow Pattern Vivillon",
     "type": "BUG",
     "dualtype": "FLYING",
     "evolve": [
       664,
       665,
-      1266,
-      1267,
       1268,
       1269,
       1270,
@@ -24482,7 +24524,9 @@
       1276,
       1277,
       1278,
-      1279
+      1279,
+      1280,
+      1281
     ],
     "generation": 8,
     "abilities": [
@@ -24494,15 +24538,13 @@
     "form": 6
   },
   {
-    "value": 1267,
+    "value": 1269,
     "text": "Modern Pattern Vivillon",
     "type": "BUG",
     "dualtype": "FLYING",
     "evolve": [
       664,
       665,
-      1267,
-      1268,
       1269,
       1270,
       1271,
@@ -24513,7 +24555,9 @@
       1276,
       1277,
       1278,
-      1279
+      1279,
+      1280,
+      1281
     ],
     "generation": 8,
     "abilities": [
@@ -24525,15 +24569,13 @@
     "form": 7
   },
   {
-    "value": 1268,
+    "value": 1270,
     "text": "Marine Pattern Vivillon",
     "type": "BUG",
     "dualtype": "FLYING",
     "evolve": [
       664,
       665,
-      1268,
-      1269,
       1270,
       1271,
       1272,
@@ -24543,7 +24585,9 @@
       1276,
       1277,
       1278,
-      1279
+      1279,
+      1280,
+      1281
     ],
     "generation": 8,
     "abilities": [
@@ -24555,15 +24599,13 @@
     "form": 8
   },
   {
-    "value": 1269,
+    "value": 1271,
     "text": "Archipelago Pattern Vivillon",
     "type": "BUG",
     "dualtype": "FLYING",
     "evolve": [
       664,
       665,
-      1269,
-      1270,
       1271,
       1272,
       1273,
@@ -24572,7 +24614,9 @@
       1276,
       1277,
       1278,
-      1279
+      1279,
+      1280,
+      1281
     ],
     "generation": 8,
     "abilities": [
@@ -24584,15 +24628,13 @@
     "form": 9
   },
   {
-    "value": 1270,
+    "value": 1272,
     "text": "High Plains Pattern Vivillon",
     "type": "BUG",
     "dualtype": "FLYING",
     "evolve": [
       664,
       665,
-      1270,
-      1271,
       1272,
       1273,
       1274,
@@ -24600,7 +24642,9 @@
       1276,
       1277,
       1278,
-      1279
+      1279,
+      1280,
+      1281
     ],
     "generation": 8,
     "abilities": [
@@ -24612,22 +24656,22 @@
     "form": 10
   },
   {
-    "value": 1271,
+    "value": 1273,
     "text": "Sandstorm Pattern Vivillon",
     "type": "BUG",
     "dualtype": "FLYING",
     "evolve": [
       664,
       665,
-      1271,
-      1272,
       1273,
       1274,
       1275,
       1276,
       1277,
       1278,
-      1279
+      1279,
+      1280,
+      1281
     ],
     "generation": 8,
     "abilities": [
@@ -24639,21 +24683,21 @@
     "form": 11
   },
   {
-    "value": 1272,
+    "value": 1274,
     "text": "River Pattern Vivillon",
     "type": "BUG",
     "dualtype": "FLYING",
     "evolve": [
       664,
       665,
-      1272,
-      1273,
       1274,
       1275,
       1276,
       1277,
       1278,
-      1279
+      1279,
+      1280,
+      1281
     ],
     "generation": 8,
     "abilities": [
@@ -24665,20 +24709,20 @@
     "form": 12
   },
   {
-    "value": 1273,
+    "value": 1275,
     "text": "Monsoon Pattern Vivillon",
     "type": "BUG",
     "dualtype": "FLYING",
     "evolve": [
       664,
       665,
-      1273,
-      1274,
       1275,
       1276,
       1277,
       1278,
-      1279
+      1279,
+      1280,
+      1281
     ],
     "generation": 8,
     "abilities": [
@@ -24690,19 +24734,19 @@
     "form": 13
   },
   {
-    "value": 1274,
+    "value": 1276,
     "text": "Savanna Pattern Vivillon",
     "type": "BUG",
     "dualtype": "FLYING",
     "evolve": [
       664,
       665,
-      1274,
-      1275,
       1276,
       1277,
       1278,
-      1279
+      1279,
+      1280,
+      1281
     ],
     "generation": 8,
     "abilities": [
@@ -24714,18 +24758,18 @@
     "form": 14
   },
   {
-    "value": 1275,
+    "value": 1277,
     "text": "Sun Pattern Vivillon",
     "type": "BUG",
     "dualtype": "FLYING",
     "evolve": [
       664,
       665,
-      1275,
-      1276,
       1277,
       1278,
-      1279
+      1279,
+      1280,
+      1281
     ],
     "generation": 8,
     "abilities": [
@@ -24737,17 +24781,17 @@
     "form": 15
   },
   {
-    "value": 1276,
+    "value": 1278,
     "text": "Ocean Pattern Vivillon",
     "type": "BUG",
     "dualtype": "FLYING",
     "evolve": [
       664,
       665,
-      1276,
-      1277,
       1278,
-      1279
+      1279,
+      1280,
+      1281
     ],
     "generation": 8,
     "abilities": [
@@ -24759,16 +24803,16 @@
     "form": 16
   },
   {
-    "value": 1277,
+    "value": 1279,
     "text": "Jungle Pattern Vivillon",
     "type": "BUG",
     "dualtype": "FLYING",
     "evolve": [
       664,
       665,
-      1277,
-      1278,
-      1279
+      1279,
+      1280,
+      1281
     ],
     "generation": 8,
     "abilities": [
@@ -24780,15 +24824,15 @@
     "form": 17
   },
   {
-    "value": 1278,
+    "value": 1280,
     "text": "Fancy Pattern Vivillon",
     "type": "BUG",
     "dualtype": "FLYING",
     "evolve": [
       664,
       665,
-      1278,
-      1279
+      1280,
+      1281
     ],
     "generation": 8,
     "abilities": [
@@ -24800,14 +24844,14 @@
     "form": 18
   },
   {
-    "value": 1279,
+    "value": 1281,
     "text": "Poké Ball Pattern Vivillon",
     "type": "BUG",
     "dualtype": "FLYING",
     "evolve": [
       664,
       665,
-      1279
+      1281
     ],
     "generation": 8,
     "abilities": [
@@ -24819,46 +24863,10 @@
     "form": 19
   },
   {
-    "value": 1280,
+    "value": 1282,
     "text": "Yellow Flower Flabébé",
     "type": "FAIRY",
     "evolve": [
-      1280,
-      1284,
-      1289
-    ],
-    "generation": 8,
-    "abilities": [
-      "Flower Veil",
-      "Flower Veil",
-      "Symbiosis"
-    ],
-    "dexNum": 669,
-    "form": 1
-  },
-  {
-    "value": 1281,
-    "text": "Orange Flower Flabébé",
-    "type": "FAIRY",
-    "evolve": [
-      1281,
-      1285,
-      1290
-    ],
-    "generation": 8,
-    "abilities": [
-      "Flower Veil",
-      "Flower Veil",
-      "Symbiosis"
-    ],
-    "dexNum": 669,
-    "form": 2
-  },
-  {
-    "value": 1282,
-    "text": "Blue Flower Flabébé",
-    "type": "FAIRY",
-    "evolve": [
       1282,
       1286,
       1291
@@ -24870,11 +24878,11 @@
       "Symbiosis"
     ],
     "dexNum": 669,
-    "form": 3
+    "form": 1
   },
   {
     "value": 1283,
-    "text": "White Flower Flabébé",
+    "text": "Orange Flower Flabébé",
     "type": "FAIRY",
     "evolve": [
       1283,
@@ -24888,47 +24896,47 @@
       "Symbiosis"
     ],
     "dexNum": 669,
-    "form": 4
-  },
-  {
-    "value": 1284,
-    "text": "Yellow Flower Floette",
-    "type": "FAIRY",
-    "evolve": [
-      1280,
-      1284,
-      1289
-    ],
-    "generation": 8,
-    "abilities": [
-      "Flower Veil",
-      "Flower Veil",
-      "Symbiosis"
-    ],
-    "dexNum": 670,
-    "form": 1
-  },
-  {
-    "value": 1285,
-    "text": "Orange Flower Floette",
-    "type": "FAIRY",
-    "evolve": [
-      1281,
-      1285,
-      1290
-    ],
-    "generation": 8,
-    "abilities": [
-      "Flower Veil",
-      "Flower Veil",
-      "Symbiosis"
-    ],
-    "dexNum": 670,
     "form": 2
   },
   {
+    "value": 1284,
+    "text": "Blue Flower Flabébé",
+    "type": "FAIRY",
+    "evolve": [
+      1284,
+      1288,
+      1293
+    ],
+    "generation": 8,
+    "abilities": [
+      "Flower Veil",
+      "Flower Veil",
+      "Symbiosis"
+    ],
+    "dexNum": 669,
+    "form": 3
+  },
+  {
+    "value": 1285,
+    "text": "White Flower Flabébé",
+    "type": "FAIRY",
+    "evolve": [
+      1285,
+      1289,
+      1294
+    ],
+    "generation": 8,
+    "abilities": [
+      "Flower Veil",
+      "Flower Veil",
+      "Symbiosis"
+    ],
+    "dexNum": 669,
+    "form": 4
+  },
+  {
     "value": 1286,
-    "text": "Blue Flower Floette",
+    "text": "Yellow Flower Floette",
     "type": "FAIRY",
     "evolve": [
       1282,
@@ -24942,11 +24950,11 @@
       "Symbiosis"
     ],
     "dexNum": 670,
-    "form": 3
+    "form": 1
   },
   {
     "value": 1287,
-    "text": "White Flower Floette",
+    "text": "Orange Flower Floette",
     "type": "FAIRY",
     "evolve": [
       1283,
@@ -24960,68 +24968,66 @@
       "Symbiosis"
     ],
     "dexNum": 670,
-    "form": 4
+    "form": 2
   },
   {
     "value": 1288,
+    "text": "Blue Flower Floette",
+    "type": "FAIRY",
+    "evolve": [
+      1284,
+      1288,
+      1293
+    ],
+    "generation": 8,
+    "abilities": [
+      "Flower Veil",
+      "Flower Veil",
+      "Symbiosis"
+    ],
+    "dexNum": 670,
+    "form": 3
+  },
+  {
+    "value": 1289,
+    "text": "White Flower Floette",
+    "type": "FAIRY",
+    "evolve": [
+      1285,
+      1289,
+      1294
+    ],
+    "generation": 8,
+    "abilities": [
+      "Flower Veil",
+      "Flower Veil",
+      "Symbiosis"
+    ],
+    "dexNum": 670,
+    "form": 4
+  },
+  {
+    "value": 1290,
     "text": "Eternal Flower Floette",
     "type": "FAIRY",
     "evolve": [
       669,
       670,
       671,
-      1288
+      1290
     ],
     "generation": 8,
     "abilities": [
-      "Flower Veil",
-      "Flower Veil",
-      "Symbiosis"
+      "Adaptability",
+      "Adaptability",
+      "Adaptability"
     ],
     "dexNum": 670,
     "form": 5
   },
   {
-    "value": 1289,
-    "text": "Yellow Flower Florges",
-    "type": "FAIRY",
-    "dualtype": "GRASS",
-    "evolve": [
-      1280,
-      1284,
-      1289
-    ],
-    "generation": 8,
-    "abilities": [
-      "Flower Veil",
-      "Flower Veil",
-      "Symbiosis"
-    ],
-    "dexNum": 671,
-    "form": 1
-  },
-  {
-    "value": 1290,
-    "text": "Orange Flower Florges",
-    "type": "FAIRY",
-    "dualtype": "GRASS",
-    "evolve": [
-      1281,
-      1285,
-      1290
-    ],
-    "generation": 8,
-    "abilities": [
-      "Flower Veil",
-      "Flower Veil",
-      "Symbiosis"
-    ],
-    "dexNum": 671,
-    "form": 2
-  },
-  {
     "value": 1291,
-    "text": "Blue Flower Florges",
+    "text": "Yellow Flower Florges",
     "type": "FAIRY",
     "dualtype": "GRASS",
     "evolve": [
@@ -25036,11 +25042,11 @@
       "Symbiosis"
     ],
     "dexNum": 671,
-    "form": 3
+    "form": 1
   },
   {
     "value": 1292,
-    "text": "White Flower Florges",
+    "text": "Orange Flower Florges",
     "type": "FAIRY",
     "dualtype": "GRASS",
     "evolve": [
@@ -25055,23 +25061,61 @@
       "Symbiosis"
     ],
     "dexNum": 671,
-    "form": 4
+    "form": 2
   },
   {
     "value": 1293,
+    "text": "Blue Flower Florges",
+    "type": "FAIRY",
+    "dualtype": "GRASS",
+    "evolve": [
+      1284,
+      1288,
+      1293
+    ],
+    "generation": 8,
+    "abilities": [
+      "Flower Veil",
+      "Flower Veil",
+      "Symbiosis"
+    ],
+    "dexNum": 671,
+    "form": 3
+  },
+  {
+    "value": 1294,
+    "text": "White Flower Florges",
+    "type": "FAIRY",
+    "dualtype": "GRASS",
+    "evolve": [
+      1285,
+      1289,
+      1294
+    ],
+    "generation": 8,
+    "abilities": [
+      "Flower Veil",
+      "Flower Veil",
+      "Symbiosis"
+    ],
+    "dexNum": 671,
+    "form": 4
+  },
+  {
+    "value": 1295,
     "text": "Heart Trim Furfrou",
     "type": "NORMAL",
     "evolve": [
       676,
-      1293,
-      1294,
       1295,
       1296,
       1297,
       1298,
       1299,
       1300,
-      1301
+      1301,
+      1302,
+      1303
     ],
     "generation": 8,
     "abilities": [
@@ -25083,20 +25127,20 @@
     "form": 1
   },
   {
-    "value": 1294,
+    "value": 1296,
     "text": "Star Trim Furfrou",
     "type": "NORMAL",
     "evolve": [
       676,
-      1293,
-      1294,
       1295,
       1296,
       1297,
       1298,
       1299,
       1300,
-      1301
+      1301,
+      1302,
+      1303
     ],
     "generation": 8,
     "abilities": [
@@ -25108,20 +25152,20 @@
     "form": 2
   },
   {
-    "value": 1295,
+    "value": 1297,
     "text": "Diamond Trim Furfrou",
     "type": "NORMAL",
     "evolve": [
       676,
-      1293,
-      1294,
       1295,
       1296,
       1297,
       1298,
       1299,
       1300,
-      1301
+      1301,
+      1302,
+      1303
     ],
     "generation": 8,
     "abilities": [
@@ -25133,20 +25177,20 @@
     "form": 3
   },
   {
-    "value": 1296,
+    "value": 1298,
     "text": "Debutante Trim Furfrou",
     "type": "NORMAL",
     "evolve": [
       676,
-      1293,
-      1294,
       1295,
       1296,
       1297,
       1298,
       1299,
       1300,
-      1301
+      1301,
+      1302,
+      1303
     ],
     "generation": 8,
     "abilities": [
@@ -25158,20 +25202,20 @@
     "form": 4
   },
   {
-    "value": 1297,
+    "value": 1299,
     "text": "Matron Trim Furfrou",
     "type": "NORMAL",
     "evolve": [
       676,
-      1293,
-      1294,
       1295,
       1296,
       1297,
       1298,
       1299,
       1300,
-      1301
+      1301,
+      1302,
+      1303
     ],
     "generation": 8,
     "abilities": [
@@ -25183,20 +25227,20 @@
     "form": 5
   },
   {
-    "value": 1298,
+    "value": 1300,
     "text": "Dandy Trim Furfrou",
     "type": "NORMAL",
     "evolve": [
       676,
-      1293,
-      1294,
       1295,
       1296,
       1297,
       1298,
       1299,
       1300,
-      1301
+      1301,
+      1302,
+      1303
     ],
     "generation": 8,
     "abilities": [
@@ -25208,20 +25252,20 @@
     "form": 6
   },
   {
-    "value": 1299,
+    "value": 1301,
     "text": "La Reine Trim Furfrou",
     "type": "NORMAL",
     "evolve": [
       676,
-      1293,
-      1294,
       1295,
       1296,
       1297,
       1298,
       1299,
       1300,
-      1301
+      1301,
+      1302,
+      1303
     ],
     "generation": 8,
     "abilities": [
@@ -25233,20 +25277,20 @@
     "form": 7
   },
   {
-    "value": 1300,
+    "value": 1302,
     "text": "Kabuki Trim Furfrou",
     "type": "NORMAL",
     "evolve": [
       676,
-      1293,
-      1294,
       1295,
       1296,
       1297,
       1298,
       1299,
       1300,
-      1301
+      1301,
+      1302,
+      1303
     ],
     "generation": 8,
     "abilities": [
@@ -25258,20 +25302,20 @@
     "form": 8
   },
   {
-    "value": 1301,
+    "value": 1303,
     "text": "Pharaoh Trim Furfrou",
     "type": "NORMAL",
     "evolve": [
       676,
-      1293,
-      1294,
       1295,
       1296,
       1297,
       1298,
       1299,
       1300,
-      1301
+      1301,
+      1302,
+      1303
     ],
     "generation": 8,
     "abilities": [
@@ -25283,12 +25327,12 @@
     "form": 9
   },
   {
-    "value": 1302,
+    "value": 1304,
     "text": "Meowstic-F",
     "type": "PSYCHIC",
     "evolve": [
       677,
-      1302
+      1304
     ],
     "generation": 8,
     "abilities": [
@@ -25300,7 +25344,7 @@
     "form": 1
   },
   {
-    "value": 1303,
+    "value": 1305,
     "text": "Blade Forme Aegislash",
     "type": "STEEL",
     "dualtype": "GHOST",
@@ -25308,7 +25352,7 @@
       679,
       680,
       681,
-      1303
+      1305
     ],
     "generation": 8,
     "abilities": [
@@ -25320,14 +25364,14 @@
     "form": 1
   },
   {
-    "value": 1304,
+    "value": 1306,
     "text": "Hisuian Sliggoo",
     "type": "STEEL",
     "dualtype": "DRAGON",
     "evolve": [
       704,
-      1304,
-      1305
+      1306,
+      1307
     ],
     "generation": 8,
     "abilities": [
@@ -25339,14 +25383,14 @@
     "form": 1
   },
   {
-    "value": 1305,
+    "value": 1307,
     "text": "Hisuian Goodra",
     "type": "STEEL",
     "dualtype": "DRAGON",
     "evolve": [
       704,
-      1304,
-      1305
+      1306,
+      1307
     ],
     "generation": 8,
     "abilities": [
@@ -25358,13 +25402,13 @@
     "form": 1
   },
   {
-    "value": 1306,
+    "value": 1308,
     "text": "Small Size Pumpkaboo",
     "type": "GHOST",
     "dualtype": "GRASS",
     "evolve": [
-      1306,
-      1309
+      1308,
+      1311
     ],
     "generation": 8,
     "abilities": [
@@ -25376,13 +25420,13 @@
     "form": 1
   },
   {
-    "value": 1307,
+    "value": 1309,
     "text": "Large Size Pumpkaboo",
     "type": "GHOST",
     "dualtype": "GRASS",
     "evolve": [
-      1307,
-      1310
+      1309,
+      1312
     ],
     "generation": 8,
     "abilities": [
@@ -25394,13 +25438,13 @@
     "form": 2
   },
   {
-    "value": 1308,
+    "value": 1310,
     "text": "Super Size Pumpkaboo",
     "type": "GHOST",
     "dualtype": "GRASS",
     "evolve": [
-      1308,
-      1311
+      1310,
+      1313
     ],
     "generation": 8,
     "abilities": [
@@ -25412,13 +25456,13 @@
     "form": 3
   },
   {
-    "value": 1309,
+    "value": 1311,
     "text": "Small Size Gourgeist",
     "type": "GHOST",
     "dualtype": "GRASS",
     "evolve": [
-      1306,
-      1309
+      1308,
+      1311
     ],
     "generation": 8,
     "abilities": [
@@ -25430,13 +25474,13 @@
     "form": 1
   },
   {
-    "value": 1310,
+    "value": 1312,
     "text": "Large Size Gourgeist",
     "type": "GHOST",
     "dualtype": "GRASS",
     "evolve": [
-      1307,
-      1310
+      1309,
+      1312
     ],
     "generation": 8,
     "abilities": [
@@ -25448,13 +25492,13 @@
     "form": 2
   },
   {
-    "value": 1311,
+    "value": 1313,
     "text": "Super Size Gourgeist",
     "type": "GHOST",
     "dualtype": "GRASS",
     "evolve": [
-      1308,
-      1311
+      1310,
+      1313
     ],
     "generation": 8,
     "abilities": [
@@ -25466,13 +25510,13 @@
     "form": 3
   },
   {
-    "value": 1312,
+    "value": 1314,
     "text": "Hisuian Avalugg",
     "type": "ICE",
     "dualtype": "ROCK",
     "evolve": [
       712,
-      1312
+      1314
     ],
     "generation": 8,
     "abilities": [
@@ -25484,12 +25528,12 @@
     "form": 1
   },
   {
-    "value": 1313,
+    "value": 1315,
     "text": "Active Mode Xerneas",
     "type": "FAIRY",
     "evolve": [
       716,
-      1313
+      1315
     ],
     "generation": 8,
     "abilities": [
@@ -25501,18 +25545,18 @@
     "form": 1
   },
   {
-    "value": 1314,
+    "value": 1316,
     "text": "10% Forme Zygarde",
     "type": "DRAGON",
     "dualtype": "GROUND",
     "evolve": [
       718,
-      1314,
-      1315,
       1316,
       1317,
       1318,
-      1319
+      1319,
+      1320,
+      1321
     ],
     "generation": 8,
     "abilities": [
@@ -25524,18 +25568,18 @@
     "form": 1
   },
   {
-    "value": 1315,
+    "value": 1317,
     "text": "Power Construct 10% Forme Zygarde",
     "type": "DRAGON",
     "dualtype": "GROUND",
     "evolve": [
       718,
-      1314,
-      1315,
       1316,
       1317,
       1318,
-      1319
+      1319,
+      1320,
+      1321
     ],
     "generation": 8,
     "abilities": [
@@ -25547,18 +25591,18 @@
     "form": 2
   },
   {
-    "value": 1316,
+    "value": 1318,
     "text": "Power Construct 50% Forme Zygarde",
     "type": "DRAGON",
     "dualtype": "GROUND",
     "evolve": [
       718,
-      1314,
-      1315,
       1316,
       1317,
       1318,
-      1319
+      1319,
+      1320,
+      1321
     ],
     "generation": 8,
     "abilities": [
@@ -25570,18 +25614,18 @@
     "form": 3
   },
   {
-    "value": 1317,
+    "value": 1319,
     "text": "Complete Forme Zygarde",
     "type": "DRAGON",
     "dualtype": "GROUND",
     "evolve": [
       718,
-      1314,
-      1315,
       1316,
       1317,
       1318,
-      1319
+      1319,
+      1320,
+      1321
     ],
     "generation": 8,
     "abilities": [
@@ -25593,18 +25637,18 @@
     "form": 4
   },
   {
-    "value": 1318,
+    "value": 1320,
     "text": "Core Forme Zygarde",
     "type": "DRAGON",
     "dualtype": "GROUND",
     "evolve": [
       718,
-      1314,
-      1315,
       1316,
       1317,
       1318,
-      1319
+      1319,
+      1320,
+      1321
     ],
     "generation": 8,
     "abilities": [
@@ -25616,18 +25660,18 @@
     "form": 5
   },
   {
-    "value": 1319,
+    "value": 1321,
     "text": "Cell Forme Zygarde",
     "type": "DRAGON",
     "dualtype": "GROUND",
     "evolve": [
       718,
-      1314,
-      1315,
       1316,
       1317,
       1318,
-      1319
+      1319,
+      1320,
+      1321
     ],
     "generation": 8,
     "abilities": [
@@ -25639,13 +25683,13 @@
     "form": 6
   },
   {
-    "value": 1320,
+    "value": 1322,
     "text": "Mega Diancie",
     "type": "ROCK",
     "dualtype": "FAIRY",
     "evolve": [
       719,
-      1320
+      1322
     ],
     "generation": 8,
     "abilities": [
@@ -25657,13 +25701,13 @@
     "form": 1
   },
   {
-    "value": 1321,
+    "value": 1323,
     "text": "Unbound Hoopa",
     "type": "PSYCHIC",
     "dualtype": "DARK",
     "evolve": [
       720,
-      1321
+      1323
     ],
     "generation": 8,
     "abilities": [
@@ -25675,14 +25719,14 @@
     "form": 1
   },
   {
-    "value": 1322,
+    "value": 1324,
     "text": "Hisuian Decidueye",
     "type": "GRASS",
     "dualtype": "FIGHTING",
     "evolve": [
       722,
       723,
-      1322
+      1324
     ],
     "generation": 8,
     "abilities": [
@@ -25694,15 +25738,15 @@
     "form": 1
   },
   {
-    "value": 1323,
+    "value": 1325,
     "text": "Pom-Pom Style Oricorio",
     "type": "ELECTRIC",
     "dualtype": "FLYING",
     "evolve": [
       741,
-      1323,
-      1324,
-      1325
+      1325,
+      1326,
+      1327
     ],
     "generation": 8,
     "abilities": [
@@ -25714,15 +25758,15 @@
     "form": 1
   },
   {
-    "value": 1324,
+    "value": 1326,
     "text": "Pa’u Style Oricorio",
     "type": "PSYCHIC",
     "dualtype": "FLYING",
     "evolve": [
       741,
-      1323,
-      1324,
-      1325
+      1325,
+      1326,
+      1327
     ],
     "generation": 8,
     "abilities": [
@@ -25734,15 +25778,15 @@
     "form": 2
   },
   {
-    "value": 1325,
+    "value": 1327,
     "text": "Sensu Style Oricorio",
     "type": "GHOST",
     "dualtype": "FLYING",
     "evolve": [
       741,
-      1323,
-      1324,
-      1325
+      1325,
+      1326,
+      1327
     ],
     "generation": 8,
     "abilities": [
@@ -25754,12 +25798,12 @@
     "form": 3
   },
   {
-    "value": 1326,
+    "value": 1328,
     "text": "Rockruff Own-Tempo",
     "type": "ROCK",
     "evolve": [
-      1326,
-      1328
+      1328,
+      1330
     ],
     "generation": 8,
     "abilities": [
@@ -25771,12 +25815,12 @@
     "form": 1
   },
   {
-    "value": 1327,
+    "value": 1329,
     "text": "Midnight Form Lycanroc",
     "type": "ROCK",
     "evolve": [
       744,
-      1327
+      1329
     ],
     "generation": 8,
     "abilities": [
@@ -25788,12 +25832,12 @@
     "form": 1
   },
   {
-    "value": 1328,
+    "value": 1330,
     "text": "Dusk Form Lycanroc",
     "type": "ROCK",
     "evolve": [
-      1326,
-      1328
+      1328,
+      1330
     ],
     "generation": 8,
     "abilities": [
@@ -25805,12 +25849,12 @@
     "form": 2
   },
   {
-    "value": 1329,
+    "value": 1331,
     "text": "School Form Wishiwashi",
     "type": "WATER",
     "evolve": [
       746,
-      1329
+      1331
     ],
     "generation": 8,
     "abilities": [
@@ -25822,14 +25866,12 @@
     "form": 1
   },
   {
-    "value": 1330,
+    "value": 1332,
     "text": "Type: Fighting Silvally",
     "type": "FIGHTING",
     "evolve": [
       772,
       773,
-      1330,
-      1331,
       1332,
       1333,
       1334,
@@ -25844,7 +25886,9 @@
       1343,
       1344,
       1345,
-      1346
+      1346,
+      1347,
+      1348
     ],
     "generation": 8,
     "abilities": [
@@ -25856,14 +25900,12 @@
     "form": 1
   },
   {
-    "value": 1331,
+    "value": 1333,
     "text": "Type: Flying Silvally",
     "type": "FLYING",
     "evolve": [
       772,
       773,
-      1330,
-      1331,
       1332,
       1333,
       1334,
@@ -25878,7 +25920,9 @@
       1343,
       1344,
       1345,
-      1346
+      1346,
+      1347,
+      1348
     ],
     "generation": 8,
     "abilities": [
@@ -25890,14 +25934,12 @@
     "form": 2
   },
   {
-    "value": 1332,
+    "value": 1334,
     "text": "Type: Poison Silvally",
     "type": "POISON",
     "evolve": [
       772,
       773,
-      1330,
-      1331,
       1332,
       1333,
       1334,
@@ -25912,7 +25954,9 @@
       1343,
       1344,
       1345,
-      1346
+      1346,
+      1347,
+      1348
     ],
     "generation": 8,
     "abilities": [
@@ -25924,14 +25968,12 @@
     "form": 3
   },
   {
-    "value": 1333,
+    "value": 1335,
     "text": "Type: Ground Silvally",
     "type": "GROUND",
     "evolve": [
       772,
       773,
-      1330,
-      1331,
       1332,
       1333,
       1334,
@@ -25946,7 +25988,9 @@
       1343,
       1344,
       1345,
-      1346
+      1346,
+      1347,
+      1348
     ],
     "generation": 8,
     "abilities": [
@@ -25958,14 +26002,12 @@
     "form": 4
   },
   {
-    "value": 1334,
+    "value": 1336,
     "text": "Type: Rock Silvally",
     "type": "ROCK",
     "evolve": [
       772,
       773,
-      1330,
-      1331,
       1332,
       1333,
       1334,
@@ -25980,7 +26022,9 @@
       1343,
       1344,
       1345,
-      1346
+      1346,
+      1347,
+      1348
     ],
     "generation": 8,
     "abilities": [
@@ -25992,14 +26036,12 @@
     "form": 5
   },
   {
-    "value": 1335,
+    "value": 1337,
     "text": "Type: Bug Silvally",
     "type": "BUG",
     "evolve": [
       772,
       773,
-      1330,
-      1331,
       1332,
       1333,
       1334,
@@ -26014,7 +26056,9 @@
       1343,
       1344,
       1345,
-      1346
+      1346,
+      1347,
+      1348
     ],
     "generation": 8,
     "abilities": [
@@ -26026,14 +26070,12 @@
     "form": 6
   },
   {
-    "value": 1336,
+    "value": 1338,
     "text": "Type: Ghost Silvally",
     "type": "GHOST",
     "evolve": [
       772,
       773,
-      1330,
-      1331,
       1332,
       1333,
       1334,
@@ -26048,7 +26090,9 @@
       1343,
       1344,
       1345,
-      1346
+      1346,
+      1347,
+      1348
     ],
     "generation": 8,
     "abilities": [
@@ -26060,14 +26104,12 @@
     "form": 7
   },
   {
-    "value": 1337,
+    "value": 1339,
     "text": "Type: Steel Silvally",
     "type": "STEEL",
     "evolve": [
       772,
       773,
-      1330,
-      1331,
       1332,
       1333,
       1334,
@@ -26082,7 +26124,9 @@
       1343,
       1344,
       1345,
-      1346
+      1346,
+      1347,
+      1348
     ],
     "generation": 8,
     "abilities": [
@@ -26094,14 +26138,12 @@
     "form": 8
   },
   {
-    "value": 1338,
+    "value": 1340,
     "text": "Type: Fire Silvally",
     "type": "FIRE",
     "evolve": [
       772,
       773,
-      1330,
-      1331,
       1332,
       1333,
       1334,
@@ -26116,7 +26158,9 @@
       1343,
       1344,
       1345,
-      1346
+      1346,
+      1347,
+      1348
     ],
     "generation": 8,
     "abilities": [
@@ -26128,14 +26172,12 @@
     "form": 9
   },
   {
-    "value": 1339,
+    "value": 1341,
     "text": "Type: Water Silvally",
     "type": "WATER",
     "evolve": [
       772,
       773,
-      1330,
-      1331,
       1332,
       1333,
       1334,
@@ -26150,7 +26192,9 @@
       1343,
       1344,
       1345,
-      1346
+      1346,
+      1347,
+      1348
     ],
     "generation": 8,
     "abilities": [
@@ -26162,14 +26206,12 @@
     "form": 10
   },
   {
-    "value": 1340,
+    "value": 1342,
     "text": "Type: Grass Silvally",
     "type": "GRASS",
     "evolve": [
       772,
       773,
-      1330,
-      1331,
       1332,
       1333,
       1334,
@@ -26184,7 +26226,9 @@
       1343,
       1344,
       1345,
-      1346
+      1346,
+      1347,
+      1348
     ],
     "generation": 8,
     "abilities": [
@@ -26196,14 +26240,12 @@
     "form": 11
   },
   {
-    "value": 1341,
+    "value": 1343,
     "text": "Type: Electric Silvally",
     "type": "ELECTRIC",
     "evolve": [
       772,
       773,
-      1330,
-      1331,
       1332,
       1333,
       1334,
@@ -26218,7 +26260,9 @@
       1343,
       1344,
       1345,
-      1346
+      1346,
+      1347,
+      1348
     ],
     "generation": 8,
     "abilities": [
@@ -26230,14 +26274,12 @@
     "form": 12
   },
   {
-    "value": 1342,
+    "value": 1344,
     "text": "Type: Psychic Silvally",
     "type": "PSYCHIC",
     "evolve": [
       772,
       773,
-      1330,
-      1331,
       1332,
       1333,
       1334,
@@ -26252,7 +26294,9 @@
       1343,
       1344,
       1345,
-      1346
+      1346,
+      1347,
+      1348
     ],
     "generation": 8,
     "abilities": [
@@ -26264,14 +26308,12 @@
     "form": 13
   },
   {
-    "value": 1343,
+    "value": 1345,
     "text": "Type: Ice Silvally",
     "type": "ICE",
     "evolve": [
       772,
       773,
-      1330,
-      1331,
       1332,
       1333,
       1334,
@@ -26286,7 +26328,9 @@
       1343,
       1344,
       1345,
-      1346
+      1346,
+      1347,
+      1348
     ],
     "generation": 8,
     "abilities": [
@@ -26298,14 +26342,12 @@
     "form": 14
   },
   {
-    "value": 1344,
+    "value": 1346,
     "text": "Type: Dragon Silvally",
     "type": "DRAGON",
     "evolve": [
       772,
       773,
-      1330,
-      1331,
       1332,
       1333,
       1334,
@@ -26320,7 +26362,9 @@
       1343,
       1344,
       1345,
-      1346
+      1346,
+      1347,
+      1348
     ],
     "generation": 8,
     "abilities": [
@@ -26332,14 +26376,12 @@
     "form": 15
   },
   {
-    "value": 1345,
+    "value": 1347,
     "text": "Type: Dark Silvally",
     "type": "DARK",
     "evolve": [
       772,
       773,
-      1330,
-      1331,
       1332,
       1333,
       1334,
@@ -26354,7 +26396,9 @@
       1343,
       1344,
       1345,
-      1346
+      1346,
+      1347,
+      1348
     ],
     "generation": 8,
     "abilities": [
@@ -26366,14 +26410,12 @@
     "form": 16
   },
   {
-    "value": 1346,
+    "value": 1348,
     "text": "Type: Fairy Silvally",
     "type": "FAIRY",
     "evolve": [
       772,
       773,
-      1330,
-      1331,
       1332,
       1333,
       1334,
@@ -26388,7 +26430,9 @@
       1343,
       1344,
       1345,
-      1346
+      1346,
+      1347,
+      1348
     ],
     "generation": 8,
     "abilities": [
@@ -26400,14 +26444,12 @@
     "form": 17
   },
   {
-    "value": 1347,
+    "value": 1349,
     "text": "Orange Meteor Form Minior",
     "type": "ROCK",
     "dualtype": "FLYING",
     "evolve": [
       774,
-      1347,
-      1348,
       1349,
       1350,
       1351,
@@ -26418,7 +26460,9 @@
       1356,
       1357,
       1358,
-      1359
+      1359,
+      1360,
+      1361
     ],
     "generation": 8,
     "abilities": [
@@ -26430,14 +26474,12 @@
     "form": 1
   },
   {
-    "value": 1348,
+    "value": 1350,
     "text": "Yellow Meteor Form Minior",
     "type": "ROCK",
     "dualtype": "FLYING",
     "evolve": [
       774,
-      1347,
-      1348,
       1349,
       1350,
       1351,
@@ -26448,7 +26490,9 @@
       1356,
       1357,
       1358,
-      1359
+      1359,
+      1360,
+      1361
     ],
     "generation": 8,
     "abilities": [
@@ -26460,14 +26504,12 @@
     "form": 2
   },
   {
-    "value": 1349,
+    "value": 1351,
     "text": "Green Meteor Form Minior",
     "type": "ROCK",
     "dualtype": "FLYING",
     "evolve": [
       774,
-      1347,
-      1348,
       1349,
       1350,
       1351,
@@ -26478,7 +26520,9 @@
       1356,
       1357,
       1358,
-      1359
+      1359,
+      1360,
+      1361
     ],
     "generation": 8,
     "abilities": [
@@ -26490,14 +26534,12 @@
     "form": 3
   },
   {
-    "value": 1350,
+    "value": 1352,
     "text": "Blue Meteor Form Minior",
     "type": "ROCK",
     "dualtype": "FLYING",
     "evolve": [
       774,
-      1347,
-      1348,
       1349,
       1350,
       1351,
@@ -26508,7 +26550,9 @@
       1356,
       1357,
       1358,
-      1359
+      1359,
+      1360,
+      1361
     ],
     "generation": 8,
     "abilities": [
@@ -26520,14 +26564,12 @@
     "form": 4
   },
   {
-    "value": 1351,
+    "value": 1353,
     "text": "Indigo Meteor Form Minior",
     "type": "ROCK",
     "dualtype": "FLYING",
     "evolve": [
       774,
-      1347,
-      1348,
       1349,
       1350,
       1351,
@@ -26538,7 +26580,9 @@
       1356,
       1357,
       1358,
-      1359
+      1359,
+      1360,
+      1361
     ],
     "generation": 8,
     "abilities": [
@@ -26550,14 +26594,12 @@
     "form": 5
   },
   {
-    "value": 1352,
+    "value": 1354,
     "text": "Violet Meteor Form Minior",
     "type": "ROCK",
     "dualtype": "FLYING",
     "evolve": [
       774,
-      1347,
-      1348,
       1349,
       1350,
       1351,
@@ -26568,7 +26610,9 @@
       1356,
       1357,
       1358,
-      1359
+      1359,
+      1360,
+      1361
     ],
     "generation": 8,
     "abilities": [
@@ -26580,14 +26624,12 @@
     "form": 6
   },
   {
-    "value": 1353,
+    "value": 1355,
     "text": "Red Core Minior",
     "type": "ROCK",
     "dualtype": "FLYING",
     "evolve": [
       774,
-      1347,
-      1348,
       1349,
       1350,
       1351,
@@ -26598,7 +26640,9 @@
       1356,
       1357,
       1358,
-      1359
+      1359,
+      1360,
+      1361
     ],
     "generation": 8,
     "abilities": [
@@ -26610,14 +26654,12 @@
     "form": 7
   },
   {
-    "value": 1354,
+    "value": 1356,
     "text": "Orange Core Minior",
     "type": "ROCK",
     "dualtype": "FLYING",
     "evolve": [
       774,
-      1347,
-      1348,
       1349,
       1350,
       1351,
@@ -26628,7 +26670,9 @@
       1356,
       1357,
       1358,
-      1359
+      1359,
+      1360,
+      1361
     ],
     "generation": 8,
     "abilities": [
@@ -26640,14 +26684,12 @@
     "form": 8
   },
   {
-    "value": 1355,
+    "value": 1357,
     "text": "Yellow Core Minior",
     "type": "ROCK",
     "dualtype": "FLYING",
     "evolve": [
       774,
-      1347,
-      1348,
       1349,
       1350,
       1351,
@@ -26658,7 +26700,9 @@
       1356,
       1357,
       1358,
-      1359
+      1359,
+      1360,
+      1361
     ],
     "generation": 8,
     "abilities": [
@@ -26670,14 +26714,12 @@
     "form": 9
   },
   {
-    "value": 1356,
+    "value": 1358,
     "text": "Green Core Minior",
     "type": "ROCK",
     "dualtype": "FLYING",
     "evolve": [
       774,
-      1347,
-      1348,
       1349,
       1350,
       1351,
@@ -26688,7 +26730,9 @@
       1356,
       1357,
       1358,
-      1359
+      1359,
+      1360,
+      1361
     ],
     "generation": 8,
     "abilities": [
@@ -26700,14 +26744,12 @@
     "form": 10
   },
   {
-    "value": 1357,
+    "value": 1359,
     "text": "Blue Core Minior",
     "type": "ROCK",
     "dualtype": "FLYING",
     "evolve": [
       774,
-      1347,
-      1348,
       1349,
       1350,
       1351,
@@ -26718,7 +26760,9 @@
       1356,
       1357,
       1358,
-      1359
+      1359,
+      1360,
+      1361
     ],
     "generation": 8,
     "abilities": [
@@ -26730,14 +26774,12 @@
     "form": 11
   },
   {
-    "value": 1358,
+    "value": 1360,
     "text": "Indigo Core Minior",
     "type": "ROCK",
     "dualtype": "FLYING",
     "evolve": [
       774,
-      1347,
-      1348,
       1349,
       1350,
       1351,
@@ -26748,7 +26790,9 @@
       1356,
       1357,
       1358,
-      1359
+      1359,
+      1360,
+      1361
     ],
     "generation": 8,
     "abilities": [
@@ -26760,14 +26804,12 @@
     "form": 12
   },
   {
-    "value": 1359,
+    "value": 1361,
     "text": "Violet Core Minior",
     "type": "ROCK",
     "dualtype": "FLYING",
     "evolve": [
       774,
-      1347,
-      1348,
       1349,
       1350,
       1351,
@@ -26778,7 +26820,9 @@
       1356,
       1357,
       1358,
-      1359
+      1359,
+      1360,
+      1361
     ],
     "generation": 8,
     "abilities": [
@@ -26790,13 +26834,13 @@
     "form": 13
   },
   {
-    "value": 1360,
+    "value": 1362,
     "text": "Busted Form Mimikyu",
     "type": "GHOST",
     "dualtype": "FAIRY",
     "evolve": [
       778,
-      1360
+      1362
     ],
     "generation": 8,
     "abilities": [
@@ -26808,15 +26852,15 @@
     "form": 1
   },
   {
-    "value": 1361,
+    "value": 1363,
     "text": "Dusk Mane Necrozma",
     "type": "PSYCHIC",
     "dualtype": "FIRE",
     "evolve": [
       800,
-      1361,
-      1362,
-      1363
+      1363,
+      1364,
+      1365
     ],
     "generation": 8,
     "abilities": [
@@ -26828,15 +26872,15 @@
     "form": 1
   },
   {
-    "value": 1362,
+    "value": 1364,
     "text": "Dawn Wings Necrozma",
     "type": "PSYCHIC",
     "dualtype": "FAIRY",
     "evolve": [
       800,
-      1361,
-      1362,
-      1363
+      1363,
+      1364,
+      1365
     ],
     "generation": 8,
     "abilities": [
@@ -26848,15 +26892,15 @@
     "form": 2
   },
   {
-    "value": 1363,
+    "value": 1365,
     "text": "Ultra Necrozma",
     "type": "PSYCHIC",
     "dualtype": "DRAGON",
     "evolve": [
       800,
-      1361,
-      1362,
-      1363
+      1363,
+      1364,
+      1365
     ],
     "generation": 8,
     "abilities": [
@@ -26868,13 +26912,13 @@
     "form": 3
   },
   {
-    "value": 1364,
+    "value": 1366,
     "text": "Original Color Magearna",
     "type": "STEEL",
     "dualtype": "FAIRY",
     "evolve": [
       801,
-      1364
+      1366
     ],
     "generation": 8,
     "abilities": [
@@ -26886,13 +26930,13 @@
     "form": 1
   },
   {
-    "value": 1365,
+    "value": 1367,
     "text": "Gigantamax Melmetal",
     "type": "STEEL",
     "evolve": [
       808,
       809,
-      1365
+      1367
     ],
     "generation": 8,
     "abilities": [
@@ -26904,14 +26948,14 @@
     "form": 1
   },
   {
-    "value": 1366,
+    "value": 1368,
     "text": "Gigantamax Rillaboom",
     "type": "GRASS",
     "evolve": [
       810,
       811,
       812,
-      1366
+      1368
     ],
     "generation": 8,
     "abilities": [
@@ -26923,14 +26967,14 @@
     "form": 1
   },
   {
-    "value": 1367,
+    "value": 1369,
     "text": "Gigantamax Cinderace",
     "type": "FIRE",
     "evolve": [
       813,
       814,
       815,
-      1367
+      1369
     ],
     "generation": 8,
     "abilities": [
@@ -26942,14 +26986,14 @@
     "form": 1
   },
   {
-    "value": 1368,
+    "value": 1370,
     "text": "Gigantamax Inteleon",
     "type": "WATER",
     "evolve": [
       816,
       817,
       818,
-      1368
+      1370
     ],
     "generation": 8,
     "abilities": [
@@ -26961,7 +27005,7 @@
     "form": 1
   },
   {
-    "value": 1369,
+    "value": 1371,
     "text": "Gigantamax Corviknight",
     "type": "FLYING",
     "dualtype": "STEEL",
@@ -26969,7 +27013,7 @@
       821,
       822,
       823,
-      1369
+      1371
     ],
     "generation": 8,
     "abilities": [
@@ -26981,7 +27025,7 @@
     "form": 1
   },
   {
-    "value": 1370,
+    "value": 1372,
     "text": "Gigantamax Orbeetle",
     "type": "BUG",
     "dualtype": "PSYCHIC",
@@ -26989,7 +27033,7 @@
       824,
       825,
       826,
-      1370
+      1372
     ],
     "generation": 8,
     "abilities": [
@@ -27001,14 +27045,14 @@
     "form": 1
   },
   {
-    "value": 1371,
+    "value": 1373,
     "text": "Gigantamax Drednaw",
     "type": "WATER",
     "dualtype": "ROCK",
     "evolve": [
       833,
       834,
-      1371
+      1373
     ],
     "generation": 8,
     "abilities": [
@@ -27020,7 +27064,7 @@
     "form": 1
   },
   {
-    "value": 1372,
+    "value": 1374,
     "text": "Gigantamax Coalossal",
     "type": "ROCK",
     "dualtype": "FIRE",
@@ -27028,7 +27072,7 @@
       837,
       838,
       839,
-      1372
+      1374
     ],
     "generation": 8,
     "abilities": [
@@ -27040,7 +27084,7 @@
     "form": 1
   },
   {
-    "value": 1373,
+    "value": 1375,
     "text": "Gigantamax Flapple",
     "type": "GRASS",
     "dualtype": "DRAGON",
@@ -27050,7 +27094,7 @@
       842,
       1011,
       1019,
-      1373
+      1375
     ],
     "generation": 8,
     "abilities": [
@@ -27062,7 +27106,7 @@
     "form": 1
   },
   {
-    "value": 1374,
+    "value": 1376,
     "text": "Gigantamax Appletun",
     "type": "GRASS",
     "dualtype": "DRAGON",
@@ -27072,8 +27116,8 @@
       842,
       1011,
       1019,
-      1373,
-      1374
+      1375,
+      1376
     ],
     "generation": 8,
     "abilities": [
@@ -27085,13 +27129,13 @@
     "form": 1
   },
   {
-    "value": 1375,
+    "value": 1377,
     "text": "Gigantamax Sandaconda",
     "type": "GROUND",
     "evolve": [
       843,
       844,
-      1375
+      1377
     ],
     "generation": 8,
     "abilities": [
@@ -27103,14 +27147,14 @@
     "form": 1
   },
   {
-    "value": 1376,
+    "value": 1378,
     "text": "Gulping Form Cramorant",
     "type": "FLYING",
     "dualtype": "WATER",
     "evolve": [
       845,
-      1376,
-      1377
+      1378,
+      1379
     ],
     "generation": 8,
     "abilities": [
@@ -27122,14 +27166,14 @@
     "form": 1
   },
   {
-    "value": 1377,
+    "value": 1379,
     "text": "Gorging Form Cramorant",
     "type": "FLYING",
     "dualtype": "WATER",
     "evolve": [
       845,
-      1376,
-      1377
+      1378,
+      1379
     ],
     "generation": 8,
     "abilities": [
@@ -27141,15 +27185,15 @@
     "form": 2
   },
   {
-    "value": 1378,
+    "value": 1380,
     "text": "Low Key Form Toxtricity",
     "type": "ELECTRIC",
     "dualtype": "POISON",
     "evolve": [
       848,
-      1378,
-      1379,
-      1380
+      1380,
+      1381,
+      1382
     ],
     "generation": 8,
     "abilities": [
@@ -27161,16 +27205,16 @@
     "form": 1
   },
   {
-    "value": 1379,
+    "value": 1381,
     "text": "Gigantamax Amped Form Toxtricity",
     "type": "ELECTRIC",
     "dualtype": "POISON",
     "evolve": [
       848,
       849,
-      1378,
-      1379,
-      1380
+      1380,
+      1381,
+      1382
     ],
     "generation": 8,
     "abilities": [
@@ -27182,16 +27226,16 @@
     "form": 2
   },
   {
-    "value": 1380,
+    "value": 1382,
     "text": "Gigantamax Low Key Form Toxtricity",
     "type": "ELECTRIC",
     "dualtype": "POISON",
     "evolve": [
       848,
       849,
-      1378,
-      1379,
-      1380
+      1380,
+      1381,
+      1382
     ],
     "generation": 8,
     "abilities": [
@@ -27203,14 +27247,14 @@
     "form": 3
   },
   {
-    "value": 1381,
+    "value": 1383,
     "text": "Gigantamax Centiskorch",
     "type": "FIRE",
     "dualtype": "BUG",
     "evolve": [
       850,
       851,
-      1381
+      1383
     ],
     "generation": 8,
     "abilities": [
@@ -27222,12 +27266,12 @@
     "form": 1
   },
   {
-    "value": 1382,
+    "value": 1384,
     "text": "Antique Form Sinistea",
     "type": "GHOST",
     "evolve": [
-      1382,
-      1383
+      1384,
+      1385
     ],
     "generation": 8,
     "abilities": [
@@ -27239,12 +27283,12 @@
     "form": 1
   },
   {
-    "value": 1383,
+    "value": 1385,
     "text": "Antique Form Polteageist",
     "type": "GHOST",
     "evolve": [
-      1382,
-      1383
+      1384,
+      1385
     ],
     "generation": 8,
     "abilities": [
@@ -27256,7 +27300,7 @@
     "form": 1
   },
   {
-    "value": 1384,
+    "value": 1386,
     "text": "Gigantamax Hatterene",
     "type": "PSYCHIC",
     "dualtype": "FAIRY",
@@ -27264,7 +27308,7 @@
       856,
       857,
       858,
-      1384
+      1386
     ],
     "generation": 8,
     "abilities": [
@@ -27276,7 +27320,7 @@
     "form": 1
   },
   {
-    "value": 1385,
+    "value": 1387,
     "text": "Gigantamax Grimmsnarl",
     "type": "DARK",
     "dualtype": "FAIRY",
@@ -27284,7 +27328,7 @@
       859,
       860,
       861,
-      1385
+      1387
     ],
     "generation": 8,
     "abilities": [
@@ -27296,21 +27340,21 @@
     "form": 1
   },
   {
-    "value": 1386,
+    "value": 1388,
     "text": "Ruby Cream Alcremie",
     "type": "FAIRY",
     "evolve": [
       868,
       869,
-      1386,
-      1387,
       1388,
       1389,
       1390,
       1391,
       1392,
       1393,
-      1394
+      1394,
+      1395,
+      1396
     ],
     "generation": 8,
     "abilities": [
@@ -27322,21 +27366,21 @@
     "form": 1
   },
   {
-    "value": 1387,
+    "value": 1389,
     "text": "Matcha Cream Alcremie",
     "type": "FAIRY",
     "evolve": [
       868,
       869,
-      1386,
-      1387,
       1388,
       1389,
       1390,
       1391,
       1392,
       1393,
-      1394
+      1394,
+      1395,
+      1396
     ],
     "generation": 8,
     "abilities": [
@@ -27348,21 +27392,21 @@
     "form": 2
   },
   {
-    "value": 1388,
+    "value": 1390,
     "text": "Mint Cream Alcremie",
     "type": "FAIRY",
     "evolve": [
       868,
       869,
-      1386,
-      1387,
       1388,
       1389,
       1390,
       1391,
       1392,
       1393,
-      1394
+      1394,
+      1395,
+      1396
     ],
     "generation": 8,
     "abilities": [
@@ -27374,21 +27418,21 @@
     "form": 3
   },
   {
-    "value": 1389,
+    "value": 1391,
     "text": "Lemon Cream Alcremie",
     "type": "FAIRY",
     "evolve": [
       868,
       869,
-      1386,
-      1387,
       1388,
       1389,
       1390,
       1391,
       1392,
       1393,
-      1394
+      1394,
+      1395,
+      1396
     ],
     "generation": 8,
     "abilities": [
@@ -27400,21 +27444,21 @@
     "form": 4
   },
   {
-    "value": 1390,
+    "value": 1392,
     "text": "Salted Cream Alcremie",
     "type": "FAIRY",
     "evolve": [
       868,
       869,
-      1386,
-      1387,
       1388,
       1389,
       1390,
       1391,
       1392,
       1393,
-      1394
+      1394,
+      1395,
+      1396
     ],
     "generation": 8,
     "abilities": [
@@ -27426,21 +27470,21 @@
     "form": 5
   },
   {
-    "value": 1391,
+    "value": 1393,
     "text": "Ruby Swirl Alcremie",
     "type": "FAIRY",
     "evolve": [
       868,
       869,
-      1386,
-      1387,
       1388,
       1389,
       1390,
       1391,
       1392,
       1393,
-      1394
+      1394,
+      1395,
+      1396
     ],
     "generation": 8,
     "abilities": [
@@ -27452,21 +27496,21 @@
     "form": 6
   },
   {
-    "value": 1392,
+    "value": 1394,
     "text": "Caramel Swirl Alcremie",
     "type": "FAIRY",
     "evolve": [
       868,
       869,
-      1386,
-      1387,
       1388,
       1389,
       1390,
       1391,
       1392,
       1393,
-      1394
+      1394,
+      1395,
+      1396
     ],
     "generation": 8,
     "abilities": [
@@ -27478,21 +27522,21 @@
     "form": 7
   },
   {
-    "value": 1393,
+    "value": 1395,
     "text": "Rainbow Swirl Alcremie",
     "type": "FAIRY",
     "evolve": [
       868,
       869,
-      1386,
-      1387,
       1388,
       1389,
       1390,
       1391,
       1392,
       1393,
-      1394
+      1394,
+      1395,
+      1396
     ],
     "generation": 8,
     "abilities": [
@@ -27504,21 +27548,21 @@
     "form": 8
   },
   {
-    "value": 1394,
+    "value": 1396,
     "text": "Gigantamax Alcremie",
     "type": "FAIRY",
     "evolve": [
       868,
       869,
-      1386,
-      1387,
       1388,
       1389,
       1390,
       1391,
       1392,
       1393,
-      1394
+      1394,
+      1395,
+      1396
     ],
     "generation": 8,
     "abilities": [
@@ -27530,12 +27574,12 @@
     "form": 9
   },
   {
-    "value": 1395,
+    "value": 1397,
     "text": "Noice Face Eiscue",
     "type": "ICE",
     "evolve": [
       875,
-      1395
+      1397
     ],
     "generation": 8,
     "abilities": [
@@ -27547,13 +27591,13 @@
     "form": 1
   },
   {
-    "value": 1396,
+    "value": 1398,
     "text": "Indeedee-F",
     "type": "PSYCHIC",
     "dualtype": "NORMAL",
     "evolve": [
       876,
-      1396
+      1398
     ],
     "generation": 8,
     "abilities": [
@@ -27565,13 +27609,13 @@
     "form": 1
   },
   {
-    "value": 1397,
+    "value": 1399,
     "text": "Hangry Mode Morpeko",
     "type": "ELECTRIC",
     "dualtype": "DARK",
     "evolve": [
       877,
-      1397
+      1399
     ],
     "generation": 8,
     "abilities": [
@@ -27583,13 +27627,13 @@
     "form": 1
   },
   {
-    "value": 1398,
+    "value": 1400,
     "text": "Gigantamax Copperajah",
     "type": "STEEL",
     "evolve": [
       878,
       879,
-      1398
+      1400
     ],
     "generation": 8,
     "abilities": [
@@ -27601,14 +27645,14 @@
     "form": 1
   },
   {
-    "value": 1399,
+    "value": 1401,
     "text": "Gigantamax Duraludon",
     "type": "STEEL",
     "dualtype": "DRAGON",
     "evolve": [
       884,
       1018,
-      1399
+      1401
     ],
     "generation": 8,
     "abilities": [
@@ -27620,13 +27664,13 @@
     "form": 1
   },
   {
-    "value": 1400,
+    "value": 1402,
     "text": "Crowned Sword Zacian",
     "type": "FAIRY",
     "dualtype": "STEEL",
     "evolve": [
       888,
-      1400
+      1402
     ],
     "generation": 8,
     "abilities": [
@@ -27638,13 +27682,13 @@
     "form": 1
   },
   {
-    "value": 1401,
+    "value": 1403,
     "text": "Crowned Shield Zamazenta",
     "type": "FIGHTING",
     "dualtype": "STEEL",
     "evolve": [
       889,
-      1401
+      1403
     ],
     "generation": 8,
     "abilities": [
@@ -27656,13 +27700,13 @@
     "form": 1
   },
   {
-    "value": 1402,
+    "value": 1404,
     "text": "Eternamax Eternatus",
     "type": "POISON",
     "dualtype": "DRAGON",
     "evolve": [
       890,
-      1402
+      1404
     ],
     "generation": 8,
     "abilities": [
@@ -27674,15 +27718,15 @@
     "form": 1
   },
   {
-    "value": 1403,
+    "value": 1405,
     "text": "Rapid Strike Style Urshifu",
     "type": "FIGHTING",
     "dualtype": "WATER",
     "evolve": [
       891,
-      1403,
-      1404,
-      1405
+      1405,
+      1406,
+      1407
     ],
     "generation": 8,
     "abilities": [
@@ -27694,16 +27738,16 @@
     "form": 1
   },
   {
-    "value": 1404,
+    "value": 1406,
     "text": "Gigantamax Single Strike Style Urshifu",
     "type": "FIGHTING",
     "dualtype": "DARK",
     "evolve": [
       891,
       892,
-      1403,
-      1404,
-      1405
+      1405,
+      1406,
+      1407
     ],
     "generation": 8,
     "abilities": [
@@ -27715,16 +27759,16 @@
     "form": 2
   },
   {
-    "value": 1405,
+    "value": 1407,
     "text": "Gigantamax Rapid Strike Style Urshifu",
     "type": "FIGHTING",
     "dualtype": "DARK",
     "evolve": [
       891,
       892,
-      1403,
-      1404,
-      1405
+      1405,
+      1406,
+      1407
     ],
     "generation": 8,
     "abilities": [
@@ -27736,13 +27780,13 @@
     "form": 3
   },
   {
-    "value": 1406,
+    "value": 1408,
     "text": "Dada Zarude",
     "type": "DARK",
     "dualtype": "GRASS",
     "evolve": [
       893,
-      1406
+      1408
     ],
     "generation": 8,
     "abilities": [
@@ -27754,14 +27798,14 @@
     "form": 1
   },
   {
-    "value": 1407,
+    "value": 1409,
     "text": "Ice Rider Calyrex",
     "type": "PSYCHIC",
     "dualtype": "ICE",
     "evolve": [
       898,
-      1407,
-      1408
+      1409,
+      1410
     ],
     "generation": 8,
     "abilities": [
@@ -27773,14 +27817,14 @@
     "form": 1
   },
   {
-    "value": 1408,
+    "value": 1410,
     "text": "Shadow Rider Calyrex",
     "type": "PSYCHIC",
     "dualtype": "GHOST",
     "evolve": [
       898,
-      1407,
-      1408
+      1409,
+      1410
     ],
     "generation": 8,
     "abilities": [
@@ -27792,7 +27836,7 @@
     "form": 2
   },
   {
-    "value": 1409,
+    "value": 1411,
     "text": "Bloodmoon Beast Ursaluna",
     "type": "GROUND",
     "dualtype": "NORMAL",
@@ -27800,7 +27844,7 @@
       216,
       217,
       901,
-      1409
+      1411
     ],
     "generation": 8,
     "abilities": [
@@ -27812,13 +27856,13 @@
     "form": 1
   },
   {
-    "value": 1410,
+    "value": 1412,
     "text": "Basculegion-F",
     "type": "WATER",
     "dualtype": "GHOST",
     "evolve": [
-      1231,
-      1410
+      1233,
+      1412
     ],
     "generation": 8,
     "abilities": [
@@ -27830,13 +27874,13 @@
     "form": 1
   },
   {
-    "value": 1411,
+    "value": 1413,
     "text": "Therian Forme Enamorus",
     "type": "FAIRY",
     "dualtype": "FLYING",
     "evolve": [
       905,
-      1411
+      1413
     ],
     "generation": 8,
     "abilities": [
@@ -27848,12 +27892,12 @@
     "form": 1
   },
   {
-    "value": 1412,
+    "value": 1414,
     "text": "Oinkologne-F",
     "type": "NORMAL",
     "evolve": [
       915,
-      1412
+      1414
     ],
     "generation": 8,
     "abilities": [
@@ -27865,12 +27909,12 @@
     "form": 1
   },
   {
-    "value": 1413,
+    "value": 1415,
     "text": "Family of Three Maushold",
     "type": "NORMAL",
     "evolve": [
       924,
-      1413
+      1415
     ],
     "generation": 8,
     "abilities": [
@@ -27882,15 +27926,15 @@
     "form": 1
   },
   {
-    "value": 1414,
+    "value": 1416,
     "text": "Blue Plumage Squawkabilly",
     "type": "NORMAL",
     "dualtype": "FLYING",
     "evolve": [
       931,
-      1414,
-      1415,
-      1416
+      1416,
+      1417,
+      1418
     ],
     "generation": 8,
     "abilities": [
@@ -27902,15 +27946,15 @@
     "form": 1
   },
   {
-    "value": 1415,
+    "value": 1417,
     "text": "Yellow Plumage Squawkabilly",
     "type": "NORMAL",
     "dualtype": "FLYING",
     "evolve": [
       931,
-      1414,
-      1415,
-      1416
+      1416,
+      1417,
+      1418
     ],
     "generation": 8,
     "abilities": [
@@ -27922,15 +27966,15 @@
     "form": 2
   },
   {
-    "value": 1416,
+    "value": 1418,
     "text": "White Plumage Squawkabilly",
     "type": "NORMAL",
     "dualtype": "FLYING",
     "evolve": [
       931,
-      1414,
-      1415,
-      1416
+      1416,
+      1417,
+      1418
     ],
     "generation": 8,
     "abilities": [
@@ -27942,13 +27986,13 @@
     "form": 3
   },
   {
-    "value": 1417,
+    "value": 1419,
     "text": "Hero Form Palafin",
     "type": "WATER",
     "evolve": [
       963,
       964,
-      1417
+      1419
     ],
     "generation": 8,
     "abilities": [
@@ -27960,17 +28004,17 @@
     "form": 1
   },
   {
-    "value": 1418,
+    "value": 1420,
     "text": "Segin Starmobile Revavroom",
     "type": "DARK",
     "evolve": [
       965,
       966,
-      1418,
-      1419,
       1420,
       1421,
-      1422
+      1422,
+      1423,
+      1424
     ],
     "generation": 8,
     "abilities": [
@@ -27982,17 +28026,17 @@
     "form": 1
   },
   {
-    "value": 1419,
+    "value": 1421,
     "text": "Schedar Starmobile Revavroom",
     "type": "FIRE",
     "evolve": [
       965,
       966,
-      1418,
-      1419,
       1420,
       1421,
-      1422
+      1422,
+      1423,
+      1424
     ],
     "generation": 8,
     "abilities": [
@@ -28004,17 +28048,17 @@
     "form": 2
   },
   {
-    "value": 1420,
+    "value": 1422,
     "text": "Navi Starmobile Revavroom",
     "type": "POISON",
     "evolve": [
       965,
       966,
-      1418,
-      1419,
       1420,
       1421,
-      1422
+      1422,
+      1423,
+      1424
     ],
     "generation": 8,
     "abilities": [
@@ -28026,17 +28070,17 @@
     "form": 3
   },
   {
-    "value": 1421,
+    "value": 1423,
     "text": "Ruchbah Starmobile Revavroom",
     "type": "FAIRY",
     "evolve": [
       965,
       966,
-      1418,
-      1419,
       1420,
       1421,
-      1422
+      1422,
+      1423,
+      1424
     ],
     "generation": 8,
     "abilities": [
@@ -28048,17 +28092,17 @@
     "form": 4
   },
   {
-    "value": 1422,
+    "value": 1424,
     "text": "Caph Starmobile Revavroom",
     "type": "FIGHTING",
     "evolve": [
       965,
       966,
-      1418,
-      1419,
       1420,
       1421,
-      1422
+      1422,
+      1423,
+      1424
     ],
     "generation": 8,
     "abilities": [
@@ -28070,14 +28114,14 @@
     "form": 5
   },
   {
-    "value": 1423,
+    "value": 1425,
     "text": "Droopy Form Tatsugiri",
     "type": "DRAGON",
     "dualtype": "WATER",
     "evolve": [
       978,
-      1423,
-      1424
+      1425,
+      1426
     ],
     "generation": 8,
     "abilities": [
@@ -28089,14 +28133,14 @@
     "form": 1
   },
   {
-    "value": 1424,
+    "value": 1426,
     "text": "Stretchy Form Tatsugiri",
     "type": "DRAGON",
     "dualtype": "WATER",
     "evolve": [
       978,
-      1423,
-      1424
+      1425,
+      1426
     ],
     "generation": 8,
     "abilities": [
@@ -28108,13 +28152,13 @@
     "form": 2
   },
   {
-    "value": 1425,
+    "value": 1427,
     "text": "Three-Segment Form Dudunsparce",
     "type": "NORMAL",
     "dualtype": "DRAGON",
     "evolve": [
       206,
-      1425
+      1427
     ],
     "generation": 8,
     "abilities": [
@@ -28126,11 +28170,11 @@
     "form": 1
   },
   {
-    "value": 1426,
+    "value": 1428,
     "text": "Roaming Form Gimmighoul",
     "type": "GHOST",
     "evolve": [
-      1426,
+      1428,
       1000
     ],
     "generation": 8,
@@ -28143,13 +28187,13 @@
     "form": 1
   },
   {
-    "value": 1427,
+    "value": 1429,
     "text": "Limited Build Koraidon",
     "type": "FIGHTING",
     "dualtype": "DRAGON",
     "evolve": [
       1007,
-      1427
+      1429
     ],
     "generation": 8,
     "abilities": [
@@ -28161,13 +28205,13 @@
     "form": 1
   },
   {
-    "value": 1428,
+    "value": 1430,
     "text": "Low-Power Mode Miraidon",
     "type": "ELECTRIC",
     "dualtype": "DRAGON",
     "evolve": [
       1008,
-      1428
+      1430
     ],
     "generation": 8,
     "abilities": [
@@ -28179,13 +28223,13 @@
     "form": 1
   },
   {
-    "value": 1429,
+    "value": 1431,
     "text": "Artisan Form Poltchageist",
     "type": "GRASS",
     "dualtype": "GHOST",
     "evolve": [
-      1429,
-      1430
+      1431,
+      1432
     ],
     "generation": 8,
     "abilities": [
@@ -28197,13 +28241,13 @@
     "form": 1
   },
   {
-    "value": 1430,
+    "value": 1432,
     "text": "Masterpiece Form Sinistcha",
     "type": "GRASS",
     "dualtype": "GHOST",
     "evolve": [
-      1429,
-      1430
+      1431,
+      1432
     ],
     "generation": 8,
     "abilities": [
@@ -28215,19 +28259,19 @@
     "form": 1
   },
   {
-    "value": 1431,
+    "value": 1433,
     "text": "Wellspring Mask Ogerpon",
     "type": "GRASS",
     "dualtype": "WATER",
     "evolve": [
       1017,
-      1431,
-      1432,
       1433,
       1434,
       1435,
       1436,
-      1437
+      1437,
+      1438,
+      1439
     ],
     "generation": 8,
     "abilities": [
@@ -28239,19 +28283,19 @@
     "form": 1
   },
   {
-    "value": 1432,
+    "value": 1434,
     "text": "Hearthflame Mask Ogerpon",
     "type": "GRASS",
     "dualtype": "FIRE",
     "evolve": [
       1017,
-      1431,
-      1432,
       1433,
       1434,
       1435,
       1436,
-      1437
+      1437,
+      1438,
+      1439
     ],
     "generation": 8,
     "abilities": [
@@ -28263,19 +28307,19 @@
     "form": 2
   },
   {
-    "value": 1433,
+    "value": 1435,
     "text": "Cornerstone Mask Ogerpon",
     "type": "GRASS",
     "dualtype": "ROCK",
     "evolve": [
       1017,
-      1431,
-      1432,
       1433,
       1434,
       1435,
       1436,
-      1437
+      1437,
+      1438,
+      1439
     ],
     "generation": 8,
     "abilities": [
@@ -28287,18 +28331,18 @@
     "form": 3
   },
   {
-    "value": 1434,
+    "value": 1436,
     "text": "Terastal Teal Mask Ogerpon",
     "type": "GRASS",
     "evolve": [
       1017,
-      1431,
-      1432,
       1433,
       1434,
       1435,
       1436,
-      1437
+      1437,
+      1438,
+      1439
     ],
     "generation": 8,
     "abilities": [
@@ -28310,19 +28354,19 @@
     "form": 4
   },
   {
-    "value": 1435,
+    "value": 1437,
     "text": "Terastal Wellspring Mask Ogerpon",
     "type": "GRASS",
     "dualtype": "WATER",
     "evolve": [
       1017,
-      1431,
-      1432,
       1433,
       1434,
       1435,
       1436,
-      1437
+      1437,
+      1438,
+      1439
     ],
     "generation": 8,
     "abilities": [
@@ -28334,19 +28378,19 @@
     "form": 5
   },
   {
-    "value": 1436,
+    "value": 1438,
     "text": "Terastal Hearthflame Mask Ogerpon",
     "type": "GRASS",
     "dualtype": "FIRE",
     "evolve": [
       1017,
-      1431,
-      1432,
       1433,
       1434,
       1435,
       1436,
-      1437
+      1437,
+      1438,
+      1439
     ],
     "generation": 8,
     "abilities": [
@@ -28358,19 +28402,19 @@
     "form": 6
   },
   {
-    "value": 1437,
+    "value": 1439,
     "text": "Terastal Cornerstone Mask Ogerpon",
     "type": "GRASS",
     "dualtype": "ROCK",
     "evolve": [
       1017,
-      1431,
-      1432,
       1433,
       1434,
       1435,
       1436,
-      1437
+      1437,
+      1438,
+      1439
     ],
     "generation": 8,
     "abilities": [
@@ -28382,13 +28426,13 @@
     "form": 7
   },
   {
-    "value": 1438,
+    "value": 1440,
     "text": "Terastal Form Terapagos",
     "type": "NORMAL",
     "evolve": [
       1024,
-      1438,
-      1439
+      1440,
+      1441
     ],
     "generation": 8,
     "abilities": [
@@ -28400,13 +28444,13 @@
     "form": 1
   },
   {
-    "value": 1439,
+    "value": 1441,
     "text": "Stellar Form Terapagos",
     "type": "NORMAL",
     "evolve": [
       1024,
-      1438,
-      1439
+      1440,
+      1441
     ],
     "generation": 8,
     "abilities": [

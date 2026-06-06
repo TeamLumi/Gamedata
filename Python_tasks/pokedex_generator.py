@@ -6,7 +6,7 @@ import csv
 import constants
 from data_checks import get_average_time, check_bad_dex_mon, is_valid_pokemon, check_egg_moveset
 from load_files import load_data
-from pokemonUtils import generate_form_name_to_pokemon_id, get_pokemon_info, get_pokemon_name, get_diff_form_dictionary, get_mons_no_and_form_no, get_form_pokemon_personal_id
+from pokemonUtils import CATCH_RATES, generate_form_name_to_pokemon_id, get_pokemon_info, get_pokemon_name, get_diff_form_dictionary, get_mons_no_and_form_no, get_form_pokemon_personal_id
 
 repo_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 input_file_path = os.path.join(repo_file_path, constants.INPUT_NAME)
@@ -376,6 +376,8 @@ def getPokedexInfo():
         json.dump(pokedex, output, ensure_ascii=False, indent=2)
     with open(os.path.join(debug_file_path, "egg_move_paths.json"), "w", encoding="utf-8") as output:
         json.dump(egg_move_dict, output, ensure_ascii=False, indent=2)
+
+    print("Catch rates found:", sorted(list(CATCH_RATES)))
     return pokedex
 
 def export_csv():

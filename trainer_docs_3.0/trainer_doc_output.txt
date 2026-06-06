@@ -3129,7 +3129,7 @@ Cyclist John
 Level Cap:
 Format: Single Battle
 
-Galarian Farfetch’d
+Galarian Farfetch'd
 21
 Quirky
 Steadfast
@@ -11676,8 +11676,8 @@ Serious
 Swift Swim
 
 None
-Uproar
-Skull Bash
+Spirit Shackle
+Wave Crash
 Thrash
 Double-Edge
 25/25/25/25/25/25
@@ -12724,7 +12724,7 @@ Hardy
 Swift Swim
 
 None
-Skull Bash
+Wave Crash
 Thrash
 Double-Edge
 Head Smash
@@ -15557,7 +15557,7 @@ Spore
 25/25/25/25/25/25
 0/0/0/0/0/0
 
-Ash-Greninja
+Meadow Pattern Vivillon
 73
 Hardy
 Friend Guard

@@ -1547,7 +1547,7 @@
           {
             "ability": "Weak Armor",
             "gender": "FEMALE",
-            "id": 1383,
+            "id": 1385,
             "item": "Focus Sash",
             "level": 32,
             "moves": [
@@ -1712,7 +1712,7 @@
           {
             "ability": "Dancer",
             "gender": "FEMALE",
-            "id": 1325,
+            "id": 1327,
             "item": "Leftovers",
             "level": 32,
             "moves": [
@@ -2044,7 +2044,7 @@
           {
             "ability": "Scrappy",
             "gender": "FEMALE",
-            "id": 1322,
+            "id": 1324,
             "item": "Razor Claw",
             "level": 38,
             "moves": [
@@ -3149,7 +3149,7 @@
           {
             "ability": "Sharpness",
             "gender": "FEMALE",
-            "id": 1227,
+            "id": 1229,
             "item": "Muscle Band",
             "level": 43,
             "moves": [
@@ -3915,7 +3915,7 @@
           {
             "ability": "Shell Armor",
             "gender": "FEMALE",
-            "id": 1305,
+            "id": 1307,
             "item": "Choice Specs",
             "level": 52,
             "moves": [
@@ -4195,7 +4195,7 @@
           {
             "ability": "Gorilla Tactics",
             "gender": "FEMALE",
-            "id": 1234,
+            "id": 1236,
             "item": "Choice Scarf",
             "level": 55,
             "moves": [
@@ -4386,7 +4386,7 @@
           {
             "ability": "Ice Body",
             "gender": "FEMALE",
-            "id": 1312,
+            "id": 1314,
             "item": "Chople Berry",
             "level": 55,
             "moves": [
@@ -7976,7 +7976,7 @@
           {
             "ability": "Sharpness",
             "gender": "FEMALE",
-            "id": 1227,
+            "id": 1229,
             "item": "Choice Scarf",
             "level": 77,
             "moves": [
@@ -8054,7 +8054,7 @@
           {
             "ability": "Tinted Lens",
             "gender": "FEMALE",
-            "id": 1247,
+            "id": 1249,
             "item": "Wise Glasses",
             "level": 77,
             "moves": [
@@ -8167,7 +8167,7 @@
           {
             "ability": "Scrappy",
             "gender": "FEMALE",
-            "id": 1322,
+            "id": 1324,
             "item": "Heavy-Duty Boots",
             "level": 77,
             "moves": [
@@ -8384,7 +8384,7 @@
           {
             "ability": "Hustle",
             "gender": "FEMALE",
-            "id": 1229,
+            "id": 1231,
             "item": "Wide Lens",
             "level": 77,
             "moves": [
@@ -8471,7 +8471,7 @@
           {
             "ability": "Illusion",
             "gender": "FEMALE",
-            "id": 1239,
+            "id": 1241,
             "item": "Choice Specs",
             "level": 77,
             "moves": [
@@ -12360,7 +12360,7 @@
           {
             "ability": "Mimicry",
             "gender": "MALE",
-            "id": 1246,
+            "id": 1248,
             "item": null,
             "level": 18,
             "moves": [
@@ -13718,8 +13718,8 @@
             "item": null,
             "level": 55,
             "moves": [
-              253,
-              130,
+              662,
+              834,
               37,
               38
             ],
@@ -14182,7 +14182,7 @@
           {
             "ability": "Chlorophyll",
             "gender": "FEMALE",
-            "id": 1242,
+            "id": 1244,
             "item": null,
             "level": 22,
             "moves": [
@@ -14358,7 +14358,7 @@
           {
             "ability": "Inner Focus",
             "gender": "MALE",
-            "id": 1232,
+            "id": 1234,
             "item": null,
             "level": 20,
             "moves": [
@@ -22996,7 +22996,7 @@
           {
             "ability": "Chlorophyll",
             "gender": "MALE",
-            "id": 1229,
+            "id": 1231,
             "item": null,
             "level": 35,
             "moves": [
@@ -25796,7 +25796,7 @@
           {
             "ability": "Adaptability",
             "gender": "FEMALE",
-            "id": 1231,
+            "id": 1233,
             "item": null,
             "level": 39,
             "moves": [
@@ -31129,7 +31129,7 @@
           {
             "ability": "Zen Mode",
             "gender": "FEMALE",
-            "id": 1234,
+            "id": 1236,
             "item": null,
             "level": 53,
             "moves": [
@@ -32701,7 +32701,7 @@
           {
             "ability": "Punk Rock",
             "gender": "FEMALE",
-            "id": 1378,
+            "id": 1380,
             "item": null,
             "level": 60,
             "moves": [
@@ -33323,7 +33323,7 @@
             "item": null,
             "level": 59,
             "moves": [
-              130,
+              834,
               37,
               38,
               457
@@ -34999,7 +34999,7 @@
           {
             "ability": "Keen Eye",
             "gender": "FEMALE",
-            "id": 1247,
+            "id": 1249,
             "item": null,
             "level": 63,
             "moves": [
@@ -36015,7 +36015,7 @@
           {
             "ability": "Gooey",
             "gender": "FEMALE",
-            "id": 1305,
+            "id": 1307,
             "item": null,
             "level": 63,
             "moves": [
@@ -37397,7 +37397,7 @@
           {
             "ability": "Torrent",
             "gender": "FEMALE",
-            "id": 1227,
+            "id": 1229,
             "item": null,
             "level": 64,
             "moves": [
@@ -39105,7 +39105,7 @@
           {
             "ability": "Friend Guard",
             "gender": "FEMALE",
-            "id": 1266,
+            "id": 1268,
             "item": null,
             "level": 73,
             "moves": [
