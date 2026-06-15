@@ -15,6 +15,7 @@ from pokemonUtils import (get_diff_form_dictionary,
                           get_pokemon_from_trainer_info,
                           get_pokemon_id_from_name, get_pokemon_name,
                           isSpecialPokemon, get_form_pokemon_personal_id)
+from consolidate_tmlearnset import consolidate_tmlearnset
 
 # Get the repo file path for cleaner path generating
 repo_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
@@ -757,6 +758,9 @@ if __name__ == "__main__":
 
     diff_forms, NAME_MAP = get_diff_form_dictionary()
     getPokedexInfo()
+
+    if constants.GAME_MODE == constants.GAME_MODE_3:
+        consolidate_tmlearnset()
 
     mid_time = time.time()
     print("Middle Execution time:", mid_time - start_time, "seconds")

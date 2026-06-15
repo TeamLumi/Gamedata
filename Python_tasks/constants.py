@@ -273,7 +273,7 @@ KG_TO_LBS_CONSTANT = 0.453592
 FT_TO_CM_CONSTANT = 30.48
 IN_TO_CM_CONSTANT = 2.54
 
-TEAM_REGEX = "Team \d+"
+TEAM_REGEX = r"Team \d+"
 LDVAL_PATTERN = r"_LDVAL\(@(.*),\s?([1-9][0-9]*)\)"
 TRAINER_PATTERN = r"_TRAINER_BTL_SET\s*\(\s*('?[^']+'?|@\w+|\d+)\s*,\s*('?[^']+'?|@\w+|\d+)\s*\)"
 MULTI_TRAINER_PATTERN = r"_TRAINER_MULTI_BTL_SET\s*\(\s*((?:'[^']*'|@\w+|\d+)\s*(?:,\s*(?:'[^']*'|@\w+|\d+)\s*)*)\)"

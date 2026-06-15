@@ -269,9 +269,9 @@ def slugify(value, pokeapi=False):
     """
     initial_value = value
     value = unicodedata.normalize('NFKD', value).encode('ascii', 'ignore').decode('ascii')
-    value = re.sub('[^\w\s-]', '', value).strip().lower()
+    value = re.sub(r"[^\w\s-]", '', value).strip().lower()
     if pokeapi == False:
-        return re.sub('[-\s]+', '-', value)
+        return re.sub(r'[-\s]+', '-', value)
 
     if ' ' in value or "-" in value:
         # Split the string at the last space
@@ -289,7 +289,7 @@ def slugify(value, pokeapi=False):
             value = '-'.join([parts[1], parts[0]])
             return value
 
-    return re.sub('[-\s]+', '-', value)
+    return re.sub(r'[-\s]+', '-', value)
 
 def isSpecialPokemon(current_pokemon_name):
     """
