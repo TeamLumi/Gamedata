@@ -139,7 +139,7 @@ def get_relumi_tm_compatibility(monsNo, formNo):
         tm_data['set08']
     ]
     tm_binary_list = convert_list_to_binary_array(machine_nos)
-    tm_compatibility = create_move_id_learnset(tm_binary_list)
+    tm_compatibility = create_move_id_learnset(tm_binary_list, constants.GAME_MODE_3)
 
     return tm_compatibility
 
@@ -167,8 +167,10 @@ def convert_list_to_binary_array(decimal_list):
 
         binary_array.extend(decimal_to_binary_array(decimal_number))
 
+    binary_length = len(decimal_list) == 4 and 128 or 256
+
     # Pad the binary array to have a length of 128 by adding leading zeros
-    binary_array = [0] * (128 - len(binary_array)) + binary_array
+    binary_array = [0] * (binary_length - len(binary_array)) + binary_array
 
     return binary_array
 
@@ -241,12 +243,12 @@ def create_tm_learnset(move_ids, length=128):
         tm_bitfield[bit_index] = 1
     return convert_to_32_bit_integers(tm_bitfield, length)
 
-def create_move_id_learnset(binary_array):
+def create_move_id_learnset(binary_array, mode = constants.GAME_MODE_2):
     tm_array = []
     for machine_no_index, binary_int in enumerate(binary_array):
         if binary_int == 0:
             continue
-        if machine_no_index > 103:
+        if machine_no_index > 103 and mode == constants.GAME_MODE_2:
             break
         machine_no = machine_no_index + 1
         tm_array.append(find_waza_no_by_machine_no(machine_no))
