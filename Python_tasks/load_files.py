@@ -26,16 +26,16 @@ def load_data():
     data = {}
     input_file_paths = {
         # romfs/Data/StreamingAssets/AssetAssistant/Message/english
-        'area_names': 'english_dp_fld_areaname.json',
-        'area_display_names': 'english_dp_fld_areaname_display.json',
-        'trainer_names': 'english_dp_trainers_name.json',
-        'trainer_labels': 'english_dp_trainers_type.json',
-        'raw_items': 'english_ss_itemname.json', # found in the common_msbt for 3.0
-        'nature_namedata': 'english_ss_seikaku.json',
-        'ability_namedata': 'english_ss_tokusei.json', # found in common_msbt for 3.0
-        'type_namedata': 'english_ss_typename.json',
-        'move_info': 'english_ss_wazainfo.json',
-        'moves_namedata': 'english_ss_wazaname.json',
+        'area_names': 'spanish_dp_fld_areaname.json',
+        'area_display_names': 'spanish_dp_fld_areaname_display.json',
+        'trainer_names': 'spanish_dp_trainers_name.json',
+        'trainer_labels': 'spanish_dp_trainers_type.json',
+        'raw_items': 'spanish_ss_itemname.json', # found in the common_msbt for 3.0
+        'nature_namedata': 'spanish_ss_seikaku.json',
+        'ability_namedata': 'spanish_ss_tokusei.json', # found in common_msbt for 3.0
+        'type_namedata': 'spanish_ss_typename.json',
+        'move_info': 'spanish_ss_wazainfo.json',
+        'moves_namedata': 'spanish_ss_wazaname.json',
 
 
         # romfs/Data/StreamingAssets/AssetAssistant/Pml/personal_masterdatas
@@ -48,10 +48,10 @@ def load_data():
 
 
         # romfs/Data/StreamingAssets/AssetAssistant/Message/common_msbt
-        'raw_pokedex': 'english_ss_monsname.json',
-        'form_namedata': 'english_ss_zkn_form.json',
-        'pkmn_height_data': 'english_ss_zkn_height.json',
-        'pkmn_weight_data': 'english_ss_zkn_weight.json',
+        'raw_pokedex': 'spanish_ss_monsname.json',
+        'form_namedata': 'spanish_ss_zkn_form.json',
+        'pkmn_height_data': 'spanish_ss_zkn_height.json',
+        'pkmn_weight_data': 'spanish_ss_zkn_weight.json',
 
 
         # romfs/Data/StreamingAssets/AssetAssistant/Dpr/scriptableobjects/gamesettings
