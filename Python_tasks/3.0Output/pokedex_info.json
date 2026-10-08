@@ -5121,8 +5121,8 @@
     "generation": 8,
     "abilities": [
       "Chlorophyll",
-      "Wind Rider",
-      "Unburden"
+      "Pickpocket",
+      "Wind Rider"
     ],
     "dexNum": 275,
     "form": 0
@@ -5648,7 +5648,7 @@
     "generation": 8,
     "abilities": [
       "Rock Head",
-      "Sturdy",
+      "Rocky Payload",
       "Heavy Metal"
     ],
     "dexNum": 304,
@@ -5667,7 +5667,7 @@
     "generation": 8,
     "abilities": [
       "Rock Head",
-      "Sturdy",
+      "Rocky Payload",
       "Heavy Metal"
     ],
     "dexNum": 305,
@@ -5686,7 +5686,7 @@
     "generation": 8,
     "abilities": [
       "Rock Head",
-      "Sturdy",
+      "Rocky Payload",
       "Heavy Metal"
     ],
     "dexNum": 306,
@@ -18978,9 +18978,9 @@
     ],
     "generation": 8,
     "abilities": [
+      "Mega Launcher",
       "Torrent",
-      "Torrent",
-      "Rain Dish"
+      "Drizzle"
     ],
     "dexNum": 9,
     "form": 3
@@ -20481,7 +20481,7 @@
   },
   {
     "value": 1108,
-    "text": "Mk II Armored Mewtwo",
+    "text": "γ Armor Mewtwo",
     "type": "PSYCHIC",
     "evolve": [
       150,
@@ -20503,7 +20503,7 @@
   },
   {
     "value": 1109,
-    "text": "Mk I Armored Mewtwo",
+    "text": "χ Armor Mewtwo",
     "type": "PSYCHIC",
     "evolve": [
       150,
@@ -25018,9 +25018,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "Adaptability",
-      "Adaptability",
-      "Adaptability"
+      "Fairy Aura",
+      "Fairy Aura",
+      "Fairy Aura"
     ],
     "dexNum": 670,
     "form": 5
@@ -25403,7 +25403,7 @@
   },
   {
     "value": 1308,
-    "text": "Small Size Pumpkaboo",
+    "text": "Medium Variety Pumpkaboo",
     "type": "GHOST",
     "dualtype": "GRASS",
     "evolve": [
@@ -25421,7 +25421,7 @@
   },
   {
     "value": 1309,
-    "text": "Large Size Pumpkaboo",
+    "text": "Large Variety Pumpkaboo",
     "type": "GHOST",
     "dualtype": "GRASS",
     "evolve": [
@@ -25439,7 +25439,7 @@
   },
   {
     "value": 1310,
-    "text": "Super Size Pumpkaboo",
+    "text": "Jumbo Variety Pumpkaboo",
     "type": "GHOST",
     "dualtype": "GRASS",
     "evolve": [
@@ -25457,7 +25457,7 @@
   },
   {
     "value": 1311,
-    "text": "Small Size Gourgeist",
+    "text": "Medium Variety Gourgeist",
     "type": "GHOST",
     "dualtype": "GRASS",
     "evolve": [
@@ -25475,7 +25475,7 @@
   },
   {
     "value": 1312,
-    "text": "Large Size Gourgeist",
+    "text": "Large Variety Gourgeist",
     "type": "GHOST",
     "dualtype": "GRASS",
     "evolve": [
@@ -25493,7 +25493,7 @@
   },
   {
     "value": 1313,
-    "text": "Super Size Gourgeist",
+    "text": "Jumbo Variety Gourgeist",
     "type": "GHOST",
     "dualtype": "GRASS",
     "evolve": [
@@ -27809,9 +27809,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "As One",
-      "As One",
-      "As One"
+      "As One With Glastrier",
+      "As One With Glastrier",
+      "As One With Glastrier"
     ],
     "dexNum": 898,
     "form": 1
@@ -27828,9 +27828,9 @@
     ],
     "generation": 8,
     "abilities": [
-      "As One",
-      "As One",
-      "As One"
+      "As One With Spectrier",
+      "As One With Spectrier",
+      "As One With Spectrier"
     ],
     "dexNum": 898,
     "form": 2

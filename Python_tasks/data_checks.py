@@ -85,6 +85,7 @@ def check_mons_list(pokemon_list, zoneID, final_list):
           not in the copy_of_list, a flag goes up and throws a warning.
     '''
     original_list = []
+    original_surf_list = []
     missing_list = []
     incense_count = 0
     radar_list = {zoneID: []}
@@ -93,23 +94,45 @@ def check_mons_list(pokemon_list, zoneID, final_list):
         # We need to do something else...
 
     for mon in pokemon_list:
-        if mon[1] in constants.REGULAR_ENC_LIST:
-            original_list.append(mon[0])
+        if mon['method'] in constants.REGULAR_ENC_LIST:
+            original_list.append(mon['monsNo'])
+        if mon['method'] == constants.SURF_ENC:
+            original_surf_list.append(mon['monsNo'])
     active_list = copy.deepcopy(original_list)
+    active_surf_list = copy.deepcopy(original_surf_list)
 
+
+    # When radar is active, slot 2 gets bumped to slot 10
     active_list[9] = active_list[1]
+
+    # When incense is active, slot 5 gets bumped to slot 11 and slot 6 gets bumped to slot 12
     active_list[10] = active_list[4]
     active_list[11] = active_list[5]
+
+
     for mon in pokemon_list:
-        if mon[1] == constants.RADAR:
-            radar_list[zoneID].append(get_pokemon_name(mon[0]))
-            active_list[1] = mon[0]
-        if mon[1] in constants.INCENSE_LIST and mon[2] != 2 and incense_count < 2:
+        # Handle the ground mons
+        if mon['method'] == constants.RADAR:
+            radar_list[zoneID].append(get_pokemon_name(mon['monsNo']))
+            if mon['method_index'] == 0:
+                active_list[1] = mon['monsNo']
+        if mon['method'] in constants.INCENSE_LIST and incense_count < 2:
+            # Once we've found 2 incense mons, we don't need to check for more
+            if mon['method_index'] == 0:
+                incense_count += 1
+                active_list[4] = mon['monsNo']
+            if mon['method_index'] == 1:
+                incense_count += 1
+                active_list[5] = mon['monsNo']
+            # Ignore mon method_index 2 since we are using that for the surfing mons
+
+        # Handle the surf mons
+        if mon['method'] == constants.RADAR and mon['method_index'] == 2:
+            active_surf_list[1] = mon['monsNo']
+        if mon['method'] in constants.INCENSE_LIST and mon['method_index'] == 2 and incense_count == 2:
             incense_count += 1
-            if incense_count == 1:
-                active_list[4] = mon[0]
-            if incense_count == 2:
-                active_list[5] = mon[0]
+            active_surf_list[4] = mon['monsNo']
+
     for mon in original_list:
         if mon == 0:
             continue
@@ -117,8 +140,19 @@ def check_mons_list(pokemon_list, zoneID, final_list):
         if mon not in active_list:
             missing_list.append(pokemon_name)
 
-    unique_radar_list = list(set(radar_list[zoneID]))
-    if len(unique_radar_list) > 1:
+    for mon in original_surf_list:
+        if mon == 0:
+            continue
+        pokemon_name = get_pokemon_name(mon)
+        if mon not in active_surf_list:
+            missing_list.append(pokemon_name)
+
+    unique_ground_radar_list = list(set(radar_list[zoneID][0:1]))
+    if len(unique_ground_radar_list) > 1:
+        print("This route would have pokemon missing", radar_list)
+
+    unique_surf_radar_list = list(set(radar_list[zoneID][2:3]))
+    if len(unique_surf_radar_list) > 1:
         print("This route would have pokemon missing", radar_list)
     unique_list = list(set(missing_list))
     if len(unique_list) > 0:
@@ -241,8 +275,7 @@ def check_egg_moveset(pokemonID):
     egg_groups_list = []
 
     mon_egg_group = getEggGroupViaPokemonId(pokemonID)
-    baby_pokemon_id = evolution_dex[str(pokemonID)]['path'][0]
-    egg_set = get_egg_moves_list(baby_pokemon_id)
+    egg_set = get_egg_moves_list(pokemonID)
     pokemon_name = get_pokemon_name(pokemonID)
     egg_group_names = [getEggGroupNameById(egg_group_id) for egg_group_id in mon_egg_group]
 

@@ -2000,7 +2000,7 @@ Bashful
 Mega Launcher
 
 None
-Water Gun
+Water Sport
 Vise Grip
 Flail
 Aqua Jet
@@ -3782,7 +3782,7 @@ Quirky
 Hustle
 
 None
-Take Down
+Hyper Fang
 Assurance
 Scary Face
 Super Fang
@@ -4754,7 +4754,7 @@ Format: Single Battle
 Blitzle
 30
 Hardy
-Sap Sipper
+Motor Drive
 
 None
 Flame Charge
@@ -4786,7 +4786,7 @@ Format: Single Battle
 Blitzle
 30
 Hardy
-Sap Sipper
+Motor Drive
 
 None
 Flame Charge
@@ -4818,7 +4818,7 @@ Format: Single Battle
 Blitzle
 30
 Hardy
-Sap Sipper
+Motor Drive
 
 None
 Flame Charge
@@ -8832,7 +8832,7 @@ Punk Rock
 None
 Toxic
 Discharge
-Poison Jab
+Sludge Wave
 Overdrive
 25/25/25/25/25/25
 0/0/0/0/0/0
@@ -10423,9 +10423,9 @@ Serious
 Corrosion
 
 None
-Incinerate
-Venoshock
-Dragon Pulse
+Flame Burst
+Sludge Wave
+Flamethrower
 Venom Drench
 25/31/25/25/25/25
 0/0/0/0/0/0
@@ -10468,9 +10468,9 @@ Serious
 Corrosion
 
 None
-Incinerate
-Venoshock
-Dragon Pulse
+Flame Burst
+Sludge Wave
+Flamethrower
 Venom Drench
 25/31/25/25/25/25
 0/0/0/0/0/0
@@ -11937,7 +11937,7 @@ Format: Single Battle
 Zebstrika
 57
 Hardy
-Lightning Rod
+Reckless
 
 None
 Agility
@@ -13017,7 +13017,7 @@ Hydro Pump
 Tirtouga
 59
 Hardy
-Solid Rock
+Swift Swim
 
 None
 Aqua Tail
@@ -15096,7 +15096,7 @@ Format: Single Battle
 Shiftry
 67
 Timid
-Pickpocket
+Chlorophyll
 
 None
 Leaf Storm
@@ -16686,82 +16686,43 @@ Dragon Tamer Darien
 Level Cap:
 Format: Single Battle
 
-Dragapult
+Sceptile
 78
-Serious
-Infiltrator
+Modest
+Unburden
 
-None
-Take Down
-Dragon Rush
-Double-Edge
-Last Resort
-25/25/25/25/25/25
+White Herb
+Energy Ball
+Draco Meteor
+Focus Blast
+Endeavor
+25/31/25/25/25/25
 0/0/0/0/0/0
 
-Dragonite
+Turtonator
 78
-Serious
-Multiscale
+Modest
+Shell Armor
 
-None
-Hyper Beam
-Rain Dance
-Wing Attack
-Hurricane
-25/25/25/25/25/25
+White Herb
+Dragon Pulse
+Scorching Sands
+Flamethrower
+Shell Smash
+25/31/25/25/25/25
 0/0/0/0/0/0
 
-Kingdra
+Gyarados
 78
-Serious
-Sniper
+Jolly
+Moxie
 
 None
-Outrage
-Hydro Pump
-Hyper Beam
-Rain Dance
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Salamence
-78
-Serious
-Intimidate
-
-None
-Double-Edge
-Fly
-Hydro Pump
-Outrage
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Garchomp
-78
-Serious
-Rough Skin
-
-None
+Aqua Tail
+Earthquake
 Iron Head
-Stone Edge
 Outrage
-Extreme Speed
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Goodra
-78
-Serious
-Water Absorb
-
-None
-Muddy Water
-Sludge Wave
-Dragon Rush
-Power Whip
-25/25/25/25/25/25
+25/31/25/25/25/25
 0/0/0/0/0/0
 
 

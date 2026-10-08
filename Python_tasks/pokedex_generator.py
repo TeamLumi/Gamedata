@@ -388,7 +388,7 @@ def export_csv():
     pokedex = []
     evolutions = evolution_pathfinding()
 
-    with open(os.path.join(debug_file_path, "pokedex.csv") , mode='w', newline='') as file:
+    with open(os.path.join(debug_file_path, "pokedex.csv") , mode='w', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
         firstRow = ["Name",
             "PokemonID",

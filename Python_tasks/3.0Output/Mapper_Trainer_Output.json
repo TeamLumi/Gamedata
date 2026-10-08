@@ -3247,7 +3247,7 @@
           "item": null,
           "level": 19,
           "moves": [
-            55,
+            346,
             11,
             175,
             453
@@ -8123,7 +8123,7 @@
           "item": null,
           "level": 25,
           "moves": [
-            36,
+            158,
             372,
             184,
             162
@@ -10915,7 +10915,7 @@
     {
       "team": [
         {
-          "ability": "Sap Sipper",
+          "ability": "Motor Drive",
           "gender": "FEMALE",
           "id": 522,
           "item": null,
@@ -10977,7 +10977,7 @@
     {
       "team": [
         {
-          "ability": "Sap Sipper",
+          "ability": "Motor Drive",
           "gender": "FEMALE",
           "id": 522,
           "item": null,
@@ -11039,7 +11039,7 @@
     {
       "team": [
         {
-          "ability": "Sap Sipper",
+          "ability": "Motor Drive",
           "gender": "FEMALE",
           "id": 522,
           "item": null,
@@ -18873,7 +18873,7 @@
           "moves": [
             92,
             435,
-            398,
+            482,
             786
           ],
           "nature": "Hardy",
@@ -22296,9 +22296,9 @@
           "item": null,
           "level": 49,
           "moves": [
-            510,
-            474,
-            406,
+            481,
+            482,
+            53,
             599
           ],
           "nature": "Serious",
@@ -22384,9 +22384,9 @@
           "item": null,
           "level": 51,
           "moves": [
-            510,
-            474,
-            406,
+            481,
+            482,
+            53,
             599
           ],
           "nature": "Serious",
@@ -23484,7 +23484,7 @@
     {
       "team": [
         {
-          "ability": "Lightning Rod",
+          "ability": "Reckless",
           "gender": "FEMALE",
           "id": 523,
           "item": null,
@@ -25600,7 +25600,7 @@
           "evspeed": 0
         },
         {
-          "ability": "Solid Rock",
+          "ability": "Swift Swim",
           "gender": "FEMALE",
           "id": 564,
           "item": null,
@@ -29070,7 +29070,7 @@
     {
       "team": [
         {
-          "ability": "Pickpocket",
+          "ability": "Chlorophyll",
           "gender": "FEMALE",
           "id": 275,
           "item": null,
@@ -32650,19 +32650,19 @@
     {
       "team": [
         {
-          "ability": "Infiltrator",
-          "gender": "FEMALE",
-          "id": 887,
-          "item": null,
+          "ability": "Unburden",
+          "gender": "MALE",
+          "id": 254,
+          "item": "White Herb",
           "level": 78,
           "moves": [
-            36,
-            407,
-            38,
-            387
+            412,
+            434,
+            411,
+            283
           ],
-          "nature": "Serious",
-          "ivatk": 25,
+          "nature": "Modest",
+          "ivatk": 31,
           "ivdef": 25,
           "ivhp": 25,
           "ivspatk": 25,
@@ -32676,19 +32676,19 @@
           "evspeed": 0
         },
         {
-          "ability": "Multiscale",
-          "gender": "FEMALE",
-          "id": 149,
-          "item": null,
+          "ability": "Shell Armor",
+          "gender": "MALE",
+          "id": 776,
+          "item": "White Herb",
           "level": 78,
           "moves": [
-            63,
-            240,
-            17,
-            542
+            406,
+            815,
+            53,
+            504
           ],
-          "nature": "Serious",
-          "ivatk": 25,
+          "nature": "Modest",
+          "ivatk": 31,
           "ivdef": 25,
           "ivhp": 25,
           "ivspatk": 25,
@@ -32702,97 +32702,19 @@
           "evspeed": 0
         },
         {
-          "ability": "Sniper",
-          "gender": "FEMALE",
-          "id": 230,
+          "ability": "Moxie",
+          "gender": "MALE",
+          "id": 130,
           "item": null,
           "level": 78,
           "moves": [
-            200,
-            56,
-            63,
-            240
-          ],
-          "nature": "Serious",
-          "ivatk": 25,
-          "ivdef": 25,
-          "ivhp": 25,
-          "ivspatk": 25,
-          "ivspdef": 25,
-          "ivspeed": 25,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        },
-        {
-          "ability": "Intimidate",
-          "gender": "FEMALE",
-          "id": 373,
-          "item": null,
-          "level": 78,
-          "moves": [
-            38,
-            19,
-            56,
+            401,
+            89,
+            442,
             200
           ],
-          "nature": "Serious",
-          "ivatk": 25,
-          "ivdef": 25,
-          "ivhp": 25,
-          "ivspatk": 25,
-          "ivspdef": 25,
-          "ivspeed": 25,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        },
-        {
-          "ability": "Rough Skin",
-          "gender": "FEMALE",
-          "id": 445,
-          "item": null,
-          "level": 78,
-          "moves": [
-            442,
-            444,
-            200,
-            245
-          ],
-          "nature": "Serious",
-          "ivatk": 25,
-          "ivdef": 25,
-          "ivhp": 25,
-          "ivspatk": 25,
-          "ivspdef": 25,
-          "ivspeed": 25,
-          "evhp": 0,
-          "evatk": 0,
-          "evdef": 0,
-          "evspatk": 0,
-          "evspdef": 0,
-          "evspeed": 0
-        },
-        {
-          "ability": "Water Absorb",
-          "gender": "FEMALE",
-          "id": 706,
-          "item": null,
-          "level": 78,
-          "moves": [
-            330,
-            482,
-            407,
-            438
-          ],
-          "nature": "Serious",
-          "ivatk": 25,
+          "nature": "Jolly",
+          "ivatk": 31,
           "ivdef": 25,
           "ivhp": 25,
           "ivspatk": 25,

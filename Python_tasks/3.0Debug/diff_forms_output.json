@@ -575,15 +575,15 @@
   ],
   "Mewtwo3": [
     1108,
-    "Mk II Armored Mewtwo",
-    "mk-ii-armored-mewtwo",
+    "γ Armor Mewtwo",
+    "armor-mewtwo",
     "150",
     3
   ],
   "Mewtwo4": [
     1109,
-    "Mk I Armored Mewtwo",
-    "mk-i-armored-mewtwo",
+    "χ Armor Mewtwo",
+    "armor-mewtwo",
     "150",
     4
   ],
@@ -1975,43 +1975,43 @@
   ],
   "Pumpkaboo1": [
     1308,
-    "Small Size Pumpkaboo",
-    "small-size-pumpkaboo",
+    "Medium Variety Pumpkaboo",
+    "medium-variety-pumpkaboo",
     "710",
     1
   ],
   "Pumpkaboo2": [
     1309,
-    "Large Size Pumpkaboo",
-    "large-size-pumpkaboo",
+    "Large Variety Pumpkaboo",
+    "large-variety-pumpkaboo",
     "710",
     2
   ],
   "Pumpkaboo3": [
     1310,
-    "Super Size Pumpkaboo",
-    "super-size-pumpkaboo",
+    "Jumbo Variety Pumpkaboo",
+    "jumbo-variety-pumpkaboo",
     "710",
     3
   ],
   "Gourgeist1": [
     1311,
-    "Small Size Gourgeist",
-    "small-size-gourgeist",
+    "Medium Variety Gourgeist",
+    "medium-variety-gourgeist",
     "711",
     1
   ],
   "Gourgeist2": [
     1312,
-    "Large Size Gourgeist",
-    "large-size-gourgeist",
+    "Large Variety Gourgeist",
+    "large-variety-gourgeist",
     "711",
     2
   ],
   "Gourgeist3": [
     1313,
-    "Super Size Gourgeist",
-    "super-size-gourgeist",
+    "Jumbo Variety Gourgeist",
+    "jumbo-variety-gourgeist",
     "711",
     3
   ],

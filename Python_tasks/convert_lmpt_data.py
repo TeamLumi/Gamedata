@@ -388,7 +388,11 @@ def get_standard_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, m
         if zoneID == constants.TROPHY_GARDEN_ZONE_ID:
             newZoneID = constants.POKEMON_MANSION_ZONE_ID
         new_method = check_for_incense(new_method, method_index)
-        rate = get_route_rate(new_method, method_index, route_rates)
+        try:
+            rate = get_route_rate(new_method, method_index, route_rates)
+        except IndexError as e:
+            print(f"Error: Invalid method or index for {monsName} and {zoneName}. Method: {new_method}, Index: {method_index}")
+            raise e
         encounter_list_order = {
             "routeName": zoneName,
             "pokemonName": monsName,
@@ -485,7 +489,7 @@ def update_mons_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, me
     '''
     if monsNo == 0:
         return
-    if monsNo < constants.ENCOUNTER_TABLE_MAX_BUFFER:
+    if monsNo < 2**16:
         get_standard_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, method_index, mons_no_or_zoneId)
     else:
         get_diff_form_rates(monsNo, maxlevel, minlevel, zoneID, encounters, method, method_index, mons_no_or_zoneId)
@@ -634,14 +638,18 @@ def getEncounterData(mons_no_or_zoneId = "mons_no"):
             get_encounter_rates(area[method], method, zoneID, rates_list, mons_no_or_zoneId)
             for method_index, mon in enumerate(area[method]):
                 monsNo = mon['monsNo']
-                check_mon_route_list.append([monsNo, method, method_index, zoneID])
+                check_mon_route_list.append({
+                    'monsNo': monsNo,
+                    'method': method,
+                    'method_index': method_index,
+                    'zoneID': zoneID
+                })
                 update_routes_with_mons(monsNo, zoneID, encounter_list)
         check, unique_list = check_mons_list(check_mon_route_list, zoneID, final_list)
         if check != -1:
             final_list[zoneID] = unique_list
 
     if constants.GAME_MODE == constants.GAME_MODE_2:
-        print
         ##This is for adding the Trophy Garden daily mons
         for mon in encounter_data[constants.TROPHY_GARDEN_NAME]:
             monsNo = mon['monsNo']
