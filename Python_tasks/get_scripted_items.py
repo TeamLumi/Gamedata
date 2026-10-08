@@ -17,15 +17,156 @@ parameter_regex = r'\([^,]*,\s*(.*?)\)'
 item_data = {}
 
 special_cases = {
-    'ev_d26r0104_item_event_ok': 1,
-    'ev_turearuki_poke_item_get': 0,
+    'ev_d26r0104_item_event_ok': [
+        {'id': 1, 'quantity': 1, 'label_name': 'ev_d26r0104_item_event_ok'},
+    ],
+    'ev_turearuki_poke_item_get': [{'id': 0, 'quantity': 1, 'label_name': 'ev_turearuki_poke_item_get'}],
     'ev_tower_gate_talk_prize_get': [],
     'ev_tower_gate_return_prize_get': [],
     'ev_tower_gate_prize_get': [],
     'ev_tower_gate_prize_get_10_loop': [],
     'ev_tower_gate_prize_get_20': [],
-    'ev_d01r0102_leader_01_stone': [80, 81, 82, 83, 84, 85, 849],
-    'ev_r221r0101_item_add': [149, 150, 151, 152, 153, 154, 155, 156, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 157, 158, 169, 170, 171, 172, 173, 174]
+    'ev_d01r0102_leader_01_stone': [
+        {'id': 80, 'quantity': 1, 'label_name': 'ev_d01r0102_leader_01_stone'},
+        {'id': 81, 'quantity': 1, 'label_name': 'ev_d01r0102_leader_01_stone'},
+        {'id': 82, 'quantity': 1, 'label_name': 'ev_d01r0102_leader_01_stone'},
+        {'id': 83, 'quantity': 1, 'label_name': 'ev_d01r0102_leader_01_stone'},
+        {'id': 84, 'quantity': 1, 'label_name': 'ev_d01r0102_leader_01_stone'},
+        {'id': 85, 'quantity': 1, 'label_name': 'ev_d01r0102_leader_01_stone'},
+        {'id': 849, 'quantity': 1, 'label_name': 'ev_d01r0102_leader_01_stone'}
+    ],
+    'ev_r221r0101_item_add': [
+        {
+            "id": 149,
+            'quantity': 1,
+            'label_name': "ev_r221r0101_item_add"
+        },
+        {
+            "id": 150,
+            'quantity': 1,
+            'label_name': "ev_r221r0101_item_add"
+        },
+        {
+            "id": 151,
+            'quantity': 1,
+            'label_name': "ev_r221r0101_item_add"
+        },
+        {
+            "id": 152,
+            'quantity': 1,
+            'label_name': "ev_r221r0101_item_add"
+        },
+        {
+            "id": 153,
+            'quantity': 1,
+            'label_name': "ev_r221r0101_item_add"
+        },
+        {
+            "id": 154,
+            'quantity': 1,
+            'label_name': "ev_r221r0101_item_add"
+        },
+        {
+            "id": 155,
+            'quantity': 1,
+            'label_name': "ev_r221r0101_item_add"
+        },
+        {
+            "id": 156,
+            'quantity': 1,
+            'label_name': "ev_r221r0101_item_add"
+        },
+        {
+            "id": 159,
+            'quantity': 1,
+            'label_name': "ev_r221r0101_item_add"
+        },
+        {
+            "id": 160,
+            'quantity': 1,
+            'label_name': "ev_r221r0101_item_add"
+        },
+        {
+            "id": 161,
+            'quantity': 1,
+            'label_name': "ev_r221r0101_item_add"
+        },
+        {
+            "id": 162,
+            'quantity': 1,
+            'label_name': "ev_r221r0101_item_add"
+        },
+        {
+            "id": 163,
+            'quantity': 1,
+            'label_name': "ev_r221r0101_item_add"
+        },
+        {
+            "id": 164,
+            'quantity': 1,
+            'label_name': "ev_r221r0101_item_add"
+        },
+        {
+            "id": 165,
+            'quantity': 1,
+            'label_name': "ev_r221r0101_item_add"
+        },
+        {
+            "id": 166,
+            'quantity': 1,
+            'label_name': "ev_r221r0101_item_add"
+        },
+        {
+            "id": 167,
+            'quantity': 1,
+            'label_name': "ev_r221r0101_item_add"
+        },
+        {
+            "id": 168,
+            'quantity': 1,
+            'label_name': "ev_r221r0101_item_add"
+        },
+        {
+            "id": 157,
+            'quantity': 1,
+            'label_name': "ev_r221r0101_item_add"
+        },
+        {
+            "id": 158,
+            'quantity': 1,
+            'label_name': "ev_r221r0101_item_add"
+        },
+        {
+            "id": 169,
+            'quantity': 1,
+            'label_name': "ev_r221r0101_item_add"
+        },
+        {
+            "id": 170,
+            'quantity': 1,
+            'label_name': "ev_r221r0101_item_add"
+        },
+        {
+            "id": 171,
+            'quantity': 1,
+            'label_name': "ev_r221r0101_item_add"
+        },
+        {
+            "id": 172,
+            'quantity': 1,
+            'label_name': "ev_r221r0101_item_add"
+        },
+        {
+            "id": 173,
+            'quantity': 1,
+            'label_name': "ev_r221r0101_item_add"
+        },
+        {
+            "id": 174,
+            'quantity': 1,
+            'label_name': "ev_r221r0101_item_add"
+        }
+    ]
 }
 
 ldval_map = {
@@ -34,30 +175,59 @@ ldval_map = {
     'ev_c01r0201_kuji_no_2': '_LDVAL(@SCWK_PARAM3,',
     'ev_c01r0201_kuji_no_1': '_LDVAL(@SCWK_PARAM3,',
     'ev_c01r0201_kuji_no_0': '_LDVAL(@SCWK_PARAM3,',
-    'common_vm_03': '_LDVAL(@SCWK_PARAM1,',
-    'ev_c10r0101_tm_handler_common_no_flag': '_LDVAL(@SCWK_TEMP0,',
-    'ev_c10r0101_tm_handler_common': '_LDVAL(@SCWK_TEMP0,',
-    'ev_c01r0201_kuji_item_get_chk': '_LDWK(@SCWK_TEMP0,',
-    'ev_turearuki_poke_item_get': '_LDVAL(@SCWK_TEMP0,',
-    'ev_tower_gate_prize_get_common': '_LDWK(@SCWK_TEMP0,',
-    'r209_fishing1_yes': '_LDVAL(@SCWK_TEMP0,',
-    'r218r0101_fishing_yes': '_LDVAL(@SCWK_TEMP0,',
-    'ev_item_fanatic_give_item': '_LDVAL(@SCWK_TEMP0,',
-    'ev_item_fanatic_give_item_two': '_LDVAL(@SCWK_TEMP0,'
+    'common_vm_03': '_LDVAL(@SCWK_PARAM1,'
 }
 
-def get_indices(file_lines, command):
-    return [index for index, value in enumerate(file_lines) if value == command]
+def get_indices(file_lines, pattern):
+    return [
+        index
+        for index, value in enumerate(file_lines)
+        if re.search(pattern, value)
+    ]
 
 def remove_after_semicolon(input_string):
     result_string = input_string.split(';')[0]
     return result_string.strip()
 
-def find_jumped_value(function_name, file_lines, ldval_command):
-    indices = get_indices(file_lines, f"_JUMP('{function_name[:-1]}')")
+def extract_label_ldval(label_name, file_lines):
+    label_index = next(
+        (
+            index
+            for index, value in enumerate(file_lines)
+            if value == f'{label_name}:'
+        ),
+        None
+    )
+    if label_index is None:
+        return None
+
+    for value in file_lines[label_index + 1:]:
+        if value.endswith(':'):
+            break
+        match = re.search(r'_LDVAL\([^,]+,\s*(\d+)\)', value)
+        if match:
+            return int(match.group(1))
+
+    return None
+
+def find_jumped_value(function_name, file_lines, ldval_command, room_name):
     item_ids = []
+    indices = get_indices(
+        file_lines,
+        rf"_JUMP\(\s*['\"]{re.escape(function_name[:-1])}['\"]\s*\)"
+    )
+
     if len(indices) == 0:
-        indices = get_indices(file_lines, f"_CALL('{function_name[:-1]}')")
+        indices = get_indices(
+            file_lines,
+            rf"_CALL\(\s*['\"]{re.escape(function_name[:-1])}['\"]\s*\)"
+        )
+
+    if len(indices) == 0:
+        indices = get_indices(
+            file_lines,
+            rf"_CASE_JUMP\(\s*[^,]+,\s*['\"]{re.escape(function_name[:-1])}['\"]\s*\)"
+        )
     if len(indices) == 0:
         if function_name[:-1] in special_cases.keys():
             return special_cases[function_name[:-1]]
@@ -69,8 +239,8 @@ def find_jumped_value(function_name, file_lines, ldval_command):
             ldval_map_command = ldval_map[file_lines[command_start_index][:-1]]
         else:
             ldval_map_command = ldval_command
-        print(file_lines[command_start_index][:-1])
-        item_ids.append(extract_item_id(command_start_index, index, file_lines, ldval_map_command))
+        print(f"Finding jumped value for label: {file_lines[command_start_index][:-1]} with ldval command: {ldval_map_command}")
+        item_ids.append(extract_item_id(command_start_index, index, file_lines, room_name))
     return item_ids
 
 def get_normal_item_id(item_id_command):
@@ -79,23 +249,53 @@ def get_normal_item_id(item_id_command):
         return int(match.group())
     raise Exception(item_id_command)
 
-def extract_item_id(command_start_index, ldval_index, file_lines, ldval_command):
+def extract_item_id(command_start_index, ldval_index, file_lines, room_name):
+    print(f"Extracting item id for label: {file_lines[command_start_index][:-1]} in room: {room_name}")
     item_ids = []
     extracted_lines = file_lines[command_start_index:ldval_index + 1]
-    item_id_commands = [remove_after_semicolon(value) for index, value in enumerate(extracted_lines) if value.startswith(ldval_command)]
-    if extracted_lines[0][:-1] in special_cases.keys():
-        return special_cases[extracted_lines[0][:-1]]
+    label_name = extracted_lines[0][:-1]
+    # Remove anything after a semicolon in the extracted lines
+    item_id_commands = [remove_after_semicolon(value) for index, value in enumerate(extracted_lines) if value.startswith("_LDVAL(@SCWK_TEMP0") or value.startswith("_LDWK(@SCWK_TEMP0")]
+    item_quantity_commands = [remove_after_semicolon(value) for index, value in enumerate(extracted_lines) if value.startswith("_LDVAL(@SCWK_TEMP1") or value.startswith("_LDWK(@SCWK_TEMP1")]
+    if label_name in special_cases.keys():
+        return special_cases[label_name]
     if len(item_id_commands) == 0:
-        ldval_map_command = ldval_map[extracted_lines[0][:-1]]
-        item_ids.append(find_jumped_value(extracted_lines[0], file_lines, ldval_map_command))
-    for item_id_command in item_id_commands:
+        direct_item_id = extract_label_ldval(label_name, file_lines)
+        print(f"Direct item id for label: {label_name} in room: {room_name} is: {direct_item_id}")
+        if direct_item_id is not None:
+            return [{
+                'id': direct_item_id,
+                'quantity': 1,
+                'label_name': label_name
+            }]
+
+        ldval_map_command = ldval_map[label_name] if label_name in ldval_map.keys() else None
+        print(f"Finding jumped value for label: {label_name} with ldval command: {ldval_map_command}")
+        item_ids.append({
+            'id': find_jumped_value(extracted_lines[0], file_lines, ldval_map_command, room_name),
+            'quantity': 1,
+            'label_name': label_name
+        })
+    for index, item_id_command in enumerate(item_id_commands):
+        item_qty = item_quantity_commands[index] if index < len(item_quantity_commands) else 1
+        print(f"Extracting item id for label: {label_name} in room: {room_name} with command: {item_id_command} and quantity command: {item_qty}")
+        item_qty_value = re.search(parameter_regex, item_qty).group(1) if item_qty != 1 else 1
         counted_chars = item_id_command.count('@')
         if counted_chars == 1:
-            item_ids.append(get_normal_item_id(item_id_command))
+            item_ids.append({
+                'id': get_normal_item_id(item_id_command),
+                'quantity': int(item_qty_value),
+                'label_name': label_name
+            })
         elif counted_chars == 2:
             work_value = re.search(parameter_regex, item_id_command).group(1)
+            print(f"Finding jumped value for label: {label_name} with work value: {work_value}")
             ldval_command = f"_LDVAL({work_value},"
-            item_ids.append(find_jumped_value(extracted_lines[0], file_lines, ldval_command))
+            item_ids.append({
+                'id': find_jumped_value(extracted_lines[0], file_lines, ldval_command, room_name),
+                'quantity': int(item_qty_value),
+                'label_name': label_name
+            })
         else:
             print('Whoops')
 
@@ -112,7 +312,9 @@ def find_item_id(file_lines, room_name):
     item_event_keyword_indices = [index for index, value in enumerate(file_lines) if value == item_event_keyword]
     for ldval_index in item_event_keyword_indices:
         command_start_index = find_closest_previous_index(file_lines, ldval_index, ':')
-        item_ids.append(extract_item_id(command_start_index, ldval_index, file_lines, '_LDVAL(@SCWK_TEMP0'))
+        new_item_ids = extract_item_id(command_start_index, ldval_index, file_lines, room_name)
+        print(f"Found item ids for room {room_name}: {new_item_ids}")
+        item_ids.extend(new_item_ids)
     return item_ids
 
 for filename in filenames:
