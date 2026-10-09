@@ -27,8 +27,8 @@ ev_c10pc0101_fix_shop:
 	_TALK_OBJ_END()
 	_END()
 ev_c10pc0101_veteran:
-	_EASY_OBJ_MSG('dp_scenario3%18-msg_c10pc0101_veteran_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c10pc0101', '18-msg_c10pc0101_veteran_01', 'Victory Road... It lives up to that lofty name.')
 	_END()
 ev_c10pc0101_woman:
-	_EASY_OBJ_MSG('dp_scenario3%18-msg_c10pc0101_woman3_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c10pc0101', '18-msg_c10pc0101_woman3_01', 'It broke me once—but that only added to\nmy resolve!')
 	_END()

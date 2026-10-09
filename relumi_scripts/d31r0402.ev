@@ -1,0 +1,19 @@
+ev_d31r0402_hallway_comanm_guide_in_out:
+	_EVENT_START()
+	_OBJ_ANIME('D31R0401_SD_GUIDE', 'anm_sd_guide_hallway_01')
+	_OBJ_ANIME('HERO', 'anm_player_hallway_01')
+	_OBJ_ANIME_WAIT()
+	_MAP_CHANGE('D31R0403', 0)
+	_END()
+
+anm_sd_guide_hallway_01:
+	_AC_DIR_D(4)
+	_AC_UP(7, 8)
+	_AC_INVISIBLE_ON()
+	_ACMD_END()
+
+anm_player_hallway_01:
+	_AC_WAIT(4)
+	_AC_UP(9, 8)
+	_AC_INVISIBLE_ON()
+	_ACMD_END()

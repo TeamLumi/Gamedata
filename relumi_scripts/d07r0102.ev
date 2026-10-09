@@ -3,7 +3,7 @@ ev_d07r0102_flag_change:
 	_END()
 ev_d07r0102_board:
 	_TALK_OBJ_START()
-	_TALKMSG('dp_scenario2%72-msg_d07r0102_01')
+	_MACRO_TALKMSG('dialogue_d07r0102', '72-msg_d07r0102_01', 'TOP RIGHT\rLOWER LEFT\rTOP RIGHT\rTOP LEFT\rTOP LEFT\rLOWER LEFT', 0, 2)
 	_TALK_CLOSE()
 	_TALK_END()
 	_END()

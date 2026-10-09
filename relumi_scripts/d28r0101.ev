@@ -40,21 +40,21 @@ ev_d28r0101_flag_change_pos2:
 	_END()
 ev_d28r0101_gingama:
 	_TALK_OBJ_START()
-	_TALKMSG('dp_scenario2%151-msg_d28r0101_gingama_01_1')
-	_TALKMSG('dp_scenario2%151-msg_d28r0101_gingama_01_2', 1)
+	_MACRO_TALKMSG('dialogue_d28r0101', '151-msg_d28r0101_gingama_01_1', 'What do you want?\rAre you one of those nitwits we fooled into\nguarding the entrance?')
+	_MACRO_TALKMSG('dialogue_d28r0101', '151-msg_d28r0101_gingama_01_2', 'Bah, it doesn’t matter who you are. It’s too late\nto make a difference. Things are going to get\freally interesting now.\rAll the legendary Pokémon are going to be\nbrought to our HQ in Veilstone City.', 1)
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_d28r0101_gingamb:
-	_EASY_OBJ_MSG('dp_scenario2%151-msg_d28r0101_gingamb_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_d28r0101', '151-msg_d28r0101_gingamb_01', 'Even Team Galactic has no use for Magikarp!\nWorthless, all of them!')
 	_END()
 ev_d28r0101_gingamc:
-	_EASY_OBJ_MSG('dp_scenario2%151-msg_d28r0101_gingamc_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_d28r0101', '151-msg_d28r0101_gingamc_01', 'Hahaha!\nNext stop, Lake Verity!\rThe closest thing to civilization out there is that\nhick town, Twinleaf! We can roll in there\fcompletely unopposed!')
 	_END()
 ev_d28r0101_koiking:
 	_TALK_OBJ_START_TURN_NOT()
 	_VOICE_PLAY(129, 0, 0)
-	_TALKMSG('dp_scenario2%151-msg_d28r0101_koiking_01', 1)
+	_MACRO_TALKMSG('dialogue_d28r0101', '151-msg_d28r0101_koiking_01', 'A Magikarp is weakly flopping about...', 1)
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()

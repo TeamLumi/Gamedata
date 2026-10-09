@@ -1,11 +1,11 @@
 ev_r210b_fighter:
-	_MACRO_EASY_OBJ_MSG('dp_scenario2', '77-msg_r210b_fighter_01', 'These mountains used to be so foggy\nthat it was difficult to see.\rPokémon would frequently miss their\nattacks in battle, too.\rI’m so thankful that the fog seems\nto have disappeared!')
+	_MACRO_EASY_OBJ_MSG('dialogue_r210b', '77-msg_r210b_fighter_01', 'These mountains used to be so foggy\nthat it was difficult to see.\rPokémon would frequently miss their\nattacks in battle, too.\rI’m so thankful that the fog seems\nto have disappeared!')
 	_END()
 ev_r210b_sign1:
-	_EASY_BOARD_MSG('dp_scenario2%77-msg_r210b_sign1_01', 'BOARD_TYPE_ROAD', 0, 2)
+	_EASY_BOARD_MSG('dialogue_r210b%77-msg_r210b_sign1_01', 'BOARD_TYPE_ROAD', 0, 2)
 	_END()
 ev_r210b_sign2:
-	_EASY_BOARD_MSG('dp_scenario2%77-msg_r210b_sign2_01', 'BOARD_TYPE_POST', 0)
+	_EASY_BOARD_MSG('dialogue_r210b%77-msg_r210b_sign2_01', 'BOARD_TYPE_POST', 0)
 	_END()
 pos_r210b_support_trigger:
 	_TALK_OBJ_START()
@@ -26,7 +26,7 @@ pos_r210b_support_trigger:
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_r210b_lucas_talk')
 ev_r210b_lucas_talk:
 	_PLAYER_NAME(0)
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_r210b_support_m_1', 'Hi, {0}.\nI’m surprised to see you here.\rI was searching for some Pokémon\nto fill up my Pokédex.\rThere’s lots of rare Pokémon here.\nEven some Dragon-types. Cool, right?\rOh, your Pokémon look a bit hurt.\nLet me heal them for you.')
+	_MACRO_TALK_KEYWAIT('dialogue_r210b', '00_msg_r210b_support_m_1', 'Hi, {0}.\nI’m surprised to see you here.\rI was searching for some Pokémon\nto fill up my Pokédex.\rThere’s lots of rare Pokémon here.\nEven some Dragon-types. Cool, right?\rOh, your Pokémon look a bit hurt.\nLet me heal them for you.')
 	_TALK_CLOSE()
 	_BLACK_OUT('SCR_WIPE_DIV', 3)
 	_FADE_WAIT()
@@ -36,7 +36,7 @@ ev_r210b_lucas_talk:
 	_BLACK_IN('SCR_WIPE_DIV', 3)
 	_FADE_WAIT()
 	_PLAYER_NAME(0)
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_r210b_support_m_2', 'I last saw you in Veilstone City,\nwhen we battled those Team Galactic\fgoons who stole my Pokédex.\rI was frustrated that ever happened,\nso I’ve been trying to get stronger\fto protect myself and my Pokémon.\r{0}, let me battle you with the\nskills we’ve learnt from our training!')
+	_MACRO_TALK_KEYWAIT('dialogue_r210b', '00_msg_r210b_support_m_2', 'I last saw you in Veilstone City,\nwhen we battled those Team Galactic\fgoons who stole my Pokédex.\rI was frustrated that ever happened,\nso I’ve been trying to get stronger.\r{0,1,0,0}, let me battle you with the\nskills we’ve learnt from our training!')
 	_TALK_CLOSE()
 	_CALL('ev_r210b_support_battle')
 	_CALL('ev_set_trainer_id_for_current_gamemode_scripted_battle')
@@ -44,12 +44,12 @@ ev_r210b_lucas_talk:
 	_OBJ_ANIME('R210B_SUPPORT', 'anm_r210b_support_action_13')
 	_OBJ_ANIME_WAIT()
 	_PLAYER_NAME(0)
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_r210b_support_m_3', 'Thanks for the battle, {0}.\nYou’ve grown very strong, too.\rI may have lost, but I still think that\nbattle was worthwhile for pushing us\fforward.\rI need to keep investigating the rare\nPokémon around here, so I’ll see you\faround!')
+	_MACRO_TALK_KEYWAIT('dialogue_r210b', '00_msg_r210b_support_m_3', 'Thanks for the battle, {0}.\nYou’ve grown very strong, too.\rI may have lost, but I still think that\nbattle was worthwhile for pushing us\fforward.\rI need to keep investigating the rare\nPokémon around here, so I’ll see you\faround!')
 	_TALK_CLOSE()
 	_JUMP('ev_r210b_support_move_away')
 ev_r210b_dawn_talk:
 	_PLAYER_NAME(0)
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_r210b_support_f_1', 'Hi, {0}!\nI didn’t expect to bump into you!\rI was exploring around this area\nto get some entries in my Pokédex.\rThere’s lots of rare Pokémon here.\nThere’s even a few Dragon-types!\fIt’s pretty incredible, right?\rOh, how are your Pokémon doing?\nLet me heal them for you!')
+	_MACRO_TALK_KEYWAIT('dialogue_r210b', '00_msg_r210b_support_f_1', 'Hi, {0}!\nI didn’t expect to bump into you!\rI was exploring around this area\nto get some entries in my Pokédex.\rThere’s lots of rare Pokémon here.\nThere’s even a few Dragon-types!\fIt’s pretty incredible, right?\rOh, how are your Pokémon doing?\nLet me heal them for you!')
 	_TALK_CLOSE()
 	_BLACK_OUT('SCR_WIPE_DIV', 3)
 	_FADE_WAIT()
@@ -59,7 +59,7 @@ ev_r210b_dawn_talk:
 	_BLACK_IN('SCR_WIPE_DIV', 3)
 	_FADE_WAIT()
 	_PLAYER_NAME(0)
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_r210b_support_f_2', 'When did I last see you?\nIt was when we met at Veilstone City...\rThat was when those Team Galactic\ngoons stole my Pokédex from me...\rHonestly, that ordeal was upsetting.\nSo I’ve been trying to get stronger.\fWhile still filling the Pokédex, of course!\rIn fact, {0}, why don’t I just show\nyou how much stronger I’ve gotten?\rDon’t be too surprised when I win\nour battle!')
+	_MACRO_TALK_KEYWAIT('dialogue_r210b', '00_msg_r210b_support_f_2', 'When did I last see you?\nIt was when we met at Veilstone City...\rThat was when those Team Galactic\ngoons stole my Pokédex from me...\rHonestly, that ordeal was upsetting.\nSo I’ve been trying to get stronger.\fWhile still filling the Pokédex, of course!\rIn fact, {0}, why don’t I just show\nyou how much stronger I’ve gotten?\rDon’t be too surprised when I win\nour battle!')
 	_TALK_CLOSE()
 	_CALL('ev_r210b_support_battle')
 	_CALL('ev_set_trainer_id_for_current_gamemode_scripted_battle')
@@ -67,7 +67,7 @@ ev_r210b_dawn_talk:
 	_OBJ_ANIME('R210B_SUPPORT', 'anm_r210b_support_action_13')
 	_OBJ_ANIME_WAIT()
 	_PLAYER_NAME(0)
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_r210b_support_f_3', 'That was a good battle, {0}.\nYou’ve gotten stronger, too!\rEven though I lost, I feel like I’ve\ngotten so much stronger than before.\rAnyway, I’m going to keep exploring\nto fill up the pages in my Pokédex.\rSee you another time!')
+	_MACRO_TALK_KEYWAIT('dialogue_r210b', '00_msg_r210b_support_f_3', 'That was a good battle, {0}.\nYou’ve gotten stronger, too!\rEven though I lost, I feel like I’ve\ngotten so much stronger than before.\rAnyway, I’m going to keep exploring\nto fill up the pages in my Pokédex.\rSee you another time!')
 	_TALK_CLOSE()
 	_JUMP('ev_r210b_support_move_away')
 ev_r210b_support_move_away:
@@ -229,7 +229,7 @@ anm_r210b_support_action_13:
 	_ACMD_END()
 ev_r210b_healer:
 	_TALK_OBJ_START()
-	_MACRO_TALKMSG('dp_scenario3', '00_msg_r210b_healer_3', 'Hello! Let’s get you all fixed up!\nJust leave it to me!')
+	_MACRO_TALKMSG('dialogue_r210b', '00_msg_r210b_healer_3', 'Hello! Let’s get you all fixed up!\nJust leave it to me!')
 	_TALK_CLOSE()
 	_BLACK_OUT('SCR_WIPE_DIV', 3)
 	_FADE_WAIT()
@@ -238,7 +238,7 @@ ev_r210b_healer:
 	_PC_KAIFUKU()
 	_BLACK_IN('SCR_WIPE_DIV', 3)
 	_FADE_WAIT()
-	_MACRO_TALKMSG('dp_scenario3', '00_msg_r210b_healer_4', 'Now you’re ready to keep exploring!\nFeel free to come back anytime.')
+	_MACRO_TALKMSG('dialogue_r210b', '00_msg_r210b_healer_4', 'Now you’re ready to keep exploring!\nFeel free to come back anytime.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
@@ -248,7 +248,7 @@ ev_r210b_latias:
 	_CALL('ev_r210b_latias_movement')
 	_OBJ_DEL('R210B_LATIAS')
 	_FLAG_SET(#2846)
-	_MACRO_TALKMSG('dp_scenario3', '00_msg_r210b_latias_runaway', 'Latias ran away...')
+	_MACRO_TALKMSG('dialogue_r210b', '00_msg_r210b_latias_runaway', 'Latias ran away...')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
@@ -288,7 +288,7 @@ ev_r210b_latias_4:
 	_OBJ_ANIME_WAIT()
 	_RET()
 ev_r210b_latias_5:
-	_MACRO_TALKMSG('dp_scenario3', '00_msg_r210b_latias_5', 'Dir 5')
+	_MACRO_TALKMSG('dialogue_r210b', '00_msg_r210b_latias_5', 'Dir 5')
 	_RET()
 ev_r210b_latias_6:
 	_OBJ_ANIME('R210B_LATIAS', 'anm_lati_runaway_6')

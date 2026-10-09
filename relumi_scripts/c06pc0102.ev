@@ -1,3 +1,3 @@
 ev_c06pc0102_artist:
-	_EASY_OBJ_MSG('dp_scenario2%122-msg_c06pc0102_artist_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c06pc0102', '122-msg_c06pc0102_artist_01', 'I derive so much pleasure from record mixing\nwith others...\rIt shows me that I’m not alone. It heartens me\na great deal.')
 	_END()

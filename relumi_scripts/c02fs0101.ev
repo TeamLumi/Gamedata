@@ -17,7 +17,7 @@ ev_c02fs0101_shop_re:
 	_JUMP('ev_c02fs0101_shop_end')
 	_END()
 ev_c02fs0101_shop_sonohoka:
-	_TALKMSG('dp_scenario1%28-mes_shop_01_03')
+	_MACRO_TALKMSG('dialogue_c02fs0101', '28-mes_shop_01_03', 'Is there anything else I can do for you?')
 	_RET()
 ev_c02fs0101_shop_buy:
 	_LDVAL(@LOCALWORK3, 1)
@@ -69,7 +69,7 @@ ev_c02fs0101_gorggeousw:
 	_TALK_OBJ_START()
 	_LDVAL(@SCWK_TEMP0, 24)
 	_ITEM_NAME(0, @SCWK_TEMP0, 1)
-	_TALKMSG('dp_scenario2%162-msg_c02fs0101_gorggeousw_01')
+	_MACRO_TALKMSG('dialogue_c02fs0101', '162-msg_c02fs0101_gorggeousw_01', 'A Poké Ball that makes it easy to catch the same\nkinds of Pokémon... Well, that’s the Repeat Ball!')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
@@ -77,7 +77,7 @@ ev_c02fs0101_middlewoman1:
 	_TALK_OBJ_START()
 	_LDVAL(@SCWK_TEMP0, 57)
 	_ITEM_NAME(0, @SCWK_TEMP0, 1)
-	_TALKMSG('dp_scenario2%162-msg_c02fs0101_middlewoman1_01')
+	_MACRO_TALKMSG('dialogue_c02fs0101', '162-msg_c02fs0101_middlewoman1_01', 'I wonder what I should buy for an outing to\nIron Island?')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()

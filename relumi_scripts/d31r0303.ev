@@ -1,0 +1,53 @@
+ev_d31r0303_flag_change:
+	_FLAG_SET(#FH_01)
+	_FLAG_SET(#FH_02)
+	_FLAG_SET(#FH_03)
+	_FLAG_SET(#FH_04)
+	_FLAG_SET(#FH_05)
+	_FLAG_SET(#FH_06)
+	_FLAG_SET(#FH_07)
+	_FLAG_SET(#FH_08)
+	_FLAG_SET(#FH_09)
+	;_FLAG_SET(#FH_10)
+	_END()
+
+ev_ftr_hall_stage_argenta_silver_01:
+	;_FLAG_RESET(#FH_10)
+	_TALK_OBJ_START_LOOK_NONE()
+	_OBJ_POS_CHANGE_WORLD('HALL_PLAYER_10_01', 13, 1.500000, 0)
+	_OBJ_ADD('HALL_PLAYER_10_01')
+	_OBJ_ANIME('HALL_PLAYER_10_01', 'anm_hall_argenta_walkway_in')
+	_OBJ_ANIME_WAIT()
+	_OBJ_ANIME('HALL_PLAYER_10_01', 'anm_hall_argenta_taunt')
+	_OBJ_ANIME_WAIT()
+	_MACRO_TALKMSG('dialogue_d31r0303', 'ftr_hall_stage_argenta_dialogue_silver_pre', 'My Battle Hall allows Trainers to mount\nchallenges with their one favorite Pokémon.\rI imagine there were tense moments getting\nhere with your chosen one.\rBut understand that one shines the brightest\nwhen a challenge is overcome.\rI am Argenta, and I am your final and most\ndaunting challenge.\rI dare you to overcome my challenge.')
+	_TALK_CLOSE()
+	_OBJ_ANIME('HALL_PLAYER_10_01', 'anm_hall_argenta_return')
+	_OBJ_ANIME_WAIT()
+	_JUMP('ev_ftr_hall_stage_argenta_btl_common')
+	_END()
+
+ev_ftr_hall_stage_argenta_btl_common:
+	_TALK_OBJ_END()
+	_END()
+
+anm_hall_argenta_walkway_in:
+	_AC_DOWN(14, 8)
+	_AC_DIR_R(4)
+	_AC_RIGHT(3, 8)
+	_AC_DIR_L(4)
+	_ACMD_END()
+
+anm_hall_argenta_taunt:
+	_AC_LEFT(5, 8)
+	_ACMD_END()
+
+anm_hall_argenta_return:
+	_AC_DIR_R(4)
+	_AC_RIGHT(5, 8)
+	_AC_DIR_L(4)
+	_ACMD_END()
+
+anm_hall_argenta_battle_in: 
+	_AC_LEFT(1,8)
+	_ACMD_END()

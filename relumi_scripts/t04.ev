@@ -12,29 +12,29 @@ ev_t04_delete_lucian:
 ev_t04_delete_lucian_ret:
 	_RET()
 ev_t04_farmer1:
-	_EASY_OBJ_MSG('dp_scenario2%63-msg_t04_farmer_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_t04', '63-msg_t04_farmer_01', 'Breathing in this refreshing air...\rIt even perks up Pokémon! That’s why I’m\nout here.')
 	_END()
 ev_t04_cowgirl1:
 	_TALK_OBJ_START()
 	_SYS_FLAG_BADGE_GET($BADGE_ID_C06, @246)
 	_IFVAL_JUMP(@246, 'EQ', 1, 'ev_t04_cowgirl1_02')
-	_TALKMSG('dp_scenario2%63-msg_t04_cowgirl_01')
+	_MACRO_TALKMSG('dialogue_t04', '63-msg_t04_cowgirl_01', 'Howdy, traveling Trainer. There’s no Gym in this\ntown. You’ll be wanting Veilstone or Pastoria.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_t04_cowgirl1_02:
-	_TALKMSG('dp_scenario2%63-msg_t04_cowgirl_02')
+	_MACRO_TALKMSG('dialogue_t04', '63-msg_t04_cowgirl_02', 'Howdy, traveling Trainer. Take it easy, slow,\nand casual.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_t04_babygirl1:
-	_EASY_OBJ_MSG('dp_scenario2%63-msg_t04_babygirl1_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_t04', '63-msg_t04_babygirl1_01', 'When I grow up, I want to work for the\nPokémon Nursery!')
 	_END()
 ev_t04_woman3:
-	_EASY_OBJ_MSG('dp_scenario2%63-msg_t04_woman3_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_t04', '63-msg_t04_woman3_01', 'Every Sunday, I visit the Lost Tower...')
 	_END()
 ev_t04_sportsman:
-	_EASY_OBJ_MSG('dp_scenario2%63-msg_t04_sportsman_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_t04', '63-msg_t04_sportsman_01', 'There used to be nothing here but a road that\nwent straight through.\rOver time, Pokémon and people just gathered,\nand the town came to be.')
 	_END()
 ev_t04_explore:
 	_TALK_OBJ_START()
@@ -42,48 +42,34 @@ ev_t04_explore:
 	_IFVAL_JUMP(@246, 'EQ', 1, 'ev_t04_explore_03')
 	_SHINOU_ZUKAN_SEE_NUM(@246)
 	_IFVAL_JUMP(@246, 'LT', 50, 'ev_t04_explore_01')
-	_TALKMSG('dp_scenario2%63-msg_t04_explore_02_1')
-	_TALKMSG('dp_scenario2%63-msg_t04_explore_02_2')
+	_MACRO_TALKMSG('dialogue_t04', '63-msg_t04_explore_02_1', 'Your encounters with Pokémon can be\nconsidered your shared history.')
+	_MACRO_TALKMSG('dialogue_t04', '63-msg_t04_explore_02_2', 'This here’s a Pokétch app called\nPokémon History. Use it to see your history of\fPokémon catches.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_t04_explore_01:
-	_TALKMSG('dp_scenario2%63-msg_t04_explore_01_1')
-	_TALKMSG('dp_scenario2%63-msg_t04_explore_01_2')
+	_MACRO_TALKMSG('dialogue_t04', '63-msg_t04_explore_01_1', 'A traveling Trainer, huh?\rTell me—how many kinds of Pokémon have you\nmet so far?')
+	_MACRO_TALKMSG('dialogue_t04', '63-msg_t04_explore_01_2', 'If you’re a competent Trainer, I’d think you’d’ve\nmet at least 50.\rIf you haven’t, you ought to go farther abroad\nand look harder.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_t04_explore_03:
-	_TALKMSG('dp_scenario2%63-msg_t04_explore_03')
+	_MACRO_TALKMSG('dialogue_t04', '63-msg_t04_explore_03', 'You have your history, and every Pokémon has\ntheir own history. When the two collide, new\fdrama is born.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_t04_sign1:
-	_EASY_BOARD_MSG('dp_scenario2%63-msg_t04_sign1_01', 'BOARD_TYPE_TOWN', 0)
+	_EASY_BOARD_MSG('dialogue_t04%63-msg_t04_sign1_01', 'BOARD_TYPE_TOWN', 0)
 	_END()
 ev_t04_sign2:
-	_EASY_BOARD_MSG('dp_scenario2%63-msg_t04_sign2_01', 'BOARD_TYPE_POST', 0)
+	_EASY_BOARD_MSG('dialogue_t04%63-msg_t04_sign2_01', 'BOARD_TYPE_POST', 0)
 	_END()
 ev_t04_sign3:
-	_EASY_BOARD_MSG('dp_scenario2%63-msg_t04_sign3_01', 'BOARD_TYPE_POST', 0)
-	_END()
-anm_t04_lucian_lose_leave:
-	_AC_DIR_U(4)
-	_AC_VANISH_ON()
-	_ACMD_END()
-ev_t04_lucian_lost:
-	_TALK_OBJ_START()
-	_MACRO_TALKMSG('dp_scenario3', '00_msg_t04_lucian_lost_00', 'Ah, glutton for punishment are we?\nI’m afraid that was all I had time for.\rPerhaps we will meet again in the future.\nSo long, trainer.')
-	_TALK_CLOSE()
-	_OBJ_ANIME('T04_LUCIAN', 'anm_t04_lucian_lose_leave')
-	_OBJ_ANIME_WAIT()
-	_FLAG_SET(#2810)
-	_OBJ_DEL('T04_LUCIAN')
-	_TALK_OBJ_END()
+	_EASY_BOARD_MSG('dialogue_t04%63-msg_t04_sign3_01', 'BOARD_TYPE_POST', 0)
 	_END()
 pos_t04_lucian:
 	_TALK_OBJ_START()
-	_LDVAL(@471, 1); Lucian event flag finished
+	_LDVAL(@471, 1); Lucian event flag finished. This is here in the case the player loses the battle
 	_FLAG_RESET(#2810); Enable Lucian
 	_OBJ_ADD('T04_LUCIAN')
 	_OBJ_ANIME('T04_LUCIAN', 'anm_t04_lucian_startled')
@@ -92,21 +78,21 @@ pos_t04_lucian:
 	_OBJ_ANIME_WAIT()
 	_CHARA_LOOK_LOCK('T04_LUCIAN', 'HERO')
 	_CHARA_LOOK_LOCK('HERO', 'T04_LUCIAN')
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_t04_lucian_1', 'Ah, hello.\nAre you here to see the ruins?\rAllow me to introduce myself.\rI am Lucian, a user of Psychic-type\nPokémon and a member of the Sinnoh\fregion’s Elite Four.\rRuins are wonderful things, you know.\rThey’re like books—they have the thoughts\n of many people recorded inside them.\rIt allows the thoughts of the authors\nto stretch beyond time and space.\rOh, you’re a Trainer, are you not?\nAre you training any Psychic-type Pokémon?\rIf you are, this Technical Machine\nwill teach them a powerful move.')
+	_MACRO_TALK_KEYWAIT('dialogue_t04', '00_msg_t04_lucian_1', 'Ah, hello.\nAre you here to see the ruins?\rAllow me to introduce myself.\rI am Lucian, a user of Psychic-type\nPokémon and a member of the Sinnoh\fregion’s Elite Four.\rRuins are wonderful things, you know.\rThey’re like books—they have the thoughts\n of many people recorded inside them.\rIt allows the thoughts of the authors\nto stretch beyond time and space.\rOh, you’re a Trainer, are you not?\nAre you training any Psychic-type Pokémon?\rIf you are, this Technical Machine\nwill teach them a powerful move.')
 	_LDVAL(@SCWK_TEMP0, 356); TM Psychic
 	_LDVAL(@SCWK_TEMP1, 1); Quantity 1
 	_CALL('ev_item_event')
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_t04_lucian_question', 'As trainers, I feel compelled\nto battle you under common courtesy.\rHowever, I must let you know that I am\nthe strongest of the Elite Four members,\f you are unlikely to win.\rI feel the fairest thing to do\nis use Pokémon akin to your level.\rWhat say you, would you like to\nbattle me knowing this?')
+	_MACRO_TALK_KEYWAIT('dialogue_t04', '00_msg_t04_lucian_question', 'As trainers, I feel compelled\nto battle you under common courtesy.\rHowever, I must let you know that I am\nthe strongest of the Elite Four members,\f you are unlikely to win.\rI feel the fairest thing to do\nis use Pokémon akin to your level.\rWhat say you, would you like to\nbattle me knowing this?')
 	_YES_NO_WIN(@SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_t04_lucian_caution')
 	_JUMP('ev_t04_lucian_no')
 ev_t04_lucian_caution:
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_t04_lucian_caution', 'My dear child, are you sure you\nwant to battle me?\rYour Pokémon are unlikely to come\nthrough this unscathed.')
+	_MACRO_TALK_KEYWAIT('dialogue_t04', '00_msg_t04_lucian_caution', 'My dear child, are you sure you\nwant to battle me?\rYour Pokémon are unlikely to come\nthrough this unscathed.')
 	_YES_NO_WIN(@SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_t04_lucian_yes')
 	_JUMP('ev_t04_lucian_no')
 ev_t04_lucian_no:
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_t04_lucian_2', 'Frankly, I am disappointed,\nbut I understand the restraint.\rI look forward to our meeting in the\nfuture when you are ready for my\ftrue strength.\rI have some further research to\nconduct, so I must take my leave.\rTake care. Perhaps we’ll see each\nother at the Pokémon League some day.')
+	_MACRO_TALK_KEYWAIT('dialogue_t04', '00_msg_t04_lucian_2', 'Frankly, I am disappointed,\nbut I understand the restraint.\rI look forward to our meeting in the\nfuture when you are ready for my\ftrue strength.\rI have some further research to\nconduct, so I must take my leave.\rTake care. Perhaps we’ll see each\nother at the Pokémon League some day.')
 	_TALK_CLOSE()
 	_CHARA_LOOK_RELEASE('T04_LUCIAN')
 	_CHARA_LOOK_RELEASE('HERO')
@@ -129,16 +115,16 @@ ev_t04_lucian_double_battle:
 	_FLAG_RESET(#2196); Disable double battles
 	_RET()
 ev_t04_lucian_yes:
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_t04_lucian_yes', 'Aha! Now this shall be fun!')
+	_MACRO_TALK_KEYWAIT('dialogue_t04', '00_msg_t04_lucian_yes', 'Aha! Now this shall be fun!')
 	_TALK_CLOSE()
 	_CHARA_LOOK_RELEASE('T04_LUCIAN')
 	_CHARA_LOOK_RELEASE('HERO')
 	_2VS2_BATTLE_CHECK(@SCWK_ANSWER)
 	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 0, 'ev_t04_lucian_single_battle')
 	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 1, 'ev_t04_lucian_double_battle')
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_t04_lucian_win', 'Oh my, I expected a good battle,\nbut to think you have actually beaten me.\rWell played my good trainer,\neven though I was handicapped,\fyou gave me a good thrashing.\rI sincerely look forward to your\neventual challenge upon the Pokémon League.\rI would wish you luck in your endeavour,\nbut I daresay you hardly need it.\rNow, I have some further research to conduct,\nso I must take my leave.\rTake care. Perhaps we’ll see each\nother at the Pokémon League some day.')
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_t04_lucian_win_2', 'Oh yes, before I go,\na reward.')
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_t04_lucian_win_3', 'I have heard that there is a\nnew merchant in Pastoria City.\rIf you’re serious about growing stronger,\nyou’ll need these.')
+	_MACRO_TALK_KEYWAIT('dialogue_t04', '00_msg_t04_lucian_win', 'Oh my, I expected a good battle,\nbut to think you have actually beaten me.\rWell played my good trainer,\neven though I was handicapped,\fyou gave me a good thrashing.\rI sincerely look forward to your\neventual challenge upon the Pokémon League.\rI would wish you luck in your endeavour,\nbut I daresay you hardly need it.\rNow, I have some further research to conduct,\nso I must take my leave.\rTake care. Perhaps we’ll see each\nother at the Pokémon League some day.')
+	_MACRO_TALK_KEYWAIT('dialogue_t04', '00_msg_t04_lucian_win_2', 'Oh yes, before I go,\na reward.')
+	_MACRO_TALK_KEYWAIT('dialogue_t04', '00_msg_t04_lucian_win_3', 'I have heard that there is a\nnew merchant in Pastoria City.\rIf you’re serious about growing stronger,\nyou’ll need these.')
 	_LDVAL(@SCWK_TEMP0, 93); Heartscales
 	_LDVAL(@SCWK_TEMP1, 5); Quantity 5
 	_CALL('ev_item_event')
@@ -176,18 +162,18 @@ pos_t04_barry_trigger:
 	_OBJ_ANIME('HERO', 'anm_t04_action_2')
 	_OBJ_ANIME('T04_BARRY_OW18', 'anm_t04_action_3')
 	_OBJ_ANIME_WAIT()
-	_MACRO_TALKMSG('dp_scenario3', '00_msg_t04_barry_1', 'Yahoo!')
+	_MACRO_TALKMSG('dialogue_t04', '00_msg_t04_barry_1', 'Yahoo!')
 	_TALK_CLOSE()
 	_OBJ_ANIME('T04_BARRY_OW18', 'anm_t04_action_4')
 	_OBJ_ANIME_WAIT()
 	_RIVAL_NAME(0)
 	_PLAYER_NAME(1)
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_t04_barry_2', 'Hey, {1}!\rI got something cool.\nI’ll show you as a special favor!')
+	_MACRO_TALK_KEYWAIT('dialogue_t04', '00_msg_t04_barry_2', 'Hey, {1}!\rI got something cool.\nI’ll show you as a special favor!')
 	_TALK_CLOSE()
 	_OBJ_ANIME('T04_BARRY_OW18', 'anm_t04_action_5')
 	_OBJ_ANIME_WAIT()
 	_RIVAL_NAME(0)
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_t04_barry_3', 'Huh?\nWhat the...\rWhat’s this all about?\r...I got some Seals, but I forgot to\nput them on.\rOh, right.\nIt’s because I was at the ruins.\rThe ruins here are cool.\nYou have to check it out.\rI even found a Hidden Machine.\nIt was Defog!\rThough I don’t think there’s a\nwhole lot of reason to use it!\rAnyway, I’ll battle you another time.\nSee ya!')
+	_MACRO_TALK_KEYWAIT('dialogue_t04', '00_msg_t04_barry_3', 'Huh?\nWhat the...\rWhat’s this all about?\r...I got some Seals, but I forgot to\nput them on.\rOh, right.\nIt’s because I was at the ruins.\rThe ruins here are cool.\nYou have to check it out.\rI even found a Hidden Machine.\nIt was Defog!\rThough I don’t think there’s a\nwhole lot of reason to use it!\rAnyway, I’ll battle you another time.\nSee ya!')
 	_TALK_CLOSE()
 	_OBJ_ANIME('T04_BARRY_OW18', 'anm_t04_action_6')
 	_OBJ_ANIME_WAIT()

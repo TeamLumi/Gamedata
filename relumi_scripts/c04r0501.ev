@@ -1,6 +1,6 @@
 ev_c04r0501_shopw:
 	_TALK_OBJ_START()
-	_TALKMSG('dp_scenario2%13-msg_c04r0501_shopw1_01')
+	_MACRO_TALKMSG('dialogue_c04r0501', '13-msg_c04r0501_shopw1_01', 'Welcome to the Herb Shop, home of effective\nyet inexpensive medicine.')
 	_LDVAL(@LOCALWORK3, 0)
 	_JUMP('ev_c04r0501_fix_shop_re')
 	_END()
@@ -17,7 +17,7 @@ ev_c04r0501_fix_shop_re:
 	_JUMP('ev_c04r0501_fix_shop_end')
 	_END()
 ev_c04r0501_fix_shop_sonohoka:
-	_TALKMSG('dp_scenario1%28-mes_shop_01_03')
+	_MACRO_TALKMSG('dialogue_c04r0501', '28-mes_shop_01_03', 'Is there anything else I can do for you?')
 	_RET()
 ev_c04r0501_fix_shop_buy:
 	_LDVAL(@LOCALWORK3, 1)
@@ -42,8 +42,8 @@ ev_c04r0501_fix_shop_end:
 	_TALK_OBJ_END()
 	_END()
 ev_c04r0501_oldwoman1:
-	_EASY_OBJ_MSG('dp_scenario2%13-msg_c04r0501_oldwoman1_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c04r0501', '13-msg_c04r0501_oldwoman1_01', 'Herbal meds work most impressively. But your\nPokémon won’t like them. They’re horribly bitter\fand smelly!')
 	_END()
 ev_c04r0501_oldman1:
-	_EASY_OBJ_MSG('dp_scenario2%13-msg_c04r0501_oldman1_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c04r0501', '13-msg_c04r0501_oldman1_01', 'Someone ought to invent herbal medicine that\nisn’t bitter.\rThat would be a medical breakthrough!')
 	_END()

@@ -325,9 +325,10 @@ ev_connect_union_show_note:
 	_TALK_CLOSE()
 	_IF_FLAGOFF_JUMP($SYS_FLAG_WILDCARD_000, 'ev_connect_union_enter')
 	_IF_FLAGON_JUMP(#FE_UNIONROOM_TIPS_LOOK, 'ev_connect_union_enter')
-	_BOUKENNOOTO_TIPS_OPEN(20, @SCWK_ANSWER)
+	_BOUKENNOOTO_TIPS_OPEN(13, @SCWK_ANSWER)
 	_FLAG_SET(#FE_UNIONROOM_TIPS_LOOK)
 	_BOUKENNOOTO_TIPS_WAIT()
+	_FLAG_SET(#2463); Online Features Chapter
 	_JUMP('ev_connect_union_enter')
 	_END()
 ev_connect_union_enter:
@@ -417,14 +418,14 @@ anm_connect_union_move_x8:
 ev_union_character_select_counter:
 	_TALK_OBJ_START()
 	_IF_FLAGOFF_JUMP($SYS_FLAG_WILDCARD_000, 'ev_union_character_select_off')
-	_TALKMSG('dp_scenario1%87-msg_character_select_01')
+	_MACRO_TALKMSG('dialogue_connect', '87-msg_character_select_01', 'Welcome! I’m here to help you with your\nappearance for the Union Room.\rWould you like to select a Trainer appearance?')
 	_LDVAL(@LOCALWORK21, 0)
 	_YES_NO_WIN(@SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_union_character_select_02')
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_union_character_select_end')
 	_END()
 ev_union_character_select_off:
-	_TALKMSG('dp_scenario1%87-msg_character_select_07')
+	_MACRO_TALKMSG('dialogue_connect', '87-msg_character_select_07', 'I’m sorry. The reception desk for changing your\nappearance in the Union Room isn’t open yet.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
@@ -488,7 +489,7 @@ ev_union_character_select_02_l:
 	_JUMP('ev_union_character_select_10')
 	_END()
 ev_union_character_text_onece:
-	_TALKMSG('dp_scenario1%87-msg_character_select_02')
+	_MACRO_TALKMSG('dialogue_connect', '87-msg_character_select_02', 'Which kind of Trainer would you like to\nappear as?')
 	_RET()
 ev_union_character_return:
 	_IFVAL_JUMP(@LOCALWORK20, 'EQ', 10, 'ev_union_character_select_02_g')
@@ -516,19 +517,19 @@ ev_union_character_select_10:
 	_JUMP('ev_union_character_select_11')
 ev_union_character_select_11:
 	_TR_TYPE_NAME(0, @LOCALWORK11)
-	_TALKMSG('dp_scenario1%87-msg_character_select_03')
+	_MACRO_TALKMSG('dialogue_connect', '87-msg_character_select_03', 'Is the {0,1,14,0} look OK?')
 	_YES_NO_WIN(@SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_union_character_select_03')
 	_JUMP('ev_union_character_select_02')
 	_END()
 ev_union_character_select_end:
-	_TALKMSG('dp_scenario1%87-msg_character_select_05')
+	_MACRO_TALKMSG('dialogue_connect', '87-msg_character_select_05', 'Understood.\rPlease enjoy your time in the Union Room!')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_union_character_select_03:
 	_TR_TYPE_NAME(0, @LOCALWORK11)
-	_TALKMSG('dp_scenario1%87-msg_character_select_04')
+	_MACRO_TALKMSG('dialogue_connect', '87-msg_character_select_04', 'Thanks! I’ll make sure you’re set up with the\n{0,1,14,0} look.\rI hope you enjoy your time in the Union Room!', 0, 1)
 	_FLAG_SET(#FE_UNION_CHARACTER_SELECT)
 	_IFVAL_JUMP(@LOCALWORK20, 'EQ', 10, 'ev_union_character_select_03_set_m')
 	_IFVAL_JUMP(@LOCALWORK20, 'EQ', 100, 'ev_union_character_select_03_set_g')
@@ -633,9 +634,10 @@ ev_connect_global_show_note:
 	_TALK_CLOSE()
 	_IF_FLAGOFF_JUMP($SYS_FLAG_WILDCARD_000, 'ev_connect_global_enter')
 	_IF_FLAGON_JUMP(#FE_UNIONROOM_TIPS_LOOK, 'ev_connect_global_enter')
-	_BOUKENNOOTO_TIPS_OPEN(20, @SCWK_ANSWER)
+	_BOUKENNOOTO_TIPS_OPEN(13, @SCWK_ANSWER)
 	_FLAG_SET(#FE_UNIONROOM_TIPS_LOOK)
 	_BOUKENNOOTO_TIPS_WAIT()
+	_FLAG_SET(#2463); Online Features Chapter
 	_JUMP('ev_connect_global_enter')
 	_END()
 ev_connect_global_enter:

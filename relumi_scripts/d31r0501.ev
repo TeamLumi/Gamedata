@@ -1,0 +1,116 @@
+ev_d31r0501_man1:
+	;_MACRO_EASY_OBJ_MSG('dp_scenario3', 'msg_d31r0501_man1_01', 'If your Pokémon win without taking\ndamage, you earn more CP.')
+	_MACRO_EASY_OBJ_MSG('dialogue_d31r0501', 'msg_d31r0501_man1_01', 'If your Pokémon win without taking\ndamage, you earn more CP.')
+	_END()
+ev_d31r0501_woman1:
+	_TALK_OBJ_START_TURN_NOT()
+	;_MACRO_TALKMSG('dp_scenario3', 'msg_d31r0501_woman1_01', 'You can earn more CP by facing higher-\nlevel opponents.\rIt’s meaningless if you don’t win, of\ncourse.')
+	_MACRO_TALKMSG('dialogue_d31r0501', 'msg_d31r0501_woman1_01', 'You can earn more CP by facing higher-\nlevel opponents.\rIt’s meaningless if you don’t win, of\ncourse.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_d31r0501_man2:
+	_TALK_OBJ_START_TURN_NOT()
+	;_MACRO_TALKMSG('dp_scenario3', 'msg_d31r0501_man2_01', 'At first, you can only use CP for\nrestoring HP.\rYou can spend CP to rank up, though.\nDoing that, you can even restore PP.')
+	_MACRO_TALKMSG('dialogue_d31r0501', 'msg_d31r0501_man2_01', 'At first, you can only use CP for\nrestoring HP.\rYou can spend CP to rank up, though.\nDoing that, you can even restore PP.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_d31r0501_bigman1:
+	;_MACRO_EASY_OBJ_MSG('dp_scenario3', 'msg_d31r0501_bigman1_01', 'Before every battle, you should check\nthe opponent’s lineup.\rDon’t be cheap with your CP.\nIt’s like that old saying goes about\fknowing your enemy.\r“If you know yourself but not your\nenemy, for every victory gained\fyou will also suffer a defeat.”\rIn other words, it all goes up in smoke\nif you lose!')
+	_MACRO_EASY_OBJ_MSG('dialogue_d31r0501', 'msg_d31r0501_bigman1_01', 'Before every battle, you should check\nthe opponent’s lineup.\rDon’t be cheap with your CP.\nIt’s like that old saying goes about\fknowing your enemy.\r“If you know yourself but not your\nenemy, for every victory gained\fyou will also suffer a defeat.”\rIn other words, it all goes up in smoke\nif you lose!')
+	_END()
+ev_d31r0501_woman2:
+	;_MACRO_EASY_OBJ_MSG('dp_scenario3', 'msg_d31r0501_woman2_01', 'Mr. Darach...\nOh, how I pine for thee...')
+	_MACRO_EASY_OBJ_MSG('dialogue_d31r0501', 'msg_d31r0501_woman2_01', 'Mr. Darach...\nOh, how I pine for thee...')
+	_END()
+ev_d31r0501_man3:
+	;_MACRO_EASY_OBJ_MSG('dp_scenario3', 'msg_d31r0501_man3_01', 'I have a matter of grave importance\nto share with you.\rI can’t stress just how important\nthis is for me to say.\rIf you lose, your entire stock of CP\nis cleaned out to zero! How tragic!')
+	_MACRO_EASY_OBJ_MSG('dialogue_d31r0501', 'msg_d31r0501_man3_01', 'I have a matter of grave importance\nto share with you.\rI can’t stress just how important\nthis is for me to say.\rIf you lose, your entire stock of CP\nis cleaned out to zero! How tragic!')
+	_END()
+ev_d31r0501_man4:
+	;_MACRO_EASY_OBJ_MSG('dp_scenario3', 'msg_d31r0501_man4_01', 'Like every man’s dream, I want to\nlive in a castle!')
+	_MACRO_EASY_OBJ_MSG('dialogue_d31r0501', 'msg_d31r0501_man4_01', 'Like every man’s dream, I want to\nlive in a castle!')
+	_END()
+ev_d31r0501_pc_score:
+	_EVENT_START()
+	;_MACRO_TALKMSG('dp_scenario3', 'msg_d31r0501_pc_score_01', 'Which record would you like to see?')
+	_MACRO_TALKMSG('dialogue_d31r0501', 'msg_d31r0501_pc_score_01', 'Which record would you like to see?')
+	;_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_battlecastle_pc_1', 'Single', 1)
+	;_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_battlecastle_pc_2', 'Double', 2)
+	;_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_battlecastle_pc_3', 'Multi', 3)
+	;_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_battlecastle_pc_cancel', 'Cancel', 0)
+	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_ranger_options_battlecastle_pc_1', 1)
+	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_ranger_options_battlecastle_pc_2', 2)
+	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_ranger_options_battlecastle_pc_3', 3)
+	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_ranger_options_battlecastle_pc_cancel', 0)
+	_OPEN_CUSTUM_WIN_FIXED(@SCWK_ANSWER)
+	_TALK_CLOSE()
+	_SWITCH(@SCWK_ANSWER)
+	;TODO exefs needed
+	_CASE_JUMP(1, 'ev_d31r0501_pc_single')
+	_CASE_JUMP(2, 'ev_d31r0501_pc_double')
+	_CASE_JUMP(3, 'ev_d31r0501_pc_multi')
+	_EVENT_END()
+	_END()
+ev_d31r0501_lobby_sd_guide_start:
+	;TODO exefs needed for all this. Dialogs are in but everything else is still a placeholder
+	;_FTR_SET_CURRENT_FACILITY(4)
+	_TALK_OBJ_START()
+	;_MACRO_TALK_KEYWAIT('dp_scenario3', 'msg_d31r0501_lobby__1', 'Welcome to the Battle Castle!\rI am your guide to the Single and\nDouble Battle challenges.\rPlease be aware that these challenges\nare designed for a single Trainer.\r')
+	_MACRO_TALK_KEYWAIT('dialogue_d31r0501', 'msg_d31r0501_lobby__1', 'Welcome to the Battle Castle!\rI am your guide to the Single and\nDouble Battle challenges.\rPlease be aware that these challenges\nare designed for a single Trainer.')
+	_TALK_CLOSE()
+	_JUMP('ev_d31r0501_lobby_sd_guide_challenge')
+	_END()
+ev_d31r0501_lobby_sd_guide_challenge:
+	;_MACRO_TALKMSG('dp_scenario3', 'msg_d31r0501_lobby__2', 'Which challenge would you like to take?')
+	_MACRO_TALKMSG('dialogue_d31r0501', 'msg_d31r0501_lobby__2', 'Which challenge would you like to take?')
+	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_frontier_lobby_option_1', 1); Single Battle
+	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_frontier_lobby_option_2', 2); Double Battle
+	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_frontier_lobby_option_3', 3); Info
+	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_frontier_lobby_cancel', 0); Cancel
+	_OPEN_CUSTUM_WIN(@SCWK_ANSWER)
+	_SWITCH(@SCWK_ANSWER)
+	_CASE_JUMP(1, 'ev_d31r0501_lobby_select_poke')
+	_CASE_JUMP(3, 'ev_d31r0501_lobby_info')
+	;_MACRO_TALK_KEYWAIT('dp_scenario3', 'ftr_castle_lobby_dialogue_cancel', 'We hope to see you again!')
+	_MACRO_TALK_KEYWAIT('dialogue_d31r0501', 'ftr_castle_lobby_dialogue_cancel', 'We hope to see you again!')
+	_TALK_CLOSE()
+	; _CASE_JUMP(1, xxx)
+	; _CASE_JUMP(2, xxx)
+	_TALK_OBJ_END()
+	_END()
+ev_d31r0501_lobby_info:
+	;_MACRO_TALK_KEYWAIT('dp_scenario3', 'ev_d31r0501_lobby_dialogue_info', 'At the Battle Castle, you may take a\nSingle or Double Battle challenge.\rHere, you are provided with Castle\nPoints (CP) that you must manage.\rThe CP are used for healing Pokémon,\nrenting items or Berries, and so on.\rCP are earned by winning matches.\nThe amount varies by how you win.\rThe objective is to keep a winning\nstreak alive while managing your CP.\rIf you manage to win seven matches in\na row, you will earn Battle Points (BP).\rIf you want to interrupt your\nchallenge, please save the game.\rIf you don’t save, you will be\ndisqualified from your challenge.\rPlease be aware of that!')
+	_MACRO_TALK_KEYWAIT('dialogue_d31r0501', 'ev_d31r0501_lobby_dialogue_info', 'At the Battle Castle, you may take a\nSingle or Double Battle challenge.\rHere, you are provided with Castle\nPoints (CP) that you must manage.\rThe CP are used for healing Pokémon,\nrenting items or Berries, and so on.\rCP are earned by winning matches.\nThe amount varies by how you win.\rThe objective is to keep a winning\nstreak alive while managing your CP.\rIf you manage to win seven matches in\na row, you will earn Battle Points (BP).\rIf you want to interrupt your\nchallenge, please save the game.\rIf you don’t save, you will be\ndisqualified from your challenge.\rPlease be aware of that!')
+	_JUMP('ev_d31r0501_lobby_sd_guide_challenge')
+	_END()
+ev_d31r0501_lobby_multi_guide_start:
+	_TALK_OBJ_START()
+	;_FTR_SET_CURRENT_FACILITY(4) ;?
+	;_MACRO_TALK_KEYWAIT('dp_scenario3', 'msg_d31r0501_lobby_1_multi_1', 'Welcome to the Battle Castle!\rI am your guide to the Multi Battle\nchallenge.\rPlease be aware that this challenge\nrequires two Trainers.')
+	_MACRO_TALK_KEYWAIT('dialogue_d31r0501', 'msg_d31r0501_lobby_1_multi_1', 'Welcome to the Battle Castle!\rI am your guide to the Multi Battle\nchallenge.\rPlease be aware that this challenge\nrequires two Trainers.')
+	_JUMP('ev_d31r0501_lobby_multi_guide_challenge')
+	_END()
+ev_d31r0501_lobby_multi_guide_challenge:
+	;_MACRO_TALKMSG('dp_scenario3', 'msg_d31r0501_lobby_1_multi_2', 'Would you like to take the Battle\nCastle Multi Battle challenge?')
+	_MACRO_TALKMSG('dialogue_d31r0501', 'msg_d31r0501_lobby_1_multi_2', 'Would you like to take the Battle\nCastle Multi Battle challenge?')
+	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_frontier_lobby_multi_option_1', 1); Take Challenge
+	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_frontier_lobby_option_3', 2); Info
+	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_frontier_lobby_cancel', 0); Cancel
+	_OPEN_CUSTUM_WIN(@SCWK_ANSWER)
+	_SWITCH(@SCWK_ANSWER)
+	_CASE_JUMP(1, 'ev_d31r0501_lobby_select_poke')
+	_CASE_JUMP(3, 'ev_d31r0501_lobby_multi_info')
+	;_MACRO_TALK_KEYWAIT('dp_scenario3', 'ev_d31r0501_lobby_dialogue_cancel', 'We hope to see you again!')
+	_MACRO_TALK_KEYWAIT('dialogue_d31r0501', 'ev_d31r0501_lobby_dialogue_cancel', 'We hope to see you again!')
+	_TALK_CLOSE()
+	; _CASE_JUMP(1, xxx)
+	; _CASE_JUMP(2, xxx)
+	_TALK_OBJ_END()
+	_END()
+ev_d31r0501_lobby_multi_info:
+	;_MACRO_TALK_KEYWAIT('dp_scenario3', 'ev_d31r0501_lobby_multi_dialogue_info', 'You may team up with a friend for a\nMulti Battle challenge.\rBoth Trainers are provided with Castle\nPoints (CP) that must be managed.\rThe CP is used for healing Pokémon,\nrenting items or Berries, and so on.\rTrainers can use their CP on not only\ntheir own Pokémon, but also their\fpartner’s.\rBoth Trainers earn CP by winning\nmatches.\rThe objective is to keep a winning\nstreak alive while managing your CP.\rIf you manage to win seven matches in\na row, you will earn Battle Points (BP).\rPlease note: a Battle Castle Multi\nBattle challenge can’t be interrupted.')
+	_MACRO_TALK_KEYWAIT('dialogue_d31r0501', 'ev_d31r0501_lobby_multi_dialogue_info', 'You may team up with a friend for a\nMulti Battle challenge.\rBoth Trainers are provided with Castle\nPoints (CP) that must be managed.\rThe CP is used for healing Pokémon,\nrenting items or Berries, and so on.\rTrainers can use their CP on not only\ntheir own Pokémon, but also their\fpartner’s.\rBoth Trainers earn CP by winning\nmatches.\rThe objective is to keep a winning\nstreak alive while managing your CP.\rIf you manage to win seven matches in\na row, you will earn Battle Points (BP).\rPlease note: a Battle Castle Multi\nBattle challenge can’t be interrupted.')
+	_JUMP('ev_d31r0501_lobby_multi_guide_challenge')
+	_END()

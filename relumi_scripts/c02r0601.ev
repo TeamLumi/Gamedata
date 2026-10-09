@@ -6,5 +6,105 @@ ev_c02r0601_flag_change:
 ev_c02r0601_flagchange_vanish:
 	_FLAG_SET(#FV_TV_INTERVIEW_10)
 	_END()
-ev_c02r0601:
+ev_c02r0601_kyra_trade:
+    _TALK_OBJ_START()
+    _CALL('ev_c02r0601_kyra_trade_values')
+    _IF_FLAGON_JUMP(#3085, 'ev_c02r0601_kyra_trade_over')
+    _POKEMON_NAME_FORM(0, @LOCALWORK0, @LOCALWORK1)
+    _POKEMON_NAME_FORM(1, @LOCALWORK2, @LOCALWORK3)
+    _MACRO_TALKMSG('dialogue_c02r0601', 'msg_c02r0601_kyra_trade_1', 'Hi there, stranger!\nCan I tell you something?\rA few weeks ago, I found this adorable little\n{1,1,1,0} while I was out for a walk!\rIt’s so cute and fluffy!\rI could just snuggle into its fur and sleep\nthrough whole nights without ever wanting to\fget up!\rThough, when I tried to do that...\nIt didn’t end well.\rAs cute as {1,1,1,0} is, its hugs are just way\ntoo tight!\rI think it would be a lot happier if it could\nbattle.\rIt could squeeze as hard as it could without\nhurting anybody!\rThing is... I’m not much of a Trainer.\rI would happily trade this little {1,1,1,0} for\nsomething that could be a great cuddle\fbuddy!\rMaybe something like a {0,1,1,0}!')
+    _TALK_CLOSE()
+    _POKE_WINDOW_PUT(@LOCALWORK0, @LOCALWORK1)
+    _POKEMON_NAME_FORM(0, @LOCALWORK0, @LOCALWORK1)
+    _POKEMON_NAME_FORM(1, @LOCALWORK2, @LOCALWORK3)
+    _MACRO_TALKMSG('dialogue_c02r0601', 'msg_c02r0601_kyra_trade_2', 'How about it, stranger?\nWould you trade a {0,1,1,0} for my {1,1,1,0}?')
+    _YES_NO_WIN(@SCWK_ANSWER)
+    _IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_c02r0601_kyra_trade_yes')
+    _IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_c02r0601_kyra_trade_no')
+ev_c02r0601_kyra_trade_values:
+    _LDVAL(@LOCALWORK0, 446); Given trade MonsNo
+    _LDVAL(@LOCALWORK1, 0); Given trade FormNo
+    _LDVAL(@LOCALWORK2, 759); Received trade MonsNo
+    _LDVAL(@LOCALWORK3, 0); Received trade FormNo
+    _RET()
+ev_c02r0601_kyra_trade_yes:
+    _TALK_CLOSE()
+    _POKELIST_SET_PROC(36)
+    _POKELIST_GET_RESULT(@SCWK_TEMP0, @SCWK_TEMP1)
+    _IFVAL_JUMP(@SCWK_TEMP0, 'EQ', -1, 'ev_c02r0601_kyra_trade_no'); If nothing was selected
+    _TEMOTI_BOX_MONSNO(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_ANSWER)
+    _TEMOTI_BOX_FORMNO(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_TEMP2)
+    _IFVAL_JUMP(@SCWK_ANSWER, 'NE', @LOCALWORK0, 'ev_c02r0601_kyra_trade_wrong_mon'); If a species other than the target was selected
+    _IFVAL_JUMP(@SCWK_TEMP2, 'NE', @LOCALWORK1, 'ev_c02r0601_kyra_trade_wrong_form'); If an incorrect form of the correct species was selected
+    _TEMOTI_BOX_SHINY(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_TEMP2)
+    _TEMOTI_BOX_GENDER(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_TEMP3)
+    _TALK_CLOSE()
+    _LOCALKOUKAN_APPLY(9, @SCWK_TEMP1, @SCWK_TEMP0)
+	_SXY_POS_CHANGE('HERO', 4, 6)
+	_SXY_DIR_CHANGE('HERO', 180)
+	_SXY_DIR_CHANGE('C02R0601_KYRA', 0)
+    _IFVAL_CALL(@SCWK_TEMP2, 'EQ', 0, 'ev_c02r0601_kyra_trade_placedata')
+    _IFVAL_CALL(@SCWK_TEMP2, 'GE', 1, 'ev_c02r0601_kyra_trade_placedata_shiny')
+	_CALL('ev_c02r0601_munchlax_cry')
+    _JUMP('ev_c02r0601_kyra_trade_over')
+ev_c02r0601_kyra_trade_no:
+    _POKEMON_NAME_FORM(0, @LOCALWORK0, @LOCALWORK1)
+    _MACRO_TALKMSG('dialogue_c02r0601', 'msg_c02r0601_kyra_trade_no', 'Aww, okay...\rI guess not everybody would just have a\n{0,1,1,0} on them to trade.\rIf you change your mind or catch one you’d\nwant to trade, my offer still stands!')
+    _TALK_CLOSE()
+    _TALK_OBJ_END()
+    _END()
+ev_c02r0601_kyra_trade_wrong_mon:
+    _POKEMON_NAME_FORM(0, @LOCALWORK0, @LOCALWORK1)
+    _MACRO_TALKMSG('dialogue_c02r0601', 'msg_c02r0601_kyra_trade_wrong_mon', 'Sorry, but this isn’t quite what I had in mind.\nI’m sure it’s adorable, but I wanted a\f{0,1,1,0}!\rIt’s okay, stranger, just come back with a\n{0,1,1,0} when you have one!')
+    _TALK_CLOSE()
+    _TALK_OBJ_END()
+    _END()
+ev_c02r0601_kyra_trade_wrong_form:
+    _POKEMON_NAME_FORM(0, @LOCALWORK0)
+    _MACRO_TALKMSG('dialogue_c02r0601', 'msg_c02r0601_kyra_trade_wrong_form', 'It’s... almost what I’m looking for...?\nIt’s definitely a {0,1,1,0}, but it’s not exactly\fthe one I’m used to.\rI’m sorry, but could you please find the\nother one?\rNot that this one isn’t cute!\nI just love the other one a lot, and it’s what\fI had in mind to trade for.')
+    _TALK_CLOSE()
+    _TALK_OBJ_END()
+    _END()
+ev_c02r0601_kyra_trade_placedata:
+	_IFVAL_JUMP(@SCWK_TEMP3, 'EQ', 0, 'ev_c02r0601_kyra_trade_placedata_male')
+	_IFVAL_JUMP(@SCWK_TEMP3, 'GE', 1, 'ev_c02r0601_kyra_trade_placedata_female')
+	_RET()
+ev_c02r0601_kyra_trade_placedata_male:
+    _OBJ_ADD('C02R0601_MUNCHLAX_MALE')
+    _FLAG_RESET(#2981)
+    _RET()
+ev_c02r0601_kyra_trade_placedata_female:
+    _OBJ_ADD('C02R0601_MUNCHLAX_FEMALE')
+    _FLAG_RESET(#2982)
+    _RET()
+ev_c02r0601_kyra_trade_placedata_shiny:
+	_IFVAL_JUMP(@SCWK_TEMP3, 'EQ', 0, 'ev_c02r0601_kyra_trade_placedata_shiny_male')
+	_IFVAL_JUMP(@SCWK_TEMP3, 'GE', 1, 'ev_c02r0601_kyra_trade_placedata_shiny_female')
+	_RET()
+ev_c02r0601_kyra_trade_placedata_shiny_male:
+    _OBJ_ADD('C02R0601_MUNCHLAX_SHINY_MALE')
+    _FLAG_RESET(#2983)
+    _RET()
+ev_c02r0601_kyra_trade_placedata_shiny_female:
+    _OBJ_ADD('C02R0601_MUNCHLAX_SHINY_FEMALE')
+    _FLAG_RESET(#2984)
+    _RET()
+ev_c02r0601_kyra_trade_over:
+    _POKEMON_NAME_FORM(1, @LOCALWORK2, @LOCALWORK3)
+    _MACRO_TALKMSG('dialogue_c02r0601', 'msg_c02r0601_kyra_trade_over', 'Yay! Thank you so much!\nI promise I’ll take good care of this little\fmunchkin!\rTake care of {1,1,1,0} for me!\nJust make sure you don’t let it hug you too\ftightly, teehee!')
+    _FLAG_SET(#3085)
+    _TALK_CLOSE()
+    _TALK_OBJ_END()
+    _END()
+ev_c02r0601_munchlax:
+	_TALK_OBJ_START()
+    _CALL('ev_c02r0601_kyra_trade_values')
+	_CALL('ev_c02r0601_munchlax_cry')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
 	_END()
+ev_c02r0601_munchlax_cry:
+    _VOICE_PLAY(@LOCALWORK0, @LOCALWORK1, 0)
+    _MACRO_TALKMSG('dialogue_c02r0601', 'msg_c02r0601_munchlax_cry', 'Munch-munch, Munch-munch!')
+    _VOICE_WAIT()
+	_RET()

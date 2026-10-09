@@ -1,9 +1,9 @@
 ev_r228r0301_oldman1:
-	_EASY_OBJ_MSG('dp_scenario3%75-msg_r228r0301_oldman1_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_r228r0301', '75-msg_r228r0301_oldman1_01', 'I spend all my time reading here. My son is an\navid reader, too.\rI recently learned that the word “universe” meant\ntime and space in an ancient language.')
 	_END()
 ev_r228r0301_bookshelf1:
-	_EASY_OBJ_MSG('dp_scenario3%75-msg_r228r0301_bookshelf1_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_r228r0301', '75-msg_r228r0301_bookshelf1_01', 'There are many old books here...\r“Space and the Galaxies”\n“The Beginning of Space”\f“Beyond Time and Space”')
 	_END()
 ev_r228r0301_bookshelf2:
-	_EASY_OBJ_MSG('dp_scenario3%75-msg_r228r0301_bookshelf1_02')
+	_MACRO_EASY_OBJ_MSG('dialogue_r228r0301', '75-msg_r228r0301_bookshelf1_02', 'There are many old books here...\r“The Secrets of Psychics”\n“The Hidden Powers of Pokémon”\f“What is Psychic Energy?”')
 	_END()

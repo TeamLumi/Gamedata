@@ -1,29 +1,29 @@
 ev_r203_girl2:
-	_EASY_OBJ_MSG('dp_scenario1%65-msg_r203_girl2_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_r203', '65-msg_r203_girl2_01', 'Did you know?\rThe first Pokémon to appear in a battle is the\none at the top of your team list.')
 	_END()
 ev_r203_sign1:
-	_EASY_BOARD_MSG('dp_scenario1%65-msg_r203_sign1_01', 'BOARD_TYPE_ROAD', 0, 2)
+	_EASY_BOARD_MSG('dialogue_r203%65-msg_r203_sign1_01', 'BOARD_TYPE_ROAD', 0, 2)
 	_END()
 ev_r203_sign2:
-	_EASY_BOARD_MSG('dp_scenario1%65-msg_r203_sign2_01', 'BOARD_TYPE_ROAD', 0, 1)
+	_EASY_BOARD_MSG('dialogue_r203%65-msg_r203_sign2_01', 'BOARD_TYPE_ROAD', 0, 1)
 	_END()
 ev_r203_sign3:
-	_EASY_INFOBOARD_MSG('dp_scenario1%65-msg_r203_sign3_01', 'BOARD_TYPE_INFO', 0)
+	_EASY_INFOBOARD_MSG('dialogue_r203%65-msg_r203_sign3_01', 'BOARD_TYPE_INFO', 0)
 	_END()
 ev_r203_sign4:
-	_EASY_INFOBOARD_MSG('dp_scenario1%65-msg_r203_sign4_01', 'BOARD_TYPE_INFO', 0)
+	_EASY_INFOBOARD_MSG('dialogue_r203%65-msg_r203_sign4_01', 'BOARD_TYPE_INFO', 0)
 	_END()
 ev_r203_shroomish_mew:
 	_TALK_OBJ_START()
 	_VOICE_PLAY(285, 0, 0)
-	_TALKMSG('dp_scenario2%18-msg_mew_01')
-	_TALKMSG('dp_scenario2%18-msg_mew_02')
+	_MACRO_TALKMSG('dialogue_r203', '18-msg_mew_01', 'Pofwaaah? \nShroomish seems hungry.\rIt may want an Oran Berry.')
+	_MACRO_TALKMSG('dialogue_r203', '18-msg_mew_02', 'Give an Oran Berry to Shroomish?')
 	_YES_NO_WIN(@SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_r203_shroomish_no')
 	_JUMP('ev_r203_shroomish_item_check')
 	_END()
 ev_r203_shroomish_no:
-	_TALKMSG('dp_scenario2%18-msg_mew_07')
+	_MACRO_TALKMSG('dialogue_r203', '18-msg_mew_07', 'Shroomish looks sad.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
@@ -32,15 +32,15 @@ ev_r203_shroomish_item_check:
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_r203_shroomish_no_berry')
 	_JUMP('ev_r203_shroomish_berry')
 ev_r203_shroomish_no_berry:
-	_TALKMSG('dp_scenario2%18-msg_mew_06')
+	_MACRO_TALKMSG('dialogue_r203', '18-msg_mew_06', 'You do not have an Oran Berry.')
 	_TALK_CLOSE()
-	_TALKMSG('dp_scenario2%18-msg_mew_07')
+	_MACRO_TALKMSG('dialogue_r203', '18-msg_mew_07', 'Shroomish looks sad.')
 	_TALK_CLOSE()
 	_END()
 ev_r203_shroomish_berry:
 	_SUB_ITEM(155, 1, @SCWK_ANSWER)
 	_VOICE_PLAY(285, 0, 0)
-	_TALKMSG('dp_scenario2%18-msg_mew_03')
+	_MACRO_TALKMSG('dialogue_r203', '18-msg_mew_03', 'Pofwaaah!\nShroomish ate the Oran Berry.\rIt was pleased!')
 	_TALK_CLOSE()
 	_OBJ_ANIME('R203_SHROOMISH_MEW', 'anm_r203_shroomish_mew')
 	_OBJ_ANIME_WAIT()
@@ -57,7 +57,7 @@ ev_r203_shroomish_berry:
 	_VOICE_PLAY(151, 0, 0)
 	_OBJ_ANIME('HERO', 'anm_r203_mew_hero_g')
 	_OBJ_ANIME_WAIT()
-	_TALKMSG('dp_scenario2%18-msg_mew_04')
+	_MACRO_TALKMSG('dialogue_r203', '18-msg_mew_04', 'Myuu...')
 	_TALK_CLOSE()
 	_WHITE_OUT('SCR_WIPE_DIV', 'SCR_WIPE_SYNC*3')
 	_CHARA_LOOK_RELEASE('R203_MEW')
@@ -65,7 +65,7 @@ ev_r203_shroomish_berry:
 	_FLAG_SET(#2816)
 	_OBJ_DEL('R203_MEW')
 	_WHITE_IN('SCR_WIPE_DIV', 'SCR_WIPE_SYNC*3')
-	_TALKMSG('dp_scenario2%18-msg_mew_05')
+	_MACRO_TALKMSG('dialogue_r203', '18-msg_mew_05', 'The Strange Pokémon disappeared, but it \nlooked happy.')
 	_TALK_CLOSE()
 	_FLAG_RESET(#2817)
 	_TALK_OBJ_END()
@@ -75,21 +75,24 @@ ev_r203_ranger_catch_quest:
 	_IF_FLAGON_JUMP(#2008, 'ev_r203_ranger_quest_completed')
 	_IF_FLAGON_JUMP(#2007, 'ev_r203_ranger_gift_again')
 	_IF_FLAGON_JUMP(#2006, 'ev_r203_ranger_catch_check')
-	_MACRO_TALKMSG('dp_scenario2', 'msg_r203_ranger_catch_start', 'Hi there, I’m doing a nature survey\non rare species of Pokémon in the area\rI’ve heard there’s specific scents that\nhelp draw out newer transplants,\rbut I don’t know where to get them...\r... Hm?\rHey, is that what your Incense Burner is for?\nCould you do me a favor?\rCould you show me any strange Pokémon\nthat those scents draw out?\rI’ll have a neat reward for you if you do!')
+	_MACRO_TALKMSG('dialogue_r203', 'msg_r203_ranger_catch_start', 'Hi there, I’m doing a nature survey on rare\nspecies of Pokémon in the area.\rI’ve heard there’s specific scents that help\ndraw out newer transplants, but I don’t know\fwhere to get them...\r...Hm?\nHey, is that what your Incense Burner is for?\rCould you do me a favor?\rCould you show me any strange Pokémon that\nthose scents draw out on this route?\rI’ll have a neat reward for you if you do!')
 	_FLAG_SET(#2006); R203 Ranger has been talked to once
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
+	_END()
 ev_r203_ranger_catch_check:
-	_MACRO_TALKMSG('dp_scenario2', 'msg_r203_ranger_catch_cont', 'Oh hey, you’re back.\rSo, did you manage to find any rare Pokémon?')
+	_MACRO_TALKMSG('dialogue_r203', 'msg_r203_ranger_catch_cont', 'Oh hey, you’re back.\rSo, did you manage to find any rare Pokémon?')
 	_TALK_CLOSE()
 	_CALL('ev_r203_ranger_pokemon_check'); Loads SCWK_PARAM1 as MonsNo and SCWK_PARAM2 as FormNo
+	_GET_CAUGHT_LOCATION(@SCWK_PARAM0, @SCWK_PARAM3, @SCWK_TEMP0); Get the Caught Location ZoneID of the selected Pokemon
+	_IFVAL_JUMP(@SCWK_TEMP0, 'NE', 356, 'ev_r203_ranger_catch_invalid'); If the location is not route 203
 	_IFVAL_CALL(@SCWK_PARAM1, 'EQ', 263, 'ev_r204_ranger_check_zigzagoon_form')
 	_IFVAL_CALL(@SCWK_PARAM1, 'EQ', 550, 'ev_r204_ranger_check_basculin_form')
-	_MACRO_TALKMSG('dp_scenario2', 'msg_r203_ranger_catch_success', 'You did it! That’s a species of Pokémon\nthat isn’t usually found around these parts.\rFor some reason, it found itself drawn to the scent\nof the flower that you put in your Incense Burner.\rThanks, kid. you helped me out big time!\rAs promised, here is your reward.\nPick whichever one you like!')
+	_MACRO_TALKMSG('dialogue_r203', 'msg_r203_ranger_catch_success', 'You did it! That’s a species of Pokémon\nthat isn’t usually found around these parts.\rFor some reason, it found itself drawn to the scent\nof the flower that you put in your Incense Burner.\rThanks, kid. You helped me out big time!\rAs promised, here is your reward.\nPick whichever one you like!')
 	_JUMP('ev_r203_ranger_catch_success')
 	_END()
 ev_r203_ranger_pokemon_check:
-    _POKELIST_SET_PROC(5); This should restrict it to the specific list detailed in UIDatabase.BoxOpenParam
+    _POKELIST_SET_PROC(23); This should restrict it to the specific list detailed in UIDatabase.BoxOpenParam
   	_POKELIST_GET_RESULT(@SCWK_PARAM0, @SCWK_PARAM3); Argument 1 is the bag/box position, Argument 2 is the box number (0 = Bag)
 	_IFVAL_JUMP(@SCWK_PARAM0, 'EQ', -1, 'ev_r203_ranger_catch_no'); If SCK_PARAM0 is -1, it means you chose nothing.
     _TEMOTI_BOX_MONSNO(@SCWK_PARAM0, @SCWK_PARAM3, @SCWK_PARAM1); Get the MonsNo of the selected Pokemon, SCWK_PARAM1
@@ -111,12 +114,17 @@ ev_r203_ranger_pokemon_check:
 	_JUMP('ev_r203_ranger_catch_invalid'); Everything else
     _END()
 ev_r203_ranger_catch_no:
-	_MACRO_TALKMSG('dp_scenario2', 'msg_r203_ranger_catch_no', 'Not yet?\nDon’t worry, kid.\rKeep at it and I’m sure you’ll\nfind one eventually.\rJust make sure you’ve got a flower burning\nin your Incense Burner, okay?')
+	_MACRO_TALKMSG('dialogue_r203', 'msg_r203_ranger_catch_no', 'Not yet?\nDon’t worry, kid.\rKeep at it and I’m sure you’ll\nfind one eventually.\rJust make sure you’ve got a flower burning\nin your Incense Burner, okay?')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_r203_ranger_catch_invalid:
-	_MACRO_TALKMSG('dp_scenario2', 'msg_r203_ranger_catch_invalid', 'I think this one is actually pretty common.\rAre you sure you’re burning that incense?')
+	_MACRO_TALKMSG('dialogue_r203', 'msg_r203_ranger_catch_invalid', 'I think this one is actually pretty common.\rAre you sure you’re burning that incense?')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_r203_ranger_catch_location_invalid:
+	_MACRO_TALKMSG('dialogue_r203', 'msg_r203_ranger_catch_location_invalid', 'That looks like a rare Pokémon!\rBut... not from the area.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
@@ -129,7 +137,7 @@ ev_r204_ranger_check_basculin_form:
 	_IFVAL_JUMP(@SCWK_PARAM2, 'NE', 2, 'ev_r203_ranger_catch_invalid_form'); White Striped Basculin specifically
 	_RET()
 ev_r203_ranger_catch_invalid_form:
-	_MACRO_TALKMSG('dp_scenario2', 'msg_r203_ranger_catch_invalid_form', 'Hmm... something about it is off.\rDid you know some Pokémon look different\ndepending on their environment?')
+	_MACRO_TALKMSG('dialogue_r203', 'msg_r203_ranger_catch_invalid_form', 'Hmm... something about it is off.\rDid you know some Pokémon look different\ndepending on their environment?')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
@@ -142,11 +150,13 @@ ev_r203_ranger_catch_success:
 	_OPEN_CUSTUM_WIN(@SCWK_TEMP0); SCWK_TEMP0 will have the MonsNo of the pokemon chosen
 	_TALK_CLOSE()
 	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', 2, 'ev_r203_ranger_no_gift_give')
+	_CALL('ev_common_tray_space_check'); Checks if there is any remaining space in the Party and Boxes
+	_IFVAL_JUMP(@551, 'EQ', 1, 'ev_r203_ranger_gift_no_tray_space'); Party and Boxes are full
 	_POKEMON_NAME_EXTRA(0, @SCWK_TEMP0, 0, 0)
     _ME_PLAY('M_FI013')
-	_TALKMSG('dp_scenario2%msg_r203_receive_starter')
+	_MACRO_TALKMSG('dialogue_r203', 'msg_r203_receive_starter', 'You received {0,1,1,0}.')
     _ME_WAIT()
-	_ADD_POKEMON_UI(@SCWK_TEMP0, 5, 0, @SCWK_ANSWER, 3)
+	_ADD_POKEMON_UI_EXTRA(@SCWK_TEMP0, 0, 5, 0, 3, 4) ; MonsNo, FormNo, Level, Item, MaxIVs, BallId
 	_SWITCH(@SCWK_TEMP0)
 	_CASE_JUMP(387, 'ev_r203_ranger_catch_turtwig_flag_set')
 	_CASE_JUMP(390, 'ev_r203_ranger_catch_chimchar_flag_set')
@@ -175,13 +185,20 @@ ev_r203_ranger_gift_add_piplup:
 	_RET()
 ev_r203_ranger_gift_again:
 	_FLAG_RESET(#2007); Resets if the player has said no to Ranger Starter gift.
-	_MACRO_TALKMSG('dp_scenario2', 'msg_r203_ranger_gift_again', 'You’ve come back! Would you like to\nreceive your reward now?')
+	_MACRO_TALKMSG('dialogue_r203', 'msg_r203_ranger_gift_again', 'You’ve come back! Would you like to\nreceive your reward now?')
 	_JUMP('ev_r203_ranger_catch_success')
 ev_r203_ranger_no_gift_give:
 	_FLAG_SET(#2007); Player said no to Ranger Starter Gift
-	_MACRO_TALKMSG('dp_scenario2', 'msg_r203_ranger_no_gift_give', 'I see, you’re not ready to take it along\nyet. I’ll be here whenever that changes.')
+	_MACRO_TALKMSG('dialogue_r203', 'msg_r203_ranger_no_gift_give', 'I see, you’re not ready to take it along yet.\nI’ll be here whenever that changes.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
+	_END()
+ev_r203_ranger_gift_no_tray_space:
+	_FLAG_SET(#2007); Player said no to Ranger Starter Gift
+	_MACRO_TALKMSG('dialogue_r203', 'msg_r203_ranger_gift_no_tray_space', 'Oh, but you don’t have space for it right now.\nI’ll be here for whenever that changes.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
 ev_r203_ranger_catch_turtwig_flag_set:
 	_FLAG_SET(#2293); Ranger Turtwig
 	_JUMP('ev_r203_ranger_quest_finish')
@@ -192,14 +209,16 @@ ev_r203_ranger_catch_piplup_flag_set:
 	_FLAG_SET(#2295); Ranger Piplup
 	_JUMP('ev_r203_ranger_quest_finish')
 ev_r203_ranger_quest_finish:
-	_MACRO_TALKMSG('dp_scenario2', 'msg_r203_ranger_quest_finish', 'The Pokémon that you just chose\nis another rare species.\rTake care of it and raise it well.\rI’ve gotta get on with my survey work, but\nif you’re on your way to Eterna City,\ryou should speak to my colleague there.')
+	_MACRO_TALKMSG('dialogue_r203', 'msg_r203_ranger_quest_finish', 'The Pokémon that you just chose\nis another rare species.\rTake care of it and raise it well.\rI’ve gotta get on with my survey work, but\nif you’re on your way to Eterna City,\fyou should speak to my colleague there.')
 	_FLAG_SET(#2008); Route 203 Ranger Catch Quest completed.
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
+	_END()
 ev_r203_ranger_quest_completed:
-	_MACRO_TALKMSG('dp_scenario2', 'msg_r203_ranger_quest_completed', 'If you’re on your way to Eterna City,\nyou should speak to my colleague there.')
+	_MACRO_TALKMSG('dialogue_r203', 'msg_r203_ranger_quest_completed', 'If you’re on your way to Eterna City,\nyou should speak to my colleague there.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
+	_END()
 pos_r203_rival:
 	_EVENT_START()
 	_OBJ_ANIME('HERO', 'anm_r203_support_0_hero')
@@ -262,7 +281,7 @@ pos_r203_rival_01_common:
 	_EVENT_CAMERA_END_WAIT()
 	_RIVAL_NAME(0)
 	_PLAYER_NAME(1)
-	_TALKMSG('dp_scenario1%65-msg_r203_rival_01')
+	_MACRO_TALKMSG('dialogue_r203', '65-msg_r203_rival_01', 'Hey! {1,1,0,0}! Tell me you got a\nlittle tougher!\rMe? Do you even need to ask? Of course I\ngot tougher!\rCome on! Let’s battle it out!', 0, 1)
 	_TALK_CLOSE()
 	_LDVAL(@TOWNMAP_GUIDE_SEQUENCE, 2700)
 	_EVENT_CAMERA_INDEX(50)
@@ -276,31 +295,31 @@ pos_r203_rival_01_common:
 ev_r203_randomteam_barry_piplup:
 	_GET_RND(@SCWK_ANSWER, 4)
 	_LDVAL(@SCWK_TEMP3, 753)
-	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_random_team_end')
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_common_return')
 	_LDVAL(@SCWK_TEMP3, 754)
-	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_random_team_end')
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_common_return')
 	_LDVAL(@SCWK_TEMP3, 755)
-	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 2, 'ev_random_team_end')
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 2, 'ev_common_return')
 	_LDVAL(@SCWK_TEMP3, 756)
 	_RET()
 ev_r203_randomteam_barry_turtwig:
 	_GET_RND(@SCWK_ANSWER, 4)
 	_LDVAL(@SCWK_TEMP3, 745)
-	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_random_team_end')
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_common_return')
 	_LDVAL(@SCWK_TEMP3, 746)
-	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_random_team_end')
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_common_return')
 	_LDVAL(@SCWK_TEMP3, 747)
-	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 2, 'ev_random_team_end')
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 2, 'ev_common_return')
 	_LDVAL(@SCWK_TEMP3, 748)
 	_RET()
 ev_r203_randomteam_barry_chimchar:
 	_GET_RND(@SCWK_ANSWER, 4)
 	_LDVAL(@SCWK_TEMP3, 749)
-	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_random_team_end')
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_common_return')
 	_LDVAL(@SCWK_TEMP3, 750)
-	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_random_team_end')
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_common_return')
 	_LDVAL(@SCWK_TEMP3, 751)
-	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 2, 'ev_random_team_end')
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 2, 'ev_common_return')
 	_LDVAL(@SCWK_TEMP3, 752)
 	_RET()
 ev_r203_rival_01:
@@ -325,9 +344,9 @@ ev_r203_rival_btl_coomon:
 	_IF_FLAGON_CALL(#FE_PLAY_REPO, 'ev_to_write_play_repo')
 	_RIVAL_NAME(0)
 	_PLAYER_NAME(1)
-	_TALKMSG('dp_scenario1%65-msg_r203_rival_02_1')
-	_TALKMSG('dp_scenario1%65-msg_r203_rival_02_2', 1)
-	_TALKMSG('dp_scenario1%65-msg_r203_rival_02_3', 1)
+	_MACRO_TALKMSG('dialogue_r203', '65-msg_r203_rival_02_1', 'Waaah! What do you mean I lost?!\rWell, that’s it! That’s the last time I’ll ever lose!')
+	_MACRO_TALKMSG('dialogue_r203', '65-msg_r203_rival_02_2', 'I’m going to be the world’s toughest Trainer,\nand you know it!', 1)
+	_MACRO_TALKMSG('dialogue_r203', '65-msg_r203_rival_02_3', 'The first thing to do is take on the Oreburgh\nCity Pokémon Gym! I’m gonna toughen up for\fthat, totally!', 1)
 	_TALK_CLOSE()
 	_PLAYER_POS_GET(@SCWK_TEMP0, @SCWK_TEMP1)
 	_IFVAL_JUMP(@SCWK_TEMP1, 'EQ', 757, 'pos_r203_rival_01_11')

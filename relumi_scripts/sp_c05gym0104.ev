@@ -1,3 +1,8 @@
+SP_C05GYM0104_SCENE:
+	_JUMP('ev_c05gym0104_scene')
+	_END()
 SP_C05GYM0104_FLAG:
-	_JUMP('ev_c05gym0104_flag_change')
+	_END()
+SP_C05GYM0104_END:
+	_JUMP('ev_c05gym0104_detach_flashlight')
 	_END()

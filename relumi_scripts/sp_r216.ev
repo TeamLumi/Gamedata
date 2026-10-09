@@ -1,0 +1,9 @@
+SP_R216_INIT:
+	_END()
+SP_R216_OBJ:
+	_END()
+SP_R216_SCENE:
+	_END()
+SP_R216_FLAG:
+	_JUMP('ev_r216_flag_change')
+	_END()

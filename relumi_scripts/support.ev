@@ -19,7 +19,7 @@ ev_support_game_clear_c:
 	_JUMP('support_event_01')
 	_JUMP('ev_support_game_clear_chk_zenkoku')
 ev_support_game_clear_chk_zenkoku:
-	_ZENKOKU_ZUKAN_FLAG(2, @SCWK_ANSWER)
+	_ZENKOKU_ZUKAN_FLAG(2, @SCWK_ANSWER); 1 = Set, 2 = Get
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'support_event_03')
 	_IF_FLAGOFF_JUMP(#FE_GENERATE_START, 'support_event_04')
 	_IF_FLAGOFF_JUMP(#FE_C05R0901_POKEMON_GET, 'support_event_05')
@@ -124,106 +124,106 @@ common_support_event_end:
 	_TALK_OBJ_END()
 	_END()
 s_player_male_msg_birthday:
-	_TALKMSG('dp_scenario1%11-msg_heroine_11')
+	_MACRO_TALKMSG('dialogue_support', '11-msg_heroine_11', 'Is today maybe...\nyour birthday, {0,1,0,0}?', 0, 1)
 	_YES_NO_WIN(@SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'yes_male_player_birthday')
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'no_male_player_birthday')
 	_END()
 yes_male_player_birthday:
-	_TALKMSG('dp_scenario1%11-msg_heroine_12')
+	_MACRO_TALKMSG('dialogue_support', '11-msg_heroine_12', '*giggle*\nCongratulations, {0,1,0,0}!\fAnd many more happy returns!')
 	_RET()
 no_male_player_birthday:
-	_TALKMSG('dp_scenario1%11-msg_heroine_13')
+	_MACRO_TALKMSG('dialogue_support', '11-msg_heroine_13', 'Oh, it isn’t?\rI wonder what made me think that today was\nyour birthday.')
 	_RET()
 s_player_female_msg_birthday:
-	_TALKMSG('dp_scenario1%11-msg_hero_11')
+	_MACRO_TALKMSG('dialogue_support', '11-msg_hero_11', 'Hey, {0,1,0,0}! Is it maybe your\nbirthday today?', 0, 1)
 	_YES_NO_WIN(@SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'yes_female_player_birthday')
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'no_female_player_birthday')
 	_END()
 yes_female_player_birthday:
-	_TALKMSG('dp_scenario1%11-msg_hero_12')
+	_MACRO_TALKMSG('dialogue_support', '11-msg_hero_12', 'I thought so! Congratulations, {0,1,0,0}!\nYou know, I’m glad we’re friends!')
 	_RET()
 no_female_player_birthday:
-	_TALKMSG('dp_scenario1%11-msg_hero_13')
+	_MACRO_TALKMSG('dialogue_support', '11-msg_hero_13', 'Huh? It isn’t?\rNow, what made me think it was your birthday?\nFreaky weird.')
 	_RET()
 s_player_male_msg_00:
-	_TALKMSG('dp_scenario1%11-msg_heroine_14')
+	_MACRO_TALKMSG('dialogue_support', '11-msg_heroine_14', '{0,1,0,0}! I heard from the professor!\rCongratulations, Champ!')
 	_RET()
 s_player_female_msg_00:
-	_TALKMSG('dp_scenario1%11-msg_hero_14')
+	_MACRO_TALKMSG('dialogue_support', '11-msg_hero_14', '{0,1,0,0}, the professor told me the\nnews! Congratulations, Champ!', 0, 1)
 	_RET()
 s_player_male_msg_01:
-	_TALKMSG('dp_scenario1%11-msg_heroine_01')
+	_MACRO_TALKMSG('dialogue_support', '11-msg_heroine_01', 'Hey, {0,1,0,0}? The professor told\nme something.\rHe thinks {1,1,1,0} may have\nreappeared at the Spear Pillar...', 0, 1)
 	_RET()
 s_player_female_msg_01:
-	_TALKMSG('dp_scenario1%11-msg_hero_01')
+	_MACRO_TALKMSG('dialogue_support', '11-msg_hero_01', 'Hey, {0,1,0,0}! The prof told me\nsomething cool.\rHe thinks {1,1,1,0} has reappeared at\nthe Spear Pillar!', 0, 1)
 	_RET()
 s_player_male_msg_02:
-	_TALKMSG('dp_scenario1%11-msg_heroine_02')
+	_MACRO_TALKMSG('dialogue_support', '11-msg_heroine_02', 'Hi, {0,1,0,0}!\rYou’re friends with the elder of Celestic Town,\naren’t you?\rShe told me that she had something she wanted\nto show you.')
 	_RET()
 s_player_female_msg_02:
-	_TALKMSG('dp_scenario1%11-msg_hero_02')
+	_MACRO_TALKMSG('dialogue_support', '11-msg_hero_02', 'Hi, {0,1,0,0}!\rYou know the elder of Celestic Town, right?\rShe told me she wanted to show you something.')
 	_RET()
 s_player_male_msg_03:
-	_TALKMSG('dp_scenario1%11-msg_heroine_03_1')
-	_TALKMSG('dp_scenario1%11-msg_heroine_03_2')
+	_MACRO_TALKMSG('dialogue_support', '11-msg_heroine_03_1', 'Hi, {0,1,0,0}! May I see your Pokédex?\r...')
+	_MACRO_TALKMSG('dialogue_support', '11-msg_heroine_03_2', 'Oh my gosh! You’ve seen every kind of Pokémon\nin Sinnoh!\rHave you shown your Pokédex to\nProfessor Rowan yet?')
 	_RET()
 s_player_female_msg_03:
-	_TALKMSG('dp_scenario1%11-msg_hero_03_1')
-	_TALKMSG('dp_scenario1%11-msg_hero_03_2')
+	_MACRO_TALKMSG('dialogue_support', '11-msg_hero_03_1', 'Hey, {0,1,0,0}!\nLet me take a look at your Pokédex.\r...', 0, 1)
+	_MACRO_TALKMSG('dialogue_support', '11-msg_hero_03_2', 'Awesome! You’ve seen every kind of Pokémon\nin Sinnoh!\rHave you shown this Pokédex to\nProfessor Rowan yet?')
 	_RET()
 s_player_male_msg_04:
-	_TALKMSG('dp_scenario1%11-msg_heroine_04')
+	_MACRO_TALKMSG('dialogue_support', '11-msg_heroine_04', 'Hey, {0,1,0,0}, have you ever chatted\nwith my kid sister?', 0, 1)
 	_RET()
 s_player_female_msg_04:
-	_TALKMSG('dp_scenario1%11-msg_hero_04')
+	_MACRO_TALKMSG('dialogue_support', '11-msg_hero_04', 'Hey, {0,1,0,0}, have you ever seen my\nkid sister?', 0, 1)
 	_RET()
 s_player_male_msg_05:
-	_TALKMSG('dp_scenario1%11-msg_heroine_05_1')
-	_TALKMSG('dp_scenario1%11-msg_heroine_05_2')
+	_MACRO_TALKMSG('dialogue_support', '11-msg_heroine_05_1', 'Oh, {0,1,0,0}, are you acquainted\nwith Bebe?', 0, 1)
+	_MACRO_TALKMSG('dialogue_support', '11-msg_heroine_05_2', 'She lives in Hearthome City.\rEvery Trainer should make it a point to pay Bebe\na visit.')
 	_RET()
 s_player_female_msg_05:
-	_TALKMSG('dp_scenario1%11-msg_hero_05_1')
-	_TALKMSG('dp_scenario1%11-msg_hero_05_2')
+	_MACRO_TALKMSG('dialogue_support', '11-msg_hero_05_1', 'Hey, {0,1,0,0}, have you met Bebe?')
+	_MACRO_TALKMSG('dialogue_support', '11-msg_hero_05_2', 'She lives out in Hearthome City.\rIf you’re a Trainer, you owe it to yourself to\nvisit her.')
 	_RET()
 s_player_male_msg_06:
-	_TALKMSG('dp_scenario1%11-msg_heroine_06_1')
-	_TALKMSG('dp_scenario1%11-msg_heroine_06_2')
+	_MACRO_TALKMSG('dialogue_support', '11-msg_heroine_06_1', 'Hey! {0,1,0,0}, you’ve got a Poké Radar?')
+	_MACRO_TALKMSG('dialogue_support', '11-msg_heroine_06_2', 'Watch for tall grass to rustle wildly when you use\nyour Poké Radar.\rThat could be a sign that a rare Pokémon is\nhiding in there.')
 	_RET()
 s_player_female_msg_06:
-	_TALKMSG('dp_scenario1%11-msg_hero_06_1')
-	_TALKMSG('dp_scenario1%11-msg_hero_06_2')
+	_MACRO_TALKMSG('dialogue_support', '11-msg_hero_06_1', 'Hey, {0,1,0,0}! You’ve got yourself a\nPoké Radar, too?', 0, 1)
+	_MACRO_TALKMSG('dialogue_support', '11-msg_hero_06_2', 'Watch for tall grass to rustle wildly when you use\nthat Poké Radar.\rThat’s a sign that rare Pokémon may be\nhiding there.')
 	_RET()
 s_player_male_msg_07:
-	_TALKMSG('dp_scenario1%11-msg_heroine_07_1')
-	_TALKMSG('dp_scenario1%11-msg_heroine_07_2')
+	_MACRO_TALKMSG('dialogue_support', '11-msg_heroine_07_1', 'Hi, {0,1,0,0}! How’s your Poké Radar?')
+	_MACRO_TALKMSG('dialogue_support', '11-msg_heroine_07_2', 'When you use it, do you sometimes see more\nthan one patch of tall grass rustling?\rThe patch farther away gives you a better chance\nof seeing the same kind of Pokémon in a row.\rThat’s the feeling I get, anyway.')
 	_RET()
 s_player_female_msg_07:
-	_TALKMSG('dp_scenario1%11-msg_hero_07_1')
-	_TALKMSG('dp_scenario1%11-msg_hero_07_2')
+	_MACRO_TALKMSG('dialogue_support', '11-msg_hero_07_1', 'Hi, {0,1,0,0}! How’s your Poké Radar\nworking out?', 0, 1)
+	_MACRO_TALKMSG('dialogue_support', '11-msg_hero_07_2', 'When you use it, do you sometimes see more\nthan one patch of tall grass rustling?\rThe patch farther away gives you a better chance\nof seeing the same kind of Pokémon in a row.\rI think that’s how it goes.')
 	_RET()
 s_player_male_msg_08:
-	_TALKMSG('dp_scenario1%11-msg_heroine_08')
+	_MACRO_TALKMSG('dialogue_support', '11-msg_heroine_08', 'Sometimes a patch of grass sparkles when a\nPoké Radar is used.\rPeople say a Shiny Pokémon is hiding there!\nCould that be true?')
 	_RET()
 s_player_female_msg_08:
-	_TALKMSG('dp_scenario1%11-msg_hero_08')
+	_MACRO_TALKMSG('dialogue_support', '11-msg_hero_08', 'Sometimes, a patch of grass sparkles when a\nPoké Radar is used.\rThey say a Shiny Pokémon is hiding there!\rI wonder if that’s true.')
 	_RET()
 s_player_male_msg_09:
-	_TALKMSG('dp_scenario1%11-msg_heroine_09_1')
-	_TALKMSG('dp_scenario1%11-msg_heroine_09_2')
+	_MACRO_TALKMSG('dialogue_support', '11-msg_heroine_09_1', 'So, {0,1,0,0}.\rI’m also helping the professor put together the\nNational Pokédex.')
+	_MACRO_TALKMSG('dialogue_support', '11-msg_heroine_09_2', 'Catching Pokémon can be really challenging,\ncan’t it?\rBut, it’s also so much fun!')
 	_RET()
 s_player_female_msg_09:
-	_TALKMSG('dp_scenario1%11-msg_hero_09_1')
-	_TALKMSG('dp_scenario1%11-msg_hero_09_2')
+	_MACRO_TALKMSG('dialogue_support', '11-msg_hero_09_1', 'So, {0,1,0,0}.\rI’m also helping the professor out with the\nNational Pokédex.')
+	_MACRO_TALKMSG('dialogue_support', '11-msg_hero_09_2', 'Catching Pokémon can be really challenging,\ncan’t it?\rBut I also have a ton of fun doing it!')
 	_RET()
 s_player_male_msg_10:
-	_TALKMSG('dp_scenario1%11-msg_heroine_10_1')
-	_TALKMSG('dp_scenario1%11-msg_heroine_10_2')
+	_MACRO_TALKMSG('dialogue_support', '11-msg_heroine_10_1', '{0,1,0,0}!\r{0,1,0,0}, {0,1,0,0},\n{0,1,0,0}!', 0, 1)
+	_MACRO_TALKMSG('dialogue_support', '11-msg_heroine_10_2', 'Congratulations for completing\nthe National Pokédex!')
 	_RET()
 s_player_female_msg_10:
-	_TALKMSG('dp_scenario1%11-msg_hero_10_1')
-	_TALKMSG('dp_scenario1%11-msg_hero_10_2')
+	_MACRO_TALKMSG('dialogue_support', '11-msg_hero_10_1', '{0,1,0,0}!\rWow! I don’t know what to say! I mean, it’s so\nawesome and all.')
+	_MACRO_TALKMSG('dialogue_support', '11-msg_hero_10_2', 'Congratulations on completing the\nNational Pokédex!')
 	_RET()
 ev_support_battle_intro:; Support rematch battle system
 	_IF_FLAGON_JUMP(#TMFLG_T02_SUP_RETRUN_MATCH, 'ev_support_game_clear_c')
@@ -242,29 +242,29 @@ ev_support_battle_intro:; Support rematch battle system
 	_JUMP('ev_support_battle')
 	_END()
 ev_support_lucas_battle_intro:
-	_TALKMSG('dp_scenario1%11-msg_heroine_17_01')
+	_MACRO_TALKMSG('dialogue_support', '11-msg_heroine_17_01', 'Hey, {0,1,0,0}! Do you have a minute?\rSince you’re really tough, I was hoping you could\nteach me about Pokémon battles. Is that OK?')
 	_YES_NO_WIN(@SCWK_ANSWER)
 	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 0, 'ev_support_lucas_battle_intro_accept')
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_support_lucas_battle_intro_refuse')
 	_RET()
 ev_support_lucas_battle_intro_accept:
-	_TALKMSG('dp_scenario1%11-msg_heroine_17_02')
+	_MACRO_TALKMSG('dialogue_support', '11-msg_heroine_17_02', 'Thanks!\rI sure am lucky, getting to learn from a Trainer\nwho’s made it into the Hall of Fame!\rAll right, here goes!')
 	_RET()
 ev_support_lucas_battle_intro_refuse:
-	_TALKMSG('dp_scenario1%11-msg_heroine_17_03')
+	_MACRO_TALKMSG('dialogue_support', '11-msg_heroine_17_03', 'Aww, that’s too bad. Well, let me know if you’ve\ngot a moment some other time!')
 	_LDVAL(@LOCALWORK1, 1)
 	_RET()
 ev_support_dawn_battle_intro:
-	_TALKMSG('dp_scenario1%11-msg_hero_17_01')
+	_MACRO_TALKMSG('dialogue_support', '11-msg_hero_17_01', 'Hey, {0,1,0,0}! Do you have a minute?\rSince you’re really tough, I was hoping you could\nteach me about Pokémon battles. Is that OK?')
 	_YES_NO_WIN(@SCWK_ANSWER)
 	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 0, 'ev_support_dawn_battle_intro_accept')
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_support_dawn_battle_intro_refuse')
 	_RET()
 ev_support_dawn_battle_intro_accept:
-	_TALKMSG('dp_scenario1%11-msg_hero_17_02')
+	_MACRO_TALKMSG('dialogue_support', '11-msg_hero_17_02', 'Thanks!\rI sure am lucky, getting to learn from a Trainer\nwho’s made it into the Hall of Fame!\rAll right, here goes!')
 	_RET()
 ev_support_dawn_battle_intro_refuse:
-	_TALKMSG('dp_scenario1%11-msg_hero_17_03')
+	_MACRO_TALKMSG('dialogue_support', '11-msg_hero_17_03', 'Aww, that’s too bad. Well, let me know if you’ve\ngot a moment some other day!')
 	_LDVAL(@LOCALWORK1, 1)
 	_RET()
 ev_support_battle:
@@ -367,7 +367,7 @@ ev_support_dawn_battle_hard_piplup:
 	_JUMP('ev_support_dawn_battle_over')
 ev_support_lucas_battle_over:
 	_PLAYER_NAME(0)
-	_TALKMSG('dp_scenario1%11-msg_heroine_17_04')
+	_MACRO_TALKMSG('dialogue_support', '11-msg_heroine_17_04', 'Wow, I should have known I didn’t stand a\nchance against you, {0,1,0,0}...\rThanks so much for teaching me more about\nPokémon battles today!\rI hope we can battle again sometime!')
 	_FLAG_SET(#TMFLG_T02_SUP_RETRUN_MATCH)
 	_FLAG_SET(#FE_T02_SUP_BTL_WIN)
 	_TALK_CLOSE()
@@ -375,7 +375,7 @@ ev_support_lucas_battle_over:
 	_END()
 ev_support_dawn_battle_over:
 	_PLAYER_NAME(0)
-	_TALKMSG('dp_scenario1%11-msg_hero_17_04')
+	_MACRO_TALKMSG('dialogue_support', '11-msg_hero_17_04', 'Wow, I should have known I didn’t stand a\nchance against you, {0,1,0,0}...\rThanks so much for teaching me more about\nPokémon battles today!\rI hope we can battle again sometime!')
 	_FLAG_SET(#TMFLG_T02_SUP_RETRUN_MATCH)
 	_FLAG_SET(#FE_T02_SUP_BTL_WIN)
 	_TALK_CLOSE()

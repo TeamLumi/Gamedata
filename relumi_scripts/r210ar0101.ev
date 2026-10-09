@@ -3,7 +3,7 @@ ev_r210ar0101_flag_change:
 	_LDVAL(@SCWK_TEMP3, 1)
 	_END()
 ev_r210ar0101_farmer:
-	_EASY_OBJ_MSG('dp_scenario2%76-msg_r210ar0101_farmer_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_r210ar0101', '76-msg_r210ar0101_farmer_01', 'Howdy, traveler!\rSome of our customers are rowdy types that want\nto battle. But pay it no mind and stay awhile.')
 	_END()
 ev_r210ar0101_waitress:
 	_TALK_OBJ_START()
@@ -13,7 +13,7 @@ ev_r210ar0101_waitress:
 	_JUMP('ev_r210ar0101_waitressdirend')
 	_END()
 ev_r210ar0101_waitressdirend:
-	_TALKMSG('dp_scenario2%76-msg_r210ar0101_waitress_01')
+	_MACRO_TALKMSG('dialogue_r210ar0101', '76-msg_r210ar0101_waitress_01', 'How are ya doing? Whatcha having? Course, all\nwe ever have is Moomoo Milk.\rMoomoo Milk, 500. Want a bottle?')
 	_MONEY_OPEN()
 	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_845', 3)
 	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_846', 2)
@@ -32,7 +32,7 @@ ev_r210ar0101_waitressbuyone:
 	_ADD_ITEM_CHK(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_r210ar0101_waitress_03')
 	_SUB_GOLD(500)
-	_TALKMSG('dp_scenario2%76-msg_r210ar0101_waitress_02')
+	_MACRO_TALKMSG('dialogue_r210ar0101', '76-msg_r210ar0101_waitress_02', 'Here’s your Moomoo Milk. Enjoy.')
 	_CALL('ev_item_event')
 	_TALK_CLOSE()
 	_MONEY_CLOSE()
@@ -47,7 +47,7 @@ ev_r210ar0101_waitressbuyten:
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_r210ar0101_waitress_03')
 	_SUB_GOLD(5000)
 	_MONEY_OPEN()
-	_TALKMSG('dp_scenario2%76-msg_r210ar0101_waitress_02')
+	_MACRO_TALKMSG('dialogue_r210ar0101', '76-msg_r210ar0101_waitress_02', 'Here’s your Moomoo Milk. Enjoy.')
 	_CALL('ev_item_event')
 	_TALK_CLOSE()
 	_MONEY_CLOSE()
@@ -55,19 +55,19 @@ ev_r210ar0101_waitressbuyten:
 	_END()
 ev_r210ar0101_waitress_03:
 	_MONEY_CLOSE()
-	_TALKMSG('dp_scenario2%76-msg_r210ar0101_waitress_03')
+	_MACRO_TALKMSG('dialogue_r210ar0101', '76-msg_r210ar0101_waitress_03', 'Oh! Your Bag’s full, sweetie.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_r210ar0101_waitress_04:
 	_MONEY_CLOSE()
-	_TALKMSG('dp_scenario2%76-msg_r210ar0101_waitress_04')
+	_MACRO_TALKMSG('dialogue_r210ar0101', '76-msg_r210ar0101_waitress_04', 'Oh! You don’t have the money, sweetie.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_r210ar0101_waitress_05:
 	_MONEY_CLOSE()
-	_TALKMSG('dp_scenario2%76-msg_r210ar0101_waitress_05')
+	_MACRO_TALKMSG('dialogue_r210ar0101', '76-msg_r210ar0101_waitress_05', 'All right, then.\rI should tell you, it’s not that we can only get\nMoomoo Milk. No. We choose to serve only\fMoomoo Milk. We’re very particular about it.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
@@ -92,12 +92,12 @@ anm_r210ar0101_dir02:
 ev_r210ar0101_oldman2:
 	_TALK_OBJ_START_TURN_NOT()
 	_IF_FLAGON_JUMP(#FE_R210A_CLEAR, 'ev_r210ar0101_oldman2_02')
-	_TALKMSG('dp_scenario2%76-msg_r210ar0101_oldman2_01')
+	_MACRO_TALKMSG('dialogue_r210ar0101', '76-msg_r210ar0101_oldman2_01', 'Youngster, you’ve seen the Psyduck huddled\noutside? Psyduck are Pokémon that suffer from\fchronic headaches...\rI’m afraid we’ll have to wait for them to\nget better.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_r210ar0101_oldman2_02:
-	_TALKMSG('dp_scenario2%76-msg_r210ar0101_oldman2_02')
+	_MACRO_TALKMSG('dialogue_r210ar0101', '76-msg_r210ar0101_oldman2_02', 'Well, well! So I hear you’ve relieved the Psyduck\nof their headaches.\rThe person who gave you the Secret Medicine\nmust be quite the Trainer!')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()

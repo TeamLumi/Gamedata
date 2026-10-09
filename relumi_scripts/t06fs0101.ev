@@ -17,7 +17,7 @@ ev_t06fs0101_shop_re:
 	_JUMP('ev_t06fs0101_shop_end')
 	_END()
 ev_t06fs0101_shop_sonohoka:
-	_TALKMSG('dp_scenario1%28-mes_shop_01_03')
+	_MACRO_TALKMSG('dialogue_t06fs0101', '28-mes_shop_01_03', 'Is there anything else I can do for you?')
 	_RET()
 ev_t06fs0101_shop_buy:
 	_LDVAL(@LOCALWORK3, 1)
@@ -68,8 +68,8 @@ ev_t06fs0101_fix_shop:
 	_NONE_USE_NUMBER()
 	_END()
 ev_t06fs0101_mount:
-	_EASY_OBJ_MSG('dp_scenario3%57-msg_t06fs0101_mount_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_t06fs0101', '57-msg_t06fs0101_mount_01', 'A word of advice from a grizzled mountain man!\rBuy up as many items as you can hold in your\nBag. I’m not joking.')
 	_END()
 ev_t06fs0101_woman3:
-	_EASY_OBJ_MSG('dp_scenario3%57-msg_t06fs0101_woman3_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_t06fs0101', '57-msg_t06fs0101_woman3_01', 'I was on a 54-win streak... If only I used that\nmove while I still had the chance...')
 	_END()

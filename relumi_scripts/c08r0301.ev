@@ -1,24 +1,24 @@
 ev_c08r0301_girl2:
-	_EASY_OBJ_MSG('dp_scenario3%3-msg_c08r0301_girl2_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c08r0301', '3-msg_c08r0301_girl2_01', 'Have you gone to the Grand Underground\nlately? Depending on where you go down,\fyou end up in different places.\rThat’s why I use my Explorer Kit in as many\nplaces as I can.')
 	_END()
 ev_c08r0301_clown:
-	_EASY_OBJ_MSG('dp_scenario3%3-msg_c08r0301_clown_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c08r0301', '3-msg_c08r0301_clown_01', 'The spheres found in the Grand Underground\nare like gems.\rYou can obtain goodies by trading spheres away.')
 	_END()
 ev_c08r0301_boy2a:
-	_EASY_OBJ_MSG('dp_scenario3%3-msg_c08r0301_boy2a_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c08r0301', '3-msg_c08r0301_boy2a_01', 'I hear there are special places in the Grand\nUnderground where Pokémon like to gather!')
 	_END()
 ev_c08r0301_boy2b:
-	_EASY_OBJ_MSG('dp_scenario3%3-msg_c08r0301_boy2b_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c08r0301', '3-msg_c08r0301_boy2b_01', 'You should work together with friends to collect\nGlossy Stones before you dig up Fossils!\rApparently something good’ll happen if you\ndo that!')
 	_END()
 ev_c08r0301_boy2c:
-	_EASY_OBJ_MSG('dp_scenario3%3-msg_c08r0301_boy2c_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c08r0301', '3-msg_c08r0301_boy2c_01', 'Head to the Grand Underground and have fun\ndown there. Make it an adventure!')
 	_END()
 ev_c08r0301_sunglasses:
 	_TALK_OBJ_START_TURN_NOT()
-	_TALKMSG('dp_scenario3%3-msg_c08r0301_sunglasses_01')
+	_MACRO_TALKMSG('dialogue_c08r0301', '3-msg_c08r0301_sunglasses_01', 'Once, when I was in the Grand Underground,\nI fainted...\fBut then Roark rescued me!')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_c08r0301_woman1:
-	_EASY_OBJ_MSG('dp_scenario3%3-msg_c08r0301_woman1_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c08r0301', '3-msg_c08r0301_woman1_01', 'The Underground Man in Eterna and Byron of\nCanalave are related.\rAdd Byron’s son Roark, and you have a trio of\ndedicated diggers.')
 	_END()

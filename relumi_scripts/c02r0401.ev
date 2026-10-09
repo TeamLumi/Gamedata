@@ -6,7 +6,7 @@ ev_c02r0401_flag_change_check0:
 	_IF_FLAGON_JUMP($SYS_FLAG_GAME_CLEAR, 'ev_c02r0401_flag_change_check1')
 	_END()
 ev_c02r0401_flag_change_check1:
-	_ZENKOKU_ZUKAN_FLAG(2, @LOCALWORK0)
+	_ZENKOKU_ZUKAN_FLAG(2, @LOCALWORK0); 1 = Set, 2 = Get
 	_IFVAL_JUMP(@LOCALWORK0, 'EQ', 1, 'ev_c02r0401_flag_change_check2')
 	_END()
 ev_c02r0401_flag_change_check2:
@@ -30,7 +30,7 @@ ev_c02r0401_flag_change_check6:
 ev_c02r0401_event_start:
 	_EVENT_START()
 	_TIME_WAIT(30, @SCWK_ANSWER)
-	_TALKMSG('dp_scenario2%170-msg_c02r0401_event_01')
+	_MACRO_TALKMSG('dialogue_c02r0401', '170-msg_c02r0401_event_01', 'Welcome...\r...\n...kekeke...\rWe’ve had a reservation for you. We’ve held it a\nlong time...')
 	_TALK_CLOSE()
 	_OBJ_ANIME('C02R0401_EVENT', 'anm_c02r0401_event_01')
 	_OBJ_ANIME('HERO', 'anm_c02r0401_player_01')
@@ -46,7 +46,7 @@ ev_c02r0401_event_start:
 	_SET_FORCE_BLINK('HERO', 1)
 	_TIME_WAIT(15, @SCWK_ANSWER)
 	_PLAYER_NAME(0)
-	_TALKMSG('dp_scenario2%170-msg_c02r0401_event_02')
+	_MACRO_TALKMSG('dialogue_c02r0401', '170-msg_c02r0401_event_02', 'You lay down on the bed as if bidden there...')
 	_TALK_CLOSE()
 	_SE_PLAY('S_BED_NIGHTMARE')
 	_FLAG_SET(#FE_C02R0401_START)
@@ -106,7 +106,7 @@ ev_c02r0401_event_end:
 	_SE_PLAY('M_FI002')
 	_ME_WAIT()
 	_PLAYER_NAME(0)
-	_TALKMSG('dp_scenario2%170-msg_c02r0401_event_03')
+	_MACRO_TALKMSG('dialogue_c02r0401', '170-msg_c02r0401_event_03', 'You woke up!')
 	_TALK_CLOSE()
 	_IF_FLAGON_CALL(#FE_D30R0101_LEGEND_CLEAR, 'ev_c02r0401_legend_auto_save')
 	_TALK_END()

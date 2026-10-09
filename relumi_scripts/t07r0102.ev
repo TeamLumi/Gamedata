@@ -10,23 +10,23 @@ ev_t07r0102_woman6:
 ev_t07r0102_woman6_poke_ok:
 	_PLAYER_NAME(0)
 	_NICK_NAME(1, @SCWK_PARAM0)
-	_TALKMSG('dp_scenario3%52-msg_t07r0102_woman6_01')
+	_MACRO_TALKMSG('dialogue_t07r0102', '52-msg_t07r0102_woman6_01', 'How may we serve you today? Perhaps a relaxing\nspa treatment?\rOur spa treatment will help your\n{1,1,2,0} grow more friendly.\rWould you care to book a spa session with\nus, {0,1,0,0}?')
 	_YES_NO_WIN(@SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_t07r0102_woman6_02')
 	_JUMP('ev_t07r0102_woman6_03')
 	_JUMP('ev_t07r0102_woman6_02')
 ev_t07r0102_woman6_02:
-	_TALKMSG('dp_scenario3%52-msg_t07r0102_woman6_02')
+	_MACRO_TALKMSG('dialogue_t07r0102', '52-msg_t07r0102_woman6_02', 'We hope to see you again.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_t07r0102_woman6_03:
-	_TALKMSG('dp_scenario3%52-msg_t07r0102_woman6_03')
+	_MACRO_TALKMSG('dialogue_t07r0102', '52-msg_t07r0102_woman6_03', 'Ah, yes. Right this way, please...')
 	_TALK_CLOSE()
 	_JUMP('ev_t07r0102_anime_01')
 	_END()
 ev_t07r0102_woman6_04:
-	_TALKMSG('dp_scenario3%52-msg_t07r0102_woman6_04')
+	_MACRO_TALKMSG('dialogue_t07r0102', '52-msg_t07r0102_woman6_04', 'We’re ready to begin. Please, relax all\nyour muscles.')
 	_GET_RND(@SCWK_ANSWER, 4)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_t07r0102_woman6_05')
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_t07r0102_woman6_06')
@@ -34,19 +34,19 @@ ev_t07r0102_woman6_04:
 	_JUMP('ev_t07r0102_woman6_08')
 	_JUMP('ev_t07r0102_woman6_09')
 ev_t07r0102_woman6_05:
-	_TALKMSG('dp_scenario3%52-msg_t07r0102_woman6_05')
+	_MACRO_TALKMSG('dialogue_t07r0102', '52-msg_t07r0102_woman6_05', 'This oil contains dissolved diamonds for\nenhanced effectiveness.')
 	_JUMP('ev_t07r0102_woman6_09')
 	_JUMP('ev_t07r0102_woman6_09')
 ev_t07r0102_woman6_06:
-	_TALKMSG('dp_scenario3%52-msg_t07r0102_woman6_06')
+	_MACRO_TALKMSG('dialogue_t07r0102', '52-msg_t07r0102_woman6_06', 'This foam contains an extract taken from pearls.')
 	_JUMP('ev_t07r0102_woman6_09')
 	_JUMP('ev_t07r0102_woman6_09')
 ev_t07r0102_woman6_07:
-	_TALKMSG('dp_scenario3%52-msg_t07r0102_woman6_07')
+	_MACRO_TALKMSG('dialogue_t07r0102', '52-msg_t07r0102_woman6_07', 'The body’s toxins are forced out with a massage\ntechnique from overseas.')
 	_JUMP('ev_t07r0102_woman6_09')
 	_JUMP('ev_t07r0102_woman6_09')
 ev_t07r0102_woman6_08:
-	_TALKMSG('dp_scenario3%52-msg_t07r0102_woman6_08')
+	_MACRO_TALKMSG('dialogue_t07r0102', '52-msg_t07r0102_woman6_08', 'The salon’s air is perfumed by an herbal aroma\nfor relaxation.')
 	_JUMP('ev_t07r0102_woman6_09')
 	_JUMP('ev_t07r0102_woman6_09')
 ev_t07r0102_woman6_09:
@@ -58,12 +58,12 @@ ev_t07r0102_woman6_09:
 	_LDVAL(@LOCALWORK10, 1)
 	_OBJ_ANIME('T07R0102_WOMAN6B', 'anm_woman6b_move_02')
 	_OBJ_ANIME_WAIT()
-	_TALKMSG('dp_scenario3%52-msg_t07r0102_woman6_09')
+	_MACRO_TALKMSG('dialogue_t07r0102', '52-msg_t07r0102_woman6_09', 'There, all done. I hope you enjoyed it.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_t07r0102_woman6_10:
-	_TALKMSG('dp_scenario3%52-msg_t07r0102_woman6_10')
+	_MACRO_TALKMSG('dialogue_t07r0102', '52-msg_t07r0102_woman6_10', 'Oh, I do apologize. We can only provide one spa\nsession a day to our members.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
@@ -383,11 +383,11 @@ anm_woman6b_move_02:
 	_ACMD_END()
 	_JUMP('ev_t07r0102_woman6a')
 ev_t07r0102_woman6a:
-	_EASY_OBJ_MSG('dp_scenario3%52-msg_t07r0102_woman6a_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_t07r0102', '52-msg_t07r0102_woman6a_01', 'We keep all our spa sessions private. That way,\nour clients and their Pokémon can fully relax.')
 	_END()
 ev_t07r0102_woman6b:
-	_EASY_OBJ_MSG('dp_scenario3%52-msg_t07r0102_woman6b_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_t07r0102', '52-msg_t07r0102_woman6b_01', 'Our service is very exclusive. We only accept five\nmembers a day.')
 	_END()
 ev_t07r0102_woman6c:
-	_EASY_OBJ_MSG('dp_scenario3%52-msg_t07r0102_woman6c_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_t07r0102', '52-msg_t07r0102_woman6c_01', 'We’ve developed a reputation for bringing our\nmembers and their Pokémon closer together.')
 	_END()

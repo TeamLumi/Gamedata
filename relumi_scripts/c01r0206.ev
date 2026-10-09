@@ -20,32 +20,32 @@ ev_c01r0206_fc_zenkoku_not:
 	_END()
 ev_guinness_global_btl:
 	_TALK_OBJ_START()
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_c01r0206_global_btl_00', 'What you see scars your mind.\r...\r...\rYou decide against watching any\nlonger.')
+	_MACRO_TALK_KEYWAIT('dialogue_c01r0206', '00_msg_c01r0206_global_btl_00', 'What you see scars your mind.\r...\r...\rYou decide against watching any\nlonger.')
 	_TALK_CLOSE()
 	_END()
 ev_guinness_global_poke:
 	_TALK_OBJ_START()
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_c01r0206_global_btl_01', 'Slowpoke are happily swimming about.\rOne’s tail seems to be shorter\nthan the others.')
+	_MACRO_TALK_KEYWAIT('dialogue_c01r0206', '00_msg_c01r0206_global_btl_01', 'Slowpoke are happily swimming about.\rOne’s tail seems to be shorter\nthan the others.')
 	_TALK_CLOSE()
 	_END()
 ev_guinness_global_contest:
 	_TALK_OBJ_START()
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_c01r0206_global_btl_02', 'It’s an hour long video of paint drying.\r...\r...\rNo you can’t watch any more.\nGo play the mod.')
+	_MACRO_TALK_KEYWAIT('dialogue_c01r0206', '00_msg_c01r0206_global_btl_02', 'It’s an hour long video of paint drying.\r...\r...\rNo you can’t watch any more.\nGo play the mod.')
 	_TALK_CLOSE()
 	_END()
 ev_c01r0206_woman3_01:
-	_EASY_OBJ_MSG('dp_scenario1%40-msg_c01r0206_woman3_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c01r0206', '40-msg_c01r0206_woman3_01', 'Someone broke my Pokémon-catching record!\rI’ll reclaim my record and regain my place in\nthe standings!')
 	_END()
 ev_c01r0206_bigman_01:
 	_TALK_OBJ_START()
-	_TALKMSG('dp_scenario1%40-msg_c01r0206_bigman_01_1')
-	_TALKMSG('dp_scenario1%40-msg_c01r0206_bigman_01_2', 1)
+	_MACRO_TALKMSG('dialogue_c01r0206', '40-msg_c01r0206_bigman_01_1', 'My name isn’t in the rankings? What kind of\nnonsense is that?!\rIt’s because I’ve never taken part in a\nSuper Contest Show.')
+	_MACRO_TALKMSG('dialogue_c01r0206', '40-msg_c01r0206_bigman_01_2', 'I bet it’d feel great if I could be number\none here!', 1)
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_c01r0206_fishing_01:
-	_EASY_OBJ_MSG('dp_scenario1%40-msg_c01r0206_fishing_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c01r0206', '40-msg_c01r0206_fishing_01', 'I really don’t win many battles. But it doesn’t\nget me down.\rI’m trying for the world record at\nPokémon fishing!')
 	_END()
 ev_c01r0206_stop_01:
-	_EASY_OBJ_MSG('dp_scenario1%40-msg_c01r0206_stop_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c01r0206', '40-msg_c01r0206_stop_01', 'Sorry, I’m still fine-tuning this thingy here.')
 	_END()

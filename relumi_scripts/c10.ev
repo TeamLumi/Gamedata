@@ -15,13 +15,13 @@ ev_c10_flag_change_townmap_on:
 	_SET_SYS_FLAG($FLAG_ARRIVE_C10)
 	_END()
 ev_c10_sign1:
-	_EASY_BOARD_MSG('dp_scenario3%17-msg_c10_sign1_01', 'BOARD_TYPE_ROAD', 0, 3)
+	_EASY_BOARD_MSG('dialogue_c10%17-msg_c10_sign1_01', 'BOARD_TYPE_ROAD', 0, 3)
 	_END()
 ev_c10_sign2:
-	_EASY_BOARD_MSG('dp_scenario3%17-msg_c10_sign2_01', 'BOARD_TYPE_POST', 0)
+	_EASY_BOARD_MSG('dialogue_c10%17-msg_c10_sign2_01', 'BOARD_TYPE_POST', 0)
 	_END()
 ev_c10_statue_01:
-	_EASY_OBJ_MSG('dp_scenario3%17-msg_c10_statue_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c10', '17-msg_c10_statue_01', 'Pokémon League\nThe Pinnacle of Trainerdom!')
 	_END()
 pos_c10_checkin:
 	_EVENT_START()
@@ -94,7 +94,7 @@ pos_c10_shaymin:
 	_OBJ_ANIME('C10_SHAYMIN', 'anm_c10_shaymin_2')
 	_OBJ_ANIME_WAIT()
 	_VOICE_PLAY(492, 0, 0)
-	_MACRO_TALKMSG('dp_scenario3', '00_msg_c10_shaymin_1', 'Your mysterious little green friend\nlooks elated to see you’re safe.\rIt has even brought you a flower!')
+	_MACRO_TALKMSG('dialogue_c10', '00_msg_c10_shaymin_1', 'Your mysterious little green friend\nlooks elated to see you’re safe.\rIt has even brought you a flower!')
 	_LDVAL(@238, 466)
 	_LDVAL(@239, 1)
 	_CALL('ev_item_event')

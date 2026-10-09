@@ -1,7 +1,7 @@
 ev_c06r0201_woman1:
 	_TALK_OBJ_START()
 	_IF_FLAGON_JUMP(#TMFLG_C06R0201_SEED_PRESENT, 'ev_c06r0201_woman1_02')
-	_TALKMSG('dp_scenario2%125-msg_c06r0201_woman1_01')
+	_MACRO_TALKMSG('dialogue_c06r0201', '125-msg_c06r0201_woman1_01', 'I’ve been hiking all around the Sinnoh region.\nI love planting Berries wherever I go.\rI’ll give you a Berry, too. Please plant\nit somewhere.')
 	_GET_RND(@SCWK_TEMP2, 20)
 	_IFVAL_CALL(@SCWK_TEMP2, 'EQ', 19, 'ev_c06r0201_oldman2_addrea2')
 	_IFVAL_CALL(@SCWK_TEMP2, 'EQ', 18, 'ev_c06r0201_oldman2_addrea')
@@ -27,7 +27,7 @@ ev_c06r0201_oldman2_addrea2:
 	_LDVAL(@SCWK_TEMP0, 686)
 	_RET()
 ev_c06r0201_woman1_02:
-	_TALKMSG('dp_scenario2%125-msg_c06r0201_woman1_02')
+	_MACRO_TALKMSG('dialogue_c06r0201', '125-msg_c06r0201_woman1_02', 'Planting Berries is good for Pokémon. It provides\nthem with more things to eat in the wild.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
@@ -37,5 +37,5 @@ ev_c06r0201_oldman_01_item_event_fail:
 	_TALK_OBJ_END()
 	_END()
 ev_c06r0201_babygirl1:
-	_EASY_OBJ_MSG('dp_scenario2%125-msg_c06r0201_babygirl1_02')
+	_MACRO_EASY_OBJ_MSG('dialogue_c06r0201', '125-msg_c06r0201_babygirl1_02', 'My sister gathers Berries every day! Please come\nvisit again!\rWe cook the Berries, too! We mix them up!\nThey’re yummy!')
 	_END()

@@ -1,0 +1,49 @@
+ev_distortionr0102_tbl:
+	_WAIT_FOR_GAMEOBJECT('DISTORTIONR0102_WALLJUMP_1_1')
+	_WAIT_FOR_GAMEOBJECT('DISTORTIONR0102_WALLJUMP_1_2')
+	_WAIT_FOR_GAMEOBJECT('DISTORTIONR0102_WALLJUMP_2_1')
+	_WAIT_FOR_GAMEOBJECT('DISTORTIONR0102_WALLJUMP_2_2')
+	_WAIT_FOR_GAMEOBJECT('TurnbackSpawn_1/Island_1/WALLJUMP (1)')
+	_WAIT_FOR_GAMEOBJECT('TurnbackSpawn_1/Wall_1/WALLJUMP (3)')
+	_WAIT_FOR_GAMEOBJECT('TurnbackSpawn_1/Wall_1/WALLJUMP (4)')
+	_WAIT_FOR_GAMEOBJECT('TurnbackSpawn_1/Island_2/WALLJUMP (2)')
+	_WAIT_FOR_GAMEOBJECT('DWSkyBox')
+	_WAIT_FOR_GAMEOBJECT('Main Camera')
+	_ATTACH_TRANSFORM('DISTORTIONR0102_WALLJUMP_1_1', 'TurnbackSpawn_1/Island_1/WALLJUMP (1)', 0)
+	_ATTACH_TRANSFORM('DISTORTIONR0102_WALLJUMP_1_2', 'TurnbackSpawn_1/Wall_1/WALLJUMP (3)', 0)
+	_ATTACH_TRANSFORM('DISTORTIONR0102_WALLJUMP_2_1', 'TurnbackSpawn_1/Wall_1/WALLJUMP (4)', 0)
+	_ATTACH_TRANSFORM('DISTORTIONR0102_WALLJUMP_2_2', 'TurnbackSpawn_1/Island_2/WALLJUMP (2)', 0)
+	_ATTACH_TRANSFORM('DWSkyBox', 'Main Camera', 1)
+	_END()
+
+ev_distortionr0102_end:
+	_ATTACH_TRANSFORM('DWSkyBox', 'distortionr0102(Clone)', 1)
+	_END()
+
+ev_distortionr0102_jump_1_1:
+	_EVENT_START()
+	_TURN_HERO_TALK_OBJ()
+	_JUMP_AND_ROTATE('distortionr0102(Clone)', 0, 0, 90, 30, 'LOCATORS/Locator_ (2)', 3.0, 0.75, 0.0)
+	_EVENT_END()
+	_END()
+
+ev_distortionr0102_jump_1_2:
+	_EVENT_START()
+	_TURN_HERO_TALK_OBJ()
+	_JUMP_AND_ROTATE('distortionr0102(Clone)', 0, 0, -90, 30, 'LOCATORS/Locator_ (2)', 3.0, 0.75, 0.0)
+	_EVENT_END()
+	_END()
+
+ev_distortionr0102_jump_2_1:
+	_EVENT_START()
+	_TURN_HERO_TALK_OBJ()
+	_JUMP_AND_ROTATE('distortionr0102(Clone)', 0, 0, -90, 30, 'LOCATORS/Locator_ (1)', 3.0, 0.75, 0.0)
+	_EVENT_END()
+	_END()
+
+ev_distortionr0102_jump_2_2:
+	_EVENT_START()
+	_TURN_HERO_TALK_OBJ()
+	_JUMP_AND_ROTATE('distortionr0102(Clone)', 0, 0, 90, 30, 'LOCATORS/Locator_ (1)', 3.0, 0.75, 0.0)
+	_EVENT_END()
+	_END()

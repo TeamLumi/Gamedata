@@ -5,4 +5,5 @@ SP_D13R0102_OBJ:
 SP_D13R0102_SCENE:
 	_END()
 SP_D13R0102_FLAG:
+	_JUMP('ev_d13r0102_flag_change')
 	_END()

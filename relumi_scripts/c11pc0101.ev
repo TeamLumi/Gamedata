@@ -14,11 +14,11 @@ ev_c11pc0101_pcwoman1:
 	_JUMP('ev_heal_p01')
 	_END()
 ev_c11pc0101_man2:
-	_EASY_OBJ_MSG('dp_scenario3%33-msg_c11pc0101_man2_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c11pc0101', '33-msg_c11pc0101_man2_01', 'The Battle Tower’s as tough as they say...\nIt’s no cakewalk, that’s for sure.')
 	_END()
 ev_c11pc0101_waitress:
-	_EASY_OBJ_MSG('dp_scenario3%33-msg_c11pc0101_waitress_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c11pc0101', '33-msg_c11pc0101_waitress_01', 'The best Trainers gather here—not just from this\nregion but from all around the world.')
 	_END()
 ev_c11pc0101_fighter:
-	_EASY_OBJ_MSG('dp_scenario3%33-msg_c11pc0101_fighter_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c11pc0101', '33-msg_c11pc0101_fighter_01', 'To strengthen myself! To strengthen my Pokémon!\nFor that alone, I have come!')
 	_END()

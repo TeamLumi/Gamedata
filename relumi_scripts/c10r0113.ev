@@ -22,12 +22,12 @@ ev_c10r0113_dendou:
 	_END()
 ev_c10r0113_dendou_male:
 	_PLAYER_NAME(0)
-	_TALKMSG('dp_scenario3%26-msg_c10r0113_champion_03')
+	_MACRO_TALKMSG('dialogue_c10r0113', '26-msg_c10r0113_champion_03', '{0,1,0,0}, welcome to the Hall of Fame.')
 	_JUMP('common_c10r0113_dendou')
 	_JUMP('common_c10r0113_dendou')
 ev_c10r0113_dendou_female:
 	_PLAYER_NAME(0)
-	_TALKMSG('dp_scenario3%26-msg_c10r0113_champion_04')
+	_MACRO_TALKMSG('dialogue_c10r0113', '26-msg_c10r0113_champion_04', '{0,1,0,0}, welcome to the Hall of Fame.')
 	_JUMP('common_c10r0113_dendou')
 	_JUMP('common_c10r0113_dendou')
 common_c10r0113_dendou:
@@ -37,11 +37,11 @@ common_c10r0113_dendou:
 	_OBJ_ANIME('C10R0113_DOCTOR', 'anm_c10r0113_doctor_01')
 	_OBJ_ANIME('C10R0113_CHAMP', 'anm_c10r0113_champ_01')
 	_OBJ_ANIME_WAIT()
-	_TALKMSG('dp_scenario3%26-msg_c10r0113_champion_05_1')
-	_TALKMSG('dp_scenario3%26-msg_c10r0113_champion_05_2')
+	_MACRO_TALKMSG('dialogue_c10r0113', '26-msg_c10r0113_champion_05_1', 'Your names will be recorded for posterity here.\rWhat you are leaving are the memories of your\nadventure so far.')
+	_MACRO_TALKMSG('dialogue_c10r0113', '26-msg_c10r0113_champion_05_2', 'It’s time to record your names.\nYou and your Pokémon.\rRemember, your Pokémon are partners that grew\nwith you through many challenging battles.\rThis machine will make a permanent record of\nyour achievement.')
 	_TALK_CLOSE()
 	_SET_SYS_FLAG($SYS_FLAG_BS_LV4)
-	_ZENKOKU_ZUKAN_FLAG(2, @SCWK_ANSWER)
+	_ZENKOKU_ZUKAN_FLAG(2, @SCWK_ANSWER); 1 = Set, 2 = Get
 	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 1, 'ev_c10r0113_zenkoku_zukan_open')
 	_EVENT_CAMERA_INDEX(234)
 	_EVENT_CAMERA_END_WAIT()
@@ -76,8 +76,8 @@ ev_c10r0113_dendou_on:
 	_TIME_WAIT(30, @SCWK_ANSWER)
 	_SET_FORCE_BLINK('C10R0113_DOCTOR', 0)
 	_TIME_WAIT(10, @SCWK_ANSWER)
-	_TALKMSG('dp_scenario3%26-msg_c10r0113_doctor_01')
-	_TALKMSG('dp_scenario3%26-msg_c10r0113_champion_01')
+	_MACRO_TALKMSG('dialogue_c10r0113', '26-msg_c10r0113_doctor_01', 'It’s been a long while since I last entered\nthis room...')
+	_MACRO_TALKMSG('dialogue_c10r0113', '26-msg_c10r0113_champion_01', 'If the last time you were here was when I became\nChampion, then yes, that would be quite a long\ftime ago.')
 	_RET()
 ev_c10r0113_dendou_off:
 	_EVENT_CAMERA_INDEX(233)
@@ -86,8 +86,8 @@ ev_c10r0113_dendou_off:
 	_TIME_WAIT(30, @SCWK_ANSWER)
 	_SET_FORCE_BLINK('C10R0113_DOCTOR', 0)
 	_TIME_WAIT(10, @SCWK_ANSWER)
-	_TALKMSG('dp_scenario3%26-msg_c10r0113_doctor_02')
-	_TALKMSG('dp_scenario3%26-msg_c10r0113_champion_02')
+	_MACRO_TALKMSG('dialogue_c10r0113', '26-msg_c10r0113_doctor_02', 'No matter how many times I come here, I always\nfind myself standing up straighter than usual.')
+	_MACRO_TALKMSG('dialogue_c10r0113', '26-msg_c10r0113_champion_02', 'It’s a natural reaction, Professor. This room is a\nlegacy to the hopes, dreams, and struggles of\fPokémon and their Trainers to excel.')
 	_RET()
 anm_c10r0113_player_200:
 	_AC_DIR_U(4)
@@ -150,7 +150,7 @@ ev_d16r0103_legend_retry_ok:
 ev_d16r0103_legend_retry_ng:
 	_RET()
 ev_d20r0106_legend_retry_ok:
-	_ZENKOKU_ZUKAN_FLAG(2, @SCWK_ANSWER)
+	_ZENKOKU_ZUKAN_FLAG(2, @SCWK_ANSWER); 1 = Set, 2 = Get
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_d20r0106_legend_retry_ng')
 	_FLAG_RESET(#FV_D20R0106_LEGEND)
 	_FLAG_RESET(#FE_D20R0106_RETRY)

@@ -116,14 +116,14 @@ ev_d10r0303_daiza:
 	_IFVAL_JUMP(@SCWK_PARAM0, 'EQ', 0, 'ev_d10r0303_daiza_quit')
 	_ITEM_CHK(1813, 1, @SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_d10r0303_daiza_quit')
-	_TALKMSG('dp_scenario2%200-msg_D10R0401_daiza_02')
+	_TALKMSG('dialogue_d10r0303%200-msg_D10R0401_daiza_02')
 	_YES_NO_WIN(@SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_d10r0303_daiza_ise')
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_d10r0303_daiza_end')
 	_END()
 ev_d10r0303_daiza_ise:
 	_CALL('ev_d10r0401_sasikomi')
-	_TALKMSG('dp_scenario2%200-msg_D10R0401_daiza_03')
+	_MACRO_TALKMSG('dialogue_d10r0303', '200-msg_D10R0401_daiza_03', 'The {0,1,78,0} fit perfectly!\rThe pedestal started shining!')
 	_TALK_CLOSE()
 	_SUB_ITEM(1813, 1, @SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_PARAM0, 'EQ', 1, 'ev_d10r0303_daizanum1')
@@ -168,7 +168,7 @@ ev_d10r0303_daiza_battle1:
 	_JUMP('ev_d10r0303_daiza_battle_rathias')
 ev_d10r0303_daiza_battle_rathias:
 	_VOICE_PLAY(380, 0, 0)
-	_TALKMSG('dp_scenario2%msg_lunasol_poke380_02')
+	_MACRO_TALKMSG('dialogue_d10r0303', 'msg_lunasol_poke380_02', 'Hyahhn!')
 	_TALK_CLOSE()
 	_SET_SYS_FLAG($SYS_FLAG_AUTOSAVE_STOP)
 	_SP_WILD_BTL_SET(380, 70)
@@ -193,7 +193,7 @@ ev_d10r0303_daiza_battle2:
 	_JUMP('ev_d10r0303_daiza_battlerathios')
 ev_d10r0303_daiza_battlerathios:
 	_VOICE_PLAY(381, 0, 0)
-	_TALKMSG('dp_scenario2%msg_lunasol_poke381_02')
+	_MACRO_TALKMSG('dialogue_d10r0303', 'msg_lunasol_poke381_02', 'Shwahhn!')
 	_TALK_CLOSE()
 	_SET_SYS_FLAG($SYS_FLAG_AUTOSAVE_STOP)
 	_SP_WILD_BTL_SET(381, 70)
@@ -234,7 +234,7 @@ ev_d10r0303_daiza_wo:
 	_FADE_WAIT()
 	_RET()
 ev_d10r0303_daiza_quit:
-	_TALKMSG('dp_scenario2%200-msg_d10r0401_daiza_01')
+	_MACRO_TALKMSG('dialogue_d10r0303', '200-msg_d10r0401_daiza_01', 'There is an enigmatic pedestal. You may be able\nto use a slate on it...')
 	_TALK_CLOSE()
 	_TALK_END()
 	_END()

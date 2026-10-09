@@ -1,9 +1,9 @@
 ev_c03r0601_middleman1:
-	_EASY_OBJ_MSG('dp_scenario1%80-msg_c03r0601_middleman1_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c03r0601', '80-msg_c03r0601_middleman1_01', 'Hiya! Your Pokémon could use some\ntoughening up.\rWhy not try training in Oreburgh Mine?')
 	_END()
 ev_c03r0601_mount:
-	_EASY_OBJ_MSG('dp_scenario1%80-msg_c03r0601_mount_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c03r0601', '80-msg_c03r0601_mount_01', 'I always have a rotten time trying to decide\nwhich moves my Pokémon should learn.')
 	_END()
 ev_c03r0601_man3:
-	_EASY_OBJ_MSG('dp_scenario1%80-msg_c03r0601_man3_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c03r0601', '80-msg_c03r0601_man3_01', 'You remind me so much of the time I got my\nfirst Pokémon.')
 	_END()

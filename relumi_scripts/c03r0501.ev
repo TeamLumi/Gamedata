@@ -1,9 +1,9 @@
 ev_c03r0501_boy2:
-	_EASY_OBJ_MSG('dp_scenario1%79-msg_c03r0501_boy2_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c03r0501', '79-msg_c03r0501_boy2_01', 'Have you ever seen or heard about Shiny\nPokémon? They have different colors than usual.\rFor instance, Pikachu is usually yellow, correct?\rWell, Shiny Pikachu is sort of orange.')
 	_END()
 ev_c03r0501_middlewoman1:
-	_EASY_OBJ_MSG('dp_scenario1%79-msg_c03r0501_middlewoman1_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c03r0501', '79-msg_c03r0501_middlewoman1_01', 'You know how Pokémon have different Natures\nlike we have personalities?\rI don’t think it’s surprising to see Pokémon in\ndifferent colors.')
 	_END()
 ev_c03r0501_purin:
-	_EASY_VOICE_MSG('dp_scenario1%79-msg_c03r0501_purin_01', 'PLAY_PV_EV_025_00_02')
+	_EASY_VOICE_MSG('dialogue_c03r0501%79-msg_c03r0501_purin_01', 'PLAY_PV_EV_025_00_02')
 	_END()

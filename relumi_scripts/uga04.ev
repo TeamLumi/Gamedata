@@ -6,17 +6,18 @@ ev_uga04_first:
 	_OBJ_ANIME('UGA04_LUMI_RANGER_FIRST', 'anm_ug_mount_00_g')
 	_OBJ_ANIME_WAIT()
 	_PLAYER_NAME(0)
-	_TALKMSG('dlp_underground%msg_uga04_lumi_ranger_ug_intro')
+	_MACRO_TALKMSG('dialogue_uga04', 'msg_uga04_lumi_ranger_ug_intro', 'This is it.\nSinnoh’s Grand Underground.\rIt’s a network of tunnels,\ncaves and caverns lying beneath Sinnoh.\rAs me and the old man said before,\nthere’s plenty to do down here.\rYou can search for rare Pokémon,\ndig up Fossils and treasure,\ror you can make your own Secret Base\nif you can find yourself a Digger Drill.')
 	_OBJ_ANIME('UGA04_LUMI_RANGER_FIRST', 'anm_lumi_ranger_turns_east')
 	_OBJ_ANIME_WAIT()
-	_MACRO_TALKMSG('dlp_underground', 'msg_uga04_lumi_ranger_ult_motive', 'I have to admit that I have a bit of an ulterior\nmotive in offering to escort you down here.')
+	_MACRO_TALKMSG('dialogue_uga04', 'msg_uga04_lumi_ranger_ult_motive', 'I have to admit that I have a bit of an ulterior\nmotive in offering to escort you down here.')
 	_OBJ_ANIME('UGA04_LUMI_RANGER_FIRST', 'anm_lumi_ranger_turns_west')
 	_OBJ_ANIME_WAIT()
-	_TALKMSG('dlp_underground%msg_uga04_lumi_ranger_colleagues')
+	_MACRO_TALKMSG('dialogue_uga04', 'msg_uga04_lumi_ranger_colleagues', 'I have a bunch of Pokémon Ranger colleagues\ndown here in the Grand Underground,\rconducting various research tasks.\rI think they’d benefit a lot from your help\nif you happen to find them.\rI promise that we’ll make it worth your while.')
 	_TALK_CLOSE()
-	_BOUKENNOOTO_TIPS_OPEN(15, @SCWK_ANSWER)
+	_BOUKENNOOTO_TIPS_OPEN(11, @SCWK_ANSWER)
 	_BOUKENNOOTO_TIPS_WAIT()
-	_TALKMSG('dlp_underground%msg_uga04_lumi_rare_pokemon')
+	_FLAG_SET(#2461); Grand Underground Chapter
+	_MACRO_TALKMSG('dialogue_uga04', 'msg_uga04_lumi_rare_pokemon', 'I’ll get out of your hair and leave you to explore.\nBut remember to keep an eye out for my colleagues,\respecially if you’re interested in\ncollecting rare Pokémon.\rI’m sure the Underground Man will have some\nrewards for you if you do some spelunking!\rYou should go back up to see him\nwhen you get a chance.\rOh yeah, to go back up to the surface.\nPress Y. Remember that: Y!\rIf you have any questions for me or UGM,\nthen you’ll find us in his house in Eterna City.\rTake care!')
 	_TALK_CLOSE()
 	_OBJ_ANIME('UGA04_LUMI_RANGER_FIRST', 'anm_ug_mount_01')
 	_OBJ_ANIME_WAIT()
@@ -61,7 +62,7 @@ ev_uga_kasekihori_fast:
 	_TALK_OBJ_END()
 	_END()
 ev_uga_kasekihori_tips:
-	_EASY_OBJ_MSG('dlp_underground%DLP_underground_329')
+	_MACRO_EASY_OBJ_MSG('dialogue_uga04', 'DLP_underground_329', 'Oh?\rThere is a note tucked inside the Explorer Kit.\r“Digging for Fossils!\r“I’ve put a sledgehammer and pickax in your\nExplorer Kit. Use them, and you’ll be able to\fdig out all sorts of stuff from the walls—\fbefore the wall comes tumbling down, that is!\r“I’m sure you can do it! Good luck, youngster!”')
 	_RET()
 ev_uga_kakurega_fast:
 	_IF_FLAGOFF_CALL(#FE_DONE_KAKUREGA, 'ev_uga_kakurega_tips')
@@ -77,3 +78,106 @@ ev_uga_himitukiti_fast:
 	_END()
 ev_uga_himitukiti_tips:
 	_RET()
+
+ev_uga04_kanto_ranger_1_pokedex_quest:
+	_TALK_OBJ_START()
+	_IF_FLAGON_JUMP(#2020, 'ev_uga04_kanto_ranger_1_quest_completed')
+	_IF_FLAGON_JUMP(#2019, 'ev_uga04_kanto_ranger_1_gift_again')
+	_IF_FLAGON_JUMP(#2018, 'ev_uga04_kanto_ranger_1_pokedex_check')
+	_MACRO_TALKMSG('dialogue_uga04', 'msg_uga04_kanto_ranger_1_pokedex_start', 'Hi, I was told that we might be getting some\nhelp from a talented young Trainer down here\fin the Grand Underground.\rThat must be you, right?\rI’ve been tasked with collecting data on a\nvariety of species but I’m coming up a bit\fshort.\rMaybe with that nifty Pokédex of yours, we’d\nbe able to speed things up.\rIf you can encounter and collect data on 180\ndifferent species of Pokémon, that should be\fenough to make up my numbers.\rCould you do that for me?')
+	_FLAG_SET(#2018); UGA04 Kanto Ranger 1 has been talked to once
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_uga04_kanto_ranger_1_pokedex_check:
+	_MACRO_TALKMSG('dialogue_uga04', 'msg_uga04_kanto_ranger_1_pokedex_cont', 'Oh hello again.\rLet’s take a look to see how many\nspecies you’ve seen.')
+	_TALK_CLOSE()
+	_ZENKOKU_ZUKAN_SEE_NUM(@SCWK_PARAM0); This is to check how many pokemon you've seen in the pokedex.
+	_IFVAL_JUMP(@SCWK_PARAM0, 'LT', 180, 'ev_uga04_kanto_ranger_1_pokedex_no'); You must have seen at least 180 pokemon to complete this quest
+	_MACRO_TALKMSG('dialogue_uga04', 'msg_uga04_kanto_ranger_1_pokedex_success', 'Fantastic! This data will help us immensely in\nour research.\rThanks a ton for your help.')
+	_JUMP('ev_uga04_kanto_ranger_1_pokedex_success')
+	_END()
+ev_uga04_kanto_ranger_1_pokedex_no:
+	_MACRO_TALKMSG('dialogue_uga04', 'msg_uga04_kanto_ranger_1_pokedex_no', 'You’re getting there but we still don’t have\nquite enough.\rI need data for 180 Pokémon registered as\nseen in your Pokédex.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_uga04_kanto_ranger_1_pokedex_success:
+	_LDVAL(@SCWK_TEMP3, 0)
+	_IF_FLAGOFF_CALL(#2021, 'ev_uga04_kanto_ranger_1_gift_add_bulbasaur')
+	_IF_FLAGOFF_CALL(#2022, 'ev_uga04_kanto_ranger_1_gift_add_charmander')
+	_IF_FLAGOFF_CALL(#2023, 'ev_uga04_kanto_ranger_1_gift_add_squirtle')
+	_IF_FLAGOFF_CALL(#2019, 'ev_uga04_kanto_ranger_1_thank_you_message'); Only add these messages if the player didn't say no to the gift in the first place
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_Cancel', 'Not right now', 2)
+	_OPEN_CUSTUM_WIN(@SCWK_TEMP0); SCWK_TEMP0 will have the MonsNo of the pokemon chosen
+	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', 2, 'ev_uga04_kanto_ranger_1_no_gift_give')
+	_CALL('ev_common_tray_space_check'); Checks if there is any remaining space in the Party and Boxes
+	_IFVAL_JUMP(@551, 'EQ', 1, 'ev_uga04_kanto_ranger_1_gift_no_tray_space'); Party and Boxes are full
+	_POKEMON_NAME_EXTRA(0, @SCWK_TEMP0, 0, 0)
+    _ME_PLAY('M_FI013')
+	_MACRO_TALKMSG('dialogue_uga04', 'msg_t03_receive_starter', 'You received {0,1,1,0}.')
+    _ME_WAIT()
+	_ADD_POKEMON_UI_EXTRA(@SCWK_TEMP0, 0, 5, 0, 3, 4) ; MonsNo, FormNo, Level, Item, MaxIVs, BallId
+	_SWITCH(@SCWK_TEMP0); Check which pokemon was selected by their dexNum
+	_CASE_JUMP(1, 'ev_uga04_kanto_ranger_1_pokedex_bulbasaur_flag_set')
+	_CASE_JUMP(4, 'ev_uga04_kanto_ranger_1_pokedex_charmander_flag_set')
+	_CASE_JUMP(7, 'ev_uga04_kanto_ranger_1_pokedex_squirtle_flag_set')
+	_END()
+ev_uga04_kanto_ranger_1_gift_add_bulbasaur:
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_Bulbasaur', 'Bulbasaur', 1)
+	_ADD_WK(@SCWK_TEMP3, 1)
+	_RET()
+ev_uga04_kanto_ranger_1_gift_add_charmander:
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_Charmander', 'Charmander', 4)
+	_ADD_WK(@SCWK_TEMP3, 1)
+	_RET()
+ev_uga04_kanto_ranger_1_gift_add_squirtle:
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_Squirtle', 'Squirtle', 7)
+	_ADD_WK(@SCWK_TEMP3, 1)
+	_RET()
+ev_uga04_kanto_ranger_1_thank_you_message:
+	_IFVAL_CALL(@SCWK_TEMP3, 'EQ', 1, 'ev_uga04_kanto_ranger_1_gift_singular')
+	_IFVAL_CALL(@SCWK_TEMP3, 'GT', 1, 'ev_uga04_kanto_ranger_1_gift_multiple')
+	_RET()
+ev_uga04_kanto_ranger_1_gift_singular:
+	_MACRO_TALKMSG('dialogue_uga04', 'msg_uga04_pokedex_ranger_single_pokemon_gift', 'To thank you for your hard work I’d like to\noffer you this rare species of Pokémon for\fyou to take with you on your journey.')
+	_RET()
+ev_uga04_kanto_ranger_1_gift_multiple:
+	_MACRO_TALKMSG('dialogue_uga04', 'msg_uga04_pokedex_ranger_multiple_pokemon_gift', 'To thank you for your hard work I’d like to\noffer you one of these rare species of\fPokémon for you to take with you on your\fjourney.')
+	_RET()
+ev_uga04_kanto_ranger_1_gift_again:
+	_FLAG_RESET(#2019); Resets if the player has said no to Ranger Starter gift.
+	_MACRO_TALKMSG('dialogue_uga04', 'msg_uga04_kanto_ranger_1_gift_again', 'Hey, welcome back.')
+	_JUMP('ev_uga04_kanto_ranger_1_pokedex_success')
+ev_uga04_kanto_ranger_1_no_gift_give:
+	_FLAG_SET(#2019); Player said no to Kanto Ranger 1 Starter Gift
+	_MACRO_TALKMSG('dialogue_uga04', 'msg_uga04_kanto_ranger_1_no_gift_give', 'Oh, you can’t take it now? Not a problem.\rI’ll hang onto it until you’re ready to take it.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_uga04_kanto_ranger_1_gift_no_tray_space:
+	_FLAG_SET(#2019); Player said no to Kanto Ranger 1 Starter Gift
+	_MACRO_TALKMSG('dialogue_uga04', 'msg_uga04_kanto_ranger_1_gift_no_tray_space', 'Oh, you don’t have room for it right now.\rI’ll hang onto it until you’re ready to take it.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_uga04_kanto_ranger_1_pokedex_bulbasaur_flag_set:
+	_FLAG_SET(#2021); Ranger Bulbasaur
+	_JUMP('ev_uga04_kanto_ranger_1_quest_finish')
+ev_uga04_kanto_ranger_1_pokedex_charmander_flag_set:
+	_FLAG_SET(#2022); Ranger Charmander
+	_JUMP('ev_uga04_kanto_ranger_1_quest_finish')
+ev_uga04_kanto_ranger_1_pokedex_squirtle_flag_set:
+	_FLAG_SET(#2023); Ranger Squirtle
+	_JUMP('ev_uga04_kanto_ranger_1_quest_finish')
+ev_uga04_kanto_ranger_1_quest_finish:
+	_MACRO_TALKMSG('dialogue_uga04', 'msg_uga04_kanto_ranger_1_quest_finish', 'Pokémon are such fascinating creatures.\nI hope that you’ll take a look at what the\fPokédex has to tell you about your new\fpartner.\rOf course there’s a lot to learn beyond what\ngadgets and gizmos can teach you.\rYou’re bound to learn a lot by battling and\nworking together too.')
+	_FLAG_SET(#2020); UGA04 (left to the 2nd Fountain Spring Cave in warp list right next to initial dropdown in the UG) Kanto Ranger 1 Quest completed.
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_uga04_kanto_ranger_1_quest_completed:
+	_MACRO_TALKMSG('dialogue_uga04', 'msg_uga04_kanto_ranger_1_quest_completed', 'Thanks again for your help.\nI’ll be sure to tell my Ranger pals about you.\rI’m sure they’d appreciate your help as well!')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()

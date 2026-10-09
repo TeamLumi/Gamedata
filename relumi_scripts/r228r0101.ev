@@ -1,3 +1,6 @@
 ev_r228r0101_girl3:
-	_EASY_OBJ_MSG('dp_scenario3%73-msg_r228r0101_girl3_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_r228r0101', '73-msg_r228r0101_girl3_01', 'I’m going to become number one in Sinnoh’s\nSuper Contest Shows!\rI’m going to win with a Pokémon that you can\nonly find here!')
+	_END()
+ev_r228r0101_acef:
+	_MACRO_EASY_OBJ_MSG('dialogue_r228r0101', 'msg_r228r0101_acef', 'A strong, but a solitary presence...\nOr the weak that mass together...\rWho can say which is better?')
 	_END()

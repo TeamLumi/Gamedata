@@ -48,9 +48,9 @@ ev_c10r0101_veteran:
 	_IF_FLAGON_JUMP(#FE_C10R0101_VETERAN, 'ev_c10r0101_veteran_02')
 	_EVENT_CAMERA_INDEX(463)
 	_EVENT_CAMERA_END_WAIT()
-	_TALKMSG('dp_scenario3%19-msg_c10r0101_veteran_01_1')
-	_TALKMSG('dp_scenario3%19-msg_c10r0101_veteran_01_2')
-	_TALKMSG('dp_scenario3%19-msg_c10r0101_veteran_01_3')
+	_MACRO_TALKMSG('dialogue_c10r0101', '19-msg_c10r0101_veteran_01_1', 'Let me confirm that you are qualified to\nchallenge the Pokémon League.\rTo do so, I’ll need to examine the Gym Badges\nyou gathered from around Sinnoh.')
+	_MACRO_TALKMSG('dialogue_c10r0101', '19-msg_c10r0101_veteran_01_2', 'Oreburgh City’s Coal Badge!\nEterna City’s Forest Badge!\fHearthome City’s Relic Badge!\fVeilstone City’s Cobble Badge!')
+	_MACRO_TALKMSG('dialogue_c10r0101', '19-msg_c10r0101_veteran_01_3', 'Pastoria City’s Fen Badge!\nCanalave City’s Mine Badge!\fSnowpoint City’s Icicle Badge!\fAnd finally, Sunyshore City’s Beacon Badge!')
 	_TALK_CLOSE()
 	_SE_PLAY('M_FI006')
 	_ME_WAIT()
@@ -76,7 +76,7 @@ ev_c10r0101_veteran_dir_right:
 	_JUMP('common_c10r0101_veteran_dir')
 common_c10r0101_veteran_dir:
 	_FLAG_SET(#FE_C10R0101_VETERAN)
-	_TALKMSG('dp_scenario3%19-msg_c10r0101_veteran_02')
+	_MACRO_TALKMSG('dialogue_c10r0101', '19-msg_c10r0101_veteran_02', 'Very well!\rTrainer, you’ve indeed collected all the Gym\nBadges of Sinnoh! Demonstrate the power\fthat brought you here, and go for glory!')
 	_TALK_CLOSE()
 	_EVENT_CAMERA_INDEX(464)
 	_EVENT_CAMERA_END_WAIT()
@@ -85,7 +85,7 @@ common_c10r0101_veteran_dir:
 	_TALK_END()
 	_END()
 ev_c10r0101_veteran_02:
-	_TALKMSG('dp_scenario3%19-msg_c10r0101_veteran_03')
+	_MACRO_TALKMSG('dialogue_c10r0101', '19-msg_c10r0101_veteran_03', 'Here at the Pokémon League, you will be facing\nthe Elite Four.\rIf you can’t beat all four of them in a row,\nyou’ll have to start from the beginning.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_TALK_END()
@@ -124,7 +124,7 @@ ev_c10r0101_shop_re:
 	_JUMP('ev_c10r0101_shop_end')
 	_END()
 ev_c10r0101_shop_sonohoka:
-	_TALKMSG('dp_scenario1%28-mes_shop_01_03')
+	_MACRO_TALKMSG('dialogue_c10r0101', '28-mes_shop_01_03', 'Is there anything else I can do for you?')
 	_RET()
 ev_c10r0101_shop_buy:
 	_LDVAL(@LOCALWORK3, 1)
@@ -203,8 +203,8 @@ common_c10r0101_rival_01:
 	_OBJ_ANIME('HERO', 'anm_c10r0101_player_01')
 	_OBJ_ANIME_WAIT()
 	_RIVAL_NAME(0)
-	_TALKMSG('dp_scenario3%19-msg_c10r0101_rival_01_1')
-	_TALKMSG('dp_scenario3%19-msg_c10r0101_rival_01_2')
+	_MACRO_TALKMSG('dialogue_c10r0101', '19-msg_c10r0101_rival_01_1', 'Hold it! Don’t go off without me!\rYou’re challenging the Pokémon League,\naren’t you? That’s why I’m here, too.')
+	_MACRO_TALKMSG('dialogue_c10r0101', '19-msg_c10r0101_rival_01_2', 'Let’s see who’s more worthy of making the\nchallenge with a battle!')
 	_TALK_CLOSE()
 	_LDVAL(@WK_PLAY_REPO_NO, 20)
 	_FLAG_SET(#FE_PLAY_REPO)
@@ -216,31 +216,31 @@ common_c10r0101_rival_01:
 ev_c10r0101_randomteam_barry_turtwig:
 	_GET_RND(@SCWK_ANSWER, 4)
 	_LDVAL(@SCWK_TEMP3, 799)
-	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_random_team_end')
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_common_return')
 	_LDVAL(@SCWK_TEMP3, 800)
-	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_random_team_end')
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_common_return')
 	_LDVAL(@SCWK_TEMP3, 801)
-	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 2, 'ev_random_team_end')
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 2, 'ev_common_return')
 	_LDVAL(@SCWK_TEMP3, 802)
 	_RET()
 ev_c10r0101_randomteam_barry_chimchar:
 	_GET_RND(@SCWK_ANSWER, 4)
 	_LDVAL(@SCWK_TEMP3, 803)
-	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_random_team_end')
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_common_return')
 	_LDVAL(@SCWK_TEMP3, 804)
-	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_random_team_end')
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_common_return')
 	_LDVAL(@SCWK_TEMP3, 805)
-	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 2, 'ev_random_team_end')
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 2, 'ev_common_return')
 	_LDVAL(@SCWK_TEMP3, 806)
 	_RET()
 ev_c10r0101_randomteam_barry_piplup:
 	_GET_RND(@SCWK_ANSWER, 4)
 	_LDVAL(@SCWK_TEMP3, 807)
-	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_random_team_end')
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_common_return')
 	_LDVAL(@SCWK_TEMP3, 808)
-	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_random_team_end')
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_common_return')
 	_LDVAL(@SCWK_TEMP3, 809)
-	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 2, 'ev_random_team_end')
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 2, 'ev_common_return')
 	_LDVAL(@SCWK_TEMP3, 810)
 	_RET()
 ev_c10r0101_rival_01:
@@ -270,8 +270,8 @@ ev_c10r0101_rival_btl_coomon:
 	_OBJ_DEL('C10R0101_VETERAN1')
 	_RIVAL_NAME(0)
 	_PLAYER_NAME(1)
-	_TALKMSG('dp_scenario3%19-msg_c10r0101_rival_02_1')
-	_TALKMSG('dp_scenario3%19-msg_c10r0101_rival_02_2')
+	_MACRO_TALKMSG('dialogue_c10r0101', '19-msg_c10r0101_rival_02_1', 'I guess I’m not ready for the Pokémon League if\nI’m losing to you! Darn it!\rJust you wait! I’ll get tougher and win my way\nthrough the Pokémon League!')
+	_MACRO_TALKMSG('dialogue_c10r0101', '19-msg_c10r0101_rival_02_2', 'Because I’m going to become the toughest\nPokémon Trainer there is—the Champion!\r{1,1,0,0}! You’d better not lose to\nanyone before me!')
 	_TALK_CLOSE()
 	_LDVAL(@WK_SCENE_C10R0101, 1)
 	_PLAYER_POS_GET(@SCWK_TEMP0, @SCWK_TEMP1)
@@ -348,8 +348,57 @@ anm_c10r0101_rival_13:
 	_AC_DOWN(3, 4)
 	_ACMD_END()
 ev_c10r0101_woman3:
+	_TALK_OBJ_START()
+	_MACRO_TALKMSG('dialogue_c10r0101', '19-msg_c10r0101_woman3_01', 'It doesn’t matter if the gain is slow.\rNor does it matter how many challenges\nit takes.\rI’m never giving up!\nNot until I beat the Elite Four!')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_c10r0101_man1:
 	_TALK_OBJ_START_TURN_NOT()
-	_TALKMSG('dp_scenario3%19-msg_c10r0101_woman3_01')
+	_MACRO_TALKMSG('dialogue_c10r0101', '19-msg_c10r0101_man1_01', 'What is the Pokémon League?\nDon’t take my word for it.\rTake the challenge and experience it\nfor yourself!')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_c10r0101_tmhandler:
+	_TALK_OBJ_START()
+	_IF_FLAGON_JUMP(#3001, 'ev_c10r0101_tmhandler_no')
+	_MACRO_TALKMSG('dialogue_c10r0101', '19-msg_c10r0101_tmhandler_01', 'Hello, strong Trainer!\rI am the Technical Machine collector!\nI’ve got all the TMs you’ll ever need.\rDo you need me to give you a full use\nset of every Technical Machine?')
+	_YES_NO_WIN(@SCWK_ANSWER)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_c10r0101_tmhandler_yes')
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_c10r0101_tmhandler_no')
+	_TALK_CLOSE()
+	_END()
+ev_c10r0101_tmhandler_yes:
+	_MACRO_TALKMSG('dialogue_c10r0101', '19-msg_c10r0101_tmhandler_01_yes', 'Excellent! Here I go, then.\rPlease be patient.\nThis may take a moment...')
+	;Starting ID
+	_LDVAL(@SCWK_PARAM0, 328)
+	;Last ID to give
+	_LDVAL(@SCWK_PARAM1, 427)
+	;Will give TMs from ID 328 to 427
+	_CALL('ev_c10r0101_tm_handler_loop')
+	;Starting ID
+	_LDVAL(@SCWK_PARAM0, 2161)
+	;Last ID to give
+	_LDVAL(@SCWK_PARAM1, 2210)
+	;Will give TMs from ID 2161 to 2210
+	_CALL('ev_c10r0101_tm_handler_loop')
+	;Received item sound
+	_SE_PLAY('M_FI013')
+	_MACRO_TALKMSG('dialogue_c10r0101', '19-msg_c10r0101_tmhandler_loop_end', 'You have received all TMs.')
+	;The last message is the same, so it can be reused
+	_JUMP('ev_c10r0101_tmhandler_no')
+	_END()
+ev_c10r0101_tm_handler_loop:
+	;Manually add delay. _ADD_ITEM won't work without it.
+	_TIME_WAIT(1, @SCWK_TEMP1)
+	;Give the TM
+	_ADD_ITEM(@SCWK_PARAM0, 1, @SCWK_ANSWER)
+	;Next TM id
+	_ADD_WK(@SCWK_PARAM0, 1)
+	_IFVAL_JUMP(@SCWK_PARAM0, 'LE', @SCWK_PARAM1, 'ev_c10r0101_tm_handler_loop')
+	_RET()
+ev_c10r0101_tmhandler_no:
+	_MACRO_TALKMSG('dialogue_c10r0101', '19-msg_c10r0101_tmhandler_01_no', 'Alright. Come back again!')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()

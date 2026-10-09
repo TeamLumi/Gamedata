@@ -1,19 +1,19 @@
 ev_r208_sign1:
-	_EASY_BOARD_MSG('dp_scenario2%31-msg_r208_sign1_01', 'BOARD_TYPE_ROAD', 0, 2)
+	_EASY_BOARD_MSG('dialogue_r208%31-msg_r208_sign1_01', 'BOARD_TYPE_ROAD', 0, 2)
 	_END()
 ev_r208_sign2:
-	_EASY_BOARD_MSG('dp_scenario2%31-msg_r208_sign2_01', 'BOARD_TYPE_ROAD', 0, 1)
+	_EASY_BOARD_MSG('dialogue_r208%31-msg_r208_sign2_01', 'BOARD_TYPE_ROAD', 0, 1)
 	_END()
 ev_r208_sign3:
-	_EASY_BOARD_MSG('dp_scenario2%31-msg_r208_sign3_01', 'BOARD_TYPE_POST', 0)
+	_EASY_BOARD_MSG('dialogue_r208%31-msg_r208_sign3_01', 'BOARD_TYPE_POST', 0)
 	_END()
 ev_r208_sign4:
-	_EASY_INFOBOARD_MSG('dp_scenario2%31-msg_r208_sign4_01', 'BOARD_TYPE_INFO', 0)
+	_EASY_INFOBOARD_MSG('dialogue_r208%31-msg_r208_sign4_01', 'BOARD_TYPE_INFO', 0)
 	_END()
 ev_r208_fighter:
 	_TALK_OBJ_START()
 	_IF_FLAGON_JUMP(#FE_R208_ITEM_GET, 'ev_r208_event_end')
-	_TALKMSG('dp_scenario2%31-msg_r208_fighter_01')
+	_MACRO_TALKMSG('dialogue_r208', '31-msg_r208_fighter_01', 'Don’t say a word. Just take it.')
 	_LDVAL(@SCWK_TEMP0, 111)
 	_LDVAL(@SCWK_TEMP1, 1)
 	_ADD_ITEM_CHK(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_ANSWER)
@@ -25,7 +25,7 @@ ev_r208_fighter:
 	_END()
 ev_r208_event_end:
 	;_TALKMSG('dp_scenario2%31-msg_r208_fighter_02')
-	_MACRO_TALKMSG('dp_scenario3', '00_msg_r208_fighter_03', 'Go to Route 209!\n\rListen to the stone pillar!')
+	_MACRO_TALKMSG('dialogue_r208', '00_msg_r208_fighter_03', 'Go to Route 209!\n\rListen to the stone pillar!')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()

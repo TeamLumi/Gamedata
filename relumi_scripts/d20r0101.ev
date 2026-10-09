@@ -14,7 +14,7 @@ ev_d20r0101_spawn_regi_trio:
 	_FLAG_SET(#2576)
 	_END()
 ev_d20_statue_talk:
-	_MACRO_TALKMSG('dp_scenario3', '00_msg_d20_statue_1', 'The statue is cool to the touch...')
+	_MACRO_TALKMSG('dialogue_d20r0101', '00_msg_d20_statue_1', 'The statue is cool to the touch...')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()

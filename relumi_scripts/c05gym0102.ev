@@ -1,2 +1,110 @@
-ev_test:
+ev_c05gym0102_scene:
+	_IF_FLAGOFF_CALL(#2298, 'ev_c05gym0102_randomize_works')
+	_VISIBLE_OBJ_PROP('HERO', 'Flashlight')
+	_VISIBLE_OBJ_PROP('TR_TANPAN_15', 'Flashlight')
+	_VISIBLE_OBJ_PROP('TR_GYMR0102_WOMAN', 'Flashlight')
+	; Work is defined in ev_c05gym0102_randomize_works
+	_SWITCH(@WK_SCENE_C05GYM0101); Only change the door that is determined to be correct.
+	_CASE_CALL(1, 'ev_c05gym0102_set_door_circle_correct')
+	_CASE_CALL(2, 'ev_c05gym0102_set_door_square_correct')
+	_CASE_CALL(3, 'ev_c05gym0102_set_door_triangle_correct')
+	_LDWK(@SCWK_TEMP0, @WK_SCENE_C05GYM0101); Grabs the more permanent work and loads a temp work to manipulate it
+	_SUB_WK(@SCWK_TEMP0, 1); Subtracts from the work that was set to assign the shape properly.
+	_EVENT_ENTITY_CLIP_PLAY('C05GYM0102_RANDOMIZED_RUG', @SCWK_TEMP0); Set the shape on the randomized rug to match the door
+	_EVENT_ENTITY_CLIP_WAIT('C05GYM0102_RANDOMIZED_RUG')
+	; Work is defined in ev_c05gym0102_randomize_works
+	_SWITCH(@440); This work is used by StopData to see which one is activated
+	_CASE_CALL(0, 'ev_c05gym0102_move_blue_rug_to_location_one')
+	_CASE_CALL(1, 'ev_c05gym0102_move_blue_rug_to_location_two')
+	_CASE_CALL(2, 'ev_c05gym0102_move_blue_rug_to_location_three')
+	_FLAG_SET(#2298); Used for preventing the room from being re-randomized on save + reset
 	_END()
+ev_c05gym0102_randomize_works:
+	_FLAG_RESET(#2296); Resets the flag that the player has walked on/talked to the correct rug
+	_GET_RND(@WK_SCENE_C05GYM0101, 3); Gets a value from 0 to 2
+	_ADD_WK(@WK_SCENE_C05GYM0101, 1); Adds 1 to ensure that this value doesn't get set to 0
+	; Work can't be 0 because of the event camera in the lobby
+	_GET_RND(@440, 3); Gets a value from 0 to 2
+	_RET()
+ev_c05gym0102_detach_flashlight:
+	_INVISIBLE_OBJ_PROP('HERO', 'Flashlight')
+	_INVISIBLE_OBJ_PROP('TR_TANPAN_15', 'Flashlight')
+	_INVISIBLE_OBJ_PROP('TR_GYMR0102_WOMAN', 'Flashlight')
+	_FLAG_RESET(#2298)
+	_RET()
+ev_c05gym0102_set_door_circle_correct:
+	_DOOR_TRANSITION_ZONE_SET('P_RO_059_Door_01_D01', 'C05GYM0104', 0)
+	_DOOR_EXIT_LABEL_SET('P_RO_059_Door_01_D01', 999); Set the Correct doors to NONE
+	_RET()
+ev_c05gym0102_set_door_square_correct:
+	_DOOR_TRANSITION_ZONE_SET('P_RO_059_Door_01_D02', 'C05GYM0104', 0)
+	_DOOR_EXIT_LABEL_SET('P_RO_059_Door_01_D02', 999); Set the Correct doors to NONE
+	_RET()
+ev_c05gym0102_set_door_triangle_correct:
+	_DOOR_TRANSITION_ZONE_SET('P_RO_059_Door_01_D03', 'C05GYM0104', 0)
+	_DOOR_EXIT_LABEL_SET('P_RO_059_Door_01_D03', 999); Set the Correct doors to NONE
+	_RET()
+ev_c05gym0102_move_blue_rug_to_location_one:
+	_OBJ_POS_CHANGE_WORLD('C05GYM0102_RANDOMIZED_RUG', 3, 0, 7)
+	_RET()
+ev_c05gym0102_move_blue_rug_to_location_two:
+	_OBJ_POS_CHANGE_WORLD('C05GYM0102_RANDOMIZED_RUG', 10, 0, 6)
+	_RET()
+ev_c05gym0102_move_blue_rug_to_location_three:
+	_OBJ_POS_CHANGE_WORLD('C05GYM0102_RANDOMIZED_RUG', 16, 0, 7)
+	_RET()
+ev_c05gym0102_circle_rug:
+	_IFVAL_CALL(@WK_SCENE_C05GYM0101, 'EQ', 1, 'ev_c05gym0102_rug_play_correct_door')
+	_MACRO_EASY_OBJ_MSG('dialogue_c05gym0102', 'msg_c05gym0102_circle_rug', 'It’s a Pink Carpet with a Circle on it in front of the door.')
+	_END()
+ev_c05gym0102_square_rug:
+	_IFVAL_CALL(@WK_SCENE_C05GYM0101, 'EQ', 2, 'ev_c05gym0102_rug_play_correct_door')
+	_MACRO_EASY_OBJ_MSG('dialogue_c05gym0102', 'msg_c05gym0102_square_rug', 'It’s a Pink Carpet with a Square on it in front of the door.')
+	_END()
+ev_c05gym0102_triangle_rug:
+	_IFVAL_CALL(@WK_SCENE_C05GYM0101, 'EQ', 3, 'ev_c05gym0102_rug_play_correct_door')
+	_MACRO_EASY_OBJ_MSG('dialogue_c05gym0102', 'msg_c05gym0102_triangle_rug', 'It’s a Pink Carpet with a Triangle on it in front of the door.')
+	_END()
+ev_c05gym0102_randomized_rug:
+	_IFVAL_JUMP(@WK_SCENE_C05GYM0101, 'EQ', 1, 'ev_c05gym0102_blue_circle_rug')
+	_IFVAL_JUMP(@WK_SCENE_C05GYM0101, 'EQ', 2, 'ev_c05gym0102_blue_square_rug')
+	_IFVAL_JUMP(@WK_SCENE_C05GYM0101, 'EQ', 3, 'ev_c05gym0102_blue_triangle_rug')
+	_END()
+ev_c05gym0102_blue_circle_rug:
+	_CALL('ev_c05gym0102_litwick_sound')
+	_IF_FLAGOFF_CALL(#2296, 'pos_c05gym0102_rug_walked_on')
+	_MACRO_EASY_OBJ_MSG('dialogue_c05gym0102', 'msg_c05gym0102_blue_circle_rug', 'It’s a Blue Carpet with a Circle on it.')
+	_END()
+ev_c05gym0102_blue_square_rug:
+	_CALL('ev_c05gym0102_litwick_sound')
+	_IF_FLAGOFF_CALL(#2296, 'pos_c05gym0102_rug_walked_on')
+	_MACRO_EASY_OBJ_MSG('dialogue_c05gym0102', 'msg_c05gym0102_blue_square_rug', 'It’s a Blue Carpet with a Square on it.')
+	_END()
+ev_c05gym0102_blue_triangle_rug:
+	_CALL('ev_c05gym0102_litwick_sound')
+	_IF_FLAGOFF_CALL(#2296, 'pos_c05gym0102_rug_walked_on')
+	_MACRO_EASY_OBJ_MSG('dialogue_c05gym0102', 'msg_c05gym0102_blue_triangle_rug', 'It’s a Blue Carpet with a Triangle on it.')
+	_END()
+ev_c05gym0102_litwick_sound:
+	_SE_PLAY('PLAY_PV_607_00_00')
+	_RET()
+pos_c05gym0102_rug_play_litwick:
+	_CALL('ev_c05gym0102_litwick_sound')
+	_IF_FLAGOFF_CALL(#2296, 'pos_c05gym0102_rug_walked_on')
+	_END()
+pos_c05gym0102_rug_walked_on:
+	_FLAG_SET(#2296)
+	_RET()
+ev_c05gym0102_rug_play_correct_door:
+	_IF_FLAGON_CALL(#2296, 'ev_c05gym0102_litwick_sound')
+	_RET()
+pos_c05gym0102_rug_play_correct_door:
+	_CALL('ev_c05gym0102_rug_play_correct_door')
+	_END()
+;ev_macro_stuff_c05gym0102:
+	;_MACRO_TALKMSG('dp_trainer_msg', '1-MINI_10_TRMSG_FIGHT_START', 'Boo! Did I scare you?\nThis battle will!')
+	;_MACRO_TALKMSG('dp_trainer_msg', '1-MINI_10_TRMSG_FIGHT_LOSE', 'Uh, whoopsie!\nThat didn’t end well!')
+	;_MACRO_TALKMSG('dp_trainer_msg', '1-TANPAN_15_TRMSG_FIGHT_START', 'Hey, now!\nYou’re not even close to the door yet.\rYou have to beat me before you can go, you\nknow?')
+	;_MACRO_TALKMSG('dp_trainer_msg', '1-TANPAN_15_TRMSG_FIGHT_LOSE', 'Argh! I should’ve dazzled you by shining my\nlight in your eyes!')
+	;_MACRO_TALKMSG('dp_trainer_msg', '1-TANPAN_15_TRMSG_FIGHT_AFTER', 'Just walk around and look for the blue marks\non the tiles.')
+	;_END()

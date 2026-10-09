@@ -1,11 +1,11 @@
 ev_c07r0202_flag_change:
-	_LDVAL(@WK_ELEVATOR_FLOOR, 1)
+	_LDVAL(@WK_ELEVATOR_FLOOR, 2)
 	_END()
 ev_c07r0202_depart:
 	_TALK_OBJ_START()
 	_REGULAR_CHECK(@SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'c07r0202_regular_check')
-	_TALKMSG('dp_scenario2%97-msg_c07r0202_depart_01')
+	_MACRO_TALKMSG('dialogue_c07r0202', '97-msg_c07r0202_depart_01', 'Hello. May I help you with anything?')
 	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_229', 1)
 	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_228', 0)
 	_OPEN_CUSTUM_WIN(@SCWK_ANSWER)
@@ -15,7 +15,7 @@ ev_c07r0202_depart:
 	_JUMP('c07r0202_randam_osusume')
 c07r0202_regular_check:
 	_PLAYER_NAME(0)
-	_TALKMSG('dp_scenario2%97-msg_c07r0202_depart_02')
+	_MACRO_TALKMSG('dialogue_c07r0202', '97-msg_c07r0202_depart_02', 'Hello, {0,1,0,0}.\nMay I help you with anything?', 0, 1)
 	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_229', 1)
 	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_228', 0)
 	_OPEN_CUSTUM_WIN(@SCWK_ANSWER)
@@ -31,55 +31,55 @@ c07r0202_randam_osusume:
 	_JUMP('ev_c07r0202_depart_07')
 	_END()
 ev_c07r0202_depart_03:
-	_TALKMSG('dp_scenario2%97-msg_c07r0202_depart_03')
+	_MACRO_TALKMSG('dialogue_c07r0202', '97-msg_c07r0202_depart_03', 'Please enjoy yourself.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_c07r0202_depart_04:
-	_TALKMSG('dp_scenario2%97-msg_c07r0202_depart_04')
+	_MACRO_TALKMSG('dialogue_c07r0202', '97-msg_c07r0202_depart_04', 'Would you care for a bottle of Protein?\rIt’s a drink that boosts the base points of a\nPokémon’s Attack stat.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_c07r0202_depart_05:
-	_TALKMSG('dp_scenario2%97-msg_c07r0202_depart_05')
+	_MACRO_TALKMSG('dialogue_c07r0202', '97-msg_c07r0202_depart_05', 'May I suggest a bottle of Carbos?\rIt’s a drink that boosts the base points of a\nPokémon’s Speed stat.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_c07r0202_depart_06:
-	_TALKMSG('dp_scenario2%97-msg_c07r0202_depart_06')
+	_MACRO_TALKMSG('dialogue_c07r0202', '97-msg_c07r0202_depart_06', 'If you need to make sure that your Pokémon’s\nattacks hit hard, then Dire Hit is for you.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_c07r0202_depart_07:
-	_TALKMSG('dp_scenario2%97-msg_c07r0202_depart_07')
+	_MACRO_TALKMSG('dialogue_c07r0202', '97-msg_c07r0202_depart_07', 'If your Pokémon has trouble landing attacks,\ntry treating it to an X Accuracy.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_c07r0202_gorggeousw:
-	_EASY_OBJ_MSG('dp_scenario2%97-msg_c07r0202_gorggeousw_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c07r0202', '97-msg_c07r0202_gorggeousw_01', 'Where can I find a dress that looks great in a\nSuper Contest Show?')
 	_END()
 ev_c07r0202_boy3:
-	_EASY_OBJ_MSG('dp_scenario2%97-msg_c07r0202_boy3_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c07r0202', '97-msg_c07r0202_boy3_01', 'I’m going to give an HP Up to my Kricketot.\rThis is going to raise its base HP, huh?')
 	_END()
 ev_c07r0202_shopm:
 	_TALK_OBJ_START()
 	_LDVAL(@SCWK_ANSWER, 0)
 	_POKETCH_CHECK(9, @SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_c07r0202_shoopm_03')
-	_TALKMSG('dp_scenario2%97-msg_c07r0202_shopwoman_01')
+	_MACRO_TALKMSG('dialogue_c07r0202', '97-msg_c07r0202_shopwoman_01', 'We’re giving away a Pokétch app for free as\na promotion.\rI can give you the Counter app over the counter.\nWould you like it?')
 	_YES_NO_WIN(@SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_c07r0202_shoopm_04')
-	_TALKMSG('dp_scenario2%97-msg_c07r0202_shopwoman_02')
+	_MACRO_TALKMSG('dialogue_c07r0202', '97-msg_c07r0202_shopwoman_02', 'OK, here’s the app. Now go forth and count!')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_c07r0202_shoopm_03:
-	_TALKMSG('dp_scenario2%97-msg_c07r0202_shopwoman_03')
+	_MACRO_TALKMSG('dialogue_c07r0202', '97-msg_c07r0202_shopwoman_03', 'I hope you’re using that Counter app I gave you.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_c07r0202_shoopm_04:
-	_TALKMSG('dp_scenario2%97-msg_c07r0202_shopwoman_04')
+	_MACRO_TALKMSG('dialogue_c07r0202', '97-msg_c07r0202_shopwoman_04', 'You’re not interested? Please come back if you\nchange your mind.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
@@ -105,7 +105,7 @@ ev_c07r0202_01_fix_shop_re:
 	_JUMP('ev_c07r0202_01_fix_shop_end')
 	_END()
 ev_c07r0202_01_fix_shop_sonohoka:
-	_TALKMSG('dp_scenario1%28-mes_shop_01_03')
+	_MACRO_TALKMSG('dialogue_c07r0202', '28-mes_shop_01_03', 'Is there anything else I can do for you?')
 	_RET()
 ev_c07r0202_01_fix_shop_buy:
 	_LDVAL(@LOCALWORK3, 1)
@@ -154,7 +154,7 @@ ev_c07r0202_02_fix_shop_re:
 	_JUMP('ev_c07r0202_02_fix_shop_end')
 	_END()
 ev_c07r0202_02_fix_shop_sonohoka:
-	_TALKMSG('dp_scenario1%28-mes_shop_01_03')
+	_MACRO_TALKMSG('dialogue_c07r0202', '28-mes_shop_01_03', 'Is there anything else I can do for you?')
 	_RET()
 ev_c07r0202_02_fix_shop_buy:
 	_LDVAL(@LOCALWORK3, 1)
@@ -182,5 +182,105 @@ ev_c07r0202_02_fix_shop_end:
 	_TALK_OBJ_END()
 	_END()
 ev_c07r0202_board:
-	_EASY_OBJ_MSG('dp_scenario2%97-msg_c07r0202_board_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c07r0202', '97-msg_c07r0202_board_01', 'This is the <color=#F01E1EFF>second floor</color>.\rB1F: Food & Produce\n1F: Trainers’ Zone\f2F: Battle Collection\f3F: TM Corner\f4F: Pedestal Floor\f5F: Rooftop Plaza')
 	_END()
+
+ev_c07r0202_manny_trade:
+	_TALK_OBJ_START_TURN_NOT()
+    _CALL('ev_c07r0202_manny_trade_values')
+    _IF_FLAGON_JUMP(#3082, 'ev_c07r0202_manny_trade_over')
+    _POKEMON_NAME_FORM(0, @LOCALWORK0, @LOCALWORK1)
+    _POKEMON_NAME_FORM(1, @LOCALWORK2, @LOCALWORK3)
+	_PLAYER_NAME(2)
+    _MACRO_TALKMSG('dialogue_c07r0202', 'msg_c07r0202_manny_trade_1', 'I foresaw this interaction the day I was born...\rThat you, {2,1,0,0}, would\nappear here at exactly this time.\rWe must trade Pokémon.\rMy {1,1,1,0}, raised from birth, is destined to\nswap for your Pokémon, a {0,1,1,0}.')
+    _TALK_CLOSE()
+    _POKE_WINDOW_PUT(@LOCALWORK0, @LOCALWORK1)
+    _POKEMON_NAME_FORM(0, @LOCALWORK0, @LOCALWORK1)
+    _MACRO_TALKMSG('dialogue_c07r0202', 'msg_c07r0202_manny_trade_2', 'Have you brought {0,1,1,0} with you, so our\ntrade can begin?')
+    _YES_NO_WIN(@SCWK_ANSWER)
+    _IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_c07r0202_manny_trade_yes')
+    _IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_c07r0202_manny_trade_no')
+ev_c07r0202_manny_trade_values:
+    _LDVAL(@LOCALWORK0, 178); Given trade MonsNo
+    _LDVAL(@LOCALWORK1, 0); Given trade FormNo
+    _LDVAL(@LOCALWORK2, 561); Received trade MonsNo
+    _LDVAL(@LOCALWORK3, 0); Received trade FormNo
+    _RET()
+ev_c07r0202_manny_trade_yes:
+    _TALK_CLOSE()
+    _POKELIST_SET_PROC(29)
+    _POKELIST_GET_RESULT(@SCWK_TEMP0, @SCWK_TEMP1)
+    _IFVAL_JUMP(@SCWK_TEMP0, 'EQ', -1, 'ev_c07r0202_manny_trade_no'); If nothing was selected
+    _TEMOTI_BOX_MONSNO(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_ANSWER)
+    _TEMOTI_BOX_FORMNO(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_TEMP2)
+    _IFVAL_JUMP(@SCWK_ANSWER, 'NE', @LOCALWORK0, 'ev_c07r0202_manny_trade_wrong_mon'); If a species other than the target was selected
+    _IFVAL_JUMP(@SCWK_TEMP2, 'NE', @LOCALWORK1, 'ev_c07r0202_manny_trade_wrong_form'); If an incorrect form of the correct species was selected
+    _TEMOTI_BOX_SHINY(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_TEMP2)
+    _TEMOTI_BOX_GENDER(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_TEMP3)
+    _TALK_CLOSE()
+    _LOCALKOUKAN_APPLY(3, @SCWK_TEMP1, @SCWK_TEMP0)
+	_SXY_POS_CHANGE('HERO', 10, 11)
+	_SXY_DIR_CHANGE('HERO', 180)
+	_SXY_DIR_CHANGE('C07R0202_MANNY', 0)
+    _IFVAL_CALL(@SCWK_TEMP2, 'EQ', 0, 'ev_c07r0202_manny_trade_placedata')
+    _IFVAL_CALL(@SCWK_TEMP2, 'GE', 1, 'ev_c07r0202_manny_trade_placedata_shiny')
+	_CALL('ev_c07r0202_xatu_cry')
+    _JUMP('ev_c07r0202_manny_trade_over')
+ev_c07r0202_manny_trade_no:
+    _MACRO_TALKMSG('dialogue_c07r0202', 'msg_c07r0202_manny_trade_no', 'As foretold, you would appear before the\nfated time, only to return once the trade is\fmeant to be completed.\rI shall await your return here as I have so long.\nOnce our trade is complete, so will I be.')
+    _TALK_CLOSE()
+    _TALK_OBJ_END()
+    _END()
+ev_c07r0202_manny_trade_wrong_mon:
+    _POKEMON_NAME_FORM(0, @LOCALWORK0, @LOCALWORK1)
+    _MACRO_TALKMSG('dialogue_c07r0202', 'msg_c07r0202_manny_trade_wrong_mon', 'As the vision laid bare to me, you have\nbrought the wrong Pokémon.\fI will remind you again.\rI seek a {0,1,1,0} from you, for purposes\nbeyond your ken.\fI will await you here until the fated moment.')
+    _TALK_CLOSE()
+    _TALK_OBJ_END()
+    _END()
+ev_c07r0202_manny_trade_wrong_form:
+    _MACRO_TALKMSG('dialogue_c07r0202', 'msg_c07r0202_manny_trade_wrong_form', 'Your mistake was written by the stars long\nago. I seek this Pokémon’s alternative form.\rYour quest will not wait forever, but I will wait\nuntil the appointed time. Do not tarry long.')
+    _TALK_CLOSE()
+    _TALK_OBJ_END()
+    _END()
+ev_c07r0202_manny_trade_placedata:
+	_IFVAL_JUMP(@SCWK_TEMP3, 'EQ', 0, 'ev_c07r0202_manny_trade_placedata_male')
+	_IFVAL_JUMP(@SCWK_TEMP3, 'EQ', 1, 'ev_c07r0202_manny_trade_placedata_female')
+	_RET()
+ev_c07r0202_manny_trade_placedata_male:
+    _OBJ_ADD('C07R0202_XATU_MALE')
+    _FLAG_RESET(#2969)
+    _RET()
+ev_c07r0202_manny_trade_placedata_female:
+    _OBJ_ADD('C07R0202_XATU_FEMALE')
+    _FLAG_RESET(#2970)
+    _RET()
+ev_c07r0202_manny_trade_placedata_shiny:
+	_IFVAL_JUMP(@SCWK_TEMP3, 'EQ', 0, 'ev_c07r0202_manny_trade_placedata_shiny_male')
+	_IFVAL_JUMP(@SCWK_TEMP3, 'EQ', 1, 'ev_c07r0202_manny_trade_placedata_shiny_female')
+ev_c07r0202_manny_trade_placedata_shiny_male:
+    _OBJ_ADD('C07R0202_XATU_SHINY_MALE')
+    _FLAG_RESET(#2971)
+    _RET()
+ev_c07r0202_manny_trade_placedata_shiny_female:
+    _OBJ_ADD('C07R0202_XATU_SHINY_FEMALE')
+    _FLAG_RESET(#2972)
+    _RET()
+ev_c07r0202_manny_trade_over:
+	_PLAYER_NAME(2)
+    _MACRO_TALKMSG('dialogue_c07r0202', 'msg_c07r0202_manny_trade_over', 'The prophecy has been fulfilled.\rThough your path is filled with hardship ahead,\nI can see your guiding stars will lead you true.\rFarewell, {2,1,0,0}.')
+    _FLAG_SET(#3082)
+    _TALK_CLOSE()
+    _TALK_OBJ_END()
+    _END()
+ev_c07r0202_xatu:
+	_TALK_OBJ_START()
+    _CALL('ev_c07r0202_manny_trade_values')
+	_CALL('ev_c07r0202_xatu_cry')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_c07r0202_xatu_cry:
+    _VOICE_PLAY(@LOCALWORK0, @LOCALWORK1, 0)
+    _MACRO_TALKMSG('dialogue_c07r0202', 'msg_c07r0202_xatu_cry', 'Tutuu!')
+    _VOICE_WAIT()
+	_RET()

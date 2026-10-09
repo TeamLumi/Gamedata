@@ -1,0 +1,434 @@
+ev_d31r0301_flag_change:
+	;TODO Characters visiting the battle hall, triggered by total streaks and a random chance, needs exefs
+	_GET_MY_SEX(@SCWK_ANSWER)
+	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 0, 'ev_d31r0301_enable_fan_winston')
+	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 1, 'ev_d31r0301_enable_fan_serena')
+	;Record over 500 - Dawn/Lucas
+	_IFVAL_JUMP(@SCWK_TEMP0, 'GE', 500, 'ev_d31r0301_enable_assistant')
+	;Record over 1000 - Mother
+	_IFVAL_JUMP(@SCWK_TEMP0, 'GE', 1000, 'ev_d31r0301_enable_mom')
+	;Record over 10000 - Oak/Jasmine
+	_IFVAL_JUMP(@SCWK_TEMP0, 'GE', 10000, 'ev_d31r0301_enable_oak_jasmine')
+	_END()
+ev_d31r0301_enable_fan_winston:
+	_FLAG_SET(#2904)
+	_FLAG_RESET(#2903)
+	_RET()
+ev_d31r0301_enable_fan_serena:
+	_FLAG_SET(#2903)
+	_FLAG_RESET(#2904)
+	_RET()
+ev_d31r0301_enable_assistant:
+	_FLAG_RESET(#2905)
+	_END()
+ev_d31r0301_enable_mom:
+	_FLAG_RESET(#2906)
+	_END()
+ev_d31r0301_enable_oak_jasmine:
+	_GET_RND(@SCWK_TEMP0, 2) ;Determines which one will appear
+	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', 0, 'ev_d31r0301_enable_oak')
+	_FLAG_RESET(#2908)
+	_END()
+ev_d31r0301_enable_oak:
+	_FLAG_RESET(#2907)
+	_END()
+ev_ftr_hall_lobby_sd_guide_start:
+	;TODO exefs needed for all this
+	;_FTR_SET_CURRENT_FACILITY(4)
+	_TALK_OBJ_START()
+	_MACRO_TALK_KEYWAIT('dialogue_d31r0301', 'ftr_hall_lobby_dialogue_1', 'Welcome to the Battle Hall!\rI am your guide to the Single and\nDouble Battle challenges.\rPlease be aware that these challenges\nare designed for a single Trainer.')
+	_JUMP('ev_ftr_hall_lobby_sd_guide_challenge')
+	_END()
+ev_ftr_hall_lobby_sd_guide_challenge:
+	_MACRO_TALKMSG('dialogue_d31r0301', 'ftr_hall_lobby_dialogue_2', 'Which challenge would you like to take?')
+	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_frontier_lobby_option_1', 1); Single Battle
+	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_frontier_lobby_option_2', 2); Double Battle
+	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_frontier_lobby_option_3', 3); Info
+	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_frontier_lobby_cancel', 0); Cancel
+	_OPEN_CUSTUM_WIN(@SCWK_ANSWER)
+	;Save which mode was selected, to move the correct NPC later. 0 multi, 1 single, 2 double
+	_LDVAL(@SCWK_TEMP0, @SCWK_ANSWER)
+	_SWITCH(@SCWK_ANSWER)
+	_CASE_JUMP(1, 'ev_ftr_hall_lobby_select_poke')
+	_CASE_JUMP(2, 'ev_ftr_hall_lobby_select_poke')
+	_CASE_JUMP(3, 'ev_ftr_hall_lobby_info')
+	_MACRO_TALK_KEYWAIT('dialogue_d31r0301', 'ftr_hall_lobby_dialogue_cancel', 'We hope to see you again!')
+	_TALK_CLOSE()
+	; _CASE_JUMP(1, xxx)
+	; _CASE_JUMP(2, xxx)
+	_TALK_OBJ_END()
+	_END()
+ev_ftr_hall_lobby_info:
+	_MACRO_TALK_KEYWAIT('dialogue_d31r0301', 'ftr_hall_lobby_dialogue_info', 'At the Battle Hall, you may take Single\nor Double Battle challenges alone.\rFor the Single Battle challenge, you\nenter one Pokémon of at least Lv. 30.\rThe Double Battle Challenge requires\nyou to enter two of the same kind of\fPokémon that are at least Lv. 30 each.\rWinning-streak records are kept for\nindividual kinds of Pokémon.\rThat makes it possible for any kind of\nPokémon to aim for no. 1.\rWhen you enter the Hall, you will be\nasked to choose the type and rank of\fthe Pokémon you want to battle.\rIf you manage to win ten matches in\na row, you will earn Battle Points (BP).\rIf you want to interrupt your\nchallenge, please save the game.\rIf you don’t save, you will be\ndisqualified from your challenge.\rPlease be aware of that!')
+	_JUMP('ev_ftr_hall_lobby_sd_guide_challenge')
+	_END()
+ev_ftr_hall_lobby_multi_guide_start:
+	_TALK_OBJ_START()
+	;_FTR_SET_CURRENT_FACILITY(4) ;?
+	_MACRO_TALK_KEYWAIT('dialogue_d31r0301', 'ftr_hall_lobby_multi_dialogue_1', 'Welcome to the Battle Hall!\rI am your guide to the Multi Battle\nchallenge.\rPlease be aware that this challenge\nrequires two Trainers.')
+	_JUMP('ev_ftr_hall_lobby_multi_guide_challenge')
+	_END()
+ev_ftr_hall_lobby_multi_guide_challenge:
+	;Save that multi mode was selected, to move the correct NPC later. 0 multi, 1 single, 2 double
+	_LDVAL(@SCWK_TEMP0, 0)
+	_MACRO_TALKMSG('dialogue_d31r0301', 'ftr_hall_lobby_multi_dialogue_2', 'Would you like to take the Battle Hall\nMulti Battle challenge?')
+	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_frontier_lobby_multi_option_1', 1); Take Challenge
+	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_frontier_lobby_option_3', 2); Info
+	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_frontier_lobby_cancel', 0); Cancel
+	_OPEN_CUSTUM_WIN(@SCWK_ANSWER)
+	_SWITCH(@SCWK_ANSWER)
+	_CASE_JUMP(1, 'ev_ftr_hall_lobby_select_poke')
+	_CASE_JUMP(3, 'ev_ftr_hall_lobby_multi_info')
+	_MACRO_TALK_KEYWAIT('dialogue_d31r0301', 'ftr_hall_lobby_dialogue_cancel', 'We hope to see you again!')
+	_TALK_CLOSE()
+	; _CASE_JUMP(1, xxx)
+	; _CASE_JUMP(2, xxx)
+	_TALK_OBJ_END()
+	_END()
+ev_ftr_hall_lobby_multi_info:
+	_MACRO_TALK_KEYWAIT('dialogue_d31r0301', 'ftr_hall_lobby_multi_dialogue_info', 'You may team up with a friend for a\nMulti Battle challenge using the\rsame kind of Pokémon that are at\nleast Lv. 30 each.\rWhen you enter the Hall, you will be\nasked to choose the type and rank of\fthe Pokémon you want to battle.\rIf you manage to win ten matches in\na row, you will earn Battle Points (BP).\rPlease note: a Battle Hall Multi Battle\nchallenge can’t be interrupted.')
+	_JUMP('ev_ftr_hall_lobby_multi_guide_challenge')
+	_END()
+ev_ftr_hall_lobby_select_poke:
+	_MACRO_TALK_KEYWAIT('dialogue_d31r0301', '44-msg_tower_09', 'Please select the Pokémon you wish to enter.')
+	_BLACK_OUT('SCR_WIPE_DIV', 'SCR_WIPE_SYNC')
+	_FADE_WAIT()
+	_TALK_CLOSE()
+	_PC_KAIFUKU()
+	_BTWR_SUB_SELECT_POKE()
+	_BTWR_SUB_GET_ENTRY_POKE(@SCWK_ANSWER)
+	_BLACK_IN('SCR_WIPE_DIV', 'SCR_WIPE_SYNC')
+	_FADE_WAIT()
+	_JUMP('ev_ftr_hall_lobby_streak_pokechk')
+	_END()
+
+ev_ftr_hall_lobby_streak_pokechk:
+	;_FTR_HALL_GET_STREAK_MON(@SCWK_ANSWER)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_ftr_hall_lobby_streak_breakchk')
+	;_FTR_HALL_SET_STREAK_MON()
+	_JUMP('ev_ftr_hall_local_savechk')
+	_END()
+
+ev_ftr_hall_lobby_streak_breakchk:
+	;_FTR_HALL_STREAK_MON_NAME(0)
+	_MACRO_TALK_KEYWAIT('dialogue_d31r0301', 'ftr_hall_lobby_streak_dialogue_1', 'Placeholder', 0)
+	;_FTR_HALL_SELECTED_MON_NAME(0)
+	_MACRO_TALK_KEYWAIT('dialogue_d31r0301', 'ftr_hall_lobby_streak_dialogue_2', 'Placeholder', 0)
+	_YES_NO_WIN(@SCWK_ANSWER)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_ftr_hall_lobby_select_poke')
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_ftr_hall_local_savechk')
+	_END()
+
+ev_ftr_hall_local_savechk:
+	_CALL('ev_ftr_hall_common_save')
+	;If SCWK answer is 0, the player didn't save, so don't continue
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_ftr_hall_local_savechk_no')
+	_MACRO_TALKMSG('dialogue_d31r0301', '44-msg_tower_12', 'I will now show you to the Battle Room.')
+	_TALK_CLOSE()
+	_JUMP('ev_ftr_hall_lobby_comanm_guide_out')
+	; _TALK_KEYWAIT(dp_scenario3%ftr_hall_stage_dialogue_1)
+	; _TALK_CLOSE()
+	; _CALL(ev_ftr_hall_stage_select_typerank)
+	; _JUMP(ev_ftr_hall_stage_sbtl_01)
+	_END()
+
+ev_ftr_hall_local_savechk_no:
+	_MACRO_TALK_KEYWAIT('dialogue_d31r0301', 'msg_ftr_hall_local_savechk_no', 'We hope to see you again!')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+
+ev_ftr_hall_common_save:
+	_CHG_COMMON_SCR('ev_report_call')
+	_LDWK(@SCWK_ANSWER, @LOCALWORK0)
+	_RET()
+
+ev_ftr_hall_lobby_comanm_guide_out:
+	_LDVAL(@3070, 1)
+	;TODO animations still may need adjusting and fixing, specially for the player
+	;SCWK_TEMP0 contains which mode was selected. 0 multi, 1 single, 2 double. Move the appropriate NPC accordingly
+	_IFVAL_CALL(@SCWK_TEMP0, 'EQ', 0, 'ev_hall_multi_guide_lobby_01')
+	_IFVAL_CALL(@SCWK_TEMP0, 'GT', 0, 'ev_hall_sd_guide_lobby_01')
+	_OBJ_ANIME_WAIT()
+	_SET_DOOR_OBJ('D31R0301_D01')
+	_HIT_DOOR_ANIME(0)
+	_SE_PLAY('S_FI015')
+	_HIT_DOOR_ANIME_WAIT()
+	_MAP_CHANGE('D31R0302', 0)
+	_END()
+
+ev_hall_sd_guide_lobby_01:
+	_OBJ_ANIME('FTR_HALL_SD_GUIDE', 'anm_hall_sd_guide_lobby_01')
+	_OBJ_ANIME('HERO', 'anm_hall_player_lobby_sd')
+	_RET()
+ev_hall_multi_guide_lobby_01:
+	_OBJ_ANIME('FTR_HALL_MULTI_GUIDE', 'anm_hall_multi_guide_lobby_01')
+	_OBJ_ANIME('HERO', 'anm_hall_player_lobby_multi')
+	_RET()
+
+anm_hall_player_lobby_sd:
+	_AC_WAIT(25)
+	_AC_DIR_L(8)
+	_AC_LEFT(4,8)
+	_AC_DIR_D(8)
+	_AC_DOWN(4,8)
+	_AC_INVISIBLE_ON()
+	_ACMD_END()
+
+anm_hall_player_lobby_multi:
+	_AC_WAIT(25)
+	_AC_DIR_L(8)
+	_AC_LEFT(4,8)
+	_AC_DIR_D(8)
+	_AC_DOWN(3,8)
+	_AC_INVISIBLE_ON()
+	_ACMD_END()
+
+anm_hall_sd_guide_lobby_01:
+	_AC_DIR_L(8)
+	_AC_LEFT(3,8)
+	_AC_DIR_D(8)
+	_AC_DOWN(4,8)
+	_AC_INVISIBLE_ON()
+	_ACMD_END()
+
+anm_hall_multi_guide_lobby_01:
+	_AC_DIR_L(8)
+	_AC_LEFT(3,8)
+	_AC_DIR_D(8)
+	_AC_DOWN(3,8)
+	_AC_INVISIBLE_ON()
+	_ACMD_END()
+
+ev_d31r0301_man1:
+	_MACRO_EASY_OBJ_MSG('dialogue_d31r0301', 'msg_d31r0301_man1_01', 'There’s this game that I’m totally into\nright now.\rMy friend and I started challenges\nwith identical conditions.\rWe’re competing over who can stretch\ntheir win streak the longest. It’s fun!')
+	_END()
+
+ev_d31r0301_man2:
+	_MACRO_EASY_OBJ_MSG('dialogue_d31r0301', 'msg_d31r0301_man2_01', 'When it comes to food, this Hiker\nchows down on the favorites first.\rBut here, I start with types that my\nPokémon doesn’t like. Why?\rBecause the opposition goes up in level\nas you progress.')
+	_END()
+
+ev_d31r0301_woman1:
+	_MACRO_EASY_OBJ_MSG('dialogue_d31r0301', 'msg_d31r0301_woman1_01', 'That opulent stage!\nEvery Pokémon can get up there.\rYes! You can try for a record with\nyour one favorite Pokémon.\rEven a Pokémon that’s not considered a\ngood battler can make a challenge.')
+	_END()
+
+ev_d31r0301_girl1:
+	_MACRO_EASY_OBJ_MSG('dialogue_d31r0301', 'msg_d31r0301_girl1_01', 'Pachipachi...\rMy Pachirisu is a cutie, but he’s even\nbattled the Brain here.\rThe Brain will take your Pokémon on at\nthe same level, to be fair.')
+	_END()
+ev_d31r0301_pachirisu:
+	_VOICE_PLAY(417, 0, 0); Play the cry voice
+	_MACRO_EASY_OBJ_MSG('dialogue_d31r0301', 'msg_d31r0301_pachirisu_01', 'Pachipachi pacchipachii!')
+	_END()
+ev_d31r0301_oldman1:
+	_MACRO_EASY_OBJ_MSG('dialogue_d31r0301', 'msg_d31r0301_oldman1_01', 'You should try the Battle Hall with\ndifferent kinds of Pokémon, too.\rDoing that, you’ll be building your\noverall record as well.')
+	_END()
+ev_d31r0301_idol:
+	_MACRO_EASY_OBJ_MSG('dialogue_d31r0301', 'msg_d31r0301_idol_01', 'There’s a key point to keep in mind\nhere.\rIf it’s the same kind of Pokémon, you\ncan enter different ones.\rThat means you can have different ones\nknowing different types of moves.\rThat could make it easier to win against\ncertain types.')
+	_END()
+ev_d31r0301_woman2:
+	_MACRO_EASY_OBJ_MSG('dialogue_d31r0301', 'msg_d31r0301_woman2_01', 'Ohoho! Ohohohoho!\nI’m the mysterious maid!\rAnd what is mysterious about me is the\nmysterious part!\rAnd now, a piece of advice.\rAt the Battle Hall, the opposing\nPokémon are matched in level to yours.\rThat way, you can make challenges\nwithout worrying about levels.')
+	_END()
+ev_d31r0301_woman3:
+	_MACRO_EASY_OBJ_MSG('dialogue_d31r0301', 'msg_d31r0301_woman3_01', 'You know how Croagunk has two types:\nPoison and Fighting?\rThat means it can appear as a Poison\ntype and as a Fighting type.')
+	_END()
+ev_ftr_hall_reward_01:
+	_TALK_OBJ_START()
+	;First time talk
+	_IF_FLAGOFF_JUMP(#2400, 'ev_ftr_hall_reward_02')
+	_MACRO_TALKMSG('dialogue_d31r0301', 'msg_d31r0301_reward_01', 'I keep track of the total number of\nwins from your longest Single Battle\fwin streaks at the Battle Hall.\rTo explain, I add only the longest win\nstreaks of each kind of Pokémon.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_ftr_hall_reward_02:
+	;NPC has been talked to once
+	_FLAG_SET(#2400)
+	_PLAYER_NAME(0)
+	;TODO Exefs needed to count the win-streak
+	;_FTR_HALL_GET_STREAK_MON(@SCWK_TEMP0)
+	_GET_RND(@SCWK_TEMP0, 101); Placeholder until exefs is ready
+	;groupID 2, tagID 2, tagPatternID 1
+	_NUMBER_NAME(1, @SCWK_TEMP0)
+	;Not enough win-streak for reward
+	;_MACRO_TALKMSG('dp_scenario3', 'msg_d31r0301_reward_02', '{0}, your total win-streak\nrecord stands at {1}.')
+	_MACRO_TALKMSG('dialogue_d31r0301', 'msg_d31r0301_reward_02', '{0,1,0,0}, your total win-streak\nrecord stands at {1,2,2,0}.')
+	_MACRO_TALKMSG('dialogue_d31r0301', 'msg_d31r0301_reward_03', 'When your total win-streak record\nreaches 0000, you will earn BP.')
+	;Unsure
+	;_MACRO_TALKMSG('dp_scenario3', 'msg_d31r0301_reward_04', '{0}, your total win-streak\nrecord stands at {1}.\r...My goodness!\nThat’s a fantastic record!')
+	_MACRO_TALKMSG('dialogue_d31r0301', 'msg_d31r0301_reward_04', '{0,1,0,0}, your total win-streak\nrecord stands at {1,2,2,0}.\r...My goodness!\nThat’s a fantastic record!')
+	;_MACRO_TALKMSG('dp_scenario3', 'msg_d31r0301_reward_05', 'When your total win-streak record hits\ncertain figures, you will earn BP as\frewards.\r{0}, your total win-streak\nrecord is presently {1}')
+	_MACRO_TALKMSG('dialogue_d31r0301', 'msg_d31r0301_reward_05', 'When your total win-streak record hits\ncertain figures, you will earn BP as\frewards.\r{0,1,0,0}, your total win-streak\nrecord is presently {1,2,2,0}.')
+	;Enough win-streak for reward
+	;_MACRO_TALKMSG('dp_scenario3', 'msg_d31r0301_reward_bp_01', 'Your total win-streak record has\nreached {1}.\fHere is your BP reward.')
+	_MACRO_TALKMSG('dialogue_d31r0301', 'msg_d31r0301_reward_bp_01', 'Your total win-streak record has\nreached {1,2,2,0}.\fHere is your BP reward.')
+	_MACRO_TALKMSG('dialogue_d31r0301', 'msg_d31r0301_reward_bp_02', '{0} received 0000 BP!')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_d31r0301_pc_score:
+	_EVENT_START()
+	_MACRO_TALKMSG('dialogue_d31r0301', 'msg_d31r0301_pc_score_01', 'Which record would you like to see?')
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_battlehall_pc_1', 'Single', 1)
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_battlehall_pc_2', 'Double', 2)
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_battlehall_pc_3', 'Multi', 3)
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_battlehall_pc_cancel', 'Cancel', 0)
+	_OPEN_CUSTUM_WIN_FIXED(@SCWK_ANSWER)
+	_TALK_CLOSE()
+	_SWITCH(@SCWK_ANSWER)
+	;TODO exefs needed
+	_CASE_JUMP(1, 'ev_d31r0301_pc_single')
+	_CASE_JUMP(2, 'ev_d31r0301_pc_double')
+	_CASE_JUMP(3, 'ev_d31r0301_pc_multi')
+	_EVENT_END()
+	_END()
+ev_d31r0301_fan_winston:
+	_TALK_OBJ_START()
+	; Check for win-streak of 0, 1, 11, 31, 51, 101, 151, 251, 351 and 475
+	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', 0, 'ev_d31r0301_fan_winston_1')
+	_IFVAL_JUMP(@SCWK_TEMP0, 'GE', 1, 'ev_d31r0301_fan_winston_2')
+	_IFVAL_JUMP(@SCWK_TEMP0, 'GE', 11, 'ev_d31r0301_fan_winston_3')
+	_IFVAL_JUMP(@SCWK_TEMP0, 'GE', 31, 'ev_d31r0301_fan_winston_4')
+	_IFVAL_JUMP(@SCWK_TEMP0, 'GE', 51, 'ev_d31r0301_fan_winston_5')
+	_IFVAL_JUMP(@SCWK_TEMP0, 'GE', 101, 'ev_d31r0301_fan_winston_6')
+	_IFVAL_JUMP(@SCWK_TEMP0, 'GE', 151, 'ev_d31r0301_fan_winston_7')
+	_IFVAL_JUMP(@SCWK_TEMP0, 'GE', 251, 'ev_d31r0301_fan_winston_8')
+	_IFVAL_JUMP(@SCWK_TEMP0, 'GE', 351, 'ev_d31r0301_fan_winston_9')
+	_IFVAL_JUMP(@SCWK_TEMP0, 'GE', 475, 'ev_d31r0301_fan_winston_10')
+	_END()
+ev_d31r0301_fan_winston_1:
+	_MACRO_TALKMSG('dialogue_d31r0301', 'msg_d31r0301_fan_winston_1', 'The Battle Hall’s been kind of\nboring lately.\rThere haven’t been any dazzling\nchallengers who can electrify crowds.\rThe kind of challenger who can beat the\nBrain... Aren’t there any around?')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_d31r0301_fan_winston_2:
+	_MACRO_TALKMSG('dialogue_d31r0301', 'msg_d31r0301_fan_winston_2', 'Let me take a wild guess.\nAre you getting into the Battle Hall?\fIt’s addictively fun, huh?\rThe more you win, the more kinds of\nPokémon you get to see, too.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_d31r0301_fan_winston_3:
+	_MACRO_TALKMSG('dialogue_d31r0301', 'msg_d31r0301_fan_winston_3', '...\n...Oh, sorry for staring!\rI saw you on stage the last time.\nYou’ve got some star quality.\rI think I’m going to keep an eye on you.\nThere’s real charisma there.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_d31r0301_fan_winston_4:
+	_MACRO_TALKMSG('dialogue_d31r0301', 'msg_d31r0301_fan_winston_4', 'I check you out every time\nyou get up on stage.\rYou’re fun to watch, let me tell you.\rNow I’m always looking forward to\nseeing the combo of you and your\fPokémon on stage.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_d31r0301_fan_winston_5:
+	_MACRO_TALKMSG('dialogue_d31r0301', 'msg_d31r0301_fan_winston_5', 'Hey, there!\nWhat are you going to do this time?\rWhich Pokémon are you going for a\nrecord with next?\rWhen I get to thinking about that,\nI get too wound up to sleep at night.\rThat’s why I’ve been sleeping in lately!')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_d31r0301_fan_winston_6:
+	_MACRO_TALKMSG('dialogue_d31r0301', 'msg_d31r0301_fan_winston_6', 'Awesome!\nSeriously awesome!\fYou’re beyond awesome, even!\rThe love you show so many Pokémon...\nIt’s no easy feat, I can tell ya!')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_d31r0301_fan_winston_7:
+	_MACRO_TALKMSG('dialogue_d31r0301', 'msg_d31r0301_fan_winston_7', 'I’ve never seen Pokémon\nbattle as enjoyably as yours do.\rYou’re the first of a kind for me as\nTrainers go.\rYou know, I brag about you to everyone\nwho’s willing to listen.\rI was saying that you’re going to be a\nstar before you even got a record!')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_d31r0301_fan_winston_8:
+	_PLAYER_NAME(0)
+	_MACRO_TALKMSG('dialogue_d31r0301', 'msg_d31r0301_fan_winston_8', 'Go, {0}, go!\nGo, {0}, go!\rI’m thinking up some dance steps and\ncheers I can do to support you.\rIf you want to see them, you’ll need to\nkeep working on your records!')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_d31r0301_fan_winston_9:
+	_MACRO_TALKMSG('dialogue_d31r0301', 'msg_d31r0301_fan_winston_9', 'You’re phenomenal.\nAll the battles you waged on stage...\fAll those moments of glory...\rYour star burns so bright and huge!\nI can barely open my eyes around you!')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_d31r0301_fan_winston_10:
+	_MACRO_TALKMSG('dialogue_d31r0301', 'msg_d31r0301_fan_winston_10', 'The love for Pokémon you\nexhibited at the Battle Hall is as\finfinitely deep as it is wide...\rYou can count on me, Winston, to be\nyour lifelong fan.\rJust as you love Pokémon, I love you\nas the Pokémon superstar!')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_d31r0301_fan_serena:
+	_TALK_OBJ_START()
+	; TODO exefs needed Check for different species record of 0, 1, 11, 31, 51, 101, 151, 251, 351 and 475
+	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', 0, 'ev_d31r0301_fan_serena_1')
+	_IFVAL_JUMP(@SCWK_TEMP0, 'GE', 1, 'ev_d31r0301_fan_serena_2')
+	_IFVAL_JUMP(@SCWK_TEMP0, 'GE', 11, 'ev_d31r0301_fan_serena_3')
+	_IFVAL_JUMP(@SCWK_TEMP0, 'GE', 31, 'ev_d31r0301_fan_serena_4')
+	_IFVAL_JUMP(@SCWK_TEMP0, 'GE', 51, 'ev_d31r0301_fan_serena_5')
+	_IFVAL_JUMP(@SCWK_TEMP0, 'GE', 101, 'ev_d31r0301_fan_serena_6')
+	_IFVAL_JUMP(@SCWK_TEMP0, 'GE', 151, 'ev_d31r0301_fan_serena_7')
+	_IFVAL_JUMP(@SCWK_TEMP0, 'GE', 251, 'ev_d31r0301_fan_serena_8')
+	_IFVAL_JUMP(@SCWK_TEMP0, 'GE', 351, 'ev_d31r0301_fan_serena_9')
+	_IFVAL_JUMP(@SCWK_TEMP0, 'GE', 475, 'ev_d31r0301_fan_serena_10')
+	_END()
+ev_d31r0301_fan_serena_1:
+	_MACRO_TALKMSG('dialogue_d31r0301', 'msg_d31r0301_fan_serena_1', 'It’s about the Battle Hall...\nIt hasn’t excited me lately.\rThere’s been no gorgeous sort of\nchallenger who can dazzle me.\rThe kind of challenger who can make me\na fan... Aren’t there any around?')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_d31r0301_fan_serena_2:
+	_MACRO_TALKMSG('dialogue_d31r0301', 'msg_d31r0301_fan_serena_2', 'Um... Excuse me?\rIf you don’t mind me asking, are you\ngetting into the Battle Hall?\rIt’s fun in an engrossing way, isn’t it?\nDid you know?\rThe more you win, the more kinds of\nPokémon appear.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_d31r0301_fan_serena_3:
+	_MACRO_TALKMSG('dialogue_d31r0301', 'msg_d31r0301_fan_serena_3', 'Um... Excuse me?\rI watched you when you were on stage.\nIt made me feel all tingly seeing you.\rUm... You won’t mind if I cheer for you\nfrom now on, will you? Please, may I?')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_d31r0301_fan_serena_4:
+	_MACRO_TALKMSG('dialogue_d31r0301', 'msg_d31r0301_fan_serena_4', 'Um... Excuse me?\rI cheer for you the best I can.\rI can’t get up on stage with you, but\nI want to lend my support to your\fPokémon and you for trying so hard.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_d31r0301_fan_serena_5:
+	_MACRO_TALKMSG('dialogue_d31r0301', 'msg_d31r0301_fan_serena_5', 'Um... Excuse me?\rCan you tell me what kind of Pokémon\nyou’re going for a record with next?\rWhen I start thinking about that, I get\nsort of all choked up.\rI have trouble sleeping at night when\nI get that way.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_d31r0301_fan_serena_6:
+	_MACRO_TALKMSG('dialogue_d31r0301', 'msg_d31r0301_fan_serena_6', 'Um... Excuse me?\rFantastic! It’s fantastic!\nYou’re fabulously fantastic!\rThe love you show so many Pokémon...\nIt must take extraordinary effort.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_d31r0301_fan_serena_7:
+	_MACRO_TALKMSG('dialogue_d31r0301', 'msg_d31r0301_fan_serena_7', 'I’ve never seen Pokémon\nbattle as enjoyably as yours do.\rYou’re the first Trainer ever who’s\ndone that.\rI... I brag about you to all my friends.\nI hope you don’t mind.\rI tell them I wish I could be as\nwonderful a Trainer as you!')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_d31r0301_fan_serena_8:
+	_PLAYER_NAME(0)
+	_MACRO_TALKMSG('dialogue_d31r0301', 'msg_d31r0301_fan_serena_8', 'Hurray, hurray, {0}!\nGo, Pokémon, go!\r...Oh! Um... Excuse me.\rI was working on cheers and a dance\nroutine for you.\rB-but, I’m sorry for being so silly and\ngiddy and...')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_d31r0301_fan_serena_9:
+	_MACRO_TALKMSG('dialogue_d31r0301', 'msg_d31r0301_fan_serena_9', 'You’re so inspiring to me.\rAll the glory you earned while battling\nso often on that shining stage...\rJust seeing you makes me feel all\nhappy inside. ♫')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_d31r0301_fan_serena_10:
+	_MACRO_TALKMSG('dialogue_d31r0301', 'msg_d31r0301_fan_serena_10', 'Your Pokémon love that you’ve\nshown at the Battle Hall is as infinitely\fdeep as it is wide...\rIt’s amazing, but you love every kind of\nPokémon there is.\rI love you for being so amazing and\ndedicated!')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_d31r0301_assistant:
+	_GET_MY_SEX(@SCWK_ANSWER)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_d31r0301_assistant_lucas')
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_d31r0301_assistant_dawn')
+	_END()
+ev_d31r0301_assistant_lucas:
+	_MACRO_EASY_OBJ_MSG('dialogue_d31r0301', 'msg_d31r0301_assistant_lucas', 'These stage battles are lots\nof fun just to watch!\rYou get to see so many different kinds\nof Pokémon. It’s cool.')
+	_END()
+ev_d31r0301_assistant_dawn:
+	_PLAYER_NAME(0)
+	_MACRO_EASY_OBJ_MSG('dialogue_d31r0301', 'msg_d31r0301_assistant_dawn', 'Hi, {0}.\nDo you know what I’ve been doing?\rI go looking for the Pokémon that take\nthe stage with you.\rI catch them, too!\nMy Pokédex is filling up from it.\rI guess I can thank you for that,\n{0}. So, thank you!')
+	_END()
+ev_d31r0301_jasmine:
+	_MACRO_EASY_OBJ_MSG('dialogue_d31r0301', 'msg_d31r0301_jasmine', 'I love showy events like\nBattle Hall challenges and Contests.\rThey show me aspects of Pokémon that\nI didn’t know about.')
+	_END()
+ev_d31r0301_oak:
+	_MACRO_EASY_OBJ_MSG('dialogue_d31r0301', 'msg_d31r0301_oak', 'You keep amazing me over and over.\nWhat a Trainer you turned out to be!\rIt’s not enough that you caught\nPokémon in numbers beyond belief.\rThat alone is fantastic enough, but\nyou’ve battled with them as well.\rYou’re what all Trainers should aspire\nto be!')
+	_END()
+ev_d31r0301_mom:
+	_PLAYER_NAME(0)
+	_MACRO_EASY_OBJ_MSG('dialogue_d31r0301', 'msg_d31r0301_mom', '{0}\rWhen I come here, I cheer for everyone\non stage. I can’t help myself.\rBut when I see you win, it does feel\ndifferent.\rIt’s not just about feeling happy.\nIt evokes something in me.')
+	_END()

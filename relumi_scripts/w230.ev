@@ -1,21 +1,17 @@
 ev_w230_flag_change:
-	_IF_FLAGON_CALL(#FV_C11_STOP, 'ev_w230_mans_chap')
 	_END()
-ev_w230_mans_chap:
-	_LDVAL(@LOCALWORK31, 1)
-	_RET()
 ev_w230_sign1:
-	_EASY_BOARD_MSG('dp_scenario3%40-msg_w230_sign1_01', 'BOARD_TYPE_ROAD', 0, 2)
+	_EASY_BOARD_MSG('dialogue_w230%40-msg_w230_sign1_01', 'BOARD_TYPE_ROAD', 0, 2)
 	_END()
 ev_w230_stop_01:
 	_TALK_OBJ_START()
-	_TALKMSG('dp_scenario3%40-msg_w230_stop_01_1')
-	_TALKMSG('dp_scenario3%40-msg_w230_stop_01_2')
+	_MACRO_TALKMSG('dialogue_w230', '40-msg_w230_stop_01_1', 'Hold it right there, Trainer!\rSince you’re here, you’ve got to visit the\nBattle Tower.')
+	_MACRO_TALKMSG('dialogue_w230', '40-msg_w230_stop_01_2', 'You don’t earn Exp. Points, and your Pokédex\nisn’t updated there.\rIt’s a place solely for Trainers to hone their\nown skills.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_w230_stop_02:
-	_EASY_OBJ_MSG('dp_scenario3%40-msg_w230_stop_02')
+	_MACRO_EASY_OBJ_MSG('dialogue_w230', '40-msg_w230_stop_02', 'Hold it right there, Trainer!\nHave you been to the Battle Tower?\rIt’s a good place to learn useful\nbattle techniques.\rYou get to see all sorts of Pokémon and their\nmoves, also!')
 	_END()
 pos_c11_pw_man_out02:
 	_EVENT_START()

@@ -1,0 +1,8 @@
+SP_TEST_INIT:
+	_END()
+SP_TEST_OBJ:
+	_END()
+SP_TEST_SCENE:
+	_END()
+SP_TEST_FLAG:
+	_END()

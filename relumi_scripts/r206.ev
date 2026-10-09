@@ -45,18 +45,21 @@ ev_d21r0101_miru_poor:
 	_SYS_FLAG_PAIR_RESET()
 	_FLAG_SET(#FV_D21R0101_SEVEN2)
 	_END()
-ev_r206_girl1a:
-	_EASY_OBJ_MSG('dp_scenario2%22-msg_r206_girl1a_01')
-	_END()
-ev_r206_boy2a:
-	_EASY_OBJ_MSG('dp_scenario2%22-msg_r206_boy2a_01')
-	_END()
 ev_r206_sign1:
-	_EASY_BOARD_MSG('dp_scenario2%22-msg_r206_sign1_01', 'BOARD_TYPE_ROAD', 0, 3)
+	_EASY_BOARD_MSG('dialogue_r206%22-msg_r206_sign1_01', 'BOARD_TYPE_ROAD', 0, 3)
 	_END()
 ev_r206_sign2:
-	_EASY_BOARD_MSG('dp_scenario2%22-msg_r206_sign2_01', 'BOARD_TYPE_ROAD', 0, 4)
+	_EASY_BOARD_MSG('dialogue_r206%22-msg_r206_sign2_01', 'BOARD_TYPE_ROAD', 0, 4)
 	_END()
-ev_r206_sign3:
-	_EASY_INFOBOARD_MSG('dp_scenario2%22-msg_r206_sign3_01', 'BOARD_TYPE_INFO', 0)
+ev_r206_hvoltorb:
+	_LDVAL(@SCWK_TEMP0, @SCWK_TARGET_OBJID); PlaceData ID
+	_LDVAL(@SCWK_TEMP1, 100); MonsNo
+	_LDVAL(@SCWK_TEMP2, 22); Level
+	_LDVAL(@SCWK_TEMP3, 1); Formno
+	_CALL('ev_disguised_static_mon')
+	_MACRO_TALKMSG('dialogue_r206', 'msg_r206_hvoltorb', 'ZzzztZzzztZzzzt!')
+	_CALL('ev_disguised_static_mon_2')
+	_FLAG_SET(#2412); Route 206 Hisuian Voltorb static
+	_CALL('ev_d13r0101_disguised_vivillon_flag')
+	_EVENT_END()
 	_END()

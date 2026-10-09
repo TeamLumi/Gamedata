@@ -1,0 +1,25 @@
+ev_d31r0302_flag_change:
+	_IFVAL_CALL(@3070, 'NE', 0, 'ev_d31r0302_poketch_hook_set')
+	_END()
+ev_d31r0302_poketch_hook_set:
+	_RET()
+
+ev_ftr_hall_hallway_comanm_guide_in_out:
+	_EVENT_START()
+	_OBJ_ANIME('FTR_HALL_SD_GUIDE', 'anm_hall_sd_guide_hallway_01')
+	_OBJ_ANIME('HERO', 'anm_hall_player_hallway_01')
+	_OBJ_ANIME_WAIT()
+	_MAP_CHANGE('D31R0303', 0)
+	_END()
+
+anm_hall_sd_guide_hallway_01:
+	_AC_DIR_D(4)
+	_AC_DOWN(7, 8)
+	_AC_INVISIBLE_ON()
+	_ACMD_END()
+
+anm_hall_player_hallway_01:
+	_AC_WAIT(4)
+	_AC_DOWN(9, 8)
+	_AC_INVISIBLE_ON()
+	_ACMD_END()

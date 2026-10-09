@@ -246,53 +246,9 @@ ev_hamanasu_fast:
 	_END()
 ev_hamanasu_tips:
 	_RET()
-ev_d10r0101_finish:
-	_TALK_START()
-	_SE_PLAY('S_PINPON')
-	_PLAYER_NAME(0)
-	_TALKMSG('dp_scenario2%180-msg_p_park_announce_002')
-	_BGM_PLAY('SEQ_SILENCE_DUNGEON')
-	_SE_PLAY('M_FI013')
-	_ME_WAIT()
-	_TALK_CLOSE()
-	_TALK_END()
-	_LDVAL(@WK_SCENE_D10R0101, 1)
-	_CALL('sub_d10r0101_return_gate')
-	_END()
-ev_d10r0101_ask_retire:
-	_TALK_START()
-	_TALKMSG('dp_scenario2%180-msg_p_park_announce_005')
-	_YES_NO_WIN(@SCWK_ANSWER)
-	_TALK_CLOSE()
-	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_d10r0101_ask_retire_decide')
-	_TALK_END()
-	_END()
-ev_d10r0101_ask_retire_decide:
-	_LDVAL(@WK_SCENE_D10R0101, 2)
-	_TALK_END()
-	_CALL('sub_d10r0101_return_gate')
-	_END()
-pos_d10r0101_retire:
-	_TALK_START()
-	_CALL('ev_d10r0101_ask_sub')
-	_TALK_CLOSE()
-	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'pos_d10r0101_retire_end')
-	_LDVAL(@WK_SCENE_D10R0101, 2)
-	_TALK_END()
-	_CALL('sub_d10r0101_return_gate')
-	_END()
-pos_d10r0101_retire_end:
-	_OBJ_ANIME('HERO', 'anm_d10r0101_get_back')
-	_OBJ_ANIME_WAIT()
-	_TALK_END()
-	_END()
-anm_d10r0101_get_back:
-	_AC_DIR_U(8)
-	_AC_UP(1, 8)
-	_ACMD_END()
 ev_d10r0101_admin:
 	_TALK_OBJ_START()
-	_TALKMSG('dp_scenario2%178-msg_r221r0101_admin_30')
+	_MACRO_TALKMSG('dialogue_d10r0101', '178-msg_r221r0101_admin_30', 'You might be one of the powerful people\nattracted by the Renegade roses.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
@@ -304,24 +260,6 @@ ev_d10r0101_admin_end:
 anm_d10r0101_turn_left:
 	_AC_DIR_L(8)
 	_ACMD_END()
-ev_d10r0101_ask_sub:
-	_GET_MY_SEX(@SCWK_ANSWER)
-	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_d10r0101_ask_sub_retry_female')
-	_JUMP('ev_d10r0101_ask_sub_retry_male')
-ev_d10r0101_ask_sub_retry_male:
-	_PLAYER_NAME(0)
-	_TALKMSG('dp_scenario2%180-msg_p_park_admin_003')
-	_LDVAL(@SCWK_ANSWER, 0)
-	_RET()
-ev_d10r0101_ask_sub_retry_female:
-	_PLAYER_NAME(0)
-	_TALKMSG('dp_scenario2%180-msg_p_park_admin_004')
-	_LDVAL(@SCWK_ANSWER, 0)
-	_RET()
-ev_d10r0101_ask_sub_retire:
-	_TALKMSG('dp_scenario2%180-msg_p_park_admin_002')
-	_LDVAL(@SCWK_ANSWER, 1)
-	_RET()
 sub_d10r0101_return_gate:
 	_MAP_CHANGE(405, 0, 7, 7, 1)
 	_RET()

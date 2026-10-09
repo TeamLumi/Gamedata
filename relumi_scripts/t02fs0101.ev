@@ -17,7 +17,7 @@ ev_t02fs0101_shop_re:
 	_JUMP('ev_t02fs0101_shop_end')
 	_END()
 ev_t02fs0101_shop_sonohoka:
-	_TALKMSG('dp_scenario1%28-mes_shop_01_03')
+	_MACRO_TALKMSG('dialogue_t02fs0101', '28-mes_shop_01_03', 'Is there anything else I can do for you?')
 	_RET()
 ev_t02fs0101_shop_buy:
 	_LDVAL(@LOCALWORK3, 1)
@@ -60,8 +60,8 @@ ev_t02fs0101_shop_end:
 	_TALK_OBJ_END()
 	_END()
 ev_t02fs0101_man1a:
-	_EASY_OBJ_MSG('dp_scenario1%13-msg_t02fs0101_man1a_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_t02fs0101', '13-msg_t02fs0101_man1a_01', 'If a Pokémon loses all its HP, it can’t\nbattle anymore.\rI’m buying lots of Potions to avoid having\nthat happen!')
 	_END()
 ev_t02fs0101_boy1a:
-	_EASY_OBJ_MSG('dp_scenario1%13-msg_t02fs0101_boy1a_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_t02fs0101', '13-msg_t02fs0101_boy1a_01', 'If you come across a Pokémon you’ve just gotta\nhave, throw a Poké Ball!\rNever leave home without one!')
 	_END()

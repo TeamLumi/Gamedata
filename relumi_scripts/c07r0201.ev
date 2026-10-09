@@ -1,14 +1,14 @@
 ev_c07r0201_flag_change:
-	_LDVAL(@WK_ELEVATOR_FLOOR, 0)
+	_LDVAL(@WK_ELEVATOR_FLOOR, 1)
 	_END()
 ev_c07r0201_woman6:
-	_EASY_OBJ_MSG('dp_scenario2%96-msg_c07r0201_woman6_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c07r0201', '96-msg_c07r0201_woman6_01', 'Welcome to the fabulous Veilstone\nDepartment Store.')
 	_END()
 ev_c07r0201_middleman2:
-	_EASY_OBJ_MSG('dp_scenario2%96-msg_c07r0201_middleman2_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c07r0201', '96-msg_c07r0201_middleman2_01', 'This department store knows how to ensure\ncustomer satisfaction.\rThey really look after you once you become a\nregular customer.')
 	_END()
 ev_c07r0201_gorggeousw:
-	_EASY_OBJ_MSG('dp_scenario2%96-msg_c07r0201_gorggeousw_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c07r0201', '96-msg_c07r0201_gorggeousw_01', 'I like the formal air of a luxury department store.')
 	_END()
 ev_c07r0201_fix_shop_01:
 	_TALK_OBJ_START()
@@ -29,7 +29,7 @@ ev_c07r0201_fix_shop_re:
 	_JUMP('ev_c07r0201_fix_shop_end')
 	_END()
 ev_c07r0201_fix_shop_sonohoka:
-	_TALKMSG('dp_scenario1%28-mes_shop_01_03')
+	_MACRO_TALKMSG('dialogue_c07r0201', '28-mes_shop_01_03', 'Is there anything else I can do for you?')
 	_RET()
 ev_c07r0201_fix_shop_buy:
 	_LDVAL(@LOCALWORK3, 1)
@@ -78,7 +78,7 @@ ev_c07r0201_02_fix_shop_re:
 	_JUMP('ev_c07r0201_02_fix_shop_end')
 	_END()
 ev_c07r0201_02_fix_shop_sonohoka:
-	_TALKMSG('dp_scenario1%28-mes_shop_01_03')
+	_MACRO_TALKMSG('dialogue_c07r0201', '28-mes_shop_01_03', 'Is there anything else I can do for you?')
 	_RET()
 ev_c07r0201_02_fix_shop_buy:
 	_LDVAL(@LOCALWORK3, 1)
@@ -106,15 +106,15 @@ ev_c07r0201_02_fix_shop_end:
 	_TALK_OBJ_END()
 	_END()
 ev_c07r0201_board01:
-	_EASY_OBJ_MSG('dp_scenario2%96-msg_c07r0201_board01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c07r0201', '96-msg_c07r0201_board01', 'Discover a new you!\nVeilstone Department Store')
 	_END()
 ev_c07r0201_poster:
-	_EASY_OBJ_MSG('dp_scenario2%96-msg_c07r0201_poster_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c07r0201', '96-msg_c07r0201_poster_01', 'This is the <color=#F01E1EFF>first floor</color>.\rB1F: Food & Produce\n1F: Trainers’ Zone\f2F: Battle Collection\f3F: TM Corner\f4F: Pedestal Floor\f5F: Rooftop Plaza')
 	_END()
 ev_c07r0201_lady:
 	_TALK_OBJ_START()
 	_IF_FLAGON_JUMP(#FE_C07R0201_ACCE_GET, 'ev_c07r0201_lady_02')
-	_TALKMSG('dp_scenario2%96-msg_c07r0201_lady_01')
+	_MACRO_TALKMSG('dialogue_c07r0201', '96-msg_c07r0201_lady_01', 'I made Stickers modeled after the Pokémon of a\nTrainer I met. Would you like some?')
 	_FIRST_POKE_NO_GET(@SCWK_ANSWER)
 	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 387, 'ev_c07r0201_lady_acce_no_1_set')
 	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 390, 'ev_c07r0201_lady_acce_no_2_set')
@@ -125,7 +125,7 @@ ev_c07r0201_lady:
 	_END()
 ev_c07r0201_lady_02:
 	_SEAL_NAME(0, @WK_SCENE_C07R0201_GET_ACCE_NO, 3)
-	_TALKMSG('dp_scenario2%96-msg_c07r0201_lady_02')
+	_MACRO_TALKMSG('dialogue_c07r0201', '96-msg_c07r0201_lady_02', 'Those are {0,1,77,0}!\rPlace them on Ball Capsules, and they can really\nimpress the audience in Super Contest Shows!')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()

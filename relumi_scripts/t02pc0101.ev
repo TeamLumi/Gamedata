@@ -14,11 +14,11 @@ ev_t02pc0101_pcwoman1:
 	_JUMP('ev_heal_p01')
 	_END()
 ev_t02pc0101_man1a:
-	_EASY_OBJ_MSG('dp_scenario1%14-msg_t02pc0101_man1a_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_t02pc0101', '14-msg_t02pc0101_man1a_01', 'Talk to that nice lady at the counter and hand\nher your Pokémon.\rShe’ll restore your Pokémon to perfect health in\nno time at all!')
 	_END()
 ev_t02pc0101_oldman1a:
-	_EASY_OBJ_MSG('dp_scenario1%14-msg_t02pc0101_oldman1a_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_t02pc0101', '14-msg_t02pc0101_oldman1a_01', 'Do you see that PC over there?\nThat fancy blue one?\rIf you’ve got Pokémon with you, it’s free to use.')
 	_END()
 ev_t02pc0101_girl1a:
-	_EASY_OBJ_MSG('dp_scenario1%14-msg_t02pc0101_girl1a_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_t02pc0101', '14-msg_t02pc0101_girl1a_01', 'The Local Club is located at the top floor of\nany Pokémon Center.\rThere, you can have all sorts of fun with\nyour friends.')
 	_END()

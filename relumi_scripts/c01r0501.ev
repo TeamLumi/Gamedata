@@ -1,11 +1,11 @@
 ev_c01r0501_oldwoman1:
-	_EASY_OBJ_MSG('dp_scenario1%47-msg_c01r0501_oldwoman1_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c01r0501', '47-msg_c01r0501_oldwoman1_01', 'Isn’t my Pokétch quite fetching?\rA Trainer would be simply lost without a Pokétch,\nafter all.')
 	_END()
 ev_c01r0501_pikachu:
-	_EASY_VOICE_MSG('dp_scenario1%47-msg_c01r0501_pikachu_01', 'PLAY_PV_EV_025_00_02')
+	_EASY_VOICE_MSG('dialogue_c01r0501%47-msg_c01r0501_pikachu_01', 'PLAY_PV_EV_025_00_02')
 	_END()
 ev_c01r0501_eneco:
-	_EASY_VOICE_MSG('dp_scenario1%47-msg_c01r0501_eneco_01', 'PLAY_PV_EV_417_00_00')
+	_EASY_VOICE_MSG('dialogue_c01r0501%47-msg_c01r0501_eneco_01', 'PLAY_PV_EV_417_00_00')
 	_END()
 ev_c01r0501_woman2:
 	_TALK_OBJ_START_TURN_NOT()
@@ -13,7 +13,7 @@ ev_c01r0501_woman2:
 	_LDVAL(@SCWK_TEMP0, 217)
 	_LDVAL(@SCWK_TEMP1, 1)
 	_ITEM_NAME(0, @SCWK_TEMP0, @SCWK_TEMP1)
-	_TALKMSG('dp_scenario1%47-msg_c01r0501_woman2_01')
+	_MACRO_TALKMSG('dialogue_c01r0501', '47-msg_c01r0501_woman2_01', 'Oh, your Pokémon is quite adorable!\rHere, try making it hold this\n{0,1,9,0}.')
 	_ADD_ITEM_CHK(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_c01r0501_woman2_item_event_fail')
 	_FLAG_SET(#FE_C01R0501_ITEM_GET)
@@ -27,9 +27,9 @@ ev_c01r0501_woman2_item_event_fail:
 	_TALK_OBJ_END()
 	_END()
 ev_c01r0501_woman2_02:
-	_TALKMSG('dp_scenario1%47-msg_c01r0501_woman2_02_1')
-	_TALKMSG('dp_scenario1%47-msg_c01r0501_woman2_02_2', 1)
-	_TALKMSG('dp_scenario1%47-msg_c01r0501_woman2_02_3', 1)
+	_MACRO_TALKMSG('dialogue_c01r0501', '47-msg_c01r0501_woman2_02_1', 'A Pokémon holding that Quick Claw can\nsometimes attack first, even if it is normally a\flittle bit slow.')
+	_MACRO_TALKMSG('dialogue_c01r0501', '47-msg_c01r0501_woman2_02_2', 'There are other items that are only useful when\ngiven to a Pokémon.\rTry finding other items that you can make your\nPokémon hold.', 1)
+	_MACRO_TALKMSG('dialogue_c01r0501', '47-msg_c01r0501_woman2_02_3', 'I sound like I’m a teacher or something.', 1)
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()

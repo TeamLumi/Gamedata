@@ -1,2 +1,220 @@
-ev_test:
+ev_uga06_flag_change:
+	_IF_FLAGON_JUMP(#2042, 'ev_uga06_kalos_ranger_1_position_change')
 	_END()
+
+ev_uga06_kalos_ranger_1_position_change:
+	;Called from sp_uga06.ev
+	_OBJ_DIR_CHANGE('UGA06_KALOS_RANGER_1', 0)
+	_SXY_POS_CHANGE('UGA06_KALOS_RANGER_1', 130, 21)
+	_END()
+
+pos_uga06_kalos_ranger_1_stop:
+	_EVENT_START()
+	_LDVAL(@515, 1)
+	_CHARA_LOOK_LOCK('HERO', 'UGA06_KALOS_RANGER_1')
+	_MACRO_TALKMSG('dialogue_uga06', 'msg_uga06_kalos_ranger_1_001', 'You scoundrels shall never get away with this.\rRelease those Pokémon at once, or I shall be\nforced to intervene.')
+	_TALK_CLOSE()
+	_CHARA_LOOK_RELEASE('HERO')
+	_CHARA_LOOK_LOCK('HERO', 'UGA06_KALOS_POACHER_1')
+	_MACRO_TALKMSG('dialogue_uga06', 'msg_uga06_kalos_poacher_1_001', 'Are you kidding? You’re outnumbered pal.')
+	_TALK_CLOSE()
+	_CHARA_LOOK_RELEASE('HERO')
+	_CHARA_LOOK_LOCK('HERO', 'UGA06_KALOS_POACHER_2')
+	_MACRO_TALKMSG('dialogue_uga06', 'msg_uga06_kalos_poacher_2_001', 'Yeah, do yourself a favor and move along,\nbefore you get yourself into a mess.')
+	_TALK_CLOSE()
+	;Ranger emotes with a ! and turns to face the player. The player looks at the Ranger
+	_OBJ_ANIME('UGA06_KALOS_RANGER_1', 'anm_uga06_kalos_ranger_1_exclamation')
+	_OBJ_ANIME_WAIT()
+	_CHARA_LOOK_LOCK('UGA06_KALOS_RANGER_1', 'HERO')
+	_CHARA_LOOK_LOCK('HERO', 'UGA06_KALOS_RANGER_1')
+	_MACRO_TALKMSG('dialogue_uga06', 'msg_uga06_kalos_ranger_1_002', 'Excuse me trainer, I’m in a little bit of a\npredicament.\rThese fiends are attempting to make away with\nrare Pokémon from the Grand Underground, in\forder to sell them and their parts for a profit.\rThey must be brought to justice.\rHowever, unlike my colleagues in red, I am not\nthe most capable of battlers.\rWill you lend me your aid?')
+	_CHARA_LOOK_RELEASE('UGA06_KALOS_RANGER_1')
+	_CHARA_LOOK_RELEASE('HERO')
+	;Gives choice of battling or not
+	_JUMP('ev_uga06_kalos_ranger_battle_choice')
+	_END()
+
+ev_uga06_kalos_ranger_1:
+	_IF_FLAGON_JUMP(#2043, 'ev_uga06_kalos_ranger_gift_again'); If the player decides on "Not right now" for the gift
+	_IF_FLAGON_JUMP(#2042, 'ev_uga06_kalos_ranger_quest_completed'); If the player has already completed the quest
+	;Reset the Poachers' direction in case they have started the call
+	_TALK_START()
+	_OBJ_DIR_CHANGE('UGA06_KALOS_POACHER_1', 0)
+	_OBJ_DIR_CHANGE('UGA06_KALOS_POACHER_2', 0)
+	_CHARA_LOOK_LOCK('UGA06_KALOS_RANGER_1', 'HERO'); Make the ranger look to the Player (needed if it started from a Poacher)
+	_CHARA_LOOK_LOCK('HERO', 'UGA06_KALOS_RANGER_1')
+	_MACRO_TALKMSG('dialogue_uga06', 'msg_uga06_kalos_ranger_1_005', 'I doubt these curs will wait much longer, I hope\nthe backup I called arrives soon...\funless you’ve changed your mind?')
+	;Battle choice again
+	_JUMP('ev_uga06_kalos_ranger_battle_choice')
+	_END()
+
+ev_uga06_kalos_ranger_battle_choice:
+	;Yes or no choice for battling the poachers
+	_YES_NO_WIN(@SCWK_ANSWER)
+	_TALK_CLOSE()
+	_CHARA_LOOK_RELEASE('UGA06_KALOS_RANGER_1')
+	_CHARA_LOOK_RELEASE('HERO')
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_uga06_kalos_ranger_battle_choice_yes')
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_uga06_kalos_ranger_battle_choice_no')
+	_END()
+
+ev_uga06_kalos_ranger_battle_choice_yes:
+	_MACRO_TALKMSG('dialogue_uga06', 'msg_uga06_kalos_ranger_1_003', 'Merci!')
+	_TALK_CLOSE()
+	;Screen fades to black and the player is moved to the battle position
+	_BLACK_OUT()
+	_FADE_WAIT()
+	_TIME_WAIT(5, @SCWK_ANSWER)
+	_OBJ_POS_CHANGE_WORLD('HERO', 130, 0, 23); Moves the Character to the battle position
+	_OBJ_DIR_CHANGE('UGA06_KALOS_RANGER_1', 180)
+	_OBJ_DIR_CHANGE('HERO', 180)
+	_OBJ_DIR_CHANGE('UGA06_KALOS_POACHER_1', 0)
+	_OBJ_DIR_CHANGE('UGA06_KALOS_POACHER_2', 0)
+	_TIME_WAIT(5, @SCWK_ANSWER)
+	_BLACK_IN()
+	_FADE_WAIT()
+	_MACRO_TALKMSG('dialogue_uga06', 'msg_uga06_kalos_poacher_1_003', 'You think you’re gonna stop us?')
+	_TALK_CLOSE()
+	_MACRO_TALKMSG('dialogue_uga06', 'msg_uga06_kalos_poacher_2_003', 'We’re gonna wipe the floor with you, kid!')
+	_TALK_CLOSE()
+	;Start the double battle
+	_LDVAL(@SCWK_TEMP1, 1082); Ranger
+	_LDVAL(@SCWK_TEMP2, 1083); Poacher 1
+	_LDVAL(@SCWK_TEMP3, 1084); Poacher 2
+	;Adds +2000 or +4000 to the Trainer IDs depending on the gamemode
+	_CALL('ev_set_trainer_id_for_current_gamemode_scripted_multi_battle')
+	_TRAINER_MULTI_BTL_SET(@SCWK_TEMP1, @SCWK_TEMP2, @SCWK_TEMP3)
+	;If win
+	_CHARA_LOOK_LOCK('HERO', 'UGA06_KALOS_POACHER_2'); Make the player look to the Poachers
+	_CHARA_LOOK_LOCK('UGA06_KALOS_RANGER_1', 'UGA06_KALOS_POACHER_1'); Make the ranger look to the Poachers
+	_MACRO_TALKMSG('dialogue_uga06', 'msg_uga06_kalos_poacher_1_004', 'Jeez. You’re way too strong')
+	_TALK_CLOSE()
+	_MACRO_TALKMSG('dialogue_uga06', 'msg_uga06_kalos_poacher_2_004', 'Yeah, we don’t need this heat.\nFine, we’ll leave... for now.')
+	_TALK_CLOSE()
+	_CHARA_LOOK_RELEASE('UGA06_KALOS_RANGER_1')
+	_CHARA_LOOK_RELEASE('HERO')
+	;Screen fades to black and the poachers disappear
+	_FLAG_SET(#2042)
+	_BLACK_OUT()
+	_FADE_WAIT()
+	_TIME_WAIT(15, @SCWK_ANSWER)
+	_OBJ_DEL('UGA06_KALOS_POACHER_1')
+	_OBJ_DEL('UGA06_KALOS_POACHER_2')
+	;The ranger will stay in this position permanently, using map scripts
+	_SXY_POS_CHANGE('UGA06_KALOS_RANGER_1', 129, 21)
+	_SXY_POS_CHANGE('HERO', 131, 21)
+	_CHARA_LOOK_LOCK('HERO', 'UGA06_KALOS_RANGER_1'); Make the player look at the Ranger
+	_CHARA_LOOK_LOCK('UGA06_KALOS_RANGER_1', 'HERO'); Make the Ranger look at the Player
+	_TIME_WAIT(15, @SCWK_ANSWER)
+	_BLACK_IN()
+	_FADE_WAIT()
+	_MACRO_TALKMSG('dialogue_uga06', 'msg_uga06_kalos_ranger_1_007', 'That disposed of them.\nI very much appreciate your assistance, trainer.\rPlease, take one of these Pokémon as a token\nof my gratitude.\rYou may recognise them as being very much\nlike the ones that you just battled alongside.\rThese ones are freshly hatched though.\rI think they will grow into fine partners under\nyour dedicated tutelage.')
+	_CHARA_LOOK_RELEASE('HERO')
+	_CHARA_LOOK_RELEASE('UGA06_KALOS_RANGER_1')
+	_JUMP('ev_uga06_kalos_ranger_battle_success')
+	_END()
+
+ev_uga06_kalos_ranger_battle_choice_no:
+	_MACRO_TALKMSG('dialogue_uga06', 'msg_uga06_kalos_ranger_1_004', 'Very well. I shall await a regiment of my\nRanger compatriots.')
+	_TALK_CLOSE()
+	_OBJ_DIR_CHANGE('UGA06_KALOS_RANGER_1', 180)
+	_TALK_OBJ_END()
+	_END()
+
+ev_uga06_kalos_ranger_battle_success:
+	;Offer the player a choice of starters or come back later
+	_IF_FLAGOFF_CALL(#2044, 'ev_uga06_kalos_ranger_gift_add_chespin')
+	_IF_FLAGOFF_CALL(#2045, 'ev_uga06_kalos_ranger_gift_add_fennekin')
+	_IF_FLAGOFF_CALL(#2046, 'ev_uga06_kalos_ranger_gift_add_froakie')
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_Cancel', 'Not right now', 2)
+	_OPEN_CUSTUM_WIN(@SCWK_TEMP0); SCWK_TEMP0 will have the MonsNo of the pokemon chosen
+	_TALK_CLOSE()
+	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', 2, 'ev_uga06_kalos_ranger_no_gift_give')
+	_CALL('ev_common_tray_space_check'); Checks if there is any remaining space in the Party and Boxes
+	_IFVAL_JUMP(@551, 'EQ', 1, 'ev_uga06_kalos_ranger_gift_no_tray_space'); Party and Boxes are full
+	_POKEMON_NAME_EXTRA(0, @SCWK_TEMP0, 0, 0)
+	_ME_PLAY('M_FI013')
+	_MACRO_TALKMSG('dialogue_uga06', 'msg_t03_receive_starter', 'You received {0,1,1,0}.')
+	_ME_WAIT()
+	_ADD_POKEMON_UI_EXTRA(@SCWK_TEMP0, 0, 5, 0, 3, 4) ; MonsNo, FormNo, Level, Item, MaxIVs, BallId
+	_SWITCH(@SCWK_TEMP0)
+	_CASE_JUMP(650, 'ev_uga06_kalos_ranger_bug_chespin_flag_set')
+	_CASE_JUMP(653, 'ev_uga06_kalos_ranger_bug_fennekin_flag_set')
+	_CASE_JUMP(656, 'ev_uga06_kalos_ranger_bug_froakie_flag_set')
+	_END()
+
+ev_uga06_kalos_ranger_gift_add_chespin:
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_Chespin', 'Chespin', 650)
+	_RET()
+
+ev_uga06_kalos_ranger_gift_add_fennekin:
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_Fennekin', 'Fennekin', 653)
+	_RET()
+
+ev_uga06_kalos_ranger_gift_add_froakie:
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_Froakie', 'Froakie', 656)
+	_RET()
+
+ev_uga06_kalos_ranger_gift_again:
+	_TALK_OBJ_START()
+	_FLAG_RESET(#2043); Resets if the player has said no to Ranger Starter gift.
+	_MACRO_TALKMSG('dialogue_uga06', 'msg_uga06_kalos_ranger_gift_again_001', 'Oh you are back!\nAre you ready to choose your reward now?')
+	_CHARA_LOOK_RELEASE('UGA06_KALOS_RANGER_1')
+	_JUMP('ev_uga06_kalos_ranger_battle_success')
+
+ev_uga06_kalos_ranger_no_gift_give:
+	_FLAG_SET(#2043); Player said no to kalos Ranger Starter Gift
+	_MACRO_TALKMSG('dialogue_uga06', 'msg_uga06_kalos_ranger_no_gift_give_001', 'You are not able to take one with you\nat this moment?\rThat is alright, I shall wait until you are ready.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+
+ev_uga06_kalos_ranger_gift_no_tray_space:
+	_FLAG_SET(#2043); Player said no to kalos Ranger Starter Gift
+	_MACRO_TALKMSG('dialogue_uga06', 'msg_uga06_kalos_ranger_gift_no_tray_space', 'You have no space in your boxes at this\nmoment?\rThat is alright, I shall wait until you are ready.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+
+ev_uga06_kalos_ranger_bug_chespin_flag_set:
+	_FLAG_SET(#2044); Ranger Chespin
+	_JUMP('ev_uga06_kalos_ranger_quest_completed')
+
+ev_uga06_kalos_ranger_bug_fennekin_flag_set:
+	_FLAG_SET(#2045); Ranger Fennekin
+	_JUMP('ev_uga06_kalos_ranger_quest_completed')
+
+ev_uga06_kalos_ranger_bug_froakie_flag_set:
+	_FLAG_SET(#2046); Ranger Froakie
+	_JUMP('ev_uga06_kalos_ranger_quest_completed')
+
+ev_uga06_kalos_ranger_quest_completed:
+	_TALK_OBJ_START()
+	_MACRO_TALKMSG('dialogue_uga06', 'msg_uga06_kalos_ranger_1_006', 'I am very thankful for your assistance, trainer.\nI wish you luck in all of your future battles.')
+	_TALK_CLOSE()
+	_CHARA_LOOK_RELEASE('UGA06_KALOS_RANGER_1')
+	_TALK_OBJ_END()
+	_END()
+
+ev_uga06_kalos_poacher_1:
+	_TALK_OBJ_START_LOOK_NONE()
+	_CHARA_LOOK_LOCK('UGA06_KALOS_POACHER_1', 'HERO')
+	_MACRO_TALKMSG('dialogue_uga06', 'msg_uga06_kalos_poacher_1_002', 'What do you want? Why don’t you scram?')
+	_TALK_CLOSE()
+	_CHARA_LOOK_RELEASE('UGA06_KALOS_POACHER_1')
+	_JUMP('ev_uga06_kalos_ranger_1')
+	_END()
+
+ev_uga06_kalos_poacher_2:
+	_TALK_OBJ_START_LOOK_NONE()
+	_CHARA_LOOK_LOCK('UGA06_KALOS_POACHER_2', 'HERO')
+	_MACRO_TALKMSG('dialogue_uga06', 'msg_uga06_kalos_poacher_2_002', 'Hey kid, beat it. We’re in the middle of\nsomething.')
+	_TALK_CLOSE()
+	_CHARA_LOOK_RELEASE('UGA06_KALOS_POACHER_2')
+	_JUMP('ev_uga06_kalos_ranger_1')
+	_END()
+
+anm_uga06_kalos_ranger_1_exclamation:
+	_AC_MARK_GYOE()
+	_AC_WAIT()
+	_ACMD_END()

@@ -2,8 +2,8 @@ ev_c01r0204_flag_change:
 	_LDVAL(@WK_ELEVATOR_FLOOR, 3)
 	_END()
 ev_c01r0204_middleman2:
-	_EASY_OBJ_MSG('dp_scenario1%38-msg_c01r0204_middleman2_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c01r0204', '38-msg_c01r0204_middleman2_01', 'Your exploits are fantastic!\rWith our TV station, we can tell the whole world\nabout you!\rIt’s merely one of many possibilities! Harrumph!')
 	_END()
 ev_c01r0204_woman6:
-	_EASY_OBJ_MSG('dp_scenario1%38-msg_c01r0204_woman6_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c01r0204', '38-msg_c01r0204_woman6_01', '“Participation for all” is our TV network’s motto.')
 	_END()

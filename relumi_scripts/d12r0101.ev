@@ -83,23 +83,24 @@ ev_d12r0101_onix_beaten:
 	_OBJ_ADD('D12R0101_RANGERM')
 	_OBJ_ANIME('D12R0101_RANGERM', 'anm_d12r0101_rangerm_1')
 	_OBJ_ANIME_WAIT()
-	_MACRO_TALKMSG('dp_scenario3', '00_msg_d12r0101_rangerm_1', 'Trainer!')
+	_MACRO_TALKMSG('dialogue_d12r0101', '00_msg_d12r0101_rangerm_1', 'Trainer!')
 	_TALK_CLOSE()
 	_OBJ_ANIME('D12R0101_RANGERM', 'anm_d12r0101_rangerm_2')
 	_OBJ_ANIME('HERO', 'anm_d12r0101_rangerm_2_hero')
 	_OBJ_ANIME_WAIT()
-	_MACRO_TALKMSG('dp_scenario3', '00_msg_d12r0101_rangerm_2', 'Thank goodness you’re alright.\nWe thought the worst when we heard\fthe cave shake.')
+	_MACRO_TALKMSG('dialogue_d12r0101', '00_msg_d12r0101_rangerm_2', 'Thank goodness you’re alright.\nWe thought the worst when we heard\fthe cave shake.')
 	_TALK_CLOSE()
 	_OBJ_ANIME('D12R0101_RANGERM', 'anm_d12r0101_rangerm_3')
 	_OBJ_ANIME_WAIT()
-	_MACRO_TALKMSG('dp_scenario3', '00_msg_d12r0101_rangerm_3', 'Where’s the Onix?\r...\r....\rYou caught it?!\r...\rWell, that’s less work for us.\nNicely done, trainer.')
-	_MACRO_TALKMSG('dp_scenario3', '00_msg_d12r0101_rangerm_4', 'Still, that Onix being around here\ndoesn’t bode well.\rIf HQ is half as right as they are worried,\nI reckon you’ll be seeing a lot more of us.\rUntil next time.')
+	_MACRO_TALKMSG('dialogue_d12r0101', '00_msg_d12r0101_rangerm_3', 'Where’s the Onix?\r...\r....\rYou caught it?!\r...\rWell, that’s less work for us.\nNicely done, trainer.')
+	_MACRO_TALKMSG('dialogue_d12r0101', '00_msg_d12r0101_rangerm_4', 'Still, that Onix being around here\ndoesn’t bode well.\rIf HQ is half as right as they are worried,\nI reckon you’ll be seeing a lot more of us.\rUntil next time.')
 	_TALK_CLOSE()
 	_BLACK_OUT()
 	_FADE_WAIT()
 	_FLAG_SET(#2519); Event over.
 	_FLAG_SET(#2879); hide this ranger
 	_FLAG_SET(#2878); Hide outside rangers
+	_FLAG_RESET(#2518); Unhide outside trainers
 	_OBJ_DEL('D12R0101_RANGERM')
 	_BLACK_IN()
 	_FADE_WAIT()

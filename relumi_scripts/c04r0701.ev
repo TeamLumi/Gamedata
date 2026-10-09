@@ -2,25 +2,130 @@ ev_c04r0701_flag_change:
 	_OBJ_DEL('C04R0701_MAN')
 	_END()
 ev_c04r0701_oldman1:
-	_MACRO_EASY_OBJ_MSG('dp_scenario3', '00_msg_c04r0701_oldman1_02', 'Eterna came to be long ago in honor\nof ancient Pokémon.\rThough many things have changed,\nwhat is important has not.\rI hope it remains that way forever\nmore...')
+	_MACRO_EASY_OBJ_MSG('dialogue_c04r0701', '00_msg_c04r0701_oldman1_02', 'Eterna came to be long ago in honor\nof ancient Pokémon.\rThough many things have changed,\nwhat is important has not.\rI hope it remains that way forever\nmore...')
 	_END()
 ev_c04r0701_oldwoman1:
-	_MACRO_EASY_OBJ_MSG('dp_scenario3', '00_msg_c04r0701_oldwoman1_02', 'Have you seen the Pokémon statue?\rWhen I was a wee child, it used to be\nthe centerpiece of many festivals...')
+	_MACRO_EASY_OBJ_MSG('dialogue_c04r0701', '00_msg_c04r0701_oldwoman1_02', 'Have you seen the Pokémon statue?\rWhen I was a wee child, it used to be\nthe centerpiece of many festivals...')
 	_END()
 ev_c04r0701_man:
 	_TALK_OBJ_START()
-	_MACRO_TALKMSG('dp_scenario3', '00_msg_c04r0701_man_01', 'Sheesh! \nWhat’s the world coming to?!\rSomeone ripped off the descriptive\nplate from the Pokémon statue!\rNow no one can read the inscription!\nWhy would someone do that?\fActually, want to know what it said?')
+	_MACRO_TALKMSG('dialogue_c04r0701', '00_msg_c04r0701_man_01', 'Sheesh! \nWhat’s the world coming to?!\rSomeone ripped off the descriptive\nplate from the Pokémon statue!\rNow no one can read the inscription!\nWhy would someone do that?\fActually, want to know what it said?')
 	_YES_NO_WIN(@SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_c04r0701_man_1')
-	_MACRO_TALKMSG('dp_scenario3', '00_msg_c04r0701_man_02', 'The first inscription went like this,\nsort of.\r“...creation of DIA...\n...giver of time...\r“In laughter, there is tears...\nAnd, likewise...\r“The same time flows...\n...the blessing of DIA...”\rYikes...\nI’ve forgotten big chunks of it.\rWant to hear about the other\ninscription?')
+	_MACRO_TALKMSG('dialogue_c04r0701', '00_msg_c04r0701_man_02', 'The first inscription went like this,\nsort of.\r“...creation of DIA...\n...giver of time...\r“In laughter, there is tears...\nAnd, likewise...\r“The same time flows...\n...the blessing of DIA...”\rYikes...\nI’ve forgotten big chunks of it.\rWant to hear about the other\ninscription?')
 	_YES_NO_WIN(@SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_c04r0701_man_1')
-	_MACRO_TALKMSG('dp_scenario3', '00_msg_c04r0701_man_03', 'The second inscription went sort of\nlike this.\r“...birth of PAL...\n...creator of parallel dimensions...\r“Alive, yet not alive...\n...rifts in space...\r“To arrive in the same univer...\n...the blessing of PAL...”\rI’ve heard some people talk about\nthere once being a third inscription.\rI’m kind of skeptical, though.\nI mean, think about it.\rA third Pokémon alongside those that\ncontrol time and space?\rThere couldn’t possibly be a Pokémon\nthat mighty.')
+	_MACRO_TALKMSG('dialogue_c04r0701', '00_msg_c04r0701_man_03', 'The second inscription went sort of\nlike this.\r“...birth of PAL...\n...creator of parallel dimensions...\r“Alive, yet not alive...\n...rifts in space...\r“To arrive in the same univer...\n...the blessing of PAL...”\rI’ve heard some people talk about\nthere once being a third inscription.\rI’m kind of skeptical, though.\nI mean, think about it.\rA third Pokémon alongside those that\ncontrol time and space?\rThere couldn’t possibly be a Pokémon\nthat mighty.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_c04r0701_man_1:
-	_MACRO_TALKMSG('dp_scenario3', '00_msg_c04r0701_man_04', 'Well, if you’re not interested, don’t\nfeel obligated or anything.')
+	_MACRO_TALKMSG('dialogue_c04r0701', '00_msg_c04r0701_man_04', 'Well, if you’re not interested, don’t\nfeel obligated or anything.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
+ev_c04r0701_moon_trade:
+    _TALK_OBJ_START()
+    _CALL('ev_c04r0701_moon_trade_values')
+    _IF_FLAGON_JUMP(#3076, 'ev_c04r0701_moon_trade_over')
+    _MACRO_TALKMSG('dialogue_c04r0701', 'msg_c04r0701_moon_trade_1', 'Hiya! Could I ask you something real quick?\rHave you seen this Pokémon before?')
+    _TALK_CLOSE()
+    _POKE_WINDOW_PUT(@LOCALWORK0, @LOCALWORK1)
+    _POKEMON_NAME_FORM(0, @LOCALWORK0, @LOCALWORK1)
+    _POKEMON_NAME_FORM(1, @LOCALWORK2, @LOCALWORK3)
+    _MACRO_TALKMSG('dialogue_c04r0701', 'msg_c04r0701_moon_trade_2', 'That Pokémon is called {0,1,1,0} and I really,\nreally want one!\rI’ve heard that they live in Eterna Forest but\nonly come out in the nighttime.\rBut the forest is creepy as it is and I don’t\nwanna go there at night.\rIf you’re brave enough to find one for me, I’d\nhappily trade my {1,1,1,0} for your {0,1,1,0}.')
+    _YES_NO_WIN(@SCWK_ANSWER)
+    _IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_c04r0701_moon_trade_yes')
+    _IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_c04r0701_moon_trade_no')
+ev_c04r0701_moon_trade_values:
+    _LDVAL(@LOCALWORK0, 198); Given trade MonsNo
+    _LDVAL(@LOCALWORK1, 0); Given trade FormNo
+    _LDVAL(@LOCALWORK2, 708); Received trade MonsNo
+    _LDVAL(@LOCALWORK3, 0); Received trade FormNo
+    _RET()
+ev_c04r0701_moon_trade_yes:
+    _TALK_CLOSE()
+    _POKELIST_SET_PROC(27)
+    _POKELIST_GET_RESULT(@SCWK_TEMP0, @SCWK_TEMP1)
+    _IFVAL_JUMP(@SCWK_TEMP0, 'EQ', -1, 'ev_c04r0701_moon_trade_no'); If nothing was selected
+    _TEMOTI_BOX_MONSNO(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_ANSWER)
+    _TEMOTI_BOX_FORMNO(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_TEMP2)
+    _IFVAL_JUMP(@SCWK_ANSWER, 'NE', @LOCALWORK0, 'ev_c04r0701_moon_trade_wrong_mon'); If a species other than the target was selected
+    _IFVAL_JUMP(@SCWK_TEMP2, 'NE', @LOCALWORK1, 'ev_c04r0701_moon_trade_wrong_form'); If an incorrect form of the correct species was selected
+    _TEMOTI_BOX_SHINY(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_TEMP2)
+    _TEMOTI_BOX_GENDER(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_TEMP3)
+    _TALK_CLOSE()
+    _LOCALKOUKAN_APPLY(1, @SCWK_TEMP1, @SCWK_TEMP0)
+	_SXY_POS_CHANGE('HERO', 2, 6)
+	_SXY_DIR_CHANGE('HERO', 90)
+	_SXY_DIR_CHANGE('C04R0701_MOON', 270)
+    _IFVAL_CALL(@SCWK_TEMP2, 'EQ', 0, 'ev_c04r0701_moon_trade_placedata')
+    _IFVAL_CALL(@SCWK_TEMP2, 'GE', 1, 'ev_c04r0701_moon_trade_placedata_shiny')
+	_CALL('ev_c04r0701_murkrow_cry')
+    _IFVAL_CALL(@LOCALWORK2, 'EQ', 708, 'ev_c04r0701_moon_trade_gift'); Only call this script if the game isn't randomized
+    _JUMP('ev_c04r0701_moon_trade_over')
+ev_c04r0701_moon_trade_no:
+    _MACRO_TALKMSG('dialogue_c04r0701', 'msg_c04r0701_moon_trade_no', 'Awww, you don’t want to trade?\nOr is it that you just don’t have one yet?\rI understand if you are too scared to look for\none at night too.\rI wonder if your Pokédex could help you to\nfind some of their less spooky habitats.')
+    _TALK_CLOSE()
+    _TALK_OBJ_END()
+    _END()
+ev_c04r0701_moon_trade_wrong_mon:
+    _POKEMON_NAME_FORM(0, @LOCALWORK0, @LOCALWORK1)
+    _MACRO_TALKMSG('dialogue_c04r0701', 'msg_c04r0701_moon_trade_wrong_mon', 'Oh, um. I don’t think that is the right Pokémon.\nI’m after a {0,1,1,0}.')
+    _TALK_CLOSE()
+    _TALK_OBJ_END()
+    _END()
+ev_c03r0201_yijun_trade_wrong_form:
+    _MACRO_TALKMSG('dialogue_c04r0701', 'msg_c04r0701_moon_trade_wrong_form', 'That’s not quite right.\nIt is the right species but the wrong form.')
+    _TALK_CLOSE()
+    _TALK_OBJ_END()
+    _END()
+ev_c04r0701_moon_trade_placedata:
+	_IFVAL_JUMP(@SCWK_TEMP3, 'EQ', 0, 'ev_c04r0701_moon_trade_placedata_male')
+	_IFVAL_JUMP(@SCWK_TEMP3, 'EQ', 1, 'ev_c04r0701_moon_trade_placedata_female')
+	_RET()
+ev_c04r0701_moon_trade_placedata_male:
+    _OBJ_ADD('C04R0701_MURKROW_MALE')
+    _FLAG_RESET(#2949)
+    _RET()
+ev_c04r0701_moon_trade_placedata_female:
+    _OBJ_ADD('C04R0701_MURKROW_FEMALE')
+    _FLAG_RESET(#2950)
+    _RET()
+ev_c04r0701_moon_trade_placedata_shiny:
+	_IFVAL_JUMP(@SCWK_TEMP3, 'EQ', 0, 'ev_c04r0701_moon_trade_placedata_shiny_male')
+	_IFVAL_JUMP(@SCWK_TEMP3, 'EQ', 1, 'ev_c04r0701_moon_trade_placedata_shiny_female')
+ev_c04r0701_moon_trade_placedata_shiny_male:
+    _OBJ_ADD('C04R0701_MURKROW_SHINY_MALE')
+    _FLAG_RESET(#2951)
+    _RET()
+ev_c04r0701_moon_trade_placedata_shiny_female:
+    _OBJ_ADD('C04R0701_MURKROW_SHINY_FEMALE')
+    _FLAG_RESET(#2952)
+    _RET()
+ev_c04r0701_moon_trade_gift:
+    _MACRO_TALKMSG('dialogue_c04r0701', 'msg_c04r0701_moon_trade_gift_1', 'Tee-hee.\nWere you expecting that it might evolve?\rSorry.\nI couldn’t help myself.\rI got the idea from my friend, Mindy.\nHaving Phantump hold an Everstone stops it\ffrom evolving when traded.\rDon’t worry.\nUnlike Mindy, I won’t leave you high and dry.')
+	_LDVAL(@SCWK_TEMP0, 1611); Linking Cord
+	_LDVAL(@SCWK_TEMP1, 1); Quantity 1
+	_CALL('ev_item_event')
+    _MACRO_TALKMSG('dialogue_c04r0701', 'msg_c04r0701_moon_trade_gift_2', 'You can use that Linking Cord to evolve\nPhantump without the need for a trade!')
+	_RET()
+ev_c04r0701_moon_trade_over:
+    _POKEMON_NAME_FORM(0, @LOCALWORK0); Just species name for brevity
+    _MACRO_TALKMSG('dialogue_c04r0701', 'msg_c04r0701_moon_trade_over', 'Thank you, for trading {0,1,1,0} to me!\nI promise to give it the best of care!')
+    _FLAG_SET(#3076)
+    _TALK_CLOSE()
+    _TALK_OBJ_END()
+    _END()
+ev_c04r0701_murkrow:
+	_TALK_OBJ_START()
+	_CALL('ev_c04r0701_moon_trade_values')
+	_CALL('ev_c04r0701_murkrow_cry')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_c04r0701_murkrow_cry:
+    _VOICE_PLAY(@LOCALWORK0, @LOCALWORK1, 0)
+    _MACRO_TALKMSG('dialogue_c04r0701', 'msg_c04r0701_murkrow_cry', 'Ker-kawww!!!')
+    _VOICE_WAIT()
+	_RET()

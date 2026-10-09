@@ -14,8 +14,8 @@ ev_t07pc0101_pcwoman1:
 	_JUMP('ev_heal_p01')
 	_END()
 ev_t07pc0101_gorggeousm:
-	_EASY_OBJ_MSG('dp_scenario3%50-msg_t07pc0101_gorggeousm_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_t07pc0101', '50-msg_t07pc0101_gorggeousm_01', 'Pokémon appear where there’s still lots of\nnature left.\rAnd Trainers gather where Pokémon appear.\rAnd where Trainers gather, that’s where\nPokémon Centers appear.')
 	_END()
 ev_t07pc0101_idol:
-	_EASY_OBJ_MSG('dp_scenario3%50-msg_t07pc0101_idol_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_t07pc0101', '50-msg_t07pc0101_idol_01', 'An Idol goes anywhere to sing for their\nadoring fans.\rA Trainer goes anywhere—as long as it’s with\ntheir Pokémon.')
 	_END()

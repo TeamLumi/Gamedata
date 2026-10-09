@@ -1,7 +1,7 @@
 ev_c02r0201_woman3:
 	_TALK_OBJ_START()
 	_IF_FLAGON_JUMP(#FE_WAZAMASIN48_GET, 'ev_c02r0201_woman3_02')
-	_TALKMSG('dp_scenario2%168-msg_c02r0201_woman3_01')
+	_MACRO_TALKMSG('dialogue_c02r0201', '168-msg_c02r0201_woman3_01', 'Hello, Trainer! Here are some things I found.\rThey were mixed in with a load of cargo from\nanother country.\rI can’t use them, so I think you should take them.')
 	_LDVAL(@SCWK_TEMP0, 375)
 	_LDVAL(@SCWK_TEMP1, 1)
 	_ADD_ITEM_CHK(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_ANSWER)
@@ -11,8 +11,8 @@ ev_c02r0201_woman3:
 	_JUMP('ev_c02r0201_woman3_02')
 	_END()
 ev_c02r0201_woman3_02:
-	_TALKMSG('dp_scenario2%168-msg_c02r0201_woman3_02_1')
-	_TALKMSG('dp_scenario2%168-msg_c02r0201_woman3_02_2', 1)
+	_MACRO_TALKMSG('dialogue_c02r0201', '168-msg_c02r0201_woman3_02_1', 'You know how Pokémon have their own Abilities?')
+	_MACRO_TALKMSG('dialogue_c02r0201', '168-msg_c02r0201_woman3_02_2', 'Well, the move Skill Swap exchanges the user’s\nAbility with that of its target Pokémon.\rHow you use Skill Swap is a measure of your\nexpertise as a Trainer.', 1)
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
@@ -22,5 +22,5 @@ ev_c02r0201_woman3_item_event_fail:
 	_TALK_OBJ_END()
 	_END()
 ev_c02r0201_girl1:
-	_EASY_OBJ_MSG('dp_scenario2%168-msg_c02r0201_girl1_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c02r0201', '168-msg_c02r0201_girl1_01', 'Somewhere beyond the sea...\rThere are other lands populated by Pokémon\nand Trainers.')
 	_END()

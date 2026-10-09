@@ -131,26 +131,26 @@ ev_init_script:
 	_FLAG_SET(#2805);Hide Suicine
 	_FLAG_SET(#2806);Hide Lugia
 	_FLAG_SET(#2807);Hide Ho-Oh
-	_FLAG_SET(#2808)
-	_FLAG_SET(#2809)
-	_FLAG_SET(#2810)
-	_FLAG_SET(#2811)
-	_FLAG_SET(#2812)
-	_FLAG_SET(#2813)
-	_FLAG_SET(#2814)
-	_FLAG_SET(#2815)
-	_FLAG_SET(#2816)
-	_FLAG_SET(#2817)
-	_FLAG_SET(#2818)
-	_FLAG_SET(#2819)
-	_FLAG_SET(#2820)
-	_FLAG_SET(#2821)
-	_FLAG_SET(#2822)
-	_FLAG_SET(#2823)
-	_FLAG_SET(#2824)
-	_FLAG_SET(#2825)
-	_FLAG_SET(#2826)
-	_FLAG_SET(#2827)
+	_FLAG_SET(#2808);Hide Jirachi
+	_FLAG_SET(#2809);Hide Jirachi event Jigglypuff
+	_FLAG_SET(#2810);Hide Lucian Sol. Town
+	_FLAG_SET(#2811);Hide Maylene R217
+	_FLAG_SET(#2812);Hide Aaron Hearthome
+	_FLAG_SET(#2813);Hide Mew Torchic
+	_FLAG_SET(#2814);Hide Mew Mew in Torchic area
+	_FLAG_SET(#2815);Hide Mira event wall
+	_FLAG_SET(#2816);Mew event
+	_FLAG_SET(#2817);Mew event
+	_FLAG_SET(#2818);Mew event
+	_FLAG_SET(#2819);Final Mew
+	_FLAG_SET(#2820);Spooky Darkrai Woman
+	_FLAG_SET(#2821);Looker blocker C01
+	_FLAG_SET(#2822);R210B Support flag
+	_FLAG_SET(#2823);Eterna Rival Flag
+	_FLAG_SET(#2824); Looker Valley Windworks
+	_FLAG_SET(#2825); Rival Canalave
+	_FLAG_SET(#2826); Mt Coronet Looker 1
+	_FLAG_SET(#2827); Mt Coronet Looker 2
 	_FLAG_SET(#2828)
 	_FLAG_SET(#2829)
 	_FLAG_SET(#2830)
@@ -161,9 +161,9 @@ ev_init_script:
 	_FLAG_SET(#2835)
 	_FLAG_SET(#2836)
 	_FLAG_SET(#2837)
-	_FLAG_SET(#2838)
+	_FLAG_SET(#2838); Hide Pastoria Barry 2
 	_FLAG_SET(#2839)
-	_FLAG_SET(#2840)
+	_FLAG_SET(#2840); Hide Grand Lake Hotel Looker
 	_FLAG_SET(#2841)
 	_FLAG_SET(#2842)
 	_FLAG_SET(#2843)
@@ -191,7 +191,7 @@ ev_init_script:
 	_FLAG_SET(#2865)
 	_FLAG_SET(#2866)
 	_FLAG_SET(#2867)
-	_FLAG_SET(#2868)
+	_FLAG_SET(#2868); Awaken darmanitan static
 	_FLAG_SET(#2869)
 	_FLAG_SET(#2870)
 	_FLAG_SET(#2871)
@@ -216,98 +216,98 @@ ev_init_script:
 	_FLAG_SET(#2890)
 	_FLAG_SET(#2891)
 	_FLAG_SET(#2892)
-	_FLAG_SET(#2893)
+	_FLAG_SET(#2893); Eterna Galactic Porygon
 	_FLAG_SET(#2894)
 	_FLAG_SET(#2895)
 	_FLAG_SET(#2896)
-	_FLAG_SET(#2897)
-	_FLAG_SET(#2898)
-	_FLAG_SET(#2899)
-	_FLAG_SET(#2900)
-	_FLAG_SET(#2901)
-	_FLAG_SET(#2902)
-	_FLAG_SET(#2903)
-	_FLAG_SET(#2904)
-	_FLAG_SET(#2905)
-	_FLAG_SET(#2906)
-	_FLAG_SET(#2907)
-	_FLAG_SET(#2908)
-	_FLAG_SET(#2909)
+	_FLAG_SET(#2897); Hides Neutral Abra Man Abra
+	_FLAG_SET(#2898); Hides Neutral Abra Man Shiny Abra
+	_FLAG_SET(#2899); Hides Attack Abra Man Abra
+	_FLAG_SET(#2900); Hides Attack Abra Man Shiny Abra
+	_FLAG_SET(#2901); Hides Defense Abra Man Abra
+	_FLAG_SET(#2902); Hides Defense Abra Man Shiny Abra
+	_FLAG_SET(#2903); Hides Speed Abra Man Abra
+	_FLAG_SET(#2904); Hides Speed Abra Man Shiny Abra
+	_FLAG_SET(#2905); Hides Sp. Attack Abra Man Abra
+	_FLAG_SET(#2906); Hides Sp. Attack Abra Man Shiny Abra
+	_FLAG_SET(#2907); Hides Sp. Defense Abra Man Abra
+	_FLAG_SET(#2908); Hides Sp. Defense Abra Man Shiny Abra
+	_FLAG_SET(#2909); Debug NPC give all Pokémon (Jubilife)
 	_FLAG_SET(#2910)
 	_FLAG_SET(#2911)
 	_FLAG_SET(#2912)
 	_FLAG_SET(#2913)
-	_FLAG_SET(#2914)
-	_FLAG_SET(#2915)
-	_FLAG_SET(#2916)
-	_FLAG_SET(#2917)
-	_FLAG_SET(#2918)
-	_FLAG_SET(#2919)
-	_FLAG_SET(#2920)
-	_FLAG_SET(#2921)
-	_FLAG_SET(#2922)
-	_FLAG_SET(#2923)
-	_FLAG_SET(#2924)
-	_FLAG_SET(#2925)
-	_FLAG_SET(#2926)
-	_FLAG_SET(#2927)
-	_FLAG_SET(#2928)
-	_FLAG_SET(#2929)
-	_FLAG_SET(#2930)
-	_FLAG_SET(#2931)
-	_FLAG_SET(#2932)
-	_FLAG_SET(#2933)
-	_FLAG_SET(#2934)
-	_FLAG_SET(#2935)
-	_FLAG_SET(#2936)
-	_FLAG_SET(#2937)
-	_FLAG_SET(#2938)
-	_FLAG_SET(#2939)
-	_FLAG_SET(#2940)
-	_FLAG_SET(#2941)
-	_FLAG_SET(#2942)
-	_FLAG_SET(#2943)
-	_FLAG_SET(#2944)
-	_FLAG_SET(#2945)
-	_FLAG_SET(#2946)
-	_FLAG_SET(#2947)
-	_FLAG_SET(#2948)
-	_FLAG_SET(#2949)
-	_FLAG_SET(#2950)
-	_FLAG_SET(#2951)
-	_FLAG_SET(#2952)
-	_FLAG_SET(#2953)
-	_FLAG_SET(#2954)
-	_FLAG_SET(#2955)
-	_FLAG_SET(#2956)
-	_FLAG_SET(#2957)
-	_FLAG_SET(#2958)
-	_FLAG_SET(#2959)
-	_FLAG_SET(#2960)
-	_FLAG_SET(#2961)
-	_FLAG_SET(#2962)
-	_FLAG_SET(#2963)
-	_FLAG_SET(#2964)
-	_FLAG_SET(#2965)
-	_FLAG_SET(#2966)
-	_FLAG_SET(#2967)
-	_FLAG_SET(#2968)
-	_FLAG_SET(#2969)
-	_FLAG_SET(#2970)
-	_FLAG_SET(#2971)
-	_FLAG_SET(#2972)
-	_FLAG_SET(#2973)
-	_FLAG_SET(#2974)
-	_FLAG_SET(#2975)
-	_FLAG_SET(#2976)
-	_FLAG_SET(#2977)
-	_FLAG_SET(#2978)
-	_FLAG_SET(#2979)
-	_FLAG_SET(#2980)
-	_FLAG_SET(#2981)
-	_FLAG_SET(#2982)
-	_FLAG_SET(#2983)
-	_FLAG_SET(#2984)
+	_FLAG_SET(#2914); Hides Mewtwo Event Venusaur
+	_FLAG_SET(#2915); Hides Mewtwo Event Pikachu
+	_FLAG_SET(#2916); Hides Mewtwo Event Charizard
+	_FLAG_SET(#2917); Hides Mewtwo Event Blastoise
+	_FLAG_SET(#2918); Ayou Akari Jubilife City
+	_FLAG_SET(#2919); Ayou Rei Jubilife City
+	_FLAG_SET(#2920); Hides Cyrus in the speech room
+	_FLAG_SET(#2921); Hides Undisguised Looker in Eterna Galactic Building
+	_FLAG_SET(#2922); Hides Dev DJ in Hearthome until he leaves the R205 house
+	_FLAG_SET(#2923); Hides Cosplay Pikachu until a Practice Contest has been participated in
+	_FLAG_SET(#2924); R214 AYou Rei
+	_FLAG_SET(#2925); R214 AYou Akari
+	_FLAG_SET(#2926); Celestic town Kurt intro event
+	_FLAG_SET(#2927); Floaroma Meadow Vivillon Pokeball
+	_FLAG_SET(#2928); Floaroma Meadow Vivillon
+	_FLAG_SET(#2929); Floaroma Meadow House Mount
+	_FLAG_SET(#2930); Floaroma Meadow House Babyboy
+	_FLAG_SET(#2931); Hide Pastoria Barry 3
+	_FLAG_SET(#2932); Hides Tinkatuff 3
+	_FLAG_SET(#2933); Hides Tinkatuff 4
+	_FLAG_SET(#2934); Route 216 Maylene
+	_FLAG_SET(#2935); Galar Darmanitan Awakened
+	_FLAG_SET(#2936); Second NPC (enabled after Lake Verity)
+	_FLAG_SET(#2937); Distortion World A3 Cynthia
+	_FLAG_SET(#2938); Distortion World A5 Cyrus
+	_FLAG_SET(#2939); Distortion World A7 Cynthia
+	_FLAG_SET(#2940); Distortion World A8 Cyrus
+	_FLAG_SET(#2941); Distortion World A8 Cynthia
+	_FLAG_SET(#2942); Hides Pastoria Rival Torterra
+	_FLAG_SET(#2943); Hides Pastoria Rival Infernape
+	_FLAG_SET(#2944); Hides Pastoria Rival Empoleon
+	_FLAG_SET(#2945); Traded Poliwag Male
+	_FLAG_SET(#2946); Traded Poliwag Female
+	_FLAG_SET(#2947); Traded Poliwag Shiny Male
+	_FLAG_SET(#2948); Traded Poliwag Shiny Female
+	_FLAG_SET(#2949); Traded Murkow Male
+	_FLAG_SET(#2950); Traded Murkow Female
+	_FLAG_SET(#2951); Traded Murkow Male Shiny
+	_FLAG_SET(#2952); Traded Murkow Female Shiny
+	_FLAG_SET(#2953); Traded Farfetch'd Male
+	_FLAG_SET(#2954); Traded Farfetch'd Female
+	_FLAG_SET(#2955); Traded Farfetch'd Shiny Male
+	_FLAG_SET(#2956); Traded Farfetch'd Shiny Female
+	_FLAG_SET(#2957); Traded Diglett Male
+	_FLAG_SET(#2958); Traded Diglett Female
+	_FLAG_SET(#2959); Traded Diglett Shiny Male
+	_FLAG_SET(#2960); Traded Diglett Shiny Female
+	_FLAG_SET(#2961); Traded Octillery Male
+	_FLAG_SET(#2962); Traded Octillery Female
+	_FLAG_SET(#2963); Traded Octillery Shiny Male
+	_FLAG_SET(#2964); Traded Octillery Shiny Female
+	_FLAG_SET(#2965); Traded Psyduck Male
+	_FLAG_SET(#2966); Traded Psyduck Female
+	_FLAG_SET(#2967); Traded Psyduck Shiny Male
+	_FLAG_SET(#2968); Traded Psyduck Shiny Female
+	_FLAG_SET(#2969); Traded Xatu Male
+	_FLAG_SET(#2970); Traded Xatu Female
+	_FLAG_SET(#2971); Traded Xatu Shiny Male
+	_FLAG_SET(#2972); Traded Xatu Shiny Female
+	_FLAG_SET(#2973); Traded Dunsparce Male
+	_FLAG_SET(#2974); Traded Dunsparce Female
+	_FLAG_SET(#2975); Traded Dunsparce Shiny Male
+	_FLAG_SET(#2976); Traded Dunsparce Shiny Female
+	_FLAG_SET(#2977); Traded Mantyke Male
+	_FLAG_SET(#2978); Traded Mantyke Female
+	_FLAG_SET(#2979); Traded Mantyke Shiny Male
+	_FLAG_SET(#2980); Traded Mantyke Shiny Female
+	_FLAG_SET(#2981); Traded Munchlax Male
+	_FLAG_SET(#2982); Traded Munchlax Female
+	_FLAG_SET(#2983); Traded Munchlax Shiny Male
+	_FLAG_SET(#2984); Traded Munchlax Shiny Female
 	_FLAG_SET(#2985)
 	_FLAG_SET(#2986)
 	_FLAG_SET(#2987)

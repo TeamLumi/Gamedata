@@ -1,27 +1,31 @@
 ev_t07_woman2a:
-	_EASY_OBJ_MSG('dp_scenario3%48-msg_t07_woman2a_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_t07', '48-msg_t07_woman2a_01', 'I’ve traveled a long way to make my beloved\nPokémon even more beautiful.\rThat will make it love me even more.')
 	_END()
 ev_t07_woman2b:
-	_EASY_OBJ_MSG('dp_scenario3%48-msg_t07_woman2b_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_t07', '48-msg_t07_woman2b_01', 'Nothing is too good for my Pokémon. There’s no\nmountain too high to climb.\rThat’s how I look at it.')
 	_END()
 ev_t07_woman3:
-	_EASY_OBJ_MSG('dp_scenario3%48-msg_t07_woman3_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_t07', '48-msg_t07_woman3_01', 'I’m kind of stuck. They tell me there’s no\nshop here!\rHow am I supposed to get ready for the road?')
 	_END()
 ev_t07_fighter:
-	_EASY_OBJ_MSG('dp_scenario3%48-msg_t07_fighter_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_t07', '48-msg_t07_fighter_01', 'You know how you can dig up cool\nstuff in the Grand Underground?\rPeople are saying they’re digging up new,\ndifferent stuff.')
 	_END()
 ev_t07_sign1:
-	_EASY_BOARD_MSG('dp_scenario3%48-msg_t07_sign1_01', 'BOARD_TYPE_TOWN', 0)
+	_EASY_BOARD_MSG('dialogue_t07%48-msg_t07_sign1_01', 'BOARD_TYPE_TOWN', 0)
 	_END()
 ev_t07_sign2:
-	_EASY_BOARD_MSG('dp_scenario3%48-msg_t07_sign2_01', 'BOARD_TYPE_POST', 0)
+	_EASY_BOARD_MSG('dialogue_t07%48-msg_t07_sign2_01', 'BOARD_TYPE_POST', 0)
+	_END()
+ev_t07_sign3:
+	_EASY_BOARD_MSG('dialogue_t07%48-msg_t07_sign3_01', 'BOARD_TYPE_POST', 0)
 	_END()
 ev_t07_swimmerm_1:
-	_EASY_OBJ_MSG('dp_scenario3%48-msg_t07_swimmerm_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_t07', '48-msg_t07_swimmerm_01', 'I spend a lot of time in the pool. Will I melt into\nthe water the way Vaporeon can?')
 	_END()
 anm_t07_dragonite_1:
 	_AC_DIR_R(4)
 	_AC_RIGHT(10, 4)
+	_AC_WAIT(5)
 	_AC_MARK_GYOE()
 	_ACMD_END()
 anm_t07_dragonite_2:
@@ -41,7 +45,7 @@ pos_t07_dragonite:
 	_OBJ_ANIME('T07_DRAGONITE', 'anm_t07_dragonite_1')
 	_OBJ_ANIME('HERO', 'anm_t07_dragonite_2')
 	_OBJ_ANIME_WAIT()
-	_MACRO_TALKMSG('dp_scenario3', '00_msg_t07_dragonite', 'You received a letter from the Dragonite!')
+	_MACRO_TALKMSG('dialogue_t07', '00_msg_t07_dragonite', 'You received a letter from the Dragonite!')
 	_LDVAL(@SCWK_TEMP0, 1292); Odd Invitation
 	_LDVAL(@SCWK_TEMP1, 1); Quantity 1
 	_CALL('ev_item_event')
@@ -58,7 +62,7 @@ pos_t07_dragonite:
 	_FLAG_RESET(#3007)
 	_FLAG_RESET(#3008)
 	_PLAYER_NAME(0)
-	_MACRO_TALKMSG('dp_scenario3', '00_msg_t07_dragonite_2', '{0} thanked the Dragonite.')
+	_MACRO_TALKMSG('dialogue_t07', '00_msg_t07_dragonite_2', '{0} thanked the Dragonite.')
 	_TALK_CLOSE()
 	_VOICE_PLAY(149, 0, 0)
 	_OBJ_ANIME('T07_DRAGONITE', 'anm_t07_dragonite_3')
@@ -68,4 +72,229 @@ pos_t07_dragonite:
 	_LDVAL(@466, 1)
 	_TALK_OBJ_END()
 	_END()
-
+pos_t07_villa:
+	;Receive villa event
+	_EVENT_START()
+	_PLAYER_POS_GET(@SCWK_TEMP0, @SCWK_TEMP1)
+	_IFVAL_CALL(@SCWK_TEMP1, 'LE', 472, 'ev_t07_villa_owner_up')
+	_IFVAL_CALL(@SCWK_TEMP1, 'GE', 474, 'ev_t07_villa_owner_down')
+	_OBJ_ANIME_WAIT()
+	_CHARA_LOOK_LOCK('HERO', 'T07_VILLA_OWNER')
+	_CHARA_LOOK_LOCK('T07_VILLA_OWNER', 'HERO')
+	_MACRO_TALKMSG('dialogue_t07', '00_msg_t07_villa_1', 'Psst, hey, traveler! Yes, you!\nI want you to have this Villa!\rOh, wait, no, no, no!\nIt’s not what you’re thinking!\rThis is no scam, see.\nIn fact, you’ll be doing me a favor!\rSee, I was given this Villa. But, to\nbe honest, I don’t need it, either.\rSo don’t say a word.\nJust nod and this Villa is yours!')
+	_CHARA_LOOK_RELEASE('HERO')
+	_CHARA_LOOK_RELEASE('T07_VILLA_OWNER')
+	_YES_NO_WIN(@SCWK_ANSWER)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_t07_villa_yes')
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_t07_villa_no')
+	_END()
+ev_t07_villa_owner_up:
+	_OBJ_ANIME('T07_VILLA_OWNER', 'anm_t07_villa_up')
+	_RET()
+ev_t07_villa_owner_down:
+	_OBJ_ANIME('T07_VILLA_OWNER', 'anm_t07_villa_down')
+	_RET()
+anm_t07_villa_up:
+	_AC_DIR_U(8)
+	_AC_UP(1, 8)
+	_ACMD_END()
+anm_t07_villa_down:
+	_AC_DIR_D(8)
+	_AC_DOWN(1, 8)
+	_ACMD_END()
+ev_t07_villa_yes:
+	_MACRO_TALKMSG('dialogue_t07', '00_msg_t07_villa_yes_1', 'Whew, that’s a load off my mind.\rThe original owner was from Hoenn,\nsee?\rThe owner collected up all the rare\nstones of Sinnoh and went back home.\rI somehow got saddled with this place\nas if it were some gift.\rThere’s no figuring what rich folks\nwill think of next.\rStill, I thank you for helping me out.\nCome with me, will you?')
+	_TALK_CLOSE()
+	;Walk to the door
+	_OBJ_ANIME('T07_VILLA_OWNER', 'anm_t07_villa_owner_walk_door')
+	_OBJ_ANIME('HERO', 'anm_t07_villa_hero_walk_door')
+	_OBJ_ANIME_WAIT()
+	_MACRO_TALKMSG('dialogue_t07', '00_msg_t07_villa_yes_2', 'None too shabby, you have to agree.\nStep inside for a look-see.')
+	_TALK_CLOSE()
+	;Open the door
+	_SET_DOOR_OBJ('T07R0301_D01')
+	_HIT_DOOR_ANIME(0)
+	_SE_PLAY('S_FI012')
+	_HIT_DOOR_ANIME_WAIT()
+	;Walk inside
+	_OBJ_ANIME('T07_VILLA_OWNER', 'anm_t07_villa_owner_walk_inside')
+	_OBJ_ANIME('HERO', 'anm_t07_villa_owner_hero_walk_inside')
+	_OBJ_ANIME_WAIT()
+	;TODO Here the event would continue inside, but there is no functionality yet for the villa. In the future, tutorial about buying items, etc.
+	_OBJ_DEL('T07_VILLA_OWNER')
+	_FLAG_SET(#3069)
+	_LDVAL(@521, 1)
+	_MAP_CHANGE('T07R0301', 0)
+	_EVENT_END()
+	_END()
+anm_t07_villa_owner_walk_door:
+	_AC_DIR_R(8)
+	_AC_RIGHT(6, 8)
+	_AC_DIR_U(8)
+	_AC_WORLD_Z(470, 8)
+	_AC_DIR_D(8)
+	_ACMD_END()
+anm_t07_villa_hero_walk_door:
+	_AC_WAIT(5)
+	_AC_DIR_R(8)
+	_AC_RIGHT(7, 8)
+	_AC_DIR_U(8)
+	_AC_WORLD_Z(471, 8)
+	_ACMD_END()
+anm_t07_villa_owner_walk_inside:
+	_AC_DIR_U(8)
+	_AC_UP(1, 8)
+	_AC_VANISH_ON(1)
+	_ACMD_END()
+anm_t07_villa_owner_hero_walk_inside:
+	_AC_WAIT(10)
+	_AC_UP(2, 8)
+	_AC_VANISH_ON(1)
+	_ACMD_END()
+ev_t07_villa_no:
+	_MACRO_TALKMSG('dialogue_t07', '00_msg_t07_villa_no_1', 'What, I still strike you as shady?\nI daresay I can’t blame you, though.\rAn offer to get a Villa for free...\nThat does throw up red flags, I agree.')
+	_TALK_CLOSE()
+	;Push player back and return to middle if they are not at middle already
+	_PLAYER_POS_GET(@SCWK_TEMP0, @SCWK_TEMP1)
+	_IFVAL_CALL(@SCWK_TEMP1, 'LE', 472, 'ev_t07_villa_owner_down2')
+	_IFVAL_CALL(@SCWK_TEMP1, 'GE', 474, 'ev_t07_villa_owner_up2')
+	_OBJ_ANIME('HERO', 'anm_t07_hero_stepback')
+	_OBJ_ANIME_WAIT()
+	_TIME_WAIT(5, @SCWK_ANSWER)
+	_EVENT_END()
+	_END()
+ev_t07_villa_owner_up2:
+	_OBJ_ANIME('T07_VILLA_OWNER', 'anm_t07_villa_up2')
+	_RET()
+ev_t07_villa_owner_down2:
+	_OBJ_ANIME('T07_VILLA_OWNER', 'anm_t07_villa_down2')
+	_RET()
+anm_t07_villa_up2:
+	_AC_DIR_U(8)
+	_AC_UP(1, 8)
+	_AC_DIR_L(8)
+	_ACMD_END()
+anm_t07_villa_down2:
+	_AC_DIR_D(8)
+	_AC_DOWN(1, 8)
+	_AC_DIR_L(8)
+	_ACMD_END()
+anm_t07_hero_stepback:
+	_AC_DIR_L(8)
+	_AC_LEFT(1, 8)
+	_ACMD_END()
+ev_t07_villa_rowan:
+	_TALK_OBJ_START()
+	_MACRO_TALKMSG('dialogue_t07', '00_msg_t07_villa_rowan_1', 'Hm! I happened to be in the\narea on a small errand.\fI’d like to take a rest if you’d allow it.')
+	_YES_NO_WIN(@SCWK_ANSWER)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_t07_villa_rowan_yes')
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_t07_villa_rowan_no')
+	_END()
+ev_t07_villa_rowan_yes:
+	_MACRO_TALKMSG('dialogue_t07', '00_msg_t07_villa_rowan_yes_1', 'Hm!\nI appreciate your hospitality.')
+	_TALK_CLOSE()
+	_BLACK_OUT()
+	_FADE_WAIT()
+	_TIME_WAIT(15, @SCWK_ANSWER)
+	;TODO once the inside of the Villa is ready, deactivate this PlaceData, activate the inside one
+	_BLACK_IN()
+	_FADE_WAIT()
+	_TALK_OBJ_END()
+	_END()
+ev_t07_villa_rowan_no:
+	_MACRO_TALKMSG('dialogue_t07', '00_msg_t07_villa_rowan_no_1', 'Hmm...\nDo you have something to hide?')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_t07_villa_roark:
+	_TALK_OBJ_START()
+	_MACRO_TALKMSG('dialogue_t07', '00_msg_t07_villa_roark_1', 'Hi! Could I take a peek inside\nyour Villa?')
+	_YES_NO_WIN(@SCWK_ANSWER)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_t07_villa_roark_yes')
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_t07_villa_roark_no')
+	_END()
+ev_t07_villa_roark_yes:
+	_MACRO_TALKMSG('dialogue_t07', '00_msg_t07_villa_roark_yes_1', 'Thanks!')
+	_TALK_CLOSE()
+	_BLACK_OUT()
+	_FADE_WAIT()
+	_TIME_WAIT(15, @SCWK_ANSWER)
+	;TODO once the inside of the Villa is ready, deactivate this PlaceData, activate the inside one
+	_BLACK_IN()
+	_FADE_WAIT()
+	_TALK_OBJ_END()
+	_END()
+ev_t07_villa_roark_no:
+	_MACRO_TALKMSG('dialogue_t07', '00_msg_t07_villa_roark_no_1', '...Oh, sorry.\nAm I intruding on something?')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_t07_villa_gardenia:
+	_TALK_OBJ_START()
+	_MACRO_TALKMSG('dialogue_t07', '00_msg_t07_villa_gardenia_1', 'Listen, listen!\nI came for a visit! Can I go in?')
+	_YES_NO_WIN(@SCWK_ANSWER)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_t07_villa_gardenia_yes')
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_t07_villa_gardenia_no')
+	_END()
+ev_t07_villa_gardenia_yes:
+	_MACRO_TALKMSG('dialogue_t07', '00_msg_t07_villa_gardenia_yes_1', 'Yes!\nNo time to waste!')
+	_TALK_CLOSE()
+	_BLACK_OUT()
+	_FADE_WAIT()
+	_TIME_WAIT(15, @SCWK_ANSWER)
+	;TODO once the inside of the Villa is ready, deactivate this PlaceData, activate the inside one
+	_BLACK_IN()
+	_FADE_WAIT()
+	_TALK_OBJ_END()
+	_END()
+ev_t07_villa_gardenia_no:
+	_MACRO_TALKMSG('dialogue_t07', '00_msg_t07_villa_gardenia_no_1', 'Oh, right.\nYou must have plans already.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_t07_villa_maylene:
+	_TALK_OBJ_START()
+	_MACRO_TALKMSG('dialogue_t07', '00_msg_t07_villa_maylene_1', '...Um, your Villa...\nWould it be OK if I took a look around?')
+	_YES_NO_WIN(@SCWK_ANSWER)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_t07_villa_maylene_yes')
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_t07_villa_maylene_no')
+	_END()
+ev_t07_villa_maylene_yes:
+	_MACRO_TALKMSG('dialogue_t07', '00_msg_t07_villa_maylene_yes_1', 'Oh, thank you.')
+	_TALK_CLOSE()
+	_BLACK_OUT()
+	_FADE_WAIT()
+	_TIME_WAIT(15, @SCWK_ANSWER)
+	;TODO once the inside of the Villa is ready, deactivate this PlaceData, activate the inside one
+	_BLACK_IN()
+	_FADE_WAIT()
+	_TALK_OBJ_END()
+	_END()
+ev_t07_villa_maylene_no:
+	_MACRO_TALKMSG('dialogue_t07', '00_msg_t07_villa_maylene_no_1', 'Oh...\nIt makes me a little sad...')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_t07_villa_byron:
+	_TALK_OBJ_START()
+	_MACRO_TALKMSG('dialogue_t07', '00_msg_t07_villa_byron_1', 'Guhahahaha!\rHow’s your Villa?\nCan you give me a tour?')
+	_YES_NO_WIN(@SCWK_ANSWER)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_t07_villa_byron_yes')
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_t07_villa_byron_no')
+	_END()
+ev_t07_villa_byron_yes:
+	_MACRO_TALKMSG('dialogue_t07', '00_msg_t07_villa_byron_yes_1', 'All right!\nLet’s have a look, then!')
+	_TALK_CLOSE()
+	_BLACK_OUT()
+	_FADE_WAIT()
+	_TIME_WAIT(15, @SCWK_ANSWER)
+	;TODO once the inside of the Villa is ready, deactivate this PlaceData, activate the inside one
+	_BLACK_IN()
+	_FADE_WAIT()
+	_TALK_OBJ_END()
+	_END()
+ev_t07_villa_byron_no:
+	_MACRO_TALKMSG('dialogue_t07', '00_msg_t07_villa_byron_no_1', 'Well!\nHow cold can you be?')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()

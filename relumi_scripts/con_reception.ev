@@ -1,5 +1,4 @@
 ev_c05r1101_flag_change:
-	_CALL('ev_c05r1102_flag_change_pofin_event')
 	_CALL('ev_c05r1102_flag_change_reception_front')
 	_IFVAL_CALL(@CON_TEMP01, 'EQ', 1, 'ev_c05r1102_flag_change_con_single')
 	_IFVAL_CALL(@CON_TEMP01, 'EQ', 3, 'ev_c05r1102_flag_change_con_multi')
@@ -14,21 +13,13 @@ ev_c05r1101_scene_change:
 ev_c05r1101_flag_change_vanish:
 	_FLAG_SET(#FV_TV_INTERVIEW_07)
 	_END()
-ev_c05r1102_flag_change_pofin_event:
-	_IF_FLAGON_JUMP(#FE_C05R1101_POFIN_INFOMATION, 'ev_c05r1102_flag_change_pofin_event_move')
-	_RET()
-ev_c05r1102_flag_change_pofin_event_move:
-	_SXY_POS_CHANGE('C05R1101_GERGGEOUSM1', 24, 6)
-	_SXY_MV_CHANGE('C05R1101_GERGGEOUSM1', 'MV_DOWN')
-	_OBJ_DIR_CHANGE('C05R1101_GERGGEOUSM1', 1)
-	_RET()
 ev_c05r1102_flag_change_reception_front:
 	_SXY_POS_CHANGE('CON_RECEPTION_FRONT01', 16, 4)
-	_OBJ_DIR_CHANGE('CON_RECEPTION_FRONT01', 1)
+	_OBJ_DIR_CHANGE('CON_RECEPTION_FRONT01', 0)
 	_SXY_POS_CHANGE('CON_RECEPTION_FRONT02', 5, 4)
-	_OBJ_DIR_CHANGE('CON_RECEPTION_FRONT02', 1)
+	_OBJ_DIR_CHANGE('CON_RECEPTION_FRONT02', 0)
 	_SXY_POS_CHANGE('CON_RECEPTION_FRONT03', 27, 4)
-	_OBJ_DIR_CHANGE('CON_RECEPTION_FRONT03', 1)
+	_OBJ_DIR_CHANGE('CON_RECEPTION_FRONT03', 0)
 	_RET()
 ev_c05r1102_flag_change_con_single:
 	_SXY_POS_CHANGE('HERO', 16, 6)
@@ -753,8 +744,14 @@ ev_con_reception_multi_answer_09:
 	_END()
 ev_con_reception_front03:
 	_TALK_OBJ_START()
+	_IF_FLAGOFF_JUMP(#1810, 'ev_con_reception_front03_not_ready')
 	_LDVAL(@SCWK_TEMP2, 3)
 	_JUMP('ev_con_reception_plactice_menu_01')
+	_END()
+ev_con_reception_front03_not_ready:
+	_MACRO_TALKMSG('dp_contest', 'msg_con_reception_front03_not_ready', 'Hello, we are still getting things set up for\nContest Practice sessions.\rPlease come back later.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
 	_END()
 ev_con_reception_plactice_menu_01:
 	_CON_RESET_PARAMETER()
@@ -883,9 +880,14 @@ ev_con_reception_plactice_common_06:
 	_SE_PLAY('S_UNI_DOOR')
 	_HIT_DOOR_ANIME_WAIT()
 	_TALKMSG('dp_contest%DP_contest_684')
+	_IF_FLAGOFF_CALL(#1811, 'ev_con_reception_plactice_unhide_pikachu')
+	_FLAG_SET(#1811); Participated in a practice contest
 	_TALK_CLOSE()
 	_CONTEST_PROC()
 	_END()
+ev_con_reception_plactice_unhide_pikachu:
+	_FLAG_RESET(#2923); Unhides Cosplay Pikachu for after the first practice contest
+	_RET()
 anm_con_reception_plactice_player_01:
 	_AC_DIR_R(8)
 	_AC_WORLD_X(28, 8)
@@ -938,7 +940,7 @@ ev_con_door_return_reward_check:
 	_END()
 ev_con_door_return_reward_mabayusa:
 	_IFVAL_JUMP(@LOCALWORK0, 'EQ', 1, 'ev_con_door_return_reward_mabayusa_bp')
-	_TALKMSG('dp_scenario3%44-msg_tower_54')
+	_MACRO_TALKMSG('dialogue_con_reception', '44-msg_tower_54', 'Thank you for playing!')
 	_JUMP('ev_con_door_return_finish')
 	_END()
 ev_con_door_return_reward_mabayusa_bp:

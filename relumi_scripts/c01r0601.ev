@@ -4,12 +4,12 @@ ev_c01r0601_receptionist:
 	_FLAG_SET(#FE_GMS_START)
 	_IF_FLAGON_JUMP(#FE_GTC_GUIDE_TALK, 'ev_c01r0601_receptionist_talk_after')
 	_FLAG_SET(#FE_GTC_GUIDE_TALK)
-	_TALKMSG('dp_scenario1%51-msg_c01r0601_receptionist_01')
+	_MACRO_TALKMSG('dialogue_c01r0601', '51-msg_c01r0601_receptionist_01', 'Welcome! This is the Global Wonder Station,\nor GWS for short.')
 	_TALK_CLOSE()
-	_BOUKENNOOTO_TIPS_OPEN(21, @SCWK_ANSWER)
+	_BOUKENNOOTO_TIPS_OPEN(21, @SCWK_ANSWER) ; GWS tooltip
 	_BOUKENNOOTO_TIPS_WAIT()
-	_TALKMSG('dp_scenario1%51-msg_c01r0601_receptionist_02')
-	_TALKMSG('dp_scenario1%51-msg_c01r0601_receptionist_03')
+	_MACRO_TALKMSG('dialogue_c01r0601', '51-msg_c01r0601_receptionist_02', 'We enable the trading of Pokémon with Trainers\nworldwide over the internet.')
+	_MACRO_TALKMSG('dialogue_c01r0601', '51-msg_c01r0601_receptionist_03', 'Would you like to use the Global Wonder Station\nvia the internet?')
 	_JUMP('ev_c01r0601_receptionist_menu01')
 	_END()
 ev_c01r0601_receptionist_end:
@@ -26,7 +26,7 @@ ev_c01r0601_receptionist_menu01:
 	_JUMP('ev_c01r0601_receptionist_menu01_03')
 	_END()
 ev_c01r0601_receptionist_menu01_01:
-	_TALKMSG('dp_scenario1%51-msg_c01r0601_receptionist_14')
+	_MACRO_TALKMSG('dialogue_c01r0601', '51-msg_c01r0601_receptionist_14', 'What would you like to know about?')
 	_ADD_CUSTUM_WIN_LABEL('dlp_gmstation%DLP_GMStation_080', 0)
 	_ADD_CUSTUM_WIN_LABEL('dlp_gmstation%DLP_GMStation_081', 1)
 	_ADD_CUSTUM_WIN_LABEL('dlp_gmstation%DLP_GMStation_082', 2)
@@ -40,7 +40,7 @@ ev_c01r0601_receptionist_menu01_01:
 	_JUMP('ev_c01r0601_receptionist_menu01_01re')
 	_END()
 ev_c01r0601_receptionist_menu01_01re:
-	_TALKMSG('dp_scenario1%51-msg_c01r0601_receptionist_03')
+	_MACRO_TALKMSG('dialogue_c01r0601', '51-msg_c01r0601_receptionist_03', 'Would you like to use the Global Wonder Station\nvia the internet?')
 	_JUMP('ev_c01r0601_receptionist_menu01')
 	_END()
 ev_c01r0601_receptionist_menu01_01_01:
@@ -65,21 +65,21 @@ ev_c01r0601_receptionist_menu01_02:
 	_WAIT_CHECK_ONLINE_ACCOUNT()
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_c01r0601_gms_net_error')
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_c01r0601_gms_poke_check_ok_save')
-	_TALKMSG('dp_scenario1%51-msg_c01r0601_receptionist_06')
+	_MACRO_TALKMSG('dialogue_c01r0601', '51-msg_c01r0601_receptionist_06', 'Please do visit again.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_GMS_END()
 	_END()
 ev_c01r0601_gms_net_error:
-	_TALKMSG('dp_scenario1%51-msg_c01r0601_receptionist_06')
+	_MACRO_TALKMSG('dialogue_c01r0601', '51-msg_c01r0601_receptionist_06', 'Please do visit again.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_GMS_END()
 	_END()
 ev_c01r0601_receptionist_menu01_02_poke_num_err:
-	_TALKMSG('dp_scenario1%51-msg_c01r0601_receptionist_10')
-	_TALKMSG('dp_scenario1%51-msg_c01r0601_receptionist_11')
-	_TALKMSG('dp_scenario1%51-msg_c01r0601_receptionist_12')
+	_MACRO_TALKMSG('dialogue_c01r0601', '51-msg_c01r0601_receptionist_10', 'Uh-oh!')
+	_MACRO_TALKMSG('dialogue_c01r0601', '51-msg_c01r0601_receptionist_11', 'You only have one Pokémon. If you wish to use\nthe Global Wonder Station, you must have at\fleast two Pokémon—including those in Boxes.')
+	_MACRO_TALKMSG('dialogue_c01r0601', '51-msg_c01r0601_receptionist_12', 'Please come back when you have at least\ntwo Pokémon.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_GMS_END()
@@ -93,7 +93,7 @@ ev_c01r0601_gms_poke_check_ok_save:
 	_END()
 ev_c01r0601_gms_poke_check_ok:
 	_LDVAL(@WK_SCENE_COMM_ID, 6)
-	_TALKMSG('dp_scenario1%51-msg_c01r0601_receptionist_07')
+	_MACRO_TALKMSG('dialogue_c01r0601', '51-msg_c01r0601_receptionist_07', 'I hope you enjoy your visit to the Global\nWonder Station!')
 	_TALK_CLOSE()
 	_SET_SYS_FLAG($SYS_INPUT_OFF)
 	_BLACK_OUT('SCR_WIPE_DIV', 'SCR_WIPE_SYNC')
@@ -106,7 +106,7 @@ ev_c01r0601_gms_poke_check_ok:
 ev_c01r0601_gms_back_end:
 	_TALK_OBJ_START()
 	_LDVAL(@WK_SCENE_WILDCARD_002, 0)
-	_TALKMSG('dp_scenario1%51-msg_c01r0601_receptionist_06')
+	_MACRO_TALKMSG('dialogue_c01r0601', '51-msg_c01r0601_receptionist_06', 'Please do visit again.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_RESET_SYS_FLAG($SYS_INPUT_OFF)
@@ -118,30 +118,30 @@ ev_c01r0601_gms_init_error:
 	_END()
 ev_c01r0601_receptionist_menu01_03:
 	_LDVAL(@WK_SCENE_COMM_ID, 0)
-	_TALKMSG('dp_scenario1%51-msg_c01r0601_receptionist_06')
+	_MACRO_TALKMSG('dialogue_c01r0601', '51-msg_c01r0601_receptionist_06', 'Please do visit again.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_GMS_END()
 	_END()
 ev_c01r0601_receptionist_talk_after:
-	_TALKMSG('dp_scenario1%51-msg_c01r0601_receptionist_04')
+	_MACRO_TALKMSG('dialogue_c01r0601', '51-msg_c01r0601_receptionist_04', 'Hello! Welcome to the Global Wonder Station!\rWould you like to use the Global Wonder Station\nvia the internet?')
 	_JUMP('ev_c01r0601_receptionist_menu01')
 	_END()
 ev_c01r0601_boy3:
-	_EASY_OBJ_MSG('dp_scenario1%51-msg_c01r0601_boy3_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c01r0601', '51-msg_c01r0601_boy3_01', 'If I keep doing Wonder Trades many many times,\nsomeday I’ll complete my one-and-only globe.\rIt’s my dream to gaze upon it!')
 	_END()
 ev_c01r0601_bigman:
-	_EASY_OBJ_MSG('dp_scenario1%51-msg_c01r0601_bigman_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c01r0601', '51-msg_c01r0601_bigman_01', 'That’s a big globe, eh?\rWhere do I live on it now? Let’s see if I can\npoint it out...')
 	_END()
 ev_c01r0601_man3:
-	_EASY_OBJ_MSG('dp_scenario1%51-msg_c01r0601_man3_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c01r0601', '51-msg_c01r0601_man3_01', 'Global Wond...\nGlobal Wonde...\f...\fGlobal\fWonder\fStation!\rPhew...\nWhat a long and difficult name!')
 	_END()
 ev_c01r0601_woman2:
-	_EASY_OBJ_MSG('dp_scenario1%51-msg_c01r0601_woman2_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c01r0601', '51-msg_c01r0601_woman2_01', 'It makes me a bit nervous to trade Pokémon with\nstrangers, but it makes me excited to think that\fI can meet Pokémon I’ve never seen before.')
 	_END()
 ev_c01r0601_man2:
-	_EASY_OBJ_MSG('dp_scenario1%51-msg_c01r0601_man2_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c01r0601', '51-msg_c01r0601_man2_01', 'When I imagine that the Pokémon I’ve raised\nwill be recorded on another person’s globe,\fmy eyes tear up...')
 	_END()
 ev_c01r0601_oldman1:
-	_EASY_OBJ_MSG('dp_scenario1%51-msg_c01r0601_oldman1_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c01r0601', '51-msg_c01r0601_oldman1_01', 'You can easily trade Pokémon with Pokémon fans\naround the world.\rIsn’t that something?')
 	_END()

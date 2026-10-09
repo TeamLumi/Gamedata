@@ -75,11 +75,11 @@ ev_t03_gingam:
 	_TALK_OBJ_START_TURN_NOT()
 	_OBJ_ANIME('T03_GINGAM_A', 'anm_t03_gingam_a')
 	_OBJ_ANIME_WAIT()
-	_TALKMSG('dp_scenario1%92-msg_t03_gingam_a_01')
+	_MACRO_TALKMSG('dialogue_t03', '92-msg_t03_gingam_a_01', 'Aren’t we Team Galactic? And we’re\nassigned here?\rStanding around among flowers... This doesn’t\nseem all that cool.')
 	_TALK_CLOSE()
 	_OBJ_ANIME('T03_GINGAM_B', 'anm_t03_gingam_b')
 	_OBJ_ANIME_WAIT()
-	_TALKMSG('dp_scenario1%92-msg_t03_gingam_b_01')
+	_MACRO_TALKMSG('dialogue_t03', '92-msg_t03_gingam_b_01', 'Hey now! Don’t complain. This is a pretty decent\nassignment. But Bug- and Grass-type Pokémon\fso creep me out...\rI don’t like being here, either.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
@@ -92,15 +92,15 @@ anm_t03_gingam_b:
 ev_t03_boy1:
 	_TALK_OBJ_START()
 	_IFVAL_JUMP(@WK_SCENE_D02R0101, 'GE', 2, 'ev_t03_boy1_02')
-	_TALKMSG('dp_scenario1%92-msg_t03_boy1_01')
+	_MACRO_TALKMSG('dialogue_t03', '92-msg_t03_boy1_01', 'I wanted to get some flowers from\nFloaroma Meadow...\rBut some Team Galactic guys in snazzy outfits\ncame along...')
 	_OBJ_ANIME('T03_BOY1', 'anm_t03_boy1_01')
 	_OBJ_ANIME_WAIT()
-	_TALKMSG('dp_scenario1%92-msg_t03_boy1_02')
+	_MACRO_TALKMSG('dialogue_t03', '92-msg_t03_boy1_02', 'Those Galactic guys went to the meadow past\nthese flowers here...')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_t03_boy1_02:
-	_TALKMSG('dp_scenario1%92-msg_t03_boy1_03')
+	_MACRO_TALKMSG('dialogue_t03', '92-msg_t03_boy1_03', 'Being surrounded by flowers puts me in an oddly\npleasant mood.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
@@ -109,25 +109,25 @@ anm_t03_boy1_01:
 	_AC_WAIT(3)
 	_ACMD_END()
 ev_t03_girl1:
-	_EASY_OBJ_MSG('dp_scenario1%92-msg_t03_girl1_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_t03', '92-msg_t03_girl1_01', 'I simply love it here... The atmosphere is\nso uplifting.\rYou came to get emotionally healed too,\ndidn’t you?')
 	_END()
 ev_t03_woman1:
-	_EASY_OBJ_MSG('dp_scenario1%92-msg_t03_woman1_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_t03', '92-msg_t03_woman1_01', 'Welcome to Floaroma, the town of flowers,\nflowers, and more flowers!\rYou should plant some flowers of your own, too.\nYay for flowers!')
 	_END()
 ev_t03_oldwoman2:
-	_EASY_OBJ_MSG('dp_scenario1%92-msg_t03_oldwoman2_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_t03', '92-msg_t03_oldwoman2_01', 'Berry trees are profoundly interesting.\nIf you grow them with care, they will bear\fgreat Berries.')
 	_END()
 ev_t03_campboy:
-	_EASY_OBJ_MSG('dp_scenario1%92-msg_t03_campboy_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_t03', '92-msg_t03_campboy_01', 'I got drawn here by the sweet scent of Honey...\rSeriously, what’s that? What am I? A Pokémon or\nsomething? Mmm... Honey.')
 	_END()
 ev_t03_sign1:
-	_EASY_BOARD_MSG('dp_scenario1%92-msg_t03_sign1_01', 'BOARD_TYPE_TOWN', 0)
+	_EASY_BOARD_MSG('dialogue_t03%92-msg_t03_sign1_01', 'BOARD_TYPE_TOWN', 0)
 	_END()
 ev_t03_sign2:
-	_EASY_BOARD_MSG('dp_scenario1%92-msg_t03_sign2_01', 'BOARD_TYPE_POST', 0)
+	_EASY_BOARD_MSG('dialogue_t03%92-msg_t03_sign2_01', 'BOARD_TYPE_POST', 0)
 	_END()
 ev_t03_sign3:
-	_EASY_BOARD_MSG('dp_scenario1%92-msg_t03_sign3_01', 'BOARD_TYPE_POST', 0)
+	_EASY_BOARD_MSG('dialogue_t03%92-msg_t03_sign3_01', 'BOARD_TYPE_POST', 0)
 	_END()
 ev_t03_woman2:
 	_TALK_OBJ_START()
@@ -135,7 +135,7 @@ ev_t03_woman2:
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_t03_woman2_poke_nothing')
 	_ITEM_CHK(466, 1, @SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'NE', 0, 'ev_t03_woman2_item_have')
-	_TALKMSG('dp_scenario3%msg_t03_woman2_01')
+	_MACRO_TALKMSG('dialogue_t03', 'msg_t03_woman2_01', 'Oh, a Shaymin?\rIf you have that Pokémon, then you also should\nhave some Gracidea flowers.\rI’ve got a whole bunch, so you can have some.')
 	_LDVAL(@SCWK_TEMP0, 466)
 	_LDVAL(@SCWK_TEMP1, 1)
 	_CALL('ev_item_event')
@@ -143,11 +143,11 @@ ev_t03_woman2:
 	_TALK_OBJ_END()
 	_END()
 ev_t03_woman2_poke_nothing:
-	_TALKMSG('dp_scenario3%msg_t03_woman2_03')
+	_MACRO_TALKMSG('dialogue_t03', 'msg_t03_woman2_03', 'Do you know about Gracidea flowers?\rThey’re given as bouquets to express feelings\nof gratitude.\rIt’s an enduring tradition around these parts.')
 	_JUMP('ev_t03_woman2_end')
 	_END()
 ev_t03_woman2_item_have:
-	_TALKMSG('dp_scenario3%msg_t03_woman2_02')
+	_MACRO_TALKMSG('dialogue_t03', 'msg_t03_woman2_02', 'Gracidea flowers have been around a long time\nin this region.\rThey’re given as bouquets to express feelings\nof gratitude. Isn’t that charming?\rWith these Gracidea flowers, you don’t need to\nsay thanks with words.\rYou can, instead, demonstrate your gratitude\nwith a bouquet. How nice!')
 	_JUMP('ev_t03_woman2_end')
 	_END()
 ev_t03_woman2_end:
@@ -157,20 +157,20 @@ ev_t03_woman2_end:
 ev_t03_madam:
 	_TALK_OBJ_START()
 	_IFVAL_JUMP(@WK_SCENE_T03_SP_MADAM, 'EQ', 3, 'ev_t03_madam5')
-	_TALKMSG('dp_scenario1%92-msg_t03_madam_01')
+	_MACRO_TALKMSG('dialogue_t03', '92-msg_t03_madam_01', 'Why, hello there...')
 	_SAVE_RENDOU_ENABLE(@SCWK_ANSWER, 0)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_t03_madam1')
-	_TALKMSG('dp_scenario1%92-msg_t03_madam_02')
-	_TALKMSG('dp_scenario1%92-msg_t03_madam_03')
+	_MACRO_TALKMSG('dialogue_t03', '92-msg_t03_madam_02', 'It looks like you’ve played Let’s Go in\nKanto before.')
+	_MACRO_TALKMSG('dialogue_t03', '92-msg_t03_madam_03', 'Would you like to ”go” on an adventure in\nSinnoh with this Pokémon?')
 	_JUMP('ev_t03_madamu_pokemon_add_check')
 	_END()
 ev_t03_madam1:
-	_TALKMSG('dp_scenario1%92-msg_t03_madam_01_02')
+	_MACRO_TALKMSG('dialogue_t03', '92-msg_t03_madam_01_02', 'I see you’re adventuring with Pokémon. I’m sure\nyou’re making many lovely memories together.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_t03_madam2:
-	_TALKMSG('dp_scenario1%92-msg_t03_madam_03_02')
+	_MACRO_TALKMSG('dialogue_t03', '92-msg_t03_madam_03_02', 'Oh dear. It appears you can’t accept any\nmore Pokémon.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
@@ -182,13 +182,13 @@ ev_t03_madamu_pokemon_add_check:
 	_CALL('ev_t03_madam2')
 	_END()
 ev_t03_madam4:
-	_TALKMSG('dp_scenario1%92-msg_t03_madam_04')
+	_MACRO_TALKMSG('dialogue_t03', '92-msg_t03_madam_04', 'I’m sure it will be a good partner to you.')
 	_LDVAL(@WK_SCENE_T03_SP_MADAM, 3)
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_t03_madam5:
-	_TALKMSG('dp_scenario1%92-msg_t03_madam_05')
+	_MACRO_TALKMSG('dialogue_t03', '92-msg_t03_madam_05', 'Please try to take very good care of Mew,\nthe New Species Pokémon!')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
@@ -196,7 +196,7 @@ ev_t03_pokemon_add_check1:
 	_PLAYER_NAME(0)
 	_POKEMON_NAME_EXTRA(1, 151, 0, 0)
 	_SE_PLAY('M_FI013')
-	_TALKMSG('dp_scenario2%53-msg_c05r0901_girl2_09')
+	_TALKMSG('dialogue_t03%53-msg_c05r0901_girl2_09')
 	_ME_WAIT()
 	_ADD_UNIQUE_POKEMON_UI(0, @SCWK_ANSWER)
 	_TALK_CLOSE()
@@ -204,7 +204,7 @@ ev_t03_pokemon_add_check1:
 	_EVENT_CAMERA_INDEX(116)
 	_EVENT_CAMERA_END_WAIT()
 	_SUB_WK(@SCWK_ANSWER, 1)
-	_TALKMSG('dp_scenario1%92-msg_t03_madam_04')
+	_MACRO_TALKMSG('dialogue_t03', '92-msg_t03_madam_04', 'I’m sure it will be a good partner to you.')
 	_LDVAL(@WK_SCENE_T03_SP_MADAM, 3)
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
@@ -212,20 +212,20 @@ ev_t03_pokemon_add_check1:
 ev_t03_gentleman:
 	_TALK_OBJ_START()
 	_IFVAL_JUMP(@WK_SCENE_T03_SP_GENTLEMAN, 'EQ', 3, 'ev_t03_gentleman5')
-	_TALKMSG('dp_scenario1%92-msg_t03_gentleman_01')
+	_MACRO_TALKMSG('dialogue_t03', '92-msg_t03_gentleman_01', 'Oh, you there...')
 	_SAVE_RENDOU_ENABLE(@SCWK_ANSWER, 1)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_t03_gentleman1')
-	_TALKMSG('dp_scenario1%92-msg_t03_gentleman_02')
-	_TALKMSG('dp_scenario1%92-msg_t03_gentleman_03')
+	_MACRO_TALKMSG('dialogue_t03', '92-msg_t03_gentleman_02', 'And I gather you’ve seen a Wishing Star before.')
+	_MACRO_TALKMSG('dialogue_t03', '92-msg_t03_gentleman_03', 'Would you mind taking this Pokémon? I think it\nwould be perfect for you.')
 	_JUMP('ev_t03_gentlemanu_pokemon_add_check')
 	_END()
 ev_t03_gentleman1:
-	_TALKMSG('dp_scenario1%92-msg_t03_gentleman_01_02')
+	_MACRO_TALKMSG('dialogue_t03', '92-msg_t03_gentleman_01_02', 'You seem to be really enjoying your adventure\nwith your Pokémon!')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_t03_gentleman2:
-	_TALKMSG('dp_scenario1%92-msg_t03_gentleman_03_02')
+	_MACRO_TALKMSG('dialogue_t03', '92-msg_t03_gentleman_03_02', 'Oh my. Apparently you don’t have room for any\nmore Pokémon.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
@@ -237,13 +237,13 @@ ev_t03_gentlemanu_pokemon_add_check:
 	_CALL('ev_t03_gentleman2')
 	_END()
 ev_t03_gentleman4:
-	_TALKMSG('dp_scenario1%92-msg_t03_gentleman_04')
+	_MACRO_TALKMSG('dialogue_t03', '92-msg_t03_gentleman_04', 'I wish you and this Pokémon the grandest of\nadventures together!')
 	_LDVAL(@WK_SCENE_T03_SP_GENTLEMAN, 3)
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_t03_gentleman5:
-	_TALKMSG('dp_scenario1%92-msg_t03_gentleman_05')
+	_MACRO_TALKMSG('dialogue_t03', '92-msg_t03_gentleman_05', 'Take good care of Jirachi, the Wish Pokémon.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
@@ -251,7 +251,7 @@ ev_t03_pokemon_add_check2:
 	_PLAYER_NAME(0)
 	_POKEMON_NAME_EXTRA(1, 385, 0, 0)
 	_SE_PLAY('M_FI013')
-	_TALKMSG('dp_scenario2%53-msg_c05r0901_girl2_09')
+	_TALKMSG('dialogue_t03%53-msg_c05r0901_girl2_09')
 	_ME_WAIT()
 	_ADD_UNIQUE_POKEMON_UI(1, @SCWK_ANSWER)
 	_TALK_CLOSE()
@@ -259,7 +259,7 @@ ev_t03_pokemon_add_check2:
 	_EVENT_CAMERA_INDEX(116)
 	_EVENT_CAMERA_END_WAIT()
 	_SUB_WK(@SCWK_ANSWER, 1)
-	_TALKMSG('dp_scenario1%92-msg_t03_gentleman_04')
+	_MACRO_TALKMSG('dialogue_t03', '92-msg_t03_gentleman_04', 'I wish you and this Pokémon the grandest of\nadventures together!')
 	_LDVAL(@WK_SCENE_T03_SP_GENTLEMAN, 3)
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
@@ -273,19 +273,20 @@ ev_t03_ranger_drifloon_quest:
 	_IF_FLAGON_JUMP(#2011, 'ev_t03_ranger_quest_completed'); TODO Find other flags to use :P
 	_IF_FLAGON_JUMP(#2010, 'ev_t03_ranger_gift_again')
 	_IF_FLAGON_JUMP(#2009, 'ev_t03_ranger_drifloon_check')
-	_MACRO_TALKMSG('dp_scenario3', 'msg_t03_ranger_drifloon_start', 'Greetings! Recently, there have been reports\n of a peculiar balloon-like Pokémon\rsomewhere around here.\rIf you find that Pokémon,\ncould you please show it to me?')
+	_MACRO_TALKMSG('dialogue_t03', 'msg_t03_ranger_drifloon_start', 'Greetings! Recently, there have been reports\nof a peculiar balloon-like Pokémon\fsomewhere around here.\rIf you find that Pokémon, could you please\nshow it to me?')
 	_FLAG_SET(#2009); Drifloon Ranger has been talked to once
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
+	_END()
 ev_t03_ranger_drifloon_check:
-	_MACRO_TALKMSG('dp_scenario3', 'msg_t03_ranger_drifloon_cont', 'Oh, hello again.\rHave you found the balloon Pokémon yet?')
+	_MACRO_TALKMSG('dialogue_t03', 'msg_t03_ranger_drifloon_cont', 'Oh, hello again.\rHave you found the balloon Pokémon yet?')
 	_TALK_CLOSE()
 	_CALL('ev_t03_ranger_pokemon_check'); Loads SCWK_PARAM1 as MonsNo and SCWK_PARAM2 as FormNo
-	_MACRO_TALKMSG('dp_scenario3', 'msg_t03_ranger_drifloon_success', 'That must be it!\nEverything matches the report perfectly!\rThis species of Pokémon is a danger to\nchildren and other short people.\rIts excitement causes it to get carried away\nand well... it carries them away!\rHere, this is to thank you for\nyour help with this.')
+	_MACRO_TALKMSG('dialogue_t03', 'msg_t03_ranger_drifloon_success', 'That must be it!\nEverything matches the report perfectly!\rThis species of Pokémon is a danger to\nchildren and other short people.\rIts excitement causes it to get carried away\nand well... it carries them away!\rHere, this is to thank you for\nyour help with this.')
 	_JUMP('ev_t03_ranger_drifloon_success')
 	_END()
 ev_t03_ranger_pokemon_check:
-    _POKELIST_SET_PROC(6); This only highlight a specific list of mons detailed in UIDatabase.BoxOpenParam
+    _POKELIST_SET_PROC(24); This only highlight a specific list of mons detailed in UIDatabase.BoxOpenParam
   	_POKELIST_GET_RESULT(@SCWK_PARAM0, @SCWK_PARAM3); Argument 1 is the bag/box position, Argument 2 is the box number (0 = Bag)
 	_IFVAL_JUMP(@SCWK_PARAM0, 'EQ', -1, 'ev_t03_ranger_drifloon_no'); If SCK_PARAM0 is -1, it means you chose nothing.
     _TEMOTI_BOX_MONSNO(@SCWK_PARAM0, @SCWK_PARAM3, @SCWK_PARAM1); Get the MonsNo of the selected Pokemon, SCWK_PARAM1
@@ -295,12 +296,12 @@ ev_t03_ranger_pokemon_check:
 	_JUMP('ev_t03_ranger_drifloon_invalid'); Everything else
     _END()
 ev_t03_ranger_drifloon_no:
-	_MACRO_TALKMSG('dp_scenario3', 'msg_t03_ranger_drifloon_no', 'You haven’t found it yet?\nKeep looking!\rRemember, we’re looking for a\nballoon-shaped Pokémon.')
+	_MACRO_TALKMSG('dialogue_t03', 'msg_t03_ranger_drifloon_no', 'You haven’t found it yet?\nKeep looking!\rRemember, we’re looking for a\nballoon-shaped Pokémon.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_t03_ranger_drifloon_invalid:
-	_MACRO_TALKMSG('dp_scenario3', 'msg_t03_ranger_drifloon_invalid', 'No, that’s not quite right...\rThe Pokémon we’re looking for is\nshaped like a balloon.\rThe reports also said that it’s purple,\nmaybe that will help. Good luck!')
+	_MACRO_TALKMSG('dialogue_t03', 'msg_t03_ranger_drifloon_invalid', 'No, that’s not quite right...\rThe Pokémon we’re looking for is\nshaped like a balloon.\rThe reports also said that it’s purple,\nmaybe that will help. Good luck!')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
@@ -317,11 +318,13 @@ ev_t03_ranger_drifloon_success:
 	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_Cancel', 'Not right now', 2)
 	_OPEN_CUSTUM_WIN(@SCWK_TEMP0); SCWK_TEMP0 will have the MonsNo of the pokemon chosen
 	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', 2, 'ev_t03_ranger_no_gift_give')
+	_CALL('ev_common_tray_space_check'); Checks if there is any remaining space in the Party and Boxes
+	_IFVAL_JUMP(@551, 'EQ', 1, 'ev_t03_ranger_gift_no_tray_space'); Party and Boxes are full
 	_POKEMON_NAME_EXTRA(0, @SCWK_TEMP0, 0, 0)
     _ME_PLAY('M_FI013')
-	_TALKMSG('dp_scenario2%msg_t03_receive_starter')
+	_MACRO_TALKMSG('dialogue_t03', 'msg_t03_receive_starter', 'You received {0,1,1,0}.')
     _ME_WAIT()
-	_ADD_POKEMON_UI(@SCWK_TEMP0, 5, 0, @SCWK_ANSWER, 3)
+	_ADD_POKEMON_UI_EXTRA(@SCWK_TEMP0, 0, 5, 0, 3, 4) ; MonsNo, FormNo, Level, Item, MaxIVs, BallId
 	_SWITCH(@SCWK_TEMP0)
 	_CASE_JUMP(387, 'ev_t03_ranger_drifloon_turtwig_flag_set')
 	_CASE_JUMP(390, 'ev_t03_ranger_drifloon_chimchar_flag_set')
@@ -352,20 +355,27 @@ ev_t03_ranger_gift_add_piplup:
 	_ADD_WK(@SCWK_TEMP3, 1)
 	_RET()
 ev_t03_ranger_gift_singular:
-	_MACRO_TALKMSG('dp_scenario3', 'msg_t03_drifloon_ranger_single_pokemon_gift', 'This Pokémon is rare here in the Sinnoh Region.\nTake it with you on your journey.')
+	_MACRO_TALKMSG('dialogue_t03', 'msg_t03_drifloon_ranger_single_pokemon_gift', 'This Pokémon is rare here in the Sinnoh Region.\nTake it with you on your journey.')
 	_RET()
 ev_t03_ranger_gift_multiple:
-	_MACRO_TALKMSG('dp_scenario3', 'msg_t03_drifloon_ranger_multiple_pokemon_gift', 'These Pokémon are rare here in the Sinnoh Region.\nChoose one to take with you on your journey.')
+	_MACRO_TALKMSG('dialogue_t03', 'msg_t03_drifloon_ranger_multiple_pokemon_gift', 'These Pokémon are rare here in the Sinnoh Region.\nChoose one to take with you on your journey.')
 	_RET()
 ev_t03_ranger_gift_again:
 	_FLAG_RESET(#2010); Resets if the player has said no to Ranger Starter gift.
-	_MACRO_TALKMSG('dp_scenario3', 'msg_t03_ranger_gift_again', 'Oh, hello again. Ready to take this Pokémon?')
+	_MACRO_TALKMSG('dialogue_t03', 'msg_t03_ranger_gift_again', 'Oh, hello again. Ready to take this Pokémon?')
 	_JUMP('ev_t03_ranger_drifloon_success')
 ev_t03_ranger_no_gift_give:
 	_FLAG_SET(#2010); Player said no to Drifloon Ranger Starter Gift
-	_MACRO_TALKMSG('dp_scenario3', 'msg_t03_ranger_no_gift_give', 'Oh, you’re not ready for it now?\nNo problem.\rI’ll hold onto it until you decide.')
+	_MACRO_TALKMSG('dialogue_t03', 'msg_t03_ranger_no_gift_give', 'Oh, you’re not ready for it now?\nNo problem.\rI’ll hold onto it until you decide.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
+	_END()
+ev_t03_ranger_gift_no_tray_space:
+	_FLAG_SET(#2010); Player said no to Drifloon Ranger Starter Gift
+	_MACRO_TALKMSG('dialogue_t03', 'msg_t03_ranger_gift_no_tray_space', 'Oh, but you don’t have space in your boxes.\nI’ll hold onto it until you make room.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
 ev_t03_ranger_drifloon_turtwig_flag_set:
 	_FLAG_SET(#2293); Ranger Turtwig
 	_JUMP('ev_t03_ranger_quest_finish')
@@ -376,11 +386,13 @@ ev_t03_ranger_drifloon_piplup_flag_set:
 	_FLAG_SET(#2295); Ranger Piplup
 	_JUMP('ev_t03_ranger_quest_finish')
 ev_t03_ranger_quest_finish:
-	_MACRO_TALKMSG('dp_scenario3', 'msg_t03_ranger_quest_finish', 'Take good care of it, and raise it well.\rI’ve got to continue my survey work now, but\nif you’re on your way to Eterna City,\ryou should speak to my colleague there.')
+	_MACRO_TALKMSG('dialogue_t03', 'msg_t03_ranger_quest_finish', 'Take good care of it, and raise it well.\rI’ve got to continue my survey work now, but\nif you’re on your way to Eterna City,\fyou should speak to my colleague there.')
 	_FLAG_SET(#2011); Route 203 Ranger Drifloon Quest completed.
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
+	_END()
 ev_t03_ranger_quest_completed:
-	_MACRO_TALKMSG('dp_scenario3', 'msg_t03_ranger_quest_completed', 'If you’re on your way to Eterna City,\nyou should speak to my colleague there.')
+	_MACRO_TALKMSG('dialogue_t03', 'msg_t03_ranger_quest_completed', 'If you’re on your way to Eterna City,\nyou should speak to my colleague there.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
+	_END()

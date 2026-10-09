@@ -1,2 +1,360 @@
-ev_test:
+ev_uga08_paldea_ranger_1:
+	_TALK_START()
+	_IF_FLAGON_JUMP(#2038, 'ev_uga08_paldea_ranger_quest_completed'); If the player has already completed the quest
+	_IF_FLAGON_JUMP(#2037, 'ev_uga08_paldea_ranger_gift_again'); If the player decides on "Not right now" for the gift
+	_IF_FLAGON_JUMP(#2036, 'ev_uga08_paldea_ranger_item_check'); If the player has already talked to the Ranger for the first time
+	;Ranger emotes with a sad emote
+	_OBJ_ANIME('UGA08_PALDEA_RANGER_1', 'anm_uga08_paldea_ranger_1_sad')
+	_OBJ_ANIME_WAIT()
+	_MACRO_TALKMSG('dialogue_uga08', 'msg_uga08_paldea_ranger_1_001', 'My stomach’s growling...\rWhy did I choose today of all days to\n rush packing my lunch?')
+	_TALK_CLOSE()
+	;Ranger emotes with a ! and turns to face the player
+	_OBJ_ANIME('UGA08_PALDEA_RANGER_1', 'anm_uga08_paldea_ranger_1_exclamation')
+	_OBJ_ANIME_WAIT()
+	_CHARA_LOOK_LOCK('UGA08_PALDEA_RANGER_1', 'HERO')
+	_TIME_WAIT(10, @SCWK_ANSWER)
+	_CHARA_LOOK_RELEASE('UGA08_PALDEA_RANGER_1')
+	_MACRO_TALKMSG('dialogue_uga08', 'msg_uga08_paldea_ranger_1_002', 'Oh my, I’m sorry. You caught me\n feeling sorry for myself.\rI was just about to take a break from my\nresearch task, but I’ve encountered a\fharrowing misfortune.\rWhile making my lunch, I somehow forgot to\nput anything between my bread. Nothing, nada.')
+	_TALK_CLOSE()
+	;Ranger turns to opposite direction of the player
+	_GET_REL_POS_HERO('UGA08_PALDEA_RANGER_1', @SCWK_TEMP0)
+	_IFVAL_CALL(@SCWK_TEMP0, 'EQ', 6, 'ev_uga08_paldea_ranger_1_left')
+	_IFVAL_CALL(@SCWK_TEMP0, 'EQ', 4, 'ev_uga08_paldea_ranger_1_right')
+	_IFVAL_CALL(@SCWK_TEMP0, 'EQ', 2, 'ev_uga08_paldea_ranger_1_up')
+	_IFVAL_CALL(@SCWK_TEMP0, 'EQ', 8, 'ev_uga08_paldea_ranger_1_down')
+	_MACRO_TALKMSG('dialogue_uga08', 'msg_uga08_paldea_ranger_1_003', 'Sigh. I just can’t bring myself to munch on such\na sorry excuse for a sandwich.\rI can’t focus on my work with an empty\nstomach, either...')
+	_TALK_CLOSE()
+	;Ranger faces the player
+	_CHARA_LOOK_LOCK('UGA08_PALDEA_RANGER_1', 'HERO')
+	_TIME_WAIT(10, @SCWK_ANSWER)
+	_CHARA_LOOK_RELEASE('UGA08_PALDEA_RANGER_1')
+	_MACRO_TALKMSG('dialogue_uga08', 'msg_uga08_paldea_ranger_1_004', 'Wait! I’ve had a marvelous idea!\rCould you go and get me something delicious\nto spice up my meal?\rI’m not much of a miner myself but\nI’ve heard that very bitter Energy Roots\fcan be found within the walls of the\fGrand Underground.\rOne of those would be perfection!')
+	_FLAG_SET(#2036); Paldea Ranger has been talked to once
+	_TALK_CLOSE()
+	_TALK_END()
+	_END()
+
+ev_uga08_paldea_ranger_item_check:
+	;Sad emotes and then exclamation emotes to show they are still hungry
+	_OBJ_ANIME('UGA08_PALDEA_RANGER_1', 'anm_uga08_paldea_ranger_1_sad')
+	_OBJ_ANIME_WAIT()
+	_OBJ_ANIME('UGA08_PALDEA_RANGER_1', 'anm_uga08_paldea_ranger_1_exclamation')
+	_OBJ_ANIME_WAIT()
+	;Ranger faces player
+	_CHARA_LOOK_LOCK('UGA08_PALDEA_RANGER_1', 'HERO')
+	_TIME_WAIT(10, @SCWK_ANSWER)
+	_CHARA_LOOK_RELEASE('UGA08_PALDEA_RANGER_1')
+	_MACRO_TALKMSG('dialogue_uga08', 'msg_uga08_paldea_ranger_item_check_001', 'You’re back!\rHave you found the food I asked for?\rI don’t mean to be pushy,\nbut I’m soooo hungry...')
+	_TALK_CLOSE()
+	;Checks if the player has an Energy Root
+	_GET_ITEM_COUNT(35, @LOCALWORK0)
+	_IFVAL_CALL(@LOCALWORK0, 'NE', 0, 'ev_uga08_paldea_ranger_item_choice'); The player has at least 1 Energy Root
+	_JUMP('ev_uga08_paldea_ranger_no'); The player has 0 Energy Roots
+	_END()
+
+ev_uga08_paldea_ranger_item_choice:
+	;Gives the player the option to give the Energy Root or not when they have at least 1
+	_MACRO_TALKMSG('dialogue_uga08', 'msg_uga08_paldea_ranger_item_choice_001', 'So... Could I please have it...?')
+	_YES_NO_WIN(@SCWK_ANSWER)
+	_TALK_CLOSE()
+	_SWITCH(@SCWK_ANSWER)
+	_CASE_JUMP(0, 'ev_uga08_paldea_ranger_yes')
+	_CASE_JUMP(1, 'ev_uga08_paldea_ranger_no')
+	_END()
+
+ev_uga08_paldea_ranger_yes:
+	;Remove one energy root from bag
+	_LDVAL(@SCWK_TEMP0, 35); Energy Root
+	_LDVAL(@SCWK_TEMP1, 1); Amount
+	_SUB_ITEM(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_ANSWER)
+	_MACRO_TALKMSG('dialogue_uga08', 'msg_uga08_paldea_ranger_yes_001', 'Hooray!! Thank you ever so much!')
+	_TALK_CLOSE()
+	;Ranger turns to opposite direction of the player
+	_GET_REL_POS_HERO('UGA08_PALDEA_RANGER_1', @SCWK_TEMP0)
+	_IFVAL_CALL(@SCWK_TEMP0, 'EQ', 6, 'ev_uga08_paldea_ranger_1_left')
+	_IFVAL_CALL(@SCWK_TEMP0, 'EQ', 4, 'ev_uga08_paldea_ranger_1_right')
+	_IFVAL_CALL(@SCWK_TEMP0, 'EQ', 2, 'ev_uga08_paldea_ranger_1_up')
+	_IFVAL_CALL(@SCWK_TEMP0, 'EQ', 8, 'ev_uga08_paldea_ranger_1_down')
+	;Ranger happy emotes
+	_OBJ_ANIME('UGA08_PALDEA_RANGER_1', 'anm_uga08_paldea_ranger_1_happy')
+	_OBJ_ANIME_WAIT()
+	_MACRO_TALKMSG('dialogue_uga08', 'msg_uga08_paldea_ranger_yes_002', 'Mmmm, this really hits the spot.\rIt’s no Bitter Jambon Buerre but it’ll\ndo in a pinch.')
+	_TALK_CLOSE()
+	;Ranger faces the player
+	_CHARA_LOOK_LOCK('UGA08_PALDEA_RANGER_1', 'HERO')
+	_TIME_WAIT(10, @SCWK_ANSWER)
+	_CHARA_LOOK_RELEASE('UGA08_PALDEA_RANGER_1')
+	_MACRO_TALKMSG('dialogue_uga08', 'msg_uga08_paldea_ranger_yes_003', 'I appreciate your help so much.\nYou really helped me out of a pickle!\rAs a token of my gratitude, please pick the\none you like the most to take with you on\fyour journey.')
+	;Jumps to the gift starter part
+	_JUMP('ev_uga08_paldea_ranger_success')
+	_END()
+
+ev_uga08_paldea_ranger_success:
+	;Offer the player a choice of starters or come back later
+	_IF_FLAGOFF_CALL(#2039, 'ev_uga08_paldea_ranger_gift_add_sprigatito')
+	_IF_FLAGOFF_CALL(#2040, 'ev_uga08_paldea_ranger_gift_add_fuecoco')
+	_IF_FLAGOFF_CALL(#2041, 'ev_uga08_paldea_ranger_gift_add_quaxly')
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_Cancel', 'Not right now', 2)
+	_OPEN_CUSTUM_WIN(@SCWK_TEMP0); SCWK_TEMP0 will have the MonsNo of the pokemon chosen
+	_TALK_CLOSE()
+	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', 2, 'ev_uga08_paldea_ranger_no_gift_give')
+	_CALL('ev_common_tray_space_check'); Checks if there is any remaining space in the Party and Boxes
+	_IFVAL_JUMP(@551, 'EQ', 1, 'ev_uga08_paldea_ranger_gift_no_tray_space'); Party and Boxes are full
+	_POKEMON_NAME_EXTRA(0, @SCWK_TEMP0, 0, 0)
+	_ME_PLAY('M_FI013')
+	_MACRO_TALKMSG('dialogue_uga08', 'msg_t03_receive_starter', 'You received {0,1,1,0}.')
+	_ME_WAIT()
+	_ADD_POKEMON_UI_EXTRA(@SCWK_TEMP0, 0, 5, 0, 3, 4) ; MonsNo, FormNo, Level, Item, MaxIVs, BallId
+	_SWITCH(@SCWK_TEMP0)
+	_CASE_JUMP(906, 'ev_uga08_paldea_ranger_bug_sprigatito_flag_set')
+	_CASE_JUMP(909, 'ev_uga08_paldea_ranger_bug_fuecoco_flag_set')
+	_CASE_JUMP(912, 'ev_uga08_paldea_ranger_bug_quaxly_flag_set')
+	_END()
+
+ev_uga08_paldea_ranger_gift_add_sprigatito:
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_Sprigatito', 'Sprigatito', 906)
+	_RET()
+
+ev_uga08_paldea_ranger_gift_add_fuecoco:
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_Fuecoco', 'Fuecoco', 909)
+	_RET()
+
+ev_uga08_paldea_ranger_gift_add_quaxly:
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_Quaxly', 'Quaxly', 912)
+	_RET()
+
+ev_uga08_paldea_ranger_gift_again:
+	_FLAG_RESET(#2037); Resets if the player has said no to Ranger Starter gift.
+	_MACRO_TALKMSG('dialogue_uga08', 'msg_uga08_paldea_ranger_gift_again_001', 'Oh, there you are!\rAre you ready to choose your culinary\ncompanion?\rSorry, I still have food on the brain.')
+	_JUMP('ev_uga08_paldea_ranger_success')
+
+ev_uga08_paldea_ranger_no_gift_give:
+	_FLAG_SET(#2037); Player said no to paldea Ranger Starter Gift
+	_MACRO_TALKMSG('dialogue_uga08', 'msg_uga08_paldea_ranger_no_gift_give_001', 'You want to come back for it later?\rNo problem friend, I’ll still be here for a while\nlonger.\rMy hunger slowed my research to a crawl and\nI’ve barely gotten anything done.\rI’d better get to work!')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+
+ev_uga08_paldea_ranger_gift_no_tray_space:
+	_FLAG_SET(#2037); Player said no to paldea Ranger Starter Gift
+	_MACRO_TALKMSG('dialogue_uga08', 'msg_uga08_paldea_ranger_gift_no_tray_space', 'You don’t seem to have any room for it in your\nboxes.\rGo make some room. I’ll wait here for you!')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+
+ev_uga08_paldea_ranger_bug_sprigatito_flag_set:
+	_FLAG_SET(#2039); Ranger Sprigatito
+	_JUMP('ev_uga08_paldea_ranger_quest_finish')
+
+ev_uga08_paldea_ranger_bug_fuecoco_flag_set:
+	_FLAG_SET(#2040); Ranger Fuecoco
+	_JUMP('ev_uga08_paldea_ranger_quest_finish')
+
+ev_uga08_paldea_ranger_bug_quaxly_flag_set:
+	_FLAG_SET(#2041); Ranger Quaxly
+	_JUMP('ev_uga08_paldea_ranger_quest_finish')
+
+ev_uga08_paldea_ranger_quest_finish:
+	_FLAG_SET(#2038); UG08 Ranger Paldea 1 Quest completed.
+	_TALK_CLOSE()
+	_MACRO_TALKMSG('dialogue_uga08', 'msg_uga08_paldea_ranger_quest_finish_001', 'I hope you two go on to make lots of happy\nmemories together!\rNow, if you’ll excuse me, this sandwich isn’t\ngoing to eat itself!')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+
+ev_uga08_paldea_ranger_no:
+	_MACRO_TALKMSG('dialogue_uga08', 'msg_uga08_paldea_ranger_no_001', 'Awww, seriously!?')
+	_TALK_CLOSE()
+	;Ranger turns to opposite direction of the player
+	_GET_REL_POS_HERO('UGA08_PALDEA_RANGER_1', @SCWK_TEMP0)
+	_IFVAL_CALL(@SCWK_TEMP0, 'EQ', 6, 'ev_uga08_paldea_ranger_1_left')
+	_IFVAL_CALL(@SCWK_TEMP0, 'EQ', 4, 'ev_uga08_paldea_ranger_1_right')
+	_IFVAL_CALL(@SCWK_TEMP0, 'EQ', 2, 'ev_uga08_paldea_ranger_1_up')
+	_IFVAL_CALL(@SCWK_TEMP0, 'EQ', 8, 'ev_uga08_paldea_ranger_1_down')
+	;Then back to player
+	_CHARA_LOOK_LOCK('UGA08_PALDEA_RANGER_1', 'HERO')
+	_TIME_WAIT(10, @SCWK_ANSWER)
+	_CHARA_LOOK_RELEASE('UGA08_PALDEA_RANGER_1')
+	_MACRO_TALKMSG('dialogue_uga08', 'msg_uga08_paldea_ranger_no_002', 'Sorry, sorry, I get a bit cranky when I’m hungry.\rI’ll try to be more patient, but please hurry\nwith that Energy Root!\rYou can dig them up in the walls around the\nGrand Underground.\rI’ve also heard there’s an Herb Shop in\nEterna City if you can’t find one.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+
+ev_uga08_paldea_ranger_quest_completed:
+	;Ranger faces the player
+	_CHARA_LOOK_LOCK('UGA08_PALDEA_RANGER_1', 'HERO')
+	_TIME_WAIT(10, @SCWK_ANSWER)
+	_CHARA_LOOK_RELEASE('UGA08_PALDEA_RANGER_1')
+	_MACRO_TALKMSG('dialogue_uga08', 'msg_uga08_paldea_ranger_quest_completed_001', 'It’s my sandwich superhero!\rSpeaking of sandwiches and superpowers, that\nstatement is very true to life where I’m from.\rSandwiches imbue you with all sorts of special\npowers, depending on what you put in them...\rAssuming you remember to put something in\nthem, of course!\rThey are truly a wondrous snack!')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+
+ev_uga08_paldea_ranger_1_left:
+	_OBJ_ANIME('UGA08_PALDEA_RANGER_1', 'anm_uga08_paldea_ranger_1_left')
+	_OBJ_ANIME_WAIT()
+	_RET()
+
+ev_uga08_paldea_ranger_1_right:
+	_OBJ_ANIME('UGA08_PALDEA_RANGER_1', 'anm_uga08_paldea_ranger_1_right')
+	_OBJ_ANIME_WAIT()
+	_RET()	
+
+ev_uga08_paldea_ranger_1_up:
+	_OBJ_ANIME('UGA08_PALDEA_RANGER_1', 'anm_uga08_paldea_ranger_1_up')
+	_OBJ_ANIME_WAIT()
+	_RET()
+
+ev_uga08_paldea_ranger_1_down:
+	_OBJ_ANIME('UGA08_PALDEA_RANGER_1', 'anm_uga08_paldea_ranger_1_down')
+	_OBJ_ANIME_WAIT()
+	_RET()
+
+anm_uga08_paldea_ranger_1_sad:
+	_AC_MARK_EMO(8)
+	_ACMD_END()
+
+anm_uga08_paldea_ranger_1_exclamation:
+	_AC_MARK_GYOE()
+	_ACMD_END()
+
+anm_uga08_paldea_ranger_1_happy:
+	_AC_MARK_EMO(5)
+	_ACMD_END()
+
+anm_uga08_paldea_ranger_1_left:
+	_AC_DIR_L(4)
+	_ACMD_END()
+
+anm_uga08_paldea_ranger_1_right:
+	_AC_DIR_R(4)
+	_ACMD_END()
+	
+anm_uga08_paldea_ranger_1_up:
+	_AC_DIR_U(4)
+	_ACMD_END()
+	
+anm_uga08_paldea_ranger_1_down:
+	_AC_DIR_D(4)
+	_ACMD_END()
+
+ev_uga08_unova_ranger_1:
+	_TALK_OBJ_START()
+	_IF_FLAGON_JUMP(#2055, 'ev_uga08_unova_ranger_quest_completed'); If the player has already completed the quest
+	_IF_FLAGON_JUMP(#2054, 'ev_uga08_unova_ranger_gift_again'); If the player decides on "Not right now" for the gift
+	_IF_FLAGON_JUMP(#2053, 'ev_uga08_unova_ranger_battle_check'); If the player has already talked to the Ranger for the first time
+	_MACRO_TALKMSG('dialogue_uga08', 'msg_uga08_unova_ranger_1_001', 'Oh, hi! Hello! It’s grand to see you’re finally\nhere!\rWhat?\nYou have no idea who I am?\rOh, I see. My boss told me that a young trainer\nwould be coming down here to help us out.\rI was expecting someone shorter!\rPerhaps you’ll be willing to help me out if\nI fill you in!\rYou see, I’m a battle analyst and I’ve been\ncollecting data on Trainer Battles.\rMy sample is looking a little small, though.\nIf I were to collect all the data it wouldn’t\fbe useable...\rUhm, I mean, because if I were to collect it,\nthe battles would be over in a flash!\rSo, what do you say? Would you help me\ncollect data on 100 Trainer Battles?\rIf you will, I promise I’ll make it worth your\nwhile!')
+	_TALK_CLOSE()
+	_FLAG_SET(#2053); Paldea Ranger has been talked to once
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+
+ev_uga08_unova_ranger_battle_check:
+	_MACRO_TALKMSG('dialogue_uga08', 'msg_uga08_unova_ranger_battle_check_001', 'You’re back! Did you collect all of my—\nI mean, our data?')
+	_TALK_CLOSE()
+	;Checks if the player has completed the 100 Trainer Battles
+	_TRAINER_DEFEATED_COUNT(@SCWK_TEMP0)
+	_IFVAL_CALL(@SCWK_TEMP0, 'GE', 100, 'ev_uga08_unova_ranger_yes'); The player has beaten at least 100 Trainer Battles
+	_JUMP('ev_uga08_unova_ranger_no'); The player has 99 battles or fewer
+	_END()
+
+ev_uga08_unova_ranger_yes:
+	_NUMBER_NAME(0, @SCWK_TEMP0)
+	;groupID 2, tagID 2, tagPatternID 1
+	_MACRO_TALKMSG('dialogue_uga08', 'msg_uga08_unova_ranger_yes_001', '{0,2,2,0}! Thank you so much!\rI can finally start compiling spreadsheets and\npie charts and bar graphs and— Oh!\rI’m getting ahead of myself now, your reward,\nof course!\rI definitely didn’t forget for a moment.')
+	;_MACRO_TALKMSG('dlp_underground', 'msg_uga08_unova_ranger_yes_001', '{0}! Thank you so much!\rI can finally start compiling spreadsheets and\npie charts and bar graphs and— Oh!\rI’m getting ahead of myself now, your reward,\nof course!\rI definitely didn’t forget for a moment.\r')
+	;Jumps to the gift starter part
+	_JUMP('ev_uga08_unova_ranger_success')
+	_END()
+
+ev_uga08_unova_ranger_success:
+	;Offer the player a choice of starters or come back later
+    _IF_FLAGOFF_CALL(#2056, 'ev_uga08_unova_ranger_gift_add_snivy')
+    _IF_FLAGOFF_CALL(#2057, 'ev_uga08_unova_ranger_gift_add_tepig')
+    _IF_FLAGOFF_CALL(#2058, 'ev_uga08_unova_ranger_gift_add_oshawott')
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_Cancel', 'Not right now', 2)
+	_OPEN_CUSTUM_WIN(@SCWK_TEMP0); SCWK_TEMP0 will have the MonsNo of the pokemon chosen
+	_TALK_CLOSE()
+	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', 2, 'ev_uga08_unova_ranger_no_gift_give')
+	_CALL('ev_common_tray_space_check'); Checks if there is any remaining space in the Party and Boxes
+	_IFVAL_JUMP(@551, 'EQ', 1, 'ev_uga08_unova_ranger_gift_no_tray_space'); Party and Boxes are full
+	_POKEMON_NAME_EXTRA(0, @SCWK_TEMP0, 0, 0)
+    _ME_PLAY('M_FI013')
+	_MACRO_TALKMSG('dialogue_uga08', 'msg_t03_receive_starter', 'You received {0,1,1,0}.')
+    _ME_WAIT()
+	_ADD_POKEMON_UI_EXTRA(@SCWK_TEMP0, 0, 5, 0, 3, 4) ; MonsNo, FormNo, Level, Item, MaxIVs, BallId
+	_SWITCH(@SCWK_TEMP0)
+	_CASE_JUMP(495, 'ev_uga08_unova_ranger_bug_snivy_flag_set')
+	_CASE_JUMP(498, 'ev_uga08_unova_ranger_bug_tepig_flag_set')
+	_CASE_JUMP(501, 'ev_uga08_unova_ranger_bug_oshawott_flag_set')
+	_END()
+
+ev_uga08_unova_ranger_gift_add_snivy:
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_Snivy', 'Snivy', 495)
+	_RET()
+
+ev_uga08_unova_ranger_gift_add_tepig:
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_Tepig', 'Tepig', 498)
+	_RET()
+
+ev_uga08_unova_ranger_gift_add_oshawott:
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_Oshawott', 'Oshawott', 501)
+	_RET()
+
+ev_uga08_unova_ranger_gift_again:
+	_FLAG_RESET(#2054); Resets if the player has said no to Ranger Starter gift.
+	_MACRO_TALKMSG('dialogue_uga08', 'msg_uga08_unova_ranger_gift_again_001', 'Oh, hello! Are you ready to take your reward\nnow? Here you go!')
+	_JUMP('ev_uga08_unova_ranger_success')
+
+ev_uga08_unova_ranger_no_gift_give:
+	_FLAG_SET(#2054); Player said no to unova Ranger Starter Gift
+	_MACRO_TALKMSG('dialogue_uga08', 'msg_uga08_unova_ranger_no_gift_give_001', 'No problem, I can wait.\nI have a whole lot of data entry to do,\fit’s just so exciting!')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+
+ev_uga08_unova_ranger_gift_no_tray_space:
+	_FLAG_SET(#2054); Player said no to unova Ranger Starter Gift
+	_MACRO_TALKMSG('dialogue_uga08', 'msg_uga08_unova_ranger_gift_no_tray_space', 'It looks like your boxes are at capacity.\nGo make some room. I’ll wait here for you.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+
+ev_uga08_unova_ranger_bug_snivy_flag_set:
+	_FLAG_SET(#2056); Ranger Snivy
+	_JUMP('ev_uga08_unova_ranger_quest_finish')
+
+ev_uga08_unova_ranger_bug_tepig_flag_set:
+	_FLAG_SET(#2057); Ranger Tepig
+	_JUMP('ev_uga08_unova_ranger_quest_finish')
+
+ev_uga08_unova_ranger_bug_oshawott_flag_set:
+	_FLAG_SET(#2058); Ranger Oshawott
+	_JUMP('ev_uga08_unova_ranger_quest_finish')
+
+ev_uga08_unova_ranger_quest_finish:
+	_FLAG_SET(#2055); UG08 Ranger Unova 1 Quest completed.
+	_TALK_CLOSE()
+	_MACRO_TALKMSG('dialogue_uga08', 'msg_uga08_unova_ranger_quest_finish_001', 'Seriously, I can’t thank you enough for your\nhelp.\rIf you ever want to know how many\nTrainer Battles you’ve had, just ask me!\rSome other rangers love battling the most,\nbut me? Graph design is my passion!')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+
+ev_uga08_unova_ranger_no:
+	_NUMBER_NAME(0, @SCWK_TEMP0)
+	;groupID 2, tagID 2, tagPatternID 1
+	_MACRO_TALKMSG('dialogue_uga08', 'msg_uga08_unova_ranger_no_001', 'Looks like you’ve battled {0,2,2,0} different Trainers\nacross the whole region.\rUnfortunately, we need at least 100 battles\nin the dataset. Keep going!')
+	;_MACRO_TALKMSG('dlp_underground', 'msg_uga08_unova_ranger_no_001', 'Looks like you’ve battled {0} different Trainers\nacross the whole region.\rUnfortunately, we need at least 100 battles\nin the dataset. Keep going!')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+
+ev_uga08_unova_ranger_quest_completed:
+	_TRAINER_DEFEATED_COUNT(@SCWK_TEMP0)
+	_NUMBER_NAME(0, @SCWK_TEMP0)
+	;groupID 2, tagID 2, tagPatternID 1
+	_MACRO_TALKMSG('dialogue_uga08', 'msg_uga08_unova_ranger_quest_completed_001', 'Hey, my favorite research assistant!\rDon’t tell me, you wanna know how many\nTrainers you’ve defeated, right?\rIt says in my most recent chart, you’ve beaten\n{0,2,2,0} different Trainers across the region!\rWhat do you think, pretty useful, huh?')
+	;_MACRO_TALKMSG('dlp_underground', 'msg_uga08_unova_ranger_quest_completed_001', 'Hey, my favorite research assistant!\rDon’t tell me, you wanna know how many\nTrainers you’ve defeated, right?\rIt says in my most recent chart, you’ve beaten\n{0} different Trainers across the region!\rWhat do you think, pretty useful, huh?'); The line before \n{0} may not appear, check language files to make sure
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
 	_END()

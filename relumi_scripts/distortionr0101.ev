@@ -1,0 +1,2642 @@
+ev_distortionr0101_tbl:
+	_OBJ_POS_GET('HERO', @666, @667, @668)
+	_OBJ_DIR_CHANGE('HERO', 0); Resets player's direction so we can attach the skybox properly. Would like to remove this in favour of a better solution eventually.
+	_RESET_SYS_FLAG($SYS_FLAG_USE_TODAY_KAIRIKI)
+	_RESET_SYS_FLAG($SYS_FLAG_USE_TODAY_NAMINORI)
+	_CALL('ev_distortionr0101_wait_for_gameobject')
+	_JUMP('ev_distortionr0101_worldstate')
+ev_distortionr0101_tbl2:
+	_IF_FLAGON_CALL(#3403, 'ev_distortionr0101_a3_cynthia_moved')
+	_IF_FLAGON_CALL(#3406, 'ev_distortionr0101_a7_cynthia_solved')
+	_IF_FLAGON_CALL(#3408, 'ev_distortionr0101_a8_cynthia_cyrus_moved')
+	_IF_FLAGON_CALL(#3421, 'ev_distortionr0101_a8_cyrus_left')
+	_IF_FLAGON_CALL(#3422, 'ev_distortionr0101_a8_giratina_appeared')
+	_IF_FLAGON_CALL(#3423, 'ev_distortionr0101_a8_giratina_defeated')
+	_IF_FLAGOFF_JUMP(#3400, 'ev_distortionr0101_a1_cynthia')
+	_END()
+
+ev_distortionr0101_end:
+	_END()
+
+ev_distortionr0101_a1_portal:
+	_TALK_OBJ_START()
+	_MACRO_TALKMSG('dialogue_distortionr0101', 'msg_distortionr0101_a1_portal', 'There is the portal leading back to the\nSpear Pillar.\rLeap into the portal and return to the\nSpear Pillar?')
+	_YES_NO_WIN(@SCWK_ANSWER)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_distortionr0101_a1_portal_yes')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+
+ev_distortionr0101_a1_portal_yes:
+	_PLAYER_NAME(0)
+	_MACRO_TALKMSG('dialogue_distortionr0101', 'msg_distortionr0101_a1_portal_yes', '{0} headed for the\nSpear Pillar!')
+	_TALK_CLOSE()
+	_BLACK_OUT('SCR_WIPE_DIV', 3)
+	_CALL('ev_distortionr0101_reset_world_works')
+	_FADE_WAIT()
+	_ATTACH_TRANSFORM('DWSkyBox', 'Dummy', 1)
+	_MAP_CHANGE('D05R0114', 7)
+	_TALK_OBJ_END()
+	_END()
+
+ev_distortionr0101_a8_portal:
+	_TALK_START()
+	_MACRO_TALKMSG('dialogue_distortionr0101', 'msg_distortionr0101_a8_portal', 'There is a portal where Giratina was.\nWill you leap into the portal?')
+	_YES_NO_WIN(@SCWK_ANSWER)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_distortionr0101_a8_portal_yes')
+	_TALK_CLOSE()
+	_TALK_END()
+	_END()
+
+ev_distortionr0101_a8_portal_yes:
+	_PLAYER_NAME(0)
+	_MACRO_TALKMSG('dialogue_distortionr0101', 'msg_distortionr0101_a8_portal_yes', '{0} leapt into the portal.')
+	_TALK_CLOSE()
+	_BLACK_OUT('SCR_WIPE_DIV', 3)
+	_FLAG_SET(#3417); Distortion World Story has been completed and the player has exited
+	_FLAG_SET(#2941); Distortion World A8 Cynthia
+	_CALL('ev_distortionr0101_reset_world_works')
+	_FADE_WAIT()
+	_ATTACH_TRANSFORM('DWSkyBox', 'Dummy', 1)
+	_MAP_CHANGE('D17R0101', 5)
+	_TALK_END()
+	_END()
+
+ev_distortionr0101_a1_cynthia:
+	_EVENT_START()
+	_TIME_WAIT(10, @SCWK_ANSWER)
+	_OBJ_ANIME('HERO', 'anm_distortionr0101_a1_cynthia_player_move_1')
+	_OBJ_ANIME_WAIT()
+	_SXY_POS_CHANGE('DISTORTIONR0101_A1_CYNTHIA', 50, 39)
+	_SXY_DIR_CHANGE('DISTORTIONR0101_A1_CYNTHIA', 0)
+	_TIME_WAIT(30, @SCWK_ANSWER)
+	_OBJ_ANIME('DISTORTIONR0101_A1_CYNTHIA', 'anm_distortionr0101_face_right')
+	_OBJ_ANIME_WAIT()
+	_TIME_WAIT(10, @SCWK_ANSWER)
+	_OBJ_ANIME('DISTORTIONR0101_A1_CYNTHIA', 'anm_distortionr0101_face_up')
+	_OBJ_ANIME_WAIT()
+	_TIME_WAIT(10, @SCWK_ANSWER)
+	_MACRO_TALKMSG('dialogue_distortionr0101', 'msg_distortionr0101_a1_cynthia_1', 'This place...')
+	_OBJ_ANIME('DISTORTIONR0101_A1_CYNTHIA', 'anm_distortionr0101_face_down')
+	_OBJ_ANIME_WAIT()
+	_OBJ_ANIME('DISTORTIONR0101_A1_CYNTHIA', 'anm_distortionr0101_a1_cynthia_face_1')
+	_OBJ_ANIME_WAIT()
+	_MACRO_TALKMSG('dialogue_distortionr0101', 'msg_distortionr0101_a1_cynthia_2', 'Can you feel it?\nThere are no Pokémon here at all.\rTime isn’t flowing.\nAnd space isn’t stable.\fA world where the rules are broken.')
+	_MACRO_TALKMSG('dialogue_distortionr0101', 'msg_distortionr0101_a1_cynthia_3', 'A space one might call the Distortion World...')
+	_OBJ_ANIME('DISTORTIONR0101_A1_CYNTHIA', 'anm_distortionr0101_face_left')
+	_OBJ_ANIME_WAIT()
+	_OBJ_ANIME('DISTORTIONR0101_A1_CYNTHIA', 'anm_distortionr0101_a1_cynthia_face_2')
+	_OBJ_ANIME_WAIT()
+	_MACRO_TALKMSG('dialogue_distortionr0101', 'msg_distortionr0101_a1_cynthia_4', 'Let’s find Giratina.\rWe need it to stop the spreading distortion at\nthe Spear Pillar...')
+	_TALK_CLOSE()
+	_OBJ_ANIME('DISTORTIONR0101_A1_CYNTHIA', 'anm_distortionr0101_a1_cynthia_move_1')
+	_OBJ_ANIME_WAIT()
+	_OBJ_ANIME('HERO', 'anm_distortionr0101_a1_cynthia_player_move_2')
+	_OBJ_ANIME_WAIT()
+	_VOICE_PLAY(487, 0, 0)
+	_EVENT_ENTITY_CLIP_PLAY('A1_GIRATINA', 0)
+	_SE_PLAY('PLAY_PM_COMMON_WHOOSH_XL')
+	_OBJ_ANIME('DISTORTIONR0101_A1_CYNTHIA', 'anm_distortionr0101_a1_cynthia_move_2')
+	_OBJ_ANIME('HERO', 'anm_distortionr0101_a1_cynthia_player_move_3')
+	_OBJ_ANIME_WAIT()
+	_VOICE_WAIT()
+	_OBJ_ANIME('DISTORTIONR0101_A1_CYNTHIA', 'anm_distortionr0101_face_right_fast')
+	_OBJ_ANIME_WAIT()
+	_OBJ_ANIME('HERO', 'anm_distortionr0101_face_right_fast')
+	_OBJ_ANIME_WAIT()
+	_TIME_WAIT(30, @SCWK_ANSWER)
+	_MACRO_TALKMSG('dialogue_distortionr0101', 'msg_distortionr0101_a1_cynthia_5', 'That was...\rGiratina...!')
+	_TALK_CLOSE()
+	_OBJ_ANIME('DISTORTIONR0101_A1_CYNTHIA', 'anm_distortionr0101_face_up')
+	_OBJ_ANIME('HERO', 'anm_distortionr0101_face_down')
+	_OBJ_ANIME_WAIT()
+	_MACRO_TALKMSG('dialogue_distortionr0101', 'msg_distortionr0101_a1_cynthia_6', 'We have to hurry!\rIf something’s not done, the distortion will\nswallow not only our world, it will overwhelm\fthe Distortion World...')
+	_TALK_CLOSE()
+	_OBJ_ANIME('DISTORTIONR0101_A1_CYNTHIA', 'anm_distortionr0101_a1_cynthia_move_3')
+	_OBJ_ANIME_WAIT()
+	_SXY_POS_CHANGE('DISTORTIONR0101_A1_CYNTHIA', 34, 51)
+	_SXY_DIR_CHANGE('DISTORTIONR0101_A1_CYNTHIA', 270)
+	_FLAG_SET(#3400); Distortion World intro cutscene complete
+	_EVENT_END()
+	_END()
+
+ev_distortionr0101_jump_a1_lift:
+	_EVENT_START()
+	_TURN_HERO_TALK_OBJ()
+	_JUMP('ev_distortionr0101_jump_a1_lift_down')
+	_END()
+ev_distortionr0101_jump_a1_lift_down:
+	_OBJ_ANIME('HERO', 'anm_player_face_for_jump_down')
+	_OBJ_ANIME_WAIT()
+	_LEDGE_JUMP('HERO', 3.0, 0.75, 0.0, 0.7)
+	_IF_FLAGOFF_JUMP(#3401, 'ev_distortionr0101_jump_a1_lift_cynthia')
+	_EVENT_END()
+	_END()
+ev_distortionr0101_jump_a1_lift_cynthia:
+	_TIME_WAIT(20, @SCWK_ANSWER)
+	_MACRO_TALKMSG('dialogue_distortionr0101', 'msg_distortionr0101_a1_lift_cynthia', 'This rock slab...\rIt appears to move if you step on a certain\nspot.')
+	_TALK_CLOSE()
+	_FLAG_SET(#3401); Cynthia explained DW lifts
+	_EVENT_END()
+	_END()
+ev_distortionr0101_jump_a1_lift_cynthia_again:
+	_MACRO_EASY_OBJ_MSG('dialogue_distortionr0101', 'msg_distortionr0101_a1_lift_cynthia_again', 'On the ground here...\nWhy is it colored differently?')
+	_END()
+
+ev_distortionr0101_jump_a1_lift_cynthia_leave:
+	_OBJ_ANIME('HERO', 'anm_distortionr0101_face_up')
+	_OBJ_ANIME_WAIT()
+	_TIME_WAIT(50, @SCWK_ANSWER)
+	_OBJ_ANIME('DISTORTIONR0101_A1_CYNTHIA', 'anm_distortionr0101_face_down')
+	_OBJ_ANIME_WAIT()
+	_MACRO_TALKMSG('dialogue_distortionr0101', 'msg_distortionr0101_a1_lift_cynthia_leave', 'Will we get to see Giratina if we keep going\ndown?\r...In the Distortion World, are we really\ntravelling downward?')
+	_TALK_CLOSE()
+	_OBJ_ANIME('DISTORTIONR0101_A1_CYNTHIA', 'anm_distortionr0101_jump_a1_lift_cynthia_leave')
+	_OBJ_ANIME_WAIT()
+	_OBJ_ANIME('HERO', 'anm_distortionr0101_face_left')
+	_OBJ_ANIME_WAIT()
+	_LEDGE_JUMP('DISTORTIONR0101_A1_CYNTHIA', 3.0, 0.75, 0.0, 0.7)
+	_TIME_WAIT(10, @SCWK_ANSWER)
+	_LEDGE_JUMP('DISTORTIONR0101_A1_CYNTHIA', 3.0, 0.75, 0.0, 0.7)
+	_OBJ_ANIME('DISTORTIONR0101_A1_CYNTHIA', 'anm_distortionr0101_face_down')
+	_OBJ_ANIME_WAIT()
+	_TIME_WAIT(5, @SCWK_ANSWER)
+	_LEDGE_JUMP('DISTORTIONR0101_A1_CYNTHIA', 3.0, 0.75, 0.0, 0.7)
+	_OBJ_ANIME('DISTORTIONR0101_A1_CYNTHIA', 'anm_distortionr0101_face_left')
+	_OBJ_ANIME_WAIT()
+	_TIME_WAIT(5, @SCWK_ANSWER)
+	_LEDGE_JUMP('DISTORTIONR0101_A1_CYNTHIA', 3.0, 0.75, 0.0, 0.7)
+	_FLAG_SET(#3402); Distortion World A1 Cynthia
+	_FLAG_RESET(#2937); Distortion World A3 Cynthia
+	_OBJ_DEL('DISTORTIONR0101_A1_CYNTHIA')
+	_OBJ_ADD('DISTORTIONR0101_A3_CYNTHIA')
+	_ATTACH_TRANSFORM('DISTORTIONR0101_A3_CYNTHIA', 'AREA_3_GEO/Island_1/A3_CYNTHIA', 0)
+	_RET()
+
+pos_distortionr0101_a2_mespirit:
+	_EVENT_START()
+	_VOICE_PLAY(481, 0, 0)
+	_VOICE_WAIT()
+	_EVENT_CAMERA_INDEX(601)
+	_LOAD_UMA_ANIME('field/animeobj/distortionr0101_obj')
+	_LOAD_UMA_ANIME_WAIT()
+	_UMA_ANIME_ATTACH(0, 'DISTORTIONR0101_A2_MESPIRIT')
+	_UMA_ANIME_PLAY(0, 'A2_MESPIRIT_1')
+	_UMA_PLAY_WAIT(0, 'A2_MESPIRIT_1')
+	_CHARA_LOOK_LOCK('HERO', 'DISTORTIONR0101_A2_MESPIRIT')
+	_TIME_WAIT(60, @SCWK_ANSWER)
+	_EVENT_CAMERA_INDEX(602)
+	_UMA_ANIME_PLAY(0, 'A2_MESPIRIT_2')
+	_OBJ_ANIME('DISTORTIONR0101_A2_MESPIRIT', 'anm_distortionr0101_a2_mespirit_1')
+	_UMA_PLAY_WAIT(0, 'A2_MESPIRIT_2')
+	_CHARA_LOOK_RELEASE('HERO')
+	_EVENT_CAMERA_INDEX(600)
+	_UMA_IS_NULL(0, @SCWK_ANSWER)
+	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 0, 'ev_distortionr0101_uma_release')
+	_OBJ_DEL('DISTORTIONR0101_A2_MESPIRIT')
+	_FLAG_SET(#3409); A2 Mesprit Cutscene complete
+	_LDVAL(@631, 1); A2 Mesprit
+	_EVENT_CAMERA_END_WAIT()
+	_EVENT_END()
+	_END()
+ev_distortionr0101_uma_release:
+	_RELEASE_UMA_ANIME('field/animeobj/distortionr0101_obj')
+	_RET()
+anm_distortionr0101_a2_mespirit_1:
+	_AC_WAIT(10)
+	_AC_ANIME_DURATION(0.333330)
+	_AC_INDEX_ANIME(2)
+	_AC_INDEX_ANIME_WAIT()
+	_AC_INDEX_ANIME(2)
+	_AC_INDEX_ANIME_WAIT()
+	_AC_ANIME_DURATION(0.333330)
+	_AC_INDEX_ANIME(10)
+	_AC_INDEX_ANIME_WAIT()
+	_AC_ANIME_DURATION(0.233330)
+	_AC_INDEX_ANIME(1)
+	_AC_INDEX_ANIME_WAIT()
+	_AC_INDEX_ANIME(1)
+	_AC_INDEX_ANIME_WAIT()
+	_ACMD_END()
+
+ev_distortionr0101_a3_cynthia:
+	_TALK_OBJ_START()
+	_IF_FLAGON_JUMP(#3403, 'ev_distortionr0101_a3_cynthia_again')
+	_PLAYER_POS_GET(@SCWK_TEMP0, @SCWK_TEMP1)
+	_MACRO_TALKMSG('dialogue_distortionr0101', 'msg_distortionr0101_a3_cynthia', 'The legend of Giratina has been forgotten to\nall but a few...\rThe legend told of a world on the other side\nof ours. This world.\rWhy does this world exist?\nWhy is Giratina here all alone?\r...There’s so much that can’t be explained, but\nwe have things to do.\rLet’s split up.\nWe have to find the right way.\rOh right.\rSince we’re cut off from our own world, we\nwill not be able to rely on the help of wild\fPokémon to perform Hidden Moves for us.\rYou can call on the assistance of mine if you\nencounter any obstacles.')
+	_TALK_CLOSE()
+	_IFVAL_CALL(@SCWK_TEMP1, 'LE', 20, 'ev_distortionr0101_a3_cynthia_player_move')
+	_OBJ_ANIME('DISTORTIONR0101_A3_CYNTHIA', 'anm_distortionr0101_a3_cynthia_move_1')
+	_OBJ_ANIME_WAIT()
+	_FLAG_SET(#3403); A3 Cynthia moved out of the way
+	_TALK_OBJ_END()
+	_END()
+ev_distortionr0101_a3_cynthia_player_move:
+	_OBJ_ANIME('HERO', 'anm_distortionr0101_a3_cynthia_player_move_1')
+	_OBJ_ANIME_WAIT()
+	_RET()
+ev_distortionr0101_a3_cynthia_again:
+	_MACRO_TALKMSG('dialogue_distortionr0101', 'msg_distortionr0101_a3_cynthia_again', 'We don’t need to go together now.\nLet’s keep looking for the way down.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+
+ev_distortionr0101_jump_a4_cyrus:
+	_EVENT_START()
+	_TURN_HERO_TALK_OBJ()
+	_CALL('ev_distortionr0101_jump_a4_cyrus_down')
+	_TALK_END()
+	_END()
+ev_distortionr0101_jump_a4_cyrus_down:
+	_OBJ_ANIME('HERO', 'anm_player_face_for_jump_down')
+	_OBJ_ANIME_WAIT()
+	_LEDGE_JUMP('HERO', 3.0, 0.75, 0.0, 0.7)
+	_IF_FLAGOFF_JUMP(#3404, 'ev_distortionr0101_jump_a4_cyrus_scene')
+	_EVENT_END()
+	_END()
+ev_distortionr0101_jump_a4_cyrus_scene:
+	_TIME_WAIT(10, @SCWK_ANSWER)
+	_OBJ_ANIME('DISTORTIONR0101_A4_CYRUS', 'anm_distortionr0101_jump_a4_cyrus_move_1')
+	_OBJ_ANIME_WAIT()
+	_MACRO_TALKMSG('dialogue_distortionr0101', 'msg_distortionr0101_jump_a4_cyrus_scene_1', '...The shadowy Pokémon isn’t here.\rIt abandoned me here, then disappeared\nsomewhere farther down...\rWas it content merely to interfere with my\nplan...?\rIncidentally, do you understand the concept\nof genes?')
+	_YES_NO_WIN(@SCWK_ANSWER)
+	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 0, 'ev_distortionr0101_jump_a4_cyrus_scene_yes')
+	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 1, 'ev_distortionr0101_jump_a4_cyrus_scene_no')
+	_MACRO_TALKMSG('dialogue_distortionr0101', 'msg_distortionr0101_jump_a4_cyrus_scene_2', 'Genes can be considered the blueprints of all\nlife-forms.\rThat includes humans and Pokémon alike.\rGenes are contained in a DNA strand.\rA DNA strand consists of two chains of\nopposing characteristics in a spiral.\rIf one of the chains were to be broken, the\nother could replicate it.\rOne or the other cannot exist without its\nopposite.\rDo you understand where I am going with this?\rThis is a bizarre world.\nTime doesn’t flow.\fSpace isn’t stable.\rOnly that shadowy Pokémon lives here.\rThis world is the opposite of our world—our\nworld I wish to change.\rIt is like the two chains composing a strand of\nDNA.\rThe two worlds must be balancing each other\nto remain in existence.\rWithout the one, the other cannot exist.\rThe shadowy Pokémon must play a role in\nkeeping the worlds in balance.\rThat is why it must have interfered and brought\nme here.\rThe shadowy Pokémon must have made this\nbizarre world.\rThat’s why trying to change our world\ndisturbed it and made it reveal itself.\rBut that is all irrelevant.\rWhat matters is defeating that Pokémon and\nmaking this world disappear.\rI won’t allow it to interfere with me again.\rWith it gone, neither world will be able to\nrevert to its original state...')
+	_TALK_CLOSE()
+	_OBJ_ANIME('DISTORTIONR0101_A4_CYRUS', 'anm_distortionr0101_jump_a4_cyrus_move_2')
+	_OBJ_ANIME_WAIT()
+	_FLAG_SET(#3404); Distortion World A4 Cyrus
+	_FLAG_SET(#2937); Distortion World A3 Cynthia
+	_FLAG_RESET(#2938); Distortion World A5 Cyrus
+	_FLAG_RESET(#2939); Distortion World A7 Cynthia
+	_OBJ_DEL('DISTORTIONR0101_A4_CYRUS')
+	_OBJ_DEL('DISTORTIONR0101_A3_CYNTHIA')
+	_OBJ_ADD('DISTORTIONR0101_A5_CYRUS')
+	_OBJ_ADD('DISTORTIONR0101_A7_CYNTHIA')
+	_ATTACH_TRANSFORM('DISTORTIONR0101_A5_CYRUS', 'AREA_5_GEO/Island_2/A5_CYRUS', 0)
+	_ATTACH_TRANSFORM('DISTORTIONR0101_A7_CYNTHIA', 'AREA_7_GEO/Island/A7_CYNTHIA', 0)
+	_EVENT_END()
+	_END()
+ev_distortionr0101_jump_a4_cyrus_scene_yes:
+	_MACRO_TALKMSG('dialogue_distortionr0101', 'msg_distortionr0101_jump_a4_cyrus_scene_yes', '...If it’s true, you’ve impressed me.')
+	_RET()
+ev_distortionr0101_jump_a4_cyrus_scene_no:
+	_MACRO_TALKMSG('dialogue_distortionr0101', 'msg_distortionr0101_jump_a4_cyrus_scene_no', '...No, of course, you wouldn’t.')
+	_RET()
+
+ev_distortionr0101_a5_giratina_enable:
+	_LDVAL(@621, 1)
+	_RET()
+ev_distortionr0101_a5_giratina_disable:
+	_LDVAL(@621, 0)
+	_RET()
+pos_distortionr0101_a5_giratina:
+	_EVENT_START()
+	_VOICE_PLAY(487, 0, 0)
+	_EVENT_ENTITY_CLIP_PLAY('A5_GIRATINA', 0)
+	_VOICE_WAIT()
+	_LDVAL(@621, 2); Prevents this scene from being re-enabled by the A6_A5 lift
+	_EVENT_END()
+	_END()
+
+ev_distortionr0101_a5_cyrus_leave:
+	_OBJ_DIR_CHANGE('DISTORTIONR0101_A5_CYRUS', 270)
+	_OBJ_ANIME('DISTORTIONR0101_A5_CYRUS', 'anm_distortionr0101_a5_cyrus_leave')
+	_OBJ_ANIME_WAIT()
+	_FLAG_SET(#3405); Disables this animation for A5 Cyrus after he leaves
+	_FLAG_SET(#2938); Distortion World A5 Cyrus
+	_OBJ_DEL('DISTORTIONR0101_A5_CYRUS')
+	_RET()
+
+pos_distortionr0101_a6_uxie:
+	_EVENT_START()
+	_VOICE_PLAY(480, 0, 0)
+	_VOICE_WAIT()
+	_EVENT_CAMERA_INDEX(603)
+	_LOAD_UMA_ANIME('field/animeobj/distortionr0101_obj')
+	_LOAD_UMA_ANIME_WAIT()
+	_UMA_ANIME_ATTACH(0, 'DISTORTIONR0101_A6_UXIE')
+	_UMA_ANIME_PLAY(0, 'A6_UXIE_1')
+	_TIME_WAIT(30, @SCWK_ANSWER)
+	_CHARA_LOOK_LOCK('HERO', 'DISTORTIONR0101_A6_UXIE')
+	_UMA_PLAY_WAIT(0, 'A6_UXIE_1')
+	_TIME_WAIT(30, @SCWK_ANSWER)
+	_OBJ_ANIME('DISTORTIONR0101_A6_UXIE', 'anm_distortionr0101_a6_uxie_1')
+	_OBJ_ANIME_WAIT()
+	_UMA_ANIME_PLAY(0, 'A6_UXIE_2')
+	_UMA_PLAY_WAIT(0, 'A6_UXIE_2')
+	_CHARA_LOOK_RELEASE('HERO')
+	_UMA_IS_NULL(0, @SCWK_ANSWER)
+	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 0, 'ev_distortionr0101_uma_release')
+	_ATTACH_TRANSFORM('DISTORTIONR0101_A7_UXIE', 'AREA_7_GEO/Island/A7_UXIE', 0)
+	_EVENT_CAMERA_INDEX(600)
+	_OBJ_DEL('DISTORTIONR0101_A6_UXIE')
+	_FLAG_SET(#3410); A6 Uxie Cutscene complete
+	_LDVAL(@632, 2); A6 Uxie
+	_EVENT_CAMERA_END_WAIT()
+	_EVENT_END()
+	_END()
+anm_distortionr0101_a6_uxie_1:
+	_AC_INDEX_ANIME(6)
+	_AC_INDEX_ANIME_WAIT()
+	_ACMD_END()
+ev_distortionr0101_a6_uxie_enable:
+	_LDVAL(@632, 1)
+	_RET()
+ev_distortionr0101_a6_uxie_disable:
+	_LDVAL(@632, 0)
+	_RET()
+
+pos_distortionr0101_a6_mespirit:
+	_EVENT_START()
+	_PLAYER_POS_GET(@SCWK_TEMP0, @SCWK_TEMP1)
+	_VOICE_PLAY(481, 0, 0)
+	_VOICE_WAIT()
+	_EVENT_CAMERA_INDEX(604)
+	_LOAD_UMA_ANIME('field/animeobj/distortionr0101_obj')
+	_LOAD_UMA_ANIME_WAIT()
+	_UMA_ANIME_ATTACH(0, 'DISTORTIONR0101_A6_MESPIRIT')
+	_UMA_ANIME_PLAY(0, 'A6_MESPIRIT_1')
+	_UMA_PLAY_WAIT(0, 'A6_MESPIRIT_1')
+	_TIME_WAIT(30, @SCWK_ANSWER)
+	_OBJ_ANIME('DISTORTIONR0101_A6_MESPIRIT', 'anm_distortionr0101_a6_mespirit_1')
+	_IFVAL_CALL(@SCWK_TEMP1, 'EQ', 67, 'ev_distortionr0101_a6_mespirit_uma_2a')
+	_IFVAL_CALL(@SCWK_TEMP1, 'EQ', 68, 'ev_distortionr0101_a6_mespirit_uma_2b')
+	_EVENT_CAMERA_INDEX(605)
+	_OBJ_ANIME('HERO', 'anm_distortionr0101_a6_mespirit_hero_1')
+	_TIME_WAIT(155, @SCWK_ANSWER)
+	_IFVAL_CALL(@SCWK_TEMP1, 'EQ', 67, 'ev_distortionr0101_a6_mespirit_cam_3a')
+	_IFVAL_CALL(@SCWK_TEMP1, 'EQ', 68, 'ev_distortionr0101_a6_mespirit_cam_3b')
+	_CHARA_LOOK_LOCK('HERO', 'DISTORTIONR0101_A6_MESPIRIT')
+	_OBJ_ANIME('DISTORTIONR0101_A6_MESPIRIT', 'anm_distortionr0101_a6_mespirit_1')
+	_TIME_WAIT(15, @SCWK_ANSWER)
+	_IFVAL_CALL(@SCWK_TEMP1, 'EQ', 67, 'ev_distortionr0101_a6_mespirit_uma_3a')
+	_IFVAL_CALL(@SCWK_TEMP1, 'EQ', 68, 'ev_distortionr0101_a6_mespirit_uma_3b')
+	_TIME_WAIT(30, @SCWK_ANSWER)
+	_CHARA_LOOK_RELEASE('HERO')
+	_IFVAL_CALL(@SCWK_TEMP1, 'EQ', 67, 'ev_distortionr0101_a6_mespirit_hero_2a')
+	_IFVAL_CALL(@SCWK_TEMP1, 'EQ', 68, 'ev_distortionr0101_a6_mespirit_hero_2b')
+	_IFVAL_CALL(@SCWK_TEMP1, 'EQ', 67, 'ev_distortionr0101_a6_mespirit_uma_3a_wait')
+	_IFVAL_CALL(@SCWK_TEMP1, 'EQ', 68, 'ev_distortionr0101_a6_mespirit_uma_3b_wait')
+	_UMA_IS_NULL(0, @SCWK_ANSWER)
+	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 0, 'ev_distortionr0101_uma_release')
+	_ATTACH_TRANSFORM('DISTORTIONR0101_A7_MESPIRIT', 'AREA_7_GEO/Island/A7_MESPIRIT', 0)
+	_EVENT_CAMERA_INDEX(600)
+	_OBJ_DEL('DISTORTIONR0101_A6_MESPIRIT')
+	_FLAG_SET(#3411); A6 Mespirit Cutscene complete
+	_LDVAL(@633, 2); A6 Mespirit
+	_EVENT_CAMERA_END_WAIT()
+	_EVENT_END()
+	_END()
+ev_distortionr0101_a6_mespirit_uma_2a:
+	_UMA_ANIME_PLAY(0, 'A6_MESPIRIT_2a')
+	_RET()
+ev_distortionr0101_a6_mespirit_uma_2b:
+	_UMA_ANIME_PLAY(0, 'A6_MESPIRIT_2b')
+	_RET()
+ev_distortionr0101_a6_mespirit_uma_3a:
+	_UMA_ANIME_PLAY(0, 'A6_MESPIRIT_3a')
+	_RET()
+ev_distortionr0101_a6_mespirit_uma_3b:
+	_UMA_ANIME_PLAY(0, 'A6_MESPIRIT_3b')
+	_RET()
+ev_distortionr0101_a6_mespirit_uma_3a_wait:
+	_UMA_PLAY_WAIT(0, 'A6_MESPIRIT_3a')
+	_RET()
+ev_distortionr0101_a6_mespirit_uma_3b_wait:
+	_UMA_PLAY_WAIT(0, 'A6_MESPIRIT_3b')
+	_RET()
+ev_distortionr0101_a6_mespirit_cam_3a:
+	_EVENT_CAMERA_INDEX(606)
+	_RET()
+ev_distortionr0101_a6_mespirit_cam_3b:
+	_EVENT_CAMERA_INDEX(607)
+	_RET()
+ev_distortionr0101_a6_mespirit_hero_2a:
+	_OBJ_ANIME('HERO', 'anm_distortionr0101_a6_mespirit_hero_2a')
+	_RET()
+ev_distortionr0101_a6_mespirit_hero_2b:
+	_OBJ_ANIME('HERO', 'anm_distortionr0101_a6_mespirit_hero_2b')
+	_RET()
+anm_distortionr0101_a6_mespirit_1:
+	_AC_ANIME_DURATION(0.333330)
+	_AC_INDEX_ANIME(1)
+	_AC_INDEX_ANIME_WAIT()
+	_AC_INDEX_ANIME(1)
+	_AC_INDEX_ANIME_WAIT()
+	_AC_INDEX_ANIME(1)
+	_AC_INDEX_ANIME_WAIT()
+	_AC_INDEX_ANIME(1)
+	_AC_INDEX_ANIME_WAIT()
+	_AC_INDEX_ANIME(1)
+	_ACMD_END()
+anm_distortionr0101_a6_mespirit_hero_1:
+	_AC_FACE_INDEX(5)
+	_AC_DIR_D(2)
+	_AC_WAIT(25)
+	_AC_INDEX_ANIME(3)
+	_AC_INDEX_ANIME_WAIT()
+	_ACMD_END()
+anm_distortionr0101_a6_mespirit_hero_2a:
+	_AC_FACE_INDEX(0)
+	_AC_WAIT(75)
+	_AC_DIR_VAL(2, 45)
+	_AC_WAIT(60)
+	_AC_NECK_ROTATE(0, 25, 0, 6)
+	_AC_WAIT(45)
+	_AC_NECK_ROTATE(0, 0, 0, 4)
+	_ACMD_END()
+anm_distortionr0101_a6_mespirit_hero_2b:
+	_AC_FACE_INDEX(0)
+	_AC_WAIT(137)
+	_AC_NECK_ROTATE(0, 25, 0, 6)
+	_AC_WAIT(45)
+	_AC_NECK_ROTATE(0, 0, 0, 4)
+	_ACMD_END()
+ev_distortionr0101_a6_mespirit_enable:
+	_LDVAL(@633, 1)
+	_RET()
+ev_distortionr0101_a6_mespirit_disable:
+	_LDVAL(@633, 0)
+	_RET()
+
+pos_distortionr0101_a6_azelf:
+	_EVENT_START()
+	_VOICE_PLAY(482, 0, 0)
+	_VOICE_WAIT()
+	_EVENT_CAMERA_INDEX(608)
+	_LOAD_UMA_ANIME('field/animeobj/distortionr0101_obj')
+	_LOAD_UMA_ANIME_WAIT()
+	_UMA_ANIME_ATTACH(0, 'DISTORTIONR0101_A6_AZELF')
+	_UMA_ANIME_PLAY(0, 'A6_AZELF_1')
+	_CHARA_LOOK_LOCK('HERO', 'DISTORTIONR0101_A6_AZELF')
+	_UMA_PLAY_WAIT(0, 'A6_AZELF_1')
+	_TIME_WAIT(30, @SCWK_ANSWER)
+	_OBJ_ANIME('DISTORTIONR0101_A6_AZELF', 'anm_distortionr0101_a6_azelf_1')
+	_OBJ_ANIME_WAIT()
+	_UMA_ANIME_PLAY(0, 'A6_AZELF_2')
+	_OBJ_ANIME('DISTORTIONR0101_A6_AZELF', 'anm_distortionr0101_a6_azelf_2')
+	_UMA_PLAY_WAIT(0, 'A6_AZELF_2')
+	_CHARA_LOOK_RELEASE('HERO')
+	_UMA_IS_NULL(0, @SCWK_ANSWER)
+	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 0, 'ev_distortionr0101_uma_release')
+	_ATTACH_TRANSFORM('DISTORTIONR0101_A7_AZELF', 'AREA_7_GEO/Island/A7_AZELF', 0)
+	_EVENT_CAMERA_INDEX(600)
+	_OBJ_DEL('DISTORTIONR0101_A6_AZELF')
+	_FLAG_SET(#3412); A6 Azelf Cutscene complete
+	_LDVAL(@634, 2); A6 Azelf
+	_EVENT_CAMERA_END_WAIT()
+	_EVENT_END()
+	_END()
+anm_distortionr0101_a6_azelf_1:
+	_AC_INDEX_ANIME(12)
+	_AC_INDEX_ANIME_WAIT()
+	_ACMD_END()
+anm_distortionr0101_a6_azelf_2:
+	_AC_ANIME_DURATION(0.333330)
+	_AC_INDEX_ANIME(2)
+	_AC_INDEX_ANIME_WAIT()
+	_AC_INDEX_ANIME(2)
+	_AC_INDEX_ANIME_WAIT()
+	_ACMD_END()
+ev_distortionr0101_a6_azelf_enable:
+	_LDVAL(@634, 1)
+	_RET()
+
+ev_distortionr0101_a6_giratina_enable:
+	_LDVAL(@622, 1)
+	_RET()
+ev_distortionr0101_a6_giratina_disable:
+	_LDVAL(@622, 0)
+	_RET()
+pos_distortionr0101_a6_giratina:
+	_EVENT_START()
+	_VOICE_PLAY(487, 0, 0)
+	_EVENT_ENTITY_CLIP_PLAY('A6_GIRATINA', 0)
+	_VOICE_WAIT()
+	_LDVAL(@622, 2); Prevents this scene from being re-enabled by the A4_A5 lift
+	_EVENT_END()
+	_END()
+ev_distortionr0101_a6_cam_adj_enable_right:; This is to enable the weird cam coming from the lift
+	_LDVAL(@629, 1)
+	_RET()
+ev_distortionr0101_a6_cam_adj_enable_left:; This is to enable the normal cam coming from the waterfall section
+	_LDVAL(@629, 2)
+	_RET()
+ev_distortionr0101_a6_cam_adj_disable:
+	_LDVAL(@629, 0)
+	_RET()
+ev_distortionr0101_a7_cynthia:
+	_TALK_OBJ_START()
+	_IF_FLAGON_JUMP(#3406, 'ev_distortionr0101_a7_cynthia_lift_1')
+	_IF_FLAGOFF_JUMP(#3414, 'ev_distortionr0101_a7_cynthia_unsolved')
+	_IF_FLAGOFF_JUMP(#3415, 'ev_distortionr0101_a7_cynthia_unsolved')
+	_IF_FLAGOFF_JUMP(#3416, 'ev_distortionr0101_a7_cynthia_unsolved')
+	_MACRO_TALKMSG('dialogue_distortionr0101', 'msg_distortionr0101_a7_cynthia', 'I guess the Pokémon of the lakes must have\ngone home.\rI understand they can keep balance against\neither Palkia or Dialga.\rDoes it mean they can’t do that with Giratina?\r...Oops.\nThis is no time for idle chitchat.')
+	_TALK_CLOSE()
+	_TIME_WAIT(10, @SCWK_ANSWER)
+	_SE_PLAY('PLAY_UI_COMMON_PM_ENCOUNT_CAVE')
+	_EVENT_ENTITY_CLIP_PLAY('A7_A8_LIFT_ENTITY', 1)
+	_EVENT_ENTITY_CLIP_WAIT('A7_A8_LIFT_ENTITY')
+	_TIME_WAIT(10, @SCWK_ANSWER)
+	_OBJ_ANIME('DISTORTIONR0101_A7_CYNTHIA', 'anm_distortionr0101_a7_cynthia_move_1')
+	_OBJ_ANIME_WAIT()
+	_LEDGE_JUMP('DISTORTIONR0101_A7_CYNTHIA', 3.0, 0.75, 0.0, 0.7)
+	_TIME_WAIT(5, @SCWK_ANSWER)
+	_OBJ_ANIME('DISTORTIONR0101_A7_CYNTHIA', 'anm_distortionr0101_a7_cynthia_move_2')
+	_OBJ_ANIME_WAIT()
+	_CALL('ev_distortionr0101_a7_cynthia_solved')
+	_FLAG_SET(#3406); A7 Cynthia got out of the way
+	_FLAG_RESET(#2940); Distortion World A8 Cyrus
+	_OBJ_ADD('DISTORTIONR0101_A8_CYRUS')
+	_ATTACH_TRANSFORM('DISTORTIONR0101_A8_CYRUS', 'AREA_8_GEO/Island_4/A8_CYRUS', 0)
+	_TALK_OBJ_END()
+	_END()
+ev_distortionr0101_a7_cynthia_unsolved:
+	_MACRO_TALKMSG('dialogue_distortionr0101', 'msg_distortionr0101_a7_cynthia_unsolved', 'This place...\nIt seems to be a giant puzzle.\rMaybe Giratina wants to test those that visit\nhere?\rIt appears as if we can’t go on unless we solve\nthe puzzle.\rThere were some boulders that could be\nmoved...\rAnd there are several odd pits on the floor...\rThe Pokémon of the lakes seem eager to show\nus something...')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_distortionr0101_a7_cynthia_lift_1:
+	_MACRO_TALKMSG('dialogue_distortionr0101', 'msg_distortionr0101_a7_cynthia_lift_1', 'Call it a Trainer’s intuition, but we’re getting\nclose.\rLet’s go on!')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_distortionr0101_a7_cynthia_lift_2:
+	_TIME_WAIT(30, @SCWK_ANSWER)
+	_OBJ_ANIME('HERO', 'anm_distortionr0101_face_up_fast')
+	_OBJ_ANIME('DISTORTIONR0101_A7_CYNTHIA', 'anm_distortionr0101_face_up_fast')
+	_OBJ_ANIME_WAIT()
+	_TIME_WAIT(30, @SCWK_ANSWER)
+	_MACRO_TALKMSG('dialogue_distortionr0101', 'msg_distortionr0101_a7_cynthia_lift_2', 'This is it...\nGiratina is up ahead.')
+	_TALK_CLOSE()
+	_OBJ_ANIME('DISTORTIONR0101_A7_CYNTHIA', 'anm_distortionr0101_a7_cynthia_move_3')
+	_OBJ_ANIME_WAIT()
+	_LEDGE_JUMP('DISTORTIONR0101_A7_CYNTHIA', 3.0, 0.75, 0.0, 0.7)
+	_TIME_WAIT(5, @SCWK_ANSWER)
+	_OBJ_ANIME('DISTORTIONR0101_A7_CYNTHIA', 'anm_distortionr0101_a7_cynthia_move_4')
+	_OBJ_ANIME_WAIT()
+	_FLAG_SET(#2939); Distortion World A7 Cynthia
+	_FLAG_RESET(#2941); Distortion World A8 Cynthia
+	_OBJ_DEL('DISTORTIONR0101_A7_CYNTHIA')
+	_OBJ_ADD('DISTORTIONR0101_A8_CYNTHIA')
+	_ATTACH_TRANSFORM('DISTORTIONR0101_A8_CYNTHIA', 'AREA_8_GEO/Island_4/A8_CYNTHIA', 0)
+	_RET()
+ev_distortionr0101_a7_cynthia_lift_attach:
+	_ATTACH_TRANSFORM('DISTORTIONR0101_A7_CYNTHIA', 'AREA_LIFTS/A7_A8_LIFT', 1)
+	_RET()
+
+ev_distortionr0101_a8_cynthia_cyrus_enable:
+	_LDVAL(@623, 1)
+	_RET()
+ev_distortionr0101_a8_cynthia_cyrus_disable:
+	_LDVAL(@623, 0)
+	_RET()
+pos_distortionr0101_a8_cynthia_cyrus:
+	_EVENT_START()
+	_MACRO_TALKMSG('dialogue_distortionr0101', 'msg_distortionr0101_a8_cynthia_1', '...So, you were already here.')
+	_TALK_CLOSE()
+	_OBJ_ANIME('DISTORTIONR0101_A8_CYRUS', 'anm_distortionr0101_a8_cyrus_move_1')
+	_OBJ_ANIME('DISTORTIONR0101_A8_CYNTHIA', 'anm_distortionr0101_a8_cynthia_move_1')
+	_OBJ_ANIME_WAIT()
+	_MACRO_TALKMSG('dialogue_distortionr0101', 'msg_distortionr0101_a8_cynthia_2', 'Why do you seek to change the world?\rIf you hate our world, you should just go off\nsomewhere alone.\rFind somewhere where you can live without\nseeing others.')
+	_MACRO_TALKMSG('dialogue_distortionr0101', 'msg_distortionr0101_a8_cyrus_1', 'Why should I run and hide from the world and\nhave to wait quietly?\rMy aim is to rid our world of the vague and\nincomplete thing we call spirit.\rBy freeing ourselves of that, our world can be\nmade complete.\rThat is my justice!\nNo one can interfere!')
+	_TALK_CLOSE()
+	_FLAG_SET(#3408); A8 Cyrus and Cynthia cutscene completed and they have moved
+	_LDVAL(@623, 2); Prevents this scene from being re-enabled by the A7_A8 lift
+	_EVENT_END()
+	_END()
+
+ev_distortionr0101_a8_cynthia:
+	_TALK_START()
+	_IF_FLAGON_JUMP(#3421, 'ev_distortionr0101_a8_cynthia_post_battle')
+	_MACRO_TALKMSG('dialogue_distortionr0101', 'msg_distortionr0101_a8_cynthia_3', 'But...\nThat’s no justice at all!')
+	_TALK_CLOSE()
+	_TALK_END()
+	_END()
+
+ev_distortionr0101_a8_cynthia_post_battle:
+	_MACRO_TALKMSG('dialogue_distortionr0101', 'msg_distortionr0101_a8_cynthia_post_battle', 'I know that the bond you share with your\nPokémon is strong!')
+	_TALK_CLOSE()
+	_TALK_END()
+	_END()
+
+ev_distortionr0101_a8_cyrus:
+	_TALK_OBJ_START()
+	_MACRO_TALKMSG('dialogue_distortionr0101', 'msg_distortionr0101_a8_cyrus_2', 'I won’t lose!\rNot to that shadowy Pokémon!\nNot in any worthless world!')
+	_TALK_CLOSE()
+	_CALL('ev_distortionr0101_randomteam_cyrus')
+	_CALL('ev_set_trainer_id_for_current_gamemode_scripted_battle')
+	_TRAINER_BTL_SET(@SCWK_TEMP3, 0)
+	_JUMP('ev_distortionr0101_a8_cyrus_post_battle')
+
+ev_distortionr0101_a8_cyrus_post_battle:
+	_CALL('ev_distortionr0101_worldstate_attach_jumps')
+	_ATTACH_TRANSFORM('DISTORTIONR0101_JUMP_A8_80_83', 'Dummy', 0)
+	_ATTACH_TRANSFORM('DISTORTIONR0101_JUMP_A8_80_82', 'Dummy', 0)
+	_SXY_POS_CHANGE('HERO', 73, 75)
+	_SXY_DIR_CHANGE('HERO', 180)
+	_OBJ_POS_CHANGE_WORLD('DISTORTIONR0101_A8_CYRUS', 73, -159, 74)
+	_OBJ_DIR_CHANGE('DISTORTIONR0101_A8_CYRUS', 0)
+	_OBJ_POS_CHANGE_WORLD('DISTORTIONR0101_A8_CYNTHIA', 72, -159, 74)
+	_OBJ_DIR_CHANGE('DISTORTIONR0101_A8_CYNTHIA', 270)
+	_MACRO_TALKMSG('dialogue_distortionr0101', 'msg_distortionr0101_a8_cyrus_3', '...Don’t think that you can defeat or capture\nthat Pokémon.\rThis bizarre world is none other than that\nPokémon itself!\rCapturing it or defeating it will make this world\ndisappear!\rVery well!\nDo what you will!\rRather than repairing the world, you’re going\nto destroy it for me!\rDo it.\nYou inherit my legacy.')
+	_TALK_CLOSE()
+	_OBJ_ANIME('HERO', 'anm_distortionr0101_a8_hero_move_1')
+	_OBJ_ANIME('DISTORTIONR0101_A8_CYRUS', 'anm_distortionr0101_a8_cyrus_move_2')
+	_OBJ_ANIME('DISTORTIONR0101_A8_CYNTHIA', 'anm_distortionr0101_a8_cynthia_move_2')
+	_OBJ_ANIME_WAIT()
+	_OBJ_DEL('DISTORTIONR0101_A8_CYRUS')
+	_ATTACH_TRANSFORM('DISTORTIONR0101_JUMP_A8_80_83', 'Dummy', 0)
+	_ATTACH_TRANSFORM('DISTORTIONR0101_JUMP_A8_80_82', 'Dummy', 0)
+	_ATTACH_TRANSFORM('DISTORTIONR0101_WALL', 'AREA_8_GEO/Island_4/A8_WALL', 0)
+	_OBJ_ANIME('DISTORTIONR0101_A8_CYNTHIA', 'anm_distortionr0101_a8_cynthia_move_3')
+	_OBJ_ANIME_WAIT()
+	_MACRO_TALKMSG('dialogue_distortionr0101', 'msg_distortionr0101_a8_cynthia_4', 'Don’t believe his lies.')
+	_OBJ_ANIME('HERO', 'anm_distortionr0101_face_up_fast')
+	_MACRO_TALKMSG('dialogue_distortionr0101', 'msg_distortionr0101_a8_cynthia_5', 'It’s not possible that a Pokémon can make the\nworld disappear.\rThe world awaited your birth.\nNot only yours, either.')
+	_SET_FORCE_BLINK('DISTORTIONR0101_A8_CYNTHIA', 1)
+	_MACRO_TALKMSG('dialogue_distortionr0101', 'msg_distortionr0101_a8_cynthia_6', 'The Pokémon with you.\nThe people close to you.\rAll the Pokémon and people were born\nbecause they have a part in the world.\rI’m convinced of that.')
+	_SET_FORCE_BLINK('DISTORTIONR0101_A8_CYNTHIA', 0)
+	_MACRO_TALKMSG('dialogue_distortionr0101', 'msg_distortionr0101_a8_cynthia_7', 'Giratina won’t go out of existence.\nThis Distortion World won’t disappear.\fOur world won’t disappear, either.\rLet’s go meet Giratina.')
+	_OBJ_ANIME('DISTORTIONR0101_A8_CYNTHIA', 'anm_distortionr0101_a8_cynthia_face_1')
+	_OBJ_ANIME_WAIT()
+	_MACRO_TALKMSG('dialogue_distortionr0101', 'msg_distortionr0101_a8_cynthia_8', '...Oops. I should do something about your\nhardworking Pokémon first.')
+	_OBJ_ANIME('DISTORTIONR0101_A8_CYNTHIA', 'anm_distortionr0101_a8_cynthia_face_2')
+	_OBJ_ANIME_WAIT()
+	_PLAYER_NAME(0)
+	_MACRO_TALKMSG('dialogue_distortionr0101', 'msg_distortionr0101_a8_heal', 'Cynthia fully healed {0}’s\nPokémon.')
+	_SE_PLAY('M_FI002')
+	_ME_WAIT()
+	_PC_KAIFUKU()
+	_MACRO_TALKMSG('dialogue_distortionr0101', 'msg_distortionr0101_a8_cynthia_9', 'Now let’s go meet Giratina!')
+	_TALK_CLOSE()
+	_OBJ_ANIME('HERO', 'anm_distortionr0101_a8_hero_move_2')
+	_OBJ_ANIME('DISTORTIONR0101_A8_CYNTHIA', 'anm_distortionr0101_a8_cynthia_move_4')
+	_OBJ_ANIME_WAIT()
+	_MACRO_TALKMSG('dialogue_distortionr0101', 'msg_distortionr0101_a8_cynthia_10', 'Giratina is enraged because the two worlds are\nendangered.\rIt has merged the Distortion World and our\nworld at the Spear Pillar.\rThat’s why both worlds are becoming\ndistorted.\rBut there’s nothing to fear.\rIf you can defeat Giratina and show it the\nstrong bond you share with your Pokémon,\fI am sure it will understand once it sees your\fsynchronicity.\rThe distortion of the two worlds will stop!')
+	_TALK_CLOSE()
+	_GAMEOBJECT_MOVE('AREA_LIFTS/A7_A8_LIFT', 0, 31, 0, 0)
+	_LDVAL(@620, 2); Area 7 Lift is up. Player is in Area 8.
+	_FLAG_SET(#3421); Cyrus has been defeated in the Distortion World
+	_FLAG_SET(#2940); Distortion World A8 Cyrus
+	_TALK_OBJ_END()
+	_END()
+
+pos_distortionr0101_a8_giratina_sequence_0:
+	_EVENT_START()
+	_BLACK_OUT('SCR_WIPE_DIV', 3)
+	_FADE_WAIT()
+	_ATTACH_TRANSFORM('DWSkyBox', 'DISTORTIONR0101(Clone)', 1)
+	_FIND_BG_ENABLE(0, 'DWSkyBox/CloudStormNormal')
+	_FIND_BG_DISABLE(0, 'DWSkyBox/CloudStormFast')
+	_ATTACH_TRANSFORM('DWSkyBox', 'Main Camera', 1)
+	_BLACK_IN('SCR_WIPE_DIV', 3)
+	_LDVAL(@635, 1)
+	_LDVAL(@637, 0)
+	_IF_FLAGOFF_CALL(#3418, 'pos_distortionr0101_a8_giratina_sequence_0_1')
+	_EVENT_END()
+	_END()
+pos_distortionr0101_a8_giratina_sequence_0_1:
+	_LDVAL(@636, 0)
+	_RET()
+pos_distortionr0101_a8_giratina_sequence_1:
+	_EVENT_START()
+	_BLACK_OUT('SCR_WIPE_DIV', 6)
+	_FADE_WAIT()
+	_ATTACH_TRANSFORM('DWSkyBox', 'DISTORTIONR0101(Clone)', 1)
+	_FIND_BG_DISABLE(0, 'DWSkyBox/CloudStormNormal')
+	_FIND_BG_ENABLE(0, 'DWSkyBox/CloudStormFast')
+	_ATTACH_TRANSFORM('DWSkyBox', 'Main Camera', 1)
+	_BLACK_IN('SCR_WIPE_DIV', 6)
+	_LDVAL(@635, 2)
+	_LDVAL(@637, 1); A8 Fast Clouds
+	_IF_FLAGOFF_CALL(#3418, 'pos_distortionr0101_a8_giratina_sequence_1_1')
+	_EVENT_END()
+	_END()
+pos_distortionr0101_a8_giratina_sequence_1_1:
+	_LDVAL(@636, 1); A8 Giratina Cutscene 1
+	_RET()
+pos_distortionr0101_a8_giratina_sequence_2:
+	_EVENT_START()
+	_VOICE_PLAY(487, 0, 0); Giratina scream
+	_VOICE_WAIT()
+	_EVENT_ENTITY_CLIP_PLAY('A8_GIRATINA_1', 0)
+	_EVENT_ENTITY_CLIP_WAIT('A8_GIRATINA_1')
+	_LDVAL(@636, 2)
+	_FLAG_SET(#3418); A8 Giratina Sequence 2 complete
+	_EVENT_END()
+	_END()
+pos_distortionr0101_a8_giratina_sequence_3_0:
+	_EVENT_START()
+	_SET_CAMERA_OFFSET_ANGLE(20, 0, 0, 30); Camera set normal
+	_LDVAL(@635, 2)
+	_EVENT_END()
+	_END()
+pos_distortionr0101_a8_giratina_sequence_3_1:
+	_EVENT_START()
+	_SET_CAMERA_OFFSET_ANGLE(-20, 0, 0, 30); Camera set low
+	_IF_FLAGOFF_CALL(#3419, 'ev_distortionr0101_a8_platforms')
+	_LDVAL(@635, 3)
+	_EVENT_END()
+	_END()
+ev_distortionr0101_a8_platforms:
+	_TIME_WAIT(20, @SCWK_ANSWER)
+	_SE_PLAY('PLAY_UI_COMMON_PM_ENCOUNT_CAVE')
+	_EVENT_ENTITY_CLIP_PLAY('A8_PLATFORM_1', 1)
+	_EVENT_ENTITY_CLIP_WAIT('A8_PLATFORM_1')
+	_TIME_WAIT(20, @SCWK_ANSWER)
+	_SE_PLAY('PLAY_UI_COMMON_PM_ENCOUNT_CAVE')
+	_EVENT_ENTITY_CLIP_PLAY('A8_PLATFORM_2', 1)
+	_EVENT_ENTITY_CLIP_WAIT('A8_PLATFORM_2')
+	_TIME_WAIT(20, @SCWK_ANSWER)
+	_SE_PLAY('PLAY_UI_COMMON_PM_ENCOUNT_CAVE')
+	_EVENT_ENTITY_CLIP_PLAY('A8_PLATFORM_3', 1)
+	_EVENT_ENTITY_CLIP_WAIT('A8_PLATFORM_3')
+	_TIME_WAIT(20, @SCWK_ANSWER)
+	_FLAG_SET(#3419); A8 Platforms have appeared
+	_RET()
+
+ev_distortionr0101_jump_a8_giratina_sequence_4:
+	_EVENT_START()
+	_TURN_HERO_TALK_OBJ()
+	_CALL('ev_distortionr0101_jump_a8_giratina_sequence_4_up')
+	_TALK_END()
+	_END()
+ev_distortionr0101_jump_a8_giratina_sequence_4_up:
+	_OBJ_ANIME('HERO', 'anm_player_face_for_jump_up')
+	_OBJ_ANIME_WAIT()
+	_LEDGE_JUMP('HERO', 3.0, 0.75, 0.0, 0.7)
+	_IF_FLAGOFF_JUMP(#3420, 'ev_distortionr0101_jump_a8_giratina_sequence_4_scene')
+	_EVENT_END()
+	_END()
+ev_distortionr0101_jump_a8_giratina_sequence_4_scene:
+	_SE_PLAY('PLAY_PM_COMMON_WHOOSH_L')
+	_EVENT_ENTITY_CLIP_PLAY('A8_GIRATINA_2', 0)
+	_EVENT_ENTITY_CLIP_WAIT('A8_GIRATINA_2')
+	_FLAG_SET(#3420); A8 Giratina Sequence 4 complete
+	_EVENT_END()
+	_END()
+
+ev_distortionr0101_jump_a8_giratina_sequence_5:
+	_EVENT_START()
+	_TURN_HERO_TALK_OBJ()
+	_CALL('ev_distortionr0101_jump_a8_giratina_sequence_5_up')
+	_TALK_END()
+	_END()
+ev_distortionr0101_jump_a8_giratina_sequence_5_up:
+	_OBJ_ANIME('HERO', 'anm_player_face_for_jump_up')
+	_OBJ_ANIME_WAIT()
+	_LEDGE_JUMP('HERO', 3.0, 0.75, 0.0, 0.7)
+	_IF_FLAGOFF_JUMP(#3422, 'ev_distortionr0101_jump_a8_giratina_sequence_5_scene')
+	_EVENT_END()
+	_END()
+ev_distortionr0101_jump_a8_giratina_sequence_5_scene:
+	_BLACK_OUT('SCR_WIPE_DIV', 3)
+	_FADE_WAIT()
+	_ATTACH_TRANSFORM('DWSkyBox', 'DISTORTIONR0101(Clone)', 1)
+	_FIND_BG_DISABLE(0, 'DWSkyBox/CloudStormFast')
+	_FIND_BG_ENABLE(0, 'DWSkyBox/CloudStormReverse')
+	_ATTACH_TRANSFORM('DWSkyBox', 'Main Camera', 1)
+	_SET_LIGHTINTENSITY_POKE(80, 0.4)
+	_BLACK_IN('SCR_WIPE_DIV', 3)
+	_EVENT_ENTITY_CLIP_PLAY('A8_GIRATINA_3', 0)
+	_EVENT_ENTITY_CLIP_WAIT('A8_GIRATINA_3')
+	_EVENT_ENTITY_CLIP_PLAY('A8_GIRATINA_3', 1)
+	_PLAYER_NAME(0)
+	_MACRO_TALKMSG('dialogue_distortionr0101', 'msg_distortionr0101_jump_a8_giratina_sequence_4_scene', 'Giratina is quietly eyeing {0}...')
+	_TALK_CLOSE()
+	_ATTACH_TRANSFORM('DISTORTIONR0101_A8_GIRATINA', 'AREA_8_GEO/A8_GIRATINA_FIGHT', 0)
+	_FLAG_SET(#3422); A8 Giratina Sequence 5 complete
+	_LDVAL(@637, 2)
+	_EVENT_END()
+	_END()
+
+ev_distortionr0101_giratina_battle:
+	_TALK_START()
+	_VOICE_PLAY(487, 1, 0); Giratina scream
+	_MACRO_TALKMSG('dialogue_distortionr0101', 'msg_d34r0110_giartina_02', 'Giygogagohgwooh!')
+	_VOICE_WAIT()
+	_TALK_CLOSE()
+	_SP_WILD_BTL_SET_EXTRA(487, 1, 100, 3, 0, -1, -1, -1, -1, 1)
+	_JUMP('ev_distortionr0101_post_giratina_battle')
+ev_distortionr0101_post_giratina_battle:
+	_SET_LIGHTINTENSITY_POKE(0, 1)
+	_FLAG_SET(#3423); Distortion World Giratina Defeated
+	_OBJ_DEL('DISTORTIONR0101_A8_GIRATINA')
+	_EVENT_ENTITY_CLIP_PLAY('A8_GIRATINA_3', 2)
+	_ATTACH_TRANSFORM('DWSkyBox', 'DISTORTIONR0101(Clone)', 1)
+	_FIND_BG_DISABLE(0, 'DWSkyBox/CloudStormReverse')
+	_FIND_BG_ENABLE(0, 'DWSkyBox/CloudStormNormal')
+	_ATTACH_TRANSFORM('DWSkyBox', 'Main Camera', 1)
+	_ATTACH_TRANSFORM('DISTORTIONR0101_A8_PORTAL', 'AREA_8_GEO/A8_GIRATINA_FIGHT', 0)
+	_CALL('ev_distortionr0101_worldstate_attach_jumps')
+	_ATTACH_TRANSFORM('DISTORTIONR0101_JUMP_A8_84_47', 'Dummy', 0)
+	_ATTACH_TRANSFORM('DISTORTIONR0101_WALL', 'AREA_8_GEO/Island_4/A8_WALL_MOVE', 0)
+	_ATTACH_TRANSFORM('DISTORTIONR0101_A8_CYNTHIA', 'AREA_8_GEO/Island_4/A8_CYNTHIA', 0)
+	_TIME_WAIT(2, @SCWK_ANSWER)
+	_OBJ_ANIME('DISTORTIONR0101_A8_CYNTHIA', 'anm_distortionr0101_setup_cutscene')
+	_OBJ_ANIME_WAIT()
+	_LDVAL(@635, 1)
+	_LDVAL(@637, 0)
+	_LDVAL(@489, 2); TODO Use a different work for Cynthia's talking in Sendoff Spring. This is also used for the E4 Aaron fight in Hearthome
+	_JUMP('ev_distortionr0101_ending_scene')
+ev_distortionr0101_ending_scene:
+	_LEDGE_JUMP('DISTORTIONR0101_A8_CYNTHIA', 3.0, 0.75, 0.0, 0.7)
+	_TIME_WAIT(5, @SCWK_ANSWER)
+	_LEDGE_JUMP('DISTORTIONR0101_A8_CYNTHIA', 3.0, 0.75, 0.0, 0.7)
+	_TIME_WAIT(5, @SCWK_ANSWER)
+	_OBJ_ADD('DISTORTIONR0101_A8_CYRUS')
+	_ATTACH_TRANSFORM('DISTORTIONR0101_A8_CYRUS', 'AREA_8_GEO/Island_4/A8_CYRUS', 0)
+	_TIME_WAIT(2, @SCWK_ANSWER)
+	_ENTITY_MOVE('DISTORTIONR0101_A8_CYRUS', 0, -1, 0, 1); Cyrus gets loaded in at the wrong height for *some reason* so we need to move him down like this. More traditional methods of ensuring correct height all failed.
+	_OBJ_ANIME('DISTORTIONR0101_A8_CYRUS', 'anm_distortionr0101_setup_cutscene')
+	_OBJ_ANIME_WAIT()
+	_MACRO_TALKMSG('dialogue_distortionr0101', 'msg_distortionr0101_ending_scene_cynthia_1', 'Giratina seems to have understood us!')
+	_MACRO_TALKMSG('dialogue_distortionr0101', 'msg_distortionr0101_ending_scene_cyrus_1', 'That Pokémon...\rThat shadowy Pokémon was defeated?!')
+	_TALK_CLOSE()
+	_DUMMY_SET_POS_HERO()
+	_CAMERA_TARGET_DUMMY()
+	_DUMMY_ANIME('anm_distortionr0101_ending_scene_cam_1')
+	_OBJ_ANIME('HERO', 'anm_player_face_for_jump_down')
+	_OBJ_ANIME('DISTORTIONR0101_A8_CYNTHIA', 'anm_player_face_for_jump_down')
+	_OBJ_ANIME_WAIT()
+	_LEDGE_JUMP('DISTORTIONR0101_A8_CYRUS', 3.0, 0.75, 0.0, 0.7)
+	_DUMMY_ANIME_WAIT()
+	_OBJ_ANIME_WAIT()
+	_MACRO_TALKMSG('dialogue_distortionr0101', 'msg_distortionr0101_ending_scene_cyrus_2', 'Your doing so means this irrational world will\nremain in existence!\rDoes that make it impossible for me to create\na new world?\rEven if I made new Red Chains, the new world\ncan’t be made!\rWhy?! What compels you to protect the two\nworlds?\rIs spirit, a vague and incomplete thing, so\nimportant to you?!')
+	_MACRO_TALKMSG('dialogue_distortionr0101', 'msg_distortionr0101_ending_scene_cynthia_2', '...The places we are born.\rThe time we spend living...\rThe languages we speak...\rWe are all different.\nBut the presence of Pokémon unites us.\rWe share our lives with our Pokémon, and our\nhappiness grows as we all become greater\fthan we were alone.\rThat is why we can battle and trade with\nanyone we choose...')
+	_MACRO_TALKMSG('dialogue_distortionr0101', 'msg_distortionr0101_ending_scene_cyrus_3', '<size=250%>Silence!</size>\rEnough of your blathering!\rThat’s how you justify spirit as something\nworthwhile?!\rThat is merely humans hoping, deluding\nthemselves that they are happy and safe!\rThe emotions roiling inside me...\nRage, hatred, frustration...\rThese ugly emotions arise because of my own\nincomplete spirit!\r...Enough.\nWe will never see eye to eye.\rThis, I promise you.\nI will break the secrets of the world.\rWith that knowledge, I will create my complete\nand perfect world.\rOne day, you will awaken to a world of my\ncreation.\rA world without spirit.')
+	_TALK_CLOSE()
+	_OBJ_ANIME('DISTORTIONR0101_A8_CYRUS', 'anm_player_face_for_jump_down')
+	_OBJ_ANIME_WAIT()
+	_LEDGE_JUMP('DISTORTIONR0101_A8_CYRUS', 3.0, 0.75, 0.0, 0.7)
+	_OBJ_ANIME('DISTORTIONR0101_A8_CYRUS', 'anm_distortionr0101_ending_scene_cyrus')
+	_OBJ_ANIME_WAIT()
+	_OBJ_INVISIBLE('DISTORTIONR0101_A8_CYRUS')
+	_DUMMY_ANIME('anm_distortionr0101_ending_scene_cam_2')
+	_DUMMY_ANIME_WAIT()
+	_CAMERA_TARGET_HERO()
+	_MACRO_TALKMSG('dialogue_distortionr0101', 'msg_distortionr0101_ending_scene_cynthia_3', '...\n...\rSince there is sadness, we can feel joy.\rWhen there is anger, compassion is born...')
+	_TALK_CLOSE()
+	_OBJ_ANIME('DISTORTIONR0101_A8_CYNTHIA', 'anm_distortionr0101_face_up_fast')
+	_OBJ_ANIME_WAIT()
+	_MACRO_TALKMSG('dialogue_distortionr0101', 'msg_distortionr0101_ending_scene_cynthia_4', 'Let’s go back home.\rThe portal where Giratina was should lead\nback to our world.\rGiratina was written in legend as being on the\nother side of our world.\rIt stands to reason that it has a link to the\nother side.')
+	_TALK_CLOSE()
+	_TALK_END()
+	_END()
+
+anm_distortionr0101_ending_scene_cam_1:
+	_AC_DOWN(3, 12)
+	_ACMD_END()
+anm_distortionr0101_ending_scene_cam_2:
+	_AC_UP(3, 12)
+	_ACMD_END()
+anm_distortionr0101_setup_cutscene:; For some reason this is the only way I could get Cynthia and Cyrus into position correctly
+	_AC_WORLD_X(77, 1)
+	_AC_WORLD_Z(56, 1)
+	_AC_DIR_U(2)
+	_AC_UP(1, 4)
+	_AC_WAIT(2)
+	_ACMD_END()
+anm_distortionr0101_ending_scene_cyrus:
+	_AC_DOWN(3, 8)
+	_ACMD_END()
+
+ev_distortionr0101_randomteam_cyrus:
+	_GET_RND(@SCWK_ANSWER, 4)
+	_LDVAL(@SCWK_TEMP3, 887)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_common_return')
+	_LDVAL(@SCWK_TEMP3, 888)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_common_return')
+	_LDVAL(@SCWK_TEMP3, 889)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 2, 'ev_common_return')
+	_LDVAL(@SCWK_TEMP3, 890)
+	_RET()
+
+ev_distortionr0101_a2_jump_1_1:
+	_EVENT_START()
+	_TURN_HERO_TALK_OBJ()
+	_OBJ_ANIME('HERO', 'anm_player_face_for_jump_left')
+	_OBJ_ANIME_WAIT()
+	_JUMP_AND_ROTATE('DISTORTIONR0101(Clone)', 0, 0, -90, 5, 55, 138, 30, 'LOCATORS/Locator_ (1)', 3.0, 0.75, 0.0)
+	_LDVAL(@630, 2)
+	_EVENT_END()
+	_END()
+ev_distortionr0101_a2_jump_1_2:
+	_EVENT_START()
+	_TURN_HERO_TALK_OBJ()
+	_OBJ_ANIME('HERO', 'anm_player_face_for_jump_right')
+	_OBJ_ANIME_WAIT()
+	_JUMP_AND_ROTATE('DISTORTIONR0101(Clone)', 0, 0, 90, -5, -55, -138, 30, 'LOCATORS/Locator_ (1)', 3.0, 0.75, 0.0)
+	_LDVAL(@630, 1)
+	_EVENT_END()
+	_END()
+ev_distortionr0101_a2_jump_2_1:
+	_EVENT_START()
+	_TURN_HERO_TALK_OBJ()
+	_OBJ_ANIME('HERO', 'anm_player_face_for_jump_left')
+	_OBJ_ANIME_WAIT()
+	_JUMP_AND_ROTATE('DISTORTIONR0101(Clone)', 0, 0, -90, 5, 55, 138, 30, 'LOCATORS/Locator_ (2)', 3.0, 0.75, 0.0)
+	_LDVAL(@630, 2)
+	_EVENT_END()
+	_END()
+ev_distortionr0101_a2_jump_2_2:
+	_EVENT_START()
+	_TURN_HERO_TALK_OBJ()
+	_OBJ_ANIME('HERO', 'anm_player_face_for_jump_right')
+	_OBJ_ANIME_WAIT()
+	_JUMP_AND_ROTATE('DISTORTIONR0101(Clone)', 0, 0, 90, -5, -55, -138, 30, 'LOCATORS/Locator_ (2)', 3.0, 0.75, 0.0)
+	_LDVAL(@630, 3)
+	_EVENT_END()
+	_END()
+
+ev_distortionr0101_a3_jump_1_1:
+	_EVENT_START()
+	_TURN_HERO_TALK_OBJ()
+	_OBJ_ANIME('HERO', 'anm_player_face_for_jump_left')
+	_OBJ_ANIME_WAIT()
+	_JUMP_AND_ROTATE('DISTORTIONR0101(Clone)', 0, 0, -90, 5, 55, 138, 30, 'LOCATORS/Locator_ (3)', 3.0, 0.75, 0.0)
+	_LDVAL(@630, 5)
+	_EVENT_END()
+	_END()
+ev_distortionr0101_a3_jump_1_2:
+	_EVENT_START()
+	_TURN_HERO_TALK_OBJ()
+	_OBJ_ANIME('HERO', 'anm_player_face_for_jump_right')
+	_OBJ_ANIME_WAIT()
+	_JUMP_AND_ROTATE('DISTORTIONR0101(Clone)', 0, 0, 90, -5, -55, -138, 30, 'LOCATORS/Locator_ (3)', 3.0, 0.75, 0.0)
+	_LDVAL(@630, 4)
+	_EVENT_END()
+	_END()
+ev_distortionr0101_a3_jump_2_1:
+	_EVENT_START()
+	_TURN_HERO_TALK_OBJ()
+	_OBJ_ANIME('HERO', 'anm_player_face_for_jump_left')
+	_OBJ_ANIME_WAIT()
+	_JUMP_AND_ROTATE('DISTORTIONR0101(Clone)', 0, 0, -90, 5, 55, 138, 30, 'LOCATORS/Locator_ (4)', 3.0, 0.75, 0.0)
+	_LDVAL(@630, 5)
+	_EVENT_END()
+	_END()
+ev_distortionr0101_a3_jump_2_2:
+	_EVENT_START()
+	_TURN_HERO_TALK_OBJ()
+	_OBJ_ANIME('HERO', 'anm_player_face_for_jump_right')
+	_OBJ_ANIME_WAIT()
+	_JUMP_AND_ROTATE('DISTORTIONR0101(Clone)', 0, 0, 90, -5, -55, -138, 30, 'LOCATORS/Locator_ (4)', 3.0, 0.75, 0.0)
+	_LDVAL(@630, 6)
+	_EVENT_END()
+	_END()
+
+ev_distortionr0101_a4_jump_1_1:
+	_EVENT_START()
+	_TURN_HERO_TALK_OBJ()
+	_OBJ_ANIME('HERO', 'anm_player_face_for_jump_left')
+	_OBJ_ANIME_WAIT()
+	_JUMP_AND_ROTATE('DISTORTIONR0101(Clone)', 0, 0, -90, 5, 55, 138, 30, 'LOCATORS/Locator_ (6)', 3.0, 0.75, 0.0)
+	_LDVAL(@630, 8)
+	_EVENT_END()
+	_END()
+ev_distortionr0101_a4_jump_1_2:
+	_EVENT_START()
+	_TURN_HERO_TALK_OBJ()
+	_OBJ_ANIME('HERO', 'anm_player_face_for_jump_right')
+	_OBJ_ANIME_WAIT()
+	_JUMP_AND_ROTATE('DISTORTIONR0101(Clone)', 0, 0, 90, -5, -55, -138, 30, 'LOCATORS/Locator_ (6)', 3.0, 0.75, 0.0)
+	_LDVAL(@630, 7)
+	_EVENT_END()
+	_END()
+ev_distortionr0101_a4_jump_2_1:
+	_EVENT_START()
+	_TURN_HERO_TALK_OBJ()
+	_OBJ_ANIME('HERO', 'anm_player_face_for_jump_left')
+	_OBJ_ANIME_WAIT()
+	_JUMP_AND_ROTATE('DISTORTIONR0101(Clone)', 0, 0, -90, 5, 55, 138, 30, 'LOCATORS/Locator_ (5)', 3.0, 0.75, 0.0)
+	_LDVAL(@630, 8)
+	_EVENT_END()
+	_END()
+ev_distortionr0101_a4_jump_2_2:
+	_EVENT_START()
+	_TURN_HERO_TALK_OBJ()
+	_OBJ_ANIME('HERO', 'anm_player_face_for_jump_right')
+	_OBJ_ANIME_WAIT()
+	_JUMP_AND_ROTATE('DISTORTIONR0101(Clone)', 0, 0, 90, -5, -55, -138, 30, 'LOCATORS/Locator_ (5)', 3.0, 0.75, 0.0)
+	_LDVAL(@630, 7)
+	_EVENT_END()
+	_END()
+
+pos_distortionr0101_a5_cam_adj_1_1:; This is the weird cam
+	_EVENT_START()
+	_SET_CAMERA_OFFSET_ANGLE(-27, 52, 0); 0 frames makes it the most natural
+	_LDVAL(@629, 2)
+	_EVENT_END()
+	_END()
+pos_distortionr0101_a5_cam_adj_1_2:; This is the normal cam
+	_EVENT_START()
+	_SET_CAMERA_OFFSET_ANGLE(27, -52, 0); 0 frames makes it the most natural
+	_LDVAL(@629, 1)
+	_EVENT_END()
+	_END()
+ev_distortionr0101_a5_jump_1_1:
+	_EVENT_START()
+	_TURN_HERO_TALK_OBJ()
+	_OBJ_ANIME('HERO', 'anm_player_face_for_jump_right')
+	_OBJ_ANIME_WAIT()
+	_JUMP_AND_ROTATE('DISTORTIONR0101(Clone)', 0, 0, 90, 37, -72, -105, 30, 'LOCATORS/Locator_ (7)', 3.0, 0.75, 0.0)
+	_LDVAL(@630, 14)
+	_CALL('ev_distortionr0101_a6_cam_adj_disable')
+	_EVENT_END()
+	_END()
+ev_distortionr0101_a5_jump_1_2:
+	_EVENT_START()
+	_TURN_HERO_TALK_OBJ()
+	_OBJ_ANIME('HERO', 'anm_player_face_for_jump_left')
+	_OBJ_ANIME_WAIT()
+	_JUMP_AND_ROTATE('DISTORTIONR0101(Clone)', 0, 0, -90, -37, 72, 105, 30, 'LOCATORS/Locator_ (7)', 3.0, 0.75, 0.0)
+	_LDVAL(@630, 13)
+	_CALL('ev_distortionr0101_a6_cam_adj_enable_left')
+	_EVENT_END()
+	_END()
+ev_distortionr0101_a5_jump_3_1:
+	_EVENT_START()
+	_TURN_HERO_TALK_OBJ()
+	_OBJ_ANIME('HERO', 'anm_player_face_for_jump_right')
+	_OBJ_ANIME_WAIT()
+	_JUMP_AND_ROTATE('DISTORTIONR0101(Clone)', 0, 0, 90, -30, 0, -75, 30, 'LOCATORS/Locator_ (8)', 3.0, 0.75, 0.0)
+	_LDVAL(@630, 15)
+	_EVENT_END()
+	_END()
+ev_distortionr0101_a5_jump_3_2:
+	_EVENT_START()
+	_TURN_HERO_TALK_OBJ()
+	_OBJ_ANIME('HERO', 'anm_player_face_for_jump_left')
+	_OBJ_ANIME_WAIT()
+	_JUMP_AND_ROTATE('DISTORTIONR0101(Clone)', 0, 0, -90, 30, 0, 75, 30, 'LOCATORS/Locator_ (8)', 3.0, 0.75, 0.0)
+	_LDVAL(@630, 14)
+	_EVENT_END()
+	_END()
+
+ev_distortionr0101_ledgejump_left:
+	_PLAYER_DIR_GET(@SCWK_ANSWER)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'LE', 45, 'ev_distortionr0101_ledgejump_no')
+	_IFVAL_JUMP(@SCWK_ANSWER, 'GE', 135, 'ev_distortionr0101_ledgejump_no')
+	_EVENT_START()
+	_TURN_HERO_TALK_OBJ()
+	_OBJ_ANIME('HERO', 'anm_player_face_for_jump_left')
+	_OBJ_ANIME_WAIT()
+	_LEDGE_JUMP('HERO', 2.0, 0.75, 0.0, 0.5)
+	_EVENT_END()
+	_END()
+ev_distortionr0101_ledgejump_down:
+	_PLAYER_DIR_GET(@SCWK_ANSWER)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'GE', 315, 'ev_distortionr0101_ledgejump_down_2')
+	_IFVAL_JUMP(@SCWK_ANSWER, 'LE', 45, 'ev_distortionr0101_ledgejump_down_2')
+	_JUMP('ev_distortionr0101_ledgejump_no')
+ev_distortionr0101_ledgejump_down_2:
+	_EVENT_START()
+	_TURN_HERO_TALK_OBJ()
+	_OBJ_ANIME('HERO', 'anm_player_face_for_jump_down')
+	_OBJ_ANIME_WAIT()
+	_LEDGE_JUMP('HERO', 2.0, 0.75, 0.0, 0.5)
+	_EVENT_END()
+	_END()
+ev_distortionr0101_ledgejump_no:
+	_END()
+
+ev_distortionr0101_platform_jump_up:
+	_OBJ_ANIME('HERO', 'anm_player_face_for_jump_up')
+	_OBJ_ANIME_WAIT()
+	_LEDGE_JUMP('HERO', 3.0, 0.75, 0.0, 0.7)
+	_RET()
+ev_distortionr0101_platform_jump_down:
+	_OBJ_ANIME('HERO', 'anm_player_face_for_jump_down')
+	_OBJ_ANIME_WAIT()
+	_LEDGE_JUMP('HERO', 3.0, 0.75, 0.0, 0.7)
+	_RET()
+ev_distortionr0101_platform_jump_left:
+	_OBJ_ANIME('HERO', 'anm_player_face_for_jump_left')
+	_OBJ_ANIME_WAIT()
+	_LEDGE_JUMP('HERO', 3.0, 0.75, 0.0, 0.7)
+	_RET()
+ev_distortionr0101_platform_jump_right:
+	_OBJ_ANIME('HERO', 'anm_player_face_for_jump_right')
+	_OBJ_ANIME_WAIT()
+	_LEDGE_JUMP('HERO', 3.0, 0.75, 0.0, 0.7)
+	_RET()
+
+ev_distortionr0101_watersurf:
+	_IFVAL_CALL(@630, 'GE', 13, 'ev_distortionr0101_attach_transform_a5_landsurf')
+	_IFVAL_CALL(@630, 'GE', 13, 'ev_distortionr0101_detach_transform_a5_watersurf')
+	_IFVAL_CALL(@630, 'EQ', 9, 'ev_distortionr0101_attach_transform_a6_landsurf')
+	_IFVAL_CALL(@630, 'EQ', 9, 'ev_distortionr0101_detach_transform_a6_watersurf')
+	_JUMP('ev_distortionr0101_naminori')
+	_END()
+ev_distortionr0101_landsurf:
+	_IFVAL_CALL(@630, 'GE', 13, 'ev_distortionr0101_detach_transform_a5_landsurf')
+	_IFVAL_CALL(@630, 'GE', 13, 'ev_distortionr0101_attach_transform_a5_watersurf')
+	_IFVAL_CALL(@630, 'EQ', 9, 'ev_distortionr0101_detach_transform_a6_landsurf')
+	_IFVAL_CALL(@630, 'EQ', 9, 'ev_distortionr0101_attach_transform_a6_watersurf')
+	_JUMP('ev_hiden_naminori_end')
+	_END()
+
+ev_distortionr0101_waterfall_1_1:
+	_TALK_OBJ_START()
+	_MACRO_TALKMSG('dialogue_distortionr0101', 'msg_distortionr0101_waterfall_1_1', 'Riding down the waterfall already has your\nhead spinning. Better not try riding back up.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_distortionr0101_waterfall_2_1:
+	_EVENT_START()
+	_LOAD_CAMERA_CONTROLLER('field/camera/distortionr0101_cam')
+	_LOAD_WAIT_CAMERA_CONTROLLER()
+	_PLAYER_POS_GET(@SCWK_TEMP0, @SCWK_TEMP1)
+	_SWITCH(@SCWK_TEMP1)
+	_CASE_CALL(77, 'ev_distortionr0101_waterfall_down_2')
+	_CASE_CALL(78, 'ev_distortionr0101_waterfall_down_1')
+	_CASE_CALL(80, 'ev_distortionr0101_waterfall_up_1')
+	_CASE_CALL(81, 'ev_distortionr0101_waterfall_up_2')
+	_SXY_DIR_CHANGE('HERO', 90)
+	_SXY_POS_CHANGE('HERO', 108, 79)
+	_CAMERA_CONTROLLER_PLAY('distortionr0101_cam_waterfall')
+	_OBJ_ANIME('HERO', 'anm_distortionr0101_waterfall_2_1')
+	_TIME_WAIT(12, @SCWK_ANSWER)
+	_GAMEOBJECT_ROTATE_PIVOT('DISTORTIONR0101(Clone)', 0, 0, -90, 30, 'LOCATORS/Locator_ (9)')
+	_OBJ_ANIME_WAIT()
+	_OBJ_ANIME('HERO', 'anm_distortionr0101_waterfall_2_2')
+	_GAMEOBJECT_MOVE('DISTORTIONR0101(Clone)', -19, 0, 0, 680)
+	_OBJ_ANIME_WAIT()
+	_OBJ_ANIME('HERO', 'anm_distortionr0101_waterfall_2_3')
+	_GAMEOBJECT_ROTATE_PIVOT('DISTORTIONR0101(Clone)', 0, 0, -90, 30, 'LOCATORS/Locator_ (10)')
+	_OBJ_ANIME_WAIT()
+	_CAMERA_CONTROLLER_WAIT('distortionr0101_cam_waterfall')
+	_GAMEOBJECT_MOVE('AREA_LIFTS/A6_A5_LIFT', 0, -23, 0, 0)
+	_LDVAL(@617, 0); Area 6 Lift is down. Player is in Area 6.
+	_GAMEOBJECT_MOVE('AREA_LIFTS/A5_A4_LIFT', 0, -32, 0, 0)
+	_LDVAL(@618, 0); Area 5 Lift is down. Player is in Area 5.
+	_GAMEOBJECT_MOVE('AREA_LIFTS/A4_A5_LIFT', 0, 32, 0, 0)
+	_LDVAL(@619, 0); Area 5 Lift is up. Player is in Area 4.
+	_LDVAL(@624, 0)
+	_CALL('ev_distortionr0101_detach_transform_a5_jumps')
+	_CALL('ev_distortionr0101_detach_surf_a5')
+	_FIND_BG_DISABLE(0, 'AREA_5_GEO')
+	_LDVAL(@625, 1)
+	_CALL('ev_distortionr0101_attach_surf_a6')
+	_IFVAL_CALL(@634, 'EQ', 0, 'ev_distortionr0101_a6_azelf_enable')
+	_LDVAL(@630, 9)
+	_CAMERA_CONTROLLER_END()
+	_SET_CAMERA_OFFSET_ANGLE(27, -52, 0)
+	_SET_CAMERA_OFFSET_ANGLE(-37, 72, 105, 0)
+	_SET_CAMERA_OFFSET_ANGLE(30, 0, 75, 0)
+	_RELEASE_CAMERA_CONTROLLER()
+	_EVENT_END()
+	_END()
+
+ev_distortionr0101_waterfall_down_2:
+	_OBJ_ANIME('HERO', 'anm_distortionr0101_waterfall_down_2')
+	_OBJ_ANIME_WAIT()
+	_RET()
+ev_distortionr0101_waterfall_down_1:
+	_OBJ_ANIME('HERO', 'anm_distortionr0101_waterfall_down_1')
+	_OBJ_ANIME_WAIT()
+	_RET()
+ev_distortionr0101_waterfall_up_1:
+	_OBJ_ANIME('HERO', 'anm_distortionr0101_waterfall_up_1')
+	_OBJ_ANIME_WAIT()
+	_RET()
+ev_distortionr0101_waterfall_up_2:
+	_OBJ_ANIME('HERO', 'anm_distortionr0101_waterfall_up_2')
+	_OBJ_ANIME_WAIT()
+	_RET()
+anm_distortionr0101_waterfall_down_2:
+	_AC_DIR_DOWN_CENTER(2, -1)
+	_AC_WAIT(2)
+	_AC_DOWN(2, 8)
+	_AC_WAIT(2)
+	_ACMD_END()
+anm_distortionr0101_waterfall_down_1:
+	_AC_DIR_DOWN_CENTER(2, -1)
+	_AC_WAIT(2)
+	_AC_DOWN(1, 8)
+	_AC_WAIT(2)
+	_ACMD_END()
+anm_distortionr0101_waterfall_up_1:
+	_AC_DIR_UP_CENTER(2, -1)
+	_AC_WAIT(2)
+	_AC_UP(1, 8)
+	_AC_WAIT(2)
+	_ACMD_END()
+anm_distortionr0101_waterfall_up_2:
+	_AC_DIR_UP_CENTER(2, -1)
+	_AC_WAIT(2)
+	_AC_UP(2, 8)
+	_AC_WAIT(2)
+	_ACMD_END()
+
+anm_distortionr0101_a1_cynthia_player_move_1:
+	_AC_DIR_L(8)
+	_AC_WAIT(2)
+	_AC_LEFT(1, 8)
+	_AC_WAIT(2)
+	_AC_DIR_R(8)
+	_ACMD_END()
+anm_distortionr0101_a1_cynthia_player_move_2:
+	_AC_WAIT(4)
+	_AC_DIR_D(4)
+	_AC_WAIT(2)
+	_ACMD_END()
+anm_distortionr0101_a1_cynthia_player_move_3:
+	_AC_WAIT(2)
+	_AC_DIR_L(2)
+	_AC_WAIT(2)
+	_AC_MARK_GYOE()
+	_ACMD_END()
+
+anm_distortionr0101_a1_cynthia_move_1:
+	_AC_DIR_D(4)
+	_AC_WAIT(2)
+	_AC_DOWN(2, 8)
+	_AC_WAIT(2)
+	_ACMD_END()
+anm_distortionr0101_a1_cynthia_move_2:
+	_AC_DIR_L(2)
+	_AC_WAIT(2)
+	_AC_MARK_GYOE()
+	_ACMD_END()
+anm_distortionr0101_a1_cynthia_move_3:
+	_AC_DIR_L(2)
+	_AC_WAIT(2)
+	_AC_LEFT(3, 8)
+	_AC_DIR_D(2)
+	_AC_WAIT(2)
+	_AC_DOWN(3, 8)
+	_AC_DIR_L(2)
+	_AC_WAIT(2)
+	_AC_LEFT(2, 8)
+	_AC_DIR_D(2)
+	_AC_WAIT(2)
+	_AC_DOWN(1, 8)
+	_AC_DIR_L(2)
+	_AC_WAIT(2)
+	_AC_LEFT(5, 8)
+	_ACMD_END()
+
+anm_distortionr0101_a1_cynthia_face_1:
+	_AC_FACE_INDEX(2)
+	_ACMD_END()
+anm_distortionr0101_a1_cynthia_face_2:
+	_AC_FACE_INDEX(0)
+	_ACMD_END()
+
+anm_distortionr0101_jump_a1_lift_cynthia_leave:
+	_AC_DIR_L(4)
+	_AC_WAIT(2)
+	_AC_LEFT(1, 8)
+	_AC_DIR_D(4)
+	_AC_WAIT(2)
+	_AC_DOWN(2, 8)
+	_AC_DIR_L(4)
+	_AC_WAIT(2)
+	_ACMD_END()
+
+anm_distortionr0101_a3_cynthia_player_move_1:
+	_AC_DIR_D(8)
+	_AC_WAIT(2)
+	_AC_DOWN(1, 8)
+	_AC_DIR_U(8)
+	_ACMD_END()
+
+anm_distortionr0101_a3_cynthia_move_1:
+	_AC_DIR_R(8)
+	_AC_WAIT(2)
+	_AC_RIGHT(1, 8)
+	_AC_DIR_L(8)
+	_ACMD_END()
+
+anm_distortionr0101_jump_a4_cyrus_move_1:
+	_AC_UP(6, 8)
+	_ACMD_END()
+anm_distortionr0101_jump_a4_cyrus_move_2:
+	_AC_DIR_D(8)
+	_AC_WAIT(2)
+	_AC_DOWN(7, 8)
+	_ACMD_END()
+
+anm_distortionr0101_a5_cyrus_leave:
+	_AC_RIGHT(1, 8)
+	_AC_DIR_U(2)
+	_AC_WAIT(2)
+	_AC_UP(3, 8)
+	_ACMD_END()
+
+anm_distortionr0101_a7_cynthia_move_1:
+	_AC_DIR_D(2)
+	_AC_WAIT(2)
+	_AC_MARK_GYOE()
+	_AC_WAIT(10)
+	_AC_DOWN(1, 8)
+	_AC_WAIT(1)
+	_ACMD_END()
+
+anm_distortionr0101_a7_cynthia_move_2:
+	_AC_DIR_L(2)
+	_AC_WAIT(2)
+	_AC_LEFT(1, 8)
+	_AC_DIR_R(2)
+	_AC_WAIT(2)
+	_ACMD_END()
+
+anm_distortionr0101_a7_cynthia_move_3:
+	_AC_DIR_R(2)
+	_AC_WAIT(2)
+	_AC_RIGHT(1, 8)
+	_AC_DIR_U(2)
+	_AC_WAIT(1)
+	_ACMD_END()
+
+anm_distortionr0101_a7_cynthia_move_4:
+	_AC_UP(6, 8)
+	_ACMD_END()
+
+anm_distortionr0101_a8_cyrus_move_1:
+	_AC_DOWN(4, 8)
+	_AC_DIR_L(2)
+	_AC_WAIT(2)
+	_ACMD_END()
+anm_distortionr0101_a8_cynthia_move_1:
+	_AC_WAIT(22)
+	_AC_DIR_L(2)
+	_AC_WAIT(2)
+	_AC_LEFT(1, 8)
+	_AC_DIR_R(2)
+	_AC_WAIT(2)
+	_ACMD_END()
+
+anm_distortionr0101_a8_hero_move_1:
+	_AC_DIR_R(2)
+	_AC_WAIT(2)
+	_AC_RIGHT(1, 8)
+	_AC_DIR_D(2)
+	_AC_WAIT(2)
+	_ACMD_END()
+anm_distortionr0101_a8_cyrus_move_2:
+	_AC_WAIT(2)
+	_AC_DOWN(7, 8)
+	_ACMD_END()
+anm_distortionr0101_a8_cynthia_move_2:
+	_AC_WAIT(12)
+	_AC_DIR_D(2)
+	_AC_WAIT(2)
+	_ACMD_END()
+
+anm_distortionr0101_a8_cynthia_move_3:
+	_AC_DIR_R(2)
+	_AC_WAIT(2)
+	_AC_RIGHT(1, 8)
+	_AC_DIR_D(2)
+	_AC_WAIT(2)
+	_ACMD_END()
+
+anm_distortionr0101_a8_hero_move_2:
+	_AC_DIR_L(2)
+	_AC_WAIT(2)
+	_AC_LEFT(1, 8)
+	_AC_DIR_U(2)
+	_AC_WAIT(2)
+	_AC_UP(7, 8)
+	_AC_DIR_R(2)
+	_AC_WAIT(2)
+	_AC_RIGHT(4, 8)
+	_AC_DIR_D(2)
+	_AC_WAIT(2)
+	_ACMD_END()
+anm_distortionr0101_a8_cynthia_move_4:
+	_AC_DIR_U(2)
+	_AC_WAIT(2)
+	_AC_UP(6, 8)
+	_AC_DIR_R(2)
+	_AC_WAIT(2)
+	_AC_RIGHT(4, 8)
+	_AC_DIR_D(2)
+	_AC_WAIT(2)
+	_AC_DOWN(1, 8)
+	_AC_DIR_U(2)
+	_AC_WAIT(2)
+	_ACMD_END()
+
+anm_distortionr0101_a8_cynthia_face_1:
+	_AC_FACE_INDEX(5)
+	_ACMD_END()
+anm_distortionr0101_a8_cynthia_face_2:
+	_AC_FACE_INDEX(0)
+	_ACMD_END()
+
+anm_distortionr0101_face_up:
+	_AC_DIR_U(8)
+	_ACMD_END()
+anm_distortionr0101_face_right:
+	_AC_DIR_R(8)
+	_ACMD_END()
+anm_distortionr0101_face_down:
+	_AC_DIR_D(8)
+	_ACMD_END()
+anm_distortionr0101_face_left:
+	_AC_DIR_L(8)
+	_ACMD_END()
+
+anm_distortionr0101_face_up_fast:
+	_AC_DIR_U(2)
+	_AC_WAIT(2)
+	_ACMD_END()
+anm_distortionr0101_face_right_fast:
+	_AC_DIR_R(2)
+	_AC_WAIT(2)
+	_ACMD_END()
+
+anm_player_face_for_jump_up:
+	_AC_DIR_U(2)
+	_ACMD_END()
+anm_player_face_for_jump_down:
+	_AC_DIR_D(2)
+	_ACMD_END()
+anm_player_face_for_jump_left:
+	_AC_DIR_L(2)
+	_ACMD_END()
+anm_player_face_for_jump_right:
+	_AC_DIR_R(2)
+	_ACMD_END()
+
+anm_distortionr0101_waterfall_1_1:
+	_AC_DIR_R(6)
+	_AC_WAIT(4)
+	_AC_RIGHT(36, 16)
+	_ACMD_END()
+anm_distortionr0101_waterfall_2_1:
+	_AC_DIR_L(6)
+	_AC_WAIT(4)
+	_AC_LEFT(1, 26.47)
+	_ACMD_END()
+anm_distortionr0101_waterfall_2_2:
+	_AC_LEFT(15, 39.7)
+	_ACMD_END()
+anm_distortionr0101_waterfall_2_3:
+	_AC_LEFT(1, 26.47)
+	_ACMD_END()
+
+pos_distortionr0101_a1_a2_island_lift:
+	_EVENT_START()
+	_IFVAL_JUMP(@600, 'EQ', 0, 'ev_distortionr0101_a1_a2_island_lift_down')
+	_IFVAL_JUMP(@600, 'EQ', 1, 'ev_distortionr0101_a1_a2_island_lift_up')
+ev_distortionr0101_a1_a2_island_lift_down:
+	_CALL('ev_distortionr0101_island_lift_1')
+	_ATTACH_TRANSFORM('HERO', 'AREA_LIFTS/A1_A2_LIFT', 1)
+	_GAMEOBJECT_MOVE('AREA_LIFTS/A1_A2_LIFT', 0, -16, 0, 120, 3)
+	_CALL('ev_distortionr0101_island_lift_2')
+	_LDVAL(@600, 1); Area 1 Lift is down. Player is in Area 2.
+	_LDVAL(@630, 1)
+	_CALL('ev_distortionr0101_detach_transform_a1_jumps')
+	_FIND_BG_DISABLE(0, 'AREA_1_GEO')
+	_IF_FLAGOFF_CALL(#3402, 'ev_distortionr0101_jump_a1_lift_cynthia_leave')
+	_EVENT_END()
+	_END()
+ev_distortionr0101_a1_a2_island_lift_up:
+	_FIND_BG_ENABLE(0, 'AREA_1_GEO')
+	_CALL('ev_distortionr0101_attach_transform_a1_jumps')
+	_CALL('ev_distortionr0101_island_lift_1')
+	_ATTACH_TRANSFORM('HERO', 'AREA_LIFTS/A1_A2_LIFT', 1)
+	_GAMEOBJECT_MOVE('AREA_LIFTS/A1_A2_LIFT', 0, 16, 0, 120, 3)
+	_CALL('ev_distortionr0101_island_lift_2')
+	_LDVAL(@600, 0); Distortion World is in it's default state. Player is in Area 1.
+	_LDVAL(@630, 0)
+	_EVENT_END()
+	_END()
+
+pos_distortionr0101_a2_a3_island_lift:
+	_EVENT_START()
+	_IFVAL_JUMP(@601, 'EQ', 0, 'ev_distortionr0101_a2_a3_island_lift_down')
+	_IFVAL_JUMP(@601, 'EQ', 1, 'ev_distortionr0101_a2_a3_island_lift_up')
+ev_distortionr0101_a2_a3_island_lift_down:
+	_CALL('ev_distortionr0101_island_lift_1')
+	_ATTACH_TRANSFORM('HERO', 'AREA_LIFTS/A2_A3_LIFT', 1)
+	_GAMEOBJECT_MOVE('AREA_LIFTS/A2_A3_LIFT', 0, -16, 0, 120, 3)
+	_CALL('ev_distortionr0101_island_lift_2')
+	_LDVAL(@601, 1); Area 2 Lift is down. Player is in Area 3.
+	_LDVAL(@630, 4)
+	_CALL('ev_distortionr0101_detach_transform_a2_jumps')
+	_FIND_BG_DISABLE(0, 'AREA_2_GEO')
+	_EVENT_END()
+	_END()
+ev_distortionr0101_a2_a3_island_lift_up:
+	_FIND_BG_ENABLE(0, 'AREA_2_GEO')
+	_CALL('ev_distortionr0101_attach_transform_a2_jumps')
+	_CALL('ev_distortionr0101_island_lift_1')
+	_ATTACH_TRANSFORM('HERO', 'AREA_LIFTS/A2_A3_LIFT', 1)
+	_GAMEOBJECT_MOVE('AREA_LIFTS/A2_A3_LIFT', 0, 16, 0, 120, 3)
+	_CALL('ev_distortionr0101_island_lift_2')
+	_LDVAL(@601, 0); Area 2 Lift is up. Player is in Area 2.
+	_LDVAL(@630, 3)
+	_EVENT_END()
+	_END()
+
+pos_distortionr0101_a3_island_corner_1:
+	_EVENT_START()
+	_IFVAL_JUMP(@602, 'EQ', 0, 'ev_distortionr0101_a3_island_corner_1_forward')
+	_IFVAL_JUMP(@602, 'EQ', 1, 'ev_distortionr0101_a3_island_corner_1_back')
+ev_distortionr0101_a3_island_corner_1_forward:
+	_CALL('ev_distortionr0101_island_lift_1')
+	_ATTACH_TRANSFORM('HERO', 'AREA_3_GEO/MoveIslandCorner', 1)
+	_GAMEOBJECT_MOVE('AREA_3_GEO/MoveIslandCorner', 0, 0, -8, 60, 3)
+	_CALL('ev_distortionr0101_island_lift_2')
+	_LDVAL(@602, 1); Area 3 island corner 1 is forward. Player is in Area 3.
+	_CALL('ev_distortionr0101_platform_jump_up')
+	_GAMEOBJECT_MOVE('AREA_3_GEO/MoveIslandCorner', 0, 0, 8, 48, 3)
+	_EVENT_END()
+	_END()
+ev_distortionr0101_a3_island_corner_1_back:
+	_GAMEOBJECT_MOVE('AREA_3_GEO/MoveIslandCorner', 0, 0, -8, 48, 3)
+	_CALL('ev_distortionr0101_platform_jump_down')
+	_CALL('ev_distortionr0101_island_lift_1')
+	_ATTACH_TRANSFORM('HERO', 'AREA_3_GEO/MoveIslandCorner', 1)
+	_GAMEOBJECT_MOVE('AREA_3_GEO/MoveIslandCorner', 0, 0, 8, 60, 3)
+	_CALL('ev_distortionr0101_island_lift_2')
+	_LDVAL(@602, 0); Area 3 island corner 1 is back. Player is in Area 3.
+	_EVENT_END()
+	_END()
+
+pos_distortionr0101_a3_island_corner_2:
+	_EVENT_START()
+	_IFVAL_JUMP(@603, 'EQ', 0, 'ev_distortionr0101_a3_island_corner_2_up')
+	_IFVAL_JUMP(@603, 'EQ', 1, 'ev_distortionr0101_a3_island_corner_2_down')
+ev_distortionr0101_a3_island_corner_2_up:
+	_GAMEOBJECT_MOVE('AREA_3_GEO/MoveIslandCorner (3)', 0, -8, 0, 48, 3)
+	_CALL('ev_distortionr0101_platform_jump_left')
+	_CALL('ev_distortionr0101_island_lift_1')
+	_ATTACH_TRANSFORM('HERO', 'AREA_3_GEO/MoveIslandCorner (3)', 1)
+	_GAMEOBJECT_MOVE('AREA_3_GEO/MoveIslandCorner (3)', 0, 8, 0, 60, 3)
+	_CALL('ev_distortionr0101_island_lift_2')
+	_LDVAL(@603, 1); Area 3 island corner 2 is up. Player is up in Area 3.
+	_EVENT_END()
+	_END()
+ev_distortionr0101_a3_island_corner_2_down:
+	_CALL('ev_distortionr0101_island_lift_1')
+	_ATTACH_TRANSFORM('HERO', 'AREA_3_GEO/MoveIslandCorner (3)', 1)
+	_GAMEOBJECT_MOVE('AREA_3_GEO/MoveIslandCorner (3)', 0, -8, 0, 60, 3)
+	_CALL('ev_distortionr0101_island_lift_2')
+	_LDVAL(@603, 0); Area 3 island corner is up. Player is down in Area 3.
+	_CALL('ev_distortionr0101_platform_jump_right')
+	_GAMEOBJECT_MOVE('AREA_3_GEO/MoveIslandCorner (3)', 0, 8, 0, 48, 3)
+	_EVENT_END()
+	_END()
+
+pos_distortionr0101_a3_island_corner_3:
+	_EVENT_START()
+	_IFVAL_JUMP(@604, 'EQ', 0, 'ev_distortionr0101_a3_island_corner_3_forward')
+	_IFVAL_JUMP(@604, 'EQ', 1, 'ev_distortionr0101_a3_island_corner_3_back')
+ev_distortionr0101_a3_island_corner_3_forward:
+	_CALL('ev_distortionr0101_island_lift_1')
+	_ATTACH_TRANSFORM('HERO', 'AREA_3_GEO/MoveIslandCorner (1)', 1)
+	_GAMEOBJECT_MOVE('AREA_3_GEO/MoveIslandCorner (1)', 0, 0, -7, 52.5, 3)
+	_CALL('ev_distortionr0101_island_lift_2')
+	_LDVAL(@604, 1); Area 3 island corner 3 is forward. Player is in Area 3.
+	_CALL('ev_distortionr0101_platform_jump_up')
+	_GAMEOBJECT_MOVE('AREA_3_GEO/MoveIslandCorner (1)', 0, 0, 7, 42, 3)
+	_EVENT_END()
+	_END()
+ev_distortionr0101_a3_island_corner_3_back:
+	_GAMEOBJECT_MOVE('AREA_3_GEO/MoveIslandCorner (1)', 0, 0, -7, 42, 3)
+	_CALL('ev_distortionr0101_platform_jump_down')
+	_CALL('ev_distortionr0101_island_lift_1')
+	_ATTACH_TRANSFORM('HERO', 'AREA_3_GEO/MoveIslandCorner (1)', 1)
+	_GAMEOBJECT_MOVE('AREA_3_GEO/MoveIslandCorner (1)', 0, 0, 7, 52.5, 3)
+	_CALL('ev_distortionr0101_island_lift_2')
+	_LDVAL(@604, 0); Area 3 island corner 3 is back. Player is in Area 3.
+	_EVENT_END()
+	_END()
+
+pos_distortionr0101_a3_island_corner_4:
+	_EVENT_START()
+	_IFVAL_JUMP(@605, 'EQ', 0, 'ev_distortionr0101_a3_island_corner_4_right')
+	_IFVAL_JUMP(@605, 'EQ', 1, 'ev_distortionr0101_a3_island_corner_4_left')
+ev_distortionr0101_a3_island_corner_4_right:
+	_CALL('ev_distortionr0101_island_lift_1')
+	_ATTACH_TRANSFORM('HERO', 'AREA_3_GEO/MoveIslandCorner (2)', 1)
+	_GAMEOBJECT_MOVE('AREA_3_GEO/MoveIslandCorner (2)', -9, 0, 0, 67.5, 3)
+	_CALL('ev_distortionr0101_island_lift_2')
+	_LDVAL(@605, 1); Area 3 island corner 4 is left. Player is in Area 3 on right.
+	_CALL('ev_distortionr0101_platform_jump_right')
+	_GAMEOBJECT_MOVE('AREA_3_GEO/MoveIslandCorner (2)', 9, 0, 0, 54, 3)
+	_EVENT_END()
+	_END()
+ev_distortionr0101_a3_island_corner_4_left:
+	_GAMEOBJECT_MOVE('AREA_3_GEO/MoveIslandCorner (2)', -9, 0, 0, 54, 3)
+	_CALL('ev_distortionr0101_platform_jump_left')
+	_CALL('ev_distortionr0101_island_lift_1')
+	_ATTACH_TRANSFORM('HERO', 'AREA_3_GEO/MoveIslandCorner (2)', 1)
+	_GAMEOBJECT_MOVE('AREA_3_GEO/MoveIslandCorner (2)', 9, 0, 0, 67.5, 3)
+	_CALL('ev_distortionr0101_island_lift_2')
+	_LDVAL(@605, 0); Area 3 island corner 4 is left. Player is in Area 3 on left.
+	_EVENT_END()
+	_END()
+
+pos_distortionr0101_a3_island_corner_5:
+	_EVENT_START()
+	_IFVAL_JUMP(@606, 'EQ', 0, 'ev_distortionr0101_a3_island_corner_5_back')
+	_IFVAL_JUMP(@606, 'EQ', 1, 'ev_distortionr0101_a3_island_corner_5_forward')
+ev_distortionr0101_a3_island_corner_5_back:
+	_CALL('ev_distortionr0101_island_lift_1')
+	_ATTACH_TRANSFORM('HERO', 'AREA_3_GEO/MoveIslandCorner (13)', 1)
+	_GAMEOBJECT_MOVE('AREA_3_GEO/MoveIslandCorner (13)', 0, 0, 30, 225, 3)
+	_CALL('ev_distortionr0101_island_lift_2')
+	_LDVAL(@606, 1); Area 3 island corner 5 is forward. Player is in Area 3 and back.
+	_CALL('ev_distortionr0101_platform_jump_down')
+	_GAMEOBJECT_MOVE('AREA_3_GEO/MoveIslandCorner (13)', 0, 0, -30, 180, 3)
+	_EVENT_END()
+	_END()
+ev_distortionr0101_a3_island_corner_5_forward:
+	_GAMEOBJECT_MOVE('AREA_3_GEO/MoveIslandCorner (13)', 0, 0, 30, 180, 3)
+	_CALL('ev_distortionr0101_platform_jump_up')
+	_CALL('ev_distortionr0101_island_lift_1')
+	_ATTACH_TRANSFORM('HERO', 'AREA_3_GEO/MoveIslandCorner (13)', 1)
+	_GAMEOBJECT_MOVE('AREA_3_GEO/MoveIslandCorner (13)', 0, 0, -30, 225, 3)
+	_CALL('ev_distortionr0101_island_lift_2')
+	_LDVAL(@606, 0); Area 3 island corner 5 is forward. Player is in Area 3 and forward.
+	_EVENT_END()
+	_END()
+
+pos_distortionr0101_a3_island_corner_6:
+	_EVENT_START()
+	_IFVAL_JUMP(@607, 'EQ', 0, 'ev_distortionr0101_a3_island_corner_6_right')
+	_IFVAL_JUMP(@607, 'EQ', 1, 'ev_distortionr0101_a3_island_corner_6_left')
+ev_distortionr0101_a3_island_corner_6_right:
+	_CALL('ev_distortionr0101_island_lift_1')
+	_ATTACH_TRANSFORM('HERO', 'AREA_3_GEO/MoveIslandCorner (4)', 1)
+	_GAMEOBJECT_MOVE('AREA_3_GEO/MoveIslandCorner (4)', -9, 0, 0, 67.5, 3)
+	_CALL('ev_distortionr0101_island_lift_2')
+	_LDVAL(@607, 1); Area 3 island corner 6 is left. Player is in Area 3 and right.
+	_CALL('ev_distortionr0101_platform_jump_right')
+	_GAMEOBJECT_MOVE('AREA_3_GEO/MoveIslandCorner (4)', 9, 0, 0, 54, 3)
+	_EVENT_END()
+	_END()
+ev_distortionr0101_a3_island_corner_6_left:
+	_GAMEOBJECT_MOVE('AREA_3_GEO/MoveIslandCorner (4)', -9, 0, 0, 54, 3)
+	_CALL('ev_distortionr0101_platform_jump_left')
+	_CALL('ev_distortionr0101_island_lift_1')
+	_ATTACH_TRANSFORM('HERO', 'AREA_3_GEO/MoveIslandCorner (4)', 1)
+	_GAMEOBJECT_MOVE('AREA_3_GEO/MoveIslandCorner (4)', 9, 0, 0, 67.5, 3)
+	_CALL('ev_distortionr0101_island_lift_2')
+	_LDVAL(@607, 0); Area 3 island corner 6 is left. Player is in Area 3 and left.
+	_EVENT_END()
+	_END()
+
+pos_distortionr0101_a3_island_corner_7:
+	_EVENT_START()
+	_IFVAL_JUMP(@608, 'EQ', 0, 'ev_distortionr0101_a3_island_corner_7_right')
+	_IFVAL_JUMP(@608, 'EQ', 1, 'ev_distortionr0101_a3_island_corner_7_left')
+ev_distortionr0101_a3_island_corner_7_right:
+	_CALL('ev_distortionr0101_island_lift_1')
+	_ATTACH_TRANSFORM('HERO', 'AREA_3_GEO/MoveIslandCorner (5)', 1)
+	_GAMEOBJECT_MOVE('AREA_3_GEO/MoveIslandCorner (5)', -9, 0, 0, 67.5, 3)
+	_CALL('ev_distortionr0101_island_lift_2')
+	_LDVAL(@608, 1); Area 3 island corner 7 is left. Player is in Area 3 and right.
+	_CALL('ev_distortionr0101_platform_jump_right')
+	_GAMEOBJECT_MOVE('AREA_3_GEO/MoveIslandCorner (5)', 9, 0, 0, 54, 3)
+	_EVENT_END()
+	_END()
+ev_distortionr0101_a3_island_corner_7_left:
+	_GAMEOBJECT_MOVE('AREA_3_GEO/MoveIslandCorner (5)', -9, 0, 0, 54, 3)
+	_CALL('ev_distortionr0101_platform_jump_left')
+	_CALL('ev_distortionr0101_island_lift_1')
+	_ATTACH_TRANSFORM('HERO', 'AREA_3_GEO/MoveIslandCorner (5)', 1)
+	_GAMEOBJECT_MOVE('AREA_3_GEO/MoveIslandCorner (5)', 9, 0, 0, 67.5, 3)
+	_CALL('ev_distortionr0101_island_lift_2')
+	_LDVAL(@608, 0); Area 3 island corner 7 is left. Player is in Area 3 and left.
+	_EVENT_END()
+	_END()
+
+pos_distortionr0101_a3_island_corner_8:
+	_EVENT_START()
+	_IFVAL_JUMP(@609, 'EQ', 0, 'ev_distortionr0101_a3_island_corner_8_back')
+	_IFVAL_JUMP(@609, 'EQ', 1, 'ev_distortionr0101_a3_island_corner_8_forward')
+ev_distortionr0101_a3_island_corner_8_back:
+	_CALL('ev_distortionr0101_island_lift_1')
+	_ATTACH_TRANSFORM('HERO', 'AREA_3_GEO/MoveIslandCorner (6)', 1)
+	_GAMEOBJECT_MOVE('AREA_3_GEO/MoveIslandCorner (6)', 0, 0, 23, 172.5, 3)
+	_CALL('ev_distortionr0101_island_lift_2')
+	_LDVAL(@609, 1); Area 3 island corner 8 is forward. Player is in Area 3 and back.
+	_CALL('ev_distortionr0101_platform_jump_down')
+	_GAMEOBJECT_MOVE('AREA_3_GEO/MoveIslandCorner (6)', 0, 0, -23, 138, 3)
+	_EVENT_END()
+	_END()
+ev_distortionr0101_a3_island_corner_8_forward:
+	_GAMEOBJECT_MOVE('AREA_3_GEO/MoveIslandCorner (6)', 0, 0, 23, 138, 3)
+	_CALL('ev_distortionr0101_platform_jump_up')
+	_CALL('ev_distortionr0101_island_lift_1')
+	_ATTACH_TRANSFORM('HERO', 'AREA_3_GEO/MoveIslandCorner (6)', 1)
+	_GAMEOBJECT_MOVE('AREA_3_GEO/MoveIslandCorner (6)', 0, 0, -23, 172.5, 3)
+	_CALL('ev_distortionr0101_island_lift_2')
+	_LDVAL(@609, 0); Area 3 island corner 8 is forward. Player is in Area 3 and forward.
+	_EVENT_END()
+	_END()
+
+pos_distortionr0101_a3_island_corner_9:
+	_EVENT_START()
+	_IFVAL_JUMP(@610, 'EQ', 0, 'ev_distortionr0101_a3_island_corner_9_left')
+	_IFVAL_JUMP(@610, 'EQ', 1, 'ev_distortionr0101_a3_island_corner_9_right')
+ev_distortionr0101_a3_island_corner_9_left:
+	_CALL('ev_distortionr0101_island_lift_1')
+	_ATTACH_TRANSFORM('HERO', 'AREA_3_GEO/MoveIslandCorner (8)', 1)
+	_GAMEOBJECT_MOVE('AREA_3_GEO/MoveIslandCorner (8)', 16, 0, 0, 144, 3)
+	_CALL('ev_distortionr0101_island_lift_2')
+	_LDVAL(@610, 1); Area 3 island corner 9 is right. Player is in Area 3 and left.
+	_CALL('ev_distortionr0101_platform_jump_left')
+	_GAMEOBJECT_MOVE('AREA_3_GEO/MoveIslandCorner (8)', -16, 0, 0, 115.2, 3)
+	_EVENT_END()
+	_END()
+ev_distortionr0101_a3_island_corner_9_right:
+	_GAMEOBJECT_MOVE('AREA_3_GEO/MoveIslandCorner (8)', 16, 0, 0, 115.2, 3)
+	_CALL('ev_distortionr0101_platform_jump_right')
+	_CALL('ev_distortionr0101_island_lift_1')
+	_ATTACH_TRANSFORM('HERO', 'AREA_3_GEO/MoveIslandCorner (8)', 1)
+	_GAMEOBJECT_MOVE('AREA_3_GEO/MoveIslandCorner (8)', -16, 0, 0, 144, 3)
+	_CALL('ev_distortionr0101_island_lift_2')
+	_LDVAL(@610, 0); Area 3 island corner 9 is right. Player is in Area 3 and right.
+	_EVENT_END()
+	_END()
+
+pos_distortionr0101_a3_island_corner_10:
+	_EVENT_START()
+	_IFVAL_JUMP(@611, 'EQ', 0, 'ev_distortionr0101_a3_island_corner_10_left')
+	_IFVAL_JUMP(@611, 'EQ', 1, 'ev_distortionr0101_a3_island_corner_10_right')
+ev_distortionr0101_a3_island_corner_10_left:
+	_CALL('ev_distortionr0101_island_lift_1')
+	_ATTACH_TRANSFORM('HERO', 'AREA_3_GEO/MoveIslandCorner (7)', 1)
+	_GAMEOBJECT_MOVE('AREA_3_GEO/MoveIslandCorner (7)', 9, 0, 0, 67.5, 3)
+	_CALL('ev_distortionr0101_island_lift_2')
+	_LDVAL(@611, 1); Area 3 island corner 10 is right. Player is in Area 3 and left.
+	_CALL('ev_distortionr0101_platform_jump_left')
+	_GAMEOBJECT_MOVE('AREA_3_GEO/MoveIslandCorner (7)', -9, 0, 0, 54, 3)
+	_EVENT_END()
+	_END()
+ev_distortionr0101_a3_island_corner_10_right:
+	_GAMEOBJECT_MOVE('AREA_3_GEO/MoveIslandCorner (7)', 9, 0, 0, 54, 3)
+	_CALL('ev_distortionr0101_platform_jump_right')
+	_CALL('ev_distortionr0101_island_lift_1')
+	_ATTACH_TRANSFORM('HERO', 'AREA_3_GEO/MoveIslandCorner (7)', 1)
+	_GAMEOBJECT_MOVE('AREA_3_GEO/MoveIslandCorner (7)', -9, 0, 0, 67.5, 3)
+	_CALL('ev_distortionr0101_island_lift_2')
+	_LDVAL(@611, 0); Area 3 island corner 10 is right. Player is in Area 3 and right.
+	_EVENT_END()
+	_END()
+
+pos_distortionr0101_a3_island_corner_11:
+	_EVENT_START()
+	_IFVAL_JUMP(@612, 'EQ', 0, 'ev_distortionr0101_a3_island_corner_11_down')
+	_IFVAL_JUMP(@612, 'EQ', 1, 'ev_distortionr0101_a3_island_corner_11_up')
+ev_distortionr0101_a3_island_corner_11_down:
+	_CALL('ev_distortionr0101_island_lift_1')
+	_ATTACH_TRANSFORM('HERO', 'AREA_3_GEO/MoveIslandCorner (10)', 1)
+	_GAMEOBJECT_MOVE('AREA_3_GEO/MoveIslandCorner (10)', 0, -7, 0, 52.5, 3)
+	_CALL('ev_distortionr0101_island_lift_2')
+	_LDVAL(@612, 1); Area 3 island corner 11 is up. Player is in Area 3 and down.
+	_CALL('ev_distortionr0101_platform_jump_up')
+	_GAMEOBJECT_MOVE('AREA_3_GEO/MoveIslandCorner (10)', 0, 7, 0, 42, 3)
+	_EVENT_END()
+	_END()
+ev_distortionr0101_a3_island_corner_11_up:
+	_GAMEOBJECT_MOVE('AREA_3_GEO/MoveIslandCorner (10)', 0, -7, 0, 42, 3)
+	_CALL('ev_distortionr0101_platform_jump_down')
+	_CALL('ev_distortionr0101_island_lift_1')
+	_ATTACH_TRANSFORM('HERO', 'AREA_3_GEO/MoveIslandCorner (10)', 1)
+	_GAMEOBJECT_MOVE('AREA_3_GEO/MoveIslandCorner (10)', 0, 7, 0, 52.5, 3)
+	_CALL('ev_distortionr0101_island_lift_2')
+	_LDVAL(@612, 0); Area 3 island corner 11 is up. Player is in Area 3 and up.
+	_EVENT_END()
+	_END()
+
+pos_distortionr0101_a3_island_corner_12:
+	_EVENT_START()
+	_IFVAL_JUMP(@613, 'EQ', 0, 'ev_distortionr0101_a3_island_corner_12_right')
+	_IFVAL_JUMP(@613, 'EQ', 1, 'ev_distortionr0101_a3_island_corner_12_left')
+ev_distortionr0101_a3_island_corner_12_right:
+	_CALL('ev_distortionr0101_island_lift_1')
+	_ATTACH_TRANSFORM('HERO', 'AREA_3_GEO/MoveIslandCorner (11)', 1)
+	_GAMEOBJECT_MOVE('AREA_3_GEO/MoveIslandCorner (11)', -9, 0, 0, 67.5, 3)
+	_CALL('ev_distortionr0101_island_lift_2')
+	_LDVAL(@613, 1); Area 3 island corner 12 is left. Player is in Area 3 and right.
+	_CALL('ev_distortionr0101_platform_jump_right')
+	_GAMEOBJECT_MOVE('AREA_3_GEO/MoveIslandCorner (11)', 9, 0, 0, 54, 3)
+	_EVENT_END()
+	_END()
+ev_distortionr0101_a3_island_corner_12_left:
+	_GAMEOBJECT_MOVE('AREA_3_GEO/MoveIslandCorner (11)', -9, 0, 0, 54, 3)
+	_CALL('ev_distortionr0101_platform_jump_left')
+	_CALL('ev_distortionr0101_island_lift_1')
+	_ATTACH_TRANSFORM('HERO', 'AREA_3_GEO/MoveIslandCorner (11)', 1)
+	_GAMEOBJECT_MOVE('AREA_3_GEO/MoveIslandCorner (11)', 9, 0, 0, 67.5, 3)
+	_CALL('ev_distortionr0101_island_lift_2')
+	_LDVAL(@613, 0); Area 3 island corner 12 is left. Player is in Area 3 and left.
+	_EVENT_END()
+	_END()
+
+pos_distortionr0101_a3_a4_island_lift:
+	_EVENT_START()
+	_IFVAL_JUMP(@614, 'EQ', 0, 'ev_distortionr0101_a3_a4_island_lift_down')
+	_IFVAL_JUMP(@614, 'EQ', 1, 'ev_distortionr0101_a3_a4_island_lift_up')
+ev_distortionr0101_a3_a4_island_lift_down:
+	_CALL('ev_distortionr0101_island_lift_1')
+	_ATTACH_TRANSFORM('HERO', 'AREA_LIFTS/A3_A4_LIFT', 1)
+	_GAMEOBJECT_MOVE('AREA_LIFTS/A3_A4_LIFT', 0, -16, 0, 120, 3)
+	_CALL('ev_distortionr0101_island_lift_2')
+	_LDVAL(@614, 1); Area 3 Lift is down. Player is in Area 4.
+	_LDVAL(@612, 2)
+	_LDVAL(@630, 7)
+	_IFVAL_CALL(@638, 'EQ', 0, 'ev_distortionr0101_a4_floater_1_on')
+	_CALL('ev_distortionr0101_a4_animated_objects_on')
+	_CALL('ev_distortionr0101_detach_transform_a3_jumps')
+	_FIND_BG_DISABLE(0, 'AREA_3_GEO')
+	_EVENT_END()
+	_END()
+ev_distortionr0101_a3_a4_island_lift_up:
+	_FIND_BG_ENABLE(0, 'AREA_3_GEO')
+	_CALL('ev_distortionr0101_attach_transform_a3_jumps')
+	_CALL('ev_distortionr0101_island_lift_1')
+	_ATTACH_TRANSFORM('HERO', 'AREA_LIFTS/A3_A4_LIFT', 1)
+	_GAMEOBJECT_MOVE('AREA_LIFTS/A3_A4_LIFT', 0, 16, 0, 120, 3)
+	_CALL('ev_distortionr0101_island_lift_2')
+	_LDVAL(@614, 0); Area 3 Lift is up. Player is in Area 3.
+	_LDVAL(@612, 1)
+	_LDVAL(@630, 6)
+	_IFVAL_CALL(@638, 'EQ', 1, 'ev_distortionr0101_a4_floater_1_off')
+	_CALL('ev_distortionr0101_a4_animated_objects_off')
+	_EVENT_END()
+	_END()
+
+pos_distortionr0101_a4_a6_island_lift:
+	_EVENT_START()
+	_IFVAL_JUMP(@615, 'EQ', 0, 'ev_distortionr0101_a4_a6_island_lift_down')
+	_IFVAL_JUMP(@615, 'EQ', 1, 'ev_distortionr0101_a4_a6_island_lift_up')
+ev_distortionr0101_a4_a6_island_lift_down:
+	_CALL('ev_distortionr0101_island_lift_1')
+	_ATTACH_TRANSFORM('HERO', 'AREA_LIFTS/A4_A6_LIFT', 1)
+	_GAMEOBJECT_MOVE('AREA_LIFTS/A4_A6_LIFT', 0, -55, 0, 412.5, 3)
+	_CALL('ev_distortionr0101_island_lift_2')
+	_LDVAL(@615, 1); Area 4 Lift is down. Player is in Area 6.
+	_LDVAL(@630, 9)
+	_CALL('ev_distortionr0101_a4_floater_1_off')
+	_CALL('ev_distortionr0101_a4_animated_objects_off')
+	_IF_FLAGOFF_CALL(#3410, 'ev_distortionr0101_a6_uxie_enable')
+	_IF_FLAGOFF_CALL(#3411, 'ev_distortionr0101_a6_mespirit_enable')
+	_IFVAL_CALL(@617, 'EQ', 1, 'ev_distortionr0101_a6_a5_island_lift_reset')
+	_IFVAL_CALL(@618, 'EQ', 1, 'ev_distortionr0101_a5_a4_island_lift_reset')
+	_CALL('ev_distortionr0101_detach_transform_a4_jumps')
+	_FIND_BG_DISABLE(0, 'AREA_4_GEO')
+	_CALL('ev_distortionr0101_detach_transform_a5_jumps')
+	_CALL('ev_distortionr0101_detach_surf_a5')
+	_FIND_BG_DISABLE(0, 'AREA_5_GEO')
+	_EVENT_END()
+	_END()
+ev_distortionr0101_a4_a6_island_lift_up:
+	_FIND_BG_ENABLE(0, 'AREA_4_GEO')
+	_CALL('ev_distortionr0101_attach_transform_a4_jumps')
+	_FIND_BG_ENABLE(0, 'AREA_5_GEO')
+	_CALL('ev_distortionr0101_attach_transform_a5_jumps')
+	_CALL('ev_distortionr0101_attach_surf_a5')
+	_CALL('ev_distortionr0101_island_lift_1')
+	_ATTACH_TRANSFORM('HERO', 'AREA_LIFTS/A4_A6_LIFT', 1)
+	_GAMEOBJECT_MOVE('AREA_LIFTS/A4_A6_LIFT', 0, 55, 0, 412.5, 3)
+	_CALL('ev_distortionr0101_island_lift_2')
+	_LDVAL(@615, 0); Area 4 Lift is up. Player is in Area 4.
+	_LDVAL(@630, 7)
+	_CALL('ev_distortionr0101_a4_floater_1_on')
+	_CALL('ev_distortionr0101_a4_animated_objects_on')
+	_IF_FLAGOFF_CALL(#3410, 'ev_distortionr0101_a6_uxie_disable')
+	_IF_FLAGOFF_CALL(#3411, 'ev_distortionr0101_a6_mespirit_disable')
+	_EVENT_END()
+	_END()
+ev_distortionr0101_a4_a6_island_lift_reset:
+	_GAMEOBJECT_MOVE('AREA_LIFTS/A4_A6_LIFT', 0, 55, 0, 0)
+	_LDVAL(@615, 0); Area 4 Lift is up. Player is in Area 4.
+	_RET()
+
+pos_distortionr0101_a6_a7_island_lift:
+	_EVENT_START()
+	_IFVAL_JUMP(@616, 'EQ', 0, 'ev_distortionr0101_a6_a7_island_lift_down')
+	_IFVAL_JUMP(@616, 'EQ', 1, 'ev_distortionr0101_a6_a7_island_lift_up')
+ev_distortionr0101_a6_a7_island_lift_down:
+	_CALL('ev_distortionr0101_island_lift_1')
+	_ATTACH_TRANSFORM('HERO', 'AREA_LIFTS/A6_A7_LIFT', 1)
+	_GAMEOBJECT_MOVE('AREA_LIFTS/A6_A7_LIFT', 0, -16, 0, 120, 3)
+	_CALL('ev_distortionr0101_island_lift_2')
+	_LDVAL(@616, 1); Area 6 Lift is down. Player is in Area 7.
+	_LDVAL(@630, 10)
+	_CALL('ev_distortionr0101_detach_transform_a6_jumps')
+	_CALL('ev_distortionr0101_detach_surf_a6')
+	_FIND_BG_DISABLE(0, 'AREA_6_GEO')
+	_FIND_BG_DISABLE(0, 'AREA_LIFTS/A6_A5_LIFT')
+	_EVENT_END()
+	_END()
+ev_distortionr0101_a6_a7_island_lift_up:
+	_FIND_BG_ENABLE(0, 'AREA_6_GEO')
+	_FIND_BG_ENABLE(0, 'AREA_LIFTS/A6_A5_LIFT')
+	_CALL('ev_distortionr0101_attach_transform_a6_jumps')
+	_CALL('ev_distortionr0101_attach_surf_a6')
+	_CALL('ev_distortionr0101_island_lift_1')
+	_ATTACH_TRANSFORM('HERO', 'AREA_LIFTS/A6_A7_LIFT', 1)
+	_GAMEOBJECT_MOVE('AREA_LIFTS/A6_A7_LIFT', 0, 16, 0, 120, 3)
+	_CALL('ev_distortionr0101_island_lift_2')
+	_LDVAL(@616, 0); Area 6 Lift is up. Player is in Area 6.
+	_LDVAL(@630, 9)
+	_EVENT_END()
+	_END()
+
+pos_distortionr0101_a6_a5_island_lift:
+	_EVENT_START()
+	_IFVAL_JUMP(@617, 'EQ', 0, 'ev_distortionr0101_a6_a5_island_lift_up')
+	_IFVAL_JUMP(@617, 'EQ', 1, 'ev_distortionr0101_a6_a5_island_lift_down')
+ev_distortionr0101_a6_a5_island_lift_up:
+	_FIND_BG_ENABLE(0, 'AREA_5_GEO')
+	_CALL('ev_distortionr0101_attach_transform_a5_jumps')
+	_CALL('ev_distortionr0101_attach_surf_a5')
+	_CALL('ev_distortionr0101_island_lift_1')
+	_ATTACH_TRANSFORM('HERO', 'AREA_LIFTS/A6_A5_LIFT', 1)
+	_GAMEOBJECT_MOVE('AREA_LIFTS/A6_A5_LIFT', 0, 23, 0, 172.5, 3)
+	_CALL('ev_distortionr0101_island_lift_2')
+	_LDVAL(@617, 1); Area 6 Lift is up. Player is in Area 5.
+	_LDVAL(@630, 11)
+	_CALL('ev_distortionr0101_a5_animated_objects_on')
+	_CALL('ev_distortionr0101_a5_animate_objects_1')
+	_IFVAL_CALL(@621, 'EQ', 0, 'ev_distortionr0101_a5_giratina_enable'); Enables the upcoming Giratina flyover if it hasn't yet been triggered
+	_EVENT_END()
+	_END()
+ev_distortionr0101_a6_a5_island_lift_down:
+	_CALL('ev_distortionr0101_island_lift_1')
+	_ATTACH_TRANSFORM('HERO', 'AREA_LIFTS/A6_A5_LIFT', 1)
+	_GAMEOBJECT_MOVE('AREA_LIFTS/A6_A5_LIFT', 0, -23, 0, 172.5, 3)
+	_CALL('ev_distortionr0101_island_lift_2')
+	_LDVAL(@617, 0); Area 6 Lift is down. Player is in Area 6.
+	_LDVAL(@630, 9)
+	_CALL('ev_distortionr0101_a5_animated_objects_off')
+	_CALL('ev_distortionr0101_detach_transform_a5_jumps')
+	_CALL('ev_distortionr0101_detach_surf_a5')
+	_FIND_BG_DISABLE(0, 'AREA_5_GEO')
+	_IFVAL_CALL(@621, 'EQ', 1, 'ev_distortionr0101_a5_giratina_disable'); Disables the upcoming Giratina flyover if the player goes back down to Area 6 before it has been triggered
+	_EVENT_END()
+	_END()
+ev_distortionr0101_a6_a5_island_lift_reset:
+	_GAMEOBJECT_MOVE('AREA_LIFTS/A6_A5_LIFT', 0, -23, 0, 0)
+	_LDVAL(@617, 0); Area 6 Lift is down. Player is in Area 6.
+	_RET()
+
+pos_distortionr0101_a5_a4_island_lift:
+	_EVENT_START()
+	_IFVAL_JUMP(@618, 'EQ', 0, 'ev_distortionr0101_a5_a4_island_lift_up')
+	_IFVAL_JUMP(@618, 'EQ', 1, 'ev_distortionr0101_a5_a4_island_lift_down')
+ev_distortionr0101_a5_a4_island_lift_up:
+	_FIND_BG_ENABLE(0, 'AREA_4_GEO')
+	_CALL('ev_distortionr0101_attach_transform_a4_jumps')
+	_CALL('ev_distortionr0101_island_lift_1')
+	_ATTACH_TRANSFORM('HERO', 'AREA_LIFTS/A5_A4_LIFT', 1)
+	_GAMEOBJECT_MOVE('AREA_LIFTS/A5_A4_LIFT', 0, 32, 0, 240, 3)
+	_CALL('ev_distortionr0101_island_lift_2')
+	_LDVAL(@618, 1); Area 5 Lift is up. Player is in Area 4.
+	_LDVAL(@630, 12)
+	_CALL('ev_distortionr0101_a5_animated_objects_off')
+	_CALL('ev_distortionr0101_a4_floater_1_on')
+	_CALL('ev_distortionr0101_a4_animated_objects_on')
+	_IFVAL_CALL(@615, 'EQ', 1, 'ev_distortionr0101_a4_a6_island_lift_reset')
+	_EVENT_END()
+	_END()
+ev_distortionr0101_a5_a4_island_lift_down:
+	_CALL('ev_distortionr0101_island_lift_1')
+	_ATTACH_TRANSFORM('HERO', 'AREA_LIFTS/A5_A4_LIFT', 1)
+	_GAMEOBJECT_MOVE('AREA_LIFTS/A5_A4_LIFT', 0, -32, 0, 240, 3)
+	_CALL('ev_distortionr0101_island_lift_2')
+	_LDVAL(@618, 0); Area 5 Lift is down. Player is in Area 5.
+	_LDVAL(@630, 11)
+	_CALL('ev_distortionr0101_a5_animated_objects_on_alt')
+	_CALL('ev_distortionr0101_a5_animate_objects_2')
+	_CALL('ev_distortionr0101_a4_floater_1_off')
+	_CALL('ev_distortionr0101_a4_animated_objects_off')
+	_CALL('ev_distortionr0101_detach_transform_a4_jumps')
+	_FIND_BG_DISABLE(0, 'AREA_4_GEO')
+	_EVENT_END()
+	_END()
+ev_distortionr0101_a5_a4_island_lift_reset:
+	_GAMEOBJECT_MOVE('AREA_LIFTS/A6_A5_LIFT', 0, -32, 0, 0)
+	_LDVAL(@618, 0); Area 5 Lift is down. Player is in Area 6.
+	_RET()
+
+pos_distortionr0101_a4_a5_island_lift:
+	_EVENT_START()
+	_IFVAL_JUMP(@619, 'EQ', 0, 'ev_distortionr0101_a4_a5_island_lift_down')
+	_IFVAL_JUMP(@619, 'EQ', 1, 'ev_distortionr0101_a4_a5_island_lift_up')
+ev_distortionr0101_a4_a5_island_lift_down:
+	_ATTACH_TRANSFORM('HERO', 'AREA_LIFTS/A4_A5_LIFT', 1)
+	_CALL('ev_distortionr0101_island_lift_3')
+	_GAMEOBJECT_MOVE('AREA_LIFTS/A4_A5_LIFT', 0, -32, 0, 240, 3)
+	_CALL('ev_distortionr0101_island_lift_2')
+	_IF_FLAGOFF_CALL(#3405, 'ev_distortionr0101_a5_cyrus_leave')
+	_LDVAL(@619, 1); Area 4 Lift is down. Player is in Area 5.
+	_LDVAL(@630, 13)
+	_CALL('ev_distortionr0101_a4_floater_1_off')
+	_CALL('ev_distortionr0101_a4_animated_objects_off')
+	_CALL('ev_distortionr0101_detach_transform_a4_jumps')
+	_FIND_BG_DISABLE(0, 'AREA_4_GEO')
+	_IFVAL_CALL(@622, 'EQ', 0, 'ev_distortionr0101_a6_giratina_enable'); Enables the upcoming Giratina flyunder if it hasn't yet been triggered
+	_IFVAL_CALL(@629, 'EQ', 0, 'ev_distortionr0101_a6_cam_adj_enable_right'); Enables the camera adjustment for when you walk under the overhang
+	_EVENT_END()
+	_END()
+ev_distortionr0101_a4_a5_island_lift_up:
+	_ATTACH_TRANSFORM('HERO', 'AREA_LIFTS/A4_A5_LIFT', 1)
+	_FIND_BG_ENABLE(0, 'AREA_4_GEO')
+	_CALL('ev_distortionr0101_attach_transform_a4_jumps')
+	_CALL('ev_distortionr0101_island_lift_4')
+	_GAMEOBJECT_MOVE('AREA_LIFTS/A4_A5_LIFT', 0, 32, 0, 240, 3)
+	_CALL('ev_distortionr0101_island_lift_2')
+	_LDVAL(@619, 0); Area 4 Lift is up. Player is in Area 4.
+	_LDVAL(@630, 12)
+	_CALL('ev_distortionr0101_a4_floater_1_on')
+	_CALL('ev_distortionr0101_a4_animated_objects_on')
+	_IFVAL_CALL(@622, 'EQ', 1, 'ev_distortionr0101_a6_giratina_disable'); Disables the upcoming Giratina flyunder if the player goes back down to Area 4 before it has been triggered
+	_IFVAL_CALL(@629, 'GT', 0, 'ev_distortionr0101_a6_cam_adj_disable'); Disables the camera adjustment for when you walk under the overhang
+	_EVENT_END()
+	_END()
+pos_distortionr0101_a7_a8_island_lift:
+	_EVENT_START()
+	_IFVAL_JUMP(@620, 'EQ', 0, 'ev_distortionr0101_a7_a8_island_lift_down')
+	_IFVAL_JUMP(@620, 'EQ', 1, 'ev_distortionr0101_a7_a8_island_lift_up')
+ev_distortionr0101_a7_a8_island_lift_down:
+	_IF_FLAGOFF_CALL(#3407, 'ev_distortionr0101_a7_cynthia_lift_attach')
+	_ATTACH_TRANSFORM('HERO', 'AREA_LIFTS/A7_A8_LIFT', 1)
+	_CALL('ev_distortionr0101_island_lift_5')
+	_GAMEOBJECT_MOVE('AREA_LIFTS/A7_A8_LIFT', 0, -31, 0, 232.5, 3)
+	_CALL('ev_distortionr0101_island_lift_2')
+	_LDVAL(@620, 1); Area 7 Lift is down. Player is in Area 8.
+	_LDVAL(@630, 16)
+	_LDVAL(@635, 1)
+	_CALL('ev_distortionr0101_detach_transform_a7_jumps')
+	_CALL('ev_distortionr0101_detach_transform_a6_a7_lift_jumps')
+	_FIND_BG_DISABLE(0, 'AREA_7_GEO')
+	_IFVAL_CALL(@623, 'EQ', 0, 'ev_distortionr0101_a8_cynthia_cyrus_enable'); Enables the upcoming cutscene if it hasn't yet been triggered
+	_IF_FLAGOFF_CALL(#3407, 'ev_distortionr0101_a7_cynthia_lift_2')
+	_FLAG_SET(#3407); A7 Cynthia has left the platform in Area 8 and is finished with
+	_EVENT_END()
+	_END()
+ev_distortionr0101_a7_a8_island_lift_up:
+	_ATTACH_TRANSFORM('HERO', 'AREA_LIFTS/A7_A8_LIFT', 1)
+	_FIND_BG_ENABLE(0, 'AREA_7_GEO')
+	_CALL('ev_distortionr0101_attach_transform_a7_jumps')
+	_CALL('ev_distortionr0101_attach_transform_a6_a7_lift_jumps')
+	_CALL('ev_distortionr0101_island_lift_6')
+	_GAMEOBJECT_MOVE('AREA_LIFTS/A7_A8_LIFT', 0, 31, 0, 232.5, 3)
+	_CALL('ev_distortionr0101_island_lift_2')
+	_LDVAL(@620, 0); Area 7 Lift is up. Player is in Area 7.
+	_LDVAL(@630, 10)
+	_LDVAL(@635, 0)
+	_IFVAL_CALL(@623, 'EQ', 1, 'ev_distortionr0101_a8_cynthia_cyrus_disable'); Disables the upcoming cutscene if the player goes back down to Area 7 before it has been triggered
+	_EVENT_END()
+	_END()
+
+
+ev_distortionr0101_island_lift_1:
+	_SE_PLAY('S_FI229')
+	_CAMERA_SHAKE(12, 1, 0, 15, 60)
+	_SE_WAIT('S_FI229')
+	_TIME_WAIT(40, @SCWK_ANSWER)
+	_SE_PLAY('S_FI227_OTHER')
+	_RET()
+ev_distortionr0101_island_lift_2:
+	_SE_STOP('S_FI227_OTHER')
+	_SE_PLAY('S_FI230')
+	_CAMERA_SHAKE(12, 1, 0, 15, 20)
+	_TIME_WAIT(5, @SCWK_ANSWER)
+	_SE_STOP('S_FI230')
+	_JUMP('ev_attach_player_world')
+ev_distortionr0101_island_lift_3:
+	_SE_PLAY('S_FI229')
+	_CAMERA_SHAKE(12, 1, 0, 15, 90)
+	;_SE_WAIT('S_FI229')
+	_GAMEOBJECT_MOVE('DISTORTIONR0101(Clone)', 0, -23, 0, 110, 3)
+	_SE_PLAY('S_FI227_OTHER')
+	_RET()
+ev_distortionr0101_island_lift_4:
+	_SE_PLAY('S_FI229')
+	_CAMERA_SHAKE(12, 1, 0, 15, 90)
+	;_SE_WAIT('S_FI229')
+	_GAMEOBJECT_MOVE('DISTORTIONR0101(Clone)', 0, 23, 0, 110, 3)
+	_SE_PLAY('S_FI227_OTHER')
+	_RET()
+ev_distortionr0101_island_lift_5:
+	_SE_PLAY('S_FI229')
+	_CAMERA_SHAKE(12, 1, 0, 15, 60)
+	_SE_WAIT('S_FI229')
+	_GAMEOBJECT_MOVE('DISTORTIONR0101(Clone)', 0, -2, 0, 40, 3)
+	_SE_PLAY('S_FI227_OTHER')
+	_RET()
+ev_distortionr0101_island_lift_6:
+	_SE_PLAY('S_FI229')
+	_CAMERA_SHAKE(12, 1, 0, 15, 60)
+	_SE_WAIT('S_FI229')
+	_GAMEOBJECT_MOVE('DISTORTIONR0101(Clone)', 0, 2, 0, 40, 3)
+	_SE_PLAY('S_FI227_OTHER')
+	_RET()
+
+ev_distortionr0101_a4_floater_1_on:
+	_LDVAL(@638, 1)
+	_RET()
+ev_distortionr0101_a4_floater_1_off:
+	_LDVAL(@638, 0)
+	_RET()
+pos_distortionr0101_a4_floater_1_1:
+	_SE_PLAY('PLAY_UI_COMMON_PM_ENCOUNT_CAVE')
+	_EVENT_ENTITY_CLIP_PLAY('A4_FLOATER_1', 1)
+	_LDVAL(@638, 2); A4 Floater 1 is visible
+	_END()
+pos_distortionr0101_a4_floater_1_3:
+	_SE_PLAY('PLAY_UI_COMMON_PM_ENCOUNT_CAVE')
+	_EVENT_ENTITY_CLIP_PLAY('A4_FLOATER_1', 3)
+	_LDVAL(@638, 1); A4 Floater 1 is invisible
+	_END()
+ev_distortionr0101_a4_animated_objects_on:
+	_LDVAL(@639, 1)
+	_LDVAL(@640, 1)
+	_LDVAL(@641, 1)
+	_LDVAL(@642, 1)
+	_LDVAL(@643, 1)
+	_LDVAL(@644, 1)
+	_LDVAL(@645, 1)
+	_LDVAL(@646, 1)
+	_LDVAL(@647, 1)
+	_LDVAL(@648, 1)
+	_LDVAL(@649, 1)
+	_LDVAL(@650, 1)
+	_LDVAL(@651, 1)
+	_LDVAL(@652, 1)
+	_LDVAL(@653, 1)
+	_LDVAL(@654, 1)
+	_LDVAL(@655, 1)
+	_RET()
+ev_distortionr0101_a4_animated_objects_off:
+	_LDVAL(@639, 0)
+	_LDVAL(@640, 0)
+	_LDVAL(@641, 0)
+	_LDVAL(@642, 0)
+	_LDVAL(@643, 0)
+	_LDVAL(@644, 0)
+	_LDVAL(@645, 0)
+	_LDVAL(@646, 0)
+	_LDVAL(@647, 0)
+	_LDVAL(@648, 0)
+	_LDVAL(@649, 0)
+	_LDVAL(@650, 0)
+	_LDVAL(@651, 0)
+	_LDVAL(@652, 0)
+	_LDVAL(@653, 0)
+	_LDVAL(@654, 0)
+	_LDVAL(@655, 0)
+	_RET()
+pos_distortionr0101_a4_wall_island_1_1:
+	_SE_PLAY('PLAY_UI_COMMON_PM_ENCOUNT_CAVE')
+	_EVENT_ENTITY_CLIP_PLAY('A4_WALL_ISLAND_1', 1)
+	_LDVAL(@639, 2); A4 Wall Island 1 is visible
+	_END()
+pos_distortionr0101_a4_wall_island_1_3:
+	_SE_PLAY('PLAY_UI_COMMON_PM_ENCOUNT_CAVE')
+	_EVENT_ENTITY_CLIP_PLAY('A4_WALL_ISLAND_1', 3)
+	_LDVAL(@639, 1); A4 Wall Island 1 is invisible
+	_END()
+pos_distortionr0101_a4_floater_2_1:
+	_SE_PLAY('PLAY_UI_COMMON_PM_ENCOUNT_CAVE')
+	_EVENT_ENTITY_CLIP_PLAY('A4_FLOATER_2', 1)
+	_LDVAL(@640, 2); A4 Floater 2 is invisible
+	_END()
+pos_distortionr0101_a4_floater_2_3:
+	_SE_PLAY('PLAY_UI_COMMON_PM_ENCOUNT_CAVE')
+	_EVENT_ENTITY_CLIP_PLAY('A4_FLOATER_2', 3)
+	_LDVAL(@640, 1); A4 Floater 2 is visible
+	_END()
+pos_distortionr0101_a4_floater_3_1:
+	_SE_PLAY('PLAY_UI_COMMON_PM_ENCOUNT_CAVE')
+	_EVENT_ENTITY_CLIP_PLAY('A4_FLOATER_3', 1)
+	_LDVAL(@641, 2); A4 Floater 3 is invisible
+	_END()
+pos_distortionr0101_a4_floater_3_3:
+	_SE_PLAY('PLAY_UI_COMMON_PM_ENCOUNT_CAVE')
+	_EVENT_ENTITY_CLIP_PLAY('A4_FLOATER_3', 3)
+	_LDVAL(@641, 1); A4 Floater 3 is visible
+	_END()
+pos_distortionr0101_a4_floater_4_1:
+	_SE_PLAY('PLAY_UI_COMMON_PM_ENCOUNT_CAVE')
+	_EVENT_ENTITY_CLIP_PLAY('A4_FLOATER_4', 1)
+	_LDVAL(@642, 2); A4 Floater 4 is visible
+	_END()
+pos_distortionr0101_a4_floater_4_3:
+	_SE_PLAY('PLAY_UI_COMMON_PM_ENCOUNT_CAVE')
+	_EVENT_ENTITY_CLIP_PLAY('A4_FLOATER_4', 3)
+	_LDVAL(@642, 1); A4 Floater 4 is invisible
+	_END()
+pos_distortionr0101_a4_floater_5_1:
+	_SE_PLAY('PLAY_UI_COMMON_PM_ENCOUNT_CAVE')
+	_EVENT_ENTITY_CLIP_PLAY('A4_FLOATER_5', 1)
+	_LDVAL(@643, 2); A4 Floater 5 is invisible
+	_END()
+pos_distortionr0101_a4_floater_5_3:
+	_SE_PLAY('PLAY_UI_COMMON_PM_ENCOUNT_CAVE')
+	_EVENT_ENTITY_CLIP_PLAY('A4_FLOATER_5', 3)
+	_LDVAL(@643, 1); A4 Floater 5 is visible
+	_END()
+pos_distortionr0101_a4_floater_6_1:
+	_SE_PLAY('PLAY_UI_COMMON_PM_ENCOUNT_CAVE')
+	_EVENT_ENTITY_CLIP_PLAY('A4_FLOATER_6', 1)
+	_LDVAL(@644, 2); A4 Floater 6 is invisible
+	_END()
+pos_distortionr0101_a4_floater_6_3:
+	_SE_PLAY('PLAY_UI_COMMON_PM_ENCOUNT_CAVE')
+	_EVENT_ENTITY_CLIP_PLAY('A4_FLOATER_6', 3)
+	_LDVAL(@644, 1); A4 Floater 6 is visible
+	_END()
+pos_distortionr0101_a4_floater_7_1:
+	_SE_PLAY('PLAY_UI_COMMON_PM_ENCOUNT_CAVE')
+	_EVENT_ENTITY_CLIP_PLAY('A4_FLOATER_7', 1)
+	_LDVAL(@645, 2); A4 Floater 7 is visible
+	_END()
+pos_distortionr0101_a4_floater_7_3:
+	_SE_PLAY('PLAY_UI_COMMON_PM_ENCOUNT_CAVE')
+	_EVENT_ENTITY_CLIP_PLAY('A4_FLOATER_7', 3)
+	_LDVAL(@645, 1); A4 Floater 7 is invisible
+	_END()
+pos_distortionr0101_a4_floater_8_1:
+	_SE_PLAY('PLAY_UI_COMMON_PM_ENCOUNT_CAVE')
+	_EVENT_ENTITY_CLIP_PLAY('A4_FLOATER_8', 1)
+	_LDVAL(@646, 2); A4 Floater 8 is invisible
+	_END()
+pos_distortionr0101_a4_floater_8_3:
+	_SE_PLAY('PLAY_UI_COMMON_PM_ENCOUNT_CAVE')
+	_EVENT_ENTITY_CLIP_PLAY('A4_FLOATER_8', 3)
+	_LDVAL(@646, 1); A4 Floater 8 is visible
+	_END()
+pos_distortionr0101_a4_floater_9_1:
+	_SE_PLAY('PLAY_UI_COMMON_PM_ENCOUNT_CAVE')
+	_EVENT_ENTITY_CLIP_PLAY('A4_FLOATER_9', 1)
+	_LDVAL(@647, 2); A4 Floater 9 is invisible
+	_END()
+pos_distortionr0101_a4_floater_9_3:
+	_SE_PLAY('PLAY_UI_COMMON_PM_ENCOUNT_CAVE')
+	_EVENT_ENTITY_CLIP_PLAY('A4_FLOATER_9', 3)
+	_LDVAL(@647, 1); A4 Floater 9 is visible
+	_END()
+pos_distortionr0101_a4_floater_10_1:
+	_SE_PLAY('PLAY_UI_COMMON_PM_ENCOUNT_CAVE')
+	_EVENT_ENTITY_CLIP_PLAY('A4_FLOATER_10', 1)
+	_LDVAL(@648, 2); A4 Floater 10 is invisible
+	_END()
+pos_distortionr0101_a4_floater_10_3:
+	_SE_PLAY('PLAY_UI_COMMON_PM_ENCOUNT_CAVE')
+	_EVENT_ENTITY_CLIP_PLAY('A4_FLOATER_10', 3)
+	_LDVAL(@648, 1); A4 Floater 10 is visible
+	_END()
+pos_distortionr0101_a4_floater_11_1:
+	_SE_PLAY('PLAY_UI_COMMON_PM_ENCOUNT_CAVE')
+	_EVENT_ENTITY_CLIP_PLAY('A4_FLOATER_11', 1)
+	_LDVAL(@649, 2); A4 Floater 11 is visible
+	_END()
+pos_distortionr0101_a4_floater_11_3:
+	_SE_PLAY('PLAY_UI_COMMON_PM_ENCOUNT_CAVE')
+	_EVENT_ENTITY_CLIP_PLAY('A4_FLOATER_11', 3)
+	_LDVAL(@649, 1); A4 Floater 11 is invisible
+	_END()
+pos_distortionr0101_a4_floater_12_1:
+	_SE_PLAY('PLAY_UI_COMMON_PM_ENCOUNT_CAVE')
+	_EVENT_ENTITY_CLIP_PLAY('A4_FLOATER_12', 1)
+	_LDVAL(@650, 2); A4 Floater 12 is invisible
+	_END()
+pos_distortionr0101_a4_floater_12_3:
+	_SE_PLAY('PLAY_UI_COMMON_PM_ENCOUNT_CAVE')
+	_EVENT_ENTITY_CLIP_PLAY('A4_FLOATER_12', 3)
+	_LDVAL(@650, 1); A4 Floater 12 is visible
+	_END()
+pos_distortionr0101_a4_floater_13_1:
+	_SE_PLAY('PLAY_UI_COMMON_PM_ENCOUNT_CAVE')
+	_EVENT_ENTITY_CLIP_PLAY('A4_FLOATER_13', 1)
+	_LDVAL(@651, 2); A4 Floater 13 is visible
+	_END()
+pos_distortionr0101_a4_floater_13_3:
+	_SE_PLAY('PLAY_UI_COMMON_PM_ENCOUNT_CAVE')
+	_EVENT_ENTITY_CLIP_PLAY('A4_FLOATER_13', 3)
+	_LDVAL(@651, 1); A4 Floater 13 is invisible
+	_END()
+pos_distortionr0101_a4_floater_14_1:
+	_SE_PLAY('PLAY_UI_COMMON_PM_ENCOUNT_CAVE')
+	_EVENT_ENTITY_CLIP_PLAY('A4_FLOATER_14', 1)
+	_LDVAL(@652, 2); A4 Floater 14 is visible
+	_END()
+pos_distortionr0101_a4_floater_14_3:
+	_SE_PLAY('PLAY_UI_COMMON_PM_ENCOUNT_CAVE')
+	_EVENT_ENTITY_CLIP_PLAY('A4_FLOATER_14', 3)
+	_LDVAL(@652, 1); A4 Floater 14 is invisible
+	_END()
+pos_distortionr0101_a4_floater_15_1:
+	_SE_PLAY('PLAY_UI_COMMON_PM_ENCOUNT_CAVE')
+	_EVENT_ENTITY_CLIP_PLAY('A4_FLOATER_15', 1)
+	_LDVAL(@653, 2); A4 Floater 15 is visible
+	_END()
+pos_distortionr0101_a4_floater_15_3:
+	_SE_PLAY('PLAY_UI_COMMON_PM_ENCOUNT_CAVE')
+	_EVENT_ENTITY_CLIP_PLAY('A4_FLOATER_15', 3)
+	_LDVAL(@653, 1); A4 Floater 15 is invisible
+	_END()
+pos_distortionr0101_a4_floater_16_1:
+	_SE_PLAY('PLAY_UI_COMMON_PM_ENCOUNT_CAVE')
+	_EVENT_ENTITY_CLIP_PLAY('A4_FLOATER_16', 1)
+	_LDVAL(@654, 2); A4 Floater 16 is invisible
+	_END()
+pos_distortionr0101_a4_floater_16_3:
+	_SE_PLAY('PLAY_UI_COMMON_PM_ENCOUNT_CAVE')
+	_EVENT_ENTITY_CLIP_PLAY('A4_FLOATER_16', 3)
+	_LDVAL(@654, 1); A4 Floater 16 is visible
+	_END()
+pos_distortionr0101_a4_wall_island_2_1:
+	_SE_PLAY('PLAY_UI_COMMON_PM_ENCOUNT_CAVE')
+	_EVENT_ENTITY_CLIP_PLAY('A4_WALL_ISLAND_2', 1)
+	_LDVAL(@655, 2); A4 Wall Island 2 is invisible
+	_END()
+pos_distortionr0101_a4_wall_island_2_3:
+	_SE_PLAY('PLAY_UI_COMMON_PM_ENCOUNT_CAVE')
+	_EVENT_ENTITY_CLIP_PLAY('A4_WALL_ISLAND_2', 3)
+	_LDVAL(@655, 1); A4 Wall Island 2 is visible
+	_END()
+
+
+ev_distortionr0101_a5_animated_objects_on:
+	_LDVAL(@656, 1)
+	_LDVAL(@657, 1)
+	_LDVAL(@658, 1)
+	_LDVAL(@659, 1)
+	_LDVAL(@660, 1)
+	_LDVAL(@661, 1)
+	_LDVAL(@662, 1)
+	_LDVAL(@663, 1)
+	_LDVAL(@664, 1)
+	_LDVAL(@665, 1)
+	_RET()
+ev_distortionr0101_a5_animated_objects_off:
+	_LDVAL(@656, 0)
+	_LDVAL(@657, 0)
+	_LDVAL(@658, 0)
+	_LDVAL(@659, 0)
+	_LDVAL(@660, 0)
+	_LDVAL(@661, 0)
+	_LDVAL(@662, 0)
+	_LDVAL(@663, 0)
+	_LDVAL(@664, 0)
+	_LDVAL(@665, 0)
+	_RET()
+ev_distortionr0101_a5_animated_objects_on_alt:
+	_LDVAL(@656, 2)
+	_LDVAL(@657, 2)
+	_LDVAL(@658, 2)
+	_LDVAL(@659, 2)
+	_LDVAL(@660, 2)
+	_LDVAL(@661, 2)
+	_LDVAL(@662, 2)
+	_LDVAL(@663, 2)
+	_LDVAL(@664, 2)
+	_LDVAL(@665, 2)
+	_RET()
+pos_distortionr0101_a5_hills_1_1:
+	_SE_PLAY('PLAY_UI_COMMON_PM_BATTLEIN_CAVE')
+	_EVENT_ENTITY_CLIP_PLAY('A5_HILL_1', 1)
+	_EVENT_ENTITY_CLIP_PLAY('A5_HILL_2', 1)
+	_EVENT_ENTITY_CLIP_PLAY('A5_HILL_3', 1)
+	_EVENT_ENTITY_CLIP_PLAY('A5_HILL_4', 1)
+	_LDVAL(@656, 2); A5 Hills 1 activated
+	_END()
+pos_distortionr0101_a5_hills_1_2:
+	_SE_PLAY('PLAY_UI_COMMON_PM_BATTLEIN_CAVE')
+	_EVENT_ENTITY_CLIP_PLAY('A5_HILL_1', 3)
+	_EVENT_ENTITY_CLIP_PLAY('A5_HILL_2', 3)
+	_EVENT_ENTITY_CLIP_PLAY('A5_HILL_3', 3)
+	_EVENT_ENTITY_CLIP_PLAY('A5_HILL_4', 3)
+	_LDVAL(@656, 1); A5 Hills 1 unactivated
+	_END()
+pos_distortionr0101_a5_hills_2_1:
+	_SE_PLAY('PLAY_UI_COMMON_PM_BATTLEIN_CAVE')
+	_EVENT_ENTITY_CLIP_PLAY('A5_HILL_12', 1)
+	_EVENT_ENTITY_CLIP_PLAY('A5_HILL_1', 3)
+	_EVENT_ENTITY_CLIP_PLAY('A5_HILL_2', 3)
+	_EVENT_ENTITY_CLIP_PLAY('A5_HILL_3', 3)
+	_LDVAL(@657, 2); A5 Hills 2 activated
+	_END()
+pos_distortionr0101_a5_hills_2_2:
+	_SE_PLAY('PLAY_UI_COMMON_PM_BATTLEIN_CAVE')
+	_EVENT_ENTITY_CLIP_PLAY('A5_HILL_12', 3)
+	_EVENT_ENTITY_CLIP_PLAY('A5_HILL_1', 1)
+	_EVENT_ENTITY_CLIP_PLAY('A5_HILL_2', 1)
+	_EVENT_ENTITY_CLIP_PLAY('A5_HILL_3', 1)
+	_LDVAL(@657, 1); A5 Hills 2 unactivated
+	_END()
+pos_distortionr0101_a5_hills_3_1:
+	_SE_PLAY('PLAY_UI_COMMON_PM_BATTLEIN_CAVE')
+	_EVENT_ENTITY_CLIP_PLAY('A5_HILL_4', 3)
+	_LDVAL(@658, 2); A5 Hills 3 activated
+	_END()
+pos_distortionr0101_a5_hills_3_2:
+	_SE_PLAY('PLAY_UI_COMMON_PM_BATTLEIN_CAVE')
+	_EVENT_ENTITY_CLIP_PLAY('A5_HILL_4', 1)
+	_LDVAL(@658, 1); A5 Hills 3 unactivated
+	_END()
+pos_distortionr0101_a5_hills_4_1:
+	_SE_PLAY('PLAY_UI_COMMON_PM_BATTLEIN_CAVE')
+	_EVENT_ENTITY_CLIP_PLAY('A5_HILL_12', 3)
+	_LDVAL(@659, 2); A5 Hills 4 activated
+	_END()
+pos_distortionr0101_a5_hills_4_2:
+	_SE_PLAY('PLAY_UI_COMMON_PM_BATTLEIN_CAVE')
+	_EVENT_ENTITY_CLIP_PLAY('A5_HILL_12', 1)
+	_LDVAL(@659, 1); A5 Hills 4 unactivated
+	_END()
+pos_distortionr0101_a5_hills_5_1:
+	_SE_PLAY('PLAY_UI_COMMON_PM_BATTLEIN_GRASS')
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_S_1', 1)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_M_1', 1)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_1', 1)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_2', 1)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_S_2', 1)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_M_2', 1)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_3', 1)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_4', 1)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_S_3', 1)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_5', 1)
+	_LDVAL(@660, 2); A5 Hills 5 activated
+	_END()
+pos_distortionr0101_a5_hills_5_2:
+	_SE_PLAY('PLAY_UI_COMMON_PM_BATTLEIN_GRASS')
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_S_1', 3)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_M_1', 3)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_2', 3)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_S_2', 3)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_M_2', 3)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_3', 3)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_4', 3)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_S_3', 3)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_5', 3)
+	_LDVAL(@660, 1); A5 Hills 5 unactivated
+	_END()
+pos_distortionr0101_a5_hills_6_1:
+	_SE_PLAY('PLAY_UI_COMMON_PM_BATTLEIN_GRASS')
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_S_4', 1)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_M_3', 1)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_6', 1)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_7', 1)
+	_LDVAL(@661, 2); A5 Hills 6 activated
+	_END()
+ev_distortionr0101_a5_hills_6_1_alt:
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_S_4', 1)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_M_3', 1)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_6', 1)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_7', 1)
+	_LDVAL(@661, 2); A5 Hills 6 activated
+	_RET()
+pos_distortionr0101_a5_hills_6_2:
+	_SE_PLAY('PLAY_UI_COMMON_PM_BATTLEIN_GRASS')
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_S_4', 3)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_M_3', 3)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_6', 3)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_7', 3)
+	_LDVAL(@661, 1); A5 Hills 6 unactivated
+	_END()
+pos_distortionr0101_a5_hills_7_1:
+	_SE_PLAY('PLAY_UI_COMMON_PM_BATTLEIN_GRASS')
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_S_7', 1)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_M_5', 1)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_11', 1)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_12', 1)
+	_IFVAL_CALL(@661, 'EQ', 1, 'ev_distortionr0101_a5_hills_6_1_alt')
+	_LDVAL(@662, 2); A5 Hills 7 activated
+	_END()
+pos_distortionr0101_a5_hills_7_2:
+	_SE_PLAY('PLAY_UI_COMMON_PM_BATTLEIN_GRASS')
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_S_4', 3)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_M_3', 3)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_6', 3)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_7', 3)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_S_7', 3)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_M_5', 3)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_11', 3)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_12', 3)
+	_LDVAL(@661, 1); A5 Hills 6 unactivated
+	_LDVAL(@662, 1); A5 Hills 7 unactivated
+	_END()
+pos_distortionr0101_a5_hills_8_1:
+	_SE_PLAY('PLAY_UI_COMMON_PM_BATTLEIN_GRASS')
+	_SE_PLAY('PLAY_UI_COMMON_PM_BATTLEIN_CAVE')
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_S_4', 3)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_M_3', 3)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_6', 3)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_7', 3)
+	_EVENT_ENTITY_CLIP_PLAY('A5_HILL_13', 1)
+	_LDVAL(@663, 2); A5 Hills 8 activated
+	_END()
+pos_distortionr0101_a5_hills_8_2:
+	_SE_PLAY('PLAY_UI_COMMON_PM_BATTLEIN_GRASS')
+	_SE_PLAY('PLAY_UI_COMMON_PM_BATTLEIN_CAVE')
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_S_4', 1)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_M_3', 1)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_6', 1)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_7', 1)
+	_EVENT_ENTITY_CLIP_PLAY('A5_HILL_13', 3)
+	_LDVAL(@663, 1); A5 Hills 8 unactivated
+	_END()
+pos_distortionr0101_a5_hills_9_1:
+	_SE_PLAY('PLAY_UI_COMMON_PM_BATTLEIN_GRASS')
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_S_6', 1)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_M_4', 1)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_9', 1)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_10', 1)
+	_LDVAL(@664, 2); A5 Hills 9 activated
+	_END()
+pos_distortionr0101_a5_hills_9_2:
+	_SE_PLAY('PLAY_UI_COMMON_PM_BATTLEIN_GRASS')
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_S_6', 3)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_M_4', 3)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_9', 3)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_10', 3)
+	_LDVAL(@664, 1); A5 Hills 9 unactivated
+	_END()
+pos_distortionr0101_a5_hills_10_1:
+	_SE_PLAY('PLAY_UI_COMMON_PM_BATTLEIN_GRASS')
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_S_7', 1)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_M_5', 1)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_11', 1)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_12', 1)
+	_LDVAL(@665, 2); A5 Hills 10 activated
+	_END()
+pos_distortionr0101_a5_hills_10_2:
+	_SE_PLAY('PLAY_UI_COMMON_PM_BATTLEIN_GRASS')
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_S_7', 3)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_M_5', 3)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_11', 3)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_12', 3)
+	_LDVAL(@665, 1); A5 Hills 10 unactivated
+	_END()
+
+ev_distortionr0101_a5_animate_objects_1:
+	_EVENT_ENTITY_CLIP_PLAY('A5_HILL_1', 0)
+	_EVENT_ENTITY_CLIP_PLAY('A5_HILL_2', 0)
+	_EVENT_ENTITY_CLIP_PLAY('A5_HILL_3', 0)
+	_EVENT_ENTITY_CLIP_PLAY('A5_HILL_4', 0)
+	_EVENT_ENTITY_CLIP_PLAY('A5_HILL_12', 0)
+	_EVENT_ENTITY_CLIP_PLAY('A5_HILL_13', 0)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_S_1', 0)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_S_2', 0)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_S_3', 0)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_S_4', 0)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_S_6', 0)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_S_7', 0)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_M_1', 0)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_M_2', 0)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_M_3', 0)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_M_4', 0)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_M_5', 0)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_1', 0)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_2', 0)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_3', 0)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_4', 0)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_5', 0)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_6', 0)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_7', 0)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_9', 0)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_10', 0)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_11', 0)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_12', 0)
+	_RET()
+ev_distortionr0101_a5_animate_objects_2:
+	_EVENT_ENTITY_CLIP_PLAY('A5_HILL_1', 0)
+	_EVENT_ENTITY_CLIP_PLAY('A5_HILL_2', 0)
+	_EVENT_ENTITY_CLIP_PLAY('A5_HILL_3', 0)
+	_EVENT_ENTITY_CLIP_PLAY('A5_HILL_4', 0)
+	_EVENT_ENTITY_CLIP_PLAY('A5_HILL_12', 0)
+	_EVENT_ENTITY_CLIP_PLAY('A5_HILL_13', 2)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_S_1', 2)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_S_2', 2)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_S_3', 2)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_S_4', 2)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_S_6', 2)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_S_7', 2)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_M_1', 2)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_M_2', 2)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_M_3', 2)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_M_4', 2)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_M_5', 2)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_1', 2)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_2', 2)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_3', 2)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_4', 2)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_5', 2)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_6', 2)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_7', 2)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_9', 2)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_10', 2)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_11', 2)
+	_EVENT_ENTITY_CLIP_PLAY('A5_TREE_L_12', 2)
+	_RET()

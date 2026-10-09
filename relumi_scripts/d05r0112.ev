@@ -1,4 +1,6 @@
 ev_d05r0112_flag_change:
+	; Disables the PlaceDatas of the Kurt intro event in Celestic town
+	_IF_FLAGON_CALL(#1761, 'ev_t05_disable_kurt_intro')
 	_IF_FLAGOFF_JUMP(#FE_HIDEN_04_GET, 'ev_d05r0112_anaunce_chk')
 	_IFVAL_CALL(@TOWNMAP_GUIDE_SEQUENCE, 'EQ', 9300, 'ev_d05r0112_anaunce_upd_2')
 	_END()
@@ -12,5 +14,17 @@ ev_d05r0112_anaunce_upd_2:
 	_LDVAL(@TOWNMAP_GUIDE_SEQUENCE, 9500)
 	_RET()
 ev_d05r0112_gingaw:
-	_EASY_OBJ_MSG('dp_scenario2%28-msg_d05r0112_gingaw_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_d05r0112', '28-msg_d05r0112_gingaw_01', 'There’s no way of getting to the peak of\nMount Coronet from this side!\rUh-oh... Was I supposed to go up from the\nHearthome City side?\rI can’t get up to the peak from the\nEterna City side?')
+	_END()
+ev_d05r0112_gstunfisk:
+	_LDVAL(@SCWK_TEMP0, @SCWK_TARGET_OBJID); PlaceData ID
+	_LDVAL(@SCWK_TEMP1, 618); MonsNo
+	_LDVAL(@SCWK_TEMP2, 18); Level
+	_LDVAL(@SCWK_TEMP3, 1); Formno
+	_CALL('ev_disguised_static_mon')
+	_MACRO_TALKMSG('dialogue_d05r0112', 'msg_d05r0112_gstunfisk', 'Fiiiiskkkk!')
+	_CALL('ev_disguised_static_mon_2')
+	_FLAG_SET(#2411); Mt Coronet Galar Stunfisk static
+	_CALL('ev_d13r0101_disguised_vivillon_flag')
+	_EVENT_END()
 	_END()

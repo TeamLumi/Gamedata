@@ -18,14 +18,14 @@ ev_poketore_ok_charge:
 	_TALK_END()
 	_END()
 ev_poketore_no_grass:
-	_TALKMSG('dp_scenario3%93-msg_fld_item_use_02')
+	_MACRO_TALKMSG('dialogue_pokesearcher', '93-msg_fld_item_use_02', 'The grassy patch remained quiet...')
 	_TALK_CLOSE()
 	_CALL('ev_block_doc_end')
 	_TALK_END()
 	_END()
 ev_poketore_ng_charge:
 	_NUMBER_NAME(0, @SCWK_TEMP0)
-	_TALKMSG('dp_scenario3%99-mes_saisen_01_01')
+	_MACRO_TALKMSG('dialogue_pokesearcher', '99-mes_saisen_01_01', 'The battery isn’t charged enough.\rNumber of steps required to fully charge\nthe battery: {0,2,1,0}')
 	_TALK_CLOSE()
 	_CALL('ev_block_doc_end')
 	_TALK_END()

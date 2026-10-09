@@ -7,8 +7,8 @@ ev_c05r0401_flag_change_vanish:
 	_FLAG_SET(#FV_TV_INTERVIEW_13)
 	_END()
 ev_c05r0401_woman6:
-	_EASY_OBJ_MSG('dp_scenario2%46-msg_c05r0401_woman6_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c05r0401', '46-msg_c05r0401_woman6_01', 'You can take a cute Pokémon out for a stroll in\nAmity Square.')
 	_END()
 ev_c05r0401_fighter:
-	_EASY_OBJ_MSG('dp_scenario2%46-msg_c05r0401_fighter_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c05r0401', '46-msg_c05r0401_fighter_01', 'I’m appalled! They refused entry to my Pokémon!\nOh, my poor Gyarados and Steelix!')
 	_END()

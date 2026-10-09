@@ -17,7 +17,7 @@ ev_c06fs0101_shop_re:
 	_JUMP('ev_c06fs0101_shop_end')
 	_END()
 ev_c06fs0101_shop_sonohoka:
-	_TALKMSG('dp_scenario1%28-mes_shop_01_03')
+	_MACRO_TALKMSG('dialogue_c06fs0101', '28-mes_shop_01_03', 'Is there anything else I can do for you?')
 	_RET()
 ev_c06fs0101_shop_buy:
 	_LDVAL(@LOCALWORK3, 1)
@@ -66,11 +66,11 @@ ev_c06fs0101_fix_shop:
 	_TALK_OBJ_END()
 	_END()
 ev_c06fs0101_boy3:
-	_EASY_OBJ_MSG('dp_scenario2%119-msg_c06fs0101_boy3_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c06fs0101', '119-msg_c06fs0101_boy3_01', 'The Pokémon Croagunk is the city’s official\nmascot. Croagunk sure is purdy—we’re hopin’\fit’ll get popular ’round the world.')
 	_END()
 ev_c06fs0101_girl3:
-	_EASY_OBJ_MSG('dp_scenario2%119-msg_c06fs0101_girl3_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c06fs0101', '119-msg_c06fs0101_girl3_01', 'Put Stickers on the Ball Capsule, then put it on a\nPoké Ball... And done! Another Poké Ball made\fby me! It’s one of a kind!')
 	_END()
 ev_c06fs0101_statue1:
-	_EASY_OBJ_MSG('dp_scenario2%119-msg_c06fs0101_statue_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c06fs0101', '119-msg_c06fs0101_statue_01', 'It’s a wood carving of the Pokémon Croagunk.\rEven though it’s made of wood, it looks like it’s\nseeping poison...')
 	_END()

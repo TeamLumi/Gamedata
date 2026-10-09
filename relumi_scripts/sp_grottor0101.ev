@@ -1,0 +1,12 @@
+SP_GROTTOR0101_INIT:
+	_END()
+SP_GROTTOR0101_OBJ:
+	_END()
+SP_GROTTOR0101_SCENE:
+	_JUMP('sp_grottor0101_tbl')
+	_END()
+SP_GROTTOR0101_FLAG:
+	_JUMP('ev_grottor0101_flag_change')
+	_END()
+sp_grottor0101_tbl:
+	_END()

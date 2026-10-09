@@ -2,14 +2,14 @@ ev_r212br0101_flag_change:
 	_ARRIVE_FLAG_SET($FLAG_ARRIVE_R212BR0101)
 	_END()
 ev_r212br0101_girl1:
-	_EASY_OBJ_MSG('dp_scenario2%143-msg_r212br0101_girl1_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_r212br0101', '143-msg_r212br0101_girl1_01', 'My big sister collects shards. She says they\nremind her of the place she worked at long ago.')
 	_END()
 ev_r212br0101_woman2:
 	_TALK_OBJ_START()
 	_JUMP('r212br0101_kakera_chk')
 	_JUMP('r212br0101_kakera_chk04')
 r212br0101_kakera_chk04:
-	_TALKMSG('dp_scenario2%143-msg_r212br0101_woman2_02')
+	_MACRO_TALKMSG('dialogue_r212br0101', '143-msg_r212br0101_woman2_02', 'What would you like to buy?')
 	_TALK_CLOSE()
 	_EVENT_CAMERA_INDEX(300)
 	_SHOP_OPEN_OTENKI()
@@ -40,10 +40,10 @@ r212br0101_kakera_chk03:
 	_JUMP('ev_r212br0101_kakera_nothing')
 	_END()
 ev_r212br0101_kakera_nothing:
-	_TALKMSG('dp_scenario2%143-msg_r212br0101_woman2_01')
+	_MACRO_TALKMSG('dialogue_r212br0101', '143-msg_r212br0101_woman2_01', 'If you find 10 shards of the same color, please\nlet me know.\rI would gladly trade you a Technical Machine\nfor them.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_r212br0101_poster:
-	_EASY_OBJ_MSG('dp_scenario2%143-msg_r212br0101_poster_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_r212br0101', '143-msg_r212br0101_poster_01', 'Red Shards: Sunny Day\nBlue Shards: Rain Dance\fYellow Shards: Sandstorm\fGreen Shards: Hail\f— The Weather Institute')
 	_END()

@@ -1,5 +1,5 @@
 ev_d30r0101_flag_change:
-	_ZENKOKU_ZUKAN_FLAG(2, @LOCALWORK0)
+	_ZENKOKU_ZUKAN_FLAG(2, @LOCALWORK0); 1 = Set, 2 = Get
 	_IFVAL_JUMP(@LOCALWORK0, 'EQ', 0, 'ev_d30r0101_battle_ng')
 	_ITEM_CHK(454, 1, @LOCALWORK0)
 	_IFVAL_JUMP(@LOCALWORK0, 'EQ', 0, 'ev_d30r0101_battle_ng')
@@ -24,7 +24,7 @@ ev_d30r0101_sppoke7:
 	_EVENT_START()
 	_BLACK_OUT('SCR_WIPE_DIV', 3)
 	_FADE_WAIT()
-	_OBJ_POS_CHANGE_WORLD('HERO', -16, -2, 14.500000)
+	_OBJ_POS_CHANGE_WORLD('HERO', 16, -2, 14.500000)
 	_OBJ_DIR_CHANGE('HERO', 180)
 	_EVENT_CAMERA_INDEX(320)
 	_BLACK_IN('SCR_WIPE_DIV', 3)
@@ -33,7 +33,7 @@ ev_d30r0101_sppoke7:
 	_TIME_WAIT(15, @SCWK_ANSWER)
 	_EVENT_CAMERA_INDEX(321)
 	_TIME_WAIT(30, @SCWK_ANSWER)
-	_TALKMSG('dp_scenario3%79-msg_d30r0101_sppoke7_01')
+	_MACRO_TALKMSG('dialogue_d30r0101', '79-msg_d30r0101_sppoke7_01', '...')
 	_TALK_CLOSE()
 	_SET_SYS_FLAG($SYS_FLAG_AUTOSAVE_STOP)
 	_EVENT_CAMERA_INDEX(322)
@@ -46,8 +46,8 @@ ev_d30r0101_sppoke7:
 	_JUMP('ev_d30r0101_legend_event_clear')
 ev_d30r0101_legend_event_clear:
 	_FLAG_SET(#FE_D30R0101_LEGEND_CLEAR)
-	_TALKMSG('dp_scenario3%79-msg_d30r0101_sppoke7_03_1')
-	_TALKMSG('dp_scenario3%79-msg_d30r0101_sppoke7_03_2')
+	_MACRO_TALKMSG('dialogue_d30r0101', '79-msg_d30r0101_sppoke7_03_1', 'A voice called out from somewhere.')
+	_MACRO_TALKMSG('dialogue_d30r0101', '79-msg_d30r0101_sppoke7_03_2', 'Darkrai. Your power is strong.\rThough you don’t will it, you make people and\nPokémon around you see terrible nightmares.\rThat is why you came here—Newmoon Island.\nHere, there is no one but you.\rThere are none that can be drawn into\nyour nightmare.\rAnd if anyone were to fall into the nightmares,\nFullmoon Island is close by.\r... ... ...')
 	_TALK_CLOSE()
 	_JUMP('ev_d30r0101_legend_event_end')
 ev_d30r0101_legend_lose:
@@ -60,9 +60,9 @@ ev_d30r0101_legend_event_end:
 	_TALK_END()
 	_END()
 ev_d30r0101_legend_capture_ng:
-	_TALKMSG('dp_scenario3%79-msg_d30r0101_sppoke7_02')
-	_TALKMSG('dp_scenario3%79-msg_d30r0101_sppoke7_03_1')
-	_TALKMSG('dp_scenario3%79-msg_d30r0101_sppoke7_03_2')
+	_MACRO_TALKMSG('dialogue_d30r0101', '79-msg_d30r0101_sppoke7_02', 'Darkrai disappeared into the murky darkness...')
+	_MACRO_TALKMSG('dialogue_d30r0101', '79-msg_d30r0101_sppoke7_03_1', 'A voice called out from somewhere.')
+	_MACRO_TALKMSG('dialogue_d30r0101', '79-msg_d30r0101_sppoke7_03_2', 'Darkrai. Your power is strong.\rThough you don’t will it, you make people and\nPokémon around you see terrible nightmares.\rThat is why you came here—Newmoon Island.\nHere, there is no one but you.\rThere are none that can be drawn into\nyour nightmare.\rAnd if anyone were to fall into the nightmares,\nFullmoon Island is close by.\r... ... ...')
 	_TALK_CLOSE()
 	_MAP_CHANGE('C02', 5)
 	_JUMP('ev_d30r0101_legend_event_end')

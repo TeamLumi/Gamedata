@@ -31,7 +31,7 @@ ev_r215_fc_midnight:
 ev_r215_fighter:
 	_TALK_OBJ_START()
 	_IF_FLAGON_JUMP(#FE_WAZAMASIN66_GET, 'ev_r215_fighter_02')
-	_TALKMSG('dp_scenario2%90-msg_r215_fighter_01')
+	_MACRO_TALKMSG('dialogue_r215', '90-msg_r215_fighter_01', 'Do unto others as they do unto you...\nYup, it’s Payback!\rIt’s good for Pokémon battles, but if you do that\nin real life...\rThere’ll be no end to the fighting—that’s for sure.')
 	_LDVAL(@SCWK_TEMP0, 393)
 	_LDVAL(@SCWK_TEMP1, 1)
 	_ADD_ITEM_CHK(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_ANSWER)
@@ -41,7 +41,7 @@ ev_r215_fighter:
 	_JUMP('ev_r215_fighter_02')
 	_JUMP('ev_r215_fighter_02')
 ev_r215_fighter_02:
-	_TALKMSG('dp_scenario2%90-msg_r215_fighter_02')
+	_MACRO_TALKMSG('dialogue_r215', '90-msg_r215_fighter_02', 'Use it after the opponent, and its power\ngets doubled!')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
@@ -51,18 +51,18 @@ ev_r215_fighter_item_event_fail:
 	_TALK_OBJ_END()
 	_END()
 ev_r215_sign1:
-	_EASY_BOARD_MSG('dp_scenario2%90-msg_r215_sign1_01', 'BOARD_TYPE_ROAD', 0, 6)
+	_EASY_BOARD_MSG('dialogue_r215%90-msg_r215_sign1_01', 'BOARD_TYPE_ROAD', 0, 6)
 	_END()
 ev_r215_sign2:
-	_EASY_BOARD_MSG('dp_scenario2%90-msg_r215_sign2_01', 'BOARD_TYPE_ROAD', 0, 1)
+	_EASY_BOARD_MSG('dialogue_r215%90-msg_r215_sign2_01', 'BOARD_TYPE_ROAD', 0, 1)
 	_END()
 ev_r215_sign3:
-	_EASY_INFOBOARD_MSG('dp_scenario2%90-msg_r215_sign3_01_1', 'BOARD_TYPE_INFO', 0)
-	_EASY_INFOBOARD_MSG('dp_scenario2%90-msg_r215_sign3_01_2', 'BOARD_TYPE_INFO', 0)
+	_EASY_INFOBOARD_MSG('dialogue_r215%90-msg_r215_sign3_01_1', 'BOARD_TYPE_INFO', 0)
+	_EASY_INFOBOARD_MSG('dialogue_r215%90-msg_r215_sign3_01_2', 'BOARD_TYPE_INFO', 0)
 	_END()
 ev_r215_jogger3:
-	_EASY_OBJ_MSG('dp_scenario2%90-msg_r215_jogger_03_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_r215', '90-msg_r215_jogger_03_01', 'Jogging is good for you, but you have to make\nsure you’re not overdoing it!')
 	_END()
 ev_r215_jogger5:
-	_EASY_OBJ_MSG('dp_scenario2%90-msg_r215_jogger_05_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_r215', '90-msg_r215_jogger_05_01', 'I slow down and stop at times, sure. I’m only\nhuman, after all.')
 	_END()

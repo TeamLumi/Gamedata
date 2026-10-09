@@ -1,19 +1,19 @@
 ev_c05r0701_stopper_01:
-	_EASY_OBJ_MSG('dp_scenario2%49-msg_c05r0701_stopper_01_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c05r0701', '49-msg_c05r0701_stopper_01_01', 'The Super Contest Shows are interesting, but the\nruins of Solaceon Town are as well...')
 	_END()
 ev_c05r0701_stopper_02:
-	_EASY_OBJ_MSG('dp_scenario2%49-msg_c05r0701_stopper_02_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c05r0701', '49-msg_c05r0701_stopper_02_01', 'As a cameraman, it makes me happy to see all\nthe Pokémon involved in Super Contest Shows.')
 	_END()
 ev_c05r0701_bigman:
-	_EASY_OBJ_MSG('dp_scenario2%49-msg_c05r0701_bigman_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c05r0701', '49-msg_c05r0701_bigman_01', 'I traveled a long way to take part in these Super\nContest Shows.')
 	_END()
 ev_c05r0701_cowgirl:
 	_IF_FLAGON_JUMP(#FV_C05_STOPPER, 'ev_c05r0701_cowgirl02')
 	_NONE_USE_NUMBER('ev_c05r0701_cowgirl01')
 	_JUMP('ev_c05r0701_cowgirl01')
 ev_c05r0701_cowgirl01:
-	_EASY_OBJ_MSG('dp_scenario2%49-msg_c05r0701_cowgirl_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c05r0701', '49-msg_c05r0701_cowgirl_01', 'I’ve given my Pokémon lots of Poffins.\rI’m confident that we’ll win our share of Super\nContest Shows.')
 	_END()
 ev_c05r0701_cowgirl02:
-	_EASY_OBJ_MSG('dp_scenario2%49-msg_c05r0701_cowgirl_02')
+	_MACRO_EASY_OBJ_MSG('dialogue_c05r0701', '49-msg_c05r0701_cowgirl_02', 'There’s a Pokémon Nursery in Solaceon Town.\rIf you leave a male and a female Pokémon of\nthe same species, an Egg may be found.')
 	_END()

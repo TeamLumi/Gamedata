@@ -1,3 +1,3 @@
 ev_d26r0105_gingam:
-	_EASY_OBJ_MSG('dp_scenario2%84-msg_d26r0105_gingam_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_d26r0105', '84-msg_d26r0105_gingam_01', 'I’m a Team Galactic member—but I don’t even\nhave a Pokémon!\rI’m the gruntiest of the grunts!\rIt’s my fault, though. I still don’t know how the\nwarp panels connect.')
 	_END()

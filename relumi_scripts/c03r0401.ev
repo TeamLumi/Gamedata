@@ -1,21 +1,21 @@
 ev_c03r0401_woman6:
-	_EASY_OBJ_MSG('dp_scenario1%78-msg_c03r0401_woman6_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c03r0401', '78-msg_c03r0401_woman6_01', 'Hello! Welcome to the Oreburgh\nMining Museum!')
 	_END()
 ev_c03r0401_assistantm:
 	_TALK_OBJ_START()
 	_IF_FLAGON_JUMP(#FH_01, 'ev_c03r0401_assistantm_06')
-	_TALKMSG('dp_scenario1%78-msg_c03r0401_assistantm_01')
+	_MACRO_TALKMSG('dialogue_c03r0401', '78-msg_c03r0401_assistantm_01', 'Hello, hello! How are you?\nI study Pokémon Fossils! Me! Right here and now!')
 	_IF_FLAGOFF_JUMP(#FE_TANKENSETTO_GET, 'ev_c03r0401_assistantm_10')
-	_IFVAL_JUMP(@WK_SCENE_KASEKI_MONSNO, 'NE', 0, 'c03r0401_uketori_chk')
+	_IFVAL_JUMP(@WK_SCENE_KASEKI_MONSNO, 'NE', 0, 'c03r0401_uketori_chk') ; If there is a pending fossil to be received (Pokémon ID stored in @WK_SCENE_KASEKI_MONSNO)
 	_KASEKI_COUNT(@SCWK_PARAM0)
 	_IFVAL_JUMP(@SCWK_PARAM0, 'EQ', 0, 'ev_c03r0401_assistantm_09')
-	_TALKMSG('dp_scenario1%78-msg_c03r0401_assistantm_02')
+	_MACRO_TALKMSG('dialogue_c03r0401', '78-msg_c03r0401_assistantm_02', 'You have a Fossil for me, yes? Shall I turn it into\na Pokémon?')
 	_YES_NO_WIN(@SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_c03r0401_assistantm_05_yes_2')
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_c03r0401_assistantm_05')
 	_JUMP('ev_c03r0401_assistantm_05_yes_2')
 ev_c03r0401_assistantm_05_yes_2:
-	_IFVAL_JUMP(@SCWK_PARAM0, 'EQ', 1, 'ev_c03r0401_assistantm_05_yes_3')
+	_IFVAL_JUMP(@SCWK_PARAM0, 'EQ', 1, 'ev_c03r0401_assistantm_05_yes_3') ; This triggers when you only have one fossil
 	_JUMP('ev_c03r0401_assistantm_05_yes_4')
 	_END()
 ev_c03r0401_assistantm_05_yes_3:
@@ -33,6 +33,14 @@ ev_c03r0401_assistantm_05_yes_3:
 	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 1, 'ev_c03r0401_assistantm_localwork6_itemno_get_sin')
 	_ITEM_CHK(105, 1, @SCWK_ANSWER)
 	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 1, 'ev_c03r0401_assistantm_localwork7_itemno_get_sin')
+	_ITEM_CHK(572, 1, @SCWK_ANSWER); Cover Fossil
+	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 1, 'ev_c03r0401_assistantm_localwork8_itemno_get_sin')
+	_ITEM_CHK(573, 1, @SCWK_ANSWER); Plume Fossil
+	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 1, 'ev_c03r0401_assistantm_localwork9_itemno_get_sin')
+	_ITEM_CHK(710, 1, @SCWK_ANSWER); Jaw Fossil
+	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 1, 'ev_c03r0401_assistantm_localwork10_itemno_get_sin')
+	_ITEM_CHK(711, 1, @SCWK_ANSWER); Sail Fossil
+	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 1, 'ev_c03r0401_assistantm_localwork11_itemno_get_sin')
 	_END()
 ev_c03r0401_assistantm_05_yes_4:
 	_ITEM_CHK(103, 1, @SCWK_ANSWER)
@@ -49,7 +57,15 @@ ev_c03r0401_assistantm_05_yes_4:
 	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 1, 'ev_c03r0401_assistantm_itemno_check_6_1')
 	_ITEM_CHK(105, 1, @SCWK_ANSWER)
 	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 1, 'ev_c03r0401_assistantm_itemno_check_7_1')
-	_CALL('ev_c03r0401_assistantm_itemno_check_8_1')
+	_ITEM_CHK(572, 1, @SCWK_ANSWER); Cover Fossil
+	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 1, 'ev_c03r0401_assistantm_itemno_check_8_1')
+	_ITEM_CHK(573, 1, @SCWK_ANSWER); Plume Fossil
+	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 1, 'ev_c03r0401_assistantm_itemno_check_9_1')
+	_ITEM_CHK(710, 1, @SCWK_ANSWER); Jaw Fossil
+	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 1, 'ev_c03r0401_assistantm_itemno_check_10_1')
+	_ITEM_CHK(711, 1, @SCWK_ANSWER); Sail Fossil
+	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 1, 'ev_c03r0401_assistantm_itemno_check_11_1')
+	_CALL('ev_c03r0401_assistantm_itemno_check_12_1') ; Quit option
 	_OPEN_CUSTUM_WIN(@SCWK_TEMP0)
 	_SWITCH(@SCWK_TEMP0)
 	_CASE_JUMP(0, 'ev_c03r0401_assistantm_localwork1_itemno_get_sin')
@@ -59,7 +75,11 @@ ev_c03r0401_assistantm_05_yes_4:
 	_CASE_JUMP(4, 'ev_c03r0401_assistantm_localwork5_itemno_get_sin')
 	_CASE_JUMP(5, 'ev_c03r0401_assistantm_localwork6_itemno_get_sin')
 	_CASE_JUMP(6, 'ev_c03r0401_assistantm_localwork7_itemno_get_sin')
-	_CASE_JUMP(7, 'ev_c03r0401_assistantm_05')
+	_CASE_JUMP(7, 'ev_c03r0401_assistantm_localwork8_itemno_get_sin')
+	_CASE_JUMP(8, 'ev_c03r0401_assistantm_localwork9_itemno_get_sin')
+	_CASE_JUMP(9, 'ev_c03r0401_assistantm_localwork10_itemno_get_sin')
+	_CASE_JUMP(10, 'ev_c03r0401_assistantm_localwork11_itemno_get_sin')
+	_CASE_JUMP(11, 'ev_c03r0401_assistantm_05')
 	_JUMP('ev_c03r0401_assistantm_05')
 	_END()
 ev_c03r0401_assistantm_localwork1_itemno_get_sin:
@@ -90,9 +110,25 @@ ev_c03r0401_assistantm_localwork7_itemno_get_sin:
 	_LDVAL(@SCWK_PARAM2, 105)
 	_JUMP('ev_c03r0401_menu_skip2_1')
 	_JUMP('ev_c03r0401_assistantm_itemno_check_1_1')
+ev_c03r0401_assistantm_localwork8_itemno_get_sin:
+	_LDVAL(@SCWK_PARAM2, 572) ; Cover Fossil
+	_JUMP('ev_c03r0401_menu_skip2_1')
+	_JUMP('ev_c03r0401_assistantm_itemno_check_1_1')
+ev_c03r0401_assistantm_localwork9_itemno_get_sin:
+	_LDVAL(@SCWK_PARAM2, 573) ; Plume Fossil
+	_JUMP('ev_c03r0401_menu_skip2_1')
+	_JUMP('ev_c03r0401_assistantm_itemno_check_1_1')
+ev_c03r0401_assistantm_localwork10_itemno_get_sin:
+	_LDVAL(@SCWK_PARAM2, 710) ; Jaw Fossil
+	_JUMP('ev_c03r0401_menu_skip2_1')
+	_JUMP('ev_c03r0401_assistantm_itemno_check_1_1')
+ev_c03r0401_assistantm_localwork11_itemno_get_sin:
+	_LDVAL(@SCWK_PARAM2, 711) ; Sail Fossil
+	_JUMP('ev_c03r0401_menu_skip2_1')
+	_JUMP('ev_c03r0401_assistantm_itemno_check_1_1')
 ev_c03r0401_menu_skip2_1:
-	_ITEMNO_TO_MONSNO(@WK_SCENE_KASEKI_MONSNO, @SCWK_PARAM2)
-	_IFVAL_JUMP(@WK_SCENE_KASEKI_MONSNO, 'EQ', 0, 'ev_c03r0401_assistantm_05')
+	_ITEMNO_TO_MONSNO(@SCWK_PARAM2, @WK_SCENE_KASEKI_MONSNO, @491) ; ItemNo, MonsNo, FormNo
+	_IFVAL_JUMP(@WK_SCENE_KASEKI_MONSNO, 'EQ', 0, 'ev_c03r0401_assistantm_05') ; The player rejects the transformation?
 	_SUB_ITEM(@SCWK_PARAM2, 1, @SCWK_ANSWER)
 	_JUMP('ev_c03r0401_assistantm_06')
 	_JUMP('ev_c03r0401_assistantm_itemno_check_1_1')
@@ -118,33 +154,43 @@ ev_c03r0401_assistantm_itemno_check_7_1:
 	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_162', 6)
 	_RET()
 ev_c03r0401_assistantm_itemno_check_8_1:
-	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_192', 7)
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_options_coverfossil', 'Cover Fossil', 7)
+	_RET()
+ev_c03r0401_assistantm_itemno_check_9_1:
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_options_plumefossil', 'Plume Fossil', 8)
+	_RET()
+ev_c03r0401_assistantm_itemno_check_10_1:
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_options_jawfossil', 'Jaw Fossil', 9)
+	_RET()
+ev_c03r0401_assistantm_itemno_check_11_1:
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_options_sailfossil', 'Sail Fossil', 10)
+	_RET()
+ev_c03r0401_assistantm_itemno_check_12_1:
+	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_192', 11) ; Quit option
 	_RET()
 ev_c03r0401_one_kaseki:
 	_KASEKI_ITEMNO(@SCWK_PARAM2, @SCWK_TEMP0, 1)
-	_ITEMNO_TO_MONSNO(@WK_SCENE_KASEKI_MONSNO, @SCWK_PARAM2)
+	_ITEMNO_TO_MONSNO(@SCWK_PARAM2, @WK_SCENE_KASEKI_MONSNO, @491) ; ItemNo, MonsNo, FormNo
 	_SUB_ITEM(@SCWK_PARAM2, 1, @SCWK_ANSWER)
 	_JUMP('ev_c03r0401_assistantm_06')
 	_JUMP('ev_c03r0401_assistantm_06')
 ev_c03r0401_assistantm_06:
 	_FLAG_SET(#FH_01)
-	_TALKMSG('dp_scenario1%78-msg_c03r0401_assistantm_06')
+	_MACRO_TALKMSG('dialogue_c03r0401', '78-msg_c03r0401_assistantm_06', 'I am in the process of extracting your Pokémon\nfrom a Fossil.\rYou go outside, yes, please. Now! Time alone is\nwhat I now need. NOW!!!')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_c03r0401_assistantm_05:
-	_TALKMSG('dp_scenario1%78-msg_c03r0401_assistantm_05')
+	_MACRO_TALKMSG('dialogue_c03r0401', '78-msg_c03r0401_assistantm_05', 'You don’t wish that I extract any Pokémon from a\nFossil. Fine, then!')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 c03r0401_uketori_chk:
 	_POKEMON_NAME_EXTRA(0, @WK_SCENE_KASEKI_MONSNO, 0, 0)
-	_TALKMSG('dp_scenario1%78-msg_c03r0401_assistantm_07')
-	_GET_POKE_COUNT(@SCWK_ANSWER)
-	_IFVAL_JUMP(@SCWK_ANSWER, 'LT', 6, 'ev_c03r0401_assistantm_08')
-	_COUNT_MONSBOX_SPACE(@SCWK_ANSWER)
-	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_c03r0401_assistantm_08')
-	_TALKMSG('dp_scenario1%78-msg_c03r0401_assistantm_08')
+	_MACRO_TALKMSG('dialogue_c03r0401', '78-msg_c03r0401_assistantm_07', 'You were gone too long! You kept us\nwaiting! Unacceptable!\rThis is your {0,1,1,0}! You be good to\nit! OK!')
+	_CALL('ev_common_tray_space_check'); Checks if there is any remaining space in the Party and Boxes
+	_IFVAL_JUMP(@551, 'EQ', 0, 'ev_c03r0401_assistantm_08'); Party and Boxes are not full
+	_MACRO_TALKMSG('dialogue_c03r0401', '78-msg_c03r0401_assistantm_08', 'But, no, I cannot do this! You have too many\nPokémon with you!\rI must hold this Pokémon for you, so come back,\nyou, and take it away, please.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
@@ -152,60 +198,61 @@ ev_c03r0401_assistantm_08:
 	_POKEMON_NAME_EXTRA(1, @WK_SCENE_KASEKI_MONSNO, 0, 0)
 	_PLAYER_NAME(0)
 	_SE_PLAY('M_FI013')
-	_TALKMSG('dp_scenario1%78-msg_c03r0401_assistantm_11')
+	_MACRO_TALKMSG('dialogue_c03r0401', '78-msg_c03r0401_assistantm_11', 'You received {1,1,1,0}!')
 	_ME_WAIT()
-	_ADD_POKEMON_UI(@WK_SCENE_KASEKI_MONSNO, 1, 0, @SCWK_ANSWER, 3, 0)
-	_LDVAL(@WK_SCENE_KASEKI_MONSNO, 0)
+	_ADD_POKEMON_UI_EXTRA(@WK_SCENE_KASEKI_MONSNO, @491, 1, 0, 3, 4) ; MonsNo, FormNo, Level, Item, MaxIVs, BallId
+	_LDVAL(@WK_SCENE_KASEKI_MONSNO, 0) ; Resets Fossil MonsNo
+	_LDVAL(@491, 0) ; Resets Fossil FormNo
 	_END()
 ev_c03r0401_assistantm_09:
-	_TALKMSG('dp_scenario1%78-msg_c03r0401_assistantm_09')
+	_MACRO_TALKMSG('dialogue_c03r0401', '78-msg_c03r0401_assistantm_09', 'If it is a Fossil that you obtain, bring it to me if\nyou must.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_c03r0401_assistantm_10:
-	_TALKMSG('dp_scenario1%78-msg_c03r0401_assistantm_10')
+	_MACRO_TALKMSG('dialogue_c03r0401', '78-msg_c03r0401_assistantm_10', 'On the verge of a breakthrough, I am, to achieve\nextraction from Fossils.\rFrom Fossils I can extract Pokémon, but not yet,\nnot yet.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_c03r0401_mount:
-	_EASY_OBJ_MSG('dp_scenario1%78-msg_c03r0401_mount_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c03r0401', '78-msg_c03r0401_mount_01', 'Whoa! So this is coal? I never expected\nsomething this big!')
 	_END()
 ev_c03r0401_babygirl1:
-	_EASY_OBJ_MSG('dp_scenario1%78-msg_c03r0401_babygirl1_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c03r0401', '78-msg_c03r0401_babygirl1_01', 'Wow! The Pokémon that carried this must be\nterribly strong!')
 	_END()
 ev_c03r0401_boy1:
-	_EASY_OBJ_MSG('dp_scenario1%78-msg_c03r0401_boy1_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c03r0401', '78-msg_c03r0401_boy1_01', 'Well, how about that! Oreburgh Mine extends\nunder the seafloor!')
 	_END()
 ev_c03r0401_rack1:
-	_EASY_OBJ_MSG('dp_scenario1%78-msg_c03r0401_rack1_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c03r0401', '78-msg_c03r0401_rack1_01', 'How Coal Is Made: Part 1\r“In a time long before history, vegetative matter\nwas swept along by rain and rivers. It came to be\fburied under the ground.”')
 	_END()
 ev_c03r0401_rack2:
-	_EASY_OBJ_MSG('dp_scenario1%78-msg_c03r0401_rack2_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c03r0401', '78-msg_c03r0401_rack2_01', 'How Coal Is Made: Part 2\r“The buried plant matter was forced ever deeper\nunderground due to tremors and fissures\fcaused by the shifting landmasses.”')
 	_END()
 ev_c03r0401_rack3:
-	_EASY_OBJ_MSG('dp_scenario1%78-msg_c03r0401_rack3_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c03r0401', '78-msg_c03r0401_rack3_01', 'How Coal Is Made: Part 3\r“Deep underground, the plant matter was\nsubjected to heavy pressure and the heat\fof magma. It gradually turned into coal.”')
 	_END()
 ev_c03r0401_case1:
-	_EASY_OBJ_MSG('dp_scenario1%78-msg_c03r0401_case1_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c03r0401', '78-msg_c03r0401_case1_01', 'Samples of coal from different regions\nare displayed.')
 	_END()
 ev_c03r0401_case2:
-	_EASY_OBJ_MSG('dp_scenario1%78-msg_c03r0401_case2_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c03r0401', '78-msg_c03r0401_case2_01', 'The box contains categorized samples of coal.')
 	_END()
 ev_c03r0401_case3:
-	_EASY_OBJ_MSG('dp_scenario1%78-msg_c03r0401_case3_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c03r0401', '78-msg_c03r0401_case3_01', 'Different kinds of lamps are displayed.\rThey appear to have been worn on someone’s\nhead while the person was underground.')
 	_END()
 ev_c03r0401_case4:
-	_EASY_OBJ_MSG('dp_scenario1%78-msg_c03r0401_case4_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c03r0401', '78-msg_c03r0401_case4_01', 'Badly scarred wooden tools are displayed.\rThey apparently dug out coal using these tools in\nthe olden days.')
 	_END()
 ev_c03r0401_case5:
-	_EASY_OBJ_MSG('dp_scenario1%78-msg_c03r0401_case5_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c03r0401', '78-msg_c03r0401_case5_01', 'The everyday items and tools of past mine\nworkers are displayed.')
 	_END()
 ev_c03r0401_script_14:
-	_MACRO_EASY_OBJ_MSG('dp_scenario3', '00_msg_c03r0401_script_14_1', 'It’s a little far from here, but there\nis a city called Eterna City.\rI’ve heard a curious person named the\nUnderground Man lives there.\rWith a name like that, he must be an\nauthority on the Underground.')
+	_MACRO_EASY_OBJ_MSG('dialogue_c03r0401', '00_msg_c03r0401_script_14_1', 'It’s a little far from here, but there\nis a city called Eterna City.\rI’ve heard a curious person named the\nUnderground Man lives there.\rWith a name like that, he must be an\nauthority on the Underground.')
 	_END()
 ev_c03r0401_script_15:
-	_MACRO_EASY_OBJ_MSG('dp_scenario3', '00_msg_c03r0401_script_15_1', 'Mining must take a strong mind, not\njust a tough body.\rThink about it. You’re in darkness,\ndigging desperately through rock.')
+	_MACRO_EASY_OBJ_MSG('dialogue_c03r0401', '00_msg_c03r0401_script_15_1', 'Mining must take a strong mind, not\njust a tough body.\rThink about it. You’re in darkness,\ndigging desperately through rock.')
 	_END()
 ev_c03r0401_script_16:
-	_MACRO_EASY_OBJ_MSG('dp_scenario3', '00_msg_c03r0401_script_16_1', 'The history of Oreburgh Mine...\rYou could call it a history of effort and\nfriendship between people and Pokémon.')
+	_MACRO_EASY_OBJ_MSG('dialogue_c03r0401', '00_msg_c03r0401_script_16_1', 'The history of Oreburgh Mine...\rYou could call it a history of effort and\nfriendship between people and Pokémon.')
 	_END()

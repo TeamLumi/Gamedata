@@ -6,28 +6,28 @@ ev_d26r0106_obj_change_vanish:
 	_DOOR_FORCE_ANIME_END(0)
 	_END()
 ev_d26r0106_gingam:
-	_EASY_OBJ_MSG('dp_scenario2%85-msg_d26r0106_gingam_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_d26r0106', '85-msg_d26r0106_gingam_01', 'Team Galactic will set free all Pokémon—all\nof nature!\rUwahahaha! Team Galactic will then own it all!')
 	_END()
 ev_d26r0106_assistantm:
-	_EASY_OBJ_MSG('dp_scenario2%85-msg_d26r0106_assistantm_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_d26r0106', '85-msg_d26r0106_assistantm_01', 'I’ve been with Team Galactic for five years.\rI haven’t gotten a promotion yet.')
 	_END()
 ev_d26r0106_door:
 	_TALK_OBJ_START()
 	_ITEM_CHK(440, 1, @SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_d26r0106_door_02')
-	_TALKMSG('dp_scenario2%85-msg_d26r0106_door_01')
+	_MACRO_TALKMSG('dialogue_d26r0106', '85-msg_d26r0106_door_01', 'The door is locked. A special key is needed.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_d26r0106_door_02:
-	_TALKMSG('dp_scenario2%85-msg_d26r0106_door_02')
+	_MACRO_TALKMSG('dialogue_d26r0106', '85-msg_d26r0106_door_02', 'The door is locked. A special key is needed.\rWould you like to use the Galactic Key?')
 	_YES_NO_WIN(@SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'yes_d26r0106_door')
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'no_d26r0106_door')
 	_END()
 yes_d26r0106_door:
 	_PLAYER_NAME(0)
-	_TALKMSG('dp_scenario2%85-msg_d26r0106_door_03')
+	_MACRO_TALKMSG('dialogue_d26r0106', '85-msg_d26r0106_door_03', 'The door opened.')
 	_SE_WAIT('UI_COMMON_SELECT')
 	_SE_PLAY('S_FI014')
 	_SET_DOOR_OBJ('P_C_001_AutoDoor_01')

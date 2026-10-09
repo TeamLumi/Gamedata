@@ -1,0 +1,196 @@
+ev_d31r0401_man1:
+	;_MACRO_EASY_OBJ_MSG('dp_scenario3', 'msg_d31r0401_man1_01', 'Want to hear my trick to choosing\nPokémon?\rGet your opponent’s lineup and choose\naccordingly. That’s rock-solid basic!')
+	_MACRO_EASY_OBJ_MSG('dialogue_d31r0401', 'msg_d31r0401_man1_01', 'Want to hear my trick to choosing\nPokémon?\rGet your opponent’s lineup and choose\naccordingly. That’s rock-solid basic!')
+	_END()
+ev_d31r0401_woman1:
+	;_MACRO_EASY_OBJ_MSG('dp_scenario3', 'msg_d31r0401_woman1_01', 'They’re very helpful here.\rThe staff tell you about the next\nTrainer you’ll face.')
+	_MACRO_EASY_OBJ_MSG('dialogue_d31r0401', 'msg_d31r0401_woman1_01', 'They’re very helpful here.\rThe staff tell you about the next\nTrainer you’ll face.')
+	_END()
+ev_d31r0401_woman2:
+	;_MACRO_EASY_OBJ_MSG('dp_scenario3', 'msg_d31r0401_woman2_01', 'Memorize what moves the opponent’s\nPokémon used.\rThat way, you’ll know what to expect\nwhen you’re choosing one for trade.')
+	_MACRO_EASY_OBJ_MSG('dialogue_d31r0401', 'msg_d31r0401_woman2_01', 'Memorize what moves the opponent’s\nPokémon used.\rThat way, you’ll know what to expect\nwhen you’re choosing one for trade.')
+	_END()
+ev_d31r0401_boy1:
+	;_MACRO_EASY_OBJ_MSG('dp_scenario3', 'msg_d31r0401_boy1_01', 'I’ll teach you my style.\nMy way of doing things.\rBasically, I choose Pokémon that I’ve\nnever raised before.\rDoing that, I get more knowledgeable.\nBetter Pokémon intelligence.\rThat knowledge is power.\nIt makes me a better Trainer.')
+	_MACRO_EASY_OBJ_MSG('dialogue_d31r0401', 'msg_d31r0401_boy1_01', 'I’ll teach you my style.\nMy way of doing things.\rBasically, I choose Pokémon that I’ve\nnever raised before.\rDoing that, I get more knowledgeable.\nBetter Pokémon intelligence.\rThat knowledge is power.\nIt makes me a better Trainer.')
+	_END()
+ev_d31r0401_clown1:
+	;_MACRO_EASY_OBJ_MSG('dp_scenario3', 'msg_d31r0401_clown1_01', 'Howdy-do!\nDo you raise Pokémon?\rYou sure do.\nOf course you do.\rBut do you raise every kind of Pokémon?\nNo, no, no. Not likely you do.\rThis is a wonderful place.\nYou can challenge with nothing.\rOf course, all you can challenge with\nare rental Pokémon.\rRemember this, my favorite place to be.\nIts name: the Battle Factory!')
+	_MACRO_EASY_OBJ_MSG('dialogue_d31r0401', 'msg_d31r0401_clown1_01', 'Howdy-do!\nDo you raise Pokémon?\rYou sure do.\nOf course you do.\rBut do you raise every kind of Pokémon?\nNo, no, no. Not likely you do.\rThis is a wonderful place.\nYou can challenge with nothing.\rOf course, all you can challenge with\nare rental Pokémon.\rRemember this, my favorite place to be.\nIts name: the Battle Factory!')
+	_END()
+ev_d31r0401_woman3:
+	;_MACRO_EASY_OBJ_MSG('dp_scenario3', 'msg_d31r0401_woman3_01', 'Oh, my goodness, what am I to do?\nI didn’t expect this to happen!\rThe Pokémon I battled with became my\nfavorites.\rBut I already have six favorites!')
+	_MACRO_EASY_OBJ_MSG('dialogue_d31r0401', 'msg_d31r0401_woman3_01', 'Oh, my goodness, what am I to do?\nI didn’t expect this to happen!\rThe Pokémon I battled with became my\nfavorites.\rBut I already have six favorites!')
+	_END()
+ev_d31r0401_man2:
+	;_MACRO_EASY_OBJ_MSG('dp_scenario3', 'msg_d31r0401_man2_01', 'There were some Pokémon I hated\nbecause they were so tough to battle.\rBut when I had them on my side, they\nwon me over with their power.')
+	_MACRO_EASY_OBJ_MSG('dialogue_d31r0401', 'msg_d31r0401_man2_01', 'There were some Pokémon I hated\nbecause they were so tough to battle.\rBut when I had them on my side, they\nwon me over with their power.')
+	_END()
+ev_d31r0401_pc_score:
+	_EVENT_START()
+	;_MACRO_TALKMSG('dp_scenario3', 'msg_d31r0401_pc_score_01', 'Which record would you like to see?')
+	_MACRO_TALKMSG('dialogue_d31r0401', 'msg_d31r0401_pc_score_01', 'Which record would you like to see?')
+	;_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_battlefactory_pc_1', 'Single', 1)
+	;_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_battlefactory_pc_2', 'Double', 2)
+	;_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_battlefactory_pc_3', 'Multi', 3)
+	;_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_battlefactory_pc_cancel', 'Cancel', 0)
+	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_ranger_options_battlefactory_pc_1', 1)
+	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_ranger_options_battlefactory_pc_2', 2)
+	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_ranger_options_battlefactory_pc_3', 3)
+	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_ranger_options_battlefactory_pc_cancel', 0)
+	_OPEN_CUSTUM_WIN_FIXED(@SCWK_ANSWER)
+	_TALK_CLOSE()
+	_SWITCH(@SCWK_ANSWER)
+	;TODO exefs needed
+	_CASE_JUMP(1, 'ev_d31r0401_pc_single')
+	_CASE_JUMP(2, 'ev_d31r0401_pc_double')
+	_CASE_JUMP(3, 'ev_d31r0401_pc_multi')
+	_EVENT_END()
+	_END()
+ev_d31r0401_lobby_sd_guide_start:
+	;TODO exefs needed for all this. Dialogs are in but everything else is still a placeholder
+	;_FTR_SET_CURRENT_FACILITY(4)
+	_TALK_OBJ_START()
+	;_MACRO_TALK_KEYWAIT('dp_scenario3', 'msg_d31r0401_lobby__1', 'Welcome to the Battle Factory!\rI am your guide to the Single and\nDouble Battle challenges.\rPlease be aware that these challenges\nare designed for a single Trainer.')
+	_MACRO_TALK_KEYWAIT('dialogue_d31r0401', 'msg_d31r0401_lobby__1', 'Welcome to the Battle Factory!\rI am your guide to the Single and\nDouble Battle challenges.\rPlease be aware that these challenges\nare designed for a single Trainer.')
+	_JUMP('ev_d31r0401_lobby_sd_guide_challenge')
+	_END()
+ev_d31r0401_lobby_sd_guide_challenge:
+	;_MACRO_TALKMSG('dp_scenario3', 'msg_d31r0401_lobby__2', 'Which challenge would you like to take?')
+	_MACRO_TALKMSG('dialogue_d31r0401', 'msg_d31r0401_lobby__2', 'Which challenge would you like to take?')
+	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_frontier_lobby_option_1', 1); Single Battle
+	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_frontier_lobby_option_2', 2); Double Battle
+	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_frontier_lobby_option_3', 3); Info
+	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_frontier_lobby_cancel', 0); Cancel
+	_OPEN_CUSTUM_WIN(@SCWK_ANSWER)
+	_SWITCH(@SCWK_ANSWER)
+	_CASE_JUMP(1, 'ev_d31r0401_lobby_select_poke')
+	_CASE_JUMP(3, 'ev_d31r0401_lobby_info')
+	;_MACRO_TALK_KEYWAIT('dp_scenario3', 'ftr_factory_lobby_dialogue_cancel', 'We hope to see you again!')
+	_MACRO_TALK_KEYWAIT('dialogue_d31r0401', 'ftr_factory_lobby_dialogue_cancel', 'We hope to see you again!')
+	_TALK_CLOSE()
+	; _CASE_JUMP(1, xxx)
+	; _CASE_JUMP(2, xxx)
+	_TALK_OBJ_END()
+	_END()
+ev_d31r0401_lobby_info:
+	;_MACRO_TALK_KEYWAIT('dp_scenario3', 'msg_d31r0401_lobby_dialogue_info', 'At the Battle Factory, you may take\nSingle or Double Battle challenges\fusing rental Pokémon.\rOnce entered, your challenge lasts\nuntil you lose.\rAfter each win, you may trade a rented\nPokémon for one of the opponent’s.\rThe Level 50 option starts you off with\nPokémon that only know weak moves.\rThe Open Level option gives you access\nto Lv. 100 Pokémon with powerful moves\ffrom the start.\rIf you manage to win seven matches in\na row, you will earn Battle Points (BP).\rIf you want to interrupt your\nchallenge, please save the game.\rIf you don’t save, you will be\ndisqualified from your challenge.\rPlease be aware of that!')
+	_MACRO_TALK_KEYWAIT('dialogue_d31r0401', 'msg_d31r0401_lobby_dialogue_info', 'At the Battle Factory, you may take\nSingle or Double Battle challenges\fusing rental Pokémon.\rOnce entered, your challenge lasts\nuntil you lose.\rAfter each win, you may trade a rented\nPokémon for one of the opponent’s.\rThe Level 50 option starts you off with\nPokémon that only know weak moves.\rThe Open Level option gives you access\nto Lv. 100 Pokémon with powerful moves\ffrom the start.\rIf you manage to win seven matches in\na row, you will earn Battle Points (BP).\rIf you want to interrupt your\nchallenge, please save the game.\rIf you don’t save, you will be\ndisqualified from your challenge.\rPlease be aware of that!')
+	_JUMP('ev_d31r0401_lobby_sd_guide_challenge')
+	_END()
+ev_d31r0401_lobby_multi_guide_start:
+	_TALK_OBJ_START()
+	;_FTR_SET_CURRENT_FACILITY(4) ;?
+	;_MACRO_TALK_KEYWAIT('dp_scenario3', 'msg_d31r0401_lobby_1_multi_1', 'Welcome to the Battle Factory!\rI am your guide to the Multi Battle\nchallenge.\rPlease be aware that this challenge\nrequires two Trainers.')
+	_MACRO_TALK_KEYWAIT('dialogue_d31r0401', 'msg_d31r0401_lobby_1_multi_1', 'Welcome to the Battle Factory!\rI am your guide to the Multi Battle\nchallenge.\rPlease be aware that this challenge\nrequires two Trainers.')
+	_JUMP('ev_d31r0401_lobby_multi_guide_challenge')
+	_END()
+ev_d31r0401_lobby_multi_guide_challenge:
+	;_MACRO_TALKMSG('dp_scenario3', 'msg_d31r0401_lobby_1_multi_2', 'Would you like to take the Battle\nFactory Multi Battle challenge?')
+	_MACRO_TALKMSG('dialogue_d31r0401', 'msg_d31r0401_lobby_1_multi_2', 'Would you like to take the Battle\nFactory Multi Battle challenge?')
+	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_frontier_lobby_multi_option_1', 1); Take Challenge
+	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_frontier_lobby_option_3', 2); Info
+	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_frontier_lobby_cancel', 0); Cancel
+	_OPEN_CUSTUM_WIN(@SCWK_ANSWER)
+	_SWITCH(@SCWK_ANSWER)
+	_CASE_JUMP(1, 'ev_d31r0401_lobby_select_poke')
+	_CASE_JUMP(3, 'ev_d31r0401_lobby_multi_info')
+	;_MACRO_TALK_KEYWAIT('dp_scenario3', 'ftr_factory_lobby_dialogue_cancel', 'We hope to see you again!')
+	_MACRO_TALK_KEYWAIT('dialogue_d31r0401', 'ftr_factory_lobby_dialogue_cancel', 'We hope to see you again!')
+	_TALK_CLOSE()
+	; _CASE_JUMP(1, xxx)
+	; _CASE_JUMP(2, xxx)
+	_TALK_OBJ_END()
+	_END()
+ev_d31r0401_lobby_multi_info:
+	;_MACRO_TALK_KEYWAIT('dp_scenario3', 'msg_d31r0401_lobby_multi_dialogue_info', 'You may team up with a friend for a\nMulti Battle challenge using rental\fPokémon.\rBoth partners will be provided with two\nrental Pokémon each.\rOnce entered, you and your partner\nconduct Multi Battles until you lose.\rAfter each win, you or your partner\nmay trade a single rented Pokémon.\rIf you manage to win seven matches in\na row, you will earn Battle Points (BP).\rThe Level 50 option starts with rental\nPokémon that only know weak moves.\rThe Open Level option lets you rent\nLv. 100 Pokémon with powerful moves\ffrom the start.\rPlease note: a Battle Factory Multi\nBattle challenge can’t be interrupted.')
+	_MACRO_TALK_KEYWAIT('dialogue_d31r0401', 'msg_d31r0401_lobby_multi_dialogue_info', 'You may team up with a friend for a\nMulti Battle challenge using rental\fPokémon.\rBoth partners will be provided with two\nrental Pokémon each.\rOnce entered, you and your partner\nconduct Multi Battles until you lose.\rAfter each win, you or your partner\nmay trade a single rented Pokémon.\rIf you manage to win seven matches in\na row, you will earn Battle Points (BP).\rThe Level 50 option starts with rental\nPokémon that only know weak moves.\rThe Open Level option lets you rent\nLv. 100 Pokémon with powerful moves\ffrom the start.\rPlease note: a Battle Factory Multi\nBattle challenge can’t be interrupted.')
+	_JUMP('ev_d31r0401_lobby_multi_guide_challenge')
+	_END()
+ev_d31r0401_lobby_select_poke:
+	_MACRO_TALK_KEYWAIT('dialogue_d31r0401', '44-msg_tower_09', 'Please select the Pokémon you wish to enter.')
+	_BLACK_OUT('SCR_WIPE_DIV', 'SCR_WIPE_SYNC')
+	_FADE_WAIT()
+	_TALK_CLOSE()
+	_PC_KAIFUKU()
+	_BTWR_SUB_SELECT_POKE()
+	_BTWR_SUB_GET_ENTRY_POKE(@SCWK_ANSWER)
+	_BLACK_IN('SCR_WIPE_DIV', 'SCR_WIPE_SYNC')
+	_FADE_WAIT()
+	_JUMP('ev_d31r0401_lobby_streak_pokechk')
+	_END()
+
+ev_d31r0401_lobby_streak_pokechk:
+	;_FTR_HALL_GET_STREAK_MON(@SCWK_ANSWER)
+	;_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_d31r0401_lobby_streak_breakchk')
+	;_FTR_HALL_SET_STREAK_MON()
+	_JUMP('ev_d31r0401_local_savechk')
+	_END()
+
+ev_d31r0401_lobby_streak_breakchk:
+	;_FTR_HALL_STREAK_MON_NAME(0)
+	_MACRO_TALK_KEYWAIT('dialogue_d31r0401', 'ftr_hall_lobby_streak_dialogue_1', 'Placeholder', 0)
+	;_FTR_HALL_SELECTED_MON_NAME(0)
+	_MACRO_TALK_KEYWAIT('dialogue_d31r0401', 'ftr_hall_lobby_streak_dialogue_2', 'Placeholder', 0)
+	_YES_NO_WIN(@SCWK_ANSWER)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_d31r0401_lobby_select_poke')
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_d31r0401_local_savechk')
+	_END()
+
+ev_d31r0401_local_savechk:
+	_CALL('ev_d31r0401_common_save')
+	;If SCWK answer is 0, the player didn't save, so don't continue
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_d31r0401_local_savechk_no')
+	_MACRO_TALKMSG('dialogue_d31r0401', '44-msg_tower_12', 'I will now show you to the Battle Room.')
+	_TALK_CLOSE()
+	_JUMP('ev_d31r0401_lobby_comanm_guide_out')
+	; _TALK_KEYWAIT(dp_scenario3%ftr_hall_stage_dialogue_1)
+	; _TALK_CLOSE()
+	; _CALL(ev_d31r0401_hall_stage_select_typerank)
+	; _JUMP(ev_d31r0401_hall_stage_sbtl_01)
+	_END()
+
+ev_d31r0401_local_savechk_no:
+	;_MACRO_TALK_KEYWAIT('dp_scenario3', 'msg_d31r0401_savechk_no', 'We hope to see you again!')
+	_MACRO_TALK_KEYWAIT('dialogue_d31r0401', 'msg_d31r0401_savechk_no', 'We hope to see you again!')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+
+ev_d31r0401_common_save:
+	_CHG_COMMON_SCR('ev_report_call')
+	_LDWK(@SCWK_ANSWER, @LOCALWORK0)
+	_RET()
+
+ev_d31r0401_lobby_comanm_guide_out:
+	_LDVAL(@3071, 1)
+	_OBJ_ANIME('D31R0401_SD_GUIDE', 'anm_sd_guide_lobby_01')
+	_OBJ_ANIME('HERO', 'anm_player_lobby_01')
+	_OBJ_ANIME_WAIT()
+	;_SET_DOOR_OBJ('D31R0401_D01')
+	;_HIT_DOOR_ANIME(0)
+	_SE_PLAY('S_FI015')
+	;_HIT_DOOR_ANIME_WAIT()
+	_MAP_CHANGE('D31R0402', 0)
+	_END()
+
+anm_player_lobby_01:
+	_AC_WAIT(25)
+	_AC_DIR_U(8)
+	_AC_UP(2, 8)
+	_AC_DIR_R(8)
+	_AC_RIGHT(1, 8)
+	_AC_DIR_U(8)
+	_AC_UP(1, 8)
+	_AC_INVISIBLE_ON()
+	_ACMD_END()
+
+anm_sd_guide_lobby_01:
+	_AC_DIR_U(8)
+	_AC_UP(2, 8)
+	_AC_DIR_R(8)
+	_AC_RIGHT(1, 8)
+	_AC_DIR_U(8)
+	_AC_UP(1, 8)
+	_AC_INVISIBLE_ON()
+	_ACMD_END()

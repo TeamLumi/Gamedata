@@ -1,6 +1,6 @@
 ev_r213r0401_middleman2:
 	_TALK_OBJ_START_TURN_NOT()
-	_TALKMSG('dp_scenario2%148-msg_r213r0401_middleman2_01')
+	_MACRO_TALKMSG('dialogue_r213r0401', '148-msg_r213r0401_middleman2_01', 'Is that right? You’re a traveler?\rYes, it’s good to see other places!')
 	_GET_RND(@SCWK_ANSWER, 4)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_r213r0401_middleman2_02')
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_r213r0401_middleman2_03')
@@ -8,22 +8,22 @@ ev_r213r0401_middleman2:
 	_JUMP('ev_r213r0401_middleman2_05')
 	_JUMP('ev_r213r0401_middleman2_02')
 ev_r213r0401_middleman2_02:
-	_TALKMSG('dp_scenario2%148-msg_r213r0401_middleman2_02')
+	_MACRO_TALKMSG('dialogue_r213r0401', '148-msg_r213r0401_middleman2_02', 'Do you know about Mount Moon in the\nKanto region?\rClefairy dancing under the moon... It’s something\nI must see in my lifetime.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_r213r0401_middleman2_03:
-	_TALKMSG('dp_scenario2%148-msg_r213r0401_middleman2_03')
+	_MACRO_TALKMSG('dialogue_r213r0401', '148-msg_r213r0401_middleman2_03', 'Have you heard of the Tin Tower in the\nJohto region?\rThe rainbow-colored Pokémon... I must see that\nin my lifetime.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_r213r0401_middleman2_04:
-	_TALKMSG('dp_scenario2%148-msg_r213r0401_middleman2_04')
+	_MACRO_TALKMSG('dialogue_r213r0401', '148-msg_r213r0401_middleman2_04', 'Do you know about the Space Center in the\nHoenn region?\rA rocket launching into space... I must see that\nin my lifetime.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_r213r0401_middleman2_05:
-	_TALKMSG('dp_scenario2%148-msg_r213r0401_middleman2_05')
+	_MACRO_TALKMSG('dialogue_r213r0401', '148-msg_r213r0401_middleman2_05', 'Have you heard of the Whirl Islands in the\nJohto region?\rThe silver-colored Pokémon... I must see that\nin my lifetime.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()

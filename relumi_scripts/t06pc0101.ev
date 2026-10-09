@@ -15,15 +15,15 @@ ev_t06pc0101_pcwoman1:
 	_END()
 ev_t06pc0101_man3:
 	_TALK_OBJ_START_TURN_NOT()
-	_TALKMSG('dp_scenario3%58-msg_t06pc0101_man3_01')
+	_MACRO_TALKMSG('dialogue_t06pc0101', '58-msg_t06pc0101_man3_01', 'I wasn’t experienced enough for the Battle Tower.\rTraining on Stark Mountain might be the only\nsensible choice—for some reason, all the best\fTrainers in Sinnoh seem to gather there.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_t06pc0101_veteran:
-	_EASY_OBJ_MSG('dp_scenario3%58-msg_t06pc0101_veteran_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_t06pc0101', '58-msg_t06pc0101_veteran_01', 'In a Multi Battle, coordination with your partner\nis vital.\rBy working together, one plus one could become\nnot just two, but even three or four.\rBut one times one is always one.\nDo you understand that?')
 	_END()
 ev_t06pc0101_mystery:
-	_EASY_OBJ_MSG('dp_scenario3%58-msg_t06pc0101_mystery_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_t06pc0101', '58-msg_t06pc0101_mystery_01', 'The universe was made by something born from\nan Egg...\rA man I met long ago told me that.')
 	_END()
 ev_t06pc0101_pcwoman1_mewtwo:
 	_FLAG_RESET(#2845); Reveal Mewtwo in case E4 didn't work
@@ -33,11 +33,9 @@ ev_t06pc0101_pcwoman1_mewtwo:
 	_FLAG_RESET(#3002)
 	_TALK_OBJ_START()
 	_TALKMSG('ss_btl_tower_menu_ui_text%58-msg_t06pc0101_pc_mewtwo_01')
-	_ADD_ITEM(1292, 1, @SCWK_ANSWER)
-	_SE_PLAY('M_FI013')
-	_PLAYER_NAME(0)
-	_TALKMSG('ss_btl_tower_menu_ui_text%58-msg_t06pc0101_pc_mewtwo_getinvitation')
-	_ME_WAIT()
+	_LDVAL(@SCWK_TEMP0, 1292)
+	_LDVAL(@SCWK_TEMP1, 1)
+	_CALL('ev_item_event')
 	_TALKMSG('ss_btl_tower_menu_ui_text%58-msg_t06pc0101_pc_mewtwo_02')
 	_CALL_EFFECT(1, 247, 8, 0, 10)
 	_EFF_SCALE(1, 1, 1, 1)

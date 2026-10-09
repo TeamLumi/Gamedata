@@ -1,7 +1,7 @@
 ev_c04r0302_oldwoman1:
 	_TALK_OBJ_START()
 	_IF_FLAGON_JUMP(#FE_C04R0302_ITEM_GET, 'ev_c04r0302_oldwoman1_02')
-	_TALKMSG('dp_scenario2%10-msg_c04r0302_oldwoman1_01')
+	_MACRO_TALKMSG('dialogue_c04r0302', '10-msg_c04r0302_oldwoman1_01', 'I’ve had this TM for the move Recycle for such a\nlong time now. It’s not anything that I have\fmuch use for these days.\rI do hope you’ll put it to good use,\nyoung Trainer.')
 	_LDVAL(@SCWK_TEMP0, 394)
 	_LDVAL(@SCWK_TEMP1, 1)
 	_ADD_ITEM_CHK(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_ANSWER)
@@ -17,10 +17,10 @@ ev_c04r0302_oldwoman1_item_event_fail:
 	_TALK_OBJ_END()
 	_END()
 ev_c04r0302_oldwoman1_02:
-	_TALKMSG('dp_scenario2%10-msg_c04r0302_oldwoman1_02')
+	_MACRO_TALKMSG('dialogue_c04r0302', '10-msg_c04r0302_oldwoman1_02', 'Folks like me have a long history we can look\nback on.\rYoung people like you have only the future to\nlook forward to.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_c04r0302_babygirl1:
-	_EASY_OBJ_MSG('dp_scenario2%10-msg_c04r0302_babygirl1_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c04r0302', '10-msg_c04r0302_babygirl1_01', 'Gardenia, our Gym Leader, goes out to Eterna\nForest every so often.\rI always wonder what she does there.')
 	_END()

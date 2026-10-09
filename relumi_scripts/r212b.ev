@@ -23,35 +23,35 @@ ev_r212b_fc_midnight:
 	_OBJ_DEL('R212B_POLICE5')
 	_END()
 ev_r212b_boy1:
-	_EASY_OBJ_MSG('dp_scenario2%142-msg_r212b_boy1_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_r212b', '142-msg_r212b_boy1_01', 'I saw people riding their bikes and using a log\njust like a bridge.')
 	_END()
 ev_r212b_gorggeousw:
-	_EASY_OBJ_MSG('dp_scenario2%142-msg_r212b_gorggeousw_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_r212b', '142-msg_r212b_gorggeousw_01', '...Am I stuck in the bog?\rOf course not. How silly! This is a full-body\nmudpack. If it weren’t, I would be squirming and\fstruggling to get out!')
 	_END()
 ev_r212b_bigman:
-	_EASY_OBJ_MSG('dp_scenario2%142-msg_r212b_bigman_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_r212b', '142-msg_r212b_bigman_01', 'I caught a rare Pokémon in Pastoria’s\nGreat Marsh.\rYou definitely have to go. I recommend it\nwithout hesitation.')
 	_END()
 ev_r212b_sign1:
-	_EASY_BOARD_MSG('dp_scenario2%142-msg_r212b_sign1_01', 'BOARD_TYPE_ROAD', 0, 1)
+	_EASY_BOARD_MSG('dialogue_r212b%142-msg_r212b_sign1_01', 'BOARD_TYPE_ROAD', 0, 1)
 	_END()
 ev_r212b_sign2:
-	_EASY_BOARD_MSG('dp_scenario2%142-msg_r212b_sign2_01', 'BOARD_TYPE_POST', 0)
+	_EASY_BOARD_MSG('dialogue_r212b%142-msg_r212b_sign2_01', 'BOARD_TYPE_POST', 0)
 	_END()
 ev_r212b_sign3:
-	_EASY_INFOBOARD_MSG('dp_scenario2%142-msg_r212b_sign3_01_1', 'BOARD_TYPE_INFO', 0)
-	_EASY_INFOBOARD_MSG('dp_scenario2%142-msg_r212b_sign3_01_2', 'BOARD_TYPE_INFO', 0)
+	_EASY_INFOBOARD_MSG('dialogue_r212b%142-msg_r212b_sign3_01_1', 'BOARD_TYPE_INFO', 0)
+	_EASY_INFOBOARD_MSG('dialogue_r212b%142-msg_r212b_sign3_01_2', 'BOARD_TYPE_INFO', 0)
 	_END()
 ev_r212b_police5:
-	_EASY_OBJ_MSG('dp_scenario2%142-msg_r212b_police_05_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_r212b', '142-msg_r212b_police_05_01', 'We’re on constant patrol. Even at night, it’s safe\naround here.')
 	_END()
 ev_r212b_wake:
 	_TALK_OBJ_START_TURN_NOT()
-	_MACRO_TALKMSG('dp_scenario3', '00_msg_r212b_wake_01', 'The ring is my roiling sea. ♪\nThe towering waves shaped me.\rCrash! Crash! Crasher Wake!\nCrash! Crash! Crasher Wake!\rI’m the tidal wave of power to wash\nyou away!\rPut out the fire, Crasher Wake!\nRun from electricity, Crasher Wake!\rAh, ah, aaaah!\nThe ring is my sea. ♪')
+	_MACRO_TALKMSG('dialogue_r212b', '00_msg_r212b_wake_01', 'The ring is my roiling sea. ♪\nThe towering waves shaped me.\rCrash! Crash! Crasher Wake!\nCrash! Crash! Crasher Wake!\rI’m the tidal wave of power to wash\nyou away!\rPut out the fire, Crasher Wake!\nRun from electricity, Crasher Wake!\rAh, ah, aaaah!\nThe ring is my sea. ♪')
 	_TALK_CLOSE()
 	_OBJ_ANIME('R212B_WAKE', 'anm_r212b_wake_1')
 	_OBJ_ANIME_WAIT()
 	_CHARA_LOOK_LOCK('R212B_WAKE', 'HERO')
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_r212b_wake_02', 'Hey! You’re that Trainer I met\nover in Veilstone City, aren’t you?\rThe nature around here is spectacular,\nwouldn’t you say?\rSometimes, it’s good to relax and\nenjoy the scenery.\rIt’s also a perfect opportunity to\npractice your singing! Ha!\rOh, so you’ve gotten the Cobble Badge?\nThat means you must’ve beaten Maylene.\rIn that case, I’m the next stop on\nyour journey! Guhahaha!\rI should be getting back to my Gym.\nI’ll see you there!')
+	_MACRO_TALK_KEYWAIT('dialogue_r212b', '00_msg_r212b_wake_02', 'Hey! You’re that Trainer I met\nover in Veilstone City, aren’t you?\rThe nature around here is spectacular,\nwouldn’t you say?\rSometimes, it’s good to relax and\nenjoy the scenery.\rIt’s also a perfect opportunity to\npractice your singing! Ha!\rOh, so you’ve gotten the Cobble Badge?\nThat means you must’ve beaten Maylene.\rIn that case, I’m the next stop on\nyour journey! Guhahaha!\rI should be getting back to my Gym.\nI’ll see you there!')
 	_TALK_CLOSE()
 	_CHARA_LOOK_RELEASE('R212B_WAKE')
 	_PLAYER_POS_GET(@SCWK_TEMP0, @SCWK_TEMP1)
@@ -59,7 +59,6 @@ ev_r212b_wake:
 	_IFVAL_CALL(@SCWK_TEMP1, 'NE', 833, 'ev_r212b_wake_not_y833')
 	_OBJ_DEL('R212B_WAKE')
 	_FLAG_SET(#2749)
-	_FLAG_RESET(#2868); Enable Barry at the gym
 	_LDVAL(@501, 1); Enable Barry at the gym fix - 14.01.2024
 	_TALK_OBJ_END()
 	_END()
@@ -90,7 +89,7 @@ ev_r212b_latias:
 	_CALL('ev_r212b_latias_movement')
 	_OBJ_DEL('R212B_LATIAS')
 	_FLAG_SET(#2847)
-	_MACRO_TALKMSG('dp_scenario3', '00_msg_r212b_latias_runaway', 'Latias ran away...')
+	_MACRO_TALKMSG('dialogue_r212b', '00_msg_r212b_latias_runaway', 'Latias ran away...')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
@@ -134,7 +133,7 @@ ev_r212b_latias_4:
 	_OBJ_ANIME_WAIT()
 	_RET()
 ev_r212b_latias_5:
-	_MACRO_TALKMSG('dp_scenario3', '00_msg_r212b_latias_5', 'Dir 5')
+	_MACRO_TALKMSG('dialogue_r212b', '00_msg_r212b_latias_5', 'Dir 5')
 	_RET()
 ev_r212b_latias_6:
 	_OBJ_ANIME('r212B_LATIAS', 'anm_lati_runaway_6')
@@ -152,3 +151,15 @@ ev_r212b_latias_9:
 	_OBJ_ANIME('r212B_LATIAS', 'anm_lati_runaway_8')
 	_OBJ_ANIME_WAIT()
 	_RET()
+ev_r212b_grotto_warp_0:
+	_TALK_OBJ_START()
+	_CALL('ev_grotto_warp')
+	_MAP_CHANGE('GROTTOR0201', 0)
+	_TALK_OBJ_END()
+	_END()
+ev_r212b_grotto_warp_1:
+	_TALK_OBJ_START()
+	_CALL('ev_grotto_warp')
+	_MAP_CHANGE('GROTTOR0201', 1)
+	_TALK_OBJ_END()
+	_END()

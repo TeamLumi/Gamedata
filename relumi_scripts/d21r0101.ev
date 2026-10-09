@@ -18,9 +18,9 @@ ev_d21r0101_seven2:
 	_EVENT_START()
 	_BLACK_OUT('SCR_WIPE_DIV', 3)
 	_FADE_WAIT()
-	_OBJ_POS_CHANGE_WORLD('HERO', -70.480003, 0, 12.030000)
+	_OBJ_POS_CHANGE_WORLD('HERO', 70.480003, 0, 12.030000)
 	_OBJ_DIR_CHANGE('HERO', 270)
-	_OBJ_POS_CHANGE_WORLD('PAIR_D21R0101_SEVEN5', -72.129997, 0, 12.060000)
+	_OBJ_POS_CHANGE_WORLD('PAIR_D21R0101_SEVEN5', 72.129997, 0, 12.060000)
 	_OBJ_DIR_CHANGE('PAIR_D21R0101_SEVEN5', 90)
 	_DARKNESS_TEMPORARILY_OFF()
 	_EVENT_CAMERA_INDEX(279)
@@ -35,13 +35,13 @@ ev_d21r0101_seven2:
 	_IF_FLAGON_CALL(#FE_D21R0101_SEVEN2_TALK, 'ev_d21r0101_seven2_01_talk_on')
 	_PLAYER_NAME(0)
 	_SE_PLAY('M_FI005')
-	_TALKMSG('dp_scenario2%19-msg_d21r0101_pair_01')
+	_MACRO_TALKMSG('dialogue_d21r0101', '19-msg_d21r0101_pair_01', 'You decided to escort Mira!')
 	_ME_WAIT()
 	_FLAG_SET(#FE_D21R0101_SEVEN2_TALK)
 	_LDVAL(@WK_SCENE_D21R0101, 1)
 	_OBJ_ANIME('PAIR_D21R0101_SEVEN5', 'anm_ev_d21r0101_seven2_01_face01')
 	_OBJ_ANIME_WAIT()
-	_TALKMSG('dp_scenario2%19-msg_d21r0101_pair_02')
+	_MACRO_TALKMSG('dialogue_d21r0101', '19-msg_d21r0101_pair_02', 'I’ll keep your Pokémon healthy all the time!')
 	_TALK_CLOSE()
 	_OBJ_ANIME('PAIR_D21R0101_SEVEN5', 'anm_ev_d21r0101_seven2_01_face00')
 	_OBJ_ANIME_WAIT()
@@ -62,10 +62,10 @@ ev_d21r0101_seven2:
 	_TALK_END()
 	_END()
 ev_d21r0101_seven2_01_talk_off:
-	_TALKMSG('dp_scenario2%19-msg_d21r0101_seven2_01')
+	_MACRO_TALKMSG('dialogue_d21r0101', '19-msg_d21r0101_seven2_01', 'I’m Mira. I was catching Pokémon, and then I\ngot lost. I’m so scared...\rPlease! Please take me to the exit!')
 	_RET()
 ev_d21r0101_seven2_01_talk_on:
-	_TALKMSG('dp_scenario2%19-msg_d21r0101_seven2_02')
+	_MACRO_TALKMSG('dialogue_d21r0101', '19-msg_d21r0101_seven2_02', 'Trainer, your name is {0,1,0,0}?\nMy name is Mira. I like my name!')
 	_RET()
 ev_d21r0101_seven2_pair_talk:
 	_TALK_OBJ_START()
@@ -74,16 +74,16 @@ ev_d21r0101_seven2_pair_talk:
 	_IFVAL_JUMP(@WK_SCENE_PAIR_D21R0101_SEVEN2, 'GE', 2, 'ev_pair_d21r0101_seven2_02')
 	_IFVAL_JUMP(@WK_SCENE_PAIR_D21R0101_SEVEN2, 'EQ', 1, 'ev_pair_d21r0101_seven2_01')
 	_PLAYER_NAME(0)
-	_TALKMSG('dp_scenario2%19-msg_d21r0101_seven2_08')
+	_MACRO_TALKMSG('dialogue_d21r0101', '19-msg_d21r0101_seven2_08', 'I like helpful Pokémon moves, like Growl\nand Minimize.\rThose kinds of moves are my favorites.')
 	_JUMP('ev_pair_d21r0101_seven2_common')
 	_JUMP('ev_pair_d21r0101_seven2_02')
 ev_pair_d21r0101_seven2_01:
-	_TALKMSG('dp_scenario2%19-msg_d21r0101_seven2_09')
+	_MACRO_TALKMSG('dialogue_d21r0101', '19-msg_d21r0101_seven2_09', 'This cave... It’s so easy to get confused.\rDo you know where we are?')
 	_JUMP('ev_pair_d21r0101_seven2_common')
 	_JUMP('ev_pair_d21r0101_seven2_02')
 ev_pair_d21r0101_seven2_02:
 	_PLAYER_NAME(0)
-	_TALKMSG('dp_scenario2%19-msg_d21r0101_seven2_10')
+	_MACRO_TALKMSG('dialogue_d21r0101', '19-msg_d21r0101_seven2_10', '{0,1,0,0}, did you get to be so good\nbecause you’re always with your Pokémon?\rYes! That has to be it! I’m gonna try—like you!')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_SYS_FLAG_PAIR_SET()
@@ -127,7 +127,7 @@ ev_d21r0101_seven2_04:
 	_OBJ_ANIME('PAIR_D21R0101_SEVEN5', 'anm_d21r0101_seven2_45_g')
 	_OBJ_ANIME_WAIT()
 	_PLAYER_NAME(0)
-	_TALKMSG('dp_scenario2%19-msg_d21r0101_seven2_04')
+	_MACRO_TALKMSG('dialogue_d21r0101', '19-msg_d21r0101_seven2_04', 'Oh! There’s the exit! I want to get tougher so I\nwon’t be such a scaredy-cat.\r{0,1,0,0}, bye-bye! Thank you!')
 	_TALK_CLOSE()
 	_JUMP('pos_d21r0101_seven2_dir_right')
 	_JUMP('common_d21r0101_seven2_51')
@@ -194,10 +194,10 @@ anm_d21r0101_seven2_52:
 	_AC_DIR_D(8)
 	_ACMD_END()
 ev_d21r0101_seven2_05:
-	_EASY_OBJ_MSG('dp_scenario2%19-msg_d21r0101_seven2_05')
+	_MACRO_EASY_OBJ_MSG('dialogue_d21r0101', '19-msg_d21r0101_seven2_05', 'Are you going to use that? I will be left all alone.')
 	_END()
 ev_d21r0101_seven2_06:
-	_EASY_OBJ_MSG('dp_scenario2%19-msg_d21r0101_seven2_06')
+	_MACRO_EASY_OBJ_MSG('dialogue_d21r0101', '19-msg_d21r0101_seven2_06', 'Are you going to use that? I will be left all alone.')
 	_END()
 ev_d21r0101_miru_poors:
 	_IF_FLAGON_CALL($SYS_FLAG_PAIR, 'ev_d21r0101_miru_poors2')
@@ -213,7 +213,7 @@ ev_d21r0101_gabite:
 	_EVENT_START()
 	_TALK_OBJ_START()
 	_CHARA_LOOK_LOCK('GABITE_NPC', 'HERO')
-	_TALKMSG('dp_scenario3%00-msg_gabite_cry')
+	_MACRO_TALKMSG('dialogue_d21r0101', '00-msg_gabite_cry', 'Keeeeeul!')
 	_VOICE_PLAY(444, 0, 0)
 	_VOICE_WAIT()
 	_TALK_CLOSE()
@@ -241,8 +241,8 @@ ev_d21r0101_mira_script_2:
 	_SYS_FLAG_PAIR_RESET()
 	_SE_PLAY('M_FI005')
 	_PLAYER_NAME(0)
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_ev_d21r0101_mira_talk_1', '{0} decided to go with\nMira!')
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_ev_d21r0101_mira_talk_2', 'I’ll keep your Pokémon healthy\nall the time!')
+	_MACRO_TALK_KEYWAIT('dialogue_d21r0101', '00_msg_ev_d21r0101_mira_talk_1', '{0} decided to go with\nMira!')
+	_MACRO_TALK_KEYWAIT('dialogue_d21r0101', '00_msg_ev_d21r0101_mira_talk_2', 'I’ll keep your Pokémon healthy\nall the time!')
 	_TALK_CLOSE()
 	_CALL('ev_d21r0101_mira_script_add_partner')
 	_FLAG_SET(#2702); Already battled Mira
@@ -258,12 +258,12 @@ ev_d21r0101_mira_script_4:
 	_CHARA_LOOK_LOCK('PAIR_D21R0101_SEVEN5', 'HERO')
 	_CHARA_LOOK_RELEASE('PAIR_D21R0101_SEVEN5')
 	_PLAYER_NAME(0)
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_ev_d21r0101_mira_script_4_1', 'Oh! There’s the exit!\rI want to get tougher so I\nwon’t be such a scaredy-cat.')
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_ev_d21r0101_mira_script_4_1_1', '{0}, Mira has a great gift for\nyou, for all of your help!')
-	_LDVAL(@SCWK_TEMP0, 412); Dazzling Gleam
+	_MACRO_TALK_KEYWAIT('dialogue_d21r0101', '00_msg_ev_d21r0101_mira_script_4_1', 'Oh! There’s the exit!\rI want to get tougher so I\nwon’t be such a scaredy-cat.')
+	_MACRO_TALK_KEYWAIT('dialogue_d21r0101', '00_msg_ev_d21r0101_mira_script_4_1_1', '{0}, Mira has a great gift for\nyou, for all of your help!')
+	_LDVAL(@SCWK_TEMP0, 348); Dazzling Gleam
 	_LDVAL(@SCWK_TEMP1, 1); Quantity 1
 	_CALL('ev_item_event')
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_ev_d21r0101_mira_script_4_2', 'That TM contains Dazzling Gleam!\nIt’s a rare Fairy-type move that\fa lot of Pokémon can use!\rOkay! Bye-bye! See you again some\nother time!')
+	_MACRO_TALK_KEYWAIT('dialogue_d21r0101', '00_msg_ev_d21r0101_mira_script_4_2', 'That TM contains Dazzling Gleam!\nIt’s a rare Fairy-type move that\fa lot of Pokémon can use!\rOkay! Bye-bye! See you again some\nother time!')
 	_TALK_CLOSE()
 	_OBJ_ANIME('HERO', 'anm_d21r0101_hero_sidestep')
 	_OBJ_ANIME_WAIT()
@@ -291,7 +291,7 @@ ev_d21r0101_mira_script_6:
 	_SYS_FLAG_PAIR_RESET()
 	_MOVE_CODE_CHANGE('PAIR_D21R0101_SEVEN5', 'MV_LEFT')
 	_PLAYER_NAME(0)
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_ev_d21r0101_mira_script_6_1', 'Oh... Are you leaving?\nI haven’t found my item yet...\rI’ll keep searching until you\nreturn here, {0}.\rPlease don’t be long!')
+	_MACRO_TALK_KEYWAIT('dialogue_d21r0101', '00_msg_ev_d21r0101_mira_script_6_1', 'Oh... Are you leaving?\nI haven’t found my item yet...\rI’ll keep searching until you\nreturn here, {0}.\rPlease don’t be long!')
 	_LDVAL(@WK_SCENE_D21R0101, 2); Player left mid-event
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
@@ -299,10 +299,10 @@ ev_d21r0101_mira_script_6:
 ev_d21r0101_mira_script_7:
 	_TALK_OBJ_START()
 	_PLAYER_NAME(0)
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_ev_d21r0101_mira_script_7_1', 'Yay! I’m so happy that\nyou came back, {0}!\rLet’s keep searching! Mira is sure\nwe’ll find her item soon...')
+	_MACRO_TALK_KEYWAIT('dialogue_d21r0101', '00_msg_ev_d21r0101_mira_script_7_1', 'Yay! I’m so happy that\nyou came back, {0}!\rLet’s keep searching! Mira is sure\nwe’ll find her item soon...')
 	_SE_PLAY('M_FI005')
 	_PLAYER_NAME(0)
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_ev_d21r0101_mira_talk_1', '{0} decided to go with\nMira!')
+	_MACRO_TALK_KEYWAIT('dialogue_d21r0101', '00_msg_ev_d21r0101_mira_talk_1', '{0} decided to go with\nMira!')
 	_CALL('ev_d21r0101_mira_script_add_partner')
 	_LDVAL(@WK_SCENE_D21R0101, 1); Event is in progress
 	_TALK_CLOSE()
@@ -313,57 +313,45 @@ ev_d21r0101_mira_script_8:
 	_FLAG_SET(#2703); Hide the item
 	_OBJ_DEL('FLD_ITEM_MIRA')
 	_PLAYER_NAME(0)
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_ev_d21r0101_mira_script_8_1', '{0} found\na Crimson Ribbon!')
+	_MACRO_TALK_KEYWAIT('dialogue_d21r0101', '00_msg_ev_d21r0101_mira_script_8_1', '{0} found\na Crimson Ribbon!')
 	_TALK_CLOSE()
 	_OBJ_ANIME('PAIR_D21R0101_SEVEN5', 'anm_d21r0101_mira_startled')
 	_OBJ_ANIME_WAIT()
 	_PLAYER_NAME(0)
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_ev_d21r0101_mira_script_8_2', 'Oh! {0}! That’s it! That’s\nMira’s special ribbon that she lost!\rThank you! Now, let’s get out of\nthis scary cave!\rYou know where the exit is, right?\nIt’s the same way you came in!')
+	_MACRO_TALK_KEYWAIT('dialogue_d21r0101', '00_msg_ev_d21r0101_mira_script_8_2', 'Oh! {0}! That’s it! That’s\nMira’s special ribbon that she lost!\rThank you! Now, let’s get out of\nthis scary cave!\rYou know where the exit is, right?\nIt’s the same way you came in!')
 	_LDVAL(@WK_SCENE_D21R0101, 99); Item is found
 	_FLAG_RESET(#2815); Enable the wall
 	_OBJ_ADD('D21R0101_WALL01')
 	_TALK_CLOSE()
 mira_function_2:
-	_CALL('ev_d21r0101_position_check')
 	_IFVAL_JUMP(@WK_SCENE_D21R0101, 'GE', 2, 'mira_function_8'); If event is ongoing, do the dialogue
 	_IFVAL_JUMP(@WK_SCENE_D21R0101, 'EQ', 1, 'mira_function_9'); If event is ongoing, do the dialogue
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_ev_d21r0101_mira_func_2', 'I like helpful Pokémon moves\nlike Growl and Minimize.\rThose kinds of moves are my\nfavorites.')
+	_MACRO_TALK_KEYWAIT('dialogue_d21r0101', '00_msg_ev_d21r0101_mira_func_2', 'I like helpful Pokémon moves\nlike Growl and Minimize.\rThose kinds of moves are my\nfavorites.')
 	_JUMP('mira_function_10')
-ev_d21r0101_position_check:
-	_PLAYER_POS_GET(@SCWK_TEMP0, @SCWK_TEMP1)
-	_OBJ_POS_GET(@SCWK_TEMP2, @SCWK_TEMP3)
-	_IFVAL_JUMP(@SCWK_TEMP0, 'NE', @SCWK_TEMP2, 'ev_d21r0101_position_check_ret')
-	_IFVAL_JUMP(@SCWK_TEMP1, 'NE', @SCWK_TEMP3, 'ev_d21r0101_position_check_ret')
-	_OBJ_ANIME('PAIR_D21R0101_SEVEN5', 'anm_d21r0101_position_fix')
-	_OBJ_ANIME_WAIT()
-ev_d21r0101_position_check_ret:
-	_RET()
-anm_d21r0101_position_fix:
-	_AC_LEFT(1, 4)
-	_ACMD_END()
 mira_function_3:
 	_OBJ_ANIME('PAIR_D21R0101_SEVEN5', 'anm_d21r0101_mira_startled')
 	_OBJ_ANIME_WAIT()
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_ev_d21r0101_mira_func_3', 'Eek!\rStay away from Mira!')
+	_MACRO_TALK_KEYWAIT('dialogue_d21r0101', '00_msg_ev_d21r0101_mira_func_3', 'Eek!\rStay away from Mira!')
 	_TALK_CLOSE()
 	_LDVAL(@SCWK_TEMP3, 738)
 	_CALL('ev_set_trainer_id_for_current_gamemode_scripted_battle')
 	_TRAINER_BTL_SET(@SCWK_TEMP3, 0)
 	_PC_KAIFUKU()
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_ev_d21r0101_mira_func_3_1', 'Ah! I’m very sorry!\rI’m so scared...\rI had my Kadabra send out a distress\nsignal, but I didn’t think anybody\fwould respond...\rI’m Mira...\rI was catching Pokémon, and then\nI dropped something really valuable\fto me, and then I got lost...\rPlease! Can you help me find my\nlost item?\rMira thinks she dropped it really far\ninside this cave!')
+	_MACRO_TALK_KEYWAIT('dialogue_d21r0101', '00_msg_ev_d21r0101_mira_func_3_1', 'Ah! I’m very sorry!\rI’m so scared...\rI had my Kadabra send out a distress signal,\nbut I didn’t think anybody would respond...')
+	_MACRO_TALK_KEYWAIT('dialogue_d21r0101', '00_msg_ev_d21r0101_mira_func_3_2', 'I’m Mira...\rI was catching Pokémon, and then\nI dropped something really valuable\fto me, and then I got lost...\rPlease! Can you help me find my\nlost item?\rMira thinks she dropped it really far\ninside this cave!')
 	_RET()
 mira_function_4:
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_ev_d21r0101_mira_func_4', 'Yay! I’m so happy that\nyou came back, {0}!\rLet’s keep searching! Mira is sure\nwe’ll find her item soon...')
+	_MACRO_TALK_KEYWAIT('dialogue_d21r0101', '00_msg_ev_d21r0101_mira_func_4', 'Yay! I’m so happy that\nyou came back, {0}!\rLet’s keep searching! Mira is sure\nwe’ll find her item soon...')
 	_RET()
 mira_function_8:
 	_PLAYER_NAME(0)
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_ev_d21r0101_mira_func_8', '{0}, did you get to be\nso good because you’re always with\fyour Pokémon?\rYes! That has to be it!\nMira will try like you!')
+	_MACRO_TALK_KEYWAIT('dialogue_d21r0101', '00_msg_ev_d21r0101_mira_func_8', '{0}, did you get to be\nso good because you’re always with\fyour Pokémon?\rYes! That has to be it!\nMira will try like you!')
 	_FLAG_SET(#2699); Seen this dialogue
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 mira_function_9:
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_ev_d21r0101_mira_func_9', 'This cave...\nIt’s so easy to get confused.\rDo you know where we are?')
+	_MACRO_TALK_KEYWAIT('dialogue_d21r0101', '00_msg_ev_d21r0101_mira_func_9', 'This cave...\nIt’s so easy to get confused.\rDo you know where we are?')
 	_FLAG_SET(#2700); Seen this dialogue
 	_JUMP('mira_function_10')
 mira_function_10:

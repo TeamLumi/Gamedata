@@ -1,15 +1,15 @@
 ev_t03r0201_middleman1:
-	_EASY_OBJ_MSG('dp_scenario1%96-msg_t03r0201_middleman1_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_t03r0201', '96-msg_t03r0201_middleman1_01', 'Some kinds of Pokémon appear only if they’re\nattracted by the sweet scent of Honey.')
 	_END()
 ev_t03r0201_middlewoman1:
-	_EASY_OBJ_MSG('dp_scenario1%96-msg_t03r0201_middlewoman1_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_t03r0201', '96-msg_t03r0201_middlewoman1_01', 'Pokémon must have an acute sense of smell.\rThey can sense the aroma of Honey from very\nfar away.')
 	_END()
 ev_t03r0201_item_fanatic:
 	_TALK_OBJ_START()
-	_MACRO_TALKMSG('dp_scenario3', '00_msg_t03r0201_fanatic_greeting', 'I’m a total fanatic about items.\nThere’s so many interesting ones!\rDid you know some items only work\nwith specific species of Pokémon?\rIf you can show me a Pokémon that\ncan use a special item like that...\rI’ll share that special item with you!')
-	_MACRO_TALKMSG('dp_scenario3', '00_msg_t03r0201_fanatic_show', 'Did you want to show me a Pokémon\nthat can use a special item?')
+	_MACRO_TALKMSG('dialogue_t03r0201', '00_msg_t03r0201_fanatic_greeting', 'I’m a total fanatic about items.\nThere’s so many interesting ones!\rDid you know some items only work\nwith specific species of Pokémon?\rIf you can show me a Pokémon that\ncan use a special item like that...\rI’ll share that special item with you!')
+	_MACRO_TALKMSG('dialogue_t03r0201', '00_msg_t03r0201_fanatic_show', 'Did you want to show me a Pokémon\nthat can use a special item?')
 	_CALL('ev_item_fanatic_check_party')
-	_MACRO_TALKMSG('dp_scenario3', '00_msg_t03r0201_fanatic_nothing', 'Hmm...\rIt doesn’t look like any Pokémon in\nyour party can use a special item.')
+	_MACRO_TALKMSG('dialogue_t03r0201', '00_msg_t03r0201_fanatic_nothing', 'Hmm...\rIt doesn’t look like any Pokémon in\nyour party can use a special item.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
@@ -85,7 +85,7 @@ ev_item_fanatic_clamperl_366:
 ev_item_fanatic_give_item:
 	_POKEMON_NAME_EXTRA(0, @SCWK_TEMP3, 0, 0)
 	_ITEM_NAME(1, @SCWK_TEMP0, 1)
-	_MACRO_TALKMSG('dp_scenario3', '00_msg_t03r0201_fanatic_give_item', 'Oh?\nThat’s a {0}!\rYes, there is an item that only\nthat Pokémon can use!\rHere’s one for you!')
+	_MACRO_TALKMSG('dialogue_t03r0201', '00_msg_t03r0201_fanatic_give_item', 'Oh?\nThat’s a {0}!\rYes, there is an item that only\nthat Pokémon can use!\rHere’s one for you!')
 	_CALL('ev_item_event')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
@@ -94,7 +94,7 @@ ev_item_fanatic_duplicate:
 	_RET()
 ev_item_fanatic_give_item_two:
 	_POKEMON_NAME_EXTRA(0, @SCWK_TEMP3, 0, 0)
-	_MACRO_TALKMSG('dp_scenario3', '00_msg_t03r0201_fanatic_give_item_two', 'Oh, my!\nThat’s a {0}!\rThere are actually two special items\nthat a {0} can use!\rI’ll give you both of them!')
+	_MACRO_TALKMSG('dialogue_t03r0201', '00_msg_t03r0201_fanatic_give_item_two', 'Oh, my!\nThat’s a {0}!\rThere are actually two special items\nthat a {0} can use!\rI’ll give you both of them!')
 	_CALL('ev_item_event')
 	_LDVAL(@SCWK_TEMP0, @CON_TEMP02); Load the second item
 	_CALL('ev_item_event')

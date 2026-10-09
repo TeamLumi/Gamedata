@@ -11,10 +11,10 @@ ev_d17r0102_sys_reset:
 	_RET()
 ev_d17r0102_record_01:
 	_IF_FLAGON_JUMP(#FE_D17R0104_LEGEND_CLEAR, 'ev_d17r0102_record_02')
-	_EASY_OBJ_MSG('dp_scenario3%88-msg_d17r0102_record_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_d17r0102', '88-msg_d17r0102_record_01', '...Past three pillars...to the sleeping...\n...before 30 is surpassed...')
 	_END()
 ev_d17r0102_record_02:
-	_EASY_OBJ_MSG('dp_scenario3%88-msg_d17r0102_record_02')
+	_MACRO_EASY_OBJ_MSG('dialogue_d17r0102', '88-msg_d17r0102_record_02', '...Past three pillars...offer up...to the...\n...before 30 is surpassed...')
 	_END()
 ev_d17r0102_hit:
 	_LDVAL(@LOCALWORK0, 0)

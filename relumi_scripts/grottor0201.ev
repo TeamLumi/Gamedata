@@ -1,0 +1,37 @@
+ev_grottor0201_flag_change:
+	_IF_FLAGOFF_CALL(#4102, 'ev_grottor0201_init') ; Flag is reset daily
+	_EVENT_ENTITY_CLIP_PLAY('GROTTOR0201_TERA_DEN', @525) ; Change the color of the den to match the type, will stay the same across the day
+	_OBJ_POS_CHANGE_WORLD('GROTTOR0201_TERA_DEN_BATTLE', 20.500000, 0, 23) ; Move the interactable PlaceData to the center, for the rock smash animation
+	_END()
+ev_grottor0201_init:
+	_GET_RND(@525, 18) ; Randomly chosen type (0-17)
+	_GET_TABLE_POKE(@525, @526, @527) ; Type, MonsNo, FormNo
+	_FLAG_SET(#4102) ; Den has been initialized, a new type and Pokémon will be chosen the next day
+	_FLAG_RESET(#1763) ; Encounter can be triggered again
+	_RET()
+ev_grottor0201_check_completed:
+	_IF_FLAGOFF_JUMP(#1763, 'ev_grottor0201_battle')
+	; If the Pokémon was already caught today
+	_MACRO_EASY_OBJ_MSG('dialogue_grottor0201', 'msg_grottor0201_check_completed', 'That’s enough bothering these Pokémon for the day.')
+	_END()
+ev_grottor0201_battle:
+	_EVENT_START()
+	; Rock smash animation
+	_SE_PLAY('S_FI029')
+	_HIDENEFF_START(1, @SCWK_TEMP1)
+	_TIME_WAIT(5, @SCWK_ANSWER)
+	_HIDENEFF_WAIT()
+	_CALL('ev_grotto_get_mon_level') ; Set the level based on amount of badges received
+	_SP_WILD_BTL_SET_EXTRA(@526, @527, @SCWK_TEMP0, 3, -1, -1, -1, -1, 2, 0, 'LUMI_BGM_BATTLE_009')
+	; Check if the Pokémon was caught. Returns 1 if caught
+	_SEACRET_POKE_RETRY_CHECK(@SCWK_TEMP1, @526)
+	_IFVAL_CALL(@SCWK_TEMP1, 'EQ', 1, 'ev_grottor0201_caught')
+	_OBJ_POS_CHANGE_WORLD('GROTTOR0201_TERA_DEN_BATTLE', 20.500000, 0, 23) ; Move the interactable PlaceData to the center, for the rock smash animation
+	_OBJ_DIR_CHANGE_WORLD('GROTTOR0201_TERA_DEN_BATTLE', 0, 0, 0) ; Reset rotation
+	_OBJ_POS_CHANGE_WORLD('HERO', 20.500000, 0, 23.445026) ; Move the player after the battle, to make sure they are not inside the den
+	_OBJ_DIR_CHANGE('HERO', 180)
+	_EVENT_END()
+	_END()
+ev_grottor0201_caught:
+	_FLAG_SET(#1763)
+	_RET()

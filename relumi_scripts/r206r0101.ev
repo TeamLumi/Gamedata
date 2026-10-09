@@ -12,13 +12,13 @@ ev_r206r0101_stoppers_flag:
 	_OBJ_DEL('R206R0101_STOPPER5')
 	_RET()
 ev_r206r0101_shopm1:
-	_EASY_OBJ_MSG('dp_scenario2%20-msg_r206r0101_shopwoman1_02')
+	_MACRO_EASY_OBJ_MSG('dialogue_r206r0101', '20-msg_r206r0101_shopwoman1_02', 'Learn how to shift gears—you’ll be able to\nride anywhere!')
 	_END()
 ev_r206r0101_stopper:
 	_EVENT_START()
 	_OBJ_ANIME('R206R0101_SHOPM1', 'anm_r206r0101_shopm1_01')
 	_OBJ_ANIME_WAIT()
-	_TALKMSG('dp_scenario2%20-msg_r206r0101_shopwoman1_03')
+	_MACRO_TALKMSG('dialogue_r206r0101', '20-msg_r206r0101_shopwoman1_03', 'You need a bike to go out on Cycling Road!')
 	_TALK_CLOSE()
 	_OBJ_ANIME('HERO', 'anm_r206r0101_player_01')
 	_OBJ_ANIME_WAIT()
@@ -33,7 +33,7 @@ anm_r206r0101_player_01:
 ev_r206r0101_girl2:
 	_TALK_OBJ_START()
 	_IF_FLAGON_JUMP(#FE_R206R0101_ACCE_GET, 'ev_r206r0101_girl2_02')
-	_TALKMSG('dp_scenario2%20-msg_r206r0101_girl2_01')
+	_MACRO_TALKMSG('dialogue_r206r0101', '20-msg_r206r0101_girl2_01', 'You have a great bike, so I’d like to give you\nthese great Stickers!')
 	_LDVAL(@SCWK_TEMP0, 63)
 	_LDVAL(@SCWK_TEMP1, 3)
 	_CALL('ev_exec_item_seal_get')
@@ -42,10 +42,10 @@ ev_r206r0101_girl2:
 	_TALK_OBJ_END()
 	_END()
 ev_r206r0101_girl2_02:
-	_TALKMSG('dp_scenario2%20-msg_r206r0101_girl2_02')
+	_MACRO_TALKMSG('dialogue_r206r0101', '20-msg_r206r0101_girl2_02', 'Go through Mount Coronet from here, and you\ncan get to Hearthome City. That’s where they\fhold Super Contest Shows.\rYou should try decorating your Ball Capsules with\nStickers if you want your Pokémon to be named\fthe star of the show!')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_r206r0101_stoppers:
-	_EASY_OBJ_MSG('dp_scenario3%00-msg_r206_stoppers')
+	_MACRO_EASY_OBJ_MSG('dialogue_r206r0101', '00-msg_r206_stoppers', 'Today, we’re dancing for no reason.\nSomeday, we’ll disappear for no reason.')
 	_END()

@@ -1,15 +1,15 @@
 ev_c03r0101_man1:
-	_EASY_OBJ_MSG('dp_scenario1%69-msg_c03r0101_man1_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c03r0101', '69-msg_c03r0101_man1_01', 'There are eight Gym Leaders in the\nSinnoh region.\rThe objective for Trainers is to get Gym Badges\nfrom them all.')
 	_END()
 ev_c03r0101_boy2:
 	_TALK_OBJ_START_TURN_NOT()
-	_TALKMSG('dp_scenario1%69-msg_c03r0101_boy2_01')
+	_MACRO_TALKMSG('dialogue_c03r0101', '69-msg_c03r0101_boy2_01', 'A Gym Leader isn’t just like any Trainer\nyou meet.\rI’d take as many Pokémon as possible if I\nwere you.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_c03r0101_middlewoman1:
 	_TALK_OBJ_START_TURN_NOT()
-	_TALKMSG('dp_scenario1%69-msg_c03r0101_middlewoman1_01')
+	_MACRO_TALKMSG('dialogue_c03r0101', '69-msg_c03r0101_middlewoman1_01', 'Roark lets us train our Pokémon in the mine.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()

@@ -1,9 +1,9 @@
 ev_d26r0108_assistantm:
-	_EASY_OBJ_MSG('dp_scenario2%87-msg_d26r0108_assistantm_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_d26r0108', '87-msg_d26r0108_assistantm_01', 'I cooperated with Team Galactic, but this\nexperiment has gone too far.')
 	_END()
 ev_d26r0108_assistantw:
-	_EASY_OBJ_MSG('dp_scenario2%87-msg_d26r0108_assistantw_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_d26r0108', '87-msg_d26r0108_assistantw_01', 'I can’t say anything in our defense.\rBut that thing we made... What is it going to be\nused for?')
 	_END()
 ev_d26r0108_machine:
-	_EASY_OBJ_MSG('dp_scenario2%87-msg_d26r0108_machine_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_d26r0108', '87-msg_d26r0108_machine_01', 'There is something suspended in a green fluid...')
 	_END()

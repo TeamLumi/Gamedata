@@ -1,3 +1,3 @@
 ev_c03pc0103_girl2:
-	_EASY_OBJ_MSG('dp_scenario1%88-msg_c03pc0103_girl2_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c03pc0103', '88-msg_c03pc0103_girl2_01', 'Before I enter the Global Room, I take a deep\nbreath and ask myself: do I want to battle today?\fOr do I want to trade?')
 	_END()

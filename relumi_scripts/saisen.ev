@@ -14,16 +14,16 @@ ev_ok_battery:
 	_END()
 ev_no_battery:
 	_NUMBER_NAME(0, @SCWK_TEMP0)
-	_TALKMSG('dp_scenario3%99-mes_saisen_01_01')
+	_MACRO_TALKMSG('dialogue_saisen', '99-mes_saisen_01_01', 'The battery isn’t charged enough.\rNumber of steps required to fully charge\nthe battery: {0,2,1,0}')
 	_JUMP('common_btl_searcher_end')
 	_JUMP('common_btl_searcher_end')
 ev_no_trainer:
-	_TALKMSG('dp_scenario3%99-mes_saisen_01_02')
+	_MACRO_TALKMSG('dialogue_saisen', '99-mes_saisen_01_02', 'There are no Trainers within range who\ncan battle...\rThe Vs. Seeker was turned off.')
 	_JUMP('common_btl_searcher_end')
 	_JUMP('common_btl_searcher_end')
 ev_no_lottery:
 	_TIME_WAIT(30, @SCWK_ANSWER)
-	_TALKMSG('dp_scenario3%99-mes_saisen_01_03')
+	_MACRO_TALKMSG('dialogue_saisen', '99-mes_saisen_01_03', 'The other Trainers don’t appear to be ready\nfor battle.\rLet’s wait till later.')
 	_JUMP('common_btl_searcher_end')
 	_JUMP('common_btl_searcher_end')
 common_btl_searcher_end:

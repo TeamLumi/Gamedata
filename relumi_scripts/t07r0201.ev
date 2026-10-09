@@ -1,8 +1,8 @@
 ev_t07r0201_explore:
-	_EASY_OBJ_MSG('dp_scenario3%54-msg_t07r0201_explore_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_t07r0201', '54-msg_t07r0201_explore_01', 'The weather and the terrain here are much more\nextreme than what you’ll find in Sinnoh.\rI imagine there would be a large variety of\nPokémon here.')
 	_END()
 ev_t07r0201_oldman2:
-	_EASY_OBJ_MSG('dp_scenario3%54-msg_t07r0201_oldman2_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_t07r0201', '54-msg_t07r0201_oldman2_01', 'It’s not only Sinnoh’s best that gather at the\nBattle Tower. We’re talking about the greatest\fTrainers in the world.\rIt must be cool to get your own Pokémon and\nbattle against people like you from far and wide!')
 	_END()
 ev_t07r0201_babyboy1:
 	_TALK_OBJ_START()
@@ -11,12 +11,12 @@ ev_t07r0201_babyboy1:
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 't07r0201_babyboy1_female')
 	_END()
 t07r0201_babyboy1_male:
-	_TALKMSG('dp_scenario3%54-msg_t07r0201_babyboy1_01')
+	_MACRO_TALKMSG('dialogue_t07r0201', '54-msg_t07r0201_babyboy1_01', 'Wow, you’ve seen all the Pokémon in Sinnoh?!\rThat’s awesome! I’m gonna travel with Pokémon\nwhen I get big like you!')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 t07r0201_babyboy1_female:
-	_TALKMSG('dp_scenario3%54-msg_t07r0201_babyboy1_02')
+	_MACRO_TALKMSG('dialogue_t07r0201', '54-msg_t07r0201_babyboy1_02', 'Wow, you’ve seen all the Pokémon in Sinnoh?!\rThat’s awesome! I’m gonna travel with Pokémon\nwhen I get big like you!')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()

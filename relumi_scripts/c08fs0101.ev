@@ -17,7 +17,7 @@ ev_c08fs0101_shop_re:
 	_JUMP('ev_c08fs0101_shop_end')
 	_END()
 ev_c08fs0101_shop_sonohoka:
-	_TALKMSG('dp_scenario1%28-mes_shop_01_03')
+	_MACRO_TALKMSG('dialogue_c08fs0101', '28-mes_shop_01_03', 'Is there anything else I can do for you?')
 	_RET()
 ev_c08fs0101_shop_buy:
 	_LDVAL(@LOCALWORK3, 1)
@@ -66,8 +66,8 @@ ev_c08fs0101_fix_shop:
 	_TALK_OBJ_END()
 	_END()
 ev_c08fs0101_explore:
-	_EASY_OBJ_MSG('dp_scenario3%14-msg_c08fs0101_explore_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c08fs0101', '14-msg_c08fs0101_explore_01', 'I’ve heard some things about Victory Road,\nwhich leads to the Pokémon League. The word\fis the road is harsh and harrowing.\rI’d better load up on as many items as I\ncan carry...')
 	_END()
 ev_c08fs0101_seaman:
-	_EASY_OBJ_MSG('dp_scenario3%14-msg_c08fs0101_seaman_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c08fs0101', '14-msg_c08fs0101_seaman_01', 'You can buy Stickers for decorating Poké Balls at\nthe Sunyshore Market.\rUse those Stickers in a cool way, and your\nPokémon will be really happy.')
 	_END()

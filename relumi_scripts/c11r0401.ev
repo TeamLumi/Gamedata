@@ -1,9 +1,9 @@
 ev_c11r0401_oldman2:
-	_EASY_OBJ_MSG('dp_scenario3%39-msg_c11r0401_oldman2_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c11r0401', '39-msg_c11r0401_oldman2_01', 'The Battle Zone used to attract only the hardiest\nof Trainers.\rThey were considered eccentric for gathering at\na place like this.\rIt’s hard to believe how much it’s changed\nsince then.\rPlaces like the Fight Area and the Survival Area\njust seemed to spring up overnight.')
 	_END()
 ev_c11r0401_oldwoman2:
-	_EASY_OBJ_MSG('dp_scenario3%39-msg_c11r0401_oldwoman2_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c11r0401', '39-msg_c11r0401_oldwoman2_01', 'He was one of those early eccentrics who were\naround during the first days of the Battle Zone.\rWell, I was, too.')
 	_END()
 ev_c11r0401_purin:
-	_EASY_VOICE_MSG('dp_scenario3%39-msg_c11r0401_purin_01', 'PLAY_PV_EV_255_00_00')
+	_EASY_VOICE_MSG('dialogue_c11r0401%39-msg_c11r0401_purin_01', 'PLAY_PV_EV_255_00_00')
 	_END()

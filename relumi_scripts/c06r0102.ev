@@ -1,7 +1,7 @@
 ev_c06r0102_scope:
 	_TALK_OBJ_START()
 	_MONEY_OPEN()
-	_TALKMSG('dp_scenario2%124-msg_c06r0102_telescope_01')
+	_MACRO_TALKMSG('dialogue_c06r0102', '124-msg_c06r0102_telescope_01', 'It’s a pair of binoculars. Put 100 in it?')
 	_YES_NO_WIN(@SCWK_ANSWER)
 	_TALK_CLOSE()
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'scope_yes')
@@ -18,19 +18,19 @@ scope_yes:
 	_END()
 scope_no_money:
 	_MONEY_CLOSE()
-	_TALKMSG('dp_scenario2%124-msg_c06r0102_telescope_02')
+	_MACRO_TALKMSG('dialogue_c06r0102', '124-msg_c06r0102_telescope_02', 'You don’t have enough money...')
 	_TALK_CLOSE()
 	_TALK_END()
 	_END()
 ev_c06r0102_woman3_01:
-	_EASY_OBJ_MSG('dp_scenario2%124-msg_c06r0102_woman3_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c06r0102', '124-msg_c06r0102_woman3_01', 'Tell me I’m not imagining this...\rThe Great Marsh’s Pokémon seem to be different\nfrom the ones yesterday.')
 	_END()
 ev_c06r0102_boy3_01:
-	_EASY_OBJ_MSG('dp_scenario2%124-msg_c06r0102_boy3_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c06r0102', '124-msg_c06r0102_boy3_01', 'Use a pair of binoculars to look out over the\nGreat Marsh. You can see what kinds of Pokémon\fcan be caught and where they are.')
 	_END()
 ev_c06r0102_middleman1_01:
-	_EASY_OBJ_MSG('dp_scenario2%124-msg_c06r0102_middleman1_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c06r0102', '124-msg_c06r0102_middleman1_01', 'There are shuttle trains in the marsh called\nQuick Trams. You should take those if you’re\fgoing to a deeper area in the marsh.')
 	_END()
 ev_c06r0102_picnicgirl_01:
-	_EASY_OBJ_MSG('dp_scenario2%124-msg_c06r0102_picnicgirl_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c06r0102', '124-msg_c06r0102_picnicgirl_01', 'When you’re walking on the bog, you sometimes\nsink right in... I get so flustered trying to get out,\fI have no luck catching anything.')
 	_END()

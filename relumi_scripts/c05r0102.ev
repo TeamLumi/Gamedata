@@ -14,7 +14,7 @@ ev_c05r0102_woman3:
 	_LDVAL(@SCWK_TEMP1, 1)
 	_IF_FLAGON_JUMP(#FE_C05R0102_ITEM_GET, 'ev_c05r0102_woman3_02')
 	_ITEM_NAME(0, @SCWK_TEMP0, @SCWK_TEMP1)
-	_TALKMSG('dp_scenario2%42-msg_c05r0102_woman3_01')
+	_MACRO_TALKMSG('dialogue_c05r0102', '42-msg_c05r0102_woman3_01', 'I have something for your Pokémon to hold.\nTake this {0,1,9,0}.')
 	_ADD_ITEM_CHK(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_c05r0102_woman3_01_item_event_fail')
 	_FLAG_SET(#FE_C05R0102_ITEM_GET)
@@ -25,7 +25,7 @@ ev_c05r0102_woman3:
 ev_c05r0102_woman3_02:
 	_LDVAL(@SCWK_TEMP0, 253)
 	_ITEM_NAME(0, @SCWK_TEMP0, 1)
-	_TALKMSG('dp_scenario2%42-msg_c05r0102_woman3_02')
+	_MACRO_TALKMSG('dialogue_c05r0102', '42-msg_c05r0102_woman3_02', 'The Pokémon that’s holding the {0,1,9,0}\nwill regain HP a little by inflicting damage.\rIt was given to me when I was on vacation, but I\nalready had one.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
@@ -35,5 +35,5 @@ ev_c05r0102_woman3_01_item_event_fail:
 	_TALK_OBJ_END()
 	_END()
 ev_c05r0102_pippi:
-	_EASY_VOICE_MSG('dp_scenario2%42-msg_c05r0102_pippi_03', 'PLAY_PV_EV_035_00_00')
+	_EASY_VOICE_MSG('dialogue_c05r0102%42-msg_c05r0102_pippi_03', 'PLAY_PV_EV_035_00_00')
 	_END()

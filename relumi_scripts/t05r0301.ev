@@ -1,6 +1,6 @@
 ev_t05r0301_middleman1:
-	_EASY_OBJ_MSG('dp_scenario2%158-msg_t05r0301_middleman1_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_t05r0301', '158-msg_t05r0301_middleman1_01', 'Mount Coronet towers at the center of Sinnoh.\nIn a way, it’s the closest place to the sky in\fthis region.')
 	_END()
 ev_t05r0301_babyboy1:
-	_EASY_OBJ_MSG('dp_scenario2%158-msg_t05r0301_babyboy1_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_t05r0301', '158-msg_t05r0301_babyboy1_01', 'If I climb to the top of Mount Coronet, will I be\nable to see all of Sinnoh?')
 	_END()

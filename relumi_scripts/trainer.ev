@@ -1731,28 +1731,26 @@ ev_trainer_talk_battle:
 ev_trainer_sit_talk_battle:
 	_TRAINER_ID_GET(@SCWK_TEMP0)
 	_CALL('ev_get_trainer_id_for_current_gamemode_talk')
-	_IF_TR_FLAGON_JUMP(@SCWK_TEMP0, 'ev_trainer_talk_after')
+	_IF_TR_FLAGON_JUMP(@SCWK_TEMP0, 'ev_trainer_talk_after'); Checks if the trainer has already been defeated the first time
 	_TUREARUKI_POKE_DELETE(1)
 	_GET_TAG_PATNER_ID(@SCWK_TEMP0, @SCWK_TEMP1)
-	_IFVAL_JUMP(@SCWK_TEMP1, 'EQ', -1, 'ev_trainer_common_10')
-	_2VS2_BATTLE_CHECK(@SCWK_ANSWER)
+	_IFVAL_JUMP(@SCWK_TEMP1, 'EQ', -1, 'ev_trainer_talk_single_battle_start')
+	_2VS2_BATTLE_CHECK(@SCWK_ANSWER); If this is 0 the 2v2 (tag and(?) multi) battle has been fought already
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_trainer_talk_battle_poke_one')
 	_CALL('ev_trainer_type_single_camra_start')
-	_JUMP('ev_trainer_type_double_talk')
+	_JUMP('ev_trainer_type_double_battle_start')
 	_END()
-ev_trainer_common_10:
+ev_trainer_talk_single_battle_start:
 	_CALL('ev_trainer_type_single_camra_start')
 	_TRAINER_BGM_SET(@SCWK_TEMP0)
 	_TALK_OPEN()
 	_TRAINER_TALK_TYPE_GET(@SCWK_PARAM0, @SCWK_PARAM1, @SCWK_PARAM2)
 	_TRAINER_MSG_SET(@SCWK_TEMP0, @SCWK_PARAM0)
-	_JUMP('ev_trainer_common_11')
-	_END()
-ev_trainer_common_11:
 	_TALK_CLOSE()
 	_IF_FLAGON_CALL(#FE_TRAINERS_CAMERA, 'ev_trainer_camra_back')
 	_TRAINER_BTL_SET(@SCWK_TEMP0, 0)
-	_TRAINER_FLAG_SET(@SCWK_TEMP0)
+	_LDVAL(@SCWK_ANSWER, @SCWK_TEMP0)
+	_CALL('ev_set_all_gamemode_trainer_ids_using_scwk_answer')
 	_CALL('ev_d28r0101_koiking_trainer')
 	_CALL('ev_r209r010x_mapinfo_stop_chk')
 	_TUREARUKI_POKE_CREATE()
@@ -1760,7 +1758,7 @@ ev_trainer_common_11:
 	_CALL('ev_sp_read_t_chk')
 	_END()
 ev_trainer_talk_after:
-	_REVENGE_TRAINER_SEARCH(@SCWK_TEMP0, @SCWK_ANSWER)
+	_REVENGE_TRAINER_SEARCH(@SCWK_TEMP0, @SCWK_ANSWER); Checks the first param and returns the second param if true or not
 	_IFVAL_JUMP(@SCWK_ANSWER, 'NE', 0, 'ev_trainer_revenge')
 	_JUMP('ev_trainer_talk_after_normal')
 	_END()
@@ -1772,23 +1770,25 @@ ev_trainer_talk_after_normal:
 	_TALK_OBJ_END()
 	_END()
 ev_trainer_revenge:
-	_LDVAL(@SCWK_TEMP3, @SCWK_ANSWER)
-	_TUREARUKI_POKE_DELETE(1)
+	_LDVAL(@SCWK_TEMP3, @SCWK_ANSWER); Gets the result of the _REVENGE_TRAINER_SEARCH and stores it in TEMP3
+	_TUREARUKI_POKE_DELETE(1); Despawns follower pokemon
 	_GET_TAG_PATNER_ID(@SCWK_TEMP3, @SCWK_TEMP1)
-	_IFVAL_JUMP(@SCWK_TEMP1, 'EQ', -1, 'ev_trainer_revenge_solo')
+	_IFVAL_JUMP(@SCWK_TEMP1, 'EQ', -1, 'ev_trainer_revenge_solo_battle_start')
 	_2VS2_BATTLE_CHECK(@SCWK_ANSWER)
-	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_trainer_talk_battle_poke_one')
-	_JUMP('ev_trainer_revenge_double_talk')
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_trainer_talk_battle_poke_one'); 0 means the battle has already been fought
+	_JUMP('ev_trainer_revenge_double_battle_start')
 	_END()
-ev_trainer_revenge_solo:
-	_TRAINER_BGM_SET(@SCWK_TEMP0)
+ev_trainer_revenge_solo_battle_start:
+	_TRAINER_BGM_SET(@SCWK_TEMP3); Set by _TRAINER_ID_GET in previous scripts
 	_TALK_OPEN()
 	_REVENGE_TRAINER_TALK_TYPE_GET(@SCWK_PARAM0, @SCWK_PARAM1, @SCWK_PARAM2)
 	_TRAINER_MSG_SET(@SCWK_TEMP0, @SCWK_PARAM0)
 	_TALK_CLOSE()
 	_TRAINER_BTL_SET(@SCWK_TEMP3, 0)
-	_TRAINER_FLAG_SET(@SCWK_TEMP3)
-	_TRAINER_FLAG_SET(@SCWK_TEMP0)
+	_LDVAL(@SCWK_ANSWER, @SCWK_TEMP3)
+	_CALL('ev_set_all_gamemode_trainer_ids_using_scwk_answer')
+	_LDVAL(@SCWK_ANSWER, @SCWK_TEMP0); Not sure why TEMP0 is still needed here since it should already be 0 but I'm going to set it regardless
+	_CALL('ev_set_all_gamemode_trainer_ids_using_scwk_answer')
 	_TUREARUKI_POKE_CREATE()
 	_CALL('ev_sp_read_t_chk')
 	_TALK_OBJ_END()
@@ -1834,9 +1834,8 @@ ev_trainer_type_single:
 	_IF_FLAGON_CALL(#FE_TRAINERS_CAMERA, 'ev_trainer_camra_back')
 	_TRAINER_BTL_SET(@SCWK_TEMP0, 0)
 	_EYE_TRAINER_ID_GET(0, @SCWK_ANSWER)
-	_CALL('ev_get_trainer_id_for_current_gamemode')
-	_LDVAL(@SCWK_TEMP0, @SCWK_ANSWER)
-	_TRAINER_FLAG_SET(@SCWK_TEMP0)
+	_LDVAL(@SCWK_TEMP0, @SCWK_ANSWER); SCWK_ANSWER is loaded correctly but we want to make sure that TEMP0 is also loaded for the other scripts
+	_CALL('ev_set_all_gamemode_trainer_ids_using_scwk_answer')
 	_CALL('ev_d28r0101_koiking_trainer')
 	_CALL('ev_r209r010x_mapinfo_stop_chk')
 	_TUREARUKI_POKE_CREATE()
@@ -1847,7 +1846,7 @@ ev_trainer_type_single_move_end_check:
 	_EYE_TRAINER_MOVE_CHECK(0, @SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_trainer_type_single_move_end_check')
 	_RET()
-ev_trainer_type_double_talk:
+ev_trainer_type_double_battle_start:
 	_TRAINER_BGM_SET(@SCWK_TEMP0)
 	_TALK_OPEN()
 	_TRAINER_MSG_SET(@SCWK_TEMP0, 'TRMSG_FIGHT_START_1')
@@ -1855,13 +1854,15 @@ ev_trainer_type_double_talk:
 	_IF_FLAGON_CALL(#FE_TRAINERS_CAMERA, 'ev_trainer_camra_back')
 	_CALL('ev_Wtrainer_re_pose')
 	_TRAINER_BTL_SET(@SCWK_TEMP0, @SCWK_TEMP1)
-	_TRAINER_FLAG_SET(@SCWK_TEMP0)
-	_TRAINER_FLAG_SET(@SCWK_TEMP1)
+	_LDVAL(@SCWK_ANSWER, @SCWK_TEMP0)
+	_CALL('ev_set_all_gamemode_trainer_ids_using_scwk_answer')
+	_LDVAL(@SCWK_ANSWER, @SCWK_TEMP1)
+	_CALL('ev_set_all_gamemode_trainer_ids_using_scwk_answer')
 	_TUREARUKI_POKE_CREATE()
 	_CALL('ev_r209r010x_mapinfo_stop_chk')
 	_TALK_END()
 	_END()
-ev_trainer_revenge_double_talk:
+ev_trainer_revenge_double_battle_start:
 	_TRAINER_BGM_SET(@SCWK_TEMP0)
 	_TALK_OPEN()
 	_REVENGE_TRAINER_TALK_TYPE_GET(@SCWK_PARAM0, @SCWK_PARAM1, @SCWK_PARAM2)
@@ -1869,9 +1870,12 @@ ev_trainer_revenge_double_talk:
 	_TALK_CLOSE()
 	_CALL('ev_Wtrainer_re_pose2')
 	_TRAINER_BTL_SET(@SCWK_TEMP3, @SCWK_TEMP1)
-	_TRAINER_FLAG_SET(@SCWK_TEMP3)
-	_TRAINER_FLAG_SET(@SCWK_TEMP1)
-	_TRAINER_FLAG_SET(@SCWK_TEMP0)
+	_LDVAL(@SCWK_ANSWER, @SCWK_TEMP3); Set the trainer flag of the rebattle trainer that you initially talked to 
+	_CALL('ev_set_all_gamemode_trainer_ids_using_scwk_answer')
+	_LDVAL(@SCWK_ANSWER, @SCWK_TEMP1); Set the trainer flag of the partner of the trainer
+	_CALL('ev_set_all_gamemode_trainer_ids_using_scwk_answer')
+	_LDVAL(@SCWK_ANSWER, @SCWK_TEMP0); Set the trainer flag in the Placedata (obtained by _TRAINER_ID_GET) just in case I guess?
+	_CALL('ev_set_all_gamemode_trainer_ids_using_scwk_answer')
 	_TUREARUKI_POKE_CREATE()
 	_TALK_OBJ_END()
 	_END()
@@ -1901,13 +1905,11 @@ ev_trainer_type_double:
 	_CALL('ev_Wtrainer_re_pose')
 	_TRAINER_BTL_SET(@SCWK_TEMP0, @SCWK_TEMP1)
 	_EYE_TRAINER_ID_GET(0, @SCWK_ANSWER)
-	_CALL('ev_get_trainer_id_for_current_gamemode')
-	_LDVAL(@SCWK_TEMP0, @SCWK_ANSWER)
-	_TRAINER_FLAG_SET(@SCWK_TEMP0)
+	_LDVAL(@SCWK_TEMP0, @SCWK_ANSWER); SCWK_ANSWER is loaded correctly but we want to make sure that TEMP0 is also loaded for the other scripts
+	_CALL('ev_set_all_gamemode_trainer_ids_using_scwk_answer')
 	_EYE_TRAINER_ID_GET(1, @SCWK_ANSWER)
-	_CALL('ev_get_trainer_id_for_current_gamemode')
-	_LDVAL(@SCWK_TEMP1, @SCWK_ANSWER)
-	_TRAINER_FLAG_SET(@SCWK_TEMP1)
+	_LDVAL(@SCWK_TEMP1, @SCWK_ANSWER); SCWK_ANSWER is loaded correctly but we want to make sure that TEMP1 is also loaded for the other scripts
+	_CALL('ev_set_all_gamemode_trainer_ids_using_scwk_answer')
 	_TUREARUKI_POKE_CREATE()
 	_TALK_END()
 	_END()
@@ -1943,13 +1945,11 @@ ev_trainer_type_tag:
 	_CALL('ev_Wtrainer_re_pose')
 	_TRAINER_BTL_SET(@SCWK_TEMP0, @SCWK_TEMP1)
 	_EYE_TRAINER_ID_GET(0, @SCWK_ANSWER)
-	_CALL('ev_get_trainer_id_for_current_gamemode')
-	_LDVAL(@SCWK_TEMP0, @SCWK_ANSWER)
-	_TRAINER_FLAG_SET(@SCWK_TEMP0)
+	_LDVAL(@SCWK_TEMP0, @SCWK_ANSWER); SCWK_ANSWER is loaded correctly but we want to make sure that TEMP0 is also loaded for the other scripts
+	_CALL('ev_set_all_gamemode_trainer_ids_using_scwk_answer')
 	_EYE_TRAINER_ID_GET(1, @SCWK_ANSWER)
-	_CALL('ev_get_trainer_id_for_current_gamemode')
-	_LDVAL(@SCWK_TEMP1, @SCWK_ANSWER)
-	_TRAINER_FLAG_SET(@SCWK_TEMP1)
+	_LDVAL(@SCWK_TEMP1, @SCWK_ANSWER); SCWK_ANSWER is loaded correctly but we want to make sure that TEMP1 is also loaded for the other scripts
+	_CALL('ev_set_all_gamemode_trainer_ids_using_scwk_answer')
 	_TUREARUKI_POKE_CREATE()
 	_CALL('ev_r209r010x_mapinfo_stop_chk')
 	_TALK_END()
@@ -2349,6 +2349,13 @@ ev_trainer_id_natdex_mode:
 	_RET()
 ev_trainer_id_challenge_mode:
 	_ADD_WK(@SCWK_ANSWER, 4000)
+	_RET()
+ev_set_all_gamemode_trainer_ids_using_scwk_answer:
+	_TRAINER_FLAG_SET(@SCWK_ANSWER); Set the Normal mode trainer's flag
+	_ADD_WK(@SCWK_ANSWER, 2000)
+	_TRAINER_FLAG_SET(@SCWK_ANSWER); Set the Natdex trainer's flag
+	_ADD_WK(@SCWK_ANSWER, 2000)
+	_TRAINER_FLAG_SET(@SCWK_ANSWER); Set the Challenge trainer's flag
 	_RET()
 ev_get_trainer_id_for_current_gamemode_talk:
 	_IFVAL_JUMP(@487, 'EQ', 1, 'ev_trainer_id_natdex_mode_2')

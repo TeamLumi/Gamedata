@@ -1,13 +1,13 @@
 ev_d26r0102_bed:
 	_TALK_OBJ_START()
-	_TALKMSG('dp_scenario2%81-msg_d26r0102_bed_01')
+	_MACRO_TALKMSG('dialogue_d26r0102', '81-msg_d26r0102_bed_01', 'It’s a bed. Would you like to take a rest?')
 	_YES_NO_WIN(@SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'yes_d26r0102_bed')
 	_JUMP('no_d26r0102_bed')
 	_JUMP('yes_d26r0102_bed')
 yes_d26r0102_bed:
 	_PLAYER_NAME(0)
-	_TALKMSG('dp_scenario2%81-msg_d26r0102_bed_02')
+	_MACRO_TALKMSG('dialogue_d26r0102', '81-msg_d26r0102_bed_02', 'You quickly fell asleep in the bed...')
 	_TALK_CLOSE()
 	_BLACK_OUT('SCR_WIPE_DIV', 'SCR_WIPE_SYNC')
 	_SE_PLAY('M_FI002')
@@ -15,7 +15,7 @@ yes_d26r0102_bed:
 	_PC_KAIFUKU()
 	_BLACK_IN('SCR_WIPE_DIV', 'SCR_WIPE_SYNC')
 	_PLAYER_NAME(0)
-	_TALKMSG('dp_scenario2%81-msg_d26r0102_bed_03')
+	_MACRO_TALKMSG('dialogue_d26r0102', '81-msg_d26r0102_bed_03', 'You and your Pokémon became fully healed from\nthe rest!')
 	_TALK_CLOSE()
 	_TALK_END()
 	_END()
@@ -24,17 +24,17 @@ no_d26r0102_bed:
 	_TALK_END()
 	_END()
 ev_d26r0102_paper1:
-	_EASY_OBJ_MSG('dp_scenario2%81-msg_d26r0102_paper1_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_d26r0102', '81-msg_d26r0102_paper1_01', 'Team Galactic Nap Room\rEnsure the bed is unoccupied before getting\ninto it!')
 	_END()
 ev_d26r0102_paper2:
-	_EASY_OBJ_MSG('dp_scenario2%81-msg_d26r0102_paper2_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_d26r0102', '81-msg_d26r0102_paper2_01', 'Team Galactic TV Room\rState-of-the-art audio and video system for\nmember use only!\rOnward to a new universe! Team Galactic!')
 	_END()
 ev_d26r0102_paper3:
-	_EASY_OBJ_MSG('dp_scenario2%81-msg_d26r0102_paper3_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_d26r0102', '81-msg_d26r0102_paper3_01', 'The Team Galactic credo! Everything belongs to\nTeam Galactic!\rLook beyond the world—space will become\nTeam Galactic’s!')
 	_END()
 ev_d26r0102_sink1:
-	_EASY_OBJ_MSG('dp_scenario2%81-msg_d26r0102_sink_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_d26r0102', '81-msg_d26r0102_sink_01', 'There is a notice tacked onto the kitchen sink.\r“Health and prosperity through the partaking\nof favorite foods!”\rFoul, unidentifiable substances are caked around\nthe sink.')
 	_END()
 ev_d26r0102_freezer1:
-	_EASY_OBJ_MSG('dp_scenario2%81-msg_d26r0102_freezer_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_d26r0102', '81-msg_d26r0102_freezer_01', 'There is a notice taped onto the refrigerator.\r“Drink all you wish, and gain the energy to move\nus forward!”\rThe refrigerator is filled with murky, sinister\ndrinks and nothing else.')
 	_END()

@@ -1,26 +1,17 @@
 ev_little_rack1:
-	_EASY_OBJ_MSG('dp_scenario1%68-bg_msg_book1_01')
-	_END()
-ev_little_rack2:
-	_EASY_OBJ_MSG('dp_scenario1%68-bg_msg_book2_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_bg_attr', '68-bg_msg_book1_01', 'It’s lined with colorful binders.')
 	_END()
 ev_rack1:
-	_EASY_OBJ_MSG('dp_scenario1%68-bg_msg_bookrack1_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_bg_attr', '68-bg_msg_bookrack1_01', 'It’s chock-full of Pokémon books and\nphoto collections.')
 	_END()
 ev_rack2:
-	_EASY_OBJ_MSG('dp_scenario1%68-bg_msg_bookrack2_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_bg_attr', '68-bg_msg_bookrack2_01', 'Pokémon magazines!\rPokémon Pal... Pokémon Handbook...\nAdorable Pokémon...')
 	_END()
 ev_trash_box:
-	_EASY_OBJ_MSG('dp_scenario1%68-bg_msg_scrap_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_bg_attr', '68-bg_msg_scrap_01', 'The trash can is empty.')
 	_END()
 ev_shop_rack1:
-	_EASY_OBJ_MSG('dp_scenario1%68-bg_msg_shoprack1_01')
-	_END()
-ev_shop_rack2:
-	_EASY_OBJ_MSG('dp_scenario1%68-bg_msg_shoprack2_01')
-	_END()
-ev_shop_rack3:
-	_EASY_OBJ_MSG('dp_scenario1%68-bg_msg_shoprack3_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_bg_attr', '68-bg_msg_shoprack1_01', 'The shelves are jammed with colorful\nPokémon goods.')
 	_END()
 ev_tmap_bg:
 	_TALK_START()

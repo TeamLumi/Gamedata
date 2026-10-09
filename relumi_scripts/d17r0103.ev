@@ -19,7 +19,7 @@ ev_d17r0103_record_01:
 	_LDVAL(@SCWK_TEMP1, @WK_D17SYSTEM_PATH_MAP)
 	_NUMBER_NAME(0, @SCWK_TEMP0)
 	_NUMBER_NAME(1, @SCWK_TEMP1)
-	_TALKMSG('dp_scenario3%89-msg_d17r0103_record_01')
+	_MACRO_TALKMSG('dialogue_d17r0103', '89-msg_d17r0103_record_01', '{0,2,1,0}\n{1,2,1,0}')
 	_TALK_CLOSE()
 	_TALK_END()
 	_END()

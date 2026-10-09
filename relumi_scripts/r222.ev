@@ -25,7 +25,7 @@ ev_r222_fc_midnight:
 ev_r222_gorggeousm:
 	_TALK_OBJ_START()
 	_IF_FLAGON_JUMP(#FE_WAZAMASIN56_GET, 'ev_r222_gorggeousm_02')
-	_TALKMSG('dp_scenario2%185-msg_r222_gorggeousm_01')
+	_MACRO_TALKMSG('dialogue_r222', '185-msg_r222_gorggeousm_01', 'The only items you ever throw are Poké Balls!\rBut is that true?! I want people to think about\nthat. That’s why I give away this Technical\fMachine for Fling.')
 	_LDVAL(@SCWK_TEMP0, 383); TM56
 	_LDVAL(@SCWK_TEMP1, 1); Quantity 3
 	_ADD_ITEM_CHK(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_ANSWER)
@@ -35,7 +35,7 @@ ev_r222_gorggeousm:
 	_JUMP('ev_r222_gorggeousm_02')
 	_JUMP('ev_r222_gorggeousm_02')
 ev_r222_gorggeousm_02:
-	_TALKMSG('dp_scenario2%185-msg_r222_gorggeousm_02')
+	_MACRO_TALKMSG('dialogue_r222', '185-msg_r222_gorggeousm_02', 'Using that move, the Pokémon hurls whatever\nitem it’s holding at the opponent.\rThe move’s effect depends on what item\nis hurled.\rRemember, the move Fling fails if the Pokémon\nisn’t holding anything.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
@@ -46,22 +46,22 @@ ev_r222_gorggeousm_item_event_fail:
 	_END()
 ev_r222_fishing1:
 	_TALK_OBJ_START_TURN_NOT()
-	_TALKMSG('dp_scenario2%185-msg_r222_fishing1_01')
+	_MACRO_TALKMSG('dialogue_r222', '185-msg_r222_fishing1_01', 'When I first started fishing, catching anything\nmade me happy.\rBut those days are long gone now...\rNow I get annoyed if I can’t beat my record by\neven an inch...')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_r222_sign1:
-	_EASY_BOARD_MSG('dp_scenario2%185-msg_r222_sign1_01', 'BOARD_TYPE_ROAD', 0, 2)
+	_EASY_BOARD_MSG('dialogue_r222%185-msg_r222_sign1_01', 'BOARD_TYPE_ROAD', 0, 2)
 	_END()
 ev_r222_sign2:
-	_EASY_BOARD_MSG('dp_scenario2%185-msg_r222_sign2_01', 'BOARD_TYPE_ROAD', 0, 1)
+	_EASY_BOARD_MSG('dialogue_r222%185-msg_r222_sign2_01', 'BOARD_TYPE_ROAD', 0, 1)
 	_END()
 ev_r222_sign3:
-	_EASY_BOARD_MSG('dp_scenario2%185-msg_r222_sign3_01', 'BOARD_TYPE_POST', 0)
+	_EASY_BOARD_MSG('dialogue_r222%185-msg_r222_sign3_01', 'BOARD_TYPE_POST', 0)
 	_END()
 ev_r222_sign4:
-	_EASY_BOARD_MSG('dp_scenario2%185-msg_r222_sign4_01', 'BOARD_TYPE_POST', 0)
+	_EASY_BOARD_MSG('dialogue_r222%185-msg_r222_sign4_01', 'BOARD_TYPE_POST', 0)
 	_END()
 ev_r222_police6:
-	_EASY_OBJ_MSG('dp_scenario2%185-msg_r222_police_06_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_r222', '185-msg_r222_police_06_01', 'I can’t explain why, but I’m more easily agitated\nat night—not that I let it get to me.')
 	_END()

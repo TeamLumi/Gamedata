@@ -1,7 +1,7 @@
 ev_r229_middleman1:
 	_TALK_OBJ_START()
 	_IF_FLAGON_JUMP(#FE_R229_ITEM_GET, 'ev_r229_middleman1_02')
-	_TALKMSG('dp_scenario3%41-msg_r229_middleman1_01')
+	_MACRO_TALKMSG('dialogue_r229', '41-msg_r229_middleman1_01', 'Were you looking for me? Did you miss me?\rI wish I had a new nugget of wisdom to share\nwith you, but alas, I don’t!\rSo, I’ll have to make it up to you with this!')
 	_LDVAL(@SCWK_TEMP0, 92)
 	_LDVAL(@SCWK_TEMP1, 1)
 	_ADD_ITEM_CHK(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_ANSWER)
@@ -11,7 +11,7 @@ ev_r229_middleman1:
 	_JUMP('ev_r229_middleman1_02')
 	_JUMP('ev_r229_middleman1_02')
 ev_r229_middleman1_02:
-	_TALKMSG('dp_scenario3%41-msg_r229_middleman1_02')
+	_MACRO_TALKMSG('dialogue_r229', '41-msg_r229_middleman1_02', 'That’s my Nugget! Try to spend it wisely!\rA Nugget of gold has to be worth more than a\nnugget of my wisdom!')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
@@ -21,5 +21,5 @@ ev_r229_middleman1_item_event_fail:
 	_TALK_OBJ_END()
 	_END()
 ev_r229_sign1:
-	_EASY_BOARD_MSG('dp_scenario3%41-msg_r229_sign1_01', 'BOARD_TYPE_ROAD', 0, 4)
+	_EASY_BOARD_MSG('dialogue_r229%41-msg_r229_sign1_01', 'BOARD_TYPE_ROAD', 0, 4)
 	_END()

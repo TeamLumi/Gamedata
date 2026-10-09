@@ -1,45 +1,107 @@
-ev_c03r0201_girl3:
+ev_c03r0201_yijun_trade:
+    _TALK_OBJ_START()
+    _CALL('ev_c03r0201_yijun_trade_values')
+    _IF_FLAGON_JUMP(#3075, 'ev_c03r0201_yijun_trade_over')
+    _POKEMON_NAME_FORM(0, @LOCALWORK0, @LOCALWORK1)
+    _MACRO_TALKMSG('dialogue_c03r0201', 'msg_c03r0201_yijun_trade_1', 'Hey, you! I’ve got a question.\rDo you know about a Pokémon called\n{0,1,1,0}?')
+    _TALK_CLOSE()
+    _POKE_WINDOW_PUT(@LOCALWORK0, @LOCALWORK1)
+    _POKEMON_NAME_FORM(0, @LOCALWORK0, @LOCALWORK1)
+    _POKEMON_NAME_FORM(1, @LOCALWORK2, @LOCALWORK3)
+    _MACRO_TALKMSG('dialogue_c03r0201', 'msg_c03r0201_yijun_trade_2', 'Well, I want one of those but they don’t live\naround here.\rSo I had an idea.\nYou could give me one!\rWell, okay. I guess I could trade you\nsomething for it.\rHow about my {1,1,1,0}?\nWill you trade your {0,1,1,0} for my {1,1,1,0}?')
+    _YES_NO_WIN(@SCWK_ANSWER)
+    _IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_c03r0201_yijun_trade_yes')
+    _IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_c03r0201_yijun_trade_no')
+ev_c03r0201_yijun_trade_values:
+    _LDVAL(@LOCALWORK0, 60); Given trade MonsNo
+    _LDVAL(@LOCALWORK1, 0); Given trade FormNo
+    _LDVAL(@LOCALWORK2, 679); Received trade MonsNo
+    _LDVAL(@LOCALWORK3, 0); Received trade FormNo
+    _RET()
+ev_c03r0201_yijun_trade_yes:
+    _TALK_CLOSE()
+    _POKELIST_SET_PROC(26)
+    _POKELIST_GET_RESULT(@SCWK_TEMP0, @SCWK_TEMP1)
+    _IFVAL_JUMP(@SCWK_TEMP0, 'EQ', -1, 'ev_c03r0201_yijun_trade_no'); If nothing was selected
+    _TEMOTI_BOX_MONSNO(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_ANSWER)
+    _TEMOTI_BOX_FORMNO(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_TEMP2)
+    _IFVAL_JUMP(@SCWK_ANSWER, 'NE', @LOCALWORK0, 'ev_c03r0201_yijun_trade_wrong_mon'); If a species other than the target was selected
+    _IFVAL_JUMP(@SCWK_TEMP2, 'NE', @LOCALWORK1, 'ev_c03r0201_yijun_trade_wrong_form'); If an incorrect form of the correct species was selected
+    _TEMOTI_BOX_SHINY(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_TEMP2)
+    _TEMOTI_BOX_GENDER(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_TEMP3)
+    _TALK_CLOSE()
+    _LOCALKOUKAN_APPLY(0, @SCWK_TEMP1, @SCWK_TEMP0)
+	_SXY_POS_CHANGE('HERO', 11, 8)
+	_SXY_DIR_CHANGE('HERO', 180)
+	_SXY_DIR_CHANGE('C03R0201_YIJUN', 0)
+    _IFVAL_CALL(@SCWK_TEMP2, 'EQ', 0, 'ev_c03r0201_yijun_trade_placedata')
+    _IFVAL_CALL(@SCWK_TEMP2, 'GE', 1, 'ev_c03r0201_yijun_trade_placedata_shiny')
+	_CALL('ev_c03r0201_poliwag_cry')
+    _JUMP('ev_c03r0201_yijun_trade_over')
+ev_c03r0201_yijun_trade_no:
+    _POKEMON_NAME_FORM(0, @LOCALWORK0, @LOCALWORK1)
+    _MACRO_TALKMSG('dialogue_c03r0201', 'msg_c03r0201_yijun_trade_no', 'You don’t wanna?\nOr maybe you don’t have a {0,1,1,0}?\rWell, now that I’ve shown you what it looks\nlike you can use that Pokédex of yours to find\fout where it lives.')
+    _TALK_CLOSE()
+    _TALK_OBJ_END()
+    _END()
+ev_c03r0201_yijun_trade_wrong_mon:
+    _POKEMON_NAME_FORM(0, @LOCALWORK0, @LOCALWORK1)
+    _MACRO_TALKMSG('dialogue_c03r0201', 'msg_c03r0201_yijun_trade_wrong_mon', 'That is not the Pokémon that I asked for.\nI want a {0,1,1,0}.')
+    _TALK_CLOSE()
+    _TALK_OBJ_END()
+    _END()
+ev_c03r0201_yijun_trade_wrong_form:
+    _MACRO_TALKMSG('dialogue_c03r0201', 'msg_c03r0201_yijun_trade_wrong_form', 'Oh... That sort of looks like what I asked for.\nBut it looks weird. Maybe it is another form.')
+    _TALK_CLOSE()
+    _TALK_OBJ_END()
+    _END()
+ev_c03r0201_yijun_trade_placedata:
+	_IFVAL_JUMP(@SCWK_TEMP3, 'EQ', 0, 'ev_c03r0201_yijun_trade_placedata_male')
+	_IFVAL_JUMP(@SCWK_TEMP3, 'GE', 1, 'ev_c03r0201_yijun_trade_placedata_female')
+	_RET()
+ev_c03r0201_yijun_trade_placedata_male:
+    _OBJ_ADD('C03R0201_POLIWAG_MALE')
+    _FLAG_RESET(#2945)
+    _RET()
+ev_c03r0201_yijun_trade_placedata_female:
+    _OBJ_ADD('C03R0201_POLIWAG_FEMALE')
+    _FLAG_RESET(#2946)
+    _RET()
+ev_c03r0201_yijun_trade_placedata_shiny:
+	_IFVAL_JUMP(@SCWK_TEMP3, 'EQ', 0, 'ev_c03r0201_yijun_trade_placedata_shiny_male')
+	_IFVAL_JUMP(@SCWK_TEMP3, 'GE', 1, 'ev_c03r0201_yijun_trade_placedata_shiny_female')
+	_RET()
+ev_c03r0201_yijun_trade_placedata_shiny_male:
+    _OBJ_ADD('C03R0201_POLIWAG_SHINY_MALE')
+    _FLAG_RESET(#2947)
+    _RET()
+ev_c03r0201_yijun_trade_placedata_shiny_female:
+    _OBJ_ADD('C03R0201_POLIWAG_SHINY_FEMALE')
+    _FLAG_RESET(#2948)
+    _RET()
+ev_c03r0201_yijun_trade_over:
+    _POKEMON_NAME_FORM(0, @LOCALWORK0); Just species name for brevity
+    _MACRO_TALKMSG('dialogue_c03r0201', 'msg_c03r0201_yijun_trade_over', 'Thank you for finding a {0,1,1,0} for me!\nI’ll take good care of it, I promise!')
+    _FLAG_SET(#3075)
+    _TALK_CLOSE()
+    _TALK_OBJ_END()
+    _END()
+ev_c03r0201_poliwag:
 	_TALK_OBJ_START()
-	_IF_FLAGON_JUMP(#FE_C03R0201_POKE_CHG, 'ev_pokechange_c03r0201_girl3_end')
-	_MACRO_TALKMSG('dp_scenario1', '00_msg_c03r0201_girl3_01', 'Listen, listen. Do you have a Pokémon\ncalled Ponyta?\rWould you be willing to trade your\nPonyta for my Spheal?')
-	_YES_NO_WIN(@SCWK_ANSWER)
-	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_pokechange_c03r0201_girl3_yes_01')
-	_JUMP('ev_pokechange_c03r0201_girl3_no_01')
-	_END()
-ev_pokechange_c03r0201_girl3_yes_01:
-	_TALK_CLOSE()
-	_POKELIST_SET_PROC(2)
-	_POKELIST_GET_RESULT(@SCWK_TEMP0, @SCWK_TEMP1)
-	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', -1, 'ev_pokechange_c03r0201_girl3_no_01')
-	_TEMOTI_BOX_MONSNO(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_ANSWER)
-	_IFVAL_CALL(@SCWK_ANSWER, 'NE', 77, 'ev_pokechange_c03r0201_girl3_different')
-	_TALK_CLOSE()
-	_LOCALKOUKAN_APPLY(0, @SCWK_TEMP1, @SCWK_TEMP0)
-	_FLAG_SET(#FE_C03R0201_POKE_CHG)
-	_MACRO_TALKMSG('dp_scenario1', '00_msg_c03r0201_girl3_02', 'Be nice to my Spheal!\rI’ll be sure to look after your Ponyta\nin return!')
+    _CALL('ev_c03r0201_yijun_trade_values')
+	_CALL('ev_c03r0201_poliwag_cry')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
-ev_pokechange_c03r0201_girl3_different:
-	_TALK_CLOSE()
-	_TALKMSG('dp_scenario1%73-msg_c03r0201_girl3_03')
-	_TALK_CLOSE()
-	_TALK_OBJ_END()
-	_END()
-ev_pokechange_c03r0201_girl3_no_01:
-	_TALKMSG('dp_scenario1%73-msg_c03r0201_girl3_04')
-	_TALK_CLOSE()
-	_TALK_OBJ_END()
-	_END()
-ev_pokechange_c03r0201_girl3_end:
-	_TALKMSG('dp_scenario1%73-msg_c03r0201_girl3_05')
-	_TALK_CLOSE()
-	_TALK_OBJ_END()
-	_END()
+ev_c03r0201_poliwag_cry:
+    _VOICE_PLAY(@LOCALWORK0, @LOCALWORK1, 0)
+    _MACRO_TALKMSG('dialogue_c03r0201', 'msg_c03r0201_poliwag_cry', 'Po-waaah!!!')
+    _VOICE_WAIT()
+	_RET()
 ev_c03r0201_oldwoman1:
 	_TALK_OBJ_START()
-	_TALKMSG('dp_scenario1%73-msg_c03r0201_oldwoman1_01_1')
-	_TALKMSG('dp_scenario1%73-msg_c03r0201_oldwoman1_01_2', 1)
+	_MACRO_TALKMSG('dialogue_c03r0201', '73-msg_c03r0201_oldwoman1_01_1', 'A Pokémon obtained in a trade grows quickly.\rBut if a Pokémon grows too much, it will often\nignore the Trainer.')
+	_MACRO_TALKMSG('dialogue_c03r0201', '73-msg_c03r0201_oldwoman1_01_2', 'Of course, that won’t matter if you have a lot\nof Gym Badges.', 1)
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()

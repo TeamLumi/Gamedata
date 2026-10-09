@@ -1,6 +1,6 @@
 ev_c03r0301_girl3:
-	_EASY_OBJ_MSG('dp_scenario1%77-msg_c03r0301_girl3_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c03r0301', '77-msg_c03r0301_girl3_01', 'Roark is a user of Rock-type Pokémon.\rDon’t you think Rock-type Pokémon are nice?\nI like how lumpy they are!')
 	_END()
 ev_c03r0301_mount:
-	_EASY_OBJ_MSG('dp_scenario1%77-msg_c03r0301_mount_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c03r0301', '77-msg_c03r0301_mount_01', 'Roark is our town’s Gym Leader. He may be\nyoung, but he keeps the mine running safely\fand efficiently.')
 	_END()

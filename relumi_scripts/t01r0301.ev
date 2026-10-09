@@ -5,12 +5,12 @@ ev_t01r0301_man2a:
 	_JUMP('ev_t01r0301_man2a_01')
 ev_t01r0301_man2a_01:
 	_RIVAL_NAME(0)
-	_TALKMSG('dp_scenario1%25-msg_t01r0301_man2a_01')
+	_MACRO_TALKMSG('dialogue_t01r0301', '25-msg_t01r0301_man2a_01', 'You’re off to hang with {0,1,0,0} again,\nright? You two sure are tight!')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_t01r0301_man2a_02:
-	_TALKMSG('dp_scenario1%25-msg_t01r0301_man2a_02')
+	_MACRO_TALKMSG('dialogue_t01r0301', '25-msg_t01r0301_man2a_02', 'I went on an adventure with some Pokémon a\nlong time ago.\rIt was only to the next town, though.\nYeah, good times...')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()

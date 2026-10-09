@@ -1,0 +1,3 @@
+ev_r228r0401_regi_statue:
+	_MACRO_EASY_OBJ_MSG('dialogue_r228r0401', 'msg_regi_statue_1', 'It’s a statue of a Pokémon.\nIt seems to exude power...\rFrom somewhere, something spoke out.\r“The human in the company of our Master, pay\nheed...\r“Become stronger you must.\nSo much the others cannot but notice.”')
+	_END()

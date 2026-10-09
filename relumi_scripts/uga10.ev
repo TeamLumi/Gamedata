@@ -1,0 +1,142 @@
+pos_uga10_alola_ranger_1_stop:
+	_LDVAL(@496, 1)
+	_EVENT_START()
+	_CHARA_LOOK_LOCK('UGA10_ALOLA_RANGER_1', 'HERO')
+	_TIME_WAIT(10, @SCWK_ANSWER)
+	_CHARA_LOOK_RELEASE('UGA10_ALOLA_RANGER_1')
+	_OBJ_ANIME('UGA10_ALOLA_RANGER_1', 'anm_uga10_alola_ranger_1_100'); Ranger exclamation emote
+	_OBJ_ANIME_WAIT()
+	_CHARA_LOOK_LOCK('HERO', 'UGA10_ALOLA_RANGER_1')
+	_TIME_WAIT(10, @SCWK_ANSWER)
+	_TALK_START()
+	_MACRO_TALKMSG('dialogue_uga10', 'msg_uga10_alola_ranger_1_001', 'Oh, are you perhaps that trainer that I was told\nabout?')
+	_TALK_CLOSE()
+	_OBJ_ANIME('UGA10_ALOLA_RANGER_1', 'anm_uga10_alola_ranger_1_101'); Ranger looks right
+	_MACRO_TALKMSG('dialogue_uga10', 'msg_uga10_alola_ranger_1_002', 'This giant Pokémon is exuding a strange aura\nof power, and I’m worried what it might do to\fthe ecosystem.')
+	_OBJ_ANIME_WAIT()
+	_CHARA_LOOK_LOCK('UGA10_ALOLA_RANGER_1', 'HERO')
+	_TIME_WAIT(10, @SCWK_ANSWER)
+	_CHARA_LOOK_RELEASE('UGA10_ALOLA_RANGER_1')
+	_MACRO_TALKMSG('dialogue_uga10', 'msg_uga10_alola_ranger_1_003', 'I realise that I’m asking a lot but please try to\nsubdue it while I protect the vulnerable\fPokémon.')
+	_TALK_CLOSE()
+	_CHARA_LOOK_RELEASE('HERO')
+	_OBJ_ANIME('UGA10_ALOLA_RANGER_1', 'anm_uga10_alola_ranger_1_101'); Ranger looks right
+	_OBJ_ANIME_WAIT()
+	_EVENT_END()
+	_END()
+ev_uga10_alola_ranger_battle_check:
+	_TALK_OBJ_START()
+	_IF_FLAGON_JUMP(#2032, 'ev_uga10_alola_ranger_quest_completed'); Checks if event has concluded
+	_IF_FLAGON_JUMP(#2031, 'ev_uga10_alola_ranger_gift_again'); Checks if gift has been taken
+	_IF_FLAGON_JUMP(#2030, 'ev_uga10_alola_ranger_battle_complete'); Checks if battle is complete
+	_MACRO_TALKMSG('dialogue_uga10', 'msg_uga10_alola_ranger_1_004', 'If left unchecked, this giant could cause serious\ndamage to the ecosystem.')
+	_MACRO_TALKMSG('dialogue_uga10', 'msg_uga10_alola_ranger_1_003', 'I realise that I’m asking a lot but please try to\nsubdue it while I protect the vulnerable\fPokémon.')
+	_TALK_CLOSE()
+	_OBJ_ANIME('UGA10_ALOLA_RANGER_1', 'anm_uga10_alola_ranger_1_101'); Ranger looks right
+	_OBJ_ANIME_WAIT()
+	_TALK_OBJ_END()
+	_END()
+ev_uga10_alola_ranger_battle_complete:
+	_TALK_OBJ_START()
+	_MACRO_TALKMSG('dialogue_uga10', 'msg_uga10_alola_ranger_1_005', 'You were incredible!\rAll of the Pokémon are safe and we will ensure\nthat this creature is reintroduced into an\fenvironment that’s a little more appropriate for\fits stature.\rImagine if a tiny Cutiefly were to happen upon\nsuch a beast.\rIt’d be squooshed for sure!')
+	_MACRO_TALKMSG('dialogue_uga10', 'msg_uga10_alola_ranger_1_006', 'Thank you so much for saving the day.\nYou’re my hero!')
+	_JUMP('ev_uga10_alola_ranger_success')
+	_END()
+ev_uga10_alola_ranger_success:
+	_LDVAL(@SCWK_TEMP3, 0)
+    _IF_FLAGOFF_CALL(#2033, 'ev_uga10_alola_ranger_gift_add_rowlet')
+    _IF_FLAGOFF_CALL(#2034, 'ev_uga10_alola_ranger_gift_add_litten')
+    _IF_FLAGOFF_CALL(#2035, 'ev_uga10_alola_ranger_gift_add_popplio')
+	_IFVAL_CALL(@SCWK_TEMP3, 'EQ', 1, 'ev_uga10_alola_ranger_gift_singular')
+	_IFVAL_CALL(@SCWK_TEMP3, 'GT', 1, 'ev_uga10_alola_ranger_gift_multiple')
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_Cancel', 'Not right now', 2)
+	_OPEN_CUSTUM_WIN(@SCWK_TEMP0); SCWK_TEMP0 will have the MonsNo of the pokemon chosen
+	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', 2, 'ev_uga10_alola_ranger_no_gift_give')
+	_CALL('ev_common_tray_space_check'); Checks if there is any remaining space in the Party and Boxes
+	_IFVAL_JUMP(@551, 'EQ', 1, 'ev_uga10_alola_ranger_gift_no_tray_space'); Party and Boxes are full
+	_POKEMON_NAME_EXTRA(0, @SCWK_TEMP0, 0, 0)
+    _ME_PLAY('M_FI013')
+	_MACRO_TALKMSG('dialogue_uga10', 'msg_t03_receive_starter', 'You received {0,1,1,0}.')
+    _ME_WAIT()
+	_ADD_POKEMON_UI_EXTRA(@SCWK_TEMP0, 0, 5, 0, 3, 4) ; MonsNo, FormNo, Level, Item, MaxIVs, BallId
+	_SWITCH(@SCWK_TEMP0)
+	_CASE_JUMP(722, 'ev_uga10_alola_ranger_rowlet_flag_set')
+	_CASE_JUMP(725, 'ev_uga10_alola_ranger_litten_flag_set')
+	_CASE_JUMP(728, 'ev_uga10_alola_ranger_popplio_flag_set')
+	_END()
+ev_uga10_alola_ranger_gift_add_rowlet:
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_Rowlet', 'Rowlet', 722)
+	_ADD_WK(@SCWK_TEMP3, 1)
+	_RET()
+ev_uga10_alola_ranger_gift_add_litten:
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_Litten', 'Litten', 725)
+	_ADD_WK(@SCWK_TEMP3, 1)
+	_RET()
+ev_uga10_alola_ranger_gift_add_popplio:
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_Popplio', 'Popplio', 728)
+	_ADD_WK(@SCWK_TEMP3, 1)
+	_RET()
+ev_uga10_alola_ranger_gift_singular:
+	_MACRO_TALKMSG('dialogue_uga10', 'msg_uga10_alola_ranger_1_007', 'Here, please take this notably smaller Pokémon\nas a reward for your bravery!')
+	_RET()
+ev_uga10_alola_ranger_gift_multiple:
+	_MACRO_TALKMSG('dialogue_uga10', 'msg_uga10_alola_ranger_1_008', 'Here, please take one of these notably smaller\nPokémon as a reward for your bravery!')
+	_RET()
+ev_uga10_alola_ranger_gift_again:
+	_FLAG_RESET(#2031); Resets if the player has said no to Ranger Starter gift.
+	_MACRO_TALKMSG('dialogue_uga10', 'msg_uga10_alola_ranger_1_009', 'There you are! Are you ready to accept my gift\nof a tiny little creature?')
+	_JUMP('ev_uga10_alola_ranger_success')
+ev_uga10_alola_ranger_no_gift_give:
+	_FLAG_SET(#2031); Player said no to Alola Ranger Starter Gift
+	_MACRO_TALKMSG('dialogue_uga10', 'msg_uga10_alola_ranger_1_010', 'You have some things to sort out before you\ncan take it?\rThat’s okay, take all the time you need!')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_uga10_alola_ranger_gift_no_tray_space:
+	_FLAG_SET(#2031); Player said no to Alola Ranger Starter Gift
+	_MACRO_TALKMSG('dialogue_uga10', 'msg_uga10_alola_ranger_gift_no_tray_space', 'You have to make some room in your boxes\nbefore you can take it?\rThat’s okay, take all the time you need!')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_uga10_alola_ranger_rowlet_flag_set:
+	_FLAG_SET(#2033); Ranger Rowlet
+	_JUMP('ev_uga10_alola_ranger_quest_finish')
+ev_uga10_alola_ranger_litten_flag_set:
+	_FLAG_SET(#2034); Ranger Litten
+	_JUMP('ev_uga10_alola_ranger_quest_finish')
+ev_uga10_alola_ranger_popplio_flag_set:
+	_FLAG_SET(#2035); Ranger Popplio
+	_JUMP('ev_uga10_alola_ranger_quest_finish')
+ev_uga10_alola_ranger_quest_finish:
+	_FLAG_SET(#2032); UGA10 Ranger Alola Quest 1 completed.
+	_CHARA_LOOK_RELEASE('HERO')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_uga10_alola_ranger_quest_completed:
+	_MACRO_TALKMSG('dialogue_uga10', 'msg_uga10_alola_ranger_1_011', 'What a relief that we were able to keep all of\nthe Pokémon safe. You’re my hero!')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_uga10_totem_battle:
+	_TALK_OBJ_START()
+	_SE_PLAY('PLAY_PV_EV_105_01_00')
+	_MACRO_TALKMSG('dialogue_uga10', 'msg_ugspace24_totem_battle_cry', 'Waaaaaak!')
+	_TALK_CLOSE()
+	_SET_SYS_FLAG($SYS_FLAG_AUTOSAVE_STOP)
+	_FLAG_SET(#2591); Can't run flag
+	_SP_WILD_BTL_SET(105, 25, 1, 1); Alolan Marowak Lv25 Cannot Catch
+	_FLAG_RESET(#2591)
+	_RESET_SYS_FLAG($SYS_FLAG_AUTOSAVE_STOP)
+	_OBJ_POS_CHANGE_WORLD('HERO', 72, 0, 58); Moves the Character to the X, Y, and Z locations
+	_OBJ_DIR_CHANGE('HERO', 90); Make the player look left
+	_OBJ_DEL('UGA10_TOTEM')
+	_FLAG_SET(#2030); Battle is complete flag
+	_JUMP('ev_uga10_alola_ranger_battle_complete')
+	_END()
+anm_uga10_alola_ranger_1_100:
+	_AC_MARK_GYOE()
+	_ACMD_END()
+anm_uga10_alola_ranger_1_101:
+    _AC_DIR_R(8)
+	_ACMD_END()

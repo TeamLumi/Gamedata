@@ -1,240 +1,173 @@
-pos_d31_towerboss:
-	_EVENT_START()
-	_CALL('ev_another_out')
-	_PLAYER_POS_GET(@SCWK_TEMP0, @SCWK_TEMP1)
-	_IFVAL_CALL(@SCWK_TEMP0, 'EQ', 23, 'pos_d31_towerboss_1')
-	_IFVAL_CALL(@SCWK_TEMP0, 'EQ', 24, 'pos_d31_towerboss_2')
-	_IFVAL_CALL(@SCWK_TEMP0, 'EQ', 25, 'pos_d31_towerboss_3')
-	_IFVAL_CALL(@SCWK_TEMP0, 'EQ', 26, 'pos_d31_towerboss_4')
-	_FLAG_RESET(#FV_D31_TOWERBOSS)
-	_OBJ_ADD('D31_TOWERBOSS')
-	_OBJ_PAUSE('D31_TOWERBOSS')
-	_OBJ_ANIME('D31_TOWERBOSS', 'anm_d31_towerboss_01')
-	_OBJ_ANIME('HERO', 'anm_d31_player_01')
-	_OBJ_ANIME_WAIT()
-	_SE_PLAY('S_FI003')
-	_PLAYER_NAME(1)
-	_TALKMSG('dp_scenario3%42-msg_d31_towerboss_01')
-	_TALK_CLOSE()
-	_EVENT_CAMERA_INDEX(554)
-	_EVENT_CAMERA_END_WAIT()
-	_TIME_WAIT(30, @SCWK_ANSWER)
-	_OBJ_ANIME('D31_TOWERBOSS', 'anm_d31_towerboss_02')
-	_OBJ_ANIME_WAIT()
-	_TALKMSG('dp_scenario3%42-msg_d31_towerboss_02')
-	_TALK_CLOSE()
-	_OBJ_ANIME('D31_TOWERBOSS', 'anm_d31_towerboss_03')
-	_OBJ_ANIME_WAIT()
-	_TALKMSG('dp_scenario3%42-msg_d31_towerboss_03')
-	_OBJ_ANIME('D31_TOWERBOSS', 'anm_d31_towerboss_30')
-	_OBJ_ANIME_WAIT()
-	_TALKMSG('dp_scenario3%42-msg_d31_towerboss_04_1')
-	_TALKMSG('dp_scenario3%42-msg_d31_towerboss_04_2')
-	_TALK_CLOSE()
-	_PLAYER_POS_GET(@SCWK_TEMP0, @SCWK_TEMP1)
-	_IFVAL_CALL(@SCWK_TEMP0, 'EQ', 23, 'pos_d31_towerboss_11')
-	_IFVAL_CALL(@SCWK_TEMP0, 'EQ', 24, 'pos_d31_towerboss_12')
-	_IFVAL_CALL(@SCWK_TEMP0, 'EQ', 25, 'pos_d31_towerboss_13')
-	_IFVAL_CALL(@SCWK_TEMP0, 'EQ', 26, 'pos_d31_towerboss_14')
-	_OBJ_DEL('D31_TOWERBOSS')
-	_FLAG_RESET(#FV_D31_RIVAL)
-	_OBJ_ADD('D31_RIVAL')
-	_OBJ_PAUSE('D31_RIVAL')
-	_OBJ_ANIME('D31_RIVAL', 'anm_d31_towerboss_01')
-	_OBJ_ANIME('HERO', 'anm_d31_player_01')
-	_OBJ_ANIME_WAIT()
-	_SE_PLAY('S_FI003')
-	_RIVAL_NAME(0)
-	_PLAYER_NAME(1)
-	_TALKMSG('dp_scenario3%42-msg_d31_rival_01')
-	_TALK_CLOSE()
-	_TIME_WAIT(30, @SCWK_ANSWER)
-	_IFVAL_CALL(@WK_SCENE_D16R0103, 'LT', 1, 'ev_d31_rival_event_chk_msg1')
-	_IFVAL_CALL(@WK_SCENE_D16R0103, 'GE', 1, 'ev_d31_rival_event_chk_msg2')
-	_TALK_CLOSE()
-	_PLAYER_POS_GET(@SCWK_TEMP0, @SCWK_TEMP1)
-	_IFVAL_CALL(@SCWK_TEMP0, 'EQ', 23, 'pos_d31_towerboss_21')
-	_IFVAL_CALL(@SCWK_TEMP0, 'EQ', 24, 'pos_d31_towerboss_22')
-	_IFVAL_CALL(@SCWK_TEMP0, 'EQ', 25, 'pos_d31_towerboss_23')
-	_IFVAL_CALL(@SCWK_TEMP0, 'EQ', 26, 'pos_d31_towerboss_24')
-	_OBJ_DEL('D31_RIVAL')
-	_LDVAL(@WK_SCENE_D31, 1)
-	_EVENT_CAMERA_INDEX(555)
-	_EVENT_CAMERA_END_WAIT()
-	_IFVAL_CALL(@TOWNMAP_GUIDE_SEQUENCE, 'NE', 13200, 'ev_d31_guide_upd')
-	_CALL('ev_another_out_end')
-	_TALK_END()
-	_END()
-ev_d31_guide_upd:
-	_LDVAL(@TOWNMAP_GUIDE_SEQUENCE, 13100)
-	_ZENKOKU_ZUKAN_FLAG(2, @SCWK_ANSWER)
-	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_d31_guide_upde_2')
-	_RET()
-ev_d31_guide_upde_2:
-	_LDVAL(@TOWNMAP_GUIDE_SEQUENCE, 13200)
-	_RET()
-ev_d31_rival_event_chk_msg1:
-	_RIVAL_NAME(0)
-	_PLAYER_NAME(1)
-	_MACRO_TALKMSG('dp_scenario3', '42-msg_d31_rival_02_1', 'What the...\rOh, hey, {1}! You came to the\nBattle Tower too, huh?')
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '42-msg_d31_rival_02_2', 'But that guy you were just talking to...\rNah, it’s all right! I got here on my own power.\nIt won’t take long before I see him.')
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '42-msg_d31_rival_02_3', 'See ya, {1}!\nI’m going to toughen up here!')
-	_RET()
-ev_d31_rival_event_chk_msg2:
-	_TALKMSG('dp_scenario3%42-msg_d31_rival_03_1')
-	_TALKMSG('dp_scenario3%42-msg_d31_rival_03_2')
-	_PLAYER_NAME(0)
-	_TALKMSG('dp_scenario3%42-msg_d31_rival_03_3')
-	_RET()
-pos_d31_towerboss_1:
-	_SXY_POS_CHANGE('D31_TOWERBOSS', 23, 41)
-	_SXY_POS_CHANGE('D31_RIVAL', 23, 40)
-	_RET()
-pos_d31_towerboss_2:
-	_SXY_POS_CHANGE('D31_TOWERBOSS', 24, 41)
-	_SXY_POS_CHANGE('D31_RIVAL', 24, 40)
-	_RET()
-pos_d31_towerboss_3:
-	_SXY_POS_CHANGE('D31_TOWERBOSS', 25, 41)
-	_SXY_POS_CHANGE('D31_RIVAL', 25, 40)
-	_RET()
-pos_d31_towerboss_4:
-	_SXY_POS_CHANGE('D31_TOWERBOSS', 26, 41)
-	_SXY_POS_CHANGE('D31_RIVAL', 26, 40)
-	_RET()
-pos_d31_towerboss_11:
-	_OBJ_ANIME('D31_TOWERBOSS', 'anm_d31_towerboss_40')
-	_OBJ_ANIME('HERO', 'anm_d31_player_40')
-	_OBJ_ANIME_WAIT()
-	_RET()
-pos_d31_towerboss_12:
-	_OBJ_ANIME('D31_TOWERBOSS', 'anm_d31_towerboss_40')
-	_OBJ_ANIME('HERO', 'anm_d31_player_40')
-	_OBJ_ANIME_WAIT()
-	_RET()
-pos_d31_towerboss_13:
-	_OBJ_ANIME('D31_TOWERBOSS', 'anm_d31_towerboss_41')
-	_OBJ_ANIME('HERO', 'anm_d31_player_41')
-	_OBJ_ANIME_WAIT()
-	_RET()
-pos_d31_towerboss_14:
-	_OBJ_ANIME('D31_TOWERBOSS', 'anm_d31_towerboss_41')
-	_OBJ_ANIME('HERO', 'anm_d31_player_41')
-	_OBJ_ANIME_WAIT()
-	_RET()
-pos_d31_towerboss_21:
-	_OBJ_ANIME('D31_RIVAL', 'anm_d31_towerboss_40')
-	_OBJ_ANIME('HERO', 'anm_d31_player_40')
-	_OBJ_ANIME_WAIT()
-	_RET()
-pos_d31_towerboss_22:
-	_OBJ_ANIME('D31_RIVAL', 'anm_d31_towerboss_40')
-	_OBJ_ANIME('HERO', 'anm_d31_player_40')
-	_OBJ_ANIME_WAIT()
-	_RET()
-pos_d31_towerboss_23:
-	_OBJ_ANIME('D31_RIVAL', 'anm_d31_towerboss_41')
-	_OBJ_ANIME('HERO', 'anm_d31_player_41')
-	_OBJ_ANIME_WAIT()
-	_RET()
-pos_d31_towerboss_24:
-	_OBJ_ANIME('D31_RIVAL', 'anm_d31_towerboss_41')
-	_OBJ_ANIME('HERO', 'anm_d31_player_41')
-	_OBJ_ANIME_WAIT()
-	_RET()
-anm_d31_player_01:
-	_AC_WAIT(28)
-	_AC_DIR_D(8)
-	_AC_UP(1, 4)
-	_ACMD_END()
-anm_d31_player_40:
-	_AC_WAIT(8)
-	_AC_DIR_R(8)
-	_AC_WAIT(16)
-	_AC_DIR_U(8)
-	_ACMD_END()
-anm_d31_player_41:
-	_AC_WAIT(8)
-	_AC_DIR_L(8)
-	_AC_WAIT(16)
-	_AC_DIR_U(8)
-	_ACMD_END()
-anm_d31_towerboss_01:
-	_AC_DIR_U(4)
-	_AC_UP(8, 4)
-	_ACMD_END()
-anm_d31_towerboss_02:
-	_AC_DIR_L(8)
-	_AC_DIR_R(8)
-	_AC_DIR_D(8)
-	_ACMD_END()
-anm_d31_towerboss_03:
-	_AC_DIR_U(8)
-	_ACMD_END()
-anm_d31_towerboss_30:
-	_AC_MARK_GYOE(1)
-	_ACMD_END()
-anm_d31_towerboss_40:
-	_AC_DIR_R(4)
-	_AC_RIGHT(1, 4)
-	_AC_DIR_U(4)
-	_AC_UP(8, 4)
-	_ACMD_END()
-anm_d31_towerboss_41:
-	_AC_DIR_L(4)
-	_AC_LEFT(1, 4)
-	_AC_DIR_U(4)
-	_AC_UP(8, 4)
-	_ACMD_END()
-ev_d31_rival:
-	_TALK_OBJ_START()
-	_TALKMSG('dp_scenario3%42-msg_d31_rival_03_1')
-	_TALKMSG('dp_scenario3%42-msg_d31_rival_03_2')
-	_TALKMSG('dp_scenario3%42-msg_d31_rival_03_3')
+ev_d31_statue1:
+	_TALK_OBJ_START_LOOK_NONE()
+	_MACRO_TALKMSG('dialogue_d31', '42-msg_d31_statue1_01', 'A Trainer who just caught a Pokémon.\nThat’s what this statue represents.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
+	_END()
+ev_d31_statue2:
+	_TALK_OBJ_START_LOOK_NONE()
+	_MACRO_TALKMSG('dialogue_d31', '42-msg_d31_statue2_01', '“Boastful of Capture”...\nThat seems to be the title.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_d31_battlefrontier_model:
+	_TALK_OBJ_START_LOOK_NONE()
+	_MACRO_TALKMSG('dialogue_d31', '42-msg_d31_battlefrontier_model_01', 'This...!\nA scale model of the Battle Frontier.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_d31_woman1:
+	_MACRO_EASY_OBJ_MSG('dialogue_d31', '42-msg_d31_woman1_01', 'There are five facilities in the Battle\nFrontier.\rAt every one, you can win your way\nthrough to challenge the boss.\rI think they’re called Brains, and\nthey’re out-of-this-world tough!')
+	_END()
+ev_d31_woman2:
+	_MACRO_EASY_OBJ_MSG('dialogue_d31', '42-msg_d31_woman2_01', 'You know, when I lose, the first thing\nI do is look for who to blame.\rLike, the opponent cheated, or I was\nunlucky, or it’s my Pokémon’s fault...\rBut I know I shouldn’t do that.\nI won’t get better unless I change.')
 	_END()
 ev_d31_woman3:
-	_TALK_OBJ_START_TURN_NOT()
-	_TALKMSG('dp_scenario3%42-msg_d31_woman3_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_d31', '42-msg_d31_woman3_01', 'People expect so much from a maid.\nCooking, cleaning, and laundry...\rNot to mention being good at training\nPokémon!')
+	_END()
+ev_d31_man1:
+	_MACRO_EASY_OBJ_MSG('dialogue_d31', '42-msg_d31_man1_01', 'I know it’s no revelation now, but...\nThe way of Pokémon is deep.')
+	_END()
+ev_d31_student1:
+	_MACRO_EASY_OBJ_MSG('dialogue_d31', '42-msg_d31_student1_01', 'At the Battle Factory, you have to\nkeep winning with rental Pokémon.\rIt’s a real test of your knowledge.\nIt’s perfect for a student like me!')
+	_END()
+ev_d31_boy1:
+	_MACRO_EASY_OBJ_MSG('dialogue_d31', '42-msg_d31_boy1_01', 'My inflatable tube lets me ride out\nthe ebbs and flows of life.')
+	_END()
+ev_d31_oldman1:
+	_MACRO_EASY_OBJ_MSG('dialogue_d31', '42-msg_d31_oldman1_01', 'I treat every battle as if it were my\nlast.\rGoing into battle willing to accept\na loss? Unforgivable!\rBut losing is also inevitable.\nA good Trainer learns from it.')
+	_END()
+ev_d31_man3:
+	_MACRO_EASY_OBJ_MSG('dialogue_d31', '42-msg_d31_man3_01', 'The Battle Hall is where I want to be.\rEven the MAGIKARP I caught fishing\nhas a shot at no. 1!')
+	_END()
+ev_d31_girl1:
+	_MACRO_EASY_OBJ_MSG('dialogue_d31', '42-msg_d31_girl1_01', 'The most important person in the Battle\nCastle is a lady.\rLady, like a princess, I mean.')
+	_END()
+ev_d31_woman4:
+	_MACRO_EASY_OBJ_MSG('dialogue_d31', '42-msg_d31_woman4_01', 'What makes me the most happy being\na Trainer?\rThe fact that Pokémon will always be\nwith me!')
+	_END()
+ev_d31_woman5:
+	_MACRO_EASY_OBJ_MSG('dialogue_d31', '42-msg_d31_woman5_01', 'To be strong is to be weak.\nTo be weak is to be strong.\rI was told that a long time ago.\nNot that I have any clue what it means.')
+	_END()
+ev_d31_man4:
+	_MACRO_EASY_OBJ_MSG('dialogue_d31', '42-msg_d31_man4_01', 'There are those who love battling from\ndeep in the cockles of their hearts.\rThe people that gather here?\nThat would be them.')
+	_END()
+ev_d31_man5:
+	_MACRO_EASY_OBJ_MSG('dialogue_d31', '42-msg_d31_man5_01', 'I wonder how many years it’s been since\nI first met a Pokémon?\rHow much time has passed for you and\nyour Pokémon?')
+	_END()
+ev_d31_man6:
+	_MACRO_EASY_OBJ_MSG('dialogue_d31', '42-msg_d31_man6_01', 'All the places in the Battle Frontier\nlet you team up with a friend!')
+	_END()
+ev_d31_bigman1:
+	_MACRO_EASY_OBJ_MSG('dialogue_d31', '42-msg_d31_bigman1_01', 'Trainers can command Pokémon to\nuse moves in battle with confidence.\rThey can do that because Trainers\nbelieve in their Pokémon.\rIn turn, Pokémon repay that trust\nby using moves the best they can.\rThis may seem obvious, but it’s actually\nincredibly amazing!')
+	_END()
+ev_d31_boy2:
+	_MACRO_EASY_OBJ_MSG('dialogue_d31', '42-msg_d31_boy2_01', 'Battle Tower... Its height is a symbol\nof its challenge to Trainers.')
+	_END()
+ev_d31_woman6:
+	_MACRO_EASY_OBJ_MSG('dialogue_d31', '42-msg_d31_woman6_01', 'I don’t think it’s good enough for an\nIdol to just be cute, sing, and dance.\rI should learn more about Pokémon so\nI can attract the Poké maniacs.')
+	_END()
+ev_d31_woman8:
+	_MACRO_EASY_OBJ_MSG('dialogue_d31', '42-msg_d31_woman8_01', 'There are five facilities in the Battle\nFrontier.\rAt every one, you can win your way\nthrough to challenge the boss.\rI think they’re called Brains, and\nthey’re out-of-this-world tough!')
+	_END()
+ev_d31_exchangewoman1:
+	_TALK_OBJ_START()
+	_MACRO_TALKMSG('dialogue_d31', '42-msg_d31_exchangewoman1_01', 'Welcome to the Exchange Service\nCorner!\rWould you like to trade in your BP for\nsome prizes?')
+	_YES_NO_WIN(@SCWK_ANSWER)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_d31_exchangewoman1_yes')
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_d31_exchangewoman1_no')
+	_END()
+ev_d31_exchangewoman1_yes:
+	;TODO Exchange shop
+	_JUMP('ev_d31_exchangewoman1_no')
+	_END()
+ev_d31_exchangewoman1_no:
+	_MACRO_TALKMSG('dialogue_d31', '42-msg_d31_exchangewoman1_01_no', 'Please save some BP and come see us\nagain.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
-ev_d31_boy1:
-	_TALK_OBJ_START_TURN_NOT()
-	_TALKMSG('dp_scenario3%42-msg_d31_boy1_01')
+ev_d31_exchangewoman2:
+	_TALK_OBJ_START()
+	_MACRO_TALKMSG('dialogue_d31', '42-msg_d31_exchangewoman2_01', 'Welcome to the Exchange Service\nCorner!\rWould you like to trade in your BP for\nsome prizes?')
+	_YES_NO_WIN(@SCWK_ANSWER)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_d31_exchangewoman2_yes')
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_d31_exchangewoman2_no')
+	_END()
+ev_d31_exchangewoman2_yes:
+	;TODO Exchange shop
+	_JUMP('ev_d31_exchangewoman2_no')
+	_END()
+ev_d31_exchangewoman2_no:
+	_MACRO_TALKMSG('dialogue_d31', '42-msg_d31_exchangewoman2_01_no', 'Please save some BP and come see us\nagain.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_d31_exchangewoman3:
+	_TALK_OBJ_START()
+	_IF_FLAGON_CALL(#3070, 'ev_d31_exchangewoman3_2'); She has been talked to once
+	_MACRO_TALKMSG('dialogue_d31', '42-msg_d31_exchangewoman3_01', 'Welcome!\nWould you like some Scratch-Off Cards?\rYou may buy three Scratch-Off Cards\nfor 1 BP.\rHidden on each Scratch-Off Card are\nicons of Pokémon.\rYou may scratch the obscuring film off \na card three times.\rIf the same icon appears three times,\nyou will win a prize, like a Berry.\rAlso, DITTO’s icon can transform into\nany other Pokémon.\rGood luck matching Pokémon icons!\rWill you buy some Scratch-Off Cards?')
+	_FLAG_SET(#3070)
+	_JUMP('ev_d31_exchangewoman3_shop')
+	_END()
+ev_d31_exchangewoman3_2:
+	_MACRO_TALKMSG('dialogue_d31', '42-msg_d31_exchangewoman3_02', 'Welcome!\rWould you like some Scratch-Off Cards?\rYou may buy three Scratch-Off Cards\nfor 1 BP.\rWill you buy some Scratch-Off Cards?')
+	_JUMP('ev_d31_exchangewoman3_shop')
+	_END()
+ev_d31_exchangewoman3_shop:
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_options_scratch', 'Scratch', 0)
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_options_info', 'Info', 1)
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_options_cancel', 'Cancel', 2)
+	_OPEN_CUSTUM_WIN(@SCWK_ANSWER)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_d31_exchangewoman3_shop_scratch')
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_d31_exchangewoman3_shop_info')
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 2, 'ev_d31_exchangewoman3_shop_cancel')
+	_END()
+ev_d31_exchangewoman3_shop_cancel:
+	_MACRO_TALKMSG('dialogue_d31', '42-msg_d31_exchangewoman3_shop_cancel', 'Please visit again.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+ev_d31_exchangewoman3_shop_info:
+	_MACRO_TALKMSG('dialogue_d31', '42-msg_d31_exchangewoman3_shop_info', 'You may buy three Scratch-Off Cards\nfor 1 BP.\rHidden on each Scratch-Off Card are\nicons of Pokémon.\rYou may scratch the obscuring film off \na card three times.\rIf the same icon appears three times,\nyou will win a prize, like a Berry.\rAlso, DITTO’s icon can transform into\nany other Pokémon.\rGood luck matching Pokémon icons!\rWill you buy some Scratch-Off Cards?')
+	_JUMP('ev_d31_exchangewoman3_shop')
+	_END()
+ev_d31_exchangewoman3_shop_scratch:
+	_MACRO_TALKMSG('dialogue_d31', '42-msg_d31_exchangewoman3_shop_scratch', 'It will be 1 BP for three\nScratch-Off Cards. Is that OK?')
+	_YES_NO_WIN(@SCWK_ANSWER)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_d31_exchangewoman3_shop_scratch_yes')
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_d31_exchangewoman3_shop_scratch_no')
+	_END()
+ev_d31_exchangewoman3_shop_scratch_yes:
+	;TODO add scratch off cards
+	_MACRO_TALKMSG('dialogue_d31', '42-msg_d31_exchangewoman3_shop_scratch_yes', 'I’m sorry, but you don’t have enough\nBP. Please come again.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_d31_exchangewoman3_shop_scratch_no:
+	_MACRO_TALKMSG('dialogue_d31', '42-msg_d31_exchangewoman3_shop_scratch_no', 'Please visit again.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_d31_oldwoman1:
-	_EASY_OBJ_MSG('dp_scenario3%42-msg_d31_oldwoman1_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_d31', '42-msg_d31_oldwoman1_01', 'Behind every Pokémon, there is a\nstory. Isn’t that right, dear?')
 	_END()
-ev_d31_assistantw:
-	_TALK_OBJ_START_TURN_NOT()
-	_TALKMSG('dp_scenario3%42-msg_d31_assistantw_01')
-	_TALK_CLOSE()
-	_TALK_OBJ_END()
-	_END()
-ev_d31_middleman:
-	_EASY_OBJ_MSG('dp_scenario3%42-msg_d31_middleman_01')
-	_END()
-ev_d31_veteran:
-	_EASY_OBJ_MSG('dp_scenario3%42-msg_d31_veteran_01')
+ev_d31_oldman2:
+	_MACRO_EASY_OBJ_MSG('dialogue_d31', '42-msg_d31_oldman2_01', 'Like a Pokémon and Trainer, we have\nbeen together for a long time.\rEventually, we will be parted...\rUntil then, I will cherish the time we\nhave, dearest.')
 	_END()
 ev_d31_man2:
-	_EASY_OBJ_MSG('dp_scenario3%42-msg_d31_man2_01')
-	_END()
-ev_d31_fighter:
-	_EASY_OBJ_MSG('dp_scenario3%42-msg_d31_fighter_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_d31', '42-msg_d31_man2_01', 'The Pokémon’s type!\rThe moves to be learned!\rThe items to be held!\rIf your aim is to be no. 1 here,\nyou can’t overlook a single detail.')
 	_END()
 ev_d31_sign1:
-	_EASY_BOARD_MSG('dp_scenario3%42-msg_d31_sign1_01', 'BOARD_TYPE_POST', 0)
+	_EASY_BOARD_MSG('dialogue_d31%42-msg_d31_sign1_01', 'BOARD_TYPE_POST', 0)
 	_END()
 ev_d31_sign2:
-	_EVENT_START()
-	_EVENT_CAMERA_INDEX(348)
-	_EASY_BOARD_MSG('dp_scenario3%42-msg_d31_sign1_02', 'BOARD_TYPE_POST', 0)
-	_EVENT_CAMERA_INDEX(111)
-	_EVENT_CAMERA_END_WAIT()
-	_TALK_END()
+	_EASY_BOARD_MSG('dialogue_d31%42-msg_d31_sign1_02', 'BOARD_TYPE_POST', 0)
+	_END()
+ev_d31_sign3:
+	_EASY_BOARD_MSG('dialogue_d31%42-msg_d31_sign3_01', 'BOARD_TYPE_POST', 0)
+	_END()
+ev_d31_sign4:
+	_EASY_BOARD_MSG('dialogue_d31%42-msg_d31_sign4_01', 'BOARD_TYPE_POST', 0)
+	_END()
+ev_d31_sign5:
+	_EASY_BOARD_MSG('dialogue_d31%42-msg_d31_sign5_01', 'BOARD_TYPE_POST', 0)
 	_END()

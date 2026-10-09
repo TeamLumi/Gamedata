@@ -26,7 +26,7 @@ case13_t07r0103_elevator_01:
 	_JUMP('ev_t07r0103_elevator_02')
 	_JUMP('ev_t07r0103_elevator_02')
 ev_t07r0103_elevator_02:
-	_TALKMSG('dp_scenario3%53-msg_t07r0103_counterw_01')
+	_MACRO_TALKMSG('dialogue_t07r0103', '53-msg_t07r0103_counterw_01', 'Hello. Thank you for visiting us today. To which\nfloor may I take you?')
 	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_117', 1)
 	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_116', 0)
 	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_124', 4)
@@ -73,14 +73,14 @@ common_t07r0103_01:
 	_SE_PLAY('S_FI018')
 	_RET()
 ev_t07r0103_down_msg:
-	_TALKMSG('dp_scenario3%53-msg_t07r0103_counterw_03')
+	_MACRO_TALKMSG('dialogue_t07r0103', '53-msg_t07r0103_counterw_03', 'Certainly. Elevator going down.')
 	_RET()
 ev_t07r0103_up_msg:
-	_TALKMSG('dp_scenario3%53-msg_t07r0103_counterw_02')
+	_MACRO_TALKMSG('dialogue_t07r0103', '53-msg_t07r0103_counterw_02', 'Certainly. Elevator going up.')
 	_RET()
 ev_t07r0103_elevator_03:
 	_FLOOR_CLOSE()
-	_TALKMSG('dp_scenario3%53-msg_t07r0103_counterw_05')
+	_MACRO_TALKMSG('dialogue_t07r0103', '53-msg_t07r0103_counterw_05', 'Here we are!')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
@@ -93,7 +93,7 @@ cancel_t07r0103_elevator_03:
 end_t07r0103_elevator_02:
 	_FLOOR_CLOSE()
 	_TIME_WAIT(1, @SCWK_ANSWER)
-	_TALKMSG('dp_scenario3%53-msg_t07r0103_counterw_04')
+	_MACRO_TALKMSG('dialogue_t07r0103', '53-msg_t07r0103_counterw_04', 'Sorry, we are already on that floor.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()

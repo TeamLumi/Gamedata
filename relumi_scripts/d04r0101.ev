@@ -4,9 +4,9 @@ ev_d04r0101_flag_change:
 ev_d04r0101_middleman2:
 	_TALK_OBJ_START()
 	_IF_FLAGON_JUMP(#FE_D04R0101_ITEM_GET, 'ev_d04r0101_middleman2_02')
-	_TALKMSG('dp_scenario1%110-msg_d04r0101_middleman2_01_1')
-	_TALKMSG('dp_scenario1%110-msg_d04r0101_middleman2_01_2')
-	_TALKMSG('dp_scenario1%110-msg_d04r0101_middleman2_01_3')
+	_MACRO_TALKMSG('dialogue_d04r0101', '110-msg_d04r0101_middleman2_01_1', 'Well, hello! It’s not often I get a visitor here.')
+	_MACRO_TALKMSG('dialogue_d04r0101', '110-msg_d04r0101_middleman2_01_2', 'I tried to make the ironworks run better with the\nmoving floor tiles.\rBut no one was happy about it! They said the\nmoving floor made them dizzy!')
+	_MACRO_TALKMSG('dialogue_d04r0101', '110-msg_d04r0101_middleman2_01_3', 'But you don’t want to listen to me whine.\nHere’s a souvenir!')
 	_LDVAL(@SCWK_TEMP0, 82)
 	_LDVAL(@SCWK_TEMP1, 1)
 	_ADD_ITEM_CHK(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_ANSWER)
@@ -22,7 +22,7 @@ ev_d04r0101_middleman2_item_event_fail:
 	_TALK_OBJ_END()
 	_END()
 ev_d04r0101_middleman2_02:
-	_TALKMSG('dp_scenario1%110-msg_d04r0101_middleman2_02')
+	_MACRO_TALKMSG('dialogue_d04r0101', '110-msg_d04r0101_middleman2_02', 'My ironworks would be nothing if there were\nno iron.\rThat’s why I’m always thankful for nature\nsupplying me with iron.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()

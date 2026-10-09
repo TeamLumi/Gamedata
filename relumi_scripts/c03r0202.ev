@@ -1,17 +1,17 @@
 ev_c03r0202_man2:
-	_EASY_OBJ_MSG('dp_scenario1%74-msg_c03r0202_man2_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c03r0202', '74-msg_c03r0202_man2_01', 'All Pokémon have a special power called\nan Ability.')
 	_END()
 ev_c03r0202_woman1:
-	_EASY_OBJ_MSG('dp_scenario1%74-msg_c03r0202_woman1_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c03r0202', '74-msg_c03r0202_woman1_01', 'How my Pokémon and I are alike...\rIt’s not anything I can explain easily.')
 	_END()
 ev_c03r0202_bigman:
 	_TALK_OBJ_START()
 	_IF_FLAGON_JUMP(#FE_C03R0202_ITEM_GET, 'ev_c03r0202_bigman_03')
 	_TEMOTI_POKE_CHK(@SCWK_ANSWER, 41)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_c03r0202_bigman_01')
-	_TALKMSG('dp_scenario1%74-msg_c03r0202_bigman_02_1')
-	_TALKMSG('dp_scenario1%74-msg_c03r0202_bigman_02_2')
-	_TALKMSG('dp_scenario1%74-msg_c03r0202_bigman_02_3')
+	_MACRO_TALKMSG('dialogue_c03r0202', '74-msg_c03r0202_bigman_02_1', 'The view is good from up here, but it’s a pain\ngoing out.\rIf you don’t mind, how about showing me a\nPokémon called Zubat?')
+	_MACRO_TALKMSG('dialogue_c03r0202', '74-msg_c03r0202_bigman_02_2', 'Oh! That Pokémon! That’s a Zubat!\nWow, that’s cool... It’s so cute...')
+	_MACRO_TALKMSG('dialogue_c03r0202', '74-msg_c03r0202_bigman_02_3', 'That does it! I’ll go out and catch Pokémon, too!\rThank you, my friend! This is a token of\nmy thanks!')
 	_LDVAL(@SCWK_TEMP0, 14)
 	_LDVAL(@SCWK_TEMP1, 1)
 	_ADD_ITEM_CHK(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_ANSWER)
@@ -27,12 +27,12 @@ ev_c03r0202_bigman_item_event_fail:
 	_TALK_OBJ_END()
 	_END()
 ev_c03r0202_bigman_01:
-	_TALKMSG('dp_scenario1%74-msg_c03r0202_bigman_01')
+	_MACRO_TALKMSG('dialogue_c03r0202', '74-msg_c03r0202_bigman_01', 'The view is good from up here, but it’s a pain\ngoing out.\rIf you don’t mind, how about showing me a\nPokémon called Zubat?')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_c03r0202_bigman_03:
-	_TALKMSG('dp_scenario1%74-msg_c03r0202_bigman_03')
+	_MACRO_TALKMSG('dialogue_c03r0202', '74-msg_c03r0202_bigman_03', 'Yeah, there are so many kinds of Pokémon out in\nthe world. I want to see them all now!')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()

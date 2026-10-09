@@ -17,7 +17,7 @@ ev_c04fs0101_shop_re:
 	_JUMP('ev_c04fs0101_shop_end')
 	_END()
 ev_c04fs0101_shop_sonohoka:
-	_TALKMSG('dp_scenario1%28-mes_shop_01_03')
+	_MACRO_TALKMSG('dialogue_c04fs0101', '28-mes_shop_01_03', 'Is there anything else I can do for you?')
 	_RET()
 ev_c04fs0101_shop_buy:
 	_LDVAL(@LOCALWORK3, 1)
@@ -70,8 +70,8 @@ ev_c04fs0101_man2:
 	_LDVAL(@SCWK_TEMP1, 330)
 	_ITEM_NAME(0, @SCWK_TEMP0, 1)
 	_ITEM_NAME(1, @SCWK_TEMP1, 1)
-	_EASY_OBJ_MSG('dp_scenario2%1-msg_c04fs0101_man2_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c04fs0101', '1-msg_c04fs0101_man2_01', 'If you get more Gym Badges, the Poké Marts will\noffer you more items.')
 	_END()
 ev_c04fs0101_mount:
-	_EASY_OBJ_MSG('dp_scenario2%1-msg_c04fs0101_mount_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c04fs0101', '1-msg_c04fs0101_mount_01', 'Let me tell you something. I got into a bad\nsituation in Eterna Forest.\rFrom now on, I’m not going anywhere without an\nEscape Rope.')
 	_END()

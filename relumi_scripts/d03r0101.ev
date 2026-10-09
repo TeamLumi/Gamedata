@@ -54,9 +54,9 @@ pos_d03r0101_seven1_x22:
 pos_d03r0101_seven1_common_60:
 	_BLACK_OUT('SCR_WIPE_DIV', 3)
 	_FADE_WAIT()
-	_OBJ_POS_CHANGE_WORLD('HERO', -28, 0, 85)
+	_OBJ_POS_CHANGE_WORLD('HERO', 28, 0, 85)
 	_OBJ_DIR_CHANGE('HERO', 180)
-	_OBJ_POS_CHANGE_WORLD('PAIR_D03R0101_SEVEN1', -28, 0, 84)
+	_OBJ_POS_CHANGE_WORLD('PAIR_D03R0101_SEVEN1', 28, 0, 84)
 	_EVENT_CAMERA_INDEX(132)
 	_BLACK_IN('SCR_WIPE_DIV', 3)
 	_FADE_WAIT()
@@ -64,12 +64,12 @@ pos_d03r0101_seven1_common_60:
 	_IF_FLAGON_CALL(#FE_D03R0101_SEVEN1_TALK, 'ev_d03r0101_seven1_talk_second')
 	_PLAYER_NAME(0)
 	_SE_PLAY('M_FI005')
-	_TALKMSG('dp_scenario1%106-msg_d03r0101_pair_01')
+	_MACRO_TALKMSG('dialogue_d03r0101', '106-msg_d03r0101_pair_01', 'You decided to go with Cheryl!')
 	_ME_WAIT()
 	_FLAG_SET(#FE_D03R0101_SEVEN1_TALK)
 	_LDVAL(@WK_SCENE_D03R0101, 1)
 	_LDVAL(@TOWNMAP_GUIDE_SEQUENCE, 4300)
-	_TALKMSG('dp_scenario1%106-msg_d03r0101_pair_02')
+	_MACRO_TALKMSG('dialogue_d03r0101', '106-msg_d03r0101_pair_02', 'I’ll keep your Pokémon in perfect health.')
 	_TALK_CLOSE()
 	_EVENT_CAMERA_INDEX(151)
 	_EVENT_CAMERA_END_WAIT()
@@ -82,20 +82,20 @@ pos_d03r0101_seven1_common_60:
 	_TALK_END()
 	_END()
 ev_d03r0101_seven1_talk_first:
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_ev_d03r0101_seven1_talk_first_1', 'Hello, my name’s Cheryl.\nAnd you are...?\r')
+	_MACRO_TALK_KEYWAIT('dialogue_d03r0101', '00_msg_ev_d03r0101_seven1_talk_first_1', 'Hello, my name’s Cheryl.\nAnd you are...?\r')
 	_PLAYER_NAME(0); Editing this function to add the trainer battle with Cheryl
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_ev_d03r0101_seven1_talk_first_2', 'OK, so your name is {0}.\nI’m sincerely glad to meet you.\r{0}, are you a strong Trainer?\rSorry to be so sudden, but may we have\na battle so I can test your strength?')
+	_MACRO_TALK_KEYWAIT('dialogue_d03r0101', '00_msg_ev_d03r0101_seven1_talk_first_2', 'OK, so your name is {0}.\nI’m sincerely glad to meet you.\r{0}, are you a strong Trainer?\rSorry to be so sudden, but may we have\na battle so I can test your strength?')
 	_TALK_CLOSE()
 	_LDVAL(@SCWK_TEMP3, 737)
 	_CALL('ev_set_trainer_id_for_current_gamemode_scripted_battle')
 	_TRAINER_BTL_SET(@SCWK_TEMP3, 0)
 	_PC_KAIFUKU(); Heal player after the battle as per RP
 	_PLAYER_NAME(0)
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_ev_d03r0101_seven1_talk_first_3', 'Ah, marvelous!\r{0}, may I ask a big favor\nof you?\rI want to get through this forest,\nbut I’m afraid of doing it alone.\rFrom that battle we just had, I can\nsee you’re a strong Trainer.\rI’ve heard that there is a sinister\ngroup of people called Team Galactic\fabout.\rI think there’d be safety in numbers.\nPlease, may I go through with you?')
+	_MACRO_TALK_KEYWAIT('dialogue_d03r0101', '00_msg_ev_d03r0101_seven1_talk_first_3', 'Ah, marvelous!\r{0}, may I ask a big favor\nof you?\rI want to get through this forest,\nbut I’m afraid of doing it alone.\rFrom that battle we just had, I can\nsee you’re a strong Trainer.\rI’ve heard that there is a sinister\ngroup of people called Team Galactic\fabout.\rI think there’d be safety in numbers.\nPlease, may I go through with you?')
 	_RET()
 ev_d03r0101_seven1_talk_second:
 	_PLAYER_NAME(0)
-	_TALKMSG('dp_scenario1%106-msg_d03r0101_seven1_02')
+	_MACRO_TALKMSG('dialogue_d03r0101', '106-msg_d03r0101_seven1_02', 'Oh, hi, {0,1,0,0}!\nI’ve been waiting like I said.\rLet’s go through this forest together.', 0, 1)
 	_RET()
 anm_d03r0101_seven1_60:
 	_AC_MARK_GYOE(1)
@@ -119,7 +119,7 @@ pos_d03r0101_seven1_end:
 	_MOVE_CODE_CHANGE('PAIR_D03R0101_SEVEN1', 'MV_DOWN')
 	_OBJ_ANIME('PAIR_D03R0101_SEVEN1', 'anm_d03r0101_seven1_25')
 	_OBJ_ANIME_WAIT()
-	_TALKMSG('dp_scenario1%106-msg_d03r0101_seven1_03')
+	_MACRO_TALKMSG('dialogue_d03r0101', '106-msg_d03r0101_seven1_03', 'Oh? Are you going back?\nI’ll wait here for you, then.')
 	_TALK_CLOSE()
 	_BLACK_OUT('SCR_WIPE_DIV', 3)
 	_FADE_WAIT()
@@ -165,8 +165,8 @@ pos_d03r0101_seven1_goal:
 	_BLACK_IN('SCR_WIPE_DIV', 3)
 	_FADE_WAIT()
 	_PLAYER_NAME(0)
-	_TALKMSG('dp_scenario1%106-msg_d03r0101_seven1_04')
-	_MACRO_TALK_KEYWAIT('dp_scenario1', '106-msg_d03r0101_seven1_05_tm', 'This is my token of appreciation.\nPlease accept it!')
+	_MACRO_TALKMSG('dialogue_d03r0101', '106-msg_d03r0101_seven1_04', 'Oh! There’s the exit! I’m so relieved...\nWe finally got here.\rI would’ve never been able to get through this\nby myself. Thank you so much, {0,1,0,0}!')
+	_MACRO_TALK_KEYWAIT('dialogue_d03r0101', '106-msg_d03r0101_seven1_05_tm', 'This is my token of appreciation.\nPlease accept it!')
 	_LDVAL(@SCWK_TEMP0, 354); TM27
 	_LDVAL(@SCWK_TEMP1, 1); Quantity 1
 	_CALL('ev_item_event')
@@ -308,21 +308,21 @@ pos_d03r0101_seven1_ghost:
 	_TALK_END()
 	_END()
 ev_d03r0101_boy3:
-	_EASY_OBJ_MSG('dp_scenario1%106-msg_d03r0101_boy3_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_d03r0101', '106-msg_d03r0101_boy3_01', 'My Pokémon got poisoned, and now it\ncan’t battle.\rI knew I should’ve loaded up on Antidotes at the\nPoké Mart!')
 	_END()
 ev_d03r0101_leader:
 	_TALK_OBJ_START()
 	_EVENT_START()
 	_EVENT_CAMERA_INDEX(922)
 	_EVENT_CAMERA_END_WAIT()
-	_TALKMSG('dp_scenario1%106-msg_d03r0101_leader_01')
+	_MACRO_TALKMSG('dialogue_d03r0101', '106-msg_d03r0101_leader_01', 'Hiya! Were you intrigued by the rumors going\naround, too?')
 	_TALK_CLOSE()
 	_OBJ_ANIME('D03R0101_LEADER', 'anm_d03r0101_leader_01')
 	_OBJ_ANIME_WAIT()
-	_TALKMSG('dp_scenario1%106-msg_d03r0101_leader_02')
+	_MACRO_TALKMSG('dialogue_d03r0101', '106-msg_d03r0101_leader_02', 'You know, people’ve been talking about the\nghost Pokémon of the Old Chateau.\rI’ve been hearing rumors about sinister\nshadows, too.')
 	_TURN_HERO_SITE()
-	_TALKMSG('dp_scenario1%106-msg_d03r0101_leader_03_1')
-	_TALKMSG('dp_scenario1%106-msg_d03r0101_leader_03_2')
+	_MACRO_TALKMSG('dialogue_d03r0101', '106-msg_d03r0101_leader_03_1', 'I should check it out myself, but going in\nthere is...\rWell, you know, being that I’m a Gym Leader,\nI’m always busy.')
+	_MACRO_TALKMSG('dialogue_d03r0101', '106-msg_d03r0101_leader_03_2', 'So, since I’m so busy, I can’t go in.\nIt’s not because I’m s-scared!\rS-so, good luck with your investigation!')
 	_TALK_CLOSE()
 	_EVENT_CAMERA_INDEX(923)
 	_EVENT_CAMERA_END_WAIT()
@@ -378,18 +378,18 @@ anm_d03r0101_leader_12:
 	_AC_RIGHT(13, 8)
 	_ACMD_END()
 ev_d03r0101_sign1:
-	_EASY_BOARD_MSG('dp_scenario1%106-msg_d03r0101_sign1_01', 'BOARD_TYPE_POST', 0)
+	_EASY_BOARD_MSG('dialogue_d03r0101%106-msg_d03r0101_sign1_01', 'BOARD_TYPE_POST', 0)
 	_END()
 ev_d03r0101_sign2:
-	_EASY_INFOBOARD_MSG('dp_scenario1%106-msg_d03r0101_sign2_01', 'BOARD_TYPE_INFO', 0)
+	_EASY_INFOBOARD_MSG('dialogue_d03r0101%106-msg_d03r0101_sign2_01', 'BOARD_TYPE_INFO', 0)
 	_END()
 ev_d03r0101_stone:
-	_EASY_OBJ_MSG('dp_scenario1%106-msg_d03r0101_stone_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_d03r0101', '106-msg_d03r0101_stone_01', 'The rock is covered in moss.\nIt feels pleasantly cool.')
 	_END()
 pos_d03r0101_celebi_event_start:
 	_EVENT_START()
 	_TALK_OBJ_START()
-	_TALKMSG('dp_scenario3%00-msg_gs_ball_shake')
+	_MACRO_TALKMSG('dialogue_d03r0101', '00-msg_gs_ball_shake', 'Oh?\nThe GS Ball is shaking...')
 	_TALK_CLOSE()
 	_WHITE_OUT('SCR_WIPE_DIV', 6)
 	_FADE_WAIT()
@@ -407,7 +407,7 @@ pos_d03r0101_celebi_event_start:
 	_OBJ_ANIME('D03R0101_CELEBI', 'anm_d03r0101_celebi_down')
 	_OBJ_ANIME_WAIT()
 	_VOICE_PLAY(251, 0, 0)
-	_TALKMSG('dp_scenario3%00-msg_d03r0101_celebi_event_cry')
+	_MACRO_TALKMSG('dialogue_d03r0101', '00-msg_d03r0101_celebi_event_cry', 'Bii !')
 	_TALK_CLOSE()
 	_OBJ_ANIME('D03R0101_CELEBI', 'anm_d03r0101_celebi_up')
 	_OBJ_ANIME_WAIT()
@@ -427,18 +427,18 @@ anm_d03r0101_celebi_up:
 	_ACMD_END()
 ev_d03r0101_portal_one:
 	_TALK_OBJ_START()
-	_MACRO_TALKMSG('dp_scenario3', '00-msg_d03r0101_celebi_event_portal_one', 'It’s a portal through time.\rIt feels as though something friendly\nis waiting for you to reach inside.\rDo you want to reach into the portal?')
+	_MACRO_TALKMSG('dialogue_d03r0101', '00-msg_d03r0101_celebi_event_portal_one', 'It’s a portal through time.\rIt feels as though something friendly\nis waiting for you to reach inside.\rDo you want to reach into the portal?')
 	_YES_NO_WIN(@SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_d03r0101_portal_no')
-	_TALKMSG('dp_scenario3%00-msg_d03r0101_portal_yes_p1'); Wait for the key input
-	_TALKMSG('dp_scenario3%00-msg_d03r0101_portal_yes_p2'); Wait for the key input
+	_MACRO_TALKMSG('dialogue_d03r0101', '00-msg_d03r0101_portal_yes_p1', '...')
+	_MACRO_TALKMSG('dialogue_d03r0101', '00-msg_d03r0101_portal_yes_p2', 'You were enveloped by the memory\nof a battle!')
 	_TALK_CLOSE()
 	_LDVAL(@CON_TEMP06, 2607); This is to unify all the trainer battle calls into one script
 	_CALL('ev_d03r0101_celebi_trainer_battle')
 	_STOP_EFFECT(0, 0)
 	_OBJ_ADD('D03R0101_CELEBI')
 	_VOICE_PLAY(251, 0, 0)
-	_TALKMSG('dp_scenario3%00-msg_d03r0101_celebi_event_cry')
+	_MACRO_TALKMSG('dialogue_d03r0101', '00-msg_d03r0101_celebi_event_cry', 'Bii !')
 	_TALK_CLOSE()
 	_WHITE_OUT()
 	_FADE_WAIT()
@@ -463,7 +463,7 @@ ev_d03r0101_celebi_common_start:
 	_EVENT_START();Start event
 	_TALK_OBJ_START(); Start talking
 	_VOICE_PLAY(251, 0, 0); Play the cry voice
-	_TALKMSG('dp_scenario3%00-msg_d03r0101_celebi_event_cry'); Talk the cry message
+	_MACRO_TALKMSG('dialogue_d03r0101', '00-msg_d03r0101_celebi_event_cry', 'Bii !')
 	_TALK_CLOSE(); Close the talking
 	_WHITE_OUT(); White out
 	_FADE_WAIT(); Wait for the fade
@@ -473,11 +473,11 @@ ev_d03r0101_celebi_common_mid:
 	_EFF_SCALE(0, 0.4, 0.4, 0.4); Scale the effect
 	_WHITE_IN(); White in
 	_FADE_WAIT(); Wait for the fade
-	_MACRO_TALKMSG('dp_scenario3', '00-msg_d03r0101_celebi_event_portal', 'It’s a portal through time.\rIt feels as though something friendly\nis waiting for you to reach inside.\rYou were dragged into the portal!')
+	_MACRO_TALKMSG('dialogue_d03r0101', '00-msg_d03r0101_celebi_event_portal', 'It’s a portal through time.\rIt feels as though something friendly\nis waiting for you to reach inside.\rYou were dragged into the portal!')
 	_TALK_CLOSE(); Close the talking
 	_TIME_WAIT(30, @SCWK_ANSWER); Wait for the key input
-	_TALKMSG('dp_scenario3%00-msg_d03r0101_portal_yes_p1'); Wait for the key input
-	_TALKMSG('dp_scenario3%00-msg_d03r0101_portal_yes_p2'); Wait for the key input
+	_MACRO_TALKMSG('dialogue_d03r0101', '00-msg_d03r0101_portal_yes_p1', '...')
+	_MACRO_TALKMSG('dialogue_d03r0101', '00-msg_d03r0101_portal_yes_p2', 'You were enveloped by the memory\nof a battle!')
 	_TALK_CLOSE(); Close the talking
 	_CALL('ev_d03r0101_celebi_trainer_battle')
 	_STOP_EFFECT(0, 0); Stop the effect
@@ -508,7 +508,7 @@ ev_d03r0101_celebi_trainer_battle:
 	_RET()
 ev_d03r0101_celebi_common_end_fadeout:
 	_VOICE_PLAY(251, 0, 0); Play the cry voice
-	_TALKMSG('dp_scenario3%00-msg_d03r0101_celebi_event_cry'); Talk the cry message
+	_MACRO_TALKMSG('dialogue_d03r0101', '00-msg_d03r0101_celebi_event_cry', 'Bii !')
 	_TALK_CLOSE(); Close the talking
 	_WHITE_OUT(); White out
 	_FADE_WAIT(); Wait for the fade
@@ -617,12 +617,12 @@ ev_d03r0101_celebi_claire:
 	_OBJ_ADD('D03R0101_CELEBI_FINAL'); Add the next Celebi to the map
 	_CALL('ev_d03r0101_celebi_common_end_fadein'); End the event
 	_FLAG_RESET(#2615); Enable the next Celebi
-	_EASY_OBJ_MSG('dp_scenario3%00-msg_d03r0101_final_portal'); Display the message that Celebi is ready for capture
+	_MACRO_EASY_OBJ_MSG('dialogue_d03r0101', '00-msg_d03r0101_final_portal', 'A curious presence can be felt from\nsomewhere in the forest...')
 	_END()
 ev_d03r0101_celebi_final:
 	_EVENT_START()
 	_TALK_OBJ_START()
-	_TALKMSG('dp_scenario3%00-msg_d03r0101_celebi_event_cry')
+	_MACRO_TALKMSG('dialogue_d03r0101', '00-msg_d03r0101_celebi_event_cry', 'Bii !')
 	_TALK_CLOSE()
 	_SP_WILD_BTL_SET(251, 50); Fight Celebi
 	_SEACRET_POKE_RETRY_CHECK(@SCWK_TEMP0, 251); Get result
@@ -640,37 +640,64 @@ ev_d03r0101_celebi_final_lose:
 	_END()
 pos_d03r0101_scary_mansion:
 	_EVENT_START()
-	_TALK_OBJ_START()
 	_VOICE_PLAY(479, 0, 0)
 	_OBJ_ANIME('PAIR_D03R0101_SEVEN1', 'anm_d03r0101_cheryl_spooked')
 	_OBJ_ANIME_WAIT()
-	_PLAYER_NAME(0)
-	_TALKMSG('dp_scenario3%00-msg_cheryl_eek_1')
-	_TALKMSG('dp_scenario3%00-msg_cheryl_eek_2')
 	_VOICE_WAIT()
+	_CHARA_LOOK_LOCK('HERO', 'PAIR_D03R0101_SEVEN1')
+	_TIME_WAIT(10, @SCWK_ANSWER)
+	_CHARA_LOOK_RELEASE('HERO')
+	_PLAYER_NAME(0)
+	_MACRO_TALKMSG('dialogue_d03r0101', '00-msg_cheryl_eek_1', 'Eek! Sorry, {0,1,1,0}!')
+	_MACRO_TALKMSG('dialogue_d03r0101', '00-msg_cheryl_eek_2', 'This is too scary for me!\rWhat if we get tricked into eating invisible\nfood?!\rWhat if somebody suddenly starts melting into\nthe floor?!\rWhat if an angry Ghost-type Pokémon decides to\nattack us?!\rWhat if a specter of a girl appears and\nfrightens the lives out of us?!')
+	_TALK_CLOSE()
+	_OBJ_ANIME('HERO', 'anm_d03r0101_hero_confuse')
+	_OBJ_ANIME_WAIT()
+	_OBJ_ANIME('PAIR_D03R0101_SEVEN1', 'anm_d03r0101_cheryl_sad')
+	_OBJ_ANIME_WAIT()
+	_MACRO_TALKMSG('dialogue_d03r0101', '00-msg_cheryl_eek_3', 'Can we turn back, please?')
 	_TALK_CLOSE()
 	_OBJ_ANIME('HERO', 'anm_d03r0101_cheryl_stand')
 	_OBJ_ANIME_WAIT()
-	_TALK_OBJ_END()
-	_TALK_END()
 	_END()
 anm_d03r0101_cheryl_spooked:
 	_AC_MARK_GYOE()
 	_ACMD_END()
+anm_d03r0101_hero_confuse:
+	_AC_MARK_EMO(7)
+	_AC_WAIT(10)
+	_ACMD_END()
+anm_d03r0101_cheryl_sad:
+	_AC_MARK_EMO(8)
+	_AC_WAIT(10)
+	_ACMD_END()
 anm_d03r0101_cheryl_stand:
-	_AC_DIR_D(8)
-	_AC_DOWN(4, 8)
+	_AC_DIR_D(4)
+	_AC_DOWN(1, 8)
+	_AC_WAIT(2)
 	_ACMD_END()
 ev_d03r0101_stone_event:
 	_IF_FLAGON_JUMP(#2631, 'ev_d03r0101_stone')
 	_TALK_OBJ_START()
-	_TALKMSG('dp_scenario1%106-msg_d03r0101_stone_01')
+	_MACRO_TALKMSG('dialogue_d03r0101', '106-msg_d03r0101_stone_01', 'The rock is covered in moss.\nIt feels pleasantly cool.')
 	_OBJ_ANIME('HERO', 'anm_d03r0101_cheryl_spooked')
 	_OBJ_ANIME_WAIT()
-	_TALKMSG('dp_scenario3%00_msg_d03r0101_stone_shard_event')
+	_MACRO_TALKMSG('dialogue_d03r0101', '00_msg_d03r0101_stone_shard_event', 'A piece of the rock fell off...')
 	_LDVAL(@SCWK_TEMP0, 85); Lead stone ID
 	_LDVAL(@SCWK_TEMP1, 1); 1
 	_CALL('ev_item_event')
 	_TALK_CLOSE()
 	_FLAG_SET(#2631); Stone event is over
+	_END()
+ev_d03r0101_foongus:
+	_LDVAL(@SCWK_TEMP0, @SCWK_TARGET_OBJID); PlaceData ID
+	_LDVAL(@SCWK_TEMP1, 590); MonsNo
+	_LDVAL(@SCWK_TEMP2, 16); Level
+	_LDVAL(@SCWK_TEMP3, 0); Formno
+	_CALL('ev_disguised_static_mon')
+	_MACRO_TALKMSG('dialogue_d03r0101', 'msg_d03r0101_foongus', 'Foooon!')
+	_CALL('ev_disguised_static_mon_2')
+	_FLAG_SET(#2410); Eterna Forest Foongus static
+	_CALL('ev_d13r0101_disguised_vivillon_flag')
+	_EVENT_END()
 	_END()

@@ -1,14 +1,14 @@
 ev_c01r0502_boy3:
 	_TALK_OBJ_START()
-	_TALKMSG('dp_scenario1%48-msg_c01r0502_boy3_01_1')
-	_TALKMSG('dp_scenario1%48-msg_c01r0502_boy3_01_2', 1)
+	_MACRO_TALKMSG('dialogue_c01r0502', '48-msg_c01r0502_boy3_01_1', 'I like making my Pokémon use their attacks.\rSometimes, when Pokémon get stronger, they\nlearn new moves.')
+	_MACRO_TALKMSG('dialogue_c01r0502', '48-msg_c01r0502_boy3_01_2', 'Those new moves keep things fresh and are a fun\ndistraction for me!', 1)
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_c01r0502_man1:
 	_TALK_OBJ_START_TURN_NOT()
-	_TALKMSG('dp_scenario1%48-msg_c01r0502_man1_01_1')
-	_TALKMSG('dp_scenario1%48-msg_c01r0502_man1_01_2', 1)
+	_MACRO_TALKMSG('dialogue_c01r0502', '48-msg_c01r0502_man1_01_1', 'Did you buy some Heal Balls at the Poké Mart?\rA Heal Ball completely heals the Pokémon it\ncatches on the spot.')
+	_MACRO_TALKMSG('dialogue_c01r0502', '48-msg_c01r0502_man1_01_2', 'That means you can catch a Pokémon and have\nit battle ready right away.\rI wonder what kind of healing space it is inside\na Heal Ball...', 1)
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()

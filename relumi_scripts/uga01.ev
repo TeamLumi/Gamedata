@@ -1,2 +1,111 @@
-ev_test:
+ev_uga01_hoenn_ranger_1_radar_quest:
+	_IF_FLAGON_JUMP(#2026, 'ev_uga01_hoenn_ranger_1_quest_completed')
+	_IF_FLAGON_JUMP(#2025, 'ev_uga01_hoenn_ranger_1_gift_again')
+	_IF_FLAGON_JUMP(#2024, 'ev_uga01_hoenn_ranger_1_radar_check')
+	_TALK_START()
+	_OBJ_ANIME('UGA01_HOENN_RANGER_1', 'anm_uga01_ranger_annoyed')
+	_MACRO_TALKMSG('dialogue_uga01', 'msg_uga01_hoenn_ranger_1_radar_start', 'What the...? No?\nWhat do you mean, you blasted machine!?')
+	_OBJ_ANIME_WAIT(); Allow the animation to play over the dialogue but prevent it from overlapping with the next animation
+	_CHARA_LOOK_LOCK('UGA01_HOENN_RANGER_1', 'HERO')
+	_OBJ_ANIME('UGA01_HOENN_RANGER_1', 'anm_uga01_ranger_surprised')
+	_OBJ_ANIME_WAIT()
+	_MACRO_TALKMSG('dialogue_uga01', 'msg_uga01_hoenn_ranger_1_radar_start_cont', 'This is just impossible. I am a Pokémon Ranger,\nan elite Trainer sworn to the creed of helping\fall in the name of justice, but this accursed\fPoké Radar refuses to respect that!\rThe task I was given is simply herculean, and\nwithout this machine’s cooperation it has been\fmade even more insurmountable!\rWhat is that task, you ask?\rWell... Achieving an astronomical\n10-encounter chain!\rSay... It looks like you have a Poké Radar too.\rIf you chain together 10 encounters and share\nthat with me, I’ll share a special reward with\fyou.')
+	_MACRO_TALKMSG('dialogue_uga01', 'msg_uga01_hoenn_ranger_1_dexnav_aside', '<size=50%>The old DexNav was so much simpler...</size>')
+	_CHARA_LOOK_RELEASE('UGA01_HOENN_RANGER_1')
+	_FLAG_SET(#2024); uga01 Ranger has been talked to once
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+anm_uga01_ranger_annoyed:
+	_AC_MARK_EMO(12); Tornado swirl annoyed mark
+	_ACMD_END()
+anm_uga01_ranger_surprised:
+	_AC_MARK_GYOE(); Exclamation mark
+	_ACMD_END()
+ev_uga01_hoenn_ranger_1_radar_check:
+	_TALK_OBJ_START()
+	_MACRO_TALKMSG('dialogue_uga01', 'msg_uga01_hoenn_ranger_1_radar_cont', 'Ah, you’ve returned!\nLet’s see how high of a chain you’ve gotten.')
+	_TALK_CLOSE()
+	; Command to check the top streak in pokeradar
+	_GET_HIGHEST_RADAR_STREAK(@SCWK_PARAM0)
+	_IFVAL_JUMP(@SCWK_PARAM0, 'LT', 10, 'ev_uga01_hoenn_ranger_1_radar_no'); You must have gotten a chain of at least 10 to complete this quest
+	_NUMBER_NAME(0, @SCWK_PARAM0)
+	_MACRO_TALKMSG('dialogue_uga01', 'msg_uga01_hoenn_ranger_1_radar_success', 'Wow, you got {0,2,2,0}? That’s good work kiddo.\rWe make a great team! Here, the gift I promised.')
+	_JUMP('ev_uga01_hoenn_ranger_1_radar_success')
+	_END()
+ev_uga01_hoenn_ranger_1_radar_no:
+	_NUMBER_NAME(0, @SCWK_PARAM0)
+	_MACRO_TALKMSG('dialogue_uga01', 'msg_uga01_hoenn_ranger_1_radar_no', 'It looks like you’ve only managed to get a paltry {0,2,2,0}...\rYou must achieve a chain of 10 or more\nto complete my task.\rHere, a couple of pro tips:\nFirst, make sure you’re using the Poké Radar in\fa patch of tall grass.\rSecond, catching the Pokémon you find will\ngive a higher chance of the chain continuing.\rChin up, kiddo. I believe in you!')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_uga01_hoenn_ranger_1_radar_success:
+	_LDVAL(@SCWK_TEMP3, 0)
+	_IF_FLAGOFF_CALL(#2027, 'ev_uga01_hoenn_ranger_1_gift_add_treecko')
+	_IF_FLAGOFF_CALL(#2028, 'ev_uga01_hoenn_ranger_1_gift_add_torchic')
+	_IF_FLAGOFF_CALL(#2029, 'ev_uga01_hoenn_ranger_1_gift_add_mudkip')
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_Cancel', 'Not right now', 2)
+	_OPEN_CUSTUM_WIN(@SCWK_TEMP0); SCWK_TEMP0 will have the MonsNo of the pokemon chosen
+	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', 2, 'ev_uga01_hoenn_ranger_1_no_gift_give')
+	_CALL('ev_common_tray_space_check'); Checks if there is any remaining space in the Party and Boxes
+	_IFVAL_JUMP(@551, 'EQ', 1, 'ev_uga01_hoenn_ranger_1_gift_no_tray_space'); Party and Boxes are full
+	_POKEMON_NAME_EXTRA(0, @SCWK_TEMP0, 0, 0)
+    _ME_PLAY('M_FI013')
+	_MACRO_TALKMSG('dialogue_uga01', 'msg_t03_receive_starter', 'You received {0,1,1,0}.')
+    _ME_WAIT()
+	_ADD_POKEMON_UI_EXTRA(@SCWK_TEMP0, 0, 5, 0, 3, 4) ; MonsNo, FormNo, Level, Item, MaxIVs, BallId
+	_SWITCH(@SCWK_TEMP0); Check which pokemon was selected by their dexNum
+	_CASE_JUMP(252, 'ev_uga01_hoenn_ranger_1_radar_treecko_flag_set')
+	_CASE_JUMP(255, 'ev_uga01_hoenn_ranger_1_radar_torchic_flag_set')
+	_CASE_JUMP(258, 'ev_uga01_hoenn_ranger_1_radar_mudkip_flag_set')
+	_END()
+ev_uga01_hoenn_ranger_1_gift_add_treecko:
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_Treecko', 'Treecko', 252)
+	_ADD_WK(@SCWK_TEMP3, 1)
+	_RET()
+ev_uga01_hoenn_ranger_1_gift_add_torchic:
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_Torchic', 'Torchic', 255)
+	_ADD_WK(@SCWK_TEMP3, 1)
+	_RET()
+ev_uga01_hoenn_ranger_1_gift_add_mudkip:
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_Mudkip', 'Mudkip', 258)
+	_ADD_WK(@SCWK_TEMP3, 1)
+	_RET()
+ev_uga01_hoenn_ranger_1_gift_again:
+	_TALK_OBJ_START()
+	_FLAG_RESET(#2025); Resets if the player has said no to Ranger Starter gift.
+	_MACRO_TALKMSG('dialogue_uga01', 'msg_uga01_hoenn_ranger_1_gift_again', 'You’re ready now, right? Here.')
+	_JUMP('ev_uga01_hoenn_ranger_1_radar_success')
+ev_uga01_hoenn_ranger_1_no_gift_give:
+	_FLAG_SET(#2025); Player said no to Ranger Starter Gift
+	_MACRO_TALKMSG('dialogue_uga01', 'msg_uga01_hoenn_ranger_1_no_gift_give', 'What!? Not rare enough for you!?\rOh, you just need me to hold onto\nthem until you’re ready.\rRight. Well, don’t be too long.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_uga01_hoenn_ranger_1_gift_no_tray_space:
+	_FLAG_SET(#2025); Player said no to Ranger Starter Gift
+	_MACRO_TALKMSG('dialogue_uga01', 'msg_uga01_hoenn_ranger_1_gift_no_tray_space', 'What!? You don’t have any space for it in\nyour boxes!?\rGo make some room then, I guess I’ll wait...')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_uga01_hoenn_ranger_1_radar_treecko_flag_set:
+	_FLAG_SET(#2027); Ranger Treecko
+	_JUMP('ev_uga01_hoenn_ranger_1_quest_finish')
+ev_uga01_hoenn_ranger_1_radar_torchic_flag_set:
+	_FLAG_SET(#2028); Ranger Torchic
+	_JUMP('ev_uga01_hoenn_ranger_1_quest_finish')
+ev_uga01_hoenn_ranger_1_radar_mudkip_flag_set:
+	_FLAG_SET(#2029); Ranger Mudkip
+	_JUMP('ev_uga01_hoenn_ranger_1_quest_finish')
+ev_uga01_hoenn_ranger_1_quest_finish:
+	_MACRO_TALKMSG('dialogue_uga01', 'msg_uga01_hoenn_ranger_1_quest_finish', 'Phew, I’m glad that’s all over with. This\nSinnoh technology is far too much effort for me.\rYou should visit Hoenn some day and see\nhow powerful DexNav technology is!\rIt’s lightyears ahead of Sinnoh’s gadgets.')
+	_FLAG_SET(#2026); uga01 (Still Water Cavern) Ranger Quest completed.
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_uga01_hoenn_ranger_1_quest_completed:
+	_TALK_OBJ_START()
+	_MACRO_TALKMSG('dialogue_uga01', 'msg_uga01_hoenn_ranger_1_quest_completed', 'You should visit Hoenn some day and see\nhow powerful DexNav technology is!\rIt’s lightyears ahead of Sinnoh’s gadgets.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
 	_END()

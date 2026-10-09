@@ -21,14 +21,14 @@ ev_c05gym0106_lift_event_set2:
 ev_c05gym0106_ans:
 	_TALK_OBJ_START()
 	_SE_PLAY('S_FI109')
-	_TALKMSG('dp_scenario2%37-msg_c05gym0106_sign1_02')
+	_MACRO_TALKMSG('dialogue_c05gym0106', '37-msg_c05gym0106_sign1_02', 'Correct! Congratulations!')
 	_TALK_CLOSE()
 	_TALK_END()
 	_END()
 ev_c05gym0106_question:
 	_TALK_OBJ_START()
 	_SE_PLAY('S_FI108')
-	_TALKMSG('dp_scenario2%37-msg_c05gym0106_sign1_01')
+	_MACRO_TALKMSG('dialogue_c05gym0106', '37-msg_c05gym0106_sign1_01', 'Question: What is 3 times 13?\nAnswer: ←39 ↑93 →33')
 	_TALK_CLOSE()
 	_TALK_END()
 	_END()

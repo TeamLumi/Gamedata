@@ -217,7 +217,7 @@ ev_l02r0101_close:
 	_OBJ_ANIME('HERO', 'anm_l02r0101_turn_right')
 	_OBJ_ANIME_WAIT()
 	_TIME_WAIT(20, @SCWK_ANSWER)
-	_TALKMSG('dp_scenario2%115-msg_l02r0101_waiter_02')
+	_MACRO_TALKMSG('dialogue_l02r0101', '115-msg_l02r0101_waiter_02', 'I am so sorry. We are now closed. Please do visit\nwhile we are open.')
 	_TALK_CLOSE()
 	_TALK_END()
 	_OBJ_ANIME('HERO', 'anm_l02r0101_turn_down')
@@ -225,7 +225,7 @@ ev_l02r0101_close:
 	_MAP_CHANGE('L02', 0)
 	_END()
 ev_l02r0101_waiter:
-	_EASY_OBJ_MSG('dp_scenario2%115-msg_l02r0101_waiter_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_l02r0101', '115-msg_l02r0101_waiter_01', 'At our restaurant, you can enjoy more than just\nexquisite dining.\rYou may also partake in battles. Bon appetit!')
 	_END()
 ev_l02r0101_01a:
 	_TALK_OBJ_START_TURN_NOT()

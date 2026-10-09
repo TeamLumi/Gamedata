@@ -1,50 +1,157 @@
-ev_c05gym0104_flag_change:
-	_FLAG_RESET(#FE_SAVE_GIMMICK_002)
-	_IF_FLAGON_CALL(#FE_SAVE_GIMMICK_003, 'ev_c05gym0104_lift_event_off')
-	_DOOR_TRANSITION_ZONE_SET('P_RO_059_Door_01_D01', 'C05GYM0105', 0)
-	_DOOR_TRANSITION_ZONE_SET('P_RO_059_Door_01_D02', 'C05GYM0106', 0)
-	_DOOR_TRANSITION_ZONE_SET('P_RO_059_Door_01_D03', 'C05GYM0107', 0)
-	_INIT_GHOST_GYM()
+ev_c05gym0104_scene:
+	_IF_FLAGOFF_CALL(#2298, 'ev_c05gym0104_randomize_works')
+	_VISIBLE_OBJ_PROP('HERO', 'Flashlight')
+	_VISIBLE_OBJ_PROP('TR_C05GYMR0104_STUDENT', 'Flashlight')
+	_VISIBLE_OBJ_PROP('TR_C05GYMR0104_WOMAN', 'Flashlight')
+	_VISIBLE_OBJ_PROP('TR_C05GYMR0104_STUDENTF', 'Flashlight')
+	_VISIBLE_OBJ_PROP('TR_C05GYMR0104_MAN', 'Flashlight')
+	; Work is defined in ev_c05gym0104_randomize_works
+	_SWITCH(@WK_SCENE_C05GYM0101); Only change the door that is determined to be correct.
+	_CASE_CALL(3, 'ev_c05gym0104_set_door_sun_correct')
+	_CASE_CALL(4, 'ev_c05gym0104_set_door_target_correct')
+	_CASE_CALL(5, 'ev_c05gym0104_set_door_moon_correct')
+	_CASE_CALL(6, 'ev_c05gym0104_set_door_star_correct')
+	_CASE_CALL(7, 'ev_c05gym0104_set_door_heart_correct')
+	_EVENT_ENTITY_CLIP_PLAY('C05GYM0104_RANDOMIZED_RUG', @WK_SCENE_C05GYM0101); Set the shape on the randomized rug to match the door
+	_EVENT_ENTITY_CLIP_WAIT('C05GYM0104_RANDOMIZED_RUG')
+	; Work is defined in ev_c05gym0104_randomize_works
+	_SWITCH(@440); This work is used by StopData to see which one is activated
+	_CASE_CALL(0, 'ev_c05gym0104_move_blue_rug_to_location_one')
+	_CASE_CALL(1, 'ev_c05gym0104_move_blue_rug_to_location_two')
+	_CASE_CALL(2, 'ev_c05gym0104_move_blue_rug_to_location_three')
+	_CASE_CALL(3, 'ev_c05gym0104_move_blue_rug_to_location_four')
+	_CASE_CALL(4, 'ev_c05gym0104_move_blue_rug_to_location_five')
+	_CASE_CALL(5, 'ev_c05gym0104_move_blue_rug_to_location_six')
+	_FLAG_SET(#2298); Used for preventing the room from being re-randomized on save + reset
 	_END()
-ev_c05gym0104_lift_event_off:
-	_FLAG_SET(#FE_SAVE_GIMMICK_002)
+ev_c05gym0104_randomize_works:
+	_FLAG_RESET(#2296); Resets the flag that the player has walked on/talked to the correct rug
+	_GET_RND(@WK_SCENE_C05GYM0101, 5); Gets a value from 0 to 4
+	_ADD_WK(@WK_SCENE_C05GYM0101, 3); Adds 3 to line up with ANIM_CLIP for the rugs
+	_GET_RND(@440, 6); Gets a value from 0 to 5
 	_RET()
-pos_c05gym0104_lift:
-	_MOVE_FLD_LIFT()
-	_GET_NOW_ZONE_ID(@SCWK_TEMP0)
-	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', 79, 'pos_c05gym0104_lift_f1')
-	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', 81, 'pos_c05gym0104_lift_f2')
-	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', 83, 'pos_c05gym0104_lift_f3')
-	_END()
-pos_c05gym0104_lift_f1:
-	_IF_FLAGON_CALL(#FE_SAVE_GIMMICK_002, 'ev_c05gym0104_lift_event_set1')
-	_IF_FLAGOFF_CALL(#FE_SAVE_GIMMICK_002, 'ev_c05gym0104_lift_event_set2')
-	_END()
-pos_c05gym0104_lift_f2:
-	_IF_FLAGON_CALL(#FE_SAVE_GIMMICK_002, 'ev_c05gym0106_lift_event_set1')
-	_IF_FLAGOFF_CALL(#FE_SAVE_GIMMICK_002, 'ev_c05gym0106_lift_event_set2')
-	_END()
-pos_c05gym0104_lift_f3:
-	_IF_FLAGON_CALL(#FE_SAVE_GIMMICK_002, 'ev_c05gym0108_lift_event_set1')
-	_IF_FLAGOFF_CALL(#FE_SAVE_GIMMICK_002, 'ev_c05gym0108_lift_event_set2')
-	_END()
-ev_c05gym0104_lift_event_set1:
-	_FLAG_SET(#FE_SAVE_GIMMICK_003)
+ev_c05gym0104_detach_flashlight:
+	_INVISIBLE_OBJ_PROP('HERO', 'Flashlight')
+	_INVISIBLE_OBJ_PROP('TR_C05GYMR0104_STUDENT', 'Flashlight')
+	_INVISIBLE_OBJ_PROP('TR_C05GYMR0104_WOMAN', 'Flashlight')
+	_INVISIBLE_OBJ_PROP('TR_C05GYMR0104_STUDENTF', 'Flashlight')
+	_INVISIBLE_OBJ_PROP('TR_C05GYMR0104_MAN', 'Flashlight')
+	_FLAG_RESET(#2298)
 	_RET()
-ev_c05gym0104_lift_event_set2:
-	_FLAG_RESET(#FE_SAVE_GIMMICK_003)
+ev_c05gym0104_set_door_sun_correct:
+	_DOOR_TRANSITION_ZONE_SET('P_RO_059_Door_01_D01', 'C05GYM0113', 0)
+	_DOOR_EXIT_LABEL_SET('P_RO_059_Door_01_D01', 1); Set the CORRECT door to be None
 	_RET()
-ev_c05gym0104_ans:
-	_TALK_OBJ_START()
-	_SE_PLAY('S_FI109')
-	_TALKMSG('dp_scenario2%36-msg_c05gym0104_sign1_02')
-	_TALK_CLOSE()
-	_TALK_END()
+ev_c05gym0104_set_door_target_correct:
+	_DOOR_TRANSITION_ZONE_SET('P_RO_059_Door_01_D02', 'C05GYM0113', 0)
+	_DOOR_EXIT_LABEL_SET('P_RO_059_Door_01_D02', 1); Set the CORRECT door to be None
+	_RET()
+ev_c05gym0104_set_door_moon_correct:
+	_DOOR_TRANSITION_ZONE_SET('P_RO_059_Door_01_D03', 'C05GYM0113', 0)
+	_DOOR_EXIT_LABEL_SET('P_RO_059_Door_01_D03', 1); Set the CORRECT door to be None
+	_RET()
+ev_c05gym0104_set_door_star_correct:
+	_DOOR_TRANSITION_ZONE_SET('P_RO_059_Door_01_D04', 'C05GYM0113', 0)
+	_DOOR_EXIT_LABEL_SET('P_RO_059_Door_01_D04', 1); Set the CORRECT door to be None
+	_RET()
+ev_c05gym0104_set_door_heart_correct:
+	_DOOR_TRANSITION_ZONE_SET('P_RO_059_Door_01_D05', 'C05GYM0113', 0)
+	_DOOR_EXIT_LABEL_SET('P_RO_059_Door_01_D05', 1); Set the CORRECT door to be None
+	_RET()
+ev_c05gym0104_move_blue_rug_to_location_one:
+	_OBJ_POS_CHANGE_WORLD_FIND('C05GYM0104_RANDOMIZED_RUG', -4, 0, 9)
+	_RET()
+ev_c05gym0104_move_blue_rug_to_location_two:
+	_OBJ_POS_CHANGE_WORLD_FIND('C05GYM0104_RANDOMIZED_RUG', -3, 0, 15)
+	_RET()
+ev_c05gym0104_move_blue_rug_to_location_three:
+	_OBJ_POS_CHANGE_WORLD_FIND('C05GYM0104_RANDOMIZED_RUG', -14, 0, 11)
+	_RET()
+ev_c05gym0104_move_blue_rug_to_location_four:
+	_OBJ_POS_CHANGE_WORLD_FIND('C05GYM0104_RANDOMIZED_RUG', -19, 0, 11)
+	_RET()
+ev_c05gym0104_move_blue_rug_to_location_five:
+	_OBJ_POS_CHANGE_WORLD_FIND('C05GYM0104_RANDOMIZED_RUG', -24, 0, 17)
+	_RET()
+ev_c05gym0104_move_blue_rug_to_location_six:
+	_OBJ_POS_CHANGE_WORLD_FIND('C05GYM0104_RANDOMIZED_RUG', -27, 0, 14)
+	_RET()
+ev_c05gym0104_sun_rug:
+	_IFVAL_CALL(@WK_SCENE_C05GYM0101, 'EQ', 3, 'ev_c05gym0104_rug_play_correct_door')
+	_MACRO_EASY_OBJ_MSG('dialogue_c05gym0104', 'msg_c05gym0104_sun_rug', 'It’s a Pink Carpet with a Sun on it in front of the door.')
 	_END()
-ev_c05gym0104_question:
-	_TALK_OBJ_START()
-	_SE_PLAY('S_FI108')
-	_TALKMSG('dp_scenario2%36-msg_c05gym0104_sign1_01')
-	_TALK_CLOSE()
-	_TALK_END()
+ev_c05gym0104_target_rug:
+	_IFVAL_CALL(@WK_SCENE_C05GYM0101, 'EQ', 4, 'ev_c05gym0104_rug_play_correct_door')
+	_MACRO_EASY_OBJ_MSG('dialogue_c05gym0104', 'msg_c05gym0104_target_rug', 'It’s a Pink Carpet with a Target on it in front of the door.')
 	_END()
+ev_c05gym0104_moon_rug:
+	_IFVAL_CALL(@WK_SCENE_C05GYM0101, 'EQ', 5, 'ev_c05gym0104_rug_play_correct_door')
+	_MACRO_EASY_OBJ_MSG('dialogue_c05gym0104', 'msg_c05gym0104_moon_rug', 'It’s a Pink Carpet with a Moon on it in front of the door.')
+	_END()
+ev_c05gym0104_star_rug:
+	_IFVAL_CALL(@WK_SCENE_C05GYM0101, 'EQ', 6, 'ev_c05gym0104_rug_play_correct_door')
+	_MACRO_EASY_OBJ_MSG('dialogue_c05gym0104', 'msg_c05gym0104_star_rug', 'It’s a Pink Carpet with a Star on it in front of the door.')
+	_END()
+ev_c05gym0104_heart_rug:
+	_IFVAL_CALL(@WK_SCENE_C05GYM0101, 'EQ', 7, 'ev_c05gym0104_rug_play_correct_door')
+	_MACRO_EASY_OBJ_MSG('dialogue_c05gym0104', 'msg_c05gym0104_heart_rug', 'It’s a Pink Carpet with a Heart on it in front of the door.')
+	_END()
+ev_c05gym0104_randomized_rug:
+	_IFVAL_JUMP(@WK_SCENE_C05GYM0101, 'EQ', 3, 'ev_c05gym0104_blue_sun_rug')
+	_IFVAL_JUMP(@WK_SCENE_C05GYM0101, 'EQ', 4, 'ev_c05gym0104_blue_target_rug')
+	_IFVAL_JUMP(@WK_SCENE_C05GYM0101, 'EQ', 5, 'ev_c05gym0104_blue_moon_rug')
+	_IFVAL_JUMP(@WK_SCENE_C05GYM0101, 'EQ', 6, 'ev_c05gym0104_blue_star_rug')
+	_IFVAL_JUMP(@WK_SCENE_C05GYM0101, 'EQ', 7, 'ev_c05gym0104_blue_heart_rug')
+	_END()
+ev_c05gym0104_blue_sun_rug:
+	_CALL('ev_c05gym0104_litwick_sound')
+	_IF_FLAGOFF_CALL(#2296, 'pos_c05gym0104_rug_walked_on')
+	_MACRO_EASY_OBJ_MSG('dialogue_c05gym0104', 'msg_c05gym0104_blue_sun_rug', 'It’s a Blue Carpet with a Sun on it.')
+	_END()
+ev_c05gym0104_blue_target_rug:
+	_CALL('ev_c05gym0104_litwick_sound')
+	_IF_FLAGOFF_CALL(#2296, 'pos_c05gym0104_rug_walked_on')
+	_MACRO_EASY_OBJ_MSG('dialogue_c05gym0104', 'msg_c05gym0104_blue_target_rug', 'It’s a Blue Carpet with a Target on it.')
+	_END()
+ev_c05gym0104_blue_moon_rug:
+	_CALL('ev_c05gym0104_litwick_sound')
+	_IF_FLAGOFF_CALL(#2296, 'pos_c05gym0104_rug_walked_on')
+	_MACRO_EASY_OBJ_MSG('dialogue_c05gym0104', 'msg_c05gym0104_blue_moon_rug', 'It’s a Blue Carpet with a Moon on it.')
+	_END()
+ev_c05gym0104_blue_star_rug:
+	_CALL('ev_c05gym0104_litwick_sound')
+	_IF_FLAGOFF_CALL(#2296, 'pos_c05gym0104_rug_walked_on')
+	_MACRO_EASY_OBJ_MSG('dialogue_c05gym0104', 'msg_c05gym0104_blue_star_rug', 'It’s a Blue Carpet with a Star on it.')
+	_END()
+ev_c05gym0104_blue_heart_rug:
+	_CALL('ev_c05gym0104_litwick_sound')
+	_IF_FLAGOFF_CALL(#2296, 'pos_c05gym0104_rug_walked_on')
+	_MACRO_EASY_OBJ_MSG('dialogue_c05gym0104', 'msg_c05gym0104_blue_heart_rug', 'It’s a Blue Carpet with a Heart on it.')
+	_END()
+ev_c05gym0104_litwick_sound:
+	_SE_PLAY('PLAY_PV_607_00_00')
+	_RET()
+pos_c05gym0104_rug_play_litwick:
+	_CALL('ev_c05gym0104_litwick_sound')
+	_IF_FLAGOFF_CALL(#2296, 'pos_c05gym0104_rug_walked_on')
+	_END()
+pos_c05gym0104_rug_walked_on:
+	_FLAG_SET(#2296)
+	_RET()
+ev_c05gym0104_rug_play_correct_door:
+	_IF_FLAGON_CALL(#2296, 'ev_c05gym0104_litwick_sound')
+	_RET()
+pos_c05gym0104_rug_play_correct_door:
+	_CALL('ev_c05gym0104_rug_play_correct_door')
+	_END()
+;ev_macro_stuff_c05gym0104:
+	;_MACRO_TALKMSG('dp_trainer_msg', '1-SCHOOLG_02_TRMSG_FIGHT_START', 'Eek! That’s so bright!\rSurprise attack!')
+	;_MACRO_TALKMSG('dp_trainer_msg', '1-SCHOOLG_02_TRMSG_FIGHT_LOSE', 'Your strength is dazzling!\nI have to shield my eyes!')
+	;_MACRO_TALKMSG('dp_trainer_msg', '1-ELITEW_08_TRMSG_FIGHT_START', 'What does it feel like, taking one step after\nanother into darkness?')
+	;_MACRO_TALKMSG('dp_trainer_msg', '1-ELITEW_08_TRMSG_FIGHT_LOSE', 'You’re the kind of person who can keep going\nforward even into the unknown.')
+	;_MACRO_TALKMSG('dp_trainer_msg', '1-ELITEW_08_TRMSG_FIGHT_AFTER', 'I think, sometimes, one has to make mistakes\nto learn what is right.')
+	;_MACRO_TALKMSG('dp_trainer_msg', '1-ELITEM_08_TRMSG_FIGHT_START', 'You know you’re going to get whupped here,\ndon’t you?')
+	;_MACRO_TALKMSG('dp_trainer_msg', '1-SCHOOLB_02_TRMSG_FIGHT_START', 'Are you lost?\nAre you enjoying yourself?')
+	;_MACRO_TALKMSG('dp_trainer_msg', '1-SCHOOLB_02_TRMSG_FIGHT_LOSE', 'Let me guess.\nYou are enjoying yourself.')
+	;_MACRO_TALKMSG('dp_trainer_msg', '1-SCHOOLB_02_TRMSG_FIGHT_AFTER', 'Whatever happens in life, it’s better to try to\nenjoy it the best one can.\rBeing in the dark here, I came to realize that.')
+	;_END()

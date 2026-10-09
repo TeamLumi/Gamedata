@@ -17,7 +17,7 @@ ev_c09fs0101_shop_re:
 	_JUMP('ev_c09fs0101_shop_end')
 	_END()
 ev_c09fs0101_shop_sonohoka:
-	_TALKMSG('dp_scenario1%28-mes_shop_01_03')
+	_MACRO_TALKMSG('dialogue_c09fs0101', '28-mes_shop_01_03', 'Is there anything else I can do for you?')
 	_RET()
 ev_c09fs0101_shop_buy:
 	_LDVAL(@LOCALWORK3, 1)
@@ -67,11 +67,11 @@ ev_c09fs0101_fix_shop:
 	_END()
 ev_c09fs0101_boy2:
 	_TALK_OBJ_START()
-	_TALKMSG('dp_scenario2%193-msg_c09fs0101_boy2_01_1')
-	_TALKMSG('dp_scenario2%193-msg_c09fs0101_boy2_01_2')
+	_MACRO_TALKMSG('dialogue_c09fs0101', '193-msg_c09fs0101_boy2_01_1', 'I’m using Technical Machines to teach moves to\nmy Pokémon.\rI’m trying for different mixes of moves in\ndifferent types.')
+	_MACRO_TALKMSG('dialogue_c09fs0101', '193-msg_c09fs0101_boy2_01_2', 'I hear the Elite Four of the Pokémon League are\nway tougher than any Gym Leader.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_c09fs0101_girl4:
-	_EASY_OBJ_MSG('dp_scenario2%193-msg_c09fs0101_girl4_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c09fs0101', '193-msg_c09fs0101_girl4_01', 'If your Pokémon gets frozen, it will thaw out after\na while. But if I were you, I’d keep some Ice\fHeals around.')
 	_END()

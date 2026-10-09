@@ -1,0 +1,9 @@
+SP_R202_OBJ:
+	_END()
+SP_R202_SCENE:
+	_END()
+SP_R202_FLAG:
+	_JUMP('ev_r202_flag_change')
+	_END()
+sp_r202_tbl:
+	_END()

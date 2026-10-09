@@ -1,20 +1,20 @@
 ev_r218_sign1:
-	_EASY_BOARD_MSG('dp_scenario1%62-msg_r218_sign1_01', 'BOARD_TYPE_ROAD', 0, 2)
+	_EASY_BOARD_MSG('dialogue_r218%62-msg_r218_sign1_01', 'BOARD_TYPE_ROAD', 0, 2)
 	_END()
 ev_r218_sign2:
-	_EASY_BOARD_MSG('dp_scenario1%62-msg_r218_sign2_01', 'BOARD_TYPE_ROAD', 0, 1)
+	_EASY_BOARD_MSG('dialogue_r218%62-msg_r218_sign2_01', 'BOARD_TYPE_ROAD', 0, 1)
 	_END()
 ev_r218_mini:
 	_TALK_OBJ_START()
 	_FLAG_SET(#FE_R218_TALKED1)
 	_IF_FLAGON_JUMP(#FE_R218_SEAL_GET1, 'ev_r218_mini_02')
 	_IF_FLAGON_JUMP(#FE_R218_TALKED2, 'ev_r218_mini_01')
-	_TALKMSG('dp_scenario1%62-msg_r218_girl1_iro_01')
+	_MACRO_TALKMSG('dialogue_r218', '62-msg_r218_girl1_iro_01', 'I asked my boyfriend to meet me here on\nRoute 218, but he’s nowhere to be seen.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_r218_mini_01:
-	_TALKMSG('dp_scenario1%62-msg_r218_girl1_iro_02')
+	_MACRO_TALKMSG('dialogue_r218', '62-msg_r218_girl1_iro_02', 'What? He’s waiting for me across the water?\nHe can be so absent-minded...\rThank you for letting me know. Please take these.')
 	_LDVAL(@SCWK_TEMP0, 72)
 	_LDVAL(@SCWK_TEMP1, 3)
 	_CALL('ev_exec_item_seal_get')
@@ -23,7 +23,7 @@ ev_r218_mini_01:
 	_TALK_OBJ_END()
 	_END()
 ev_r218_mini_02:
-	_TALKMSG('dp_scenario1%62-msg_r218_girl1_iro_03')
+	_MACRO_TALKMSG('dialogue_r218', '62-msg_r218_girl1_iro_03', 'Honestly, I really don’t mind waiting here alone\nfor my boyfriend to show up.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
@@ -32,12 +32,12 @@ ev_r218_campboy:
 	_FLAG_SET(#FE_R218_TALKED2)
 	_IF_FLAGON_JUMP(#FE_R218_SEAL_GET2, 'ev_r218_campboy_02')
 	_IF_FLAGON_JUMP(#FE_R218_TALKED1, 'ev_r218_campboy_01')
-	_TALKMSG('dp_scenario1%62-msg_r218_campboy_iro_01')
+	_MACRO_TALKMSG('dialogue_r218', '62-msg_r218_campboy_iro_01', 'My girlfriend asked me to meet up with her on\nRoute 218, but I can’t find her...')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_r218_campboy_01:
-	_TALKMSG('dp_scenario1%62-msg_r218_campboy_iro_02')
+	_MACRO_TALKMSG('dialogue_r218', '62-msg_r218_campboy_iro_02', 'Whaaat? So my girlfriend is on the other side...\rYou saved me. Thanks. Please take these.')
 	_LDVAL(@SCWK_TEMP0, 42)
 	_LDVAL(@SCWK_TEMP1, 3)
 	_CALL('ev_exec_item_seal_get')
@@ -46,24 +46,24 @@ ev_r218_campboy_01:
 	_TALK_OBJ_END()
 	_END()
 ev_r218_campboy_02:
-	_TALKMSG('dp_scenario1%62-msg_r218_campboy_iro_03')
+	_MACRO_TALKMSG('dialogue_r218', '62-msg_r218_campboy_iro_03', 'Any relationship is bound to run into troubles.\nIf something goes wrong, don’t panic. Just chill.\rI’ll patiently wait for my girlfriend right here.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_r218_camome:
 	_TALK_OBJ_START()
-	_EASY_VOICE_MSG('dp_scenario1%62-msg_r218_kyamome', 'PLAY_PV_EV_278_00_00')
+	_EASY_VOICE_MSG('dialogue_r218%62-msg_r218_kyamome', 'PLAY_PV_EV_278_00_00')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_r218_blocker_1:
-	_MACRO_EASY_OBJ_MSG('dp_scenario3', '00_msg_r218_blocker_01', 'That’s right, Clefairy!\nCuter, now!')
+	_MACRO_EASY_OBJ_MSG('dialogue_r218', '00_msg_r218_blocker_01', 'That’s right, Clefairy!\nCuter, now!')
 	_END()
 ev_r218_blocker_clefairy:
 	_JUMP('ev_c04r0101_pippi')
 ev_r218_blocker_pikachu:
-	_EASY_VOICE_MSG('dp_scenario3%00_msg_r218_blocker_pika', 'PLAY_PV_EV_025_00_00')
+	_EASY_VOICE_MSG('dialogue_r218%00_msg_r218_blocker_pika', 'PLAY_PV_EV_025_00_00')
 	_END()
 ev_r218_blocker_fisherman:
-	_MACRO_EASY_OBJ_MSG('dp_scenario3', '00_msg_r218_blocker_fisherman', 'Pikachu! Try to keep up!\nYou need to dazzle!')
+	_MACRO_EASY_OBJ_MSG('dialogue_r218', '00_msg_r218_blocker_fisherman', 'Pikachu! Try to keep up!\nYou need to dazzle!')
 	_END()

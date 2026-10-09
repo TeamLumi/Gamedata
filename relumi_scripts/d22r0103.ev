@@ -3,5 +3,5 @@ ev_d22r0103_flag_change:
 	_SET_SYS_FLAG($FLAG_ARRIVE_D22R0101)
 	_END()
 ev_d22r0103_mania:
-	_EASY_OBJ_MSG('dp_scenario2%113-msg_d22r0103_mania_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_d22r0103', '113-msg_d22r0103_mania_01', 'Wow... My digging punched me through to this\nweird place.\rI’d say you can thank me for being a\nRuin Maniac!')
 	_END()

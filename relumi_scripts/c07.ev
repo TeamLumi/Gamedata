@@ -31,34 +31,38 @@ ev_c07_wall_change:
 ev_c07_support_pre_gym:
 	_EVENT_START()
 	_CALL('ev_another_out_sp')
-	_OBJ_ANIME('C07_SUPPORT', 'ev_c07_support_gym_face_player')
-	_OBJ_ANIME_WAIT()
+	_CHARA_LOOK_LOCK('C07_SUPPORT', 'HERO')
+	_CHARA_LOOK_LOCK('HERO', 'C07_SUPPORT')
+	_TIME_WAIT(10, @SCWK_ANSWER)
 	_OBJ_ANIME('C07_SUPPORT', 'ev_c07_support_gym_exclamation')
 	_OBJ_ANIME_WAIT()
 	_CALL('ev_the_boy_girl_play')
-	_EVENT_CAMERA_INDEX(912)
+	_BLACK_OUT('SCR_WIPE_DIV', 3)
+	_FADE_WAIT()
+	_CHARA_LOOK_RELEASE('C07_SUPPORT')
+	_CHARA_LOOK_RELEASE('HERO')
+	_OBJ_POS_CHANGE_WORLD('HERO', 682, 2, 616.5)
+	_OBJ_DIR_CHANGE('HERO', 180)
+	_OBJ_POS_CHANGE_WORLD('C07_SUPPORT', 682, 2, 615.5)
+	_OBJ_DIR_CHANGE('C07_SUPPORT', 0)
+	_EVENT_CAMERA_INDEX(560)
+	_OBJ_ANIME('C07_SUPPORT', 'anm_c07_face_happy')
 	_EVENT_CAMERA_END_WAIT()
-	_PLAYER_POS_GET(@SCWK_TEMP0, @SCWK_TEMP1)
-	_IFVAL_CALL(@SCWK_TEMP0, 'EQ', 681, 'ev_c07_support_gym_approach_player_1')
-	_IFVAL_CALL(@SCWK_TEMP0, 'EQ', 682, 'ev_c07_support_gym_approach_player_2')
-	_IFVAL_CALL(@SCWK_TEMP0, 'EQ', 683, 'ev_c07_support_gym_approach_player_3')
-	_IFVAL_CALL(@SCWK_TEMP0, 'EQ', 684, 'ev_c07_support_gym_approach_player_4')
+	_OBJ_ANIME_WAIT()
+	_BLACK_IN('SCR_WIPE_DIV', 3)
+	_FADE_WAIT()
 	_GET_MY_SEX(@SCWK_TEMP0)
 	_IFVAL_CALL(@SCWK_TEMP0, 'EQ', 0, 'ev_c07_support_male_dialogue_3')
 	_IFVAL_CALL(@SCWK_TEMP0, 'EQ', 1, 'ev_c07_support_female_dialogue_3')
 	_TALK_CLOSE()
-	_EVENT_CAMERA_INDEX(913)
-	_EVENT_CAMERA_END_WAIT()
 	_CALL('ev_c07_wake_scene')
-	_PLAYER_POS_GET(@SCWK_TEMP0, @SCWK_TEMP1)
-	_IFVAL_CALL(@SCWK_TEMP0, 'EQ', 681, 'ev_c07_support_gym_exit_1')
-	_IFVAL_CALL(@SCWK_TEMP0, 'EQ', 682, 'ev_c07_support_gym_exit_2')
-	_IFVAL_CALL(@SCWK_TEMP0, 'EQ', 683, 'ev_c07_support_gym_exit_3')
-	_IFVAL_CALL(@SCWK_TEMP0, 'EQ', 684, 'ev_c07_support_gym_exit_4')
+	_EVENT_CAMERA_INDEX(600)
+	_CALL('ev_c07_support_gym_exit_2')
+	_EVENT_CAMERA_END_WAIT()
 	_OBJ_DEL('C07_SUPPORT')
 	_CALL('ev_character_theme_stop')
-	; _EVENT_CAMERA_INDEX(913)
-	; _EVENT_CAMERA_END_WAIT()
+	_OBJ_ANIME('HERO', 'anm_c07_dir_up')
+	_OBJ_ANIME_WAIT()
 	_LDVAL(@WK_SCENE_C07_SUPPORT, 1)
 	_LDVAL(@TOWNMAP_GUIDE_SEQUENCE, 6400)
 	_CALL('ev_another_out_end')
@@ -66,29 +70,17 @@ ev_c07_support_pre_gym:
 	_END()
 ev_c07_support_male_dialogue_3:
 	_PLAYER_NAME(0)
-	_TALKMSG('dp_scenario2%108-msg_c07_heroine_06_1')
-	_TALKMSG('dp_scenario2%108-msg_c07_heroine_06_2')
+	_MACRO_TALKMSG('dialogue_c07', '108-msg_c07_heroine_06_1', '{0,1,0,0}, are you going to take the\nGym challenge?\rGee, you keep getting tougher and tougher,\ndon’t you?', 0, 1)
+	_OBJ_ANIME('C07_SUPPORT', 'anm_c07_face_normal')
+	_OBJ_ANIME_WAIT()
+	_MACRO_TALKMSG('dialogue_c07', '108-msg_c07_heroine_06_2', 'Me? Well, I went shopping at the department\nstore, and—I mean, well, of course I’ve been\fworking on my Pokédex, but, uh, well...\rI’ll catch you later!')
 	_RET()
 ev_c07_support_female_dialogue_3:
 	_PLAYER_NAME(0)
-	_TALKMSG('dp_scenario2%108-msg_c07_hero_07_1')
-	_TALKMSG('dp_scenario2%108-msg_c07_hero_07_2')
-	_RET()
-ev_c07_support_gym_approach_player_1:
-	_OBJ_ANIME('C07_SUPPORT', 'anm_c07_support_gym_approach_player_1')
+	_MACRO_TALKMSG('dialogue_c07', '108-msg_c07_hero_07_1', 'Hey! {0,1,0,0}, are you going to take on\nthe Gym Leader?\rWow, you just keep getting tougher and tougher.', 0, 1)
+	_OBJ_ANIME('C07_SUPPORT', 'anm_c07_face_normal')
 	_OBJ_ANIME_WAIT()
-	_RET()
-ev_c07_support_gym_approach_player_2:
-	_OBJ_ANIME('C07_SUPPORT', 'anm_c07_support_gym_approach_player_2')
-	_OBJ_ANIME_WAIT()
-	_RET()
-ev_c07_support_gym_approach_player_3:
-	_OBJ_ANIME('C07_SUPPORT', 'anm_c07_support_gym_approach_player_3')
-	_OBJ_ANIME_WAIT()
-	_RET()
-ev_c07_support_gym_approach_player_4:
-	_OBJ_ANIME('C07_SUPPORT', 'anm_c07_support_gym_approach_player_4')
-	_OBJ_ANIME_WAIT()
+	_MACRO_TALKMSG('dialogue_c07', '108-msg_c07_hero_07_2', 'Me? Well, I took a look in the department store,\nand—I mean, yeah, of course I’ve been working\fon my Pokédex, but, well, uh...\rAnyways, keep it up! I’ll see you around!')
 	_RET()
 ev_c07_support_gym_exit_1:
 	_OBJ_ANIME('C07_SUPPORT', 'anm_c07_support_gym_exit_1')
@@ -116,13 +108,19 @@ ev_c07_support_gym_face_player:
 ev_c07_support_gym_exclamation:
 	_AC_MARK_GYOE(1)
 	_ACMD_END()
+anm_c07_face_happy:
+	_AC_FACE_INDEX(1)
+	_ACMD_END()
+anm_c07_face_normal:
+	_AC_FACE_INDEX(0)
+	_ACMD_END()
+anm_c07_face_shock:
+	_AC_FACE_INDEX(5)
+	_ACMD_END()
 anm_c07_support_gym_approach_player_1:
 	_AC_DIR_L(8)
 	_AC_LEFT(1, 8)
 	_AC_DIR_D(8)
-	_AC_DOWN(1, 8)
-	_ACMD_END()
-anm_c07_support_gym_approach_player_2:
 	_AC_DOWN(1, 8)
 	_ACMD_END()
 anm_c07_support_gym_approach_player_3:
@@ -173,17 +171,17 @@ ev_c07_support:
 	_END()
 ev_c07_support_male_help:
 	_PLAYER_NAME(0)
-	_TALKMSG('dp_scenario2%108-msg_c07_heroine_01')
+	_MACRO_TALKMSG('dialogue_c07', '108-msg_c07_heroine_01', 'Hi, {0,1,0,0}! Please, can you help me?\rI dropped my Pokédex by accident, and Team\nGalactic found it. Now they won’t give it back.\rPlease, I need your help. Team up and battle\nwith me!')
 	_YES_NO_WIN(@SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_c07_support_male_help_yes')
 	_JUMP('ev_c07_support_male_help_no')
 	_END()
 ev_c07_support_male_help_yes:
-	_TALKMSG('dp_scenario2%108-msg_c07_heroine_02')
+	_MACRO_TALKMSG('dialogue_c07', '108-msg_c07_heroine_02', 'You and your Pokémon together with me and\nmy Pokémon...\rUnited like this, our dream team has no chance\nof losing!\rI’m not letting Team Galactic get away with this!')
 	_JUMP('ev_c07_get_player_position')
 	_END()
 ev_c07_support_male_help_no:
-	_TALKMSG('dp_scenario2%108-msg_c07_heroine_03')
+	_MACRO_TALKMSG('dialogue_c07', '108-msg_c07_heroine_03', 'I’ll be waiting. Please get ready and\ncome quickly.')
 	_TALK_CLOSE()
 	_EVENT_CAMERA_INDEX(431)
 	_EVENT_CAMERA_END_WAIT()
@@ -193,17 +191,17 @@ ev_c07_support_male_help_no:
 	_END()
 ev_c07_support_female_help:
 	_PLAYER_NAME(0)
-	_TALKMSG('dp_scenario2%108-msg_c07_hero_01')
+	_MACRO_TALKMSG('dialogue_c07', '108-msg_c07_hero_01', 'Hey! {0,1,0,0}! Listen, I need your help...\rI dropped my Pokédex by accident, and Team\nGalactic found it.\rNow they won’t give it back. Please, I need you\nto help me.\rWill you team up with me to take them on?')
 	_YES_NO_WIN(@SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_c07_support_female_help_yes')
 	_JUMP('ev_c07_support_female_help_no')
 	_END()
 ev_c07_support_female_help_yes:
-	_TALKMSG('dp_scenario2%108-msg_c07_hero_02')
+	_MACRO_TALKMSG('dialogue_c07', '108-msg_c07_hero_02', 'You and your Pokémon together with me and\nmy Pokémon...\rOur dream team’s not going to lose. Not with the\nway we work together!\rI’m not letting those criminals get away with this!')
 	_JUMP('ev_c07_get_player_position')
 	_END()
 ev_c07_support_female_help_no:
-	_TALKMSG('dp_scenario2%108-msg_c07_hero_03')
+	_MACRO_TALKMSG('dialogue_c07', '108-msg_c07_hero_03', 'I’ll be waiting! Get ready and come quick!')
 	_TALK_CLOSE()
 	_EVENT_CAMERA_INDEX(431)
 	_EVENT_CAMERA_END_WAIT()
@@ -228,19 +226,19 @@ ev_c07_support_battle:
 	_TRAINER_MULTI_BTL_SET(@SCWK_TEMP3, @SCWK_TEMP1, @SCWK_TEMP2)
 	_OBJ_DIR_CHANGE('HERO', 270)
 	_OBJ_DIR_CHANGE('C07_SUPPORT_02', 270)
-	_TALKMSG('dp_scenario2%108-msg_c07_gingam_1_03_1')
-	_TALKMSG('dp_scenario2%108-msg_c07_gingam_1_03_2')
+	_MACRO_TALKMSG('dialogue_c07', '108-msg_c07_gingam_1_03_1', 'Aww, that stinks! Our Pokémon are weak!\nWe should get new ones from headquarters.')
+	_MACRO_TALKMSG('dialogue_c07', '108-msg_c07_gingam_1_03_2', 'Humph!\nWho cares about some Pokédex anyways?\rTeam Galactic is going to own all the Pokémon in\nthe world—no, in the universe!')
 	_PLAYER_POS_GET(@SCWK_TEMP0, @SCWK_TEMP1)
 	_IFVAL_CALL(@SCWK_TEMP1, 'EQ', 595, 'ev_c07_gingam_face_left_1')
 	_IFVAL_CALL(@SCWK_TEMP1, 'EQ', 597, 'ev_c07_gingam_face_left_2')
-	_TALKMSG('dp_scenario2%108-msg_c07_gingam_1_04')
+	_MACRO_TALKMSG('dialogue_c07', '108-msg_c07_gingam_1_04', 'There! Take it! Take your Pokédex!')
 	_TALK_CLOSE()
 	_TIME_WAIT(15, @SCWK_ANSWER)
 	_PLAYER_POS_GET(@SCWK_TEMP0, @SCWK_TEMP1)
 	_IFVAL_CALL(@SCWK_TEMP1, 'EQ', 595, 'ev_c07_gingam_exit_1_1')
 	_IFVAL_CALL(@SCWK_TEMP1, 'EQ', 597, 'ev_c07_gingam_exit_1_2')
 	_OBJ_DEL('C07_GINGAM_1')
-	_TALKMSG('dp_scenario2%108-msg_c07_gingam_2_03')
+	_MACRO_TALKMSG('dialogue_c07', '108-msg_c07_gingam_2_03', 'Those things we had in the warehouse have\nalready been moved to Pastoria City anyway.\rSo, we’ll say “You’ll get yours!” and run like the\ngrunts we are.')
 	_TALK_CLOSE()
 	_PLAYER_POS_GET(@SCWK_TEMP0, @SCWK_TEMP1)
 	_IFVAL_CALL(@SCWK_TEMP1, 'EQ', 595, 'ev_c07_gingam_exit_2_1')
@@ -265,7 +263,8 @@ ev_c07_support_battle:
 	_OBJ_ADD('C07_LOOKER')
 	_OBJ_ANIME('C07_LOOKER', 'anm_c07_looker_enter')
 	_OBJ_ANIME_WAIT()
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_c07_looker_01', 'Have no fear, I have come\nrunning.\rI heard of children feuding with the\nTeam Galactic.\rIt turns out, of course, to be you.')
+	_AYOU_NAME(0)
+	_MACRO_TALK_KEYWAIT('dialogue_c07', '00_msg_c07_looker_01', 'Have no fear, I have come\nrunning.\rI heard of children feuding with the\nTeam Galactic.\rIt turns out, of course, to be\nyou, {0,1,0,0}.')
 	_TALK_CLOSE()
 	_OBJ_ANIME('C07_SUPPORT_02', 'anm_c07_support_face_looker')
 	_OBJ_ANIME('HERO', 'anm_c07_player_face_looker_1')
@@ -273,7 +272,7 @@ ev_c07_support_battle:
 	_GET_MY_SEX(@SCWK_TEMP0)
 	_IFVAL_CALL(@SCWK_TEMP0, 'EQ', 0, 'ev_c07_support_insult_1')
 	_IFVAL_CALL(@SCWK_TEMP0, 'EQ', 1, 'ev_c07_support_insult_2')
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_c07_looker_02', 'You insult me to my face?\nHow very uncouth of you.')
+	_MACRO_TALK_KEYWAIT('dialogue_c07', '00_msg_c07_looker_02', 'You insult me to my face?\nHow very uncouth of you.')
 	_GET_MY_SEX(@SCWK_TEMP0)
 	_IFVAL_CALL(@SCWK_TEMP0, 'EQ', 0, 'ev_c07_support_apology_1')
 	_IFVAL_CALL(@SCWK_TEMP0, 'EQ', 1, 'ev_c07_support_apology_2')
@@ -284,7 +283,7 @@ ev_c07_support_battle:
 	_FLAG_SET(#FE_C07_SUPPORT)
 	_FLAG_SET(#FV_C07_SUPPORT2)
 	_FLAG_SET(#FV_WALL_PUT)
-	_FLAG_SET(#2704); Kill R214 Blockers
+	_FLAG_SET(#2704); Kill R214 Blockers and Route 212 North Blockers to get to 212 South
 	_OBJ_DEL('C07_SUPPORT_02')
 	_PLAYER_POS_GET(@SCWK_TEMP0, @SCWK_TEMP1)
 	_IFVAL_JUMP(@SCWK_TEMP1, 'EQ', 595, 'ev_c07_looker_player_face_eachother_1')
@@ -392,16 +391,16 @@ anm_c07_player_follow_looker_2:
 	_AC_INVISIBLE_ON()
 	_ACMD_END()
 ev_c07_support_insult_1:
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_c07_looker_03', 'Oh...\nIt’s that funny man from Jubilife...\r')
+	_MACRO_TALK_KEYWAIT('dialogue_c07', '00_msg_c07_looker_03', 'Oh...\nIt’s that funny man from Jubilife...\r')
 	_RET()
 ev_c07_support_insult_2:
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_c07_looker_04', 'Hey...\nIt’s that weirdo from Jubilife.')
+	_MACRO_TALK_KEYWAIT('dialogue_c07', '00_msg_c07_looker_04', 'Hey...\nIt’s that weirdo from Jubilife.')
 	_RET()
 ev_c07_support_apology_1:
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_c07_looker_05', 'I’m terribly sorry.\rTeam Galactic took my Pokédex, so I was\nvery irritated...\rI just blurted it out...\r...I should be going now.\nBe wary of Team Galactic.')
+	_MACRO_TALK_KEYWAIT('dialogue_c07', '00_msg_c07_looker_05', 'I’m terribly sorry.\rTeam Galactic took my Pokédex, so I was\nvery irritated...\rI just blurted it out...\r...I should be going now.\nBe wary of Team Galactic.')
 	_RET()
 ev_c07_support_apology_2:
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_c07_looker_06', 'Oh, sorry. Honestly.\rI was upset from having my Pokédex\nripped off by Team Galactic.\rI didn’t even think when I spoke up.\rI’ll be going now.\nUh... Watch out for Team Galactic.')
+	_MACRO_TALK_KEYWAIT('dialogue_c07', '00_msg_c07_looker_06', 'Oh, sorry. Honestly.\rI was upset from having my Pokédex\nripped off by Team Galactic.\rI didn’t even think when I spoke up.\rI’ll be going now.\nUh... Watch out for Team Galactic.')
 	_RET()
 ev_c07_looker_player_face_eachother_1:
 	_OBJ_ANIME('HERO', 'anm_c07_player_face_looker_2')
@@ -414,7 +413,7 @@ ev_c07_looker_player_face_eachother_2:
 	_OBJ_ANIME_WAIT()
 	_JUMP('ev_c07_looker_investigation')
 ev_c07_looker_investigation:
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_c07_looker_07', 'It is of no matter.\rOf more interest is the criminal\nbehavior of the Team Galactic.\rThey attempt to steal the belongings of\na child?\rThe scale of their criminality, it seems\nrather minuscule.\rThe triviality of their action makes\nthem more sinister, perhaps.\rTheir warehouse needs investigation.\nCome with me, and we’ll take a look!')
+	_MACRO_TALK_KEYWAIT('dialogue_c07', '00_msg_c07_looker_07', 'It is of no matter.\rOf more interest is the criminal\nbehavior of the Team Galactic.\rThey attempt to steal the belongings of\na child?\rThe scale of their criminality, it seems\nrather minuscule.\rThe triviality of their action makes\nthem more sinister, perhaps.\rTheir warehouse needs investigation.\nCome with me, and we’ll take a look!')
 	_TALK_CLOSE()
 	_PLAYER_POS_GET(@SCWK_TEMP0, @SCWK_TEMP1)
 	_IFVAL_JUMP(@SCWK_TEMP1, 'EQ', 595, 'ev_c07_looker_player_enter_galactic_hq_1')
@@ -437,7 +436,7 @@ ev_c07_setup_flags:
 	_FLAG_SET(#FE_C07_SUPPORT)
 	_FLAG_SET(#FV_C07_SUPPORT2)
 	_FLAG_SET(#FV_WALL_PUT)
-	_FLAG_SET(#2704); Kill R214 Blockers
+	_FLAG_SET(#2704); Kill R214 Blockers and Route 212 North Blockers to get to 212 South
 	_FLAG_SET(#2835)
 	_OBJ_DEL('C07_SUPPORT_02')
 	_OBJ_DEL('C07_WALL01')
@@ -525,18 +524,18 @@ ev_c07_gingam_exit_2_2:
 	_OBJ_ANIME_WAIT()
 	_RET()
 ev_c07_support_male_dialogue_1:
-	_TALKMSG('dp_scenario2%108-msg_c07_heroine_04')
+	_MACRO_TALKMSG('dialogue_c07', '108-msg_c07_heroine_04', 'What’s going on? Why is Team Galactic out in\nthe streets like they own the place?')
 	_RET()
 ev_c07_support_female_dialogue_1:
-	_TALKMSG('dp_scenario2%108-msg_c07_hero_04')
+	_MACRO_TALKMSG('dialogue_c07', '108-msg_c07_hero_04', 'What’s going on here? Why is Team Galactic out\nin the streets like they own the place?')
 	_RET()
 ev_c07_support_male_dialogue_2:
-	_TALKMSG('dp_scenario2%108-msg_c07_heroine_05_1')
-	_TALKMSG('dp_scenario2%108-msg_c07_heroine_05_2')
+	_MACRO_TALKMSG('dialogue_c07', '108-msg_c07_heroine_05_1', '{0,1,0,0}, thank you, sincerely.\rIf Professor Rowan ever finds out that I lost\nmy Pokédex...\rEwww... I don’t want to think about it.')
+	_MACRO_TALKMSG('dialogue_c07', '108-msg_c07_heroine_05_2', 'So, {0,1,0,0}, what are you going\nto do now?\rI’m thinking of going to Pastoria City.\rThe Great Marsh there is home to many kinds\nof Pokémon.', 0, 1)
 	_RET()
 ev_c07_support_female_dialogue_2:
-	_TALKMSG('dp_scenario2%108-msg_c07_hero_05_1')
-	_TALKMSG('dp_scenario2%108-msg_c07_hero_05_2')
+	_MACRO_TALKMSG('dialogue_c07', '108-msg_c07_hero_05_1', '{0,1,0,0}, thanks, honestly.\rIf Professor Rowan ever hears that I lost\nmy Pokédex...\rOh, man, that’s something I do not want to\nthink about!')
+	_MACRO_TALKMSG('dialogue_c07', '108-msg_c07_hero_05_2', 'So, {0,1,0,0}, what are your\nplans now?\rI’m going off to Pastoria City. The Great Marsh\nthere has all kinds of Pokémon.', 0, 1)
 	_RET()
 ev_c07_support_player_face_eachother_1:
 	_OBJ_ANIME('C07_SUPPORT_02', 'anm_c07_support_face_player_1')
@@ -552,7 +551,7 @@ common_c07_support_end:
 	_FLAG_SET(#FE_C07_SUPPORT)
 	_FLAG_SET(#FV_C07_SUPPORT2)
 	_FLAG_SET(#FV_WALL_PUT)
-	_FLAG_SET(#2704); Kill R214 Blockers
+	_FLAG_SET(#2704); Kill R214 Blockers and Route 212 North Blockers to get to 212 South
 	_OBJ_DEL('C07_SUPPORT_02')
 	_OBJ_DEL('C07_WALL01')
 	_LDVAL(@TOWNMAP_GUIDE_SEQUENCE, 6700)
@@ -673,24 +672,24 @@ anm_c07_gingam_exit_2:
 	_AC_UP(6, 4)
 	_ACMD_END()
 ev_c07_man2a:
-	_EASY_OBJ_MSG('dp_scenario2%108-msg_c07_man2a_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c07', '108-msg_c07_man2a_01', 'Yeah, Team Galactic is hiding all sorts of good\nstuff in their warehouse.\rI hear they even have a Technical Machine for\nthe move Fly in there!')
 	_END()
 ev_c07_man2b:
-	_EASY_OBJ_MSG('dp_scenario2%108-msg_c07_man2b_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c07', '108-msg_c07_man2b_01', 'One day, a meteorite came screamin’ outta\nnowhere, and where it landed, a town popped\fup and flourished. What a rockin’ story!')
 	_END()
 ev_c07_middlem1:
-	_EASY_OBJ_MSG('dp_scenario2%108-msg_c07_badman2_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c07', '108-msg_c07_badman2_01', 'Veilstone is the city of stone. We even\nhave meteorites!')
 	_END()
 ev_c07_girl2:
-	_EASY_OBJ_MSG('dp_scenario2%108-msg_c07_girl2_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c07', '108-msg_c07_girl2_01', 'Business at the new Style Shop has really\nbeen booming!')
 	_END()
 ev_c07_badman:
-	_EASY_OBJ_MSG('dp_scenario2%108-msg_c07_badman_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c07', '108-msg_c07_badman_01', 'Maylene is Veilstone’s Gym Leader.\nWake’s the Gym Leader in Pastoria.\fThen there’s Fantina in Hearthome...\rThey’re all way too tough. I can’t even come\nclose to them.')
 	_END()
 ev_c07_badman2:
 	_TALK_OBJ_START()
 	_IF_FLAGON_JUMP(#FE_WAZAMASIN63_GET, 'ev_c07_badman_02')
-	_TALKMSG('dp_scenario2%108-msg_c07_badman1_01')
+	_MACRO_TALKMSG('dialogue_c07', '108-msg_c07_badman1_01', 'Veilstone is the city of stone. We even\nhave meteorites!\rThis has nothing to do with anything, but take\nthis Technical Machine!')
 	_LDVAL(@SCWK_TEMP0, 390)
 	_LDVAL(@SCWK_TEMP1, 1)
 	_ADD_ITEM_CHK(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_ANSWER)
@@ -700,7 +699,7 @@ ev_c07_badman2:
 	_JUMP('ev_c07_badman_02')
 	_END()
 ev_c07_badman_02:
-	_TALKMSG('dp_scenario2%108-msg_c07_badman1_02')
+	_MACRO_TALKMSG('dialogue_c07', '108-msg_c07_badman1_02', 'If a Pokémon uses Nasty Plot, the Pokémon’s\nSp. Atk stat sharply increases!\rAnyway, enjoy your visit to Veilstone, the city\nof...well, stone.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
@@ -710,10 +709,10 @@ ev_c07_badman_item_event_fail:
 	_TALK_OBJ_END()
 	_END()
 ev_c07_gorggeousw:
-	_EASY_OBJ_MSG('dp_scenario2%108-msg_c07_gorggeousw_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c07', '108-msg_c07_gorggeousw_01', 'I came to this city just so I could go shopping at\nthe department store.\rBut with all these rock walls around, this place\nfeels kind of cold.')
 	_END()
 ev_c07_ambrella:
-	_EASY_OBJ_MSG('dp_scenario2%108-msg_c07_ambrella_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c07', '108-msg_c07_ambrella_01', 'I bought a new parasol. But I don’t want it to get\nrained on, so I watch the TV weather reports.')
 	_END()
 pos_c07_gingam:
 	_EVENT_START()
@@ -723,7 +722,7 @@ pos_c07_gingam:
 	_OBJ_ANIME('C07_GINGAM_1', 'anm_c07_gingnam_exclamation_1')
 	_OBJ_ANIME('HERO', 'anm_c07_player_face_gingam')
 	_OBJ_ANIME_WAIT()
-	_TALKMSG('dp_scenario2%108-msg_c07_gingam_1_01')
+	_MACRO_TALKMSG('dialogue_c07', '108-msg_c07_gingam_1_01', 'Hey, you! Yeah, you!\rThis is Team Galactic’s warehouse! It ain’t no\nplayground for kids!')
 	_TALK_CLOSE()
 	_OBJ_ANIME('C07_GINGAM_1', 'anm_c07_gingnam_push_player')
 	_OBJ_ANIME('HERO', 'anm_c07_player_pushed_back')
@@ -753,12 +752,12 @@ ev_c07_gingam_1:
 	_TALK_OBJ_START()
 	_SYS_FLAG_BADGE_GET($BADGE_ID_C07, @SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_c07_gingam_1_badge_get')
-	_TALKMSG('dp_scenario2%108-msg_c07_gingam_1_05')
+	_MACRO_TALKMSG('dialogue_c07', '108-msg_c07_gingam_1_05', 'Hey, you! Yeah, you!\rThis is Team Galactic’s warehouse! It ain’t no\nplayground for kids!')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_c07_gingam_1_badge_get:
-	_TALKMSG('dp_scenario2%108-msg_c07_gingam_1_02')
+	_MACRO_TALKMSG('dialogue_c07', '108-msg_c07_gingam_1_02', 'What? Now you’ve brought your buddy along so\nyou can get your Pokédex back?\rWe’ll be just as happy to send both of you crying\nhome to your mommies!')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
@@ -766,26 +765,26 @@ ev_c07_gingam_2:
 	_TALK_OBJ_START()
 	_SYS_FLAG_BADGE_GET($BADGE_ID_C07, @SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_c07_gingam_2_badge_get')
-	_TALKMSG('dp_scenario2%108-msg_c07_gingam_2_01')
+	_MACRO_TALKMSG('dialogue_c07', '108-msg_c07_gingam_2_01', 'This is the awesome Team Galactic’s awesome\nwarehouse! A little kid like you should be playing\fat the Pokémon Gym.\rAfter all, the Gym Leader happens to be a kid\njust like you!')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_c07_gingam_2_badge_get:
-	_TALKMSG('dp_scenario2%108-msg_c07_gingam_2_02')
+	_MACRO_TALKMSG('dialogue_c07', '108-msg_c07_gingam_2_02', 'You’re trying to get the Pokédex back from us?\nNot when we, Team Galactic, can make so much\fbetter use of it!\rBut, OK, guarding the warehouse does get\nboring! We’ll take you on two-on-two!')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_c07_gingam_3:
 	_TALK_OBJ_START_TURN_NOT()
 	_CALL('ev_another_out')
-	_TALKMSG('dp_scenario2%108-msg_c07_gingam_3_01')
+	_MACRO_TALKMSG('dialogue_c07', '108-msg_c07_gingam_3_01', 'There! Would you look at those antennae?\rI don’t know what they do, but those are some\nmighty impressive antennae!')
 	_TALK_CLOSE()
 	_TURN_HERO_SITE()
 	_CHARA_LOOK_RELEASE('C07_GINGAM_3')
 	_OBJ_ANIME('C07_GINGAM_3', 'anm_c07_gingnam_exclamation_2')
 	_OBJ_ANIME_WAIT()
-	_TALKMSG('dp_scenario2%108-msg_c07_gingam_3_02_1')
-	_TALKMSG('dp_scenario2%108-msg_c07_gingam_3_02_2')
+	_MACRO_TALKMSG('dialogue_c07', '108-msg_c07_gingam_3_02_1', 'Hey! It’s you!\rI bet you don’t remember me, but I sure\nremember you!')
+	_MACRO_TALKMSG('dialogue_c07', '108-msg_c07_gingam_3_02_2', 'Because of you, they took my Clefairy away...\rMy partner called it quits and went back to\nhis hometown...\rI don’t know anything about any Storage Key!')
 	_TALK_CLOSE()
 	_GET_REL_POS_HERO('C07_GINGAM_3', @SCWK_TEMP0)
 	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', 8, 'ev_c07_gingnam_exit_1')
@@ -831,20 +830,21 @@ ev_c07_looker_key:
 	_CALL('ev_another_out_end')
 	_FLAG_RESET(#2866)
 	_OBJ_ADD('C07_LOOKER_2')
-	_PLAYER_NAME(0)
-	_MACRO_TALKMSG('dp_scenario3', '00_msg_c07looker2_0', '{0}!')
+	_AYOU_NAME(0)
+	_MACRO_TALKMSG('dialogue_c07', '00_msg_c07looker2_0', '{0}!')
 	_OBJ_ANIME('C07_LOOKER_2', 'anm_c07_looker_key_entrance')
 	_OBJ_ANIME_WAIT()
 	_CHARA_LOOK_LOCK('HERO', 'C07_LOOKER_2')
 	_CHARA_LOOK_LOCK('C07_LOOKER_2', 'HERO')
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_c07looker2_1', 'Ah-hah!\nYou leave this to me!\rThe Storage Key for entering the Team\nGalactic hideout, I have right here.\rA frontal assault, it is not possible.\nBut we can enter their hideout.\rWell? Will you enter the hideout?\nYou have your reasons, yes?')
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_c07looker2_2', 'Very well.\nInside the Team Galactic warehouse.\fWe will meet there.\rPrepare the best you can.\nI shall join you shortly.')
+	_MACRO_TALK_KEYWAIT('dialogue_c07', '00_msg_c07looker2_1', 'Ah-hah!\nYou leave this to me!\rThe Storage Key for entering the Team\nGalactic hideout, I have right here.\rA frontal assault, it is not possible.\nBut we can enter their hideout.\rWell? Will you enter the hideout?\nYou have your reasons, yes?')
+	_MACRO_TALK_KEYWAIT('dialogue_c07', '00_msg_c07looker2_2', 'Very well.\nInside the Team Galactic warehouse.\fWe will meet there.\rPrepare the best you can.\nI shall join you shortly.')
 	_TALK_CLOSE()
 	_CHARA_LOOK_RELEASE('C07_LOOKER_2')
 	_CHARA_LOOK_RELEASE('HERO')
 	_OBJ_ANIME('C07_LOOKER_2', 'anm_c07_looker_key_exit')
 	_OBJ_ANIME_WAIT()
 	_OBJ_DEL('C07_LOOKER_2')
+	_SET_SYS_FLAG($SYS_FLAG_BGM_D26)
 	_FLAG_SET(#2866)
 	_FLAG_SET(#2793)
 	_TALK_OBJ_END()
@@ -899,37 +899,37 @@ anm_c07_player_watch_gingnam_4:
 	_AC_DIR_D(8)
 	_ACMD_END()
 ev_c07_gingam_4:
-	_EASY_OBJ_MSG('dp_scenario2%108-msg_c07_gingam_4_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c07', '108-msg_c07_gingam_4_01', 'We have the Technical Machine that teaches\nFly stored in the warehouse.\rThey said I can use it if I show them that I\ndeserve it.')
 	_END()
 ev_c07_sign1:
 	_EVENT_START()
 	_IF_FLAGOFF_JUMP($SYS_FLAG_WILDCARD_000, 'ev_c01_sign1_01')
 	_EVENT_CAMERA_INDEX(334)
-	_EASY_BOARD_MSG('dp_scenario2%108-msg_c07_sign1_01', 'BOARD_TYPE_TOWN', 0)
+	_EASY_BOARD_MSG('dialogue_c07%108-msg_c07_sign1_01', 'BOARD_TYPE_TOWN', 0)
 	_EVENT_CAMERA_INDEX(111)
 	_EVENT_CAMERA_END_WAIT()
 	_TALK_END()
 	_END()
 ev_c07_sign2:
-	_EASY_INFOBOARD_MSG('dp_scenario2%108-msg_c07_sign2_01', 'BOARD_TYPE_INFO', 0)
+	_EASY_INFOBOARD_MSG('dialogue_c07%108-msg_c07_sign2_01', 'BOARD_TYPE_INFO', 0)
 	_END()
 ev_c07_sign3:
-	_EASY_BOARD_MSG('dp_scenario2%108-msg_c07_sign3_01', 'BOARD_TYPE_POST', 0)
+	_EASY_BOARD_MSG('dialogue_c07%108-msg_c07_sign3_01', 'BOARD_TYPE_POST', 0)
 	_END()
 ev_c07_sign4:
-	_EASY_BOARD_MSG('dp_scenario2%108-msg_c07_sign4_01', 'BOARD_TYPE_POST', 0)
+	_EASY_BOARD_MSG('dialogue_c07%108-msg_c07_sign4_01', 'BOARD_TYPE_POST', 0)
 	_END()
 ev_c07_sign5:
-	_EASY_BOARD_MSG('dp_scenario2%108-msg_c07_sign5_01', 'BOARD_TYPE_POST', 0)
+	_EASY_BOARD_MSG('dialogue_c07%108-msg_c07_sign5_01', 'BOARD_TYPE_POST', 0)
 	_END()
 ev_c07_sign6:
-	_EASY_BOARD_MSG('dp_scenario2%108-msg_c07_sign6_01', 'BOARD_TYPE_POST', 0)
+	_EASY_BOARD_MSG('dialogue_c07%108-msg_c07_sign6_01', 'BOARD_TYPE_POST', 0)
 	_END()
 ev_c07_sign7:
-	_EASY_BOARD_MSG('dp_scenario2%108-msg_c07_sign9_01', 'BOARD_TYPE_POST', 0)
+	_EASY_BOARD_MSG('dialogue_c07%108-msg_c07_sign9_01', 'BOARD_TYPE_POST', 0)
 	_END()
 ev_c07_sign8:
-	_EASY_BOARD_MSG('dp_scenario2%108-msg_c07_sign8_01', 'BOARD_TYPE_POST', 0)
+	_EASY_BOARD_MSG('dialogue_c07%108-msg_c07_sign8_01', 'BOARD_TYPE_POST', 0)
 	_END()
 ev_c07_storn_0:
 	_TALK_OBJ_START()
@@ -937,7 +937,7 @@ ev_c07_storn_0:
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'c07_storn_deo_none')
 	_PARTY_DEOKISISUFORM_CHANGE(3)
 	_VOICE_PLAY(386, 0, 0)
-	_TALKMSG('dp_scenario2%108-msg_c07_stone_02')
+	_MACRO_TALKMSG('dialogue_c07', '108-msg_c07_stone_02', 'Touching the meteorite boosted the Speed of a\ncertain Pokémon.')
 	_VOICE_WAIT()
 	_TALK_CLOSE()
 	_TALK_END()
@@ -948,7 +948,7 @@ ev_c07_storn_1:
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'c07_storn_deo_none')
 	_PARTY_DEOKISISUFORM_CHANGE(2)
 	_VOICE_PLAY(386, 0, 0)
-	_TALKMSG('dp_scenario2%108-msg_c07_stone_03')
+	_MACRO_TALKMSG('dialogue_c07', '108-msg_c07_stone_03', 'Touching the meteorite heightened the defensive\ncapabilities of a certain Pokémon.')
 	_VOICE_WAIT()
 	_TALK_CLOSE()
 	_TALK_END()
@@ -960,13 +960,13 @@ ev_c07_storn_2:
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'c07_storn_deo_none')
 	_PARTY_DEOKISISUFORM_CHANGE(1)
 	_VOICE_PLAY(386, 0, 0)
-	_TALKMSG('dp_scenario2%108-msg_c07_stone_04')
+	_MACRO_TALKMSG('dialogue_c07', '108-msg_c07_stone_04', 'Touching the meteorite heightened the offensive\ncapabilities of a certain Pokémon.')
 	_VOICE_WAIT()
 	_TALK_CLOSE()
 	_TALK_END()
 	_END()
 ev_c07_storn_2_prep:
-	_MACRO_TALKMSG('dp_scenario3', '00_msg_c07_stone_angry', 'Suddenly, you got the feeling that\nsomething was seething with rage...')
+	_MACRO_TALKMSG('dialogue_c07', '00_msg_c07_stone_angry', 'Suddenly, you got the feeling that\nsomething was seething with rage...')
 	_LDVAL(@467, 2)
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
@@ -977,7 +977,7 @@ ev_c07_storn_3:
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'c07_storn_deo_none')
 	_PARTY_DEOKISISUFORM_CHANGE(0)
 	_VOICE_PLAY(386, 0, 0)
-	_TALKMSG('dp_scenario2%108-msg_c07_stone_05')
+	_MACRO_TALKMSG('dialogue_c07', '108-msg_c07_stone_05', 'Touching the meteorite balanced out the\nattributes of a certain Pokémon.')
 	_VOICE_WAIT()
 	_TALK_CLOSE()
 	_TALK_END()
@@ -986,17 +986,17 @@ c07_storn_deo_none:
 	_IFVAL_JUMP(@467, 'NE', 0, 'c07_storn_deo_none_1')
 	_SYS_FLAG_GAME_CLEAR_GET(@LOCALWORK0)
 	_IFVAL_JUMP(@LOCALWORK0, 'EQ', 1, 'c07_storn_deo_none_gameclear')
-	_TALKMSG('dp_scenario2%108-msg_c07_stone_01')
+	_MACRO_TALKMSG('dialogue_c07', '108-msg_c07_stone_01', 'It’s a mysterious meteorite that fell from\nthe stars...')
 	_TALK_CLOSE()
 	_TALK_END()
 	_END()
 c07_storn_deo_none_1:
-	_TALKMSG('dp_scenario2%108-msg_c07_stone_01')
+	_MACRO_TALKMSG('dialogue_c07', '108-msg_c07_stone_01', 'It’s a mysterious meteorite that fell from\nthe stars...')
 	_TALK_CLOSE()
 	_TALK_END()
 	_END()
 c07_storn_deo_none_gameclear:
-	_MACRO_TALKMSG('dp_scenario3', '00_msg_c07_stone_angry', 'Suddenly, you got the feeling that\nsomething was seething with rage...')
+	_MACRO_TALKMSG('dialogue_c07', '00_msg_c07_stone_angry', 'Suddenly, you got the feeling that\nsomething was seething with rage...')
 	_LDVAL(@467, 1)
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
@@ -1033,7 +1033,7 @@ pos_c07_deoxys_lose:
 pos_c07_deoxys_battle:
 	_EVENT_START()
 	_VOICE_PLAY(386, 0, 0)
-	_MACRO_TALKMSG('dp_scenario3', '00_msg_c07_deoxys', 'Eeeaah!!')
+	_MACRO_TALKMSG('dialogue_c07', '00_msg_c07_deoxys', 'Eeeaah!!')
 	_TALK_CLOSE()
 	_SP_WILD_BTL_SET(386, 80)
 	_SEACRET_POKE_RETRY_CHECK(@SCWK_TEMP0, 386)
@@ -1075,13 +1075,13 @@ ev_c07_support_gym_after:
 	_END()
 c07_support_male_500:
 	_PLAYER_NAME(0)
-	_TALKMSG('dp_scenario2%108-msg_c07_heroine_07_1')
-	_TALKMSG('dp_scenario2%108-msg_c07_heroine_07_2')
+	_MACRO_TALKMSG('dialogue_c07', '108-msg_c07_heroine_07_1', 'Hi, {0,1,0,0}! Please, can you help me?\rI dropped my Pokédex by accident, and Team\nGalactic took it.')
+	_MACRO_TALKMSG('dialogue_c07', '108-msg_c07_heroine_07_2', 'Now they won’t give it back.\rI really need your help. I’ll be waiting in front of\nthe warehouse—please come!')
 	_RET()
 c07_support_female_500:
 	_PLAYER_NAME(0)
-	_TALKMSG('dp_scenario2%108-msg_c07_hero_08_1')
-	_TALKMSG('dp_scenario2%108-msg_c07_hero_08_2')
+	_MACRO_TALKMSG('dialogue_c07', '108-msg_c07_hero_08_1', 'Hey! {0,1,0,0}! Listen, I need your help—\rI dropped my Pokédex by accident, and Team\nGalactic took it.')
+	_MACRO_TALKMSG('dialogue_c07', '108-msg_c07_hero_08_2', 'Now they won’t give it back. Please, I need you\nto help me.\rI’ll be waiting in front of the warehouse.\nPlease come!')
 	_RET()
 anm_c07_support_500:
 	_AC_DIR_U(8)
@@ -1100,7 +1100,7 @@ anm_c07_support_510:
 ev_c07_gorggeousm_iro_01:
 	_TALK_OBJ_START()
 	_IF_FLAGON_JUMP(#FE_C07_ITEM_GET1, 'ev_c07_gorggeousm_iro_02')
-	_TALKMSG('dp_scenario2%108-msg_c07_gorggeousm_iro_01')
+	_MACRO_TALKMSG('dialogue_c07', '108-msg_c07_gorggeousm_iro_01', 'Ticktock, ticktock...\rIt swings its pendulum at the same interval.\nHow beautiful...\rI’ll give this to you.')
 	_LDVAL(@SCWK_TEMP0, 277)
 	_LDVAL(@SCWK_TEMP1, 1)
 	_ADD_ITEM_CHK(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_ANSWER)
@@ -1111,7 +1111,7 @@ ev_c07_gorggeousm_iro_01:
 	_TALK_OBJ_END()
 	_END()
 ev_c07_gorggeousm_iro_02:
-	_TALKMSG('dp_scenario2%108-msg_c07_gorggeousm_iro_02')
+	_MACRO_TALKMSG('dialogue_c07', '108-msg_c07_gorggeousm_iro_02', 'If you let a Pokémon hold a Metronome, every\ntime that Pokémon uses the same move, the\fMetronome boosts the power of that move.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
@@ -1124,20 +1124,20 @@ ev_c07_gorggeousw_iro_01:
 	_TALK_OBJ_START()
 	_IF_FLAGON_JUMP(#FE_C07_ITEM_REPORT1, 'ev_c07_gorggeousw_iro_03')
 	_IF_FLAGON_JUMP(#FE_C07_ITEM_GET4, 'ev_c07_gorggeousw_iro_02')
-	_TALKMSG('dp_scenario2%108-msg_c07_gorggeousw_iro_01')
+	_MACRO_TALKMSG('dialogue_c07', '108-msg_c07_gorggeousw_iro_01', 'My scarf was blown away by the wind. I wonder\nwhere it went...')
 	_FLAG_RESET(#FV_FLD_ITEM_256)
 	_OBJ_ADD('FLD_ITEM_256')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_c07_gorggeousw_iro_02:
-	_TALKMSG('dp_scenario2%108-msg_c07_gorggeousw_iro_02')
+	_MACRO_TALKMSG('dialogue_c07', '108-msg_c07_gorggeousw_iro_02', 'Thank you very much for finding my scarf. But I’d\nlike you to have it.\rMy attachment to the scarf seems to have blown\naway, too.')
 	_FLAG_SET(#FE_C07_ITEM_REPORT1)
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_c07_gorggeousw_iro_03:
-	_TALKMSG('dp_scenario2%108-msg_c07_gorggeousw_iro_03')
+	_MACRO_TALKMSG('dialogue_c07', '108-msg_c07_gorggeousw_iro_03', 'If you let a Pokémon hold a Silk Scarf, it boosts\nthe power of Normal-type moves.\rPlease put it to good use.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
@@ -1145,19 +1145,19 @@ ev_c07_lovelovem_iro_01:
 	_TALK_OBJ_START()
 	_IF_FLAGON_JUMP(#FE_C07_ITEM_REPORT2, 'ev_c07_lovelovem_iro_03')
 	_IF_FLAGON_JUMP(#FE_C07_ITEM_GET3, 'ev_c07_lovelovem_iro_02')
-	_TALKMSG('dp_scenario2%108-msg_c07_lovelovem_iro_01')
+	_MACRO_TALKMSG('dialogue_c07', '108-msg_c07_lovelovem_iro_01', 'Hmm. Where did it go?\rI lost my lens, but without my lens, how can I\nsearch for it?')
 	_FLAG_SET(#FH_04)
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_c07_lovelovem_iro_02:
-	_TALKMSG('dp_scenario2%108-msg_c07_lovelovem_iro_02')
+	_MACRO_TALKMSG('dialogue_c07', '108-msg_c07_lovelovem_iro_02', 'Stunky! It was you!\rIt seems I focused my search on the ground too\nmuch. Well, I’ll let you have it.')
 	_FLAG_SET(#FE_C07_ITEM_REPORT2)
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_c07_lovelovem_iro_03:
-	_TALKMSG('dp_scenario2%108-msg_c07_lovelovem_iro_03')
+	_MACRO_TALKMSG('dialogue_c07', '108-msg_c07_lovelovem_iro_03', 'If a Pokémon with a Zoom Lens uses a move\nafter its target, the accuracy of the move will\fbe boosted.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
@@ -1165,13 +1165,13 @@ ev_c07_lovelovew_iro_01:
 	_TALK_OBJ_START()
 	_IF_FLAGON_JUMP(#FE_C07_ITEM_GET2, 'ev_c07_lovelovew_iro_03')
 	_IF_FLAGON_JUMP(#FE_C07_ITEM_GET3, 'ev_c07_lovelovew_iro_02')
-	_TALKMSG('dp_scenario2%108-msg_c07_lovelovew_iro_01')
+	_MACRO_TALKMSG('dialogue_c07', '108-msg_c07_lovelovew_iro_01', 'Hmm. My boyfriend lost his lens. Where did\nit go?\rI’ve been looking for it with my Wide Lens, but...')
 	_FLAG_SET(#FH_03)
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_c07_lovelovew_iro_02:
-	_TALKMSG('dp_scenario2%108-msg_c07_lovelovew_iro_02')
+	_MACRO_TALKMSG('dialogue_c07', '108-msg_c07_lovelovew_iro_02', 'Oh, Stunky had his lens. Sorry for getting you\ninvolved in this.\rPlease take this.')
 	_LDVAL(@SCWK_TEMP0, 265)
 	_LDVAL(@SCWK_TEMP1, 1)
 	_ADD_ITEM_CHK(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_ANSWER)
@@ -1182,7 +1182,7 @@ ev_c07_lovelovew_iro_02:
 	_TALK_OBJ_END()
 	_END()
 ev_c07_lovelovew_iro_03:
-	_TALKMSG('dp_scenario2%108-msg_c07_lovelovew_iro_03')
+	_MACRO_TALKMSG('dialogue_c07', '108-msg_c07_lovelovew_iro_03', 'Just let a Pokémon hold a Wide Lens, and the\naccuracy of its moves will go up.\rBut a Zoom Lens boosts the accuracy more than\na Wide Lens, so use them wisely depending on\fthe situation.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
@@ -1192,17 +1192,17 @@ ev_c07_lovelovew_iro_01_item_event_fail:
 	_TALK_OBJ_END()
 	_END()
 ev_c07_kirinriki:
-	_EASY_VOICE_MSG('dp_scenario2%108-msg_c07_kirinriki', 'PLAY_PV_EV_203_00_00')
+	_EASY_VOICE_MSG('dialogue_c07%108-msg_c07_kirinriki', 'PLAY_PV_EV_203_00_00')
 	_END()
 ev_c07_sukanpuu_01:
-	_EASY_VOICE_MSG('dp_scenario2%108-msg_c07_sukanpuu_01', 'PLAY_PV_EV_434_00_00')
+	_EASY_VOICE_MSG('dialogue_c07%108-msg_c07_sukanpuu_01', 'PLAY_PV_EV_434_00_00')
 	_IF_FLAGOFF_JUMP(#FH_03, 'ev_c07_sukanpuu_03')
 	_IF_FLAGOFF_JUMP(#FH_04, 'ev_c07_sukanpuu_03')
 	_IF_FLAGOFF_JUMP(#FE_C07_ITEM_GET3, 'ev_c07_sukanpuu_02')
 	_END()
 ev_c07_sukanpuu_02:
 	_TALK_OBJ_START()
-	_TALKMSG('dp_scenario2%108-msg_c07_sukanpuu_02')
+	_MACRO_TALKMSG('dialogue_c07', '108-msg_c07_sukanpuu_02', 'Stunky gave you a Zoom Lens!')
 	_LDVAL(@SCWK_TEMP0, 276)
 	_LDVAL(@SCWK_TEMP1, 1)
 	_ADD_ITEM_CHK(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_ANSWER)
@@ -1242,65 +1242,67 @@ ev_c07_wake_scene:
 	_SE_PLAY('S_FI020_CLOSE')
 	_HIT_DOOR_ANIME_WAIT()
 	_SE_PLAY('S_FI020')
-	_OBJ_ANIME('C07_SUPPORT', 'anm_c07_support_gym_face_wake_1')
+	_EVENT_CAMERA_INDEX(561)
+	_CHARA_LOOK_LOCK('HERO', 'C07_WAKE')
+	_CHARA_LOOK_LOCK('C07_SUPPORT', 'C07_WAKE')
+	_EVENT_CAMERA_END_WAIT()
+	_CHARA_LOOK_RELEASE('HERO')
+	_CHARA_LOOK_RELEASE('C07_SUPPORT')
+	_OBJ_ANIME('HERO', 'anm_c07_face_shock')
+	_OBJ_ANIME('C07_SUPPORT', 'anm_c07_face_shock')
 	_OBJ_ANIME_WAIT()
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_c07_wake_1', 'The ring is my roiling sea. ♪\nThe towering waves shaped me.\rCrash! Crash! Crasher Wake!\nCrash! Crash! Crasher Wake!\rI’m the tidal wave of power to wash\nyou away!\rPut out the fire, Crasher Wake!\nRun from electricity, Crasher Wake!\rAh, ah, aaaah!\nThe ring is my sea. ♪')
+	_CHARA_LOOK_LOCK('HERO', 'C07_WAKE')
+	_CHARA_LOOK_LOCK('C07_SUPPORT', 'C07_WAKE')
+	_MACRO_TALK_KEYWAIT('dialogue_c07', '00_msg_c07_wake_1', 'The ring is my roiling sea. ♪\nThe towering waves shaped me.\rCrash! Crash! Crasher Wake!\nCrash! Crash! Crasher Wake!\rI’m the tidal wave of power to wash\nyou away!\rPut out the fire, Crasher Wake!\nRun from electricity, Crasher Wake!\rAh, ah, aaaah!\nThe ring is my sea. ♪')
 	_TALK_CLOSE()
-	_OBJ_ANIME('C07_WAKE', 'anm_c07_wake_exclamation')
+	_EVENT_CAMERA_INDEX(562)
+	_OBJ_ANIME('C07_WAKE', 'anm_c07_wake_approach_player_2')
 	_OBJ_ANIME_WAIT()
-	_PLAYER_POS_GET(@SCWK_TEMP0, @SCWK_TEMP1)
-	_IFVAL_CALL(@SCWK_TEMP0, 'EQ', 681, 'ev_c07_wake_support_player_meet_1')
-	_IFVAL_CALL(@SCWK_TEMP0, 'EQ', 682, 'ev_c07_wake_support_player_meet_2')
-	_IFVAL_CALL(@SCWK_TEMP0, 'EQ', 683, 'ev_c07_wake_support_player_meet_3')
-	_IFVAL_CALL(@SCWK_TEMP0, 'EQ', 684, 'ev_c07_wake_support_player_meet_4')
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_c07_wake_2', 'Hello, dude and young lady!\nYou’re challenging the Gym Leader,\fare you?\rLet me tell you now, she’s young, but\nshe’s a born genius.\rI tried training with her, and I was\nstunned by how tough she was!')
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_c07_wake_3', 'Whoops!\nI’d better tell you who I am!\rI’m the triple-threat Gym Leader in\nPokémon, wrestling, and song.\rI’m Crasher Wake of Pastoria Gym!\nWe’ll meet again!')
+	_CHARA_LOOK_RELEASE('HERO')
+	_CHARA_LOOK_RELEASE('C07_SUPPORT')
+	_OBJ_ANIME('HERO', 'anm_c07_hero_wake_neck_up')
+	_OBJ_ANIME('C07_SUPPORT', 'anm_c07_support_wake_neck_up')
+	_OBJ_ANIME('C07_WAKE', 'anm_c07_wake_neck_down')
+	_OBJ_ANIME_WAIT()
+	_EVENT_CAMERA_END_WAIT()
+	_CALL('ev_common_trans_check'); Prevents Wake from misgendering the player
+	_IFVAL_CALL(@552, 'EQ', 0, 'ev_c07_wake_cis')
+	_IFVAL_CALL(@552, 'EQ', 1, 'ev_c07_wake_trans')
+	_MACRO_TALK_KEYWAIT('dialogue_c07', '00_msg_c07_wake_2', 'Let me tell you now, she’s young, but\nshe’s a born genius.\rI tried training with her, and I was\nstunned by how tough she was!')
+	_MACRO_TALK_KEYWAIT('dialogue_c07', '00_msg_c07_wake_3', 'Whoops!\nI’d better tell you who I am!\rI’m the triple-threat Gym Leader in\nPokémon, wrestling, and song.')
+	_MACRO_TALK_KEYWAIT('dialogue_c07', '00_msg_c07_wake_4', 'I’m Crasher Wake of Pastoria Gym!\nWe’ll meet again!')
 	_TALK_CLOSE()
-	_PLAYER_POS_GET(@SCWK_TEMP0, @SCWK_TEMP1)
-	_IFVAL_CALL(@SCWK_TEMP0, 'EQ', 681, 'ev_c07_wake_exit_1')
-	_IFVAL_CALL(@SCWK_TEMP0, 'EQ', 682, 'ev_c07_wake_exit_2')
-	_IFVAL_CALL(@SCWK_TEMP0, 'EQ', 683, 'ev_c07_wake_exit_3')
-	_IFVAL_CALL(@SCWK_TEMP0, 'EQ', 684, 'ev_c07_wake_exit_4')
+	_EVENT_CAMERA_INDEX(563)
+	_CALL('ev_c07_wake_exit_2')
 	_OBJ_DEL('C07_WAKE')
 	_FLAG_SET(#2834)
-	_OBJ_ANIME('HERO', 'anm_c07_player_face_support_gym_1')
+	_OBJ_ANIME('HERO', 'anm_c07_face_normal')
 	_OBJ_ANIME_WAIT()
-	_PLAYER_NAME(0)
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_c07_wake_4', 'So, uh, {0}.\nGood luck on your Gym challenge.')
+	_EVENT_CAMERA_END_WAIT()
+	_TIME_WAIT(20, @SCWK_ANSWER)
+	_GET_MY_SEX(@SCWK_TEMP0)
+	_IFVAL_CALL(@SCWK_TEMP0, 'EQ', 0, 'ev_c07_support_female_dialogue_4')
+	_IFVAL_CALL(@SCWK_TEMP0, 'EQ', 1, 'ev_c07_support_male_dialogue_4')
 	_TALK_CLOSE()
 	_RET()
-anm_c07_player_face_support_gym_1:
-	_AC_DIR_U(4)
-	_ACMD_END()
-ev_c07_wake_support_player_meet_1:
-	_OBJ_ANIME('C07_WAKE', 'anm_c07_wake_approach_player_1')
-	_OBJ_ANIME('C07_SUPPORT', 'anm_c07_support_gym_face_wake_2')
-	_OBJ_ANIME('HERO', 'anm_c07_player_face_wake_1')
-	_OBJ_ANIME_WAIT()
+ev_c07_wake_cis:
+	_MACRO_TALKMSG('dialogue_c07', 'msg_c07_wake_cis', 'Hello, dude and young lady!\nYou’re challenging the Gym Leader,\fare you?')
 	_RET()
-ev_c07_wake_support_player_meet_2:
-	_OBJ_ANIME('C07_WAKE', 'anm_c07_wake_approach_player_2')
-	_OBJ_ANIME('C07_SUPPORT', 'anm_c07_support_gym_face_wake_3')
-	_OBJ_ANIME('HERO', 'anm_c07_player_face_wake_2')
-	_OBJ_ANIME_WAIT()
+ev_c07_wake_trans:
+	_MACRO_TALKMSG('dialogue_c07', 'msg_c07_wake_trans', 'Hello, extra small children!\nYou’re challenging the Gym Leader,\fare you?')
 	_RET()
-ev_c07_wake_support_player_meet_3:
-	_OBJ_ANIME('C07_WAKE', 'anm_c07_wake_approach_player_3')
-	_OBJ_ANIME('C07_SUPPORT', 'anm_c07_support_gym_face_wake_4')
-	_OBJ_ANIME('HERO', 'anm_c07_player_face_wake_3')
+ev_c07_support_male_dialogue_4:
+	_PLAYER_NAME(0)
+	_MACRO_TALKMSG('dialogue_c07', 'msg_c07_support_male_dialogue_4_1', 'That Gym Leader is huge!\n...')
+	_OBJ_ANIME('C07_SUPPORT', 'anm_c07_face_normal')
 	_OBJ_ANIME_WAIT()
+	_MACRO_TALKMSG('dialogue_c07', 'msg_c07_support_male_dialogue_4_2', 'So, uh, {0,1,0,0}.\nGood luck on your Gym challenge.')
 	_RET()
-ev_c07_wake_support_player_meet_4:
-	_OBJ_ANIME('C07_WAKE', 'anm_c07_wake_approach_player_4')
-	_OBJ_ANIME('C07_SUPPORT', 'anm_c07_support_gym_face_wake_5')
-	_OBJ_ANIME('HERO', 'anm_c07_player_face_wake_4')
+ev_c07_support_female_dialogue_4:
+	_MACRO_TALKMSG('dialogue_c07', 'msg_c07_support_female_dialogue_4_1', 'He is so big!\n...')
+	_OBJ_ANIME('C07_SUPPORT', 'anm_c07_face_normal')
 	_OBJ_ANIME_WAIT()
-	_RET()
-ev_c07_wake_exit_1:
-	_OBJ_ANIME('C07_WAKE', 'anm_c07_wake_exit_1')
-	_OBJ_ANIME('C07_SUPPORT', 'anm_c07_support_gym_face_wake_6')
-	_OBJ_ANIME('HERO', 'anm_c07_player_face_wake_5')
-	_OBJ_ANIME_WAIT()
+	_MACRO_TALKMSG('dialogue_c07', 'msg_c07_support_female_dialogue_4_2', 'Oh, umm...\nGood luck with the Gym. See ya!')
 	_RET()
 ev_c07_wake_exit_2:
 	_OBJ_ANIME('C07_WAKE', 'anm_c07_wake_exit_2')
@@ -1308,24 +1310,27 @@ ev_c07_wake_exit_2:
 	_OBJ_ANIME('HERO', 'anm_c07_player_face_wake_5')
 	_OBJ_ANIME_WAIT()
 	_RET()
-ev_c07_wake_exit_3:
-	_OBJ_ANIME('C07_WAKE', 'anm_c07_wake_exit_3')
-	_OBJ_ANIME('C07_SUPPORT', 'anm_c07_support_gym_face_wake_6')
-	_OBJ_ANIME('HERO', 'anm_c07_player_face_wake_5')
-	_OBJ_ANIME_WAIT()
-	_RET()
-ev_c07_wake_exit_4:
-	_OBJ_ANIME('C07_WAKE', 'anm_c07_wake_exit_4')
-	_OBJ_ANIME('C07_SUPPORT', 'anm_c07_support_gym_face_wake_6')
-	_OBJ_ANIME('HERO', 'anm_c07_player_face_wake_5')
-	_OBJ_ANIME_WAIT()
-	_RET()
+anm_c07_hero_wake_neck_up:
+	_AC_DIR_VAL(4, 245)
+	_AC_WAIT(1)
+	_AC_NECK_ROTATE(0, -10, 0, 4)
+	_ACMD_END()
+anm_c07_support_wake_neck_up:
+	_AC_DIR_VAL(4, 295)
+	_AC_WAIT(1)
+	_AC_NECK_ROTATE(0, -10, 0, 4)
+	_ACMD_END()
+anm_c07_wake_neck_down:
+	_AC_NECK_ROTATE(0, 15, 0, 4)
+	_ACMD_END()
 anm_c07_wake_exit_building:
+	_AC_FACE_INDEX(1)
 	_AC_DIR_D(4)
 	_AC_DOWN(1, 4)
 	_ACMD_END()
-anm_c07_support_gym_face_wake_1:
-	_AC_DIR_U(4)
+anm_c07_dir_up:
+	_AC_DIR_U(8)
+	_AC_WAIT(2)
 	_ACMD_END()
 anm_c07_wake_exclamation:
 	_AC_MARK_GYOE()
@@ -1345,10 +1350,12 @@ anm_c07_player_face_wake_1:
 	_AC_DIR_R(4)
 	_ACMD_END()
 anm_c07_wake_approach_player_2:
-	_AC_DIR_D(4)
-	_AC_DOWN(4, 4)
-	_AC_DIR_L(4)
-	_AC_LEFT(1, 4)
+	_AC_DOWN(4, 8)
+	_AC_WAIT(2)
+	_AC_FACE_INDEX(0)
+	_AC_MARK_GYOE()
+	_AC_DIR_L(8)
+	_AC_WAIT(2)
 	_ACMD_END()
 anm_c07_support_gym_face_wake_3:
 	_AC_WAIT(24)
@@ -1393,32 +1400,29 @@ anm_c07_player_face_wake_4:
 	_ACMD_END()
 anm_c07_wake_exit_1:
 	_AC_DIR_D(4)
-	_AC_DOWN(8, 4)
+	_AC_DOWN(8, 8)
 	_ACMD_END()
 anm_c07_support_gym_face_wake_6:
-	_AC_WAIT(8)
+	_AC_WAIT(6)
+	_AC_NECK_ROTATE(0, 0, 0, 4)
+	_AC_DIR_VAL(8, 350)
+	_AC_WAIT(34)
 	_AC_DIR_D(4)
 	_ACMD_END()
 anm_c07_player_face_wake_5:
-	_AC_WAIT(8)
-	_AC_WAIT(4)
-	_AC_DIR_D(4)
+	_AC_WAIT(6)
+	_AC_NECK_ROTATE(0, 0, 0, 4)
+	_AC_DIR_VAL(8, 340)
+	_AC_WAIT(30)
+	_AC_DIR_U(8)
 	_ACMD_END()
 anm_c07_wake_exit_2:
 	_AC_DIR_D(4)
-	_AC_DOWN(8, 4)
-	_ACMD_END()
-anm_c07_wake_exit_3:
-	_AC_DIR_D(4)
-	_AC_DOWN(8, 4)
-	_ACMD_END()
-anm_c07_wake_exit_4:
-	_AC_DIR_D(4)
-	_AC_DOWN(8, 4)
+	_AC_DOWN(8, 8)
 	_ACMD_END()
 ev_c07_sketchy_shopkeeper:
 	_TALK_OBJ_START()
-	_MACRO_TALKMSG('dp_scenario3','00_msg_c07_sketchy_trader_1', 'Hey kid, wanna buy some wares?\nI got some stuff for ya.\rJust don’t ask me where they’re from.')
+	_MACRO_TALKMSG('dialogue_c07','00_msg_c07_sketchy_trader_1', 'Hey kid, wanna buy some wares?\nI got some stuff for ya.\rJust don’t ask me where they’re from.')
 	_LDVAL(@LOCALWORK3, 0)
 	_JUMP('ev_c07_sketchy_fix_shop_re')
 	_END()
@@ -1433,7 +1437,7 @@ ev_c07_sketchy_fix_shop_re:
 	_JUMP('ev_c07_sketchy_fix_shop_end')
 	_END()
 ev_c07_sketchy_fix_shop_sonohoka:
-	_TALKMSG('dp_scenario1%28-mes_shop_01_03')
+	_MACRO_TALKMSG('dialogue_c07', '28-mes_shop_01_03', 'Is there anything else I can do for you?')
 	_RET()
 ev_c07_sketchy_fix_shop_buy:
 	_LDVAL(@LOCALWORK3, 1)
@@ -1450,3 +1454,463 @@ ev_c07_sketchy_fix_shop_end:
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
+ev_c07_vita:
+	_TALK_OBJ_START_TURN_NOT()
+	_BLACK_OUT('SCR_WIPE_DIV', 3)
+	_FADE_WAIT()
+	_SXY_POS_CHANGE('HERO', 687, 591)
+	_SXY_DIR_CHANGE('HERO', 180)
+	_OBJ_ANIME('HERO', 'anm_c07_vita_neck_down')
+	_EVENT_CAMERA_INDEX(558)
+	_EVENT_CAMERA_END_WAIT()
+	_BLACK_IN('SCR_WIPE_DIV', 3)
+	_FADE_WAIT()
+	_IF_FLAGON_JUMP(#4010, 'ev_c07_vita_intro_no_return'); Vita has been talked to once but rejected
+	_IF_FLAGON_JUMP(#4011, 'ev_c07_vita_return_first_time'); Vita has been talked to once and accepted
+	_IF_FLAGON_JUMP(#4012, 'ev_c07_vita_return'); Vita has already introduced themselves after coming back (skip introduction)
+	_IF_FLAGON_JUMP(#4020, 'ev_c07_vita_quest_completed'); Vita quest has been completed, all capsules received
+	_MACRO_TALKMSG('dialogue_c07','00_msg_c07_vita_1', 'Oh, hello! I’m a scientist who used to work for\nTeam Galactic.\rDo you think that makes me a bad person?')
+	_YES_NO_WIN(@SCWK_ANSWER)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_c07_vita_intro') ;No
+	_OBJ_ANIME('C07_VITA', 'anm_c07_vita_sad_face')
+	_OBJ_ANIME_WAIT()
+	_MACRO_TALKMSG('dialogue_c07','00_msg_c07_vita_2', 'Wait, you haven’t even heard what I’m working\non yet!') ;Yes
+	_TALK_CLOSE()
+	_CALL('ev_c07_vita_camera_end')
+	_OBJ_ANIME('C07_VITA', 'anm_c07_vita_normal_face')
+	_TALK_OBJ_END()
+	_END()
+ev_c07_vita_intro:
+	_MACRO_TALKMSG('dialogue_c07','00_msg_c07_vita_intro_1', 'Phew. Hear that, Min? Someone still believes\nin us!')
+	_TALK_CLOSE()
+	_CHARA_LOOK_LOCK('C07_MIN', 'C07_VITA')
+	_OBJ_ANIME('C07_VITA', 'anm_c07_vita_neck_down'); Look to Min
+	_OBJ_ANIME_WAIT()
+	_OBJ_ANIME('C07_VITA', 'anm_c07_vita_happy')
+	_OBJ_ANIME('C07_MIN', 'anm_c07_vita_happy')
+	_PLAY_EMO_SE(11)
+	_OBJ_ANIME_WAIT()
+	_OBJ_ANIME('C07_VITA', 'anm_c07_vita_neck_to_player'); Look back to player
+	_OBJ_ANIME_WAIT()
+	_MACRO_TALKMSG('dialogue_c07','00_msg_c07_vita_intro_2', 'You’ll be glad you listened, Trainer! I’m\nworking on a new way to enhance a Pokémon’s\fnatural potential much faster than battles.\rUnlike buying pricy vitamins at the department\nstore my device uses special technology to\fmake the capsules out of thin air!\rI’m sure you’re wondering how it does such a\nmiraculous thing. Well...')
+	_TALK_CLOSE()
+	_OBJ_ANIME('C07_VITA', 'anm_c07_vita_exclamation')
+	_PLAY_EMO_SE(0)
+	_OBJ_ANIME_WAIT()
+	_MACRO_TALKMSG('dialogue_c07','00_msg_c07_vita_intro_3', 'Wait a minute! I’m not telling! If I told you,\nit wouldn’t be a secret anymore, would it?\rBut that’s not important right now\nI have a pressing matter that needs to be\fattended to, and I can’t lollygag!\rI need to collect much more data if I’m ever to\nfinish the Pro-Vitamins themselves.\rUnfortunately, as good as I am at developing\nbreakthroughs, I struggle to figure out battle\fstrategies...')
+	_TALK_CLOSE()
+	_OBJ_ANIME('C07_VITA', 'anm_c07_vita_neck_down'); Look to Min
+	_OBJ_ANIME_WAIT()
+	_OBJ_ANIME('C07_VITA', 'anm_c07_vita_sad')
+	_OBJ_ANIME('C07_MIN', 'anm_c07_vita_sad')
+	_PLAY_EMO_SE(8)
+	_OBJ_ANIME_WAIT()
+	_OBJ_ANIME('C07_VITA', 'anm_c07_vita_neck_to_player'); Look back to player
+	_OBJ_ANIME_WAIT()
+	_MACRO_TALKMSG('dialogue_c07','00_msg_c07_vita_intro_4', 'I even tried asking those trainers at the\nBattle Café to the south, but they wouldn’t\feven give me the time of day unless I battled\fthem first! What do you say, can you help me?!')
+	_YES_NO_WIN(@SCWK_ANSWER)
+	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 0, 'ev_c07_vita_intro_yes'); Yes
+	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 1, 'ev_c07_vita_intro_no'); No
+	_TALK_CLOSE()
+	_CALL('ev_c07_vita_camera_end')
+	_TALK_OBJ_END()
+	_END()
+ev_c07_vita_intro_yes:
+	_OBJ_ANIME('C07_VITA', 'anm_c07_vita_happy_face')
+	_OBJ_ANIME_WAIT()
+	_MACRO_TALKMSG('dialogue_c07','00_msg_c07_vita_intro_yes', 'Excellent! To get started, I’ll need you to bring\nme a Pokémon who’s put everything they have\finto a specific aspect of battling.\rOnce you do, I can analyze it, archive its data,\nand that should allow the pack to produce\funlimited Pro-Vitamins of that kind.')
+	_OBJ_ANIME('C07_VITA', 'anm_c07_vita_normal_face')
+	_OBJ_ANIME_WAIT()
+	_FLAG_RESET(#4010)
+	_FLAG_SET(#4011)
+	_RET()
+ev_c07_vita_intro_no:
+	_MACRO_TALKMSG('dialogue_c07','00_msg_c07_vita_intro_no', 'Wh-what?! But just think of all the latent power\nhiding inside your Pokémon!')
+	_FLAG_SET(#4010)
+	_RET()
+ev_c07_vita_intro_no_return:
+	_MACRO_TALKMSG('dialogue_c07','00_msg_c07_vita_intro_no_return', 'Oh, you’re back! Does that mean you’re going\nto help me achieve my dream?')
+	_YES_NO_WIN(@SCWK_ANSWER)
+	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 0, 'ev_c07_vita_intro_yes') ; Yes
+	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 1, 'ev_c07_vita_intro_no') ; No
+	_TALK_CLOSE()
+	_CALL('ev_c07_vita_camera_end')
+	_TALK_OBJ_END()
+	_END()
+ev_c07_vita_return_first_time:
+	_MACRO_TALKMSG('dialogue_c07','00_msg_c07_vita_return_first_time_1', 'Welcome back, uhm... I just realized, we never\nintroduced ourselves!\rMy name is Vita! This cutie next to me is my\npartner in crime—Oops, maybe just my partner,\fnow.\rSay hello, Min!')
+	_SE_PLAY('PLAY_PV_312_00_00')
+	_OBJ_ANIME('C07_MIN', 'anm_c07_vita_happy')
+	_PLAY_EMO_SE(5)
+	_MACRO_TALKMSG('dialogue_c07','00_msg_c07_vita_return_first_time_2', 'Miiiiiiinun!')
+	_OBJ_ANIME_WAIT()
+	_PLAYER_NAME(0)
+	_MACRO_TALKMSG('dialogue_c07','00_msg_c07_vita_return_first_time_3', 'And you are...?\r{0}, I see!\nNow that we all know each other, let’s get\fright to it!\rDo you have a Pokémon to show me?')
+	_TALK_CLOSE()
+	_FLAG_SET(#4012); Skip first time introduction next time
+	_FLAG_RESET(#4011)
+	_JUMP('ev_c07_vita_check_pkmn')
+	_END()
+ev_c07_vita_return:
+	; Check how many badges have already been received, compared to how many capsules have been received
+	_SYS_FLAG_BADGE_COUNT(@SCWK_ANSWER)
+	_SUB_WK(@SCWK_ANSWER, 2); Substract 2 since you only count from badge 3 to 8
+	_IFVAL_JUMP(@SCWK_ANSWER, 'LE', @571, 'ev_c07_vita_no_badge') ; If the player comes back after already submitting a maxed Pokémon but without a new badge
+	_MACRO_TALKMSG('dialogue_c07','00_msg_c07_vita_return_1', 'Let’s get right to it!\nDo you have a Pokémon to show me?')
+	_TALK_CLOSE()
+	_JUMP('ev_c07_vita_check_pkmn')
+	_END()
+ev_c07_vita_no_badge:
+	_MACRO_TALKMSG('dialogue_c07','00_msg_c07_vita_no_badge', 'Check back after you get your next badge.\nI should be all finished by then.')
+	_TALK_CLOSE()
+	_CALL('ev_c07_vita_camera_end')
+	_TALK_OBJ_END()
+	_END()
+ev_c07_vita_check_pkmn:
+	;Open Pokémon box selection
+	_POKELIST_SET_PROC(0); Any Pokémon from Box or Party
+	_POKELIST_GET_RESULT(@SCWK_TEMP0, @SCWK_TEMP1)
+	; If selection was interrupted (both resulting works are -1)
+	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', -1, 'ev_c07_vita_check_pkmn_close')
+	_TEMOTI_BOX_MONSNO(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_TEMP2); Save the selected Pokémon number to be referenced later
+	_TEMOTI_BOX_EV_IV(@SCWK_TEMP0, @SCWK_TEMP1, 0, @LOCALWORK0, @LOCALWORK7); HP
+	_TEMOTI_BOX_EV_IV(@SCWK_TEMP0, @SCWK_TEMP1, 1, @LOCALWORK1, @LOCALWORK7); Attack
+	_TEMOTI_BOX_EV_IV(@SCWK_TEMP0, @SCWK_TEMP1, 2, @LOCALWORK2, @LOCALWORK7); Defense
+	_TEMOTI_BOX_EV_IV(@SCWK_TEMP0, @SCWK_TEMP1, 3, @LOCALWORK3, @LOCALWORK7); Sp.Atk
+	_TEMOTI_BOX_EV_IV(@SCWK_TEMP0, @SCWK_TEMP1, 4, @LOCALWORK4, @LOCALWORK7); Sp.Def
+	_TEMOTI_BOX_EV_IV(@SCWK_TEMP0, @SCWK_TEMP1, 5, @LOCALWORK5, @LOCALWORK7); Speed
+	_IFVAL_CALL(@LOCALWORK0, 'GE', 252, 'ev_c07_vita_max_hp'); If HP maxed
+	_IFVAL_CALL(@LOCALWORK1, 'GE', 252, 'ev_c07_vita_max_atk'); If Attack maxed
+	_IFVAL_CALL(@LOCALWORK2, 'GE', 252, 'ev_c07_vita_max_defense'); If Defense maxed
+	_IFVAL_CALL(@LOCALWORK3, 'GE', 252, 'ev_c07_vita_max_spatk'); If Sp. Attack maxed
+	_IFVAL_CALL(@LOCALWORK4, 'GE', 252, 'ev_c07_vita_max_spdefense'); If Sp. Defense maxed
+	_IFVAL_CALL(@LOCALWORK5, 'GE', 252, 'ev_c07_vita_max_speed'); If Speed maxed
+	;If no stat is maxed
+	_PLAYER_NAME(0)
+	_MACRO_TALKMSG('dialogue_c07','00_msg_c07_vita_check_pkmn_no_max', 'Uh, {0}...\nI don’t think this one is ready yet.\rIs there another one you meant to show me\ninstead?')
+	_TALK_CLOSE()
+	_CALL('ev_c07_vita_camera_end')
+	_TALK_OBJ_END()
+	_END()
+ev_c07_vita_check_pkmn_close:
+	_MACRO_TALKMSG('dialogue_c07','00_msg_c07_vita_check_pkmn_no_select', 'What’s wrong, forget where you put them or\nsomething?\rCome back when you’re ready, but please\nhurry! The anticipation is too much!')
+	_TALK_CLOSE()
+	_CALL('ev_c07_vita_camera_end')
+	_TALK_OBJ_END()
+	_END()
+ev_c07_vita_max_common:
+	;If first time reward
+	_IF_FLAGOFF_CALL(#4013, 'ev_c07_vita_first_time_reward')
+	_POKEMON_NAME_EXTRA(0, @SCWK_TEMP2, 0, 0); Pokémon number stored when the Pokémon was selected
+	_MACRO_TALKMSG('dialogue_c07','00_msg_c07_vita_max', 'Now, let’s see exactly what area of battle\nthis {0} is the peak of.')
+	_RET()
+ev_c07_vita_first_time_reward:
+	_POKEMON_NAME_EXTRA(0, @SCWK_TEMP2, 0, 0); Pokémon number stored when the Pokémon was selected
+	_MACRO_TALKMSG('dialogue_c07','00_msg_c07_vita_first_time_reward_1', 'Yes! That’s exactly what I mean!\nThis {0} has reached a pinnacle!\rPerfect timing, too, as I just finished up\nthe Pro-Vitamin Pack. Here!')
+	_LDVAL(@SCWK_TEMP0, 1308); Pro-Vitamins
+	_LDVAL(@SCWK_TEMP1, 1)
+	_CALL('ev_item_event')
+	_MACRO_TALKMSG('dialogue_c07','00_msg_c07_vita_first_time_reward_2', 'That colorful contraption is exactly what will\nmake all of your Pro-Vitamins for you.\rJust input the value you want, and it will do\nthe rest!')
+	_RET()
+ev_c07_vita_max_hp:
+	_IF_FLAGOFF_JUMP(#4014, 'ev_c07_vita_max_hp_reward'); If the maxed HP stat hasn't been submited already
+	_RET(); If it has been submited, return to check the next stat
+ev_c07_vita_max_hp_reward:
+	_CALL('ev_c07_vita_max_common')
+	_PLAYER_NAME(1)
+	_MACRO_TALKMSG('dialogue_c07','00_msg_c07_vita_max_hp_reward_1', 'Oh, {1}, your {0}!\nIt’s got as much vitality as I’ve ever seen,\fit’s positively brimming with energy!')
+	_TALK_CLOSE()
+	_OBJ_ANIME('C07_VITA', 'anm_c07_vita_exclamation')
+	_PLAY_EMO_SE(0)
+	_OBJ_ANIME_WAIT()
+	_MACRO_TALKMSG('dialogue_c07','00_msg_c07_vita_max_hp_reward_2', 'That gives me an idea...')
+	_TALK_CLOSE()
+	_OBJ_ANIME('C07_VITA', 'anm_c07_vita_neck_down'); Look to Min
+	_OBJ_ANIME_WAIT()
+	_SET_FORCE_BLINK('C07_VITA', 1)
+	_TIME_WAIT(5, @SCWK_ANSWER)
+	_OBJ_ANIME('C07_VITA', 'anm_c07_vita_think')
+	_PLAY_EMO_SE(9)
+	_OBJ_ANIME_WAIT()
+	_SET_FORCE_BLINK('C07_VITA', 0)
+	_TIME_WAIT(30, @SCWK_ANSWER)
+	_OBJ_ANIME('C07_VITA', 'anm_c07_vita_eureka')
+	_PLAY_EMO_SE(1)
+	_OBJ_ANIME_WAIT()
+	_OBJ_ANIME('C07_VITA', 'anm_c07_vita_neck_to_player'); Look back to player
+	_OBJ_ANIME_WAIT()
+	_MACRO_TALKMSG('dialogue_c07','00_msg_c07_vita_max_hp_reward_3', 'Voila! An HP Up Capsule, ready for testing!')
+	;TODO give HP Up capsule
+	_FLAG_SET(#4014); HP Capsule received
+	_ADD_WK(@571, 1); +1 to the number of capsules already received
+	_IFVAL_JUMP(@571, 'EQ', 6, 'ev_c07_vita_reward_last_end'); If all 6 capsules have already been received
+	_JUMP('ev_c07_vita_reward_end')
+	_END()
+ev_c07_vita_max_atk:
+	_IF_FLAGOFF_JUMP(#4015, 'ev_c07_vita_max_atk_reward'); If the maxed Atk stat hasn't been submited already
+	_RET(); If it has been submited, return to check the next stat
+ev_c07_vita_max_atk_reward:
+	_CALL('ev_c07_vita_max_common')
+	_PLAYER_NAME(1)
+	_MACRO_TALKMSG('dialogue_c07','00_msg_c07_vita_max_atk_reward_1', '{1}, this {0} \ncould knock me over with just a glance!')
+	_TALK_CLOSE()
+	_OBJ_ANIME('C07_VITA', 'anm_c07_vita_exclamation')
+	_PLAY_EMO_SE(0)
+	_OBJ_ANIME_WAIT()
+	_MACRO_TALKMSG('dialogue_c07','00_msg_c07_vita_max_atk_reward_2', 'How did it take me this long?!')
+	_TALK_CLOSE()
+	_OBJ_ANIME('C07_VITA', 'anm_c07_vita_neck_down'); Look to Min
+	_OBJ_ANIME_WAIT()
+	_SET_FORCE_BLINK('C07_VITA', 1)
+	_TIME_WAIT(5, @SCWK_ANSWER)
+	_OBJ_ANIME('C07_VITA', 'anm_c07_vita_think')
+	_PLAY_EMO_SE(9)
+	_OBJ_ANIME_WAIT()
+	_SET_FORCE_BLINK('C07_VITA', 0)
+	_TIME_WAIT(30, @SCWK_ANSWER)
+	_OBJ_ANIME('C07_VITA', 'anm_c07_vita_eureka')
+	_PLAY_EMO_SE(1)
+	_OBJ_ANIME_WAIT()
+	_OBJ_ANIME('C07_VITA', 'anm_c07_vita_neck_to_player'); Look back to player
+	_OBJ_ANIME_WAIT()
+	_MACRO_TALKMSG('dialogue_c07','00_msg_c07_vita_max_atk_reward_3', 'Tada! Here’s the brand new Protein Capsule,\nready for testing!')
+	;TODO give Atk Up capsule
+	_FLAG_SET(#4015); Atk Capsule received
+	_ADD_WK(@571, 1); +1 to the number of capsules already received
+	_IFVAL_JUMP(@571, 'EQ', 6, 'ev_c07_vita_reward_last_end'); If all 6 capsules have already been received
+	_JUMP('ev_c07_vita_reward_end')
+	_END()
+ev_c07_vita_max_defense:
+	_IF_FLAGOFF_JUMP(#4016, 'ev_c07_vita_max_defense_reward'); If the maxed Defense stat hasn't been submited already
+	_RET(); If it has been submited, return to check the next stat
+ev_c07_vita_max_defense_reward:
+	_CALL('ev_c07_vita_max_common')
+	_PLAYER_NAME(1)
+	_MACRO_TALKMSG('dialogue_c07','00_msg_c07_vita_max_defense_reward_1', 'I’ve never seen a sturdier {0}, {1}.\nI could probably Tackle it myself and not even\fsee it budge!')
+	_TALK_CLOSE()
+	_OBJ_ANIME('C07_VITA', 'anm_c07_vita_exclamation')
+	_PLAY_EMO_SE(0)
+	_OBJ_ANIME_WAIT()
+	_MACRO_TALKMSG('dialogue_c07','00_msg_c07_vita_max_defense_reward_2', 'Of course!')
+	_TALK_CLOSE()
+	_OBJ_ANIME('C07_VITA', 'anm_c07_vita_neck_down'); Look to Min
+	_OBJ_ANIME_WAIT()
+	_SET_FORCE_BLINK('C07_VITA', 1)
+	_TIME_WAIT(5, @SCWK_ANSWER)
+	_OBJ_ANIME('C07_VITA', 'anm_c07_vita_think')
+	_PLAY_EMO_SE(9)
+	_OBJ_ANIME_WAIT()
+	_SET_FORCE_BLINK('C07_VITA', 0)
+	_TIME_WAIT(30, @SCWK_ANSWER)
+	_OBJ_ANIME('C07_VITA', 'anm_c07_vita_eureka')
+	_PLAY_EMO_SE(1)
+	_OBJ_ANIME_WAIT()
+	_OBJ_ANIME('C07_VITA', 'anm_c07_vita_neck_to_player'); Look back to player
+	_OBJ_ANIME_WAIT()
+	_MACRO_TALKMSG('dialogue_c07','00_msg_c07_vita_max_defense_reward_3', 'Check it out! The Iron Capsule is completed!')
+	;TODO give Defense Up capsule
+	_FLAG_SET(#4016); Defense Capsule received
+	_ADD_WK(@571, 1); +1 to the number of capsules already received
+	_IFVAL_JUMP(@571, 'EQ', 6, 'ev_c07_vita_reward_last_end'); If all 6 capsules have already been received
+	_JUMP('ev_c07_vita_reward_end')
+	_END()
+ev_c07_vita_max_spatk:
+	_IF_FLAGOFF_JUMP(#4017, 'ev_c07_vita_max_spatk_reward'); If the maxed Sp. Atk stat hasn't been submited already
+	_RET(); If it has been submited, return to check the next stat
+ev_c07_vita_max_spatk_reward:
+	_CALL('ev_c07_vita_max_common')
+	_PLAYER_NAME(1)
+	_MACRO_TALKMSG('dialogue_c07','00_msg_c07_vita_max_spatk_reward_1', 'Sheesh, if I didn’t know better,\nI’d say this {0} is even smarter than me!')
+	_TALK_CLOSE()
+	_OBJ_ANIME('C07_VITA', 'anm_c07_vita_exclamation')
+	_PLAY_EMO_SE(0)
+	_OBJ_ANIME_WAIT()
+	_MACRO_TALKMSG('dialogue_c07','00_msg_c07_vita_max_spatk_reward_2', 'It’s so obvious when I think about it that way.')
+	_TALK_CLOSE()
+	_OBJ_ANIME('C07_VITA', 'anm_c07_vita_neck_down'); Look to Min
+	_OBJ_ANIME_WAIT()
+	_SET_FORCE_BLINK('C07_VITA', 1)
+	_TIME_WAIT(5, @SCWK_ANSWER)
+	_OBJ_ANIME('C07_VITA', 'anm_c07_vita_think')
+	_PLAY_EMO_SE(9)
+	_OBJ_ANIME_WAIT()
+	_SET_FORCE_BLINK('C07_VITA', 0)
+	_TIME_WAIT(30, @SCWK_ANSWER)
+	_OBJ_ANIME('C07_VITA', 'anm_c07_vita_eureka')
+	_PLAY_EMO_SE(1)
+	_OBJ_ANIME_WAIT()
+	_OBJ_ANIME('C07_VITA', 'anm_c07_vita_neck_to_player'); Look back to player
+	_OBJ_ANIME_WAIT()
+	_MACRO_TALKMSG('dialogue_c07','00_msg_c07_vita_max_spatk_reward_3', 'Presto! Put this Calcium Capsule to good\nuse, {1}!')
+	;TODO give Sp. Atk Up capsule
+	_FLAG_SET(#4017); Sp. Atk Capsule received
+	_ADD_WK(@571, 1); +1 to the number of capsules already received
+	_IFVAL_JUMP(@571, 'EQ', 6, 'ev_c07_vita_reward_last_end'); If all 6 capsules have already been received
+	_JUMP('ev_c07_vita_reward_end')
+	_END()
+ev_c07_vita_max_spdefense:
+	_IF_FLAGOFF_JUMP(#4018, 'ev_c07_vita_max_spdefense_reward'); If the maxed Sp. Defense stat hasn't been submited already
+	_RET(); If it has been submited, return to check the next stat
+ev_c07_vita_max_spdefense_reward:
+	_CALL('ev_c07_vita_max_common')
+	_MACRO_TALKMSG('dialogue_c07','00_msg_c07_vita_max_spdefense_reward_1', 'A steadfast {0} to be sure,\nI doubt anything short of the Champion\fherself could make its resolve waver...')
+	_TALK_CLOSE()
+	_OBJ_ANIME('C07_VITA', 'anm_c07_vita_exclamation')
+	_PLAY_EMO_SE(0)
+	_OBJ_ANIME_WAIT()
+	_MACRO_TALKMSG('dialogue_c07','00_msg_c07_vita_max_spdefense_reward_2', 'Eureka!')
+	_TALK_CLOSE()
+	_OBJ_ANIME('C07_VITA', 'anm_c07_vita_neck_down'); Look to Min
+	_OBJ_ANIME_WAIT()
+	_SET_FORCE_BLINK('C07_VITA', 1)
+	_TIME_WAIT(5, @SCWK_ANSWER)
+	_OBJ_ANIME('C07_VITA', 'anm_c07_vita_think')
+	_PLAY_EMO_SE(9)
+	_OBJ_ANIME_WAIT()
+	_SET_FORCE_BLINK('C07_VITA', 0)
+	_TIME_WAIT(30, @SCWK_ANSWER)
+	_OBJ_ANIME('C07_VITA', 'anm_c07_vita_eureka')
+	_PLAY_EMO_SE(1)
+	_OBJ_ANIME_WAIT()
+	_OBJ_ANIME('C07_VITA', 'anm_c07_vita_neck_to_player'); Look back to player
+	_OBJ_ANIME_WAIT()
+	_MACRO_TALKMSG('dialogue_c07','00_msg_c07_vita_max_spdefense_reward_3', 'Behold! The Zinc Capsule in all its glory!')
+	;TODO give Sp. Defense Up capsule
+	_FLAG_SET(#4018); Sp. Defense Capsule received
+	_ADD_WK(@571, 1); +1 to the number of capsules already received
+	_IFVAL_JUMP(@571, 'EQ', 6, 'ev_c07_vita_reward_last_end'); If all 6 capsules have already been received
+	_JUMP('ev_c07_vita_reward_end')
+	_END()
+ev_c07_vita_max_speed:
+	_IF_FLAGOFF_JUMP(#4019, 'ev_c07_vita_max_speed_reward'); If the maxed Speed stat hasn't been submited already
+	_RET(); If it has been submited, return to check the next stat
+ev_c07_vita_max_speed_reward:
+	_CALL('ev_c07_vita_max_common')
+	_MACRO_TALKMSG('dialogue_c07','00_msg_c07_vita_max_speed_reward_1', 'Goodness! That was your Pokémon?\nIt was so fast I could barely see it!')
+	_TALK_CLOSE()
+	_OBJ_ANIME('C07_VITA', 'anm_c07_vita_exclamation')
+	_PLAY_EMO_SE(0)
+	_OBJ_ANIME_WAIT()
+	_MACRO_TALKMSG('dialogue_c07','00_msg_c07_vita_max_speed_reward_2', 'In hindsight, I should’ve thought of this\nearlier...')
+	_TALK_CLOSE()
+	_OBJ_ANIME('C07_VITA', 'anm_c07_vita_neck_down'); Look to Min
+	_OBJ_ANIME_WAIT()
+	_SET_FORCE_BLINK('C07_VITA', 1)
+	_TIME_WAIT(5, @SCWK_ANSWER)
+	_OBJ_ANIME('C07_VITA', 'anm_c07_vita_think')
+	_PLAY_EMO_SE(9)
+	_OBJ_ANIME_WAIT()
+	_SET_FORCE_BLINK('C07_VITA', 0)
+	_TIME_WAIT(30, @SCWK_ANSWER)
+	_OBJ_ANIME('C07_VITA', 'anm_c07_vita_eureka')
+	_PLAY_EMO_SE(1)
+	_OBJ_ANIME_WAIT()
+	_OBJ_ANIME('C07_VITA', 'anm_c07_vita_neck_to_player'); Look back to player
+	_OBJ_ANIME_WAIT()
+	_MACRO_TALKMSG('dialogue_c07','00_msg_c07_vita_max_speed_reward_3', 'If you’ve gotta go fast, this Carbos Capsule\nis the answer!')
+	;TODO give Speed Up capsule
+	_FLAG_SET(#4019); Speed Capsule received
+	_ADD_WK(@571, 1); +1 to the number of capsules already received
+	_IFVAL_JUMP(@571, 'EQ', 6, 'ev_c07_vita_reward_last_end'); If all 6 capsules have already been received
+	_JUMP('ev_c07_vita_reward_end')
+	_END()
+ev_c07_vita_reward_end:
+	_IF_FLAGOFF_CALL(#4013, 'ev_c07_vita_first_time_reward_end')
+	_MACRO_TALKMSG('dialogue_c07','00_msg_c07_vita_reward_end_1', 'Check back after you get your next badge.\nI should have the next one ready by then.\rRemember, my device is top of the line!\rThere’s absolutely no difference in the end\nbetween store-bought Vitamins, and pumping\fup your Pokémon’s power with the\fPro-Vitamins.')
+	_TALK_CLOSE()
+	_CALL('ev_c07_vita_camera_end')
+	_TALK_OBJ_END()
+	_END()
+ev_c07_vita_first_time_reward_end:
+	_FLAG_SET(#4013)
+	_MACRO_TALKMSG('dialogue_c07','00_msg_c07_vita_first_time_reward_end', 'After using it, the Capsulizer has to be reset\nto default specs by hand.\rI should have the machine recalibrated to scan\na new Pokémon after a while.')
+	_RET()
+ev_c07_vita_reward_last_end:
+	_PLAYER_NAME(0)
+	_MACRO_TALKMSG('dialogue_c07','00_msg_c07_vita_reward_last_end', 'Wow, {0}! I’m not surprised\na Trainer as impressive as you was able to\fmaster every aspect of the battlefield.\fOne day, my Capsules will help the whole\nworld unleash the latent potential of their\fPokémon, all thanks to the data you provided.\rKeep battling, {0},\nthere are surely more secrets to uncover!')
+	_TALK_CLOSE()
+	_CALL('ev_c07_vita_camera_end')
+	_FLAG_RESET(#4012); Stop checking Pokémon when you come back
+	_FLAG_SET(#4020); Vita quest completed
+	_TALK_OBJ_END()
+	_END()
+ev_c07_vita_quest_completed:
+	_MACRO_TALKMSG('dialogue_c07','00_msg_c07_vita_quest_completed', 'Thank you so much for helping me realize\nmy dream!')
+	_TALK_CLOSE()
+	_OBJ_ANIME('C07_VITA', 'anm_c07_vita_heart')
+	_PLAY_EMO_SE(2)
+	_OBJ_ANIME_WAIT()
+	_CALL('ev_c07_vita_camera_end')
+	_TALK_OBJ_END()
+	_END()
+anm_c07_vita_neck_down:
+	;Look down
+	_AC_NECK_ROTATE(0, 15, 0, 4); Yaw Pitch Roll Speed
+	_ACMD_END()
+anm_c07_vita_neck_normal:
+	_AC_NECK_ROTATE(0, 0, 0, 4); Yaw Pitch Roll Speed
+	_ACMD_END()
+anm_c07_vita_neck_to_player:
+	_AC_NECK_ROTATE(-45, 0, 0, 4); Yaw Pitch Roll Speed
+	_ACMD_END()
+anm_c07_vita_happy:
+	_AC_FACE_INDEX(4)
+	_AC_MARK_EMO(5)
+	_AC_FACE_INDEX(0)
+	_ACMD_END()
+anm_c07_vita_exclamation:
+	_AC_FACE_INDEX(5)
+	_AC_MARK_EMO(0)
+	_AC_FACE_INDEX(0)
+	_ACMD_END()
+anm_c07_vita_sad:
+	_AC_FACE_INDEX(2)
+	_AC_MARK_EMO(8)
+	_AC_FACE_INDEX(0)
+	_ACMD_END()
+anm_c07_vita_happy_face:
+	_AC_FACE_INDEX(4)
+	_ACMD_END()
+anm_c07_vita_sad_face:
+	_AC_FACE_INDEX(2)
+	_ACMD_END()
+anm_c07_vita_normal_face:
+	_AC_FACE_INDEX(0)
+	_ACMD_END()
+anm_c07_vita_heart:
+	_AC_FACE_INDEX(4)
+	_AC_MARK_EMO(2)
+	_AC_FACE_INDEX(0)
+	_ACMD_END()
+anm_c07_vita_think:
+	_AC_MARK_EMO(9)
+	_ACMD_END()
+anm_c07_vita_eureka:
+	_AC_FACE_INDEX(4)
+	_AC_MARK_EMO(1)
+	_AC_FACE_INDEX(0)
+	_ACMD_END()
+ev_c07_min:
+	_SE_PLAY('PLAY_PV_312_00_00')
+	_IF_FLAGON_JUMP(#4020, 'ev_c07_min_completed'); Quest completed
+	_IF_FLAGON_JUMP(#4010, 'ev_c07_min_nametag'); Vita has already introduced Min's name
+	_IF_FLAGON_JUMP(#4011, 'ev_c07_min_nametag'); Vita has already introduced Min's name
+	_IF_FLAGON_JUMP(#4012, 'ev_c07_min_nametag'); Vita has already introduced Min's name
+	_MACRO_TALKMSG('dialogue_c07','00_msg_c07_min', 'Miiii! Minmimimiiiiiiiinun!')
+	_TALK_CLOSE()
+	_END()
+ev_c07_min_nametag:
+	;Separate message to add the MsgWindowData
+	_MACRO_TALKMSG('dialogue_c07','00_msg_c07_min_nametag', 'Miiii! Minmimimiiiiiiiinun!')
+	_TALK_CLOSE()
+	_END()
+ev_c07_min_completed:
+	_OBJ_ANIME('C07_MIN', 'anm_c07_vita_heart')
+	_MACRO_TALKMSG('dialogue_c07','00_msg_c07_min_completed', 'Mimiminun! Miiiiinun!')
+	_TALK_CLOSE()
+	_END()
+ev_c07_vita_camera_end:
+	_EVENT_CAMERA_INDEX(111)
+	_OBJ_ANIME('HERO', 'anm_c07_vita_neck_normal')
+	_EVENT_CAMERA_END_WAIT()
+	_RET()

@@ -2,15 +2,15 @@ ev_t05r0401_fighter:
 	_TALK_OBJ_START()
 	_POKETCH_CHECK(10, @SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_t05r0401_fighter_02')
-	_TALKMSG('dp_scenario2%159-msg_t05r0401_fighter_01')
+	_MACRO_TALKMSG('dialogue_t05r0401', '159-msg_t05r0401_fighter_01', 'I must bear down and train—and for that, time\nis unimportant.\rTherefore, I have no need for a watch. Take this\nfrom me!')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_t05r0401_fighter_02:
-	_TALKMSG('dp_scenario2%159-msg_t05r0401_fighter_02')
+	_MACRO_TALKMSG('dialogue_t05r0401', '159-msg_t05r0401_fighter_02', 'Analog Watch or Digital Watch, use whichever\nyou prefer.\rThe same is true for Pokémon—there are many,\nbut you should befriend whichever you like.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_t05r0401_gonbe:
-	_EASY_VOICE_MSG('dp_scenario2%159-msg_t05r0401_gonbe_01', 'PLAY_PV_EV_440_00_00', 0)
+	_EASY_VOICE_MSG('dialogue_t05r0401%159-msg_t05r0401_gonbe_01', 'PLAY_PV_EV_440_00_00')
 	_END()

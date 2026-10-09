@@ -1,58 +1,112 @@
 ev_w226r0101_flag_change:
 	_ARRIVE_FLAG_SET($FLAG_ARRIVE_W226R0101)
 	_END()
-ev_w226r0101_obj:
-	_TALK_OBJ_START()
-	_IF_FLAGON_JUMP(#FE_W226R0101_POKE_CHG, 'ev_w226r0101_pokechange_obj_end')
-	_IF_FLAGON_JUMP(#FE_W226R0101_ZUKAN, 'ev_w226r0101_obj_02')
-	_TALKMSG('dp_scenario3%63-msg_w226r0101_01_01')
-	_FLAG_SET(#FE_W226R0101_ZUKAN)
-	_TALKMSG('dp_scenario3%63-msg_w226r0101_01_02_1')
-	_TALKMSG('dp_scenario3%63-msg_w226r0101_01_02_2')
-	_TALKMSG('dp_scenario3%63-msg_w226r0101_01_02_3')
-	_TALKMSG('dp_scenario3%63-msg_w226r0101_01_02_4')
+
+ev_w226r0101_meister_trade:
+    _TALK_OBJ_START()
+    _CALL('ev_w226r0101_meister_trade_values')
+    _IF_FLAGON_JUMP(#3081, 'ev_w226r0101_meister_trade_over')
+    _POKEMON_NAME_FORM(0, @LOCALWORK0, @LOCALWORK1)
+    _MACRO_TALKMSG('dialogue_w226r0101', 'msg_w226r0101_meister_trade_1', 'Hej! Hola! Guten Tag! It is nice to meet you.\nI’m the Meister.\rWait... *sniff* *sniff*\nI can tell by your smell that you are no\fordinary trainer!\rQuelle déception...\nYour Pokédex must already translate the\fentries for you in other languages.\rBut wait... this is wunderbar!\nYou might be able to help me!\rYou see, in my home country, we do not have\nany {0,1,1,0}.')
+    _TALK_CLOSE()
+    _POKE_WINDOW_PUT(@LOCALWORK0, @LOCALWORK1)
+    _POKEMON_NAME_FORM(1, @LOCALWORK2, @LOCALWORK3)
+    _MACRO_TALKMSG('dialogue_w226r0101', 'msg_w226r0101_meister_trade_2', 'It has always been my dream to own one.\rI made the journey across the world to Sinnoh\nto search for one, men tyvärr, I have not been\fable to find one.\rHave you one? If so, will you trade me for my\n{1,1,1,0}?')
+    _YES_NO_WIN(@SCWK_ANSWER)
+    _IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_w226r0101_meister_trade_yes')
+    _IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_w226r0101_meister_trade_no')
+ev_w226r0101_meister_trade_values:
+    _LDVAL(@LOCALWORK0, 54); Given trade MonsNo
+    _LDVAL(@LOCALWORK1, 0); Given trade FormNo
+    _LDVAL(@LOCALWORK2, 550); Received trade MonsNo
+    _LDVAL(@LOCALWORK3, 2); Received trade FormNo
+    _RET()
+ev_w226r0101_meister_trade_yes:
+    _TALK_CLOSE()
+    _POKELIST_SET_PROC(39)
+    _POKELIST_GET_RESULT(@SCWK_TEMP0, @SCWK_TEMP1)
+    _IFVAL_JUMP(@SCWK_TEMP0, 'EQ', -1, 'ev_w226r0101_meister_trade_no'); If nothing was selected
+    _TEMOTI_BOX_MONSNO(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_ANSWER)
+    _TEMOTI_BOX_FORMNO(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_TEMP2)
+    _IFVAL_JUMP(@SCWK_ANSWER, 'NE', @LOCALWORK0, 'ev_w226r0101_meister_trade_wrong_mon'); If a species other than the target was selected
+    _IFVAL_JUMP(@SCWK_TEMP2, 'NE', @LOCALWORK1, 'ev_w226r0101_meister_trade_wrong_form'); If an incorrect form of the correct species was selected
+    _TEMOTI_BOX_SHINY(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_TEMP2)
+    _TEMOTI_BOX_GENDER(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_TEMP3)
+    _TALK_CLOSE()
+    _LOCALKOUKAN_APPLY(12, @SCWK_TEMP1, @SCWK_TEMP0)
+	_SXY_POS_CHANGE('HERO', 3, 5)
+	_SXY_DIR_CHANGE('HERO', 90)
+	_SXY_DIR_CHANGE('W226R0101_MEISTER', 270)
+    _IFVAL_CALL(@SCWK_TEMP2, 'EQ', 0, 'ev_w226r0101_meister_trade_placedata')
+    _IFVAL_CALL(@SCWK_TEMP2, 'GE', 1, 'ev_w226r0101_meister_trade_placedata_shiny')
+	_CALL('ev_w226r0101_psyduck_cry')
+    _JUMP('ev_w226r0101_meister_trade_over')
+ev_w226r0101_meister_trade_no:
+    _POKEMON_NAME_FORM(1, @LOCALWORK2); Just species name for brevity
+    _MACRO_TALKMSG('dialogue_w226r0101', 'msg_w226r0101_meister_trade_no', 'Qué faena... but, I understand.\rI will be waiting here in case you want to trade\nfor my {1,1,1,0}. Gute Reise.')
+    _TALK_CLOSE()
+    _TALK_OBJ_END()
+    _END()
+ev_w226r0101_meister_trade_wrong_mon:
+    _POKEMON_NAME_FORM(0, @LOCALWORK0); Just species name for brevity
+    _MACRO_TALKMSG('dialogue_w226r0101', 'msg_w226r0101_meister_trade_wrong_mon', 'Mein Gott! I think something was lost in\ntranslation, dear Trainer.\rI would be most grateful if you could find me\na {0,1,1,0}! Glöm inte!')
+    _TALK_CLOSE()
+    _TALK_OBJ_END()
+    _END()
+ev_w226r0101_meister_trade_wrong_form:
+    _MACRO_TALKMSG('dialogue_w226r0101', 'msg_w226r0101_meister_trade_wrong_form', 'Oh je... This is not quite the type of Pokémon I\nwas looking for... \rIf you could find me the other form, that would\nbe most wunderbar. Adiós!')
+    _TALK_CLOSE()
+    _TALK_OBJ_END()
+    _END()
+ev_w226r0101_meister_trade_placedata:
+	_IFVAL_JUMP(@SCWK_TEMP3, 'EQ', 0, 'ev_w226r0101_meister_trade_placedata_male')
+	_IFVAL_JUMP(@SCWK_TEMP3, 'GE', 1, 'ev_w226r0101_meister_trade_placedata_female')
+	_RET()
+ev_w226r0101_meister_trade_placedata_male:
+    _OBJ_ADD('W226R0101_PSYDUCK_MALE')
+    _FLAG_RESET(#2965)
+    _RET()
+ev_w226r0101_meister_trade_placedata_female:
+    _OBJ_ADD('W226R0101_PSYDUCK_FEMALE')
+    _FLAG_RESET(#2966)
+    _RET()
+ev_w226r0101_meister_trade_placedata_shiny:
+	_IFVAL_JUMP(@SCWK_TEMP3, 'EQ', 0, 'ev_w226r0101_meister_trade_placedata_shiny_male')
+	_IFVAL_JUMP(@SCWK_TEMP3, 'GE', 1, 'ev_w226r0101_meister_trade_placedata_shiny_female')
+	_RET()
+ev_w226r0101_meister_trade_placedata_shiny_male:
+    _OBJ_ADD('W226R0101_PSYDUCK_SHINY_MALE')
+    _FLAG_RESET(#2967)
+    _RET()
+ev_w226r0101_meister_trade_placedata_shiny_female:
+    _OBJ_ADD('W226R0101_PSYDUCK_SHINY_FEMALE')
+    _FLAG_RESET(#2968)
+    _RET()
+ev_w226r0101_meister_trade_over:
+    _POKEMON_NAME_FORM(0, @LOCALWORK0); Just species name for brevity
+    _MACRO_TALKMSG('dialogue_w226r0101', 'msg_w226r0101_meister_trade_over', 'Gracias! Arigato! Danke schön! A million times\nover!\rI will take very good care of the little {0,1,1,0}.\nAuf Wiedersehen!')
+    _FLAG_SET(#3081)
+    _TALK_CLOSE()
+    _TALK_OBJ_END()
+    _END()
+ev_w226r0101_psyduck:
+	_TALK_START()
+	_TURN_HERO_TALK_OBJ()
+    _CALL('ev_w226r0101_meister_trade_values')
+	_CALL('ev_w226r0101_psyduck_cry')
 	_TALK_CLOSE()
-	_TALK_OBJ_END()
+	_TALK_END()
 	_END()
-ev_w226r0101_obj_02:
-	_TALKMSG('dp_scenario3%63-msg_w226r0101_01_03')
-	_YES_NO_WIN(@SCWK_ANSWER)
-	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_w226r0101_pokechange_obj_yes_01')
-	_JUMP('ev_w226r0101_pokechange_obj_no_01')
-ev_w226r0101_pokechange_obj_yes_01:
-	_TALK_CLOSE()
-	_POKELIST_SET_PROC(2)
-	_POKELIST_GET_RESULT(@SCWK_TEMP0, @SCWK_TEMP1)
-	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', -1, 'ev_w226r0101_pokechange_obj_no_01')
-	_TEMOTI_BOX_MONSNO(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_ANSWER)
-	_IFVAL_CALL(@SCWK_ANSWER, 'NE', 129, 'ev_w226r0101_pokechange_obj_different')
-	_TALK_CLOSE()
-	_LOCALKOUKAN_APPLY(3, @SCWK_TEMP1, @SCWK_TEMP0)
-	_FLAG_SET(#FE_W226R0101_POKE_CHG)
-	_TALKMSG('dp_scenario3%63-msg_w226r0101_01_04')
-	_TALK_CLOSE()
-	_TALK_OBJ_END()
-	_END()
-ev_w226r0101_pokechange_obj_different:
-	_TALK_CLOSE()
-	_TALKMSG('dp_scenario3%63-msg_w226r0101_01_05')
-	_TALK_CLOSE()
-	_TALK_OBJ_END()
-	_END()
-ev_w226r0101_pokechange_obj_no_01:
-	_TALKMSG('dp_scenario3%63-msg_w226r0101_01_06')
-	_TALK_CLOSE()
-	_TALK_OBJ_END()
-	_END()
-ev_w226r0101_pokechange_obj_end:
-	_TALKMSG('dp_scenario3%63-msg_w226r0101_01_07')
-	_TALK_CLOSE()
-	_TALK_OBJ_END()
-	_END()
+ev_w226r0101_psyduck_cry:
+    _VOICE_PLAY(@LOCALWORK0, @LOCALWORK1, 0)
+    _MACRO_TALKMSG('dialogue_w226r0101', 'msg_w226r0101_psyduck_cry', 'Kwaak-ak-ak!!')
+    _VOICE_WAIT()
+	_RET()
+
 ev_w226r0101_poster:
 	_TALK_OBJ_START()
-	_TALKMSG('dp_scenario3%63-msg_w226r0101_02_01_1')
-	_TALKMSG('dp_scenario3%63-msg_w226r0101_02_01_2')
+	_MACRO_TALKMSG('dialogue_w226r0101', '63-msg_w226r0101_02_01_1', 'It’s a poster that lists the names of Pokémon.\rThe world-traveling Meister’s favorite Pokémon:')
+	_MACRO_TALKMSG('dialogue_w226r0101', '63-msg_w226r0101_02_01_2', 'Ekans, Pikachu, Psyduck,\nPonyta, Staryu, Magikarp,\fWobbuffet, Heracross, Sneasel,\fTeddiursa, Houndour, Wingull,\fSlakoth, and Roselia')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()

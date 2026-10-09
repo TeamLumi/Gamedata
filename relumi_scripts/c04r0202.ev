@@ -1,12 +1,15 @@
 ev_c04r0202_gingam_a:
-	_TALK_OBJ_START_TURN_NOT()
-	_TALKMSG('dp_scenario2%6-msg_c04r0202_gingam_a_01')
+	_TALK_OBJ_START()
+	_MACRO_TALKMSG('dialogue_c04r0202', '6-msg_c04r0202_gingam_a_01', 'Team Galactic is working hard to find new energy\nsources for the future!')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_c04r0202_gingaw_a:
 	_TALK_OBJ_START_TURN_NOT()
-	_TALKMSG('dp_scenario2%6-msg_c04r0202_gingaw_a_01')
+	_MACRO_TALKMSG('dialogue_c04r0202', '6-msg_c04r0202_gingaw_a_01', 'We are conducting research on new forms of\nenergy!\rWe want to harness the mysterious power of\nPokémon and use it as energy!')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
+	_END()
+ev_c04r0202_poster:
+	_MACRO_EASY_OBJ_MSG('dialogue_c04r0202', 'msg_c04r0202_poster_01', 'Let us make progress together!\n           Team Galactic')
 	_END()

@@ -1,16 +1,16 @@
 ev_c04r0303_boy3:
-	_EASY_OBJ_MSG('dp_scenario2%11-msg_c04r0303_boy3_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c04r0303', '11-msg_c04r0303_boy3_01', 'I gathered up a lot of Stickers, so I’m placing\nthem on my Ball Capsules.\rI’m thiiis close to being ready for the Super\nContest Shows in Hearthome City.')
 	_END()
 ev_c04r0303_middleman1:
 	_TALK_OBJ_START_TURN_NOT()
-	_TALKMSG('dp_scenario2%11-msg_c04r0303_middleman1_01')
+	_MACRO_TALKMSG('dialogue_c04r0303', '11-msg_c04r0303_middleman1_01', 'Badges from Gyms or wins in Super Contest\nShows... There’s more than just one way to be a\fwinner, it seems.\rHere’s hoping you’ll find something in which you\ncan be the victor.')
 	_TALK_CLOSE()
 	_END()
 ev_c04r0303_boy1:
-	_EASY_OBJ_MSG('dp_scenario2%11-msg_c04r0303_boy1_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c04r0303', '11-msg_c04r0303_boy1_01', 'Hooray! My Secret Base just got another Great!')
 	_TALK_CLOSE()
 	_END()
 ev_c04r0303_babyboy1:
-	_EASY_OBJ_MSG('dp_scenario2%11-msg_c04r0303_babyboy1_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c04r0303', '11-msg_c04r0303_babyboy1_01', 'There are some sparkling stones lying around in\nthe Grand Underground!')
 	_TALK_CLOSE()
 	_END()

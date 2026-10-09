@@ -1,12 +1,12 @@
 ev_r211b_man3:
 	_TALK_OBJ_START_TURN_NOT()
 	_IF_FLAGON_JUMP(#FE_WAZAMASIN77_GET, 'ev_r211b_man3_02')
-	_TALKMSG('dp_scenario2%89-msg_r211b_man3_01')
+	_MACRO_TALKMSG('dialogue_r211b', '89-msg_r211b_man3_01', 'I’m strong!\nI’m strong!\fI’m strong!\fI’m strong!\fI’m strong!\fI’m strong!\fI’m strong!\fI’m strong!\fAm I really?\fNo, I am strong!\fI’m strong!\fOK! I’m all good to go!')
 	_TALK_CLOSE()
 	_TURN_HERO_SITE()
 	_OBJ_ANIME(@SCWK_TARGET_OBJID, 'anm_r211b_man3_01')
 	_OBJ_ANIME_WAIT()
-	_TALKMSG('dp_scenario2%89-msg_r211b_man3_02')
+	_MACRO_TALKMSG('dialogue_r211b', '89-msg_r211b_man3_02', 'Wah! You startled me good!\rI think you’ll understand what I was doing when\nyou see the move contained in this TM.')
 	_LDVAL(@SCWK_TEMP0, 404)
 	_LDVAL(@SCWK_TEMP1, 1)
 	_CALL('ev_item_event')
@@ -15,7 +15,7 @@ ev_r211b_man3:
 	_JUMP('ev_r211b_man3_02')
 ev_r211b_man3_02:
 	_TURN_HERO_SITE()
-	_TALKMSG('dp_scenario2%89-msg_r211b_man3_03')
+	_MACRO_TALKMSG('dialogue_r211b', '89-msg_r211b_man3_03', 'Let me explain how that move works without\ngetting too technical.\rLet’s say your opponent raises its Defense\nusing Harden.\rYour Pokémon can use Psych Up to get the same\nDefense boost as its opponent.\rBasically, your Pokémon gets the same status\nboosts as its target.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
@@ -28,13 +28,13 @@ anm_r211b_man3_01:
 	_AC_MARK_GYOE(1)
 	_ACMD_END()
 ev_r211b_sign1:
-	_EASY_BOARD_MSG('dp_scenario2%89-msg_r211b_sign1_01', 'BOARD_TYPE_ROAD', 0, 2)
+	_EASY_BOARD_MSG('dialogue_r211b%89-msg_r211b_sign1_01', 'BOARD_TYPE_ROAD', 0, 2)
 	_END()
 ev_r211b_sign2:
-	_EASY_INFOBOARD_MSG('dp_scenario2%89-msg_r211b_sign2_01', 'BOARD_TYPE_INFO', 0)
+	_EASY_INFOBOARD_MSG('dialogue_r211b%89-msg_r211b_sign2_01', 'BOARD_TYPE_INFO', 0)
 	_END()
 ev_r211b_sign3:
-	_EASY_BOARD_MSG('dp_scenario2%89-msg_r211b_sign3_01', 'BOARD_TYPE_ROAD', 0, 1)
+	_EASY_BOARD_MSG('dialogue_r211b%89-msg_r211b_sign3_01', 'BOARD_TYPE_ROAD', 0, 1)
 	_END()
 ev_r211b_entei:
 	_TALK_OBJ_START()

@@ -14,11 +14,11 @@ ev_t04pc0101_pcwoman1:
 	_JUMP('ev_heal_p01')
 	_END()
 ev_t04pc0101_oldman2:
-	_MACRO_EASY_OBJ_MSG('dp_scenario3', '00_msg_t04pc0101_oldman2', 'The Day-Care Man was saying Pokémon\ngrow at different rates.')
+	_MACRO_EASY_OBJ_MSG('dialogue_t04pc0101', '00_msg_t04pc0101_oldman2', 'The Day-Care Man was saying Pokémon\ngrow at different rates.')
 	_END()
 ev_t04pc0101_girl1:
-	_MACRO_EASY_OBJ_MSG('dp_scenario3', '00_msg_t04pc0101_girl1', 'It’s quite far from Solaceon Town to\nVeilstone City.\rThere’s a café along the way where\nyou can get some rest, though.')
+	_MACRO_EASY_OBJ_MSG('dialogue_t04pc0101', '00_msg_t04pc0101_girl1', 'It’s quite far from Solaceon Town to\nVeilstone City.\rThere’s a café along the way where\nyou can get some rest, though.')
 	_END()
 ev_t04pc0101_explore:
-	_MACRO_EASY_OBJ_MSG('dp_scenario3', '00_msg_t04pc0101_explore', 'The Hidden Machine Defog can be found\nin the Solaceon Ruins.\rBut my Pokémon can’t learn the hidden\nmove.\rI’m going to give the ruins a miss, this\ntime.')
+	_MACRO_EASY_OBJ_MSG('dialogue_t04pc0101', '00_msg_t04pc0101_explore', 'The Hidden Machine Defog can be found\nin the Solaceon Ruins.\rBut my Pokémon can’t learn the hidden\nmove.\rI’m going to give the ruins a miss, this\ntime.')
 	_END()

@@ -9,14 +9,14 @@ ev_c01r0202_flagchange_vanish:
 	_END()
 ev_c01r0202_idol:
 	_TALK_OBJ_START()
-	_TALKMSG('dp_scenario1%36-msg_c01r0202_idol_01')
+	_MACRO_TALKMSG('dialogue_c01r0202', '36-msg_c01r0202_idol_01', 'I don’t know what to do...\rWhat accessories will go well with my\ndress today?')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_c01r0202_sunglasses:
 	_TALK_OBJ_START()
 	_IF_FLAGON_JUMP(#FE_C01R0202_ACCE_GET, 'ev_c01r0202_sunglasses_02')
-	_TALKMSG('dp_scenario1%36-msg_c01r0202_sunglasses_01')
+	_MACRO_TALKMSG('dialogue_c01r0202', '36-msg_c01r0202_sunglasses_01', 'The star of tomorrow is...you! Your Pokémon has\na glow about it!\rSo, a gift for our future star!')
 	_FIRST_POKE_NO_GET(@SCWK_ANSWER)
 	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 0, 'ev_c01r0202_sunglasses_seal_no_1_set')
 	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 1, 'ev_c01r0202_sunglasses_seal_no_2_set')
@@ -27,7 +27,7 @@ ev_c01r0202_sunglasses:
 	_END()
 ev_c01r0202_sunglasses_02:
 	_SEAL_NAME(0, @WK_SCENE_C01R0202_GET_ACCE_NO, 3)
-	_TALKMSG('dp_scenario1%36-msg_c01r0202_sunglasses_02')
+	_TALKMSG('dialogue_c01r0202%36-msg_c01r0202_sunglasses_02')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()

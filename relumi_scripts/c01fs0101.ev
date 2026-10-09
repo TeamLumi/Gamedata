@@ -17,7 +17,7 @@ ev_c01fs0101_shop_re:
 	_JUMP('ev_c01fs0101_shop_end')
 	_END()
 ev_c01fs0101_shop_sonohoka:
-	_TALKMSG('dp_scenario1%28-mes_shop_01_03')
+	_MACRO_TALKMSG('dialogue_c01fs0101', '28-mes_shop_01_03', 'Is there anything else I can do for you?')
 	_RET()
 ev_c01fs0101_shop_buy:
 	_LDVAL(@LOCALWORK3, 1)
@@ -66,12 +66,12 @@ ev_c01fs0101_fix_shop:;Not Called
 	_TALK_OBJ_END()
 	_END()
 ev_c01fs0101_man2a:
-	_EASY_OBJ_MSG('dp_scenario1%30-msg_c01fc0101_man2a_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c01fs0101', '30-msg_c01fc0101_man2a_01', 'If you want to catch a Pokémon, you should try\nto lower its HP first.\rIf you don’t, Poké Balls won’t be very effective.')
 	_END()
 ev_c01fs0101_middlewoman1a:
 	_SYS_FLAG_BADGE_COUNT(@SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'GE', 5, 'ev_c01fs0101_middlewoman_gt5')
-	_EASY_OBJ_MSG('dp_scenario1%30-msg_c01fc0101_middlewoman1a_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c01fs0101', '30-msg_c01fc0101_middlewoman1a_01', 'I need Potions most of all!\rIf all my Pokémon faint, I completely black out!')
 	_END()
 anm_c01fs0101_middlewoman_exclamation:
 	_AC_MARK_GYOE()
@@ -85,15 +85,15 @@ anm_c01fs0101_middlewoman_face_left:
 ev_c01fs0101_middlewoman_gt5:
 	_TALK_OBJ_START_TURN_NOT()
 	_IF_FLAGON_JUMP(#2519, 'ev_c01fs0101_middlewoman_gt5_finished')
-	_MACRO_TALKMSG('dp_scenario3', '00_msg_c01fs0101_woman_1', 'Hey, did you hear about those rangers closing up\nRoute 204?')
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_c01fs0101_woman_2', 'No way!\nHow are we supposed to get to Floarama Town now?')
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_c01fs0101_woman_3', 'I don’t know,\nthey did say it wasn’t going to take long,\fbut I really needed those flowers for...')
+	_MACRO_TALKMSG('dialogue_c01fs0101', '00_msg_c01fs0101_woman_1', 'Hey, did you hear about those rangers closing up\nRoute 204?')
+	_MACRO_TALK_KEYWAIT('dialogue_c01fs0101', '00_msg_c01fs0101_woman_2', 'No way!\nHow are we supposed to get to Floarama Town now?')
+	_MACRO_TALK_KEYWAIT('dialogue_c01fs0101', '00_msg_c01fs0101_woman_3', 'I don’t know,\nthey did say it wasn’t going to take long,\fbut I really needed those flowers for...')
 	_OBJ_ANIME('C01FS0101_MIDDLEW', 'anm_c01fs0101_middlewoman_exclamation')
 	_OBJ_ANIME_WAIT()
 	_TALK_CLOSE()
 	_CHARA_LOOK_LOCK('C01FS0101_MIDDLEW', 'HERO')
 	_CHARA_LOOK_LOCK('C01FS0101_MIDDLEW2', 'HERO')
-	_MACRO_TALKMSG('dp_scenario3', '00_msg_c01fs0101_woman_4', 'Excuse me child,\ndon’t you know that it’s rude to eavesdrop?')
+	_MACRO_TALKMSG('dialogue_c01fs0101', '00_msg_c01fs0101_woman_4', 'Excuse me child,\ndon’t you know that it’s rude to eavesdrop?')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_CHARA_LOOK_RELEASE('C01FS0101_MIDDLEW')
@@ -112,11 +112,11 @@ ev_c01fs0101_spawn_ranger_event:
 	_FLAG_RESET(#2877); Reveal the Graveller 3
 	_RET()
 ev_c01fs0101_middlewoman_gt5_finished:
-	_MACRO_TALKMSG('dp_scenario3', '00_msg_c01fs0101_woman_5', 'It looks like those rangers have cleared up.')
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_c01fs0101_woman_6', 'Thank goodness. I was beginning to get worried.')
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_c01fs0101_woman_7', 'If only...')
+	_MACRO_TALKMSG('dialogue_c01fs0101', '00_msg_c01fs0101_woman_5', 'It looks like those rangers have cleared up.')
+	_MACRO_TALK_KEYWAIT('dialogue_c01fs0101', '00_msg_c01fs0101_woman_6', 'Thank goodness. I was beginning to get worried.')
+	_MACRO_TALK_KEYWAIT('dialogue_c01fs0101', '00_msg_c01fs0101_woman_7', 'If only...')
 	_CHARA_LOOK_LOCK('C01FS0101_MIDDLEW', 'HERO')
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_c01fs0101_woman_8', 'You again!? Do you have any manners?\nHmph, my children would never be so rude.')
+	_MACRO_TALK_KEYWAIT('dialogue_c01fs0101', '00_msg_c01fs0101_woman_8', 'You again!? Do you have any manners?\nHmph, my children would never be so rude.')
 	_TALK_CLOSE()
 	_CHARA_LOOK_RELEASE('C01FS0101_MIDDLEW')
 	_OBJ_ANIME('C01FS0101_MIDDLEW', 'anm_c01fs0101_middlewoman_face_right')

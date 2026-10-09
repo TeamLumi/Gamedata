@@ -1,6 +1,6 @@
 ev_t04r0401_oldwoman2:
-	_EASY_OBJ_MSG('dp_scenario2%69-msg_t04r0401_oldwoman2_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_t04r0401', '69-msg_t04r0401_oldwoman2_01', 'Every so often, Eggs will be found at the\nPokémon Nursery.\rAnd they’re found without anyone knowing how\nthey got there. Is someone leaving them there?')
 	_END()
 ev_t04r0401_girl1:
-	_EASY_OBJ_MSG('dp_scenario2%69-msg_t04r0401_girl1_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_t04r0401', '69-msg_t04r0401_girl1_01', 'They say no one has ever seen a Pokémon\nactually lay an Egg.\rSo, it hasn’t been proven that Pokémon actually\nlay Eggs.')
 	_END()

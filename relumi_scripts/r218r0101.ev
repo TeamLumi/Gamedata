@@ -1,48 +1,48 @@
 ev_r218r0101_policeman:
-	_EASY_OBJ_MSG('dp_scenario1%63-msg_r218r0101_policeman_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_r218r0101', '63-msg_r218r0101_policeman_01', 'Route 218 up ahead is a great fishing hole that’s\nalmost unknown to people.')
 	_END()
 ev_r218r0101_fishing:
 	_TALK_OBJ_START()
 	_LDVAL(@SCWK_TEMP0, 445)
 	_ITEM_NAME(0, @SCWK_TEMP0, 1)
 	_IF_FLAGON_JUMP(#FE_BORONOTURIZAO_GET, 'ev_r218r0101_fishing_flag_on')
-	_TALKMSG('dp_scenario1%63-msg_r218r0101_fishing_01')
+	_MACRO_TALKMSG('dialogue_r218r0101', '63-msg_r218r0101_fishing_01', 'Yes, sir! An Old Rod is a good thing! You think so\ntoo, am I right?')
 	_YES_NO_WIN(@SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_r218r0101_fishing_yes')
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_r218r0101_fishing_no')
 	_END()
 ev_r218r0101_fishing_flag_on:
 	_ITEM_NAME(0, @SCWK_TEMP0, 1)
-	_TALKMSG('dp_scenario1%63-msg_r218r0101_fishing_03')
+	_MACRO_TALKMSG('dialogue_r218r0101', '63-msg_r218r0101_fishing_03', 'You should fish wherever there is a body\nof water.\rOh, and by the way, did you need any tips on\nusing that fishing rod?')
 	_YES_NO_WIN(@SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_r218r0101_fishing_05')
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_r218r0101_fishing_06')
 	_END()
 ev_r218r0101_fishing_05:
-	_TALKMSG('dp_scenario1%63-msg_r218r0101_fishing_05')
+	_MACRO_TALKMSG('dialogue_r218r0101', '63-msg_r218r0101_fishing_05', 'First, you face any body of water. Then you use\nyour fishing rod. Next, you focus!\rIf a Pokémon bites, an “!” appears. That’s your cue\nto reel it in!')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_r218r0101_fishing_06:
-	_TALKMSG('dp_scenario1%63-msg_r218r0101_fishing_06')
+	_MACRO_TALKMSG('dialogue_r218r0101', '63-msg_r218r0101_fishing_06', 'Okay!')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_r218r0101_fishing_no:
-	_TALKMSG('dp_scenario1%63-msg_r218r0101_fishing_04')
+	_MACRO_TALKMSG('dialogue_r218r0101', '63-msg_r218r0101_fishing_04', 'Oh, really? You don’t like to fish?')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_r218r0101_fishing_yes:
 	_ITEM_NAME(0, @SCWK_TEMP0, 1)
-	_TALKMSG('dp_scenario1%63-msg_r218r0101_fishing_02')
+	_MACRO_TALKMSG('dialogue_r218r0101', '63-msg_r218r0101_fishing_02', 'Yes! Good answer! We can be friends!\rHere you go. That’s my {0,1,9,0}!')
 	_LDVAL(@SCWK_TEMP1, 1)
 	_CALL('ev_item_event')
 	_FLAG_SET(#FE_BORONOTURIZAO_GET)
 	_FLAG_SET(#FE_TURIZAO_GET)
 	_LDVAL(@SCWK_TEMP0, 7); Dive balls
 	_LDVAL(@SCWK_TEMP1, 10); 10
-	_TALKMSG('dp_scenario3%00_msg_oldrod_diveballs')
+	_MACRO_TALKMSG('dialogue_r218r0101', '00_msg_oldrod_diveballs', 'A fisherman’s kit also includes some\ntrusty Dive Balls!\rIt’s the perfect thing to throw at\nanything you fish up!\rHere’s ten of them for you!')
 	_CALL('ev_item_event')
 	_LDVAL(@SCWK_TEMP0, 445); Fix for dialogue
 	_JUMP('ev_r218r0101_fishing_flag_on')

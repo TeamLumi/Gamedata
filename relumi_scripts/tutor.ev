@@ -1,0 +1,176 @@
+ev_lumi_move_tutor: ; Entry point
+	_TALK_OBJ_START()
+	_IF_FLAGOFF_CALL(#2002, 'ev_lumi_move_tutor_first_meet')
+	_CALL('ev_lumi_move_tutor_badge_check')
+	_MACRO_TALKMSG('dialogue_tutor', 'lumi_move_tutor_ask_learn', 'Would you like me to teach a move to\none of your Pokémon?')
+	_YES_NO_WIN(@SCWK_ANSWER)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_lumi_move_tutor_cancel')
+	_JUMP('ev_lumi_move_tutor_choose_pokemon')
+
+ev_lumi_move_tutor_choose_pokemon: ; If a Pokémon was succesfully chosen, SCWK_PARAM0 is the Index, SCWK_PARAM1 is the TrayIndex, and SCWK_PARAM2 is the MonsNo
+	_MACRO_TALKMSG('dialogue_tutor', 'lumi_move_tutor_which_pokemon', 'Which Pokémon would you like me\nto teach?')
+	_TALK_CLOSE()
+	_POKELIST_SET_PROC(2) ; Setup Pokémon list with an argument of 2 to be able to select all Pokémon
+	_POKELIST_GET_RESULT(@SCWK_PARAM0, @SCWK_PARAM1) ; Open the Pokémon list and get its result. Argument 1 is the bag/box position, Argument 2 is the box number (0 = Party)
+	_IFVAL_JUMP(@SCWK_PARAM0, 'EQ', -1, 'ev_lumi_move_tutor_cancel') ; If SCK_PARAM0 is -1, the player chose nothing
+	_TEMOTI_BOX_MONSNO(@SCWK_PARAM0, @SCWK_PARAM1, @SCWK_PARAM2) ; Get the MonsNo of the selected Pokémon -> SCWK_PARAM2
+	_IFVAL_JUMP(@SCWK_PARAM2, 'EQ', 0, 'ev_lumi_move_tutor_egg') ; If the MonsNo is 0, the player chose an egg
+	_JUMP('ev_lumi_move_tutor_prepare')
+
+ev_lumi_move_tutor_prepare: ; Prepare the move tutor UI
+	_CALL('ev_lumi_move_tutor_generate_badge_list')
+	_JUMP('ev_lumi_move_tutor_open_menu')
+
+ev_lumi_move_tutor_first_meet: ; First meeting dialogue
+	_MACRO_TALKMSG('dialogue_tutor', 'lumi_move_tutor_first_meet', 'Hello!\rThis is the first time we meet.\nI am a move tutor.')
+	_TALK_CLOSE()
+	_FLAG_SET(#2002) ; Met Lumi move tutor for the first time
+	_BOUKENNOOTO_TIPS_OPEN(8, @SCWK_ANSWER)
+	_BOUKENNOOTO_TIPS_WAIT()
+	_FLAG_SET(#2458); Badge Tutor Chapter
+	_RET()
+
+ev_lumi_move_tutor_badge_check: ; Checks if the player has at least one badge
+	_SYS_FLAG_BADGE_COUNT(@SCWK_ANSWER)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'LT', 1, 'ev_lumi_move_tutor_no_badges')
+	_RET()
+
+ev_lumi_move_tutor_cancel: ; End the move tutor script
+	_MACRO_TALKMSG('dialogue_tutor', 'lumi_move_tutor_leave', 'Come back anytime.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+
+ev_lumi_move_tutor_no_moves: ; No moves can be learned, end the script here
+	_POKEMON_NAME_EXTRA(0, @SCWK_PARAM2)
+	_MACRO_TALKMSG('dialogue_tutor', 'lumi_move_tutor_no_moves', 'I cannot teach any of my moves to\n{0,1,1,0}.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+
+ev_lumi_move_tutor_no_badges: ; Player has no badges
+	_MACRO_TALKMSG('dialogue_tutor', 'lumi_move_tutor_no_badges', 'My moves are too powerful for you.\rCome back when you’re a bit stronger.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+
+ev_lumi_move_tutor_egg: ; Selected Pokémon was egg
+	_MACRO_TALKMSG('dialogue_tutor', 'lumi_move_tutor_egg', 'I cannot teach a move to an egg.\rCome back with a Pokémon\nthat is ready to learn.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+
+ev_lumi_move_tutor_generate_badge_list: ; Prepare move tutor with all available tables
+	_IF_FLAGON_CALL($BADGE_ID_C03, 'ev_lumi_move_tutor_add_badge_1_table')
+	_IF_FLAGON_CALL($BADGE_ID_C04, 'ev_lumi_move_tutor_add_badge_2_table')
+	_IF_FLAGON_CALL($BADGE_ID_C05, 'ev_lumi_move_tutor_add_badge_3_table')
+	_IF_FLAGON_CALL($BADGE_ID_C07, 'ev_lumi_move_tutor_add_badge_4_table')
+	_IF_FLAGON_CALL($BADGE_ID_C06, 'ev_lumi_move_tutor_add_badge_5_table')
+	_IF_FLAGON_CALL($BADGE_ID_C02, 'ev_lumi_move_tutor_add_badge_6_table')
+	_IF_FLAGON_CALL($BADGE_ID_C09, 'ev_lumi_move_tutor_add_badge_7_table')
+	_IF_FLAGON_CALL($BADGE_ID_C08, 'ev_lumi_move_tutor_add_badge_8_table')
+	_RET()
+
+ev_lumi_move_tutor_add_badge_1_table: ; Coal Badge
+	_LOAD_MOVE_TUTOR_TABLE(0)
+	_RET()
+
+ev_lumi_move_tutor_add_badge_2_table: ; Forest Badge
+	_LOAD_MOVE_TUTOR_TABLE(1)
+	_RET()
+
+ev_lumi_move_tutor_add_badge_3_table: ; Relic Badge
+	_LOAD_MOVE_TUTOR_TABLE(2)
+	_RET()
+
+ev_lumi_move_tutor_add_badge_4_table: ; Cobble Badge
+	_LOAD_MOVE_TUTOR_TABLE(3)
+	_RET()
+
+ev_lumi_move_tutor_add_badge_5_table: ; Fen Badge
+	_LOAD_MOVE_TUTOR_TABLE(4)
+	_RET()
+
+ev_lumi_move_tutor_add_badge_6_table: ; Mine Badge
+	_LOAD_MOVE_TUTOR_TABLE(5)
+	_RET()
+
+ev_lumi_move_tutor_add_badge_7_table: ; Icicle Badge
+	_LOAD_MOVE_TUTOR_TABLE(6)
+	_RET()
+
+ev_lumi_move_tutor_add_badge_8_table: ; Beacon Badge
+	_LOAD_MOVE_TUTOR_TABLE(7)
+	_RET()
+
+ev_lumi_move_tutor_add_dev_dj_1_table: ; Bouncy Bubble #1790
+	_LOAD_MOVE_TUTOR_TABLE(8)
+	_RET()
+ev_lumi_move_tutor_disable_dev_dj_1_table: ; Disables adding Bouncy Bubble to the UI after learning it from Dev DJ
+	_FLAG_SET(#1790)
+	_RET()
+
+ev_lumi_move_tutor_add_dev_dj_2_table: ; Buzzy Buzz #1789
+	_LOAD_MOVE_TUTOR_TABLE(9)
+	_RET()
+ev_lumi_move_tutor_disable_dev_dj_2_table: ; Disables adding Buzzy Buzz to the UI after learning it from Dev DJ
+	_FLAG_SET(#1789)
+	_RET()
+
+ev_lumi_move_tutor_add_dev_dj_3_table: ; Sizzly Slide #1788
+	_LOAD_MOVE_TUTOR_TABLE(10)
+	_RET()
+ev_lumi_move_tutor_disable_dev_dj_3_table: ; Disables adding Sizzly Slide to the UI after learning it from Dev DJ
+	_FLAG_SET(#1788)
+	_RET()
+
+ev_lumi_move_tutor_add_dev_dj_4_table: ; Glitzy Glow #1787
+	_LOAD_MOVE_TUTOR_TABLE(11)
+	_RET()
+ev_lumi_move_tutor_disable_dev_dj_4_table: ; Disables adding Glitzy Glow to the UI after learning it from Dev DJ
+	_FLAG_SET(#1787)
+	_RET()
+
+ev_lumi_move_tutor_add_dev_dj_5_table: ; Baddy Bad #1786
+	_LOAD_MOVE_TUTOR_TABLE(12)
+	_RET()
+ev_lumi_move_tutor_disable_dev_dj_5_table: ; Disables adding Baddy Bad to the UI after learning it from Dev DJ
+	_FLAG_SET(#1786)
+	_RET()
+
+ev_lumi_move_tutor_add_dev_dj_6_table: ; Sappy Seed #1785
+	_LOAD_MOVE_TUTOR_TABLE(13)
+	_RET()
+ev_lumi_move_tutor_disable_dev_dj_6_table: ; Disables adding Sappy Seed to the UI after learning it from Dev DJ
+	_FLAG_SET(#1785)
+	_RET()
+
+ev_lumi_move_tutor_add_dev_dj_7_table: ; Freezy Frost #1784
+	_LOAD_MOVE_TUTOR_TABLE(14)
+	_RET()
+ev_lumi_move_tutor_disable_dev_dj_7_table: ; Disables adding Freezy Frost to the UI after learning it from Dev DJ
+	_FLAG_SET(#1784)
+	_RET()
+
+ev_lumi_move_tutor_add_dev_dj_8_table: ; Sparkly Swirl #1783
+	_LOAD_MOVE_TUTOR_TABLE(15)
+	_RET()
+ev_lumi_move_tutor_disable_dev_dj_8_table: ; Disables adding Sparkly Swirl to the UI after learning it from Dev DJ
+	_FLAG_SET(#1783)
+	_RET()
+
+ev_lumi_move_tutor_open_menu: ; Now we open the UI
+	_MOVE_TUTOR_UI(@SCWK_ANSWER, @SCWK_PARAM0, @SCWK_PARAM1) ; Open the move tutor UI with the stored tables and put the result into SCWK_ANSWER
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', -1, 'ev_lumi_move_tutor_no_moves') ; -1 if no moves in the stored tables can be learned by the selected Pokémon
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_lumi_move_tutor_cancel') ; 0 if the relearning was canceled
+	_JUMP('ev_lumi_move_tutor_success')
+
+ev_lumi_move_tutor_success: ; Player has successfully taught a move
+	_POKEMON_NAME_EXTRA(0, @SCWK_PARAM2)
+	_WAZA_NAME(1, @SCWK_ANSWER)
+	_MACRO_TALKMSG('dialogue_tutor', 'lumi_move_tutor_success', 'Your {0,1,1,0} now knows the move\n{1,1,7,0}!')
+	_MACRO_TALKMSG('dialogue_tutor', 'lumi_move_tutor_again', 'Would you like me to teach\nanother move to this Pokémon?')
+	_YES_NO_WIN(@SCWK_ANSWER)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_lumi_move_tutor_cancel')
+	_TALK_CLOSE()
+	_JUMP('ev_lumi_move_tutor_prepare')

@@ -1,2 +1,430 @@
-ev_test:
+ev_uga02_flag_change:
+	_IF_FLAGON_JUMP(#2052, 'ev_uga02_galar_ranger_1_position_change')
 	_END()
+
+ev_uga02_galar_ranger_1_position_change:
+	_SXY_POS_CHANGE('UGA02_GALAR_RANGER_1', 80, 48)
+	_OBJ_DIR_CHANGE('UGA02_GALAR_RANGER_1', 0)
+	_END()
+
+pos_uga02_galar_ranger_1_stop:
+	_EVENT_START()
+	_LDVAL(@516, 1)
+	;Determines which position the player is in
+	_PLAYER_POS_GET(@SCWK_TEMP0, @SCWK_TEMP1)
+	;Since the hallways have .5 tiles at the sides, center the player in a tile if needed
+	;Fade to black
+	_BLACK_OUT()
+	_FADE_WAIT()
+	;If X is greater than 86, the player is coming from the bottom
+	_IFVAL_CALL(@SCWK_TEMP0, 'GE', 86, 'ev_uga02_galar_ranger_1_hero_grid_center_bottom')
+	;If X is less than 85, the player is coming from the side
+	_IFVAL_CALL(@SCWK_TEMP0, 'LE', 85, 'ev_uga02_galar_ranger_1_hero_grid_center_side')
+	_TIME_WAIT(5, @SCWK_ANSWER)
+	_BLACK_IN()
+	_FADE_WAIT()
+	_CHARA_LOOK_LOCK('HERO', 'UGA02_GALAR_RANGER_1')
+	_MACRO_TALKMSG('dialogue_uga02', 'msg_uga02_galar_ranger_1_001', 'Aw c’mon, mate. I’ve bought so much from you\nalready.\rYou really won’t consider throwing in an extra\nlittle freebie for me?')
+	_MACRO_TALKMSG('dialogue_uga02', 'msg_uga02_galar_small_sphere_vendor_1_001', 'I’m sorry, sir. The price listed is what you pay.')
+	_MACRO_TALKMSG('dialogue_uga02', 'msg_uga02_galar_ranger_1_002', 'Really? Any Pokémart will throw in a free\nPremier Ball as a thank you, if you buy 10\for more Pokéballs from them, y’know.')
+	_MACRO_TALKMSG('dialogue_uga02', 'msg_uga02_galar_small_sphere_vendor_1_002', 'Respectfully, does this look like a Pokémart\nto you?')
+	_TALK_CLOSE()
+	;Ranger takes a step away and sad emotes
+	_OBJ_ANIME('UGA02_GALAR_RANGER_1', 'anm_uga02_galar_ranger_1_sad')
+	_OBJ_ANIME_WAIT()
+	;Ranger faces the player, and player faces the Ranger
+	_CHARA_LOOK_LOCK('UGA02_GALAR_RANGER_1', 'HERO')
+	;Exclamation emotes and walks to the player
+	_OBJ_ANIME('UGA02_GALAR_RANGER_1', 'anm_uga02_galar_ranger_1_exclamation')
+	_OBJ_ANIME_WAIT()
+	_CHARA_LOOK_RELEASE('UGA02_GALAR_RANGER_1')
+	;Ranger walks to the player
+	;If X is greater than 86, the player is coming from the bottom
+	_IFVAL_CALL(@SCWK_TEMP0, 'GE', 86, 'ev_uga02_galar_ranger_1_walk_bottom')
+	;If X is less than 85, the player is coming from the side
+	_IFVAL_CALL(@SCWK_TEMP0, 'LE', 85, 'ev_uga02_galar_ranger_1_walk_side')
+	_CHARA_LOOK_LOCK('UGA02_GALAR_RANGER_1', 'HERO')
+	_MACRO_TALKMSG('dialogue_uga02', 'msg_uga02_galar_ranger_1_003', 'Oh! Pardon me.\nI didn’t mean to block your way.\rI was just here, wallowing in self pity, you see.\rAhem! I mean, I was just finishing up a\ntransaction with this fine gentleman.\rI was buying supplies for myself and my survey\ncorps colleagues all over Sinnoh.\rI wanted to buy a little souvenir for a friend of\nmine, back in my home region, too.\rA peculiar type of Pokéball that I’ve never\nseen before.\rAnyway, to cut a long story short, I miscounted\nand don’t have enough funds left to buy it!\r...\rThe truth is, I actually spent a lot of time digging\nfor tumblestones and now I’m all tuckered out.\rOh, you weren’t aware? The merchants in the\nunderground require tumblestones as payment\ffor their goods.\rI sure am glad it doesn’t work that way in\nthe surface world.\rI don’t have the stamina to make a living\nthat way!\rSay, you look to be young and full of energy.\nHow’s about doing me a favor?\rIf you dig up some tumblestones and use them\nto buy a Vintage Pokéball from one of the\fmerchants down here.\rI’ve got a souvenir of my own to offer in\nexchange!')
+	_TALK_CLOSE()
+	_CHARA_LOOK_RELEASE('HERO')
+	_CHARA_LOOK_RELEASE('UGA02_GALAR_RANGER_1')
+	;Walks and stand against the north wall.
+	;Depending on where the Ranger ended when going to talk to the Player, walk the way back to the wall
+	;The value is set in: ev_uga02_galar_ranger_1_walk_ bottom/side, as a way to avoid having to check again which movement is needed, since it's the same to go back
+	_SWITCH(@SCWK_TEMP2)
+	_CASE_CALL(0, 'ev_uga02_galar_ranger_1_wall_bottom')
+	_CASE_CALL(1, 'ev_uga02_galar_ranger_1_wall_side')
+	;Change the position to make sure they dont teleport back to it's default position
+	_SXY_POS_CHANGE('UGA02_GALAR_RANGER_1', 80, 48)
+	_OBJ_DIR_CHANGE('UGA02_GALAR_RANGER_1', 0)
+	;Will update to the new position of the Ranger in the map with a map script
+	_FLAG_SET(#2052)
+	_EVENT_END()
+	_END()
+
+ev_uga02_galar_ranger_1_hero_grid_center_bottom:
+	_SXY_POS_CHANGE('HERO', 88, 53)
+	_RET()
+
+ev_uga02_galar_ranger_1_hero_grid_center_side:
+	_SXY_POS_CHANGE('HERO', 82, 49)
+	_RET()
+
+ev_uga02_galar_ranger_1_walk_bottom:
+	;First, the NPC walks down
+	_OBJ_ANIME('UGA02_GALAR_RANGER_1', 'anm_uga02_galar_ranger_1_walk_bottom')
+	_OBJ_ANIME_WAIT()
+	;Save the position where the Ranger ended to use later when going to the wall
+	_LDVAL(@SCWK_TEMP2, 0)
+	_RET()
+
+ev_uga02_galar_ranger_1_walk_side:
+	;First, the NPC walks left
+	_OBJ_ANIME('UGA02_GALAR_RANGER_1', 'anm_uga02_galar_ranger_1_walk_side')
+	_OBJ_ANIME_WAIT()
+	;Save the position where the Ranger ended to use later when going to the wall
+	_LDVAL(@SCWK_TEMP2, 1)
+	_RET()
+
+ev_uga02_galar_ranger_1_wall_bottom:
+	_OBJ_ANIME('UGA02_GALAR_RANGER_1', 'anm_uga02_galar_ranger_1_wall_bottom')
+	_OBJ_ANIME_WAIT()
+	_RET()
+
+ev_uga02_galar_ranger_1_wall_side:
+	_OBJ_ANIME('UGA02_GALAR_RANGER_1', 'anm_uga02_galar_ranger_1_wall_side')
+	_OBJ_ANIME_WAIT()
+	_RET()
+
+ev_uga02_galar_ranger_1:
+	_TALK_OBJ_START()
+	_IF_FLAGON_JUMP(#2048, 'ev_uga02_galar_ranger_quest_completed'); If the player has already completed the quest
+	_IF_FLAGON_JUMP(#2047, 'ev_uga02_galar_ranger_gift_again'); If the player decides on "Not right now" for the gift
+	_MACRO_TALKMSG('dialogue_uga02', 'msg_uga02_galar_ranger_1_004', 'Oi oi. You’re back! You wouldn’t happen to\nhave a Vintage Pokéball for me would you?')
+	_TALK_CLOSE()
+	;Checks if the player has a vintage pokeball
+	_GET_ITEM_COUNT(1710, @LOCALWORK0)
+	_IFVAL_CALL(@LOCALWORK0, 'NE', 0, 'ev_uga02_galar_ranger_item_choice'); The player has at least 1 Vintage Pokeball
+	_JUMP('ev_uga02_galar_ranger_no'); The player has 0 Vintage Pokeballs
+	_END()
+
+ev_uga02_galar_ranger_item_choice:
+	;Gives the player the option to give the Vintage Ball or not when they have at least 1
+	_MACRO_TALKMSG('dialogue_uga02', 'msg_uga02_galar_ranger_item_choice_001', 'Do you want to give a Vintage Pokéball\nto the Ranger?')
+	_YES_NO_WIN(@SCWK_ANSWER)
+	_TALK_CLOSE()
+	_SWITCH(@SCWK_ANSWER)
+	_CASE_JUMP(0, 'ev_uga02_galar_ranger_yes')
+	_CASE_JUMP(1, 'ev_uga02_galar_ranger_no')
+	_END()
+
+ev_uga02_galar_ranger_yes:
+	;Remove one vintage ball from bag
+	_LDVAL(@SCWK_TEMP0, 1710); Vintage Pokeball
+	_LDVAL(@SCWK_TEMP1, 1); Amount
+	_SUB_ITEM(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_ANSWER)
+	_MACRO_TALKMSG('dialogue_uga02', 'msg_uga02_galar_ranger_yes_001', 'That’s it! My pal back home will love this thing.\nHe has a penchant for collecting rare Pokéballs.\rAs promised, I have a souvenir from my region\nto offer as recompense!')
+	;Jumps to the gift starter part
+	_JUMP('ev_uga02_galar_ranger_success')
+	_END()
+
+ev_uga02_galar_ranger_success:
+	;Offer the player a choice of starters or come back later
+	_IF_FLAGOFF_CALL(#2049, 'ev_uga02_galar_ranger_gift_add_grookey')
+	_IF_FLAGOFF_CALL(#2050, 'ev_uga02_galar_ranger_gift_add_scorbunny')
+	_IF_FLAGOFF_CALL(#2051, 'ev_uga02_galar_ranger_gift_add_sobble')
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_Cancel', 'Not right now', 2)
+	_OPEN_CUSTUM_WIN(@SCWK_TEMP0); SCWK_TEMP0 will have the MonsNo of the pokemon chosen
+	_TALK_CLOSE()
+	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', 2, 'ev_uga02_galar_ranger_no_gift_give')
+	_CALL('ev_common_tray_space_check'); Checks if there is any remaining space in the Party and Boxes
+	_IFVAL_JUMP(@551, 'EQ', 1, 'ev_uga02_galar_ranger_gift_no_tray_space'); Party and Boxes are full
+	_POKEMON_NAME_EXTRA(0, @SCWK_TEMP0, 0, 0)
+	_ME_PLAY('M_FI013')
+	_MACRO_TALKMSG('dialogue_uga02', 'msg_t03_receive_starter', 'You received {0,1,1,0}.')
+	_ME_WAIT()
+	_ADD_POKEMON_UI_EXTRA(@SCWK_TEMP0, 0, 5, 0, 3, 4) ; MonsNo, FormNo, Level, Item, MaxIVs, BallId
+	_SWITCH(@SCWK_TEMP0)
+	_CASE_JUMP(810, 'ev_uga02_galar_ranger_bug_grookey_flag_set')
+	_CASE_JUMP(813, 'ev_uga02_galar_ranger_bug_scorbunny_flag_set')
+	_CASE_JUMP(816, 'ev_uga02_galar_ranger_bug_sobble_flag_set')
+	_END()
+
+ev_uga02_galar_ranger_gift_add_grookey:
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_Grookey', 'Grookey', 810)
+	_RET()
+
+ev_uga02_galar_ranger_gift_add_scorbunny:
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_Scorbunny', 'Scorbunny', 813)
+	_RET()
+
+ev_uga02_galar_ranger_gift_add_sobble:
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_Sobble', 'Sobble', 816)
+	_RET()
+
+ev_uga02_galar_ranger_gift_again:
+	_FLAG_RESET(#2047); Resets if the player has said no to Ranger Starter gift.
+	_MACRO_TALKMSG('dialogue_uga02', 'msg_uga02_galar_ranger_gift_again_001', 'Oh, there you are!\nDo you want to pick up your reward now?')
+	_JUMP('ev_uga02_galar_ranger_success')
+
+ev_uga02_galar_ranger_no_gift_give:
+	_FLAG_SET(#2047); Player said no to galar Ranger Starter Gift
+	_MACRO_TALKMSG('dialogue_uga02', 'msg_uga02_galar_ranger_no_gift_give_001', 'You need some time? By all means.\rI’ll be a while sorting out these supplies anyway.\nJust let me know when you’re ready!')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+
+ev_uga02_galar_ranger_gift_no_tray_space:
+	_FLAG_SET(#2047); Player said no to galar Ranger Starter Gift
+	_MACRO_TALKMSG('dialogue_uga02', 'msg_uga02_galar_ranger_gift_no_tray_space', 'You need to make room in your boxes?\nBy all means.\rI’ll be a while sorting out these supplies anyway.\nJust let me know when you’re ready!')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+
+ev_uga02_galar_ranger_bug_grookey_flag_set:
+	_FLAG_SET(#2049); Ranger Grookey
+	_JUMP('ev_uga02_galar_ranger_quest_finish')
+
+ev_uga02_galar_ranger_bug_scorbunny_flag_set:
+	_FLAG_SET(#2050); Ranger Scorbunny
+	_JUMP('ev_uga02_galar_ranger_quest_finish')
+
+ev_uga02_galar_ranger_bug_sobble_flag_set:
+	_FLAG_SET(#2051); Ranger Sobble
+	_JUMP('ev_uga02_galar_ranger_quest_finish')
+
+ev_uga02_galar_ranger_quest_finish:
+	_FLAG_SET(#2048); UG02 Ranger Galar 1 Quest completed.
+	_TALK_CLOSE()
+	_MACRO_TALKMSG('dialogue_uga02', 'msg_uga02_galar_ranger_quest_finish_001', 'Take good care of that wee beastie.\rI shall make sure this ball is delivered to\nmy ball guy, safe and sound!')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+
+ev_uga02_galar_ranger_no:
+	_MACRO_TALKMSG('dialogue_uga02', 'msg_uga02_galar_ranger_no_001', 'Not yet? Remember that you need to dig up\ntumblestones from within the walls of the\fGrand Underground.\rTake those to an Underground Merchant and\nuse them to buy a Vintage Pokéball to trade me.\rIn fact, they look downright rustic.\nI’ve heard ancient trainers used to make these\fthemselves.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+
+ev_uga02_galar_ranger_quest_completed:
+	_MACRO_TALKMSG('dialogue_uga02', 'msg_uga02_galar_ranger_quest_completed_001', 'Thank you for helping me out!\rEven if it wasn’t in the service of professional\nRanger business, it was quite the professionally\fexecuted deal!!')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+
+anm_uga02_galar_ranger_1_sad:
+	_AC_LEFT(1, 8)
+	_AC_WAIT(8)
+	_AC_MARK_EMO(8)
+	_ACMD_END()
+
+anm_uga02_galar_ranger_1_exclamation:
+	_AC_MARK_GYOE()
+	_ACMD_END()
+
+anm_uga02_galar_ranger_1_walk_side:
+	_AC_DIR_L(4)
+	_AC_WORLD_X(83, 8)
+	_ACMD_END()
+
+anm_uga02_galar_ranger_1_walk_bottom:
+	_AC_DIR_D(4)
+	_AC_DOWN(1, 8)
+	_AC_DIR_R(4)
+	_AC_RIGHT(2, 8)
+	_AC_DIR_D(4)
+	_AC_DOWN(1, 8)
+	_AC_DIR_R(4)
+	_AC_RIGHT(1, 8)
+	_AC_DIR_D(4)
+	_AC_DOWN(1, 8)
+	_ACMD_END()
+
+anm_uga02_galar_ranger_1_wall_bottom:
+	_AC_DIR_U(4)
+	_AC_UP(1, 8)
+	_AC_DIR_L(4)
+	_AC_LEFT(2, 8)
+	_AC_DIR_U(4)
+	_AC_UP(1, 8)
+	_AC_DIR_L(4)
+	_AC_WORLD_X(80, 8)
+	_AC_DIR_U(4)
+	_AC_WORLD_Z(48, 8)
+	_ACMD_END()
+
+anm_uga02_galar_ranger_1_wall_side:
+	_AC_DIR_U(4)
+	_AC_UP(1, 8)
+	_AC_DIR_L(4)
+	_AC_WORLD_X(80, 8)
+	_ACMD_END()
+
+;TODO Add vendor logic
+ev_uga02_small_sphere_vendor_1:	
+	_END()
+
+ev_uga02_johto_ranger_1:
+	_IF_FLAGON_JUMP(#2014, 'ev_uga02_johto_ranger_quest_completed'); TODO Find other flags to use :P
+	_IF_FLAGON_JUMP(#2013, 'ev_uga02_johto_ranger_gift_again')
+	_IF_FLAGON_JUMP(#2012, 'ev_uga02_johto_ranger_bug_check_again')
+	_TALK_START()
+	_TURN_HERO_TALK_OBJ(); Turns to face the Ranger while they are unaware of the player
+	_MACRO_TALKMSG('dialogue_uga02', 'msg_uga02_johto_ranger_1_001', 'Drat.\nThese bugs are so creepy and crawly.\rI’m never going to be able to get my research done\nif I can’t even bring myself to get near them.')
+	_TALK_CLOSE()
+	_OBJ_ANIME('UGA02_JOHTO_RANGER_1', 'anm_uga02_johto_ranger_1_100')
+	_MACRO_TALKMSG('dialogue_uga02', 'msg_uga02_johto_ranger_1_002', 'Eek!')
+	_OBJ_ANIME_WAIT()
+	_TALK_CLOSE()
+	_CHARA_LOOK_LOCK('UGA02_JOHTO_RANGER_1', 'HERO')
+	_TIME_WAIT(10, @SCWK_ANSWER)
+	_CHARA_LOOK_RELEASE('UGA02_JOHTO_RANGER_1')
+	_MACRO_TALKMSG('dialogue_uga02', 'msg_uga02_johto_ranger_1_003', 'Oh I’m sorry.\nI thought you were a bug Pokémon.\rI’m in a spot of bother here.\nI’ve been tasked with categorizing the rarity of\fa selection of bug type Pokémon but I’m\fhaving a hard time with the last one.\rWould you be able to help me out?\nThe brief I was given by HQ was kind of vague.\rWe’re looking for a large bug type Pokémon\nwith powerful, sharp appendages and\fan aggressive temperament.\rOh. And it needs to be found and caught down\nhere in the underground.')
+	_TALK_CLOSE()
+	_OBJ_ANIME('UGA02_JOHTO_RANGER_1', 'anm_uga02_johto_ranger_1_101')
+	_OBJ_ANIME_WAIT()
+	_MACRO_TALKMSG('dialogue_uga02', 'msg_uga02_johto_ranger_1_004', 'Y’know. Where it’s dark and scary and there\ncould be all manner of bugs crawling out of\fthe cracks in the walls and the ground and...')
+	_TALK_CLOSE()
+	_CHARA_LOOK_LOCK('UGA02_JOHTO_RANGER_1', 'HERO')
+	_TIME_WAIT(10, @SCWK_ANSWER)
+	_CHARA_LOOK_RELEASE('UGA02_JOHTO_RANGER_1')
+	_MACRO_TALKMSG('dialogue_uga02', 'msg_uga02_johto_ranger_1_005', 'I’m sorry. Just thinking about it is enough to\nmake my skin crawl.')
+	_FLAG_SET(#2012); Johto Ranger has been talked to once
+	_TALK_CLOSE()
+	_TALK_END()
+	_END()
+ev_uga02_johto_ranger_bug_check_again:
+	_TALK_OBJ_START()
+	_JUMP('ev_uga02_johto_ranger_bug_check')
+ev_uga02_johto_ranger_bug_check:
+	_MACRO_TALKMSG('dialogue_uga02', 'msg_uga02_johto_ranger_bug_cont', 'Oh, hello again.\rWere you successful in your bug catching endeavors?')
+	_TALK_CLOSE()
+	_CALL('ev_uga02_johto_ranger_pokemon_check'); Loads SCWK_PARAM1 as MonsNo and SCWK_PARAM2 as FormNo
+	_MACRO_TALKMSG('dialogue_uga02', 'msg_uga02_johto_ranger_bug_success', 'Eek! Oh yup.\rThis looks to match all of the criteria that HQ\ngave me!\rOf course there’s no way to be sure but I fail\nto see how that could possibly be our problem.\rIf HQ want better work then they should give\nbetter info.\rThanks a ton for your help.\nYou’re a life saver.')
+	_TALK_CLOSE()	
+	_JUMP('ev_uga02_johto_ranger_bug_success')
+	_END()
+ev_uga02_johto_ranger_pokemon_check:
+    _POKELIST_SET_PROC(25); This only highlight a specific list of mons detailed in UIDatabase.BoxOpenParam
+  	_POKELIST_GET_RESULT(@SCWK_PARAM0, @SCWK_PARAM3); Argument 1 is the bag/box position, Argument 2 is the box number (0 = Bag)
+	_IFVAL_JUMP(@SCWK_PARAM0, 'EQ', -1, 'ev_uga02_johto_ranger_bug_no'); If SCK_PARAM0 is -1, it means you chose nothing.
+    _TEMOTI_BOX_MONSNO(@SCWK_PARAM0, @SCWK_PARAM3, @SCWK_PARAM1); Get the MonsNo of the selected Pokemon, SCWK_PARAM1
+	_SWITCH(@SCWK_PARAM1)
+	_CASE_JUMP(15, 'ev_uga02_johto_ranger_correct_pokemon'); Beedrill
+	_CASE_JUMP(123, 'ev_uga02_johto_ranger_correct_pokemon'); Scyther
+	_CASE_JUMP(127, 'ev_uga02_johto_ranger_correct_pokemon'); Pinsir
+	_CASE_JUMP(0, 'ev_uga02_johto_ranger_bug_invalid'); Egg
+	_JUMP('ev_uga02_johto_ranger_bug_invalid'); Everything else
+    _END()
+ev_uga02_johto_ranger_bug_no:
+	_MACRO_TALKMSG('dialogue_uga02', 'msg_uga02_johto_ranger_bug_no', 'You haven’t found it yet?\nKeep looking!\rRemember, we’re looking for a large bug type\nPokémon with powerful, sharp appendages\fand an aggressive temperament.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_uga02_johto_ranger_bug_invalid:
+	_MACRO_TALKMSG('dialogue_uga02', 'msg_uga02_johto_ranger_bug_invalid', 'Hmmm. This doesn’t seem to match the\ncharacteristics that I’ve been given.\rWe’re looking for a large bug type Pokémon\nwith powerful, sharp appendages and an\faggressive temperament and it must have\fbeen caught down here in the Grand Underground.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_uga02_johto_ranger_bug_invalid_location:
+	_MACRO_TALKMSG('dialogue_uga02', 'msg_uga02_johto_ranger_bug_invalid_location', 'Hmm...\rThis might be what we’re looking for...\nBut it looks like you didn’t catch it in the\fGrand Underground.\rPlease see if you can find a Pokémon like this,\nbut it must come from one of the habitats\fdown here.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_uga02_johto_ranger_correct_pokemon:
+	_GET_CAUGHT_LOCATION(@SCWK_PARAM0, @SCWK_PARAM3, @SCWK_PARAM1); Get the Caught Location ZoneID of the selected Pokemon, SCWK_PARAM1
+	_IFVAL_JUMP(@SCWK_PARAM1, 'LT', 543, 'ev_uga02_johto_ranger_bug_invalid_location')
+	_IFVAL_JUMP(@SCWK_PARAM1, 'GT', 617, 'ev_uga02_johto_ranger_bug_invalid_location')
+	_RET(); Returns back to ev_uga02_johto_ranger_bug_check
+ev_uga02_johto_ranger_bug_success:
+	_LDVAL(@SCWK_TEMP3, 0)
+    _IF_FLAGOFF_CALL(#2015, 'ev_uga02_johto_ranger_gift_add_chikorita')
+    _IF_FLAGOFF_CALL(#2016, 'ev_uga02_johto_ranger_gift_add_cyndaquil')
+    _IF_FLAGOFF_CALL(#2017, 'ev_uga02_johto_ranger_gift_add_totodile')
+	_IFVAL_CALL(@SCWK_TEMP3, 'EQ', 1, 'ev_uga02_johto_ranger_gift_singular')
+	_IFVAL_CALL(@SCWK_TEMP3, 'GT', 1, 'ev_uga02_johto_ranger_gift_multiple')
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_Cancel', 'Not right now', 2)
+	_OPEN_CUSTUM_WIN(@SCWK_TEMP0); SCWK_TEMP0 will have the MonsNo of the pokemon chosen
+	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', 2, 'ev_uga02_johto_ranger_no_gift_give')
+	_CALL('ev_common_tray_space_check'); Checks if there is any remaining space in the Party and Boxes
+	_IFVAL_JUMP(@551, 'EQ', 1, 'ev_uga02_johto_ranger_gift_no_tray_space'); Party and Boxes are full
+	_POKEMON_NAME_EXTRA(0, @SCWK_TEMP0, 0, 0)
+    _ME_PLAY('M_FI013')
+	_MACRO_TALKMSG('dialogue_uga02', 'msg_t03_receive_starter', 'You received {0,1,1,0}.')
+    _ME_WAIT()
+	_ADD_POKEMON_UI_EXTRA(@SCWK_TEMP0, 0, 5, 0, 3, 4) ; MonsNo, FormNo, Level, Item, MaxIVs, BallId
+	_SWITCH(@SCWK_TEMP0)
+	_CASE_JUMP(152, 'ev_uga02_johto_ranger_bug_chikorita_flag_set')
+	_CASE_JUMP(155, 'ev_uga02_johto_ranger_bug_cyndaquil_flag_set')
+	_CASE_JUMP(158, 'ev_uga02_johto_ranger_bug_totodile_flag_set')
+	_END()
+ev_uga02_johto_ranger_gift_add_chikorita:
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_Chikorita', 'Chikorita', 152)
+	_ADD_WK(@SCWK_TEMP3, 1)
+	_RET()
+ev_uga02_johto_ranger_gift_add_cyndaquil:
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_Cyndaquil', 'Cyndaquil', 155)
+	_ADD_WK(@SCWK_TEMP3, 1)
+	_RET()
+ev_uga02_johto_ranger_gift_add_totodile:
+	_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_Totodile', 'Totodile', 158)
+	_ADD_WK(@SCWK_TEMP3, 1)
+	_RET()
+ev_uga02_johto_ranger_gift_singular:
+	_MACRO_TALKMSG('dialogue_uga02', 'msg_uga02_johto_ranger_single_pokemon_gift', 'Please take this Pokémon as thanks.')
+	_RET()
+ev_uga02_johto_ranger_gift_multiple:
+	_MACRO_TALKMSG('dialogue_uga02', 'msg_uga02_johto_ranger_multiple_pokemon_gift', 'Please take one of these Pokémon as thanks.')
+	_RET()
+ev_uga02_johto_ranger_gift_again:
+	_TALK_OBJ_START()
+	_FLAG_RESET(#2013); Resets if the player has said no to Ranger Starter gift.
+	_MACRO_TALKMSG('dialogue_uga02', 'msg_uga02_johto_ranger_gift_again', 'Oh, hello again. Ready to take this Pokémon?')
+	_JUMP('ev_uga02_johto_ranger_bug_success')
+ev_uga02_johto_ranger_no_gift_give:
+	_FLAG_SET(#2013); Player said no to Johto Ranger Starter Gift
+	_MACRO_TALKMSG('dialogue_uga02', 'msg_uga02_johto_ranger_no_gift_give', 'Oh, you can’t take it now?\nNot a problem.\rI’ll hang onto it until you’re ready to take it.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_uga02_johto_ranger_gift_no_tray_space:
+	_FLAG_SET(#2013); Player said no to Johto Ranger Starter Gift
+	_MACRO_TALKMSG('dialogue_uga02', 'msg_uga02_johto_ranger_gift_no_tray_space', 'Oh, you gotta make some room in your boxes?\nNot a problem.\rI’ll hang onto it until you’re ready to take it.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_uga02_johto_ranger_bug_chikorita_flag_set:
+	_FLAG_SET(#2015); Ranger Chirokrita
+	_JUMP('ev_uga02_johto_ranger_quest_finish')
+ev_uga02_johto_ranger_bug_cyndaquil_flag_set:
+	_FLAG_SET(#2016); Ranger Cyndaquil
+	_JUMP('ev_uga02_johto_ranger_quest_finish')
+ev_uga02_johto_ranger_bug_totodile_flag_set:
+	_FLAG_SET(#2017); Ranger Totodile
+	_JUMP('ev_uga02_johto_ranger_quest_finish')
+ev_uga02_johto_ranger_quest_finish:
+	_FLAG_SET(#2014); UG02 Ranger Johto Quest completed.
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_uga02_johto_ranger_quest_completed:
+	_TALK_START()
+	_TURN_HERO_TALK_OBJ(); Turns to face the Ranger while they are unaware of the player
+	_OBJ_ANIME('UGA02_JOHTO_RANGER_1', 'anm_uga02_johto_ranger_1_100')
+	_MACRO_TALKMSG('dialogue_uga02', 'msg_uga02_johto_ranger_1_002', 'Eek!')
+	_OBJ_ANIME_WAIT()
+	_TALK_CLOSE()
+	_CHARA_LOOK_LOCK('UGA02_JOHTO_RANGER_1', 'HERO')
+	_TIME_WAIT(10, @SCWK_ANSWER)
+	_CHARA_LOOK_RELEASE('UGA02_JOHTO_RANGER_1')
+	_MACRO_TALKMSG('dialogue_uga02', 'msg_uga02_johto_ranger_quest_completed', 'Oh, it’s you again. Listen, thank you for your help.\rI will definitely recommend your services to my\nSurvey Corps comrades!')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+anm_uga02_johto_ranger_1_100:
+    _AC_MARK_GYOE()
+	_ACMD_END()
+anm_uga02_johto_ranger_1_101:
+    _AC_DIR_D(8)
+	_ACMD_END()

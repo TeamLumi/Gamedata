@@ -1024,7 +1024,7 @@ ev_tv_ProgramID_4_18d:
 	_TALKMSG('dp_tvshow%108-msg_tv_01_14_01_5')
 	_END()
 ev_tvcm_1:
-	_TALKMSG('dp_tvshow%105-msg_tvcm_01')
+	_MACRO_TALKMSG('dp_tvshow', '105-msg_tvcm_01', 'My Pokémon Ranch. Every Pokémon\ndeserves a loving home.')
 	_END()
 ev_tvcm_2:
 	_TALKMSG('dp_tvshow%105-msg_tvcm_02')

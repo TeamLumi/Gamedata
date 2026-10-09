@@ -18,50 +18,58 @@ ev_r213_flag_change_kyogre_active:
 	_OBJ_DEL('TR_SWIMMERM_02')
 	_OBJ_DEL('TR_SWIMMERW_02')
 	_RET()
-ev_r213_gingam:
-	_TALK_OBJ_START_TURN_NOT()
+pos_r213_gingam_stop_data:
 	_EVENT_START()
+	_JUMP('ev_r213_gingam')
+ev_r213_gingam_talk_start:
+	_TALK_OBJ_START()
+	_JUMP('ev_r213_gingam')
+ev_r213_gingam:
 	_CALL('ev_another_out')
-	_TALKMSG('dp_scenario2%144-msg_r213_gingam_01')
+	_MACRO_TALKMSG('dialogue_r213', '144-msg_r213_gingam_01', 'We needed the energy from the Valley\nWindworks to make this...\rIt would take a scientific genius to make\nsomething like this...\rTherefore, our boss, who made this, is\na scientific genius!')
 	_TALK_CLOSE()
+	_CHARA_LOOK_LOCK('HERO', 'R213_GINGAM')
+	_CHARA_LOOK_LOCK('R213_GINGAM', 'HERO')
+	_TIME_WAIT(10, @SCWK_ANSWER)
 	_CHARA_LOOK_RELEASE('R213_GINGAM')
-	_TURN_HERO_SITE()
 	_OBJ_ANIME('R213_GINGAM', 'anm_r213_gingam_01')
 	_OBJ_ANIME_WAIT()
 	_EVENT_CAMERA_INDEX(436)
 	_EVENT_CAMERA_END_WAIT()
-	_TALKMSG('dp_scenario2%144-msg_r213_gingam_02')
+	_MACRO_TALKMSG('dialogue_r213', '144-msg_r213_gingam_02', 'Graw! You were eavesdropping! I was just\nthinking out loud!\rYou’re a persistent pest... I’m getting tired of\nrunning away...\rBut I’m not going to waste my energy knocking\nyou around...')
 	_TALK_CLOSE()
 	_GET_REL_POS_HERO('R213_GINGAM', @SCWK_TEMP0)
 	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', 8, 'ev_r213_gingam_dir_d')
 	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', 4, 'ev_r213_gingam_dir_right')
 	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', 7, 'ev_r213_gingam_dir_lu')
 	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', 9, 'ev_r213_gingam_dir_ru')
+	_JUMP('ev_r213_gingam_dir_right')
 	_END()
 ev_r213_gingam_dir_d:
 	_OBJ_ANIME('R213_GINGAM', 'anm_r213_gingam_02')
 	_OBJ_ANIME_WAIT()
-	_JUMP('common_r213_gingam_dir')
+	_JUMP('ev_r213_gingam_dir_common')
 	_END()
 ev_r213_gingam_dir_lu:
 	_OBJ_ANIME('R213_GINGAM', 'anm_r213_gingam_03')
 	_OBJ_ANIME_WAIT()
-	_JUMP('common_r213_gingam_dir')
+	_JUMP('ev_r213_gingam_dir_common')
 	_END()
 ev_r213_gingam_dir_right:
 	_OBJ_ANIME('R213_GINGAM', 'anm_r213_gingam_04')
 	_OBJ_ANIME_WAIT()
-	_JUMP('common_r213_gingam_dir')
+	_JUMP('ev_r213_gingam_dir_common')
 	_END()
 ev_r213_gingam_dir_ru:
 	_OBJ_ANIME('R213_GINGAM', 'anm_r213_gingam_05')
 	_OBJ_ANIME_WAIT()
-	_JUMP('common_r213_gingam_dir')
+	_JUMP('ev_r213_gingam_dir_common')
 	_END()
-common_r213_gingam_dir:
+ev_r213_gingam_dir_common:
 	_OBJ_DEL('R213_GINGAM')
 	_FLAG_SET(#FE_R213_GINGAM)
 	_FLAG_RESET(#FV_L02_GINGAM_1)
+	_LDVAL(@484, 5); Sets the StopData for the third Galactic Chase StopData
 	_LDVAL(@TOWNMAP_GUIDE_SEQUENCE, 7200)
 	_CALL('ev_r213_looker_event')
 	_TALK_OBJ_END()
@@ -100,25 +108,25 @@ anm_r213_gingam_05:
 	_AC_RIGHT(11, 4)
 	_ACMD_END()
 ev_r213_woman2:
-	_EASY_OBJ_MSG('dp_scenario2%144-msg_r213_woman2_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_r213', '144-msg_r213_woman2_01', 'I’d rather be in a pool than the sea.\rThe salty tang of the sea tastes like my tears\nafter a hard day at work...')
 	_END()
 ev_r213_bigman:
-	_EASY_OBJ_MSG('dp_scenario2%144-msg_r213_bigman_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_r213', '144-msg_r213_bigman_01', 'There’s something on top of this big cliff here!\rMy instincts tell me that, but how am I supposed\nto climb up?')
 	_END()
 ev_r213_fishing1:
 	_TALK_OBJ_START_TURN_NOT()
-	_TALKMSG('dp_scenario2%144-msg_r213_fishing_01')
+	_MACRO_TALKMSG('dialogue_r213', '144-msg_r213_fishing_01', 'There’s a fancy hotel in a fancy place with a\nfancy restaurant.\rThe fancy restaurant’s filled with fancy people\nwho think of themselves as being too fancy to\fbattle alone.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_r213_sign1:
-	_EASY_BOARD_MSG('dp_scenario2%144-msg_r213_sign1_01', 'BOARD_TYPE_ROAD', 0, 2)
+	_EASY_BOARD_MSG('dialogue_r213%144-msg_r213_sign1_01', 'BOARD_TYPE_ROAD', 0, 2)
 	_END()
 ev_r213_sign2:
-	_EASY_BOARD_MSG('dp_scenario2%144-msg_r213_sign2_01', 'BOARD_TYPE_POST', 0)
+	_EASY_BOARD_MSG('dialogue_r213%144-msg_r213_sign2_01', 'BOARD_TYPE_POST', 0)
 	_END()
 ev_r213_sign3:
-	_EASY_BOARD_MSG('dp_scenario2%144-msg_r213_sign2_02', 'BOARD_TYPE_POST', 0)
+	_EASY_BOARD_MSG('dialogue_r213%144-msg_r213_sign2_02', 'BOARD_TYPE_POST', 0)
 	_END()
 ev_r213_gorggeousm_iro_01:
 	_TALK_OBJ_START()
@@ -126,14 +134,14 @@ ev_r213_gorggeousm_iro_01:
 	_IF_FLAGON_JUMP(#FE_R213_NAMINORI_CLEAR, 'ev_r213_gorggeousm_iro_01_seen02')
 	_JUMP('ev_r213_gorggeousm_talk01')
 ev_r213_gorggeousm_talk01:
-	_TALKMSG('dp_scenario2%144-msg_r213_gorggeousm_iro_01')
+	_MACRO_TALKMSG('dialogue_r213', '144-msg_r213_gorggeousm_iro_01', 'I stand stoically in front of the deep blue sea.\nWhy? Because I’m a rich boy.\rThe seaside suits me better than the sea.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_FLAG_SET(#FE_R213_GORGGEOUSM_TALK01)
 	_END()
 ev_r213_gorggeousm_iro_01_seen02:
 	_IF_FLAGON_JUMP(#FE_R213_SEAL_GET6, 'ev_r213_gorggeousm_iro_01_seen03')
-	_TALKMSG('dp_scenario2%144-msg_r213_gorggeousm_iro_02')
+	_MACRO_TALKMSG('dialogue_r213', '144-msg_r213_gorggeousm_iro_02', 'I saw you surfing courageously over the water.\nThe sight of your elegance was inspiring.\rPlease take these as a token of my appreciation.')
 	_LDVAL(@SCWK_TEMP0, 10)
 	_LDVAL(@SCWK_TEMP1, 3)
 	_CALL('ev_exec_item_seal_get')
@@ -142,7 +150,7 @@ ev_r213_gorggeousm_iro_01_seen02:
 	_TALK_OBJ_END()
 	_END()
 ev_r213_gorggeousm_iro_01_seen03:
-	_TALKMSG('dp_scenario2%144-msg_r213_gorggeousm_iro_03')
+	_MACRO_TALKMSG('dialogue_r213', '144-msg_r213_gorggeousm_iro_03', 'My Shellos and I will venture out to sea someday.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
@@ -155,20 +163,20 @@ ev_r213_morimoto:
 	_END()
 ev_r213_morimoto1_1:
 	_TUREARUKI_POKE_DELETE(1)
-	_TALKMSG('dp_scenario2%114-msg_l02_morimoto_02')
+	_MACRO_TALKMSG('dialogue_r213', '114-msg_l02_morimoto_02', 'Well, blow me over! You beat the Champion?\nNow, that’s something worth writing home about!\rThe name’s Morimoto. I’ve been waiting for a\nstrong Trainer like you to come find me.\rIf you’ve got faith in your own skill, care to join\nme in a match?')
 	_YES_NO_WIN(@SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_r213_morimoto_b')
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_r213_morimoto2')
 	_END()
 ev_r213_morimoto1_2:
 	_TUREARUKI_POKE_DELETE(1)
-	_TALKMSG('dp_scenario2%114-msg_l02_morimoto_03')
+	_TALKMSG('dialogue_r213%114-msg_l02_morimoto_03')
 	_YES_NO_WIN(@SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_r213_morimoto_b')
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_r213_morimoto2')
 	_END()
 ev_r213_morimoto_b:
-	_TALKMSG('dp_scenario2%114-msg_l02_morimoto_04-01')
+	_MACRO_TALKMSG('dialogue_r213', '114-msg_l02_morimoto_04-01', 'That’s the ticket!\rNow watch out! Because Morimoto’s got more\nthan enough to motor right over you!')
 	_TALK_CLOSE()
 	_LDVAL(@SCWK_TEMP3, 706); Formerly MORIMOTO_01
 	_CALL('ev_set_trainer_id_for_current_gamemode_scripted_battle')
@@ -181,51 +189,38 @@ ev_r213_morimoto_b:
 	_TALK_OBJ_END()
 	_END()
 ev_r213_morimoto2:
-	_TALKMSG('dp_scenario2%114-msg_l02_morimoto_04-02')
+	_MACRO_TALKMSG('dialogue_r213', '114-msg_l02_morimoto_04-02', 'Is that so? Well, that’s a right shame.')
 	_TALK_CLOSE()
 	_TUREARUKI_POKE_CREATE()
 	_TALK_OBJ_END()
 	_END()
 ev_r213_morimoto3:
-	_TALKMSG('dp_scenario2%114-msg_l02_morimoto_06')
+	_MACRO_TALKMSG('dialogue_r213', '114-msg_l02_morimoto_06', 'Let’s have ourselves a rematch someday!')
 	_TALK_CLOSE()
 	_TUREARUKI_POKE_CREATE()
 	_TALK_OBJ_END()
 	_END()
 ev_r213_morimoto10:
-	_TALKMSG('dp_scenario2%114-msg_l02_morimoto_01')
+	_MACRO_TALKMSG('dialogue_r213', '114-msg_l02_morimoto_01', 'Come on back here after you’ve defeated\nthe Champion.\rDon’t forget about me here, OK?')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_r213_morimoto_get:
-	_TALKMSG('dp_scenario2%114-msg_l02_morimoto_05')
+	_MACRO_TALKMSG('dialogue_r213', '114-msg_l02_morimoto_05', 'You’re really strong! I should’ve known!\rSince you’ve managed to trounce me, I guess\nyou’ve earned yourself a reward.')
 	_LDVAL(@SCWK_TEMP0, 631)
 	_LDVAL(@SCWK_TEMP1, 1)
 	_CALL('ev_item_event')
 	_RET()
 ev_r213_furoozeru1:
-	_EASY_VOICE_MSG('dp_scenario2%144-msg_r213_furoozeru1', 'PLAY_PV_EV_419_00_00')
+	_EASY_VOICE_MSG('dialogue_r213%144-msg_r213_furoozeru1', 'PLAY_PV_EV_419_00_00')
 	_END()
 ev_r213_karakunasi:
-	_EASY_VOICE_MSG('dp_scenario2%144-msg_r213_karakunasi', 'PLAY_PV_EV_422_00_00')
-	_END()
-ev_r213_swimmerw1_iro_01:
-	_TALK_OBJ_START()
-	_IF_FLAGON_JUMP(#FE_R213_SEAL_GET5, 'ev_r213_swimmerw1_iro_02')
-	_TALKMSG('dp_scenario2%144-msg_r213_swimmerw1_iro_01')
-	_FLAG_SET(#FE_R213_SEAL_GET5)
-	_TALK_CLOSE()
-	_TALK_OBJ_END()
-	_END()
-ev_r213_swimmerw1_iro_02:
-	_TALKMSG('dp_scenario2%144-msg_r213_swimmerw1_iro_02')
-	_TALK_CLOSE()
-	_TALK_OBJ_END()
+	_EASY_VOICE_MSG('dialogue_r213%144-msg_r213_karakunasi', 'PLAY_PV_EV_422_00_00')
 	_END()
 ev_r213_swimmerw2_iro_01:
 	_TALK_OBJ_START()
 	_IF_FLAGON_JUMP(#FE_R213_SEAL_GET4, 'ev_r213_swimmerw2_iro_02')
-	_TALKMSG('dp_scenario2%144-msg_r213_swimmerw2_iro_01')
+	_MACRO_TALKMSG('dialogue_r213', '144-msg_r213_swimmerw2_iro_01', 'Check this out! A synchronized crawl with\nmy Floatzel!\rPowerful, isn’t it? As thanks for watching\nus swim, take these.')
 	_LDVAL(@SCWK_TEMP0, 2)
 	_LDVAL(@SCWK_TEMP1, 3)
 	_CALL('ev_exec_item_seal_get')
@@ -234,14 +229,14 @@ ev_r213_swimmerw2_iro_01:
 	_TALK_OBJ_END()
 	_END()
 ev_r213_swimmerw2_iro_02:
-	_TALKMSG('dp_scenario2%144-msg_r213_swimmerw2_iro_02')
+	_MACRO_TALKMSG('dialogue_r213', '144-msg_r213_swimmerw2_iro_02', 'See how heartily it moves its arms?\nSo powerful...')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_r213_swimmerw3_iro_01:
 	_TALK_OBJ_START()
 	_IF_FLAGON_JUMP(#FE_R213_SEAL_GET3, 'ev_r213_swimmerw3_iro_02')
-	_TALKMSG('dp_scenario2%144-msg_r213_swimmerw3_iro_01')
+	_MACRO_TALKMSG('dialogue_r213', '144-msg_r213_swimmerw3_iro_01', 'Get out of my way! I’ll give these to you\nin return.')
 	_LDVAL(@SCWK_TEMP0, 14)
 	_LDVAL(@SCWK_TEMP1, 3)
 	_CALL('ev_exec_item_seal_get')
@@ -250,14 +245,14 @@ ev_r213_swimmerw3_iro_01:
 	_TALK_OBJ_END()
 	_END()
 ev_r213_swimmerw3_iro_02:
-	_TALKMSG('dp_scenario2%144-msg_r213_swimmerw3_iro_02')
+	_MACRO_TALKMSG('dialogue_r213', '144-msg_r213_swimmerw3_iro_02', 'We’re competing to see who can keep swimming\nthe longest!')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_r213_swimmerm_iro_01:
 	_TALK_OBJ_START()
 	_IF_FLAGON_JUMP(#1269, 'ev_r213_swimmerm_iro_02')
-	_TALKMSG('dp_scenario2%144-msg_r213_swimmerm_iro_01')
+	_MACRO_TALKMSG('dialogue_r213', '144-msg_r213_swimmerm_iro_01', 'Whroooar! I’m in the middle of something here!\nYou can have these if you stay away.')
 	_LDVAL(@SCWK_TEMP0, 16)
 	_LDVAL(@SCWK_TEMP1, 3)
 	_CALL('ev_exec_item_seal_get')
@@ -266,14 +261,14 @@ ev_r213_swimmerm_iro_01:
 	_TALK_OBJ_END()
 	_END()
 ev_r213_swimmerm_iro_02:
-	_TALKMSG('dp_scenario2%144-msg_r213_swimmerm_iro_02')
+	_MACRO_TALKMSG('dialogue_r213', '144-msg_r213_swimmerm_iro_02', 'We’re competing to see who can swim faster!')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_r213_ukiwaw_iro_01:
 	_TALK_OBJ_START()
 	_IF_FLAGON_JUMP(#FE_R213_SEAL_GET1, 'ev_r213_ukiwaw_iro_02')
-	_TALKMSG('dp_scenario2%144-msg_r213_ukiwaw_iro_01')
+	_MACRO_TALKMSG('dialogue_r213', '144-msg_r213_ukiwaw_iro_01', 'Hehehe. Welcome to my private beach!\nThis place is wonderful, isn’t it?\rI’ll give this to you as a token of our friendship.')
 	_LDVAL(@SCWK_TEMP0, 34)
 	_LDVAL(@SCWK_TEMP1, 1)
 	_CALL('ev_exec_item_seal_get')
@@ -282,18 +277,15 @@ ev_r213_ukiwaw_iro_01:
 	_TALK_OBJ_END()
 	_END()
 ev_r213_ukiwaw_iro_02:
-	_TALKMSG('dp_scenario2%144-msg_r213_ukiwaw_iro_02')
+	_MACRO_TALKMSG('dialogue_r213', '144-msg_r213_ukiwaw_iro_02', 'Don’t go telling anyone else about this place.\nIt’ll be our little secret.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
-ev_r213_furoozeru2:
-	_EASY_VOICE_MSG('dp_scenario2%144-msg_r213_furoozeru2', 'PLAY_PV_EV_419_00_00')
-	_END()
 ev_r213_furoozeru3:
-	_EASY_VOICE_MSG('dp_scenario2%144-msg_r213_furoozeru3', 'PLAY_PV_EV_419_00_00')
+	_EASY_VOICE_MSG('dialogue_r213%144-msg_r213_furoozeru3', 'PLAY_PV_EV_419_00_00')
 	_END()
 ev_r213_kyamome3:
-	_EASY_VOICE_MSG('dp_scenario2%144-msg_r213_kyamome3', 'PLAY_PV_EV_278_00_00')
+	_EASY_VOICE_MSG('dialogue_r213%144-msg_r213_kyamome3', 'PLAY_PV_EV_278_00_00')
 	_END()
 ev_r213_suicune:
 	_TALK_OBJ_START()
@@ -310,9 +302,6 @@ ev_r213_suicune:
 	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', 1, 'ev_r213_suicune_capture')
 	_TALK_OBJ_END()
 	_END()
-ev_r213_suicune_end:
-	_TALK_OBJ_END()
-	_END()
 ev_r213_suicune_capture:
 	_OBJ_DEL('R213_SUICUNE')
 	_FLAG_SET(#2805) ; Suicune Caught
@@ -320,11 +309,11 @@ ev_r213_suicune_capture:
 	_END()
 ev_r213_fisherman_script_16:
 	_TALK_OBJ_START_TURN_NOT()
-	_MACRO_TALKMSG('dp_scenario3', '00_msg_r213_fisherman_20', 'Oh, no! My fishing line broke!\nIs this the work of an enemy Palossand?!\rAh, no, never mind.\nPalossand aren’t in Sinnoh...')
+	_MACRO_TALKMSG('dialogue_r213', '00_msg_r213_fisherman_20', 'Oh, no! My fishing line broke!\nIs this the work of an enemy Palossand?!\rAh, no, never mind.\nPalossand aren’t in Sinnoh...')
 	_TALK_CLOSE()
 	_TIME_WAIT(30, @SCWK_ANSWER)
 	_CHARA_LOOK_LOCK('R213_FISHING', 'HERO')
-	_MACRO_TALKMSG('dp_scenario3', '00_msg_r213_fisherman_21', '...\rWhat’s your problem?\nGive me a break.')
+	_MACRO_TALKMSG('dialogue_r213', '00_msg_r213_fisherman_21', '...\rWhat’s your problem?\nGive me a break.')
 	_TALK_CLOSE()
 	_CHARA_LOOK_RELEASE('R213_FISHING')
 	_OBJ_ANIME('R213_FISHING', 'anm_r213_action_2')
@@ -335,17 +324,17 @@ anm_r213_action_2:
 	_AC_DIR_D(4)
 	_ACMD_END()
 ev_r213_looker_event_part_1:
-	_IFVAL_JUMP(@SCWK_TEMP1, 'EQ', 832, 'ev_r213_looker_event_func_22')
-	_IFVAL_JUMP(@SCWK_TEMP1, 'EQ', 834, 'ev_r213_looker_event_func_23')
-	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', 682, 'ev_r213_looker_event_func_20')
-	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', 684, 'ev_r213_looker_event_func_21')
-	_JUMP('ev_r213_looker_event_func_21')
+	_IFVAL_JUMP(@SCWK_TEMP1, 'EQ', 832, 'ev_r213_looker_event_func_22'); If the player is at 683, 832 when interacting with the Grunt
+	_IFVAL_JUMP(@SCWK_TEMP1, 'EQ', 834, 'ev_r213_looker_event_func_23'); If the player is at 683, 834 when interacting with the Grunt
+	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', 683, 'ev_r213_looker_event_func_20'); If the player is at 683, 833 when interacting with the Grunt
+	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', 684, 'ev_r213_looker_event_func_21'); If the player is at 684, 833 when interacting with the Grunt
+	_JUMP('ev_r213_looker_event_galactic_numpad_pos_9'); If the player is at 685, 833 when interacting with the Grunt
 ev_r213_looker_event_part_2:
-	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', 682, 'ev_r213_looker_event_func_24')
-	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', 684, 'ev_r213_looker_event_func_25')
-	_IFVAL_JUMP(@SCWK_TEMP1, 'EQ', 832, 'ev_r213_looker_event_func_26')
-	_IFVAL_JUMP(@SCWK_TEMP1, 'EQ', 834, 'ev_r213_looker_event_func_27')
-	_JUMP('ev_r213_looker_event_func_27')
+	_IFVAL_JUMP(@SCWK_TEMP1, 'EQ', 832, 'ev_r213_looker_event_func_26'); If the player is at 683, 832 when interacting with the Grunt
+	_IFVAL_JUMP(@SCWK_TEMP1, 'EQ', 834, 'ev_r213_looker_event_func_27'); If the player is at 683, 834 when interacting with the Grunt
+	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', 683, 'ev_r213_looker_event_func_24'); If the player is at 683, 833 when interacting with the Grunt
+	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', 684, 'ev_r213_looker_event_func_25'); If the player is at 684, 833 when interacting with the Grunt
+	_JUMP('ev_r213_looker_event_func_25'); If the player is at 685, 833 when interacting with the Grunt
 ev_r213_looker_event:
 	_FLAG_RESET(#2839)
 	_OBJ_ADD('R213_LOOKER')
@@ -353,13 +342,13 @@ ev_r213_looker_event:
 	_CALL('ev_r213_looker_event_part_1')
 	_CHARA_LOOK_LOCK('R213_LOOKER', 'HERO')
 	_CHARA_LOOK_LOCK('HERO', 'R213_LOOKER')
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_r213_looker_event_4', 'Hello, my friend!\rThe cargo that the Team Galactic\nbrought is worrisome, so I have come.\r...You say the cargo, it was a bomb?\nAnd there was an explosion?\fThe explosion was at the Great Marsh?\rFurthermore, you are pursuing a man...\nA man with funny bowl-cut hair.\fIn an outfit that is very strange?\rIn other words, that is the Team\nGalactic!')
+	_MACRO_TALK_KEYWAIT('dialogue_r213', '00_msg_r213_looker_event_4', 'Hello, my friend!\rThe cargo that the Team Galactic\nbrought is worrisome, so I have come.\r...You say the cargo, it was a bomb?\nAnd there was an explosion?\fThe explosion was at the Great Marsh?\rFurthermore, you are pursuing a man...\nA man with funny bowl-cut hair.\fIn an outfit that is very strange?\rIn other words, that is the Team\nGalactic!')
 	_CHARA_LOOK_RELEASE('R213_LOOKER')
 	_CHARA_LOOK_RELEASE('HERO')
 	_OBJ_ANIME('R213_LOOKER', 'anm_r213_action_9')
 	_OBJ_ANIME_WAIT()
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_r213_looker_event_5', 'Oh, no, no, no!\nHow did I miss it?\rAh, Looker, this time you have made a\nmistake of the ages!\rThe man, who I have seen running away,\nhe was the bearer of the bomb!')
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_r213_looker_event_6', 'Ach! This will not do!\nWait! Wait, I say!')
+	_MACRO_TALK_KEYWAIT('dialogue_r213', '00_msg_r213_looker_event_5', 'Oh, no, no, no!\nHow did I miss it?\rAh, Looker, this time you have made a\nmistake of the ages!\rThe man, who I have seen running away,\nhe was the bearer of the bomb!')
+	_MACRO_TALK_KEYWAIT('dialogue_r213', '00_msg_r213_looker_event_6', 'Ach! This will not do!\nWait! Wait, I say!')
 	_TALK_CLOSE()
 	_CALL('ev_r213_looker_event_part_2')
 	_FLAG_SET(#2839)
@@ -385,6 +374,11 @@ ev_r213_looker_event_func_22:
 ev_r213_looker_event_func_23:
 	_OBJ_ANIME('R213_LOOKER', 'anm_r213_action_14')
 	_OBJ_ANIME('HERO', 'anm_r213_action_15')
+	_OBJ_ANIME_WAIT()
+	_RET()
+ev_r213_looker_event_galactic_numpad_pos_9:
+	_OBJ_ANIME('R213_LOOKER', 'anm_looker_r213_galactic_numpad_pos_9')
+	_OBJ_ANIME('HERO', 'anm_hero_r213_galactic_numpad_pos_9')
 	_OBJ_ANIME_WAIT()
 	_RET()
 ev_r213_looker_event_func_24:
@@ -416,7 +410,6 @@ anm_r213_action_10:
 	_AC_DIR_U(4)
 	_AC_UP(2, 4)
 	_AC_DIR_R(4)
-	_AC_RIGHT(2, 4)
 	_ACMD_END()
 anm_r213_action_11:
 	_AC_WAIT(40)
@@ -428,6 +421,7 @@ anm_r213_action_12:
 	_AC_DIR_U(4)
 	_AC_UP(2, 4)
 	_AC_DIR_R(4)
+	_AC_RIGHT(1, 4)
 	_ACMD_END()
 anm_r213_action_13:
 	_AC_DIR_R(4)
@@ -444,6 +438,18 @@ anm_r213_action_14:
 	_AC_UP(3, 4)
 	_AC_DIR_R(4)
 	_AC_RIGHT(1, 4)
+	_ACMD_END()
+anm_looker_r213_galactic_numpad_pos_9:
+	_AC_DIR_R(4)
+	_AC_RIGHT(10, 4)
+	_AC_DIR_U(4)
+	_AC_UP(2, 4)
+	_AC_DIR_R(4)
+	_AC_RIGHT(2, 4)
+	_ACMD_END()
+anm_hero_r213_galactic_numpad_pos_9:
+	_AC_WAIT(52)
+	_AC_DIR_U(4)
 	_ACMD_END()
 anm_r213_action_15:
 	_AC_WAIT(44)

@@ -1,23 +1,23 @@
 ev_c01r0103_babyboy1:
-	_EASY_OBJ_MSG('dp_scenario1%34-msg_c01r0103_babyboy1_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c01r0103', '34-msg_c01r0103_babyboy1_01', 'Do you have a Pokétch?\rThere are two models, each in a different color.')
 	_END()
 ev_c01r0103_middlewoman1:
 	_TALK_OBJ_START()
-	_TALKMSG('dp_scenario1%34-msg_c01r0103_middlewoman1_01_1')
-	_TALKMSG('dp_scenario1%34-msg_c01r0103_middlewoman1_01_2')
+	_MACRO_TALKMSG('dialogue_c01r0103', '34-msg_c01r0103_middlewoman1_01_1', 'My husband is the president.\rWe started out in a small workshop where he\nmade whatever he liked.')
+	_MACRO_TALKMSG('dialogue_c01r0103', '34-msg_c01r0103_middlewoman1_01_2', 'Now we’re making something that makes the\nworld happy. Imagine that!')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_c01r0103_oldwoman1:
-	_EASY_OBJ_MSG('dp_scenario1%34-msg_c01r0103_oldwoman1_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c01r0103', '34-msg_c01r0103_oldwoman1_01', 'People everywhere make Pokétch apps.\rYou’ll be able to get new apps from\nsurprising sources.\rThe PCs here have guides on the various\nPokétch apps.')
 	_END()
 ev_c01r0103_poketch_pc1:
 	_TALK_OBJ_START()
-	_TALKMSG('dp_scenario1%34-msg_poketch_pc1_01')
+	_MACRO_TALKMSG('dialogue_c01r0103', '34-msg_poketch_pc1_01', 'There are descriptions of Pokétch apps.')
 	_JUMP('ev_c01r0103_poketch_pc1_return')
 	_END()
 ev_c01r0103_poketch_pc1_return:
-	_TALKMSG('dp_scenario1%34-msg_poketch_pc1_02')
+	_MACRO_TALKMSG('dialogue_c01r0103', '34-msg_poketch_pc1_02', 'Which Pokétch app would you like to\nread about?')
 	_GET_POKETCH_FLAG(@SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_c01r0103_poketch_noget_pc1')
 	_CALL('ev_c01r0103_poketch_pc1_menu0')
@@ -42,7 +42,7 @@ ev_c01r0103_poketch_pc1_menu0:
 	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_233', 1)
 	_RET()
 ev_c01r0103_poketch_pc1_talk0:
-	_TALKMSG('dp_scenario1%34-msg_poketch_guide_01')
+	_MACRO_TALKMSG('dialogue_c01r0103', '34-msg_poketch_guide_01', 'The Digital Watch app displays the current time.\nDon’t be late for meetings with your friends!')
 	_JUMP('ev_c01r0103_poketch_pc1_return')
 	_JUMP('ev_c01r0103_poketch_pc1_menu1')
 ev_c01r0103_poketch_pc1_menu1:
@@ -51,7 +51,7 @@ ev_c01r0103_poketch_pc1_menu1:
 	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_237', 2)
 	_RET()
 ev_c01r0103_poketch_pc1_talk1:
-	_TALKMSG('dp_scenario1%34-msg_poketch_guide_02')
+	_MACRO_TALKMSG('dialogue_c01r0103', '34-msg_poketch_guide_02', 'The Analog Watch app displays the current time.\rThe short hand indicates the hour, and the long\nhand shows the minute!')
 	_JUMP('ev_c01r0103_poketch_pc1_return')
 	_JUMP('ev_c01r0103_poketch_pc1_menu2')
 ev_c01r0103_poketch_pc1_menu2:
@@ -59,17 +59,13 @@ ev_c01r0103_poketch_pc1_menu2:
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_c01r0103_poketch_pc1_menu_ret')
 	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_234', 3)
 	_RET()
-ev_c01r0103_poketch_pc1_talk2:
-	_TALKMSG('dp_scenario1%34-msg_poketch_guide_04')
-	_JUMP('ev_c01r0103_poketch_pc1_return')
-	_JUMP('ev_c01r0103_poketch_pc1_menu3')
 ev_c01r0103_poketch_pc1_menu3:
 	_POKETCH_CHECK(17, @SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_c01r0103_poketch_pc1_menu_ret')
 	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_250', 4)
 	_RET()
 ev_c01r0103_poketch_pc1_talk3:
-	_TALKMSG('dp_scenario1%34-msg_poketch_guide_05')
+	_MACRO_TALKMSG('dialogue_c01r0103', '34-msg_poketch_guide_05', 'The Kitchen Timer app can count down from up\nto 99 minutes but not precisely.\rSet the time with the center button, then start\nthe countdown.')
 	_JUMP('ev_c01r0103_poketch_pc1_return')
 	_JUMP('ev_c01r0103_poketch_pc1_menu4')
 ev_c01r0103_poketch_pc1_menu4:
@@ -77,28 +73,24 @@ ev_c01r0103_poketch_pc1_menu4:
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_c01r0103_poketch_pc1_menu_ret')
 	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_249', 5)
 	_RET()
-ev_c01r0103_poketch_pc1_talk4:
-	_TALKMSG('dp_scenario1%34-msg_poketch_guide_03')
-	_JUMP('ev_c01r0103_poketch_pc1_return')
-	_JUMP('ev_c01r0103_poketch_pc1_menu5')
 ev_c01r0103_poketch_pc1_menu5:
 	_POKETCH_CHECK(13, @SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_c01r0103_poketch_pc1_menu_ret')
 	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_254', 6)
 	_RET()
 ev_c01r0103_poketch_pc1_talk5:
-	_TALKMSG('dp_scenario1%34-msg_poketch_guide_06')
+	_MACRO_TALKMSG('dialogue_c01r0103', '34-msg_poketch_guide_06', 'Use the monthly Calendar app to make a note of\nimportant dates.\rTouch any date to change its color. Touch it\nagain to turn it back.')
 	_JUMP('ev_c01r0103_poketch_pc1_return')
 	_JUMP('ev_c01r0103_poketch_pc1_menu_ret')
 ev_c01r0103_poketch_pc1_menu_ret:
 	_RET()
 ev_c01r0103_poketch_pc2:
 	_TALK_OBJ_START()
-	_TALKMSG('dp_scenario1%34-msg_poketch_pc2_01')
+	_MACRO_TALKMSG('dialogue_c01r0103', '34-msg_poketch_pc2_01', 'There are descriptions of Pokétch apps.')
 	_JUMP('ev_c01r0103_poketch_pc2_return')
 	_END()
 ev_c01r0103_poketch_pc2_return:
-	_TALKMSG('dp_scenario1%34-msg_poketch_pc2_02', 1)
+	_MACRO_TALKMSG('dialogue_c01r0103', '34-msg_poketch_pc2_02', 'Which Pokétch app would you like to\nread about?', 1)
 	_GET_POKETCH_FLAG(@SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_c01r0103_poketch_noget_pc2')
 	_CALL('ev_c01r0103_poketch_pc2_menu0')
@@ -125,7 +117,7 @@ ev_c01r0103_poketch_pc2_menu0:
 	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_235', 1)
 	_RET()
 ev_c01r0103_poketch_pc2_talk0:
-	_TALKMSG('dp_scenario1%34-msg_poketch_guide_07')
+	_MACRO_TALKMSG('dialogue_c01r0103', '34-msg_poketch_guide_07', 'The Calculator app can handle up to 10 digits.\rIt’s perfect for figuring out math questions that\nmight pop up.')
 	_JUMP('ev_c01r0103_poketch_pc2_return')
 	_JUMP('ev_c01r0103_poketch_pc2_menu1')
 ev_c01r0103_poketch_pc2_menu1:
@@ -134,7 +126,7 @@ ev_c01r0103_poketch_pc2_menu1:
 	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_236', 2)
 	_RET()
 ev_c01r0103_poketch_pc2_talk1:
-	_TALKMSG('dp_scenario1%34-msg_poketch_guide_14')
+	_MACRO_TALKMSG('dialogue_c01r0103', '34-msg_poketch_guide_14', 'The Memo Pad app is useful for jotting down a\nnote or just doodling.\rThere’s an eraser, too, just in case you make\na mistake.')
 	_JUMP('ev_c01r0103_poketch_pc2_return')
 	_JUMP('ev_c01r0103_poketch_pc2_menu2')
 ev_c01r0103_poketch_pc2_menu2:
@@ -143,7 +135,7 @@ ev_c01r0103_poketch_pc2_menu2:
 	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_240', 3)
 	_RET()
 ev_c01r0103_poketch_pc2_talk2:
-	_TALKMSG('dp_scenario1%34-msg_poketch_guide_09')
+	_MACRO_TALKMSG('dialogue_c01r0103', '34-msg_poketch_guide_09', 'The Friendship Checker indicates how friendly\nyour Pokémon are to you.\rTouch the screen. The Pokémon that like you will\ncome closer.')
 	_JUMP('ev_c01r0103_poketch_pc2_return')
 	_JUMP('ev_c01r0103_poketch_pc2_menu3')
 ev_c01r0103_poketch_pc2_menu3:
@@ -152,7 +144,7 @@ ev_c01r0103_poketch_pc2_menu3:
 	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_244', 4)
 	_RET()
 ev_c01r0103_poketch_pc2_talk3:
-	_TALKMSG('dp_scenario1%34-msg_poketch_guide_10')
+	_MACRO_TALKMSG('dialogue_c01r0103', '34-msg_poketch_guide_10', 'The Egg Monitor app shows the Pokémon you\nhave in the Pokémon Nursery.\rYou can check and see how your Pokémon are\ndoing without visiting the Pokémon Nursery.')
 	_JUMP('ev_c01r0103_poketch_pc2_return')
 	_JUMP('ev_c01r0103_poketch_pc2_menu5')
 ev_c01r0103_poketch_pc2_menu5:
@@ -161,18 +153,18 @@ ev_c01r0103_poketch_pc2_menu5:
 	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_257', 6)
 	_RET()
 ev_c01r0103_poketch_pc2_talk5:
-	_TALKMSG('dp_scenario1%34-msg_poketch_guide_12')
+	_MACRO_TALKMSG('dialogue_c01r0103', '34-msg_poketch_guide_12', 'The Pokémon History app keeps track of the\nPokémon you have obtained.\rIt records and displays up to 12 Pokémon\nat a time.')
 	_JUMP('ev_c01r0103_poketch_pc2_return')
 	_JUMP('ev_c01r0103_poketch_pc2_menu_ret')
 ev_c01r0103_poketch_pc2_menu_ret:
 	_RET()
 ev_c01r0103_poketch_pc3:
 	_TALK_OBJ_START()
-	_TALKMSG('dp_scenario1%34-msg_poketch_pc3_01')
+	_MACRO_TALKMSG('dialogue_c01r0103', '34-msg_poketch_pc3_01', 'There are descriptions of Pokétch apps.')
 	_JUMP('ev_c01r0103_poketch_pc3_return')
 	_END()
 ev_c01r0103_poketch_pc3_return:
-	_TALKMSG('dp_scenario1%34-msg_poketch_pc3_02', 1)
+	_MACRO_TALKMSG('dialogue_c01r0103', '34-msg_poketch_pc3_02', 'Which Pokétch app would you like to\nread about?', 1)
 	_GET_POKETCH_FLAG(@SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_c01r0103_poketch_noget_pc3')
 	_CALL('ev_c01r0103_poketch_pc3_menu0')
@@ -201,7 +193,7 @@ ev_c01r0103_poketch_pc3_menu0:
 	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_239', 1)
 	_RET()
 ev_c01r0103_poketch_pc3_talk0:
-	_TALKMSG('dp_scenario1%34-msg_poketch_guide_08')
+	_MACRO_TALKMSG('dialogue_c01r0103', '34-msg_poketch_guide_08', 'The Pokémon List app indicates the statuses of\nyour team’s Pokémon.\rTouch them to hear their cries. Their HP bars are\nalso displayed.')
 	_JUMP('ev_c01r0103_poketch_pc3_return')
 	_JUMP('ev_c01r0103_poketch_pc3_menu1')
 ev_c01r0103_poketch_pc3_menu1:
@@ -210,7 +202,7 @@ ev_c01r0103_poketch_pc3_menu1:
 	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_238', 2)
 	_RET()
 ev_c01r0103_poketch_pc3_talk1:
-	_TALKMSG('dp_scenario1%34-msg_poketch_guide_15')
+	_MACRO_TALKMSG('dialogue_c01r0103', '34-msg_poketch_guide_15', 'The Dot Artist app lets you draw pictures in\na mosaic style.\rTouching the same dot makes its color\nturn darker.')
 	_JUMP('ev_c01r0103_poketch_pc3_return')
 	_JUMP('ev_c01r0103_poketch_pc3_menu2')
 ev_c01r0103_poketch_pc3_menu2:
@@ -219,7 +211,7 @@ ev_c01r0103_poketch_pc3_menu2:
 	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_246', 3)
 	_RET()
 ev_c01r0103_poketch_pc3_talk2:
-	_TALKMSG('dp_scenario1%34-msg_poketch_guide_19')
+	_MACRO_TALKMSG('dialogue_c01r0103', '34-msg_poketch_guide_19', 'The Coin Toss app flips a coin that comes up\nheads or tails.\rIf you’re having trouble making a decision, a coin\ntoss might be handy.')
 	_JUMP('ev_c01r0103_poketch_pc3_return')
 	_JUMP('ev_c01r0103_poketch_pc3_menu3')
 ev_c01r0103_poketch_pc3_menu3:
@@ -228,7 +220,7 @@ ev_c01r0103_poketch_pc3_menu3:
 	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_245', 4)
 	_RET()
 ev_c01r0103_poketch_pc3_talk3:
-	_TALKMSG('dp_scenario1%34-msg_poketch_guide_18')
+	_MACRO_TALKMSG('dialogue_c01r0103', '34-msg_poketch_guide_18', 'The Spinner app features a wheel that can be\nwritten on.\rDraw numbers, items, or whatever on the wheel\nand give it a spin!')
 	_JUMP('ev_c01r0103_poketch_pc3_return')
 	_JUMP('ev_c01r0103_poketch_pc3_menu4')
 ev_c01r0103_poketch_pc3_menu4:
@@ -237,7 +229,7 @@ ev_c01r0103_poketch_pc3_menu4:
 	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_253', 5)
 	_RET()
 ev_c01r0103_poketch_pc3_talk4:
-	_TALKMSG('dp_scenario1%34-msg_poketch_guide_16')
+	_MACRO_TALKMSG('dialogue_c01r0103', '34-msg_poketch_guide_16', 'The Color Changer app changes the Pokétch’s\ndisplay color.\rSlide the switch to select one of eight colors.')
 	_JUMP('ev_c01r0103_poketch_pc3_return')
 	_JUMP('ev_c01r0103_poketch_pc3_menu5')
 ev_c01r0103_poketch_pc3_menu5:
@@ -246,18 +238,18 @@ ev_c01r0103_poketch_pc3_menu5:
 	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_251', 6)
 	_RET()
 ev_c01r0103_poketch_pc3_talk5:
-	_TALKMSG('dp_scenario1%34-msg_poketch_guide_17')
+	_MACRO_TALKMSG('dialogue_c01r0103', '34-msg_poketch_guide_17', 'The Marking Map app lets you mark\nintriguing locations.\rDrag marks to places on the map that you want\nto remember.')
 	_JUMP('ev_c01r0103_poketch_pc3_return')
 	_JUMP('ev_c01r0103_poketch_pc3_menu_ret')
 ev_c01r0103_poketch_pc3_menu_ret:
 	_RET()
 ev_c01r0103_poketch_pc4:
 	_TALK_OBJ_START()
-	_TALKMSG('dp_scenario1%34-msg_poketch_pc4_01')
+	_MACRO_TALKMSG('dialogue_c01r0103', '34-msg_poketch_pc4_01', 'There are descriptions of Pokétch apps.')
 	_JUMP('ev_c01r0103_poketch_pc4_return')
 	_END()
 ev_c01r0103_poketch_pc4_return:
-	_TALKMSG('dp_scenario1%34-msg_poketch_pc4_02', 1)
+	_MACRO_TALKMSG('dialogue_c01r0103', '34-msg_poketch_pc4_02', 'Which Pokétch app would you like to\nread about?', 1)
 	_GET_POKETCH_FLAG(@SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_c01r0103_poketch_noget_pc4')
 	_CALL('ev_c01r0103_poketch_pc4_menu0')
@@ -284,7 +276,7 @@ ev_c01r0103_poketch_pc4_menu0:
 	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_243', 1)
 	_RET()
 ev_c01r0103_poketch_pc4_talk0:
-	_TALKMSG('dp_scenario1%34-msg_poketch_guide_20')
+	_MACRO_TALKMSG('dialogue_c01r0103', '34-msg_poketch_guide_20', 'The Pedometer app keeps a count of the number\nof steps traveled.\rIt automatically counts steps. Touch the button\nto reset it.')
 	_JUMP('ev_c01r0103_poketch_pc4_return')
 	_JUMP('ev_c01r0103_poketch_pc4_menu1')
 ev_c01r0103_poketch_pc4_menu1:
@@ -293,7 +285,7 @@ ev_c01r0103_poketch_pc4_menu1:
 	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_242', 2)
 	_RET()
 ev_c01r0103_poketch_pc4_talk1:
-	_TALKMSG('dp_scenario1%34-msg_poketch_guide_22')
+	_MACRO_TALKMSG('dialogue_c01r0103', '34-msg_poketch_guide_22', 'The Counter app is used for counting things one\nat a time.\rTouch the button and count whatever\nneeds counting.')
 	_JUMP('ev_c01r0103_poketch_pc4_return')
 	_JUMP('ev_c01r0103_poketch_pc4_menu2')
 ev_c01r0103_poketch_pc4_menu2:
@@ -302,7 +294,7 @@ ev_c01r0103_poketch_pc4_menu2:
 	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_256', 3)
 	_RET()
 ev_c01r0103_poketch_pc4_talk2:
-	_TALKMSG('dp_scenario1%34-msg_poketch_guide_23')
+	_MACRO_TALKMSG('dialogue_c01r0103', '34-msg_poketch_guide_23', 'The Chain Counter app tracks the performance\nof the Poké Radar.\rIt shows how many times you’ve met the same\nkind of Pokémon in a row.')
 	_JUMP('ev_c01r0103_poketch_pc4_return')
 	_JUMP('ev_c01r0103_poketch_pc4_menu5')
 ev_c01r0103_poketch_pc4_menu5:
@@ -311,7 +303,7 @@ ev_c01r0103_poketch_pc4_menu5:
 	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_241', 6)
 	_RET()
 ev_c01r0103_poketch_pc4_talk5:
-	_TALKMSG('dp_scenario1%34-msg_poketch_guide_21')
+	_MACRO_TALKMSG('dialogue_c01r0103', '34-msg_poketch_guide_21', 'The Dowsing Machine app searches for hidden\nor obscured items.\rTouch the radar screen. If there is an item nearby,\nthe radar will respond.')
 	_JUMP('ev_c01r0103_poketch_pc4_return')
 	_JUMP('ev_c01r0103_poketch_pc4_menu_ret')
 ev_c01r0103_poketch_pc4_menu_ret:
@@ -322,6 +314,6 @@ ev_c01r0103_poketch_pc4_menu6:
 	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_258', 7)
 	_RET()
 ev_c01r0103_poketch_pc4_talk6:
-	_TALKMSG('dp_scenario1%34-msg_poketch_guide_26')
+	_MACRO_TALKMSG('dialogue_c01r0103', '34-msg_poketch_guide_26', 'The Hidden Moves app is used for calling wild\nPokémon to help out, such as by removing\fobstacles in the field.')
 	_JUMP('ev_c01r0103_poketch_pc4_return')
 	_JUMP('ev_c01r0103_poketch_pc4_menu_ret')

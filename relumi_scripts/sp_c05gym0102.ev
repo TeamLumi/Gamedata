@@ -1,0 +1,12 @@
+SP_C05GYM0102_INIT:
+	_END()
+SP_C05GYM0102_OBJ:
+	_END()
+SP_C05GYM0102_SCENE:
+	_JUMP('ev_c05gym0102_scene')
+	_END()
+SP_C05GYM0102_FLAG:
+	_END()
+SP_C05GYM0102_END:
+	_JUMP('ev_c05gym0102_detach_flashlight')
+	_END()

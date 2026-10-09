@@ -17,7 +17,7 @@ ev_t03fs0101_shop_re:
 	_JUMP('ev_t03fs0101_shop_end')
 	_END()
 ev_t03fs0101_shop_sonohoka:
-	_TALKMSG('dp_scenario1%28-mes_shop_01_03')
+	_MACRO_TALKMSG('dialogue_t03fs0101', '28-mes_shop_01_03', 'Is there anything else I can do for you?')
 	_RET()
 ev_t03fs0101_shop_buy:
 	_LDVAL(@LOCALWORK3, 1)
@@ -66,8 +66,8 @@ ev_t03fs0101_fix_shop:
 	_TALK_OBJ_END()
 	_END()
 ev_t03fs0101_woman2:
-	_EASY_OBJ_MSG('dp_scenario1%93-msg_t03fs0101_woman2_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_t03fs0101', '93-msg_t03fs0101_woman2_01', 'If I dress up and go to the TV station in Jubilife\nCity with my Pokémon, can everyone in the\fregion see my Pokémon?')
 	_END()
 ev_t03fs0101_girl3:
-	_EASY_OBJ_MSG('dp_scenario1%93-msg_t03fs0101_girl3_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_t03fs0101', '93-msg_t03fs0101_girl3_01', 'You can’t buy Berries or Ribbons at Poké Marts.')
 	_END()

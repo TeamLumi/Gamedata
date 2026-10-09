@@ -8,99 +8,128 @@ ev_t04r0101_sunglasses:
 	_TALK_OBJ_START_TURN_NOT()
 	_POKETCH_CHECK(7, @SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_t04r0101_sunglasses_02')
-	_TALKMSG('dp_scenario2%66-msg_t04r0101_sunglasses_01_1')
-	_TALKMSG('dp_scenario2%66-msg_t04r0101_sunglasses_01_2')
+	_MACRO_TALKMSG('dialogue_t04r0101', '66-msg_t04r0101_sunglasses_01_1', 'Are you a fan of the couple at the Pokémon\nNursery like me?\rI got hold of something quite useful.')
+	_MACRO_TALKMSG('dialogue_t04r0101', '66-msg_t04r0101_sunglasses_01_2', 'It’s the latest Pokétch app from the\nPokétch Company.\rWhat’s more, they developed it in collaboration\nwith the Pokémon Nursery.\rSince you’re a fellow fan of the Pokémon\nNursery, I’m compelled to share this!')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_t04r0101_sunglasses_02:
-	_TALKMSG('dp_scenario2%66-msg_t04r0101_sunglasses_02')
+	_MACRO_TALKMSG('dialogue_t04r0101', '66-msg_t04r0101_sunglasses_02', 'With that Egg Monitor, you can check on the\nPokémon that you’ve left with the couple at the\fPokémon Nursery.\rBut I haven’t been able to leave my Pokémon...\nSo here I stay...')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_t04r0101_poster:
-	_EASY_OBJ_MSG('dp_scenario2%66-msg_t04r0101_poster_01')
-	_END()
-ev_t04r0101_ditto_npc:
-	_TALK_OBJ_START()
-	_IF_FLAGON_JUMP(#2596, 'ev_t04r0101_ditto_npc_finished')
-	_MACRO_TALKMSG('dp_scenario3', '00_msg_t04r0101_ditto_1', 'Hey kid, want a Ditto?\nIt’s got 6x31 IVs, perfect specimen.\rForeign too.\nGreat for making eggs all quick-like.')
-	_YES_NO_WIN(@SCWK_ANSWER)
-	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0 ,'ev_t04r0101_ditto_npc_yes')
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_t04r0101_ditto_1_0', 'Hmph.')
-	_TALK_CLOSE()
-	_TALK_OBJ_END()
-	_END()
-ev_t04r0101_ditto_npc_yes:
-	_MACRO_TALKMSG('dp_scenario3', '00_msg_t04r0101_ditto_5', 'Great, then give me your starter.\nA baby is fine.')
-	_TALK_CLOSE()
-	_FIRST_MONSNO_FORMNO(@SCWK_TEMP0, @SCWK_TEMP1); 1st param is monsNo, 2nd is formNo
-	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', 387, 'ev_t04r0101_ditto_npc_yes_trade'); Checks if any of the starters are vanilla
-	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', 390, 'ev_t04r0101_ditto_npc_yes_trade')
-	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', 393, 'ev_t04r0101_ditto_npc_yes_trade')
-	_JUMP('ev_t04r0101_ditto_npc_yes_trade_randomized'); If they aren't vanilla, then it asks for any of the sinnoh starters.
-ev_t04r0101_ditto_npc_yes_trade:
-	_POKELIST_SET_PROC(2)
-	_POKELIST_GET_RESULT(@SCWK_TEMP2, @SCWK_TEMP3)
-	_IFVAL_JUMP(@SCWK_TEMP2, 'EQ', -1, 'ev_t04r0101_ditto_npc_invalid')
-	_TEMOTI_BOX_MONSNO(@SCWK_TEMP2, @SCWK_TEMP3, @SCWK_ANSWER)
-	_IFVAL_JUMP(@SCWK_ANSWER, 'NE', @SCWK_TEMP0, 'ev_t04r0101_ditto_npc_invalid'); This will weed out any non starters if it somehow gets into here
-	; In theory the ev_t04r0101_ditto_npc_yes_trade_randomized will handle the non vanilla starters but it pays to be careful
-	_TALK_CLOSE()
-	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 387, 'ev_t04r0101_ditto_npc_turtwig_trade'); Checks if SCWK_ANSWER (monsNo) is one of the starters
-	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 390, 'ev_t04r0101_ditto_npc_chimchar_trade')
-	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 393, 'ev_t04r0101_ditto_npc_piplup_trade')
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_t04r0101_ditto_2', 'Good, now scram.')
-	_TALK_CLOSE()
-	_FLAG_SET(#2596); Masuda Ditto
-	_TALK_OBJ_END()
-	_END()
-ev_t04r0101_ditto_npc_turtwig_trade:
-	_LOCALKOUKAN_APPLY(4, @SCWK_TEMP3, @SCWK_TEMP2)
-	_RET()
-ev_t04r0101_ditto_npc_chimchar_trade:
-	_LOCALKOUKAN_APPLY(5, @SCWK_TEMP3, @SCWK_TEMP2)
-	_RET()
-ev_t04r0101_ditto_npc_piplup_trade:
-	_LOCALKOUKAN_APPLY(6, @SCWK_TEMP3, @SCWK_TEMP2)
-	_RET()
-ev_t04r0101_ditto_npc_invalid:
-	_POKEMON_NAME_EXTRA(0, @SCWK_TEMP0, 0, 0)
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_t04r0101_ditto_4', 'Wrong Pokémon, kid.\nI want a {0}.')
-	_TALK_CLOSE()
-	_TALK_OBJ_END()
-	_END()
-ev_t04r0101_ditto_npc_yes_trade_randomized:
-	_POKELIST_SET_PROC(2)
-	_POKELIST_GET_RESULT(@SCWK_TEMP2, @SCWK_TEMP3)
-	_IFVAL_JUMP(@SCWK_TEMP2, 'EQ', -1, 'ev_t04r0101_ditto_npc_invalid_randomized')
-	_TEMOTI_BOX_MONSNO(@SCWK_TEMP2, @SCWK_TEMP3, @SCWK_ANSWER)
-	_TALK_CLOSE()
-	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 387, 'ev_t04r0101_ditto_npc_turtwig_trade'); Checks if SCWK_ANSWER (monsNo) is one of the starters
-	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 390, 'ev_t04r0101_ditto_npc_chimchar_trade')
-	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 393, 'ev_t04r0101_ditto_npc_piplup_trade')
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_t04r0101_ditto_2', 'Good, now scram.')
-	_TALK_CLOSE()
-	_FLAG_SET(#2596); Masuda Ditto
-	_TALK_OBJ_END()
-	_END()
-ev_t04r0101_ditto_npc_invalid:
-	_POKEMON_NAME_EXTRA(0, @SCWK_TEMP0, 0, 0)
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_t04r0101_ditto_4', 'Wrong Pokémon, kid.\nI want a {0}.')
-	_TALK_CLOSE()
-	_TALK_OBJ_END()
-	_END()
-ev_t04r0101_ditto_npc_invalid_randomized:
-	_POKEMON_NAME_EXTRA(0, 387, 0, 0)
-	_POKEMON_NAME_EXTRA(0, 390, 1, 0)
-	_POKEMON_NAME_EXTRA(0, 393, 2, 0)
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_t04r0101_ditto_4_randomized', 'Wrong Pokémon, kid.\nI want either a {0}, {1}, or {2}.')
-	_TALK_CLOSE()
-	_TALK_OBJ_END()
-	_END()
-ev_t04r0101_ditto_npc_finished:
-	_MACRO_TALKMSG('dp_scenario3', '00_msg_t04r0101_ditto_3', 'We never met.')
-	_TALK_CLOSE()
-	_TALK_OBJ_END()
+	_MACRO_EASY_OBJ_MSG('dialogue_t04r0101', '66-msg_t04r0101_poster_01', 'Miraculous finds—Pokémon Eggs.\nHeart-to-heart at the Pokémon Nursery.')
 	_END()
 
+ev_t04r0101_shady_breeder_trade:
+    _TALK_OBJ_START()
+    _CALL('ev_t04r0101_shady_breeder_trade_values')
+	_IFVAL_JUMP(@LOCALWORK0, 'EQ', 387, 'ev_t04r0101_shady_breeder_trade_normal')
+	_IFVAL_JUMP(@LOCALWORK0, 'EQ', 390, 'ev_t04r0101_shady_breeder_trade_normal')
+	_IFVAL_JUMP(@LOCALWORK0, 'EQ', 393, 'ev_t04r0101_shady_breeder_trade_normal')
+	_JUMP('ev_t04r0101_shady_breeder_trade_randomized')
+ev_t04r0101_shady_breeder_trade_normal:
+    _POKEMON_NAME_FORM(0, @LOCALWORK0, @LOCALWORK1)
+    _POKEMON_NAME_FORM(1, @LOCALWORK2, @LOCALWORK3)
+    _MACRO_TALKMSG('dialogue_t04r0101', 'msg_t04r0101_shady_breeder_trade_normal_1', 'Hey kid, want a {1,1,1,0}?\nIt’s got 6x31 IVs, perfect specimen.\rForeign too.\nGreat for making eggs all quick-like.\rAll yours for the one-time cost of your first\npartner Pokémon.\rThat’s right, your {0,1,1,0}!')
+    _MACRO_TALKMSG('dialogue_t04r0101', 'msg_t04r0101_shady_breeder_trade_normal_2', 'Don’t worry about how I know which Pokémon\nyou chose as your first partner.\rAnd don’t worry about why I want it.\rThis is a simple and technically legal\ntransaction and that’s all that matters.\rAnd look, whether or not it is LITERALLY the\nsame creature that you began your journey\fwith and put your love and hard work into\fraising isn’t important to me.\rIf you want to breed me a new one without the\nguilt of history and attachment, knock yourself\fout.\r...So, do we have a deal?\nMy {1,1,1,0} for your {0,1,1,0}.')
+    _YES_NO_WIN(@SCWK_ANSWER)
+    _IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_t04r0101_shady_breeder_trade_normal_yes')
+    _IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_t04r0101_shady_breeder_trade_no')
+ev_t04r0101_shady_breeder_trade_values:
+	_FIRST_MONSNO_FORMNO(@LOCALWORK0, @LOCALWORK1); 1st param is monsNo, 2nd is formNo
+    _LDVAL(@LOCALWORK2, 132); Received trade MonsNo
+    _LDVAL(@LOCALWORK3, 0); Received trade FormNo
+    _RET()
+ev_t04r0101_shady_breeder_trade_normal_yes:
+    _TALK_CLOSE()
+	_CALL('ev_t04r0101_shady_breeder_trade_get_starter_values')
+    _POKELIST_SET_PROC(@LOCALWORK4)
+    _POKELIST_GET_RESULT(@SCWK_TEMP0, @SCWK_TEMP1)
+    _IFVAL_JUMP(@SCWK_TEMP0, 'EQ', -1, 'ev_t04r0101_shady_breeder_trade_no'); If nothing was selected
+    _TEMOTI_BOX_MONSNO(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_ANSWER)
+    _TEMOTI_BOX_FORMNO(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_TEMP2)
+    _IFVAL_JUMP(@SCWK_ANSWER, 'NE', @LOCALWORK0, 'ev_t04r0101_shady_breeder_trade_wrong_mon'); If a species other than the target was selected
+    _IFVAL_JUMP(@SCWK_TEMP2, 'NE', @LOCALWORK1, 'ev_t04r0101_shady_breeder_trade_wrong_form'); If an incorrect form of the correct species was selected
+    _TALK_CLOSE()
+    _LOCALKOUKAN_APPLY(@LOCALWORK5, @SCWK_TEMP1, @SCWK_TEMP0)
+	_SXY_POS_CHANGE('HERO', 2, 4)
+	_SXY_DIR_CHANGE('HERO', 180)
+	_SXY_DIR_CHANGE('T04R0401_SHADY_BREEDER', 0)
+    _JUMP('ev_t04r0101_shady_breeder_trade_over')
+ev_t04r0101_shady_breeder_trade_get_starter_values:
+	_IFVAL_JUMP(@LOCALWORK0, 'EQ', 387, 'ev_t04r0101_shady_breeder_trade_get_turtwig_values')
+	_IFVAL_JUMP(@LOCALWORK0, 'EQ', 390, 'ev_t04r0101_shady_breeder_trade_get_chimchar_values')
+	_IFVAL_JUMP(@LOCALWORK0, 'EQ', 383, 'ev_t04r0101_shady_breeder_trade_get_piplup_values')
+ev_t04r0101_shady_breeder_trade_get_turtwig_values:
+	_LDVAL(@LOCALWORK4, 30)
+	_LDVAL(@LOCALWORK5, 4)
+	_LDVAL(@SCWK_TEMP3, 1)
+	_RET()
+ev_t04r0101_shady_breeder_trade_get_chimchar_values:
+	_LDVAL(@LOCALWORK4, 31)
+	_LDVAL(@LOCALWORK5, 5)
+	_LDVAL(@SCWK_TEMP3, 1)
+	_RET()
+ev_t04r0101_shady_breeder_trade_get_piplup_values:
+	_LDVAL(@LOCALWORK4, 32)
+	_LDVAL(@LOCALWORK5, 6)
+	_LDVAL(@SCWK_TEMP3, 1)
+	_RET()
+ev_t04r0101_shady_breeder_trade_no:
+    _MACRO_TALKMSG('dialogue_t04r0101', 'msg_t04r0101_shady_breeder_trade_no', 'Hmph.')
+    _TALK_CLOSE()
+    _TALK_OBJ_END()
+    _END()
+ev_t04r0101_shady_breeder_trade_wrong_mon:
+    _MACRO_TALKMSG('dialogue_t04r0101', 'msg_t04r0101_shady_breeder_trade_wrong_mon', 'Kid, I know all the tricks in the book.\nYou’re not gonna pull the wool over my eyes.')
+    _TALK_CLOSE()
+    _TALK_OBJ_END()
+    _END()
+ev_t04r0101_shady_breeder_trade_wrong_form:
+    _MACRO_TALKMSG('dialogue_t04r0101', 'msg_t04r0101_shady_breeder_trade_wrong_form', '...Okay. I am impressed and a little disturbed.\rNot sure what that is or how you got it, but I\ndon’t want anything to do with it.')
+    _TALK_CLOSE()
+    _TALK_OBJ_END()
+    _END()
+ev_t04r0101_shady_breeder_trade_over:
+    _MACRO_TALKMSG('dialogue_t04r0101', 'msg_t04r0101_shady_breeder_trade_over', 'We never met.')
+    _TALK_CLOSE()
+	_BLACK_OUT('SCR_WIPE_DIV', 3)
+	_FADE_WAIT()
+	_OBJ_DEL('T04R0401_SHADY_BREEDER')
+    _FLAG_SET(#2596)
+	_BLACK_IN('SCR_WIPE_DIV', 3)
+	_FADE_WAIT()
+    _TALK_OBJ_END()
+    _END()
+ev_t04r0101_shady_breeder_trade_randomized:
+    _POKEMON_NAME_FORM(1, @LOCALWORK2, @LOCALWORK3)
+    _MACRO_TALKMSG('dialogue_t04r0101', 'msg_t04r0101_shady_breeder_trade_randomized_1', 'Hey kid, want a {1,1,1,0}?\nIt’s got 6x31 IVs, perfect specimen.\rForeign too.\nGreat for making eggs all quick-like.\rI couldn’t let go of such a rare commodity for\nnothing, you understand.\rBut, I am sure that we can come to an\nequitable arrangement.\rI would be open to trading this unique creature\nif you would be willing to part with either a\fTurtwig, Chimchar or Piplup.')
+    _TALK_CLOSE()
+    _POKE_WINDOW_PUT(387)
+    _POKE_WINDOW_PUT(390)
+    _POKE_WINDOW_PUT(393)
+    _MACRO_TALKMSG('dialogue_t04r0101', 'msg_t04r0101_shady_breeder_trade_randomized_2', 'Don’t worry about my motives in this or my\ninterest in these particular monsters.\rThis is a simple and technically legal\ntransaction and that’s all that matters.\r...So, do we have a deal?')
+    _YES_NO_WIN(@SCWK_ANSWER)
+    _IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_t04r0101_shady_breeder_trade_randomized_yes')
+    _IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_t04r0101_shady_breeder_trade_no')
+ev_t04r0101_shady_breeder_trade_randomized_yes:
+    _TALK_CLOSE()
+    _POKELIST_SET_PROC(2)
+    _POKELIST_GET_RESULT(@SCWK_TEMP0, @SCWK_TEMP1)
+    _IFVAL_JUMP(@SCWK_TEMP0, 'EQ', -1, 'ev_t04r0101_shady_breeder_trade_no'); If nothing was selected
+    _TEMOTI_BOX_MONSNO(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_ANSWER)
+    _TEMOTI_BOX_FORMNO(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_TEMP2)
+	_LDVAL(@SCWK_TEMP3, 0)
+    _IFVAL_CALL(@SCWK_ANSWER, 'EQ', 387, 'ev_t04r0101_shady_breeder_trade_get_turtwig_values'); If Turtwig was selected
+    _IFVAL_CALL(@SCWK_ANSWER, 'EQ', 390, 'ev_t04r0101_shady_breeder_trade_get_chimchar_values'); If Chimchar was selected
+    _IFVAL_CALL(@SCWK_ANSWER, 'EQ', 393, 'ev_t04r0101_shady_breeder_trade_get_piplup_values'); If Piplup was selected
+    _IFVAL_JUMP(@SCWK_TEMP3, 'EQ', 0, 'ev_t04r0101_shady_breeder_trade_wrong_mon'); If a species other than the target was selected
+    _IFVAL_JUMP(@SCWK_TEMP2, 'NE', 0, 'ev_t04r0101_shady_breeder_trade_wrong_form'); If an incorrect form of the correct species was selected
+    _TALK_CLOSE()
+    _LOCALKOUKAN_APPLY(@LOCALWORK5, @SCWK_TEMP1, @SCWK_TEMP0)
+	_SXY_POS_CHANGE('HERO', 2, 4)
+	_SXY_DIR_CHANGE('HERO', 180)
+	_SXY_DIR_CHANGE('T04R0401_SHADY_BREEDER', 0)
+    _JUMP('ev_t04r0101_shady_breeder_trade_over')

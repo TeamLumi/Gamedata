@@ -1,10 +1,10 @@
 ev_c03r0602_gentleman:
-	_EASY_OBJ_MSG('dp_scenario1%81-msg_c03r0602_gentleman_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c03r0602', '81-msg_c03r0602_gentleman_01', 'Oreburgh Mine is operated with the utmost care.\rWe avoid causing any damage to the natural\nhabitats of Pokémon.')
 	_END()
 ev_c03r0602_boy2:
 	_TALK_OBJ_START_TURN_NOT()
 	_IF_FLAGON_JUMP(#FE_C03R0602_ITEM_GET, 'ev_c03r0602_boy2_02')
-	_TALKMSG('dp_scenario1%81-msg_c03r0602_boy2_01')
+	_MACRO_TALKMSG('dialogue_c03r0602', '81-msg_c03r0602_boy2_01', 'Wow, your Pokémon’s eyes are twinkling brightly!\rSeeing that makes me happy! Here, I want you to\nhave this!')
 	_LDVAL(@SCWK_TEMP0, 3)
 	_LDVAL(@SCWK_TEMP1, 1)
 	_ADD_ITEM_CHK(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_ANSWER)
@@ -14,7 +14,7 @@ ev_c03r0602_boy2:
 	_JUMP('ev_c03r0602_boy2_02')
 	_END()
 ev_c03r0602_boy2_02:
-	_TALKMSG('dp_scenario1%81-msg_c03r0602_boy2_02')
+	_MACRO_TALKMSG('dialogue_c03r0602', '81-msg_c03r0602_boy2_02', 'You know how Pokémon stay inside their\nPoké Balls?\rI try to think about what would be the best\nPoké Balls for them.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
@@ -26,5 +26,5 @@ ev_c03r0602_boy2_item_event_fail:
 ev_c03r0602_oldman1:
 	_END()
 ev_c03r0602_assistantm:
-	_EASY_OBJ_MSG('dp_scenario1%81-msg_c03r0602_assistantm_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c03r0602', '81-msg_c03r0602_assistantm_01', 'The whole system of taking the coal out of the\nmine is automated.\rThere’s nothing backbreaking about it!')
 	_END()

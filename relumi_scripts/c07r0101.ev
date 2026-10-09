@@ -101,21 +101,22 @@ ev_c07r0101_shop_sell:
 	_JUMP('ev_c07r0101_shop_end')
 	_END()
 ev_c07r0101_shopwoman:
-	_EASY_OBJ_MSG('dp_scenario2%94-msg_c07r0101_shopwoman2_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c07r0101', '94-msg_c07r0101_shopwoman2_01', 'Welcome!\rAt Metronome Style Shop, you can choose a new\noutfit to achieve your perfect look!')
 	_END()
 ev_c07r0101_gorggeousw_01:
-	_EASY_OBJ_MSG('dp_scenario2%94-msg_c07r0101_gorggeousw_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c07r0101', '94-msg_c07r0101_gorggeousw_01', 'I’m not sure what to buy!')
 	_END()
 ev_c07r0101_sunglasses_01:
-	_EASY_OBJ_MSG('dp_scenario2%94-msg_c07r0101_sunglasses_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c07r0101', '94-msg_c07r0101_sunglasses_01', 'I’m so shocked!\nThe T-shirts with a Clefairy pattern are sold out...')
 	_END()
 ev_c07r0101_pippidoll_01:
-	_EASY_OBJ_MSG('dp_scenario2%94-msg_c07r0101_pippidoll_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c07r0101', '94-msg_c07r0101_pippidoll_01', 'It’s a Clefairy plush! It looks like Clefairy is the\nmascot of this shop.')
 	_END()
 ev_c07r0101_looker:
 	_TALK_OBJ_START()
-	_MACRO_TALKMSG('dp_scenario3', '00_msg_c07r0101_looker_1', 'There is something missing here...\rAha, it is you!\nPerfect timing as always my young trainer.')
-	_MACRO_TALKMSG('dp_scenario3', '00_msg_c07r0101_looker_2', 'My colleague,\nthey informed me of a gambling house in this city.\rI was assured of many gossips relating to\nTeam Galactic there, yes, that is my interest.\rWhy do you look at me so?\nIt is the truth.\r...\rBut here I am,\nperplexed to find this storefront in it’s place.')
+	_AYOU_NAME(0)
+	_MACRO_TALKMSG('dialogue_c07r0101', '00_msg_c07r0101_looker_1', 'There is something missing here...\rAha, it is you!\nPerfect timing as always, {0,1,0,0}.')
+	_MACRO_TALKMSG('dialogue_c07r0101', '00_msg_c07r0101_looker_2', 'My colleague,\nthey informed me of a gambling house in this city.\rI was assured of many gossips relating to\nTeam Galactic there, yes, that is my interest.\rWhy do you look at me so?\nIt is the truth.\r...\rBut here I am,\nperplexed to find this storefront in it’s place.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()

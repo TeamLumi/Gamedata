@@ -1,0 +1,133 @@
+ev_d31r0601_man1:
+	;_MACRO_EASY_OBJ_MSG('dp_scenario3', 'msg_d31r0601_man1_01', 'Those who rule the game board reign\nat the Battle Arcade!\rIt sounds sort of profound, but it’s\nactually no-kidding obvious!')
+	_MACRO_EASY_OBJ_MSG('dialogue_d31r0601', 'msg_d31r0601_man1_01', 'Those who rule the game board reign\nat the Battle Arcade!\rIt sounds sort of profound, but it’s\nactually no-kidding obvious!')
+	_END()
+ev_d31r0601_man2:
+	;_MACRO_EASY_OBJ_MSG('dp_scenario3', 'msg_d31r0601_man2_01', 'Did you figure this one out?\rPoisoning or freezing events can be\nmade ineffective.\r...If the Pokémon’s type or ability\nprotects it from such status problems.')
+	_MACRO_EASY_OBJ_MSG('dialogue_d31r0601', 'msg_d31r0601_man2_01', 'Did you figure this one out?\rPoisoning or freezing events can be\nmade ineffective.\r...If the Pokémon’s type or ability\nprotects it from such status problems.')
+	_END()
+ev_d31r0601_man3:
+	;_MACRO_EASY_OBJ_MSG('dp_scenario3', 'msg_d31r0601_man3_01', 'If the game board triggers a\nparalyzing event here, Ground types\faren’t affected.')
+	_MACRO_EASY_OBJ_MSG('dialogue_d31r0601', 'msg_d31r0601_man3_01', 'If the game board triggers a\nparalyzing event here, Ground types\faren’t affected.')
+	_END()
+ev_d31r0601_woman1:
+	;_MACRO_EASY_OBJ_MSG('dp_scenario3', 'msg_d31r0601_woman1_01', 'It all comes down to luck here...\rMy cute Pokémon...\nThey were helplessly frozen.')
+	_MACRO_EASY_OBJ_MSG('dialogue_d31r0601', 'msg_d31r0601_woman1_01', 'It all comes down to luck here...\rMy cute Pokémon...\nThey were helplessly frozen.')
+	_END()
+ev_d31r0601_man4:
+	_TALK_OBJ_START_TURN_NOT()
+	;_MACRO_TALKMSG('dp_scenario3', 'msg_d31r0601_man4_01', 'There’s nothing you can do about luck.\nIt’s just there or not.')
+	_MACRO_TALKMSG('dialogue_d31r0601', 'msg_d31r0601_man4_01', 'There’s nothing you can do about luck.\nIt’s just there or not.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_d31r0601_man5:
+	;_MACRO_EASY_OBJ_MSG('dp_scenario3', 'msg_d31r0601_man5_01', 'Don’t be awestruck watching the\nmotion of the game board.\rIf you don’t stop it in 30 seconds, it\nwill stop by itself.')
+	_MACRO_EASY_OBJ_MSG('dialogue_d31r0601', 'msg_d31r0601_man5_01', 'Don’t be awestruck watching the\nmotion of the game board.\rIf you don’t stop it in 30 seconds, it\nwill stop by itself.')
+	_END()
+ev_d31r0601_woman2:
+	_TALK_OBJ_START_TURN_NOT()
+	;_MACRO_TALKMSG('dp_scenario3', 'msg_d31r0601_woman2_01', 'The Brain has a peculiar fashion sense.\nShe flits around oddly, too.\rKind of like this.\nA little bump, a wiggle...\r...Please don’t look at me that way.\nIt’s not nice.')
+	_MACRO_TALKMSG('dialogue_d31r0601', 'msg_d31r0601_woman2_01', 'The Brain has a peculiar fashion sense.\nShe flits around oddly, too.\rKind of like this.\nA little bump, a wiggle...\r...Please don’t look at me that way.\nIt’s not nice.')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_d31r0601_boy1:
+	_TALK_OBJ_START_TURN_NOT()
+	;_MACRO_TALKMSG('dp_scenario3', 'msg_d31r0601_boy1_01', 'Yikes, they can even start battles\nwith the move Trick Room in effect?\rA strategy built around Speed could\nbackfire right in your face!')
+	_MACRO_TALKMSG('dialogue_d31r0601', 'msg_d31r0601_boy1_01', 'Yikes, they can even start battles\nwith the move Trick Room in effect?\rA strategy built around Speed could\nbackfire right in your face!')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_d31r0601_woman3:
+	_TALK_OBJ_START_TURN_NOT()
+	;_MACRO_TALKMSG('dp_scenario3', 'msg_d31r0601_woman3_01', 'Be thrilled by the unknown hand of\nluck!\rLeap into battles ruled by fickle fate!\rThat’s how you enjoy the Battle\nArcade!')
+	_MACRO_TALKMSG('dialogue_d31r0601', 'msg_d31r0601_woman3_01', 'Be thrilled by the unknown hand of\nluck!\rLeap into battles ruled by fickle fate!\rThat’s how you enjoy the Battle\nArcade!')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_d31r0601_girl1:
+	;_MACRO_EASY_OBJ_MSG('dp_scenario3', 'msg_d31r0601_girl1_01', 'Blaming the game board for losing\nis pitiful. It’s poor form.\rThe game board will show better choices\nthe greater the wins you achieve.')
+	_MACRO_EASY_OBJ_MSG('dialogue_d31r0601', 'msg_d31r0601_girl1_01', 'Blaming the game board for losing\nis pitiful. It’s poor form.\rThe game board will show better choices\nthe greater the wins you achieve.')
+	_END()
+ev_d31r0601_pc_score:
+	_EVENT_START()
+	;_MACRO_TALKMSG('dp_scenario3', 'msg_d31r0601_pc_score_01', 'Which record would you like to see?')
+	_MACRO_TALKMSG('dialogue_d31r0601', 'msg_d31r0601_pc_score_01', 'Which record would you like to see?')
+	;_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_battlearcade_pc_1', 'Single', 1)
+	;_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_battlearcade_pc_2', 'Double', 2)
+	;_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_battlearcade_pc_3', 'Multi', 3)
+	;_MACRO_ADD_CUSTUM_WIN_LABEL('dp_options', 'DP_ranger_options_battlearcade_pc_cancel', 'Cancel', 0)
+	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_ranger_options_battlearcade_pc_1', 1)
+	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_ranger_options_battlearcade_pc_2', 2)
+	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_ranger_options_battlearcade_pc_3', 3)
+	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_ranger_options_battlearcade_pc_cancel', 0)
+	_OPEN_CUSTUM_WIN_FIXED(@SCWK_ANSWER)
+	_TALK_CLOSE()
+	_SWITCH(@SCWK_ANSWER)
+	;TODO exefs needed
+	_CASE_JUMP(1, 'ev_d31r0601_pc_single')
+	_CASE_JUMP(2, 'ev_d31r0601_pc_double')
+	_CASE_JUMP(3, 'ev_d31r0601_pc_multi')
+	_EVENT_END()
+	_END()
+ev_d31r0601_lobby_sd_guide_start:
+	;TODO exefs needed for all this. Dialogs are in but everything else is still a placeholder
+	;_FTR_SET_CURRENT_FACILITY(4)
+	_TALK_OBJ_START()
+	;_MACRO_TALK_KEYWAIT('dp_scenario3', 'msg_d31r0601_lobby__1', 'Welcome to the Battle Arcade!\rI am your guide to the Single and\nDouble Battle challenges.\rPlease be aware that these challenges\nare designed for a single Trainer.')
+	_MACRO_TALK_KEYWAIT('dialogue_d31r0601', 'msg_d31r0601_lobby__1', 'Welcome to the Battle Arcade!\rI am your guide to the Single and\nDouble Battle challenges.\rPlease be aware that these challenges\nare designed for a single Trainer.')
+	_JUMP('ev_d31r0601_lobby_sd_guide_challenge')
+	_END()
+ev_d31r0601_lobby_sd_guide_challenge:
+	;_MACRO_TALKMSG('dp_scenario3', 'msg_d31r0601_lobby__2', 'Which challenge would you like to take?')
+	_MACRO_TALKMSG('dialogue_d31r0601', 'msg_d31r0601_lobby__2', 'Which challenge would you like to take?')
+	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_frontier_lobby_option_1', 1); Single Battle
+	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_frontier_lobby_option_2', 2); Double Battle
+	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_frontier_lobby_option_3', 3); Info
+	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_frontier_lobby_cancel', 0); Cancel
+	_OPEN_CUSTUM_WIN(@SCWK_ANSWER)
+	_SWITCH(@SCWK_ANSWER)
+	_CASE_JUMP(1, 'ev_d31r0601_lobby_select_poke')
+	_CASE_JUMP(3, 'ev_d31r0601_lobby_info')
+	;_MACRO_TALK_KEYWAIT('dp_scenario3', 'ftr_arcade_lobby_dialogue_cancel', 'We hope to see you again!')
+	_MACRO_TALK_KEYWAIT('dialogue_d31r0601', 'ftr_arcade_lobby_dialogue_cancel', 'We hope to see you again!')
+	_TALK_CLOSE()
+	; _CASE_JUMP(1, xxx)
+	; _CASE_JUMP(2, xxx)
+	_TALK_OBJ_END()
+	_END()
+ev_d31r0601_lobby_info:
+	;_MACRO_TALK_KEYWAIT('dp_scenario3', 'msg_d31r0601_lobby_dialogue_info', 'At the Battle Arcade, you may take a\nSingle or Double Battle challenge.\rHere, a game board is activated\nbefore every match.\rDepending on what comes up on the\ngame board, an event takes place.\rSome events will be good for the\nchallenger, while others won’t be.\rThe objective is to keep a winning\nstreak alive as long as possible.\rDuring your challenge, any items held by\nyour Pokémon will be kept in storage.\rIf you manage to win seven matches in\na row, you will earn Battle Points (BP).\rIf you want to interrupt your\nchallenge, please save the game.\rIf you don’t save, you will be\ndisqualified from your challenge.\rPlease be aware of that!')
+	_MACRO_TALK_KEYWAIT('dialogue_d31r0601', 'msg_d31r0601_lobby_dialogue_info', 'At the Battle Arcade, you may take a\nSingle or Double Battle challenge.\rHere, a game board is activated\nbefore every match.\rDepending on what comes up on the\ngame board, an event takes place.\rSome events will be good for the\nchallenger, while others won’t be.\rThe objective is to keep a winning\nstreak alive as long as possible.\rDuring your challenge, any items held by\nyour Pokémon will be kept in storage.\rIf you manage to win seven matches in\na row, you will earn Battle Points (BP).\rIf you want to interrupt your\nchallenge, please save the game.\rIf you don’t save, you will be\ndisqualified from your challenge.\rPlease be aware of that!')
+	_JUMP('ev_d31r0601_lobby_sd_guide_challenge')
+	_END()
+ev_d31r0601_lobby_multi_guide_start:
+	_TALK_OBJ_START()
+	;_FTR_SET_CURRENT_FACILITY(4) ;?
+	;_MACRO_TALK_KEYWAIT('dp_scenario3', 'msg_d31r0601_lobby_1_multi_1', 'Welcome to the Battle Arcade!\rI am your guide to the Multi Battle\nchallenge.\rPlease be aware that this challenge\nrequires two Trainers.\r')
+	_MACRO_TALK_KEYWAIT('dialogue_d31r0601', 'msg_d31r0601_lobby_1_multi_1', 'Welcome to the Battle Arcade!\rI am your guide to the Multi Battle\nchallenge.\rPlease be aware that this challenge\nrequires two Trainers.')
+	_JUMP('ev_d31r0601_lobby_multi_guide_challenge')
+	_END()
+ev_d31r0601_lobby_multi_guide_challenge:
+	;_MACRO_TALKMSG('dp_scenario3', 'msg_d31r0601_lobby_1_multi_2', 'Would you like to take the Battle\nArcade Multi Battle challenge?')
+	_MACRO_TALKMSG('dialogue_d31r0601', 'msg_d31r0601_lobby_1_multi_2', 'Would you like to take the Battle\nArcade Multi Battle challenge?')
+	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_frontier_lobby_multi_option_1', 1); Take Challenge
+	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_frontier_lobby_option_3', 2); Info
+	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_frontier_lobby_cancel', 0); Cancel
+	_OPEN_CUSTUM_WIN(@SCWK_ANSWER)
+	_SWITCH(@SCWK_ANSWER)
+	_CASE_JUMP(1, 'ev_d31r0601_lobby_select_poke')
+	_CASE_JUMP(3, 'ev_d31r0601_lobby_multi_info')
+	;_MACRO_TALK_KEYWAIT('dp_scenario3', 'ftr_arcade_lobby_dialogue_cancel', 'We hope to see you again!')
+	_MACRO_TALK_KEYWAIT('dialogue_d31r0601', 'ftr_arcade_lobby_dialogue_cancel', 'We hope to see you again!')
+	_TALK_CLOSE()
+	; _CASE_JUMP(1, xxx)
+	; _CASE_JUMP(2, xxx)
+	_TALK_OBJ_END()
+	_END()
+ev_d31r0601_lobby_multi_info:
+	;_MACRO_TALK_KEYWAIT('dp_scenario3', 'msg_d31r0601_lobby_multi_dialogue_info', 'You may team up with a friend for a\nMulti Battle challenge.\rHere, a game board is activated\nbefore every match.\rDepending on what comes up on the\ngame board, an event takes place.\rThe events may have great impact on\nthe match’s outcome, good or bad.\rThe objective is to keep a winning\nstreak alive as long as possible.\rDuring your challenge, any items held by\nyour Pokémon will be kept in storage.\rIf you manage to win seven matches in\na row, you will earn Battle Points (BP).\rPlease note: a Battle Arcade Multi\nBattle challenge can’t be interrupted.\r')
+	_MACRO_TALK_KEYWAIT('dialogue_d31r0601', 'msg_d31r0601_lobby_multi_dialogue_info', 'You may team up with a friend for a\nMulti Battle challenge.\rHere, a game board is activated\nbefore every match.\rDepending on what comes up on the\ngame board, an event takes place.\rThe events may have great impact on\nthe match’s outcome, good or bad.\rThe objective is to keep a winning\nstreak alive as long as possible.\rDuring your challenge, any items held by\nyour Pokémon will be kept in storage.\rIf you manage to win seven matches in\na row, you will earn Battle Points (BP).\rPlease note: a Battle Arcade Multi\nBattle challenge can’t be interrupted.')
+	_JUMP('ev_d31r0601_lobby_multi_guide_challenge')
+	_END()

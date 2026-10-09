@@ -23,14 +23,14 @@ ev_c05gym0108_lift_event_set2:
 ev_c05gym0108_ans:
 	_TALK_OBJ_START()
 	_SE_PLAY('S_FI109')
-	_TALKMSG('dp_scenario2%38-msg_c05gym0108_sign1_02')
+	_MACRO_TALKMSG('dialogue_c05gym0108', '38-msg_c05gym0108_sign1_02', 'Correct! Congratulations!')
 	_TALK_CLOSE()
 	_TALK_END()
 	_END()
 ev_c05gym0108_question:
 	_TALK_OBJ_START()
 	_SE_PLAY('S_FI108')
-	_TALKMSG('dp_scenario2%38-msg_c05gym0108_sign1_01')
+	_MACRO_TALKMSG('dialogue_c05gym0108', '38-msg_c05gym0108_sign1_01', 'Question: What was the first room’s answer?\nAnswer: ←2 ↑16 →15')
 	_TALK_CLOSE()
 	_TALK_END()
 	_END()

@@ -1,19 +1,19 @@
 ev_c07r0205_flag_change:
-	_LDVAL(@WK_ELEVATOR_FLOOR, 4)
+	_LDVAL(@WK_ELEVATOR_FLOOR, 5)
 	_END()
 ev_c07r0205_sportsman:
 	_TALK_OBJ_START_TURN_NOT()
-	_TALKMSG('dp_scenario2%100-msg_c07r0205_sportsman_01')
+	_MACRO_TALKMSG('dialogue_c07r0205', '100-msg_c07r0205_sportsman_01', 'I’ve had enough of shopping for a while. I’ll grab\na drink and unwind a bit.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_c07r0205_middlewoman2:
-	_EASY_OBJ_MSG('dp_scenario2%100-msg_c07r0205_middlewoman2_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c07r0205', '100-msg_c07r0205_middlewoman2_01', 'I’ve shopped here loyally for years. Now they\nconsider me a regular! Ha!')
 	_END()
 ev_c07r0205_bigman1a:
 	_TALK_OBJ_START()
 	_IF_FLAGON_JUMP(#FE_C07R0205_ITEM_GET, 'ev_c07r0205_bigman1a_02')
-	_TALKMSG('dp_scenario2%100-msg_c07r0205_bigman1a_01')
+	_MACRO_TALKMSG('dialogue_c07r0205', '100-msg_c07r0205_bigman1a_01', 'Ah, young Pokémon Trainer—\rAs your senior in life, let me make a gift of this\nSticky Barb!')
 	_LDVAL(@SCWK_TEMP0, 288)
 	_LDVAL(@SCWK_TEMP1, 1)
 	_ADD_ITEM_CHK(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_ANSWER)
@@ -23,7 +23,7 @@ ev_c07r0205_bigman1a:
 	_JUMP('ev_c07r0205_bigman1a_02')
 	_END()
 ev_c07r0205_bigman1a_02:
-	_TALKMSG('dp_scenario2%100-msg_c07r0205_bigman1a_02')
+	_MACRO_TALKMSG('dialogue_c07r0205', '100-msg_c07r0205_bigman1a_02', 'That Sticky Barb is a held item.\rIf the Pokémon holding it is hit with a physical\nmove, the Sticky Barb sticks to the opposing\fPokémon and inflicts damage!')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
@@ -33,14 +33,14 @@ ev_c07r0205_bigman1a_item_event_fail:
 	_TALK_OBJ_END()
 	_END()
 ev_c07r0205_bigman1b:
-	_EASY_OBJ_MSG('dp_scenario2%100-msg_c07r0205_bigman1b_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c07r0205', '100-msg_c07r0205_bigman1b_01', 'Two buff guys standing side by side. That’s all.')
 	_END()
 ev_c07r0205_board_01:
-	_EASY_OBJ_MSG('dp_scenario2%100-msg_c07r0205_board_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c07r0205', '100-msg_c07r0205_board_01', 'This is the <color=#F01E1EFF>fifth floor</color>.\rB1F: Food & Produce\n1F: Trainers’ Zone\f2F: Battle Collection\f3F: TM Corner\f4F: Pedestal Floor\f5F: Rooftop Plaza')
 	_END()
 ev_c07r0205_vender:
 	_TALK_OBJ_START()
-	_TALKMSG('dp_scenario2%100-msg_c07r0205_vender_01')
+	_MACRO_TALKMSG('dialogue_c07r0205', '100-msg_c07r0205_vender_01', 'It’s a vending machine.\nWhich drink would you like?')
 	_MONEY_OPEN()
 	_JUMP('common_vm_02')
 	_END()
@@ -57,7 +57,7 @@ common_vm_02:
 	_CASE_JUMP(3, 'case3_vm_01')
 	_END()
 common_vm_02_re:
-	_TALKMSG('dp_scenario2%100-msg_c07r0205_vender_01')
+	_MACRO_TALKMSG('dialogue_c07r0205', '100-msg_c07r0205_vender_01', 'It’s a vending machine.\nWhich drink would you like?')
 	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_219', 0)
 	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_220', 1)
 	_ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_221', 2)
@@ -82,7 +82,7 @@ case2_vm_01:
 	_JUMP('common_vm_03')
 	_END()
 case3_vm_01:
-	_TALKMSG('dp_scenario2%100-msg_c07r0205_vender_05')
+	_MACRO_TALKMSG('dialogue_c07r0205', '100-msg_c07r0205_vender_05', 'Yeah, you weren’t thirsty anyway.')
 	_JUMP('common_vm_end')
 	_END()
 comp_gold_case_0:
@@ -116,7 +116,7 @@ common_vm_03:
 	_ITEM_NAME(0, @SCWK_PARAM1, 1)
 	_SE_PLAY('S_FI101')
 	_ITEM_NAME(0, @SCWK_PARAM1, 1)
-	_TALKMSG('dp_scenario2%100-msg_c07r0205_vender_02')
+	_TALKMSG('dialogue_c07r0205%100-msg_c07r0205_vender_02')
 	_LDVAL(@SCWK_TEMP0, @SCWK_PARAM1)
 	_LDVAL(@SCWK_TEMP1, 1)
 	_CALL('ev_item_event')
@@ -126,7 +126,7 @@ common_vm_03:
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'common_vm_fail_item')
 	_SE_PLAY('S_FI101')
 	_ITEM_NAME(0, @SCWK_PARAM1, 1)
-	_TALKMSG('dp_scenario2%100-msg_c07r0205_vender_03')
+	_MACRO_TALKMSG('dialogue_c07r0205', '100-msg_c07r0205_vender_03', '*clang*\rBonus! Another {0,1,10,0}\ndropped down.')
 	_LDVAL(@SCWK_TEMP0, @SCWK_PARAM1)
 	_LDVAL(@SCWK_TEMP1, 1)
 	_CALL('ev_item_event')
@@ -147,7 +147,7 @@ common_vm_normal_ret:
 	_END()
 common_vm_not_enough_money:
 	_MONEY_CLOSE()
-	_TALKMSG('dp_scenario2%100-msg_c07r0205_vender_04')
+	_MACRO_TALKMSG('dialogue_c07r0205', '100-msg_c07r0205_vender_04', 'But you don’t have enough money!')
 	_JUMP('common_vm_end')
 	_END()
 common_vm_fail_item:
@@ -164,14 +164,14 @@ common_vm_end:
 ev_c07r0205_bertha:
 	_EVENT_START()
 	_TALK_OBJ_START()
-	_TALKMSG('dp_scenario3%00_msg_c07r0205_bertha')
+	_MACRO_TALKMSG('dialogue_c07r0205', '00_msg_c07r0205_bertha', 'Well, well. You’re quite the adorable\nTrainer. Ahaha!\rI’m Bertha. An expert in Ground-type\nPokémon, and one of Sinnoh’s Elite Four.\rIt’s good to get out of the Pokémon\nLeague for a spot of shopping every\rnow and then, though! Ahaha!\nAre you aiming for the Pokémon League?\rWell then, I may have just the thing\nto help you on your journey.\rThis Technical Machine contains the\nGround-type move, Earthquake.\rIt’s an extremely powerful move that\ncan be used by a surprisingly large\ramount of Pokémon in battle.\nWant it? Then how about a battle?')
 	_YES_NO_WIN(@246)
 	_IFVAL_JUMP(@246, 'EQ', 1, 'ev_c07r0205_bertha_no')
 	_TALK_CLOSE()
 	_LDVAL(@SCWK_TEMP3, 945)
 	_CALL('ev_set_trainer_id_for_current_gamemode_scripted_battle')
 	_TRAINER_BTL_SET(@SCWK_TEMP3, 0)
-	_TALKMSG('dp_scenario3%00_msg_c07r0205_bertha_win')
+	_MACRO_TALKMSG('dialogue_c07r0205', '00_msg_c07r0205_bertha_win', 'Well that was positively thrilling!\nHere you go youngster, a well deserved\rgift.\nI feel we may well have another battle\rbetween us in the future.\nI hope when the time comes, you can\rshow this old lady what you’ve learned!\nYou just keep on with your journey\rfor the moment, youngster. Ahaha!\nWell then, this old lady must be going.\rIt was lovely to meet you.')
 	_TALK_CLOSE()
 	_FLAG_SET(#2620); Bertha is defeated
 	_LDVAL(@238, 353); Assign Earthquake TM
@@ -187,7 +187,7 @@ ev_c07r0205_bertha:
 	_TALK_END()
 	_END()
 ev_c07r0205_bertha_no:
-	_TALKMSG('dp_scenario3%00_msg_c07r0205_bertha_no')
+	_MACRO_TALKMSG('dialogue_c07r0205', '00_msg_c07r0205_bertha_no', 'Ahaha! Scared of a little old woman\nare we? Don’t worry, I’ll be here\ra little while longer if you change\nyour mind.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_TALK_END()

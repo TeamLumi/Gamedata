@@ -14,10 +14,10 @@ ev_c02pc0101_pcwoman1:
 	_JUMP('ev_heal_p01')
 	_END()
 ev_c02pc0101_woman1:
-	_EASY_OBJ_MSG('dp_scenario2%164-msg_c02pc0101_woman1_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c02pc0101', '164-msg_c02pc0101_woman1_01', 'The same kinds of Pokémon can sometimes have\ndifferent Abilities. Maybe I ought to raise two\fwith different Abilities.')
 	_END()
 ev_c02pc0101_girl1:
-	_EASY_OBJ_MSG('dp_scenario2%164-msg_c02pc0101_girl1_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c02pc0101', '164-msg_c02pc0101_girl1_01', 'I can’t use the hidden move Strength from my\nPokétch until I beat Gym Leader Byron!')
 	_END()
 ev_c02pc0101_assistantm:
 	_EASY_OBJ_MSG('msg_c02pc0101_assistantm_01')

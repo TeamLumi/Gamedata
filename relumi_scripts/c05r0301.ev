@@ -7,11 +7,11 @@ ev_c05r0301_flag_change_vanish:
 	_FLAG_SET(#FV_TV_INTERVIEW_13)
 	_END()
 ev_c05r0301_woman6:
-	_EASY_OBJ_MSG('dp_scenario2%45-msg_c05r0301_woman6_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c05r0301', '45-msg_c05r0301_woman6_01', 'In Amity Square, you may go for a stroll with a\ncute Pokémon.')
 	_END()
 ev_c05r0301_woman2:
-	_EASY_OBJ_MSG('dp_scenario2%45-msg_c05r0301_woman2_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c05r0301', '45-msg_c05r0301_woman2_01', 'My Pikachu seems delighted to be out of its\nPoké Ball for a walk outside.\rI can tell because its cheeks are twitching\nlike crazy!')
 	_END()
 ev_c05r0301_pikachu:
-	_EASY_VOICE_MSG('dp_scenario2%45-msg_c05r0301_pikachu_01', 'PLAY_PV_EV_025_00_02')
+	_EASY_VOICE_MSG('dialogue_c05r0301%45-msg_c05r0301_pikachu_01', 'PLAY_PV_EV_025_00_02')
 	_END()

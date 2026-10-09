@@ -1662,6 +1662,9 @@ ev_hide_item_237:
 	_JUMP('ev_hide_item_start')
 	_JUMP('ev_hide_item_start')
 ev_hide_item_238:
+	_LDVAL(@SCWK_PARAM0, 463)
+	_LDVAL(@SCWK_PARAM1, 1)
+	_LDVAL(@SCWK_PARAM2, 1098)
 	_JUMP('ev_hide_item_start')
 	_JUMP('ev_hide_item_start')
 ev_hide_item_239:
@@ -1749,7 +1752,7 @@ ev_itemget_hideitem_true:
 	_IFVAL_CALL(@LOCALWORK9, 'NE', 100, 'ev_itemget_hideitem_box_del')
 	_TV_ENTRY_WATCH_HIDE_ITEM(@SCWK_TEMP0)
 	_ADD_ITEM(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_ANSWER)
-	_WAZA_ITEM_CHK(@SCWK_TEMP0, @SCWK_ANSWER)
+	_WAZA_ITEM_CHK(@SCWK_TEMP0, @SCWK_ANSWER); This doesn't do anything anymore bc the waza move is included in the tm name
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_itemget_hideitem_yes_wazam')
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_itemget_hideitem_no_wazam')
 	_AC_ANIM_RELEASE('HERO')
@@ -1818,28 +1821,27 @@ hideitem_bag_poke_17:
 ev_itemget_hideitem_common_10:
 	_NONE_USE_NUMBER('KAKUSHI_ITEM_TV_SET')
 	_FLAG_SET_WK(@SCWK_TEMP2)
-	_TALKMSG('dp_scenario3%94-msg_hide_item_get_10')
+	_TALKMSG('dialogue_hide_item%94-msg_hide_item_get_10')
 	_LDVAL(@SCWK_ANSWER, 1)
 	_JUMP('ev_hide_item_end')
 	_END()
 ev_itemget_hideitem_yes_wazam:
 	_PLAYER_NAME(0)
 	_ITEM_NAME(1, @SCWK_TEMP0, 1)
-	_ITEM_WAZA_NAME(2, @SCWK_TEMP0)
-	_TALKMSG('dp_scenario3%94-msg_hide_item_get_07')
+	_TALKMSG('dialogue_hide_item%94-msg_hide_item_get_04')
 	_ME_WAIT()
 	_JUMP('ev_itemget_hideitem_true_2')
 	_END()
 ev_itemget_hideitem_no_wazam:
 	_PLAYER_NAME(0)
 	_ITEM_NAME(1, @SCWK_TEMP0, 1)
-	_TALKMSG('dp_scenario3%94-msg_hide_item_get_04')
+	_TALKMSG('dialogue_hide_item%94-msg_hide_item_get_04')
 	_ME_WAIT()
 	_JUMP('ev_itemget_hideitem_true_2')
 	_END()
 ev_itemget_hideitem_false:
 	_ITEM_NAME(0, @SCWK_TEMP0, 1)
-	_TALKMSG('dp_scenario3%94-msg_hide_item_get_05')
+	_MACRO_TALKMSG('dialogue_hide_item', '94-msg_hide_item_get_05', 'You found the {0,1,9,0}!\rBut...too bad! The Bag is full...')
 	_LDVAL(@SCWK_ANSWER, 0)
 	_JUMP('ev_hide_item_end')
 	_END()

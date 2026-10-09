@@ -14,8 +14,8 @@ ev_c06pc0101_pcwoman1:
 	_JUMP('ev_heal_p01')
 	_END()
 ev_c06pc0101_fighter:
-	_EASY_OBJ_MSG('dp_scenario2%121-msg_c06pc0101_fighter_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c06pc0101', '121-msg_c06pc0101_fighter_01', 'The Great Marsh is vast! How vast is it, you ask?\rTake a look from the Observatory and you can\nsee for yourself!')
 	_END()
 ev_c06pc0101_girl3:
-	_EASY_OBJ_MSG('dp_scenario2%121-msg_c06pc0101_girl3_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c06pc0101', '121-msg_c06pc0101_girl3_01', 'Pastoria’s Great Marsh was once a part of the\nsea. The seawater drained away over time,\fleaving the huge marshland.\rThat’s why they say there are rare Pokémon that\nyou can only see here.')
 	_END()

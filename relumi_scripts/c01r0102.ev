@@ -1,15 +1,15 @@
 ev_c01r0102_middleman1:
-	_EASY_OBJ_MSG('dp_scenario1%33-msg_c01r0102_middleman1_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c01r0102', '33-msg_c01r0102_middleman1_01', 'We try to think like Trainers when we develop\nnew Pokétch apps.\rThe user’s satisfaction is what we’re after.')
 	_END()
 ev_c01r0102_oldman2:
 	_TALK_OBJ_START_TURN_NOT()
-	_TALKMSG('dp_scenario1%33-msg_c01r0102_oldman2_01')
+	_MACRO_TALKMSG('dialogue_c01r0102', '33-msg_c01r0102_oldman2_01', 'Pokémon Watch, now with Rotom!\nOr Rotom Pokétch for short.\rSay it the long way, and...\nWhat does Pokémon stand for again?\rAnyway, I’m the father of the president of the\nPokétch Company!')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_c01r0102_pippi:
-	_EASY_VOICE_MSG('dp_scenario1%33-msg_c01r0102_pippi_01', 'PLAY_PV_EV_035_00_00')
+	_EASY_VOICE_MSG('dialogue_c01r0102%33-msg_c01r0102_pippi_01', 'PLAY_PV_EV_035_00_00')
 	_END()
 ev_c01r0102_purin:
-	_EASY_VOICE_MSG('dp_scenario1%33-msg_c01r0102_purin_01', 'PLAY_PV_EV_417_00_00')
+	_EASY_VOICE_MSG('dialogue_c01r0102%33-msg_c01r0102_purin_01', 'PLAY_PV_EV_417_00_00')
 	_END()

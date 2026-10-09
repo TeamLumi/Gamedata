@@ -95,7 +95,7 @@ ev_itemget_flditem_true:
 	_OBJ_DEL(@SCWK_TARGET_OBJID); Set by Exefs Item pokeball location
 	_ADD_ITEM(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_ANSWER)
 	_IFVAL_CALL(@SCWK_TEMP0, 'EQ', 463, 'ev_itemget_fld_item_soukonokagi'); Storage Key in Galactic HQ
-	_WAZA_ITEM_CHK(@SCWK_TEMP0, @SCWK_ANSWER)
+	_WAZA_ITEM_CHK(@SCWK_TEMP0, @SCWK_ANSWER); This doesn't do anything anymore bc the waza move is included in the tm name
 	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 1, 'ev_itemget_flditem_yes_wazam')
 	_IFVAL_CALL(@SCWK_ANSWER, 'EQ', 0, 'ev_itemget_flditem_no_wazam')
 	_AUSU_ITEM_CHECK(@SCWK_TEMP0, @SCWK_ANSWER); Checks for Arceus Plate
@@ -116,7 +116,7 @@ ev_itemget_flditem_true:
 ev_itemget_flditem_common_10:
 	_GET_POCKET_NO(@SCWK_TEMP0, @SCWK_ANSWER)
 	_POCKET_NAME(2, @SCWK_ANSWER)
-	_TALKMSG('dp_scenario3%93-msg_fld_item_get_10')
+	_TALKMSG('dialogue_fld_item%93-msg_fld_item_get_10')
 	; TEMP0 is still Item Id
 	_IFVAL_CALL(@SCWK_TEMP0, 'EQ', 420, 'ev_poketch_soft_app_text_h01')
 	_IFVAL_CALL(@SCWK_TEMP0, 'EQ', 421, 'ev_poketch_soft_app_text_h02')
@@ -131,19 +131,18 @@ ev_itemget_flditem_common_10:
 ev_itemget_flditem_yes_wazam:
 	_PLAYER_NAME(0)
 	_ITEM_NAME(1, @SCWK_TEMP0, 1)
-	_ITEM_WAZA_NAME(2, @SCWK_TEMP0)
-	_TALKMSG('dp_scenario3%93-msg_fld_item_get_07')
+	_TALKMSG('dialogue_fld_item%93-msg_fld_item_get_04')
 	_ME_WAIT()
 	_RET()
 ev_itemget_flditem_no_wazam:
 	_PLAYER_NAME(0)
 	_ITEM_NAME(1, @SCWK_TEMP0, 1)
-	_TALKMSG('dp_scenario3%93-msg_fld_item_get_04')
+	_TALKMSG('dialogue_fld_item%93-msg_fld_item_get_04')
 	_ME_WAIT()
 	_RET()
 ev_itemget_flditem_false:
 	_ITEM_NAME(0, @SCWK_TEMP0, 70)
-	_TALKMSG('dp_scenario3%91-msg_event_item_get_03')
+	_MACRO_TALKMSG('dialogue_fld_item', '91-msg_event_item_get_03', 'Too bad! The Bag is full...')
 	_JUMP('ev_fld_item_end')
 	_END()
 ev_itemget_fld_item_soukonokagi:
@@ -172,7 +171,7 @@ ev_fld_item_2:
 	_FLD_ITEM_EVENT(416, 1)
 	_END()
 ev_fld_item_3:
-	_FLD_ITEM_EVENT(74, 1)
+	_FLD_ITEM_EVENT(795, 1)
 	_END()
 ev_fld_item_4:
 	_FLD_ITEM_EVENT(56, 1)
@@ -277,16 +276,16 @@ ev_fld_item_37:
 	_FLD_ITEM_EVENT(82, 1)
 	_END()
 ev_fld_item_38:
-	_FLD_ITEM_EVENT(73, 1)
+	_FLD_ITEM_EVENT(1232, 1)
 	_END()
 ev_fld_item_39:
-	_FLD_ITEM_EVENT(72, 1)
+	_FLD_ITEM_EVENT(1606, 1)
 	_END()
 ev_fld_item_40:
-	_FLD_ITEM_EVENT(75, 1)
+	_FLD_ITEM_EVENT(29, 1)
 	_END()
 ev_fld_item_41:
-	_FLD_ITEM_EVENT(74, 1)
+	_FLD_ITEM_EVENT(796, 1)
 	_END()
 ev_fld_item_42:
 	_FLD_ITEM_EVENT(46, 1)
@@ -507,7 +506,7 @@ ev_fld_item_113:
 	_FLD_ITEM_EVENT(49, 1)
 	_END()
 ev_fld_item_114:
-	_FLD_ITEM_EVENT(849, 1)
+	_FLD_ITEM_EVENT(246, 1)
 	_END()
 ev_fld_item_115:
 	_FLD_ITEM_EVENT(221, 1)
@@ -537,7 +536,7 @@ ev_fld_item_123:
 	_FLD_ITEM_EVENT(321, 1)
 	_END()
 ev_fld_item_124:
-	_FLD_ITEM_EVENT(74, 1)
+	_FLD_ITEM_EVENT(795, 1)
 	_END()
 ev_fld_item_125:
 	_FLD_ITEM_EVENT(77, 1)
@@ -567,7 +566,7 @@ ev_fld_item_133:
 	_FLD_ITEM_EVENT(45, 1)
 	_END()
 ev_fld_item_134:
-	_FLD_ITEM_EVENT(72, 1)
+	_FLD_ITEM_EVENT(1249, 1)
 	_END()
 ev_fld_item_135:
 	_FLD_ITEM_EVENT(283, 1)
@@ -606,10 +605,10 @@ ev_fld_item_146:
 	_FLD_ITEM_EVENT(29, 1)
 	_END()
 ev_fld_item_147:
-	_FLD_ITEM_EVENT(75, 1)
+	_FLD_ITEM_EVENT(645, 1)
 	_END()
 ev_fld_item_148:
-	_FLD_ITEM_EVENT(348, 1)
+	_FLD_ITEM_EVENT(412, 1)
 	_END()
 ev_fld_item_149:
 	_FLD_ITEM_EVENT(41, 1)
@@ -660,7 +659,7 @@ ev_fld_item_164:
 	_FLD_ITEM_EVENT(2, 1)
 	_END()
 ev_fld_item_165:
-	_FLD_ITEM_EVENT(2, 1)
+	_FLD_ITEM_EVENT(325, 1)
 	_END()
 ev_fld_item_166:
 	_FLD_ITEM_EVENT(17, 1)
@@ -789,10 +788,10 @@ ev_fld_item_207:
 	_FLD_ITEM_EVENT(415, 1)
 	_END()
 ev_fld_item_208:
-	_FLD_ITEM_EVENT(75, 1)
+	_FLD_ITEM_EVENT(645, 1)
 	_END()
 ev_fld_item_209:
-	_FLD_ITEM_EVENT(72, 1)
+	_FLD_ITEM_EVENT(795, 1)
 	_END()
 ev_fld_item_210:
 	_FLD_ITEM_EVENT(339, 1)
@@ -852,13 +851,13 @@ ev_fld_item_228:
 	_FLD_ITEM_EVENT(40, 1)
 	_END()
 ev_fld_item_229:
-	_FLD_ITEM_EVENT(73, 1)
+	_FLD_ITEM_EVENT(795, 1)
 	_END()
 ev_fld_item_230:
 	_FLD_ITEM_EVENT(368, 1)
 	_END()
 ev_fld_item_231:
-	_FLD_ITEM_EVENT(74, 1)
+	_FLD_ITEM_EVENT(795, 1)
 	_END()
 ev_fld_item_232:
 	_FLD_ITEM_EVENT(29, 1)
@@ -882,7 +881,7 @@ ev_fld_item_238_1:
 	_FLD_ITEM_EVENT(77, 1)
 	_END()
 ev_fld_item_239:
-	_FLD_ITEM_EVENT(72, 1)
+	_FLD_ITEM_EVENT(1247, 1)
 	_END()
 ev_fld_item_240:
 	_FLD_ITEM_EVENT(296, 1)
@@ -990,13 +989,13 @@ ev_fld_item_274:
 	_FLD_ITEM_EVENT(327, 1)
 	_END()
 ev_fld_item_275:
-	_FLD_ITEM_EVENT(75, 1)
+	_FLD_ITEM_EVENT(29, 1)
 	_END()
 ev_fld_item_276:
-	_FLD_ITEM_EVENT(74, 1)
+	_FLD_ITEM_EVENT(796, 1)
 	_END()
 ev_fld_item_277:
-	_FLD_ITEM_EVENT(73, 1)
+	_FLD_ITEM_EVENT(1606, 1)
 	_END()
 ev_fld_item_278:
 	_FLD_ITEM_EVENT(2, 1)
@@ -1110,25 +1109,25 @@ ev_fld_item_314:
 	_FLD_ITEM_EVENT(50, 1)
 	_END()
 ev_fld_item_315:
-	_FLD_ITEM_EVENT(72, 1)
+	_FLD_ITEM_EVENT(796, 1)
 	_END()
 ev_fld_item_316:
 	_FLD_ITEM_EVENT(15, 1)
 	_END()
 ev_fld_item_317:
-	_FLD_ITEM_EVENT(74, 1)
+	_FLD_ITEM_EVENT(796, 1)
 	_END()
 ev_fld_item_318:
 	_FLD_ITEM_EVENT(295, 1)
 	_END()
 ev_fld_item_319:
-	_FLD_ITEM_EVENT(73, 1)
+	_FLD_ITEM_EVENT(1239, 1)
 	_END()
 ev_fld_item_320:
 	_FLD_ITEM_EVENT(281, 1)
 	_END()
 ev_fld_item_321:
-	_FLD_ITEM_EVENT(75, 1)
+	_FLD_ITEM_EVENT(29, 1)
 	_END()
 ev_fld_item_322:
 	_FLD_ITEM_EVENT(4, 1)
@@ -1137,7 +1136,7 @@ ev_fld_item_323:
 	_FLD_ITEM_EVENT(363, 1)
 	_END()
 ev_fld_item_324:
-	_FLD_ITEM_EVENT(72, 1)
+	_FLD_ITEM_EVENT(645, 1)
 	_END()
 ev_fld_item_325:
 	_FLD_ITEM_EVENT(386, 1)
@@ -1147,6 +1146,9 @@ ev_fld_item_326:
 	_END()
 ev_fld_item_327:
 	_FLD_ITEM_EVENT(82, 1)
+	_END()
+ev_fld_item_328:
+	_FLD_ITEM_EVENT(796, 1)
 	_END()
 ev_fld_item_griseous_orb:
 	_FLD_ITEM_EVENT(112, 1)
@@ -1163,3 +1165,26 @@ ev_fld_item_mewtwo_armour:
 	_CALL('ev_item_event')
 	_TALK_CLOSE()
 	_JUMP('ev_d10r0601_mewtwo_leave')
+ev_disguised_static_mon:
+	_EVENT_START()
+	_TURN_HERO_TALK_OBJ()
+	_AC_ANIM_LOCK('HERO')
+	_OBJ_ANIME('HERO', 'anm_item_get_pose_a')
+	_TIME_WAIT(5, @SCWK_ANSWER)
+	_VOICE_PLAY(@SCWK_TEMP1, @SCWK_TEMP3, 0); MonsNo, Formno, VoiceType
+	_RET()
+ev_disguised_static_mon_2:
+	_OBJ_ANIME_WAIT()
+	_VOICE_WAIT()
+	_TALK_CLOSE()
+	_SP_WILD_BTL_SET(@SCWK_TEMP1, @SCWK_TEMP2, 0, @SCWK_TEMP3, 1); MonsNo, Level, CanUseBall, FormNo, HiddenAbilty
+	_SEACRET_POKE_RETRY_CHECK(@SCWK_ANSWER, @SCWK_TEMP1); Result, MonsNo
+	_OBJ_DIR_CHANGE(@SCWK_TEMP0, 0); Make ball face south in case mon not caught
+	_AC_ANIM_RELEASE('HERO')
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_disguised_static_mon_lose')
+	_OBJ_DEL(@SCWK_TEMP0); Delete ball if mon caught
+	_AUTO_SAVE()
+	_RET()
+ev_disguised_static_mon_lose:
+	_EVENT_END()
+	_END()

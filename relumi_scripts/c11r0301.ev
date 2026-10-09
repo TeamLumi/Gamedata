@@ -1,6 +1,6 @@
 ev_c11r0301_middleman1:
-	_EASY_OBJ_MSG('dp_scenario3%38-msg_c11r0301_middleman1_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c11r0301', '38-msg_c11r0301_middleman1_01', 'Even from here, we could see the peak of\nMount Coronet.\rMost people didn’t notice what happened up\nthere, but I did.\rBut I don’t know what took place exactly, or\nanything like that.')
 	_END()
 ev_c11r0301_boy1:
-	_EASY_OBJ_MSG('dp_scenario3%38-msg_c11r0301_boy1_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c11r0301', '38-msg_c11r0301_boy1_01', 'Everyone’s fanatical about battling.')
 	_END()

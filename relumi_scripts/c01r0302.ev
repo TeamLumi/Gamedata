@@ -1,12 +1,12 @@
 ev_c01r0302_boy2:
 	_TALK_OBJ_START_TURN_NOT()
-	_TALKMSG('dp_scenario1%44-msg_c01r0302_boy2_01')
+	_MACRO_TALKMSG('dialogue_c01r0302', '44-msg_c01r0302_boy2_01', 'Did you know?\rSome kinds of Pokémon evolve when they get\nstronger from battling!\rWhen they evolve, they can take on completely\ndifferent appearances!')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_c01r0302_middlewoman1:
 	_TALK_OBJ_START_TURN_NOT()
-	_TALKMSG('dp_scenario1%44-msg_c01r0302_middlewoman1_01')
+	_MACRO_TALKMSG('dialogue_c01r0302', '44-msg_c01r0302_middlewoman1_01', 'Evolution makes Pokémon just that much\nmore fascinating.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()

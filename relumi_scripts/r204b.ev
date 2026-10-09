@@ -1,10 +1,10 @@
 ev_r204b_boy2:
-	_EASY_OBJ_MSG('dp_scenario1%90-msg_r204b_boy2_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_r204b', '90-msg_r204b_boy2_01', 'Are you raising different kinds of Pokémon?\rIf you only have one type of Pokémon, you’ll\nhave a hard time against types it’s weak to.')
 	_END()
 ev_r204b_woman3:
 	_TALK_OBJ_START()
 	_IF_FLAGON_JUMP(#FE_WAZAMASIN78_GET, 'ev_r204b_woman3_02')
-	_TALKMSG('dp_scenario1%90-msg_r204b_woman3_01')
+	_MACRO_TALKMSG('dialogue_r204b', '90-msg_r204b_woman3_01', 'Hi! I teach at the Trainers’ School, and I’d like to\ngive you a special lesson.\rBut before I do, I want you to have this TM.')
 	_LDVAL(@SCWK_TEMP0, 405)
 	_LDVAL(@SCWK_TEMP1, 1)
 	_ADD_ITEM_CHK(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_ANSWER)
@@ -14,8 +14,8 @@ ev_r204b_woman3:
 	_JUMP('ev_r204b_woman3_02')
 	_JUMP('ev_r204b_woman3_02')
 ev_r204b_woman3_02:
-	_TALKMSG('dp_scenario1%90-msg_r204b_woman3_02_1')
-	_TALKMSG('dp_scenario1%90-msg_r204b_woman3_02_2', 1)
+	_MACRO_TALKMSG('dialogue_r204b', '90-msg_r204b_woman3_02_1', 'When you get snarled at, you wince a bit.\nIt’s the same for Pokémon.\rThe move Snarl lowers the target’s\nSpecial Attack, or Sp. Atk for short.')
+	_MACRO_TALKMSG('dialogue_r204b', '90-msg_r204b_woman3_02_2', 'You also probably know this, but a TM is good\nfor multiple uses.\rTry it out on lots of Pokémon to see which fits\nbest.', 1)
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
@@ -25,14 +25,14 @@ ev_r204b_woman3_item_event_fail:
 	_TALK_OBJ_END()
 	_END()
 ev_r204b_sign1:
-	_EASY_BOARD_MSG('dp_scenario1%90-msg_r204b_sign1_01', 'BOARD_TYPE_ROAD', 0, 13)
+	_EASY_BOARD_MSG('dialogue_r204b%90-msg_r204b_sign1_01', 'BOARD_TYPE_ROAD', 0, 13)
 	_END()
 ev_r204b_galactic_1:
-	_EASY_OBJ_MSG('dp_scenario3%00_msg_r204_galactic_1')
+	_MACRO_EASY_OBJ_MSG('dialogue_r204b', '00_msg_r204_galactic_1', 'Team Galactic!\nThe kings of renewable energy!')
 	_END()
 ev_r204b_galactic_main:
-	_EASY_OBJ_MSG('dp_scenario3%00_msg_r204_galactic_main')
+	_MACRO_EASY_OBJ_MSG('dialogue_r204b', '00_msg_r204_galactic_main', 'Team Galactic is currently providing\nassistance at the Valley Windworks.\rAs part of Team Galactic, we’ve been\ninstructed to guard this path.\rCome back later when we’re finished!')
 	_END()
 ev_r204b_galactic_2:
-	_EASY_OBJ_MSG('dp_scenario3%00_msg_r204_galactic_2')
+	_MACRO_EASY_OBJ_MSG('dialogue_r204b', '00_msg_r204_galactic_2', 'Team Galactic!\nWe’ll bring change to the world!')
 	_END()

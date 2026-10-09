@@ -20,25 +20,25 @@ ev_c01r0207_fc_zenkoku_not:
 	_END()
 ev_c01r0207_guinness_group_btl:
 	_TALK_OBJ_START()
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_c01r0206_global_btl_00', 'What you see scars your mind.\r...\r...\rYou decide against watching any\nlonger.')
+	_MACRO_TALK_KEYWAIT('dialogue_c01r0207', '00_msg_c01r0206_global_btl_00', 'What you see scars your mind.\r...\r...\rYou decide against watching any\nlonger.')
 	_TALK_END()
 	_END()
 ev_c01r0207_guinness_group_poke:
 	_TALK_OBJ_START()
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_c01r0206_global_btl_01', 'Slowpoke are happily swimming about.\rOne’s tail seems to be shorter\nthan the others.')
+	_MACRO_TALK_KEYWAIT('dialogue_c01r0207', '00_msg_c01r0206_global_btl_01', 'Slowpoke are happily swimming about.\rOne’s tail seems to be shorter\nthan the others.')
 	_TALK_END()
 	_END()
 ev_c01r0207_guinness_group_contest:
 	_TALK_OBJ_START()
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_c01r0206_global_btl_02', 'It’s an hour long video of paint drying.\r...\r...\rNo you can’t watch any more.\nGo play the mod.')
+	_MACRO_TALK_KEYWAIT('dialogue_c01r0207', '00_msg_c01r0206_global_btl_02', 'It’s an hour long video of paint drying.\r...\r...\rNo you can’t watch any more.\nGo play the mod.')
 	_TALK_END()
 	_END()
 ev_c01r0207_boy2_01:
-	_EASY_OBJ_MSG('dp_scenario1%41-msg_c01r0207_boy2_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c01r0207', '41-msg_c01r0207_boy2_01', 'You can see the rankings of people in your\ngroup here.\rIt makes me try even harder ’cause I can’t stand\nlosing to my friends!')
 	_END()
 ev_c01r0207_girl2_01:
-	_EASY_OBJ_MSG('dp_scenario1%41-msg_c01r0207_girl2_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c01r0207', '41-msg_c01r0207_girl2_01', 'These rankings are nifty!\rI’m going to make a group and compete with all\nmy best friends!')
 	_END()
 ev_c01r0207_stop_01:
-	_EASY_OBJ_MSG('dp_scenario1%41-msg_c01r0207_stop_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c01r0207', '41-msg_c01r0207_stop_01', 'Sorry, I’m still fine-tuning this thingy here.')
 	_END()

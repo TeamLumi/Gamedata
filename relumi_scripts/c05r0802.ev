@@ -10,19 +10,19 @@ ev_c05r0802_door_exit:
 	_END()
 ev_c05r0802_oldman2:
 	_TALK_OBJ_START_TURN_NOT()
-	_TALKMSG('dp_scenario2%51-msg_c05r0802_oldman2_01')
+	_MACRO_TALKMSG('dialogue_c05r0802', '51-msg_c05r0802_oldman2_01', 'All my grandchildren are clamoring for Pokémon\nof their own.\rIt may be tricky to manage it, but it will brighten\nup the mood more.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_c05r0802_oldwoman2:
-	_EASY_OBJ_MSG('dp_scenario2%51-msg_c05r0802_oldwoman2_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c05r0802', '51-msg_c05r0802_oldwoman2_01', 'Oh, no, there are no stairs in this house.\nIt’s easier that way.\rThe lack of stairs makes it easy for the little\nPokémon to get about.')
 	_END()
 ev_c05r0802_oldman1:
 	_TALK_OBJ_START_TURN_NOT()
-	_TALKMSG('dp_scenario2%51-msg_c05r0802_oldman1_01')
+	_MACRO_TALKMSG('dialogue_c05r0802', '51-msg_c05r0802_oldman1_01', 'A world in which people are compassionate\nto others...\rThat’s all that matters to me.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_c05r0802_oldwoman1:
-	_EASY_OBJ_MSG('dp_scenario2%51-msg_c05r0802_oldwoman1_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c05r0802', '51-msg_c05r0802_oldwoman1_01', 'Hearthome is a kid-friendly city, they say, but\nI disagree.\rHearthome City is friendly to kids, grown-ups,\nand Pokémon, too.')
 	_END()

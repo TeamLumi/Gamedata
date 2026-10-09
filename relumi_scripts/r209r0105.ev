@@ -5,8 +5,8 @@ ev_r209r0105_oldwoman2a:
 	_JUMP('ev_r209r0105_oldwoman_rp')
 	_TALK_OBJ_START()
 	_IF_FLAGON_JUMP(#111, 'ev_r209r0105_oldwoman2a_end')
-	_TALKMSG('dp_scenario2%61-msg_r209r0105_oldwoman2a_01_1')
-	_TALKMSG('dp_scenario2%61-msg_r209r0105_oldwoman2a_01_2')
+	_MACRO_TALKMSG('dialogue_r209r0105', '61-msg_r209r0105_oldwoman2a_01_1', 'The Lost Tower is where the spirits of departed\nPokémon are put to rest.')
+	_MACRO_TALKMSG('dialogue_r209r0105', '61-msg_r209r0105_oldwoman2a_01_2', 'Those that enjoyed long lives...\nThose whose times were short...\rAll the departed Pokémon shall find solace here.\rIt is good of you to have visited. Here, take\nthis Technical Machine.')
 	_LDVAL(@238, 423)
 	_LDVAL(@239, 1)
 	_CALL('ev_item_event')
@@ -23,16 +23,16 @@ ev_r209r0105_oldwoman2a_end:
 ev_r209r0105_guide_upd:
 	_RET()
 ev_r209r0105_oldwoman2a_off:
-	_TALKMSG('dp_scenario2%61-msg_r209r0105_oldwoman2a_02')
+	_MACRO_TALKMSG('dialogue_r209r0105', '61-msg_r209r0105_oldwoman2a_02', 'To use that hidden move Strength in the field...\rI’ve forgotten where exactly, but you must visit\na Pokémon Gym.')
 	_RET()
 ev_r209r0105_oldwoman2a_on:
-	_TALKMSG('dp_scenario2%61-msg_r209r0105_oldwoman2a_03')
+	_MACRO_TALKMSG('dialogue_r209r0105', '61-msg_r209r0105_oldwoman2a_03', 'Have you met Fantina? She’s a hard one to get a\nread on, but she is the compassionate sort...\rYou know, she’s a regular visitor here.')
 	_RET()
 ev_r209r0105_oldwoman2b:
 	_JUMP('ev_r209r0105_oldwoman_rp_2')
 	_TALK_OBJ_START()
 	_IF_FLAGON_JUMP(#236, 'ev_r209r0105_oldwoman2b_02')
-	_TALKMSG('dp_scenario2%61-msg_r209r0105_oldwoman2b_01')
+	_MACRO_TALKMSG('dialogue_r209r0105', '61-msg_r209r0105_oldwoman2b_01', 'Let me make your journey out of this place less\nfrightening. Take this.')
 	_LDVAL(@238, 224)
 	_LDVAL(@239, 1)
 	_ADD_ITEM_CHK(@238, @239, @246)
@@ -42,7 +42,7 @@ ev_r209r0105_oldwoman2b:
 	_JUMP('ev_r209r0105_oldwoman2b_02')
 	_JUMP('ev_r209r0105_oldwoman2b_02')
 ev_r209r0105_oldwoman2b_02:
-	_TALKMSG('dp_scenario2%61-msg_r209r0105_oldwoman2b_02')
+	_MACRO_TALKMSG('dialogue_r209r0105', '61-msg_r209r0105_oldwoman2b_02', 'The Cleanse Tag... Let the first Pokémon in your\nteam hold it.\rIt will help keep wild Pokémon away so you can\nleave unhindered.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
@@ -67,19 +67,19 @@ ev_r209r010x_mapinfo_stop:
 ev_r209r0105_oldwoman_rp:
 	_TALK_OBJ_START()
 	_IF_FLAGON_JUMP(#2696, 'ev_r209r0105_oldwoman_rp_end')
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_ev_r209r0105_oldwoman_rp', 'Let me make your journey out of this\nplace less frightening. Take this.')
+	_MACRO_TALK_KEYWAIT('dialogue_r209r0105', '00_msg_ev_r209r0105_oldwoman_rp', 'Let me make your journey out of this\nplace less frightening. Take this.')
 	_LDVAL(@SCWK_TEMP0, 224); Cleanse Tag
 	_LDVAL(@SCWK_TEMP1, 1); 1
 	_CALL('ev_item_event')
 	_FLAG_SET(#2696)
 	_JUMP('ev_r209r0105_oldwoman_rp_end')
 ev_r209r0105_oldwoman_rp_end:
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_ev_r209r0105_oldwoman_rp_end', 'The Lost Tower is where the spirits\nof departed Pokémon are put to rest.\rThose that enjoyed long lives...\nThose whose times were short...\rAll the departed Pokémon shall find\nsolace here...')
+	_MACRO_TALK_KEYWAIT('dialogue_r209r0105', '00_msg_ev_r209r0105_oldwoman_rp_end', 'The Lost Tower is where the spirits\nof departed Pokémon are put to rest.\rThose that enjoyed long lives...\nThose whose times were short...\rAll the departed Pokémon shall find\nsolace here...')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_r209r0105_oldwoman_rp_2:
-	_MACRO_EASY_OBJ_MSG('dp_scenario3', '00_msg_ev_r209r0105_oldwoman_rp_2', 'Hello, child. Have you heard of the\nlegendary beasts of Johto?\rThey are said to embody the speed\nof lightning, the passion of magma,\fand the compassion of water.\rThe guardian of the sky resurrected\nthem after a great fire razed the\fBrass Tower in Ecruteak City.\rYou know, there is a legendary artifact\nthat is known as the Rainbow Wing.\rIt’s said to be a sparkling rainbow\nfeather from the guardian itself.\rI’d imagine the sky guardian would be\nquite attracted to that item.')
+	_MACRO_EASY_OBJ_MSG('dialogue_r209r0105', '00_msg_ev_r209r0105_oldwoman_rp_2', 'Hello, child. Have you heard of the\nlegendary beasts of Johto?\rThey are said to embody the speed\nof lightning, the passion of magma,\fand the compassion of water.\rThe guardian of the sky resurrected\nthem after a great fire razed the\fBrass Tower in Ecruteak City.\rYou know, there is a legendary artifact\nthat is known as the Rainbow Wing.\rIt’s said to be a sparkling rainbow\nfeather from the guardian itself.\rI’d imagine the sky guardian would be\nquite attracted to that item.')
 	_END()
 ev_r209r0105_hooh:
 	_TALK_OBJ_START()

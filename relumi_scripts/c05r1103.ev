@@ -1,16 +1,16 @@
 ev_c05r1103_mount:
-	_EASY_OBJ_MSG('dp_scenario2%56-msg_c05r1103_mount_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c05r1103', '56-msg_c05r1103_mount_01', 'For the Visual Evaluation, it’s very important to\nchoose a Pokémon whose condition matches the\fcategory of the contest show!')
 	_END()
 ev_c05r1103_idol:
-	_EASY_OBJ_MSG('dp_scenario2%56-msg_c05r1103_idol_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c05r1103', '56-msg_c05r1103_idol_01', 'For the Dance Evaluation, your sense of rhythm\nis the key! The more you hit the notes in time\fwith the music, the higher your score will be.')
 	_END()
 ev_c05r1103_woman2:
 	_TALK_OBJ_START()
-	_TALKMSG('dp_scenario2%56-msg_c05r1103_woman2_01_1')
-	_TALKMSG('dp_scenario2%56-msg_c05r1103_woman2_01_2')
+	_MACRO_TALKMSG('dialogue_c05r1103', '56-msg_c05r1103_woman2_01_1', 'For the Move Evaluation, you only get one shot!\nCoordinate with other performers and use your\fContest Move when you feel the time is right!')
+	_MACRO_TALKMSG('dialogue_c05r1103', '56-msg_c05r1103_woman2_01_2', 'Have you placed a lot of Stickers on your\ncompeting Pokémon’s Ball Capsule?\rThe more Stickers there are on your Ball Capsule,\nthe flashier an entrance your Pokémon will make!\rAnd just between you and me, different Stickers\nseem to pair well with different contest shows.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_c05r1103_fighter:
-	_EASY_OBJ_MSG('dp_scenario2%56-msg_c05r1103_fighter_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c05r1103', '56-msg_c05r1103_fighter_01', 'At a contest show, you gotta pull off a cool\nContest Move. Then you’ll rack up a lot of hearts\ffrom the audience!\rIf you and the other contestants show your moves\noff back to back, you’ll score bonus points! Cool!')
 	_END()

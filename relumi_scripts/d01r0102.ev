@@ -11,7 +11,7 @@ ev_d01r0102_leader_right_00:
 	_JUMP('ev_d01r0102_leader_01_common_00')
 	_END()
 ev_d01r0102_leader_01_common_00:
-	_TALKMSG('dp_scenario1%86-msg_d01r0102_leader_01')
+	_MACRO_TALKMSG('dialogue_d01r0102', '86-msg_d01r0102_leader_01', 'OK, stand back and watch this.\rUsing the hidden move Rock Smash, get rid of\nthe boulder blocking your way...')
 	_TALK_CLOSE()
 	_TIME_WAIT(20, @246)
 	_CALL_EFFECT(0, 9, -19, 1, 28)
@@ -25,7 +25,7 @@ ev_d01r0102_leader_01_common_00:
     _JUMP('ev_d01r0102_leader_01_stone')
 	_END()
 ev_d01r0102_leader_01_stone:
-    _MACRO_TALK_KEYWAIT('dp_scenario1', '86-msg_d01r0102_leader_03', 'Oh, what do you know? There was a valuable\nstone inside the rubble.\rYou don’t normally find treasure from fallen\nboulders in this region...\rIn fact, this is an Evolution stone! It must\nbe our lucky day.\rThis stone is very pretty, isn’t it? Do you\nrecognize what stone it is?')
+    _MACRO_TALK_KEYWAIT('dialogue_d01r0102', '86-msg_d01r0102_leader_03', 'Oh, what do you know? There was a valuable\nstone inside the rubble.\rYou don’t normally find treasure from fallen\nboulders in this region...\rIn fact, this is an Evolution stone! It must\nbe our lucky day.\rThis stone is very pretty, isn’t it? Do you\nrecognize what stone it is?')
     _ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_stone_water', 84)
     _ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_stone_thunder', 83)
     _ADD_CUSTUM_WIN_LABEL('dp_options%DP_options_stone_fire', 82)
@@ -38,7 +38,7 @@ ev_d01r0102_leader_01_stone:
     _LDVAL(@SCWK_TEMP0, @SCWK_ANSWER)
     _LDVAL(@SCWK_TEMP1, 1)
     _CALL('ev_item_event')
-	_MACRO_TALK_KEYWAIT('dp_scenario1', '86-msg_d01r0102_leader_02_1', 'Fallen boulders need to be smashed\nso they’re out of the way.\rIf you could get the Badge from\nthe Gym in town, you’d be able\fto do this too.\rOf course, you’d have to beat the\nGym Leader first. That’d be me!')
+	_MACRO_TALK_KEYWAIT('dialogue_d01r0102', '86-msg_d01r0102_leader_02_1', 'Fallen boulders need to be smashed\nso they’re out of the way.\rIf you could get the Badge from\nthe Gym in town, you’d be able\fto do this too.\rOf course, you’d have to beat the\nGym Leader first. That’d be me!')
 	_TALK_CLOSE()
 	_JUMP('ev_d01r0102_leader_right')
     _END()
@@ -89,14 +89,14 @@ anm_01_d01r0102_player_01a:
 	_AC_DIR_R(8)
 	_ACMD_END()
 ev_d01r0102_wanriky1:
-	_EASY_VOICE_MSG('dp_scenario1%86-msg_d01r0102_wanriky1_01', 'PLAY_PV_EV_066_00_00')
+	_EASY_VOICE_MSG('dialogue_d01r0102%86-msg_d01r0102_wanriky1_01', 'PLAY_PV_EV_066_00_00')
 	_END()
 ev_d01r0102_wanriky2:
-	_EASY_VOICE_MSG('dp_scenario1%86-msg_d01r0102_wanriky2_01', 'PLAY_PV_EV_066_00_00')
+	_EASY_VOICE_MSG('dialogue_d01r0102%86-msg_d01r0102_wanriky2_01', 'PLAY_PV_EV_066_00_00')
 	_END()
 ev_d01r0102_wanriky3:
-	_EASY_VOICE_MSG('dp_scenario1%86-msg_d01r0102_wanriky3_01', 'PLAY_PV_EV_066_00_00')
+	_EASY_VOICE_MSG('dialogue_d01r0102%86-msg_d01r0102_wanriky3_01', 'PLAY_PV_EV_066_00_00')
 	_END()
 ev_d01r0102_workman:
-	_EASY_OBJ_MSG('dp_scenario1%86-msg_d01r0102_workman_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_d01r0102', '86-msg_d01r0102_workman_01', 'I met these Machop on Route 207. They’ve now\nbecome my most trusted partners!')
 	_END()

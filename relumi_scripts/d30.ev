@@ -18,13 +18,13 @@ ev_d30_flag_change_check_end:
 ev_d30_ship:
 	_TALK_OBJ_START()
 	_GET_REL_POS_HERO('D30_SEAMAN_01', @SCWK_TEMP2)
-	_TALKMSG('dp_scenario3%78-msg_d30_seaman_01')
+	_MACRO_TALKMSG('dialogue_d30', '78-msg_d30_seaman_01', 'Should we sail back to Canalave City?')
 	_YES_NO_WIN(@SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_d30_ship_in')
 	_JUMP('ev_d30_ship_end')
 	_END()
 ev_d30_ship_in:
-	_TALKMSG('dp_scenario3%78-msg_d30_seaman_02')
+	_MACRO_TALKMSG('dialogue_d30', '78-msg_d30_seaman_02', 'Aye, aye! Anchors aweigh!')
 	_TALK_CLOSE()
 	_CALL('ev_d30_seaman01_ship_in')
 	_IFVAL_CALL(@SCWK_TEMP2, 'EQ', 8, 'ev_d30_player_ship_in_d')
@@ -39,7 +39,7 @@ ev_d30_ship_in:
 	_TALK_OBJ_END()
 	_END()
 ev_d30_ship_end:
-	_TALKMSG('dp_scenario3%78-msg_d30_seaman_03')
+	_MACRO_TALKMSG('dialogue_d30', '78-msg_d30_seaman_03', 'All right, then. Tell me if you’d like to return\nto Canalave City.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()

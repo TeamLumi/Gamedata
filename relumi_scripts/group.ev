@@ -9,19 +9,19 @@ ev_group:
 ev_group_3:
 	_GROUP_LEADER_NAME(1, 0)
 	_GROUP_NAME(1, 1)
-	_TALKMSG('dp_scenario1%61-msg_group_01')
+	_MACRO_TALKMSG('dialogue_group', '61-msg_group_01', 'Hi! How’s it going?\rYou’re in the {1,1,35,0} group with\n{0,1,0,0} as the leader, right?\rWould you like to leave that group and join\nanother one?', 0, 1)
 	_JUMP('ev_group_command_3')
 	_JUMP('ev_group_no_group')
 ev_group_2:
 	_GROUP_LEADER_NAME(1, 0)
 	_GROUP_NAME(1, 1)
-	_TALKMSG('dp_scenario1%61-msg_group_11')
+	_MACRO_TALKMSG('dialogue_group', '61-msg_group_11', 'Hi! How’s it going?\rYou’re in the {1,1,35,0} group with\n{0,1,0,0} as the leader, right?\rWould you like to leave that group and make\na new one?', 0, 1)
 	_JUMP('ev_group_command_2')
 	_JUMP('ev_group_no_group')
 ev_group_no_group:
 	_END()
 ev_group_not_entry:
-	_TALKMSG('dp_scenario1%61-msg_group_02')
+	_MACRO_TALKMSG('dialogue_group', '61-msg_group_02', 'Hi! I know it’s a little sudden, but would you like\nto join a group?\rIf you join a group, you can compete or\ncooperate with fellow members. It’s a lot of fun.\rWant to join?')
 	_JUMP('ev_group_command')
 	_END()
 ev_group_command:
@@ -30,17 +30,17 @@ ev_group_command:
 	_JUMP('ev_group_command_2')
 	_END()
 ev_group_command_2:
-	_ADD_CUSTUM_WIN_LABEL('dp_scenario1%61-msg_group_select_01', 1)
-	_ADD_CUSTUM_WIN_LABEL('dp_scenario1%61-msg_group_select_03', 3)
-	_ADD_CUSTUM_WIN_LABEL('dp_scenario1%61-msg_group_select_04', 4)
+	_ADD_CUSTUM_WIN_LABEL('dialogue_group%61-msg_group_select_01', 1)
+	_ADD_CUSTUM_WIN_LABEL('dialogue_group%61-msg_group_select_03', 3)
+	_ADD_CUSTUM_WIN_LABEL('dialogue_group%61-msg_group_select_04', 4)
 	_OPEN_CUSTUM_WIN(@SCWK_ANSWER)
 	_JUMP('ev_group_command_result_check')
 	_END()
 ev_group_command_3:
-	_ADD_CUSTUM_WIN_LABEL('dp_scenario1%61-msg_group_select_01', 1)
-	_ADD_CUSTUM_WIN_LABEL('dp_scenario1%61-msg_group_select_02', 2)
-	_ADD_CUSTUM_WIN_LABEL('dp_scenario1%61-msg_group_select_03', 3)
-	_ADD_CUSTUM_WIN_LABEL('dp_scenario1%61-msg_group_select_04', 4)
+	_ADD_CUSTUM_WIN_LABEL('dialogue_group%61-msg_group_select_01', 1)
+	_ADD_CUSTUM_WIN_LABEL('dialogue_group%61-msg_group_select_02', 2)
+	_ADD_CUSTUM_WIN_LABEL('dialogue_group%61-msg_group_select_03', 3)
+	_ADD_CUSTUM_WIN_LABEL('dialogue_group%61-msg_group_select_04', 4)
 	_OPEN_CUSTUM_WIN(@SCWK_ANSWER)
 	_JUMP('ev_group_command_result_check')
 	_END()
@@ -125,13 +125,13 @@ sub_group_select_check_ng:
 ev_group_make_group_check:
 	_GROUP_EXIST_CHECK(0, @SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_group_make_group')
-	_TALKMSG('dp_scenario1%61-msg_group_05')
+	_MACRO_TALKMSG('dialogue_group', '61-msg_group_05', 'Oh, you want to make a new group? Sure thing!\rThe group you made before will be disbanded,\nthough. Is that OK?')
 	_YES_NO_WIN(@SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_group_cancel')
 	_JUMP('ev_group_make_group')
 	_END()
 ev_group_make_group:
-	_TALKMSG('dp_scenario1%61-msg_group_06')
+	_MACRO_TALKMSG('dialogue_group', '61-msg_group_06', 'Cool! What do you want to name your group?')
 	_AB_KEYWAIT()
 	_BLACK_OUT('SCR_WIPE_DIV', 'SCR_WIPE_SYNC')
 	_TALK_CLOSE()
@@ -142,15 +142,15 @@ ev_group_make_group:
 	_GROUP_MAKE()
 	_GROUP_NAME(0, 0)
 	_GROUP_LEADER_NAME(0, 1)
-	_TALKMSG('dp_scenario1%61-msg_group_07')
+	_MACRO_TALKMSG('dialogue_group', '61-msg_group_07', 'The {0,1,35,0} group, huh?\nThat’s a great name!\rYou lead this group.\nI hope they get more members!', 0, 1)
 	_JUMP('ev_group_end')
 	_JUMP('ev_group_namein_same')
 ev_group_namein_same:
-	_TALKMSG('dp_scenario1%61-msg_group_13')
+	_MACRO_TALKMSG('dialogue_group', '61-msg_group_13', 'Isn’t there already another group with that name?')
 	_JUMP('ev_group_end')
 	_END()
 ev_group_select:
-	_TALKMSG('dp_scenario1%61-msg_group_03')
+	_MACRO_TALKMSG('dialogue_group', '61-msg_group_03', 'Which group would you like to join?')
 	_JUMP('ev_group_select_group_mine')
 	_END()
 ev_group_select_group_mine:
@@ -159,7 +159,7 @@ ev_group_select_group_mine:
 	_GROUP_ENTRY_CHECK(0, @SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_group_select_group_01b')
 	_GROUP_NAME(0, 0)
-	_ADD_CUSTUM_WIN_LABEL('dp_scenario1%61-msg_group_select_05', 0)
+	_ADD_CUSTUM_WIN_LABEL('dialogue_group%61-msg_group_select_05', 0)
 	_JUMP('ev_group_select_group_01')
 	_END()
 ev_group_select_group_01a:
@@ -172,7 +172,7 @@ ev_group_select_group_01:
 	_GROUP_ENTRY_CHECK(2, @SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_group_select_group_02b')
 	_GROUP_NAME(2, 1)
-	_ADD_CUSTUM_WIN_LABEL('dp_scenario1%61-msg_group_select_06', 2)
+	_ADD_CUSTUM_WIN_LABEL('dialogue_group%61-msg_group_select_06', 2)
 	_JUMP('ev_group_select_group_02')
 	_END()
 ev_group_select_group_02a:
@@ -185,7 +185,7 @@ ev_group_select_group_02:
 	_GROUP_ENTRY_CHECK(3, @SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_group_select_group_03b')
 	_GROUP_NAME(3, 2)
-	_ADD_CUSTUM_WIN_LABEL('dp_scenario1%61-msg_group_select_07', 3)
+	_ADD_CUSTUM_WIN_LABEL('dialogue_group%61-msg_group_select_07', 3)
 	_JUMP('ev_group_select_group_03')
 	_END()
 ev_group_select_group_03a:
@@ -198,7 +198,7 @@ ev_group_select_group_03:
 	_GROUP_ENTRY_CHECK(4, @SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_group_select_group_04')
 	_GROUP_NAME(4, 3)
-	_ADD_CUSTUM_WIN_LABEL('dp_scenario1%61-msg_group_select_08', 4)
+	_ADD_CUSTUM_WIN_LABEL('dialogue_group%61-msg_group_select_08', 4)
 	_JUMP('ev_group_select_group_04')
 	_END()
 ev_group_select_group_04:
@@ -207,7 +207,7 @@ ev_group_select_group_04:
 	_GROUP_ENTRY_CHECK(5, @SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_group_select_group_05')
 	_GROUP_NAME(5, 4)
-	_ADD_CUSTUM_WIN_LABEL('dp_scenario1%61-msg_group_select_09', 5)
+	_ADD_CUSTUM_WIN_LABEL('dialogue_group%61-msg_group_select_09', 5)
 	_JUMP('ev_group_select_group_05')
 	_END()
 ev_group_select_group_05:
@@ -216,7 +216,7 @@ ev_group_select_group_05:
 	_GROUP_ENTRY_CHECK(6, @SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_group_select_group_06')
 	_GROUP_NAME(6, 5)
-	_ADD_CUSTUM_WIN_LABEL('dp_scenario1%61-msg_group_select_11', 6)
+	_ADD_CUSTUM_WIN_LABEL('dialogue_group%61-msg_group_select_11', 6)
 	_JUMP('ev_group_select_group_06')
 	_END()
 ev_group_select_group_06:
@@ -225,7 +225,7 @@ ev_group_select_group_06:
 	_GROUP_ENTRY_CHECK(7, @SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_group_select_group_07')
 	_GROUP_NAME(7, 6)
-	_ADD_CUSTUM_WIN_LABEL('dp_scenario1%61-msg_group_select_12', 7)
+	_ADD_CUSTUM_WIN_LABEL('dialogue_group%61-msg_group_select_12', 7)
 	_JUMP('ev_group_select_group_07')
 	_END()
 ev_group_select_group_07:
@@ -234,7 +234,7 @@ ev_group_select_group_07:
 	_GROUP_ENTRY_CHECK(8, @SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_group_select_group_08')
 	_GROUP_NAME(8, 7)
-	_ADD_CUSTUM_WIN_LABEL('dp_scenario1%61-msg_group_select_13', 8)
+	_ADD_CUSTUM_WIN_LABEL('dialogue_group%61-msg_group_select_13', 8)
 	_JUMP('ev_group_select_group_08')
 	_END()
 ev_group_select_group_08:
@@ -243,7 +243,7 @@ ev_group_select_group_08:
 	_GROUP_ENTRY_CHECK(9, @SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_group_select_group_09')
 	_GROUP_NAME(9, 8)
-	_ADD_CUSTUM_WIN_LABEL('dp_scenario1%61-msg_group_select_14', 9)
+	_ADD_CUSTUM_WIN_LABEL('dialogue_group%61-msg_group_select_14', 9)
 	_JUMP('ev_group_select_group_09')
 	_END()
 ev_group_select_group_09:
@@ -252,7 +252,7 @@ ev_group_select_group_09:
 	_GROUP_ENTRY_CHECK(10, @SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_group_select_group_10')
 	_GROUP_NAME(10, 9)
-	_ADD_CUSTUM_WIN_LABEL('dp_scenario1%61-msg_group_select_15', 10)
+	_ADD_CUSTUM_WIN_LABEL('dialogue_group%61-msg_group_select_15', 10)
 	_JUMP('ev_group_select_group_10')
 	_END()
 ev_group_select_group_10:
@@ -261,11 +261,11 @@ ev_group_select_group_10:
 	_GROUP_ENTRY_CHECK(11, @SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_group_select_group_11')
 	_GROUP_NAME(11, 10)
-	_ADD_CUSTUM_WIN_LABEL('dp_scenario1%61-msg_group_select_16', 11)
+	_ADD_CUSTUM_WIN_LABEL('dialogue_group%61-msg_group_select_16', 11)
 	_JUMP('ev_group_select_group_11')
 	_END()
 ev_group_select_group_11:
-	_ADD_CUSTUM_WIN_LABEL('dp_scenario1%61-msg_group_select_10', 12)
+	_ADD_CUSTUM_WIN_LABEL('dialogue_group%61-msg_group_select_10', 12)
 	_OPEN_CUSTUM_WIN(@SCWK_TEMP0)
 	_IFVAL_JUMP(@SCWK_TEMP0, 'EQ', 12, 'ev_group_cancel')
 	_JUMP('ev_group_entry_check')
@@ -273,23 +273,23 @@ ev_group_select_group_11:
 ev_group_entry_check:
 	_GROUP_NAME(@SCWK_TEMP0, 0)
 	_GROUP_LEADER_NAME(@SCWK_TEMP0, 1)
-	_TALKMSG('dp_scenario1%61-msg_group_08')
+	_MACRO_TALKMSG('dialogue_group', '61-msg_group_08', 'The {0,1,35,0} group?\n{1,1,0,0} is the leader.\fWould you like to join this group?', 0, 1)
 	_YES_NO_WIN(@SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'NE', 0, 'ev_group_select')
 	_GROUP_ENTRY(@SCWK_TEMP0)
 	_PLAYER_NAME(0)
 	_GROUP_NAME(@SCWK_TEMP0, 1)
-	_TALKMSG('dp_scenario1%61-msg_group_09')
+	_MACRO_TALKMSG('dialogue_group', '61-msg_group_09', 'OK! You are now a member of the\n{1,1,35,0} group.', 0, 1)
 	_JUMP('ev_group_end')
 	_JUMP('ev_group_end')
 ev_group_guide_msg:
-	_TALKMSG('dp_scenario1%61-msg_group_10_1')
-	_TALKMSG('dp_scenario1%61-msg_group_10_2')
-	_TALKMSG('dp_scenario1%61-msg_group_10_3')
+	_MACRO_TALKMSG('dialogue_group', '61-msg_group_10_1', 'Mix your records in any Local Room, and you’ll\nbe able to join a group of friends you met there.')
+	_MACRO_TALKMSG('dialogue_group', '61-msg_group_10_2', 'When you’re in the same group, events can\nhappen simultaneously.\rIt makes things a lot more fun playing in a group!')
+	_MACRO_TALKMSG('dialogue_group', '61-msg_group_10_3', 'Anyone can make a group, and anyone can join.\rI hope you recruit lots of friends so everyone\ncan have fun!')
 	_JUMP('ev_group_command')
 	_JUMP('ev_group_end')
 ev_group_cancel:
-	_TALKMSG('dp_scenario1%61-msg_group_04')
+	_MACRO_TALKMSG('dialogue_group', '61-msg_group_04', 'Oh. That’s too bad.')
 	_JUMP('ev_group_end')
 ev_group_end:
 	_TALK_CLOSE()

@@ -1,0 +1,11 @@
+SP_T08_INIT:
+	_END()
+SP_T08_OBJ:
+	_END()
+SP_T08_SCENE:
+	_JUMP('sp_t08_tbl')
+	_END()
+SP_T08_FLAG:
+	_END()
+sp_t08_tbl:
+	_END()

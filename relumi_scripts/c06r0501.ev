@@ -1,6 +1,106 @@
 ev_c06r0501_assistantm:
-	_EASY_OBJ_MSG('dp_scenario2%128-msg_c06r0501_assistantm_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c06r0501', '128-msg_c06r0501_assistantm_01', 'In the Great Marsh, they use Quick Trams on rails\nfor transportation. They prevent damage to the\fGreat Marsh’s ecosystem.')
 	_END()
 ev_c06r0501_achamo:
-	_EASY_VOICE_MSG('dp_scenario2%128-msg_c06r0501_achamo_01', 'PLAY_PV_EV_054_00_00')
+	_EASY_VOICE_MSG('dialogue_c06r0501%128-msg_c06r0501_achamo_01', 'PLAY_PV_EV_054_00_00')
 	_END()
+ev_c06r0501_miles_trade:
+    _TALK_OBJ_START()
+    _CALL('ev_c06r0501_miles_trade_values')
+    _IF_FLAGON_JUMP(#3084, 'ev_c06r0501_miles_trade_over')
+    _POKEMON_NAME_FORM(0, @LOCALWORK0, @LOCALWORK1)
+    _MACRO_TALKMSG('dialogue_c06r0501', 'msg_c06r0501_miles_trade_1', 'Hey, hey! You, you!\rYeah, I’m talking to you, the super-cool\nTrainer! Who else would I be talking to!?\rI know I don’t look like it, but one day, I’m\ngonna be the champion. No laughing at me!\rI even know the exact team I’m gonna take to\nthe League, when my dad lets me stay out\fpast dark.\rI need some help though. See, I was watching\nTV and they had a Mantine on there! I don’t\fwanna just catch Mantine though...\rI want a {0,1,1,0} to raise from a baby.')
+    _TALK_CLOSE()
+    _POKE_WINDOW_PUT(@LOCALWORK0, @LOCALWORK1)
+    _POKEMON_NAME_FORM(1, @LOCALWORK2, @LOCALWORK3)
+    _MACRO_TALKMSG('dialogue_c06r0501', 'msg_c06r0501_miles_trade_2', 'So, uhm... Can you trade me one? Please!? I’ll\ntrade you Limes, my {1,1,1,0}, if you can!')
+    _YES_NO_WIN(@SCWK_ANSWER)
+    _IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_c06r0501_miles_trade_yes')
+    _IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_c06r0501_miles_trade_no')
+ev_c06r0501_miles_trade_values:
+    _LDVAL(@LOCALWORK0, 458); Given trade MonsNo
+    _LDVAL(@LOCALWORK1, 0); Given trade FormNo
+    _LDVAL(@LOCALWORK2, 610); Received trade MonsNo
+    _LDVAL(@LOCALWORK3, 0); Received trade FormNo
+    _RET()
+ev_c06r0501_miles_trade_yes:
+    _TALK_CLOSE()
+    _POKELIST_SET_PROC(35)
+    _POKELIST_GET_RESULT(@SCWK_TEMP0, @SCWK_TEMP1)
+    _IFVAL_JUMP(@SCWK_TEMP0, 'EQ', -1, 'ev_c06r0501_miles_trade_no'); If nothing was selected
+    _TEMOTI_BOX_MONSNO(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_ANSWER)
+    _TEMOTI_BOX_FORMNO(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_TEMP2)
+    _IFVAL_JUMP(@SCWK_ANSWER, 'NE', @LOCALWORK0, 'ev_c06r0501_miles_trade_wrong_mon'); If a species other than the target was selected
+    _IFVAL_JUMP(@SCWK_TEMP2, 'NE', @LOCALWORK1, 'ev_c06r0501_miles_trade_wrong_form'); If an incorrect form of the correct species was selected
+    _TEMOTI_BOX_SHINY(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_TEMP2)
+    _TEMOTI_BOX_GENDER(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_TEMP3)
+    _TALK_CLOSE()
+    _LOCALKOUKAN_APPLY(8, @SCWK_TEMP1, @SCWK_TEMP0)
+	_SXY_POS_CHANGE('HERO', 7, 6)
+	_SXY_DIR_CHANGE('HERO', 180)
+	_SXY_DIR_CHANGE('C06R0501_MILES', 0)
+    _IFVAL_CALL(@SCWK_TEMP2, 'EQ', 0, 'ev_c06r0501_miles_trade_placedata')
+    _IFVAL_CALL(@SCWK_TEMP2, 'GE', 1, 'ev_c06r0501_miles_trade_placedata_shiny')
+	_CALL('ev_c06r0501_mantyke_cry')
+    _JUMP('ev_c06r0501_miles_trade_over')
+ev_c06r0501_miles_trade_no:
+    _POKEMON_NAME_FORM(0, @LOCALWORK0, @LOCALWORK1)
+    _MACRO_TALKMSG('dialogue_c06r0501', 'msg_c06r0501_miles_trade_no', 'Aw dangit! I was sure you’d be the one to\ntrade me a {0,1,1,0}!\rMy dad says I can’t go too far from the\nhouse, so I’ll be here if you decide Limes is a\fgood trade!')
+    _TALK_CLOSE()
+    _TALK_OBJ_END()
+    _END()
+ev_c06r0501_miles_trade_wrong_mon:
+    _POKEMON_NAME_FORM(0, @LOCALWORK0, @LOCALWORK1)
+    _MACRO_TALKMSG('dialogue_c06r0501', 'msg_c06r0501_miles_trade_wrong_mon', 'Uhh... I might be a kid, but I watch lots of TV.\nI’ve seen {0,1,1,0} before, and that’s not\f{0,1,1,0}!\rDon’t try to trick me just ’cause I’m a kid!\nI want {0,1,1,0}!')
+    _TALK_CLOSE()
+    _TALK_OBJ_END()
+    _END()
+ev_c06r0501_miles_trade_wrong_form:
+    _MACRO_TALKMSG('dialogue_c06r0501', 'msg_c06r0501_miles_trade_wrong_form', 'That’s the right Pokémon, but it doesn’t look\nright. Is there another form of this Pokémon?\fMaybe that’s the one I saw, and that I want!')
+    _TALK_CLOSE()
+    _TALK_OBJ_END()
+    _END()
+ev_c06r0501_miles_trade_placedata:
+	_IFVAL_JUMP(@SCWK_TEMP3, 'EQ', 0, 'ev_c06r0501_miles_trade_placedata_male')
+	_IFVAL_JUMP(@SCWK_TEMP3, 'GE', 1, 'ev_c06r0501_miles_trade_placedata_female')
+	_RET()
+ev_c06r0501_miles_trade_placedata_male:
+    _OBJ_ADD('C06R0501_MANTYKE_MALE')
+    _FLAG_RESET(#2977)
+    _RET()
+ev_c06r0501_miles_trade_placedata_female:
+    _OBJ_ADD('C06R0501_MANTYKE_FEMALE')
+    _FLAG_RESET(#2978)
+    _RET()
+ev_c06r0501_miles_trade_placedata_shiny:
+	_IFVAL_JUMP(@SCWK_TEMP3, 'EQ', 0, 'ev_c06r0501_miles_trade_placedata_shiny_male')
+	_IFVAL_JUMP(@SCWK_TEMP3, 'GE', 1, 'ev_c06r0501_miles_trade_placedata_shiny_female')
+	_RET()
+ev_c06r0501_miles_trade_placedata_shiny_male:
+    _OBJ_ADD('C06R0501_MANTYKE_SHINY_MALE')
+    _FLAG_RESET(#2979)
+    _RET()
+ev_c06r0501_miles_trade_placedata_shiny_female:
+    _OBJ_ADD('C06R0501_MANTYKE_SHINY_FEMALE')
+    _FLAG_RESET(#2980)
+    _RET()
+ev_c06r0501_miles_trade_over:
+    _POKEMON_NAME_FORM(0, @LOCALWORK0); Just species name for brevity
+    _POKEMON_NAME_FORM(1, @LOCALWORK2); Just species name for brevity
+    _MACRO_TALKMSG('dialogue_c06r0501', 'msg_c06r0501_miles_trade_over', 'My dad says {1,1,1,0} aren’t ’powerhouses’, and\nit takes them a long time to evolve into their\fstrongest form.\rI heard {0,1,1,0} has a unique way to evolve,\nso my next job is to ask my Dad how to evolve\fit! Bye!')
+    _FLAG_SET(#3084)
+    _TALK_CLOSE()
+    _TALK_OBJ_END()
+    _END()
+ev_c06r0501_mantyke:
+	_TALK_OBJ_START()
+    _CALL('ev_c06r0501_miles_trade_values')
+	_CALL('ev_c06r0501_mantyke_cry')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_c06r0501_mantyke_cry:
+    _VOICE_PLAY(@LOCALWORK0, @LOCALWORK1, 0)
+    _MACRO_TALKMSG('dialogue_c06r0501', 'msg_c06r0501_mantyke_cry', 'Man-aaaan!!')
+    _VOICE_WAIT()
+	_RET()

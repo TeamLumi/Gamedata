@@ -17,7 +17,7 @@ ev_c11fs0101_shop_re:
 	_JUMP('ev_c11fs0101_shop_end')
 	_END()
 ev_c11fs0101_shop_sonohoka:
-	_TALKMSG('dp_scenario1%28-mes_shop_01_03')
+	_MACRO_TALKMSG('dialogue_c11fs0101', '28-mes_shop_01_03', 'Is there anything else I can do for you?')
 	_RET()
 ev_c11fs0101_shop_buy:
 	_LDVAL(@LOCALWORK3, 1)
@@ -70,7 +70,7 @@ ev_c11fs0101_fix_shop:
 ev_c11fs0101_lady:
 	_TALK_OBJ_START()
 	_IF_FLAGON_JUMP(#FE_C11FS0101_ITEM_GET, 'ev_c11fs0101_lady_02')
-	_TALKMSG('dp_scenario3%32-msg_c11fs0101_lady_01')
+	_MACRO_TALKMSG('dialogue_c11fs0101', '32-msg_c11fs0101_lady_01', 'What items should Pokémon hold? It’s a question\nevery Trainer has to answer.\rHere’s something else to think about.')
 	_LDVAL(@SCWK_TEMP0, 232)
 	_LDVAL(@SCWK_TEMP1, 1)
 	_ADD_ITEM_CHK(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_ANSWER)
@@ -80,7 +80,7 @@ ev_c11fs0101_lady:
 	_JUMP('ev_c11fs0101_lady_02')
 	_END()
 ev_c11fs0101_lady_02:
-	_TALKMSG('dp_scenario3%32-msg_c11fs0101_lady_02')
+	_MACRO_TALKMSG('dialogue_c11fs0101', '32-msg_c11fs0101_lady_02', 'Now, which Pokémon will hold that Scope Lens?\nHave I given you more questions than answers?')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
@@ -90,5 +90,5 @@ ev_c11fs0101_lady_item_event_fail:
 	_TALK_OBJ_END()
 	_END()
 ev_c11fs0101_clown:
-	_EASY_OBJ_MSG('dp_scenario3%32-msg_c11fs0101_clown_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_c11fs0101', '32-msg_c11fs0101_clown_01', 'An item that guarantees victory in every battle...\rThere are some things BP can’t buy.')
 	_END()

@@ -1,26 +1,40 @@
 ev_r202_flag_change:
-	_GET_MY_SEX(@LOCALWORK0)
-	_IFVAL_JUMP(@LOCALWORK0, 'EQ', 0, 'ev_r202_male_flag_change_01')
-	_IFVAL_JUMP(@LOCALWORK0, 'EQ', 1, 'ev_r202_female_flag_change_01')
+	_IFVAL_CALL(@WK_SCENE_C01, 'EQ', 0, 'ev_r202_player_pos_check'); Calls a check ensuring the player isn't entering from Jubilife City
 	_END()
-ev_r202_male_flag_change_01:
-	_LDVAL(@OBJCHRWORK0, 'HEROINE')
-	_END()
-ev_r202_female_flag_change_01:
-	_LDVAL(@OBJCHRWORK0, 'HERO')
-	_END()
+ev_r202_player_pos_check:
+	_PLAYER_POS_GET(@SCWK_TEMP0, @SCWK_TEMP1)
+	_IFVAL_JUMP(@SCWK_TEMP1, 'GT', 800, 'ev_r202_ayou_set_gender'); Enables the correct placedata for AYou in Jubilife City
+	_RET()
+ev_r202_ayou_set_gender:
+	_GET_COSTUME(@SCWK_TEMP0); Assigns the Current costume to TEMP0
+	_GET_COSTUME_GENDER(@SCWK_TEMP0, @SCWK_TEMP1); Takes TEMP0 and checks the index and assigns TEMP1 to 0 if male and 1 if female
+	_IFVAL_JUMP(@SCWK_TEMP1, 'EQ', 0, 'ev_r202_ayou_rei_set')
+	_IFVAL_JUMP(@SCWK_TEMP1, 'EQ', 1, 'ev_r202_ayou_akari_set')
+	_RET()
+ev_r202_ayou_rei_set:
+	_OBJ_ADD('C01_AYOU_REI')
+	_FLAG_RESET(#2919)
+	_OBJ_DEL('C01_AYOU_AKARI')
+	_FLAG_SET(#2918)
+	_RET()
+ev_r202_ayou_akari_set:
+	_OBJ_ADD('C01_AYOU_AKARI')
+	_FLAG_RESET(#2918)
+	_OBJ_DEL('C01_AYOU_REI')
+	_FLAG_SET(#2919)
+	_RET()
 ev_r202_boy2:
-	_EASY_OBJ_MSG('dp_scenario1%10-msg_r202_boy2_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_r202', '10-msg_r202_boy2_01', 'Some Pokémon only appear in the morning.\nSome only come out at night.\rI’m going to keep waiting right here till I’ve\nseen every last one of ’em!')
 	_END()
 ev_r202_sign1:
-	_EASY_BOARD_MSG('dp_scenario1%10-msg_r202_sign1_01', 'BOARD_TYPE_ROAD', 0, 4)
+	_EASY_BOARD_MSG('dialogue_r202%10-msg_r202_sign1_01', 'BOARD_TYPE_ROAD', 0, 4)
 	_END()
 ev_r202_sign2:
-	_EASY_BOARD_MSG('dp_scenario1%10-msg_r202_sign2_01', 'BOARD_TYPE_ROAD', 0, 3)
+	_EASY_BOARD_MSG('dialogue_r202%10-msg_r202_sign2_01', 'BOARD_TYPE_ROAD', 0, 3)
 	_END()
 ev_r202_sign3:
-	_EASY_INFOBOARD_MSG('dp_scenario1%10-msg_r202_sign3_01_1', 'BOARD_TYPE_INFO', 0)
-	_EASY_INFOBOARD_MSG('dp_scenario1%10-msg_r202_sign3_01_2', 'BOARD_TYPE_INFO', 0)
+	_EASY_INFOBOARD_MSG('dialogue_r202%10-msg_r202_sign3_01_1', 'BOARD_TYPE_INFO', 0)
+	_EASY_INFOBOARD_MSG('dialogue_r202%10-msg_r202_sign3_01_2', 'BOARD_TYPE_INFO', 0)
 	_END()
 pos_r202_support:
 	_EVENT_START()
@@ -68,12 +82,30 @@ pos_r202_support_02_common:
 	_CALL('ev_block_doc')
 	_JUMP('ev_r202_support_requests_fight')
 ev_r202_support_requests_fight:
-	_SUPPORT_NAME(0)
 	_PLAYER_NAME(1)
-	_TALKMSG('dp_scenario3%84-msg_catching_tutorial_01', 1)
-	_TALK_CLOSE()
+	_GET_MY_SEX(@SCWK_ANSWER)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_r202_support_requests_fight_male_1')
+	_JUMP('ev_r202_support_requests_fight_female_1')
+ev_r202_support_requests_fight_male_1:
+	_MACRO_TALKMSG('dialogue_r202', '84-msg_catching_tutorial_01', '{1,1,0,0}, let’s have a\nPokémon battle!\rI’ll heal your Pokémon first...', 1)
+	_JUMP('ev_r202_support_requests_fight_2')
+ev_r202_support_requests_fight_female_1:
+	_MACRO_TALKMSG('dialogue_r202', '84-msg_catching_tutorial_01_hero', '{1,1,0,0}, we should have a\nPokémon battle!\rLet me heal your Pokémon...', 1)
+	_JUMP('ev_r202_support_requests_fight_2')
+ev_r202_support_requests_fight_2:
+	_SE_PLAY('M_FI002')
+	_ME_WAIT()
 	_PC_KAIFUKU()
-	_TALKMSG('dp_scenario3%84-msg_catching_tutorial_02', 1)
+	_GET_MY_SEX(@SCWK_ANSWER)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_r202_support_requests_fight_male_2')
+	_JUMP('ev_r202_support_requests_fight_female_2')
+ev_r202_support_requests_fight_male_2:
+	_MACRO_TALKMSG('dialogue_r202', '84-msg_catching_tutorial_02', 'Now, this is gonna be fun!', 1)
+	_JUMP('ev_r202_support_requests_fight_3')
+ev_r202_support_requests_fight_female_2:
+	_MACRO_TALKMSG('dialogue_r202', '84-msg_catching_tutorial_02_hero', 'Now, I hope you’re ready\nto battle!', 1)
+	_JUMP('ev_r202_support_requests_fight_3')
+ev_r202_support_requests_fight_3:
 	_TALK_CLOSE()
 	_EVENT_CAMERA_INDEX(923)
 	_EVENT_CAMERA_END_WAIT()
@@ -86,18 +118,39 @@ ev_r202_support_requests_fight:
 ev_r202_01_support_battle_over:
 	_EVENT_START()
 	_CALL('ev_character_theme_stop')
-	_TALKMSG('dp_scenario3%84-msg_catching_tutorial_03', 1)
+	_PLAYER_NAME(1)
+	_GET_MY_SEX(@SCWK_ANSWER)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_r202_01_support_battle_over_male_1')
+	_JUMP('ev_r202_01_support_battle_over_female_1')
+ev_r202_01_support_battle_over_male_1:
+	_MACRO_TALKMSG('dialogue_r202', '84-msg_catching_tutorial_03', 'Wow, you’re that strong already, {1,1,0,0}?\rI’ll give you 30 Poké Balls to get started!', 1)
+	_JUMP('ev_r202_01_support_battle_over_1')
+ev_r202_01_support_battle_over_female_1:
+	_MACRO_TALKMSG('dialogue_r202', '84-msg_catching_tutorial_03_hero', 'Woah, you’re that strong already, {1,1,0,0}?\rI’ll give you 30 Poké Balls to get started!', 1)
+	_JUMP('ev_r202_01_support_battle_over_1')
+ev_r202_01_support_battle_over_1:
 	_LDVAL(@SCWK_TEMP0, 4)
 	_LDVAL(@SCWK_TEMP1, 30)
 	_CALL('ev_item_event')
-	_TALKMSG('dp_scenario3%84-msg_catching_tutorial_04', 1)
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_r202_incense_tutorial_00', 'Oh, and if you burn special flowers\nin that Incense Burner,\ryou might find some rare Pokémon\nanywhere you go!')
+	_GET_MY_SEX(@SCWK_ANSWER)
+	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_r202_01_support_battle_over_male_2')
+	_JUMP('ev_r202_01_support_battle_over_female_2')
+ev_r202_01_support_battle_over_male_2:
+	_MACRO_TALKMSG('dialogue_r202', '84-msg_catching_tutorial_04', 'If you have lots of Pokémon with you,\nyou’ll be able to travel farther.\rThat way, you’ll have a better shot\nat meeting more Pokémon.\rSee you later!', 1)
+	_MACRO_TALK_KEYWAIT('dialogue_r202', '00_msg_r202_incense_tutorial_00', 'Oh, and if you burn special flowers in that\nIncense Burner, you might find some rare\fPokémon anywhere you go!')
+	_JUMP('ev_r202_01_support_battle_over_2')
+ev_r202_01_support_battle_over_female_2:
+	_MACRO_TALKMSG('dialogue_r202', '84-msg_catching_tutorial_04_hero', 'If you have lots of Pokémon with you,\nyou’ll be able to travel farther.\rThat way, you’ll have a better shot\nat meeting more Pokémon.\rSee you around!', 1)
+	_MACRO_TALK_KEYWAIT('dialogue_r202', '00_msg_r202_incense_tutorial_00_hero', 'Oh, and if you burn special flowers in that\nIncense Burner, you might find some rare\fPokémon anywhere you go!')
+	_JUMP('ev_r202_01_support_battle_over_2')
+ev_r202_01_support_battle_over_2:
 	_TALK_CLOSE()
 	_OBJ_ANIME('R202_SUPPORT', 'anm_03_r202_support_01')
 	_OBJ_ANIME_WAIT()
 	_OBJ_DEL('R202_SUPPORT')
-	_BOUKENNOOTO_TIPS_OPEN(23, @SCWK_ANSWER)
+	_BOUKENNOOTO_TIPS_OPEN(7, @SCWK_ANSWER)
 	_BOUKENNOOTO_TIPS_WAIT()
+	_FLAG_SET(#2457); Move Reminder Chapter
 	_LDVAL(@WK_SCENE_R202, 1)
 	_LDVAL(@TOWNMAP_GUIDE_SEQUENCE, 1900)
 	_CALL('ev_block_doc_end')
@@ -138,11 +191,11 @@ r202_support_male_50:
 	_JUMP('r202_01_support_common_50')
 	_END()
 r202_support_male_50_off:
-	_TALKMSG('dp_scenario1%10-msg_r202_heroine_01_1')
-	_TALKMSG('dp_scenario1%10-msg_r202_heroine_01_2', 1)
+	_MACRO_TALKMSG('dialogue_r202', '10-msg_r202_heroine_01_1', '{1,1,0,0}?!\rDid you tell your family that you’re helping\nthe professor?\r...You didn’t, did you?')
+	_MACRO_TALKMSG('dialogue_r202', '10-msg_r202_heroine_01_2', 'I know that you’re really eager to see all kinds of\nPokémon, but you shouldn’t make your mom\fworry that you’ve disappeared.', 1)
 	_RET()
 r202_support_male_50_on:
-	_TALKMSG('dp_scenario1%10-msg_r202_heroine_04')
+	_MACRO_TALKMSG('dialogue_r202', '10-msg_r202_heroine_04', 'You should go tell your family that you’re helping\nthe professor. The faster the better, too.')
 	_RET()
 r202_support_female_50:
 	_SUPPORT_NAME(0)
@@ -152,11 +205,11 @@ r202_support_female_50:
 	_JUMP('r202_01_support_common_50')
 	_END()
 r202_support_female_50_off:
-	_TALKMSG('dp_scenario1%10-msg_r202_hero_01_1')
-	_TALKMSG('dp_scenario1%10-msg_r202_hero_01_2', 1)
+	_MACRO_TALKMSG('dialogue_r202', '10-msg_r202_hero_01_1', '{1,1,0,0}?!\rDid you tell your family that you’re helping\nthe professor?\r...I bet you didn’t, did you?')
+	_MACRO_TALKMSG('dialogue_r202', '10-msg_r202_hero_01_2', 'I know that you’re eager to see all kinds of\nPokémon, but you shouldn’t make your mom\fworry that you’ve upped and left.', 1)
 	_RET()
 r202_support_female_50_on:
-	_TALKMSG('dp_scenario1%10-msg_r202_hero_04')
+	_MACRO_TALKMSG('dialogue_r202', '10-msg_r202_hero_04', 'Why don’t you go tell your family that the\nprofessor asked for your help?\rYou should do it right away.')
 	_RET()
 r202_01_support_common_50:
 	_TALK_CLOSE()

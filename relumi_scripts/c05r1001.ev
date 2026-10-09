@@ -10,51 +10,151 @@ ev_c05r1001_obj_change:
 	_END()
 ev_c05r1001_idol:
 	_TALK_OBJ_START()
-	_TALKMSG('dp_scenario2%54-msg_c05r1001_idol_01_1')
-	_TALKMSG('dp_scenario2%54-msg_c05r1001_idol_01_2')
+	_MACRO_TALKMSG('dialogue_c05r1001', '54-msg_c05r1001_idol_01_1', 'Hi! Let’s get cooking!\rHere’s my advice on cooking tasty Poffins for\nyour Pokémon crew!\rIn the beginning, while it’s still a batter, swirl it\ngently and avoid spillage.')
+	_MACRO_TALKMSG('dialogue_c05r1001', '54-msg_c05r1001_idol_01_2', 'When it starts to harden, churn it fast in\nbig circles!\rAt the end, make a wish for it to turn scrumptious\nand whirl it!')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_c05r1001_oldman2:
 	_TALK_OBJ_START_TURN_NOT()
-	_TALKMSG('dp_scenario2%54-msg_c05r1001_oldman2_01')
+	_MACRO_TALKMSG('dialogue_c05r1001', '54-msg_c05r1001_oldman2_01', 'Have you got some Berries?\rTo make delicious Poffins, the key ingredient is a\nrare Berry.\rAlso, Poffins will come out yummy if you cook\nBerries as quickly as possible, but still slowly\fenough that you don’t spill the batter.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_c05r1001_oldwoman2:
 	_TALK_OBJ_START_TURN_NOT()
-	_TALKMSG('dp_scenario2%54-msg_c05r1001_oldwoman2_01')
+	_MACRO_TALKMSG('dialogue_c05r1001', '54-msg_c05r1001_oldwoman2_01', 'Eating good food makes people and Pokémon\nmore energetic and happy.\rIn that sense, we’re exactly alike.')
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
+ev_c05r1001_vine_trade:
+    _TALK_OBJ_START()
+    _CALL('ev_c05r1001_vine_trade_values')
+    _IF_FLAGON_JUMP(#3077, 'ev_c05r1001_vine_trade_over')
+    _POKEMON_NAME_FORM(0, @LOCALWORK0, @LOCALWORK1)
+    _MACRO_TALKMSG('dialogue_c05r1001', 'msg_c05r1001_vine_trade_1', 'Oh, umm. Hello!\nI wonder if you could help me?\rIt might be far-fetched but, do you know\nabout {0,1,1,0}? *giggle*')
+    _TALK_CLOSE()
+    _POKE_WINDOW_PUT(@LOCALWORK0, @LOCALWORK1)
+    _POKEMON_NAME_FORM(0, @LOCALWORK0, @LOCALWORK1)
+    _POKEMON_NAME_FORM(1, @LOCALWORK2, @LOCALWORK3)
+    _MACRO_TALKMSG('dialogue_c05r1001', 'msg_c05r1001_vine_trade_2', 'You see, I am a Pokémon Coordinator.\nMy Pokémon and I take part in Super Contests.\rBut... My current Pokémon partner and I just\ndon’t seem to work well together at all.\rMy partner is an {1,1,1,0}\nand we’ve been competing non-stop to show\foff its Beauty, its Cuteness, its Coolness and\feven its Toughness.\rI want to try something new, so I have been\nlooking for a new partner.\rA {0,1,1,0}.\rI’d revel in the opportunity to work with a\nPokémon with such an innate sense of cunning.\rSo how about it?\nWanna trade a {0,1,1,0} for my\f{1,1,1,0}?')
+    _YES_NO_WIN(@SCWK_ANSWER)
+    _IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_c05r1001_vine_trade_yes')
+    _IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 1, 'ev_c05r1001_vine_trade_no')
+ev_c05r1001_vine_trade_values:
+    _LDVAL(@LOCALWORK0, 83); Given trade MonsNo
+    _LDVAL(@LOCALWORK1, 0); Given trade FormNo
+    _LDVAL(@LOCALWORK2, 869); Received trade MonsNo
+    _LDVAL(@LOCALWORK3, 2); Received trade FormNo
+    _RET()
+ev_c05r1001_vine_trade_yes:
+    _TALK_CLOSE()
+    _POKELIST_SET_PROC(28)
+    _POKELIST_GET_RESULT(@SCWK_TEMP0, @SCWK_TEMP1)
+    _IFVAL_JUMP(@SCWK_TEMP0, 'EQ', -1, 'ev_c05r1001_vine_trade_no'); If nothing was selected
+    _TEMOTI_BOX_MONSNO(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_ANSWER)
+    _TEMOTI_BOX_FORMNO(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_TEMP2)
+    _IFVAL_JUMP(@SCWK_ANSWER, 'NE', @LOCALWORK0, 'ev_c05r1001_vine_trade_wrong_mon'); If a species other than the target was selected
+    _IFVAL_JUMP(@SCWK_TEMP2, 'NE', @LOCALWORK1, 'ev_c05r1001_vine_trade_wrong_form'); If an incorrect form of the correct species was selected
+    _TEMOTI_BOX_SHINY(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_TEMP2)
+    _TEMOTI_BOX_GENDER(@SCWK_TEMP0, @SCWK_TEMP1, @SCWK_TEMP3)
+    _TALK_CLOSE()
+    _LOCALKOUKAN_APPLY(2, @SCWK_TEMP1, @SCWK_TEMP0)
+	_SXY_POS_CHANGE('HERO', 10, 4)
+	_SXY_DIR_CHANGE('HERO', 180)
+	_SXY_DIR_CHANGE('C05R1001_VINE', 0)
+    _IFVAL_CALL(@SCWK_TEMP2, 'EQ', 0, 'ev_c05r1001_vine_trade_placedata')
+    _IFVAL_CALL(@SCWK_TEMP2, 'GE', 1, 'ev_c05r1001_vine_trade_placedata_shiny')
+	_CALL('ev_c05r1001_farfetchd_cry')
+    _JUMP('ev_c05r1001_vine_trade_over')
+ev_c05r1001_vine_trade_no:
+    _POKEMON_NAME_FORM(0, @LOCALWORK0, @LOCALWORK1)
+    _MACRO_TALKMSG('dialogue_c05r1001', 'msg_c05r1001_vine_trade_no', 'Not this time, huh?\nIs it perhaps that you don’t have a {0,1,1,0}?\rI knew it was—uh, a longshot.\rThough, if it’s a case of not having one.\nI’ll bet your Pokédex can show you where\fthey’ll be!')
+    _TALK_CLOSE()
+    _TALK_OBJ_END()
+    _END()
+ev_c05r1001_vine_trade_wrong_mon:
+    _POKEMON_NAME_FORM(0, @LOCALWORK0, @LOCALWORK1)
+    _MACRO_TALKMSG('dialogue_c05r1001', 'msg_c05r1001_vine_trade_wrong_mon', 'Uhh, that Pokémon is nice but not what I am\nafter.\rPretty please bring me a {0,1,1,0}.')
+    _TALK_CLOSE()
+    _TALK_OBJ_END()
+    _END()
+ev_c05r1001_vine_trade_wrong_form:
+    _MACRO_TALKMSG('dialogue_c05r1001', 'msg_c05r1001_vine_trade_wrong_form', 'That is close but not the right form.')
+    _TALK_CLOSE()
+    _TALK_OBJ_END()
+    _END()
+ev_c05r1001_vine_trade_placedata:
+	_IFVAL_JUMP(@SCWK_TEMP3, 'EQ', 0, 'ev_c05r1001_vine_trade_placedata_male')
+	_IFVAL_JUMP(@SCWK_TEMP3, 'EQ', 1, 'ev_c05r1001_vine_trade_placedata_female')
+	_RET()
+ev_c05r1001_vine_trade_placedata_male:
+    _OBJ_ADD('C05R1001_FARFETCHD_MALE')
+    _FLAG_RESET(#2953)
+    _RET()
+ev_c05r1001_vine_trade_placedata_female:
+    _OBJ_ADD('C05R1001_FARFETCHD_FEMALE')
+    _FLAG_RESET(#2954)
+    _RET()
+ev_c05r1001_vine_trade_placedata_shiny:
+	_IFVAL_JUMP(@SCWK_TEMP3, 'EQ', 0, 'ev_c05r1001_vine_trade_placedata_shiny_male')
+	_IFVAL_JUMP(@SCWK_TEMP3, 'EQ', 1, 'ev_c05r1001_vine_trade_placedata_shiny_female')
+	_RET()
+ev_c05r1001_vine_trade_placedata_shiny_male:
+    _OBJ_ADD('C05R1001_FARFETCHD_SHINY_MALE')
+    _FLAG_RESET(#2955)
+    _RET()
+ev_c05r1001_vine_trade_placedata_shiny_female:
+    _OBJ_ADD('C05R1001_FARFETCHD_SHINY_FEMALE')
+    _FLAG_RESET(#2956)
+    _RET()
+ev_c05r1001_vine_trade_over:
+    _POKEMON_NAME_FORM(1, @LOCALWORK2); Just species name for brevity
+    _MACRO_TALKMSG('dialogue_c05r1001', 'msg_c05r1001_vine_trade_over', 'I’m deeply grateful that you chose to trade\nwith me!\rFinally, we can train for Cleverness Contest\nShows!\r...Did I ever try that with {1,1,1,0}?')
+    _FLAG_SET(#3077)
+    _TALK_CLOSE()
+    _TALK_OBJ_END()
+    _END()
+ev_c05r1001_farfetchd:
+	_TALK_OBJ_START()
+    _CALL('ev_c05r1001_vine_trade_values')
+	_CALL('ev_c05r1001_farfetchd_cry')
+	_TALK_CLOSE()
+	_TALK_OBJ_END()
+	_END()
+ev_c05r1001_farfetchd_cry:
+    _VOICE_PLAY(@LOCALWORK0, @LOCALWORK1, 0)
+    _MACRO_TALKMSG('dialogue_c05r1001', 'msg_c05r1001_farfetchd_cry', 'Far-fu!!!')
+    _VOICE_WAIT()
+	_RET()
 ev_c05r1001_scald:
 	_TALK_OBJ_START()
 	_IF_FLAGON_JUMP(#2684, 'ev_c05r1001_scald_done')
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msg_ev_c05r1001_scald', 'Argh! Ow!\nThat hurts!\rI was adding some boiling water to the\npot to prepare it for Poffin making,\nand I spilt it all over me!\rDo you have a Burn Heal?\nIt’d be really useful right now...')
+	_MACRO_TALK_KEYWAIT('dialogue_c05r1001', '00_msg_ev_c05r1001_scald', 'Argh! Ow!\nThat hurts!\rI was adding some boiling water to the\npot to prepare it for Poffin making,\nand I spilt it all over me!\rDo you have a Burn Heal?\nIt’d be really useful right now...')
 	_YES_NO_WIN(@SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'NE', 0, 'ev_c05r1001_scald_no')
 	_ITEM_CHK(19, 1, @SCWK_ANSWER)
 	_IFVAL_JUMP(@SCWK_ANSWER, 'EQ', 0, 'ev_c05r1001_scald_no')
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msgev_c05r1001_scald_have_item', 'Oh, fantastic!\nLet me just apply it...')
+	_MACRO_TALK_KEYWAIT('dialogue_c05r1001', '00_msgev_c05r1001_scald_have_item', 'Oh, fantastic!\nLet me just apply it...')
 	_SUB_ITEM(19, 1, @SCWK_ANSWER)
 	_BLACK_OUT('SCR_WIPE_DIV', 3)
 	_FADE_WAIT()
 	_SE_PLAY('M_FI002')
 	_BLACK_IN('SCR_WIPE_DIV', 3)
 	_FADE_WAIT()
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msgev_c05r1001_scald_2', 'Ah! That’s much better.\nThank you very much.\rIn fact, I can do more than just\ngive thanks!\rHere’s a Technical Machine—one that’ll\nput a Pokémon in the same situation!')
+	_MACRO_TALK_KEYWAIT('dialogue_c05r1001', '00_msgev_c05r1001_scald_2', 'Ah! That’s much better.\nThank you very much.\rIn fact, I can do more than just\ngive thanks!\rHere’s a Technical Machine—one that’ll\nput a Pokémon in the same situation!')
 	_LDVAL(@SCWK_TEMP0, 382); Scald TM
 	_LDVAL(@SCWK_TEMP1, 1); Quantity 1
 	_CALL('ev_item_event')
 	_FLAG_SET(#2684)
 	_JUMP('ev_c05r1001_scald_done')
 ev_c05r1001_scald_done:
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msgev_c05r1001_scald_4', 'Scald is a Water-type move that\nshoots boiling water at the opponent.\rPokémon won’t be hurt as badly as\nI was, but that move can still leave\fa nasty burn on its target!')
+	_MACRO_TALK_KEYWAIT('dialogue_c05r1001', '00_msgev_c05r1001_scald_4', 'Scald is a Water-type move that\nshoots boiling water at the opponent.\rPokémon won’t be hurt as badly as\nI was, but that move can still leave\fa nasty burn on its target!')
 	_JUMP('ev_c05r1001_scald_end')
 ev_c05r1001_scald_end:
 	_TALK_CLOSE()
 	_TALK_OBJ_END()
 	_END()
 ev_c05r1001_scald_no:
-	_MACRO_TALK_KEYWAIT('dp_scenario3', '00_msgev_c05r1001_scald_no', 'You don’t... That’s too bad.\nThen I should get some cold water...')
+	_MACRO_TALK_KEYWAIT('dialogue_c05r1001', '00_msgev_c05r1001_scald_no', 'You don’t... That’s too bad.\nThen I should get some cold water...')
 	_JUMP('ev_c05r1001_scald_end')

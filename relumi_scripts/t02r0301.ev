@@ -1,6 +1,6 @@
 ev_t02r0301_man1a:
-	_EASY_OBJ_MSG('dp_scenario1%19-msg_t02r0301_man1a_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_t02r0301', '19-msg_t02r0301_man1a_01', 'Pokémon grow steadily stronger from battling\nagainst other Pokémon.\rAt first, you should heal your Pokémon\nregularly at Pokémon Centers while you’re\fleveling them up.')
 	_END()
 ev_t02r0301_woman1a:
-	_EASY_OBJ_MSG('dp_scenario1%19-msg_t02r0301_woman1a_01')
+	_MACRO_EASY_OBJ_MSG('dialogue_t02r0301', '19-msg_t02r0301_woman1a_01', 'A good Trainer is one that takes care not to let\ntheir Pokémon faint from losing HP.')
 	_END()
