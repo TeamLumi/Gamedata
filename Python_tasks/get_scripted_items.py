@@ -6,13 +6,17 @@ import constants
 # This script should work, but haven't tested yet.
 repo_file_path = os.path.abspath(os.path.join(os.path.dirname(__file__), '..'))
 script_path = os.path.join(repo_file_path, constants.SCRIPT_DATA)
+python_tasks_path = os.path.join(repo_file_path, "Python_tasks")
+output_path = os.path.join(python_tasks_path, constants.OUTPUT_NAME)
 filenames = []
 for filename in os.listdir(script_path):
     if os.path.isfile(os.path.join(script_path, filename)):
         filenames.append(filename)
 
-# TODO Change this to be variable between vanilla/lumi and relumi
-item_event_keyword = "_CHG_COMMON_SCR('ev_item_event_keywait')"
+if constants.GAME_MODE == constants.GAME_MODE_VANILLA or constants.GAME_MODE == constants.GAME_MODE_2:
+    item_event_keyword = "_CHG_COMMON_SCR('ev_item_event_keywait')"
+else:
+    item_event_keyword = "_CALL('ev_item_event')"
 parameter_regex = r'\([^,]*,\s*(.*?)\)'
 item_data = {}
 
@@ -20,21 +24,11 @@ special_cases = {
     'ev_d26r0104_item_event_ok': [
         {'id': 1, 'quantity': 1, 'label_name': 'ev_d26r0104_item_event_ok'},
     ],
-    'ev_turearuki_poke_item_get': [{'id': 0, 'quantity': 1, 'label_name': 'ev_turearuki_poke_item_get'}],
     'ev_tower_gate_talk_prize_get': [],
     'ev_tower_gate_return_prize_get': [],
     'ev_tower_gate_prize_get': [],
     'ev_tower_gate_prize_get_10_loop': [],
     'ev_tower_gate_prize_get_20': [],
-    'ev_d01r0102_leader_01_stone': [
-        {'id': 80, 'quantity': 1, 'label_name': 'ev_d01r0102_leader_01_stone'},
-        {'id': 81, 'quantity': 1, 'label_name': 'ev_d01r0102_leader_01_stone'},
-        {'id': 82, 'quantity': 1, 'label_name': 'ev_d01r0102_leader_01_stone'},
-        {'id': 83, 'quantity': 1, 'label_name': 'ev_d01r0102_leader_01_stone'},
-        {'id': 84, 'quantity': 1, 'label_name': 'ev_d01r0102_leader_01_stone'},
-        {'id': 85, 'quantity': 1, 'label_name': 'ev_d01r0102_leader_01_stone'},
-        {'id': 849, 'quantity': 1, 'label_name': 'ev_d01r0102_leader_01_stone'}
-    ],
     'ev_r221r0101_item_add': [
         {
             "id": 149,
@@ -166,7 +160,22 @@ special_cases = {
             'quantity': 1,
             'label_name': "ev_r221r0101_item_add"
         }
-    ]
+    ],
+
+    # These ones are only for Lumi
+    'ev_turearuki_poke_item_get': [{'id': 0, 'quantity': 1, 'label_name': 'ev_turearuki_poke_item_get'}],
+    'ev_d01r0102_leader_01_stone': [
+        {'id': 80, 'quantity': 1, 'label_name': 'ev_d01r0102_leader_01_stone'},
+        {'id': 81, 'quantity': 1, 'label_name': 'ev_d01r0102_leader_01_stone'},
+        {'id': 82, 'quantity': 1, 'label_name': 'ev_d01r0102_leader_01_stone'},
+        {'id': 83, 'quantity': 1, 'label_name': 'ev_d01r0102_leader_01_stone'},
+        {'id': 84, 'quantity': 1, 'label_name': 'ev_d01r0102_leader_01_stone'},
+        {'id': 85, 'quantity': 1, 'label_name': 'ev_d01r0102_leader_01_stone'},
+        {'id': 849, 'quantity': 1, 'label_name': 'ev_d01r0102_leader_01_stone'}
+    ],
+
+    # These ones are only for ReLumi
+    'ev_d11r0101_present_kinomi_set_03': [],
 }
 
 ldval_map = {
@@ -175,7 +184,16 @@ ldval_map = {
     'ev_c01r0201_kuji_no_2': '_LDVAL(@SCWK_PARAM3,',
     'ev_c01r0201_kuji_no_1': '_LDVAL(@SCWK_PARAM3,',
     'ev_c01r0201_kuji_no_0': '_LDVAL(@SCWK_PARAM3,',
-    'common_vm_03': '_LDVAL(@SCWK_PARAM1,'
+    'common_vm_03': '_LDVAL(@SCWK_PARAM1,',
+    'ev_c10r0101_tm_handler_common_no_flag': '_LDVAL(@SCWK_TEMP0,',
+    'ev_c10r0101_tm_handler_common': '_LDVAL(@SCWK_TEMP0,',
+    'ev_c01r0201_kuji_item_get_chk': '_LDWK(@SCWK_TEMP0,',
+    'ev_turearuki_poke_item_get': '_LDVAL(@SCWK_TEMP0,',
+    'ev_tower_gate_prize_get_common': '_LDWK(@SCWK_TEMP0,',
+    'r209_fishing1_yes': '_LDVAL(@SCWK_TEMP0,',
+    'r218r0101_fishing_yes': '_LDVAL(@SCWK_TEMP0,',
+    'ev_item_fanatic_give_item': '_LDVAL(@SCWK_TEMP0,',
+    'ev_item_fanatic_give_item_two': '_LDVAL(@SCWK_TEMP0,'
 }
 
 def get_indices(file_lines, pattern):
@@ -240,7 +258,7 @@ def find_jumped_value(function_name, file_lines, ldval_command, room_name):
         else:
             ldval_map_command = ldval_command
         print(f"Finding jumped value for label: {file_lines[command_start_index][:-1]} with ldval command: {ldval_map_command}")
-        item_ids.append(extract_item_id(command_start_index, index, file_lines, room_name))
+        item_ids.extend(extract_item_id(command_start_index, index, file_lines, room_name))
     return item_ids
 
 def get_normal_item_id(item_id_command):
@@ -329,7 +347,7 @@ for filename in filenames:
             if len(items) > 0:
                 item_data[room_name] = items
 
-file_path = "item_map.json"
+file_path = os.path.join(output_path, "item_map.json")
 
 with open(file_path, 'w') as json_file:
     json.dump(item_data, json_file, indent=4)

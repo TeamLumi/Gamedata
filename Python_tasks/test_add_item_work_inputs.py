@@ -3,7 +3,7 @@ import tempfile
 import unittest
 from pathlib import Path
 
-from Python_tasks.add_item_work_inputs import scan_file, write_item_map
+from Python_tasks.add_item_work_inputs import scan_file, write_item_map, write_item_maps
 
 
 class AddItemWorkInputsTests(unittest.TestCase):
@@ -84,6 +84,38 @@ class AddItemWorkInputsTests(unittest.TestCase):
                 }
             ],
         )
+
+    def test_write_item_maps_routes_each_script_directory(self):
+        with tempfile.TemporaryDirectory() as temporary_directory:
+            root = Path(temporary_directory)
+            source_directories = {
+                "scriptdata": "output",
+                "vanillaScripts": "outputVanilla",
+                "relumi_scripts": "3.0Output",
+            }
+            matches = []
+            for index, (source_directory, _) in enumerate(source_directories.items(), start=1):
+                source_path = root / source_directory / "sample.ev"
+                matches.append((source_path, f"ev_{source_directory}", 2, [], index, 1))
+
+            written = write_item_maps(root, matches)
+
+            self.assertEqual(
+                set(written),
+                {
+                    root / "Python_tasks" / output_directory / "item_map.json"
+                    for output_directory in source_directories.values()
+                },
+            )
+            for source_directory, output_directory in source_directories.items():
+                item_map_path = (
+                    root / "Python_tasks" / output_directory / "item_map.json"
+                )
+                item_map = json.loads(item_map_path.read_text(encoding="utf-8"))
+                self.assertEqual(
+                    item_map["sample"][0]["label_name"],
+                    f"ev_{source_directory}",
+                )
 
 
 if __name__ == "__main__":

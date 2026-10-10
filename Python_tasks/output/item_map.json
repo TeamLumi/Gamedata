@@ -2,41 +2,31 @@
     "c01r0201": [
         {
             "id": [
-                [
-                    {
-                        "id": 2,
-                        "quantity": 1,
-                        "label_name": "ev_c01r0201_kuji_no_4"
-                    }
-                ],
-                [
-                    {
-                        "id": 51,
-                        "quantity": 1,
-                        "label_name": "ev_c01r0201_kuji_no_3"
-                    }
-                ],
-                [
-                    {
-                        "id": 231,
-                        "quantity": 1,
-                        "label_name": "ev_c01r0201_kuji_no_2"
-                    }
-                ],
-                [
-                    {
-                        "id": 29,
-                        "quantity": 1,
-                        "label_name": "ev_c01r0201_kuji_no_1"
-                    }
-                ],
-                [
-                    {
-                        "id": 1,
-                        "quantity": 1,
-                        "label_name": "ev_c01r0201_kuji_no_0"
-                    }
-                ]
+                {
+                    "id": 2,
+                    "quantity": 1,
+                    "label_name": "ev_c01r0201_kuji_no_4"
+                },
+                {
+                    "id": 51,
+                    "quantity": 1,
+                    "label_name": "ev_c01r0201_kuji_no_3"
+                },
+                {
+                    "id": 231,
+                    "quantity": 1,
+                    "label_name": "ev_c01r0201_kuji_no_2"
+                },
+                {
+                    "id": 29,
+                    "quantity": 1,
+                    "label_name": "ev_c01r0201_kuji_no_1"
+                },
+                {
+                    "id": 1,
+                    "quantity": 1,
+                    "label_name": "ev_c01r0201_kuji_no_0"
+                }
             ],
             "quantity": 1,
             "label_name": "ev_c01r0201_kuji_item_get_chk"
@@ -521,81 +511,63 @@
         },
         {
             "id": [
-                [
-                    {
-                        "id": 30,
-                        "quantity": 1,
-                        "label_name": "case0_vm_01"
-                    }
-                ],
-                [
-                    {
-                        "id": 31,
-                        "quantity": 1,
-                        "label_name": "case1_vm_01"
-                    }
-                ],
-                [
-                    {
-                        "id": 32,
-                        "quantity": 1,
-                        "label_name": "case2_vm_01"
-                    }
-                ]
+                {
+                    "id": 30,
+                    "quantity": 1,
+                    "label_name": "case0_vm_01"
+                },
+                {
+                    "id": 31,
+                    "quantity": 1,
+                    "label_name": "case1_vm_01"
+                },
+                {
+                    "id": 32,
+                    "quantity": 1,
+                    "label_name": "case2_vm_01"
+                }
             ],
             "quantity": 1,
             "label_name": "common_vm_03"
         },
         {
             "id": [
-                [
-                    {
-                        "id": 30,
-                        "quantity": 1,
-                        "label_name": "case0_vm_01"
-                    }
-                ],
-                [
-                    {
-                        "id": 31,
-                        "quantity": 1,
-                        "label_name": "case1_vm_01"
-                    }
-                ],
-                [
-                    {
-                        "id": 32,
-                        "quantity": 1,
-                        "label_name": "case2_vm_01"
-                    }
-                ]
+                {
+                    "id": 30,
+                    "quantity": 1,
+                    "label_name": "case0_vm_01"
+                },
+                {
+                    "id": 31,
+                    "quantity": 1,
+                    "label_name": "case1_vm_01"
+                },
+                {
+                    "id": 32,
+                    "quantity": 1,
+                    "label_name": "case2_vm_01"
+                }
             ],
             "quantity": 1,
             "label_name": "common_vm_03"
         },
         {
             "id": [
-                [
-                    {
-                        "id": 30,
-                        "quantity": 1,
-                        "label_name": "case0_vm_01"
-                    }
-                ],
-                [
-                    {
-                        "id": 31,
-                        "quantity": 1,
-                        "label_name": "case1_vm_01"
-                    }
-                ],
-                [
-                    {
-                        "id": 32,
-                        "quantity": 1,
-                        "label_name": "case2_vm_01"
-                    }
-                ]
+                {
+                    "id": 30,
+                    "quantity": 1,
+                    "label_name": "case0_vm_01"
+                },
+                {
+                    "id": 31,
+                    "quantity": 1,
+                    "label_name": "case1_vm_01"
+                },
+                {
+                    "id": 32,
+                    "quantity": 1,
+                    "label_name": "case2_vm_01"
+                }
             ],
             "quantity": 1,
             "label_name": "common_vm_03"
@@ -719,125 +691,91 @@
     "d03": [
         {
             "id": [
-                [
-                    {
-                        "id": 9,
-                        "quantity": 1,
-                        "label_name": "ev_master_trainer_fire"
-                    }
-                ],
-                [
-                    {
-                        "id": 10,
-                        "quantity": 1,
-                        "label_name": "ev_master_trainer_water"
-                    }
-                ],
-                [
-                    {
-                        "id": 12,
-                        "quantity": 1,
-                        "label_name": "ev_master_trainer_electric"
-                    }
-                ],
-                [
-                    {
-                        "id": 11,
-                        "quantity": 1,
-                        "label_name": "ev_master_trainer_grass"
-                    }
-                ],
-                [
-                    {
-                        "id": 14,
-                        "quantity": 1,
-                        "label_name": "ev_master_trainer_ice"
-                    }
-                ],
-                [
-                    {
-                        "id": 1,
-                        "quantity": 1,
-                        "label_name": "ev_master_trainer_fighting"
-                    }
-                ],
-                [
-                    {
-                        "id": 3,
-                        "quantity": 1,
-                        "label_name": "ev_master_trainer_poison"
-                    }
-                ],
-                [
-                    {
-                        "id": 4,
-                        "quantity": 1,
-                        "label_name": "ev_master_trainer_ground"
-                    }
-                ],
-                [
-                    {
-                        "id": 2,
-                        "quantity": 1,
-                        "label_name": "ev_master_trainer_flying"
-                    }
-                ],
-                [
-                    {
-                        "id": 13,
-                        "quantity": 1,
-                        "label_name": "ev_master_trainer_psychic"
-                    }
-                ],
-                [
-                    {
-                        "id": 6,
-                        "quantity": 1,
-                        "label_name": "ev_master_trainer_bug"
-                    }
-                ],
-                [
-                    {
-                        "id": 5,
-                        "quantity": 1,
-                        "label_name": "ev_master_trainer_rock"
-                    }
-                ],
-                [
-                    {
-                        "id": 7,
-                        "quantity": 1,
-                        "label_name": "ev_master_trainer_ghost"
-                    }
-                ],
-                [
-                    {
-                        "id": 15,
-                        "quantity": 1,
-                        "label_name": "ev_master_trainer_dragon"
-                    }
-                ],
-                [
-                    {
-                        "id": 16,
-                        "quantity": 1,
-                        "label_name": "ev_master_trainer_dark"
-                    }
-                ],
-                [
-                    {
-                        "id": 8,
-                        "quantity": 1,
-                        "label_name": "ev_master_trainer_steel"
-                    }
-                ],
-                [
-                    {
-                        "id": 17,
-                        "quantity": 1,
-                        "label_name": "ev_master_trainer_fairy"
-                    }
-                ]
+                {
+                    "id": 9,
+                    "quantity": 1,
+                    "label_name": "ev_master_trainer_fire"
+                },
+                {
+                    "id": 10,
+                    "quantity": 1,
+                    "label_name": "ev_master_trainer_water"
+                },
+                {
+                    "id": 12,
+                    "quantity": 1,
+                    "label_name": "ev_master_trainer_electric"
+                },
+                {
+                    "id": 11,
+                    "quantity": 1,
+                    "label_name": "ev_master_trainer_grass"
+                },
+                {
+                    "id": 14,
+                    "quantity": 1,
+                    "label_name": "ev_master_trainer_ice"
+                },
+                {
+                    "id": 1,
+                    "quantity": 1,
+                    "label_name": "ev_master_trainer_fighting"
+                },
+                {
+                    "id": 3,
+                    "quantity": 1,
+                    "label_name": "ev_master_trainer_poison"
+                },
+                {
+                    "id": 4,
+                    "quantity": 1,
+                    "label_name": "ev_master_trainer_ground"
+                },
+                {
+                    "id": 2,
+                    "quantity": 1,
+                    "label_name": "ev_master_trainer_flying"
+                },
+                {
+                    "id": 13,
+                    "quantity": 1,
+                    "label_name": "ev_master_trainer_psychic"
+                },
+                {
+                    "id": 6,
+                    "quantity": 1,
+                    "label_name": "ev_master_trainer_bug"
+                },
+                {
+                    "id": 5,
+                    "quantity": 1,
+                    "label_name": "ev_master_trainer_rock"
+                },
+                {
+                    "id": 7,
+                    "quantity": 1,
+                    "label_name": "ev_master_trainer_ghost"
+                },
+                {
+                    "id": 15,
+                    "quantity": 1,
+                    "label_name": "ev_master_trainer_dragon"
+                },
+                {
+                    "id": 16,
+                    "quantity": 1,
+                    "label_name": "ev_master_trainer_dark"
+                },
+                {
+                    "id": 8,
+                    "quantity": 1,
+                    "label_name": "ev_master_trainer_steel"
+                },
+                {
+                    "id": 17,
+                    "quantity": 1,
+                    "label_name": "ev_master_trainer_fairy"
+                }
             ],
             "quantity": 1,
             "label_name": "ev_pokemaster_common_end"
@@ -1514,81 +1452,63 @@
     "t03r0201": [
         {
             "id": [
-                [
-                    {
-                        "id": 236,
-                        "quantity": 1,
-                        "label_name": "ev_item_fanatic_pikachu_25"
-                    }
-                ],
-                [
-                    {
-                        "id": 259,
-                        "quantity": 1,
-                        "label_name": "ev_item_fanatic_farfetch_83"
-                    }
-                ],
-                [
-                    {
-                        "id": 258,
-                        "quantity": 1,
-                        "label_name": "ev_item_fanatic_cubone_104"
-                    }
-                ],
-                [
-                    {
-                        "id": 258,
-                        "quantity": 1,
-                        "label_name": "ev_item_fanatic_marowak_105"
-                    }
-                ],
-                [
-                    {
-                        "id": 256,
-                        "quantity": 1,
-                        "label_name": "ev_item_fanatic_chansey_113"
-                    }
-                ]
+                {
+                    "id": 236,
+                    "quantity": 1,
+                    "label_name": "ev_item_fanatic_pikachu_25"
+                },
+                {
+                    "id": 259,
+                    "quantity": 1,
+                    "label_name": "ev_item_fanatic_farfetch_83"
+                },
+                {
+                    "id": 258,
+                    "quantity": 1,
+                    "label_name": "ev_item_fanatic_cubone_104"
+                },
+                {
+                    "id": 258,
+                    "quantity": 1,
+                    "label_name": "ev_item_fanatic_marowak_105"
+                },
+                {
+                    "id": 256,
+                    "quantity": 1,
+                    "label_name": "ev_item_fanatic_chansey_113"
+                }
             ],
             "quantity": 1,
             "label_name": "ev_item_fanatic_give_item"
         },
         {
             "id": [
-                [
-                    {
-                        "id": 274,
-                        "quantity": 1,
-                        "label_name": "ev_item_fanatic_ditto_132"
-                    }
-                ],
-                [
-                    {
-                        "id": 226,
-                        "quantity": 1,
-                        "label_name": "ev_item_fanatic_clamperl_366"
-                    }
-                ]
+                {
+                    "id": 274,
+                    "quantity": 1,
+                    "label_name": "ev_item_fanatic_ditto_132"
+                },
+                {
+                    "id": 226,
+                    "quantity": 1,
+                    "label_name": "ev_item_fanatic_clamperl_366"
+                }
             ],
             "quantity": 1,
             "label_name": "ev_item_fanatic_give_item_two"
         },
         {
             "id": [
-                [
-                    {
-                        "id": 274,
-                        "quantity": 1,
-                        "label_name": "ev_item_fanatic_ditto_132"
-                    }
-                ],
-                [
-                    {
-                        "id": 226,
-                        "quantity": 1,
-                        "label_name": "ev_item_fanatic_clamperl_366"
-                    }
-                ]
+                {
+                    "id": 274,
+                    "quantity": 1,
+                    "label_name": "ev_item_fanatic_ditto_132"
+                },
+                {
+                    "id": 226,
+                    "quantity": 1,
+                    "label_name": "ev_item_fanatic_clamperl_366"
+                }
             ],
             "quantity": 1,
             "label_name": "ev_item_fanatic_give_item_two"
@@ -1630,11 +1550,6 @@
             "id": 1823,
             "quantity": 1,
             "label_name": "ev_gsball_event_yes"
-        },
-        {
-            "id": 1291,
-            "quantity": 1,
-            "label_name": "ev_t05_gsball_event_yes"
         }
     ],
     "t05pc0101": [
@@ -1754,16 +1669,6 @@
             "id": 458,
             "quantity": 1,
             "label_name": "ev_healthcheck_check_magma_stone"
-        },
-        {
-            "id": 1301,
-            "quantity": 1,
-            "label_name": "ev_healthcheck_give_incense_burner"
-        },
-        {
-            "id": 1303,
-            "quantity": 1,
-            "label_name": "ev_healthcheck_add_infinite_repel"
         }
     ],
     "t06pc0101": [
@@ -1771,28 +1676,6 @@
             "id": 1824,
             "quantity": 1,
             "label_name": "ev_t06pc0101_pcwoman1_mewtwo"
-        },
-        {
-            "id": 1292,
-            "quantity": 1,
-            "label_name": "ev_t06pc0101_pcwoman1_mewtwo"
-        }
-    ],
-    "l02r0301": [
-        {
-            "id": 1267,
-            "quantity": 1,
-            "label_name": "ev_l02r0301_ueda_sinou_celebration"
-        },
-        {
-            "id": 632,
-            "quantity": 1,
-            "label_name": "ev_l02r0301_ueda_sinou_zenkoku_celebration"
-        },
-        {
-            "id": 1822,
-            "quantity": 1,
-            "label_name": "ev_sound_creater_ds"
         }
     ]
 }

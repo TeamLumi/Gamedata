@@ -11,6 +11,11 @@ LDVAL_PATTERN = re.compile(
     r"^_LDVAL\s*\(\s*(@[A-Za-z0-9_]+)\s*,\s*([+-]?\d+)\s*\)"
 )
 SCRIPT_DIRECTORIES = ("scriptdata", "vanillaScripts", "relumi_scripts")
+OUTPUT_DIRECTORIES = {
+    "scriptdata": "output",
+    "vanillaScripts": "outputVanilla",
+    "relumi_scripts": "3.0Output",
+}
 
 
 def scan_file(path: Path) -> list[tuple[str, int, list[str], int | None, int | None]]:
@@ -127,6 +132,46 @@ def write_item_map(
         item_map_file.write("\n")
 
 
+def write_item_maps(
+    repository_root: Path,
+    matches: Iterable[
+        tuple[Path, str, int, list[str], int | None, int | None]
+    ],
+    item_map_override: Path | None = None,
+) -> dict[Path, int]:
+    """Write each source script tree's matches to its configured output map."""
+    matches_by_map: dict[Path, list[tuple[Path, str, int, list[str], int | None, int | None]]] = {}
+    for match in matches:
+        source_path = match[0]
+        if item_map_override is not None:
+            item_map_path = item_map_override
+        else:
+            source_directory = next(
+                (
+                    parent.name
+                    for parent in source_path.parents
+                    if parent.name in OUTPUT_DIRECTORIES
+                ),
+                None,
+            )
+            if source_directory is None:
+                raise ValueError(
+                    f"Cannot determine output map for script outside configured directories: {source_path}"
+                )
+            item_map_path = (
+                repository_root
+                / "Python_tasks"
+                / OUTPUT_DIRECTORIES[source_directory]
+                / "item_map.json"
+            )
+        matches_by_map.setdefault(item_map_path, []).append(match)
+
+    for item_map_path, map_matches in matches_by_map.items():
+        write_item_map(item_map_path, map_matches)
+
+    return {item_map_path: len(map_matches) for item_map_path, map_matches in matches_by_map.items()}
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(
         description="Find raw _ADD_ITEM calls whose first or second argument is a work value."
@@ -140,7 +185,7 @@ def main() -> None:
     parser.add_argument(
         "--item-map",
         type=Path,
-        help="Destination JSON file. Defaults to the repository item_map.json.",
+        help="Write all matches to this JSON file instead of routing by source directory.",
     )
     args = parser.parse_args()
 
@@ -149,12 +194,14 @@ def main() -> None:
         repository_root / directory for directory in SCRIPT_DIRECTORIES
     ]
     matches = scan_paths(selected_paths)
-    item_map_path = args.item_map or repository_root / "item_map.json"
-    write_item_map(item_map_path, matches)
+    output_counts = write_item_maps(repository_root, matches, args.item_map)
 
     if not matches:
         print("No raw _ADD_ITEM work arguments found.")
         return
+
+    for item_map_path, match_count in output_counts.items():
+        print(f"Wrote {match_count} matches to {item_map_path}")
 
     for path, label, line_number, work_arguments, resolved_id, resolved_quantity in matches:
         argument_names = ", ".join(work_arguments)
