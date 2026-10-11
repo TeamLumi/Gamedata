@@ -1,0 +1,170 @@
+{
+    "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 0
+    },
+    "m_Enabled": 1,
+    "m_Script": {
+        "m_FileID": 0,
+        "m_PathID": 7524332784465415280
+    },
+    "m_Name": "PlaceData_UGA06",
+    "Data": [
+        {
+            "ID": "UGA06_KALOS_RANGER_1",
+            "zoneID": 513,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": 160,
+            "ColorIndex": 52,
+            "Position": {
+                "x": 129.0,
+                "y": 23.0
+            },
+            "HeightLayer": 0,
+            "HeightIgnore": 0,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 180,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 0,
+            "MoveCode": 0,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_uga06_kalos_ranger_1",
+            "ContactLabel": "",
+            "Work": 4000,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.25,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 15
+        },
+        {
+            "ID": "UGA06_KALOS_POACHER_1",
+            "zoneID": 513,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": 68,
+            "ColorIndex": 0,
+            "Position": {
+                "x": 129.0,
+                "y": 21.0
+            },
+            "HeightLayer": 0,
+            "HeightIgnore": 0,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 0,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 0,
+            "MoveCode": 1,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_uga06_kalos_poacher_1",
+            "ContactLabel": "",
+            "Work": 2042,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.25,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 15
+        },
+        {
+            "ID": "UGA06_KALOS_POACHER_2",
+            "zoneID": 513,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": 52,
+            "ColorIndex": 0,
+            "Position": {
+                "x": 130.0,
+                "y": 21.0
+            },
+            "HeightLayer": 0,
+            "HeightIgnore": 0,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 0,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 0,
+            "MoveCode": 1,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_uga06_kalos_poacher_2",
+            "ContactLabel": "",
+            "Work": 2042,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.25,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 15
+        },
+        {
+            "ID": "UGA06_GOODS_S_FATHER",
+            "zoneID": 513,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": 97,
+            "ColorIndex": 79,
+            "Position": {
+                "x": 91.0,
+                "y": 94.0
+            },
+            "HeightLayer": 0,
+            "HeightIgnore": 0,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 0,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 0,
+            "MoveCode": 0,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_ug_0001",
+            "ContactLabel": "",
+            "Work": 4000,
+            "Dowsing": 0,
+            "LoadFirst": 1,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.25,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 15
+        }
+    ]
+}

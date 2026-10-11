@@ -13,6 +13,9 @@ output_file_path = os.path.join(repo_file_path, "Python_tasks", constants.OUTPUT
 # romfs/Data/ExtraData/MonData/TMLearnset
 tm_file_path = os.path.join(repo_file_path, "TMLearnset")
 
+# romfs/Data/StreamingAssets/AssetAssistant/Dpr/masterdatas
+placedata_file_path = os.path.join(repo_file_path, "placedatas", constants.PLACEDATA_PATH)
+
 # Create an instance of JsonCache
 json_cache = JsonCache()
 
@@ -85,6 +88,7 @@ def load_data():
         file_path = os.path.join(resource_file_path, filename)
         data[name] = json_cache.get_json(file_path)
 
+    # romfs/Data/StreamingAssets/ExtraData/MonData/TMLearnset
     tms = {}
     for filename in os.listdir(tm_file_path):
         file_path = os.path.join(tm_file_path, filename)
@@ -92,6 +96,13 @@ def load_data():
             continue
 
         tms[filename.split(".json")[0]] = json_cache.get_json(file_path)
-
     data["tm_learnsets"] = tms
+
+    # romfs/Data/StreamingAssets/AssetAssistant/Dpr/masterdatas
+    placedatas = {}
+    for filename in os.listdir(placedata_file_path):
+        file_path = os.path.join(placedata_file_path, filename)
+
+        placedatas[filename.split(".json")[0]] = json_cache.get_json(file_path)
+    data["placedatas"] = placedatas
     return data

@@ -15,8 +15,6 @@ debug_file_path = os.path.join(parent_file_path, constants.DEBUG_NAME)
 areas_file_path = os.path.join(input_file_path, 'areas_updated.csv')
 
 scripts_file_path = os.path.join(repo_file_path, 'scriptdata')
-bdsp_location_files_path = os.path.join(repo_file_path, 'placedatas')
-bdsp_location_files = os.listdir(bdsp_location_files_path)
 
 TRAINER_LABELS = 0
 TRAINER_NAMES = 0
@@ -127,10 +125,8 @@ def get_trainer_data_from_place_datas():
     If it is, then it passes that event data to the diff_trainer_data function
     '''
     trainers = []
-    for bdsp_location_file in bdsp_location_files:
-        with open(os.path.join(repo_file_path, 'placedatas', bdsp_location_file), 'r') as t_file:
-            trainer_data = json.load(t_file)
-        for event in trainer_data['Data']:
+    for bdsp_location_file in full_data['placedatas']:
+        for event in bdsp_location_file['Data']:
             trainerID = event['TrainerID']
             zoneID = event['zoneID']
             if trainerID > 0 and trainerID < 10000 and zoneID != -1:

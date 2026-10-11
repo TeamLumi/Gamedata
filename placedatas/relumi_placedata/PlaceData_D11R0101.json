@@ -1,0 +1,1964 @@
+{
+    "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 0
+    },
+    "m_Enabled": 1,
+    "m_Script": {
+        "m_FileID": 0,
+        "m_PathID": 7524332784465415280
+    },
+    "m_Name": "PlaceData_D11R0101",
+    "Data": [
+        {
+            "ID": "D11R0101_INFO_GIRL_01",
+            "zoneID": 251,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": 105,
+            "ColorIndex": 0,
+            "Position": {
+                "x": 10.0,
+                "y": 74.0
+            },
+            "HeightLayer": 0,
+            "HeightIgnore": 0,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 270,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 0,
+            "MoveCode": 17,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_d11r0101_info_girl_01",
+            "ContactLabel": "",
+            "Work": 4000,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.25,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 15
+        },
+        {
+            "ID": "D11R0101_INFO_GIRL_02",
+            "zoneID": 251,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": 105,
+            "ColorIndex": 0,
+            "Position": {
+                "x": 53.0,
+                "y": 74.0
+            },
+            "HeightLayer": 0,
+            "HeightIgnore": 0,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 90,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 0,
+            "MoveCode": 16,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_d11r0101_info_girl_02",
+            "ContactLabel": "",
+            "Work": 4000,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.25,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 15
+        },
+        {
+            "ID": "D11R0101_MAN1",
+            "zoneID": 251,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": 116,
+            "ColorIndex": 2,
+            "Position": {
+                "x": 40.0,
+                "y": 26.0
+            },
+            "HeightLayer": 0,
+            "HeightIgnore": 0,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 180,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 0,
+            "MoveCode": 14,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_d11r0101_man1",
+            "ContactLabel": "",
+            "Work": 4000,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.25,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 15
+        },
+        {
+            "ID": "D11R0101_BALLOON",
+            "zoneID": 251,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": 4250000,
+            "ColorIndex": 0,
+            "Position": {
+                "x": 41.0,
+                "y": 26.0
+            },
+            "HeightLayer": 0,
+            "HeightIgnore": 0,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 0,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 0,
+            "MoveCode": 2,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_d11r0101_balloon",
+            "ContactLabel": "",
+            "Work": 4000,
+            "Dowsing": 0,
+            "LoadFirst": 1,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.25,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 15
+        },
+        {
+            "ID": "D11R0101_KOLUCKY",
+            "zoneID": 251,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": 4400010,
+            "ColorIndex": 0,
+            "Position": {
+                "x": 37.0,
+                "y": 12.0
+            },
+            "HeightLayer": 4,
+            "HeightIgnore": 0,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 0,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 0,
+            "MoveCode": 15,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_d11r0101_kolucky",
+            "ContactLabel": "",
+            "Work": 4000,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.25,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 15
+        },
+        {
+            "ID": "D11R0101_WOMAN1",
+            "zoneID": 251,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": 135,
+            "ColorIndex": 9,
+            "Position": {
+                "x": 36.0,
+                "y": 12.0
+            },
+            "HeightLayer": 4,
+            "HeightIgnore": 0,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 270,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 0,
+            "MoveCode": 17,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_d11r0101_woman1",
+            "ContactLabel": "",
+            "Work": 4000,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.25,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 15
+        },
+        {
+            "ID": "D11R0101_BIGMAN",
+            "zoneID": 251,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": 129,
+            "ColorIndex": 3,
+            "Position": {
+                "x": 17.0,
+                "y": 33.0
+            },
+            "HeightLayer": 0,
+            "HeightIgnore": 0,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 90,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 0,
+            "MoveCode": 16,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_d11r0101_bigman",
+            "ContactLabel": "",
+            "Work": 4000,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.25,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 15
+        },
+        {
+            "ID": "D11R0101_PIKACHUB",
+            "zoneID": 251,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": 250000,
+            "ColorIndex": 0,
+            "Position": {
+                "x": 16.0,
+                "y": 33.0
+            },
+            "HeightLayer": 0,
+            "HeightIgnore": 0,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 90,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 0,
+            "MoveCode": 2,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_d11r0101_pikachub",
+            "ContactLabel": "",
+            "Work": 4000,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.25,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 15
+        },
+        {
+            "ID": "D11R0101_BIGMAN2",
+            "zoneID": 251,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": 129,
+            "ColorIndex": 3,
+            "Position": {
+                "x": 12.0,
+                "y": 13.0
+            },
+            "HeightLayer": 3,
+            "HeightIgnore": 0,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 0,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 0,
+            "MoveCode": 0,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_d11r0101_bigman2",
+            "ContactLabel": "",
+            "Work": 4000,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.25,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 15
+        },
+        {
+            "ID": "D11R0101_BABYGIRL1",
+            "zoneID": 251,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": 82,
+            "ColorIndex": 0,
+            "Position": {
+                "x": 47.0,
+                "y": 30.0
+            },
+            "HeightLayer": 3,
+            "HeightIgnore": 0,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 270,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 0,
+            "MoveCode": 17,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_d11r0101_babygirl1",
+            "ContactLabel": "",
+            "Work": 4000,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.25,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 15
+        },
+        {
+            "ID": "D11R0101_PIPPIB",
+            "zoneID": 251,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": 350000,
+            "ColorIndex": 0,
+            "Position": {
+                "x": 48.0,
+                "y": 30.0
+            },
+            "HeightLayer": 3,
+            "HeightIgnore": 0,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 90,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 0,
+            "MoveCode": 16,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_d11r0101_pippib",
+            "ContactLabel": "",
+            "Work": 4000,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.25,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 15
+        },
+        {
+            "ID": "D11R0101_INFO_GIRL_01C",
+            "zoneID": 251,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": -1,
+            "ColorIndex": 0,
+            "Position": {
+                "x": 11.0,
+                "y": 74.0
+            },
+            "HeightLayer": 0,
+            "HeightIgnore": 0,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 180,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 0,
+            "MoveCode": 0,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_d11r0101_info_girl_01",
+            "ContactLabel": "",
+            "Work": 4000,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.0,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 15
+        },
+        {
+            "ID": "D11R0101_INFO_GIRL_02C",
+            "zoneID": 251,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": -1,
+            "ColorIndex": 0,
+            "Position": {
+                "x": 52.0,
+                "y": 74.0
+            },
+            "HeightLayer": 0,
+            "HeightIgnore": 0,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 180,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 0,
+            "MoveCode": 0,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_d11r0101_info_girl_02",
+            "ContactLabel": "",
+            "Work": 4000,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.0,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 15
+        },
+        {
+            "ID": "PORUTO_SCR_FUREAI",
+            "zoneID": 251,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": 137,
+            "ColorIndex": 46,
+            "Position": {
+                "x": 6.0,
+                "y": 60.0
+            },
+            "HeightLayer": 0,
+            "HeightIgnore": 0,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 0,
+            "MoveLimit": {
+                "x": 1.0,
+                "y": 1.0
+            },
+            "EventType": 0,
+            "MoveCode": 15,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_poruto_scr",
+            "ContactLabel": "",
+            "Work": 4000,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.25,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 15
+        },
+        {
+            "ID": "D11R0101_INFO_2",
+            "zoneID": 251,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": -1,
+            "ColorIndex": 0,
+            "Position": {
+                "x": 16.0,
+                "y": 47.0
+            },
+            "HeightLayer": 0,
+            "HeightIgnore": 0,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 0,
+            "MoveLimit": {
+                "x": 1.0,
+                "y": 1.0
+            },
+            "EventType": 0,
+            "MoveCode": 0,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_d11r0101_sign4",
+            "ContactLabel": "",
+            "Work": 4000,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.25,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 15
+        },
+        {
+            "ID": "D11R0101_INFO_1",
+            "zoneID": 251,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": -1,
+            "ColorIndex": 0,
+            "Position": {
+                "x": 42.0,
+                "y": 25.0
+            },
+            "HeightLayer": 2,
+            "HeightIgnore": 0,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 0,
+            "MoveLimit": {
+                "x": 1.0,
+                "y": 1.0
+            },
+            "EventType": 0,
+            "MoveCode": 0,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_d11r0101_sign3",
+            "ContactLabel": "",
+            "Work": 4000,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.25,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 15
+        },
+        {
+            "ID": "FLD_ITEM_81",
+            "zoneID": 251,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": 575,
+            "ColorIndex": 0,
+            "Position": {
+                "x": 41.0,
+                "y": 9.0
+            },
+            "HeightLayer": 3,
+            "HeightIgnore": 0,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 0,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 0,
+            "MoveCode": 0,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_fld_item_81",
+            "ContactLabel": "",
+            "Work": 1021,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.25,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 15
+        },
+        {
+            "ID": "FLD_ITEM_82",
+            "zoneID": 251,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": 575,
+            "ColorIndex": 0,
+            "Position": {
+                "x": 27.0,
+                "y": 36.0
+            },
+            "HeightLayer": 1,
+            "HeightIgnore": 0,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 0,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 0,
+            "MoveCode": 0,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_fld_item_82",
+            "ContactLabel": "",
+            "Work": 1019,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.25,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 15
+        },
+        {
+            "ID": "FLD_ITEM_83",
+            "zoneID": 251,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": 500,
+            "ColorIndex": 0,
+            "Position": {
+                "x": 39.0,
+                "y": 20.0
+            },
+            "HeightLayer": 2,
+            "HeightIgnore": 0,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 0,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 0,
+            "MoveCode": 0,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_fld_item_83",
+            "ContactLabel": "",
+            "Work": 993,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.25,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 15
+        },
+        {
+            "ID": "FLD_ITEM_84",
+            "zoneID": 251,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": 500,
+            "ColorIndex": 0,
+            "Position": {
+                "x": 45.0,
+                "y": 42.0
+            },
+            "HeightLayer": 1,
+            "HeightIgnore": 0,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 0,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 0,
+            "MoveCode": 0,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_fld_item_84",
+            "ContactLabel": "",
+            "Work": 991,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.25,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 15
+        },
+        {
+            "ID": "D11R0101_BENCH_1_0",
+            "zoneID": 251,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": -1,
+            "ColorIndex": 0,
+            "Position": {
+                "x": 20.0,
+                "y": 30.0
+            },
+            "HeightLayer": 0,
+            "HeightIgnore": 0,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 0,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 0,
+            "MoveCode": 0,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_player_sit",
+            "ContactLabel": "",
+            "Work": 4000,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.0099999904632568,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 4
+        },
+        {
+            "ID": "D11R0101_BENCH_1_1",
+            "zoneID": 251,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": -1,
+            "ColorIndex": 0,
+            "Position": {
+                "x": 20.0,
+                "y": 31.0
+            },
+            "HeightLayer": 0,
+            "HeightIgnore": 0,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 0,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 0,
+            "MoveCode": 0,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_player_sit",
+            "ContactLabel": "",
+            "Work": 4000,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.0099999904632568,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 4
+        },
+        {
+            "ID": "D11R0101_BENCH_2_0",
+            "zoneID": 251,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": -1,
+            "ColorIndex": 0,
+            "Position": {
+                "x": 9.0,
+                "y": 18.0
+            },
+            "HeightLayer": 1,
+            "HeightIgnore": 0,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 0,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 0,
+            "MoveCode": 0,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_player_sit",
+            "ContactLabel": "",
+            "Work": 4000,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.0099999904632568,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 4
+        },
+        {
+            "ID": "D11R0101_BENCH_2_1",
+            "zoneID": 251,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": -1,
+            "ColorIndex": 0,
+            "Position": {
+                "x": 9.0,
+                "y": 19.0
+            },
+            "HeightLayer": 1,
+            "HeightIgnore": 0,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 0,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 0,
+            "MoveCode": 0,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_player_sit",
+            "ContactLabel": "",
+            "Work": 4000,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.0099999904632568,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 4
+        },
+        {
+            "ID": "D11R0101_BENCH_3_0",
+            "zoneID": 251,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": -1,
+            "ColorIndex": 0,
+            "Position": {
+                "x": 21.0,
+                "y": 12.0
+            },
+            "HeightLayer": 3,
+            "HeightIgnore": 0,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 0,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 0,
+            "MoveCode": 0,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_player_sit",
+            "ContactLabel": "",
+            "Work": 4000,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.0099999904632568,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 8
+        },
+        {
+            "ID": "D11R0101_BENCH_3_1",
+            "zoneID": 251,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": -1,
+            "ColorIndex": 0,
+            "Position": {
+                "x": 21.0,
+                "y": 13.0
+            },
+            "HeightLayer": 3,
+            "HeightIgnore": 0,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 0,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 0,
+            "MoveCode": 0,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_player_sit",
+            "ContactLabel": "",
+            "Work": 4000,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.0099999904632568,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 8
+        },
+        {
+            "ID": "D11R0101_BENCH_4_0",
+            "zoneID": 251,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": -1,
+            "ColorIndex": 0,
+            "Position": {
+                "x": 39.0,
+                "y": 10.0
+            },
+            "HeightLayer": 4,
+            "HeightIgnore": 0,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 0,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 0,
+            "MoveCode": 0,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_player_sit",
+            "ContactLabel": "",
+            "Work": 4000,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.0099999904632568,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 8
+        },
+        {
+            "ID": "D11R0101_BENCH_4_1",
+            "zoneID": 251,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": -1,
+            "ColorIndex": 0,
+            "Position": {
+                "x": 39.0,
+                "y": 10.0
+            },
+            "HeightLayer": 4,
+            "HeightIgnore": 0,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 0,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 0,
+            "MoveCode": 0,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_player_sit",
+            "ContactLabel": "",
+            "Work": 4000,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.0099999904632568,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 8
+        },
+        {
+            "ID": "D11R0101_BENCH_5_0",
+            "zoneID": 251,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": -1,
+            "ColorIndex": 0,
+            "Position": {
+                "x": 41.0,
+                "y": 10.0
+            },
+            "HeightLayer": 3,
+            "HeightIgnore": 0,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 0,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 0,
+            "MoveCode": 0,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_player_sit",
+            "ContactLabel": "",
+            "Work": 4000,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.0099999904632568,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 4
+        },
+        {
+            "ID": "D11R0101_BENCH_5_1",
+            "zoneID": 251,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": -1,
+            "ColorIndex": 0,
+            "Position": {
+                "x": 41.0,
+                "y": 11.0
+            },
+            "HeightLayer": 3,
+            "HeightIgnore": 0,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 0,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 0,
+            "MoveCode": 0,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_player_sit",
+            "ContactLabel": "",
+            "Work": 4000,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.0099999904632568,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 4
+        },
+        {
+            "ID": "D11R0101_BENCH_6_0",
+            "zoneID": 251,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": -1,
+            "ColorIndex": 0,
+            "Position": {
+                "x": 36.0,
+                "y": 23.0
+            },
+            "HeightLayer": 0,
+            "HeightIgnore": 0,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 0,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 0,
+            "MoveCode": 0,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_player_sit",
+            "ContactLabel": "",
+            "Work": 4000,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.0099999904632568,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 8
+        },
+        {
+            "ID": "D11R0101_BENCH_6_1",
+            "zoneID": 251,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": -1,
+            "ColorIndex": 0,
+            "Position": {
+                "x": 36.0,
+                "y": 24.0
+            },
+            "HeightLayer": 0,
+            "HeightIgnore": 0,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 0,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 0,
+            "MoveCode": 0,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_player_sit",
+            "ContactLabel": "",
+            "Work": 4000,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.0099999904632568,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 8
+        },
+        {
+            "ID": "D11R0101_BENCH_7_0",
+            "zoneID": 251,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": -1,
+            "ColorIndex": 0,
+            "Position": {
+                "x": 50.0,
+                "y": 44.0
+            },
+            "HeightLayer": 0,
+            "HeightIgnore": 0,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 0,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 0,
+            "MoveCode": 0,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_player_sit",
+            "ContactLabel": "",
+            "Work": 4000,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.0099999904632568,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 4
+        },
+        {
+            "ID": "D11R0101_BENCH_7_1",
+            "zoneID": 251,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": -1,
+            "ColorIndex": 0,
+            "Position": {
+                "x": 50.0,
+                "y": 45.0
+            },
+            "HeightLayer": 0,
+            "HeightIgnore": 0,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 0,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 0,
+            "MoveCode": 0,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_player_sit",
+            "ContactLabel": "",
+            "Work": 4000,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.0099999904632568,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 4
+        },
+        {
+            "ID": "D11R0101_BENCH_8_0",
+            "zoneID": 251,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": -1,
+            "ColorIndex": 0,
+            "Position": {
+                "x": 50.0,
+                "y": 47.0
+            },
+            "HeightLayer": 0,
+            "HeightIgnore": 0,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 0,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 0,
+            "MoveCode": 0,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_player_sit",
+            "ContactLabel": "",
+            "Work": 4000,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.0099999904632568,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 4
+        },
+        {
+            "ID": "D11R0101_BENCH_8_1",
+            "zoneID": 251,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": -1,
+            "ColorIndex": 0,
+            "Position": {
+                "x": 50.0,
+                "y": 48.0
+            },
+            "HeightLayer": 0,
+            "HeightIgnore": 0,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 0,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 0,
+            "MoveCode": 0,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_player_sit",
+            "ContactLabel": "",
+            "Work": 4000,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.0099999904632568,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 4
+        },
+        {
+            "ID": "D11R0101_BENCH_9_0",
+            "zoneID": 251,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": -1,
+            "ColorIndex": 0,
+            "Position": {
+                "x": 50.0,
+                "y": 50.0
+            },
+            "HeightLayer": 0,
+            "HeightIgnore": 0,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 0,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 0,
+            "MoveCode": 0,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_player_sit",
+            "ContactLabel": "",
+            "Work": 4000,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.0099999904632568,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 4
+        },
+        {
+            "ID": "D11R0101_BENCH_9_1",
+            "zoneID": 251,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": -1,
+            "ColorIndex": 0,
+            "Position": {
+                "x": 50.0,
+                "y": 51.0
+            },
+            "HeightLayer": 0,
+            "HeightIgnore": 0,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 0,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 0,
+            "MoveCode": 0,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_player_sit",
+            "ContactLabel": "",
+            "Work": 4000,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.0099999904632568,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 4
+        },
+        {
+            "ID": "D11R0101_BENCH_10_0",
+            "zoneID": 251,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": -1,
+            "ColorIndex": 0,
+            "Position": {
+                "x": 36.0,
+                "y": 65.0
+            },
+            "HeightLayer": 0,
+            "HeightIgnore": 0,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 0,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 0,
+            "MoveCode": 0,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_player_sit",
+            "ContactLabel": "",
+            "Work": 4000,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.0099999904632568,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 8
+        },
+        {
+            "ID": "D11R0101_BENCH_10_1",
+            "zoneID": 251,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": -1,
+            "ColorIndex": 0,
+            "Position": {
+                "x": 36.0,
+                "y": 66.0
+            },
+            "HeightLayer": 0,
+            "HeightIgnore": 0,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 0,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 0,
+            "MoveCode": 0,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_player_sit",
+            "ContactLabel": "",
+            "Work": 4000,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.0099999904632568,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 8
+        },
+        {
+            "ID": "D11R0101_BENCH_11_0",
+            "zoneID": 251,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": -1,
+            "ColorIndex": 0,
+            "Position": {
+                "x": 37.0,
+                "y": 65.0
+            },
+            "HeightLayer": 0,
+            "HeightIgnore": 0,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 0,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 0,
+            "MoveCode": 0,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_player_sit",
+            "ContactLabel": "",
+            "Work": 4000,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.0099999904632568,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 4
+        },
+        {
+            "ID": "D11R0101_BENCH_11_1",
+            "zoneID": 251,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": -1,
+            "ColorIndex": 0,
+            "Position": {
+                "x": 37.0,
+                "y": 66.0
+            },
+            "HeightLayer": 0,
+            "HeightIgnore": 0,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 0,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 0,
+            "MoveCode": 0,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_player_sit",
+            "ContactLabel": "",
+            "Work": 4000,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.0099999904632568,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 4
+        },
+        {
+            "ID": "D11R0101_BENCH_12_0",
+            "zoneID": 251,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": -1,
+            "ColorIndex": 0,
+            "Position": {
+                "x": 24.0,
+                "y": 65.0
+            },
+            "HeightLayer": 0,
+            "HeightIgnore": 0,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 0,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 0,
+            "MoveCode": 0,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_player_sit",
+            "ContactLabel": "",
+            "Work": 4000,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.0099999904632568,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 8
+        },
+        {
+            "ID": "D11R0101_BENCH_12_1",
+            "zoneID": 251,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": -1,
+            "ColorIndex": 0,
+            "Position": {
+                "x": 24.0,
+                "y": 66.0
+            },
+            "HeightLayer": 0,
+            "HeightIgnore": 0,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 0,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 0,
+            "MoveCode": 0,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_player_sit",
+            "ContactLabel": "",
+            "Work": 4000,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.0099999904632568,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 8
+        },
+        {
+            "ID": "D11R0101_BENCH_13_0",
+            "zoneID": 251,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": -1,
+            "ColorIndex": 0,
+            "Position": {
+                "x": 25.0,
+                "y": 65.0
+            },
+            "HeightLayer": 0,
+            "HeightIgnore": 0,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 0,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 0,
+            "MoveCode": 0,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_player_sit",
+            "ContactLabel": "",
+            "Work": 4000,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.0099999904632568,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 4
+        },
+        {
+            "ID": "D11R0101_BENCH_13_1",
+            "zoneID": 251,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": -1,
+            "ColorIndex": 0,
+            "Position": {
+                "x": 25.0,
+                "y": 66.0
+            },
+            "HeightLayer": 0,
+            "HeightIgnore": 0,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 0,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 0,
+            "MoveCode": 0,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_player_sit",
+            "ContactLabel": "",
+            "Work": 4000,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.0099999904632568,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 4
+        },
+        {
+            "ID": "D11R0101_TINKATUFF_ONE",
+            "zoneID": 251,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": 9580010,
+            "ColorIndex": 0,
+            "Position": {
+                "x": 4.0,
+                "y": 60.0
+            },
+            "HeightLayer": 0,
+            "HeightIgnore": 0,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 270,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 0,
+            "MoveCode": 0,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_d11r0101_tinkatuff_one",
+            "ContactLabel": "",
+            "Work": 3122,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.25,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 15
+        },
+        {
+            "ID": "D11R0101_TINKATUFF_TWO",
+            "zoneID": 251,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": 9580010,
+            "ColorIndex": 0,
+            "Position": {
+                "x": 36.0,
+                "y": 17.0
+            },
+            "HeightLayer": 99,
+            "HeightIgnore": 1,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 0,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 0,
+            "MoveCode": 15,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_d11r0101_tinkatuff_two",
+            "ContactLabel": "",
+            "Work": 2930,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.25,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 15
+        },
+        {
+            "ID": "D11R0101_TINKATUFF_THREE",
+            "zoneID": 251,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": 9580010,
+            "ColorIndex": 0,
+            "Position": {
+                "x": 28.0,
+                "y": 43.0
+            },
+            "HeightLayer": 99,
+            "HeightIgnore": 1,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 0,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 0,
+            "MoveCode": 15,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "",
+            "ContactLabel": "",
+            "Work": 2932,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.25,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 15
+        },
+        {
+            "ID": "D11R0101_TINKATUFF_FOUR",
+            "zoneID": 251,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": 9580010,
+            "ColorIndex": 0,
+            "Position": {
+                "x": 45.0,
+                "y": 39.0
+            },
+            "HeightLayer": 99,
+            "HeightIgnore": 1,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 90,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 0,
+            "MoveCode": 0,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_d11r0101_tinkatuff_four",
+            "ContactLabel": "",
+            "Work": 2933,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.25,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 15
+        }
+    ]
+}

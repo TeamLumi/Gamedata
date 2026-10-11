@@ -1,0 +1,209 @@
+{
+    "m_GameObject": {
+        "m_FileID": 0,
+        "m_PathID": 0
+    },
+    "m_Enabled": 1,
+    "m_Script": {
+        "m_FileID": 0,
+        "m_PathID": 7524332784465415280
+    },
+    "m_Name": "PlaceData_DISTORTIONR0102",
+    "Data": [
+        {
+            "ID": "DISTORTIONR0102_MIDDLEW",
+            "zoneID": 678,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": 137,
+            "ColorIndex": 0,
+            "Position": {
+                "x": 7.0,
+                "y": 3.0
+            },
+            "HeightLayer": 0,
+            "HeightIgnore": 0,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 0,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 0,
+            "MoveCode": 17,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_distortionr0102_middlewoman",
+            "ContactLabel": "",
+            "Work": 4000,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.25,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 15
+        },
+        {
+            "ID": "DISTORTIONR0102_WALLJUMP_1_1",
+            "zoneID": 678,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": 578,
+            "ColorIndex": 0,
+            "Position": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "HeightLayer": 0,
+            "HeightIgnore": 1,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 0,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 1,
+            "MoveCode": 0,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_distortionr0102_jump_1_1",
+            "ContactLabel": "",
+            "Work": 4000,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.0,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 0
+        },
+        {
+            "ID": "DISTORTIONR0102_WALLJUMP_1_2",
+            "zoneID": 678,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": 578,
+            "ColorIndex": 0,
+            "Position": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "HeightLayer": 0,
+            "HeightIgnore": 1,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 0,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 1,
+            "MoveCode": 0,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_distortionr0102_jump_1_2",
+            "ContactLabel": "",
+            "Work": 4000,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.0,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 0
+        },
+        {
+            "ID": "DISTORTIONR0102_WALLJUMP_2_1",
+            "zoneID": 678,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": 578,
+            "ColorIndex": 0,
+            "Position": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "HeightLayer": 0,
+            "HeightIgnore": 1,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 0,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 1,
+            "MoveCode": 0,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_distortionr0102_jump_2_1",
+            "ContactLabel": "",
+            "Work": 4000,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.0,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 0
+        },
+        {
+            "ID": "DISTORTIONR0102_WALLJUMP_2_2",
+            "zoneID": 678,
+            "TrainerID": 0,
+            "ObjectGraphicIndex": 578,
+            "ColorIndex": 0,
+            "Position": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "HeightLayer": 0,
+            "HeightIgnore": 1,
+            "Size": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "Rotation": 0,
+            "MoveLimit": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "EventType": 1,
+            "MoveCode": 0,
+            "MoveParam0": 0,
+            "MoveParam1": 0,
+            "MoveParam2": 0,
+            "TalkLabel": "ev_distortionr0102_jump_2_2",
+            "ContactLabel": "",
+            "Work": 4000,
+            "Dowsing": 0,
+            "LoadFirst": 0,
+            "DoNotLoad": 4000,
+            "TalkToRange": 1.0,
+            "TalkToSize": {
+                "x": 0.0,
+                "y": 0.0
+            },
+            "TalkBit": 0
+        }
+    ]
+}
