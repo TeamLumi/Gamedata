@@ -1,36 +1,4 @@
 Trainer Documentation
-1
-Youngster Tristan
-Level Cap:
-Format: Single Battle
-
-Hoothoot
-7
-Docile
-Insomnia
-
-None
-Tackle
-Foresight
-Echoed Voice
-Hypnosis
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Pidove
-7
-Hardy
-Big Pecks
-
-None
-Growl
-Gust
-Leer
-(No Move)
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
 2
 Youngster Logan
 Level Cap:
@@ -104,6 +72,38 @@ Scratch
 Defense Curl
 Quick Attack
 Fury Swipes
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+1
+Youngster Tristan
+Level Cap:
+Format: Single Battle
+
+Hoothoot
+7
+Docile
+Insomnia
+
+None
+Tackle
+Foresight
+Echoed Voice
+Hypnosis
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Pidove
+7
+Hardy
+Big Pecks
+
+None
+Growl
+Gust
+Leer
+(No Move)
 25/25/25/25/25/25
 0/0/0/0/0/0
 
@@ -2245,38 +2245,6 @@ Screech
 0/0/0/0/0/0
 
 
-97
-Black Belt Gregory
-Level Cap:
-Format: Single Battle
-
-Scraggy
-34
-Serious
-Shed Skin
-
-None
-Protect
-Beat Up
-Scary Face
-Brick Break
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-Hitmonchan
-34
-Hardy
-Keen Eye
-
-None
-Ice Punch
-Fire Punch
-Feint
-Detect
-25/25/25/25/25/25
-0/0/0/0/0/0
-
-
 397
 Team Galactic Grunt
 Level Cap:
@@ -2709,6 +2677,96 @@ Dragon Claw
 Noble Roar
 Dragon Dance
 Outrage
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+315
+Team Galactic Grunt
+Level Cap:
+Format: Single Battle
+
+Koffing
+23
+Bashful
+Levitate
+
+None
+Pain Split
+Sludge
+Self-Destruct
+Haze
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Stunky
+23
+Docile
+Stench
+
+None
+Smokescreen
+Venoshock
+Slash
+Night Slash
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Nidoran-M
+23
+Quirky
+Poison Point
+
+None
+Poison Fang
+Horn Attack
+Helping Hand
+Toxic Spikes
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+315
+Team Galactic Grunt
+Level Cap:
+Format: Single Battle
+
+Koffing
+23
+Bashful
+Levitate
+
+None
+Pain Split
+Sludge
+Self-Destruct
+Haze
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Stunky
+23
+Docile
+Stench
+
+None
+Smokescreen
+Venoshock
+Slash
+Night Slash
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Nidoran-M
+23
+Quirky
+Poison Point
+
+None
+Poison Fang
+Horn Attack
+Helping Hand
+Toxic Spikes
 25/25/25/25/25/25
 0/0/0/0/0/0
 
@@ -3963,6 +4021,38 @@ Swords Dance
 0/0/0/0/0/0
 
 
+36
+Hiker Alexander
+Level Cap:
+Format: Single Battle
+
+Graveler
+28
+Docile
+Rock Head
+
+None
+Smack Down
+Self-Destruct
+Gyro Ball
+Rock Slide
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Silicobra
+28
+Serious
+Sand Spit
+
+None
+Headbutt
+Glare
+Sand Tomb
+Dig
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
 38
 Black Belt Kyle
 Level Cap:
@@ -4147,6 +4237,218 @@ Stockpile
 ———
 25/25/25/25/25/25
 252/0/0/8/248/0
+
+
+249
+Lass Molly
+Level Cap:
+Format: Single Battle
+
+Misdreavus
+28
+Hardy
+Levitate
+
+None
+Draining Kiss
+Pain Split
+Shadow Ball
+Payback
+25/25/25/25/25/25
+252/0/4/0/252/0
+
+Drifloon
+28
+Quirky
+Aftermath
+
+None
+Spit Up
+Swallow
+Stockpile
+———
+25/25/25/25/25/25
+252/0/0/8/248/0
+
+
+262
+School Kid Chance
+Level Cap:
+Format: Single Battle
+
+Haunter
+27
+Hardy
+Levitate
+
+None
+Curse
+Sucker Punch
+Shadow Punch
+Shadow Ball
+25/25/25/25/25/25
+252/252/0/0/6/0
+
+Golett
+27
+Hardy
+Iron Fist
+
+None
+Shadow Punch
+Curse
+Night Shade
+Stomping Tantrum
+25/25/25/25/25/25
+0/0/0/106/252/152
+
+Phantump
+27
+Hardy
+Natural Cure
+
+None
+Confuse Ray
+Will-O-Wisp
+Hex
+Growth
+25/25/25/25/25/25
+0/4/0/252/0/252
+
+
+265
+School Kid Mackenzie
+Level Cap:
+Format: Single Battle
+
+Pumpkaboo
+27
+Hardy
+Pickup
+
+None
+Razor Leaf
+Leech Seed
+Mega Drain
+Scary Face
+25/25/25/25/25/25
+104/0/152/0/0/252
+
+Yamask
+27
+Hardy
+Mummy
+
+None
+Disable
+Will-O-Wisp
+Crafty Shield
+Hex
+25/25/25/25/25/25
+0/0/52/152/52/252
+
+Dusclops
+27
+Hardy
+Pressure
+
+None
+Foresight
+Shadow Sneak
+Will-O-Wisp
+Payback
+25/25/25/25/25/25
+0/104/0/152/0/252
+
+
+204
+Ace Trainer Allen
+Level Cap:
+Format: Single Battle
+
+Rotom
+29
+Hardy
+Levitate
+
+None
+Thunder Wave
+Hex
+Discharge
+Confuse Ray
+25/0/25/25/25/25
+252/6/0/0/252/0
+
+Dhelmise
+29
+Hardy
+Steelworker
+
+None
+Energy Ball
+Shadow Claw
+Toxic
+Rapid Spin
+25/31/25/25/25/25
+0/0/0/152/106/252
+
+Sandygast
+29
+Hardy
+Water Compaction
+
+None
+Giga Drain
+Scorching Sands
+Shadow Ball
+Shore Up
+25/0/25/25/25/25
+6/0/0/252/0/252
+
+
+208
+Ace Trainer Catherine
+Level Cap:
+Format: Single Battle
+
+Banette
+29
+Hardy
+Frisk
+
+None
+Taunt
+Will-O-Wisp
+Shadow Sneak
+Knock Off
+25/25/25/25/25/25
+0/104/0/252/0/152
+
+Beheeyem
+29
+Hardy
+Telepathy
+
+None
+Astonish
+Psybeam
+Safeguard
+Swagger
+25/25/25/25/25/25
+0/104/152/0/0/252
+
+Froslass
+29
+Bashful
+Levitate
+
+None
+Icy Wind
+Shadow Ball
+Will-O-Wisp
+Double Team
+25/0/25/25/25/25
+4/0/0/0/252/252
 
 
 254
@@ -5726,6 +6028,38 @@ Zen Headbutt
 Swords Dance
 Endeavor
 Screech
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+
+97
+Black Belt Gregory
+Level Cap:
+Format: Single Battle
+
+Scraggy
+34
+Serious
+Shed Skin
+
+None
+Protect
+Beat Up
+Scary Face
+Brick Break
+25/25/25/25/25/25
+0/0/0/0/0/0
+
+Hitmonchan
+34
+Hardy
+Keen Eye
+
+None
+Ice Punch
+Fire Punch
+Feint
+Detect
 25/25/25/25/25/25
 0/0/0/0/0/0
 
