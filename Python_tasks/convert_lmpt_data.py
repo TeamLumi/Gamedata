@@ -362,6 +362,8 @@ def get_route_rate(method, method_index, route_rates):
         return route_rates[constants.SWARM][0]
     elif method == constants.RADAR:
         return route_rates[constants.RADAR][3]
+    if constants.GAME_MODE == constants.GAME_MODE_3 and method == constants.SURF_ENC:
+        return route_rates[constants.RELUMI_SURF_ENC][method_index]
     return route_rates[method][method_index]
 
 def check_for_incense(method, method_index):

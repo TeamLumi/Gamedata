@@ -126,7 +126,7 @@ def get_trainer_data_from_place_datas():
     '''
     trainers = []
     for bdsp_location_file in full_data['placedatas']:
-        for event in bdsp_location_file['Data']:
+        for event in full_data['placedatas'][bdsp_location_file]['Data']:
             trainerID = event['TrainerID']
             zoneID = event['zoneID']
             if trainerID > 0 and trainerID < 10000 and zoneID != -1:
