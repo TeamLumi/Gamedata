@@ -10,7 +10,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
-      uses: actions/checkout@v2
+      uses: actions/checkout@v21
+
+    - name: Check Python Version
+      run: python3 --version
 
     - name: Run 2.0 Convert Python Script
       run: python3 Python_tasks/convert_lmpt_data.py 2.0
