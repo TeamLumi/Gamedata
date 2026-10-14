@@ -859,6 +859,7 @@ def parse_trainer_btl_set(substring, previous_strings=None):
             if re.match(constants.CALL_PATTERN, previous_strings[0]):
                 trainer_callback = re.split(constants.CALL_PATTERN, previous_strings[0])[1]
                 return [constants.SINGLE_BATTLE_CALLBACK, trainer_callback]
+            print("Error occurred while parsing trainer battle set:", previous_strings)
             enemy_trainer = re.split(constants.LDVAL_PATTERN, previous_strings[0])[2]
             return [constants.SINGLE_BATTLE, enemy_trainer]
         print("SOMETHING IS WRONG")
@@ -950,14 +951,13 @@ def parse_ev_script_file(file_path):
                             if len(previous_strings) == previous_count:
                                 break
                     previous_strings.reverse()
-                    is_multi_battle = (
-                        constants.TRAINER_BATTLE_MULTI_SCRIPT in substring
-                        or constants.TRAINER_BATTLE_MULTI_SUPPORT_SCRIPT in substring
+                    is_single_battle = (
+                        constants.TRAINER_BATTLE_SINGLES_SCRIPT in substring
                     )
                     if (
-                        is_multi_battle
+                        is_single_battle
                         and previous_strings
-                        and re.search(constants.CALL_PATTERN, previous_strings[0]) is None
+                        and re.search(constants.LDVAL_PATTERN, previous_strings[0]) is None
                     ):
                         raise ValueError(
                             f"Expected partner _CALL before {file_path}:{index + 1}\n"
