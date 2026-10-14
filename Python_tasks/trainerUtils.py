@@ -860,7 +860,7 @@ def parse_trainer_btl_set(substring, previous_strings=None):
                 trainer_callback = re.split(constants.CALL_PATTERN, previous_strings[0])[1]
                 return [constants.SINGLE_BATTLE_CALLBACK, trainer_callback]
             print("Error occurred while parsing trainer battle set:", previous_strings)
-            enemy_trainer = re.split(constants.LDVAL_PATTERN, previous_strings[0])[2]
+            enemy_trainer = re.split(constants.LDVAL_PATTERN, previous_strings[-1])[2]
             return [constants.SINGLE_BATTLE, enemy_trainer]
         print("SOMETHING IS WRONG")
 
