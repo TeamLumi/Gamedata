@@ -837,6 +837,7 @@ def parse_trainer_btl_set(substring, previous_strings=None):
             try:
                 partner_callback = re.split(constants.CALL_PATTERN, previous_strings[0])[1]
             except IndexError:
+                print("Error occurred while parsing trainer battle set:", previous_strings)
                 partner_callback = re.split(constants.LDVAL_PATTERN, previous_strings[2])[2]
                 enemy_trainer1 = re.split(constants.LDVAL_PATTERN, previous_strings[1])[2]
                 enemy_trainer2 = re.split(constants.LDVAL_PATTERN, previous_strings[0])[2]
