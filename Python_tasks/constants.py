@@ -477,6 +477,7 @@ DOCS_ZONE_ORDER = [
     "Old Chateau - Hallway Room 5",
     "Route 205 (North)",
     "Eterna City",
+    "Underground",
     "Route 211 (West)",
     "Mt. Coronet - Route 211 Entrance",
     "Route 211 (East)",
