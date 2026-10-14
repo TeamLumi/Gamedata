@@ -822,9 +822,9 @@ def parse_trainer_btl_set(substring, previous_strings=None):
         ## This is the relumi trainer scripts
         if constants.TRAINER_BATTLE_MULTI_SUPPORT_SCRIPT in substring:
             ## This is for the EV trainers like Buck and Marley
-            enemy_trainer1 = re.split(constants.LDVAL_PATTERN, previous_strings[1])[2]
-            enemy_trainer2 = re.split(constants.LDVAL_PATTERN, previous_strings[2])[2]
-            partner_callback = re.split(constants.CALL_PATTERN, previous_strings[0])[1]
+            enemy_trainer1 = re.split(constants.LDVAL_PATTERN, previous_strings[-2])[2]
+            enemy_trainer2 = re.split(constants.LDVAL_PATTERN, previous_strings[-3])[2]
+            partner_callback = re.split(constants.CALL_PATTERN, previous_strings[-1])[1]
             return [
                 constants.MULTI_PARTNER_BATTLE,
                 enemy_trainer1,
@@ -832,10 +832,10 @@ def parse_trainer_btl_set(substring, previous_strings=None):
                 partner_callback
             ]
         if constants.TRAINER_BATTLE_MULTI_SCRIPT in substring:
-            enemy_trainer1 = re.split(constants.LDVAL_PATTERN, previous_strings[1])[2]
-            enemy_trainer2 = re.split(constants.LDVAL_PATTERN, previous_strings[2])[2]
+            enemy_trainer1 = re.split(constants.LDVAL_PATTERN, previous_strings[-2])[2]
+            enemy_trainer2 = re.split(constants.LDVAL_PATTERN, previous_strings[-3])[2]
             try:
-                partner_callback = re.split(constants.CALL_PATTERN, previous_strings[0])[1]
+                partner_callback = re.split(constants.CALL_PATTERN, previous_strings[-1])[1]
             except IndexError:
                 print("Error occurred while parsing trainer battle set:", previous_strings)
                 partner_callback = re.split(constants.LDVAL_PATTERN, previous_strings[2])[2]
@@ -848,8 +848,8 @@ def parse_trainer_btl_set(substring, previous_strings=None):
                 partner_callback
             ]
         if constants.TRAINER_BATTLE_DOUBLES_SCRIPT in substring:
-            enemy_trainer1 = re.split(constants.LDVAL_PATTERN, previous_strings[0])[2]
-            enemy_trainer2 = re.split(constants.LDVAL_PATTERN, previous_strings[1])[2]
+            enemy_trainer1 = re.split(constants.LDVAL_PATTERN, previous_strings[-1])[2]
+            enemy_trainer2 = re.split(constants.LDVAL_PATTERN, previous_strings[-2])[2]
             return [
                 constants.DOUBLE_BATTLE,
                 enemy_trainer1,
@@ -957,7 +957,7 @@ def parse_ev_script_file(file_path):
                     if (
                         is_single_battle
                         and previous_strings
-                        and re.search(constants.LDVAL_PATTERN, previous_strings[0]) is None
+                        and re.search(constants.LDVAL_PATTERN, previous_strings[-1]) is None
                     ):
                         raise ValueError(
                             f"Expected partner _CALL before {file_path}:{index + 1}\n"
