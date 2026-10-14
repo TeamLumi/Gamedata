@@ -856,8 +856,8 @@ def parse_trainer_btl_set(substring, previous_strings=None):
                 enemy_trainer2
             ]
         if constants.TRAINER_BATTLE_SINGLES_SCRIPT in substring:
-            if re.match(constants.CALL_PATTERN, previous_strings[0]):
-                trainer_callback = re.split(constants.CALL_PATTERN, previous_strings[0])[1]
+            if re.match(constants.CALL_PATTERN, previous_strings[-1]):
+                trainer_callback = re.split(constants.CALL_PATTERN, previous_strings[-1])[1]
                 return [constants.SINGLE_BATTLE_CALLBACK, trainer_callback]
             print("Error occurred while parsing trainer battle set:", previous_strings)
             enemy_trainer = re.split(constants.LDVAL_PATTERN, previous_strings[-1])[2]
