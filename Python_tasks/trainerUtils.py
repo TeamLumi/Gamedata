@@ -949,7 +949,20 @@ def parse_ev_script_file(file_path):
                             file_lines[index - 2].strip(),
                             file_lines[index - 3].strip(),
                         ])
-
+                    is_multi_battle = (
+                        constants.TRAINER_BATTLE_MULTI_SCRIPT in substring
+                        or constants.TRAINER_BATTLE_MULTI_SUPPORT_SCRIPT in substring
+                    )
+                    if (
+                        is_multi_battle
+                        and previous_strings
+                        and re.search(constants.CALL_PATTERN, previous_strings[0]) is None
+                    ):
+                        raise ValueError(
+                            f"Expected partner _CALL before {file_path}:{index + 1}\n"
+                            f"Battle line: {substring!r}\n"
+                            f"Preceding lines: {previous_strings!r}"
+                        )
                     args = parse_trainer_btl_set(substring, previous_strings)
                 else:
                     args = parse_trainer_btl_set(substring.strip(), [])

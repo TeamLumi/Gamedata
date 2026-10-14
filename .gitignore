@@ -1,2 +1,3 @@
 # Misc Files
 *.pyc
+.venv-3.12.3/
