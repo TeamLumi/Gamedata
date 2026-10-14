@@ -834,7 +834,12 @@ def parse_trainer_btl_set(substring, previous_strings=None):
         if constants.TRAINER_BATTLE_MULTI_SCRIPT in substring:
             enemy_trainer1 = re.split(constants.LDVAL_PATTERN, previous_strings[1])[2]
             enemy_trainer2 = re.split(constants.LDVAL_PATTERN, previous_strings[2])[2]
-            partner_callback = re.split(constants.CALL_PATTERN, previous_strings[0])[1]
+            try:
+                partner_callback = re.split(constants.CALL_PATTERN, previous_strings[0])[1]
+            except IndexError:
+                partner_callback = re.split(constants.LDVAL_PATTERN, previous_strings[2])[2]
+                enemy_trainer1 = re.split(constants.LDVAL_PATTERN, previous_strings[1])[2]
+                enemy_trainer2 = re.split(constants.LDVAL_PATTERN, previous_strings[0])[2]
             return [
                 constants.MULTI_PARTNER_BATTLE,
                 enemy_trainer1,
@@ -934,21 +939,16 @@ def parse_ev_script_file(file_path):
             if check_substrings(substring, constants.TRAINER_BATTLE_SUBSTRINGS, mode='any'):
                 if constants.GAME_MODE == constants.GAME_MODE_3:
                     previous_strings = []
-                    if index == 2:
-                        ## Error check for if the single battle is as high in the file as possible
-                        previous_strings.append(file_lines[index - 1].strip())
-                    elif index == 3:
-                        ## Error check if a double battle is as high in the file as possible
-                        previous_strings.extend([
-                            file_lines[index - 1].strip(),
-                            file_lines[index - 2].strip()
-                        ])
-                    elif index > 3:
-                        previous_strings.extend([
-                            file_lines[index - 1].strip(),
-                            file_lines[index - 2].strip(),
-                            file_lines[index - 3].strip(),
-                        ])
+                    previous_count = min(max(index - 1, 0), 3)
+                    if previous_count:
+                        for previous_line in reversed(file_lines[:index]):
+                            previous_line = previous_line.strip()
+                            if previous_line.startswith(";"):
+                                continue
+                            previous_strings.append(previous_line)
+                            if len(previous_strings) == previous_count:
+                                break
+                    previous_strings.reverse()
                     is_multi_battle = (
                         constants.TRAINER_BATTLE_MULTI_SCRIPT in substring
                         or constants.TRAINER_BATTLE_MULTI_SUPPORT_SCRIPT in substring
