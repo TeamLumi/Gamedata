@@ -115,6 +115,15 @@ jobs:
     - name: Run 3.0 Pokemon Location Script
       run: python3 Python_tasks/convert_lmpt_data.py 3.0
 
+    - name: Run scripts for all item locations
+      run: |
+        python3 Python_tasks/get_hidden_items.py vanilla hidden
+        python3 Python_tasks/get_hidden_items.py vanilla field
+        python3 Python_tasks/get_hidden_items.py 2.0 hidden
+        python3 Python_tasks/get_hidden_items.py 2.0 field
+        python3 Python_tasks/get_hidden_items.py 3.0 hidden
+        python3 Python_tasks/get_hidden_items.py 3.0 field
+
     - name: Stage all gamedata files
       run: |
         # Create the exact destination directory structure
@@ -186,6 +195,15 @@ jobs:
 
     - name: Run 3.0 Pokemon Location Script
       run: python3 Python_tasks/convert_lmpt_data.py 3.0
+
+    - name: Run scripts for all item locations
+      run: |
+        python3 Python_tasks/get_hidden_items.py vanilla hidden
+        python3 Python_tasks/get_hidden_items.py vanilla field
+        python3 Python_tasks/get_hidden_items.py 2.0 hidden
+        python3 Python_tasks/get_hidden_items.py 2.0 field
+        python3 Python_tasks/get_hidden_items.py 3.0 hidden
+        python3 Python_tasks/get_hidden_items.py 3.0 field
 
     - name: Stage all gamedata files
       run: |
