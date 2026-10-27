@@ -115,6 +115,9 @@ jobs:
     - name: Run 3.0 Pokemon Location Script
       run: python3 Python_tasks/convert_lmpt_data.py 3.0
 
+    - name: Run TM Learnset Consolidation
+      run: python3 Python_tasks/consolidate_tmlearnset.py 3.0
+
     - name: Run scripts for all item locations
       run: |
         python3 Python_tasks/get_hidden_items.py vanilla hidden
@@ -195,6 +198,9 @@ jobs:
 
     - name: Run 3.0 Pokemon Location Script
       run: python3 Python_tasks/convert_lmpt_data.py 3.0
+
+    - name: Run TM Learnset Consolidation
+      run: python3 Python_tasks/consolidate_tmlearnset.py 3.0
 
     - name: Run scripts for all item locations
       run: |
