@@ -147,8 +147,8 @@ jobs:
         cp -a 3.0Input/. staging_dir/__gamedata/gamedata3.0/
         cp Python_tasks/3.0Output/Mapper_Trainer_Output.json staging_dir/__gamedata/gamedata3.0/
         cp -a TMLearnset/. staging_dir/__gamedata/gamedata3.0/TMLearnset/
-        cp Python_tasks/3.0output/field_items.json staging_dir/__gamedata/gamedata3.0/
-        cp Python_tasks/3.0output/hidden_items.json staging_dir/__gamedata/gamedata3.0/
+        cp Python_tasks/3.0Output/field_items.json staging_dir/__gamedata/gamedata3.0/
+        cp Python_tasks/3.0Output/hidden_items.json staging_dir/__gamedata/gamedata3.0/
 
     - name: Push all gamedata files
       uses: TeamLumi/Gamedata@main
@@ -228,8 +228,8 @@ jobs:
         cp -a 3.0Input/. staging_dir/__gamedata/gamedata3.0/
         cp Python_tasks/3.0Output/Mapper_Trainer_Output.json staging_dir/__gamedata/gamedata3.0/
         cp -a TMLearnset/. staging_dir/__gamedata/gamedata3.0/TMLearnset/
-        cp Python_tasks/3.0output/field_items.json staging_dir/__gamedata/gamedata3.0/
-        cp Python_tasks/3.0output/hidden_items.json staging_dir/__gamedata/gamedata3.0/
+        cp Python_tasks/3.0Output/field_items.json staging_dir/__gamedata/gamedata3.0/
+        cp Python_tasks/3.0Output/hidden_items.json staging_dir/__gamedata/gamedata3.0/
 
     - name: Push all gamedata files to dev
       uses: TeamLumi/Gamedata@main
