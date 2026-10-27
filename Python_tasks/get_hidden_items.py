@@ -133,18 +133,18 @@ def get_hidden_items(item_mode="hidden"):
         area_name = area_match.group(1) if area_match else None
 
         for event in placedata.get("Data", []):
-            talk_label = event.get("ID", "")
+            talk_label = event.get("TalkLabel", "")
             if talk_label == "":
-                talk_label = event.get("TalkLabel", "")
-            # if not talk_label.startswith(item_prefix):
-            #     continue
-            # if item_mode != "field" and constants.GAME_MODE == constants.GAME_MODE_3:
-            #     # Relumi uses the sparkle OGI for hidden items, while Vanilla and Lumi uses -1
-            #     if event.get("ObjectGraphicIndex") != 579:
-            #         continue
-            # elif item_mode != "field":
-            #     if event.get("ObjectGraphicIndex") != -1:
-            #         continue
+                talk_label = event.get("ID", "")
+            if not talk_label.startswith(item_prefix):
+                continue
+            if item_mode != "field" and constants.GAME_MODE == constants.GAME_MODE_3:
+                # Relumi uses the sparkle OGI for hidden items, while Vanilla and Lumi uses -1
+                if event.get("ObjectGraphicIndex") != 579:
+                    continue
+            elif item_mode != "field":
+                if event.get("ObjectGraphicIndex") != -1:
+                    continue
 
             position = event["Position"]
             zone_id = event["zoneID"]
