@@ -115,83 +115,44 @@ jobs:
     - name: Run 3.0 Pokemon Location Script
       run: python3 Python_tasks/convert_lmpt_data.py 3.0
 
-    - name: Update Vanilla gamedata files
-      uses: TeamLumi/Gamedata@main
-      env:
-        API_TOKEN_GITHUB: ${{ secrets.DENMARK_LUMIBOT_TOKEN }}
-      with:
-        source_file: 'vanilla_input/.'
-        destination_branch: 'main'
-        destination_repo: 'TeamLumi/luminescent-team'
-        destination_folder: './__gamedata/gamedataVanilla'
-        user_email: '<support+actions@github.com>'
-        user_name: 'github-actions-bot'
-        commit_message: 'Updating Vanilla gamedata files'
+    - name: Stage all gamedata files
+      run: |
+        # Create the exact destination directory structure
+        mkdir -p staging_dir/__gamedata/gamedataVanilla
+        mkdir -p staging_dir/__gamedata/gamedata2.0
+        mkdir -p staging_dir/__gamedata/gamedata3.0/TMLearnset
 
-    - name: Update Vanilla Trainer Files
-      uses: TeamLumi/Gamedata@main
-      env:
-        API_TOKEN_GITHUB: ${{ secrets.DENMARK_LUMIBOT_TOKEN }}
-      with:
-        source_file: 'Python_tasks/outputVanilla/Mapper_Trainer_Output.json'
-        destination_branch: 'main'
-        destination_repo: 'TeamLumi/luminescent-team'
-        destination_folder: './__gamedata/gamedataVanilla'
-        user_email: '<support+actions@github.com>'
-        user_name: 'github-actions-bot'
-        commit_message: 'Updating Vanilla Trainer files'
+        # Copy Vanilla files
+        cp -a vanilla_input/. staging_dir/__gamedata/gamedataVanilla/
+        cp Python_tasks/outputVanilla/Mapper_Trainer_Output.json staging_dir/__gamedata/gamedataVanilla/
+        cp Python_tasks/outputVanilla/field_items.json staging_dir/__gamedata/gamedataVanilla/
+        cp Python_tasks/outputVanilla/hidden_items.json staging_dir/__gamedata/gamedataVanilla/
 
-    - name: Update 2.0 gamedata files
-      uses: TeamLumi/Gamedata@main
-      env:
-        API_TOKEN_GITHUB: ${{ secrets.DENMARK_LUMIBOT_TOKEN }}
-      with:
-        source_file: 'input/.'
-        destination_branch: 'main'
-        destination_repo: 'TeamLumi/luminescent-team'
-        destination_folder: './__gamedata/gamedata2.0'
-        user_email: '<support+actions@github.com>'
-        user_name: 'github-actions-bot'
-        commit_message: 'Updating 2.0 gamedata files'
+        # Copy 2.0 files
+        cp -a input/. staging_dir/__gamedata/gamedata2.0/
+        cp Python_tasks/output/Mapper_Trainer_Output.json staging_dir/__gamedata/gamedata2.0/
+        cp Python_tasks/output/field_items.json staging_dir/__gamedata/gamedata2.0/
+        cp Python_tasks/output/hidden_items.json staging_dir/__gamedata/gamedata2.0/
 
-    - name: Update 2.0 Trainer Files
-      uses: TeamLumi/Gamedata@main
-      env:
-        API_TOKEN_GITHUB: ${{ secrets.DENMARK_LUMIBOT_TOKEN }}
-      with:
-        source_file: 'Python_tasks/output/Mapper_Trainer_Output.json'
-        destination_branch: 'main'
-        destination_repo: 'TeamLumi/luminescent-team'
-        destination_folder: './__gamedata/gamedata2.0'
-        user_email: '<support+actions@github.com>'
-        user_name: 'github-actions-bot'
-        commit_message: 'Updating 2.0 Trainer files'
+        # Copy 3.0 files
+        cp -a 3.0Input/. staging_dir/__gamedata/gamedata3.0/
+        cp Python_tasks/3.0Output/Mapper_Trainer_Output.json staging_dir/__gamedata/gamedata3.0/
+        cp -a TMLearnset/. staging_dir/__gamedata/gamedata3.0/TMLearnset/
+        cp Python_tasks/3.0output/field_items.json staging_dir/__gamedata/gamedata3.0/
+        cp Python_tasks/3.0output/hidden_items.json staging_dir/__gamedata/gamedata3.0/
 
-    - name: Update 3.0 gamedata files
+    - name: Push all gamedata files
       uses: TeamLumi/Gamedata@main
       env:
         API_TOKEN_GITHUB: ${{ secrets.DENMARK_LUMIBOT_TOKEN }}
       with:
-        source_file: '3.0Input/.'
+        source_file: 'staging_dir/.'
         destination_branch: 'main'
         destination_repo: 'TeamLumi/luminescent-team'
-        destination_folder: './__gamedata/gamedata3.0'
+        destination_folder: '.' # Pushing to the root so the inner structure maps correctly
         user_email: '<support+actions@github.com>'
         user_name: 'github-actions-bot'
-        commit_message: 'Updating 3.0 gamedata files'
-
-    - name: Update 3.0 TM Learnset files
-      uses: TeamLumi/Gamedata@main
-      env:
-        API_TOKEN_GITHUB: ${{ secrets.DENMARK_LUMIBOT_TOKEN }}
-      with:
-        source_file: 'TMLearnset/.'
-        destination_branch: 'main'
-        destination_repo: 'TeamLumi/luminescent-team'
-        destination_folder: './__gamedata/gamedata3.0/TMLearnset'
-        user_email: '<support+actions@github.com>'
-        user_name: 'github-actions-bot'
-        commit_message: 'Updating 3.0 TM Learnset files'
+        commit_message: 'Updating Vanilla, 2.0, and 3.0 gamedata and trainer files'
 
   update-dev-website:
     runs-on: ubuntu-latest
@@ -226,93 +187,41 @@ jobs:
     - name: Run 3.0 Pokemon Location Script
       run: python3 Python_tasks/convert_lmpt_data.py 3.0
 
-    - name: Update Vanilla gamedata files
+    - name: Stage all gamedata files
+      run: |
+        # Create the exact destination directory structure
+        mkdir -p staging_dir/__gamedata/gamedataVanilla
+        mkdir -p staging_dir/__gamedata/gamedata2.0
+        mkdir -p staging_dir/__gamedata/gamedata3.0/TMLearnset
+
+        # Copy Vanilla files
+        cp -a vanilla_input/. staging_dir/__gamedata/gamedataVanilla/
+        cp Python_tasks/outputVanilla/Mapper_Trainer_Output.json staging_dir/__gamedata/gamedataVanilla/
+        cp Python_tasks/outputVanilla/field_items.json staging_dir/__gamedata/gamedataVanilla/
+        cp Python_tasks/outputVanilla/hidden_items.json staging_dir/__gamedata/gamedataVanilla/
+
+        # Copy 2.0 files
+        cp -a input/. staging_dir/__gamedata/gamedata2.0/
+        cp Python_tasks/output/Mapper_Trainer_Output.json staging_dir/__gamedata/gamedata2.0/
+        cp Python_tasks/output/field_items.json staging_dir/__gamedata/gamedata2.0/
+        cp Python_tasks/output/hidden_items.json staging_dir/__gamedata/gamedata2.0/
+
+        # Copy 3.0 files
+        cp -a 3.0Input/. staging_dir/__gamedata/gamedata3.0/
+        cp Python_tasks/3.0Output/Mapper_Trainer_Output.json staging_dir/__gamedata/gamedata3.0/
+        cp -a TMLearnset/. staging_dir/__gamedata/gamedata3.0/TMLearnset/
+        cp Python_tasks/3.0output/field_items.json staging_dir/__gamedata/gamedata3.0/
+        cp Python_tasks/3.0output/hidden_items.json staging_dir/__gamedata/gamedata3.0/
+
+    - name: Push all gamedata files to dev
       uses: TeamLumi/Gamedata@main
       env:
         API_TOKEN_GITHUB: ${{ secrets.DENMARK_LUMIBOT_TOKEN }}
       with:
-        source_file: 'vanilla_input/.'
+        source_file: 'staging_dir/.'
         destination_branch: 'main'
         destination_repo: 'TeamLumi/luminescent-team-dev'
-        destination_folder: './__gamedata/gamedataVanilla'
+        destination_folder: '.'
         user_email: '<support+actions@github.com>'
         user_name: 'github-actions-bot'
-        commit_message: 'Updating Vanilla gamedata files'
-
-    - name: Update Vanilla Trainer Files
-      uses: TeamLumi/Gamedata@main
-      env:
-        API_TOKEN_GITHUB: ${{ secrets.DENMARK_LUMIBOT_TOKEN }}
-      with:
-        source_file: 'Python_tasks/outputVanilla/Mapper_Trainer_Output.json'
-        destination_branch: 'main'
-        destination_repo: 'TeamLumi/luminescent-team-dev'
-        destination_folder: './__gamedata/gamedataVanilla'
-        user_email: '<support+actions@github.com>'
-        user_name: 'github-actions-bot'
-        commit_message: 'Updating Vanilla Trainer files'
-
-    - name: Pushes test file
-      uses: TeamLumi/Gamedata@main
-      env:
-        API_TOKEN_GITHUB: ${{ secrets.DENMARK_LUMIBOT_TOKEN }}
-      with:
-        source_file: 'input/.'
-        destination_branch: 'main'
-        destination_repo: 'TeamLumi/luminescent-team-dev'
-        destination_folder: './__gamedata/gamedata2.0'
-        user_email: '<support+actions@github.com>'
-        user_name: 'github-actions-bot'
-        commit_message: 'Updating 2.0 gamedata files'
-
-    - name: Pushes test files
-      uses: TeamLumi/Gamedata@main
-      env:
-        API_TOKEN_GITHUB: ${{ secrets.DENMARK_LUMIBOT_TOKEN }}
-      with:
-        source_file: 'Python_tasks/output/Mapper_Trainer_Output.json'
-        destination_branch: 'main'
-        destination_repo: 'TeamLumi/luminescent-team-dev'
-        destination_folder: './__gamedata/gamedata2.0'
-        user_email: '<support+actions@github.com>'
-        user_name: 'github-actions-bot'
-        commit_message: 'Updating 2.0 Trainer files'
-
-    - name: Update 3.0 gamedata files
-      uses: TeamLumi/Gamedata@main
-      env:
-        API_TOKEN_GITHUB: ${{ secrets.DENMARK_LUMIBOT_TOKEN }}
-      with:
-        source_file: '3.0Input/.'
-        destination_branch: 'main'
-        destination_repo: 'TeamLumi/luminescent-team-dev'
-        destination_folder: './__gamedata/gamedata3.0'
-        user_email: '<support+actions@github.com>'
-        user_name: 'github-actions-bot'
-        commit_message: 'Updating 3.0 gamedata files'
-
-    - name: Update 3.0 Trainer Files
-      uses: TeamLumi/Gamedata@main
-      env:
-        API_TOKEN_GITHUB: ${{ secrets.DENMARK_LUMIBOT_TOKEN }}
-      with:
-        source_file: 'Python_tasks/3.0Output/Mapper_Trainer_Output.json'
-        destination_branch: 'main'
-        destination_repo: 'TeamLumi/luminescent-team-dev'
-        destination_folder: './__gamedata/gamedata3.0'
-        user_email: '<support+actions@github.com>'
-        user_name: 'github-actions-bot'
-        commit_message: 'Updating 3.0 Trainer files'
-
-    - name: Update 3.0 TM Learnset files
-      uses: TeamLumi/Gamedata@main
-      env:
-        API_TOKEN_GITHUB: ${{ secrets.DENMARK_LUMIBOT_TOKEN }}
-      with:
-        source_file: 'TMLearnset/.'
-        destination_branch: 'main'
-        destination_repo: 'TeamLumi/luminescent-team'
-        destination_folder: './__gamedata/gamedata3.0/TMLearnset'
-        user_email: '<support+actions@github.com>'
-        user_name: 'github-actions-bot'
-        commit_message: 'Updating 3.0 TM Learnset files'
+        commit_message: 'Updating Vanilla, 2.0, and 3.0 gamedata and trainer files'
