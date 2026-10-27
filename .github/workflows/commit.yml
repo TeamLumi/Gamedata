@@ -142,21 +142,21 @@ jobs:
         cp Python_tasks/outputVanilla/Mapper_Trainer_Output.json staging_dir/__gamedata/gamedataVanilla/
         cp Python_tasks/outputVanilla/field_items.json staging_dir/__gamedata/gamedataVanilla/
         cp Python_tasks/outputVanilla/hidden_items.json staging_dir/__gamedata/gamedataVanilla/
-        cp Python_tasks/outputVanilla/scripted_items.json staging_dir/__gamedata/gamedataVanilla/
+        cp Python_tasks/outputVanilla/item_map.json staging_dir/__gamedata/gamedataVanilla/
 
         # Copy 2.0 files
         cp -a input/. staging_dir/__gamedata/gamedata2.0/
         cp Python_tasks/output/Mapper_Trainer_Output.json staging_dir/__gamedata/gamedata2.0/
         cp Python_tasks/output/field_items.json staging_dir/__gamedata/gamedata2.0/
         cp Python_tasks/output/hidden_items.json staging_dir/__gamedata/gamedata2.0/
-        cp Python_tasks/output/scripted_items.json staging_dir/__gamedata/gamedata2.0/
+        cp Python_tasks/output/item_map.json staging_dir/__gamedata/gamedata2.0/
 
         # Copy 3.0 files
         cp -a 3.0Input/. staging_dir/__gamedata/gamedata3.0/
         cp Python_tasks/3.0Output/Mapper_Trainer_Output.json staging_dir/__gamedata/gamedata3.0/
         cp Python_tasks/3.0Output/field_items.json staging_dir/__gamedata/gamedata3.0/
         cp Python_tasks/3.0Output/hidden_items.json staging_dir/__gamedata/gamedata3.0/
-        cp Python_tasks/3.0Output/scripted_items.json staging_dir/__gamedata/gamedata3.0/
+        cp Python_tasks/3.0Output/item_map.json staging_dir/__gamedata/gamedata3.0/
 
     - name: Push all gamedata files
       uses: TeamLumi/Gamedata@main
@@ -231,21 +231,21 @@ jobs:
         cp Python_tasks/outputVanilla/Mapper_Trainer_Output.json staging_dir/__gamedata/gamedataVanilla/
         cp Python_tasks/outputVanilla/field_items.json staging_dir/__gamedata/gamedataVanilla/
         cp Python_tasks/outputVanilla/hidden_items.json staging_dir/__gamedata/gamedataVanilla/
-        cp Python_tasks/outputVanilla/scripted_items.json staging_dir/__gamedata/gamedataVanilla/
+        cp Python_tasks/outputVanilla/item_map.json staging_dir/__gamedata/gamedataVanilla/
 
         # Copy 2.0 files
         cp -a input/. staging_dir/__gamedata/gamedata2.0/
         cp Python_tasks/output/Mapper_Trainer_Output.json staging_dir/__gamedata/gamedata2.0/
         cp Python_tasks/output/field_items.json staging_dir/__gamedata/gamedata2.0/
         cp Python_tasks/output/hidden_items.json staging_dir/__gamedata/gamedata2.0/
-        cp Python_tasks/output/scripted_items.json staging_dir/__gamedata/gamedata2.0/
+        cp Python_tasks/output/item_map.json staging_dir/__gamedata/gamedata2.0/
 
         # Copy 3.0 files
         cp -a 3.0Input/. staging_dir/__gamedata/gamedata3.0/
         cp Python_tasks/3.0Output/Mapper_Trainer_Output.json staging_dir/__gamedata/gamedata3.0/
         cp Python_tasks/3.0Output/field_items.json staging_dir/__gamedata/gamedata3.0/
         cp Python_tasks/3.0Output/hidden_items.json staging_dir/__gamedata/gamedata3.0/
-        cp Python_tasks/3.0Output/scripted_items.json staging_dir/__gamedata/gamedata3.0/
+        cp Python_tasks/3.0Output/item_map.json staging_dir/__gamedata/gamedata3.0/
 
     - name: Push all gamedata files to dev
       uses: TeamLumi/Gamedata@main
