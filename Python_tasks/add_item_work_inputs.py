@@ -119,7 +119,7 @@ def write_item_map(
         room_name = path.stem
         room_entries = item_map.setdefault(room_name, [])
         entry = {
-            "id": resolved_id,
+            "itemId": resolved_id,
             "quantity": resolved_quantity,
             "label_name": label,
         }
