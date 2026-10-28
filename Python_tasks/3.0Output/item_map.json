@@ -1941,11 +1941,6 @@
             "id": 126,
             "quantity": 1,
             "label_name": "pos_t01r0201_mama_cap"
-        },
-        {
-            "id": 17,
-            "quantity": 1,
-            "label_name": "ev_t01r0201_mama_poke_get"
         }
     ],
     "t02": [
@@ -2176,33 +2171,6 @@
             "id": 1304,
             "quantity": 1,
             "label_name": "ev_t07pc0102_nurse"
-        }
-    ],
-    "door": [
-        {
-            "id": 466,
-            "quantity": 1,
-            "label_name": "ev_healthcheck_check_c10_shaymin_event"
-        },
-        {
-            "id": 1301,
-            "quantity": 1,
-            "label_name": "ev_healthcheck_give_incense_burner"
-        },
-        {
-            "id": 112,
-            "quantity": 1,
-            "label_name": "ev_healthcheck_check_gris_orb"
-        },
-        {
-            "id": 458,
-            "quantity": 1,
-            "label_name": "ev_healthcheck_check_magma_stone"
-        },
-        {
-            "id": 1303,
-            "quantity": 1,
-            "label_name": "ev_healthcheck_add_infinite_repel"
         }
     ]
 }

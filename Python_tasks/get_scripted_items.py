@@ -22,7 +22,7 @@ item_data = {}
 
 special_cases = {
     'ev_d26r0104_item_event_ok': [
-        {'id': 1, 'quantity': 1, 'label_name': 'ev_d26r0104_item_event_ok'},
+        {'itemId': 1, 'quantity': 1, 'label_name': 'ev_d26r0104_item_event_ok'},
     ],
     'ev_tower_gate_talk_prize_get': [],
     'ev_tower_gate_return_prize_get': [],
@@ -31,147 +31,147 @@ special_cases = {
     'ev_tower_gate_prize_get_20': [],
     'ev_r221r0101_item_add': [
         {
-            "id": 149,
+            "itemId": 149,
             'quantity': 1,
             'label_name': "ev_r221r0101_item_add"
         },
         {
-            "id": 150,
+            "itemId": 150,
             'quantity': 1,
             'label_name': "ev_r221r0101_item_add"
         },
         {
-            "id": 151,
+            "itemId": 151,
             'quantity': 1,
             'label_name': "ev_r221r0101_item_add"
         },
         {
-            "id": 152,
+            "itemId": 152,
             'quantity': 1,
             'label_name': "ev_r221r0101_item_add"
         },
         {
-            "id": 153,
+            "itemId": 153,
             'quantity': 1,
             'label_name': "ev_r221r0101_item_add"
         },
         {
-            "id": 154,
+            "itemId": 154,
             'quantity': 1,
             'label_name': "ev_r221r0101_item_add"
         },
         {
-            "id": 155,
+            "itemId": 155,
             'quantity': 1,
             'label_name': "ev_r221r0101_item_add"
         },
         {
-            "id": 156,
+            "itemId": 156,
             'quantity': 1,
             'label_name': "ev_r221r0101_item_add"
         },
         {
-            "id": 159,
+            "itemId": 159,
             'quantity': 1,
             'label_name': "ev_r221r0101_item_add"
         },
         {
-            "id": 160,
+            "itemId": 160,
             'quantity': 1,
             'label_name': "ev_r221r0101_item_add"
         },
         {
-            "id": 161,
+            "itemId": 161,
             'quantity': 1,
             'label_name': "ev_r221r0101_item_add"
         },
         {
-            "id": 162,
+            "itemId": 162,
             'quantity': 1,
             'label_name': "ev_r221r0101_item_add"
         },
         {
-            "id": 163,
+            "itemId": 163,
             'quantity': 1,
             'label_name': "ev_r221r0101_item_add"
         },
         {
-            "id": 164,
+            "itemId": 164,
             'quantity': 1,
             'label_name': "ev_r221r0101_item_add"
         },
         {
-            "id": 165,
+            "itemId": 165,
             'quantity': 1,
             'label_name': "ev_r221r0101_item_add"
         },
         {
-            "id": 166,
+            "itemId": 166,
             'quantity': 1,
             'label_name': "ev_r221r0101_item_add"
         },
         {
-            "id": 167,
+            "itemId": 167,
             'quantity': 1,
             'label_name': "ev_r221r0101_item_add"
         },
         {
-            "id": 168,
+            "itemId": 168,
             'quantity': 1,
             'label_name': "ev_r221r0101_item_add"
         },
         {
-            "id": 157,
+            "itemId": 157,
             'quantity': 1,
             'label_name': "ev_r221r0101_item_add"
         },
         {
-            "id": 158,
+            "itemId": 158,
             'quantity': 1,
             'label_name': "ev_r221r0101_item_add"
         },
         {
-            "id": 169,
+            "itemId": 169,
             'quantity': 1,
             'label_name': "ev_r221r0101_item_add"
         },
         {
-            "id": 170,
+            "itemId": 170,
             'quantity': 1,
             'label_name': "ev_r221r0101_item_add"
         },
         {
-            "id": 171,
+            "itemId": 171,
             'quantity': 1,
             'label_name': "ev_r221r0101_item_add"
         },
         {
-            "id": 172,
+            "itemId": 172,
             'quantity': 1,
             'label_name': "ev_r221r0101_item_add"
         },
         {
-            "id": 173,
+            "itemId": 173,
             'quantity': 1,
             'label_name': "ev_r221r0101_item_add"
         },
         {
-            "id": 174,
+            "itemId": 174,
             'quantity': 1,
             'label_name': "ev_r221r0101_item_add"
         }
     ],
 
     # These ones are only for Lumi
-    'ev_turearuki_poke_item_get': [{'id': 0, 'quantity': 1, 'label_name': 'ev_turearuki_poke_item_get'}],
+    'ev_turearuki_poke_item_get': [{'itemId': 0, 'quantity': 1, 'label_name': 'ev_turearuki_poke_item_get'}],
     'ev_d01r0102_leader_01_stone': [
-        {'id': 80, 'quantity': 1, 'label_name': 'ev_d01r0102_leader_01_stone'},
-        {'id': 81, 'quantity': 1, 'label_name': 'ev_d01r0102_leader_01_stone'},
-        {'id': 82, 'quantity': 1, 'label_name': 'ev_d01r0102_leader_01_stone'},
-        {'id': 83, 'quantity': 1, 'label_name': 'ev_d01r0102_leader_01_stone'},
-        {'id': 84, 'quantity': 1, 'label_name': 'ev_d01r0102_leader_01_stone'},
-        {'id': 85, 'quantity': 1, 'label_name': 'ev_d01r0102_leader_01_stone'},
-        {'id': 849, 'quantity': 1, 'label_name': 'ev_d01r0102_leader_01_stone'}
+        {'itemId': 80, 'quantity': 1, 'label_name': 'ev_d01r0102_leader_01_stone'},
+        {'itemId': 81, 'quantity': 1, 'label_name': 'ev_d01r0102_leader_01_stone'},
+        {'itemId': 82, 'quantity': 1, 'label_name': 'ev_d01r0102_leader_01_stone'},
+        {'itemId': 83, 'quantity': 1, 'label_name': 'ev_d01r0102_leader_01_stone'},
+        {'itemId': 84, 'quantity': 1, 'label_name': 'ev_d01r0102_leader_01_stone'},
+        {'itemId': 85, 'quantity': 1, 'label_name': 'ev_d01r0102_leader_01_stone'},
+        {'itemId': 849, 'quantity': 1, 'label_name': 'ev_d01r0102_leader_01_stone'}
     ],
 
     # These ones are only for ReLumi
@@ -282,7 +282,7 @@ def extract_item_id(command_start_index, ldval_index, file_lines, room_name):
         print(f"Direct item id for label: {label_name} in room: {room_name} is: {direct_item_id}")
         if direct_item_id is not None:
             return [{
-                'id': direct_item_id,
+                'itemId': direct_item_id,
                 'quantity': 1,
                 'label_name': label_name
             }]
@@ -290,7 +290,7 @@ def extract_item_id(command_start_index, ldval_index, file_lines, room_name):
         ldval_map_command = ldval_map[label_name] if label_name in ldval_map.keys() else None
         print(f"Finding jumped value for label: {label_name} with ldval command: {ldval_map_command}")
         item_ids.append({
-            'id': find_jumped_value(extracted_lines[0], file_lines, ldval_map_command, room_name),
+            'itemId': find_jumped_value(extracted_lines[0], file_lines, ldval_map_command, room_name),
             'quantity': 1,
             'label_name': label_name
         })
@@ -301,7 +301,7 @@ def extract_item_id(command_start_index, ldval_index, file_lines, room_name):
         counted_chars = item_id_command.count('@')
         if counted_chars == 1:
             item_ids.append({
-                'id': get_normal_item_id(item_id_command),
+                'itemId': get_normal_item_id(item_id_command),
                 'quantity': int(item_qty_value),
                 'label_name': label_name
             })
@@ -310,7 +310,7 @@ def extract_item_id(command_start_index, ldval_index, file_lines, room_name):
             print(f"Finding jumped value for label: {label_name} with work value: {work_value}")
             ldval_command = f"_LDVAL({work_value},"
             item_ids.append({
-                'id': find_jumped_value(extracted_lines[0], file_lines, ldval_command, room_name),
+                'itemId': find_jumped_value(extracted_lines[0], file_lines, ldval_command, room_name),
                 'quantity': int(item_qty_value),
                 'label_name': label_name
             })

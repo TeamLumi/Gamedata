@@ -303,56 +303,6 @@
             "id": 355,
             "quantity": 1,
             "label_name": "ev_c04r0801_youngboy_dig"
-        },
-        {
-            "id": 15,
-            "quantity": 5,
-            "label_name": "ev_c04r0801_mission_03_clear"
-        },
-        {
-            "id": 13,
-            "quantity": 5,
-            "label_name": "ev_c04r0801_mission_03_clear"
-        },
-        {
-            "id": 7,
-            "quantity": 5,
-            "label_name": "ev_c04r0801_mission_03_clear"
-        },
-        {
-            "id": 101,
-            "quantity": 3,
-            "label_name": "ev_c04r0801_woman1"
-        },
-        {
-            "id": 102,
-            "quantity": 3,
-            "label_name": "ev_c04r0801_woman1"
-        },
-        {
-            "id": 99,
-            "quantity": 3,
-            "label_name": "ev_c04r0801_woman1"
-        },
-        {
-            "id": 100,
-            "quantity": 3,
-            "label_name": "ev_c04r0801_woman1"
-        },
-        {
-            "id": 104,
-            "quantity": 3,
-            "label_name": "ev_c04r0801_woman1"
-        },
-        {
-            "id": 105,
-            "quantity": 3,
-            "label_name": "ev_c04r0801_woman1"
-        },
-        {
-            "id": 103,
-            "quantity": 1,
-            "label_name": "ev_c04r0801_woman1"
         }
     ],
     "c05": [
@@ -1411,11 +1361,6 @@
             "id": 450,
             "quantity": 1,
             "label_name": "pos_t01r0201_mama_cap"
-        },
-        {
-            "id": 17,
-            "quantity": 1,
-            "label_name": "ev_t01r0201_mama_poke_get"
         }
     ],
     "t02": [
@@ -1545,11 +1490,6 @@
             "id": 2,
             "quantity": 1,
             "label_name": "ev_pichu_event_valid"
-        },
-        {
-            "id": 1823,
-            "quantity": 1,
-            "label_name": "ev_gsball_event_yes"
         }
     ],
     "t05pc0101": [
@@ -1613,69 +1553,6 @@
             "id": 1824,
             "quantity": 1,
             "label_name": "pos_t07_dragonite"
-        }
-    ],
-    "c01": [
-        {
-            "id": 1822,
-            "quantity": 1,
-            "label_name": "c01_01_support_female_common_02"
-        }
-    ],
-    "c04r0101": [
-        {
-            "id": 109,
-            "quantity": 1,
-            "label_name": "ev_c04r0101_middlemla_03"
-        }
-    ],
-    "door": [
-        {
-            "id": 466,
-            "quantity": 1,
-            "label_name": "ev_healthcheck_check_c10_shaymin_event"
-        },
-        {
-            "id": 1833,
-            "quantity": 1,
-            "label_name": "ev_healthcheck_give_incense_burner"
-        },
-        {
-            "id": 450,
-            "quantity": 1,
-            "label_name": "ev_healthcheck_givebike"
-        },
-        {
-            "id": 426,
-            "quantity": 1,
-            "label_name": "ev_healthcheck_give_waterfall_tm"
-        },
-        {
-            "id": 423,
-            "quantity": 1,
-            "label_name": "ev_healthcheck_strength_give_strength"
-        },
-        {
-            "id": 1822,
-            "quantity": 1,
-            "label_name": "ev_healthcheck_ds_sounds_give"
-        },
-        {
-            "id": 112,
-            "quantity": 1,
-            "label_name": "ev_healthcheck_check_gris_orb"
-        },
-        {
-            "id": 458,
-            "quantity": 1,
-            "label_name": "ev_healthcheck_check_magma_stone"
-        }
-    ],
-    "t06pc0101": [
-        {
-            "id": 1824,
-            "quantity": 1,
-            "label_name": "ev_t06pc0101_pcwoman1_mewtwo"
         }
     ]
 }
