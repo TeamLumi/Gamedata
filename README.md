@@ -112,3 +112,5 @@ With this command, you will get the following output for each pokemon:
 Some things to note about this structure:
  - The name will not match the name in BDSP as it has been slugged and the order of some names has been changed.
  - The `id` will mostly not match the `pokemonId` in BDSP as this is the `id` obtained from PokeApi. However, the files are named with the `pokemonId` from BDSP so you can use that. The naming scheme is `{pokemonId}_stats.json`
+
+Commit Test
